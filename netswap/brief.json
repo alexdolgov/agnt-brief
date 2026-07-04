@@ -1,52 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "netswap",
-  "generated_at": "2026-06-18T01:56:49.592Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-ac25",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "netswap",
-    "tier": 1,
-    "peak_tvl": 290838081,
-    "peak_date": "2022-02-06T00:00:00.000Z",
-    "tvl_30d_ago": 1376624,
-    "tvl_90d_ago": 1264756,
-    "tvl_current": 1330536,
-    "tier0_reason": "catastrophic_collapse_from_peak",
-    "tvl_180d_ago": 1874822,
-    "change_30d_pct": -3.3479003707620962,
-    "change_90d_pct": 5.201003197454687,
-    "governance_raw": {
-      "evidence": "TVL dropped 99.54% from peak over 4 years ago, with negligible current TVL ($1.33M) and no recent development or community activity.",
-      "confidence": 0.95,
-      "lifecycle_status": "dead"
-    },
-    "days_since_peak": 1568,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 99.54251657986974,
-    "governance_evidence": "TVL dropped 99.54% from peak over 4 years ago, with negligible current TVL ($1.33M) and no recent development or community activity.",
-    "governance_confidence": 0.95,
-    "governance_text_chars": 1703,
-    "governance_classification": "dead",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:38.682Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d094",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 47,
-    "total_addresses": 95,
-    "unique_implementations": 47,
-    "total_deployments": 95,
+    "total_contracts": 53,
+    "total_addresses": 101,
+    "unique_implementations": 53,
+    "total_deployments": 101,
     "audited_contracts": 5,
-    "unaudited_contracts": 18,
+    "unaudited_contracts": 24,
     "contracts_verified_audited": 5,
-    "contracts_verified_unaudited": 18,
+    "contracts_verified_unaudited": 24,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 24,
-    "coverage_pct": 21.7,
+    "coverage_pct": 0,
     "total_audits": 2,
+    "direct_audits": 2,
+    "inherited_audits": 0,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 1205302.3375,
-    "tvl_usd": 1205302.3375,
+    "dl_tvl_usd": 1229900.74508,
+    "tvl_usd": 1229900.74508,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -63,28 +39,35 @@
       "aging": 0,
       "stale": 2,
       "unknown": 0
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "NetSwap is a decentralized exchange (DEX) on Metis that enables token swaps, liquidity provision, and yield farming. It uses the NETT governance token and includes NETT/veNETT staking-related contracts, but active voting or community governance should not be assumed without additional supporting evidence.",
-    "relationship_narrative": "The NetSwap family relies on the NETT token from the Governance family for staking, rewards, and voting. Shared infrastructure includes proxy contracts and peripheral contracts like Multicall and FarmLens that support the core DEX and farming operations.",
-    "product_family_count": 2,
-    "total_contracts_indexed": 95,
+    "project_purpose": "Dexs. Structurally: 28 project-authored contract(s) across 1 chain(s); 4 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 9 functional families. Its contracts share 2 common project-authored base contract(s) (ownableupgradeable, contextupgradeable). Dominant framework: openzeppelin.",
+    "product_family_count": 9,
+    "total_contracts_indexed": 101,
     "live_contracts": 0,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 95,
+    "unknown_contracts": 101,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 19,
-    "unverified_dependencies": 2,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 47,
+    "unique_implementations": 53,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -93,6 +76,45 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xba34fc26ad8353b1f7e396b6129354bd1ee339c4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BaseOracle",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BaseOracle",
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xba34fc26ad8353b1f7e396b6129354bd1ee339c4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-16 13:30:42+03",
+      "deploy_coverage_basis": null
+    },
     {
       "chain_id": 1088,
       "chain_name": "metis",
@@ -126,7 +148,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-02-10 12:11:16+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -138,7 +164,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "NetSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -161,7 +187,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-11-29 23:25:36+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x1b3da69c93cb57e620a1cb6fd94d8421af14df3b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Bricked",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Bricked",
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x1b3da69c93cb57e620a1cb6fd94d8421af14df3b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-29 16:50:27+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -173,7 +242,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "NetSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -196,7 +265,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-12-23 16:22:42+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xe7491fd7ba7eb13c2346d55c4b32cb64d1c08be1",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ERC20Mock",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ERC20Mock",
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xe7491fd7ba7eb13c2346d55c4b32cb64d1c08be1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-11-29 23:24:06+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -208,7 +320,7 @@
       "role": "periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "NetSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -231,7 +343,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-11-29 23:25:36+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x4f2185589c43ab8e0ff91e6bba9921414ede8eae",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "L2StandardTokenFactory",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "L2StandardTokenFactory",
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x4f2185589c43ab8e0ff91e6bba9921414ede8eae",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-20 20:27:22+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -266,7 +421,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-29 12:26:44+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xdf4b248464ce2cda6f1a68aa2bff4b610f496076",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LPOracle",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LPOracle",
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xdf4b248464ce2cda6f1a68aa2bff4b610f496076",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-16 14:01:14+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -312,7 +510,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-25 18:56:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -323,8 +525,8 @@
       "name": "Multicall",
       "role": "periphery",
       "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "NetSwap",
+      "origin_provider": "Multicall",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -349,7 +551,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "effective_deploy_date": "2021-12-06 13:18:31+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1088,
@@ -361,7 +567,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "NetSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -386,7 +592,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-12-06 13:18:31+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1088,
@@ -487,7 +697,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -499,7 +713,7 @@
       "role": "adapter",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "NetSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -525,7 +739,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -535,7 +749,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-12-06 14:42:36+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1088,
@@ -573,7 +791,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -583,7 +801,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-12-23 16:19:35+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1088,
@@ -595,7 +817,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "NetSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -620,7 +842,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-09 13:45:49+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1088,
@@ -632,7 +858,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "NetSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -655,7 +881,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-29 12:32:55+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -666,7 +896,7 @@
       "name": "ProxyAdmin",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_provider": "OpenZeppelin",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -712,7 +942,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "effective_deploy_date": "2022-11-29 23:24:06+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1011,7 +1245,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-01-07 11:11:21+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1112,7 +1350,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-11 21:11:32+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xd6ceaed7621defe5ed564cc5700d4cdb25a2de4d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TestERC20",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TestERC20",
+      "deployments": [
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xd6ceaed7621defe5ed564cc5700d4cdb25a2de4d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-02-10 13:18:41+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1123,7 +1404,7 @@
       "name": "TransparentUpgradeableProxy",
       "role": "proxy",
       "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_provider": "OpenZeppelin",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1213,7 +1494,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "effective_deploy_date": "2022-11-29 23:25:36+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1225,7 +1510,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "NetSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1259,7 +1544,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-01 18:54:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1294,7 +1583,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-02-10 12:11:16+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1304,7 +1597,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1329,7 +1622,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-11-14 22:30:36+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1339,7 +1636,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1364,7 +1661,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-27 22:53:07+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1374,9 +1675,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "NetSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1399,7 +1700,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-12-24 15:10:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1409,9 +1714,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "NetSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1434,7 +1739,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-07 20:35:46+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1444,7 +1753,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1469,7 +1778,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-24 18:01:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1479,7 +1792,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1504,7 +1817,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-02-04 14:27:17+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1514,7 +1831,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1539,7 +1856,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-12-30 00:11:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1549,7 +1870,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1574,7 +1895,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-07 14:35:28+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1584,7 +1909,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1609,7 +1934,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-12-06 14:39:41+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1619,7 +1948,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1644,7 +1973,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-16 14:31:04+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1654,7 +1987,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1679,7 +2012,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-16 13:42:36+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1689,7 +2026,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1714,7 +2051,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-24 18:01:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1726,7 +2067,7 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "NetSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1749,7 +2090,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1759,7 +2104,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1784,7 +2129,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-11-14 22:28:48+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1794,7 +2143,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1819,7 +2168,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-24 18:01:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1829,7 +2182,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1854,7 +2207,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-25 18:56:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1864,7 +2221,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1889,7 +2246,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-12-06 14:39:41+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1899,7 +2260,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1924,7 +2285,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-02-04 14:46:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1934,7 +2299,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1959,7 +2324,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-16 13:56:41+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -1969,7 +2338,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1994,7 +2363,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-25 18:56:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -2004,7 +2377,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2029,7 +2402,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-12-07 13:58:36+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -2039,7 +2416,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2064,7 +2441,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-24 18:01:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -2074,7 +2455,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2099,7 +2480,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-12-26 23:06:20+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -2109,7 +2494,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2134,7 +2519,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-25 18:56:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -2146,7 +2535,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "NetSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -2169,7 +2558,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-11-29 23:24:06+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -2181,7 +2574,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "NetSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -2204,7 +2597,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-11-29 23:24:06+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -2216,7 +2613,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "NetSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -2239,7 +2636,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-18 12:20:50+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1088,
@@ -2251,7 +2652,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "NetSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -2274,14 +2675,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-18 12:22:25+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 3100,
       "audit_key": "audit-3100",
-      "report_name": "Rendered PDF capture",
+      "report_name": "spaces/EbMkSj6wrVk9IfPEsOGH/uploads/9mkCS0SDBLKkPGAWCevh/NetSwap_audit.pdf",
       "report_url": "https://4122350423-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FEbMkSj6wrVk9IfPEsOGH%2Fuploads%2F9mkCS0SDBLKkPGAWCevh%2FNetSwap_audit.pdf",
       "auditor": "yAudit",
       "audit_type": "audit",
@@ -2291,37 +2696,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "IERC20Netswap",
-        "INetswapCallee",
-        "INetswapFactory",
-        "INetswapPair",
-        "INetswapRouter",
-        "INetswapRouter02",
-        "ISwapMining",
-        "Math",
-        "Multicall",
-        "NetSwapRouter",
-        "NetswapERC20",
-        "NetswapFactory",
-        "NetswapLibrary",
-        "NetswapPair",
-        "Ownable",
-        "SafeMathNetswap",
-        "TransferHelper",
-        "UQ112x112"
-      ],
-      "matched_contracts": 4,
+      "extracted_names": [],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 3101,
       "audit_key": "audit-3101",
-      "report_name": "Rendered PDF capture",
+      "report_name": "spaces/EbMkSj6wrVk9IfPEsOGH/uploads/lhV4zxJaCA5bczsO9uBu/Netswap Farm_audit.pdf",
       "report_url": "https://4122350423-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FEbMkSj6wrVk9IfPEsOGH%2Fuploads%2FlhV4zxJaCA5bczsO9uBu%2FNetswap%20Farm_audit.pdf",
       "auditor": "yAudit",
       "audit_type": "audit",
@@ -2331,15 +2720,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "NETT",
-        "NETTFarm"
-      ],
-      "matched_contracts": 3,
+      "extracted_names": [],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -2348,11 +2737,21 @@
       "auditor": "yAudit",
       "tier": 2,
       "contracts_covered": 5,
-      "coverage_pct": 21.7,
+      "coverage_pct": 17.2,
       "latest_audit": "2022-01"
     }
   ],
   "coverage_gaps": [
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xba34fc26ad8353b1f7e396b6129354bd1ee339c4",
+      "name": "BaseOracle",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 1088,
       "chain_name": "metis",
@@ -2376,9 +2775,29 @@
     {
       "chain_id": 1088,
       "chain_name": "metis",
+      "address": "0x1b3da69c93cb57e620a1cb6fd94d8421af14df3b",
+      "name": "Bricked",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
       "address": "0x2dc348972df99dff6716007d19368eaaa6e75ed7",
       "name": "CommunityTreasury",
       "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xe7491fd7ba7eb13c2346d55c4b32cb64d1c08be1",
+      "name": "ERC20Mock",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2396,9 +2815,29 @@
     {
       "chain_id": 1088,
       "chain_name": "metis",
+      "address": "0x4f2185589c43ab8e0ff91e6bba9921414ede8eae",
+      "name": "L2StandardTokenFactory",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
       "address": "0x35c3123e3e274f05f921a792bd0d80414d50d07f",
       "name": "LaunchpadHelper",
       "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xdf4b248464ce2cda6f1a68aa2bff4b610f496076",
+      "name": "LPOracle",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2448,6 +2887,16 @@
       "chain_name": "metis",
       "address": "0x2ac666026515acc3d8a29b99785c6cdd989c096b",
       "name": "StakingRewards",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0xd6ceaed7621defe5ed564cc5700d4cdb25a2de4d",
+      "name": "TestERC20",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -2515,18 +2964,16 @@
     }
   ],
   "origin_summary": {
-    "native": 43,
+    "native": 26,
     "upstream": 0,
     "standard_library": 3,
-    "needs_review": 1
+    "needs_review": 24
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 7
+      "contract_name": 5
     },
-    "extraction_confidence_counts": {
-      "high": 2
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

@@ -5,11 +5,11 @@
 - Project: WanSwap Dex (`wanswap-dex`)
 - Website: [https://wanswap.finance/](https://wanswap.finance/)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:42.652Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-07-03T21:07:11.876Z
+- Pipeline run: brief-restore-2026-07
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $936,348.03
+- DeFi Llama TVL: $904,283.06
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-WanSwap Dex is a Wanchain-based cross-chain AMM decentralized exchange that enables users to swap tokens and provide liquidity. Farming, staking, or non-Wanchain deployments should only be included when supported by current official WanSwap documentation or verified WanSwap deployments.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
@@ -32,17 +32,20 @@ WanSwap Dex is a Wanchain-based cross-chain AMM decentralized exchange that enab
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 0 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 0
 - Raw deployments: 0
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-04 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -81,7 +84,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Haechi Audit](https://github.com/wanswap/wanswap-contracts/blob/master/%5BHAECHI%20AUDIT%5D%20WanSwap%20Smart%20Contract%20Audit%20Report%20ver%202.0.pdf) | HAECHI | Audit | 2021-04 | stale | Direct | contract_name | 0 | n/a |
+| [[HAECHI AUDIT] WanSwap Smart Contract Audit Report ver 2.0.pdf](https://github.com/wanswap/wanswap-contracts/blob/master/%5BHAECHI%20AUDIT%5D%20WanSwap%20Smart%20Contract%20Audit%20Report%20ver%202.0.pdf) | HAECHI | Audit | 2021-04 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -105,10 +108,10 @@ Verified + unaudited native implementations ranked by TVL:
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
-- Match method counts: extraction_exact=2
+- Match method counts: n/a
 
 Zero-match audit list:
 
-- [3226] Haechi Audit
+- [3226] [HAECHI AUDIT] WanSwap Smart Contract Audit Report ver 2.0.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

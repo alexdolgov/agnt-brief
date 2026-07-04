@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "y2k-finance",
-  "generated_at": "2026-06-20T01:44:22.969Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "y2k-finance",
-    "tier": 0,
-    "peak_tvl": 13802670,
-    "peak_date": "2022-12-05T00:00:00.000Z",
-    "tvl_30d_ago": 38871,
-    "tvl_90d_ago": 37961,
-    "tvl_current": 30889,
-    "tier0_reason": "catastrophic_collapse_from_peak",
-    "tvl_180d_ago": 54972,
-    "change_30d_pct": -20.534588767976125,
-    "change_90d_pct": -18.629646215853114,
-    "days_since_peak": 1293,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 99.77620996517341
-  },
+  "generated_at": "2026-07-04T14:54:13.699Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-4c3e",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 2,
     "total_addresses": 2,
@@ -34,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 6,
+    "direct_audits": 6,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 30043,
-    "tvl_usd": 30043,
+    "dl_tvl_usd": 28609,
+    "tvl_usd": 28609,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -51,20 +37,29 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 2,
-      "unknown": 4
+      "stale": 5,
+      "unknown": 1
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Y2K Finance is a derivatives protocol that allows users to hedge or speculate on the outcome of specific events, such as stablecoin depegs. It offers structured products where users can lock tokens to earn rewards or participate in vaults that pay out based on event resolution.",
-    "relationship_narrative": "Y2K V1 and V2 are separate product lines deployed by different clusters, with no shared contracts visible. V1 uses a VaultFactory and ClonableBeaconProxy to deploy and manage vaults and reward contracts, while V2 introduces a CarouselFactory for a new set of products.",
-    "product_family_count": 2,
-    "total_contracts_indexed": 179,
-    "live_contracts": 2,
-    "inactive_contracts": 177,
+    "project_purpose": "Structural profile: 1 project-authored contract(s) across 1 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol forms a single structural family (Registries) of 1 contract(s).",
+    "product_family_count": 1,
+    "total_contracts_indexed": 2,
+    "live_contracts": 1,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 1,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
@@ -89,9 +84,9 @@
       "deployment_unit_proxy_count": null,
       "name": "ClonableBeaconProxy",
       "role": "registry",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Y2K V1",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -114,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-10-28 20:07:50+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -124,9 +123,9 @@
       "deployment_unit_proxy_count": null,
       "name": "WeightedPool",
       "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "balancer",
-      "product_line": "Y2K V1",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -149,107 +148,90 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-12-19 21:24:17+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 14147,
       "audit_key": "audit-14147",
-      "report_name": "DL audit link",
+      "report_name": "spaces/aSJHG27D6yEvbos52Fsy/uploads/cvH67oRCDa5MfmmyxtuU/Peckshield_Y2K.pdf",
       "report_url": "https://2047863079-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaSJHG27D6yEvbos52Fsy%2Fuploads%2FcvH67oRCDa5MfmmyxtuU%2FPeckshield_Y2K.pdf",
       "auditor": "PeckShield",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2022-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name|n/a",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 14147,
-          "report_url": "https://2047863079-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaSJHG27D6yEvbos52Fsy%2Fuploads%2FcvH67oRCDa5MfmmyxtuU%2FPeckshield_Y2K.pdf"
-        },
-        {
-          "audit_id": 14153,
-          "report_url": "https://398575907-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaSJHG27D6yEvbos52Fsy%2Fuploads%2FcvH67oRCDa5MfmmyxtuU%2FPeckshield_Y2K.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
       "audit_id": 14148,
       "audit_key": "audit-14148",
-      "report_name": "DL audit link",
+      "report_name": "spaces/aSJHG27D6yEvbos52Fsy/uploads/Hl3FHTkdL3GkcmrpG4xV/Halborn_Y2K.pdf",
       "report_url": "https://2047863079-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaSJHG27D6yEvbos52Fsy%2Fuploads%2FHl3FHTkdL3GkcmrpG4xV%2FHalborn_Y2K.pdf",
       "auditor": "Halborn",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2022-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name|n/a",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 14148,
-          "report_url": "https://2047863079-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaSJHG27D6yEvbos52Fsy%2Fuploads%2FHl3FHTkdL3GkcmrpG4xV%2FHalborn_Y2K.pdf"
-        },
-        {
-          "audit_id": 14154,
-          "report_url": "https://398575907-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaSJHG27D6yEvbos52Fsy%2Fuploads%2FHl3FHTkdL3GkcmrpG4xV%2FHalborn_Y2K.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
       "audit_id": 14149,
       "audit_key": "audit-14149",
-      "report_name": "DL audit link",
+      "report_name": "spaces/aSJHG27D6yEvbos52Fsy/uploads/s53umi8JxWDcLXM2RWkz/Halborn_Y2k_Audit2.pdf",
       "report_url": "https://2047863079-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaSJHG27D6yEvbos52Fsy%2Fuploads%2Fs53umi8JxWDcLXM2RWkz%2FHalborn_Y2k_Audit2.pdf",
       "auditor": "Halborn",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2022-08",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name|n/a",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 14149,
-          "report_url": "https://2047863079-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaSJHG27D6yEvbos52Fsy%2Fuploads%2Fs53umi8JxWDcLXM2RWkz%2FHalborn_Y2k_Audit2.pdf"
-        },
-        {
-          "audit_id": 14155,
-          "report_url": "https://398575907-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaSJHG27D6yEvbos52Fsy%2Fuploads%2Fs53umi8JxWDcLXM2RWkz%2FHalborn_Y2k_Audit2.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
       "audit_id": 14150,
       "audit_key": "audit-14150",
-      "report_name": "{% embed url=\"<>\" %}",
+      "report_name": "www.verilog.solutions/audits/y2k",
       "report_url": "https://www.verilog.solutions/audits/y2k",
       "auditor": "VERILOG",
       "audit_type": "audit",
@@ -259,6 +241,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -270,7 +255,7 @@
     {
       "audit_id": 14151,
       "audit_key": "audit-14151",
-      "report_name": "Rendered PDF capture",
+      "report_name": "spaces/aSJHG27D6yEvbos52Fsy/uploads/3jrhjQlJz1n5GhyXN0iU/SHERLOCK_Y2K_Audit_Report.pdf",
       "report_url": "https://398575907-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaSJHG27D6yEvbos52Fsy%2Fuploads%2F3jrhjQlJz1n5GhyXN0iU%2FSHERLOCK_Y2K_Audit_Report.pdf",
       "auditor": "Sherlock",
       "audit_type": "contest",
@@ -280,7 +265,10 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -291,7 +279,7 @@
     {
       "audit_id": 14152,
       "audit_key": "audit-14152",
-      "report_name": "Rendered PDF capture",
+      "report_name": "spaces/aSJHG27D6yEvbos52Fsy/uploads/iSOJywuozkhowmbmGO1v/Y2K_Finance_-_Zellic_Audit_Report.pdf",
       "report_url": "https://398575907-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FaSJHG27D6yEvbos52Fsy%2Fuploads%2FiSOJywuozkhowmbmGO1v%2FY2K_Finance_-_Zellic_Audit_Report.pdf",
       "auditor": "Zellic",
       "audit_type": "audit",
@@ -301,6 +289,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -311,44 +302,63 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x65c936f008bc34fe819bce9fa5afd9dc2d49977f",
+      "name": "ClonableBeaconProxy",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x569061e2d807881f4a33e1cbe1063bc614cb75a4",
+      "name": "WeightedPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
-    "upstream": 1,
-    "standard_library": 1,
+    "native": 2,
+    "upstream": 0,
+    "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 167
-    },
+    "match_method_counts": {},
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 14147,
-        "report_name": "DL audit link"
+        "report_name": "spaces/aSJHG27D6yEvbos52Fsy/uploads/cvH67oRCDa5MfmmyxtuU/Peckshield_Y2K.pdf"
       },
       {
         "audit_id": 14148,
-        "report_name": "DL audit link"
+        "report_name": "spaces/aSJHG27D6yEvbos52Fsy/uploads/Hl3FHTkdL3GkcmrpG4xV/Halborn_Y2K.pdf"
       },
       {
         "audit_id": 14149,
-        "report_name": "DL audit link"
+        "report_name": "spaces/aSJHG27D6yEvbos52Fsy/uploads/s53umi8JxWDcLXM2RWkz/Halborn_Y2k_Audit2.pdf"
       },
       {
         "audit_id": 14150,
-        "report_name": "{% embed url=\"<>\" %}"
+        "report_name": "www.verilog.solutions/audits/y2k"
       },
       {
         "audit_id": 14151,
-        "report_name": "Rendered PDF capture"
+        "report_name": "spaces/aSJHG27D6yEvbos52Fsy/uploads/3jrhjQlJz1n5GhyXN0iU/SHERLOCK_Y2K_Audit_Report.pdf"
       },
       {
         "audit_id": 14152,
-        "report_name": "Rendered PDF capture"
+        "report_name": "spaces/aSJHG27D6yEvbos52Fsy/uploads/iSOJywuozkhowmbmGO1v/Y2K_Finance_-_Zellic_Audit_Report.pdf"
       }
     ],
     "inherited_remapped_matches": []

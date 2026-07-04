@@ -1,57 +1,57 @@
 # Agentic Audit Brief: Goat Protocol
 
-⚠️ Lifecycle status: SUNSETTING - TVL dropped 98.5% over 90 days
-
 ## Project Overview
 
 - Project: Goat Protocol (`goat-protocol`)
 - Website: [https://app.goat.fi/](https://app.goat.fi/)
-- Lifecycle: sunsetting (Tier 1, sunsetting)
-- Generated: 2026-06-20T01:25:46.932Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:19.858Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: arbitrum, base, ethereum, sonic
-- Contract surface: 16 unique implementations (27 raw deployments)
-- DeFi Llama TVL: $26,365.74
-- On-chain TVL (included contracts): $126,707.06
-- TVL by chain: Arbitrum $126,566.04 | Sonic $141.02
+- Contract surface: 18 unique implementations (30 raw deployments)
+- DeFi Llama TVL: $16,971.68
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Goat Protocol is a yield aggregator that optimizes user deposits across multiple DeFi strategies. It manages vaults, reward pools, and cross-chain bridging to maximize returns.
+Yield Aggregator. Structurally: 37 project-authored contract(s) across 4 chain(s); 1 ERC4626 vault, 6 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin-upgradeable.
 
 ### Architecture
 
-The Protocol Contracts family shares governance infrastructure via TimelockController and GnosisSafe multisigs. Vaults created by GoatVaultFactory interact with Multistrategy for yield, while GoatRewardPool distributes incentives and GoatSwapper handles asset conversions.
+The protocol comprises 7 functional families. Its contracts share 14 common project-authored base contract(s) (erc165, erc721holder, erc1155holder). Dominant framework: openzeppelin-upgradeable.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 136; live-surface contracts included: 27 (24 live, 3 unknown).
-- Excluded by liveness: 97 inactive, 12 singleton, 0 uninitialized.
-- Deployment units: 2/9 live.
+- Indexed contracts: 110; live-surface contracts included: 30 (29 live, 1 unknown).
+- Excluded by liveness: 80 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 46/74.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/16 (18.8%)
-- Verified + Unaudited implementations: 13
+- Coverage of deployed-live implementations: 3/12 (25.0%)
+- Deployed-live implementations: 17 of 18 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 3/17
+- Verified + Unaudited implementations: 14
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 16
-- Raw deployments: 27
-- Audits discovered: 3
+- Unverified implementations: 1
+- Unique implementations: 18
+- Raw deployments: 30
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 3
-- ASD (verified + unaudited TVL): $103,892.82
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-10 (aging)
-- Staleness: 0 fresh, 1 aging, 2 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 1 aging, 2 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 3 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [sunsetting]. ASD of $103,892.82 represents exposure in a protocol with sunsetting activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 3 | 18.8% | 2024-10 |
+| unknown | Tier 2 | 3 | 17.6% | 2024-10 |
 
 ## Contract Surface
 
@@ -59,26 +59,27 @@ The Protocol Contracts family shares governance infrastructure via TimelockContr
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Multistrategy | core_logic | arbitrum | n/a | 7 deployments: sonic `0x182c6a...f788e9`; sonic `0x901e30...ec0aa6`; arbitrum [`0x0df2e3...00f134`](./contracts/arbitrum-42161/0x0df2e3a0b5997adc69f8768e495fd98a4d00f134/); arbitrum `0x3782ba...ee24e4`; arbitrum `0x8a1ef3...5ce9d3`; arbitrum `0xa7781f...4cdbe5`; arbitrum `0xe1c410...765aab` | ✅ Audited |
-| GoatRewardPool | core_logic | arbitrum | n/a | [`0xad9ce8...fb88ac`](./contracts/arbitrum-42161/0xad9ce8580a1cd887038405275cb02443e8fb88ac/) | ✅ Audited |
 | GoatFeeBatch | periphery | arbitrum | n/a | [`0x7c758f...d62e66`](./contracts/arbitrum-42161/0x7c758f30892f2ad7d7ae29f4a588eab4ddd62e66/) | ✅ Audited |
+| GoatRewardPool | core_logic | arbitrum | n/a | [`0xad9ce8...fb88ac`](./contracts/arbitrum-42161/0xad9ce8580a1cd887038405275cb02443e8fb88ac/) | ✅ Audited |
+| Multistrategy | core_logic | arbitrum | n/a | 7 deployments: sonic `0x182c6a...f788e9`; sonic `0x901e30...ec0aa6`; arbitrum [`0x0df2e3...00f134`](./contracts/arbitrum-42161/0x0df2e3a0b5997adc69f8768e495fd98a4d00f134/); arbitrum `0x3782ba...ee24e4`; arbitrum `0x8a1ef3...5ce9d3`; arbitrum `0xa7781f...4cdbe5`; arbitrum `0xe1c410...765aab` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (13)
+### ⚠️ Verified + Unaudited (14)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| XERC20 | token | arbitrum | n/a | [`0x8c6bd5...84b319`](./contracts/arbitrum-42161/0x8c6bd546fb8b53fe371654a0e54d7a5bd484b319/) | ⚠️ Unaudited |
-| GnosisSafeL2 | governance | arbitrum | unit-40838 | [`0x5be13f...7f5dc5`](./contracts/arbitrum-42161/0x5be13f90cd86a8bb0f0573b550f04b95927f5dc5/) | ⚠️ Unaudited |
+| GnosisSafeL2 | governance | arbitrum | n/a | [`0x5be13f...7f5dc5`](./contracts/arbitrum-42161/0x5be13f90cd86a8bb0f0573b550f04b95927f5dc5/) | ⚠️ Unaudited |
 | GnosisSafeProxy | governance | sonic | n/a | [`0x5be13f...7f5dc5`](./contracts/sonic-146/0x5be13f90cd86a8bb0f0573b550f04b95927f5dc5/) | ⚠️ Unaudited |
 | GOA | unknown | ethereum | n/a | [`0x901e30...ec0aa6`](./contracts/ethereum-1/0x901e3059bf118abc74d917440f0c08fc78ec0aa6/) | ⚠️ Unaudited |
 | GOA_Redeem | unknown | arbitrum | n/a | [`0x1a6e9f...b54369`](./contracts/arbitrum-42161/0x1a6e9fd892b6ca3c6617f31164dbc6f00fb54369/) | ⚠️ Unaudited |
 | LayerZeroBridgeAdapter | operational_periphery | arbitrum | n/a | [`0x667fe8...569bdb`](./contracts/arbitrum-42161/0x667fe8dd40969a5fb92b53e9c8503b454e569bdb/) | ⚠️ Unaudited |
-| SafeL2 | unknown | sonic | unit-40831 (2 proxies) | 2 deployments: sonic [`0xaace41...688b01`](./contracts/sonic-146/0xaace416fcc30e227b023b323299651ec75688b01/); sonic `0xd13263...ddf76f` | ⚠️ Unaudited |
+| SafeL2 | unknown | sonic | n/a | 2 deployments: sonic [`0xaace41...688b01`](./contracts/sonic-146/0xaace416fcc30e227b023b323299651ec75688b01/); sonic `0xd13263...ddf76f` | ⚠️ Unaudited |
 | SafeProxy | unknown | base | n/a | [`0x663c8a...e7e42f`](./contracts/base-8453/0x663c8a709cdc448b657d09f0b5635f22f8e7e42f/) | ⚠️ Unaudited |
 | SiloV2Adapter | adapter | sonic | n/a | 4 deployments: sonic [`0x561f2d...e627e8`](./contracts/sonic-146/0x561f2d29177d60946298416c1d6ce274d7e627e8/); sonic `0x699470...cd34e1`; sonic `0x977686...79fd89`; sonic `0xba812e...e9ee06` | ⚠️ Unaudited |
 | SiloV2VaultAdapter | adapter | sonic | n/a | 2 deployments: sonic [`0x89d2f8...e0e145`](./contracts/sonic-146/0x89d2f8f6c3073968268bd4c99f7790d1b7e0e145/); sonic `0x8f348c...64e436` | ⚠️ Unaudited |
 | StakedGOAStrategy | core_logic | arbitrum | n/a | [`0xe59dac...8d4051`](./contracts/arbitrum-42161/0xe59dacf736abd86d6c6bd4a7b6511f30eb8d4051/) | ⚠️ Unaudited |
 | TimelockController | governance | sonic | n/a | [`0x784abd...b5d58c`](./contracts/sonic-146/0x784abdb952b8dadfcd2f1228d3411110c6b5d58c/) | ⚠️ Unaudited |
+| XERC20 | token | arbitrum | n/a | [`0x8c6bd5...84b319`](./contracts/arbitrum-42161/0x8c6bd546fb8b53fe371654a0e54d7a5bd484b319/) | ⚠️ Unaudited |
+| XERC20Factory | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6f91b3...ae8f18`](./contracts/ethereum-1/0x6f91b345e36fc451893fa1b3873cd30a15ae8f18/); arbitrum [`0x6f91b3...ae8f18`](./contracts/arbitrum-42161/0x6f91b345e36fc451893fa1b3873cd30a15ae8f18/) | ⚠️ Unaudited |
 | XERC20Lockbox | token | ethereum | n/a | [`0xe16a19...a93d60`](./contracts/ethereum-1/0xe16a19968ae9912d58cb8e4df520f6b568a93d60/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -93,19 +94,21 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| FeeConfigurator | unknown | arbitrum | n/a | `0x54619d...1830fc` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [blocksec_goatfi_multistrategy_v1.0-signed.pdf](https://github.com/goatfi/audits/blob/main/blocksec_goatfi_multistrategy_v1.0-signed.pdf) | unknown | Audit | 2024-10 | aging | Direct | contract_name | 7 | high |
-| [02102024-Fortifyx-security-review.pdf](https://github.com/goatfi/audits/blob/main/02102024-Fortifyx-security-review.pdf) | unknown | Audit | 2024-02 | stale | Direct | contract_name | 2 | high |
-| [02142024-tpiliposian-security-review.md](https://github.com/goatfi/audits/blob/main/02142024-tpiliposian-security-review.md) | unknown | Audit | 2024-02 | stale | Direct | contract_name | 1 | high |
+| [blocksec_goatfi_multistrategy_v1.0-signed.pdf](https://github.com/goatfi/audits/blob/main/blocksec_goatfi_multistrategy_v1.0-signed.pdf) | unknown | Audit | 2024-10 | aging | Direct | contract_name | 1 | n/a |
+| [02102024-Fortifyx-security-review.pdf](https://github.com/goatfi/audits/blob/main/02102024-Fortifyx-security-review.pdf) | unknown | Audit | 2024-02 | stale | Direct | contract_name | 2 | n/a |
+| [02142024-tpiliposian-security-review.md](https://github.com/goatfi/audits/blob/main/02142024-tpiliposian-security-review.md) | unknown | Audit | 2024-02 | stale | Direct | contract_name | 1 | n/a |
 
 ## Coverage Gaps
 
@@ -115,16 +118,22 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---|---|---|---:|---|
 | ethereum | [`0x901e30...ec0aa6`](./contracts/ethereum-1/0x901e3059bf118abc74d917440f0c08fc78ec0aa6/) | GOA | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x1a6e9f...b54369`](./contracts/arbitrum-42161/0x1a6e9fd892b6ca3c6617f31164dbc6f00fb54369/) | GOA_Redeem | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x667fe8...569bdb`](./contracts/arbitrum-42161/0x667fe8dd40969a5fb92b53e9c8503b454e569bdb/) | LayerZeroBridgeAdapter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x561f2d...e627e8`](./contracts/sonic-146/0x561f2d29177d60946298416c1d6ce274d7e627e8/) | SiloV2Adapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x89d2f8...e0e145`](./contracts/sonic-146/0x89d2f8f6c3073968268bd4c99f7790d1b7e0e145/) | SiloV2VaultAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xe59dac...8d4051`](./contracts/arbitrum-42161/0xe59dacf736abd86d6c6bd4a7b6511f30eb8d4051/) | StakedGOAStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x8c6bd5...84b319`](./contracts/arbitrum-42161/0x8c6bd546fb8b53fe371654a0e54d7a5bd484b319/) | XERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6f91b3...ae8f18`](./contracts/ethereum-1/0x6f91b345e36fc451893fa1b3873cd30a15ae8f18/) | XERC20Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe16a19...a93d60`](./contracts/ethereum-1/0xe16a19968ae9912d58cb8e4df520f6b568a93d60/) | XERC20Lockbox | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 6 |
-| upstream | 3 |
+| native | 12 |
+| upstream | 0 |
 | standard_library | 5 |
-| needs_review | 2 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -132,7 +141,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=3
-- Match method counts: extraction_exact=15
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=4
 
 Fork inheritance lineage and inherited audits are included when available.

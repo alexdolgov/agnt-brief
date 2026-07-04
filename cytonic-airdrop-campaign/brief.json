@@ -1,36 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "cytonic-airdrop-campaign",
-  "generated_at": "2026-06-21T10:07:53.809Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "cytonic-airdrop-campaign",
-    "tier": 1,
-    "peak_tvl": 28223399,
-    "peak_date": "2025-01-25T00:00:00.000Z",
-    "tvl_30d_ago": 220515,
-    "tvl_90d_ago": 412804,
-    "tvl_current": 179629,
-    "tier0_reason": "catastrophic_collapse_from_peak",
-    "tvl_180d_ago": 849156,
-    "change_30d_pct": -18.541142325918873,
-    "change_90d_pct": -56.48564451894846,
-    "governance_raw": {
-      "evidence": "TVL dropped 99.36% from peak over 512 days with no recent team communications or activity, indicating the protocol is effectively abandoned.",
-      "confidence": 0.95,
-      "lifecycle_status": "dead"
-    },
-    "days_since_peak": 512,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 99.36354582947291,
-    "governance_evidence": "TVL dropped 99.36% from peak over 512 days with no recent team communications or activity, indicating the protocol is effectively abandoned.",
-    "governance_confidence": 0.95,
-    "governance_text_chars": 3261,
-    "governance_classification": "dead",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:10.740Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-1bf2",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 20,
     "total_addresses": 48,
@@ -44,14 +18,14 @@
     "contracts_unverified": 3,
     "coverage_pct": 0,
     "total_audits": 2,
+    "direct_audits": 2,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 175337.50982,
-    "tvl_usd": 70631963.76393764,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 70631963.76
-    },
-    "asd_usd": 70631963.76393764,
+    "dl_tvl_usd": 168991.11943999995,
+    "tvl_usd": 168991.11943999995,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://www.cytonic.com/",
     "chains": [
       "ethereum",
@@ -63,23 +37,32 @@
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 2,
-      "stale": 0,
+      "aging": 1,
+      "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 5,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 3,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "The Cytonic Airdrop Campaign is a DeFi protocol that allows users to deposit assets (likely ETH or stETH) into a vault to earn rewards, potentially including airdrop points. It also provides a bridge depositor contract for cross-chain asset transfers, enabling participation across Ethereum and Manta networks.",
-    "relationship_narrative": "The Cytonic Airdrop Campaign family relies on the BridgeDepositor from the EVM chains family to facilitate cross-chain deposits into the vault. The vault (PufferVaultV5) and token (swETH) are core to the campaign, while the additional TransparentUpgradeableProxy contracts likely serve as supporting infrastructure for access control or reward distribution.",
-    "product_family_count": 2,
+    "project_purpose": "Farm. Structurally: 68 project-authored contract(s) across 2 chain(s); 8 ERC20 tokens, 3 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 9 functional families. Its contracts share 17 common project-authored base contract(s) (whitelist, ownable2step, sybase). Dominant framework: openzeppelin.",
+    "product_family_count": 9,
     "total_contracts_indexed": 48,
-    "live_contracts": 3,
+    "live_contracts": 28,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 45,
-    "deployment_units": 3,
-    "live_deployment_units": 3,
+    "unknown_contracts": 20,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
@@ -94,76 +77,6 @@
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
-      "deployment_unit": "unit-42262",
-      "deployment_unit_proxy_count": 1,
-      "name": "PufferVaultV5",
-      "role": "core_logic",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Cytonic Airdrop Campaign",
-      "tvl_usd": 46554709.19202368,
-      "is_proxy": true,
-      "impl_address": "0x3b2fdfdefe919dbcce0bc5ac426097d5523b8afa",
-      "impl_name": "PufferVaultV5",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
-          "deployment_unit": "unit-42262",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 46554709.19202368,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xf951e335afb289353dc249e82926178eac7ded78",
-      "deployment_unit": "unit-42263",
-      "deployment_unit_proxy_count": 1,
-      "name": "swETH",
-      "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Cytonic Airdrop Campaign",
-      "tvl_usd": 24077254.571913958,
-      "is_proxy": true,
-      "impl_address": "0xce95ba824ae9a4df9b303c0bbf4d605ba2affbfc",
-      "impl_name": "swETH",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xf951e335afb289353dc249e82926178eac7ded78",
-          "deployment_unit": "unit-42263",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 24077254.571913958,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 169,
       "chain_name": "manta",
@@ -208,19 +121,23 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-09 08:27:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xaea5bf79f1e3f2069a99a99928927988ec642e0b",
-      "deployment_unit": "unit-42261",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "BridgeDepositor",
       "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "EVM chains",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0xce84c40211f578d4a2617652748eaf69b13bcbaa",
@@ -230,8 +147,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xaea5bf79f1e3f2069a99a99928927988ec642e0b",
-          "deployment_unit": "unit-42261",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -243,7 +160,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-11-06 21:30:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -289,7 +210,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-17 10:25:49+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -335,7 +260,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-24 07:59:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -381,7 +310,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-17 11:46:09+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -416,7 +349,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-17 04:23:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -451,7 +388,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-23 10:09:49+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -497,7 +438,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-09 05:53:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -508,7 +453,7 @@
       "name": "ProxyAdmin",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_provider": "OpenZeppelin",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -532,7 +477,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2024-05-17 03:49:39+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PufferVaultV5",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Puffer",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x3b2fdfdefe919dbcce0bc5ac426097d5523b8afa",
+      "impl_name": "PufferVaultV5",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd9a442856c234a39a81a089c06451ebaa4306a72",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2024-01-31 20:48:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -567,7 +555,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-17 03:49:29+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf951e335afb289353dc249e82926178eac7ded78",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "swETH",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xce95ba824ae9a4df9b303c0bbf4d605ba2affbfc",
+      "impl_name": "swETH",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf951e335afb289353dc249e82926178eac7ded78",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-04-12 11:33:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -577,7 +608,7 @@
       "deployment_unit_proxy_count": null,
       "name": "SyncOApp",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -602,7 +633,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-17 04:01:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -612,7 +647,7 @@
       "deployment_unit_proxy_count": null,
       "name": "SyncOAppV2",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -637,7 +672,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-13 06:51:49+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -672,7 +711,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-31 04:45:29+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -683,8 +726,8 @@
       "name": "TransparentUpgradeableProxy",
       "role": "proxy",
       "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Cytonic Airdrop Campaign",
+      "origin_provider": "OpenZeppelin",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -949,7 +992,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-03-26 06:11:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -984,7 +1031,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-24 09:43:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -1019,7 +1070,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-17 10:19:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -1054,7 +1109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-05 07:31:49+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -1100,14 +1159,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-05 08:01:19+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 12980,
       "audit_key": "audit-12980",
-      "report_name": "DL audit link",
+      "report_name": "cytonic-fuzzland-report.pdf",
       "report_url": "https://file.cytonic.com/cytonic-fuzzland-report.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -1117,6 +1180,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -1128,16 +1194,19 @@
     {
       "audit_id": 12981,
       "audit_key": "audit-12981",
-      "report_name": "DL audit link",
+      "report_name": "ZellicAuditReport.pdf",
       "report_url": "https://file.cytonic.com/ZellicAuditReport.pdf",
       "auditor": "Zellic",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -1230,6 +1299,36 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf951e335afb289353dc249e82926178eac7ded78",
+      "name": "swETH",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x8ff636868fec5ad39b7afbcfde2ca9e60d5ff870",
+      "name": "SyncOApp",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 169,
+      "chain_name": "manta",
+      "address": "0x9286c6fe4e3ec48c77bd75ac1e0f7be7c95aa90e",
+      "name": "SyncOAppV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 169,
       "chain_name": "manta",
       "address": "0x39944059395a387a8ec327b4fb5ab7c5f6d9858c",
@@ -1261,10 +1360,10 @@
     }
   ],
   "origin_summary": {
-    "native": 12,
-    "upstream": 0,
-    "standard_library": 4,
-    "needs_review": 4
+    "native": 14,
+    "upstream": 1,
+    "standard_library": 2,
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -1274,11 +1373,11 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 12980,
-        "report_name": "DL audit link"
+        "report_name": "cytonic-fuzzland-report.pdf"
       },
       {
         "audit_id": 12981,
-        "report_name": "DL audit link"
+        "report_name": "ZellicAuditReport.pdf"
       }
     ],
     "inherited_remapped_matches": []

@@ -4,45 +4,47 @@
 
 - Project: foxify (`foxify`)
 - Website: [https://www.foxify.trade/](https://www.foxify.trade/)
-- Lifecycle: active (Tier 0, 99.8% below peak)
-- Generated: 2026-06-19T06:13:51.589Z
-- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:16.455Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-66d5
 - Chains: sonic
-- Contract surface: 3 unique implementations (3 raw deployments)
-- DeFi Llama TVL: $3,463,587.22
+- Contract surface: 5 unique implementations (5 raw deployments)
+- DeFi Llama TVL: $3,556,139.52
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Foxify is a funded-account/proprietary trading platform for leveraged perpetual trading. Its public product focuses on on-chain and partner-venue perpetual trading, funded trading accounts, and related FOX and ebFOX staking, membership, and rewards features. Current public sources do not evidence an options-trading product, so options should not be described as part of the protocol unless separately verified.
+Derivatives. Structurally: 1 project-authored contract(s) across 1 chain(s); 4 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+
+### Architecture
+
+The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 13; live-surface contracts included: 3 (3 live, 0 unknown).
-- Excluded by liveness: 5 inactive, 5 singleton, 0 uninitialized.
-- Deployment units: 0/6 live.
+- Indexed contracts: 11; live-surface contracts included: 5 (3 live, 2 unknown).
+- Excluded by liveness: 6 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 3; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
+- Coverage of deployed-live implementations: 0/3 (0.0%)
+- Deployed-live implementations: 3 of 5 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/3
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 3
-- Raw deployments: 3
-- Audits discovered: 0
+- Unverified implementations: 2
+- Unique implementations: 5
+- Raw deployments: 5
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2023-06 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -75,16 +77,20 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | sonic | n/a | `0x91fb98...a9287f` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xc23ce5...0b2779` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [skynet.certik.com/projects/foxify](https://skynet.certik.com/projects/foxify) | CertiK | Audit | 2023-06 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -103,15 +109,19 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [20715] skynet.certik.com/projects/foxify
 
 Fork inheritance lineage and inherited audits are included when available.

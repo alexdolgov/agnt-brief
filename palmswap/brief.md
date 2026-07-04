@@ -1,18 +1,16 @@
 # Agentic Audit Brief: Palmswap
 
-⚠️ Lifecycle status: DEAD - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Palmswap (`palmswap`)
-- Lifecycle: dead (Tier 0, 100% below peak)
-- Generated: 2026-06-19T17:01:15.397Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:40.051Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $0.00
-- On-chain TVL (included contracts): $24,436,181.44
-- TVL by chain: Bsc $24,436,181.44
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
@@ -25,27 +23,29 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 ## Contract Surface Quality
 
-- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 3; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $24,436,181.44
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $24,436,181.44 represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -85,7 +85,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://2474115411-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FgSs7UmtCefVntVTkogKf%2Fuploads%2Fu9FNEjoK2kztwmuTa5o8%2FPalmSwap-audit-report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [spaces/gSs7UmtCefVntVTkogKf/uploads/u9FNEjoK2kztwmuTa5o8/PalmSwap-audit-report.pdf](https://2474115411-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FgSs7UmtCefVntVTkogKf%2Fuploads%2Fu9FNEjoK2kztwmuTa5o8%2FPalmSwap-audit-report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x297453...3aae38`](./contracts/bsc-56/0x29745314b4d294b7c77cdb411b8aaa95923aae38/) | PalmToken | token | $24,436,181.44 | Verified native implementation with $24,436,181.44 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x297453...3aae38`](./contracts/bsc-56/0x29745314b4d294b7c77cdb411b8aaa95923aae38/) | PalmToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
@@ -115,6 +115,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [13651] DL audit link
+- [13651] spaces/gSs7UmtCefVntVTkogKf/uploads/u9FNEjoK2kztwmuTa5o8/PalmSwap-audit-report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,51 +1,51 @@
 # Agentic Audit Brief: Prime Vaults
 
-⚠️ Lifecycle status: SUNSETTING - TVL dropped 98.3% over 90 days
-
 ## Project Overview
 
 - Project: Prime Vaults (`prime-vaults`)
 - Website: [https://app.primevaults.finance](https://app.primevaults.finance)
-- Lifecycle: sunsetting (Tier 1, sunsetting)
-- Generated: 2026-06-19T22:28:10.159Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:44.159Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-0679
 - Chains: berachain
 - Contract surface: 45 unique implementations (59 raw deployments)
-- DeFi Llama TVL: $11,031.83
+- DeFi Llama TVL: $7,779.68
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Prime Vaults is an onchain capital allocator that manages yield-bearing vaults on Berachain. It automates deposit routing and accounting to optimize returns for users.
+Onchain Capital Allocator. Structurally: 4 project-authored contract(s) across 1 chain(s); built on openzeppelin.
 
 ### Architecture
 
-The unnamed core contracts likely represent vault logic and strategy management, while AccountantProviders handle fee and performance accounting. ArcticArchitectureLens serves as a read-only lens into the system, and all contracts are deployed from a single cluster, indicating a unified, self-contained architecture.
+The protocol comprises 3 functional families. Its contracts share 1 common project-authored base contract(s) (primeauth). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 59; live-surface contracts included: 59 (58 live, 1 unknown).
+- Indexed contracts: 59; live-surface contracts included: 59 (18 live, 41 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 15/19.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/4 (75.0%)
+- Coverage of deployed-live implementations: 3/4 (75.0%)
+- Deployed-live implementations: 4 of 45 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 3/4
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 41
 - Unique implementations: 45
 - Raw deployments: 59
-- Audits discovered: 2
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-12 (fresh)
-- Staleness: 2 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 2 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 3 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [sunsetting]. ASD of n/a represents exposure in a protocol with sunsetting activity.
 
 ### Auditor Coverage
 
@@ -134,7 +134,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Prime-Vaults-Security-Review.pdf](https://github.com/shieldify-security/audits-portfolio/blob/main/reports/Prime-Vaults-Security-Review.pdf) | unknown | Audit | 2025-12 | fresh | Direct | n/a | 0 | n/a |
-| [Prime-vault_audit_report_2025-12-22.pdf](https://github.com/Salusec/Salus-audit/blob/main/2025/Prime-vault_audit_report_2025-12-22.pdf) | unknown | Audit | 2025-12 | fresh | Direct | contract_name | 17 | high |
+| [Prime-vault_audit_report_2025-12-22.pdf](https://github.com/Salusec/Salus-audit/blob/main/2025/Prime-vault_audit_report_2025-12-22.pdf) | unknown | Audit | 2025-12 | fresh | Direct | contract_name | 3 | n/a |
 
 ## Coverage Gaps
 
@@ -148,10 +148,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 45 |
+| native | 4 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 41 |
 
 ## Scope Matching Notes
 
@@ -159,8 +159,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=17
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=3
 
 Zero-match audit list:
 

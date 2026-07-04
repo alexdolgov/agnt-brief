@@ -1,0 +1,470 @@
+{
+  "schema_version": "2.0",
+  "project_key": "deq",
+  "generated_at": "2026-07-04T14:53:10.987Z",
+  "pipeline_run_id": "v2-2026-07-04-db4eb6",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 8,
+    "total_addresses": 8,
+    "unique_implementations": 8,
+    "total_deployments": 8,
+    "audited_contracts": 3,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 3,
+    "contracts_verified_unaudited": 5,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 75,
+    "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": null,
+    "tvl_usd": null,
+    "tvl_source": null,
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": null,
+    "chains": [
+      "base",
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2024-05",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 1,
+      "unknown": 0
+    },
+    "live_implementations": 8,
+    "live_verified_implementations": 4,
+    "live_audited_implementations": 3,
+    "live_verified_third_party_excluded": 4,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 3,
+      "diverged": 0,
+      "match_unverified": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Structural profile: 8 project-authored contract(s) across 2 chain(s); 1 ERC721 NFT; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 2 functional families. Its contracts share 4 common project-authored base contract(s) (proxy, contextupgradeable, erc165upgradeable). Dominant framework: openzeppelin.",
+    "product_family_count": 2,
+    "total_contracts_indexed": 8,
+    "live_contracts": 8,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 8,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x11780211a1aab0059bca3e8e201cfe08287319ee",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AvailDepository",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x6fe46c5cfcad18b833c7933e40867d7571370a5e",
+      "impl_name": "AvailDepository",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x11780211a1aab0059bca3e8e201cfe08287319ee",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-20680"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-23 04:42:47+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2603537d10c7bd27ee75427d222ddfc51c637f16",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AvailWithdrawalHelper",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AvailWithdrawalHelper",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2603537d10c7bd27ee75427d222ddfc51c637f16",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-20680"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-23 04:42:47+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0fd135874508ca55f5868146576ce2b402ffbc1b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "DeqRouter",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "DeqRouter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0fd135874508ca55f5868146576ce2b402ffbc1b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-20680"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-23 04:44:47+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x2c1812d91086cd5538f408ed47c813780a3f5583",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ERC1967Proxy",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "OpenZeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x586568b05bafac79ed3fc0a616289d43ca51add4",
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x2c1812d91086cd5538f408ed47c813780a3f5583",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2024-11-19 22:17:25+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x931c9e3a44a48f5b80d7b4abb25e28ab12d1ad2a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ERC1967Proxy",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "OpenZeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xc20ca9c60c058a8e1b47cc00666051d1a66290cd",
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x931c9e3a44a48f5b80d7b4abb25e28ab12d1ad2a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2024-11-19 22:17:13+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5f5a162488e23664b674924d71fdca6c30d7d4b7",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "GnosisSafe",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "Gnosis Safe",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd9db270c1b5e3bd161e8c8503c55ceabee709552",
+      "impl_name": "GnosisSafe",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5f5a162488e23664b674924d71fdca6c30d7d4b7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2024-07-23 02:50:11+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x74cb668d23e6e54524e2e1e4d1c392f5fd611783",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "StakedAvailWormhole",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xf265e9a460daba0e432b6860bdc98aa3566f54e4",
+      "impl_name": "StakedAvailWormhole",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x74cb668d23e6e54524e2e1e4d1c392f5fd611783",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-11-19 18:08:13+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0a5567b11b565970eea4d513a892d3d0e46a6705",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TransparentUpgradeableProxy",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "OpenZeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7601b121ad67a899db0594d37649306340f5d064",
+      "impl_name": "TransparentUpgradeableProxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0a5567b11b565970eea4d513a892d3d0e46a6705",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2024-07-23 04:37:11+03",
+      "deploy_coverage_basis": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 20680,
+      "audit_key": "audit-20680",
+      "report_name": "deq.fi-audit-may24(Public).pdf",
+      "report_url": "https://github.com/Hexens/Smart-Contract-Review-Public-Reports/blob/main/deq.fi-audit-may24(Public).pdf",
+      "auditor": "Hexens",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AvailDepository",
+        "AvailWithdrawalHelper",
+        "DeqRouter",
+        "StakedAvail"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Hexens",
+      "tier": 2,
+      "contracts_covered": 3,
+      "coverage_pct": 37.5,
+      "latest_audit": "2024-05"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x74cb668d23e6e54524e2e1e4d1c392f5fd611783",
+      "name": "StakedAvailWormhole",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 4,
+    "upstream": 0,
+    "standard_library": 4,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 3
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

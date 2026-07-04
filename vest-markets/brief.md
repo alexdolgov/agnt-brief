@@ -1,51 +1,51 @@
 # Agentic Audit Brief: Vest Markets
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 73.4% over 90 days
-
 ## Project Overview
 
 - Project: Vest Markets (`vest-markets`)
 - Website: [https://alpha.vestmarkets.com](https://alpha.vestmarkets.com)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-19T06:14:51.029Z
-- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:54:09.927Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-ae05
 - Chains: arbitrum, bsc, zksync-era
-- Contract surface: 3 unique implementations (3 raw deployments)
-- DeFi Llama TVL: $1,172,935.07
+- Contract surface: 5 unique implementations (8 raw deployments)
+- DeFi Llama TVL: $543,132.96
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Vest Markets is a perpetuals and leveraged trading DEX for equities, crypto and FX. Its bridge contracts are supporting infrastructure rather than the primary protocol identity.
+Derivatives. Structurally: 4 project-authored contract(s) across 1 chain(s); role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin-upgradeable.
 
 ### Architecture
 
-The SrcBridge contract handles cross-chain asset transfers and is deployed on multiple chains, while the Treasury manages protocol fees. The Exchange and RouterV2 contracts facilitate trading and routing, sharing the bridge and treasury infrastructure.
+The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin-upgradeable.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 75; live-surface contracts included: 3 (3 live, 0 unknown).
-- Excluded by liveness: 58 inactive, 14 singleton, 0 uninitialized.
-- Deployment units: 2/11 live.
+- Indexed contracts: 32; live-surface contracts included: 6 (5 live, 1 unknown).
+- Excluded by liveness: 26 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 1/1.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Coverage of deployed-live implementations: 0/3 (0.0%)
+- Deployed-live implementations: 4 of 5 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/4
+- Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 3
-- Raw deployments: 3
-- Audits discovered: 0
+- Unique implementations: 5
+- Raw deployments: 8
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2024-02 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -57,12 +57,14 @@ The SrcBridge contract handles cross-chain asset transfers and is deployed on mu
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SrcBridge | operational_periphery | bsc | unit-23669 | [`0xef14da...372c41`](./contracts/bsc-56/0xef14da66876476c1a75dc057343b97b6bd372c41/) | ⚠️ Unaudited |
-| SrcBridge | operational_periphery | arbitrum | unit-23677 | [`0x80c526...0eda00`](./contracts/arbitrum-42161/0x80c526d1c2fddadb3cd39810cd7a79e07b0eda00/) | ⚠️ Unaudited |
+| DevSrcBridge | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x032aca...e55ca8`](./contracts/arbitrum-42161/0x032aca08c1be8fa4d4902cf8db011769d9e55ca8/); arbitrum `0x0b3b31...495e14` | ⚠️ Unaudited |
+| ProxyAdmin | unknown | arbitrum | n/a | 2 deployments: bsc `0xca0d26...be71cb`; arbitrum [`0x705aaf...6fa7f9`](./contracts/arbitrum-42161/0x705aaffeccb370883531f09c64133d3abb6fa7f9/) | ⚠️ Unaudited |
+| SrcBridge | unknown | bsc | n/a | 2 deployments: bsc [`0xe54e95...38a974`](./contracts/bsc-56/0xe54e9592c8292cb7d82cb8d3e4d0edc22e38a974/); bsc `0xef14da...372c41` | ⚠️ Unaudited |
+| SrcBridge | operational_periphery | arbitrum | n/a | [`0x80c526...0eda00`](./contracts/arbitrum-42161/0x80c526d1c2fddadb3cd39810cd7a79e07b0eda00/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -88,29 +90,38 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [vest_exchange_audit_final.pdf](https://2268699948-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FdHHKjQl5eoFn10pjvodI%2Fuploads%2FKr3ixHKtNsbIwACcYYUo%2Fvest_exchange_audit_final.pdf) | OtterSec | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| arbitrum | [`0x032aca...e55ca8`](./contracts/arbitrum-42161/0x032aca08c1be8fa4d4902cf8db011769d9e55ca8/) | DevSrcBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xe54e95...38a974`](./contracts/bsc-56/0xe54e9592c8292cb7d82cb8d3e4d0edc22e38a974/) | SrcBridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x80c526...0eda00`](./contracts/arbitrum-42161/0x80c526d1c2fddadb3cd39810cd7a79e07b0eda00/) | SrcBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 3 |
 | upstream | 0 |
-| standard_library | 2 |
+| standard_library | 1 |
 | needs_review | 1 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [24539] vest_exchange_audit_final.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

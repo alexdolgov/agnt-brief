@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "xeleb-protocol",
-  "generated_at": "2026-06-19T08:46:34.779Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
-  "lifecycle_status": "unknown",
-  "lifecycle_signal": {
-    "slug": "xeleb-protocol",
-    "tier": 0,
-    "peak_tvl": null,
-    "peak_date": null,
-    "tvl_30d_ago": null,
-    "tvl_90d_ago": null,
-    "tvl_current": null,
-    "tier0_reason": "no_historical_tvl",
-    "tvl_180d_ago": null,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "days_since_peak": null,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": null
-  },
+  "generated_at": "2026-07-04T14:54:13.121Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-4c3e",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 1,
     "total_addresses": 1,
@@ -34,13 +18,13 @@
     "contracts_unverified": 0,
     "coverage_pct": 100,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 1,
     "dl_tvl_usd": null,
-    "tvl_usd": 2084118.5374658455,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "bsc": 2084118.54
-    },
+    "tvl_usd": null,
+    "tvl_source": null,
+    "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://xeleb.io/",
     "chains": [
@@ -49,12 +33,21 @@
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2025-07",
-    "audit_freshness": "fresh",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
-      "fresh": 1,
-      "aging": 0,
+      "fresh": 0,
+      "aging": 1,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 1
     }
   },
   "topography": {
@@ -93,8 +86,8 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Xeleb Protocol",
-      "tvl_usd": 2084118.5374658455,
+      "product_line": null,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "TokenERC20",
@@ -107,7 +100,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 2084118.5374658455,
+          "tvl_usd": null,
           "is_audited": true
         }
       ],
@@ -118,7 +111,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-17 05:02:59+03",
+      "deploy_coverage_basis": "match_unverified"
     }
   ],
   "audits": [
@@ -129,38 +126,21 @@
       "report_url": "https://github.com/verichains/public-audit-reports/blob/1fa1ec8cdebd542c229044e0a5315d20e3c80159/Verichains%20Public%20Audit%20Report%20-%20Xeleb%20Protocol%20-%20v1.0.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "ArnoldAIerc20",
-        "BondingCurve",
-        "CasanovaAIerc20",
-        "Cashier",
-        "CleopatraAIerc20",
-        "Controller",
-        "DoolittleAIerc20",
-        "FreudAIerc20",
-        "GamaAIerc20",
-        "GoatAIerc20",
-        "GreteAIerc20",
-        "MarketPlace",
-        "MissAIerc20",
-        "NikolaAIerc20",
-        "Staking",
-        "TokenERC20",
-        "Vesting",
-        "VestingParam",
-        "WarrenAIerc20"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -182,11 +162,9 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 1
+      "contract_name": 1
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

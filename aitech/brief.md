@@ -1,48 +1,54 @@
 # Agentic Audit Brief: AITECH
 
+⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
+
 ## Project Overview
 
 - Project: AITECH (`aitech`)
 - Website: [https://aitech.io](https://aitech.io)
-- Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-17T07:00:57.429Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown (Tier 0, TVL trajectory)
+- Generated: 2026-07-04T14:52:58.124Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
 - Chains: bsc
-- Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $3,497,966.68
+- Contract surface: 3 unique implementations (3 raw deployments)
+- DeFi Llama TVL: $3,042,903.37
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-AITECH / Solidus AI Tech is an AI infrastructure and cloud compute project focused on GPU/HPC compute, a compute marketplace, and AI agent/workflow services. The AITECH token and staking contracts are supporting components of the ecosystem rather than the core product; unsupported yield-farming framing should be removed unless backed by current documentation or contract behavior.
+Services. Structurally: 3 project-authored contract(s) across 1 chain(s); 1 ERC20 token; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The AITECH token is used as the reward token in the DecubateMasterChef contract, which is deployed via a transparent upgradeable proxy, indicating a shared dependency on the token for reward distribution.
+The protocol comprises 3 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 4; live-surface contracts included: 2 (2 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
-- Deployment units: 1/2 live.
+- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/3
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 2
-- Audits discovered: 1
+- Unique implementations: 3
+- Raw deployments: 3
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-04 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 1 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -54,12 +60,13 @@ The AITECH token is used as the reward token in the DecubateMasterChef contract,
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | AITECH | unknown | bsc | n/a | [`0x2d060e...e4f944`](./contracts/bsc-56/0x2d060ef4d6bf7f9e5edde373ab735513c0e4f944/) | ⚠️ Unaudited |
-| DCBVault | core_logic | bsc | unit-18288 | [`0xf1c3f6...84b096`](./contracts/bsc-56/0xf1c3f68f82e6d2560a12d977b322a5db4684b096/) | ⚠️ Unaudited |
+| DCBVault | core_logic | bsc | n/a | [`0xf1c3f6...84b096`](./contracts/bsc-56/0xf1c3f68f82e6d2560a12d977b322a5db4684b096/) | ⚠️ Unaudited |
+| DecubateMasterChef | unknown | bsc | n/a | [`0x2c4dd7...c31184`](./contracts/bsc-56/0x2c4dd7db5ce6a9a2fb362f64ff189af772c31184/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -83,7 +90,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://skynet.certik.com/projects/solidus-ai-tech) | CertiK | Audit | 2026-04 | fresh | Direct | n/a | 0 | n/a |
+| [skynet.certik.com/projects/solidus-ai-tech](https://skynet.certik.com/projects/solidus-ai-tech) | CertiK | Audit | 2026-04 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -99,7 +106,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 1 |
 | upstream | 0 |
-| standard_library | 1 |
+| standard_library | 2 |
 | needs_review | 0 |
 
 ## Scope Matching Notes
@@ -113,6 +120,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [2651] DL audit link
+- [2651] skynet.certik.com/projects/solidus-ai-tech
 
 Fork inheritance lineage and inherited audits are included when available.

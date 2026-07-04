@@ -1,27 +1,26 @@
 # Agentic Audit Brief: KlaySwap
 
-⚠️ Lifecycle status: DECLINING - TVL changed 3.0% over 90 days
-
 ## Project Overview
 
 - Project: KlaySwap (`klayswap`)
 - Website: [https://klayswap.com/dashboard](https://klayswap.com/dashboard)
-- Lifecycle: declining (Tier 1, sunsetting)
-- Generated: 2026-06-17T19:08:34.253Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:29.263Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16da
 - Chains: klaytn
-- Contract surface: 22 unique implementations (22 raw deployments)
-- DeFi Llama TVL: $3,852,968.00
+- Contract surface: 1 unique implementations (22 raw deployments)
+- DeFi Llama TVL: $3,746,886.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-KLAYswap is an AMM-based instant swap decentralized exchange on Kaia, formerly Klaytn, enabling token swaps and liquidity provision. Claims about separate V1/V3 product families or concentrated-liquidity functionality should be treated as unverified unless corroborated by accessible documentation, verified contract metadata, or audit scope text.
-
-### Architecture
-
-KlaySwap V1 and V3 are separate product families sharing the same Klaytn deployment but likely operate independently with distinct contract sets. No shared infrastructure contracts are explicitly identified in the provided inventory.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
@@ -33,19 +32,21 @@ KlaySwap V1 and V3 are separate product families sharing the same Klaytn deploym
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 22
-- Unique implementations: 22
+- Unverified implementations: 1
+- Unique implementations: 1
 - Raw deployments: 22
-- Audits discovered: 4
+- Audits discovered: 4 (4 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2024-07 (aging)
-- Staleness: 0 fresh, 1 aging, 3 stale, 0 unknown
+- Latest audit: 2024-07 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 4 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -73,43 +74,22 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (22)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | klaytn | n/a | `0x01431f...23341d` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x036305...4701cf` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x05343b...9e5987` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x09067f...9a5a5f` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x128955...2f837d` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x19aac5...1a4432` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x29990a...b4936e` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x2ce59e...38997f` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x2f3713...054830` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x3c9736...797887` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x3d5465...a1bc6c` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x3e8477...2dc293` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x51d233...5d317b` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x689d8e...923593` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x6c14e2...d141a0` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x71b59e...5b1890` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x7a74b3...5ac876` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0xa15be7...502ac9` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0xb43879...666bfc` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0xc6a2ad...9e7654` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0xd1890d...4009e6` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0xe0fbb2...cf8cb9` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | 22 deployments: klaytn `0x01431f...23341d`; klaytn `0x036305...4701cf`; klaytn `0x05343b...9e5987`; klaytn `0x09067f...9a5a5f`; klaytn `0x128955...2f837d`; klaytn `0x19aac5...1a4432`; klaytn `0x29990a...b4936e`; klaytn `0x2ce59e...38997f`; klaytn `0x2f3713...054830`; klaytn `0x3c9736...797887`; klaytn `0x3d5465...a1bc6c`; klaytn `0x3e8477...2dc293`; klaytn `0x51d233...5d317b`; klaytn `0x689d8e...923593`; klaytn `0x6c14e2...d141a0`; klaytn `0x71b59e...5b1890`; klaytn `0x7a74b3...5ac876`; klaytn `0xa15be7...502ac9`; klaytn `0xb43879...666bfc`; klaytn `0xc6a2ad...9e7654`; klaytn `0xd1890d...4009e6`; klaytn `0xe0fbb2...cf8cb9` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [**Read the Smart Contract Audit Reports here (Link)** (also discovered via alternate URL)](https://github.com/KlaySwap/klayswap/blob/master/audit/Smart_Contract_Audit_Report_KlaySwap_ver_2.0.pdf) | unknown | Audit | 2021-03 | stale | Direct | n/a | 0 | n/a |
+| [Smart_Contract_Audit_Report_KlaySwap_ver_2.0.pdf](https://github.com/KlaySwap/klayswap/blob/master/audit/Smart_Contract_Audit_Report_KlaySwap_ver_2.0.pdf) | unknown | Audit | 2021-03 | stale | Direct | n/a | 0 | n/a |
 | [(Theori)_Ozys-KLAYswap_Final_Report-2021_10_07.pdf](https://github.com/KlaySwap/klayswap/blob/master/audit/(Theori)_Ozys-KLAYswap_Final_Report-2021_10_07.pdf) | Theori | Audit | 2021-10 | stale | Direct | n/a | 0 | n/a |
 | [[78ResearchLab] OZYS_KLAYSWAP_V8(Final).pdf](https://github.com/KlaySwap/klayswap/blob/master/audit/%5B78ResearchLab%5D%20OZYS_KLAYSWAP_V8(Final).pdf) | 78ResearchLab | Audit | 2024-05 | stale | Direct | n/a | 0 | n/a |
-| [[ChainLight] New KLAYswap Security Audit v1.0.pdf](https://github.com/KlaySwap/klayswap/blob/master/audit/%5BChainLight%5D%20New%20KLAYswap%20Security%20Audit%20v1.0.pdf) | yAudit | Audit | 2024-07 | aging | Direct | n/a | 0 | n/a |
+| [[ChainLight] New KLAYswap Security Audit v1.0.pdf](https://github.com/KlaySwap/klayswap/blob/master/audit/%5BChainLight%5D%20New%20KLAYswap%20Security%20Audit%20v1.0.pdf) | yAudit | Audit | 2024-07 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -124,7 +104,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 22 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -137,7 +117,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [2551] **Read the Smart Contract Audit Reports here (Link)**
+- [2551] Smart_Contract_Audit_Report_KlaySwap_ver_2.0.pdf
 - [2552] (Theori)_Ozys-KLAYswap_Final_Report-2021_10_07.pdf
 - [2553] [78ResearchLab] OZYS_KLAYSWAP_V8(Final).pdf
 - [2554] [ChainLight] New KLAYswap Security Audit v1.0.pdf

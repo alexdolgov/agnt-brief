@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "tristero",
-  "generated_at": "2026-06-19T13:30:29.135Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
-  "lifecycle_status": "unknown",
-  "lifecycle_signal": {
-    "slug": "tristero",
-    "tier": 0,
-    "peak_tvl": 1058,
-    "peak_date": "2026-05-11T00:00:00.000Z",
-    "tvl_30d_ago": 386,
-    "tvl_90d_ago": null,
-    "tvl_current": 132,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": null,
-    "change_30d_pct": -65.80310880829016,
-    "change_90d_pct": null,
-    "days_since_peak": 39,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 87.52362948960302
-  },
+  "generated_at": "2026-07-04T14:54:02.469Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-4c3e",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 2,
     "total_addresses": 4,
@@ -34,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 353,
-    "tvl_usd": 353,
+    "dl_tvl_usd": 106,
+    "tvl_usd": 106,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -55,11 +41,20 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 2,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Tristero is a decentralized derivatives and spot trading protocol that enables users to trade with leverage or spot across multiple chains. It uses escrow contracts to custody collateral and manage trade settlement.",
-    "relationship_narrative": "The protocol currently consists of a single product family, Tristero Margin, which relies on escrow contracts deployed on multiple chains. All contracts share the same deployer and are part of a unified margin trading system.",
+    "project_purpose": "Structural profile: 2 project-authored contract(s) across 2 chain(s); 2 ERC721 NFTs; built on openzeppelin.",
+    "relationship_narrative": "The protocol forms a single structural family (Operational Periphery) of 2 contract(s).",
     "product_family_count": 1,
     "total_contracts_indexed": 4,
     "live_contracts": 4,
@@ -69,7 +64,7 @@
     "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 1,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -93,7 +88,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Tristero Margin",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -116,7 +111,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-20 01:32:33+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -128,7 +127,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Tristero Margin",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -173,7 +172,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-31 23:34:59+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -190,6 +193,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,

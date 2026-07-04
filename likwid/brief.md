@@ -1,27 +1,25 @@
 # Agentic Audit Brief: Likwid
 
-⚠️ Lifecycle status: UNKNOWN - TVL changed 625.7% over 90 days
-
 ## Project Overview
 
 - Project: Likwid (`likwid`)
 - Website: [https://likwid.fi](https://likwid.fi)
-- Lifecycle: unknown (Tier 0, 21.9% below peak)
-- Generated: 2026-06-21T06:52:15.119Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:30.059Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16da
 - Chains: bsc
 - Contract surface: 5 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $52,661.52
-- On-chain TVL (included contracts): $3,117.75
-- TVL by chain: Bsc $3,117.75
+- DeFi Llama TVL: $52,591.53
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Likwid is a DeFi derivatives protocol on BSC that enables users to manage leveraged positions, lending, and liquidity provision through a vault-based system. It offers structured products for margin trading, pair positions, and lending, all orchestrated by a central vault contract.
+Derivatives. Structurally: 5 project-authored contract(s) across 1 chain(s); 4 ERC721 NFTs; built on solmate.
 
 ### Architecture
 
-The LikwidVault serves as the core logic contract, coordinating user deposits and managing risk across the three position contracts (Margin, Pair, Lend). The LikwidHelper provides peripheral support functions, likely for calculations or data formatting, to assist the vault and position contracts.
+The protocol comprises 2 functional families. Its contracts share 2 common project-authored base contract(s) (basepositionmanager, immutablestate). Dominant framework: solmate.
 
 ## Contract Surface Quality
 
@@ -29,23 +27,25 @@ The LikwidVault serves as the core logic contract, coordinating user deposits an
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 4; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 4/5 (80.0%)
+- Coverage of deployed-live implementations: 4/5 (80.0%)
+- Deployed-live implementations: 5 of 5 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 4/5
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 5
 - Raw deployments: 5
-- Audits discovered: 2
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-01 (fresh)
-- Staleness: 2 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 2 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 4 match-unverified
 - Tier 1 coverage: 80.0% (Sherlock)
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -60,10 +60,10 @@ The LikwidVault serves as the core logic contract, coordinating user deposits an
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| LikwidVault | core_logic | bsc | n/a | [`0x065d44...30e4ba`](./contracts/bsc-56/0x065d449ec9d139740343990b7e1cf05fa830e4ba/) | ✅ Audited |
 | LikwidLendPosition | unknown | bsc | n/a | [`0xce91db...06618e`](./contracts/bsc-56/0xce91db5947228bba595c3cac49eb24053a06618e/) | ✅ Audited |
 | LikwidMarginPosition | unknown | bsc | n/a | [`0x6bec0c...d7abe8`](./contracts/bsc-56/0x6bec0c1dc4898484b7f094566ddf8bc82ed7abe8/) | ✅ Audited |
 | LikwidPairPosition | unknown | bsc | n/a | [`0xb397fe...e07bcd`](./contracts/bsc-56/0xb397fe16be79b082f17f1cd96e6489df19e07bcd/) | ✅ Audited |
+| LikwidVault | core_logic | bsc | n/a | [`0x065d44...30e4ba`](./contracts/bsc-56/0x065d449ec9d139740343990b7e1cf05fa830e4ba/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
@@ -93,8 +93,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [2025_11_13_Zenith_Likwid_V2_2_Audit_Report.pdf](https://github.com/likwid-fi/likwid-margin/blob/main/audits/2025_11_13_Zenith_Likwid_V2_2_Audit_Report.pdf) | unknown | Audit | 2025-10 | fresh | Direct | contract_name | 4 | high |
-| [2026_02_05_Sherlock_Likwid_V2_2_Audit_Report.pdf](https://github.com/likwid-fi/likwid-margin/blob/main/audits/2026_02_05_Sherlock_Likwid_V2_2_Audit_Report.pdf) | Sherlock | Contest | 2026-01 | fresh | Direct | contract_name | 4 | high |
+| [2025_11_13_Zenith_Likwid_V2_2_Audit_Report.pdf](https://github.com/likwid-fi/likwid-margin/blob/main/audits/2025_11_13_Zenith_Likwid_V2_2_Audit_Report.pdf) | unknown | Audit | 2025-10 | fresh | Direct | contract_name | 4 | n/a |
+| [2026_02_05_Sherlock_Likwid_V2_2_Audit_Report.pdf](https://github.com/likwid-fi/likwid-margin/blob/main/audits/2026_02_05_Sherlock_Likwid_V2_2_Audit_Report.pdf) | Sherlock | Contest | 2026-01 | fresh | Direct | contract_name | 4 | n/a |
 
 ## Coverage Gaps
 
@@ -119,7 +119,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2
-- Match method counts: extraction_exact=8
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=8
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,51 +1,51 @@
 # Agentic Audit Brief: KAIO
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 32.0% over 90 days
-
 ## Project Overview
 
 - Project: KAIO (`kaio`)
 - Website: [https://www.kaio.xyz/](https://www.kaio.xyz/)
-- Lifecycle: declining (Tier 0, 49.4% below peak)
-- Generated: 2026-06-17T07:00:36.838Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:27.872Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: sei
-- Contract surface: 5 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $60,807,206.79
+- Contract surface: 30 unique implementations (30 raw deployments)
+- DeFi Llama TVL: $60,798,378.28
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-KAIO, previously Libre Capital, is an institutional fund and real-world asset (RWA) platform focused on bringing regulated funds onchain. The project provides compliant fund tokenization and access infrastructure, interoperability across supported chains, liquidity access, mirrored/receipt token components, and a sovereign AppChain for regulated onchain fund distribution and management.
+RWA. Structurally: 4 project-authored contract(s) across 1 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin-upgradeable.
 
 ### Architecture
 
-All contracts belong to a single product family, KAIO, which uses ERC1967Proxy for upgradeability across its core token contracts. SecurityTokenMirror and LibreReceiptToken instances are deployed via proxies and share supporting infrastructure like InvestorRegistryMirror for compliance and LibreEdgeGateway for cross-chain interactions.
+The protocol comprises 2 functional families. Its contracts share 1 common project-authored base contract(s) (proxy). Dominant framework: openzeppelin-upgradeable.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 206; live-surface contracts included: 5 (5 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 201 singleton, 0 uninitialized.
-- Deployment units: 0/55 live.
+- Indexed contracts: 187; live-surface contracts included: 30 (0 live, 30 unknown).
+- Excluded by liveness: 157 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 30 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 5
-- Unique implementations: 5
-- Raw deployments: 5
-- Audits discovered: 0
+- Unverified implementations: 30
+- Unique implementations: 30
+- Raw deployments: 30
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -73,17 +73,42 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (5)
+### ❓ Unverified (30)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| UnnamedContract | unknown | sei | n/a | `0x07c923...4daa3c` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0x1bf0b6...bb10cc` | ❓ Unverified |
 | UnnamedContract | unknown | sei | n/a | `0x2018a6...804e20` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0x2ec750...30aba0` | ❓ Unverified |
 | UnnamedContract | unknown | sei | n/a | `0x34c424...77d4e7` | ❓ Unverified |
 | UnnamedContract | unknown | sei | n/a | `0x39cc01...6b26e7` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0x3b42bb...378cba` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0x4d1b4e...3f4711` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0x65f4fc...373f74` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0x6b8d62...29bdd4` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0x7a35f5...662c1c` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0x7b6b75...4ae74d` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0x7bb2a7...04f714` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0x8184f5...ba9b47` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0x87f014...4ca5db` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0x8fb15f...75c5de` | ❓ Unverified |
 | UnnamedContract | unknown | sei | n/a | `0x8fe9d1...ff748a` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0x9752aa...efe898` | ❓ Unverified |
 | UnnamedContract | unknown | sei | n/a | `0x9998ee...0b078a` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0x9a6f09...b0b329` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0xa1f019...6f9882` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0xa2029a...da0715` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0xb3e349...254485` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0xc5306f...f58200` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0xcccb6a...46ca7a` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0xd0d235...3438f7` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0xd2029c...23c3de` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0xd2bc19...e75913` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0xde9ad8...3c2446` | ❓ Unverified |
+| UnnamedContract | unknown | sei | n/a | `0xe328f7...2f323d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -103,7 +128,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 5 |
+| needs_review | 30 |
 
 ## Scope Matching Notes
 

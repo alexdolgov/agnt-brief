@@ -4,11 +4,11 @@
 
 - Project: ABEL Finance (`abel-finance`)
 - Lifecycle: unknown
-- Generated: 2026-06-13T11:16:19.628Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
+- Generated: 2026-07-03T21:05:24.235Z
+- Pipeline run: brief-restore-2026-07
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $407,182.09
+- DeFi Llama TVL: $400,103.03
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,19 +21,30 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 0 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 0
 - Raw deployments: 0
-- Audits discovered: 2
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2022 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 1 unknown
+- Latest audit: 2022-01 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -73,7 +84,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [ABEL FINANCE KYC CERTIFICATE.pdf](https://github.com/Vital-block/Project-KYC-Verification/blob/main/ABEL%20FINANCE%20KYC%20CERTIFICATE.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ABEL FINANCE Audit-Report.pdf](https://github.com/Vital-block/Smart-Contract-Audit/blob/main/ABEL%20FINANCE%20Audit-Report.pdf) | unknown | Audit | 2022 | stale | Direct | n/a | 0 | n/a |
+| [ABEL FINANCE Audit-Report.pdf](https://github.com/Vital-block/Smart-Contract-Audit/blob/main/ABEL%20FINANCE%20Audit-Report.pdf) | unknown | Audit | 2022-01 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 

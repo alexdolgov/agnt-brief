@@ -1,51 +1,58 @@
 # Agentic Audit Brief: Ronin Bridge
 
-⚠️ Lifecycle status: DEAD - TVL dropped 20.3% over 90 days
-
 ## Project Overview
 
 - Project: Ronin Bridge (`ronin-bridge`)
 - Website: [https://app.roninchain.com/bridge](https://app.roninchain.com/bridge)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-17T07:00:46.801Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:48.850Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-0679
 - Chains: ethereum
 - Contract surface: 4 unique implementations (4 raw deployments)
-- DeFi Llama TVL: $3,720,579.49
+- DeFi Llama TVL: $3,538,156.02
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-The Ronin Bridge is a canonical bridge enabling asset transfers between the Ronin sidechain and Ethereum mainnet. It uses a gateway contract on Ethereum to lock and release tokens, secured by a validator set.
+Canonical Bridge. Structurally: 32 project-authored contract(s) across 1 chain(s); built on openzeppelin.
 
 ### Architecture
 
-The Ronin Bridge family relies on the RoninValidator contract for validator set management and signature verification. The CREATE2 factory is a shared infrastructure component for deploying contracts deterministically.
+The protocol comprises 3 functional families. Its contracts share 6 common project-authored base contract(s) (ocr2abstract, tokenpool, aggregateratelimiter). Dominant framework: openzeppelin.
+
+## Fork Lineage
+
+This project reuses audited code from **KEEP Network** (`keep-network`) in the CommitStore, EVM2EVMOffRamp, EVM2EVMOnRamp, RMN subsystem.
+8 audits inherited from `keep-network`, scoped to that subsystem.
+
+Total inherited audits: 8. Inherited coverage reflects forked/shared code audited by the origin project — it is not a direct audit of this project.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 18; live-surface contracts included: 4 (4 live, 0 unknown).
-- Excluded by liveness: 10 inactive, 4 singleton, 0 uninitialized.
-- Deployment units: 0/2 live.
+- Indexed contracts: 4; live-surface contracts included: 4 (3 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 3; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
+- Coverage of deployed-live implementations: 0/3 (0.0%)
+- Deployed-live implementations: 3 of 4 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/3
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 4
 - Raw deployments: 4
-- Audits discovered: 0
+- Audits discovered: 13 (5 direct, 8 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2025-11 (fresh)
+- Audit staleness (calendar age): 6 fresh, 3 aging, 4 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -89,6 +96,19 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [drive.google.com/file/d/1ymBpfc9vihOVA-XccqhpeitnZS208O5u/view](https://drive.google.com/file/d/1ymBpfc9vihOVA-XccqhpeitnZS208O5u/view) | unknown | Audit | 2025-11 | fresh | Inherited from KEEP Network — forked code, scoped to CommitStore, EVM2EVMOffRamp, EVM2EVMOnRamp, RMN | inherited | 0 | n/a |
+| [drive.google.com/file/d/1QK1jnaoqdtoeyqTD7xz93sSk1BwerFwe/view](https://drive.google.com/file/d/1QK1jnaoqdtoeyqTD7xz93sSk1BwerFwe/view?usp=sharing) | unknown | Audit | 2025-11 | fresh | Inherited from KEEP Network — forked code, scoped to CommitStore, EVM2EVMOffRamp, EVM2EVMOnRamp, RMN | inherited | 0 | n/a |
+| [drive.google.com/file/d/1oQJO-fW4ZUUS_DQovOtaB9CB7U6YT0AP/view](https://drive.google.com/file/d/1oQJO-fW4ZUUS_DQovOtaB9CB7U6YT0AP/view?usp=sharing) | unknown | Audit | 2025-11 | fresh | Inherited from KEEP Network — forked code, scoped to CommitStore, EVM2EVMOffRamp, EVM2EVMOnRamp, RMN | inherited | 0 | n/a |
+| [drive.google.com/file/d/1RW4Bb3Rd_HdOU8pVxLpIRXCXDYKubeIp/view](https://drive.google.com/file/d/1RW4Bb3Rd_HdOU8pVxLpIRXCXDYKubeIp/view?usp=sharing) | unknown | Audit | 2025-10 | fresh | Inherited from KEEP Network — forked code, scoped to CommitStore, EVM2EVMOffRamp, EVM2EVMOnRamp, RMN | inherited | 0 | n/a |
+| [drive.google.com/file/d/1Sxc5qx69qQtqdy7AtscoAHyGaSyqyYJM/view](https://drive.google.com/file/d/1Sxc5qx69qQtqdy7AtscoAHyGaSyqyYJM/view?usp=sharing) | unknown | Audit | 2025-09 | fresh | Inherited from KEEP Network — forked code, scoped to CommitStore, EVM2EVMOffRamp, EVM2EVMOnRamp, RMN | inherited | 0 | n/a |
+| [drive.google.com/file/d/1rbVYly_VuW6LdAwhpbgxO8DpNiBn-6Vk/view](https://drive.google.com/file/d/1rbVYly_VuW6LdAwhpbgxO8DpNiBn-6Vk/view?usp=sharing) | unknown | Audit | 2025-09 | fresh | Inherited from KEEP Network — forked code, scoped to CommitStore, EVM2EVMOffRamp, EVM2EVMOnRamp, RMN | inherited | 0 | n/a |
+| [www.notion.so/threshold-labs/tBTC-Direct-Minting-Audit-Reports-1ec45959b48e8008ab0fe7b20a130760](https://www.notion.so/threshold-labs/tBTC-Direct-Minting-Audit-Reports-1ec45959b48e8008ab0fe7b20a130760?source=copy_link) | Code4rena | Contest | 2025-04 | aging | Inherited from KEEP Network — forked code, scoped to CommitStore, EVM2EVMOffRamp, EVM2EVMOnRamp, RMN | inherited | 0 | n/a |
+| [240411_Thesis_Defense-Threshold_tBTC_Base_Smart_Contracts_Security_Audit_Report.pdf](https://github.com/thesis/defense_public_security-audit-reports/blob/main/PDFs/240411_Thesis_Defense-Threshold_tBTC_Base_Smart_Contracts_Security_Audit_Report.pdf) | Thesis Defense | Audit | 2024-04 | stale | Inherited from KEEP Network — forked code, scoped to CommitStore, EVM2EVMOffRamp, EVM2EVMOnRamp, RMN | inherited | 0 | n/a |
+| [Verichains-Audit-Ronin-Bridge-v1.1-8d4913ed1f3197a108f80de1de4c4407.pdf](https://docs.roninchain.com/assets/files/Verichains-Audit-Ronin-Bridge-v1.1-8d4913ed1f3197a108f80de1de4c4407.pdf) | Code4rena | Contest | 2022-06 | stale | Direct | n/a | 0 | n/a |
+| [Ronin-Bridge_202309081700-ee1bc04da378360c2ebeff337d8101e2.pdf](https://docs.roninchain.com/assets/files/Ronin-Bridge_202309081700-ee1bc04da378360c2ebeff337d8101e2.pdf) | yAudit | Audit | 2023-09 | stale | Direct | n/a | 0 | n/a |
+| [Beosin-Audit-Ronin-Bridge-August-24-cce7cef08749809d6353fe1443711e99.pdf](https://docs.roninchain.com/assets/files/Beosin-Audit-Ronin-Bridge-August-24-cce7cef08749809d6353fe1443711e99.pdf) | yAudit | Audit | 2024-08 | aging | Direct | n/a | 0 | n/a |
+| [Verichains-Audit-Ronin-Bridge-August-24-cfabc8c3321442e4a84b25c22a08d20b.pdf](https://docs.roninchain.com/assets/files/Verichains-Audit-Ronin-Bridge-August-24-cfabc8c3321442e4a84b25c22a08d20b.pdf) | yAudit | Audit | 2024-08 | aging | Direct | n/a | 0 | n/a |
+| [CertiK-Audit-for-Ronin-DPoS-Contracts-6f67eca01db5b8756cd0a8aee93e8aa1.pdf](https://docs.roninchain.com/assets/files/CertiK-Audit-for-Ronin-DPoS-Contracts-6f67eca01db5b8756cd0a8aee93e8aa1.pdf) | CertiK | Audit | 2023-03 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -106,16 +126,32 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 3 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 0 |
+| standard_library | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 13
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Match method counts: inherited_name_remap=2160
+
+Zero-match audit list:
+
+- [19157] drive.google.com/file/d/1ymBpfc9vihOVA-XccqhpeitnZS208O5u/view
+- [19158] drive.google.com/file/d/1QK1jnaoqdtoeyqTD7xz93sSk1BwerFwe/view
+- [19159] drive.google.com/file/d/1oQJO-fW4ZUUS_DQovOtaB9CB7U6YT0AP/view
+- [19160] drive.google.com/file/d/1RW4Bb3Rd_HdOU8pVxLpIRXCXDYKubeIp/view
+- [19161] drive.google.com/file/d/1Sxc5qx69qQtqdy7AtscoAHyGaSyqyYJM/view
+- [19162] drive.google.com/file/d/1rbVYly_VuW6LdAwhpbgxO8DpNiBn-6Vk/view
+- [19163] www.notion.so/threshold-labs/tBTC-Direct-Minting-Audit-Reports-1ec45959b48e8008ab0fe7b20a130760
+- [19164] 240411_Thesis_Defense-Threshold_tBTC_Base_Smart_Contracts_Security_Audit_Report.pdf
+- [20989] Verichains-Audit-Ronin-Bridge-v1.1-8d4913ed1f3197a108f80de1de4c4407.pdf
+- [20990] Ronin-Bridge_202309081700-ee1bc04da378360c2ebeff337d8101e2.pdf
+- [20991] Beosin-Audit-Ronin-Bridge-August-24-cce7cef08749809d6353fe1443711e99.pdf
+- [20992] Verichains-Audit-Ronin-Bridge-August-24-cfabc8c3321442e4a84b25c22a08d20b.pdf
+- [20993] CertiK-Audit-for-Ronin-DPoS-Contracts-6f67eca01db5b8756cd0a8aee93e8aa1.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

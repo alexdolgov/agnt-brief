@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "seedify",
-  "generated_at": "2026-06-20T01:37:44.517Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
-  "lifecycle_status": "unknown",
-  "lifecycle_signal": {
-    "slug": "seedify",
-    "tier": 0,
-    "peak_tvl": 0,
-    "peak_date": "2022-03-05T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 0,
-    "tvl_current": 0,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 0,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "days_since_peak": 1568,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 0
-  },
+  "generated_at": "2026-07-04T14:53:55.241Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-43c7",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 5,
-    "total_addresses": 35,
-    "unique_implementations": 5,
-    "total_deployments": 35,
+    "total_contracts": 8,
+    "total_addresses": 38,
+    "unique_implementations": 8,
+    "total_deployments": 38,
     "audited_contracts": 0,
     "unaudited_contracts": 5,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 3,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 32109.66138,
-    "tvl_usd": 32109.66138,
+    "dl_tvl_usd": 29401.20808,
+    "tvl_usd": 29401.20808,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -55,26 +41,35 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 5,
+    "live_verified_implementations": 5,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Seedify is a launchpad and incubator for blockchain projects, enabling users to stake SFUND tokens to participate in initial DEX offerings (IDOs) and earn rewards. It provides token locking, staking, and cross-chain token functionality to support project launches and community engagement.",
-    "relationship_narrative": "The SFUND_OFTv1 token serves as the cross-chain utility token, while IDOLocking contracts manage staking for IDO participation across multiple chains. SMD_v5 likely handles reward distribution or staking mechanics, and InitializableERC20 may be used for project tokens launched through the platform.",
-    "product_family_count": 1,
+    "project_purpose": "Launchpad. Structurally: 11 project-authored contract(s) across 3 chain(s); 3 ERC20 tokens, 2 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Its contracts share 9 common project-authored base contract(s) (erc165, accesscontrolenumerable, erc721base). Dominant framework: openzeppelin.",
+    "product_family_count": 3,
     "total_contracts_indexed": 79,
     "live_contracts": 35,
-    "inactive_contracts": 44,
+    "inactive_contracts": 41,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 3,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 3,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 5,
+    "unique_implementations": 8,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -93,7 +88,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Seedify",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -369,7 +364,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-10-23 15:20:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -379,9 +378,9 @@
       "deployment_unit_proxy_count": null,
       "name": "InitializableERC20",
       "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Seedify",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -404,7 +403,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-02-25 04:02:38+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -416,7 +419,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Seedify",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -450,7 +453,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-23 16:15:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -540,7 +547,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-10-23 19:55:22+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -586,14 +597,135 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-10-23 15:16:39+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x41484c0effb25e599a3529a9911b839744699838",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x41484c0effb25e599a3529a9911b839744699838",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-10-03 21:16:16+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x5ede64cc5bb278777cdf5a67da721ac73dcd74a4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x5ede64cc5bb278777cdf5a67da721ac73dcd74a4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-10-03 21:15:21+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x8482d2b7c27f7b9f7cf20a70a0fd349ff54f872c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x8482d2b7c27f7b9f7cf20a70a0fd349ff54f872c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-10-03 21:15:44+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 13814,
       "audit_key": "audit-13814",
-      "report_name": "DL audit link",
+      "report_name": "61cadee5f08b9f251e0e719e_Seedify audit report.pdf",
       "report_url": "https://assets.website-files.com/5f99eb79d508ca853be5f2e8/61cadee5f08b9f251e0e719e_Seedify%20audit%20report.pdf",
       "auditor": "yAudit",
       "audit_type": "audit",
@@ -603,6 +735,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -620,6 +755,16 @@
       "address": "0x027fc3a49383d0e7bd6b81ef6c7512afd7d22a9e",
       "name": "IDOLocking",
       "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x477bc8d23c634c154061869478bce96be6045d12",
+      "name": "InitializableERC20",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -656,10 +801,10 @@
     }
   ],
   "origin_summary": {
-    "native": 4,
+    "native": 5,
     "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 0
+    "standard_library": 0,
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -669,7 +814,7 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 13814,
-        "report_name": "DL audit link"
+        "report_name": "61cadee5f08b9f251e0e719e_Seedify audit report.pdf"
       }
     ],
     "inherited_remapped_matches": []

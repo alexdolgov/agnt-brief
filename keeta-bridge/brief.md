@@ -4,26 +4,26 @@
 
 - Project: Keeta Bridge (`keeta-bridge`)
 - Website: [https://keeta.com/](https://keeta.com/)
-- Lifecycle: active (Tier 0, 20.4% below peak)
-- Generated: 2026-06-17T07:00:57.558Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:29.158Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: base
 - Contract surface: 4 unique implementations (4 raw deployments)
-- DeFi Llama TVL: $1,342,968.02
+- DeFi Llama TVL: $1,061,302.73
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Keeta Bridge is a canonical bridge between Base and the Keeta network.
+Canonical Bridge. Structurally: 4 project-authored contract(s) across 1 chain(s); 1 ERC20 token; built on openzeppelin.
 
 ### Architecture
 
-The Bridge contract serves as the core operational component, while the supporting Contract likely provides auxiliary functionality such as access control or registry services. Both contracts are deployed by the same deployer, indicating a unified infrastructure.
+The protocol comprises 3 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 4; live-surface contracts included: 4 (0 live, 4 unknown).
+- Indexed contracts: 4; live-surface contracts included: 4 (4 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
@@ -31,17 +31,20 @@ The Bridge contract serves as the core operational component, while the supporti
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/4 (0.0%)
+- Coverage of deployed-live implementations: 0/4 (0.0%)
+- Deployed-live implementations: 4 of 4 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/4
 - Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 4
 - Raw deployments: 4
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage

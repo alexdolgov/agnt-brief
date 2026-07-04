@@ -1,47 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "yuzu-money",
-  "generated_at": "2026-06-17T07:00:37.449Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "yuzu-money",
-    "tier": 0,
-    "peak_tvl": 71329608,
-    "peak_date": "2026-04-08T00:00:00.000Z",
-    "tvl_30d_ago": 43066313,
-    "tvl_90d_ago": 57541544,
-    "tvl_current": 50935494,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 17102489,
-    "change_30d_pct": 18.272242158273453,
-    "change_90d_pct": -11.480487906268207,
-    "days_since_peak": 49,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 28.59137260364588
-  },
+  "generated_at": "2026-07-04T14:54:14.762Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-66d5",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 4,
-    "total_addresses": 4,
-    "unique_implementations": 4,
-    "total_deployments": 4,
-    "audited_contracts": 0,
-    "unaudited_contracts": 4,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 4,
+    "total_contracts": 11,
+    "total_addresses": 18,
+    "unique_implementations": 11,
+    "total_deployments": 18,
+    "audited_contracts": 9,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 9,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 90,
     "total_audits": 6,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 48954053.06726,
-    "tvl_usd": 1796.513455,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "plasma": 1796.51
-    },
-    "asd_usd": 1796.513455,
+    "direct_audits": 6,
+    "inherited_audits": 0,
+    "scoreable_audits": 6,
+    "dl_tvl_usd": 55226801.01907,
+    "tvl_usd": 55226801.01907,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://app.yuzu.money",
     "chains": [
       "plasma"
@@ -55,26 +39,35 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 11,
+    "live_verified_implementations": 10,
+    "live_audited_implementations": 9,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 9,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Yuzu Money is an overcollateralized stablecoin and yield protocol spanning Plasma and Monad, with yzUSD/YuzuUSD and staked syzUSD products plus RWA, fixed-income, and T-Bills-style yield products such as yzPP.",
-    "relationship_narrative": "All contracts belong to a single product family deployed by the same deployer. YuzuUSDV2 serves as the base stablecoin, StakedYuzuUSDV2 is its staking derivative, and YuzuILPV2 manages the liquidity pool backing; they share upgradeable proxy infrastructure.",
-    "product_family_count": 1,
+    "project_purpose": "Yield. Structurally: 8 project-authored contract(s) across 1 chain(s); 4 ERC4626 vaults, 4 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 14 common project-authored base contract(s) (proxy, yuzuproto, erc20upgradeable). Dominant framework: openzeppelin.",
+    "product_family_count": 4,
     "total_contracts_indexed": 18,
-    "live_contracts": 4,
+    "live_contracts": 18,
     "inactive_contracts": 0,
-    "singleton_contracts": 14,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 8,
-    "live_deployment_units": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 4,
+    "unique_implementations": 11,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -86,48 +79,13 @@
     {
       "chain_id": 9745,
       "chain_name": "plasma",
-      "address": "0x517677a19d8ae6ff600fb86c3c7bfccd651e3eec",
-      "deployment_unit": "unit-23651",
-      "deployment_unit_proxy_count": 1,
-      "name": "TokenizedVault",
-      "role": "core_logic",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 1796.513455,
-      "is_proxy": true,
-      "impl_address": "0x30052bc920d770e829671861d8cb96851006e472",
-      "impl_name": "TokenizedVault",
-      "deployments": [
-        {
-          "chain_id": 9745,
-          "chain_name": "plasma",
-          "address": "0x517677a19d8ae6ff600fb86c3c7bfccd651e3eec",
-          "deployment_unit": "unit-23651",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1796.513455,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 9745,
-      "chain_name": "plasma",
       "address": "0x44f6e9b5c0fef82158dc98282078068b9bfb7e71",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "ProxyAdmin",
       "role": "governance",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "OpenZeppelin",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -151,7 +109,65 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-10-09 18:26:34+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x2aa939b5c9cef10c170ad38c4b05a45f27199dea",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PSM",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x933069e8fc9502762fcceb3a28804a28b4c863b2",
+      "impl_name": "PSM",
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x2aa939b5c9cef10c170ad38c4b05a45f27199dea",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x933069e8fc9502762fcceb3a28804a28b4c863b2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11734",
+        "audit-11735",
+        "audit-11737"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-04-17 09:03:26+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 9745,
@@ -161,7 +177,7 @@
       "deployment_unit_proxy_count": null,
       "name": "PSM",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -178,15 +194,80 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11734",
+        "audit-11735",
+        "audit-11737"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-27 12:06:40+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x3fdd8e2d2e9170a00f5406089720dae39cd9e589",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "StakedYuzuUSD",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb14e7d488371d22d39aff1b0c0f07ed2b532160f",
+      "impl_name": "StakedYuzuUSD",
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x3fdd8e2d2e9170a00f5406089720dae39cd9e589",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0xb14e7d488371d22d39aff1b0c0f07ed2b532160f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11732",
+        "audit-11733",
+        "audit-11734",
+        "audit-11735",
+        "audit-11736",
+        "audit-11737"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-09 18:26:39+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 9745,
@@ -196,7 +277,7 @@
       "deployment_unit_proxy_count": null,
       "name": "StakedYuzuUSDV2",
       "role": "token",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -213,6 +294,103 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11734",
+        "audit-11735",
+        "audit-11737"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-27 12:06:40+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0xa3982582016375a0b25cb7d572379d3d49e5e9c8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "StakedYuzuUSDV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xa3982582016375a0b25cb7d572379d3d49e5e9c8",
+      "impl_name": "StakedYuzuUSDV2",
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0xa3982582016375a0b25cb7d572379d3d49e5e9c8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0xc8a8df9b210243c55d31c73090f06787ad0a1bf6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11734",
+        "audit-11735",
+        "audit-11737"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-04-17 09:02:53+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x517677a19d8ae6ff600fb86c3c7bfccd651e3eec",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TokenizedVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x30052bc920d770e829671861d8cb96851006e472",
+      "impl_name": "TokenizedVault",
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x517677a19d8ae6ff600fb86c3c7bfccd651e3eec",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -221,14 +399,234 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-14 16:51:28+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x7e8bc59b4126415c86c9bf1f8cb277b9d9249281",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "YuzuILP",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x7e8bc59b4126415c86c9bf1f8cb277b9d9249281",
+      "impl_name": "YuzuILP",
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x7e8bc59b4126415c86c9bf1f8cb277b9d9249281",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0xa5913fc4828f2750d24856e6b7bea3c16bb51531",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11732",
+        "audit-11733",
+        "audit-11734",
+        "audit-11736",
+        "audit-11737"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-09 18:26:37+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x326839f792ba2ccf98a3ac28bb7de551539309bc",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "YuzuILPV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x326839f792ba2ccf98a3ac28bb7de551539309bc",
+      "impl_name": "YuzuILPV2",
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x326839f792ba2ccf98a3ac28bb7de551539309bc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0xebfc8c2fe73c431ef2a371aea9132110aab50dca",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11734",
+        "audit-11737"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-27 12:06:39+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x8e6026ac788415d03f38a46008a2a75d7c9cc340",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "YuzuUSD",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x90b1bc26e1ac873fc5043a9f658443daab674d85",
+      "impl_name": "YuzuUSD",
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x8e6026ac788415d03f38a46008a2a75d7c9cc340",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x90b1bc26e1ac873fc5043a9f658443daab674d85",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11732",
+        "audit-11733",
+        "audit-11736"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-09 18:26:35+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x32d7d5bf842d6ae28c9dd4fac4c6662cf9bf5cfe",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "YuzuUSDV2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x32d7d5bf842d6ae28c9dd4fac4c6662cf9bf5cfe",
+      "impl_name": "YuzuUSDV2",
+      "deployments": [
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x32d7d5bf842d6ae28c9dd4fac4c6662cf9bf5cfe",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 9745,
+          "chain_name": "plasma",
+          "address": "0x6695c0f8706c5ace3bdf8995073179cca47926dc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11734",
+        "audit-11737"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-27 12:06:39+03",
+      "deploy_coverage_basis": "code_matched"
     }
   ],
   "audits": [
     {
       "audit_id": 11732,
       "audit_key": "audit-11732",
-      "report_name": "YuzuUSD Security Review (Pashov)",
+      "report_name": "YuzuUSD-security-review_2025-08-28.pdf",
       "report_url": "https://github.com/pashov/audits/blob/master/team/pdf/YuzuUSD-security-review_2025-08-28.pdf",
       "auditor": "Pashov Audit Group",
       "audit_type": "audit",
@@ -238,18 +636,28 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "StakedYuzuUSD",
+        "YuzuILP",
+        "YuzuIssuer",
+        "YuzuOrderBook",
+        "YuzuProto",
+        "YuzuUSD"
+      ],
+      "matched_contracts": 6,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
       "audit_id": 11733,
       "audit_key": "audit-11733",
-      "report_name": "YuzuUSD Smart Contract Security Assessment (Dedaub)",
+      "report_name": "dedaub.com/audits/yuzu-money/yuzuusd-october-6-2025",
       "report_url": "https://dedaub.com/audits/yuzu-money/yuzuusd-october-6-2025",
       "auditor": "Dedaub",
       "audit_type": "audit",
@@ -259,18 +667,26 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "StakedYuzuUSD",
+        "YuzuILP",
+        "YuzuProto",
+        "YuzuUSD"
+      ],
+      "matched_contracts": 6,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
       "audit_id": 11734,
       "audit_key": "audit-11734",
-      "report_name": "YuzuUSD Security Review (Pashov)",
+      "report_name": "YuzuUSD-security-review_2026-01-14.pdf",
       "report_url": "https://github.com/pashov/audits/blob/5911d22f3575a90650b2a6c22758a8f1712b8880/team/pdf/YuzuUSD-security-review_2026-01-14.pdf",
       "auditor": "Pashov Audit Group",
       "audit_type": "audit",
@@ -280,28 +696,46 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "IPSM",
+        "IPSMDefinitions",
+        "IStakedYuzuUSD",
+        "IStakedYuzuUSDDefinitions",
+        "IYuzuILP",
+        "IYuzuILPDefinitions",
+        "IYuzuIssuer",
+        "IYuzuIssuerDefinitions",
+        "IYuzuOrderBookDefinitions",
+        "IYuzuProto",
+        "IYuzuProtoDefinitions",
+        "IYuzuUSD",
+        "PSM",
+        "PSMOVaultComposer",
+        "ProtoOVaultComposer",
+        "StakedYuzuUSD",
+        "StakedYuzuUSDV2",
+        "YuzuILP",
+        "YuzuILPV2",
+        "YuzuIssuer",
+        "YuzuOrderBook",
+        "YuzuProto",
+        "YuzuProtoV2",
+        "YuzuUSDV2"
+      ],
+      "matched_contracts": 14,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 11734,
-          "report_url": "https://github.com/pashov/audits/blob/5911d22f3575a90650b2a6c22758a8f1712b8880/team/pdf/YuzuUSD-security-review_2026-01-14.pdf"
-        },
-        {
-          "audit_id": 11738,
-          "report_url": "https://github.com/pashov/audits/blob/master/team/pdf/YuzuUSD-security-review_2026-01-14.pdf"
-        }
-      ]
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
     },
     {
       "audit_id": 11735,
       "audit_key": "audit-11735",
-      "report_name": "YuzuUSD Smart Contract Security Assessment (Dedaub)",
+      "report_name": "dedaub.com/audits/yuzu-money/yuzuusd-psm-february-09-2026",
       "report_url": "https://dedaub.com/audits/yuzu-money/yuzuusd-psm-february-09-2026",
       "auditor": "Dedaub",
       "audit_type": "audit",
@@ -311,12 +745,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "PSM",
+        "StakedYuzuUSD",
+        "StakedYuzuUSDV2",
+        "YuzuProto",
+        "YuzuProtoV2"
+      ],
+      "matched_contracts": 8,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -332,12 +775,22 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "StakedYuzuUSD",
+        "YuzuILP",
+        "YuzuIssuer",
+        "YuzuOrderBook",
+        "YuzuProto",
+        "YuzuUSD"
+      ],
+      "matched_contracts": 6,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -353,54 +806,87 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "IPSM",
+        "IPSMDefinitions",
+        "IStakedYuzuUSD",
+        "IStakedYuzuUSDDefinitions",
+        "IYuzuILP",
+        "IYuzuILPDefinitions",
+        "IYuzuIssuer",
+        "IYuzuIssuerDefinitions",
+        "IYuzuOrderBookDefinitions",
+        "IYuzuProto",
+        "IYuzuProtoDefinitions",
+        "IYuzuUSD",
+        "PSM",
+        "PSMOVaultComposer",
+        "ProtoOVaultComposer",
+        "StakedYuzuUSD",
+        "StakedYuzuUSDV2",
+        "YuzuILP",
+        "YuzuILPV2",
+        "YuzuIssuer",
+        "YuzuOrderBook",
+        "YuzuProto",
+        "YuzuProtoV2",
+        "YuzuUSDV2"
+      ],
+      "matched_contracts": 14,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Pashov Audit Group",
+      "tier": 2,
+      "contracts_covered": 9,
+      "coverage_pct": 81.8,
+      "latest_audit": "2026-01"
+    },
+    {
+      "auditor": "Dedaub",
+      "tier": 2,
+      "contracts_covered": 7,
+      "coverage_pct": 63.6,
+      "latest_audit": "2026-01"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 9745,
+      "chain_name": "plasma",
+      "address": "0x517677a19d8ae6ff600fb86c3c7bfccd651e3eec",
+      "name": "TokenizedVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 10,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 4
+    "standard_library": 1,
+    "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 54
+    },
+    "extraction_confidence_counts": {
+      "high": 6
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 11732,
-        "report_name": "YuzuUSD Security Review (Pashov)"
-      },
-      {
-        "audit_id": 11733,
-        "report_name": "YuzuUSD Smart Contract Security Assessment (Dedaub)"
-      },
-      {
-        "audit_id": 11734,
-        "report_name": "YuzuUSD Security Review (Pashov)"
-      },
-      {
-        "audit_id": 11735,
-        "report_name": "YuzuUSD Smart Contract Security Assessment (Dedaub)"
-      },
-      {
-        "audit_id": 11736,
-        "report_name": "YuzuUSD-security-review_2025-08-28.md"
-      },
-      {
-        "audit_id": 11737,
-        "report_name": "YuzuUSD-security-review_2026-01-14.md"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

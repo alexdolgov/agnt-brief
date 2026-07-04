@@ -5,44 +5,47 @@
 - Project: Verus Market (`verus-market`)
 - Website: [https://eth.verusbridge.io/](https://eth.verusbridge.io/)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:42.627Z
-- Pipeline run: brief-regen-topo-2026-06-17
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $6,360,640.64
+- Generated: 2026-07-04T14:54:09.909Z
+- Pipeline run: v2-2026-07-02-1ba3fd
+- Chains: ethereum
+- Contract surface: 2 unique implementations (2 raw deployments)
+- DeFi Llama TVL: $5,647,599.05
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Verus Market is a DefiLlama-listed decentralized exchange (DEX) on the Verus chain. Separately, multiple Ethereum contracts are associated or suspected in the available contract surface, including VerusProof and NotarizationSerializer, but their roles should be treated as verifier/support/unknown infrastructure unless independently verified. The current evidence does not support describing the product as an Ethereum DEX or as a single-proxy contract family.
+Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 33; live-surface contracts included: 0 (0 live, 0 unknown).
-- Excluded by liveness: 31 inactive, 2 singleton, 0 uninitialized.
-- Deployment units: 0/1 live.
+- Indexed contracts: 2; live-surface contracts included: 2 (0 live, 2 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 2 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/2
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
-- Audits discovered: 0
+- Unique implementations: 2
+- Raw deployments: 2
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -55,9 +58,12 @@ Verus Market is a DefiLlama-listed decentralized exchange (DEX) on the Verus cha
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (2)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| NotarizationSerializer | unknown | ethereum | n/a | [`0xe1b8ff...14f657`](./contracts/ethereum-1/0xe1b8ff57b3af12c933ccbd8a0c498f483d14f657/) | ⚠️ Unaudited |
+| VerusProof | unknown | ethereum | n/a | [`0x5e8060...7dcfa1`](./contracts/ethereum-1/0x5e8060ecbf415aa25f12c1d67fde832bd87dcfa1/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,13 +92,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0xe1b8ff...14f657`](./contracts/ethereum-1/0xe1b8ff57b3af12c933ccbd8a0c498f483d14f657/) | NotarizationSerializer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5e8060...7dcfa1`](./contracts/ethereum-1/0x5e8060ecbf415aa25f12c1d67fde832bd87dcfa1/) | VerusProof | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

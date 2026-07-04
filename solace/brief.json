@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "solace",
-  "generated_at": "2026-06-19T08:29:54.266Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "solace",
-    "tier": 0,
-    "peak_tvl": 4404336,
-    "peak_date": "2022-04-12T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 0,
-    "tvl_current": 0,
-    "tier0_reason": "current_tvl_zero_after_meaningful_peak",
-    "tvl_180d_ago": 0,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "days_since_peak": 1529,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 100
-  },
+  "generated_at": "2026-07-04T14:53:56.468Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-16bc",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 1,
     "total_addresses": 2,
@@ -34,6 +18,8 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 0,
     "tvl_usd": 0,
@@ -54,25 +40,32 @@
       "aging": 0,
       "stale": 0,
       "unknown": 1
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
     "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
     "product_family_count": 1,
-    "total_contracts_indexed": 62,
+    "total_contracts_indexed": 2,
     "live_contracts": 2,
-    "inactive_contracts": 60,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 2,
+    "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 1,
@@ -94,7 +87,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Solace",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -128,14 +121,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-02-04 06:37:59+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 13855,
       "audit_key": "audit-13855",
-      "report_name": "DL audit link",
+      "report_name": "hacken.io/audits",
       "report_url": "https://hacken.io/audits",
       "auditor": "Hacken",
       "audit_type": "audit",
@@ -145,6 +142,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -181,7 +181,7 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 13855,
-        "report_name": "DL audit link"
+        "report_name": "hacken.io/audits"
       }
     ],
     "inherited_remapped_matches": []

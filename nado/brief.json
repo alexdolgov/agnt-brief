@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "nado",
-  "generated_at": "2026-06-17T18:55:07.064Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-1121",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "nado",
-    "tier": 0,
-    "peak_tvl": 62645380,
-    "peak_date": "2026-04-16T00:00:00.000Z",
-    "tvl_30d_ago": 57783672,
-    "tvl_90d_ago": 52757336,
-    "tvl_current": 54218674,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 9180412,
-    "change_30d_pct": -6.169559456173017,
-    "change_90d_pct": 2.769923788418733,
-    "days_since_peak": 41,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 13.451440473343764
-  },
+  "generated_at": "2026-07-04T14:53:38.543Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d094",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 22,
+    "total_contracts": 1,
     "total_addresses": 22,
-    "unique_implementations": 22,
+    "unique_implementations": 1,
     "total_deployments": 22,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 22,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 49334317,
-    "tvl_usd": 49334317,
+    "dl_tvl_usd": 47620408,
+    "tvl_usd": 47620408,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,12 +39,21 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Nado is a decentralized trading protocol on Ink offering Nado Spot and Nado Perps. It uses a CLOB/orderbook trading model with off-chain sequencing and on-chain settlement, supports unified cross-margin for trading, and includes the NLP liquidity vault for protocol liquidity.",
-    "relationship_narrative": "Both product families operate on the Ink chain and likely share common infrastructure such as oracles and liquidity pools, though no explicit shared contracts are identified in the provided inventory.",
-    "product_family_count": 2,
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": 0,
     "total_contracts_indexed": 22,
     "live_contracts": 0,
     "inactive_contracts": 0,
@@ -72,9 +67,9 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 22,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
-    "is_skeletal": false
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -91,11 +86,11 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Mainnet Contracts — Ink",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "UnnamedContract",
       "deployments": [
         {
           "chain_id": 57073,
@@ -107,31 +102,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0x05ec92d78ed421f3d3ada77ffde167106565974e",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Mainnet Contracts — Ink",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -142,31 +113,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0x09fb495aa7859635f755e827d64c4c9a2e5b9651",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Mainnet Contracts — Ink",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -177,31 +124,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0x1e38180cfa9100b653c1ea73b1b8175aca1a45d0",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Nado",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -212,31 +135,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0x23a283b359d55a941bbeec58801b6b17d955cc73",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Nado",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -247,31 +146,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0x3352b2ff0fac4ce38a6ea1c188cf4f924df54e5d",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Nado",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -282,31 +157,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0x4e859c47fea3666b5053b16c81af64e77567702e",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Nado",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -317,31 +168,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0x59841b3761ed1d089a783e4d7cb49e4534cd4f85",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Nado",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -352,31 +179,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0x60f50f902b2e91aef7d6c700eb22599e297fa86f",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Nado",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -387,31 +190,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0x634965466504abf2f2491846194ed2af3d27800e",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Nado",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -422,31 +201,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0x68798229f88251b31d534733d6c4098318c9dff8",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Mainnet Contracts — Ink",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -457,31 +212,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0x698d87105274292b5673367dec81874ce3633ac2",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Nado",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -492,31 +223,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0x79cc76364b5fb263a25bd52930e3d9788fcfeea8",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Nado",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -527,31 +234,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0x8373c3aa04153abc0cfd28901c3c971a946994ab",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Mainnet Contracts — Ink",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -562,31 +245,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0x8e693bea316bcc0f4f8be403081b954a0e3743c8",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Nado",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -597,31 +256,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0x9acdc66459a323fbb6eb77c5aa96a30234fecf17",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Mainnet Contracts — Ink",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -632,31 +267,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0xbd672fe513acba5c1cee7b02f998a1b542852b3b",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Nado",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -667,31 +278,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0xc1cc56cab60e832665e6c3780bfebe3c1c971603",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Mainnet Contracts — Ink",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -702,31 +289,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0xd218103918c19d0a10cf35300e4cfafbd444c5fe",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Mainnet Contracts — Ink",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -737,31 +300,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0xf8599d58d1137fc56ecdd9c16ee139c8bdf96da1",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Mainnet Contracts — Ink",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -772,31 +311,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0xf8963f7860af7de9b94893edb9a3b5c155e1fc0c",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Nado",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -807,31 +322,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0xfcd94770b95fd9cc67143132bb172eb17a0907fe",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Mainnet Contracts — Ink",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -849,7 +340,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],
@@ -859,7 +354,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 22
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

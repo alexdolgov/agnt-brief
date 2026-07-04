@@ -1,51 +1,51 @@
 # Agentic Audit Brief: ZyberSwap
 
-⚠️ Lifecycle status: DEAD - TVL dropped 8.0% over 90 days
-
 ## Project Overview
 
 - Project: ZyberSwap (`zyberswap`)
 - Website: [https://www.zyberswap.io](https://www.zyberswap.io)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-21T07:27:45.106Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:54:15.003Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-c970
 - Chains: arbitrum
-- Contract surface: 9 unique implementations (10 raw deployments)
-- DeFi Llama TVL: $65,560.00
-- On-chain TVL (included contracts): $5,397.70
-- TVL by chain: Arbitrum $5,397.70
+- Contract surface: 39 unique implementations (40 raw deployments)
+- DeFi Llama TVL: $63,936.00
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-ZyberSwap is a decentralized exchange (DEX) on Arbitrum One that enables users to swap tokens, provide liquidity, and earn yield. It includes an automated market maker (AMM) with a native token (ZyberToken) for incentives, a vault for yield optimization, and a stableswap module for efficient stablecoin trading.
+Structural profile: 22 project-authored contract(s) across 1 chain(s); 5 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The ZyberSwap family relies on ZyberFactory to deploy and register AMM pools, while ZyberToken serves as the incentive token distributed by ZyberChef to liquidity providers. ZyberVault likely aggregates liquidity from pools to optimize yield, and the Stableswap family operates independently with its own SwapDeployer, though it may share the ZyberToken for incentives.
+The protocol comprises 4 functional families. Contracts are linked by 4 cross-contract reference(s). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 87; live-surface contracts included: 10 (10 live, 0 unknown).
-- Excluded by liveness: 77 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 85; live-surface contracts included: 40 (9 live, 31 unknown).
+- Excluded by liveness: 45 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/8 (37.5%)
+- Coverage of deployed-live implementations: 3/8 (37.5%)
+- Deployed-live implementations: 8 of 39 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 3/8
 - Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 9
-- Raw deployments: 10
-- Audits discovered: 1
+- Unverified implementations: 31
+- Unique implementations: 39
+- Raw deployments: 40
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-01 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 3 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -59,9 +59,9 @@ The ZyberSwap family relies on ZyberFactory to deploy and register AMM pools, wh
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ZyberToken | token | arbitrum | n/a | [`0x3b475f...a2724c`](./contracts/arbitrum-42161/0x3b475f6f2f41853706afc9fa6a6b8c5df1a2724c/) | ✅ Audited |
 | ZyberChef | unknown | arbitrum | n/a | [`0x9ba666...2fbddd`](./contracts/arbitrum-42161/0x9ba666165867e916ee7ed3a3ae6c19415c2fbddd/) | ✅ Audited |
 | ZyberRouter | adapter | arbitrum | n/a | [`0x16e71b...ad32ad`](./contracts/arbitrum-42161/0x16e71b13fe6079b4312063f7e81f76d165ad32ad/) | ✅ Audited |
+| ZyberToken | token | arbitrum | n/a | [`0x3b475f...a2724c`](./contracts/arbitrum-42161/0x3b475f6f2f41853706afc9fa6a6b8c5df1a2724c/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
@@ -85,19 +85,49 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (31)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| UnnamedContract | unknown | arbitrum | n/a | `0x039a31...6b5f88` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x0d09a0...a5575c` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x13927c...64607b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x15cb8e...c7e560` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x19b2a1...fc52ce` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x31c5b4...0dc23d` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x37f3ef...3123c5` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x3892c8...d216d1` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x3ae87d...1788f0` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x466b5b...91a3b4` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x5539b5...7d8d88` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x65eb77...de6c8b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x722ef2...e736d8` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x72d01e...a4b872` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x7cdad2...6f3fa3` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x835100...9ea730` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x97c79e...0b371f` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x998465...2f6b56` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x9f9804...37d787` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa79cb9...419269` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa9f66f...134359` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb502f1...1bec82` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xba86c3...105474` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xcc72ab...3628be` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xcc7729...eacef5` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xce7b1d...9b2fc7` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xe4a866...f3ce60` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xebc9f4...637d59` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xed4c32...05a9c1` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xf34d68...b3d7e7` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xfe9272...5005a5` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [SmartContract_Audit_Solidproof_Zyberswap.pdf](https://github.com/solidproof/projects/blob/main/ZyberSwap/SmartContract_Audit_Solidproof_Zyberswap.pdf) | unknown | Audit | 2023-01 | stale | Direct | contract_name | 3 | high |
+| [SmartContract_Audit_Solidproof_Zyberswap.pdf](https://github.com/solidproof/projects/blob/main/ZyberSwap/SmartContract_Audit_Solidproof_Zyberswap.pdf) | unknown | Audit | 2023-01 | stale | Direct | contract_name | 3 | n/a |
 
 ## Coverage Gaps
 
@@ -118,7 +148,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 8 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 31 |
 
 ## Scope Matching Notes
 
@@ -126,7 +156,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=26
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=3
 
 Fork inheritance lineage and inherited audits are included when available.

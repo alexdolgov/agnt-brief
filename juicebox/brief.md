@@ -4,44 +4,47 @@
 
 - Project: Juicebox (`juicebox`)
 - Website: [https://juicebox.money/](https://juicebox.money/)
-- Lifecycle: active (Tier 0, 57.8% below peak)
-- Generated: 2026-06-17T07:01:01.835Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:26.924Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: arbitrum, base, chain-11155111, chain-11155420, chain-421614, chain-84532, ethereum, optimism
-- Contract surface: 57 unique implementations (210 raw deployments)
-- DeFi Llama TVL: $8,630,201.00
+- Contract surface: 50 unique implementations (210 raw deployments)
+- DeFi Llama TVL: $8,209,787.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Juicebox is a programmable treasury protocol that enables projects to raise funds, manage payouts, and issue tokens through configurable funding cycles. It supports multi-chain deployments, NFT-based contribution tiers, and cross-chain treasury operations.
+Launchpad. Structurally: 48 project-authored contract(s) across 3 chain(s); 1 ERC20 token, 3 ERC721 NFTs; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The Juicebox Core family provides shared infrastructure (controller, tokens, rulesets, splits) used by all other families. Payment Terminals, Hooks, and Swap Terminal extend the core payment flow, while Suckers and Omnichain Deployers enable cross-chain expansion, all relying on the core registry and permission systems.
+The protocol comprises 7 functional families. Its contracts share 7 common project-authored base contract(s) (jbpermissioned, jbdeadline, jbsuckerdeployer). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 236; live-surface contracts included: 210 (24 live, 186 unknown).
-- Excluded by liveness: 26 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 210; live-surface contracts included: 210 (202 live, 8 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
-- Detected codebases: uniswap-v3
-- Unverified dependencies: 24/279.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 7/49 (14.3%)
+- Coverage of deployed-live implementations: 7/49 (14.3%)
+- Deployed-live implementations: 49 of 50 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 7/49
 - Verified + Unaudited implementations: 42
 - Verified by bytecode match: 0
-- Unverified implementations: 8
-- Unique implementations: 57
+- Unverified implementations: 1
+- Unique implementations: 50
 - Raw deployments: 210
-- Audits discovered: 10
+- Audits discovered: 10 (10 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-05 (stale)
-- Staleness: 0 fresh, 0 aging, 10 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 10 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 7 match-unverified
 - Tier 1 coverage: 10.2% (Code4rena)
 
 ### Auditor Coverage
@@ -126,34 +129,27 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (8)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | chain-84532 | n/a | `0x79e5ca...1aa8fd` | ❓ Unverified |
-| UnnamedContract | unknown | chain-84532 | n/a | `0xc7369f...d4d32d` | ❓ Unverified |
-| UnnamedContract | unknown | chain-421614 | n/a | `0x5f820a...67c41c` | ❓ Unverified |
-| UnnamedContract | unknown | chain-421614 | n/a | `0xb35ab8...76f2df` | ❓ Unverified |
-| UnnamedContract | unknown | chain-11155111 | n/a | `0xca3f2c...c29fc5` | ❓ Unverified |
-| UnnamedContract | unknown | chain-11155111 | n/a | `0xf082e3...21815f` | ❓ Unverified |
-| UnnamedContract | unknown | chain-11155420 | n/a | `0x79e5ca...1aa8fd` | ❓ Unverified |
-| UnnamedContract | unknown | chain-11155420 | n/a | `0xc7369f...d4d32d` | ❓ Unverified |
+| UnnamedContract | unknown | chain-421614 | n/a | 8 deployments: chain-84532 `0x79e5ca...1aa8fd`; chain-84532 `0xc7369f...d4d32d`; chain-421614 `0x5f820a...67c41c`; chain-421614 `0xb35ab8...76f2df`; chain-11155111 `0xca3f2c...c29fc5`; chain-11155111 `0xf082e3...21815f`; chain-11155420 `0x79e5ca...1aa8fd`; chain-11155420 `0xc7369f...d4d32d` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [5.24.2022.md (also discovered via alternate URL)](https://github.com/jbx-protocol/juice-contracts-v2/blob/main/security/postmortem/5.24.2022.md) | unknown | Audit | 2022 | stale | Direct | contract_name | 18 | medium |
-| [DL audit link](https://hacken.io/audits/constitution-dao/sca-constitution-dao-governance-erc20-jan2022) | Hacken | Audit | 2022-01 | stale | Direct | n/a | 0 | n/a |
-| [DL audit link](https://hackmd.io/@berndartmueller/2023-01-juice-v3-migration) | unknown | Audit | 2023-01 | stale | Direct | n/a | 0 | n/a |
-| [DL audit link](https://code4rena.com/reports/2022-10-juicebox) | Code4rena | Contest | 2022-10 | stale | Direct | contract_name | 0 | n/a |
-| [C4 Juicebox contest repository](https://github.com/code-423n4/2022-10-juicebox) | Code4rena | Contest | 2022-10 | stale | Direct | contract_name | 0 | n/a |
-| [DL audit link](https://docs.juicebox.money/assets/files/certik-audit-report-12b48328d22ac38207dad74162cac1db.pdf) | CertiK | Audit | 2022-03 | stale | Direct | contract_name | 26 | high |
-| [DL audit link](https://code4rena.com/audits/2022-07-juicebox-v2-contest) | Code4rena | Contest | 2022-07 | stale | Direct | n/a | 0 | n/a |
-| [View report](https://code4rena.com/reports/2022-07-juicebox) | Code4rena | Contest | 2022-07 | stale | Direct | contract_name | 19 | high |
-| [DL audit link](https://docs.juicebox.money/assets/files/peckshield-audit-report-ab36ee2b5dfb2a387410b4d64276f6ba.pdf) | PeckShield | Audit | 2022-04 | stale | Direct | contract_name | 14 | high |
+| [5.24.2022.md](https://github.com/jbx-protocol/juice-contracts-v2/blob/main/security/postmortem/5.24.2022.md) | unknown | Audit | 2022-01 | stale | Direct | contract_name | 4 | n/a |
+| [hacken.io/audits/constitution-dao/sca-constitution-dao-governance-erc20-jan2022](https://hacken.io/audits/constitution-dao/sca-constitution-dao-governance-erc20-jan2022) | Hacken | Audit | 2022-01 | stale | Direct | n/a | 0 | n/a |
+| [hackmd.io/@berndartmueller/2023-01-juice-v3-migration](https://hackmd.io/@berndartmueller/2023-01-juice-v3-migration) | unknown | Audit | 2023-01 | stale | Direct | n/a | 0 | n/a |
+| [code4rena.com/reports/2022-10-juicebox](https://code4rena.com/reports/2022-10-juicebox) | Code4rena | Contest | 2022-10 | stale | Direct | n/a | 0 | n/a |
+| [2022-10-juicebox (GitHub directory)](https://github.com/code-423n4/2022-10-juicebox) | Code4rena | Contest | 2022-10 | stale | Direct | n/a | 0 | n/a |
+| [certik-audit-report-12b48328d22ac38207dad74162cac1db.pdf](https://docs.juicebox.money/assets/files/certik-audit-report-12b48328d22ac38207dad74162cac1db.pdf) | CertiK | Audit | 2022-03 | stale | Direct | contract_name | 6 | n/a |
+| [code4rena.com/audits/2022-07-juicebox-v2-contest](https://code4rena.com/audits/2022-07-juicebox-v2-contest) | Code4rena | Contest | 2022-07 | stale | Direct | n/a | 0 | n/a |
+| [code4rena.com/reports/2022-07-juicebox](https://code4rena.com/reports/2022-07-juicebox) | Code4rena | Contest | 2022-07 | stale | Direct | contract_name | 5 | n/a |
+| [peckshield-audit-report-ab36ee2b5dfb2a387410b4d64276f6ba.pdf](https://docs.juicebox.money/assets/files/peckshield-audit-report-ab36ee2b5dfb2a387410b4d64276f6ba.pdf) | PeckShield | Audit | 2022-04 | stale | Direct | contract_name | 3 | n/a |
 | [code4rena.com/reports/2023-05-juicebox](https://code4rena.com/reports/2023-05-juicebox) | Code4rena | Contest | 2023-05 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
@@ -165,6 +161,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0xc3c266...e5d8ea`](./contracts/ethereum-1/0xc3c26682ef39a4a5f4a1dc2459a6fbcba4e5d8ea/) | CTDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x127fa6...690883`](./contracts/ethereum-1/0x127fa6d4d0a4e791c6c4adaa4c9ad97127690883/) | CTProjectOwner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x03ef9e...20ee24`](./contracts/ethereum-1/0x03ef9ea1467df70d4b1e1d619aa9a2a2f820ee24/) | CTPublisher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc29d69...cbb566`](./contracts/ethereum-1/0xc29d6995ab3b0df4650ad643adeac55e7acbb566/) | ERC2771Forwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x749ac9...8eb25b`](./contracts/ethereum-1/0x749ac9c5ef5ef41f402c70a5bc460c5a1d8eb25b/) | JB721TiersHook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x792bdd...6d2732`](./contracts/ethereum-1/0x792bdd4dd1e52fcf8fb3e80278a2b4e4396d2732/) | JB721TiersHookDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x048626...0e725a`](./contracts/ethereum-1/0x048626e715a194fc38dd9be12f516b54b10e725a/) | JB721TiersHookProjectDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -174,6 +171,7 @@ Verified + unaudited native implementations ranked by TVL:
 | optimism | [`0x318f8a...7824f3`](./contracts/optimism-10/0x318f8aa6a95cb83419985c0d797c762f5a7824f3/) | JBBuybackHook | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9e1e0f...a12b1a`](./contracts/ethereum-1/0x9e1e0fb70bc4661f2cc2d5eddd87a9d582a12b1a/) | JBBuybackHookRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x172ad9...761816`](./contracts/ethereum-1/0x172ad9b3df724ee0422ea85b7799a3f7ca761816/) | JBCCIPSuckerDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| optimism | [`0x6ed8ee...28bba4`](./contracts/optimism-10/0x6ed8eedc0689bd6a8c7168301897a0113c28bba4/) | JBChainlinkV3SequencerPriceFeed | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x97a5b9...4bb59b`](./contracts/ethereum-1/0x97a5b9d9f0f7cd676b69f584f29048d0ef4bb59b/) | JBController3_1 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xcffdd1...b924d7`](./contracts/ethereum-1/0xcffdd1303f24145bd2c84e7bf15af1eb6ab924d7/) | JBDeadline1Day | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x09b23b...17111b`](./contracts/ethereum-1/0x09b23b09af88bb6d7e9c957ff9f861f1c917111b/) | JBDeadline3Days | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -207,9 +205,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 53 |
-| upstream | 2 |
-| standard_library | 1 |
+| native | 49 |
+| upstream | 0 |
+| standard_library | 0 |
 | needs_review | 1 |
 
 ## Scope Matching Notes
@@ -218,16 +216,16 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 6
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=3, medium=1
-- Match method counts: extraction_exact=116
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=18
 
 Zero-match audit list:
 
-- [11935] DL audit link
-- [11936] DL audit link
-- [11937] DL audit link
-- [11938] C4 Juicebox contest repository
-- [11940] DL audit link
+- [11935] hacken.io/audits/constitution-dao/sca-constitution-dao-governance-erc20-jan2022
+- [11936] hackmd.io/@berndartmueller/2023-01-juice-v3-migration
+- [11937] code4rena.com/reports/2022-10-juicebox
+- [11938] 2022-10-juicebox (GitHub directory)
+- [11940] code4rena.com/audits/2022-07-juicebox-v2-contest
 - [11943] code4rena.com/reports/2023-05-juicebox
 
 Fork inheritance lineage and inherited audits are included when available.

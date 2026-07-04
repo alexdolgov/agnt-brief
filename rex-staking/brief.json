@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "rex-staking",
-  "generated_at": "2026-06-17T07:00:36.767Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-07-03T21:06:45.298Z",
+  "pipeline_run_id": "brief-restore-2026-07",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -18,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1541001.42124,
-    "tvl_usd": 1541001.42124,
+    "dl_tvl_usd": 1580810.53358,
+    "tvl_usd": 1580810.53358,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -35,12 +37,20 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "REX Staking refers to Resource Exchange staking / network-resource leasing activity on Telos/EOS-style infrastructure, where assets are staked or allocated to access or lease network resources. It should not be described as a multi-chain EVM yield-farming, vault, reward-contract, or liquidity-pool aggregator unless project-specific evidence supports those claims.",
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 1,
+    "product_family_count": 0,
     "total_contracts_indexed": 0,
     "live_contracts": 0,
     "inactive_contracts": 0,

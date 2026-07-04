@@ -1,46 +1,30 @@
 {
   "schema_version": "2.0",
   "project_key": "parallel-protocol",
-  "generated_at": "2026-06-18T01:16:46.694Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-ac25",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "parallel-protocol",
-    "tier": 0,
-    "peak_tvl": 59962329,
-    "peak_date": "2021-05-12T00:00:00.000Z",
-    "tvl_30d_ago": 4746972,
-    "tvl_90d_ago": 4288611,
-    "tvl_current": 3776531,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 2836659,
-    "change_30d_pct": -20.44336895182866,
-    "change_90d_pct": -11.94046277454402,
-    "days_since_peak": 1838,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 93.701827358974
-  },
+  "generated_at": "2026-07-04T14:53:42.953Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d094",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 34,
-    "total_addresses": 103,
-    "unique_implementations": 34,
-    "total_deployments": 103,
+    "total_contracts": 32,
+    "total_addresses": 107,
+    "unique_implementations": 32,
+    "total_deployments": 107,
     "audited_contracts": 9,
     "unaudited_contracts": 17,
     "contracts_verified_audited": 9,
     "contracts_verified_unaudited": 17,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 8,
-    "coverage_pct": 34.6,
+    "contracts_unverified": 6,
+    "coverage_pct": 37.5,
     "total_audits": 5,
+    "direct_audits": 5,
+    "inherited_audits": 0,
     "scoreable_audits": 5,
-    "dl_tvl_usd": 3903603,
-    "tvl_usd": 606664.3605248109,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 606664.36
-    },
+    "dl_tvl_usd": 2623734,
+    "tvl_usd": 2623734,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://parallel.best/",
     "chains": [
@@ -73,26 +57,35 @@
       "aging": 3,
       "stale": 2,
       "unknown": 0
+    },
+    "live_implementations": 25,
+    "live_verified_implementations": 24,
+    "live_audited_implementations": 9,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 9
     }
   },
   "topography": {
-    "project_purpose": "Parallel Protocol is an over-collateralized decentralized stablecoin protocol centered on USDp, enabling users to deposit collateral, mint stablecoins, and access savings or yield products. TokenP is a technical contract implementation name for the stablecoin. Bridge, flash-token, or parallelizer components should be described only as supporting contract modules where independently documented, not as the protocol's primary public-facing product identity.",
-    "relationship_narrative": "The Core Protocol's TokenP stablecoin is used across the Flashloan, Bridging, and Savings modules, creating a unified token economy. The Parallelizer Module operates as a separate yield layer, interacting with external protocols via Swapper adapters and distributing rewards, while governance is shared through ParallelAccessManager instances.",
+    "project_purpose": "CDP. Structurally: 46 project-authored contract(s) across 10 chain(s); 1 ERC4626 vault, 9 ERC20 tokens, 1 Chainlink feed; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 6 functional families. Its contracts share 15 common project-authored base contract(s) (oft, oftcore, oapp). Dominant framework: openzeppelin.",
     "product_family_count": 6,
-    "total_contracts_indexed": 230,
-    "live_contracts": 96,
-    "inactive_contracts": 47,
-    "singleton_contracts": 80,
+    "total_contracts_indexed": 223,
+    "live_contracts": 92,
+    "inactive_contracts": 116,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 7,
-    "deployment_units": 41,
-    "live_deployment_units": 1,
-    "dependencies_extracted": 107,
-    "unverified_dependencies": 38,
+    "unknown_contracts": 15,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 34,
+    "unique_implementations": 32,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -101,77 +94,6 @@
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0x0a9202c6417a7b6b166e7f7fe2719b09261b400f",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "VaultsCore",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Parallel Protocol V2",
-      "tvl_usd": 606664.3605248109,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "VaultsCore",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x173ae6283a717b6cdd5491eac5f82c082a8c674b",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 562577.475118773,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xe26348d30694aa7e879b9335252362df3df93204",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 44086.88540603781,
-          "is_audited": true
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x0a9202c6417a7b6b166e7f7fe2719b09261b400f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0xcababc1feb7c5298f69b635099d75975ad5e6e5f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-2686",
-        "audit-2688"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -208,7 +130,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -219,7 +141,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -229,7 +151,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-01-30 15:52:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 8453,
@@ -241,7 +167,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Bridging Module",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -440,7 +366,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-10 17:00:52+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -452,7 +382,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Parallelizer Module",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -497,7 +427,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-03 17:59:54+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -554,7 +488,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-03 17:59:48+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -566,7 +504,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Parallelizer Module",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -611,7 +549,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-03 17:59:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -623,7 +565,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Parallelizer Module",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -657,7 +599,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-03 18:00:38+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 534352,
@@ -668,8 +614,8 @@
       "name": "ERC1967Proxy",
       "role": "proxy",
       "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Core Protocol",
+      "origin_provider": "OpenZeppelin",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -692,7 +638,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-06-06 10:03:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -704,7 +654,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Parallelizer Module",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -771,7 +721,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-04 15:29:03+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -783,7 +737,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Parallelizer Module",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -828,18 +782,22 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-03 18:00:04+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x25fc7ffa8f9da3582a36633d04804f0004706f9b",
-      "deployment_unit": "unit-33762",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "GnosisSafe",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
+      "origin_provider": "Gnosis Safe",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -850,8 +808,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x25fc7ffa8f9da3582a36633d04804f0004706f9b",
-          "deployment_unit": "unit-33762",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -863,7 +821,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2022-04-08 15:38:44+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 137,
@@ -901,7 +863,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-30 14:07:53+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -913,7 +879,7 @@
       "role": "governance",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Core Protocol",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1112,7 +1078,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-09 11:40:10+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 137,
@@ -1150,7 +1120,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-09 16:57:23+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 137,
@@ -1177,7 +1151,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -1199,7 +1173,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -1210,7 +1184,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -1221,7 +1195,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -1231,7 +1205,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-09 18:22:29+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 43114,
@@ -1243,7 +1221,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Parallelizer Module",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1288,7 +1266,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-03 18:00:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -1300,7 +1282,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Parallelizer Module",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1345,7 +1327,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-03 18:00:14+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 137,
@@ -1383,7 +1369,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-30 11:58:05+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 43114,
@@ -1418,7 +1408,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-04 14:45:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1430,7 +1424,7 @@
       "role": "governance",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Parallelizer Module",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1475,7 +1469,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-03 18:00:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1487,7 +1485,7 @@
       "role": "governance",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Parallelizer Module",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1532,7 +1530,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-03 18:00:28+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -1559,7 +1561,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -1570,7 +1572,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 146,
@@ -1581,7 +1583,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -1603,7 +1605,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-30 14:50:46+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -1613,7 +1619,7 @@
       "deployment_unit_proxy_count": null,
       "name": "sPRL2",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1641,7 +1647,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-05-01 11:02:35+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 43114,
@@ -1653,7 +1663,7 @@
       "role": "adapter",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Parallelizer Module",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1676,28 +1686,32 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-03 18:00:33+03",
+      "deploy_coverage_basis": null
     },
     {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0xf6abf8a89b3da7c254bb3207e2eba9810bc51f58",
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x098e37a2bfac675cf5a5c21d4f10e391d502d8b6",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Parallel Protocol V2",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": null,
       "deployments": [
         {
-          "chain_id": 250,
-          "chain_name": "fantom",
-          "address": "0xf6abf8a89b3da7c254bb3207e2eba9810bc51f58",
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x098e37a2bfac675cf5a5c21d4f10e391d502d8b6",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": false,
@@ -1711,7 +1725,128 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-11-16 15:07:59+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x9e77331a61e05737f41c379c5c7145df802c64ef",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x9e77331a61e05737f41c379c5c7145df802c64ef",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-20 15:31:36+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xd4dee6e089969600d3359cdbcd34e3111bc838eb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xd4dee6e089969600d3359cdbcd34e3111bc838eb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-11-16 15:08:05+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0xca43ecfcdfba1fed003649e946ae6091646b410a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xca43ecfcdfba1fed003649e946ae6091646b410a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-06 16:45:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1721,7 +1856,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1746,7 +1881,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-01 16:41:20+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 57073,
@@ -1756,14 +1895,25 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Flashloan Module",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "UnnamedContract",
       "deployments": [
+        {
+          "chain_id": 250,
+          "chain_name": "fantom",
+          "address": "0xf6abf8a89b3da7c254bb3207e2eba9810bc51f58",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -1774,31 +1924,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0x9ee1963f05553ef838604dd39403be21cef26aa4",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Core Protocol",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -1809,31 +1935,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0x9ffacb3db5cb74bdd4c68af3b7cf203130c699ec",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Bridging Module",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -1844,31 +1946,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0xcb3e564293393e0d4f43305a250d4e1716de600b",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Core Protocol",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -1879,31 +1957,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0xe23b5ded6f7b7cb56ebcd459b19dad4d7e05cf7b",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Flashloan Module",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -1914,31 +1968,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 57073,
-      "chain_name": "ink",
-      "address": "0xfd28f108e95f4d41daae9dbfff707d677985998e",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Core Protocol",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 57073,
           "chain_name": "ink",
@@ -1956,7 +1986,86 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x0a9202c6417a7b6b166e7f7fe2719b09261b400f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "VaultsCore",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultsCore",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x173ae6283a717b6cdd5491eac5f82c082a8c674b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe26348d30694aa7e879b9335252362df3df93204",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x0a9202c6417a7b6b166e7f7fe2719b09261b400f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xcababc1feb7c5298f69b635099d75975ad5e6e5f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [
+        "audit-2686",
+        "audit-2688"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-01-30 16:10:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 137,
@@ -1983,7 +2092,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -1994,7 +2103,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -2016,7 +2125,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -2026,7 +2135,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-01-30 16:07:23+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1329,
@@ -2072,14 +2185,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-05 15:41:42+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 2686,
       "audit_key": "audit-2686",
-      "report_name": "Rendered PDF capture",
+      "report_name": "certik.pdf",
       "report_url": "https://raw.githubusercontent.com/code-423n4/2022-04-mimo/b18670f44d595483df2c0f76d1c57a7bfbfbc083/core/audits/certik.pdf",
       "auditor": "CertiK",
       "audit_type": "audit",
@@ -2089,36 +2206,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AddressProvider",
-        "AddressProviderV1",
-        "ConfigProvider",
-        "ConfigProviderV1",
-        "DemandMiner",
-        "FeeDistributor",
-        "FeeDistributorV1",
-        "LiquidiationManager",
-        "MIMODistributor",
-        "PreUseAirdrop",
-        "PriceFeed",
-        "RepayVault",
-        "Upgrade",
-        "VaultsCore",
-        "VaultsCoreV1",
-        "VaultsDataProvider",
-        "VaultsDataProviderV1"
-      ],
-      "matched_contracts": 4,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 2688,
       "audit_key": "audit-2688",
-      "report_name": "Rendered PDF capture",
+      "report_name": "ten-x-titan.pdf",
       "report_url": "https://certificate.quantstamp.com/full/ten-x-titan.pdf",
       "auditor": "Quantstamp",
       "audit_type": "audit",
@@ -2128,44 +2230,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AccessController",
-        "AddressProvider",
-        "AggregatorV3Interface",
-        "ConfigProvider",
-        "EURX",
-        "FeeDistributor",
-        "IAccessController",
-        "IAddressProvider",
-        "IConfigProvider",
-        "IFeeDistributor",
-        "ILiquidationManager",
-        "IPriceFeed",
-        "IRatesManager",
-        "ISTABLEX",
-        "IVaultsCore",
-        "IVaultsDataProvider",
-        "LiquidationManager",
-        "MathPow",
-        "PriceFeed",
-        "PriceFeedEUR",
-        "RatesManager",
-        "USDX",
-        "VaultsCore",
-        "VaultsDataProvider",
-        "WadRayMath"
-      ],
-      "matched_contracts": 4,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 11981,
       "audit_key": "audit-11981",
-      "report_name": "Rendered PDF capture",
+      "report_name": "Parallel Protocol - Zenith Audit Report.pdf",
       "report_url": "https://raw.githubusercontent.com/parallel-protocol/parallel-prl/dba8cdcac982a9b59006730cd890870bfc807e15/docs/audits/Parallel%20Protocol%20-%20Zenith%20Audit%20Report.pdf",
       "auditor": "Guardian",
       "audit_type": "audit",
@@ -2175,27 +2254,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "MainFeeDistributor",
-        "PeripheralMigrationContract",
-        "PrincipalMigrationContract",
-        "RewardMerkleDistributor",
-        "SideChainFeeCollector",
-        "TimeLockPenaltyERC20",
-        "sPRL1",
-        "sPRL2"
-      ],
-      "matched_contracts": 8,
+      "extracted_names": [],
+      "matched_contracts": 5,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 11982,
       "audit_key": "audit-11982",
-      "report_name": "Rendered PDF capture",
+      "report_name": "Bailsec - Parallel Protocol - PRL Token - Final Report - January 2025.pdf",
       "report_url": "https://raw.githubusercontent.com/parallel-protocol/parallel-prl/dba8cdcac982a9b59006730cd890870bfc807e15/docs/audits/Bailsec%20-%20Parallel%20Protocol%20-%20PRL%20Token%20-%20Final%20Report%20-%20January%202025.pdf",
       "auditor": "Guardian",
       "audit_type": "audit",
@@ -2205,34 +2278,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Auctioneer",
-        "LockBox",
-        "MainFeeDistributor",
-        "OFT",
-        "OFTAdapter",
-        "OFTCore",
-        "PRL",
-        "PeripheralMigrationContract",
-        "PeripheralPRL",
-        "PrincipalMigrationContract",
-        "RewardMerkleDistributor",
-        "SideChainFeeCollector",
-        "TimeLockPenaltyERC20",
-        "sPRL1",
-        "sPRL2"
-      ],
-      "matched_contracts": 13,
+      "extracted_names": [],
+      "matched_contracts": 6,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 11983,
       "audit_key": "audit-11983",
-      "report_name": "Rendered PDF capture",
+      "report_name": "Bailsec - Parallel Bridge - BridgeableToken - Final Report - December 2024.pdf",
       "report_url": "https://raw.githubusercontent.com/parallel-protocol/bridging-module/ad58d439a5e0cae78fa7e53aa0698347bd83b921/docs/audits/Bailsec%20-%20Parallel%20Bridge%20-%20BridgeableToken%20-%20Final%20Report%20-%20December%202024.pdf",
       "auditor": "Guardian",
       "audit_type": "audit",
@@ -2242,15 +2302,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BridgeableToken",
-        "VaultsCoreState"
-      ],
-      "matched_contracts": 7,
+      "extracted_names": [],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -2430,18 +2490,16 @@
     }
   ],
   "origin_summary": {
-    "native": 31,
+    "native": 24,
     "upstream": 0,
     "standard_library": 2,
-    "needs_review": 1
+    "needs_review": 6
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 67
+      "contract_name": 15
     },
-    "extraction_confidence_counts": {
-      "high": 5
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

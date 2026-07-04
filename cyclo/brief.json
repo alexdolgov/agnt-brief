@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "cyclo",
-  "generated_at": "2026-06-13T11:29:01.075Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
+  "generated_at": "2026-07-03T21:05:42.390Z",
+  "pipeline_run_id": "brief-restore-2026-07",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -18,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 183255.69875,
-    "tvl_usd": 183255.69875,
+    "dl_tvl_usd": 169818.64105,
+    "tvl_usd": 169818.64105,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -35,12 +37,31 @@
       "aging": 1,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
     "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,
@@ -66,23 +87,16 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 12978,
-          "report_url": "https://github.com/cyclofinance/cyclo.sol/blob/266f013e9c55061ece0b37c6eac4407c4ea71f4a/audit/Cyclo%20audit%20report%20dev%20v.1.0.pdf"
-        },
-        {
-          "audit_id": 12979,
-          "report_url": "https://github.com/cyclofinance/cyclo.sol/blob/main/audit/Cyclo%20audit%20report%20dev%20v.1.0.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],

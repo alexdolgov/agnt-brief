@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "stakingverse",
-  "generated_at": "2026-06-17T07:00:47.107Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "stakingverse",
-    "tier": 0,
-    "peak_tvl": 11018930,
-    "peak_date": "2025-09-18T00:00:00.000Z",
-    "tvl_30d_ago": 4394993,
-    "tvl_90d_ago": 3636244,
-    "tvl_current": 4180716,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 7094051,
-    "change_30d_pct": -4.875479892686974,
-    "change_90d_pct": 14.973472627249437,
-    "days_since_peak": 247,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 62.05878429212274
-  },
+  "generated_at": "2026-07-04T14:53:58.882Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-16bc",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 2,
+    "total_contracts": 1,
     "total_addresses": 2,
-    "unique_implementations": 2,
+    "unique_implementations": 1,
     "total_deployments": 2,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 2,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 18,
+    "direct_audits": 18,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3278435.9286700003,
-    "tvl_usd": 3278435.9286700003,
+    "dl_tvl_usd": 3580384.7606800003,
+    "tvl_usd": 3580384.7606800003,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,26 +39,35 @@
       "aging": 4,
       "stale": 7,
       "unknown": 5
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Stakingverse is a liquid staking protocol operating on LUKSO and Ethereum, supporting liquid staking for LYX/LUKSO and ETH/Ethereum through a vault-based architecture. Receipt-token relationships should be stated only where independently verified; do not claim that SLYX represents staked ETH without verification.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 3,
-    "total_contracts_indexed": 4,
+    "product_family_count": 0,
+    "total_contracts_indexed": 2,
     "live_contracts": 0,
     "inactive_contracts": 0,
-    "singleton_contracts": 2,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 2,
-    "deployment_units": 1,
+    "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -91,11 +86,11 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "SLYXToken",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "UnnamedContract",
       "deployments": [
         {
           "chain_id": 42,
@@ -107,31 +102,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 42,
-      "chain_name": "lukso",
-      "address": "0x9f49a95b0c3c9e2a6c77a16c177928294c0f6f04",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "StakingverseVault",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 42,
           "chain_name": "lukso",
@@ -149,14 +120,18 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 2617,
       "audit_key": "audit-2617",
-      "report_name": "Rendered PDF capture",
+      "report_name": "Stakingverse_LST_Audit.pdf",
       "report_url": "https://raw.githubusercontent.com/Stakingverse/pool-contracts/55073caed01dcdd7fe83374c299a6ae0dcd57816/audits/Stakingverse_LST_Audit.pdf",
       "auditor": "Nethermind AI Agent",
       "audit_type": "audit",
@@ -166,28 +141,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 2617,
-          "report_url": "https://raw.githubusercontent.com/Stakingverse/pool-contracts/55073caed01dcdd7fe83374c299a6ae0dcd57816/audits/Stakingverse_LST_Audit.pdf"
-        },
-        {
-          "audit_id": 14328,
-          "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/Stakingverse_LST_Audit.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
       "audit_id": 2618,
       "audit_key": "audit-2618",
-      "report_name": "Rendered PDF capture",
+      "report_name": "Stakingverse_Audit_MiloTruck.pdf",
       "report_url": "https://raw.githubusercontent.com/Stakingverse/pool-contracts/55073caed01dcdd7fe83374c299a6ae0dcd57816/audits/Stakingverse_Audit_MiloTruck.pdf",
       "auditor": "MiloTruck",
       "audit_type": "audit",
@@ -197,28 +165,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 2618,
-          "report_url": "https://raw.githubusercontent.com/Stakingverse/pool-contracts/55073caed01dcdd7fe83374c299a6ae0dcd57816/audits/Stakingverse_Audit_MiloTruck.pdf"
-        },
-        {
-          "audit_id": 14327,
-          "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/Stakingverse_Audit_MiloTruck.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
       "audit_id": 2619,
       "audit_key": "audit-2619",
-      "report_name": "Rendered PDF capture",
+      "report_name": "Liquid_Staking_Audit_Oct_2024.pdf",
       "report_url": "https://raw.githubusercontent.com/Stakingverse/pool-contracts/55073caed01dcdd7fe83374c299a6ae0dcd57816/audits/Liquid_Staking_Audit_Oct_2024.pdf",
       "auditor": "Nethermind AI Agent",
       "audit_type": "audit",
@@ -228,28 +189,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 2619,
-          "report_url": "https://raw.githubusercontent.com/Stakingverse/pool-contracts/55073caed01dcdd7fe83374c299a6ae0dcd57816/audits/Liquid_Staking_Audit_Oct_2024.pdf"
-        },
-        {
-          "audit_id": 14326,
-          "report_url": "https://github.com/Stakingverse/pool-contracts/blob/main/audits/Liquid_Staking_Audit_Oct_2024.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
       "audit_id": 2620,
       "audit_key": "audit-2620",
-      "report_name": "Rendered PDF capture",
+      "report_name": "Terms.pdf",
       "report_url": "https://stakingverse.io/Terms.pdf",
       "auditor": "Nethermind AI Agent",
       "audit_type": "audit",
@@ -259,6 +213,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -280,6 +237,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -301,6 +261,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -322,6 +285,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -343,6 +309,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -364,6 +333,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -385,6 +357,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -406,6 +381,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -427,6 +405,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -448,6 +429,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -469,6 +453,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -490,6 +477,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -511,6 +501,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -532,6 +525,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -553,6 +549,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -568,7 +567,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 2
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -578,19 +577,19 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 2617,
-        "report_name": "Rendered PDF capture"
+        "report_name": "Stakingverse_LST_Audit.pdf"
       },
       {
         "audit_id": 2618,
-        "report_name": "Rendered PDF capture"
+        "report_name": "Stakingverse_Audit_MiloTruck.pdf"
       },
       {
         "audit_id": 2619,
-        "report_name": "Rendered PDF capture"
+        "report_name": "Liquid_Staking_Audit_Oct_2024.pdf"
       },
       {
         "audit_id": 2620,
-        "report_name": "Rendered PDF capture"
+        "report_name": "Terms.pdf"
       },
       {
         "audit_id": 2623,

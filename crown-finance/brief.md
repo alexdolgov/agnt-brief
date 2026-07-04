@@ -1,13 +1,11 @@
 # Agentic Audit Brief: Crown Finance
 
-⚠️ Lifecycle status: DEAD - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Crown Finance (`crown-finance`)
-- Lifecycle: dead (Tier 0, 100% below peak)
-- Generated: 2026-06-19T09:56:07.558Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-cc10
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:10.625Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-1bf2
 - Chains: cronos
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $0.00
@@ -33,19 +31,21 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-04 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -97,10 +97,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

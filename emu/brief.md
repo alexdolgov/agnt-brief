@@ -1,16 +1,14 @@
 # Agentic Audit Brief: Emu
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Emu (`emu`)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-19T17:29:18.704Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:11.784Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-2d9c
 - Chains: bsc
 - Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $2.42
+- DeFi Llama TVL: $2.34
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -28,24 +26,26 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 - Indexed contracts: 3; live-surface contracts included: 2 (2 live, 0 unknown).
 - Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
-- Detected codebases: uniswap-v2
-- Unverified dependencies: 2/4.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/2 (50.0%)
+- Coverage of deployed-live implementations: 1/2 (50.0%)
+- Deployed-live implementations: 2 of 2 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/2
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 2
 - Raw deployments: 2
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-11 (aging)
-- Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -89,7 +89,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Emu Quick Check.docx.pdf](https://github.com/emumeme/techrate-audit/blob/main/Emu%20Quick%20Check.docx.pdf) | unknown | Audit | 2024-11 | aging | Direct | contract_name | 1 | low |
+| [Emu Quick Check.docx.pdf](https://github.com/emumeme/techrate-audit/blob/main/Emu%20Quick%20Check.docx.pdf) | unknown | Audit | 2024-11 | aging | Direct | contract_name | 1 | n/a |
 
 ## Coverage Gaps
 
@@ -114,7 +114,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: low=1
-- Match method counts: extraction_exact=1
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=1
 
 Fork inheritance lineage and inherited audits are included when available.

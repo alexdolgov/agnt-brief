@@ -1,25 +1,25 @@
 {
   "schema_version": "2.0",
   "project_key": "alphaping",
-  "generated_at": "2026-06-17T07:00:50.535Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-07-04T14:53:00.600Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-f2f0",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "alphaping",
     "tier": 0,
     "peak_tvl": 110472563,
     "peak_date": "2025-10-28T00:00:00.000Z",
-    "tvl_30d_ago": 60368913,
-    "tvl_90d_ago": 30115341,
-    "tvl_current": 76835191,
+    "tvl_30d_ago": 70041378,
+    "tvl_90d_ago": 27478713,
+    "tvl_current": 39333082,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 36879591,
-    "change_30d_pct": 27.276088274108893,
-    "change_90d_pct": 155.1363804912586,
-    "days_since_peak": 227,
+    "tvl_180d_ago": 34487256,
+    "change_30d_pct": -43.84307801596936,
+    "change_90d_pct": 43.140190008171054,
+    "days_since_peak": 246,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 30.4486209847417
+    "drop_from_peak_pct": 64.39561015706678
   },
   "summary": {
     "total_contracts": 5,
@@ -34,14 +34,16 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 75877833.29206,
-    "tvl_usd": 73583464.4933499,
+    "dl_tvl_usd": 39132369.30332,
+    "tvl_usd": 36687056.01243208,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 73583464.49
+      "ethereum": 36687056.01
     },
-    "asd_usd": 73583464.4933499,
+    "asd_usd": 36687056.01243208,
     "website_url": "https://alphaping.ch/",
     "chains": [
       "ethereum"
@@ -55,21 +57,30 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 5,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 3,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "AlphaPing is a mandate-driven, non-custodial on-chain credit/lending vault protocol with explicit risk constraints and verifiable accounting. Its live protocol surface is expected to include vault, share-token, strategy, accounting, manager, or related protocol contracts beyond the captured Safe multisig/admin wallet.",
-    "relationship_narrative": "The protocol consists of a single product family centered on a Safe multisig, which serves as the core infrastructure for risk curation activities.",
-    "product_family_count": 1,
+    "project_purpose": "Risk Curators. Structurally: 5 project-authored contract(s) across 1 chain(s); 3 ERC4626 vaults, 3 ERC20 tokens; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 2 functional families. Contracts are linked by 1 cross-contract reference(s). Dominant framework: openzeppelin.",
+    "product_family_count": 2,
     "total_contracts_indexed": 17,
     "live_contracts": 17,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 2,
-    "live_deployment_units": 2,
-    "dependencies_extracted": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -91,10 +102,10 @@
       "deployment_unit_proxy_count": null,
       "name": "VaultV2",
       "role": "core_logic",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 72463002.95084266,
+      "tvl_usd": 36603893.27872898,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "VaultV2",
@@ -107,7 +118,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 34570600.715817,
+          "tvl_usd": 17731992.009182,
           "is_audited": false
         },
         {
@@ -118,7 +129,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 2785265.98816,
+          "tvl_usd": 1886701.465207,
           "is_audited": false
         },
         {
@@ -129,7 +140,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 6736798.476332,
+          "tvl_usd": 7713094.31239,
           "is_audited": false
         },
         {
@@ -140,7 +151,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 2646933.6866293517,
+          "tvl_usd": 2354149.1765852063,
           "is_audited": false
         },
         {
@@ -151,7 +162,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 2749706.977537,
+          "tvl_usd": 850809.453355,
           "is_audited": false
         },
         {
@@ -162,7 +173,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 10521093.297425,
+          "tvl_usd": 1030281.566197,
           "is_audited": false
         },
         {
@@ -173,7 +184,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 73111.81316230803,
+          "tvl_usd": 57779.98271277487,
           "is_audited": false
         },
         {
@@ -184,7 +195,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 12379491.99578,
+          "tvl_usd": 4979085.3131,
           "is_audited": false
         }
       ],
@@ -193,20 +204,24 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-04-14 11:05:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xd8cd72a2eb7a4312404c00aed5172c0026da0c27",
-      "deployment_unit": "unit-18535",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "VaultV2",
       "role": "core_logic",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 1120461.5425072277,
+      "tvl_usd": 83162.73370310564,
       "is_proxy": true,
       "impl_address": "0xd8cd72a2eb7a4312404c00aed5172c0026da0c27",
       "impl_name": "VaultV2",
@@ -215,11 +230,11 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xd8cd72a2eb7a4312404c00aed5172c0026da0c27",
-          "deployment_unit": "unit-18535",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 1120461.5425072277,
+          "tvl_usd": 83162.73370310564,
           "is_audited": false
         }
       ],
@@ -228,7 +243,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-16 12:01:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -238,8 +257,8 @@
       "deployment_unit_proxy_count": null,
       "name": "MetaMorphoV1_1",
       "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "morpho",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -318,7 +337,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-11-08 13:30:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -353,19 +376,23 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2023-12-28 12:09:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xeb4af6fa3afa08b10d593ec8ff87efb03bc04645",
-      "deployment_unit": "unit-18536",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "Safe",
       "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "AlphaPing",
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0x41675c099f32341bf84bfc5382af534df5c7461a",
@@ -375,8 +402,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xeb4af6fa3afa08b10d593ec8ff87efb03bc04645",
-          "deployment_unit": "unit-18536",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -388,17 +415,42 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-02-18 08:37:59+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0bf0164d17469241b6e086da4016dcc54feaa334",
+      "name": "VaultV2",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 36603893.27872898,
+      "risk_note": "Verified native implementation with $36,603,893.28 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd8cd72a2eb7a4312404c00aed5172c0026da0c27",
+      "name": "VaultV2",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 83162.73370310564,
+      "risk_note": "Verified native implementation with $83,162.73 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
-    "upstream": 1,
-    "standard_library": 0,
-    "needs_review": 4
+    "native": 2,
+    "upstream": 2,
+    "standard_library": 1,
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

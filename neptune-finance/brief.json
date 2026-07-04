@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "neptune-finance",
-  "generated_at": "2026-06-17T16:35:59.935Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-a893",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "neptune-finance",
-    "tier": 0,
-    "peak_tvl": 18356960,
-    "peak_date": "2025-01-07T00:00:00.000Z",
-    "tvl_30d_ago": 2304500,
-    "tvl_90d_ago": 2708602,
-    "tvl_current": 2912208,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 4016524,
-    "change_30d_pct": 26.37049251464526,
-    "change_90d_pct": 7.5170143121802315,
-    "days_since_peak": 501,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 84.13567388064254
-  },
+  "generated_at": "2026-07-04T14:53:38.633Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d094",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 2,
     "total_addresses": 2,
@@ -34,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 3,
+    "direct_audits": 3,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5929052.272899999,
-    "tvl_usd": 5929052.272899999,
+    "dl_tvl_usd": 4690867.97585,
+    "tvl_usd": 4690867.97585,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,12 +39,21 @@
       "aging": 1,
       "stale": 2,
       "unknown": 0
+    },
+    "live_implementations": 2,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
     "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 1,
+    "product_family_count": 3,
     "total_contracts_indexed": 2,
     "live_contracts": 2,
     "inactive_contracts": 0,
@@ -89,9 +84,9 @@
       "deployment_unit_proxy_count": null,
       "name": "TetherToken",
       "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "tether",
-      "product_line": "3. Get All Borrow Rates",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -114,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2017-11-28 03:41:21+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -124,9 +123,9 @@
       "deployment_unit_proxy_count": null,
       "name": "WETH9",
       "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "wrapped-ether",
-      "product_line": "3. Get All Borrow Rates",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -149,14 +148,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2017-12-12 14:17:35+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 2394,
       "audit_key": "audit-2394",
-      "report_name": "Audit Report",
+      "report_name": "2024-01-09 Audit Report - Neptune Updates v1.0.pdf",
       "report_url": "https://github.com/oak-security/audit-reports/blob/main/Neptune/2024-01-09%20Audit%20Report%20-%20Neptune%20Updates%20v1.0.pdf",
       "auditor": "Oak Security",
       "audit_type": "audit",
@@ -166,27 +169,16 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 2394,
-          "report_url": "https://github.com/oak-security/audit-reports/blob/main/Neptune/2024-01-09%20Audit%20Report%20-%20Neptune%20Updates%20v1.0.pdf"
-        },
-        {
-          "audit_id": 3514,
-          "report_url": "https://raw.githubusercontent.com/oak-security/audit-reports/527dd1c79863f5f4d877b8756bd5488d00f2d5f9/Neptune/2024-01-09%20Audit%20Report%20-%20Neptune%20Updates%20v1.0.pdf"
-        },
-        {
-          "audit_id": 12566,
-          "report_url": "https://raw.githubusercontent.com/oak-security/audit-reports/227de1aa9d5a8fbd02e6d90e10b773d78056eba5/Neptune/2024-01-09%20Audit%20Report%20-%20Neptune%20Updates%20v1.0.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
       "audit_id": 2395,
@@ -201,6 +193,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -222,6 +217,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -232,10 +230,31 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+      "name": "TetherToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "name": "WETH9",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
-    "upstream": 2,
+    "native": 2,
+    "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
@@ -247,7 +266,7 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 2394,
-        "report_name": "Audit Report"
+        "report_name": "2024-01-09 Audit Report - Neptune Updates v1.0.pdf"
       },
       {
         "audit_id": 2395,

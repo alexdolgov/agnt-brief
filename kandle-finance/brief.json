@@ -1,36 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "kandle-finance",
-  "generated_at": "2026-06-19T11:23:14.490Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "kandle-finance",
-    "tier": 1,
-    "peak_tvl": 1035044,
-    "peak_date": "2025-12-29T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 0,
-    "tvl_current": 0,
-    "tier0_reason": "current_tvl_zero_after_meaningful_peak",
-    "tvl_180d_ago": 1032516,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "governance_raw": {
-      "evidence": "TVL is 0 with a 100% drop from peak sustained for 172 days, and the homepage shows a static interface with no active deposits or activity.",
-      "confidence": 0.95,
-      "lifecycle_status": "dead"
-    },
-    "days_since_peak": 172,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 100,
-    "governance_evidence": "TVL is 0 with a 100% drop from peak sustained for 172 days, and the homepage shows a static interface with no active deposits or activity.",
-    "governance_confidence": 0.95,
-    "governance_text_chars": 296,
-    "governance_classification": "dead",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:29.020Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 2,
     "total_addresses": 2,
@@ -44,13 +18,13 @@
     "contracts_unverified": 0,
     "coverage_pct": 100,
     "total_audits": 2,
+    "direct_audits": 2,
+    "inherited_audits": 0,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 0.07458,
-    "tvl_usd": 0.074593,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "arbitrum": 0.07
-    },
+    "dl_tvl_usd": 0.07457,
+    "tvl_usd": 0.07457,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://app.kandle.fi/",
     "chains": [
@@ -65,11 +39,20 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 2,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 2,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 2
     }
   },
   "topography": {
-    "project_purpose": "Kandle Finance is a yield protocol on Arbitrum One that offers fixed and variable yield vaults. Users can deposit assets to earn predictable fixed returns or optimized variable yields through automated strategies.",
-    "relationship_narrative": "Both vaults are deployed by the same deployer and likely share common infrastructure such as access control and fee mechanisms, though no explicit supporting contracts are present in the inventory.",
+    "project_purpose": "Yield. Structurally: 2 project-authored contract(s) across 1 chain(s); 2 ERC4626 vaults, 2 ERC20 tokens; role-gated via AccessControl; built on openzeppelin.",
+    "relationship_narrative": "The protocol forms a single structural family (Core Logic) of 2 contract(s).",
     "product_family_count": 1,
     "total_contracts_indexed": 2,
     "live_contracts": 2,
@@ -96,44 +79,6 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0x9a7f9c48100cbacb431f19b8407f73bec39d3ecd",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "KandleYieldVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Kandle Finance",
-      "tvl_usd": 0.074587,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "KandleYieldVault",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x9a7f9c48100cbacb431f19b8407f73bec39d3ecd",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.074587,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-13327",
-        "audit-13328"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
       "address": "0xb9b6b1783ca230cc7effecbaa371502a9cbab594",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -141,8 +86,8 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Kandle Finance",
-      "tvl_usd": 0.000006,
+      "product_line": null,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "KandleFixedVault",
@@ -155,7 +100,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 0.000006,
+          "tvl_usd": null,
           "is_audited": true
         }
       ],
@@ -167,14 +112,60 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-11 11:01:57+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x9a7f9c48100cbacb431f19b8407f73bec39d3ecd",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "KandleYieldVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "KandleYieldVault",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x9a7f9c48100cbacb431f19b8407f73bec39d3ecd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13327",
+        "audit-13328"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-11 11:02:39+03",
+      "deploy_coverage_basis": "match_unverified"
     }
   ],
   "audits": [
     {
       "audit_id": 13327,
       "audit_key": "audit-13327",
-      "report_name": "DL audit link",
+      "report_name": "kandlefi-verichain-audit.pdf",
       "report_url": "https://wiki.kandle.fi/audits/kandlefi-verichain-audit.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -184,24 +175,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "FixedVaultDeployer",
-        "KandleFixedVault",
-        "KandleVaultFactory",
-        "KandleYieldVault",
-        "YieldVaultDeployer"
-      ],
+      "extracted_names": [],
       "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 13328,
       "audit_key": "audit-13328",
-      "report_name": "DL audit link",
+      "report_name": "kandlefi-certik-audit.pdf",
       "report_url": "https://wiki.kandle.fi/audits/kandlefi-certik-audit.pdf",
       "auditor": "CertiK",
       "audit_type": "audit",
@@ -211,23 +199,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BaseAccessControl",
-        "BaseAccessControlUpgradeable",
-        "IAdapter",
-        "IKandleFixedVault",
-        "IKandleVaultFactory",
-        "IKandleYieldVault",
-        "KandleFixedVault",
-        "KandleVaultAccessControl",
-        "KandleVaultFactory",
-        "KandleYieldVault"
-      ],
+      "extracted_names": [],
       "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -256,11 +236,9 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 4
+      "contract_name": 4
     },
-    "extraction_confidence_counts": {
-      "high": 2
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

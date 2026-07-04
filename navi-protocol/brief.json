@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "navi-protocol",
-  "generated_at": "2026-06-13T10:21:51.217Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
+  "generated_at": "2026-07-03T21:06:36.239Z",
+  "pipeline_run_id": "brief-restore-2026-07",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -18,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 7,
+    "direct_audits": 7,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 275726472.53659,
-    "tvl_usd": 275726472.53659,
+    "dl_tvl_usd": 266717372.3299,
+    "tvl_usd": 266717372.3299,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -35,12 +37,31 @@
       "aging": 0,
       "stale": 0,
       "unknown": 7
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
     "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,
@@ -56,7 +77,7 @@
     {
       "audit_id": 13547,
       "audit_key": "audit-13547",
-      "report_name": "DL audit link",
+      "report_name": "spaces/EagmjVMVJsuZQ0TvRYt7/uploads/g2IKp2ER5qhU3uX1Nr85/20250311-Navi-Perp-Vault-Final-Audit-Report.pdf",
       "report_url": "https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FEagmjVMVJsuZQ0TvRYt7%2Fuploads%2Fg2IKp2ER5qhU3uX1Nr85%2F20250311-Navi-Perp-Vault-Final-Audit-Report.pdf?alt=media",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -66,6 +87,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -77,7 +101,7 @@
     {
       "audit_id": 13548,
       "audit_key": "audit-13548",
-      "report_name": "DL audit link",
+      "report_name": "spaces/YTRq6w3DGapKHxfqaA3Z/uploads/soS2qrvZPrclkXpPp9z2/Navi Smart Contract Preliminary Audit Report.pdf",
       "report_url": "https://2311140553-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FYTRq6w3DGapKHxfqaA3Z%2Fuploads%2FsoS2qrvZPrclkXpPp9z2%2FNavi%20Smart%20Contract%20Preliminary%20Audit%20Report.pdf",
       "auditor": "yAudit",
       "audit_type": "audit",
@@ -87,6 +111,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -98,7 +125,7 @@
     {
       "audit_id": 13549,
       "audit_key": "audit-13549",
-      "report_name": "DL audit link",
+      "report_name": "hacken.io/audits/volo",
       "report_url": "https://hacken.io/audits/volo",
       "auditor": "Hacken",
       "audit_type": "audit",
@@ -108,6 +135,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -119,7 +149,7 @@
     {
       "audit_id": 13550,
       "audit_key": "audit-13550",
-      "report_name": "DL audit link",
+      "report_name": "Volo-Smart-Contract-Audit-Report.pdf",
       "report_url": "https://movebit.xyz/reports/Volo-Smart-Contract-Audit-Report.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -129,6 +159,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -140,7 +173,7 @@
     {
       "audit_id": 13551,
       "audit_key": "audit-13551",
-      "report_name": "Rendered PDF capture",
+      "report_name": "spaces/bGzidXqHHyC2MOZET4ED/uploads/SMib6LnBkcFzNzhvjEdn/Volo audit report by Certora.pdf",
       "report_url": "https://3466679256-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FbGzidXqHHyC2MOZET4ED%2Fuploads%2FSMib6LnBkcFzNzhvjEdn%2FVolo%20audit%20report%20by%20Certora.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -150,6 +183,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -161,7 +197,7 @@
     {
       "audit_id": 13552,
       "audit_key": "audit-13552",
-      "report_name": "Rendered PDF capture",
+      "report_name": "spaces/bGzidXqHHyC2MOZET4ED/uploads/tot7c40ljeUv8F7y1fwI/VAR_VOLO_AUDIT_REPORT.pdf",
       "report_url": "https://3466679256-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FbGzidXqHHyC2MOZET4ED%2Fuploads%2Ftot7c40ljeUv8F7y1fwI%2FVAR_VOLO_AUDIT_REPORT.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -171,6 +207,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -182,7 +221,7 @@
     {
       "audit_id": 13553,
       "audit_key": "audit-13553",
-      "report_name": "Rendered PDF capture",
+      "report_name": "spaces/bGzidXqHHyC2MOZET4ED/uploads/UFaKG7MCW1E0NIgL11ls/VAR-Navi-251212-VoloVaults-V3.pdf",
       "report_url": "https://3466679256-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FbGzidXqHHyC2MOZET4ED%2Fuploads%2FUFaKG7MCW1E0NIgL11ls%2FVAR-Navi-251212-VoloVaults-V3.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -192,6 +231,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -217,31 +259,31 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 13547,
-        "report_name": "DL audit link"
+        "report_name": "spaces/EagmjVMVJsuZQ0TvRYt7/uploads/g2IKp2ER5qhU3uX1Nr85/20250311-Navi-Perp-Vault-Final-Audit-Report.pdf"
       },
       {
         "audit_id": 13548,
-        "report_name": "DL audit link"
+        "report_name": "spaces/YTRq6w3DGapKHxfqaA3Z/uploads/soS2qrvZPrclkXpPp9z2/Navi Smart Contract Preliminary Audit Report.pdf"
       },
       {
         "audit_id": 13549,
-        "report_name": "DL audit link"
+        "report_name": "hacken.io/audits/volo"
       },
       {
         "audit_id": 13550,
-        "report_name": "DL audit link"
+        "report_name": "Volo-Smart-Contract-Audit-Report.pdf"
       },
       {
         "audit_id": 13551,
-        "report_name": "Rendered PDF capture"
+        "report_name": "spaces/bGzidXqHHyC2MOZET4ED/uploads/SMib6LnBkcFzNzhvjEdn/Volo audit report by Certora.pdf"
       },
       {
         "audit_id": 13552,
-        "report_name": "Rendered PDF capture"
+        "report_name": "spaces/bGzidXqHHyC2MOZET4ED/uploads/tot7c40ljeUv8F7y1fwI/VAR_VOLO_AUDIT_REPORT.pdf"
       },
       {
         "audit_id": 13553,
-        "report_name": "Rendered PDF capture"
+        "report_name": "spaces/bGzidXqHHyC2MOZET4ED/uploads/UFaKG7MCW1E0NIgL11ls/VAR-Navi-251212-VoloVaults-V3.pdf"
       }
     ],
     "inherited_remapped_matches": []

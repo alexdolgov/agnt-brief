@@ -1,51 +1,51 @@
 # Agentic Audit Brief: Skate Fi
 
-⚠️ Lifecycle status: DEAD - TVL dropped 23.1% over 90 days
-
 ## Project Overview
 
 - Project: Skate Fi (`skate-fi`)
 - Website: [https://www.rangeprotocol.com](https://www.rangeprotocol.com)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-21T09:12:45.153Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:56.374Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-1cbb
 - Chains: ethereum, manta, mantle
-- Contract surface: 5 unique implementations (7 raw deployments)
-- DeFi Llama TVL: $112,272.37
+- Contract surface: 7 unique implementations (17 raw deployments)
+- DeFi Llama TVL: $118,981.59
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Skate Fi is a liquidity management protocol that deploys automated vaults to optimize liquidity provision across multiple chains. It uses factory contracts to create and manage vaults that concentrate liquidity within specific price ranges, aiming to maximize yields for depositors.
+Liquidity Manager. Structurally: 10 project-authored contract(s) across 3 chain(s); 3 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The RangeProtocolFactory and RangeLiquiChargedFactory registries deploy and manage instances of RangeProtocolVault and VaultLib, which serve as the core logic for liquidity vaults. The ERC1967Proxy acts as an upgradeable proxy for the vault implementation, enabling seamless upgrades across all vaults.
+The protocol comprises 4 functional families. Its contracts share 2 common project-authored base contract(s) (ownableupgradeable, rangeprotocolvaultstorage). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 105; live-surface contracts included: 7 (3 live, 4 unknown).
-- Excluded by liveness: 94 inactive, 4 singleton, 0 uninitialized.
-- Deployment units: 0/2 live.
-- Detected codebases: aave-v2, uniswap-v3
-- Dependencies extracted: 2; unverified dependencies: 0.
+- Indexed contracts: 67; live-surface contracts included: 17 (15 live, 2 unknown).
+- Excluded by liveness: 50 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/5 (60.0%)
+- Coverage of deployed-live implementations: 3/4 (75.0%)
+- Deployed-live implementations: 5 of 7 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 3/5
 - Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 5
-- Raw deployments: 7
-- Audits discovered: 4
+- Unverified implementations: 2
+- Unique implementations: 7
+- Raw deployments: 17
+- Audits discovered: 4 (4 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-09 (stale)
-- Staleness: 0 fresh, 0 aging, 4 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 4 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 3 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -62,8 +62,8 @@ The RangeProtocolFactory and RangeLiquiChargedFactory registries deploy and mana
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | RangeProtocolFactory | registry | manta | n/a | [`0x52b29c...2fc9c7`](./contracts/manta-169/0x52b29c6154ad0f5c02416b8cb1ceb76e082fc9c7/) | ✅ Audited |
-| RangeProtocolVault | core_logic | manta | n/a | [`0xe9c45a...f7cc70`](./contracts/manta-169/0xe9c45a2446699954847521890b27dd9b24f7cc70/) | ✅ Audited |
-| VaultLib | core_logic | manta | n/a | 2 deployments: manta [`0x62fd62...5a8f33`](./contracts/manta-169/0x62fd6208a1a6f0b06e1e2788efb4ee74bf5a8f33/); manta `0x873fd4...e55b5b` | ✅ Audited |
+| RangeProtocolVault | unknown | ethereum | n/a | 5 deployments: ethereum [`0x5ee485...7a43d8`](./contracts/ethereum-1/0x5ee485c06a9c6bf499ee5fc1b5e16a9a607a43d8/); ethereum `0x890463...47a046`; ethereum `0xb25071...440c11`; manta `0xe9c45a...f7cc70`; mantle `0xfd1bfd...400fa8` | ✅ Audited |
+| VaultLib | unknown | ethereum | n/a | 6 deployments: ethereum [`0x5c584a...9437fb`](./contracts/ethereum-1/0x5c584afadb09d02467da79ea777fa0cae49437fb/); ethereum `0x90ce97...909cc9`; ethereum `0xb0f6b8...754c19`; manta `0x62fd62...5a8f33`; manta `0x873fd4...e55b5b`; mantle `0xe621d0...893e55` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
@@ -84,20 +84,23 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x249c2a...3ab070` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x4f1288...e654ff` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Certik-Audit.pdf](https://github.com/Range-Protocol/contracts/blob/master/audits/Certik-Audit.pdf) | CertiK | Audit | 2023-04 | stale | Direct | contract_name | 2 | high |
-| [Halborn-Audit.pdf](https://github.com/Range-Protocol/contracts/blob/master/audits/Halborn-Audit.pdf) | Halborn | Audit | 2023-06 | stale | Direct | contract_name | 2 | high |
-| [Salusec-Audit.pdf](https://github.com/Range-Protocol/contracts/blob/izumi-implementation/audits/Salusec-Audit.pdf) | unknown | Audit | 2023-09 | stale | Direct | contract_name | 4 | high |
-| [Veridise-Audit.pdf](https://github.com/Range-Protocol/contracts/blob/master/audits/Veridise-Audit.pdf) | unknown | Audit | 2023-09 | stale | Direct | contract_name | 2 | high |
+| [Certik-Audit.pdf](https://github.com/Range-Protocol/contracts/blob/master/audits/Certik-Audit.pdf) | CertiK | Audit | 2023-04 | stale | Direct | contract_name | 2 | n/a |
+| [Halborn-Audit.pdf](https://github.com/Range-Protocol/contracts/blob/master/audits/Halborn-Audit.pdf) | Halborn | Audit | 2023-06 | stale | Direct | contract_name | 2 | n/a |
+| [Salusec-Audit.pdf](https://github.com/Range-Protocol/contracts/blob/izumi-implementation/audits/Salusec-Audit.pdf) | unknown | Audit | 2023-09 | stale | Direct | contract_name | 3 | n/a |
+| [Veridise-Audit.pdf](https://github.com/Range-Protocol/contracts/blob/master/audits/Veridise-Audit.pdf) | unknown | Audit | 2023-09 | stale | Direct | contract_name | 2 | n/a |
 
 ## Coverage Gaps
 
@@ -114,7 +117,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 4 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
@@ -122,7 +125,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=4
-- Match method counts: extraction_exact=288
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=9
 
 Fork inheritance lineage and inherited audits are included when available.

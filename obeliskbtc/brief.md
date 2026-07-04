@@ -1,17 +1,15 @@
 # Agentic Audit Brief: ObeliskBTC
 
-⚠️ Lifecycle status: DECLINING - TVL changed 27.1% over 90 days
-
 ## Project Overview
 
 - Project: ObeliskBTC (`obeliskbtc`)
 - Website: [https://obelisk.nodedao.com](https://obelisk.nodedao.com)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-19T06:14:32.509Z
-- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:38.862Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $7,428,761.81
+- DeFi Llama TVL: $6,922,885.23
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -22,31 +20,33 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-ObeliskBTC is a Bitcoin asset-management and bridge protocol tracked as a separate DeFiLlama protocol. Its scope should be treated separately from broader NodeDAO/NETH liquid-staking or restaking contracts unless project documentation explicitly links those deployments to ObeliskBTC.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 26; live-surface contracts included: 1 (1 live, 0 unknown).
-- Excluded by liveness: 7 inactive, 18 singleton, 0 uninitialized.
-- Deployment units: 0/15 live.
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 1/5.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/1 (100.0%)
+- Coverage of deployed-live implementations: 1/1 (100.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/1
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-08 (aging)
-- Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -88,7 +88,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [CertiK-Obelisk-final-20240805T174639Z.pdf](https://github.com/NodeDAO/audit/blob/main/CertiK-Obelisk-final-20240805T174639Z.pdf) | CertiK | Audit | 2024-08 | aging | Direct | contract_name | 1 | high |
+| [CertiK-Obelisk-final-20240805T174639Z.pdf](https://github.com/NodeDAO/audit/blob/main/CertiK-Obelisk-final-20240805T174639Z.pdf) | CertiK | Audit | 2024-08 | aging | Direct | contract_name | 1 | n/a |
 
 ## Coverage Gaps
 
@@ -111,7 +111,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=12
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=1
 
 Fork inheritance lineage and inherited audits are included when available.

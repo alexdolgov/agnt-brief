@@ -1,60 +1,64 @@
 # Agentic Audit Brief: Paxe Protocol
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Paxe Protocol (`paxe-protocol`)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-19T17:19:45.679Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:42.985Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: bsc
-- Contract surface: 5 unique implementations (5 raw deployments)
+- Contract surface: 8 unique implementations (10 raw deployments)
 - DeFi Llama TVL: $0.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Paxe Protocol is a yield farming platform on BSC that enables users to stake or restake assets to earn rewards. It provides liquid farming and restaking mechanisms to optimize yield generation.
+Farm. Structurally: 10 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens; role-gated via AccessControl; built on openzeppelin.
 
 ### Architecture
 
-All contracts are deployed by the same deployer and form a single product family. The Paxe token likely serves as the reward or governance token across the LiquidFarming and PaxeRestaking contracts.
+The protocol comprises 2 functional families. Contracts are linked by 7 cross-contract reference(s). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 22; live-surface contracts included: 5 (5 live, 0 unknown).
-- Excluded by liveness: 17 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 21; live-surface contracts included: 10 (8 live, 2 unknown).
+- Excluded by liveness: 11 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
-- Detected codebases: uniswap-v2
-- Unverified dependencies: 2/15.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/5 (0.0%)
+- Coverage of deployed-live implementations: 1/6 (16.7%)
+- Deployed-live implementations: 6 of 8 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/6
 - Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 5
-- Raw deployments: 5
-- Audits discovered: 1
-- Scoreable audits (matched contracts): 0
+- Unverified implementations: 2
+- Unique implementations: 8
+- Raw deployments: 10
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-08 (aging)
-- Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 1 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| unknown | Tier 2 | 1 | 16.7% | 2024-08 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (1)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| LiquidFarming | unknown | bsc | n/a | 3 deployments: bsc [`0x08d98d...41be85`](./contracts/bsc-56/0x08d98db82d757a868e8a9866a7199e22ce41be85/); bsc `0x75a806...e349fb`; bsc `0xba576f...02241f` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
 
@@ -78,17 +82,20 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | bsc | n/a | `0x007d0a...bbf503` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x00de3d...373146` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [liquidFarming.pdf](https://github.com/cyberscope-io/audits/blob/main/paxe/liquidFarming.pdf) | unknown | Audit | 2024-08 | aging | Direct | contract_name | 0 | n/a |
+| [liquidFarming.pdf](https://github.com/cyberscope-io/audits/blob/main/paxe/liquidFarming.pdf) | unknown | Audit | 2024-08 | aging | Direct | contract_name | 3 | high |
 
 ## Coverage Gaps
 
@@ -106,22 +113,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 5 |
+| native | 6 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=3
-
-Zero-match audit list:
-
-- [13656] liquidFarming.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -4,44 +4,47 @@
 
 - Project: Ekubo (`ekubo`)
 - Website: [https://ekubo.org/](https://ekubo.org/)
-- Lifecycle: active (Tier 0, 73.2% below peak)
-- Generated: 2026-06-17T07:00:48.533Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:11.627Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-2d9c
 - Chains: ethereum
 - Contract surface: 14 unique implementations (15 raw deployments)
-- DeFi Llama TVL: $20,901,566.76
-- On-chain TVL (included contracts): $5,648,264.12
-- TVL by chain: Ethereum $5,648,264.12
+- DeFi Llama TVL: $20,683,454.92
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Ekubo is a live decentralized exchange protocol built around concentrated liquidity and a singleton-style Core design. The project is primarily associated with Starknet and also supports Ethereum; its public interface advertises swaps on Ethereum, Arbitrum, and Starknet. The currently listed contract surface is an incomplete Ethereum-only subset and should not be treated as the full Ekubo deployment surface or as the original Starknet Core/periphery/governance surface. Arbitrum should be treated as interface-supported but outside the currently covered audited contract surface unless Arbitrum deployments are separately verified and added.
+Dexs. Structurally: 8 project-authored contract(s) across 1 chain(s); 1 ERC20 token, 1 ERC721 NFT; built on solady.
 
 ### Architecture
 
-The EVM Contracts (V2) family extends the original Ekubo DEX to EVM chains, sharing the same concentrated liquidity design but with separate Core instances. Governance contracts are independent but may control parameters or upgrades across families via the StarknetOwnerProxy.
+The protocol comprises 4 functional families. Its contracts share 5 common project-authored base contract(s) (usescore, payablemulticallable, slippagechecker). Dominant framework: solady.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 17; live-surface contracts included: 15 (11 live, 4 unknown).
-- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 15; live-surface contracts included: 15 (9 live, 6 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 11; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/8 (37.5%)
+- Coverage of deployed-live implementations: 3/8 (37.5%)
+- Deployed-live implementations: 8 of 14 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 3/8
 - Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
 - Unverified implementations: 6
 - Unique implementations: 14
 - Raw deployments: 15
-- Audits discovered: 5
+- Audits discovered: 5 (5 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 3
-- ASD (verified + unaudited TVL): $5,648,264.12
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-02 (fresh)
-- Staleness: 4 fresh, 1 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 4 fresh, 1 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 3 match-unverified
 - Tier 1 coverage: 12.5% (Code4rena)
 
 ### Auditor Coverage
@@ -101,11 +104,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [The Governance Starknet L1 Proxy has been audited by Cairo Security Clan and the report can be found on [GitHub]().](https://github.com/EkuboProtocol/governance/blob/main/l1_proxy/Ekubo_Governance_L1_Proxy.pdf) | Cairo Security Clan | Audit | 2025-01 | aging | Direct | contract_name | 1 | high |
-| [Code4rena x Ekubo audit report 2025-11.pdf](https://github.com/EkuboProtocol/evm-contracts/blob/main/audits/Code4rena%20x%20Ekubo%20audit%20report%202025-11.pdf) | Code4rena | Contest | 2025-11 | fresh | Direct | contract_name | 1 | high |
+| [Ekubo_Governance_L1_Proxy.pdf](https://github.com/EkuboProtocol/governance/blob/main/l1_proxy/Ekubo_Governance_L1_Proxy.pdf) | Cairo Security Clan | Audit | 2025-01 | aging | Direct | contract_name | 1 | n/a |
+| [Code4rena x Ekubo audit report 2025-11.pdf](https://github.com/EkuboProtocol/evm-contracts/blob/main/audits/Code4rena%20x%20Ekubo%20audit%20report%202025-11.pdf) | Code4rena | Contest | 2025-11 | fresh | Direct | contract_name | 1 | n/a |
 | [Ekubo-Auctions-Riley-Holterhus-Audit.pdf](https://github.com/EkuboProtocol/evm-contracts/blob/main/audits/Ekubo-Auctions-Riley-Holterhus-Audit.pdf) | Riley Holterhus | Audit | 2026-02 | fresh | Direct | n/a | 0 | n/a |
 | [Ekubo-Feb-2026-Update-Riley-Holterhus-Audit.pdf](https://github.com/EkuboProtocol/evm-contracts/blob/main/audits/Ekubo-Feb-2026-Update-Riley-Holterhus-Audit.pdf) | Riley Holterhus | Audit | 2026-02 | fresh | Direct | n/a | 0 | n/a |
-| [Ekubo-Riley-Holterhus-Audit.pdf](https://github.com/EkuboProtocol/evm-contracts/blob/main/audits/Ekubo-Riley-Holterhus-Audit.pdf) | Riley Holterhus | Audit | 2025-11 | fresh | Direct | contract_name | 2 | high |
+| [Ekubo-Riley-Holterhus-Audit.pdf](https://github.com/EkuboProtocol/evm-contracts/blob/main/audits/Ekubo-Riley-Holterhus-Audit.pdf) | Riley Holterhus | Audit | 2025-11 | fresh | Direct | contract_name | 1 | n/a |
 
 ## Coverage Gaps
 
@@ -113,7 +116,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x04c46e...317d0f`](./contracts/ethereum-1/0x04c46e830bb56ce22735d5d8fc9cb90309317d0f/) | EkuboToken | token | $5,648,264.12 | Verified native implementation with $5,648,264.12 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x04c46e...317d0f`](./contracts/ethereum-1/0x04c46e830bb56ce22735d5d8fc9cb90309317d0f/) | EkuboToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0c95ea...44aeab`](./contracts/ethereum-1/0x0c95ea31e4501b3b879cae2232087e478d44aeab/) | MEVResistRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa37cc3...b63e17`](./contracts/ethereum-1/0xa37cc341634afd9e0919d334606e676dbab63e17/) | Positions | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2b8d80...0ab120`](./contracts/ethereum-1/0x2b8d80d891c1e20aca70ff8a85714aa1900ab120/) | TokenWrapperFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -123,10 +126,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 14 |
+| native | 8 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 6 |
 
 ## Scope Matching Notes
 
@@ -134,8 +137,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=3
-- Match method counts: extraction_exact=6
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=3
 
 Zero-match audit list:
 

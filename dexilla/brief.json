@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "dexilla",
-  "generated_at": "2026-06-19T13:00:51.217Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "dexilla",
-    "tier": 0,
-    "peak_tvl": 34073,
-    "peak_date": "2023-06-22T00:00:00.000Z",
-    "tvl_30d_ago": 137,
-    "tvl_90d_ago": 137,
-    "tvl_current": 115,
-    "tier0_reason": "long_term_collapse_from_peak",
-    "tvl_180d_ago": 147,
-    "change_30d_pct": -16.05839416058394,
-    "change_90d_pct": -16.05839416058394,
-    "days_since_peak": 1093,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 99.66248936107769
-  },
+  "generated_at": "2026-07-04T14:53:11.064Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-66d5",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 5,
-    "total_addresses": 10,
-    "unique_implementations": 5,
-    "total_deployments": 10,
+    "total_contracts": 6,
+    "total_addresses": 11,
+    "unique_implementations": 6,
+    "total_deployments": 11,
     "audited_contracts": 1,
     "unaudited_contracts": 3,
     "contracts_verified_audited": 1,
     "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 1,
+    "contracts_unverified": 2,
     "coverage_pct": 25,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 133.27289000000002,
-    "tvl_usd": 133.27289000000002,
+    "dl_tvl_usd": 114.0245,
+    "tvl_usd": 114.0245,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -54,18 +40,27 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 4,
+    "live_verified_implementations": 4,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 1
     }
   },
   "topography": {
-    "project_purpose": "Dexilla is a decentralized exchange (DEX) protocol deployed across multiple chains, enabling users to swap tokens through a series of exchange contract versions (V3 to V6).",
-    "relationship_narrative": "All exchange contracts belong to a single product family and share the same core purpose; there is no evidence of separate infrastructure or token contracts, suggesting a self-contained DEX design.",
+    "project_purpose": "Dexs. Structurally: 7 project-authored contract(s) across 2 chain(s); role-gated via AccessControl; built on openzeppelin.",
+    "relationship_narrative": "The protocol forms a single structural family (Core Logic) of 7 contract(s).",
     "product_family_count": 1,
-    "total_contracts_indexed": 24,
-    "live_contracts": 1,
-    "inactive_contracts": 14,
+    "total_contracts_indexed": 19,
+    "live_contracts": 9,
+    "inactive_contracts": 8,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 9,
+    "unknown_contracts": 2,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
@@ -73,7 +68,7 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 5,
+    "unique_implementations": 6,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -92,7 +87,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Dexilla",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -126,7 +121,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-02 14:49:26+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 10,
@@ -138,7 +137,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Dexilla",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -164,7 +163,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -174,7 +173,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-12 19:33:13+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -186,7 +189,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Dexilla",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -220,7 +223,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-03 08:32:45+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 10,
@@ -277,7 +284,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-02 13:42:37+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x231757c3325156cdadf659cda2ca9f86d740ceef",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x231757c3325156cdadf659cda2ca9f86d740ceef",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-02 13:30:13+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 10,
@@ -287,7 +337,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -312,7 +362,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-02 11:22:47+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -329,14 +383,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "DexillaExchangeV4"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -382,18 +437,16 @@
     }
   ],
   "origin_summary": {
-    "native": 5,
+    "native": 4,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 8
+      "contract_name": 1
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

@@ -5,36 +5,47 @@
 - Project: Gravity (`gravity`)
 - Website: [https://grvty.dev](https://grvty.dev)
 - Lifecycle: unknown
-- Generated: 2026-06-13T11:38:05.180Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $8,442.98
+- Generated: 2026-07-04T14:53:19.913Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-38b2
+- Chains: ethereum
+- Contract surface: 1 unique implementations (1 raw deployments)
+- DeFi Llama TVL: $31,806.32
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+
+## Contract Surface Quality
+
+- Indexed contracts: 1; live-surface contracts included: 1 (0 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
-- Audits discovered: 2
+- Unverified implementations: 1
+- Unique implementations: 1
+- Raw deployments: 1
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2025 (aging)
-- Staleness: 0 fresh, 2 aging, 0 stale, 0 unknown
+- Latest audit: 2025-01 (aging)
+- Audit staleness (calendar age): 0 fresh, 2 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -63,18 +74,20 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x000000...001600` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [gtac-liquidstake-module-assessment-ssc.pdf](https://github.com/gravity-gtac/assets/blob/master/gtac-liquidstake-module-assessment-ssc.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
-| [liquidstake-precompiles-ssc.pdf](https://github.com/gravity-gtac/assets/blob/master/liquidstake-precompiles-ssc.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
+| [gtac-liquidstake-module-assessment-ssc.pdf](https://github.com/gravity-gtac/assets/blob/master/gtac-liquidstake-module-assessment-ssc.pdf) | unknown | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
+| [liquidstake-precompiles-ssc.pdf](https://github.com/gravity-gtac/assets/blob/master/liquidstake-precompiles-ssc.pdf) | unknown | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -89,7 +102,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

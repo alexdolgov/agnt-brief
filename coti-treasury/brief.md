@@ -5,11 +5,11 @@
 - Project: COTI Treasury (`coti-treasury`)
 - Website: [https://treasury.coti.io](https://treasury.coti.io)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:40.381Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-07-03T21:05:42.187Z
+- Pipeline run: brief-restore-2026-07
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $8,065,399.46
+- DeFi Llama TVL: $6,592,084.85
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-COTI Treasury is the COTI staking/treasury pool tracked by DefiLlama on Coti. Users stake or deposit COTI into the treasury/staking system to participate in COTI yield or reward distribution. Unsupported claims that it is a multi-chain EVM yield aggregator with vault aggregation, liquidity pools, auto-compounding strategies, adapters, bridges, or governance controllers should be removed unless verified by official COTI documentation or the DefiLlama adapter.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
@@ -32,17 +32,20 @@ COTI Treasury is the COTI staking/treasury pool tracked by DefiLlama on Coti. Us
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 0 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 0
 - Raw deployments: 0
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage

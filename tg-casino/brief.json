@@ -1,46 +1,30 @@
 {
   "schema_version": "2.0",
   "project_key": "tg-casino",
-  "generated_at": "2026-06-18T03:58:52.395Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-bcf3",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "tg-casino",
-    "tier": 0,
-    "peak_tvl": 0,
-    "peak_date": "2024-05-06T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 0,
-    "tvl_current": 0,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 0,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "days_since_peak": 755,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 0
-  },
+  "generated_at": "2026-07-04T14:54:01.333Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-66d5",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 4,
-    "total_addresses": 5,
-    "unique_implementations": 4,
-    "total_deployments": 5,
-    "audited_contracts": 2,
+    "total_contracts": 5,
+    "total_addresses": 6,
+    "unique_implementations": 5,
+    "total_deployments": 6,
+    "audited_contracts": 3,
     "unaudited_contracts": 2,
-    "contracts_verified_audited": 2,
+    "contracts_verified_audited": 3,
     "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 50,
+    "coverage_pct": 75,
     "total_audits": 8,
-    "scoreable_audits": 3,
-    "dl_tvl_usd": 1196930.07638,
-    "tvl_usd": 13353575.518038843,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 13353575.52
-    },
+    "direct_audits": 8,
+    "inherited_audits": 0,
+    "scoreable_audits": 5,
+    "dl_tvl_usd": 1071299.62854,
+    "tvl_usd": 1071299.62854,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://token.tg.casino/staking",
     "chains": [
@@ -55,28 +39,35 @@
       "aging": 0,
       "stale": 8,
       "unknown": 0
+    },
+    "live_implementations": 5,
+    "live_verified_implementations": 4,
+    "live_audited_implementations": 3,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 1,
+      "diverged": 0,
+      "match_unverified": 2
     }
   },
   "topography": {
-    "project_purpose": "TG.Casino is a Telegram casino-associated project centered on the TGC token on Ethereum. The verified on-chain scope supports TGC token contracts and staking/profit-share related contracts, including staking and multi-staking components. Current evidence does not support describing the listed on-chain contracts as facilitating casino games or token-holder governance.",
-    "relationship_narrative": "The TGC token is the central asset used across staking contracts. StakingManagerV5 and MultiStakingManagerV2 both interact with TGCToken, and are accessed via upgradeable proxies that share the same deployer cluster.",
-    "product_family_count": 1,
+    "project_purpose": "Luck Games. Structurally: 13 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin-upgradeable.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Contracts are linked by 4 cross-contract reference(s). Dominant framework: openzeppelin-upgradeable.",
+    "product_family_count": 4,
     "total_contracts_indexed": 21,
-    "live_contracts": 5,
-    "inactive_contracts": 10,
-    "singleton_contracts": 6,
+    "live_contracts": 6,
+    "inactive_contracts": 15,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 3,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 2,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 4,
+    "unique_implementations": 5,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -88,50 +79,44 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x14bc78f0e6b9854da2a92f43a0526b31ceb547b0",
+      "address": "0xa87e79652814a0239bf752d4d7be70f61b73009a",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
-      "name": "TGCToken",
-      "role": "token",
+      "name": "PresaleV1",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 13353575.518038843,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": "TGCToken",
+      "impl_name": "PresaleV1",
       "deployments": [
         {
           "chain_id": 1,
           "chain_name": "ethereum",
-          "address": "0x14bc78f0e6b9854da2a92f43a0526b31ceb547b0",
+          "address": "0xa87e79652814a0239bf752d4d7be70f61b73009a",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x25b4f5d4c314bcd5d7962734936c957b947cb7cf",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 13353575.518038843,
-          "is_audited": true
         }
       ],
       "audits_covering": [
-        "audit-3183"
+        "audit-11255",
+        "audit-11256"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-15 19:42:35+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 1,
@@ -169,7 +154,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-05-16 15:10:35+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -204,7 +193,63 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-22 08:18:23+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x14bc78f0e6b9854da2a92f43a0526b31ceb547b0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TGCToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TGCToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x14bc78f0e6b9854da2a92f43a0526b31ceb547b0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x25b4f5d4c314bcd5d7962734936c957b947cb7cf",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [
+        "audit-3183"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-10-06 05:46:59+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -239,14 +284,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2024-01-01 18:48:11+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 3183,
       "audit_key": "audit-3183",
-      "report_name": "Audit",
+      "report_name": "Coinsult_TG.Casino_0x25...b7cf_Audit.pdf",
       "report_url": "https://github.com/Coinsult/solidity/blob/main/Coinsult_TG.Casino_0x25...b7cf_Audit.pdf",
       "auditor": "Coinsult",
       "audit_type": "audit",
@@ -256,14 +305,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "TGCToken"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -279,12 +329,17 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "extracted_names": [
+        "PresaleV1"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -300,12 +355,17 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "extracted_names": [
+        "PresaleV1"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -321,14 +381,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "StakingManagerV1"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -344,14 +405,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "StakingManagerV1"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -367,6 +429,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -388,6 +453,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -409,6 +477,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -420,18 +491,18 @@
   ],
   "auditor_coverage": [
     {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 40,
+      "latest_audit": "2024-01"
+    },
+    {
       "auditor": "Coinsult",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 25,
+      "coverage_pct": 20,
       "latest_audit": "2023-09"
-    },
-    {
-      "auditor": "unknown",
-      "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 25,
-      "latest_audit": "2024-01"
     }
   ],
   "coverage_gaps": [
@@ -447,29 +518,22 @@
     }
   ],
   "origin_summary": {
-    "native": 3,
+    "native": 4,
     "upstream": 1,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 6
+      "contract_name": 3,
+      "extraction_exact": 2
     },
     "extraction_confidence_counts": {
-      "high": 3
+      "high": 2
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 11255,
-        "report_name": "TGB_PRESALE_12_11_23.pdf"
-      },
-      {
-        "audit_id": 11256,
-        "report_name": "TGB_PreSaleV1_01_12_2024.pdf"
-      },
       {
         "audit_id": 11259,
         "report_name": "TGB_TOKEN_12_11_23.pdf"

@@ -5,26 +5,26 @@
 - Project: Verio (`verio`)
 - Website: [https://www.verio.network/staking](https://www.verio.network/staking)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:57.425Z
-- Pipeline run: brief-regen-topo-2026-06-17
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $4,404,301.78
+- Generated: 2026-07-04T14:54:09.897Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-bd47
+- Chains: ethereum
+- Contract surface: 2 unique implementations (2 raw deployments)
+- DeFi Llama TVL: $4,419,135.92
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Verio is a Story-focused liquid staking and IP asset staking/restaking platform that supports IP validation and participation in the Story ecosystem.
+Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Indexed contracts: 2; live-surface contracts included: 2 (0 live, 2 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
@@ -32,17 +32,20 @@ Verio is a Story-focused liquid staking and IP asset staking/restaking platform 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 2 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
-- Audits discovered: 11
+- Unverified implementations: 2
+- Unique implementations: 2
+- Raw deployments: 2
+- Audits discovered: 11 (11 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-02 (fresh)
-- Staleness: 7 fresh, 2 aging, 0 stale, 2 unknown
+- Audit staleness (calendar age): 7 fresh, 4 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -71,11 +74,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0xe9be8e...dff3be` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf6701a...5f1a27` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -83,8 +89,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [VerioLabs_VerioIP_audit_report_2024-12-25.pdf](https://github.com/Salusec/Salus-audit/blob/main/2024/VerioLabs_VerioIP_audit_report_2024-12-25.pdf) | Salus | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
 | [VerioLabs_VerioIPA_audit_report_2024-12-19.pdf](https://github.com/Salusec/Salus-audit/blob/main/2024/VerioLabs_VerioIPA_audit_report_2024-12-19.pdf) | Salus | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
-| [NM0377-FINAL_VERIO_IP.pdf](https://github.com/NethermindEth/PublicAuditReports/blob/main/NM0377-FINAL_VERIO_IP.pdf) | Nethermind | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [NM0377-FINAL_VERIO_IPA.pdf](https://github.com/NethermindEth/PublicAuditReports/blob/main/NM0377-FINAL_VERIO_IPA.pdf) | Nethermind | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [NM0377-FINAL_VERIO_IP.pdf](https://github.com/NethermindEth/PublicAuditReports/blob/main/NM0377-FINAL_VERIO_IP.pdf) | Nethermind | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
+| [NM0377-FINAL_VERIO_IPA.pdf](https://github.com/NethermindEth/PublicAuditReports/blob/main/NM0377-FINAL_VERIO_IPA.pdf) | Nethermind | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
 | [Codex_audit_report_2026-01-04.pdf](https://github.com/Salusec/Salus-audit/blob/main/2026/Codex_audit_report_2026-01-04.pdf) | Codex | Audit | 2026-01 | fresh | Direct | n/a | 0 | n/a |
 | [Lorenzo_Airdrop_audit_report_2026-01-19.pdf](https://github.com/Salusec/Salus-audit/blob/main/2026/Lorenzo_Airdrop_audit_report_2026-01-19.pdf) | Lorenzo | Audit | 2026-01 | fresh | Direct | n/a | 0 | n/a |
 | [Lorenzo_ListaEarn_audit_report_2026-01-19.pdf](https://github.com/Salusec/Salus-audit/blob/main/2026/Lorenzo_ListaEarn_audit_report_2026-01-19.pdf) | Lorenzo | Audit | 2026-01 | fresh | Direct | n/a | 0 | n/a |
@@ -106,7 +112,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

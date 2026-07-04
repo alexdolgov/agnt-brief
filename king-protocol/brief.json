@@ -1,47 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "king-protocol",
-  "generated_at": "2026-06-19T06:14:24.610Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "king-protocol",
-    "tier": 0,
-    "peak_tvl": 23698357,
-    "peak_date": "2025-06-11T00:00:00.000Z",
-    "tvl_30d_ago": 1374947,
-    "tvl_90d_ago": 1577775,
-    "tvl_current": 1428835,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 4539057,
-    "change_30d_pct": 3.919278343092497,
-    "change_90d_pct": -9.439875774429181,
-    "days_since_peak": 348,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 93.97074235990284
-  },
+  "generated_at": "2026-07-04T14:53:29.225Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 15,
-    "total_addresses": 15,
-    "unique_implementations": 15,
-    "total_deployments": 15,
-    "audited_contracts": 0,
-    "unaudited_contracts": 3,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 3,
+    "total_contracts": 21,
+    "total_addresses": 35,
+    "unique_implementations": 21,
+    "total_deployments": 35,
+    "audited_contracts": 4,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 4,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 12,
-    "coverage_pct": 0,
+    "coverage_pct": 66.7,
     "total_audits": 5,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 1142997.99071,
-    "tvl_usd": 3674.4232177731606,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "base": 3674.42
-    },
-    "asd_usd": 3674.4232177731606,
+    "direct_audits": 5,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 1181064.78344,
+    "tvl_usd": 1181064.78344,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://kingprotocol.org/",
     "chains": [
       "arbitrum",
@@ -55,32 +39,38 @@
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 3,
+      "aging": 5,
       "stale": 0,
-      "unknown": 2
+      "unknown": 0
+    },
+    "live_implementations": 7,
+    "live_verified_implementations": 6,
+    "live_audited_implementations": 4,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 4,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "King Protocol is a rewards and vault-share protocol focused on consolidating DeFi and restaking rewards into a liquid token. Its observed deployments include cross-chain token components such as KingOFTL2/LayerZero OFT-related contracts, but these should be treated as cross-chain deployment infrastructure rather than the sole or primary product definition unless further supported by current documentation.",
-    "relationship_narrative": "The LRTSquaredCore contract manages the core restaking logic and interacts with the PriceProvider for asset pricing and the Swapper1InchV6 for trade execution. KingOFTL2 tokens are the liquid restaking tokens that are minted to users and can be bridged across chains via LayerZero.",
-    "product_family_count": 1,
+    "project_purpose": "Liquid Restaking. Structurally: 5 project-authored contract(s) across 2 chain(s); 2 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.",
+    "product_family_count": 2,
     "total_contracts_indexed": 35,
     "live_contracts": 11,
-    "inactive_contracts": 2,
-    "singleton_contracts": 18,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 4,
-    "deployment_units": 9,
+    "unknown_contracts": 24,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 2,
-    "unverified_dependencies": 1,
-    "detected_codebases": [
-      "uniswap-v2",
-      "uniswap-v3"
-    ]
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 15,
+    "unique_implementations": 21,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -92,28 +82,105 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0xdc5f7c7916c7792603fdc17f05f7929b423015ac",
+      "address": "0x11721202e81eb2f7445bac9f9bf11f0b87546dc2",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
-      "name": "Pool",
-      "role": "core_logic",
+      "name": "ArbitrageFoundation",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 3674.4232177731606,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": "Pool",
+      "impl_name": "ArbitrageFoundation",
       "deployments": [
         {
           "chain_id": 8453,
           "chain_name": "base",
-          "address": "0xdc5f7c7916c7792603fdc17f05f7929b423015ac",
+          "address": "0x11721202e81eb2f7445bac9f9bf11f0b87546dc2",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 3674.4232177731606,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x2e7a789893e96ee2aea8d5404cedfbf7b9d4eab1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x44d021961cd51152b24f4782cb22b64c739b42fd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x5061315ef94788a482aae586d5f93cd6c555dac7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x64f5824d1eed1234138462824e4dc74022d7eae2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb2bad500860c1efcef22f15f3f82f656853a18fe",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe5bb8ef2d356cc54791396eaa979328f826e29fb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe92e65ba68e39774722678103ebcfc97a747cedb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -122,7 +189,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": "review",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-03 01:41:53+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -157,7 +228,258 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-05-05 21:19:05+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x548c4116a97e0138f78000088ea3f155717b98ed",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "KingOFTL2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x5a57ebb2c25eb64f05ebb4e07d9de8b3b67a7ab0",
+      "impl_name": "KingOFTL2",
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x548c4116a97e0138f78000088ea3f155717b98ed",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x5a57ebb2c25eb64f05ebb4e07d9de8b3b67a7ab0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3122"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-15 03:14:06+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x2a57db06506ab9764db8dcf06ac17a5fed9bb283",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "KingOFTL2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x2a57db06506ab9764db8dcf06ac17a5fed9bb283",
+      "impl_name": "KingOFTL2",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x2a57db06506ab9764db8dcf06ac17a5fed9bb283",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x6d04314fb449e020bd70ac701dfe0f13b591570d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3122"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-03-21 01:15:03+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x4d6a22986acca58aa890fbb233f3b4563251beab",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "KingOFTL2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x4d6a22986acca58aa890fbb233f3b4563251beab",
+      "impl_name": "KingOFTL2",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x4d6a22986acca58aa890fbb233f3b4563251beab",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xe22c243c7559c667a1eb94b593369d192c5fbac0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3122"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-03-20 23:52:33+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xcc011273240610838aea80b485fbdff2b2e852a9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "KingOFTL2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xf25768f2ac3a4c349be98c46ee97f59a9b1d689d",
+      "impl_name": "KingOFTL2",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xcc011273240610838aea80b485fbdff2b2e852a9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xf25768f2ac3a4c349be98c46ee97f59a9b1d689d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3122"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-03-21 01:06:59+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xdc5f7c7916c7792603fdc17f05f7929b423015ac",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Pool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Pool",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xdc5f7c7916c7792603fdc17f05f7929b423015ac",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-25 21:56:57+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -167,8 +489,8 @@
       "deployment_unit_proxy_count": null,
       "name": "RamsesBeaconProxy",
       "role": "registry",
-      "origin_kind": "upstream",
-      "origin_provider": "ramses",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -192,7 +514,83 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-25 22:38:25+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x409994fd2fdcfccddea418b7f203b4db51200ec2",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UniswapV3Plugin",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV3Plugin",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x409994fd2fdcfccddea418b7f203b4db51200ec2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x84acc48d3c96728f9572a4f1b8819317de983af0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x8bd78cc193c01573d4e464e2c3d1514dade4a459",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xa12772103af37270b4a6e68865463ff6ee675ef7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-11-03 01:41:01+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1923,
@@ -204,11 +602,11 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Deployment ​",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "UnnamedContract",
       "deployments": [
         {
           "chain_id": 1923,
@@ -227,7 +625,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 5000,
@@ -237,7 +639,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -262,7 +664,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-31 05:14:28+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 5000,
@@ -272,7 +678,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -297,7 +703,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-15 23:20:08+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -307,7 +717,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -332,7 +742,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-02 18:49:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -342,7 +756,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -367,7 +781,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-02 20:24:05+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -377,7 +795,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -402,7 +820,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-02 21:46:07+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -412,7 +834,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -437,7 +859,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-02 18:55:03+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -447,7 +873,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -472,7 +898,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-02 21:46:31+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -482,7 +912,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -507,7 +937,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-02 19:53:45+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -517,7 +951,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -542,7 +976,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-02 18:56:49+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -552,7 +990,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -577,7 +1015,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-02 18:49:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -587,7 +1029,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -612,7 +1054,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-02 20:36:35+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -629,12 +1075,22 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "extracted_names": [
+        "KingOFTAdapter",
+        "KingOFTAdapterUpgradeable",
+        "KingOFTL1",
+        "KingOFTL2",
+        "KingOFTUpgradeable",
+        "PairwiseRateLimiter"
+      ],
+      "matched_contracts": 8,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -644,29 +1100,22 @@
       "report_url": "https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0314_EtherFi_LRT_2.pdf",
       "auditor": "NM",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2024-09",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name|n/a",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 3126,
-          "report_url": "https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0314_EtherFi_LRT_2.pdf"
-        },
-        {
-          "audit_id": 14855,
-          "report_url": "https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/NM_0314_EtherFi_LRT_2.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
       "audit_id": 3127,
@@ -675,29 +1124,22 @@
       "report_url": "https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0390_LRT_Square_Strategies_DRAFT.pdf",
       "auditor": "NM",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2024-11",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name|n/a",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 3127,
-          "report_url": "https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0390_LRT_Square_Strategies_DRAFT.pdf"
-        },
-        {
-          "audit_id": 14856,
-          "report_url": "https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/NM_0390_LRT_Square_Strategies_DRAFT.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
       "audit_id": 3128,
@@ -707,11 +1149,14 @@
       "auditor": "Ether_Fi",
       "audit_type": "audit",
       "freshness": "aging",
-      "date": "2025",
+      "date": "2025-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -733,6 +1178,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -742,8 +1190,26 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 44.4,
+      "latest_audit": "2025-02"
+    }
+  ],
   "coverage_gaps": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x11721202e81eb2f7445bac9f9bf11f0b87546dc2",
+      "name": "ArbitrageFoundation",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 8453,
       "chain_name": "base",
@@ -751,28 +1217,36 @@
       "name": "Pool",
       "role": "core_logic",
       "origin_kind": "native",
-      "tvl_usd": 3674.4232177731606,
-      "risk_note": "Verified native implementation with $3,674.42 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x93e6e571d04848de3ba31525fca36f1e4f7bc942",
+      "name": "RamsesBeaconProxy",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 12,
+    "native": 7,
     "upstream": 2,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 12
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 22
+      "extraction_exact": 8
     },
-    "extraction_confidence_counts": {},
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 3122,
-        "report_name": "NM_0452_King_Cross_Chain_FINAL.pdf"
-      },
       {
         "audit_id": 3126,
         "report_name": "NM_0314_EtherFi_LRT_2.pdf"

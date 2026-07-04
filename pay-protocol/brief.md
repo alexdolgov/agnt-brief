@@ -1,17 +1,15 @@
 # Agentic Audit Brief: Pay Protocol
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 55.4% over 90 days
-
 ## Project Overview
 
 - Project: Pay Protocol (`pay-protocol`)
 - Website: [https://payprotocol.network](https://payprotocol.network)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T20:24:07.830Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-6f9b
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:42.993Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: ethereum
 - Contract surface: 8 unique implementations (8 raw deployments)
-- DeFi Llama TVL: $277,351.60
+- DeFi Llama TVL: $641,103.41
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -25,7 +23,7 @@ All contracts are deployed by the same address and belong to a single product fa
 
 ## Contract Surface Quality
 
-- Indexed contracts: 8; live-surface contracts included: 8 (1 live, 7 unknown).
+- Indexed contracts: 8; live-surface contracts included: 8 (0 live, 8 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
@@ -33,19 +31,21 @@ All contracts are deployed by the same address and belong to a single product fa
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 8 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 8
 - Unique implementations: 8
 - Raw deployments: 8
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -103,10 +103,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 8 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 8 |
 
 ## Scope Matching Notes
 

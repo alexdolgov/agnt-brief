@@ -1,51 +1,51 @@
 # Agentic Audit Brief: Ocean Point
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Ocean Point (`ocean-point`)
 - Website: [https://app.oceanpoint.fi/](https://app.oceanpoint.fi/)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-19T06:14:32.819Z
-- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:38.877Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: ethereum
-- Contract surface: 10 unique implementations (10 raw deployments)
-- DeFi Llama TVL: $948,059.16
-- On-chain TVL (included contracts): $1,078,117.52
-- TVL by chain: Ethereum $1,078,117.52
+- Contract surface: 23 unique implementations (24 raw deployments)
+- DeFi Llama TVL: $858,066.30
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Ocean Point is a Blocksquare DeFi/liquidity layer for the BST ecosystem, positioning itself as a liquidity engine with staking and pool2-style liquidity participation around BST. It is also associated with tokenized real estate/RWA infrastructure and USD-correlating stablecoin positioning, but any marketplace-trading or fee-distribution claims should be treated as unverified unless supported by project documentation or contract-level analysis.
+Farm. Structurally: 32 project-authored contract(s) across 1 chain(s); 8 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-Staking contracts use the BST token and LP tokens from the Uniswap pair, while property registries interact with marketplace pools for trading tokenized properties. Revenue distribution likely collects fees from staking and marketplace activities and distributes them to stakeholders.
+The protocol comprises 6 functional families. Its contracts share 2 common project-authored base contract(s) (erc20token, owned). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 43; live-surface contracts included: 10 (10 live, 0 unknown).
-- Excluded by liveness: 19 inactive, 14 singleton, 0 uninitialized.
-- Deployment units: 1/13 live.
-- Detected codebases: uniswap-v2
-- Unverified dependencies: 1/1.
+- Indexed contracts: 59; live-surface contracts included: 24 (11 live, 13 unknown).
+- Excluded by liveness: 35 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/10 (0.0%)
-- Verified + Unaudited implementations: 10
+- Coverage of deployed-live implementations: 0/9 (0.0%)
+- Deployed-live implementations: 11 of 23 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/11
+- Verified + Unaudited implementations: 11
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 10
-- Raw deployments: 10
-- Audits discovered: 1
+- Unverified implementations: 12
+- Unique implementations: 23
+- Raw deployments: 24
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $1,078,117.52
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $1,078,117.52 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -57,17 +57,18 @@ Staking contracts use the BST token and LP tokens from the Uniswap pair, while p
 
 - None
 
-### ⚠️ Verified + Unaudited (10)
+### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | BlocksquareToken | token | ethereum | n/a | [`0x509a38...7c7f4a`](./contracts/ethereum-1/0x509a38b7a1cc0dcd83aa9d06214663d9ec7c7f4a/) | ⚠️ Unaudited |
 | CertifiedPartners | unknown | ethereum | n/a | [`0x8dbb99...78cdd3`](./contracts/ethereum-1/0x8dbb99cc3721f5c9cc7c9e92db260813cf78cdd3/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | unit-24467 | [`0xfb531d...29ea8a`](./contracts/ethereum-1/0xfb531d5602fc0953be047605c77a7d289729ea8a/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | n/a | [`0xfb531d...29ea8a`](./contracts/ethereum-1/0xfb531d5602fc0953be047605c77a7d289729ea8a/) | ⚠️ Unaudited |
 | MarketplacePoolProxyFactory | registry | ethereum | n/a | [`0x178871...12f001`](./contracts/ethereum-1/0x17887106a14f38bf10512565bdbb5bd7ac12f001/) | ⚠️ Unaudited |
 | OceanStaking | unknown | ethereum | n/a | [`0x6f1e92...9f7f8a`](./contracts/ethereum-1/0x6f1e92fb8a685aaa0710bad194d7b1aa839f7f8a/) | ⚠️ Unaudited |
 | PropertyFactory | registry | ethereum | n/a | [`0x1ae91a...7e6685`](./contracts/ethereum-1/0x1ae91a263a690bf2129cf0b3acac92bbb67e6685/) | ⚠️ Unaudited |
 | PropertyRegistry | registry | ethereum | n/a | [`0x05325c...29267b`](./contracts/ethereum-1/0x05325c1ab1440df7214db38f676f95999729267b/) | ⚠️ Unaudited |
+| PropToken | unknown | ethereum | n/a | [`0x947348...e61a1d`](./contracts/ethereum-1/0x9473481877cb241b0c8f647bf841973196e61a1d/) | ⚠️ Unaudited |
 | TokenGeneration | token | ethereum | n/a | [`0xc8af9a...b5a72f`](./contracts/ethereum-1/0xc8af9acb3d9b8827e863d416f740c7e97eb5a72f/) | ⚠️ Unaudited |
 | UniswapV2Pair | unknown | ethereum | n/a | [`0x0e85fb...df51a6`](./contracts/ethereum-1/0x0e85fb1be698e777f2185350b4a52e5ee8df51a6/) | ⚠️ Unaudited |
 | Users | unknown | ethereum | n/a | [`0x13344d...1975f7`](./contracts/ethereum-1/0x13344d0cb96b17df81c4171ce47e14ff6c1975f7/) | ⚠️ Unaudited |
@@ -84,17 +85,30 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (12)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x05e092...c8fb2c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x38da45...0bc8a3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x66be09...481b62` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6cea8f...76f2f5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7000ae...f48f98` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa273ef...48eca8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xac562e...b3826c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | 2 deployments: ethereum `0xc2a056...6f6a9e`; ethereum `0xe81807...3f49bc` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xcb641f...38550a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd0b7cb...391917` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd0ee00...45e8ec` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe98af4...a84b06` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [{% embed url="<>" fullWidth="true" %}](https://hacken.io/audits/blocksquare) | Hacken | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [hacken.io/audits/blocksquare](https://hacken.io/audits/blocksquare) | Hacken | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -102,11 +116,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| ethereum | [`0x509a38...7c7f4a`](./contracts/ethereum-1/0x509a38b7a1cc0dcd83aa9d06214663d9ec7c7f4a/) | BlocksquareToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8dbb99...78cdd3`](./contracts/ethereum-1/0x8dbb99cc3721f5c9cc7c9e92db260813cf78cdd3/) | CertifiedPartners | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x178871...12f001`](./contracts/ethereum-1/0x17887106a14f38bf10512565bdbb5bd7ac12f001/) | MarketplacePoolProxyFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x6f1e92...9f7f8a`](./contracts/ethereum-1/0x6f1e92fb8a685aaa0710bad194d7b1aa839f7f8a/) | OceanStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1ae91a...7e6685`](./contracts/ethereum-1/0x1ae91a263a690bf2129cf0b3acac92bbb67e6685/) | PropertyFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x05325c...29267b`](./contracts/ethereum-1/0x05325c1ab1440df7214db38f676f95999729267b/) | PropertyRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x947348...e61a1d`](./contracts/ethereum-1/0x9473481877cb241b0c8f647bf841973196e61a1d/) | PropToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc8af9a...b5a72f`](./contracts/ethereum-1/0xc8af9acb3d9b8827e863d416f740c7e97eb5a72f/) | TokenGeneration | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x13344d...1975f7`](./contracts/ethereum-1/0x13344d0cb96b17df81c4171ce47e14ff6c1975f7/) | Users | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
@@ -114,10 +130,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 7 |
+| native | 9 |
 | upstream | 1 |
 | standard_library | 1 |
-| needs_review | 1 |
+| needs_review | 12 |
 
 ## Scope Matching Notes
 
@@ -130,6 +146,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [3225] {% embed url="<>" fullWidth="true" %}
+- [3225] hacken.io/audits/blocksquare
 
 Fork inheritance lineage and inherited audits are included when available.

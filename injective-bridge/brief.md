@@ -4,14 +4,14 @@
 
 - Project: Injective Bridge (`injective-bridge`)
 - Website: [https://injective.com](https://injective.com)
-- Lifecycle: active (Tier 0, 67.2% below peak)
-- Generated: 2026-06-17T07:00:52.451Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:22.065Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $12,354,093.58
-- On-chain TVL (included contracts): $2,617.33
-- TVL by chain: Ethereum $2,617.33
+- DeFi Llama TVL: $10,898,315.28
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
@@ -24,25 +24,28 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 ## Contract Surface Quality
 
-- Indexed contracts: 6; live-surface contracts included: 1 (1 live, 0 unknown).
-- Excluded by liveness: 3 inactive, 2 singleton, 0 uninitialized.
-- Deployment units: 0/1 live.
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 0
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $2,617.33
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- ASD (verified + unaudited TVL): n/a
+- Latest audit: 2026-02 (fresh)
+- Audit staleness (calendar age): 1 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -83,6 +86,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [code4rena.com/audits/2026-02-injective-peggy-bridge](https://code4rena.com/audits/2026-02-injective-peggy-bridge) | Code4rena | Contest | 2026-02 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -90,7 +94,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xe28b3b...ceca30`](./contracts/ethereum-1/0xe28b3b32b6c345a34ff64674606124dd5aceca30/) | InjectiveToken | token | $2,617.33 | Verified native implementation with $2,617.33 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe28b3b...ceca30`](./contracts/ethereum-1/0xe28b3b32b6c345a34ff64674606124dd5aceca30/) | InjectiveToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
@@ -105,9 +109,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [20730] code4rena.com/audits/2026-02-injective-peggy-bridge
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "liminal",
-  "generated_at": "2026-06-17T07:00:45.354Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-07-03T21:06:21.533Z",
+  "pipeline_run_id": "brief-restore-2026-07",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -18,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 26992483,
-    "tvl_usd": 26992483,
+    "dl_tvl_usd": 26883397,
+    "tvl_usd": 26883397,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -35,12 +37,20 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Liminal is a Hyperliquid-focused automated yield protocol centered on limUSD-oriented yield automation. Its TVL should be tracked primarily on Hyperliquid L1 via DefiLlama, and unsupported claims about multi-chain EVM perpetuals, leveraged trading, staking, EVM vaults, liquidity pools, or a \"Liminal Perps\" product family should be removed unless verified by official Liminal sources.",
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 1,
+    "product_family_count": 0,
     "total_contracts_indexed": 0,
     "live_contracts": 0,
     "inactive_contracts": 0,

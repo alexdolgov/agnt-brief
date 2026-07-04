@@ -4,44 +4,47 @@
 
 - Project: Concrete (`concrete`)
 - Website: [https://app.concrete.xyz](https://app.concrete.xyz)
-- Lifecycle: active (Tier 0, 28.2% below peak)
-- Generated: 2026-06-21T20:00:49.501Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:10.439Z
+- Pipeline run: v2-pipeline-2026-06-30-2b719a-8edf
 - Chains: ethereum
-- Contract surface: 2 unique implementations (3 raw deployments)
-- DeFi Llama TVL: $789,876,276.77
-- On-chain TVL (included contracts): $29.66
-- TVL by chain: Ethereum $29.66
+- Contract surface: 3 unique implementations (4 raw deployments)
+- DeFi Llama TVL: $757,965,722.30
+- On-chain TVL (included contracts): $26.81
+- TVL by chain: Ethereum $26.81
 
 ## Project Description
 
-Concrete is an onchain capital allocator that enables users to deposit assets into vaults which then deploy capital across multiple yield strategies. The protocol optimizes returns by managing allocations and rebalancing between strategies.
+Onchain Capital Allocator. Structurally: 1 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 1 ERC20 token; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-Both product families share the same underlying vault infrastructure, with the Concrete family using standard vault proxies and the Example response family extending functionality to multi-strategy management. They likely share common interfaces and possibly a registry or factory pattern for deployment.
+The protocol forms a single structural family (Core Logic) of 2 contract(s).
 
 ## Contract Surface Quality
 
-- Indexed contracts: 3; live-surface contracts included: 3 (1 live, 2 unknown).
+- Indexed contracts: 4; live-surface contracts included: 4 (3 live, 1 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/1 live.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 2/2.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 2/2 (100.0%)
+- Coverage of deployed-live implementations: 2/2 (100.0%)
+- Deployed-live implementations: 2 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 2/2
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 3
-- Audits discovered: 2
+- Unverified implementations: 1
+- Unique implementations: 3
+- Raw deployments: 4
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-09 (fresh)
-- Staleness: 1 fresh, 1 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 1 fresh, 1 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 2 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -58,7 +61,7 @@ Both product families share the same underlying vault infrastructure, with the C
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | ConcreteMultiStrategyVault | core_logic | ethereum | n/a | [`0x15ce9b...ea5fac`](./contracts/ethereum-1/0x15ce9be6609db102b70d68ca75a39c555bea5fac/) | ✅ Audited |
-| ConcreteStandardVaultImpl | core_logic | ethereum | unit-43872 (2 proxies) | 2 deployments: ethereum [`0x5854c7...e0e5fd`](./contracts/ethereum-1/0x5854c7693459c6e316a96565776b72d94ee0e5fd/); ethereum `0xb04e16...55a08f` | ✅ Audited |
+| ConcreteStandardVaultImpl | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x5854c7...e0e5fd`](./contracts/ethereum-1/0x5854c7693459c6e316a96565776b72d94ee0e5fd/); ethereum `0xb04e16...55a08f` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (0)
 
@@ -76,18 +79,20 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x38f20a...40db53` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://docs.concrete.xyz/assets/files/Standard-Implementation-9948d7fcebb518e5c29051bc2326b5ec.pdf) | unknown | Audit | 2025-09 | fresh | Direct | contract_name | 2 | high |
-| [Zellic-Audit-Report-5dbb9d52d444adcd197dfbaa941a86ab.pdf](https://docs.concrete.xyz/assets/files/Zellic-Audit-Report-5dbb9d52d444adcd197dfbaa941a86ab.pdf) | Zellic | Audit | 2025-06 | aging | Direct | contract_name | 1 | high |
+| [Standard-Implementation-9948d7fcebb518e5c29051bc2326b5ec.pdf](https://docs.concrete.xyz/assets/files/Standard-Implementation-9948d7fcebb518e5c29051bc2326b5ec.pdf) | unknown | Audit | 2025-09 | fresh | Direct | contract_name | 1 | n/a |
+| [Zellic-Audit-Report-5dbb9d52d444adcd197dfbaa941a86ab.pdf](https://docs.concrete.xyz/assets/files/Zellic-Audit-Report-5dbb9d52d444adcd197dfbaa941a86ab.pdf) | Zellic | Audit | 2025-06 | aging | Direct | contract_name | 1 | n/a |
 
 ## Coverage Gaps
 
@@ -102,7 +107,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -110,7 +115,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2
-- Match method counts: extraction_exact=3
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=2
 
 Fork inheritance lineage and inherited audits are included when available.

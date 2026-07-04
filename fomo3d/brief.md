@@ -3,44 +3,47 @@
 ## Project Overview
 
 - Project: Fomo3D (`fomo3d`)
-- Lifecycle: active (Tier 0, 59.6% below peak)
-- Generated: 2026-06-17T07:00:58.255Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:16.438Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-ae05
 - Chains: ethereum
-- Contract surface: 5 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $1,981,337.58
+- Contract surface: 17 unique implementations (17 raw deployments)
+- DeFi Llama TVL: $1,869,722.54
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Fomo3D is a gamified lottery and investment protocol centered on the FoMo3Dlong and FoMo3DSoon game variants, where players buy keys to earn dividends from subsequent purchases and the last buyer can win a jackpot if no one buys before the timer expires. The broader contract surface also includes associated support or adjacent contracts such as Divies deployments and other Fomo3D-related contracts/libraries; shared infrastructure or implementation equivalence should only be asserted where verified by call relationships or exact bytecode/source matching.
+Farm. Structurally: 9 project-authored contract(s) across 1 chain(s); built on openzeppelin.
 
 ### Architecture
 
-The two contracts, FoMo3Dlong and FoMo3DSoon, are variants of the same game logic deployed by the same deployer, likely representing different round lengths or parameters, and share no explicit infrastructure beyond their common deployer.
+The protocol comprises 3 functional families. Its contracts share 2 common project-authored base contract(s) (f3devents, modularlong). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 27; live-surface contracts included: 5 (5 live, 0 unknown).
-- Excluded by liveness: 22 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 25; live-surface contracts included: 17 (4 live, 13 unknown).
+- Excluded by liveness: 8 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/4 (0.0%)
+- Coverage of deployed-live implementations: 0/4 (0.0%)
+- Deployed-live implementations: 4 of 17 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/4
 - Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 5
-- Raw deployments: 5
-- Audits discovered: 0
+- Unverified implementations: 13
+- Unique implementations: 17
+- Raw deployments: 17
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -74,12 +77,24 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (13)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x1fb546...ea51d3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x27afcb...8adccb` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x32967d...37d590` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4c7b85...4420f5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7e58d5...52d8ac` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x902d1a...d1aef4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xbf5772...91f5b1` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc25d03...69570b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc6ffc9...17716f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd14f5d...58c708` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf7da96...93152d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf820cf...898277` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0xf9ba09...e48d7d` | ❓ Unverified |
 
 ## Audit Inventory
@@ -102,10 +117,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 5 |
+| native | 4 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 13 |
 
 ## Scope Matching Notes
 

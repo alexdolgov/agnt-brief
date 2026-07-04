@@ -1,47 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "hakka-finance",
-  "generated_at": "2026-06-17T07:00:49.571Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "hakka-finance",
-    "tier": 0,
-    "peak_tvl": 15657385,
-    "peak_date": "2021-11-09T00:00:00.000Z",
-    "tvl_30d_ago": 5153080,
-    "tvl_90d_ago": 4305704,
-    "tvl_current": 4569758,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 6719103,
-    "change_30d_pct": -11.319870834530029,
-    "change_90d_pct": 6.132655658633292,
-    "days_since_peak": 1656,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 70.81404078650426
-  },
+  "generated_at": "2026-07-04T14:53:21.165Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 13,
-    "total_addresses": 20,
-    "unique_implementations": 13,
-    "total_deployments": 20,
-    "audited_contracts": 5,
-    "unaudited_contracts": 8,
-    "contracts_verified_audited": 5,
-    "contracts_verified_unaudited": 8,
+    "total_contracts": 23,
+    "total_addresses": 31,
+    "unique_implementations": 23,
+    "total_deployments": 31,
+    "audited_contracts": 6,
+    "unaudited_contracts": 7,
+    "contracts_verified_audited": 6,
+    "contracts_verified_unaudited": 7,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 38.5,
+    "contracts_unverified": 10,
+    "coverage_pct": 54.5,
     "total_audits": 8,
-    "scoreable_audits": 5,
-    "dl_tvl_usd": 3703772.48348,
-    "tvl_usd": 5425.4162312112985,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 5425.42
-    },
-    "asd_usd": 5425.4162312112985,
+    "direct_audits": 8,
+    "inherited_audits": 0,
+    "scoreable_audits": 6,
+    "dl_tvl_usd": 3500084.1233,
+    "tvl_usd": 3500084.1233,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://hakka.finance/",
     "chains": [
       "bsc",
@@ -57,28 +41,35 @@
       "aging": 0,
       "stale": 7,
       "unknown": 1
+    },
+    "live_implementations": 13,
+    "live_verified_implementations": 11,
+    "live_audited_implementations": 6,
+    "live_verified_third_party_excluded": 2,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 1,
+      "diverged": 0,
+      "match_unverified": 5
     }
   },
   "topography": {
-    "project_purpose": "Hakka Finance is a DeFi ecosystem in the derivatives category. Its historically associated products include derivative and yield-related contracts, but current product claims such as specific vaults, swap pools, or staking systems should be tied only to verified Hakka-owned contracts and should exclude third-party dependencies or unrelated token/LP contracts.",
-    "relationship_narrative": "The protocol's vaults (bVault) and liquidity pools (BAC pools, BPool) are the core yield-generating components, while staking contracts (HakkaRewards, MasterChef) distribute rewards in the form of tokens like BlackPoolToken and StakedBPT. Supporting contracts such as GuildBank and ThreeFMutual provide treasury management and mutual cover, sharing the same deployer clusters and token infrastructure.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 67,
-    "live_contracts": 16,
-    "inactive_contracts": 47,
+    "project_purpose": "Derivatives. Structurally: 57 project-authored contract(s) across 3 chain(s); 13 ERC20 tokens; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 6 functional families. Its contracts share 3 common project-authored base contract(s) (lptokenwrapper, irewarddistributionrecipient, erc20mintable). Dominant framework: openzeppelin.",
+    "product_family_count": 6,
+    "total_contracts_indexed": 127,
+    "live_contracts": 21,
+    "inactive_contracts": 96,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 4,
-    "deployment_units": 1,
+    "unknown_contracts": 10,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 11,
-    "unverified_dependencies": 4,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 13,
+    "unique_implementations": 23,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -90,41 +81,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x1b8874baceaafba9ea194a625d12e8b270d77016",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "BPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Hakka Finance",
-      "tvl_usd": 5425.4162312112985,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BPool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x1b8874baceaafba9ea194a625d12e8b270d77016",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 5425.4162312112985,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x35101c731b1548b5e48bb23f99edbc2f5c341935",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -132,7 +88,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Hakka Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -168,7 +124,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-02-20 18:16:54+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1b8874baceaafba9ea194a625d12e8b270d77016",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BPool",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1b8874baceaafba9ea194a625d12e8b270d77016",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-08-24 11:36:58+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -203,18 +202,22 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-08-24 00:30:46+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 137,
       "chain_name": "polygon",
       "address": "0xb44c87181fb2ae4a7794a67c833c09e58a46eaa8",
-      "deployment_unit": "unit-29994",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "GnosisSafeL2",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
+      "origin_provider": "Gnosis Safe",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -225,8 +228,8 @@
           "chain_id": 137,
           "chain_name": "polygon",
           "address": "0xb44c87181fb2ae4a7794a67c833c09e58a46eaa8",
-          "deployment_unit": "unit-29994",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -238,7 +241,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2022-01-13 20:13:25+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -250,7 +257,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Hakka Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -276,7 +283,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-04-14 19:30:41+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -314,7 +325,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -325,7 +336,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-06-22 11:57:35+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -362,7 +377,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-09-19 14:23:05+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -430,7 +449,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-06-07 15:46:29+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -465,7 +488,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-09-20 13:10:56+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -477,7 +504,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Hakka Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -500,16 +527,20 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-09-19 15:01:23+03",
+      "deploy_coverage_basis": null
     },
     {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0x47ca2166a5b837e891e6e64e780d1b43fc0a4e95",
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x1794ad747340ccf7ae9d7d61c728aa7be1822606",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "TokenFactory",
-      "role": "registry",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -519,6 +550,17 @@
       "impl_name": "TokenFactory",
       "deployments": [
         {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x1794ad747340ccf7ae9d7d61c728aa7be1822606",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
           "chain_id": 137,
           "chain_name": "polygon",
           "address": "0x47ca2166a5b837e891e6e64e780d1b43fc0a4e95",
@@ -527,15 +569,21 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-2558"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-11 18:37:20+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 1,
@@ -570,7 +618,401 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2020-08-17 17:36:43+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0a3e364ee37bac9e6aff9e864e65b4603d5bc5d4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0a3e364ee37bac9e6aff9e864e65b4603d5bc5d4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-09-20 22:38:26+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5113dbe8c1fa6e5397f0b3b00e890e7fa1139089",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5113dbe8c1fa6e5397f0b3b00e890e7fa1139089",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-05-23 00:15:56+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc2f08a9e8ce03b7f2f706a97b7cd8472b60fa7b5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc2f08a9e8ce03b7f2f706a97b7cd8472b60fa7b5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-06-13 11:37:50+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x15fb145319351458ab5d608c705cf3a0adf49064",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x15fb145319351458ab5d608c705cf3a0adf49064",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-03-11 02:21:55+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x2d4eb3b4882b2b8ac33eec408ded865f24652faa",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x2d4eb3b4882b2b8ac33eec408ded865f24652faa",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-03-06 01:26:23+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x5113dbe8c1fa6e5397f0b3b00e890e7fa1139089",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x5113dbe8c1fa6e5397f0b3b00e890e7fa1139089",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-03-01 00:24:59+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x7a602e72e1b94cf3fcd85a0f9bdb25f3c86a3ba2",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x7a602e72e1b94cf3fcd85a0f9bdb25f3c86a3ba2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-12-04 17:57:14+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x350ebf46bd072b1a92cdfa97cfda5a29e90a39ad",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x350ebf46bd072b1a92cdfa97cfda5a29e90a39ad",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-12-06 13:44:03+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xc441d00a10ec8efece3fc3308f42c036ac268f3b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xc441d00a10ec8efece3fc3308f42c036ac268f3b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-06-13 11:34:00+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xda40f33e32418048d6088b07f057348125251a6b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xda40f33e32418048d6088b07f057348125251a6b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-11 18:54:42+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -629,7 +1071,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-11 14:34:06+03",
+      "deploy_coverage_basis": "match_unverified"
     }
   ],
   "audits": [
@@ -646,19 +1092,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Hakka Intelligence",
-        "HakkaRewardsVesting",
-        "ImpermanentGain",
-        "Thank You Token",
-        "Vesting Reward Contract",
-        "Vesting Vault"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -674,6 +1116,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -695,12 +1140,22 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "extracted_names": [
+        "IGainAAVEIRS",
+        "IGainBase",
+        "IGainDelta",
+        "IGainIL",
+        "IGainYearnIRS",
+        "TokenFactory"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -716,18 +1171,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "3FMutual",
-        "InsuranceImprovementProposalProxy",
-        "Ownable",
-        "SafeMath",
-        "Underwriter"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -743,17 +1195,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "HakkaIntelligence",
-        "HakkaRewardsVesting",
-        "ImpermanentGain",
-        "VestingVault"
-      ],
-      "matched_contracts": 3,
+      "extracted_names": [],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -769,16 +1219,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "GuildBank",
-        "Hakka",
-        "blackholeswapV1"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -794,23 +1243,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BlackHoleSwap",
-        "Hakka",
-        "Ownable.sol",
-        "SafeMath"
-      ],
+      "extracted_names": [],
       "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 14453,
       "audit_key": "audit-14453",
-      "report_name": "Read Audit Report",
+      "report_name": "audit-reports (GitHub directory)",
       "report_url": "https://github.com/hakkafinance/audit-reports",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -820,6 +1267,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -840,8 +1290,8 @@
     {
       "auditor": "unknown",
       "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 7.7,
+      "contracts_covered": 2,
+      "coverage_pct": 15.4,
       "latest_audit": "2022-01"
     },
     {
@@ -860,8 +1310,8 @@
       "name": "BPool",
       "role": "core_logic",
       "origin_kind": "native",
-      "tvl_usd": 5425.4162312112985,
-      "risk_note": "Verified native implementation with $5,425.42 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -902,30 +1352,21 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0x47ca2166a5b837e891e6e64e780d1b43fc0a4e95",
-      "name": "TokenFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
     "native": 11,
     "upstream": 1,
     "standard_library": 1,
-    "needs_review": 0
+    "needs_review": 10
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 21
+      "contract_name": 7,
+      "extraction_exact": 2
     },
     "extraction_confidence_counts": {
-      "high": 5
+      "high": 1
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -935,12 +1376,8 @@
         "report_name": "Hakka Finance Vault contract wHakka audit.pdf"
       },
       {
-        "audit_id": 2558,
-        "report_name": "Hakka_Finance_iGain_V2_Audit_Report.pdf"
-      },
-      {
         "audit_id": 14453,
-        "report_name": "Read Audit Report"
+        "report_name": "audit-reports (GitHub directory)"
       }
     ],
     "inherited_remapped_matches": []

@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "moonlander",
-  "generated_at": "2026-06-17T18:53:16.874Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-1121",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "moonlander",
-    "tier": 0,
-    "peak_tvl": 34120042,
-    "peak_date": "2025-09-04T00:00:00.000Z",
-    "tvl_30d_ago": 31552661,
-    "tvl_90d_ago": 31644927,
-    "tvl_current": 31392312,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 31744594,
-    "change_30d_pct": -0.508194855578108,
-    "change_90d_pct": -0.7982796105043946,
-    "days_since_peak": 264,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 7.99450950265536
-  },
+  "generated_at": "2026-07-04T14:53:36.788Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-16da",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 11,
+    "total_contracts": 1,
     "total_addresses": 11,
-    "unique_implementations": 11,
+    "unique_implementations": 1,
     "total_deployments": 11,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 11,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 5,
+    "direct_audits": 5,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 30027993.271670002,
-    "tvl_usd": 30027993.271670002,
+    "dl_tvl_usd": 28802478.379079998,
+    "tvl_usd": 28802478.379079998,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -52,13 +38,22 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 5
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Moonlander is a social perpetual DEX/decentralized perpetual trading platform on Cronos and Cronos zkEVM for leveraged crypto/RWA trading, with an Earn/staking component. Unsupported claims that it is a synthetic-assets platform or a platform for users to create and manage derivative contracts should be removed unless verified by authoritative sources.",
-    "relationship_narrative": "The Moonlander token contract likely governs or incentivizes the Cronos EVM derivative contracts, which share a common deployment environment and may interact through shared liquidity pools or fee distribution mechanisms.",
-    "product_family_count": 2,
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": 0,
     "total_contracts_indexed": 11,
     "live_contracts": 0,
     "inactive_contracts": 0,
@@ -72,9 +67,9 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 11,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
-    "is_skeletal": false
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -91,11 +86,11 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Moonlander",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "UnnamedContract",
       "deployments": [
         {
           "chain_id": 25,
@@ -107,31 +102,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 25,
-      "chain_name": "cronos",
-      "address": "0x071788084370497ed1ac19c6711bd1d4af0e9034",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Cronos EVM",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 25,
           "chain_name": "cronos",
@@ -142,31 +113,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 25,
-      "chain_name": "cronos",
-      "address": "0x37888159581ac2cdea5fb9c3ed50265a19ede8dd",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Cronos EVM",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 25,
           "chain_name": "cronos",
@@ -177,31 +124,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 25,
-      "chain_name": "cronos",
-      "address": "0x5449239f7f6992d7d13fc4e02829ac90b2bea6d1",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Cronos EVM",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 25,
           "chain_name": "cronos",
@@ -212,31 +135,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 25,
-      "chain_name": "cronos",
-      "address": "0x6f27c8aced67424d3e7c7f42997489586b21f2f6",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Cronos EVM",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 25,
           "chain_name": "cronos",
@@ -247,31 +146,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 25,
-      "chain_name": "cronos",
-      "address": "0x7ec427359d3470128f2a6c3d4c141af158ed3a04",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Cronos EVM",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 25,
           "chain_name": "cronos",
@@ -282,31 +157,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 25,
-      "chain_name": "cronos",
-      "address": "0x8dbebe40e6be35cf1be07b22aa5fa11f4768917e",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Cronos EVM",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 25,
           "chain_name": "cronos",
@@ -317,31 +168,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 25,
-      "chain_name": "cronos",
-      "address": "0xb4c70008528227e0545db5ba4836d1466727df13",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Cronos EVM",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 25,
           "chain_name": "cronos",
@@ -352,31 +179,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 25,
-      "chain_name": "cronos",
-      "address": "0xb7fe13c40d9e4cd4b549fd1766e4ef74ef06330d",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Cronos EVM",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 25,
           "chain_name": "cronos",
@@ -387,31 +190,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 25,
-      "chain_name": "cronos",
-      "address": "0xbf438c48eff2b47f4e77ea72dbc6588ab4f849cc",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Cronos EVM",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 25,
           "chain_name": "cronos",
@@ -422,31 +201,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 25,
-      "chain_name": "cronos",
-      "address": "0xe6f6351fb66f3a35313feeff9116698665fbeec9",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Cronos EVM",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 25,
           "chain_name": "cronos",
@@ -464,24 +219,170 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 20840,
+      "audit_key": "audit-20840",
+      "report_name": "spaces/qIzWy3A4lZ5sKJXOvWiF/uploads/IHQZ6Vmev6plus94YkdG/Moonlander MVP.pdf",
+      "report_url": "https://1526723574-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FqIzWy3A4lZ5sKJXOvWiF%2Fuploads%2FIHQZ6Vmev6plus94YkdG%2FMoonlander%20MVP.pdf",
+      "auditor": "Certik",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 20841,
+      "audit_key": "audit-20841",
+      "report_name": "spaces/qIzWy3A4lZ5sKJXOvWiF/uploads/KAwS1HzDvXlBppfwxlR1/Moonlander MVP Earn.pdf",
+      "report_url": "https://1526723574-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FqIzWy3A4lZ5sKJXOvWiF%2Fuploads%2FKAwS1HzDvXlBppfwxlR1%2FMoonlander%20MVP%20Earn.pdf",
+      "auditor": "Certik",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 20842,
+      "audit_key": "audit-20842",
+      "report_name": "spaces/qIzWy3A4lZ5sKJXOvWiF/uploads/k8MEuRvd2c2zjtj1Zhht/Moonlander RWA.pdf",
+      "report_url": "https://1526723574-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FqIzWy3A4lZ5sKJXOvWiF%2Fuploads%2Fk8MEuRvd2c2zjtj1Zhht%2FMoonlander%20RWA.pdf",
+      "auditor": "Certik",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 20843,
+      "audit_key": "audit-20843",
+      "report_name": "spaces/qIzWy3A4lZ5sKJXOvWiF/uploads/aaTOMbrWySzgO2dtj0xl/Moonlander Binary Option.pdf",
+      "report_url": "https://1526723574-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FqIzWy3A4lZ5sKJXOvWiF%2Fuploads%2FaaTOMbrWySzgO2dtj0xl%2FMoonlander%20Binary%20Option.pdf",
+      "auditor": "Certik",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 20844,
+      "audit_key": "audit-20844",
+      "report_name": "spaces/qIzWy3A4lZ5sKJXOvWiF/uploads/LqklCkmL1kZhKBoEASP2/Moolander 1-Click Trading.pdf",
+      "report_url": "https://1526723574-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FqIzWy3A4lZ5sKJXOvWiF%2Fuploads%2FLqklCkmL1kZhKBoEASP2%2FMoolander%201-Click%20Trading.pdf",
+      "auditor": "Certik",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 11
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 20840,
+        "report_name": "spaces/qIzWy3A4lZ5sKJXOvWiF/uploads/IHQZ6Vmev6plus94YkdG/Moonlander MVP.pdf"
+      },
+      {
+        "audit_id": 20841,
+        "report_name": "spaces/qIzWy3A4lZ5sKJXOvWiF/uploads/KAwS1HzDvXlBppfwxlR1/Moonlander MVP Earn.pdf"
+      },
+      {
+        "audit_id": 20842,
+        "report_name": "spaces/qIzWy3A4lZ5sKJXOvWiF/uploads/k8MEuRvd2c2zjtj1Zhht/Moonlander RWA.pdf"
+      },
+      {
+        "audit_id": 20843,
+        "report_name": "spaces/qIzWy3A4lZ5sKJXOvWiF/uploads/aaTOMbrWySzgO2dtj0xl/Moonlander Binary Option.pdf"
+      },
+      {
+        "audit_id": 20844,
+        "report_name": "spaces/qIzWy3A4lZ5sKJXOvWiF/uploads/LqklCkmL1kZhKBoEASP2/Moolander 1-Click Trading.pdf"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

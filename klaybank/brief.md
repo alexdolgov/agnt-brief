@@ -1,16 +1,14 @@
 # Agentic Audit Brief: KlayBank
 
-⚠️ Lifecycle status: DEAD - TVL dropped 60.8% over 90 days
-
 ## Project Overview
 
 - Project: KlayBank (`klaybank`)
-- Lifecycle: dead (Tier 0, 100% below peak)
-- Generated: 2026-06-21T11:37:22.321Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:29.252Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16da
 - Chains: klaytn
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $298,921.66
+- DeFi Llama TVL: $313,457.83
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -33,19 +31,21 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 3
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-02 (stale)
-- Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 3 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -99,10 +99,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

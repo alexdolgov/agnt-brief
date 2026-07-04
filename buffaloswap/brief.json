@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "buffaloswap",
-  "generated_at": "2026-06-19T22:59:51.050Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
-  "lifecycle_status": "unknown",
-  "lifecycle_signal": {
-    "slug": "buffaloswap",
-    "tier": 0,
-    "peak_tvl": 22135,
-    "peak_date": "2022-03-25T00:00:00.000Z",
-    "tvl_30d_ago": 11922,
-    "tvl_90d_ago": 11168,
-    "tvl_current": 10225,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 13826,
-    "change_30d_pct": -14.234188894480793,
-    "change_90d_pct": -8.443767908309455,
-    "days_since_peak": 1547,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 53.80618929297493
-  },
+  "generated_at": "2026-07-04T14:53:09.940Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-1bf2",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 1,
     "total_addresses": 1,
@@ -34,14 +18,14 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 14253.28315,
-    "tvl_usd": 9168.286612288002,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "bsc": 9168.29
-    },
-    "asd_usd": 9168.286612288002,
+    "dl_tvl_usd": 13602.90436,
+    "tvl_usd": 13602.90436,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": null,
     "chains": [
       "bsc"
@@ -55,25 +39,32 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
     "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 2,
-    "total_contracts_indexed": 6,
+    "product_family_count": 1,
+    "total_contracts_indexed": 1,
     "live_contracts": 1,
-    "inactive_contracts": 5,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 3,
-    "unverified_dependencies": 1,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 1,
@@ -95,8 +86,8 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Buffaloswap",
-      "tvl_usd": 9168.286612288002,
+      "product_line": null,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "BuffaloToken",
@@ -109,7 +100,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 9168.286612288002,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -118,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-07-20 12:06:46+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -135,6 +130,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -153,8 +151,8 @@
       "name": "BuffaloToken",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 9168.286612288002,
-      "risk_note": "Verified native implementation with $9,168.29 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {

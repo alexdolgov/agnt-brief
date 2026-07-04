@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "geth",
-  "generated_at": "2026-06-17T07:00:52.115Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "geth",
-    "tier": 0,
-    "peak_tvl": 33429019,
-    "peak_date": "2025-08-23T00:00:00.000Z",
-    "tvl_30d_ago": 17298711,
-    "tvl_90d_ago": 16025743,
-    "tvl_current": 12779906,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 23554215,
-    "change_30d_pct": -26.122206446480316,
-    "change_90d_pct": -20.253894000421695,
-    "days_since_peak": 293,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 61.770023822715224
-  },
+  "generated_at": "2026-07-04T14:53:19.265Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-2d9c",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 3,
     "total_addresses": 3,
@@ -34,14 +18,14 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 12724660.03666,
-    "tvl_usd": 16166712.82753188,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 16166712.83
-    },
-    "asd_usd": 16166712.82753188,
+    "dl_tvl_usd": 12023657.62423,
+    "tvl_usd": 12023657.62423,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://guarda.com/staking/ethereum-staking/",
     "chains": [
       "ethereum"
@@ -55,15 +39,24 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 3,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "GETH is Guarda's Ethereum liquid staking/tokenized staking product. Users stake ETH and receive GETH as a liquid token representing their staked position and accrued rewards. The on-chain surface includes StakeToken and an EthStakingCrowdsale contract that should be reviewed as part of the protocol topology; no single-contract architecture should be assumed without further review.",
-    "relationship_narrative": "The protocol consists of a single product family with one core contract, the StakeToken, which handles both staking and token issuance.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 3,
+    "project_purpose": "Liquid Staking. Structurally: 4 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.",
+    "product_family_count": 3,
+    "total_contracts_indexed": 4,
     "live_contracts": 3,
-    "inactive_contracts": 0,
+    "inactive_contracts": 1,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
@@ -71,9 +64,7 @@
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 3,
@@ -88,50 +79,15 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x3802c218221390025bceabbad5d8c59f40eb74b8",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "StakeToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "GETH",
-      "tvl_usd": 16161210.883357283,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "StakeToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x3802c218221390025bceabbad5d8c59f40eb74b8",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 16161210.883357283,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x00000000219ab540356cbb839cbe05303d7705fa",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "DepositContract",
       "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "ethereum",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 5501.944174596336,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "DepositContract",
@@ -144,7 +100,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 5501.944174596336,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -153,7 +109,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-10-14 12:22:52+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3802c218221390025bceabbad5d8c59f40eb74b8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "StakeToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StakeToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3802c218221390025bceabbad5d8c59f40eb74b8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-10-20 18:05:50+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -188,7 +187,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2022-01-19 16:16:10+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],
@@ -197,17 +200,27 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x00000000219ab540356cbb839cbe05303d7705fa",
+      "name": "DepositContract",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x3802c218221390025bceabbad5d8c59f40eb74b8",
       "name": "StakeToken",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 16161210.883357283,
-      "risk_note": "Verified native implementation with $16,161,210.88 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 1,
-    "upstream": 2,
+    "native": 2,
+    "upstream": 1,
     "standard_library": 0,
     "needs_review": 0
   },

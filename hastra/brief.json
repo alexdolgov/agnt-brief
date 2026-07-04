@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "hastra",
-  "generated_at": "2026-06-21T18:50:10.902Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "hastra",
-    "tier": 0,
-    "peak_tvl": 408895383,
-    "peak_date": "2026-06-15T00:00:00.000Z",
-    "tvl_30d_ago": 370692227,
-    "tvl_90d_ago": 353535986,
-    "tvl_current": 393281472,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": null,
-    "change_30d_pct": 6.093800558704459,
-    "change_90d_pct": 11.242274499320699,
-    "days_since_peak": 6,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 3.8185588904044927
-  },
+  "generated_at": "2026-07-04T14:53:21.333Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 2,
-    "unique_implementations": 1,
-    "total_deployments": 2,
+    "total_contracts": 3,
+    "total_addresses": 5,
+    "unique_implementations": 3,
+    "total_deployments": 5,
     "audited_contracts": 0,
-    "unaudited_contracts": 1,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 402817033.72802997,
-    "tvl_usd": 402817033.72802997,
+    "dl_tvl_usd": 407592146.8434,
+    "tvl_usd": 407592146.8434,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,26 +39,35 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 3,
+    "live_verified_implementations": 3,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 1,
+    "product_family_count": 2,
     "total_contracts_indexed": 18,
-    "live_contracts": 2,
-    "inactive_contracts": 0,
-    "singleton_contracts": 16,
+    "live_contracts": 5,
+    "inactive_contracts": 13,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 8,
+    "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 3,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -111,6 +106,17 @@
         {
           "chain_id": 1,
           "chain_name": "ethereum",
+          "address": "0x748d0731738e68c7e2d693ccae56c82fd7b14da3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
           "address": "0xd524523e56fce26eb427301aee6c82b66129bc75",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
@@ -125,14 +131,96 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-06-06 01:10:11+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1376de100324d42337f1a2c08351d7242f30c3a7",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "HastraNavEngine",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HastraNavEngine",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1376de100324d42337f1a2c08351d7242f30c3a7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-04-09 00:11:59+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9fd0b0ef9fb4591a7c315bc19f0fb29a9edb019e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "HastraSMBNavEngine",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HastraSMBNavEngine",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9fd0b0ef9fb4591a7c315bc19f0fb29a9edb019e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-06-12 19:23:47+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 13220,
       "audit_key": "audit-13220",
-      "report_name": "DL audit link",
+      "report_name": "Hastra_vault-mint_&_vault-stake_Solana_Programs_Summary_Audit_Report.pdf",
       "report_url": "https://hastra.io/Hastra_vault-mint_&_vault-stake_Solana_Programs_Summary_Audit_Report.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -142,6 +230,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -162,10 +253,30 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1376de100324d42337f1a2c08351d7242f30c3a7",
+      "name": "HastraNavEngine",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9fd0b0ef9fb4591a7c315bc19f0fb29a9edb019e",
+      "name": "HastraSMBNavEngine",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 1,
+    "native": 3,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
@@ -178,7 +289,7 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 13220,
-        "report_name": "DL audit link"
+        "report_name": "Hastra_vault-mint_&_vault-stake_Solana_Programs_Summary_Audit_Report.pdf"
       }
     ],
     "inherited_remapped_matches": []

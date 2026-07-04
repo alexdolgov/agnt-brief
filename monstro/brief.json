@@ -1,36 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "monstro",
-  "generated_at": "2026-06-17T07:00:49.639Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "transitioning",
-  "lifecycle_signal": {
-    "slug": "monstro",
-    "tier": 1,
-    "peak_tvl": 529039,
-    "peak_date": "2025-11-13T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 409329,
-    "tvl_current": 0,
-    "tier0_reason": "current_tvl_zero_after_meaningful_peak",
-    "tvl_180d_ago": 488688,
-    "change_30d_pct": null,
-    "change_90d_pct": -100,
-    "governance_raw": {
-      "evidence": "The homepage explicitly states 'We've moved' and directs users to a new Monstro DeFi website, indicating an active migration to a new version or protocol.",
-      "confidence": 0.9,
-      "lifecycle_status": "transitioning"
-    },
-    "days_since_peak": 192,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 100,
-    "governance_evidence": "The homepage explicitly states 'We've moved' and directs users to a new Monstro DeFi website, indicating an active migration to a new version or protocol.",
-    "governance_confidence": 0.9,
-    "governance_text_chars": 263,
-    "governance_classification": "transitioning",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:35.107Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-16da",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 13,
     "total_addresses": 20,
@@ -44,14 +18,14 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2009550.14774,
-    "tvl_usd": 3461928.913238992,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "base": 3461928.91
-    },
-    "asd_usd": 3461928.913238992,
+    "dl_tvl_usd": 1359293.96494,
+    "tvl_usd": 1359293.96494,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://v2.monstro.fun",
     "chains": [
       "base"
@@ -65,21 +39,30 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 13,
+    "live_verified_implementations": 12,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "MONSTRO is/was a Base protocol historically tracked as a yield project with $MONSTRO staking, alongside related Monstro ecosystem contracts including native token, NFT, NFT sale/features/props, payment/USDC, and data-tracker contracts. The current v2 site indicates a migration toward a broader $MONSTRO ecosystem, Monstro DAO, and Monstro Labs rather than only staking.",
-    "relationship_narrative": "The MonstroToken is the core asset, and MonstroStaking is the contract that manages staking and reward distribution, with no additional shared infrastructure detected.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 20,
-    "live_contracts": 0,
-    "inactive_contracts": 0,
+    "project_purpose": "Yield. Structurally: 17 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 2 ERC20 tokens, 5 ERC721 NFTs; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 1 common project-authored base contract(s) (eip712). Dominant framework: openzeppelin.",
+    "product_family_count": 4,
+    "total_contracts_indexed": 24,
+    "live_contracts": 20,
+    "inactive_contracts": 4,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 20,
+    "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 5,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -96,85 +79,15 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "MonstroToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "MONSTRO",
-      "tvl_usd": 3433424.500066329,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MonstroToken",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 3433424.500066329,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x278cfeadeaacbe88f24692ef199247cf17c5141f",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "BasedLoansLendingLedger",
-      "role": "core_logic",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 15425.158422991894,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BasedLoansLendingLedger",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x278cfeadeaacbe88f24692ef199247cf17c5141f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 15425.158422991894,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
       "address": "0x174b0950f7359f6197e92d8b274f0d6b27154575",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "AlgebraPool",
       "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "algebra",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 13079.254749671167,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "AlgebraPool",
@@ -187,7 +100,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 13079.254749671167,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -196,7 +109,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-04-30 01:28:37+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x278cfeadeaacbe88f24692ef199247cf17c5141f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BasedLoansLendingLedger",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BasedLoansLendingLedger",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x278cfeadeaacbe88f24692ef199247cf17c5141f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-13 03:10:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -231,7 +187,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-19 10:37:25+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -266,7 +226,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-19 04:03:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -301,7 +265,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-01-21 00:54:27+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -336,7 +304,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-19 05:21:07+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -404,7 +376,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-03-31 01:59:49+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -439,7 +415,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-24 09:29:49+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -451,7 +431,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "MONSTRO",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -474,7 +454,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 02:15:53+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MonstroToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MonstroToken",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-13 21:55:49+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -509,7 +532,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-04-30 00:56:41+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -519,7 +546,7 @@
       "deployment_unit_proxy_count": null,
       "name": "RatioDerivedAdapter",
       "role": "adapter",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -544,7 +571,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-27 00:17:41+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -555,7 +586,7 @@
       "name": "SafeProxy",
       "role": "unknown",
       "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
+      "origin_provider": "Gnosis Safe",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -623,7 +654,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2026-01-24 02:44:25+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],
@@ -632,12 +667,22 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7",
-      "name": "MonstroToken",
-      "role": "token",
+      "address": "0x174b0950f7359f6197e92d8b274f0d6b27154575",
+      "name": "AlgebraPool",
+      "role": "core_logic",
       "origin_kind": "native",
-      "tvl_usd": 3433424.500066329,
-      "risk_note": "Verified native implementation with $3,433,424.50 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x278cfeadeaacbe88f24692ef199247cf17c5141f",
+      "name": "BasedLoansLendingLedger",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 8453,
@@ -712,19 +757,39 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
+      "address": "0x1d3be1cc80ca89ddbabe5b5c254af63200e708f7",
+      "name": "MonstroToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
       "address": "0xfa68ac5ca298ab4b96bce6542ec74bb9516b0397",
       "name": "MonstroUSDC",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xb5391e137cd3bb9dda02c164b599c95af0f88b52",
+      "name": "RatioDerivedAdapter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 9,
-    "upstream": 1,
+    "native": 12,
+    "upstream": 0,
     "standard_library": 1,
-    "needs_review": 2
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

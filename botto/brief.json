@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "botto",
-  "generated_at": "2026-06-17T07:00:40.347Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "botto",
-    "tier": 0,
-    "peak_tvl": 0,
-    "peak_date": "2025-01-13T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 0,
-    "tvl_current": 0,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 0,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "days_since_peak": 495,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 0
-  },
+  "generated_at": "2026-07-04T14:53:07.794Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-ae05",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 4,
-    "total_addresses": 4,
-    "unique_implementations": 4,
-    "total_deployments": 4,
+    "total_contracts": 9,
+    "total_addresses": 9,
+    "unique_implementations": 9,
+    "total_deployments": 9,
     "audited_contracts": 0,
     "unaudited_contracts": 4,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 5,
     "coverage_pct": 0,
     "total_audits": 3,
+    "direct_audits": 3,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2917186.07553,
-    "tvl_usd": 2917186.07553,
+    "dl_tvl_usd": 2831231.7499200003,
+    "tvl_usd": 2831231.7499200003,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -54,28 +40,35 @@
       "aging": 0,
       "stale": 1,
       "unknown": 2
+    },
+    "live_implementations": 4,
+    "live_verified_implementations": 3,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Botto is a decentralized autonomous AI artist governed and trained by its community. The protocol supports the creation and curation of AI-generated art through DAO governance, with token, staking, liquidity-mining, and rewards contracts serving as supporting protocol components.",
-    "relationship_narrative": "The Governance family controls parameters for Liquidity Mining and Rewards, which distribute BOTTO tokens to users. The Token family provides the BOTTO token used across all families, with a bridged version on Base for cross-chain functionality.",
-    "product_family_count": 7,
-    "total_contracts_indexed": 34,
+    "project_purpose": "AI Agents. Structurally: 13 project-authored contract(s) across 2 chain(s); 3 ERC20 tokens, 2 ERC1155 multi-tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.",
+    "product_family_count": 4,
+    "total_contracts_indexed": 35,
     "live_contracts": 4,
-    "inactive_contracts": 16,
-    "singleton_contracts": 14,
+    "inactive_contracts": 26,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 7,
+    "unknown_contracts": 5,
+    "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 4,
+    "unique_implementations": 9,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -117,7 +110,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-14 19:04:37+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -129,7 +126,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "ERC20 Token Contract",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -152,7 +149,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-10-07 13:09:14+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -162,9 +163,9 @@
       "deployment_unit_proxy_count": null,
       "name": "OptimismMintableERC20",
       "role": "bridge_template",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Base ERC20 Token Contract",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -187,7 +188,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-09-24 12:16:45+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -222,14 +227,213 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2021-10-07 13:46:31+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x08b5d710102289b5888a2b2773980c0ae40d22cc",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x08b5d710102289b5888a2b2773980c0ae40d22cc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-07-12 13:19:11+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2c397d1723595cc03b37082c10d384e4f756b569",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2c397d1723595cc03b37082c10d384e4f756b569",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-07-12 13:12:26+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x49a063cd1ab8b5a2980059bc41d82aaa70c6bd85",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x49a063cd1ab8b5a2980059bc41d82aaa70c6bd85",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-10-07 12:58:44+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x550d1be3a79f91aa8b714289148fe6d385c2e192",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x550d1be3a79f91aa8b714289148fe6d385c2e192",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-05-11 12:46:00+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc1929bcc3b5f446c48995e9c8ac928ecaf63f22f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc1929bcc3b5f446c48995e9c8ac928ecaf63f22f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-05-11 12:56:43+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 2595,
       "audit_key": "audit-2595",
-      "report_name": "Audit: V2 Governance Contract",
+      "report_name": "prong-distance-e49.notion.site/Botto-Governance-V2-Report-e4f25230b7e34187abdb1b7d55f1ab4c",
       "report_url": "https://prong-distance-e49.notion.site/Botto-Governance-V2-Report-e4f25230b7e34187abdb1b7d55f1ab4c",
       "auditor": "GoldmanDAO",
       "audit_type": "audit",
@@ -239,6 +443,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -250,7 +457,7 @@
     {
       "audit_id": 2596,
       "audit_key": "audit-2596",
-      "report_name": "Audit: NFT Contracts",
+      "report_name": "www.notion.so/Botto-NFTs-V2-Report-b242862b0dcc48dd94bdfe2cee517660",
       "report_url": "https://www.notion.so/Botto-NFTs-V2-Report-b242862b0dcc48dd94bdfe2cee517660",
       "auditor": "Code4rena",
       "audit_type": "contest",
@@ -260,6 +467,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -271,7 +481,7 @@
     {
       "audit_id": 2597,
       "audit_key": "audit-2597",
-      "report_name": "[Audita]() first conducted audits of Botto's Ethereum mainnet contract ecosystem in April 2023. The audit is available for perusal and covers all of Botto's existing contracts:",
+      "report_name": "audita.io",
       "report_url": "https://audita.io/",
       "auditor": "Audita",
       "audit_type": "audit",
@@ -281,6 +491,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -311,13 +524,23 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x24914cb6bd01e6a0cf2a9c0478e33c25926e6a0c",
+      "name": "OptimismMintableERC20",
+      "role": "bridge_template",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 2,
+    "native": 3,
     "upstream": 1,
-    "standard_library": 1,
-    "needs_review": 0
+    "standard_library": 0,
+    "needs_review": 5
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -327,15 +550,15 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 2595,
-        "report_name": "Audit: V2 Governance Contract"
+        "report_name": "prong-distance-e49.notion.site/Botto-Governance-V2-Report-e4f25230b7e34187abdb1b7d55f1ab4c"
       },
       {
         "audit_id": 2596,
-        "report_name": "Audit: NFT Contracts"
+        "report_name": "www.notion.so/Botto-NFTs-V2-Report-b242862b0dcc48dd94bdfe2cee517660"
       },
       {
         "audit_id": 2597,
-        "report_name": "[Audita]() first conducted audits of Botto's Ethereum mainnet contract ecosystem in April 2023. The audit is available for perusal and covers all of Botto's existing contracts:"
+        "report_name": "audita.io"
       }
     ],
     "inherited_remapped_matches": []

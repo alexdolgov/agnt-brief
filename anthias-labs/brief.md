@@ -1,25 +1,27 @@
 # Agentic Audit Brief: Anthias Labs
 
+⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
+
 ## Project Overview
 
 - Project: Anthias Labs (`anthias-labs`)
 - Website: [https://anthias.xyz](https://anthias.xyz)
-- Lifecycle: active (Tier 0, 19.4% below peak)
-- Generated: 2026-06-17T07:01:01.703Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown (Tier 0, 24.1% below peak)
+- Generated: 2026-07-04T14:53:03.892Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
 - Chains: base
 - Contract surface: 3 unique implementations (10 raw deployments)
-- DeFi Llama TVL: $18,647,606.59
-- On-chain TVL (included contracts): $705,349.17
-- TVL by chain: Base $705,349.17
+- DeFi Llama TVL: $19,431,461.72
+- On-chain TVL (included contracts): $601,188.82
+- TVL by chain: Base $601,188.82
 
 ## Project Description
 
-Anthias Labs is a boutique on-chain advisory, DeFi risk-management, monitoring, research, and open-source tooling firm. Its public materials support risk curation, system design, advisory, monitoring, and research activity for DeFi systems on Base, including recorded VaultV2 and MetaMorpho contract surfaces, but do not substantiate a general claim that Anthias deploys and manages vaults to optimize yield. The provenance and implementation authorship of the MetaMorpho contracts should remain unresolved unless independently confirmed.
+Risk Curators. Structurally: 3 project-authored contract(s) across 1 chain(s); 2 ERC4626 vaults, 2 ERC20 tokens; built on openzeppelin.
 
 ### Architecture
 
-All contracts are deployed under the single Anthias Labs family, with VaultV2 and MetaMorpho contracts likely sharing common risk management logic and infrastructure, though no explicit supporting contracts are identified.
+The protocol forms a single structural family (Core Logic) of 3 contract(s).
 
 ## Contract Surface Quality
 
@@ -27,22 +29,26 @@ All contracts are deployed under the single Anthias Labs family, with VaultV2 an
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 1; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
+- Coverage of deployed-live implementations: 0/2 (0.0%)
+- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/3
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 3
 - Raw deployments: 10
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $705,349.17
+- ASD (verified + unaudited TVL): $601,188.82
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [unknown]. ASD of $601,188.82 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

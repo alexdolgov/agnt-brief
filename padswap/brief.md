@@ -1,50 +1,50 @@
 # Agentic Audit Brief: PadSwap
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 6.8% over 90 days
-
 ## Project Overview
 
 - Project: PadSwap (`padswap`)
-- Lifecycle: declining (Tier 0, 96.1% below peak)
-- Generated: 2026-06-21T08:19:02.184Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:39.385Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: bsc
-- Contract surface: 8 unique implementations (10 raw deployments)
-- DeFi Llama TVL: $107,262.19
+- Contract surface: 24 unique implementations (26 raw deployments)
+- DeFi Llama TVL: $115,354.33
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-PadSwap is a decentralized exchange (DEX) on BSC that enables token swaps, liquidity provision, and yield farming. It uses a custom AMM with a focus on community-driven tokenomics and anti-whale mechanisms.
+Dexs. Structurally: 27 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens; built on openzeppelin.
 
 ### Architecture
 
-PadFactory creates and manages liquidity pools, while PadFarm and PadFarmsV2 handle staking and reward distribution. Toad is the reward token, and ToadFarm is a dedicated staking contract for Toad, with SonofDogeV2 likely serving as an adapter or helper for reward calculations.
+The protocol comprises 3 functional families. Contracts are linked by 6 cross-contract reference(s). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 87; live-surface contracts included: 10 (10 live, 0 unknown).
-- Excluded by liveness: 77 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 87; live-surface contracts included: 26 (10 live, 16 unknown).
+- Excluded by liveness: 61 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
-- Detected codebases: uniswap-v2
-- Unverified dependencies: 1/3.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/8 (0.0%)
+- Coverage of deployed-live implementations: 0/8 (0.0%)
+- Deployed-live implementations: 8 of 24 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/8
 - Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 8
-- Raw deployments: 10
-- Audits discovered: 1
+- Unverified implementations: 16
+- Unique implementations: 24
+- Raw deployments: 26
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -81,17 +81,34 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (16)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | bsc | n/a | `0x167cef...2f3f4a` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x4a7fdf...a6aeb0` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x4eaf76...c5af17` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x5346d5...af265f` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x6e42f4...76cde5` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x7ebab3...4d0752` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x994a66...febf60` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x9ebb25...dea9ae` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xba1ced...cafc86` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xc97c28...99cba5` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xceb4e3...e4d84c` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xdb76db...60a36a` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xe4fa0d...49c315` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xe80e9f...7d0d84` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xeb2d2c...e7b329` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xf4cd67...f062ec` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://solanaleveling.com/) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [solanaleveling.com](https://solanaleveling.com/) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -115,7 +132,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 8 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 16 |
 
 ## Scope Matching Notes
 
@@ -128,6 +145,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [13641] DL audit link
+- [13641] solanaleveling.com
 
 Fork inheritance lineage and inherited audits are included when available.

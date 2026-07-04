@@ -4,12 +4,12 @@
 
 - Project: Fulcrom (`fulcrom`)
 - Website: [https://fulcrom.finance](https://fulcrom.finance)
-- Lifecycle: active (Tier 0, 53.4% below peak)
-- Generated: 2026-06-17T07:00:52.442Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:17.212Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-2d9c
 - Chains: cronos, zksync-era
-- Contract surface: 56 unique implementations (56 raw deployments)
-- DeFi Llama TVL: $10,941,272.00
+- Contract surface: 19 unique implementations (56 raw deployments)
+- DeFi Llama TVL: $10,216,452.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,25 +23,28 @@ The Fulcrom AMM and Perps families rely on the shared Fulcrom Core infrastructur
 
 ## Contract Surface Quality
 
-- Indexed contracts: 79; live-surface contracts included: 56 (17 live, 39 unknown).
-- Excluded by liveness: 23 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 56; live-surface contracts included: 56 (0 live, 56 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 19 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 56
-- Unique implementations: 56
+- Unverified implementations: 19
+- Unique implementations: 19
 - Raw deployments: 56
-- Audits discovered: 0
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -70,50 +73,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (56)
+### ❓ Unverified (19)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | cronos | n/a | `0x09d7c9...dfe20f` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x115497...135e4c` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x133b7f...657ae1` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x1c29ae...3b0045` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x1db915...876af7` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x2275b5...f0691c` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x257147...26ce8b` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x27e51d...f023f6` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x27fb69...c3f940` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x2a6289...816652` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x2c2e10...ee1bda` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x3881df...2de177` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x390340...51e0ef` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x54a16d...c74e6e` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x614810...83891f` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x629a8d...22baaa` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x68f8a5...3c9d40` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x6fcfd3...52507e` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x725c5a...3abccb` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x8268fe...f77022` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x83afb1...f0013a` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x880a34...daf3ae` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x8c7ef3...876098` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x8fbd95...a7f6f7` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x963c77...588c2e` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0xa461fa...98f2b0` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0xa8bea4...cd0446` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0xcc46b7...2e0c9a` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0xd2985b...ae13fd` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0xd565cb...069934` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0xd8ddc6...51bc4d` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0xd996be...63148a` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0xe00370...690567` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0xe006ab...59fa15` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0xe789d5...7ef92d` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0xf5027e...924050` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0xfc399d...60db16` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0xff7bba...4981f4` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | 38 deployments: cronos `0x09d7c9...dfe20f`; cronos `0x115497...135e4c`; cronos `0x133b7f...657ae1`; cronos `0x1c29ae...3b0045`; cronos `0x1db915...876af7`; cronos `0x2275b5...f0691c`; cronos `0x257147...26ce8b`; cronos `0x27e51d...f023f6`; cronos `0x27fb69...c3f940`; cronos `0x2a6289...816652`; cronos `0x2c2e10...ee1bda`; cronos `0x3881df...2de177`; cronos `0x390340...51e0ef`; cronos `0x54a16d...c74e6e`; cronos `0x614810...83891f`; cronos `0x629a8d...22baaa`; cronos `0x68f8a5...3c9d40`; cronos `0x6fcfd3...52507e`; cronos `0x725c5a...3abccb`; cronos `0x8268fe...f77022`; cronos `0x83afb1...f0013a`; cronos `0x880a34...daf3ae`; cronos `0x8c7ef3...876098`; cronos `0x8fbd95...a7f6f7`; cronos `0x963c77...588c2e`; cronos `0xa461fa...98f2b0`; cronos `0xa8bea4...cd0446`; cronos `0xcc46b7...2e0c9a`; cronos `0xd2985b...ae13fd`; cronos `0xd565cb...069934`; cronos `0xd8ddc6...51bc4d`; cronos `0xd996be...63148a`; cronos `0xe00370...690567`; cronos `0xe006ab...59fa15`; cronos `0xe789d5...7ef92d`; cronos `0xf5027e...924050`; cronos `0xfc399d...60db16`; cronos `0xff7bba...4981f4` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | n/a | `0x022b94...a17e3e` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | n/a | `0x0cf436...105992` | ❓ Unverified |
 | UnnamedContract | unknown | zksync-era | n/a | `0x1886df...44b982` | ❓ Unverified |
@@ -137,6 +103,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [SlowMist Audit Report - Fulcrom.pdf](https://1647136421-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FPkF01syfy7zFMzhDL9cH%2Fuploads%2FxWwYAjVNBOSkUS4qqV1u%2FSlowMist%20Audit%20Report%20-%20Fulcrom.pdf) | SlowMist | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -148,18 +115,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 56 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 19 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [20333] SlowMist Audit Report - Fulcrom.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

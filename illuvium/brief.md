@@ -4,44 +4,47 @@
 
 - Project: Illuvium (`illuvium`)
 - Website: [https://illuvium.io](https://illuvium.io)
-- Lifecycle: active (Tier 1, dead)
-- Generated: 2026-06-17T07:00:32.597Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:21.884Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: ethereum
-- Contract surface: 6 unique implementations (7 raw deployments)
-- DeFi Llama TVL: $6,878,526.45
-- On-chain TVL (included contracts): $39,759,562.67
-- TVL by chain: Ethereum $39,759,562.67
+- Contract surface: 12 unique implementations (17 raw deployments)
+- DeFi Llama TVL: $6,112,695.24
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Illuvium is a gaming ecosystem centered on a decentralized NFT collection and auto-battler game, with Ethereum-based ILV staking and pool2/liquidity contracts supporting participation in the broader Illuvium ecosystem.
+Gaming. Structurally: 23 project-authored contract(s) across 1 chain(s); 4 ERC20 tokens, 1 ERC721 NFT, 1 ERC1155 multi-token; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The Illuvium family uses ERC1967Proxy contracts to upgrade ILVPool and SushiLPPool logic, while IlluviumCorePool interacts with the ILV token and UniswapV2Pair for staking and liquidity rewards.
+The protocol comprises 6 functional families. Its contracts share 2 common project-authored base contract(s) (illuviumaware, timestamp). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 36; live-surface contracts included: 7 (7 live, 0 unknown).
-- Excluded by liveness: 21 inactive, 8 singleton, 0 uninitialized.
-- Deployment units: 1/5 live.
-- Detected codebases: uniswap-v2
-- Dependencies extracted: 10; unverified dependencies: 0.
+- Indexed contracts: 34; live-surface contracts included: 13 (11 live, 2 unknown).
+- Excluded by liveness: 21 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/6 (0.0%)
-- Verified + Unaudited implementations: 6
+- Coverage of deployed-live implementations: 0/8 (0.0%)
+- Deployed-live implementations: 10 of 12 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/10
+- Verified + Unaudited implementations: 10
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 6
-- Raw deployments: 7
-- Audits discovered: 0
+- Unverified implementations: 2
+- Unique implementations: 12
+- Raw deployments: 17
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $39,759,562.67
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- ASD (verified + unaudited TVL): n/a
+- Latest audit: 2024-03 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -54,16 +57,20 @@ The Illuvium family uses ERC1967Proxy contracts to upgrade ILVPool and SushiLPPo
 
 - None
 
-### ⚠️ Verified + Unaudited (6)
+### ⚠️ Verified + Unaudited (10)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| IlluviumERC20 | token | ethereum | n/a | [`0x767fe9...d7ca0e`](./contracts/ethereum-1/0x767fe9edc9e0df98e07454847909b5e959d7ca0e/) | ⚠️ Unaudited |
-| IlluviumCorePool | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x25121e...4e2a36`](./contracts/ethereum-1/0x25121eddf746c884dde4619b573a7b10714e2a36/); ethereum `0x8b4d84...843f72` | ⚠️ Unaudited |
 | EscrowedIlluvium2 | operational_periphery | ethereum | n/a | [`0x7e77dc...f1b068`](./contracts/ethereum-1/0x7e77dcb127f99ece88230a64db8d595f31f1b068/) | ⚠️ Unaudited |
+| IlluviumCorePool | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x25121e...4e2a36`](./contracts/ethereum-1/0x25121eddf746c884dde4619b573a7b10714e2a36/); ethereum `0x8b4d84...843f72` | ⚠️ Unaudited |
+| IlluviumERC20 | token | ethereum | n/a | [`0x767fe9...d7ca0e`](./contracts/ethereum-1/0x767fe9edc9e0df98e07454847909b5e959d7ca0e/) | ⚠️ Unaudited |
 | IlluviumIDOCollection | unknown | ethereum | n/a | [`0x4222b2...161e52`](./contracts/ethereum-1/0x4222b2a98daa443c6a0a761300d7d6bfd9161e52/) | ⚠️ Unaudited |
+| IlluviumNFT | unknown | ethereum | n/a | 2 deployments: ethereum [`0x384aa0...af9fdf`](./contracts/ethereum-1/0x384aa03d8b7cc6a818e7cb7a037ba0cd81af9fdf/); ethereum `0xb90161...cbf8b9` | ⚠️ Unaudited |
+| ILVPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7f5f85...34291d`](./contracts/ethereum-1/0x7f5f854ffb6b7701540a00c69c4ab2de2b34291d/); ethereum `0xdb0a2a...f20cb3` | ⚠️ Unaudited |
+| PoolFactory | unknown | ethereum | n/a | 2 deployments: ethereum [`0x53aff3...56d6e1`](./contracts/ethereum-1/0x53aff3b5059a48e4ee37e63c03e3ad563756d6e1/); ethereum `0x9dca38...94597c` | ⚠️ Unaudited |
+| SushiLPPool | unknown | ethereum | n/a | [`0xe98477...571cc2`](./contracts/ethereum-1/0xe98477bdc16126bb0877c6e3882e3edd72571cc2/) | ⚠️ Unaudited |
 | UniswapV2Router02 | adapter | ethereum | n/a | [`0xd9e1ce...378b9f`](./contracts/ethereum-1/0xd9e1ce17f2641f24ae83637ab66a2cca9c378b9f/) | ⚠️ Unaudited |
-| Vesting | operational_periphery | ethereum | unit-20338 | [`0x6bd281...57adc6`](./contracts/ethereum-1/0x6bd2814426f9a6abaa427d2ad3fc898d2a57adc6/) | ⚠️ Unaudited |
+| Vesting | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x6bd281...57adc6`](./contracts/ethereum-1/0x6bd2814426f9a6abaa427d2ad3fc898d2a57adc6/); ethereum `0xc01e7d...08bfdb` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -77,16 +84,20 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x088823...cae7b8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa305cd...a3dc70` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [0xmacro.com/library/audits/illuvium-1](https://0xmacro.com/library/audits/illuvium-1) | 0xMacro | Audit | 2024-03 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -94,27 +105,35 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x767fe9...d7ca0e`](./contracts/ethereum-1/0x767fe9edc9e0df98e07454847909b5e959d7ca0e/) | IlluviumERC20 | token | $39,754,372.43 | Verified native implementation with $39,754,372.43 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x25121e...4e2a36`](./contracts/ethereum-1/0x25121eddf746c884dde4619b573a7b10714e2a36/) | IlluviumCorePool | core_logic | $5,190.25 | Verified native implementation with $5,190.25 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7e77dc...f1b068`](./contracts/ethereum-1/0x7e77dcb127f99ece88230a64db8d595f31f1b068/) | EscrowedIlluvium2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x25121e...4e2a36`](./contracts/ethereum-1/0x25121eddf746c884dde4619b573a7b10714e2a36/) | IlluviumCorePool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x767fe9...d7ca0e`](./contracts/ethereum-1/0x767fe9edc9e0df98e07454847909b5e959d7ca0e/) | IlluviumERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4222b2...161e52`](./contracts/ethereum-1/0x4222b2a98daa443c6a0a761300d7d6bfd9161e52/) | IlluviumIDOCollection | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x384aa0...af9fdf`](./contracts/ethereum-1/0x384aa03d8b7cc6a818e7cb7a037ba0cd81af9fdf/) | IlluviumNFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7f5f85...34291d`](./contracts/ethereum-1/0x7f5f854ffb6b7701540a00c69c4ab2de2b34291d/) | ILVPool | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x53aff3...56d6e1`](./contracts/ethereum-1/0x53aff3b5059a48e4ee37e63c03e3ad563756d6e1/) | PoolFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6bd281...57adc6`](./contracts/ethereum-1/0x6bd2814426f9a6abaa427d2ad3fc898d2a57adc6/) | Vesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
-| upstream | 1 |
-| standard_library | 1 |
-| needs_review | 0 |
+| native | 8 |
+| upstream | 2 |
+| standard_library | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [20729] 0xmacro.com/library/audits/illuvium-1
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,16 +1,14 @@
 # Agentic Audit Brief: Influpia
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 20.2% over 90 days
-
 ## Project Overview
 
 - Project: Influpia (`influpia`)
-- Lifecycle: declining (Tier 0, 95.4% below peak)
-- Generated: 2026-06-19T19:15:01.961Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:22.039Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: merlin
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $2,958.20
+- DeFi Llama TVL: $2,806.99
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -33,19 +31,21 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-06 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

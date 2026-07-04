@@ -1,51 +1,51 @@
 # Agentic Audit Brief: Nabla Finance
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 78.9% over 90 days
-
 ## Project Overview
 
 - Project: Nabla Finance (`nabla-finance`)
 - Website: [https://nabla.fi](https://nabla.fi)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-21T08:01:32.308Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:38.534Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: arbitrum, base, berachain, hyperliquid
-- Contract surface: 152 unique implementations (152 raw deployments)
-- DeFi Llama TVL: $87,976.39
-- On-chain TVL (included contracts): $517,889,644.27
-- TVL by chain: Arbitrum $451,141,599.57 | Base $66,748,044.70
+- Contract surface: 216 unique implementations (218 raw deployments)
+- DeFi Llama TVL: $89,239.17
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Nabla Finance is a decentralized exchange (DEX) protocol that enables users to swap assets across multiple chains, provide liquidity to earn fees, and stake tokens for rewards. It includes a native token (NablaToken), oracle infrastructure for price feeds, and a portal for cross-chain interactions.
+Dexs. Structurally: 38 project-authored contract(s) across 4 chain(s); 7 ERC20 tokens, 2 ERC721 NFTs; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The Swap Pools rely on the Nabla Oracle and Pyth Adapter V2 for accurate asset pricing, while the Router directs user trades to these pools. Staking and Backstop Pool contracts interact with NablaToken and LP tokens from Swap Pools, and the Nabla Portal enables cross-chain asset movement across all families.
+The protocol comprises 6 functional families. Its contracts share 24 common project-authored base contract(s) (mintcontroller, controller, fiattokenv2). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 237; live-surface contracts included: 152 (152 live, 0 unknown).
-- Excluded by liveness: 73 inactive, 12 singleton, 0 uninitialized.
-- Deployment units: 7/14 live.
+- Indexed contracts: 225; live-surface contracts included: 217 (20 live, 197 unknown).
+- Excluded by liveness: 8 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/13 (0.0%)
-- Verified + Unaudited implementations: 13
+- Coverage of deployed-live implementations: 0/19 (0.0%)
+- Deployed-live implementations: 19 of 216 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/19
+- Verified + Unaudited implementations: 19
 - Verified by bytecode match: 0
-- Unverified implementations: 139
-- Unique implementations: 152
-- Raw deployments: 152
-- Audits discovered: 1
+- Unverified implementations: 197
+- Unique implementations: 216
+- Raw deployments: 218
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $517,889,644.27
-- Latest audit: 2024-07 (aging)
-- Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
+- ASD (verified + unaudited TVL): n/a
+- Latest audit: 2024-07 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $517,889,644.27 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -57,21 +57,27 @@ The Swap Pools rely on the Nabla Oracle and Pyth Adapter V2 for accurate asset p
 
 - None
 
-### ⚠️ Verified + Unaudited (13)
+### ⚠️ Verified + Unaudited (19)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| StandardArbERC20 | token | arbitrum | unit-41678 | [`0x2f2a25...fc5b0f`](./contracts/arbitrum-42161/0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f/) | ⚠️ Unaudited |
+| aeWETH | token | arbitrum | n/a | [`0x82af49...3fbab1`](./contracts/arbitrum-42161/0x82af49447d8a07e3bd95bd0d56f35241523fbab1/) | ⚠️ Unaudited |
+| ArbitrumExtensionV2 | adapter | arbitrum | n/a | [`0xfd086b...9fcbb9`](./contracts/arbitrum-42161/0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9/) | ⚠️ Unaudited |
+| CreditMessaging | unknown | berachain | n/a | [`0x45a01e...2033cd`](./contracts/berachain-80094/0x45a01e4e04f14f7a4a6702c74187c5f6222033cd/) | ⚠️ Unaudited |
 | DegenToken | token | base | n/a | [`0x4ed4e8...efefed`](./contracts/base-8453/0x4ed4e862860bed51a9570b96d89af5e1b0efefed/) | ⚠️ Unaudited |
-| NablaToken | token | base | n/a | [`0x01ed85...fd679b`](./contracts/base-8453/0x01ed85d73645523b0d62c7a8e35d03601cfd679b/) | ⚠️ Unaudited |
-| aeWETH | token | arbitrum | unit-41679 | [`0x82af49...3fbab1`](./contracts/arbitrum-42161/0x82af49447d8a07e3bd95bd0d56f35241523fbab1/) | ⚠️ Unaudited |
-| ArbitrumExtensionV2 | adapter | arbitrum | unit-41682 | [`0xfd086b...9fcbb9`](./contracts/arbitrum-42161/0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9/) | ⚠️ Unaudited |
+| FeeLibV1 | unknown | berachain | n/a | 2 deployments: berachain [`0x808d7c...bc0949`](./contracts/berachain-80094/0x808d7c71ad2ba3fa531b068a2417c63106bc0949/); berachain `0x9d1b16...25b944` | ⚠️ Unaudited |
 | FiatTokenProxy | token | arbitrum | n/a | [`0xcbb7c0...ed33bf`](./contracts/arbitrum-42161/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf/) | ⚠️ Unaudited |
-| FiatTokenV2_1 | token | base | unit-41677 | [`0xcbb7c0...ed33bf`](./contracts/base-8453/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf/) | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | base | unit-41676 | [`0x833589...a02913`](./contracts/base-8453/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913/) | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | arbitrum | unit-41681 | [`0xaf88d0...8e5831`](./contracts/arbitrum-42161/0xaf88d065e77c8cc2239327c5edb3a432268e5831/) | ⚠️ Unaudited |
-| L2ArbitrumToken | token | arbitrum | unit-41680 | [`0x912ce5...9e6548`](./contracts/arbitrum-42161/0x912ce59144191c1204e64559fe8253a0e49e6548/) | ⚠️ Unaudited |
+| FiatTokenV2_1 | token | base | n/a | [`0xcbb7c0...ed33bf`](./contracts/base-8453/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf/) | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | base | n/a | [`0x833589...a02913`](./contracts/base-8453/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913/) | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | arbitrum | n/a | [`0xaf88d0...8e5831`](./contracts/arbitrum-42161/0xaf88d065e77c8cc2239327c5edb3a432268e5831/) | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | berachain | n/a | 2 deployments: berachain [`0x549943...1d3241`](./contracts/berachain-80094/0x549943e04f40284185054145c6e4e9568c1d3241/); berachain `0xa272ff...a2d8f9` | ⚠️ Unaudited |
+| L2ArbitrumToken | token | arbitrum | n/a | [`0x912ce5...9e6548`](./contracts/arbitrum-42161/0x912ce59144191c1204e64559fe8253a0e49e6548/) | ⚠️ Unaudited |
+| NablaToken | token | base | n/a | [`0x01ed85...fd679b`](./contracts/base-8453/0x01ed85d73645523b0d62c7a8e35d03601cfd679b/) | ⚠️ Unaudited |
+| OFTTokenERC20 | token | berachain | n/a | [`0x2f6f07...6e7590`](./contracts/berachain-80094/0x2f6f07cdcf3588944bf4c42ac74ff24bf56e7590/) | ⚠️ Unaudited |
 | OptimismMintableERC20 | bridge_template | base | n/a | [`0x2da56a...a7af71`](./contracts/base-8453/0x2da56acb9ea78330f947bd57c54119debda7af71/) | ⚠️ Unaudited |
+| StandardArbERC20 | token | arbitrum | n/a | [`0x2f2a25...fc5b0f`](./contracts/arbitrum-42161/0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f/) | ⚠️ Unaudited |
+| TokenMessaging | token | berachain | n/a | [`0xaf5191...ba2cd6`](./contracts/berachain-80094/0xaf5191b0de278c7286d6c7cc6ab6bb8a73ba2cd6/) | ⚠️ Unaudited |
+| WBTCOFT | token | berachain | n/a | [`0x0555e3...0d2b9c`](./contracts/berachain-80094/0x0555e30da8f98308edb960aa94c0db47230d2b9c/) | ⚠️ Unaudited |
 | WETH9 | token | base | n/a | [`0x420000...000006`](./contracts/base-8453/0x4200000000000000000000000000000000000006/) | ⚠️ Unaudited |
 | WHYPE9 | unknown | hyperliquid | n/a | [`0x555555...555555`](./contracts/hyperliquid-999/0x5555555555555555555555555555555555555555/) | ⚠️ Unaudited |
 
@@ -87,7 +93,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (139)
+### ❓ Unverified (197)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -187,48 +193,106 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | hyperliquid | n/a | `0xfe0136...36e75f` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x0706e6...8e8992` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x123456...9c12eb` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x232087...f4d90b` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x276d61...197fe3` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x2966df...c0ff89` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x2e56ce...7674f1` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x44c4b9...e7a96a` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x4835c7...0ef012` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x4ec0c3...0995b3` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x50841f...892b69` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x63c994...b210b1` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x65e85e...c0fa5e` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x6821f0...76f6fe` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x6a2f1d...8fcf3d` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x70f29b...eb939f` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x731248...e11f6c` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x791fee...6f487b` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x7d970c...1c1983` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x831d18...03f16e` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x84bec2...9c494d` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x8661d1...c42794` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x89f57d...5eab6e` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x925d24...be5976` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x9cae34...c38005` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xa087f5...a9333b` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xa35933...94c905` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xa82230...c8c9be` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xa83a20...b39b85` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xaeeca6...a787cf` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xaf6072...b35e6b` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xb11ad7...4cd457` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xbfe5d9...abfa21` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xcb1f2b...fe8813` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xd24d14...e67fff` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xd739ec...d27aa9` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xdd8f26...67dab0` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xec74e1...069974` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xeef559...b3ef8e` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf7e21f...d56867` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x058a08...ccd9a8` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x107330...caa6e2` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x163ccf...33a973` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x1e0987...7451eb` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x1e577c...005849` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x272df8...76a155` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x305681...aaa4d6` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x337b03...68a29a` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x3aa4b1...a0318c` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x411ef7...32bf12` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x44154d...f0971d` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x44f805...82303b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x47eecf...bbe0c2` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x485a91...d2b603` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x4bbc02...89bdd9` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x4cc48f...8af4aa` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x4d044d...1dd3c4` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x504554...90b478` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x53a87f...d1afbf` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x563a8a...269859` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x5862f4...777408` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x5e6b5c...4c7164` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x68c395...4b8abb` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x6a482f...569920` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x6b6b23...8fb3e3` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x7666a2...87c35d` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x7bcfc8...06d18d` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x7c9afa...2aea0c` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x898f11...5fc80e` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x8c5049...2b20a6` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x8e74ed...b00d39` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa124de...9aa561` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa2ab9c...1939ff` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa59003...3f8eeb` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xa5b14e...9d07a6` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xb2677f...c78ea3` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xb77388...0599b3` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xc5bc16...e21d0e` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xc85d88...56705d` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xc9752a...422a0c` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xca8b86...35b8d5` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xcb94ee...6b676b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xcc5544...284a87` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xdb68e1...0373da` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xe70292...06efeb` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xe9accd...7bb4d5` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xeccd1d...9a4584` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xf1df59...58264f` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xf82bfa...b7f185` | ❓ Unverified |
-| UnnamedContract | unknown | berachain | n/a | `0x0555e3...0d2b9c` | ❓ Unverified |
-| UnnamedContract | unknown | berachain | n/a | `0x2f6f07...6e7590` | ❓ Unverified |
-| UnnamedContract | unknown | berachain | n/a | `0x45a01e...2033cd` | ❓ Unverified |
-| UnnamedContract | unknown | berachain | n/a | `0x549943...1d3241` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xfeeaa0...412afb` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xffe48f...9e1b45` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x00ded7...87d85a` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x1f917f...35b9ec` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x42989e...ea0c4b` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x68f75f...d24e71` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | n/a | `0x6d6190...66e441` | ❓ Unverified |
-| UnnamedContract | unknown | berachain | n/a | `0x808d7c...bc0949` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x6da532...0e2440` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x824d8f...4e4cba` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | n/a | `0x8756fd...64d2a4` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | n/a | `0x896bde...0b8b5f` | ❓ Unverified |
-| UnnamedContract | unknown | berachain | n/a | `0x9d1b16...25b944` | ❓ Unverified |
-| UnnamedContract | unknown | berachain | n/a | `0xaf5191...ba2cd6` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x9b5a42...ce43ec` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x9c155c...f8ee2c` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x9dc06a...1f2bb6` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | n/a | `0xba8cc2...fb3282` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | n/a | `0xe97144...dddae7` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | n/a | `0xfa158c...2447f6` | ❓ Unverified |
@@ -237,7 +301,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Nabla-security-review.pdf](https://github.com/pashov/audits/blob/master/team/pdf/Nabla-security-review.pdf) | Pashov Audit Group | Audit | 2024-07 | aging | Direct | n/a | 0 | n/a |
+| [Nabla-security-review.pdf](https://github.com/pashov/audits/blob/master/team/pdf/Nabla-security-review.pdf) | Pashov Audit Group | Audit | 2024-07 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -245,16 +309,34 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x01ed85...fd679b`](./contracts/base-8453/0x01ed85d73645523b0d62c7a8e35d03601cfd679b/) | NablaToken | token | $2,575,680.00 | Verified native implementation with $2,575,680.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x82af49...3fbab1`](./contracts/arbitrum-42161/0x82af49447d8a07e3bd95bd0d56f35241523fbab1/) | aeWETH | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xfd086b...9fcbb9`](./contracts/arbitrum-42161/0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9/) | ArbitrumExtensionV2 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x45a01e...2033cd`](./contracts/berachain-80094/0x45a01e4e04f14f7a4a6702c74187c5f6222033cd/) | CreditMessaging | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x4ed4e8...efefed`](./contracts/base-8453/0x4ed4e862860bed51a9570b96d89af5e1b0efefed/) | DegenToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x808d7c...bc0949`](./contracts/berachain-80094/0x808d7c71ad2ba3fa531b068a2417c63106bc0949/) | FeeLibV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xcbb7c0...ed33bf`](./contracts/arbitrum-42161/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf/) | FiatTokenProxy | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xcbb7c0...ed33bf`](./contracts/base-8453/0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf/) | FiatTokenV2_1 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x833589...a02913`](./contracts/base-8453/0x833589fcd6edb6e08f4c7c32d4f71b54bda02913/) | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xaf88d0...8e5831`](./contracts/arbitrum-42161/0xaf88d065e77c8cc2239327c5edb3a432268e5831/) | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x549943...1d3241`](./contracts/berachain-80094/0x549943e04f40284185054145c6e4e9568c1d3241/) | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x912ce5...9e6548`](./contracts/arbitrum-42161/0x912ce59144191c1204e64559fe8253a0e49e6548/) | L2ArbitrumToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x01ed85...fd679b`](./contracts/base-8453/0x01ed85d73645523b0d62c7a8e35d03601cfd679b/) | NablaToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x2f6f07...6e7590`](./contracts/berachain-80094/0x2f6f07cdcf3588944bf4c42ac74ff24bf56e7590/) | OFTTokenERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x2da56a...a7af71`](./contracts/base-8453/0x2da56acb9ea78330f947bd57c54119debda7af71/) | OptimismMintableERC20 | bridge_template | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x2f2a25...fc5b0f`](./contracts/arbitrum-42161/0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f/) | StandardArbERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0xaf5191...ba2cd6`](./contracts/berachain-80094/0xaf5191b0de278c7286d6c7cc6ab6bb8a73ba2cd6/) | TokenMessaging | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x0555e3...0d2b9c`](./contracts/berachain-80094/0x0555e30da8f98308edb960aa94c0db47230d2b9c/) | WBTCOFT | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x420000...000006`](./contracts/base-8453/0x4200000000000000000000000000000000000006/) | WETH9 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x555555...555555`](./contracts/hyperliquid-999/0x5555555555555555555555555555555555555555/) | WHYPE9 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 20 |
-| upstream | 8 |
-| standard_library | 6 |
-| needs_review | 118 |
+| native | 19 |
+| upstream | 0 |
+| standard_library | 0 |
+| needs_review | 197 |
 
 ## Scope Matching Notes
 

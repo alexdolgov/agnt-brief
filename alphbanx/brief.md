@@ -5,11 +5,11 @@
 - Project: AlphBanX (`alphbanx`)
 - Website: [https://app.alphbanx.com/](https://app.alphbanx.com/)
 - Lifecycle: unknown
-- Generated: 2026-06-13T12:14:45.230Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
+- Generated: 2026-07-03T21:05:27.061Z
+- Pipeline run: brief-restore-2026-07
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $391,926.36
+- DeFi Llama TVL: $473,108.47
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -22,19 +22,30 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 0 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 0
 - Raw deployments: 0
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2025 (aging)
-- Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
+- Latest audit: 2025-01 (aging)
+- Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -73,7 +84,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Inference AG - AlphBanX on Alephium - v1.0.pdf](https://github.com/InferenceAG/ReportPublications/blob/master/Inference%20AG%20-%20AlphBanX%20on%20Alephium%20-%20v1.0.pdf) | unknown | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
+| [Inference AG - AlphBanX on Alephium - v1.0.pdf](https://github.com/InferenceAG/ReportPublications/blob/master/Inference%20AG%20-%20AlphBanX%20on%20Alephium%20-%20v1.0.pdf) | unknown | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 

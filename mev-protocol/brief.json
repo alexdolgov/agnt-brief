@@ -1,41 +1,15 @@
 {
   "schema_version": "2.0",
   "project_key": "mev-protocol",
-  "generated_at": "2026-06-21T07:37:29.781Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "mev-protocol",
-    "tier": 1,
-    "peak_tvl": 62870146,
-    "peak_date": "2023-12-06T00:00:00.000Z",
-    "tvl_30d_ago": 104775,
-    "tvl_90d_ago": 88881,
-    "tvl_current": 85168,
-    "tier0_reason": "catastrophic_collapse_from_peak",
-    "tvl_180d_ago": 131323,
-    "change_30d_pct": -18.713433548079216,
-    "change_90d_pct": -4.177495752748056,
-    "governance_raw": {
-      "evidence": "TVL dropped 99.86% from peak over 928 days with no recent activity or communications, indicating abandonment.",
-      "confidence": 0.95,
-      "lifecycle_status": "dead"
-    },
-    "days_since_peak": 928,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "fallback_mixed",
-    "drop_from_peak_pct": 99.8645334782585,
-    "governance_evidence": "TVL dropped 99.86% from peak over 928 days with no recent activity or communications, indicating abandonment.",
-    "governance_confidence": 0.95,
-    "governance_text_chars": 75,
-    "governance_classification": "dead",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:31.715Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-66d5",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 3,
-    "total_addresses": 3,
+    "total_addresses": 4,
     "unique_implementations": 3,
-    "total_deployments": 3,
+    "total_deployments": 4,
     "audited_contracts": 0,
     "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
@@ -44,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 2,
+    "direct_audits": 2,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 80724.17983,
-    "tvl_usd": 80724.17983,
+    "dl_tvl_usd": 77691.60334,
+    "tvl_usd": 77691.60334,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -63,25 +39,32 @@
       "aging": 0,
       "stale": 0,
       "unknown": 2
+    },
+    "live_implementations": 3,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "MEV Protocol provides liquid staking for Ethereum, allowing users to stake ETH and receive a liquid staking token (mevETH) that accrues staking rewards and MEV capture. It aims to maximize yield by capturing Maximal Extractable Value (MEV) through its staking infrastructure.",
-    "relationship_narrative": "The MevEth token contract is the core liquid staking token, with WagyuStaker handling staking logic and MEV capture. MevEthRateProvider supplies exchange rate data, while MevEthRouter acts as an adapter for user interactions, and GnosisSafeProxy provides governance control.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 9,
+    "project_purpose": "Liquid Staking. Structurally: 8 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault; built on solmate.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Its contracts share 2 common project-authored base contract(s) (owned, auth). Dominant framework: solmate.",
+    "product_family_count": 3,
+    "total_contracts_indexed": 12,
     "live_contracts": 3,
-    "inactive_contracts": 6,
+    "inactive_contracts": 8,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 1,
-    "live_deployment_units": 1,
-    "dependencies_extracted": 12,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v3"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 3,
@@ -97,13 +80,13 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x617c8de5bde54ffbb8d92716cc947858ca38f582",
-      "deployment_unit": "unit-41659",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "GnosisSafe",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
-      "product_line": "MEV Protocol",
+      "origin_provider": "Gnosis Safe",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0xd9db270c1b5e3bd161e8c8503c55ceabee709552",
@@ -113,8 +96,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x617c8de5bde54ffbb8d92716cc947858ca38f582",
-          "deployment_unit": "unit-41659",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -126,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2023-06-22 06:00:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -138,7 +125,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "MEV Protocol",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -154,6 +141,17 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9d7981c066a3f84ed88dd13c190f5f7c8d8160cd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -161,7 +159,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-10-04 18:28:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -173,7 +175,7 @@
       "role": "adapter",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "MEV Protocol",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -196,14 +198,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-01-12 10:50:11+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 13489,
       "audit_key": "audit-13489",
-      "report_name": "DL audit link",
+      "report_name": "manifoldfinance.slack.com",
       "report_url": "https://manifoldfinance.slack.com/?redir=%2Ffiles%2FU058FSRGPLM%2FF060DJ8NJ2C%2Fmanifold_finance_july23_public__liquid_staking_.pdf%3Fu%3DU058FSRGPLM%26file_id%3DF060DJ8NJ2C%26name%3Dmanifold_finance_july23_public__liquid_staking_.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -213,6 +219,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -224,7 +233,7 @@
     {
       "audit_id": 13490,
       "audit_key": "audit-13490",
-      "report_name": "Manifold mevETH2 Audit",
+      "report_name": "kebabsec.xyz/audits/manifold_finance_meveth2_audit",
       "report_url": "https://kebabsec.xyz/audits/manifold_finance_meveth2_audit",
       "auditor": "Kebabsec",
       "audit_type": "audit",
@@ -234,6 +243,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -280,11 +292,11 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 13489,
-        "report_name": "DL audit link"
+        "report_name": "manifoldfinance.slack.com"
       },
       {
         "audit_id": 13490,
-        "report_name": "Manifold mevETH2 Audit"
+        "report_name": "kebabsec.xyz/audits/manifold_finance_meveth2_audit"
       }
     ],
     "inherited_remapped_matches": []

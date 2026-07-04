@@ -1,50 +1,50 @@
 # Agentic Audit Brief: Dexilla
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 16.1% over 90 days
-
 ## Project Overview
 
 - Project: Dexilla (`dexilla`)
-- Lifecycle: declining (Tier 0, 99.7% below peak)
-- Generated: 2026-06-19T13:00:51.217Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-cc10
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:11.064Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-66d5
 - Chains: arbitrum, optimism
-- Contract surface: 5 unique implementations (10 raw deployments)
-- DeFi Llama TVL: $133.27
+- Contract surface: 6 unique implementations (11 raw deployments)
+- DeFi Llama TVL: $114.02
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Dexilla is a decentralized exchange (DEX) protocol deployed across multiple chains, enabling users to swap tokens through a series of exchange contract versions (V3 to V6).
+Dexs. Structurally: 7 project-authored contract(s) across 2 chain(s); role-gated via AccessControl; built on openzeppelin.
 
 ### Architecture
 
-All exchange contracts belong to a single product family and share the same core purpose; there is no evidence of separate infrastructure or token contracts, suggesting a self-contained DEX design.
+The protocol forms a single structural family (Core Logic) of 7 contract(s).
 
 ## Contract Surface Quality
 
-- Indexed contracts: 24; live-surface contracts included: 10 (1 live, 9 unknown).
-- Excluded by liveness: 14 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 19; live-surface contracts included: 11 (9 live, 2 unknown).
+- Excluded by liveness: 8 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/4 (25.0%)
+- Coverage of deployed-live implementations: 1/4 (25.0%)
+- Deployed-live implementations: 4 of 6 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/4
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 5
-- Raw deployments: 10
-- Audits discovered: 1
+- Unverified implementations: 2
+- Unique implementations: 6
+- Raw deployments: 11
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-06 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -80,19 +80,20 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| UnnamedContract | unknown | optimism | n/a | `0x231757...40ceef` | ❓ Unverified |
 | UnnamedContract | unknown | optimism | n/a | `0xe9e8aa...9cbd07` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [mythx_all.pdf](https://github.com/dexilla/protocol/blob/main/audits/mythx_all.pdf) | unknown | Audit | 2023-06 | stale | Direct | contract_name | 2 | high |
+| [mythx_all.pdf](https://github.com/dexilla/protocol/blob/main/audits/mythx_all.pdf) | unknown | Audit | 2023-06 | stale | Direct | contract_name | 1 | n/a |
 
 ## Coverage Gaps
 
@@ -108,10 +109,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 5 |
+| native | 4 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
@@ -119,7 +120,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=8
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=1
 
 Fork inheritance lineage and inherited audits are included when available.

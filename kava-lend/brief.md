@@ -4,12 +4,12 @@
 
 - Project: Kava Lend (`kava-lend`)
 - Website: [https://app.kava.io/lend](https://app.kava.io/lend)
-- Lifecycle: active (Tier 0, 94.7% below peak)
-- Generated: 2026-06-17T19:03:08.420Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:29.059Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $10,634,284.00
+- DeFi Llama TVL: $9,668,372.01
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Kava Lend is a Kava-based cross-chain money market that allows users to supply and borrow assets. The listed address 0xa8e48fa04881dfacfc8d0ab84bc9ba57a449fc1f on chain 2222 should be treated as an unverified/unconfirmed contract until its liveness, proxy status, and audit scope coverage are independently verified.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
@@ -32,17 +32,20 @@ Kava Lend is a Kava-based cross-chain money market that allows users to supply a
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -83,7 +86,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://skynet.certik.com/projects/hard) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [skynet.certik.com/projects/hard](https://skynet.certik.com/projects/hard) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -111,6 +114,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [11489] DL audit link
+- [11489] skynet.certik.com/projects/hard
 
 Fork inheritance lineage and inherited audits are included when available.

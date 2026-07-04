@@ -3,12 +3,12 @@
 ## Project Overview
 
 - Project: PoWH3D (`powh3d`)
-- Lifecycle: active (Tier 0, 71.1% below peak)
-- Generated: 2026-06-17T07:01:01.912Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:44.128Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-0679
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $3,468,196.25
+- DeFi Llama TVL: $3,270,014.21
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -31,17 +31,20 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage

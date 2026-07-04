@@ -1,58 +1,58 @@
 # Agentic Audit Brief: Maia DAO Ecosystem
 
-⚠️ Lifecycle status: DEAD - TVL dropped 11.7% over 90 days
-
 ## Project Overview
 
 - Project: Maia DAO Ecosystem (`maia-dao-ecosystem`)
 - Website: [https://maiadao.io](https://maiadao.io)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-21T10:40:54.267Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:30.329Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-b097
 - Chains: arbitrum, metis, sonic
-- Contract surface: 170 unique implementations (280 raw deployments)
-- DeFi Llama TVL: $189,359.00
+- Contract surface: 269 unique implementations (379 raw deployments)
+- DeFi Llama TVL: $391,825.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Maia DAO Ecosystem is a decentralized finance protocol that combines a decentralized exchange (Hermes), a yield-bearing token (Maia), and a cross-chain bridge (Ulysses). It enables users to trade, provide liquidity, earn yield, and transfer assets across multiple blockchains.
+Dexs. Structurally: 61 project-authored contract(s) across 3 chain(s); 8 ERC20 tokens, 2 ERC721 NFTs; role-gated via AccessControl; built on solmate.
 
 ### Architecture
 
-The Maia token (Maia CL and Maia DAO) serves as the central yield and governance asset, while Hermes V1/V2 provide the DEX infrastructure for trading and liquidity. Ulysses bridges assets across chains, likely using Maia as a core asset, and shares the BoringVault infrastructure with the broader ecosystem.
+The protocol comprises 7 functional families. Its contracts share 14 common project-authored base contract(s) (oft, oftcore, oapp). Dominant framework: solmate.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 421; live-surface contracts included: 280 (13 live, 267 unknown).
-- Excluded by liveness: 141 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 1/1 live.
-- Detected codebases: uniswap-v3
-- Unverified dependencies: 20/59.
+- Indexed contracts: 403; live-surface contracts included: 379 (37 live, 342 unknown).
+- Excluded by liveness: 24 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 6/42 (14.3%)
-- Verified + Unaudited implementations: 36
+- Coverage of deployed-live implementations: 6/16 (37.5%)
+- Deployed-live implementations: 16 of 269 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 6/45
+- Verified + Unaudited implementations: 39
 - Verified by bytecode match: 0
-- Unverified implementations: 128
-- Unique implementations: 170
-- Raw deployments: 280
-- Audits discovered: 8
+- Unverified implementations: 224
+- Unique implementations: 269
+- Raw deployments: 379
+- Audits discovered: 8 (8 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 5
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-12 (stale)
-- Staleness: 0 fresh, 0 aging, 8 stale, 0 unknown
-- Tier 1 coverage: 2.4% (Code4rena)
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
+- Audit staleness (calendar age): 0 fresh, 0 aging, 8 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 6 match-unverified
+- Tier 1 coverage: 6.3% (Code4rena)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Zellic | Tier 2 | 6 | 14.3% | 2023-12 |
-| Code4rena | Tier 1 | 1 | 2.4% | 2023-09 |
+| Zellic | Tier 2 | 6 | 13.3% | 2023-12 |
+| Code4rena | Tier 1 | 1 | 2.2% | 2023-09 |
 
 ## Contract Surface
 
@@ -67,7 +67,7 @@ The Maia token (Maia CL and Maia DAO) serves as the central yield and governance
 | RewardsDepot | unknown | metis | n/a | 4 deployments: metis [`0x1e5a3d...bed31c`](./contracts/metis-1088/0x1e5a3dc1413ed59b961d17b6af643d0bd5bed31c/); metis `0x431216...b1117e`; metis `0x5ab5e7...a24761`; metis `0xf2a8d9...0c1015` | ✅ Audited |
 | RootPort | unknown | arbitrum | n/a | [`0xd3e359...c03c56`](./contracts/arbitrum-42161/0xd3e3599517f2036fa314e468d62135714fc03c56/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (36)
+### ⚠️ Verified + Unaudited (39)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
@@ -78,12 +78,15 @@ The Maia token (Maia CL and Maia DAO) serves as the central yield and governance
 | BaseV1Minter | unknown | metis | n/a | 3 deployments: metis [`0xe6868a...0005da`](./contracts/metis-1088/0xe6868a326db48e1e5d38bc2696e2bda8ae0005da/); metis `0xeb4562...ef5cd1`; metis `0xf031bc...cc4730` | ⚠️ Unaudited |
 | BaseV1Router01 | adapter | metis | n/a | 7 deployments: metis [`0x10afc1...8d7e3c`](./contracts/metis-1088/0x10afc114105858a3911d16f33acc1ef7a98d7e3c/); metis `0x2d4f78...da8441`; metis `0x50f077...7beb4b`; metis `0x6bc899...bd91fb`; metis `0xbf9d63...022c36`; metis `0xccbf83...50191d`; metis `0xdfb3d4...1c75a4` | ⚠️ Unaudited |
 | BaseV1Voter | unknown | metis | n/a | 3 deployments: metis [`0x45ee37...151b0c`](./contracts/metis-1088/0x45ee37b64f9a23b54c72d1c3710a8c1252151b0c/); metis `0x695fa6...3cd85e`; metis `0x879828...31137f` | ⚠️ Unaudited |
+| BaseV2GaugeManager | unknown | arbitrum | n/a | [`0x6560a4...c74612`](./contracts/arbitrum-42161/0x6560a407df42acf92e63ef08b676c422e6c74612/) | ⚠️ Unaudited |
+| BaseV2Minter | unknown | arbitrum | n/a | [`0x49283a...4d411e`](./contracts/arbitrum-42161/0x49283af8c7b4bfe4b716672d2989109e7e4d411e/) | ⚠️ Unaudited |
 | BoringVault | core_logic | sonic | n/a | 2 deployments: sonic [`0x455d5f...f85265`](./contracts/sonic-146/0x455d5f11fea33a8fa9d3e285930b478b6bf85265/); sonic `0x4d85ba...a932ba` | ⚠️ Unaudited |
 | Brush | unknown | sonic | n/a | [`0xe51ee9...1bfe44`](./contracts/sonic-146/0xe51ee9868c1f0d6cd968a8b8c8376dc2991bfe44/) | ⚠️ Unaudited |
 | BurntHermes | unknown | arbitrum | n/a | [`0x3a0000...cd937c`](./contracts/arbitrum-42161/0x3a0000000000e1007ceb00351f65a1806ecd937c/) | ⚠️ Unaudited |
 | ClaimHelper | periphery | metis | n/a | 7 deployments: metis [`0x14c51b...b1e3c6`](./contracts/metis-1088/0x14c51bf8ef19c1bcfd9c0d075b4680c0bbb1e3c6/); metis `0x29c685...ea9017`; metis `0x3aa56d...d2cc55`; metis `0x7ce2d5...845a2a`; metis `0x801844...6fd344`; metis `0x943aa3...6f2955`; metis `0xeb6392...cd7e66` | ⚠️ Unaudited |
 | Distributor | operational_periphery | metis | n/a | 2 deployments: metis [`0x252f78...5a5120`](./contracts/metis-1088/0x252f7818231486380e1d853baedffd42015a5120/); metis `0xd1cf3a...bb3048` | ⚠️ Unaudited |
 | ERC20sMAIA | token | metis | n/a | [`0xd7a586...536e6a`](./contracts/metis-1088/0xd7a586ce5250befab2cc2239f7226b9602536e6a/) | ⚠️ Unaudited |
+| FlywheelGaugeRewards | unknown | arbitrum | n/a | [`0x5174fa...9afabb`](./contracts/arbitrum-42161/0x5174fa3cd4a9fd8113d8ab55975d4d1b079afabb/) | ⚠️ Unaudited |
 | GOGGLES | unknown | sonic | n/a | [`0x9fdbc3...0c4564`](./contracts/sonic-146/0x9fdbc3f8abc05fa8f3ad3c17d2f806c1230c4564/) | ⚠️ Unaudited |
 | Hermes250 | unknown | metis | n/a | 2 deployments: metis [`0x44f9f2...6d3f15`](./contracts/metis-1088/0x44f9f257c341298de53abd2b85b00fa1456d3f15/); metis `0xcbcc9a...d4b4c2` | ⚠️ Unaudited |
 | HeyAnon | unknown | sonic | n/a | [`0x79bbf4...b0e07c`](./contracts/sonic-146/0x79bbf4508b1391af3a0f4b30bb5fc4aa9ab0e07c/) | ⚠️ Unaudited |
@@ -120,13 +123,106 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (128)
+### ❓ Unverified (224)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Proxy (impl: 0x54de3b7b5d1993db4b2a93c897b5272fbd60e99e) | proxy | arbitrum | unit-42296 | `0x54de3b...60e99e` | ❓ Unverified |
+| Proxy (impl: 0x54de3b7b5d1993db4b2a93c897b5272fbd60e99e) | proxy | arbitrum | n/a | `0x54de3b...60e99e` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x00fdfe...a3de0a` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x07fa01...4c6652` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x09e1df...b6b1e3` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x0ce4b9...14dba7` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x0f63c5...622224` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x0fb765...a25ac7` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x11fce6...81f6f8` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x138982...8c6ada` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x15c286...2e1727` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x17d464...558ef2` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x195b95...197f2c` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x1c2efb...d21958` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x1c5650...9ecd33` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x1cd66a...811043` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x22b457...e45c54` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x25356d...ec9950` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x2759e7...4469ba` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x291342...7d3e4e` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x2a4f01...1f988d` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x2fa2c5...4353ef` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x3159e0...a40038` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x329fe9...fa0743` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x38fbd8...6483cb` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x40b4dd...705655` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x461c09...5a5011` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x4fa852...bfde33` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x4fae94...92d8b3` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x51d05d...145106` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x54f25d...0bf847` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x56c8e7...826a85` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x5bc377...f24166` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x5e000b...df2c9f` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x64bd97...1ec814` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x66ca52...6963a6` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x692ee3...9dc6d7` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x698304...e44972` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x6a5607...48e191` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x6aea33...af4867` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x6b1a32...a1294d` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x6b8509...1ef457` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x6ddd6d...03ebb0` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x749da4...ca5cac` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x763f5c...65e845` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x76991a...841ad2` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x7705d3...790544` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x77c341...e86a51` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x7a11c3...aa657c` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x7e24d0...970123` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x7f61a7...a096fb` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x832e8c...15bb9b` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x839620...508940` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x84ca55...cd3f2d` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x85169b...ecd92f` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x8bd881...b5f5af` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x8ca294...5fe354` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x8d765a...f438d5` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x8e2ba6...d57ef0` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x98dbc0...96875f` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xa2c367...1cc127` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xa8262a...b2dbdc` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xaa151a...0edd94` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xaa557c...d5081e` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xac25dc...000909` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xacce59...d2fa2a` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xadeace...e25db3` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xaf4fc2...5a7778` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xb0970f...03d536` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xb1f9d7...df7726` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xb313e6...1e86fa` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xb5feb8...90c12f` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xb62c9d...5a21a8` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xb94754...f5cb11` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xb96010...a38dc2` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xbcc071...4b2e9d` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xbe31bb...7ccd23` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xbe7551...6717cf` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xbf2aca...8647ac` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xc31409...1636d5` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xc3a9c3...cd00df` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xc66a15...a82ef7` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xc7c5f0...60689e` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xd643b7...2e0c07` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xd9e379...f5d323` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xdfd105...6e34d7` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xe19260...5de72b` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xe1c434...cdf217` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xe6f020...77a137` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xe7ca2a...9f41a7` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xe854fb...b89a29` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xe8a092...7489e8` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xeafc2b...436b51` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xf67cf8...a573fc` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xf7af13...872b4f` | ❓ Unverified |
 | UnnamedContract | unknown | metis | n/a | `0x03574b...ab173f` | ❓ Unverified |
 | UnnamedContract | unknown | metis | n/a | `0x0395a1...ac7625` | ❓ Unverified |
 | UnnamedContract | unknown | metis | n/a | `0x03e12a...3fe775` | ❓ Unverified |
@@ -254,19 +350,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | metis | n/a | `0xf55544...1a66f0` | ❓ Unverified |
 | UnnamedContract | unknown | metis | n/a | `0xf78af9...729369` | ❓ Unverified |
 | UnnamedContract | unknown | metis | n/a | `0xf7b5e9...b905ff` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x3a516e...f644d9` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x854711...c5ea73` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xc57f0d...19427a` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Maia DAO February 2023 - Zellic Audit Report.pdf (also discovered via alternate URL)](https://github.com/Zellic/publications/blob/master/Maia%20DAO%20February%202023%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | 2023-02 | stale | Direct | contract_name | 25 | high |
-| [DL audit link](https://code4rena.com/audits/2023-05-maia-dao-ecosystem) | Code4rena | Contest | 2023-05 | stale | Direct | n/a | 0 | n/a |
-| [View report](https://code4rena.com/reports/2023-05-maia) | Code4rena | Contest | 2023-05 | stale | Direct | contract_name | 1 | high |
-| [Ulysses Protocol May 2023 - Zellic Audit Report.pdf](https://github.com/code-423n4/2023-05-maia/blob/main/audits/Ulysses%20Protocol%20May%202023%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Contest | 2023-05 | stale | Direct | contract_name | 1 | high |
+| [Maia DAO February 2023 - Zellic Audit Report.pdf](https://github.com/Zellic/publications/blob/master/Maia%20DAO%20February%202023%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | 2023-02 | stale | Direct | contract_name | 5 | n/a |
+| [code4rena.com/audits/2023-05-maia-dao-ecosystem](https://code4rena.com/audits/2023-05-maia-dao-ecosystem) | Code4rena | Contest | 2023-05 | stale | Direct | n/a | 0 | n/a |
+| [code4rena.com/reports/2023-05-maia](https://code4rena.com/reports/2023-05-maia) | Code4rena | Contest | 2023-05 | stale | Direct | contract_name | 1 | n/a |
+| [Ulysses Protocol May 2023 - Zellic Audit Report.pdf](https://github.com/code-423n4/2023-05-maia/blob/main/audits/Ulysses%20Protocol%20May%202023%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | 2023-05 | stale | Direct | contract_name | 1 | n/a |
 | [Maia DAO V2 Ecosystem - Zellic Audit Report.pdf](https://github.com/Zellic/publications/blob/master/Maia%20DAO%20V2%20Ecosystem%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | 2023-09 | stale | Direct | n/a | 0 | n/a |
-| [Maia DAO Ulysses Protocol May 2023 - Zellic Audit Report.pdf](https://github.com/Zellic/publications/blob/master/Maia%20DAO%20Ulysses%20Protocol%20May%202023%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | 2023-05 | stale | Direct | contract_name | 1 | high |
-| [DL audit link](https://code4rena.com/audits/2023-09-maia-dao-ulysses) | Code4rena | Contest | 2023-09 | stale | Direct | n/a | 0 | n/a |
-| [Maia DAO Ulysses Protocol - Zellic Audit Report.pdf](https://github.com/Zellic/publications/blob/master/Maia%20DAO%20Ulysses%20Protocol%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | 2023-12 | stale | Direct | contract_name | 1 | high |
+| [Maia DAO Ulysses Protocol May 2023 - Zellic Audit Report.pdf](https://github.com/Zellic/publications/blob/master/Maia%20DAO%20Ulysses%20Protocol%20May%202023%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | 2023-05 | stale | Direct | contract_name | 1 | n/a |
+| [code4rena.com/audits/2023-09-maia-dao-ulysses](https://code4rena.com/audits/2023-09-maia-dao-ulysses) | Code4rena | Contest | 2023-09 | stale | Direct | n/a | 0 | n/a |
+| [Maia DAO Ulysses Protocol - Zellic Audit Report.pdf](https://github.com/Zellic/publications/blob/master/Maia%20DAO%20Ulysses%20Protocol%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | 2023-12 | stale | Direct | contract_name | 1 | n/a |
 
 ## Coverage Gaps
 
@@ -281,12 +380,15 @@ Verified + unaudited native implementations ranked by TVL:
 | metis | [`0xe6868a...0005da`](./contracts/metis-1088/0xe6868a326db48e1e5d38bc2696e2bda8ae0005da/) | BaseV1Minter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0x10afc1...8d7e3c`](./contracts/metis-1088/0x10afc114105858a3911d16f33acc1ef7a98d7e3c/) | BaseV1Router01 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0x45ee37...151b0c`](./contracts/metis-1088/0x45ee37b64f9a23b54c72d1c3710a8c1252151b0c/) | BaseV1Voter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x6560a4...c74612`](./contracts/arbitrum-42161/0x6560a407df42acf92e63ef08b676c422e6c74612/) | BaseV2GaugeManager | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x49283a...4d411e`](./contracts/arbitrum-42161/0x49283af8c7b4bfe4b716672d2989109e7e4d411e/) | BaseV2Minter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x455d5f...f85265`](./contracts/sonic-146/0x455d5f11fea33a8fa9d3e285930b478b6bf85265/) | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0xe51ee9...1bfe44`](./contracts/sonic-146/0xe51ee9868c1f0d6cd968a8b8c8376dc2991bfe44/) | Brush | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x3a0000...cd937c`](./contracts/arbitrum-42161/0x3a0000000000e1007ceb00351f65a1806ecd937c/) | BurntHermes | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0x14c51b...b1e3c6`](./contracts/metis-1088/0x14c51bf8ef19c1bcfd9c0d075b4680c0bbb1e3c6/) | ClaimHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0x252f78...5a5120`](./contracts/metis-1088/0x252f7818231486380e1d853baedffd42015a5120/) | Distributor | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0xd7a586...536e6a`](./contracts/metis-1088/0xd7a586ce5250befab2cc2239f7226b9602536e6a/) | ERC20sMAIA | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x5174fa...9afabb`](./contracts/arbitrum-42161/0x5174fa3cd4a9fd8113d8ab55975d4d1b079afabb/) | FlywheelGaugeRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x9fdbc3...0c4564`](./contracts/sonic-146/0x9fdbc3f8abc05fa8f3ad3c17d2f806c1230c4564/) | GOGGLES | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0x44f9f2...6d3f15`](./contracts/metis-1088/0x44f9f257c341298de53abd2b85b00fa1456d3f15/) | Hermes250 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | sonic | [`0x79bbf4...b0e07c`](./contracts/sonic-146/0x79bbf4508b1391af3a0f4b30bb5fc4aa9ab0e07c/) | HeyAnon | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -294,12 +396,15 @@ Verified + unaudited native implementations ranked by TVL:
 | metis | [`0x010284...6b4453`](./contracts/metis-1088/0x010284f0f01344d22d3fec366a5f85dec16b4453/) | MaiaDynamicRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0x31ba70...9da00b`](./contracts/metis-1088/0x31ba70a4a17b311f4d2beed181c89f1f909da00b/) | MaiaERC20Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0x6efda2...a0243e`](./contracts/metis-1088/0x6efda282691ca242ee565d3acf8bf8ca9fa0243e/) | MarathonLocker | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x50bc6e...fa18b6`](./contracts/sonic-146/0x50bc6e1dff8039a4b967c1bf507ba5ea13fa18b6/) | sDOG | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0x54ccc7...e1ea1c`](./contracts/metis-1088/0x54ccc76091fe30bcce8b0dae102d264d24e1ea1c/) | sMaia | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0x1c86af...d47802`](./contracts/metis-1088/0x1c86afe9f9af4afc23bd1f50191c5c0192d47802/) | StakingHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0x94af21...035cea`](./contracts/metis-1088/0x94af219709867091ab0038466203856179035cea/) | StakingWarmup | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0x15ac59...e3fe70`](./contracts/metis-1088/0x15ac5940d9805fa7d7e57e2e931f4f2e32e3fe70/) | TimeBondDepository | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0xd23d70...46a0be`](./contracts/metis-1088/0xd23d70eec1f7ba5c4842a9c124bdb6189e46a0be/) | TimeBondingCalculator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0xd1d003...9b2b81`](./contracts/metis-1088/0xd1d003804b08572cafcf2ba2729b49369e9b2b81/) | TimeStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0x3d183e...520fa9`](./contracts/metis-1088/0x3d183e4f3eef0191ecffafd7ffc5df8d38520fa9/) | TimeTreasury | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| metis | [`0xccf19f...4b2a1e`](./contracts/metis-1088/0xccf19f7a90167b13c377db89ab6e8f5c8e4b2a1e/) | UnsupportedProtocol | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0x7d9767...c3ab3f`](./contracts/metis-1088/0x7d9767e65612527beb51e0228f7ce17870c3ab3f/) | ve | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | metis | [`0x04f783...b27f67`](./contracts/metis-1088/0x04f783ff9664be99ae6fc8c8aec379a287b27f67/) | ve_dist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x000000...b4d080`](./contracts/arbitrum-42161/0x000000f0c01c6200354f240000b7003668b4d080/) | VoteMaia | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -309,10 +414,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 59 |
+| native | 42 |
 | upstream | 1 |
 | standard_library | 2 |
-| needs_review | 108 |
+| needs_review | 224 |
 
 ## Scope Matching Notes
 
@@ -320,13 +425,13 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=5
-- Match method counts: extraction_exact=136
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=9
 
 Zero-match audit list:
 
-- [13450] DL audit link
+- [13450] code4rena.com/audits/2023-05-maia-dao-ecosystem
 - [13454] Maia DAO V2 Ecosystem - Zellic Audit Report.pdf
-- [13456] DL audit link
+- [13456] code4rena.com/audits/2023-09-maia-dao-ulysses
 
 Fork inheritance lineage and inherited audits are included when available.

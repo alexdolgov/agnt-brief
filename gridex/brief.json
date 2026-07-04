@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "gridex",
-  "generated_at": "2026-06-21T06:48:37.747Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "gridex",
-    "tier": 0,
-    "peak_tvl": 24961263,
-    "peak_date": "2023-04-02T00:00:00.000Z",
-    "tvl_30d_ago": 63748,
-    "tvl_90d_ago": 61985,
-    "tvl_current": 55541,
-    "tier0_reason": "catastrophic_collapse_from_peak",
-    "tvl_180d_ago": 81880,
-    "change_30d_pct": -12.874129384451278,
-    "change_90d_pct": -10.396063563765427,
-    "days_since_peak": 1176,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 99.77749122710658
-  },
+  "generated_at": "2026-07-04T14:53:21.028Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
-    "audited_contracts": 0,
-    "unaudited_contracts": 2,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "total_contracts": 5,
+    "total_addresses": 5,
+    "unique_implementations": 5,
+    "total_deployments": 5,
+    "audited_contracts": 1,
+    "unaudited_contracts": 4,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 33.3,
     "total_audits": 1,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 54054.072810000005,
-    "tvl_usd": 54054.072810000005,
+    "direct_audits": 1,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 52290.13484,
+    "tvl_usd": 52290.13484,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -54,18 +40,27 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 3,
+    "live_verified_implementations": 3,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 1,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Gridex is a decentralized exchange protocol that facilitates trading of digital assets through an order book model. It provides a factory for creating trading grids and a native token (GDX) likely used for governance or fee incentives.",
-    "relationship_narrative": "The GridFactory contract serves as a registry for deploying and managing trading grids, while the GDX token likely functions as the protocol's native asset for fees or governance, though no direct on-chain dependency is visible from the provided contract surface.",
-    "product_family_count": 1,
+    "project_purpose": "Dexs. Structurally: 6 project-authored contract(s) across 2 chain(s); 1 ERC20 token; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Its contracts share 3 common project-authored base contract(s) (abstractpayments, abstractselfpermit2612, multicall). Dominant framework: openzeppelin.",
+    "product_family_count": 3,
     "total_contracts_indexed": 6,
-    "live_contracts": 2,
-    "inactive_contracts": 4,
+    "live_contracts": 3,
+    "inactive_contracts": 1,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 2,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
@@ -73,7 +68,7 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 5,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -82,6 +77,45 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xdb36980c07ba859613c786caa69ceba2b5306595",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AggregateMulticall",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AggregateMulticall",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xdb36980c07ba859613c786caa69ceba2b5306595",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-01 13:22:05+03",
+      "deploy_coverage_basis": null
+    },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
@@ -92,7 +126,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Gridex",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -115,7 +149,91 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-03-02 16:07:43+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x32d1f0dce675902f89d72251db4ab1d728efa19c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "GridFactory",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "GridFactory",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x32d1f0dce675902f89d72251db4ab1d728efa19c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13207"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-01 13:17:03+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x320c95b7e5728dae3e3ead997494c029d16e69a3",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Quoter",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Quoter",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x320c95b7e5728dae3e3ead997494c029d16e69a3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-01 13:22:17+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -150,7 +268,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-01 13:21:57+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -167,22 +289,84 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "extracted_names": [
+        "BitMath",
+        "BoundaryBitmap",
+        "BoundaryMath",
+        "BundleMath",
+        "CallbackValidator",
+        "FeeMath",
+        "FixedPointX128",
+        "FixedPointX192",
+        "FixedPointX96",
+        "Grid",
+        "GridAddress",
+        "GridDeployer",
+        "GridFactory",
+        "IGrid",
+        "IGridDeployer",
+        "IGridEvents",
+        "IGridFactory",
+        "IGridFlashCallback",
+        "IGridParameters",
+        "IGridPlaceMakerOrderCallback",
+        "IGridStructs",
+        "IGridSwapCallback",
+        "IPriceOracle",
+        "ITradingConfig",
+        "IWETHMinimum",
+        "PriceOracle",
+        "SwapMath",
+        "TradingConfig",
+        "Uint128Math",
+        "Uint160Math"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "CertiK",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 20,
+      "latest_audit": "2023-02"
+    }
+  ],
   "coverage_gaps": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xdb36980c07ba859613c786caa69ceba2b5306595",
+      "name": "AggregateMulticall",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x2f27118e3d2332afb7d165140cf1bb127ea6975d",
       "name": "GDX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x320c95b7e5728dae3e3ead997494c029d16e69a3",
+      "name": "Quoter",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -200,7 +384,7 @@
     }
   ],
   "origin_summary": {
-    "native": 2,
+    "native": 5,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
@@ -209,15 +393,12 @@
     "match_method_counts": {
       "extraction_exact": 1
     },
-    "extraction_confidence_counts": {},
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 13207,
-        "report_name": "CertiK-Audit-for-Gridex.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

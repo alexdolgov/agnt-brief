@@ -4,12 +4,12 @@
 
 - Project: OrangeX (`orangex`)
 - Website: [https://www.orangex.com](https://www.orangex.com)
-- Lifecycle: active (Tier 0, 34.8% below peak)
-- Generated: 2026-06-17T07:01:00.816Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:39.134Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: base
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $33,703,827.58
+- DeFi Llama TVL: $31,382,750.19
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -20,29 +20,32 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-OrangeX is an active centralized crypto exchange and trading platform. The listed on-chain contracts appear to be OrangeX-related token or ancillary deployments, such as ecosystem token contracts, and should not be treated as representing the exchange's full custody, matching, trading, or operational infrastructure.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 4; live-surface contracts included: 1 (0 live, 1 unknown).
-- Excluded by liveness: 3 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -88,16 +91,18 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| base | [`0x0c1dc7...a0dca5`](./contracts/base-8453/0x0c1dc73159e30c4b06170f2593d3118968a0dca5/) | GPS | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

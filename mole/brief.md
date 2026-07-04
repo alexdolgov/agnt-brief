@@ -5,44 +5,47 @@
 - Project: Mole (`mole`)
 - Website: [https://mole.fi](https://mole.fi)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:43.079Z
-- Pipeline run: brief-regen-topo-2026-06-17
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $8,577,331.35
+- Generated: 2026-07-04T14:53:33.266Z
+- Pipeline run: v2-2026-07-04-db4eb6
+- Chains: avalanche
+- Contract surface: 3 unique implementations (3 raw deployments)
+- DeFi Llama TVL: $8,623,461.11
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Mole is a DeFi yield protocol with current project activity and TVL attributed to Aptos and Sui. Any Avalanche EVM Trader Joe delta-neutral vault, worker, and oracle deployments should be treated as a separate legacy or currentness-unverified contract surface unless current project documentation or DefiLlama data confirms active Avalanche usage.
+Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 219; live-surface contracts included: 0 (0 live, 0 unknown).
-- Excluded by liveness: 16 inactive, 203 singleton, 0 uninitialized.
-- Deployment units: 0/32 live.
+- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/3
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
-- Audits discovered: 1
+- Unique implementations: 3
+- Raw deployments: 3
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-03 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -55,9 +58,13 @@ Mole is a DeFi yield protocol with current project activity and TVL attributed t
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (3)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| ProxyAdmin | unknown | avalanche | n/a | [`0xa5ae02...f895e4`](./contracts/avalanche-43114/0xa5ae02015e9108dc0aa42d71c1ec1fd4c0f895e4/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | avalanche | n/a | [`0x02ba08...bc705e`](./contracts/avalanche-43114/0x02ba08f6218e98ab849d5c8860195fed8cbc705e/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | avalanche | n/a | [`0x316a58...a84151`](./contracts/avalanche-43114/0x316a587b6b0ff3ad2ec1215b252eeeaba4a84151/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -81,7 +88,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Mole_Aptos_Audit_Report.pdf](https://github.com/Mole-Fi/Security/blob/main/Mole_Aptos_Audit_Report.pdf) | unknown | Audit | 2023-03 | stale | Direct | n/a | 0 | n/a |
+| [Mole-Aptos-Audit-Report.pdf](https://github.com/movebit/Sampled-Audit-Reports/blob/main/reports/Mole-Aptos-Audit-Report.pdf) | MoveBit | Audit | 2023-03 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -95,7 +102,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 0 |
 | upstream | 0 |
-| standard_library | 0 |
+| standard_library | 3 |
 | needs_review | 0 |
 
 ## Scope Matching Notes
@@ -109,6 +116,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [7517] Mole_Aptos_Audit_Report.pdf
+- [21298] Mole-Aptos-Audit-Report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

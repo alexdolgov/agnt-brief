@@ -1,17 +1,15 @@
 # Agentic Audit Brief: Magik Finance
 
-⚠️ Lifecycle status: DEAD - TVL dropped 20.7% over 90 days
-
 ## Project Overview
 
 - Project: Magik Finance (`magik-finance`)
 - Website: [https://magik.finance/](https://magik.finance/)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-19T19:24:37.367Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:30.282Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16da
 - Chains: fantom
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $3,532.00
+- DeFi Llama TVL: $2,403.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -34,19 +32,21 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-07 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 

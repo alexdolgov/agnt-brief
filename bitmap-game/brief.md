@@ -1,27 +1,28 @@
 # Agentic Audit Brief: Bitmap Game
 
-⚠️ Lifecycle status: DEAD - TVL dropped 34.4% over 90 days
+⚠️ Lifecycle status: DEAD - TVL dropped 21.0% over 90 days
 
 ## Project Overview
 
 - Project: Bitmap Game (`bitmap-game`)
 - Website: [https://bitmap.game](https://bitmap.game)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-20T02:37:16.643Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Generated: 2026-07-04T14:53:07.508Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-0293
 - Chains: merlin
-- Contract surface: 4 unique implementations (4 raw deployments)
-- DeFi Llama TVL: $36,879.07
+- Contract surface: 1 unique implementations (4 raw deployments)
+- DeFi Llama TVL: $36,149.35
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Bitmap Game is a gaming protocol on Merlin that enables users to participate in on-chain games, likely involving bitmap-based assets or mechanics. The contracts appear to handle game logic, asset management, and user interactions.
-
-### Architecture
-
-All contracts belong to a single product family with no apparent shared infrastructure or dependencies beyond the game logic itself.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
@@ -33,17 +34,20 @@ All contracts belong to a single product family with no apparent shared infrastr
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 4
-- Unique implementations: 4
+- Unverified implementations: 1
+- Unique implementations: 1
 - Raw deployments: 4
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-08 (aging)
-- Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
@@ -73,16 +77,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (4)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | merlin | n/a | `0x5c46bf...c87378` | ❓ Unverified |
-| UnnamedContract | unknown | merlin | n/a | `0x7b0400...c6ffd6` | ❓ Unverified |
-| UnnamedContract | unknown | merlin | n/a | `0x8567bd...72f7e3` | ❓ Unverified |
-| UnnamedContract | unknown | merlin | n/a | `0xb311c4...75b13a` | ❓ Unverified |
+| UnnamedContract | unknown | merlin | n/a | 4 deployments: merlin `0x5c46bf...c87378`; merlin `0x7b0400...c6ffd6`; merlin `0x8567bd...72f7e3`; merlin `0xb311c4...75b13a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -103,7 +104,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 4 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

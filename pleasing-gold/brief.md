@@ -1,50 +1,50 @@
 # Agentic Audit Brief: Pleasing Gold
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Pleasing Gold (`pleasing-gold`)
 - Website: [https://www.pleasinggold.com/](https://www.pleasinggold.com/)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-17T07:00:36.743Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:43.205Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: arbitrum, ethereum
 - Contract surface: 11 unique implementations (14 raw deployments)
-- On-chain TVL (included contracts): $4,943,872.96
-- TVL by chain: Arbitrum $4,943,872.96
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Pleasing Gold is a real-world asset (RWA) protocol on Arbitrum One evidenced by the PGOLD gold-backed token product. PLSP and PUSD are related token contracts in the observed contract surface, but their specific product roles are not independently confirmed by the available evidence.
+RWA. Structurally: 8 project-authored contract(s) across 2 chain(s); 2 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-All tokens are deployed by the same deployer and share a common proxy pattern, indicating a unified token ecosystem. PGOLD, PLSP, and PUSD likely interact within a single RWA platform, though no explicit adapter or registry contracts are present.
+The protocol comprises 5 functional families. Its contracts share 1 common project-authored base contract(s) (tokenpool). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 20; live-surface contracts included: 14 (13 live, 1 unknown).
-- Excluded by liveness: 0 inactive, 6 singleton, 0 uninitialized.
-- Deployment units: 0/3 live.
+- Indexed contracts: 20; live-surface contracts included: 14 (9 live, 5 unknown).
+- Excluded by liveness: 6 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/7 (0.0%)
+- Coverage of deployed-live implementations: 0/4 (0.0%)
+- Deployed-live implementations: 6 of 11 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/7
 - Verified + Unaudited implementations: 7
 - Verified by bytecode match: 0
 - Unverified implementations: 4
 - Unique implementations: 11
 - Raw deployments: 14
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $4,943,872.96
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $4,943,872.96 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -60,13 +60,13 @@ All tokens are deployed by the same deployer and share a common proxy pattern, i
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| LockReleaseTokenPool | core_logic | arbitrum | n/a | [`0x5b5ce7...7ccdc4`](./contracts/arbitrum-42161/0x5b5ce779709360a6b6906b79cac5029a5b7ccdc4/) | ⚠️ Unaudited |
-| UniswapV3Pool | core_logic | arbitrum | n/a | [`0x2a0c9a...739ac6`](./contracts/arbitrum-42161/0x2a0c9a36a640797a8430a218428f3f3dd3739ac6/) | ⚠️ Unaudited |
 | BurnMintTokenPool | core_logic | ethereum | n/a | [`0xf30676...2f810a`](./contracts/ethereum-1/0xf3067615579d59c64f16f1382b6a8032622f810a/) | ⚠️ Unaudited |
 | FactoryBurnMintERC20 | registry | ethereum | n/a | [`0xfb0bd8...a5334f`](./contracts/ethereum-1/0xfb0bd86210d2a10543bb40289e92d108b3a5334f/) | ⚠️ Unaudited |
+| LockReleaseTokenPool | core_logic | arbitrum | n/a | [`0x5b5ce7...7ccdc4`](./contracts/arbitrum-42161/0x5b5ce779709360a6b6906b79cac5029a5b7ccdc4/) | ⚠️ Unaudited |
 | MyOFTAdapter | adapter | arbitrum | n/a | 4 deployments: arbitrum [`0x0f7c3d...48441e`](./contracts/arbitrum-42161/0x0f7c3de66af37aac0c0668db05f9d4e0ce48441e/); arbitrum `0x17cd53...d0f5cb`; arbitrum `0x793188...59fb7d`; arbitrum `0xd77d2c...ed29c6` | ⚠️ Unaudited |
 | ProxyAdmin | governance | arbitrum | n/a | [`0x50ead2...a2e9ce`](./contracts/arbitrum-42161/0x50ead2d211d84d111c692b86e02a489d3aa2e9ce/) | ⚠️ Unaudited |
 | UniswapV2Pair | unknown | arbitrum | n/a | [`0x79eb05...f10c42`](./contracts/arbitrum-42161/0x79eb05046d0017e710cabc0caee816e710f10c42/) | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | arbitrum | n/a | [`0x2a0c9a...739ac6`](./contracts/arbitrum-42161/0x2a0c9a36a640797a8430a218428f3f3dd3739ac6/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -100,16 +100,21 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0xf30676...2f810a`](./contracts/ethereum-1/0xf3067615579d59c64f16f1382b6a8032622f810a/) | BurnMintTokenPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfb0bd8...a5334f`](./contracts/ethereum-1/0xfb0bd86210d2a10543bb40289e92d108b3a5334f/) | FactoryBurnMintERC20 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x5b5ce7...7ccdc4`](./contracts/arbitrum-42161/0x5b5ce779709360a6b6906b79cac5029a5b7ccdc4/) | LockReleaseTokenPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x0f7c3d...48441e`](./contracts/arbitrum-42161/0x0f7c3de66af37aac0c0668db05f9d4e0ce48441e/) | MyOFTAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 4 |
 | upstream | 2 |
-| standard_library | 0 |
-| needs_review | 9 |
+| standard_library | 1 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

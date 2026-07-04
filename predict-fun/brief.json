@@ -1,47 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "predict-fun",
-  "generated_at": "2026-06-17T07:00:56.752Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "predict-fun",
-    "tier": 0,
-    "peak_tvl": 26627368,
-    "peak_date": "2026-02-18T00:00:00.000Z",
-    "tvl_30d_ago": 14607577,
-    "tvl_90d_ago": 18031703,
-    "tvl_current": 18500325,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 54228,
-    "change_30d_pct": 26.64882752286707,
-    "change_90d_pct": 2.5988782091186837,
-    "days_since_peak": 116,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 30.52139062336165
-  },
+  "generated_at": "2026-07-04T14:53:44.140Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-43c7",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 39,
-    "total_addresses": 64,
+    "total_addresses": 65,
     "unique_implementations": 39,
-    "total_deployments": 64,
-    "audited_contracts": 2,
-    "unaudited_contracts": 22,
-    "contracts_verified_audited": 2,
-    "contracts_verified_unaudited": 22,
+    "total_deployments": 65,
+    "audited_contracts": 10,
+    "unaudited_contracts": 14,
+    "contracts_verified_audited": 10,
+    "contracts_verified_unaudited": 14,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 15,
-    "coverage_pct": 8.3,
+    "coverage_pct": 41.7,
     "total_audits": 9,
-    "scoreable_audits": 2,
-    "dl_tvl_usd": 16833082.26384,
-    "tvl_usd": 1452892.4197762134,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "bsc": 1452892.42
-    },
-    "asd_usd": 1452892.4178662132,
+    "direct_audits": 9,
+    "inherited_audits": 0,
+    "scoreable_audits": 6,
+    "dl_tvl_usd": 23808868.15017,
+    "tvl_usd": 23808868.15017,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://predict.fun",
     "chains": [
       "blast",
@@ -54,25 +38,34 @@
     "latest_audit_date": "2026-04",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 8,
+      "fresh": 9,
       "aging": 0,
       "stale": 0,
-      "unknown": 1
+      "unknown": 0
+    },
+    "live_implementations": 24,
+    "live_verified_implementations": 24,
+    "live_audited_implementations": 10,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 10,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Predict Fun is a decentralized prediction market protocol enabling users to trade on event outcomes. It supports both non-yield-bearing and yield-bearing conditional token markets, with integrated UMA oracle resolution and a shared vault for collateral management.",
-    "relationship_narrative": "The Non Yield Bearing and Yield Bearing families share the Vault and UMA oracle from the Shared family, with adapters bridging conditional token logic to the oracle. The Predict Fun family on Blast appears to be a standalone deployment reusing similar conditional token patterns but without direct integration to the shared vault.",
-    "product_family_count": 4,
-    "total_contracts_indexed": 70,
-    "live_contracts": 2,
-    "inactive_contracts": 6,
+    "project_purpose": "Prediction Market. Structurally: 29 project-authored contract(s) across 2 chain(s); 2 ERC1155 multi-tokens; role-gated via AccessControl; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 6 functional families. Its contracts share 30 common project-authored base contract(s) (transfers, auth, conditionaltokensfeeshandler). Dominant framework: openzeppelin.",
+    "product_family_count": 6,
+    "total_contracts_indexed": 69,
+    "live_contracts": 50,
+    "inactive_contracts": 4,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 62,
+    "unknown_contracts": 15,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 44,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -86,90 +79,6 @@
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x22da1810b194ca018378464a58f6ac2b10c9d244",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "ConditionalTokens",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Non Yield Bearing Prediction Market #",
-      "tvl_usd": 1452892.4178662132,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ConditionalTokens",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x22da1810b194ca018378464a58f6ac2b10c9d244",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1452892.4178662132,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xf64b0b318aaf83bd9071110af24d24445719a07f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x9400f8ad57e9e0f352345935d6d3175975eb1d9f",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "YieldBearingConditionalTokens",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Yield Bearing Prediction Market #",
-      "tvl_usd": 0.00191,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "YieldBearingConditionalTokens",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x9400f8ad57e9e0f352345935d6d3175975eb1d9f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.00191,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-1981",
-        "audit-1982"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 56,
       "chain_name": "bsc",
@@ -203,7 +112,64 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-04-10 12:16:26+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x22da1810b194ca018378464a58f6ac2b10c9d244",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ConditionalTokens",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ConditionalTokens",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x22da1810b194ca018378464a58f6ac2b10c9d244",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xf64b0b318aaf83bd9071110af24d24445719a07f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-1976",
+        "audit-1977"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-24 21:22:18+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 56,
@@ -215,7 +181,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Yield Bearing Prediction Market #",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -230,7 +196,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -241,15 +207,21 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-1977"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-24 21:22:19+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 56,
@@ -303,6 +275,17 @@
         {
           "chain_id": 56,
           "chain_name": "bsc",
+          "address": "0x7bd1a130c2206071121c0f1ef9666d4584252b84",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
           "address": "0xd573f448d1b5fa0f12a7ddc8c1208eb4b92b5f3b",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
@@ -317,7 +300,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-06-15 14:41:48+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -363,7 +350,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-14 13:23:07+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -375,7 +366,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Yield Bearing Prediction Market #",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -409,7 +400,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-24 21:22:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -421,7 +416,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Non Yield Bearing Prediction Market #",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -436,7 +431,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -447,15 +442,21 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-1977"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-24 21:22:19+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 56,
@@ -501,7 +502,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-06-03 12:40:58+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -513,7 +518,7 @@
       "role": "adapter",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Non Yield Bearing Prediction Market #",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -536,7 +541,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-24 21:22:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -548,7 +557,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Non Yield Bearing Prediction Market #",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -582,7 +591,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-24 21:22:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -594,7 +607,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Yield Bearing Prediction Market #",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -609,7 +622,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -620,15 +633,21 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-1977"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-24 21:22:19+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 56,
@@ -674,7 +693,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-06-03 12:40:58+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -686,7 +709,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Non Yield Bearing Prediction Market #",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -701,7 +724,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -712,15 +735,21 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-1977"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-24 21:22:19+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 81457,
@@ -777,7 +806,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-24 21:22:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -789,7 +822,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Shared #",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -834,7 +867,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-05 15:18:05+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -869,7 +906,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-02 19:32:31+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -881,7 +922,7 @@
       "role": "adapter",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Non Yield Bearing Prediction Market #",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -896,7 +937,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -907,7 +948,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -918,7 +959,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -929,7 +970,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -940,7 +981,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -951,7 +992,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -962,7 +1003,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -973,15 +1014,22 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-1976",
+        "audit-1977"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-24 21:22:19+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 56,
@@ -991,9 +1039,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UmaCompatibleOptimisticOracle",
       "role": "operational_periphery",
-      "origin_kind": "upstream",
-      "origin_provider": "uma",
-      "product_line": "Shared #",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1008,15 +1056,21 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-1976"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-21 13:43:39+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 56,
@@ -1051,7 +1105,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-16 19:20:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1086,7 +1144,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-16 19:20:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1096,7 +1158,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1121,7 +1183,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-20 16:48:51+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1156,7 +1222,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-16 19:20:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1191,7 +1261,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-16 19:20:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1226,7 +1300,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-19 14:30:58+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1261,7 +1339,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-16 19:20:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1296,7 +1378,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-16 19:20:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1331,7 +1417,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-16 19:20:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1366,7 +1456,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-16 19:20:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1401,7 +1495,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-17 12:13:51+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1436,7 +1534,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-16 19:20:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1446,7 +1548,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1471,7 +1573,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-21 11:47:13+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1481,7 +1587,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1506,7 +1612,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-19 14:30:58+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1516,7 +1626,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1541,7 +1651,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-16 19:20:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1553,7 +1667,7 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Shared #",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1587,7 +1701,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-21 13:38:50+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1599,7 +1717,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Non Yield Bearing Prediction Market #",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1622,7 +1740,57 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-24 21:22:19+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x9400f8ad57e9e0f352345935d6d3175975eb1d9f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "YieldBearingConditionalTokens",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "YieldBearingConditionalTokens",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x9400f8ad57e9e0f352345935d6d3175975eb1d9f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-1976",
+        "audit-1977",
+        "audit-1978",
+        "audit-1979",
+        "audit-1981",
+        "audit-1982"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-21 14:03:46+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 56,
@@ -1634,7 +1802,7 @@
       "role": "adapter",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Yield Bearing Prediction Market #",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1649,15 +1817,21 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-1976"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-21 14:03:46+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 56,
@@ -1669,7 +1843,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Yield Bearing Prediction Market #",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1688,13 +1862,20 @@
         }
       ],
       "audits_covering": [
+        "audit-1976",
+        "audit-1977",
+        "audit-1978",
         "audit-1981"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-21 14:03:46+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 56,
@@ -1704,9 +1885,9 @@
       "deployment_unit_proxy_count": null,
       "name": "ZeroDevWithdrawalHelper",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Shared #",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1729,14 +1910,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-24 22:51:41+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 1976,
       "audit_key": "audit-1976",
-      "report_name": "2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf",
+      "report_name": "spaces/uBy5cIxCH65sso6lWCM8/uploads/CoqlfwzTGHqUhtq54JZL/2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf",
       "report_url": "https://1627684912-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FuBy5cIxCH65sso6lWCM8%2Fuploads%2FCoqlfwzTGHqUhtq54JZL%2F2025.11.26%20-%20Final%20-%20Predict.fun%20Collaborative%20Audit%20Report%201764175259.pdf",
       "auditor": "Collaborative (multiple)",
       "audit_type": "audit",
@@ -1746,39 +1931,85 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AncillaryDataLib",
+        "CTHelpers",
+        "ConditionalTokens",
+        "Constants",
+        "Helpers",
+        "IBulletinBoard",
+        "IOptimisticOracleV2",
+        "IUmaCtfAdapter",
+        "Lockable",
+        "MarketData",
+        "MarketDataManager",
+        "NegRiskIdLib",
+        "OptimisticOracleV2Interface",
+        "PayoutHelperLib",
+        "UmaCompatibleCtfAdapter",
+        "UmaCompatibleOptimisticOracle",
+        "Venus",
+        "WhitelistedERC1155",
+        "YieldBearingConditionalTokens",
+        "YieldBearingNegRiskAdapter",
+        "YieldBearingWrappedCollateral"
+      ],
+      "matched_contracts": 14,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
       "audit_id": 1977,
       "audit_key": "audit-1977",
-      "report_name": "TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf",
+      "report_name": "spaces/uBy5cIxCH65sso6lWCM8/uploads/53ekOJh0m9sN791a76vm/TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf",
       "report_url": "https://1627684912-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FuBy5cIxCH65sso6lWCM8%2Fuploads%2F53ekOJh0m9sN791a76vm%2FTenArmor_Predict_Dot_Fun_Audit_Report_final.pdf",
       "auditor": "TenArmor",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "fresh",
+      "date": "2025-12",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Assets",
+        "CalculatorHelper",
+        "ConditionalTokens",
+        "ConditionalTokensFeesHandler",
+        "FeeModule",
+        "FeeModuleV2",
+        "MarketDataLib",
+        "MarketDataManager",
+        "MarketStateManager",
+        "NegRiskFeeModuleV2",
+        "NegRiskOperator",
+        "Trading",
+        "UmaCompatibleCtfAdapter",
+        "UmaCtfAdapter",
+        "Venus",
+        "YieldBearingConditionalTokens",
+        "YieldBearingWrappedCollateral"
+      ],
+      "matched_contracts": 20,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
       "audit_id": 1978,
       "audit_key": "audit-1978",
-      "report_name": "2026-02-18-cyfrin-predict-fun-v2.0.pdf",
+      "report_name": "spaces/uBy5cIxCH65sso6lWCM8/uploads/35xaz4ieEz1xwjcC9Rzy/2026-02-18-cyfrin-predict-fun-v2.0.pdf",
       "report_url": "https://1627684912-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FuBy5cIxCH65sso6lWCM8%2Fuploads%2F35xaz4ieEz1xwjcC9Rzy%2F2026-02-18-cyfrin-predict-fun-v2.0.pdf",
       "auditor": "Cyfrin",
       "audit_type": "audit",
@@ -1788,18 +2019,27 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "CTHelpers",
+        "Venus",
+        "WhitelistedERC1155",
+        "YieldBearingConditionalTokens",
+        "YieldBearingWrappedCollateral"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
       "audit_id": 1979,
       "audit_key": "audit-1979",
-      "report_name": "2026-02-06-cyfrin-formal-verification-report-predict-fun.pdf",
+      "report_name": "spaces/uBy5cIxCH65sso6lWCM8/uploads/I1DXLS1LjI8TvRaNnDAK/2026-02-06-cyfrin-formal-verification-report-predict-fun.pdf",
       "report_url": "https://1627684912-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FuBy5cIxCH65sso6lWCM8%2Fuploads%2FI1DXLS1LjI8TvRaNnDAK%2F2026-02-06-cyfrin-formal-verification-report-predict-fun.pdf",
       "auditor": "Cyfrin",
       "audit_type": "audit",
@@ -1809,12 +2049,19 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Venus",
+        "WhitelistedERC1155",
+        "YieldBearingConditionalTokens"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -1830,6 +2077,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -1851,18 +2101,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "CTHelpers",
-        "Venus",
-        "WhitelistedERC1155",
-        "YieldBearingConditionalTokens",
-        "YieldBearingWrappedCollateral"
-      ],
+      "extracted_names": [],
       "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1878,16 +2125,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Venus",
-        "WhitelistedERC1155",
-        "YieldBearingConditionalTokens"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1903,6 +2149,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -1924,6 +2173,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -1934,6 +2186,20 @@
     }
   ],
   "auditor_coverage": [
+    {
+      "auditor": "TenArmor",
+      "tier": 2,
+      "contracts_covered": 8,
+      "coverage_pct": 33.3,
+      "latest_audit": "2025-12"
+    },
+    {
+      "auditor": "Collaborative (multiple)",
+      "tier": 2,
+      "contracts_covered": 6,
+      "coverage_pct": 25,
+      "latest_audit": "2025-11"
+    },
     {
       "auditor": "Cyfrin",
       "tier": 1,
@@ -1946,29 +2212,9 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x22da1810b194ca018378464a58f6ac2b10c9d244",
-      "name": "ConditionalTokens",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 1452892.4178662132,
-      "risk_note": "Verified native implementation with $1,452,892.42 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
       "address": "0x69e6bef6c94ee41e09db3e828eb9560e34868c4a",
       "name": "AdminAdapter",
       "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xb4d9f13738a50e88e0ade2eccc89254ef1645f6e",
-      "name": "ConditionalTokensFeesHandler",
-      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1998,16 +2244,6 @@
       "chain_name": "bsc",
       "address": "0x6beb5a40c032afc305961162d8204cda16decfa5",
       "name": "CTFExchange",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xf1f8f5c641f20c48526269ef7dff19172efa9783",
-      "name": "FeeModuleV2",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -2046,28 +2282,8 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0xd172f3fbabe763ee8e52d8b32421574236da6057",
-      "name": "NegRiskFeeModuleV2",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
       "address": "0x0989942f8e5b778e804858a0cc791b4469a5fd63",
       "name": "NegRiskFeeModuleV3",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x56020f5024641d577cb54032af70a23a986ecffd",
-      "name": "NegRiskOperator",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -2106,16 +2322,6 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x242e1ba24f6fc524bfb410062ca5689a9622613d",
-      "name": "UmaCompatibleCtfAdapter",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
       "address": "0x09f683d8a144c4ac296d770f839098c3377410c5",
       "name": "Vault",
       "role": "core_logic",
@@ -2136,46 +2342,31 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x41dce1a4b8fb5e6327701750af6231b7cd0b2a40",
-      "name": "YieldBearingNegRiskAdapter",
-      "role": "adapter",
+      "address": "0xf4aa30b537882eca7e69defb68d6f631cda77b00",
+      "name": "ZeroDevWithdrawalHelper",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 26,
-    "upstream": 1,
+    "native": 24,
+    "upstream": 0,
     "standard_library": 0,
-    "needs_review": 12
+    "needs_review": 15
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 3
+      "contract_name": 3,
+      "extraction_exact": 37
     },
     "extraction_confidence_counts": {
-      "high": 2
+      "high": 4
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 1976,
-        "report_name": "2025.11.26 - Final - Predict.fun Collaborative Audit Report 1764175259.pdf"
-      },
-      {
-        "audit_id": 1977,
-        "report_name": "TenArmor_Predict_Dot_Fun_Audit_Report_final.pdf"
-      },
-      {
-        "audit_id": 1978,
-        "report_name": "2026-02-18-cyfrin-predict-fun-v2.0.pdf"
-      },
-      {
-        "audit_id": 1979,
-        "report_name": "2026-02-06-cyfrin-formal-verification-report-predict-fun.pdf"
-      },
       {
         "audit_id": 1980,
         "report_name": "2026-04-25-cyfrin-predict-cre-integration-v2.1.pdf"

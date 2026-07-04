@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "bifrost-liquid-staking",
-  "generated_at": "2026-06-13T10:14:16.802Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
+  "generated_at": "2026-07-03T21:05:35.695Z",
+  "pipeline_run_id": "brief-restore-2026-07",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -18,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 8,
+    "direct_audits": 8,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 16701974.250119999,
-    "tvl_usd": 16701974.250119999,
+    "dl_tvl_usd": 13999849.5914,
+    "tvl_usd": 13999849.5914,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -35,12 +37,31 @@
       "aging": 0,
       "stale": 4,
       "unknown": 4
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
     "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,
@@ -66,6 +87,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -87,6 +111,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -108,6 +135,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -129,6 +159,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -140,7 +173,7 @@
     {
       "audit_id": 12786,
       "audit_key": "audit-12786",
-      "report_name": "DL audit link",
+      "report_name": "Bifrost_vtoken-voting_202310121750.pdf",
       "report_url": "https://beosin.com/audits/Bifrost_vtoken-voting_202310121750.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -150,6 +183,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -161,7 +197,7 @@
     {
       "audit_id": 12787,
       "audit_key": "audit-12787",
-      "report_name": "DL audit link",
+      "report_name": "Bifrost(vtoken-minting&&slp-v2)_202509251121.pdf",
       "report_url": "https://beosin.com/audits/Bifrost(vtoken-minting&&slp-v2)_202509251121.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -171,6 +207,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -182,7 +221,7 @@
     {
       "audit_id": 12788,
       "audit_key": "audit-12788",
-      "report_name": "DL audit link",
+      "report_name": "Bifrost(veth-3.0&&slpx-v2)_202509251035.pdf",
       "report_url": "https://beosin.com/audits/Bifrost(veth-3.0&&slpx-v2)_202509251035.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -192,6 +231,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -213,6 +255,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -254,15 +299,15 @@
       },
       {
         "audit_id": 12786,
-        "report_name": "DL audit link"
+        "report_name": "Bifrost_vtoken-voting_202310121750.pdf"
       },
       {
         "audit_id": 12787,
-        "report_name": "DL audit link"
+        "report_name": "Bifrost(vtoken-minting&&slp-v2)_202509251121.pdf"
       },
       {
         "audit_id": 12788,
-        "report_name": "DL audit link"
+        "report_name": "Bifrost(veth-3.0&&slpx-v2)_202509251035.pdf"
       },
       {
         "audit_id": 12789,

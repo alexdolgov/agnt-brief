@@ -1,62 +1,36 @@
 {
   "schema_version": "2.0",
   "project_key": "mento",
-  "generated_at": "2026-06-17T07:00:36.524Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "mento",
-    "tier": 1,
-    "peak_tvl": 858703706,
-    "peak_date": "2021-10-27T00:00:00.000Z",
-    "tvl_30d_ago": 19744318,
-    "tvl_90d_ago": 17910006,
-    "tvl_current": 13612665,
-    "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 29494559,
-    "change_30d_pct": -31.05527878957379,
-    "change_90d_pct": -23.994079063960115,
-    "governance_raw": {
-      "evidence": "TVL dropped 98.4% from peak but protocol remains operational with active communications and product offerings.",
-      "confidence": 0.7,
-      "lifecycle_status": "declining"
-    },
-    "days_since_peak": 1689,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 98.4147424886041,
-    "governance_evidence": "TVL dropped 98.4% from peak but protocol remains operational with active communications and product offerings.",
-    "governance_confidence": 0.7,
-    "governance_text_chars": 5000,
-    "governance_classification": "declining",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:30.598Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-16da",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 48,
+    "total_contracts": 55,
     "total_addresses": 79,
-    "unique_implementations": 48,
+    "unique_implementations": 55,
     "total_deployments": 79,
-    "audited_contracts": 23,
-    "unaudited_contracts": 10,
+    "audited_contracts": 22,
+    "unaudited_contracts": 11,
     "contracts_verified_audited": 22,
-    "contracts_verified_unaudited": 10,
-    "contracts_verified_by_bytecode": 1,
-    "contracts_unverified": 15,
-    "coverage_pct": 69.7,
+    "contracts_verified_unaudited": 11,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 22,
+    "coverage_pct": 73.3,
     "total_audits": 23,
+    "direct_audits": 23,
+    "inherited_audits": 0,
     "scoreable_audits": 7,
-    "dl_tvl_usd": 13576582,
-    "tvl_usd": 866417.2515355202,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "celo": 866417.25
-    },
-    "asd_usd": 64989.558511928415,
+    "dl_tvl_usd": 13334653,
+    "tvl_usd": 13334653,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://www.mento.org/",
     "chains": [
       "celo"
     ],
-    "tier1_coverage_pct": 60.6,
+    "tier1_coverage_pct": 63.3,
     "tier1_auditors": [
       "ChainSecurity",
       "Cyfrin",
@@ -66,29 +40,38 @@
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 3,
-      "aging": 4,
-      "stale": 8,
+      "aging": 3,
+      "stale": 9,
       "unknown": 8
+    },
+    "live_implementations": 33,
+    "live_verified_implementations": 30,
+    "live_audited_implementations": 22,
+    "live_verified_third_party_excluded": 2,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 23
     }
   },
   "topography": {
-    "project_purpose": "Mento is an onchain FX and multi-currency stablecoin protocol on Celo. It enables issuance of Mento stable assets pegged to various fiat currencies, decentralized swaps via the Mento Asset Exchange, and reserve-backed stability through the Mento Reserve.",
-    "relationship_narrative": "The Mento Stable Assets family relies on the Reserve & Stability family for collateral backing and peg maintenance, while the Asset Exchange family provides liquidity and trading for these stablecoins. Governance controls all families through timelocked upgrades and parameter changes, and shared oracles (SortedOracles, OracleAdapter) feed price data to both the stability and exchange mechanisms.",
-    "product_family_count": 5,
-    "total_contracts_indexed": 397,
-    "live_contracts": 64,
-    "inactive_contracts": 204,
-    "singleton_contracts": 114,
+    "project_purpose": "Algo-Stables. Structurally: 70 project-authored contract(s) across 1 chain(s); 6 ERC20 tokens, 1 ERC721 NFT; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 7 functional families. Its contracts share 12 common project-authored base contract(s) (usingregistry, proxy, usingprecompiles). Dominant framework: openzeppelin.",
+    "product_family_count": 7,
+    "total_contracts_indexed": 79,
+    "live_contracts": 56,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 15,
-    "deployment_units": 52,
-    "live_deployment_units": 3,
-    "dependencies_extracted": 70,
-    "unverified_dependencies": 2,
+    "unknown_contracts": 23,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 48,
+    "unique_implementations": 55,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -97,152 +80,6 @@
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 42220,
-      "chain_name": "celo",
-      "address": "0xa7873f4bf2a1ea2eb20b1e8a992c4748e78473b2",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "ActivePool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Mento",
-      "tvl_usd": 801427.3291088566,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ActivePool",
-      "deployments": [
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0xa7873f4bf2a1ea2eb20b1e8a992c4748e78473b2",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 801427.3291088566,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12419"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 42220,
-      "chain_name": "celo",
-      "address": "0xff4ab19391af240c311c54200a492233052b6325",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "StableTokenCADProxy",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Mento",
-      "tvl_usd": 64989.558511928415,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "StableTokenCADProxy",
-      "deployments": [
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0xff4ab19391af240c311c54200a492233052b6325",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 64989.558511928415,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 42220,
-      "chain_name": "celo",
-      "address": "0x8b61f941d89560c7d8b3d595f44f7fd97d79817b",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "GasPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Mento",
-      "tvl_usd": 0.36391473497495397,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "GasPool",
-      "deployments": [
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x8b61f941d89560c7d8b3d595f44f7fd97d79817b",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.36391473497495397,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12419"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 42220,
-      "chain_name": "celo",
-      "address": "0x22d9db95e6ae61c104a7b6f6c78d7993b94ec901",
-      "deployment_unit": "unit-22412",
-      "deployment_unit_proxy_count": 1,
-      "name": "BiPoolManager",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Mento",
-      "tvl_usd": 2.605101061834013e-10,
-      "is_proxy": true,
-      "impl_address": "0xc016174b60519bdc24433d4ed2cff6c1efac7881",
-      "impl_name": "BiPoolManager",
-      "deployments": [
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x22d9db95e6ae61c104a7b6f6c78d7993b94ec901",
-          "deployment_unit": "unit-22412",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2.605101061834013e-10,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12423"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 42220,
       "chain_name": "celo",
@@ -279,7 +116,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42220,
@@ -290,7 +127,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -300,7 +137,52 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-29 22:20:44+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0xa7873f4bf2a1ea2eb20b1e8a992c4748e78473b2",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ActivePool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ActivePool",
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xa7873f4bf2a1ea2eb20b1e8a992c4748e78473b2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12419"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 23:15:31+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -312,7 +194,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mento",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -337,7 +219,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 23:15:20+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -559,7 +445,52 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-03 15:20:24+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x22d9db95e6ae61c104a7b6f6c78d7993b94ec901",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BiPoolManager",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xc016174b60519bdc24433d4ed2cff6c1efac7881",
+      "impl_name": "BiPoolManager",
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x22d9db95e6ae61c104a7b6f6c78d7993b94ec901",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12423"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-03-07 08:50:54+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -571,7 +502,7 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mento",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -596,7 +527,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 23:15:25+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -608,7 +543,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mento",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -633,7 +568,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 23:15:20+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -645,7 +584,7 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mento",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -670,7 +609,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 23:15:31+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -682,7 +625,7 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mento",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -707,7 +650,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 23:15:31+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -745,7 +692,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -755,7 +702,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-29 22:21:03+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -790,7 +741,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-05 21:44:57+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -828,7 +783,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -838,19 +793,64 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-29 22:21:20+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x8b61f941d89560c7d8b3d595f44f7fd97d79817b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "GasPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "GasPool",
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x8b61f941d89560c7d8b3d595f44f7fd97d79817b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12419"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 23:15:31+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
       "chain_name": "celo",
       "address": "0x87647780180b8f55980c7d3ffefe08a9b29e9ae1",
-      "deployment_unit": "unit-22434",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "GnosisSafeL2",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
-      "product_line": "Externally Owned Accounts (EOAs) and MultiSigs",
+      "origin_provider": "Gnosis Safe",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0xfb1bffc9d739b8d520daf37df666da4c687191ea",
@@ -860,8 +860,8 @@
           "chain_id": 42220,
           "chain_name": "celo",
           "address": "0x87647780180b8f55980c7d3ffefe08a9b29e9ae1",
-          "deployment_unit": "unit-22434",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -873,7 +873,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2022-12-23 17:10:49+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -911,7 +915,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -921,7 +925,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-29 22:21:38+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -959,7 +967,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -970,7 +978,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-09 16:06:44+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -1005,7 +1017,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-29 22:16:40+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -1017,7 +1033,7 @@
       "role": "periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mento",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1040,7 +1056,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 23:15:20+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -1050,8 +1070,8 @@
       "deployment_unit_proxy_count": null,
       "name": "IntegerSortedLinkedList",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -1075,19 +1095,23 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-29 22:25:51+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
       "chain_name": "celo",
       "address": "0x001bb66636dcd149a1a2ba8c50e408bddd80279c",
-      "deployment_unit": "unit-22403",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "Locking",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Mento",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0x5a2c50efa0f63f0f97da9f002fefef3f64ed7d46",
@@ -1097,8 +1121,8 @@
           "chain_id": 42220,
           "chain_name": "celo",
           "address": "0x001bb66636dcd149a1a2ba8c50e408bddd80279c",
-          "deployment_unit": "unit-22403",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1113,7 +1137,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-31 21:06:53+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -1125,7 +1153,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mento",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1150,7 +1178,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 22:14:31+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -1162,7 +1194,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Celo Mainnet",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1188,17 +1220,21 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-31 21:06:53+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
       "chain_name": "celo",
-      "address": "0x066f672c03347a24ee3f52d1f184f04f7abd25f2",
+      "address": "0x68e231b208d82dedba0cf7d97db0d3bf9bee3903",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "MultiSig",
-      "role": "unknown",
-      "origin_kind": "needs_review",
+      "role": "governance",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1209,55 +1245,11 @@
         {
           "chain_id": 42220,
           "chain_name": "celo",
-          "address": "0x066f672c03347a24ee3f52d1f184f04f7abd25f2",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x120c00afa9052583402ea361f43d9683c849e892",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x65534a1cedacc6ef812f751b459db7660e043372",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
           "address": "0x68e231b208d82dedba0cf7d97db0d3bf9bee3903",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0x72306ff91e79054e35a785d3831b215dd072c33d",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": true,
           "tvl_usd": null,
           "is_audited": false
         },
@@ -1270,50 +1262,19 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0xb7feac258e081415c84b7f4b1092057610ff582a",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0xbcb789aabd2bf7be0a4a6674676b49787cc3a567",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42220,
-          "chain_name": "celo",
-          "address": "0xc99d541743e0570f2eebb76ac435de0c8edd411e",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
           "is_audited": false
         }
       ],
-      "audits_covering": [
-        "audit-12425"
-      ],
-      "is_audited": true,
+      "audits_covering": [],
+      "is_audited": false,
       "source_verified": true,
-      "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_audited",
-      "contamination_flag": "cleared"
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-03 15:20:14+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -1325,7 +1286,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mento",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1348,7 +1309,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 23:15:20+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -1360,7 +1325,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mento",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1383,7 +1348,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 23:17:20+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -1395,7 +1364,7 @@
       "role": "adapter",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mento",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1420,7 +1389,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 22:14:37+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -1431,8 +1404,8 @@
       "name": "SafeProxy",
       "role": "unknown",
       "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
-      "product_line": "Mento V2",
+      "origin_provider": "Gnosis Safe",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1455,7 +1428,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2024-12-05 13:07:21+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -1467,7 +1444,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mento",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1492,7 +1469,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 23:15:31+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0xff4ab19391af240c311c54200a492233052b6325",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "StableTokenCADProxy",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StableTokenCADProxy",
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xff4ab19391af240c311c54200a492233052b6325",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-03-23 01:59:43+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -1504,7 +1524,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mento",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1530,7 +1550,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 22:14:37+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -1542,7 +1566,7 @@
       "role": "governance",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mento",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1567,7 +1591,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 23:15:25+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -1579,7 +1607,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mento",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1604,7 +1632,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 23:15:25+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -1614,7 +1646,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1639,7 +1671,52 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-07 20:21:30+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x066f672c03347a24ee3f52d1f184f04f7abd25f2",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x066f672c03347a24ee3f52d1f184f04f7abd25f2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12425"
+      ],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-08 12:32:15+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -1649,7 +1726,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1674,7 +1751,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-29 22:26:21+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -1684,7 +1765,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1709,7 +1790,50 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-29 22:22:09+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x120c00afa9052583402ea361f43d9683c849e892",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x120c00afa9052583402ea361f43d9683c849e892",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-02 19:45:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -1719,7 +1843,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1744,7 +1868,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-02 17:44:33+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -1754,7 +1882,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1779,7 +1907,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-02 19:45:54+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -1789,7 +1921,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1814,7 +1946,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-02 19:42:22+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -1824,7 +1960,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1849,7 +1985,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-10 13:40:38+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -1859,7 +1999,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1884,7 +2024,89 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-02 17:41:12+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x65534a1cedacc6ef812f751b459db7660e043372",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x65534a1cedacc6ef812f751b459db7660e043372",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-07 20:15:40+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x72306ff91e79054e35a785d3831b215dd072c33d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x72306ff91e79054e35a785d3831b215dd072c33d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-02 19:42:03+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -1894,7 +2116,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1919,7 +2141,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-03 15:20:30+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -1929,7 +2155,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1954,7 +2180,50 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-07 20:15:58+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0xb7feac258e081415c84b7f4b1092057610ff582a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xb7feac258e081415c84b7f4b1092057610ff582a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-07 20:21:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -1964,7 +2233,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1989,7 +2258,50 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-29 22:16:32+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0xbcb789aabd2bf7be0a4a6674676b49787cc3a567",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xbcb789aabd2bf7be0a4a6674676b49787cc3a567",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-02 17:40:51+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -2024,7 +2336,50 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-29 22:16:26+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0xc99d541743e0570f2eebb76ac435de0c8edd411e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xc99d541743e0570f2eebb76ac435de0c8edd411e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-02 17:44:16+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -2034,7 +2389,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2059,7 +2414,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 20:23:02+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -2094,7 +2453,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-29 22:21:54+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -2104,7 +2467,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2129,7 +2492,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-08 12:32:33+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42220,
@@ -2141,7 +2508,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mento",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -2166,7 +2533,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 22:14:31+03",
+      "deploy_coverage_basis": "match_unverified"
     }
   ],
   "audits": [
@@ -2183,35 +2554,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "DummyToken",
-        "DummyTokenMintAndBurn",
-        "Governance",
-        "INTTManagerEvents",
-        "IRateLimiterEvents",
-        "ITransceiver",
-        "Implementation",
-        "MockNttManagerContract",
-        "MockWormholeTransceiverContract",
-        "MockWormholeTransceiverImmutableAllow",
-        "NttManager",
-        "NttManagerState",
-        "PausableOwnable",
-        "PausableUpgradeable",
-        "RateLimiter",
-        "Transceiver",
-        "TransceiverRegistry",
-        "TransceiverStructs",
-        "TrimmedAmount",
-        "WormholeSimulator",
-        "WormholeTransceiver",
-        "WormholeTransceiverState"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -2221,12 +2572,15 @@
       "report_url": "https://github.com/mento-protocol/mento-stabletoken-ntt/blob/main/audits/evm/2024-07-23-cyfrin-wormhole-evm-ntt-diff-v1.1.0.pdf",
       "auditor": "Cyfrin",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2248,6 +2602,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2269,6 +2626,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2290,6 +2650,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2311,6 +2674,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2332,6 +2698,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2353,6 +2722,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2374,6 +2746,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2395,6 +2770,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2416,6 +2794,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2427,7 +2808,7 @@
     {
       "audit_id": 12415,
       "audit_key": "audit-12415",
-      "report_name": "DL audit link",
+      "report_name": "celo.org/audits",
       "report_url": "https://celo.org/audits",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -2437,6 +2818,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2448,7 +2832,7 @@
     {
       "audit_id": 12416,
       "audit_key": "audit-12416",
-      "report_name": "DL audit link",
+      "report_name": "www.chainsecurity.com/security-audit/mento-core-v3",
       "report_url": "https://www.chainsecurity.com/security-audit/mento-core-v3",
       "auditor": "ChainSecurity",
       "audit_type": "audit",
@@ -2458,7 +2842,10 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -2469,7 +2856,7 @@
     {
       "audit_id": 12417,
       "audit_key": "audit-12417",
-      "report_name": "download report",
+      "report_name": "ChainSecurity_Mento_MentoCoreV3_Audit.pdf",
       "report_url": "https://reports.chainsecurity.com/Mento/ChainSecurity_Mento_MentoCoreV3_Audit.pdf",
       "auditor": "ChainSecurity",
       "audit_type": "audit",
@@ -2479,37 +2866,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "CDPLiquidityStrategy",
-        "FPMM",
-        "FPMMFactory",
-        "FPMMProxy",
-        "FactoryRegistry",
-        "LiquidityStrategy",
-        "LiquidityStrategyTypes",
-        "MarketHoursBreaker",
-        "OneToOneFPMM",
-        "OracleAdapter",
-        "ReserveLiquidityStrategy",
-        "ReserveV2",
-        "Router",
-        "StableTokenSpoke",
-        "StableTokenV3",
-        "TradingLimitsV2",
-        "VirtualPool",
-        "VirtualPoolFactory"
-      ],
+      "extracted_names": [],
       "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 12418,
       "audit_key": "audit-12418",
-      "report_name": "DL audit link",
+      "report_name": "www.chainsecurity.com/security-audit/mento-liquity-v2",
       "report_url": "https://www.chainsecurity.com/security-audit/mento-liquity-v2",
       "auditor": "ChainSecurity",
       "audit_type": "audit",
@@ -2519,6 +2890,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2530,7 +2904,7 @@
     {
       "audit_id": 12419,
       "audit_key": "audit-12419",
-      "report_name": "download report",
+      "report_name": "ChainSecurity_Mento_MentoLiquityV2_Audit.pdf",
       "report_url": "https://reports.chainsecurity.com/Mento/ChainSecurity_Mento_MentoLiquityV2_Audit.pdf",
       "auditor": "ChainSecurity",
       "audit_type": "audit",
@@ -2540,42 +2914,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "ActivePool",
-        "AddRemoveManagers",
-        "AddressesRegistry",
-        "AggregatorV3Interface",
-        "BatchId",
-        "BatchManagerOperations",
-        "BorrowerOperations",
-        "CollSurplusPool",
-        "CollateralRegistry",
-        "Constants",
-        "DefaultPool",
-        "ERC20PermitUpgradeable",
-        "ERC20Upgradeable",
-        "FXPriceFeed",
-        "GasPool",
-        "LatestBatchData",
-        "LatestTroveData",
-        "LiquityBase",
-        "LiquityBaseInit",
-        "LiquityMath",
-        "Ownable",
-        "SortedTroves",
-        "StabilityPool",
-        "StableTokenV3",
-        "SystemParams",
-        "TroveChange",
-        "TroveId",
-        "TroveManager",
-        "TroveNFT"
-      ],
+      "extracted_names": [],
       "matched_contracts": 11,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -2591,28 +2938,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Emission",
-        "EmissionDeployerLib",
-        "GovernanceFactory",
-        "Locking",
-        "LockingBase",
-        "LockingRelock",
-        "LockingVotes",
-        "MentoToken",
-        "MentoTokenDeployerLib"
-      ],
+      "extracted_names": [],
       "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 12421,
       "audit_key": "audit-12421",
-      "report_name": "Sherlock contest",
+      "report_name": "audits.sherlock.xyz/dashboard/404ec017225af69f6deff9b722393a44",
       "report_url": "https://audits.sherlock.xyz/dashboard/404ec017225af69f6deff9b722393a44",
       "auditor": "Sherlock",
       "audit_type": "contest",
@@ -2622,6 +2962,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2643,27 +2986,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Airgrab",
-        "Emission",
-        "Factory",
-        "ILocking",
-        "INextVersionLock",
-        "LibBrokenLine",
-        "LibIntMapping",
-        "Locking",
-        "LockingBase",
-        "LockingRelock",
-        "LockingVotes",
-        "MentoGovernor",
-        "MentoToken",
-        "TimelockController"
-      ],
+      "extracted_names": [],
       "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -2679,25 +3010,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BiPoolManager",
-        "BreakerBox",
-        "ConstantSumPricingModule",
-        "ERC20PermitUpgradeable",
-        "ERC20Upgradeable",
-        "IBiPoolManager",
-        "IBreaker",
-        "IBreakerBox",
-        "IPricingModule",
-        "IStableTokenV2",
-        "MedianDeltaBreaker",
-        "StableTokenV2"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -2713,6 +3034,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2724,7 +3048,7 @@
     {
       "audit_id": 12425,
       "audit_key": "audit-12425",
-      "report_name": "<table><thead><tr><th width=\"143\">Date</th><th>Link</th><th>Auditor</th><th width=\"100\">Version</th></tr></thead><tbody><tr><td>03/2024</td><td><a href=\"https://0xmacro.com/library/audits/mento-3\">Macro audit 3</a></td><td>Macro</td><td>V2.3.0</td></tr><tr><td>03/2024</td><td><a href=\"https://audits.sherlock.xyz/dashboard/404ec017225af69f6deff9b722393a44\">Sherlock contest</a></td><td>Sherlock</td><td>V2.3.0</td></tr><tr><td>01/2024</td><td><a href=\"https://0xmacro.com/library/audits/mento-2\">Macro audit 2</a></td><td>Macro</td><td>V2.3.0</td></tr><tr><td>08/2023</td><td><a href=\"https://0xmacro.com/library/audits/mento-1\">Macro audit 1</a></td><td>Macro</td><td>V2.2.0</td></tr><tr><td>05/2023</td><td><a href=\"https://www.verilog.solutions/audits/mento/\">Verilog (extended)</a></td><td>Verilog</td><td>v2.1.0</td></tr><tr><td>02/2023</td><td><a href=\"https://www.verilog.solutions/audits/mento/\">Verilog</a></td><td>Verilog</td><td>v2.0.0</td></tr><tr><td>2020-2021</td><td><a href=\">OpenZeppelin</a></td><td>OpenZeppelin</td><td>v1.0.0</td></tr></tbody></table>",
+      "report_name": "www.openzeppelin.com/news/celo-contracts-audit",
       "report_url": "https://www.openzeppelin.com/news/celo-contracts-audit",
       "auditor": "OpenZeppelin",
       "audit_type": "audit",
@@ -2734,50 +3058,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Accounts",
-        "AddressLinkedList",
-        "AddressSortedLinkedList",
-        "AddressSortedLinkedListWithMedian",
-        "Attestations",
-        "BlockchainParameters",
-        "DoubleSigningSlasher",
-        "DowntimeSlasher",
-        "Election",
-        "EpochRewards",
-        "Escrow",
-        "Exchange",
-        "FixidityLib",
-        "FractionUtil",
-        "Freezable",
-        "GasPriceMinimum",
-        "GoldToken",
-        "Governance",
-        "IntegerSortedList",
-        "LinkedList",
-        "LockedGold",
-        "MultiSig",
-        "Proposals",
-        "Proxy",
-        "Random",
-        "Registry",
-        "Reserve",
-        "SafeCast",
-        "Signatures",
-        "SlasherUtil",
-        "SortedLinkedList",
-        "SortedLinkedListWithMedian",
-        "SortedOracles",
-        "StableToken",
-        "UsingPrecompiles",
-        "UsingRegistry",
-        "Validators"
-      ],
-      "matched_contracts": 13,
+      "extracted_names": [],
+      "matched_contracts": 6,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -2793,6 +3082,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2813,8 +3105,8 @@
     {
       "auditor": "OpenZeppelin",
       "tier": 1,
-      "contracts_covered": 6,
-      "coverage_pct": 18.2,
+      "contracts_covered": 5,
+      "coverage_pct": 15.2,
       "latest_audit": "2021-02"
     },
     {
@@ -2833,16 +3125,6 @@
     }
   ],
   "coverage_gaps": [
-    {
-      "chain_id": 42220,
-      "chain_name": "celo",
-      "address": "0xff4ab19391af240c311c54200a492233052b6325",
-      "name": "StableTokenCADProxy",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 64989.558511928415,
-      "risk_note": "Verified native implementation with $64,989.56 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 42220,
       "chain_name": "celo",
@@ -2886,6 +3168,26 @@
     {
       "chain_id": 42220,
       "chain_name": "celo",
+      "address": "0xa86051f29c45218b5f6cd121ebafb690660d047c",
+      "name": "IntegerSortedLinkedList",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x68e231b208d82dedba0cf7d97db0d3bf9bee3903",
+      "name": "MultiSig",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
       "address": "0x78fd33d2bce0389cf41e15947b0eb0ce9df8327f",
       "name": "MultiTroveGetter",
       "role": "unknown",
@@ -2902,21 +3204,29 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0xff4ab19391af240c311c54200a492233052b6325",
+      "name": "StableTokenCADProxy",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 41,
+    "native": 31,
     "upstream": 0,
-    "standard_library": 4,
-    "needs_review": 3
+    "standard_library": 2,
+    "needs_review": 22
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 199
+      "contract_name": 27
     },
-    "extraction_confidence_counts": {
-      "high": 7
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
@@ -2962,19 +3272,19 @@
       },
       {
         "audit_id": 12415,
-        "report_name": "DL audit link"
+        "report_name": "celo.org/audits"
       },
       {
         "audit_id": 12416,
-        "report_name": "DL audit link"
+        "report_name": "www.chainsecurity.com/security-audit/mento-core-v3"
       },
       {
         "audit_id": 12418,
-        "report_name": "DL audit link"
+        "report_name": "www.chainsecurity.com/security-audit/mento-liquity-v2"
       },
       {
         "audit_id": 12421,
-        "report_name": "Sherlock contest"
+        "report_name": "audits.sherlock.xyz/dashboard/404ec017225af69f6deff9b722393a44"
       },
       {
         "audit_id": 12424,

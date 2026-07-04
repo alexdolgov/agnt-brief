@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "enosys",
-  "generated_at": "2026-06-17T07:00:36.464Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "enosys",
-    "tier": 0,
-    "peak_tvl": 122141831,
-    "peak_date": "2022-01-17T00:00:00.000Z",
-    "tvl_30d_ago": 27951575,
-    "tvl_90d_ago": 16858709,
-    "tvl_current": 22810112,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 6304819,
-    "change_30d_pct": -18.394179934404413,
-    "change_90d_pct": 35.30165328792377,
-    "days_since_peak": 1586,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 81.32489761022168
-  },
+  "generated_at": "2026-07-04T14:53:11.810Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-17a2",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 2,
-    "total_addresses": 3,
+    "total_addresses": 4,
     "unique_implementations": 2,
-    "total_deployments": 3,
-    "audited_contracts": 0,
-    "unaudited_contracts": 2,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 2,
+    "total_deployments": 4,
+    "audited_contracts": 1,
+    "unaudited_contracts": 1,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
-    "total_audits": 0,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 17160386,
-    "tvl_usd": 17160386,
+    "coverage_pct": 50,
+    "total_audits": 3,
+    "direct_audits": 3,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 14552658,
+    "tvl_usd": 14552658,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -46,28 +32,37 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2025-10",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
+      "fresh": 1,
       "aging": 0,
-      "stale": 0,
-      "unknown": 0
+      "stale": 1,
+      "unknown": 1
+    },
+    "live_implementations": 2,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 1,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Enosys is a multi-chain DeFi ecosystem primarily centered on Flare and Songbird, with additional activity across other supported chains. Its product surface includes DEX/AMM liquidity, farms and yield products, loans/collateralized debt positions, bridge functionality, NFTs, governance/APYCloud, and supporting infrastructure. The currently listed Ethereum contracts represent only a small, incomplete subset of the project surface and should not be treated as project-wide Enosys coverage without mapping the non-Ethereum product contracts.",
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 1,
-    "total_contracts_indexed": 5,
-    "live_contracts": 3,
-    "inactive_contracts": 2,
+    "product_family_count": 2,
+    "total_contracts_indexed": 4,
+    "live_contracts": 4,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 1,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -89,9 +84,9 @@
       "deployment_unit_proxy_count": null,
       "name": "StandardToken",
       "role": "token",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Enosys Bridge",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -114,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2018-04-06 22:52:41+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -124,9 +123,9 @@
       "deployment_unit_proxy_count": null,
       "name": "WrapDepositRedeem",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Enosys Bridge",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -141,7 +140,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -152,32 +151,169 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb3902647015c17fc3c2f5ca5f5cb68bbf2d9b1e2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-21285"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-07-28 12:57:47+03",
+      "deploy_coverage_basis": "code_matched"
     }
   ],
-  "audits": [],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "audits": [
+    {
+      "audit_id": 21284,
+      "audit_key": "audit-21284",
+      "report_name": "dedaub.com/audits/flare-finance/enosys-october-20-2025",
+      "report_url": "https://dedaub.com/audits/flare-finance/enosys-october-20-2025",
+      "auditor": "Dedaub",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 21285,
+      "audit_key": "audit-21285",
+      "report_name": "watchpug_audit.pdf",
+      "report_url": "https://github.com/flrfinance/bridge-contracts/raw/main/watchpug_audit.pdf",
+      "auditor": "WatchPug",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Multisig",
+        "Wrap",
+        "WrapDepositRedeem",
+        "WrapDepositRedeemCustodian"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 21285,
+          "report_url": "https://github.com/flrfinance/bridge-contracts/raw/main/watchpug_audit.pdf"
+        },
+        {
+          "audit_id": 24089,
+          "report_url": "https://github.com/flrfinance/bridge-contracts/blob/main/watchpug_audit.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 24091,
+      "audit_key": "audit-24091",
+      "report_name": "Manual audit seed",
+      "report_url": "https://dedaub.com/audits/flare-finance",
+      "auditor": "Dedaub",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "WatchPug",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 50,
+      "latest_audit": "2023-05"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4a220e6096b25eadb88358cb44068a3248254675",
+      "name": "StandardToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 2,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 2
+    "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 6
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 21284,
+        "report_name": "dedaub.com/audits/flare-finance/enosys-october-20-2025"
+      },
+      {
+        "audit_id": 24091,
+        "report_name": "Manual audit seed"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

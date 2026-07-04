@@ -4,14 +4,14 @@
 
 - Project: Lorenzo Protocol (`lorenzo-protocol`)
 - Website: [https://www.lorenzo-protocol.xyz](https://www.lorenzo-protocol.xyz)
-- Lifecycle: active (Tier 0, 37.3% below peak)
-- Generated: 2026-06-21T18:50:44.023Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:30.209Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16da
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $540,549,516.00
-- On-chain TVL (included contracts): $131.88
-- TVL by chain: Ethereum $131.88
+- DeFi Llama TVL: $516,747,562.00
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
@@ -26,23 +26,26 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 - Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 1/1 live.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $131.88
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-04 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -59,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| sUSD1PlusVault | core_logic | ethereum | unit-43652 | [`0x8f18f2...151972`](./contracts/ethereum-1/0x8f18f2c97d2f5ec0e1d5b91c1d2ce245a9151972/) | ⚠️ Unaudited |
+| sUSD1PlusVault | core_logic | ethereum | n/a | [`0x8f18f2...151972`](./contracts/ethereum-1/0x8f18f2c97d2f5ec0e1d5b91c1d2ce245a9151972/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -89,15 +92,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0x8f18f2...151972`](./contracts/ethereum-1/0x8f18f2c97d2f5ec0e1d5b91c1d2ce245a9151972/) | sUSD1PlusVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
-| standard_library | 1 |
+| standard_library | 0 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

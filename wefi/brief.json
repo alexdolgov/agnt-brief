@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "wefi",
-  "generated_at": "2026-06-21T11:40:11.042Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "unknown",
-  "lifecycle_signal": {
-    "slug": "wefi",
-    "tier": 0,
-    "peak_tvl": 309404,
-    "peak_date": "2025-02-09T00:00:00.000Z",
-    "tvl_30d_ago": 60108,
-    "tvl_90d_ago": 58577,
-    "tvl_current": 53679,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 86194,
-    "change_30d_pct": -10.6957476542224,
-    "change_90d_pct": -8.361643648530993,
-    "days_since_peak": 497,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 82.65083838605835
-  },
+  "generated_at": "2026-07-04T14:54:10.197Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-4c3e",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 2,
     "total_addresses": 2,
@@ -34,9 +18,11 @@
     "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 3,
+    "direct_audits": 3,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 292376.85244,
-    "tvl_usd": 292376.85244,
+    "dl_tvl_usd": 499369.28160999995,
+    "tvl_usd": 499369.28160999995,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,21 +39,30 @@
       "aging": 0,
       "stale": 2,
       "unknown": 1
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
     "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
     "product_family_count": 1,
-    "total_contracts_indexed": 2,
-    "live_contracts": 2,
-    "inactive_contracts": 0,
+    "total_contracts_indexed": 3,
+    "live_contracts": 1,
+    "inactive_contracts": 1,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 1,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 1,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -89,7 +84,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -114,7 +109,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-22 13:41:08+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 137,
@@ -126,7 +125,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "wefi",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -149,7 +148,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-05-08 19:09:10+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -166,6 +169,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -187,28 +193,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 14124,
-          "report_url": "https://github.com/Quillhash/QuillAudit_Reports/blob/master/Paxo%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf"
-        },
-        {
-          "audit_id": 14126,
-          "report_url": "https://github.com/Quillhash/QuillAudit_smart_contract_audit_Reports/blob/master/Paxo%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
       "audit_id": 14125,
       "audit_key": "audit-14125",
-      "report_name": "**Peckshield Audit Report**",
+      "report_name": "docs.google.com/document/d/1uNrOZqCMzTxA_BM6PxMxugvjDgTOFCFL966bim28zS0/edit",
       "report_url": "https://docs.google.com/document/d/1uNrOZqCMzTxA_BM6PxMxugvjDgTOFCFL966bim28zS0/edit?usp=sharing",
       "auditor": "PeckShield",
       "audit_type": "audit",
@@ -218,6 +217,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -241,10 +243,10 @@
     }
   ],
   "origin_summary": {
-    "native": 2,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -262,7 +264,7 @@
       },
       {
         "audit_id": 14125,
-        "report_name": "**Peckshield Audit Report**"
+        "report_name": "docs.google.com/document/d/1uNrOZqCMzTxA_BM6PxMxugvjDgTOFCFL966bim28zS0/edit"
       }
     ],
     "inherited_remapped_matches": []

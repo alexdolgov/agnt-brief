@@ -4,45 +4,47 @@
 
 - Project: Neemo Finance (`neemo-finance`)
 - Website: [https://neemo.finance/](https://neemo.finance/)
-- Lifecycle: active (Tier 0, 74.5% below peak)
-- Generated: 2026-06-17T07:00:52.474Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:38.611Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: ethereum
-- Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $1,118,880.57
+- Contract surface: 14 unique implementations (15 raw deployments)
+- DeFi Llama TVL: $859,815.39
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Neemo Finance is an Astar/Soneium-focused liquid staking and restaking protocol for ASTR and ETH. Users receive liquid derivative tokens such as nsASTR and nrETH while participating in staking/restaking strategies. Current public TVL attribution should be treated as Astar/Soneium-focused rather than Ethereum-mainnet-primary unless supported by matching chain TVL and deployed contracts.
+Liquid Restaking. Structurally: 0 project-authored contract(s) across 1 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+
+### Architecture
+
+The protocol forms a single structural family (Proxies) of 1 contract(s).
 
 ## Contract Surface Quality
 
-- Indexed contracts: 15; live-surface contracts included: 1 (1 live, 0 unknown).
-- Excluded by liveness: 12 inactive, 2 singleton, 0 uninitialized.
-- Deployment units: 1/2 live.
+- Indexed contracts: 15; live-surface contracts included: 15 (2 live, 13 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 2 of 14 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/2
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
-- Audits discovered: 1
+- Unverified implementations: 12
+- Unique implementations: 14
+- Raw deployments: 15
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-03 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 1 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -55,11 +57,12 @@ Neemo Finance is an Astar/Soneium-focused liquid staking and restaking protocol 
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | proxy | ethereum | unit-31926 | [`0x54cd23...c13525`](./contracts/ethereum-1/0x54cd23460df45559fd5feeaada7ba25f89c13525/) | ⚠️ Unaudited |
+| ERC1967Proxy | proxy | ethereum | n/a | [`0x54cd23...c13525`](./contracts/ethereum-1/0x54cd23460df45559fd5feeaada7ba25f89c13525/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x653415...ae2bdf`](./contracts/ethereum-1/0x653415bc15ec3bca10815e09fcc5fe0a5bae2bdf/); ethereum `0x85031e...16559c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -73,17 +76,30 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (12)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x02c5b1...da785a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0b43ae...64d807` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x131ae8...210f4a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5e6d79...b19342` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6dcdd4...ba141d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x873059...b4ef63` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xaa75e4...6f364d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc67476...b44337` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xcfa66f...d0cec2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf13790...64dfe1` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf18229...9d9418` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xfb01af...fea0d3` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://hacken.io/audits/neemo-finance) | Hacken | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
+| [hacken.io/audits/neemo-finance](https://hacken.io/audits/neemo-finance) | Hacken | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -97,8 +113,8 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 0 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 0 |
+| standard_library | 2 |
+| needs_review | 12 |
 
 ## Scope Matching Notes
 
@@ -111,6 +127,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [3061] DL audit link
+- [3061] hacken.io/audits/neemo-finance
 
 Fork inheritance lineage and inherited audits are included when available.

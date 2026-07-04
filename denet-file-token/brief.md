@@ -1,57 +1,57 @@
 # Agentic Audit Brief: DeNet File Token
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: DeNet File Token (`denet-file-token`)
 - Website: [https://denet.pro](https://denet.pro)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-19T11:04:59.279Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-cc10
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:10.977Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-1cbb
 - Chains: polygon
-- Contract surface: 9 unique implementations (9 raw deployments)
+- Contract surface: 28 unique implementations (28 raw deployments)
 - DeFi Llama TVL: $0.00
-- On-chain TVL (included contracts): $2,478,040.00
-- TVL by chain: Polygon $2,478,040.00
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-DeNet File Token is a decentralized storage protocol that tokenizes file storage access. Users can store and retrieve files using a native token, which represents storage capacity and access rights.
+Services. Structurally: 16 project-authored contract(s) across 1 chain(s); 4 ERC20 tokens, 1 ERC721 NFT; built on openzeppelin.
 
 ### Architecture
 
-The DeNetFileToken is the core token contract, while the two unnamed contracts likely serve as supporting infrastructure such as storage management or access control, all deployed by the same deployer cluster.
+The protocol comprises 3 functional families. Its contracts share 9 common project-authored base contract(s) (posadmin, stringnumbersconstant, erc20). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 50; live-surface contracts included: 9 (9 live, 0 unknown).
-- Excluded by liveness: 41 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 50; live-surface contracts included: 28 (7 live, 21 unknown).
+- Excluded by liveness: 22 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 10; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/6 (16.7%)
-- Verified + Unaudited implementations: 5
+- Coverage of deployed-live implementations: 1/7 (14.3%)
+- Deployed-live implementations: 7 of 28 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/7
+- Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
-- Unverified implementations: 3
-- Unique implementations: 9
-- Raw deployments: 9
-- Audits discovered: 1
+- Unverified implementations: 21
+- Unique implementations: 28
+- Raw deployments: 28
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-02 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 1 | 16.7% | 2023-02 |
+| unknown | Tier 2 | 1 | 14.3% | 2023-02 |
 
 ## Contract Surface
 
@@ -61,11 +61,12 @@ The DeNetFileToken is the core token contract, while the two unnamed contracts l
 |---|---|---|---|---|---|
 | DeNetFileToken | token | polygon | n/a | [`0x081ec4...a681dc`](./contracts/polygon-137/0x081ec4c0e30159c8259bad8f4887f83010a681dc/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | DeNetNodeNFT | token | polygon | n/a | [`0x9e8e13...cf65c1`](./contracts/polygon-137/0x9e8e137dcfd05aec8208d379c5f5792b7acf65c1/) | ⚠️ Unaudited |
+| ERC20Vesting | unknown | polygon | n/a | [`0xa71c51...8baba8`](./contracts/polygon-137/0xa71c51c1a1f438e13c72e953907dfd57758baba8/) | ⚠️ Unaudited |
 | Payments | unknown | polygon | n/a | [`0xe84dfa...31d6d3`](./contracts/polygon-137/0xe84dfa1a440dab5a5945f7774b22baf2b431d6d3/) | ⚠️ Unaudited |
 | ProofOfStorage | unknown | polygon | n/a | [`0x9f09ed...236180`](./contracts/polygon-137/0x9f09ed9968ce5d45bf918492e7cd5faaf4236180/) | ⚠️ Unaudited |
 | StakerV2 | core_logic | polygon | n/a | [`0x0f8727...840856`](./contracts/polygon-137/0x0f872713510626ecafa51b8fb4c6c5d969840856/) | ⚠️ Unaudited |
@@ -83,21 +84,39 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (3)
+### ❓ Unverified (21)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| UnnamedContract | unknown | polygon | n/a | `0x1234b6...dd2496` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | n/a | `0x1a9b54...e5d2d0` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x1c3b52...b4d3bd` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x1dcfa2...520f33` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x31b806...07c07d` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x36ba31...a84a64` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x4390a5...1bb693` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x4c6da8...94942c` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | n/a | `0x4d37d3...4c4118` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x52f0e1...a7bc26` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x6169e2...7a268c` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | n/a | `0x6261e1...cedda1` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x6ab28d...0946ba` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x92d3ba...accdbb` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x99e1c9...cc50f2` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xb6b309...4bc556` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xc719da...b8d48d` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xcb19be...b7180d` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xdc4cc2...a506cd` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xf2b243...95ec07` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xf3a493...02f847` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DeNet Security Analysis by Pessimistic.pdf](https://github.com/pessimistic-io/audits/blob/a2acb36c7f4b2a61c579a29133bb2eab7e9ad894/DeNet%20Security%20Analysis%20by%20Pessimistic.pdf) | unknown | Audit | 2023-02 | stale | Direct | contract_name | 1 | high |
+| [DeNet Security Analysis by Pessimistic.pdf](https://github.com/pessimistic-io/audits/blob/a2acb36c7f4b2a61c579a29133bb2eab7e9ad894/DeNet%20Security%20Analysis%20by%20Pessimistic.pdf) | unknown | Audit | 2023-02 | stale | Direct | contract_name | 1 | n/a |
 
 ## Coverage Gaps
 
@@ -106,18 +125,20 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | polygon | [`0x9e8e13...cf65c1`](./contracts/polygon-137/0x9e8e137dcfd05aec8208d379c5f5792b7acf65c1/) | DeNetNodeNFT | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xa71c51...8baba8`](./contracts/polygon-137/0xa71c51c1a1f438e13c72e953907dfd57758baba8/) | ERC20Vesting | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0xe84dfa...31d6d3`](./contracts/polygon-137/0xe84dfa1a440dab5a5945f7774b22baf2b431d6d3/) | Payments | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x9f09ed...236180`](./contracts/polygon-137/0x9f09ed9968ce5d45bf918492e7cd5faaf4236180/) | ProofOfStorage | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x0f8727...840856`](./contracts/polygon-137/0x0f872713510626ecafa51b8fb4c6c5d969840856/) | StakerV2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x05ae1d...2806fa`](./contracts/polygon-137/0x05ae1dc5b4a140eb4218073af432a7c32c2806fa/) | SubVesting | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 8 |
+| native | 7 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 21 |
 
 ## Scope Matching Notes
 
@@ -125,7 +146,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=2
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=1
 
 Fork inheritance lineage and inherited audits are included when available.

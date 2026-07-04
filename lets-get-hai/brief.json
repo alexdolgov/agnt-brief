@@ -1,47 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "lets-get-hai",
-  "generated_at": "2026-06-19T06:14:26.367Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "lets-get-hai",
-    "tier": 0,
-    "peak_tvl": 5762547,
-    "peak_date": "2025-08-14T00:00:00.000Z",
-    "tvl_30d_ago": 1311832,
-    "tvl_90d_ago": 1040027,
-    "tvl_current": 1197637,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 3332637,
-    "change_30d_pct": -8.705001859994267,
-    "change_90d_pct": 15.15441426039901,
-    "days_since_peak": 284,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 79.21688100765165
-  },
+  "generated_at": "2026-07-04T14:53:29.942Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-1cbb",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 24,
-    "total_addresses": 33,
-    "unique_implementations": 24,
-    "total_deployments": 33,
+    "total_contracts": 25,
+    "total_addresses": 35,
+    "unique_implementations": 25,
+    "total_deployments": 35,
     "audited_contracts": 16,
-    "unaudited_contracts": 7,
+    "unaudited_contracts": 8,
     "contracts_verified_audited": 16,
-    "contracts_verified_unaudited": 7,
+    "contracts_verified_unaudited": 8,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 69.6,
     "total_audits": 5,
+    "direct_audits": 5,
+    "inherited_audits": 0,
     "scoreable_audits": 4,
-    "dl_tvl_usd": 985111.58517,
-    "tvl_usd": 13480968.69350916,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "optimism": 13480968.69
-    },
-    "asd_usd": 12603575.03227459,
+    "dl_tvl_usd": 969423.69921,
+    "tvl_usd": 969423.69921,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://www.letsgethai.com",
     "chains": [
       "optimism"
@@ -55,28 +39,35 @@
       "aging": 1,
       "stale": 1,
       "unknown": 1
+    },
+    "live_implementations": 24,
+    "live_verified_implementations": 23,
+    "live_audited_implementations": 16,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 16
     }
   },
   "topography": {
-    "project_purpose": "Lets Get HAI is a collateralized debt position protocol on Optimism centered on the HAI/SystemCoin stablecoin. Its in-scope protocol surface is the CDP system, including SAFEEngine, CoinJoin and collateral join components, OracleRelayer, TaxCollector, AccountingEngine, LiquidationEngine, auction and settlement-related contracts, and the system coin. External assets, third-party liquidity pools, oracle feeds, bridges, and integrations such as WETH, OP, Uniswap or Balancer pools, Pyth feeds, and other upstream infrastructure should be treated as dependencies rather than native product families or project-owned TVL.",
-    "relationship_narrative": "The Lets Get HAI family relies on the CONTRACTS family for governance and token distribution, while the EXTERNAL CONTRACTS family provides liquidity pools for the system coin. The ProtocolToken and SystemCoin are central assets that flow between these families, with the CollateralJoinFactory bridging collateral into the CDP system.",
-    "product_family_count": 3,
+    "project_purpose": "CDP. Structurally: 49 project-authored contract(s) across 1 chain(s); 7 ERC20 tokens, 1 Chainlink feed; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 7 functional families. Its contracts share 8 common project-authored base contract(s) (authorizable, modifiable, disableable). Dominant framework: openzeppelin.",
+    "product_family_count": 7,
     "total_contracts_indexed": 63,
     "live_contracts": 33,
     "inactive_contracts": 29,
-    "singleton_contracts": 1,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 1,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 25,
-    "unverified_dependencies": 1,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 24,
+    "unique_implementations": 25,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -85,159 +76,6 @@
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "ProxyERC20",
-      "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "EXTERNAL CONTRACTS",
-      "tvl_usd": 12598978.982897421,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ProxyERC20",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 12598978.982897421,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0xf467c7d5a4a9c4687ffc7986ac6ad5a4c81e1404",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "ProtocolToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Lets Get HAI",
-      "tvl_usd": 877393.6612345689,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ProtocolToken",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xf467c7d5a4a9c4687ffc7986ac6ad5a4c81e1404",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 877393.6612345689,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-3170"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0xbded651c03e2bc332aa49c1ffca391eaa3ea6b86",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "Pool",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "balancer",
-      "product_line": "EXTERNAL CONTRACTS",
-      "tvl_usd": 4303.0062432916175,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Pool",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xbded651c03e2bc332aa49c1ffca391eaa3ea6b86",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 3287.2706342732704,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xf4638dc488f9c826dc40250515592e678e447238",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1015.7356090183471,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 10,
-      "chain_name": "optimism",
-      "address": "0x4200000000000000000000000000000000000042",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "GovernanceToken",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "optimism",
-      "product_line": "CONTRACTS",
-      "tvl_usd": 293.04313387654537,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "GovernanceToken",
-      "deployments": [
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0x4200000000000000000000000000000000000042",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 293.04313387654537,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 10,
       "chain_name": "optimism",
@@ -274,7 +112,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-12 06:37:49+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -311,7 +153,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-12 06:37:51+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -349,7 +195,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-12 06:37:49+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x4200000000000000000000000000000000000042",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "GovernanceToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "GovernanceToken",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x4200000000000000000000000000000000000042",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-26 16:30:36+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 10,
@@ -384,7 +273,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-12 06:37:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 10,
@@ -422,7 +315,61 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-12 06:37:51+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xbdf4a4cc124d9a83a5774574fcbe45dc5d1f1152",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "HypERC20",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xfdf059e1c104a7ca3191b916e6f513c160aba0b1",
+      "impl_name": "HypERC20",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xbdf4a4cc124d9a83a5774574fcbe45dc5d1f1152",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xfdf059e1c104a7ca3191b916e6f513c160aba0b1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-14 08:45:31+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 10,
@@ -460,7 +407,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-12 06:37:49+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -497,7 +448,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-12 06:37:51+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -535,7 +490,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-12 06:37:47+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -545,7 +504,7 @@
       "deployment_unit_proxy_count": null,
       "name": "PessimisticVeloSingleOracle",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -614,7 +573,102 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-10 01:37:21+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xbded651c03e2bc332aa49c1ffca391eaa3ea6b86",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Pool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Pool",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xbded651c03e2bc332aa49c1ffca391eaa3ea6b86",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xf4638dc488f9c826dc40250515592e678e447238",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-03-08 00:10:51+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xf467c7d5a4a9c4687ffc7986ac6ad5a4c81e1404",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ProtocolToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProtocolToken",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xf467c7d5a4a9c4687ffc7986ac6ad5a4c81e1404",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3170"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-12 06:37:47+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -625,7 +679,7 @@
       "name": "ProxyAdmin",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_provider": "OpenZeppelin",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -649,7 +703,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-12-14 08:44:47+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ProxyERC20",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyERC20",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 10,
@@ -686,7 +783,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-06 17:49:27+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -724,7 +825,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-12 06:37:47+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -762,7 +867,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -773,7 +878,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -783,7 +888,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-07 22:52:01+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -821,7 +930,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -832,7 +941,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -842,7 +951,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-07 22:52:01+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -854,7 +967,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "EXTERNAL CONTRACTS",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -880,7 +993,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-12 06:37:47+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -917,7 +1034,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-12 06:37:49+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -927,7 +1048,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -952,7 +1073,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-14 08:44:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 10,
@@ -962,9 +1087,9 @@
       "deployment_unit_proxy_count": null,
       "name": "WETH9",
       "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "weth",
-      "product_line": "CONTRACTS",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -987,7 +1112,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 10,
@@ -1024,7 +1153,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-01-23 00:51:45+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -1061,7 +1194,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-27 02:03:25+03",
+      "deploy_coverage_basis": "match_unverified"
     }
   ],
   "audits": [
@@ -1078,6 +1215,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -1099,14 +1239,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "WrappedTokenV2"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1122,28 +1263,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AbstractVeloVaultRelayer",
-        "Assertions",
-        "Authorizable",
-        "BeefyVeloVaultRelayer",
-        "Encoding",
-        "FactoryChild",
-        "Modifiable",
-        "RewardDistributor",
-        "RewardPool",
-        "RewardPoolChild",
-        "RewardPoolFactory",
-        "StakingManager",
-        "StakingToken",
-        "WrappedToken",
-        "YearnVeloVaultRelayer"
-      ],
-      "matched_contracts": 8,
+      "extracted_names": [],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1159,32 +1287,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AccountingEngine",
-        "CoinJoin",
-        "DelayedOracle",
-        "ETHJoin",
-        "Encoding",
-        "HaiProxy",
-        "HaiProxyFactory",
-        "HaiProxyRegistry",
-        "LiquidationEngine",
-        "OracleRelayer",
-        "Ownable",
-        "PidRateSetter",
-        "PostSettlementSurplusAuctionHouse",
-        "SAFEEngine",
-        "SafeEngine",
-        "StabilityFeeTreasury",
-        "SystemCoin",
-        "TokenDistributor",
-        "UniV3Relayer"
-      ],
+      "extracted_names": [],
       "matched_contracts": 7,
       "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1200,144 +1311,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AccountingEngine",
-        "AccountingJob",
-        "Assertions",
-        "Authorizable",
-        "AuthorizableChild",
-        "BasicActions",
-        "ChainlinkRelayer",
-        "ChainlinkRelayerChild",
-        "ChainlinkRelayerFactory",
-        "CoinJoin",
-        "CollateralAuctionHouse",
-        "CollateralAuctionHouseChild",
-        "CollateralAuctionHouseFactory",
-        "CollateralBidActions",
-        "CollateralJoin",
-        "CollateralJoinChild",
-        "CollateralJoinDelegatableChild",
-        "CollateralJoinFactory",
-        "CommonActions",
-        "DebtAuctionHouse",
-        "DebtBidActions",
-        "DelayedOracle",
-        "DelayedOracleChild",
-        "DelayedOracleFactory",
-        "DenominatedOracle",
-        "DenominatedOracleChild",
-        "DenominatedOracleFactory",
-        "DeviatedOracle",
-        "Disableable",
-        "DisableableChild",
-        "ETHJoin",
-        "Encoding",
-        "FactoryChild",
-        "GlobalSettlement",
-        "GlobalSettlementActions",
-        "HaiProxy",
-        "HaiProxyFactory",
-        "HaiProxyRegistry",
-        "HaiSafeManager",
-        "HardcodedOracle",
-        "IAccountingEngine",
-        "IAccountingJob",
-        "IAuthorizable",
-        "IAuthorizableChild",
-        "IBaseOracle",
-        "IBasicActions",
-        "IChainlinkOracle",
-        "IChainlinkRelayer",
-        "IChainlinkRelayerChild",
-        "IChainlinkRelayerFactory",
-        "ICoinJoin",
-        "ICollateralAuctionHouse",
-        "ICollateralAuctionHouseChild",
-        "ICollateralAuctionHouseFactory",
-        "ICollateralBidActions",
-        "ICollateralJoin",
-        "ICollateralJoinChild",
-        "ICollateralJoinDelegatableChild",
-        "ICollateralJoinFactory",
-        "ICommonActions",
-        "ICommonSurplusAuctionHouse",
-        "IDebtAuctionHouse",
-        "IDebtBidActions",
-        "IDelayedOracle",
-        "IDelayedOracleChild",
-        "IDelayedOracleFactory",
-        "IDenominatedOracle",
-        "IDenominatedOracleChild",
-        "IDenominatedOracleFactory",
-        "IDisableable",
-        "IDisableableChild",
-        "IETHJoin",
-        "IFactoryChild",
-        "IGlobalSettlement",
-        "IGlobalSettlementActions",
-        "IHaiProxy",
-        "IHaiProxyFactory",
-        "IHaiProxyRegistry",
-        "IHaiSafeManager",
-        "IJob",
-        "ILiquidationEngine",
-        "ILiquidationJob",
-        "IModifiable",
-        "IOracleJob",
-        "IOracleRelayer",
-        "IOwnable",
-        "IPIDController",
-        "IPIDRateSetter",
-        "IPostSettlementSurplusAuctionHouse",
-        "IProtocolToken",
-        "IRewardedActions",
-        "ISAFEEngine",
-        "ISAFESaviour",
-        "ISettlementSurplusAuctioneer",
-        "IStabilityFeeTreasury",
-        "ISurplusAuctionHouse",
-        "ISurplusBidActions",
-        "ISystemCoin",
-        "ITaxCollector",
-        "ITokenDistributor",
-        "IUniV3Relayer",
-        "IUniV3RelayerChild",
-        "IUniV3RelayerFactory",
-        "IWeth",
-        "Job",
-        "LiquidationEngine",
-        "LiquidationJob",
-        "Math",
-        "MintableERC20",
-        "Modifiable",
-        "OracleJob",
-        "OracleRelayer",
-        "Ownable",
-        "PIDController",
-        "PIDRateSetter",
-        "PostSettlementSurplusAuctionHouse",
-        "PostSettlementSurplusBidActions",
-        "ProtocolToken",
-        "RewardedActions",
-        "SAFEEngine",
-        "SAFEHandler",
-        "SettlementSurplusAuctioneer",
-        "StabilityFeeTreasury",
-        "SurplusAuctionHouse",
-        "SurplusBidActions",
-        "SystemCoin",
-        "TaxCollector",
-        "TokenDistributor",
-        "UniV3Relayer",
-        "UniV3RelayerChild",
-        "UniV3RelayerFactory"
-      ],
+      "extracted_names": [],
       "matched_contracts": 11,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -1346,32 +1328,42 @@
       "auditor": "Solidified",
       "tier": 2,
       "contracts_covered": 11,
-      "coverage_pct": 47.8,
+      "coverage_pct": 45.8,
       "latest_audit": "2023-11"
     },
     {
       "auditor": "dMakers",
       "tier": 2,
       "contracts_covered": 7,
-      "coverage_pct": 30.4,
+      "coverage_pct": 29.2,
       "latest_audit": null
     },
     {
       "auditor": "Ackee Blockchain",
       "tier": 2,
       "contracts_covered": 4,
-      "coverage_pct": 17.4,
+      "coverage_pct": 16.7,
       "latest_audit": "2025-04"
     },
     {
       "auditor": "Electisec",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 4.3,
+      "coverage_pct": 4.2,
       "latest_audit": "2025-08"
     }
   ],
   "coverage_gaps": [
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x4200000000000000000000000000000000000042",
+      "name": "GovernanceToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 10,
       "chain_name": "optimism",
@@ -1381,22 +1373,69 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xbdf4a4cc124d9a83a5774574fcbe45dc5d1f1152",
+      "name": "HypERC20",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x2d442a71e7dc14068168a7e0680abcc043e26585",
+      "name": "PessimisticVeloSingleOracle",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0xbded651c03e2bc332aa49c1ffca391eaa3ea6b86",
+      "name": "Pool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9",
+      "name": "ProxyERC20",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x4200000000000000000000000000000000000006",
+      "name": "WETH9",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 18,
-    "upstream": 3,
-    "standard_library": 2,
+    "native": 23,
+    "upstream": 0,
+    "standard_library": 1,
     "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 56
+      "contract_name": 23
     },
-    "extraction_confidence_counts": {
-      "high": 3,
-      "medium": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [

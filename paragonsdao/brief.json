@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "paragonsdao",
-  "generated_at": "2026-06-17T07:00:50.397Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "paragonsdao",
-    "tier": 0,
-    "peak_tvl": 0,
-    "peak_date": "2025-01-14T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 0,
-    "tvl_current": 0,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 0,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "days_since_peak": 494,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 0
-  },
+  "generated_at": "2026-07-04T14:53:42.948Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d094",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 4,
     "total_addresses": 4,
@@ -32,11 +16,13 @@
     "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 25,
+    "coverage_pct": 33.3,
     "total_audits": 8,
+    "direct_audits": 8,
+    "inherited_audits": 0,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 6503573.45602,
-    "tvl_usd": 6503573.45602,
+    "dl_tvl_usd": 5034465.61356,
+    "tvl_usd": 5034465.61356,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -48,27 +34,36 @@
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2024-07",
-    "audit_freshness": "aging",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 3,
-      "stale": 1,
+      "aging": 0,
+      "stale": 4,
       "unknown": 4
+    },
+    "live_implementations": 4,
+    "live_verified_implementations": 3,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 1
     }
   },
   "topography": {
-    "project_purpose": "ParagonsDAO is a web3 gaming community/guild with a Base PDT staking/farm component, rather than solely a yield farming protocol.",
-    "relationship_narrative": "The PDTOFT contract likely serves as the underlying token or a wrapper, while StakedPDT is the staking vault that issues a receipt token. Both contracts are deployed by the same address, indicating a single integrated system.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 6,
-    "live_contracts": 2,
-    "inactive_contracts": 2,
+    "project_purpose": "Farm. Structurally: 5 project-authored contract(s) across 2 chain(s); 2 ERC20 tokens; role-gated via AccessControl; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Contracts are linked by 1 cross-contract reference(s). Dominant framework: openzeppelin.",
+    "product_family_count": 3,
+    "total_contracts_indexed": 5,
+    "live_contracts": 4,
+    "inactive_contracts": 1,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 2,
-    "deployment_units": 2,
-    "live_deployment_units": 1,
-    "dependencies_extracted": 2,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -86,12 +81,12 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x11117fa34c8f660b9b804b85ebe891d0c05bf9c9",
-      "deployment_unit": "unit-31079",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "GnosisSafeL2",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
+      "origin_provider": "Gnosis Safe",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -102,8 +97,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x11117fa34c8f660b9b804b85ebe891d0c05bf9c9",
-          "deployment_unit": "unit-31079",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -115,7 +110,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2024-03-25 19:15:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -127,7 +126,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "ParagonsDAO",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -150,7 +149,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-24 17:49:09+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -185,7 +188,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-09-29 11:40:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -197,7 +204,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "ParagonsDAO",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -223,7 +230,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-08-22 05:12:41+03",
+      "deploy_coverage_basis": "match_unverified"
     }
   ],
   "audits": [
@@ -234,53 +245,51 @@
       "report_url": "https://github.com/Zellic/publications/blob/master/PDT%20Staking%20V2%20-%20Zellic%20Audit%20Report.pdf",
       "auditor": "Zellic",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "IForkedPDTStakingV2",
-        "IStakedPDT",
-        "StakedPDT"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 2316,
       "audit_key": "audit-2316",
-      "report_name": "View Report",
+      "report_name": "ParagonsDAO-Smart-Contract-Audit-Report-Final-Report-V1.pdf",
       "report_url": "https://hashlock.com/wp-content/uploads/2024/08/ParagonsDAO-Smart-Contract-Audit-Report-Final-Report-V1.pdf",
       "auditor": "Hashlock",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "IForkedPDTStakingV2.sol",
-        "IStakedPDT.sol",
-        "StakedPDT.sol"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 2317,
       "audit_key": "audit-2317",
-      "report_name": "Our Bridge contract was audited by Hashlock. Review the audit [here]().&#x20;",
+      "report_name": "drive.google.com/file/d/1-SgDmCutMhxyTuZDwOOLPn4b8Fb4YyQ5/view",
       "report_url": "https://drive.google.com/file/d/1-SgDmCutMhxyTuZDwOOLPn4b8Fb4YyQ5/view",
       "auditor": "Hashlock",
       "audit_type": "audit",
@@ -290,6 +299,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -311,6 +323,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -322,7 +337,7 @@
     {
       "audit_id": 2319,
       "audit_key": "audit-2319",
-      "report_name": "{% embed url=\"<>\" %}",
+      "report_name": "drive.google.com/file/d/1FZUl1eqk1dgyMyHfmzYBY90-C6MkRh--/view",
       "report_url": "https://drive.google.com/file/d/1FZUl1eqk1dgyMyHfmzYBY90-C6MkRh--/view?usp=sharing",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -332,6 +347,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -343,7 +361,7 @@
     {
       "audit_id": 2320,
       "audit_key": "audit-2320",
-      "report_name": "docdro.id/WJT7qMD",
+      "report_name": "www.docdroid.net/WJT7qMD/6-month-report-jan-jun-2023-pdf",
       "report_url": "https://www.docdroid.net/WJT7qMD/6-month-report-jan-jun-2023-pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -353,6 +371,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -364,7 +385,7 @@
     {
       "audit_id": 2321,
       "audit_key": "audit-2321",
-      "report_name": "The Sleeves smart contract was audited by Quantstamp. You can review the audit[ here]().",
+      "report_name": "index.html",
       "report_url": "https://certificate.quantstamp.com/full/paragons-dao-sleeves/faf66f29-b639-4afe-96c2-0bf88597ea66/index.html",
       "auditor": "Quantstamp",
       "audit_type": "audit",
@@ -374,6 +395,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -385,16 +409,19 @@
     {
       "audit_id": 14437,
       "audit_key": "audit-14437",
-      "report_name": "DL audit link",
+      "report_name": "hashlock.com/audits/paragonsdao",
       "report_url": "https://hashlock.com/audits/paragonsdao",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -450,17 +477,15 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 2
+      "contract_name": 2
     },
-    "extraction_confidence_counts": {
-      "high": 2
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 2317,
-        "report_name": "Our Bridge contract was audited by Hashlock. Review the audit [here]().&#x20;"
+        "report_name": "drive.google.com/file/d/1-SgDmCutMhxyTuZDwOOLPn4b8Fb4YyQ5/view"
       },
       {
         "audit_id": 2318,
@@ -468,19 +493,19 @@
       },
       {
         "audit_id": 2319,
-        "report_name": "{% embed url=\"<>\" %}"
+        "report_name": "drive.google.com/file/d/1FZUl1eqk1dgyMyHfmzYBY90-C6MkRh--/view"
       },
       {
         "audit_id": 2320,
-        "report_name": "docdro.id/WJT7qMD"
+        "report_name": "www.docdroid.net/WJT7qMD/6-month-report-jan-jun-2023-pdf"
       },
       {
         "audit_id": 2321,
-        "report_name": "The Sleeves smart contract was audited by Quantstamp. You can review the audit[ here]()."
+        "report_name": "index.html"
       },
       {
         "audit_id": 14437,
-        "report_name": "DL audit link"
+        "report_name": "hashlock.com/audits/paragonsdao"
       }
     ],
     "inherited_remapped_matches": []

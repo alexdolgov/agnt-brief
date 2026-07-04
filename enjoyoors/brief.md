@@ -1,27 +1,25 @@
 # Agentic Audit Brief: Enjoyoors
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 20.6% over 90 days
-
 ## Project Overview
 
 - Project: Enjoyoors (`enjoyoors`)
 - Website: [http://enjoyoors.xyz](http://enjoyoors.xyz)
-- Lifecycle: unknown (Tier 0, 78.3% below peak)
-- Generated: 2026-06-19T22:24:43.857Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:11.801Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-2d9c
 - Chains: ethereum
 - Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $11,256.96
-- On-chain TVL (included contracts): $5,427.91
-- TVL by chain: Ethereum $5,427.91
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Enjoyoors is a Collateralized Debt Position (CDP) protocol on Ethereum that allows users to deposit collateral and mint a stablecoin against it. The protocol manages vaults to maintain collateralization ratios and facilitate liquidations if needed.
+CDP. Structurally: 3 project-authored contract(s) across 1 chain(s); role-gated via AccessControl; built on openzeppelin.
 
 ### Architecture
 
-The protocol consists of a single product family with one core vault contract. No shared infrastructure or cross-family relationships are present.
+The protocol comprises 3 functional families. Contracts are linked by 1 cross-contract reference(s). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
@@ -29,23 +27,25 @@ The protocol consists of a single product family with one core vault contract. N
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 1; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 2/3 (66.7%)
+- Coverage of deployed-live implementations: 2/3 (66.7%)
+- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 2/3
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 3
 - Raw deployments: 3
-- Audits discovered: 3
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-03 (aging)
-- Staleness: 0 fresh, 3 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 3 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 2 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -91,8 +91,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Enjoyoors Smart Contract Audit Report - QuillAudits.pdf](https://github.com/Quillhash/QuillAudit_Reports/blob/master/Enjoyoors%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf) | unknown | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
-| [DL audit link](https://movebit.xyz/reports/Enjoyoors-Audit-Report.pdf) | unknown | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
-| [Enjoyoors EVM Vaults Security Audit Report.pdf](https://github.com/mixbytes/audits_public/blob/master/Enjoyoors/EVM%20Vaults/Enjoyoors%20EVM%20Vaults%20Security%20Audit%20Report.pdf) | yAudit | Audit | 2025-03 | aging | Direct | contract_name | 2 | high |
+| [Enjoyoors-Audit-Report.pdf](https://movebit.xyz/reports/Enjoyoors-Audit-Report.pdf) | unknown | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
+| [Enjoyoors EVM Vaults Security Audit Report.pdf](https://github.com/mixbytes/audits_public/blob/master/Enjoyoors/EVM%20Vaults/Enjoyoors%20EVM%20Vaults%20Security%20Audit%20Report.pdf) | yAudit | Audit | 2025-03 | aging | Direct | contract_name | 2 | n/a |
 
 ## Coverage Gaps
 
@@ -117,12 +117,12 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=2
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=2
 
 Zero-match audit list:
 
 - [13084] Enjoyoors Smart Contract Audit Report - QuillAudits.pdf
-- [13085] DL audit link
+- [13085] Enjoyoors-Audit-Report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

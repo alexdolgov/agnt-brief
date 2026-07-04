@@ -4,12 +4,12 @@
 
 - Project: OSL (`osl`)
 - Website: [https://www.osl.com/en](https://www.osl.com/en)
-- Lifecycle: active (Tier 0, 60% below peak)
-- Generated: 2026-06-17T18:56:29.569Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:39.172Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: scroll
 - Contract surface: 4 unique implementations (4 raw deployments)
-- DeFi Llama TVL: $92,558,443.35
+- DeFi Llama TVL: $19,582,590.59
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,7 +23,7 @@ All contracts belong to a single product family with no explicit sub-families or
 
 ## Contract Surface Quality
 
-- Indexed contracts: 4; live-surface contracts included: 4 (4 live, 0 unknown).
+- Indexed contracts: 4; live-surface contracts included: 4 (0 live, 4 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
@@ -31,17 +31,20 @@ All contracts belong to a single product family with no explicit sub-families or
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 4 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 4
 - Unique implementations: 4
 - Raw deployments: 4
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage

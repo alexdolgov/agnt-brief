@@ -1,17 +1,15 @@
 # Agentic Audit Brief: OpenLedger
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: OpenLedger (`openledger`)
 - Website: [https://www.openledger.xyz/](https://www.openledger.xyz/)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-21T08:15:06.434Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:39.073Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: bsc, ethereum
 - Contract surface: 2 unique implementations (8 raw deployments)
-- DeFi Llama TVL: $104,034.67
+- DeFi Llama TVL: $80,859.95
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -26,27 +24,29 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 ## Contract Surface Quality
 
-- Indexed contracts: 8; live-surface contracts included: 8 (8 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 15; live-surface contracts included: 8 (8 live, 0 unknown).
+- Excluded by liveness: 7 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 1; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
+- Coverage of deployed-live implementations: 0/2 (0.0%)
+- Deployed-live implementations: 2 of 2 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/2
 - Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 2
 - Raw deployments: 8
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-06 (aging)
-- Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 

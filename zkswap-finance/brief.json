@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "zkswap-finance",
-  "generated_at": "2026-06-19T06:15:21.168Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "zkswap-finance",
-    "tier": 0,
-    "peak_tvl": 15030737,
-    "peak_date": "2024-05-25T00:00:00.000Z",
-    "tvl_30d_ago": 1270059,
-    "tvl_90d_ago": 1168775,
-    "tvl_current": 1136561,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 2028833,
-    "change_30d_pct": -10.511165229331866,
-    "change_90d_pct": -2.7562191183076297,
-    "days_since_peak": 730,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 92.43842134953196
-  },
+  "generated_at": "2026-07-04T14:54:14.965Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d640",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 52,
-    "total_addresses": 73,
-    "unique_implementations": 52,
-    "total_deployments": 73,
+    "total_contracts": 55,
+    "total_addresses": 76,
+    "unique_implementations": 55,
+    "total_deployments": 76,
     "audited_contracts": 2,
     "unaudited_contracts": 9,
     "contracts_verified_audited": 2,
     "contracts_verified_unaudited": 9,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 41,
-    "coverage_pct": 18.2,
+    "contracts_unverified": 44,
+    "coverage_pct": 20,
     "total_audits": 8,
+    "direct_audits": 8,
+    "inherited_audits": 0,
     "scoreable_audits": 5,
-    "dl_tvl_usd": 991689,
-    "tvl_usd": 991689,
+    "dl_tvl_usd": 843085,
+    "tvl_usd": 843085,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -54,29 +40,35 @@
       "aging": 0,
       "stale": 8,
       "unknown": 0
+    },
+    "live_implementations": 11,
+    "live_verified_implementations": 10,
+    "live_audited_implementations": 2,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 2
     }
   },
   "topography": {
-    "project_purpose": "zkSwap Finance is a decentralized exchange (DEX) protocol on zkSync Era and Sonic, offering token swaps, liquidity provision, and yield farming. It includes multiple AMM versions (V2, V3, StableSwap), an aggregator, staking, and a swap-to-earn mechanism.",
-    "relationship_narrative": "The AMM families (V2, V3, StableSwap) form the core trading infrastructure, while the Aggregator routes trades across them. Farming and Staking contracts distribute rewards to liquidity providers and stakers, often interacting with the AMMs and the ZF token vesting contracts.",
-    "product_family_count": 10,
-    "total_contracts_indexed": 129,
-    "live_contracts": 70,
-    "inactive_contracts": 55,
-    "singleton_contracts": 1,
+    "project_purpose": "Dexs. Structurally: 30 project-authored contract(s) across 2 chain(s); 4 ERC20 tokens, 1 ERC721 NFT; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 5 functional families. Its contracts share 9 common project-authored base contract(s) (peripheryimmutablestate, oft, oftcore). Dominant framework: openzeppelin.",
+    "product_family_count": 5,
+    "total_contracts_indexed": 100,
+    "live_contracts": 31,
+    "inactive_contracts": 24,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 3,
-    "deployment_units": 1,
+    "unknown_contracts": 45,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 2,
-    "unverified_dependencies": 1,
-    "detected_codebases": [
-      "uniswap-v2",
-      "uniswap-v3"
-    ]
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 52,
+    "unique_implementations": 55,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -95,7 +87,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Aggregator &amp; Bridge",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -151,7 +143,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-06 14:17:25+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -186,7 +182,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-26 05:26:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -221,7 +221,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-05-26 13:37:21+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -232,8 +236,8 @@
       "name": "GnosisSafeProxy",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
-      "product_line": "Universal Router",
+      "origin_provider": "Gnosis Safe",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -267,7 +271,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-06-05 07:18:57+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -279,7 +287,7 @@
       "role": "governance",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "V3 AMM Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -313,7 +321,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-11 11:33:44+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -323,9 +335,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UniversalRouter",
       "role": "adapter",
-      "origin_kind": "upstream",
-      "origin_provider": "Uniswap",
-      "product_line": "Universal Router",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -348,7 +360,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-11 12:13:01+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -358,7 +374,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -383,7 +399,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-24 06:03:20+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -395,7 +415,7 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Zap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -418,7 +438,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-24 08:00:01+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -428,7 +452,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -453,7 +477,89 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-12 10:43:44+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x3ec4879991d51338d2a2d037f4dad439570cf971",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x3ec4879991d51338d2a2d037f4dad439570cf971",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-11 12:00:13+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x45728a3d03ff67cc0c8546f4290affb7c94f877a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x45728a3d03ff67cc0c8546f4290affb7c94f877a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-11 12:08:16+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -463,7 +569,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -488,7 +594,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-01 06:43:24+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -523,7 +633,50 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-17 12:03:31+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0xced35925a87990e3b06a63ff4dae82e159ceda27",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0xced35925a87990e3b06a63ff4dae82e159ceda27",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-11 12:06:16+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -558,7 +711,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-05 10:08:20+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -570,7 +727,7 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "V3 AMM Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -593,7 +750,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -603,9 +764,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Farming, Staking, S2E",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -628,7 +789,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-09 16:39:51+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -640,7 +805,7 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Universal Router",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -663,7 +828,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-10-30 12:52:40+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -673,9 +842,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "ZF Token Vesting Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -698,7 +867,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-04 10:38:31+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -733,7 +906,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -743,9 +920,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Aggregator &amp; Bridge",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -768,7 +945,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-18 06:37:10+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -778,9 +959,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "StableSwap Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -803,7 +984,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-11-06 04:57:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -813,9 +998,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "StableSwap Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -838,7 +1023,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-11-06 04:57:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -848,9 +1037,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "ZF Token Vesting Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -873,7 +1062,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 19:21:27+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -908,7 +1101,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -918,9 +1115,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
-      "product_line": "Sonic",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -943,7 +1140,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -953,9 +1154,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Aggregator &amp; Bridge",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -978,7 +1179,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-06 12:47:21+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -988,9 +1193,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Farming, Staking, S2E",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1013,7 +1218,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-10-18 10:55:51+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1023,9 +1232,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Farming, Staking, S2E",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1048,7 +1257,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-23 10:15:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1083,7 +1296,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1093,9 +1310,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "ZF Token Vesting Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1118,7 +1335,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 19:02:34+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1153,7 +1374,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1163,9 +1388,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "ZF Token Vesting Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1188,7 +1413,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-04 10:25:04+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1198,9 +1427,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "ZF Token Vesting Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1223,7 +1452,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 19:16:05+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1258,7 +1491,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1268,9 +1505,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Aggregator &amp; Bridge",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1293,7 +1530,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-05-07 11:12:53+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1305,7 +1546,7 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Sonic",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1328,7 +1569,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1340,7 +1585,7 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Zap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1363,7 +1608,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-24 07:55:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1373,9 +1622,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Farming, Staking, S2E",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1398,7 +1647,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-24 07:07:50+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1410,7 +1663,7 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Universal Router",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1433,7 +1686,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-11-18 06:36:33+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1443,9 +1700,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Farming, Staking, S2E",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1468,7 +1725,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-04 10:37:30+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1503,7 +1764,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1538,7 +1803,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-23 11:02:56+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1548,9 +1817,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Farming, Staking, S2E",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1573,7 +1842,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-01-08 12:05:30+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1608,7 +1881,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-25 11:10:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1618,9 +1895,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Farming, Staking, S2E",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1643,7 +1920,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-04 10:22:22+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1653,9 +1934,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "ZF Token Vesting Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1678,7 +1959,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-03 19:19:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1688,9 +1973,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Farming, Staking, S2E",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1713,7 +1998,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-12-06 11:09:20+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1725,7 +2014,7 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "V3 AMM Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1748,7 +2037,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-13 12:14:09+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -1783,7 +2076,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-25 13:01:13+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -1821,7 +2118,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 146,
@@ -1832,7 +2129,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 146,
@@ -1843,7 +2140,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 146,
@@ -1854,7 +2151,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -1865,7 +2162,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-21 05:59:08+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 146,
@@ -1911,7 +2212,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-05-07 10:26:25+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -2001,7 +2306,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-21 05:59:05+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 324,
@@ -2013,7 +2322,7 @@
       "role": "adapter",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "V2 AMM Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -2028,7 +2337,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 324,
@@ -2051,7 +2360,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-09 07:36:33+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 146,
@@ -2141,7 +2454,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-26 07:23:00+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -2158,16 +2475,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "MetadataHelper",
-        "ZFFactory",
-        "ZFRouter"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -2183,26 +2499,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "ZFFactory",
-        "ZFPair",
-        "ZFRouter",
-        "ZFRouterInternal",
-        "ZKSWAPFINANCE",
-        "ZkSwapFactory",
-        "ZkSwapRouter"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 3157,
       "audit_key": "audit-3157",
-      "report_name": "**For more details:** [**Certik Audit Report**]()\\",
+      "report_name": "0_[Certik]_zkSwap_Finance_Audit_Report.pdf",
       "report_url": "https://github.com/ZkSwapFinance/Audit-Reports/blob/main/0_%5BCertik%5D_zkSwap_Finance_Audit_Report.pdf",
       "auditor": "CertiK",
       "audit_type": "audit",
@@ -2212,25 +2523,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "MetadataHelper",
-        "ZFFactory",
-        "ZFLibrary",
-        "ZFPair",
-        "ZFRouter",
-        "ZFRouterInternal"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 3158,
       "audit_key": "audit-3158",
-      "report_name": "Bailsec Audit Report",
+      "report_name": "Bailsec - zkSwap Final Report Github (+Resolution).pdf",
       "report_url": "https://github.com/bailsec/BailSec/blob/main/Bailsec%20-%20zkSwap%20Final%20Report%20Github%20(%2BResolution).pdf",
       "auditor": "Bailsec",
       "audit_type": "audit",
@@ -2240,14 +2547,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "ZFGovernanceStaking"
-      ],
-      "matched_contracts": 5,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -2263,6 +2571,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2284,6 +2595,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2305,16 +2619,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "IZFToken",
-        "ZFGovernanceStaking",
-        "ZFToken"
-      ],
-      "matched_contracts": 5,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -2330,6 +2643,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2406,6 +2722,16 @@
     {
       "chain_id": 146,
       "chain_name": "sonic",
+      "address": "0x957dbef5673822b3db074f6cee6dcd0fa68f18ec",
+      "name": "UniversalRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
       "address": "0xb6269059eef1b6b7d478752ed037bd0dd8197cbf",
       "name": "ZFOFT",
       "role": "unknown",
@@ -2435,18 +2761,16 @@
     }
   ],
   "origin_summary": {
-    "native": 31,
-    "upstream": 1,
-    "standard_library": 2,
-    "needs_review": 18
+    "native": 10,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 44
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 25
+      "contract_name": 5
     },
-    "extraction_confidence_counts": {
-      "high": 5
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [

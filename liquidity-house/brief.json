@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "liquidity-house",
-  "generated_at": "2026-06-17T07:00:58.303Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-07-03T21:06:21.573Z",
+  "pipeline_run_id": "brief-restore-2026-07",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -18,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1231691.36799,
-    "tvl_usd": 1231691.36799,
+    "dl_tvl_usd": 1343961.51344,
+    "tvl_usd": 1343961.51344,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -35,10 +37,18 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Liquidity House is GambleFi liquidity infrastructure providing Bankroll-as-a-Service for casino operators, enabling liquidity/backing for on-chain gaming and casino operations rather than a user-facing prediction market for creating and trading event outcomes.",
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
     "product_family_count": 0,
     "total_contracts_indexed": 0,

@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "zivoe",
-  "generated_at": "2026-06-19T06:15:21.184Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "zivoe",
-    "tier": 0,
-    "peak_tvl": 1359148,
-    "peak_date": "2025-09-03T00:00:00.000Z",
-    "tvl_30d_ago": 245201,
-    "tvl_90d_ago": 268466,
-    "tvl_current": 226096,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 250389,
-    "change_30d_pct": -7.791566918568847,
-    "change_90d_pct": -15.782259206007465,
-    "days_since_peak": 261,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 83.36487269966184
-  },
+  "generated_at": "2026-07-04T14:54:14.929Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-c970",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 17,
-    "total_addresses": 21,
-    "unique_implementations": 17,
-    "total_deployments": 21,
+    "total_contracts": 19,
+    "total_addresses": 23,
+    "unique_implementations": 19,
+    "total_deployments": 23,
     "audited_contracts": 10,
-    "unaudited_contracts": 7,
+    "unaudited_contracts": 8,
     "contracts_verified_audited": 10,
-    "contracts_verified_unaudited": 7,
+    "contracts_verified_unaudited": 8,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 1,
     "coverage_pct": 58.8,
     "total_audits": 7,
+    "direct_audits": 7,
+    "inherited_audits": 0,
     "scoreable_audits": 5,
-    "dl_tvl_usd": 13857273.02451,
-    "tvl_usd": 13857273.02451,
+    "dl_tvl_usd": 13777805.67591,
+    "tvl_usd": 13777805.67591,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,28 +39,37 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 2,
-      "stale": 3,
-      "unknown": 2
+      "stale": 4,
+      "unknown": 1
+    },
+    "live_implementations": 18,
+    "live_verified_implementations": 17,
+    "live_audited_implementations": 10,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 10
     }
   },
   "topography": {
-    "project_purpose": "Zivoe is a real-world asset private credit protocol where qualified participants deposit USDC or other stablecoins to receive zVLT exposure to yield from private credit and consumer lending. Tranche, governance, and rewards contracts should be treated as protocol or legacy architecture only where still supported by current contract and product evidence.",
-    "relationship_narrative": "The Governance & Accounting family sets global parameters and distributes yield to the Tranches and Yield Generation families. The Primary Contracts family (vault and credit origination) interacts with Tranches for funding and with Yield Generation for deploying capital, while the Zivoe Governance Token family provides the staking and rewards layer that ties into governance.",
+    "project_purpose": "RWA. Structurally: 31 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 3 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 7 functional families. Its contracts share 9 common project-authored base contract(s) (zivoelocker, ownablelocked, erc1155holder). Dominant framework: openzeppelin.",
     "product_family_count": 7,
-    "total_contracts_indexed": 35,
-    "live_contracts": 21,
-    "inactive_contracts": 14,
+    "total_contracts_indexed": 45,
+    "live_contracts": 22,
+    "inactive_contracts": 22,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 3,
-    "live_deployment_units": 3,
-    "dependencies_extracted": 14,
-    "unverified_dependencies": 1,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 17,
+    "unique_implementations": 19,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -87,13 +82,13 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
-      "deployment_unit": "unit-37614",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "ATokenInstance",
       "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "Aave",
-      "product_line": "Zivoe",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0xadc45df3cf1584624c97338bef33363bf5b97ada",
@@ -103,8 +98,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
-          "deployment_unit": "unit-37614",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -116,19 +111,23 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-01-27 10:57:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xcacd6fd266af91b8aed52accc382b4e165586e29",
-      "deployment_unit": "unit-37615",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "FrxUSD",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Zivoe",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0x0000000048d2c8baf31742f6765383278bada4d5",
@@ -138,8 +137,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xcacd6fd266af91b8aed52accc382b4e165586e29",
-          "deployment_unit": "unit-37615",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -151,7 +150,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-01-03 13:28:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -163,7 +166,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Primary Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -186,7 +189,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-01 20:16:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -198,7 +205,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Zivoe",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -221,7 +228,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-27 00:50:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -233,7 +244,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Primary Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -256,7 +267,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-01 20:34:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -268,7 +283,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Zivoe",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -291,7 +306,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-20 22:59:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -303,7 +322,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Utilities",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -328,19 +347,23 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-22 06:40:23+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x50c72ff8c5e7498f64beaeb8ed5be83cabeb0fd5",
-      "deployment_unit": "unit-37613",
-      "deployment_unit_proxy_count": 2,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "Safe",
       "role": "unknown",
       "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
-      "product_line": "Zivoe",
+      "origin_provider": "Gnosis Safe",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0x41675c099f32341bf84bfc5382af534df5c7461a",
@@ -350,8 +373,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x50c72ff8c5e7498f64beaeb8ed5be83cabeb0fd5",
-          "deployment_unit": "unit-37613",
-          "deployment_unit_proxy_count": 2,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -361,8 +384,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xc8d6248ffbc59bfd51b23e69b962c60590d5f026",
-          "deployment_unit": "unit-37613",
-          "deployment_unit_proxy_count": 2,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -374,7 +397,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-08-29 20:23:47+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd4b4e69b484635be0f8e19bb859564570f29c6d2",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd4b4e69b484635be0f8e19bb859564570f29c6d2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-22 06:40:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -386,7 +452,7 @@
       "role": "governance",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Governance & Accounting",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -411,7 +477,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-22 06:39:59+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -423,7 +493,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Tranches",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -449,7 +519,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -460,7 +530,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -471,7 +541,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-22 06:40:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -483,7 +557,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Zivoe",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -509,7 +583,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-22 06:40:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -521,7 +599,7 @@
       "role": "adapter",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Primary Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -547,7 +625,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-05-16 19:56:23+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe1a68a0404426d6bbc459794e576640dee3fc916",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ZivoeTLC",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ZivoeTLC",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe1a68a0404426d6bbc459794e576640dee3fc916",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-22 06:39:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -559,7 +680,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Zivoe Governance Token",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -584,7 +705,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-22 06:39:59+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -596,7 +721,7 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Tranches",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -622,7 +747,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-22 06:40:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -634,7 +763,7 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Tranches",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -660,7 +789,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -670,7 +799,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-22 06:40:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -682,7 +815,7 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Primary Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -708,7 +841,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-05-16 19:55:47+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -720,7 +857,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Governance & Accounting",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -746,14 +883,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-22 06:40:11+03",
+      "deploy_coverage_basis": "match_unverified"
     }
   ],
   "audits": [
     {
       "audit_id": 1985,
       "audit_key": "audit-1985",
-      "report_name": "| Runtime Verification | Vault | <> |",
+      "report_name": "amp.runtimeverification.com/public-report/zivoe-vault",
       "report_url": "https://amp.runtimeverification.com/public-report/zivoe-vault",
       "auditor": "Runtime Verification",
       "audit_type": "audit",
@@ -763,22 +904,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "OCT_Convert",
-        "ZivoeRouter",
-        "ZivoeVault"
-      ],
+      "extracted_names": [],
       "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 1986,
       "audit_key": "audit-1986",
-      "report_name": "`04-25-2024 Sherlock`",
+      "report_name": "2024.04.25 - Final - Zivoe Audit Report.pdf",
       "report_url": "https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/2024.04.25%20-%20Final%20-%20Zivoe%20Audit%20Report.pdf",
       "auditor": "Sherlock",
       "audit_type": "contest",
@@ -788,24 +928,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "OCC_Modular",
-        "OCL_ZVE",
-        "OCY_Convex_A",
-        "OCY_Convex_B",
-        "OCY_Convex_C",
-        "ZivoeGlobals",
-        "ZivoeITO",
-        "ZivoeRewards",
-        "ZivoeRewardsVesting",
-        "ZivoeTranches",
-        "ZivoeYDL"
-      ],
-      "matched_contracts": 6,
+      "extracted_names": [],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -821,29 +952,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "FloorMath",
-        "OwnableLocked",
-        "ZivoeDAO",
-        "ZivoeGTC",
-        "ZivoeGlobals",
-        "ZivoeGovernorV2",
-        "ZivoeITO",
-        "ZivoeLocker",
-        "ZivoeMath",
-        "ZivoeRewards",
-        "ZivoeRewardsVesting",
-        "ZivoeTLC",
-        "ZivoeToken",
-        "ZivoeTrancheToken",
-        "ZivoeTranches",
-        "ZivoeYDL"
-      ],
-      "matched_contracts": 10,
+      "extracted_names": [],
+      "matched_contracts": 7,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -859,24 +976,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "OCC_Modular",
-        "OCE_ZVE",
-        "OCL_ZVE",
-        "OCR_Modular",
-        "OCT_DAO",
-        "OCT_YDL",
-        "OCT_ZVL",
-        "OCY_Convex_A",
-        "OCY_Convex_B",
-        "OCY_OUSD",
-        "ZivoeSwapper"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -892,6 +1000,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -907,12 +1018,15 @@
       "report_url": "https://github.com/runtimeverification/publications/blob/main/reports/smart-contracts/Alchemix_v2.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2022-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -934,16 +1048,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "OCT_Convert",
-        "ZivoeRouter",
-        "ZivoeVault"
-      ],
+      "extracted_names": [],
       "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -952,25 +1065,45 @@
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 8,
-      "coverage_pct": 47.1,
+      "coverage_pct": 44.4,
       "latest_audit": "2023-08"
     },
     {
       "auditor": "Sherlock",
       "tier": 1,
       "contracts_covered": 4,
-      "coverage_pct": 23.5,
+      "coverage_pct": 22.2,
       "latest_audit": "2024-06"
     },
     {
       "auditor": "Runtime Verification",
       "tier": 2,
       "contracts_covered": 2,
-      "coverage_pct": 11.8,
+      "coverage_pct": 11.1,
       "latest_audit": "2025-03"
     }
   ],
   "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+      "name": "ATokenInstance",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xcacd6fd266af91b8aed52accc382b4e165586e29",
+      "name": "FrxUSD",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -1010,21 +1143,29 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe1a68a0404426d6bbc459794e576640dee3fc916",
+      "name": "ZivoeTLC",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 14,
-    "upstream": 1,
-    "standard_library": 2,
-    "needs_review": 0
+    "native": 17,
+    "upstream": 0,
+    "standard_library": 1,
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 44
+      "contract_name": 16
     },
-    "extraction_confidence_counts": {
-      "high": 5
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [

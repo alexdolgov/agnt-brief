@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "neuralai",
-  "generated_at": "2026-06-17T18:50:17.113Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-1121",
-  "lifecycle_status": "unknown",
-  "lifecycle_signal": {
-    "slug": "neuralai",
-    "tier": 0,
-    "peak_tvl": 0,
-    "peak_date": "2024-10-29T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 0,
-    "tvl_current": 0,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 0,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "days_since_peak": 596,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 0
-  },
+  "generated_at": "2026-07-04T14:53:38.692Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d094",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 2,
     "total_addresses": 2,
@@ -34,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1205215.33252,
-    "tvl_usd": 1205215.33252,
+    "dl_tvl_usd": 1089795.52402,
+    "tvl_usd": 1089795.52402,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,12 +39,21 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 2,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "NeuralAI is an AI/Web3 gaming infrastructure project. Its Ethereum $NEURAL token is part of the project's tokenomics, while any launchpad, staking, or related ecosystem mechanics should be treated as tokenomics or upcoming ecosystem features only where separately supported. wTAO should not be described as a core NeuralAI staking component without evidence of integration, and the broader project identity should account for both Ethereum and Solana $NEURAL token presence where in scope.",
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 1,
+    "product_family_count": 2,
     "total_contracts_indexed": 2,
     "live_contracts": 2,
     "inactive_contracts": 0,
@@ -67,7 +62,7 @@
     "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 1,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -91,7 +86,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "NeuralAI",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -114,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-03-21 16:20:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -126,7 +125,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "NeuralAI",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -149,14 +148,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-12 14:12:47+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 3114,
       "audit_key": "audit-3114",
-      "report_name": "- Smart contracts audited by Hacken:",
+      "report_name": "hacken.io/audits/neuralai",
       "report_url": "https://hacken.io/audits/neuralai",
       "auditor": "Hacken",
       "audit_type": "audit",
@@ -166,6 +169,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -212,7 +218,7 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 3114,
-        "report_name": "- Smart contracts audited by Hacken:"
+        "report_name": "hacken.io/audits/neuralai"
       }
     ],
     "inherited_remapped_matches": []

@@ -1,40 +1,26 @@
 {
   "schema_version": "2.0",
   "project_key": "roseonx",
-  "generated_at": "2026-06-19T08:27:13.662Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "roseonx",
-    "tier": 0,
-    "peak_tvl": 94307,
-    "peak_date": "2023-11-09T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 0,
-    "tvl_current": 0,
-    "tier0_reason": "current_tvl_zero_after_meaningful_peak",
-    "tvl_180d_ago": 0,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "days_since_peak": 953,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 100
-  },
+  "generated_at": "2026-07-04T14:53:53.739Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-66d5",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
-    "audited_contracts": 0,
+    "total_contracts": 4,
+    "total_addresses": 4,
+    "unique_implementations": 4,
+    "total_deployments": 4,
+    "audited_contracts": 2,
     "unaudited_contracts": 2,
-    "contracts_verified_audited": 0,
+    "contracts_verified_audited": 2,
     "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 50,
     "total_audits": 1,
-    "scoreable_audits": 0,
+    "direct_audits": 1,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
     "dl_tvl_usd": 0,
     "tvl_usd": 0,
     "tvl_source": "defillama",
@@ -53,28 +39,37 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 4,
+    "live_verified_implementations": 4,
+    "live_audited_implementations": 2,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 2,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": 1,
-    "total_contracts_indexed": 22,
-    "live_contracts": 2,
-    "inactive_contracts": 18,
-    "singleton_contracts": 2,
+    "project_purpose": "Derivatives. Structurally: 9 project-authored contract(s) across 1 chain(s); 4 ERC20 tokens, 1 Chainlink feed; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 2 functional families. Its contracts share 5 common project-authored base contract(s) (baseaccess, baseconstants, constants). Dominant framework: openzeppelin.",
+    "product_family_count": 2,
+    "total_contracts_indexed": 13,
+    "live_contracts": 4,
+    "inactive_contracts": 9,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 2,
-    "live_deployment_units": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 4,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -91,7 +86,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "RoseonX",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -114,19 +109,64 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-05-31 11:58:25+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xa666f14d3cd15f6c9bebfd875bb90498aea5a9ae",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SettingsManager",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SettingsManager",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xa666f14d3cd15f6c9bebfd875bb90498aea5a9ae",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13786"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-04-18 06:05:25+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x42fa477a24d5471a24b798d5b4d9ec3a2c3dd49a",
-      "deployment_unit": "unit-39404",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "StakingDualTokenV2",
       "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "RoseonX",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0x19b85abee8822f3b86cb3b1147859caab046ddd3",
@@ -136,8 +176,8 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x42fa477a24d5471a24b798d5b4d9ec3a2c3dd49a",
-          "deployment_unit": "unit-39404",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -149,7 +189,52 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-10-12 12:50:01+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x19a85b30bdcba70ba331504dfe3c7ca12b83bf25",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Vault",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Vault",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x19a85b30bdcba70ba331504dfe3c7ca12b83bf25",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13786"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-04-18 05:59:55+03",
+      "deploy_coverage_basis": "code_matched"
     }
   ],
   "audits": [
@@ -166,16 +251,39 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BaseAccess.sol",
+        "PositionHandler.sol",
+        "PositionRouter.sol",
+        "PositionRouterV2.sol",
+        "SettingsManager.sol",
+        "StakeDualToken.sol",
+        "StakeRolp.sol",
+        "SwapRouter.sol",
+        "TriggerOrderManagerV2.sol",
+        "Vault.sol",
+        "VaultUtilsV2.sol"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 50,
+      "latest_audit": "2023-10"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 42161,
@@ -186,25 +294,34 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x42fa477a24d5471a24b798d5b4d9ec3a2c3dd49a",
+      "name": "StakingDualTokenV2",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 1,
+    "native": 4,
     "upstream": 0,
-    "standard_library": 1,
+    "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 2
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 13786,
-        "report_name": "Verichains Public Audit Report - Roseon Perpetual Exchange - v1.1.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -1,49 +1,51 @@
 {
   "schema_version": "2.0",
   "project_key": "aria-protocol",
-  "generated_at": "2026-06-19T06:13:15.912Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
+  "generated_at": "2026-07-04T14:53:04.131Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-bd47",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "aria-protocol",
     "tier": 1,
     "peak_tvl": 10236065,
     "peak_date": "2025-10-27T00:00:00.000Z",
-    "tvl_30d_ago": 319577,
-    "tvl_90d_ago": 1553100,
+    "tvl_30d_ago": 0,
+    "tvl_90d_ago": 0,
     "tvl_current": 0,
     "tier0_reason": "current_tvl_zero_after_meaningful_peak",
-    "tvl_180d_ago": 7418310,
-    "change_30d_pct": -100,
-    "change_90d_pct": -100,
+    "tvl_180d_ago": 4829565,
+    "change_30d_pct": null,
+    "change_90d_pct": null,
     "governance_raw": {
-      "evidence": "TVL is zero with a 100% drop from peak sustained for 209 days, and the homepage shows no active protocol operations or user activity.",
+      "evidence": "TVL is zero, dropped 100% from peak 247 days ago, and the homepage shows no active protocol operations or user engagement.",
       "confidence": 0.95,
       "lifecycle_status": "dead"
     },
-    "days_since_peak": 209,
+    "days_since_peak": 247,
     "detection_method": "tvl_trajectory+governance_signal",
     "governance_source": "docs_homepage",
     "drop_from_peak_pct": 100,
-    "governance_evidence": "TVL is zero with a 100% drop from peak sustained for 209 days, and the homepage shows no active protocol operations or user activity.",
+    "governance_evidence": "TVL is zero, dropped 100% from peak 247 days ago, and the homepage shows no active protocol operations or user engagement.",
     "governance_confidence": 0.95,
-    "governance_text_chars": 3043,
+    "governance_text_chars": 3155,
     "governance_classification": "dead",
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
+    "total_contracts": 3,
+    "total_addresses": 3,
+    "unique_implementations": 3,
+    "total_deployments": 3,
     "audited_contracts": 0,
     "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 2,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 0,
     "tvl_usd": 0,
@@ -52,7 +54,8 @@
     "asd_usd": null,
     "website_url": "https://ariaprotocol.xyz",
     "chains": [
-      "bsc"
+      "bsc",
+      "ethereum"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
@@ -63,26 +66,35 @@
       "aging": 0,
       "stale": 0,
       "unknown": 1
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Aria is an intellectual-property real-world asset protocol focused on music/IP rights, royalties and yield, staking or vault participation, and licensing/remix use cases, with current project context tied to the Story ecosystem. The BSC AriaOFT contract should be treated separately as a token/bridge-related deployment unless independently evidenced as the current core protocol surface.",
+    "project_purpose": "Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
     "product_family_count": 1,
-    "total_contracts_indexed": 1,
+    "total_contracts_indexed": 3,
     "live_contracts": 1,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 2,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 1,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 3,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -101,7 +113,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Contract Addresses",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -124,14 +136,96 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-04 18:10:14+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xfe82012ecce57a188e5f9f3fc1cb2d335c58f1f5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfe82012ecce57a188e5f9f3fc1cb2d335c58f1f5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x6a6d1f55549e0e64710a5070e6b19ea8b7978e12",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x6a6d1f55549e0e64710a5070e6b19ea8b7978e12",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-04 17:31:36+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 2943,
       "audit_key": "audit-2943",
-      "report_name": "PASHOV",
+      "report_name": "www.pashov.com",
       "report_url": "https://www.pashov.com/",
       "auditor": "Pashov Audit Group",
       "audit_type": "audit",
@@ -141,6 +235,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -167,7 +264,7 @@
     "native": 1,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -177,7 +274,7 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 2943,
-        "report_name": "PASHOV"
+        "report_name": "www.pashov.com"
       }
     ],
     "inherited_remapped_matches": []

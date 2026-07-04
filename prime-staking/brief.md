@@ -4,44 +4,47 @@
 
 - Project: Prime Staking (`prime-staking`)
 - Website: [https://primestaking.xyz/](https://primestaking.xyz/)
-- Lifecycle: active (Tier 0, 66.4% below peak)
-- Generated: 2026-06-19T06:14:34.846Z
-- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:44.153Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-66d5
 - Chains: base
-- Contract surface: 6 unique implementations (6 raw deployments)
-- DeFi Llama TVL: $2,467,609.10
+- Contract surface: 9 unique implementations (9 raw deployments)
+- DeFi Llama TVL: $478,348.47
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Prime Staking is an XDC staking/liquid staking protocol. Its public TVL-bearing product is associated with XDC staking and liquid staking; Base PRFI/ONFT/vesting contracts should be treated only as ancillary or unverified infrastructure unless independently documented as part of the Prime Staking staking system.
+Liquid Staking. Structurally: 8 project-authored contract(s) across 1 chain(s); 1 ERC20 token, 1 ERC721 NFT; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The ONFTDiamond token contract is the primary liquid staking derivative, while PRFI is a related token. The PRFIVestingV2Proxy manages vesting of PRFI tokens, indicating a shared token economy where staking rewards or allocations are distributed through vesting.
+The protocol comprises 2 functional families. Its contracts share 12 common project-authored base contract(s) (oapp, oappsender, oappcore). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 10; live-surface contracts included: 6 (6 live, 0 unknown).
-- Excluded by liveness: 2 inactive, 2 singleton, 0 uninitialized.
-- Deployment units: 0/2 live.
+- Indexed contracts: 15; live-surface contracts included: 9 (1 live, 8 unknown).
+- Excluded by liveness: 6 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 2; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 9 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 5
-- Unique implementations: 6
-- Raw deployments: 6
-- Audits discovered: 2
+- Unverified implementations: 8
+- Unique implementations: 9
+- Raw deployments: 9
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-05 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 1 unknown
+- Audit staleness (calendar age): 1 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -72,24 +75,27 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (5)
+### ❓ Unverified (8)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| UnnamedContract | unknown | base | n/a | `0x1e8559...b97582` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x3d5154...563bca` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x793db5...bad98b` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x7d8f06...c68494` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x86ceb2...936f95` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x8da56b...bc9fa5` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xc7f171...000c7a` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xdf3206...22151a` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Read the full report (PDF)](https://github.com/PrimeNumbersLabs/primestaking-gitbook/blob/main/NM_0843_xdc_prime_stake_FINAL_updated_tests.pdf) | yAudit | Audit | 2026-05 | fresh | Direct | n/a | 0 | n/a |
-| [**XDC Staking Contract (V1 / liquid staking)**](https://www.quillaudits.com/leaderboard/prime-numbers/prime-numbers-staking-contract) | QuillAudits | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [NM_0843_xdc_prime_stake_FINAL_updated_tests.pdf](https://github.com/PrimeNumbersLabs/primestaking-gitbook/blob/main/NM_0843_xdc_prime_stake_FINAL_updated_tests.pdf) | yAudit | Audit | 2026-05 | fresh | Direct | n/a | 0 | n/a |
+| [www.quillaudits.com/leaderboard/prime-numbers/prime-numbers-staking-contract](https://www.quillaudits.com/leaderboard/prime-numbers/prime-numbers-staking-contract) | QuillAudits | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -106,7 +112,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 5 |
+| needs_review | 8 |
 
 ## Scope Matching Notes
 
@@ -119,7 +125,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [2515] Read the full report (PDF)
-- [2516] **XDC Staking Contract (V1 / liquid staking)**
+- [2515] NM_0843_xdc_prime_stake_FINAL_updated_tests.pdf
+- [2516] www.quillaudits.com/leaderboard/prime-numbers/prime-numbers-staking-contract
 
 Fork inheritance lineage and inherited audits are included when available.

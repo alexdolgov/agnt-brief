@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "latteswap",
-  "generated_at": "2026-06-21T06:55:35.537Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "latteswap",
-    "tier": 0,
-    "peak_tvl": 70314645,
-    "peak_date": "2021-10-07T00:00:00.000Z",
-    "tvl_30d_ago": 59442,
-    "tvl_90d_ago": 57190,
-    "tvl_current": 55199,
-    "tier0_reason": "catastrophic_collapse_from_peak",
-    "tvl_180d_ago": 67634,
-    "change_30d_pct": -7.138050536657582,
-    "change_90d_pct": -3.481377863262808,
-    "days_since_peak": 1718,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 99.92149715041582
-  },
+  "generated_at": "2026-07-04T14:53:29.414Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-43c7",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 3,
-    "total_addresses": 3,
-    "unique_implementations": 3,
-    "total_deployments": 3,
+    "total_contracts": 4,
+    "total_addresses": 4,
+    "unique_implementations": 4,
+    "total_deployments": 4,
     "audited_contracts": 2,
     "unaudited_contracts": 1,
     "contracts_verified_audited": 2,
     "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 1,
     "coverage_pct": 66.7,
     "total_audits": 2,
+    "direct_audits": 2,
+    "inherited_audits": 0,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 54936.78935,
-    "tvl_usd": 54936.78935,
+    "dl_tvl_usd": 52934.8902,
+    "tvl_usd": 52934.8902,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,28 +39,35 @@
       "aging": 0,
       "stale": 2,
       "unknown": 0
+    },
+    "live_implementations": 3,
+    "live_verified_implementations": 3,
+    "live_audited_implementations": 2,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 2
     }
   },
   "topography": {
-    "project_purpose": "LatteSwap is a decentralized exchange and yield farming platform on BSC. It provides token swapping, liquidity provision, and staking rewards through its LATTE token and MasterBarista contracts. The protocol also includes NFT offerings and various yield strategies.",
-    "relationship_narrative": "The LatteSwap family is self-contained, with the factory deploying pairs and the MasterBarista managing staking and rewards. No cross-family dependencies are evident from the contract surface.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 91,
+    "project_purpose": "Dexs. Structurally: 33 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens, 2 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 10 common project-authored base contract(s) (ownableupgradeable, contextupgradeable, pausableupgradeable). Dominant framework: openzeppelin.",
+    "product_family_count": 4,
+    "total_contracts_indexed": 90,
     "live_contracts": 3,
-    "inactive_contracts": 22,
-    "singleton_contracts": 66,
+    "inactive_contracts": 86,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 27,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 3,
-    "unverified_dependencies": 1,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 3,
+    "unique_implementations": 4,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -93,7 +86,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "LatteSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -118,7 +111,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-16 08:27:45+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -153,7 +150,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-16 08:12:09+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -165,7 +166,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "LatteSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -190,7 +191,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-10-06 09:53:53+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x5f7a114d4941e7649261d3564ecd64af9a6fa609",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x5f7a114d4941e7649261d3564ecd64af9a6fa609",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-27 06:36:27+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -207,16 +251,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "LATTE",
-        "LatteVault",
-        "MasterBarista"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -232,16 +275,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BeanBagV2.sol",
-        "LATTEV2.sol",
-        "MasterBarista.sol"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -277,15 +319,13 @@
     "native": 3,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 14
+      "contract_name": 2
     },
-    "extraction_confidence_counts": {
-      "high": 2
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

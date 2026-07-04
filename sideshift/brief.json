@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "sideshift",
-  "generated_at": "2026-06-17T07:00:56.191Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "sideshift",
-    "tier": 0,
-    "peak_tvl": 0,
-    "peak_date": "2022-07-13T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 0,
-    "tvl_current": 0,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 0,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "days_since_peak": 1418,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 0
-  },
+  "generated_at": "2026-07-04T14:53:56.145Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-0679",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 2,
     "total_addresses": 2,
@@ -34,14 +18,14 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 12702890.56328,
-    "tvl_usd": 12328298.636670807,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 12328298.64
-    },
-    "asd_usd": 12328298.636670807,
+    "dl_tvl_usd": 12920209.33122,
+    "tvl_usd": 12920209.33122,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://sideshift.ai",
     "chains": [
       "ethereum"
@@ -55,12 +39,21 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 2,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "SideShift is a direct-to-wallet crypto swap/exchange service that lets users swap assets across networks. It is categorized by DefiLlama under Cross Chain Bridge, but vault-based lock-and-release bridge mechanics should not be claimed without verified contract source or documentation. XAI is SideShift's native ERC20 token and can be staked for a share of revenues; it should not be described as a governance or fee-utility token unless supported by current documentation.",
-    "relationship_narrative": "The SideShiftVault contract handles the core bridging logic, while the XAI token likely serves as a governance or fee token within the ecosystem. Both contracts are deployed by the same deployer, indicating a unified infrastructure.",
-    "product_family_count": 1,
+    "project_purpose": "Cross Chain Bridge. Structurally: 2 project-authored contract(s) across 1 chain(s); 1 ERC20 token; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.",
+    "product_family_count": 2,
     "total_contracts_indexed": 3,
     "live_contracts": 2,
     "inactive_contracts": 1,
@@ -69,7 +62,7 @@
     "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 1,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -93,8 +86,8 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "SideShift",
-      "tvl_usd": 12328298.636670807,
+      "product_line": null,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "SideShiftVault",
@@ -107,7 +100,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 12328298.636670807,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -116,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-07-06 13:39:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -128,7 +125,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "SideShift",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -151,7 +148,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-09-14 09:28:25+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],
@@ -164,8 +165,8 @@
       "name": "SideShiftVault",
       "role": "core_logic",
       "origin_kind": "native",
-      "tvl_usd": 12328298.636670807,
-      "risk_note": "Verified native implementation with $12,328,298.64 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,

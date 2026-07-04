@@ -1,17 +1,15 @@
 # Agentic Audit Brief: Poolshark
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 13.5% over 90 days
-
 ## Project Overview
 
 - Project: Poolshark (`poolshark`)
 - Website: [https://www.poolshark.fi/](https://www.poolshark.fi/)
-- Lifecycle: unknown (Tier 0, 92.9% below peak)
-- Generated: 2026-06-21T07:21:20.466Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:44.078Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: arbitrum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $60,460.94
+- DeFi Llama TVL: $59,560.81
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -26,27 +24,29 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 ## Contract Surface Quality
 
-- Indexed contracts: 9; live-surface contracts included: 1 (1 live, 0 unknown).
-- Excluded by liveness: 8 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-08 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -86,7 +86,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Guardian_Audits_Poolshark_Limit.pdf](https://github.com/poolshark-protocol/limit/blob/master/audits/Guardian_Audits_Poolshark_Limit.pdf) | Guardian | Audit | 2023-08 | stale | Direct | contract_name | 0 | n/a |
+| [Guardian_Audits_Poolshark_Limit.pdf](https://github.com/poolshark-protocol/limit/blob/master/audits/Guardian_Audits_Poolshark_Limit.pdf) | Guardian | Audit | 2023-08 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -112,7 +112,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
-- Match method counts: extraction_exact=5
+- Match method counts: n/a
 
 Zero-match audit list:
 

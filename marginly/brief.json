@@ -1,56 +1,30 @@
 {
   "schema_version": "2.0",
   "project_key": "marginly",
-  "generated_at": "2026-06-19T11:08:44.256Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "marginly",
-    "tier": 1,
-    "peak_tvl": 3344444,
-    "peak_date": "2025-01-18T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 0,
-    "tvl_current": 0,
-    "tier0_reason": "current_tvl_zero_after_meaningful_peak",
-    "tvl_180d_ago": 0,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "governance_raw": {
-      "evidence": "TVL is 0 with a 100% drop from peak sustained for 517 days, and no recent communications or activity on the homepage.",
-      "confidence": 0.95,
-      "lifecycle_status": "dead"
-    },
-    "days_since_peak": 517,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 100,
-    "governance_evidence": "TVL is 0 with a 100% drop from peak sustained for 517 days, and no recent communications or activity on the homepage.",
-    "governance_confidence": 0.95,
-    "governance_text_chars": 2037,
-    "governance_classification": "dead",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:30.432Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-ae05",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 4,
-    "total_addresses": 8,
-    "unique_implementations": 4,
-    "total_deployments": 8,
-    "audited_contracts": 3,
-    "unaudited_contracts": 1,
-    "contracts_verified_audited": 3,
-    "contracts_verified_unaudited": 1,
+    "total_contracts": 9,
+    "total_addresses": 20,
+    "unique_implementations": 9,
+    "total_deployments": 20,
+    "audited_contracts": 4,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 4,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 75,
+    "contracts_unverified": 3,
+    "coverage_pct": 80,
     "total_audits": 4,
-    "scoreable_audits": 2,
+    "direct_audits": 4,
+    "inherited_audits": 0,
+    "scoreable_audits": 4,
     "dl_tvl_usd": 0,
-    "tvl_usd": 186.97155570522295,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "blast": 186.97
-    },
+    "tvl_usd": 0,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://marginly.com",
     "chains": [
@@ -65,30 +39,37 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 2,
-      "unknown": 2
+      "stale": 4,
+      "unknown": 0
+    },
+    "live_implementations": 6,
+    "live_verified_implementations": 5,
+    "live_audited_implementations": 4,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 4,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Marginly is a decentralized derivatives protocol enabling leveraged trading and liquidity provision. It uses isolated margin pools for each trading pair, allowing users to trade with leverage or supply liquidity to earn fees. The protocol operates across multiple chains with factory-deployed pool instances.",
-    "relationship_narrative": "All product families share the same core contract logic (MarginlyPool) deployed via factory contracts on each chain. The MarginlyRouter on Ethereum aggregates interactions across pools, while the Vault proxy provides shared infrastructure for asset management.",
-    "product_family_count": 3,
-    "total_contracts_indexed": 72,
-    "live_contracts": 8,
-    "inactive_contracts": 64,
+    "project_purpose": "Derivatives. Structurally: 12 project-authored contract(s) across 2 chain(s); role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 5 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.",
+    "product_family_count": 5,
+    "total_contracts_indexed": 26,
+    "live_contracts": 17,
+    "inactive_contracts": 6,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 1,
+    "unknown_contracts": 3,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 8,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "aave-v2"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 4,
+    "unique_implementations": 9,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -97,6 +78,72 @@
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0721f616a6e2d4d7a47eed87d268bf0454b1d4a5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MarginlyFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MarginlyFactory",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0721f616a6e2d4d7a47eed87d268bf0454b1d4a5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc1ac50d46783387f4236a8364435b5cceadd9fe2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf8d88a292b0afa85e5cf0d1195d0d3728cfd7070",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13463",
+        "audit-13464",
+        "audit-13465",
+        "audit-13466"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-22 15:45:35+03",
+      "deploy_coverage_basis": "code_matched"
+    },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
@@ -107,12 +154,34 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Marginly",
-      "tvl_usd": 186.97155570522295,
+      "product_line": null,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "MarginlyPool",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x34ad008303b2c48668a1d567306cc84f2e753b7f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x96244d564d5f2661c9a7b653e857246a8311eecb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
         {
           "chain_id": 42161,
           "chain_name": "arbitrum",
@@ -165,66 +234,34 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 186.97155570522295,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-13463",
-        "audit-13464"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0721f616a6e2d4d7a47eed87d268bf0454b1d4a5",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "MarginlyFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "MarginlyFactory",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0721f616a6e2d4d7a47eed87d268bf0454b1d4a5",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
         }
       ],
       "audits_covering": [
         "audit-13463",
-        "audit-13464"
+        "audit-13464",
+        "audit-13465",
+        "audit-13466"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-09-11 10:33:11+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xcf33069db942ddcc2f42917f552157249d1223b4",
+      "address": "0x47394fa722af686fd9263465c7120f012680cd63",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "MarginlyRouter",
-      "role": "adapter",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -233,6 +270,28 @@
       "impl_address": null,
       "impl_name": "MarginlyRouter",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x47394fa722af686fd9263465c7120f012680cd63",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6ec48569a33e9465c5325ff205afa81209c33f31",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -246,13 +305,109 @@
         }
       ],
       "audits_covering": [
-        "audit-13463"
+        "audit-13463",
+        "audit-13465"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-22 15:44:59+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x7988ac69133c5d5e4970476f8d6fcab994230fa0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PythOracle",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PythOracle",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7988ac69133c5d5e4970476f8d6fcab994230fa0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13466"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-02-24 14:25:11+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x54da69e2c91a1886fd9c36f0e7f16f015cd052ef",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TimelockController",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "OpenZeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TimelockController",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x54da69e2c91a1886fd9c36f0e7f16f015cd052ef",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x63de6d2ec4289339569250dc000b658c7f1244c5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2024-12-24 12:31:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -287,7 +442,128 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-11-25 10:56:23+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x9ffd55a972369283d4b8527b6953d38bb8d67316",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9ffd55a972369283d4b8527b6953d38bb8d67316",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-13 13:30:35+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xcddba9e308a71375fce9abbebace15dbece19958",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcddba9e308a71375fce9abbebace15dbece19958",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-21 16:50:23+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd8ac17f34e6973ede78c884709c49b8b5fd06d3f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd8ac17f34e6973ede78c884709c49b8b5fd06d3f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-21 16:50:11+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -304,6 +580,57 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13464,
+      "audit_key": "audit-13464",
+      "report_name": "Marginly-Oracle-Feature-Final-Report.pdf",
+      "report_url": "https://github.com/eq-lab/marginly/blob/main/audit/Marginly-Oracle-Feature-Final-Report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 13465,
+      "audit_key": "audit-13465",
+      "report_name": "spaces/QiFBW4qPpAjrKQaezZ3s/uploads/44riQdio4FbpMe9uuLzp/marginly-final-report.pdf",
+      "report_url": "https://698120604-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FQiFBW4qPpAjrKQaezZ3s%2Fuploads%2F44riQdio4FbpMe9uuLzp%2Fmarginly-final-report.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
       "extracted_names": [
         "AdapterCallback",
@@ -344,27 +671,17 @@
         "UniswapV3LikeSwap",
         "WooFiAdapter"
       ],
-      "matched_contracts": 7,
+      "matched_contracts": 13,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 13463,
-          "report_url": "https://github.com/eq-lab/marginly/blob/main/audit/Quantstamp-marginly-final-report.pdf"
-        },
-        {
-          "audit_id": 13468,
-          "report_url": "https://github.com/eq-lab/Marginly/blob/main/audit/Quantstamp-marginly-final-report.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
-      "audit_id": 13464,
-      "audit_key": "audit-13464",
-      "report_name": "Marginly-Oracle-Feature-Final-Report.pdf",
-      "report_url": "https://github.com/eq-lab/marginly/blob/main/audit/Marginly-Oracle-Feature-Final-Report.pdf",
+      "audit_id": 13466,
+      "audit_key": "audit-13466",
+      "report_name": "spaces/QiFBW4qPpAjrKQaezZ3s/uploads/QeydGxQVvNL332dL7Xi2/Marginly Oracle Feature Final Report 2.pdf",
+      "report_url": "https://698120604-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FQiFBW4qPpAjrKQaezZ3s%2Fuploads%2FQeydGxQVvNL332dL7Xi2%2FMarginly%20Oracle%20Feature%20Final%20Report%202.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
       "freshness": "stale",
@@ -373,6 +690,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
       "extracted_names": [
         "AlgebraOracleLib",
@@ -404,79 +724,27 @@
         "UniswapV3TickOracle",
         "UniswapV3TickOracleDouble"
       ],
-      "matched_contracts": 6,
+      "matched_contracts": 11,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 13464,
-          "report_url": "https://github.com/eq-lab/marginly/blob/main/audit/Marginly-Oracle-Feature-Final-Report.pdf"
-        },
-        {
-          "audit_id": 13467,
-          "report_url": "https://github.com/eq-lab/Marginly/blob/main/audit/Marginly-Oracle-Feature-Final-Report.pdf"
-        }
-      ]
-    },
-    {
-      "audit_id": 13465,
-      "audit_key": "audit-13465",
-      "report_name": "Report 1",
-      "report_url": "https://698120604-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FQiFBW4qPpAjrKQaezZ3s%2Fuploads%2F44riQdio4FbpMe9uuLzp%2Fmarginly-final-report.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
-      "repo_reference_count": 0
-    },
-    {
-      "audit_id": 13466,
-      "audit_key": "audit-13466",
-      "report_name": "Report 2",
-      "report_url": "https://698120604-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FQiFBW4qPpAjrKQaezZ3s%2Fuploads%2FQeydGxQVvNL332dL7Xi2%2FMarginly%20Oracle%20Feature%20Final%20Report%202.pdf",
-      "auditor": "unknown",
-      "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
-      "is_inherited": false,
-      "inherited_from_project_key": null,
-      "inherited_from_project_name": null,
-      "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
-      "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 66.7,
+      "latest_audit": "2024-04"
+    },
+    {
       "auditor": "Quantstamp",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 75,
-      "latest_audit": "2023-10"
-    },
-    {
-      "auditor": "unknown",
-      "tier": 2,
-      "contracts_covered": 2,
       "coverage_pct": 50,
-      "latest_audit": "2024-04"
+      "latest_audit": "2023-10"
     }
   ],
   "coverage_gaps": [
@@ -492,30 +760,22 @@
     }
   ],
   "origin_summary": {
-    "native": 4,
+    "native": 5,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 0
+    "standard_library": 1,
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 136
+      "contract_name": 5,
+      "extraction_exact": 24
     },
     "extraction_confidence_counts": {
       "high": 2
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 13465,
-        "report_name": "Report 1"
-      },
-      {
-        "audit_id": 13466,
-        "report_name": "Report 2"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

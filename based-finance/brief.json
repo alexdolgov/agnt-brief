@@ -1,42 +1,44 @@
 {
   "schema_version": "2.0",
   "project_key": "based-finance",
-  "generated_at": "2026-06-19T13:17:44.349Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
+  "generated_at": "2026-07-04T14:53:05.288Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-f2f0",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "based-finance",
     "tier": 0,
     "peak_tvl": 1171319,
     "peak_date": "2023-02-05T00:00:00.000Z",
-    "tvl_30d_ago": 188,
-    "tvl_90d_ago": 197,
-    "tvl_current": 218,
+    "tvl_30d_ago": 145,
+    "tvl_90d_ago": 152,
+    "tvl_current": 113,
     "tier0_reason": "current_tvl_near_zero_vs_large_peak",
-    "tvl_180d_ago": 317,
-    "change_30d_pct": 15.957446808510639,
-    "change_90d_pct": 10.65989847715736,
-    "days_since_peak": 1230,
+    "tvl_180d_ago": 246,
+    "change_30d_pct": -22.06896551724138,
+    "change_90d_pct": -25.657894736842106,
+    "days_since_peak": 1242,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 99.98138850304656
+    "drop_from_peak_pct": 99.99035275616633
   },
   "summary": {
-    "total_contracts": 12,
+    "total_contracts": 1,
     "total_addresses": 12,
-    "unique_implementations": 12,
+    "unique_implementations": 1,
     "total_deployments": 12,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 12,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 189,
-    "tvl_usd": 189,
+    "dl_tvl_usd": 114,
+    "tvl_usd": 114,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,12 +55,21 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Based Finance is a DeFi protocol on Fantom offering yield generation and algorithmic stablecoin products. It includes a first-generation set of contracts for yield and algo-stables, and a next-generation set that likely iterates on these mechanisms.",
-    "relationship_narrative": "The two families represent sequential versions of the protocol, with Based Next Generation likely replacing or coexisting with the original Based Finance. They may share underlying tokens or infrastructure, but the contract surface shows no direct cross-references.",
-    "product_family_count": 2,
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": 0,
     "total_contracts_indexed": 12,
     "live_contracts": 0,
     "inactive_contracts": 0,
@@ -72,9 +83,9 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 12,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
-    "is_skeletal": false
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -91,11 +102,11 @@
       "role": "unknown",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
-      "product_line": "Based Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "UnnamedContract",
       "deployments": [
         {
           "chain_id": 250,
@@ -107,31 +118,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0x049d68029688eabf473097a2fc38ef61633a3c7a",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Based Finance",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -142,31 +129,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0x0a10dad90b9c6fb8b87bff3857a4b012890c53a5",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Based Next Generation",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -177,31 +140,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0x407c47e3fdb7952ee53aa232b5f28566a024a759",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Based Finance",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -212,31 +151,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0x49c290ff692149a4e16611c694fded42c954ab7a",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Based Finance",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -247,31 +162,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0x525ca3877a78c6ae12292d0a55765775e3943379",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Based Next Generation",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -282,31 +173,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0x62a2ff4bccc5dd5316c358cdf079ec5e5c0851fe",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Based Next Generation",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -317,31 +184,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0x8d7d3409881b51466b483b11ea1b8a03cded89ae",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Based Finance",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -352,31 +195,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0xa0e0f462d66de459711bc721ce1fdcc3d9405831",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Based Finance",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -387,31 +206,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0xaebff260074782a3dfd8981352b44767a05fa2ed",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Based Next Generation",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -422,31 +217,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0xe5009dd5912a68b0d7c6f874cd0b4492c9f0e5cd",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Based Finance",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -457,31 +228,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0xfb98b335551a418cd0737375a2ea0ded62ea213b",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Based Finance",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -499,7 +246,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -516,6 +267,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -528,10 +282,10 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 4,
+    "native": 0,
     "upstream": 0,
     "standard_library": 1,
-    "needs_review": 7
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

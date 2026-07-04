@@ -1,75 +1,86 @@
 {
   "schema_version": "2.0",
   "project_key": "bitway",
-  "generated_at": "2026-06-17T07:00:49.461Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-07-04T14:53:07.530Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-0293",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bitway",
     "tier": 0,
     "peak_tvl": 62529962,
     "peak_date": "2026-05-26T00:00:00.000Z",
-    "tvl_30d_ago": 15724047,
-    "tvl_90d_ago": null,
-    "tvl_current": 61799165,
-    "tier0_reason": "no_rule_matched",
+    "tvl_30d_ago": 57741954,
+    "tvl_90d_ago": 15279293,
+    "tvl_current": 58332401,
+    "tier0_reason": "healthy_tvl_level_and_change",
     "tvl_180d_ago": null,
-    "change_30d_pct": 293.02327829470363,
-    "change_90d_pct": null,
-    "days_since_peak": 1,
+    "change_30d_pct": 1.022561515670218,
+    "change_90d_pct": 281.774215600159,
+    "days_since_peak": 36,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 1.1687149274135173
+    "drop_from_peak_pct": 6.712879499271085
   },
   "summary": {
     "total_contracts": 8,
     "total_addresses": 30,
     "unique_implementations": 8,
     "total_deployments": 30,
-    "audited_contracts": 0,
-    "unaudited_contracts": 7,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 7,
+    "audited_contracts": 4,
+    "unaudited_contracts": 3,
+    "contracts_verified_audited": 4,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
-    "coverage_pct": 0,
+    "coverage_pct": 66.7,
     "total_audits": 3,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 60775264.38817,
-    "tvl_usd": 136353317.08220688,
+    "direct_audits": 3,
+    "inherited_audits": 0,
+    "scoreable_audits": 3,
+    "dl_tvl_usd": 60611305.82894,
+    "tvl_usd": 178372.19538820907,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "bsc": 136353317.08
+      "bsc": 178372.2
     },
-    "asd_usd": 136353317.08220688,
+    "asd_usd": null,
     "website_url": "https://bitway.com/",
     "chains": [
       "bsc"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2025-10",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
+      "fresh": 3,
       "aging": 0,
       "stale": 0,
-      "unknown": 3
+      "unknown": 0
+    },
+    "live_implementations": 7,
+    "live_verified_implementations": 6,
+    "live_audited_implementations": 4,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 4,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Bitway Earn is a BSC/BNB Chain asset-management and capital-gateway product in the Bitway suite, with basis-trading and vault/share-token mechanics indicated by public descriptions and deployed contract names. Any stablecoin settlement/collateral purpose or named strategy family should be treated as inferred unless confirmed by documentation or audit scope.",
-    "relationship_narrative": "The Bitway family shares LPToken and WithdrawVault contracts across multiple vault instances, indicating a modular design where vaults issue standardized LP tokens and use common withdrawal logic. The Strategy: Bitway Core Alpha vault is a separate core logic contract that may interact with the same stablecoin or token infrastructure.",
-    "product_family_count": 2,
+    "project_purpose": "Basis Trading. Structurally: 7 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Contracts are linked by 2 cross-contract reference(s). Dominant framework: openzeppelin.",
+    "product_family_count": 4,
     "total_contracts_indexed": 30,
-    "live_contracts": 30,
+    "live_contracts": 29,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 1,
-    "live_deployment_units": 1,
-    "dependencies_extracted": 2,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -86,72 +97,15 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x32e060f88398d16b086e5040566cb1897d3270e0",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "BitwayToken",
-      "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 136323504.73581663,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BitwayToken",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x32e060f88398d16b086e5040566cb1897d3270e0",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x3a63de3572c69a1307ff08394f3ee7702c16d25d",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x444045b0ee1ee319a660a5e3d604ca0ffa35acaa",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 136323504.73581663,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
       "address": "0x1f068133a960ecf58f938164e0fd5364cb538188",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "Vault",
       "role": "core_logic",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 29812.34639023905,
+      "tvl_usd": 178372.19538820907,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "Vault",
@@ -165,7 +119,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -176,7 +130,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 10.69945,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -186,8 +140,8 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 3999.60199934905,
-          "is_audited": false
+          "tvl_usd": 4768.17961907905,
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -197,16 +151,23 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 25802.04494089,
-          "is_audited": false
+          "tvl_usd": 173593.31631913,
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4677",
+        "audit-4678"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-04 18:11:52+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 56,
@@ -241,7 +202,74 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-15 11:18:13+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x32e060f88398d16b086e5040566cb1897d3270e0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BitwayToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BitwayToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x32e060f88398d16b086e5040566cb1897d3270e0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x3a63de3572c69a1307ff08394f3ee7702c16d25d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x444045b0ee1ee319a660a5e3d604ca0ffa35acaa",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-4679"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-15 11:16:07+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 56,
@@ -251,7 +279,7 @@
       "deployment_unit_proxy_count": null,
       "name": "BitwayTokenLock",
       "role": "token",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -309,7 +337,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-19 10:41:55+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -319,7 +351,7 @@
       "deployment_unit_proxy_count": null,
       "name": "LPToken",
       "role": "token",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -336,7 +368,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -347,7 +379,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -358,7 +390,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -369,7 +401,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -380,7 +412,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -391,7 +423,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -402,7 +434,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -413,7 +445,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -424,7 +456,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -435,7 +467,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -446,12 +478,54 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xeebfe7ba7906b9fbf4eee56a0ac2560cb568229b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-4677",
+        "audit-4678"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-04-23 06:05:20+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xce24439f2d9c6a2289f741120fe202248b666666",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "StablecoinV2",
+      "role": "token",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xbef21313c69c009fd7d9510a8d3a481a32473dfc",
+      "impl_name": "StablecoinV2",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xce24439f2d9c6a2289f741120fe202248b666666",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -465,42 +539,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xce24439f2d9c6a2289f741120fe202248b666666",
-      "deployment_unit": "unit-19744",
-      "deployment_unit_proxy_count": 1,
-      "name": "StablecoinV2",
-      "role": "token",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Bitway",
-      "tvl_usd": null,
-      "is_proxy": true,
-      "impl_address": "0xbef21313c69c009fd7d9510a8d3a481a32473dfc",
-      "impl_name": "StablecoinV2",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xce24439f2d9c6a2289f741120fe202248b666666",
-          "deployment_unit": "unit-19744",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-12-17 06:51:13+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -535,7 +578,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-24 08:35:40+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -545,9 +592,9 @@
       "deployment_unit_proxy_count": null,
       "name": "WithdrawVault",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Bitway",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -562,7 +609,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -573,7 +620,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -584,7 +631,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 56,
@@ -595,109 +642,147 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-4677",
+        "audit-4678"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-04 18:05:57+03",
+      "deploy_coverage_basis": "code_matched"
     }
   ],
   "audits": [
     {
       "audit_id": 4677,
       "audit_key": "audit-4677",
-      "report_name": "DL audit link",
+      "report_name": "spaces/iSGHwFKn3P0OZY7c7ITh/uploads/fD8mPTvBi8WxzPI8e7EV/Blocksec_Bitway_Earn_Audit_Report.pdf",
       "report_url": "https://1739587685-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FiSGHwFKn3P0OZY7c7ITh%2Fuploads%2FfD8mPTvBi8WxzPI8e7EV%2FBlocksec_Bitway_Earn_Audit_Report.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "fresh",
+      "date": "2025-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "LPToken",
+        "Utils",
+        "Vault",
+        "WithdrawVault"
+      ],
+      "matched_contracts": 20,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
       "audit_id": 4678,
       "audit_key": "audit-4678",
-      "report_name": "DL audit link",
+      "report_name": "spaces/iSGHwFKn3P0OZY7c7ITh/uploads/op9YWYBDnxCa0YeBdf8t/Salus_BitwayEarn_Audit_Report.pdf",
       "report_url": "https://1739587685-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FiSGHwFKn3P0OZY7c7ITh%2Fuploads%2Fop9YWYBDnxCa0YeBdf8t%2FSalus_BitwayEarn_Audit_Report.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "fresh",
+      "date": "2025-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "LPToken",
+        "Vault",
+        "WithdrawVault",
+        "utils"
+      ],
+      "matched_contracts": 20,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
       "audit_id": 4679,
       "audit_key": "audit-4679",
-      "report_name": "DL audit link",
+      "report_name": "spaces/iSGHwFKn3P0OZY7c7ITh/uploads/CHW9zrkYycSoPABMSaSk/Salus_Bitway_Token_Audit_Report.pdf",
       "report_url": "https://1739587685-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FiSGHwFKn3P0OZY7c7ITh%2Fuploads%2FCHW9zrkYycSoPABMSaSk%2FSalus_Bitway_Token_Audit_Report.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "fresh",
+      "date": "2025-10",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BitwayToken"
+      ],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 57.1,
+      "latest_audit": "2025-10"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x4e1743201775794e313dd621dfe89c61eec81b73",
+      "name": "BitwayTokenLock",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 5,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 8
+    "standard_library": 1,
+    "needs_review": 2
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 43
+    },
+    "extraction_confidence_counts": {
+      "high": 3
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 4677,
-        "report_name": "DL audit link"
-      },
-      {
-        "audit_id": 4678,
-        "report_name": "DL audit link"
-      },
-      {
-        "audit_id": 4679,
-        "report_name": "DL audit link"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

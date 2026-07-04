@@ -4,107 +4,107 @@
 
 - Project: Concentrator (`concentrator`)
 - Website: [https://concentrator.aladdin.club/](https://concentrator.aladdin.club/)
-- Lifecycle: active (Tier 0, 55.8% below peak)
-- Generated: 2026-06-18T13:16:49.155Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-a45b
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:10.433Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-1bf2
 - Chains: ethereum
-- Contract surface: 138 unique implementations (258 raw deployments)
-- DeFi Llama TVL: $63,560,592.71
-- On-chain TVL (included contracts): $21,011,861.47
-- TVL by chain: Ethereum $21,011,861.47
+- Contract surface: 206 unique implementations (326 raw deployments)
+- DeFi Llama TVL: $56,501,343.57
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Concentrator is a yield aggregation and vault platform focused on boosting and auto-compounding rewards for Curve, Convex, Frax and StakeDAO-related assets through Concentrator compounders, harvesters and vaults. f(x)/FxUSD stablecoin mechanics and CLever are separate AladdinDAO product lines unless a specific Concentrator wrapper is in scope.
+Yield. Structurally: 119 project-authored contract(s) across 1 chain(s); 17 ERC20 tokens, 9 ERC721 NFTs, 3 ERC1155 multi-tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-All contracts belong to a single Concentrator family, sharing infrastructure like upgradeable proxies and beacons for vault and token implementations. Vaults deposit into Curve/Convex, compounders auto-reinvest rewards, and FxUSD is minted via base pools using yield-bearing tokens as collateral.
+The protocol comprises 9 functional families. Its contracts share 15 common project-authored base contract(s) (poolconstant, poolerrors, protocolfees). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 950; live-surface contracts included: 258 (258 live, 0 unknown).
-- Excluded by liveness: 468 inactive, 224 singleton, 0 uninitialized.
-- Deployment units: 12/98 live.
-- Detected codebases: curve-stableswap
-- Unverified dependencies: 2/232.
+- Indexed contracts: 326; live-surface contracts included: 326 (248 live, 78 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 20/128 (15.6%)
-- Verified + Unaudited implementations: 108
+- Coverage of deployed-live implementations: 22/122 (18.0%)
+- Deployed-live implementations: 128 of 206 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 22/128
+- Verified + Unaudited implementations: 106
 - Verified by bytecode match: 0
-- Unverified implementations: 10
-- Unique implementations: 138
-- Raw deployments: 258
-- Audits discovered: 34
-- Scoreable audits (matched contracts): 20
-- ASD (verified + unaudited TVL): $19,312,442.90
+- Unverified implementations: 78
+- Unique implementations: 206
+- Raw deployments: 326
+- Audits discovered: 34 (34 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 22
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-03 (aging)
-- Staleness: 0 fresh, 4 aging, 30 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 2 aging, 32 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 2 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 20 match-unverified
 - Tier 1 coverage: 0.8% (Trail of Bits)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 19 | 14.8% | 2025-03 |
+| unknown | Tier 2 | 21 | 16.4% | 2025-03 |
 | PeckShield | Tier 2 | 1 | 0.8% | 2022-07 |
 | Trail of Bits | Tier 1 | 1 | 0.8% | 2024-07 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (20)
+### ✅ Verified + Audited (22)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| AladdinConvexVault | core_logic | ethereum | n/a | [`0xc8ff37...68e0e8`](./contracts/ethereum-1/0xc8ff37f7d057df1bb9ad681b53fa4726f268e0e8/) | ✅ Audited |
+| AladdinFXSConvexVault | core_logic | ethereum | n/a | [`0xd6e3bb...bf99e1`](./contracts/ethereum-1/0xd6e3bb7b1d6fa75a71d48cfb10096d59abbf99e1/) | ✅ Audited |
+| AutoCompoundingConvexFraxStrategy | core_logic | ethereum | n/a | [`0xc9cfd6...c58187`](./contracts/ethereum-1/0xc9cfd6205914ab1e209ffe70326d8dd15fc58187/) | ✅ Audited |
 | CLeverToken | token | ethereum | n/a | 2 deployments: ethereum [`0x3c20ac...972f86`](./contracts/ethereum-1/0x3c20ac688410be8f391be1fb00afc5c212972f86/); ethereum `0xf05e58...0ba904` | ✅ Audited |
-| ReservePool | core_logic | ethereum | n/a | [`0xe93f5d...ee45ed`](./contracts/ethereum-1/0xe93f5dd55ec9bdabbba5ea88e4b4f3c253ee45ed/) | ✅ Audited |
-| AladdinConvexVault | core_logic | ethereum | unit-37358 | [`0xc8ff37...68e0e8`](./contracts/ethereum-1/0xc8ff37f7d057df1bb9ad681b53fa4726f268e0e8/) | ✅ Audited |
-| GeneralTokenConverter | token | ethereum | n/a | [`0x11c907...8a6784`](./contracts/ethereum-1/0x11c907b3aedbd863e551c37f21dd3f36b28a6784/) | ✅ Audited |
-| AladdinFXSConvexVault | core_logic | ethereum | unit-37364 | [`0xd6e3bb...bf99e1`](./contracts/ethereum-1/0xd6e3bb7b1d6fa75a71d48cfb10096d59abbf99e1/) | ✅ Audited |
-| CvxCompounder | adapter | ethereum | unit-37353 | [`0xb0903a...8fb777`](./contracts/ethereum-1/0xb0903ab70a7467ee5756074b31ac88aebb8fb777/) | ✅ Audited |
-| CvxFxnCompounder | adapter | ethereum | unit-37278 | [`0x00bac6...349545`](./contracts/ethereum-1/0x00bac667a4ccf9089ab1db978238c555c4349545/) | ✅ Audited |
+| CvxCompounder | adapter | ethereum | n/a | [`0xb0903a...8fb777`](./contracts/ethereum-1/0xb0903ab70a7467ee5756074b31ac88aebb8fb777/) | ✅ Audited |
+| CvxFxnCompounder | adapter | ethereum | n/a | [`0x00bac6...349545`](./contracts/ethereum-1/0x00bac667a4ccf9089ab1db978238c555c4349545/) | ✅ Audited |
 | FxGateway | unknown | ethereum | n/a | [`0x5c28b9...f06d9b`](./contracts/ethereum-1/0x5c28b966ab37cfb9397bbc04595f91f0fbf06d9b/) | ✅ Audited |
 | FxUSD | unknown | ethereum | n/a | [`0x676c35...cecb43`](./contracts/ethereum-1/0x676c359c78f75581ab2da5c353d2577c41cecb43/) | ✅ Audited |
-| FxUSDCompounder4626 | adapter | ethereum | unit-37281 | [`0x07d171...945f9a`](./contracts/ethereum-1/0x07d1718ff05a8c53c8f05adaed57c0d672945f9a/) | ✅ Audited |
+| FxUSDCompounder4626 | adapter | ethereum | n/a | [`0x07d171...945f9a`](./contracts/ethereum-1/0x07d1718ff05a8c53c8f05adaed57c0d672945f9a/) | ✅ Audited |
+| GeneralTokenConverter | token | ethereum | n/a | [`0x11c907...8a6784`](./contracts/ethereum-1/0x11c907b3aedbd863e551c37f21dd3f36b28a6784/) | ✅ Audited |
 | PlatformFeeBurner | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6440e2...97c3db`](./contracts/ethereum-1/0x6440e21a3634c319c69cef8d17601dbc4e97c3db/); ethereum `0x695eb5...411403` | ✅ Audited |
 | PlatformFeeSpliter | unknown | ethereum | n/a | 2 deployments: ethereum [`0x0084c2...63d703`](./contracts/ethereum-1/0x0084c2e1b1823564e597ff4848a88d61ac63d703/); ethereum `0x323668...2380c8` | ✅ Audited |
 | RebalancePoolGaugeClaimer | operational_periphery | ethereum | n/a | 5 deployments: ethereum [`0x05c630...da5653`](./contracts/ethereum-1/0x05c630e9fc8a064f0e8e6fbb9e2b5d2215da5653/); ethereum `0x4ae3be...69c815`; ethereum `0x81243a...cfc428`; ethereum `0x835191...174d7e`; ethereum `0xb25951...daa98b` | ✅ Audited |
+| ReservePool | core_logic | ethereum | n/a | [`0xe93f5d...ee45ed`](./contracts/ethereum-1/0xe93f5dd55ec9bdabbba5ea88e4b4f3c253ee45ed/) | ✅ Audited |
 | RewardHarvester | operational_periphery | ethereum | n/a | [`0x0559a1...7b9c30`](./contracts/ethereum-1/0x0559a1b22409eef7559a5c88cbaa4e285e7b9c30/) | ✅ Audited |
 | SavingFxUSDFacet | unknown | ethereum | n/a | [`0x3cfe09...b130f5`](./contracts/ethereum-1/0x3cfe091c9028154cc5cb721258e9360803b130f5/) | ✅ Audited |
 | SdCRVBribeBurnerV2 | operational_periphery | ethereum | n/a | [`0x680f26...476665`](./contracts/ethereum-1/0x680f26dbc8fa2b463607ebb49a68a69c33476665/) | ✅ Audited |
-| SdCrvCompounder | adapter | ethereum | unit-37310 | [`0x43e54c...7b9922`](./contracts/ethereum-1/0x43e54c2e7b3e294de3a155785f52ab49d87b9922/) | ✅ Audited |
-| SdPendleCompounder | adapter | ethereum | unit-37326 | [`0x606462...c7fecf`](./contracts/ethereum-1/0x606462126e4bd5c4d153fe09967e4c46c9c7fecf/) | ✅ Audited |
+| SdCrvCompounder | adapter | ethereum | n/a | [`0x43e54c...7b9922`](./contracts/ethereum-1/0x43e54c2e7b3e294de3a155785f52ab49d87b9922/) | ✅ Audited |
+| SdPendleCompounder | adapter | ethereum | n/a | [`0x606462...c7fecf`](./contracts/ethereum-1/0x606462126e4bd5c4d153fe09967e4c46c9c7fecf/) | ✅ Audited |
+| SdPendleGaugeStrategy | operational_periphery | ethereum | n/a | [`0x94992d...dfe5cd`](./contracts/ethereum-1/0x94992da38be9adadd359c2959588fddfa2dfe5cd/) | ✅ Audited |
 | Vesting | operational_periphery | ethereum | n/a | 4 deployments: ethereum [`0x2290ee...c10bdb`](./contracts/ethereum-1/0x2290eefea24a6e43b26c27187742bd1fedc10bdb/); ethereum `0x592e35...695593`; ethereum `0x834188...f28742`; ethereum `0x84c82d...6f7a4e` | ✅ Audited |
-| VestingManagerProxy | operational_periphery | ethereum | unit-37287 | [`0x0e4f31...c54ced`](./contracts/ethereum-1/0x0e4f31a2f48418c90f5e9fa84bf761d832c54ced/) | ✅ Audited |
+| VestingManagerProxy | operational_periphery | ethereum | n/a | [`0x0e4f31...c54ced`](./contracts/ethereum-1/0x0e4f31a2f48418c90f5e9fa84bf761d832c54ced/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (108)
+### ⚠️ Verified + Unaudited (106)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| yVault | core_logic | ethereum | n/a | 3 deployments: ethereum [`0x24129b...975fed`](./contracts/ethereum-1/0x24129b935aff071c4f0554882c0d9573f4975fed/); ethereum `0xb17640...af9567`; ethereum `0xcd6997...e70e84` | ⚠️ Unaudited |
-| sdToken | token | ethereum | n/a | 7 deployments: ethereum [`0x0c0575...85a43f`](./contracts/ethereum-1/0x0c057598dce1891688829581f890dd2a3685a43f/); ethereum `0x402f87...68ac36`; ethereum `0x4df454...118d9d`; ethereum `0x58aad8...b59ffd`; ethereum `0x5ea630...dc10a9`; ethereum `0x752b4c...00f87c`; ethereum `0xe19d1c...9653ad` | ⚠️ Unaudited |
-| Vault | core_logic | ethereum | n/a | 4 deployments: ethereum [`0x5af15d...6e37b7`](./contracts/ethereum-1/0x5af15da84a4a6edf2d9fa6720de921e1026e37b7/); ethereum `0xa2761b...075250`; ethereum `0xbc10c4...db7065`; ethereum `0xf3c2bd...56563f` | ⚠️ Unaudited |
-| RevenuePool | core_logic | ethereum | n/a | 5 deployments: ethereum [`0x0e6746...e5521b`](./contracts/ethereum-1/0x0e67460226a71df07115c1f169418dd159e5521b/); ethereum `0x361f88...d5c8be`; ethereum `0x4fb944...a3c285`; ethereum `0x94172e...0e89d6`; ethereum `0xd36845...f44df7` | ⚠️ Unaudited |
-| AngleVaultGamma | core_logic | ethereum | n/a | 4 deployments: ethereum [`0x1649ff...f18ece`](./contracts/ethereum-1/0x1649ff31c30f9fc7ecae5c76ad00ae3aecf18ece/); ethereum `0x1e6f87...8d042d`; ethereum `0x4a277e...27bb2e`; ethereum `0xa0022d...ab89a6` | ⚠️ Unaudited |
-| AaveFundingPool | core_logic | ethereum | unit-37332 (2 proxies) | 2 deployments: ethereum [`0x6ecfa3...0122e8`](./contracts/ethereum-1/0x6ecfa38fee8a5277b91efda204c235814f0122e8/); ethereum `0xab709e...952473` | ⚠️ Unaudited |
+| AaveFundingPool | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x6ecfa3...0122e8`](./contracts/ethereum-1/0x6ecfa38fee8a5277b91efda204c235814f0122e8/); ethereum `0xab709e...952473` | ⚠️ Unaudited |
 | Accumulator | unknown | ethereum | n/a | 6 deployments: ethereum [`0x615959...88056f`](./contracts/ethereum-1/0x615959a1d3e2740054d7130028613ecfa988056f/); ethereum `0x65682c...bc4526`; ethereum `0xb1d778...e588a6`; ethereum `0xba445c...4776c8`; ethereum `0xc74c0e...9ee75b`; ethereum `0xe75da6...d88423` | ⚠️ Unaudited |
 | AdapterFactory | adapter | ethereum | n/a | [`0x1662a5...adccf4`](./contracts/ethereum-1/0x1662a5c9ce635f2322a9aadeaa060654aaadccf4/) | ⚠️ Unaudited |
 | AdapterRegistry | adapter | ethereum | n/a | [`0xdd89f9...d4ea7b`](./contracts/ethereum-1/0xdd89f9fbff81c3754fd8998f40b63fa9d8d4ea7b/) | ⚠️ Unaudited |
 | AladdinOFTAdapter | adapter | ethereum | n/a | [`0xcad2b9...c73f86`](./contracts/ethereum-1/0xcad2b9c980322f460db51cc8e45539f677c73f86/) | ⚠️ Unaudited |
 | AngleMerklClaimer | operational_periphery | ethereum | n/a | [`0x32ee46...04515b`](./contracts/ethereum-1/0x32ee46755ae81ce917392ed1fb21f74a8104515b/) | ⚠️ Unaudited |
-| AutoCompoundingConvexFraxStrategy | unknown | ethereum | n/a | [`0xc9cfd6...c58187`](./contracts/ethereum-1/0xc9cfd6205914ab1e209ffe70326d8dd15fc58187/) | ⚠️ Unaudited |
+| AngleVaultGamma | core_logic | ethereum | n/a | 4 deployments: ethereum [`0x1649ff...f18ece`](./contracts/ethereum-1/0x1649ff31c30f9fc7ecae5c76ad00ae3aecf18ece/); ethereum `0x1e6f87...8d042d`; ethereum `0x4a277e...27bb2e`; ethereum `0xa0022d...ab89a6` | ⚠️ Unaudited |
 | Booster | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x01363d...a569d8`](./contracts/ethereum-1/0x01363db6e185433ae63de4c745ca0aef49a569d8/); ethereum `0x1b3a4e...62d2f1` | ⚠️ Unaudited |
 | BoostMarketplace | unknown | ethereum | n/a | 2 deployments: ethereum [`0xa52f3d...c407f0`](./contracts/ethereum-1/0xa52f3dd9c456f77d766075a727c7c045fcc407f0/); ethereum `0xbc38d2...3fb6b8` | ⚠️ Unaudited |
 | ClaimRewardsV1 | unknown | ethereum | n/a | [`0x097d23...bb79c6`](./contracts/ethereum-1/0x097d23d07f1061cb4ace410a3ddc634820bb79c6/) | ⚠️ Unaudited |
 | CompounderGateway | adapter | ethereum | n/a | [`0x883fd3...f7df1f`](./contracts/ethereum-1/0x883fd355debf417f82aa9a3e2936971487f7df1f/) | ⚠️ Unaudited |
 | ControllerModule | governance | ethereum | n/a | 2 deployments: ethereum [`0xb3f463...017945`](./contracts/ethereum-1/0xb3f46356ca516664c305dad356ddee5491017945/); ethereum `0xe56ce1...bde0b4` | ⚠️ Unaudited |
-| ConvexFraxCompounderBurner | unknown | ethereum | n/a | [`0x789e72...f1a034`](./contracts/ethereum-1/0x789e729713ddc80cf2db4e59ca064d3770f1a034/) | ⚠️ Unaudited |
+| ConvexFraxCompounderBurner | adapter | ethereum | n/a | [`0x789e72...f1a034`](./contracts/ethereum-1/0x789e729713ddc80cf2db4e59ca064d3770f1a034/) | ⚠️ Unaudited |
 | CRVDepositorV2 | unknown | ethereum | n/a | [`0x88c88a...c64026`](./contracts/ethereum-1/0x88c88aa6a9cedc2aff9b4ca6820292f39cc64026/) | ⚠️ Unaudited |
 | CRVPoolFactory | registry | ethereum | n/a | [`0xdc9718...4c20aa`](./contracts/ethereum-1/0xdc9718e7704f10db1afaad737f8a04bcd14c20aa/) | ⚠️ Unaudited |
 | CRVStrategy | core_logic | ethereum | n/a | [`0x941550...46d8f7`](./contracts/ethereum-1/0x94155052e2be3c9ad6d57f1b13f914626946d8f7/) | ⚠️ Unaudited |
-| CurveShutdownStrategy | core_logic | ethereum | unit-37331 | [`0x69d614...1ea2cd`](./contracts/ethereum-1/0x69d61428d089c2f35bf6a472f540d0f82d1ea2cd/) | ⚠️ Unaudited |
+| CurveShutdownStrategy | core_logic | ethereum | n/a | [`0x69d614...1ea2cd`](./contracts/ethereum-1/0x69d61428d089c2f35bf6a472f540d0f82d1ea2cd/) | ⚠️ Unaudited |
 | DarkParadiseV2 | unknown | ethereum | n/a | [`0x20d1b5...e642c3`](./contracts/ethereum-1/0x20d1b558ef44a6e23d9bf4bf8db1653626e642c3/) | ⚠️ Unaudited |
 | DebtReducer | unknown | ethereum | n/a | 2 deployments: ethereum [`0x2ac0a3...8e7cb4`](./contracts/ethereum-1/0x2ac0a3b5cb25d6071f05e9729922261bdf8e7cb4/); ethereum `0xf32ffd...0961ac` | ⚠️ Unaudited |
 | Depositor | unknown | ethereum | n/a | [`0x7f5c48...58acb5`](./contracts/ethereum-1/0x7f5c485d24fb1832a14f122c8722ef15c158acb5/) | ⚠️ Unaudited |
@@ -119,11 +119,11 @@ All contracts belong to a single Concentrator family, sharing infrastructure lik
 | Gauge Controller | operational_periphery | ethereum | n/a | [`0xe60eb8...6d7f37`](./contracts/ethereum-1/0xe60eb8098b34ed775ac44b1dde864e098c6d7f37/) | ⚠️ Unaudited |
 | GaugeMultiRewards | operational_periphery | ethereum | n/a | [`0x3c310f...4352d1`](./contracts/ethereum-1/0x3c310fc54c0534dc3c45312934508722284352d1/) | ⚠️ Unaudited |
 | GaugeRewarder | operational_periphery | ethereum | n/a | [`0x5ac1a8...c02956`](./contracts/ethereum-1/0x5ac1a882e6cedc58511b7e42b02bab42e2c02956/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | unit-37346 (2 proxies) | 2 deployments: ethereum [`0xa0fb1b...804e99`](./contracts/ethereum-1/0xa0fb1b11cca5871fb0225b64308e249b97804e99/); ethereum `0xc40549...afe23f` | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | n/a | 2 deployments: ethereum [`0xa0fb1b...804e99`](./contracts/ethereum-1/0xa0fb1b11cca5871fb0225b64308e249b97804e99/); ethereum `0xc40549...afe23f` | ⚠️ Unaudited |
 | InflationReceiver | unknown | ethereum | n/a | 2 deployments: ethereum [`0x8f78dd...66820e`](./contracts/ethereum-1/0x8f78ddf344e20b92b03c13d82d1316fc0a66820e/); ethereum `0xc9104e...4391ad` | ⚠️ Unaudited |
 | InversePriceOracle | operational_periphery | ethereum | n/a | [`0x5d2c62...964e6a`](./contracts/ethereum-1/0x5d2c6215555b36889ef235c6d5ccde22e9964e6a/) | ⚠️ Unaudited |
 | InverseWstETHPriceOracle | operational_periphery | ethereum | n/a | [`0x222786...fdaad1`](./contracts/ethereum-1/0x222786833b5fd5ee21532d8b576391babefdaad1/) | ⚠️ Unaudited |
-| Liquidity Gauge v4 | operational_periphery | ethereum | unit-37298 (2 proxies) | 2 deployments: ethereum [`0x28604f...44343a`](./contracts/ethereum-1/0x28604ff7b4aeae28d4d9e54d14038c910844343a/); ethereum `0xf54bce...a0f68d` | ⚠️ Unaudited |
+| Liquidity Gauge v4 | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x28604f...44343a`](./contracts/ethereum-1/0x28604ff7b4aeae28d4d9e54d14038c910844343a/); ethereum `0xf54bce...a0f68d` | ⚠️ Unaudited |
 | Liquidity Gauge v4 | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x4887ae...bd0cd8`](./contracts/ethereum-1/0x4887aea49758b413e9bab127ffa4e59104bd0cd8/); ethereum `0xc1e477...13ca3c` | ⚠️ Unaudited |
 | LockerPreLaunch | unknown | ethereum | n/a | [`0x5c5ccb...cf0922`](./contracts/ethereum-1/0x5c5ccb2e511fcdeaa16737810787a47507cf0922/) | ⚠️ Unaudited |
 | LongPositionEmergencyCloseFacet | unknown | ethereum | n/a | 3 deployments: ethereum [`0x231928...4b3f79`](./contracts/ethereum-1/0x2319289e56830b50a282c25af4f0045c724b3f79/); ethereum `0x7e6a12...cde303`; ethereum `0xa5145f...af31e1` | ⚠️ Unaudited |
@@ -144,6 +144,7 @@ All contracts belong to a single Concentrator family, sharing infrastructure lik
 | ProxyOFT | unknown | ethereum | n/a | 2 deployments: ethereum [`0x2b162d...87a3bb`](./contracts/ethereum-1/0x2b162de7fbd942f142aa21865f685f71a687a3bb/); ethereum `0x8d4142...0a6280` | ⚠️ Unaudited |
 | Redeem | unknown | ethereum | n/a | [`0x1d8a9c...c4d356`](./contracts/ethereum-1/0x1d8a9c30e4e25033498347c1a054717bd0c4d356/) | ⚠️ Unaudited |
 | Registrar | unknown | ethereum | n/a | [`0x1c3a4d...a5c6de`](./contracts/ethereum-1/0x1c3a4d06532d9d1c631f99ec50dd72da43a5c6de/) | ⚠️ Unaudited |
+| RevenuePool | core_logic | ethereum | n/a | 5 deployments: ethereum [`0x0e6746...e5521b`](./contracts/ethereum-1/0x0e67460226a71df07115c1f169418dd159e5521b/); ethereum `0x361f88...d5c8be`; ethereum `0x4fb944...a3c285`; ethereum `0x94172e...0e89d6`; ethereum `0xd36845...f44df7` | ⚠️ Unaudited |
 | RewardClaimHelper | periphery | ethereum | n/a | [`0xaf59d1...657a7f`](./contracts/ethereum-1/0xaf59d144357dcc8a852ad601f27bf6310b657a7f/) | ⚠️ Unaudited |
 | RewardHandler | unknown | ethereum | n/a | 2 deployments: ethereum [`0x524fce...c3a3b3`](./contracts/ethereum-1/0x524fce03270c60279d604ea3b374194e96c3a3b3/); ethereum `0xc47bde...a7e336` | ⚠️ Unaudited |
 | RewardReceiver | unknown | ethereum | n/a | [`0x78f1bb...c85ad7`](./contracts/ethereum-1/0x78f1bba3868b67f4994b3e7f7ec9b0485dc85ad7/) | ⚠️ Unaudited |
@@ -158,14 +159,14 @@ All contracts belong to a single Concentrator family, sharing infrastructure lik
 | Sanctuary | unknown | ethereum | n/a | [`0xac1486...1247d3`](./contracts/ethereum-1/0xac14864ce5a98af3248ffbf549441b04421247d3/) | ⚠️ Unaudited |
 | sdCRV | unknown | ethereum | n/a | [`0xd1b565...f6abb5`](./contracts/ethereum-1/0xd1b5651e55d4ceed36251c61c50c889b36f6abb5/) | ⚠️ Unaudited |
 | sdMAV | unknown | ethereum | n/a | [`0x506875...bb02f9`](./contracts/ethereum-1/0x50687515e93c43964733282f9db8683f80bb02f9/) | ⚠️ Unaudited |
-| SdPendleBribeBurner | unknown | ethereum | n/a | [`0x8bde1d...56ade2`](./contracts/ethereum-1/0x8bde1d771423b8d2fe0b046b934fb9a7f956ade2/) | ⚠️ Unaudited |
-| SdPendleGaugeStrategy | unknown | ethereum | n/a | [`0x94992d...dfe5cd`](./contracts/ethereum-1/0x94992da38be9adadd359c2959588fddfa2dfe5cd/) | ⚠️ Unaudited |
+| SdPendleBribeBurner | operational_periphery | ethereum | n/a | [`0x8bde1d...56ade2`](./contracts/ethereum-1/0x8bde1d771423b8d2fe0b046b934fb9a7f956ade2/) | ⚠️ Unaudited |
 | SDT | unknown | ethereum | n/a | [`0x73968b...6cdb2f`](./contracts/ethereum-1/0x73968b9a57c6e53d41345fd57a6e6ae27d6cdb2f/) | ⚠️ Unaudited |
+| sdToken | token | ethereum | n/a | 7 deployments: ethereum [`0x0c0575...85a43f`](./contracts/ethereum-1/0x0c057598dce1891688829581f890dd2a3685a43f/); ethereum `0x402f87...68ac36`; ethereum `0x4df454...118d9d`; ethereum `0x58aad8...b59ffd`; ethereum `0x5ea630...dc10a9`; ethereum `0x752b4c...00f87c`; ethereum `0xe19d1c...9653ad` | ⚠️ Unaudited |
 | ShortPool | core_logic | ethereum | n/a | 3 deployments: ethereum [`0x0055e2...be82fa`](./contracts/ethereum-1/0x0055e248ee7feab91969b77ab32f184b72be82fa/); ethereum `0x7aed2b...9e1f70`; ethereum `0xf3d24b...10a098` | ⚠️ Unaudited |
 | ShortPoolManager | core_logic | ethereum | n/a | 4 deployments: ethereum [`0x218b68...d99801`](./contracts/ethereum-1/0x218b689a4f4afba497123b4831f58d6379d99801/); ethereum `0x22ba83...b0f3ff`; ethereum `0x6844aa...3f5e45`; ethereum `0x958df8...2ffb3b` | ⚠️ Unaudited |
 | ShortPositionOperateFlashLoanFacet | unknown | ethereum | n/a | 3 deployments: ethereum [`0x3d35dc...174a74`](./contracts/ethereum-1/0x3d35dc5948c948f131ddd9e3a341b99e45174a74/); ethereum `0xb0c255...15e8d6`; ethereum `0xce744c...bdd448` | ⚠️ Unaudited |
 | SmartWalletWhitelist | unknown | ethereum | n/a | [`0xac94b8...72aa3e`](./contracts/ethereum-1/0xac94b8ea0e3a080f0fa6ae89cc873d956f72aa3e/) | ⚠️ Unaudited |
-| StakeDAOCompounderBurner | unknown | ethereum | n/a | [`0xf95420...c05d5b`](./contracts/ethereum-1/0xf954200fd969443b8f853b4083b71cd073c05d5b/) | ⚠️ Unaudited |
+| StakeDAOCompounderBurner | adapter | ethereum | n/a | [`0xf95420...c05d5b`](./contracts/ethereum-1/0xf954200fd969443b8f853b4083b71cd073c05d5b/) | ⚠️ Unaudited |
 | StakeDaoNFT | token | ethereum | n/a | [`0xdd4f84...e66bd5`](./contracts/ethereum-1/0xdd4f84e4f3cd31d6c91d80122b5a26cb4ae66bd5/) | ⚠️ Unaudited |
 | StakeDaoNFT_V2 | token | ethereum | n/a | [`0xc5f572...5bb6cd`](./contracts/ethereum-1/0xc5f572b705cae1893cdceb5161ce40e2fc5bb6cd/) | ⚠️ Unaudited |
 | StakeDaoNFT_V3 | token | ethereum | n/a | [`0x6dd223...e38ea2`](./contracts/ethereum-1/0x6dd2236b1e089762cc264c85eebcff195ae38ea2/) | ⚠️ Unaudited |
@@ -174,6 +175,7 @@ All contracts belong to a single Concentrator family, sharing infrastructure lik
 | TimelockController | governance | ethereum | n/a | [`0x68863f...e4e61a`](./contracts/ethereum-1/0x68863fb8855b04509a835082478d6e3d0be4e61a/) | ⚠️ Unaudited |
 | Token Minter | operational_periphery | ethereum | n/a | [`0xc8b194...f71def`](./contracts/ethereum-1/0xc8b194925d55d5de9555ad1db74c149329f71def/) | ⚠️ Unaudited |
 | UniformBoostProvider | unknown | ethereum | n/a | [`0x7c3867...13c5b7`](./contracts/ethereum-1/0x7c3867e04d5a69b750332300643b36135313c5b7/) | ⚠️ Unaudited |
+| Vault | core_logic | ethereum | n/a | 4 deployments: ethereum [`0x5af15d...6e37b7`](./contracts/ethereum-1/0x5af15da84a4a6edf2d9fa6720de921e1026e37b7/); ethereum `0xa2761b...075250`; ethereum `0xbc10c4...db7065`; ethereum `0xf3c2bd...56563f` | ⚠️ Unaudited |
 | VeBoostDelegation | unknown | ethereum | n/a | 2 deployments: ethereum [`0xce00ad...6be923`](./contracts/ethereum-1/0xce00ad8df94d8c365dc415b84963aa37a06be923/); ethereum `0xfda13d...eb1688` | ⚠️ Unaudited |
 | VeBoostDelegationMultiRewards | unknown | ethereum | n/a | 2 deployments: ethereum [`0xda9846...2bebdf`](./contracts/ethereum-1/0xda9846665bdb44b0d0caffd0d1d4a539932bebdf/); ethereum `0xe1f9c8...63b9cf` | ⚠️ Unaudited |
 | VeFeeGateway | unknown | ethereum | n/a | [`0x8fc790...6421e9`](./contracts/ethereum-1/0x8fc7906fc6047679dad53c0c3b40e135486421e9/) | ⚠️ Unaudited |
@@ -191,6 +193,7 @@ All contracts belong to a single Concentrator family, sharing infrastructure lik
 | YieldBasisDepositor | unknown | ethereum | n/a | [`0xfb9aa6...595785`](./contracts/ethereum-1/0xfb9aa699f1badb31a7c4b40f7fa1f49469595785/) | ⚠️ Unaudited |
 | YieldBasisFallbackHandler | unknown | ethereum | n/a | [`0x325229...808ea9`](./contracts/ethereum-1/0x325229508513d484a90f3618e6aca8a9fb808ea9/) | ⚠️ Unaudited |
 | YieldnestDepositor | unknown | ethereum | n/a | [`0x8f0e63...a3352e`](./contracts/ethereum-1/0x8f0e636a19c1677fdf37da0e3af602f96da3352e/) | ⚠️ Unaudited |
+| yVault | core_logic | ethereum | n/a | 3 deployments: ethereum [`0x24129b...975fed`](./contracts/ethereum-1/0x24129b935aff071c4f0554882c0d9573f4975fed/); ethereum `0xb17640...af9567`; ethereum `0xcd6997...e70e84` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -204,61 +207,129 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (10)
+### ❓ Unverified (78)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x04ef23...222619` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x08d36c...ab8f9d` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0x0cd730...01d222` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0e0f27...cf1a23` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x172573...194c01` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x177eaa...70e7ec` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1ce37b...1c8560` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1f4903...9f1d51` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1fe537...787fce` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x210dfe...07a68a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x213119...42e209` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x23ab51...a3bc4a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2903db...6d0eb0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2f5e8c...39136b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x38d107...c66270` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0x3a3060...c183c5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3deb1b...297886` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3e7b4d...aa7ec5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3e88f7...fbc574` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4153f8...3f97d5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4ad5a8...d908e6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4c2f99...1bef8d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4e3736...dd996b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x50dc9a...b8184e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x51452b...64fde5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x518129...16c91f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x539e65...ca512c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x576d7a...dbe080` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x588add...18370d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5892df...22d1b8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x594061...a8dff5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5b0944...007dc0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5b75c6...a37bb6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5dfdf4...5479ac` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x60136f...4318d6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x644a15...b26322` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6543b0...a2a2f8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x65ef12...e53a0b` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0x6ac9de...53cac8` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0x760230...7339e7` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7d5980...af98b3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x88cae3...2b66be` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x896451...38abc9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8996cb...ccc265` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x917d8b...6f18cf` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x92cff1...2e3356` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x963bac...8f6563` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9d967c...6f4510` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9ebbb3...7cf5c1` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa054b8...70e7f1` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa29646...a1339d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa3ecf0...a6359a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xab8a21...910bd6` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0xac7cf0...9413b5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xae762a...e7e7e3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xae7691...96c918` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xae9ad1...fda964` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xafc6ae...4f7814` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb53943...035a93` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb5f963...cf99bd` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb7f790...0e9af3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xbcfe5c...8d42e0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xcaf1f3...70c44a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xcd3040...da058f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd24d1f...c9a04e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd69f52...d25ade` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd7b810...21e089` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd9f15a...397bda` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xde65a1...be9375` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe42a46...f94f17` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe4c978...9cdc3e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe56d97...7e25db` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0xe9cb57...fc5a20` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0xf0c702...d3f6f9` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0xf32b39...5cc3de` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0xf56c26...0c2166` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0xfd91ae...718bcd` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xffec6c...8810fb` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [AladdinETH_Report_v1.0_2022_12_22.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/AladdinETH_Report_v1.0_2022_12_22.pdf) | unknown | Audit | 2022-12 | stale | Direct | contract_name | 0 | n/a |
-| [PeckShield-Audit-Report-AladdinDAO-Concentrator-v1.0-20220704.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/PeckShield-Audit-Report-AladdinDAO-Concentrator-v1.0-20220704.pdf) | PeckShield | Audit | 2022-07 | stale | Direct | contract_name | 1 | high |
-| [PeckShield-Audit-Report-AladdinV3Concentrator-v1.0.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/PeckShield-Audit-Report-AladdinV3Concentrator-v1.0.pdf) | PeckShield | Audit | 2022-04 | stale | Direct | contract_name | 0 | n/a |
-| [SECBIT_AladdinCVX_v1.0_20221209.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_AladdinCVX_v1.0_20221209.pdf) | unknown | Audit | 2022-12 | stale | Direct | contract_name | 0 | n/a |
-| [SECBIT_AladdinCVX_v1.1_20230203.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_AladdinCVX_v1.1_20230203.pdf) | unknown | Audit | 2023-02 | stale | Direct | contract_name | 0 | n/a |
-| [SECBIT_AladdinDAO_aFXS_Report.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_AladdinDAO_aFXS_Report.pdf) | unknown | Audit | 2022-08 | stale | Direct | contract_name | 1 | high |
-| [SECBIT_AladdinDAO_aFXS_V2_Report_v1.0_20230815.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_AladdinDAO_aFXS_V2_Report_v1.0_20230815.pdf) | unknown | Audit | 2023-08 | stale | Direct | contract_name | 5 | high |
-| [SECBIT_AladdinDaoV3_ClevUSD_Strategy_Report.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_AladdinDaoV3_ClevUSD_Strategy_Report.pdf) | unknown | Audit | 2022-09 | stale | Direct | contract_name | 4 | high |
-| [SECBIT_Aladdin_aCVX_Report_v1.0_20231018.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Aladdin_aCVX_Report_v1.0_20231018.pdf) | unknown | Audit | 2023-10 | stale | Direct | contract_name | 1 | high |
-| [SECBIT_CLever_Furnace_Update_20221111.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_CLever_Furnace_Update_20221111.pdf) | unknown | Audit | 2022-11 | stale | Direct | contract_name | 0 | n/a |
-| [SECBIT_CLever_Report_v1.1.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_CLever_Report_v1.1.pdf) | unknown | Audit | 2022-04 | stale | Direct | contract_name | 6 | high |
-| [SECBIT_Concentrator_Harvester_Report_v1.0_20230308.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_Harvester_Report_v1.0_20230308.pdf) | unknown | Audit | 2023-03 | stale | Direct | contract_name | 0 | n/a |
-| [SECBIT_Concentrator_IFO_Report_v1.2_20220701.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_IFO_Report_v1.2_20220701.pdf) | unknown | Audit | 2022-07 | stale | Direct | contract_name | 1 | high |
-| [SECBIT_Concentrator_Report.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_Report.pdf) | unknown | Audit | 2022-03 | stale | Direct | contract_name | 1 | high |
-| [SECBIT_Concentrator_Report_v1.1.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_Report_v1.1.pdf) | unknown | Audit | 2022-03 | stale | Direct | contract_name | 1 | high |
-| [SECBIT_Concentrator_aCRV_Update_20230203.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_aCRV_Update_20230203.pdf) | unknown | Audit | 2023-02 | stale | Direct | contract_name | 0 | n/a |
-| [SECBIT_Concentrator_aFXN_Report_v1.0_20240726.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_aFXN_Report_v1.0_20240726.pdf) | unknown | Audit | 2024-07 | aging | Direct | contract_name | 1 | high |
-| [SECBIT_Concentrator_arUSD_Report_v1.0_20240618.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_arUSD_Report_v1.0_20240618.pdf) | unknown | Audit | 2024-06 | stale | Direct | contract_name | 1 | high |
-| [SECBIT_Concentrator_asdCRV_Update_Report_v1.0_20231228.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_asdCRV_Update_Report_v1.0_20231228.pdf) | unknown | Audit | 2023-12 | stale | Direct | contract_name | 2 | high |
-| [SECBIT_Concentrator_asdPENDLE_v1.0_20240813.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_asdPENDLE_v1.0_20240813.pdf) | unknown | Audit | 2024-08 | aging | Direct | contract_name | 1 | high |
-| [SECBIT_Generic_CLever_Report.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Generic_CLever_Report.pdf) | unknown | Audit | 2022-07 | stale | Direct | contract_name | 0 | n/a |
-| [SECBIT_TokenSale_Report_v1.1.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_TokenSale_Report_v1.1.pdf) | unknown | Audit | 2022-09 | stale | Direct | contract_name | 0 | n/a |
-| [SECBIT_f(x)_Protocol_New_Features_Report_v1.1_20231129.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_Protocol_New_Features_Report_v1.1_20231129.pdf) | unknown | Audit | 2023-11 | stale | Direct | contract_name | 3 | high |
-| [SECBIT_f(x)_Protocol_RebalancePool_Report_v1.2_20230725.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_Protocol_RebalancePool_Report_v1.2_20230725.pdf) | unknown | Audit | 2023-07 | stale | Direct | contract_name | 0 | n/a |
-| [SECBIT_f(x)_Protocol_Report_v1.0_20230614.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_Protocol_Report_v1.0_20230614.pdf) | unknown | Audit | 2023-06 | stale | Direct | contract_name | 0 | n/a |
-| [SECBIT_f(x)_Protocol_Update_Report_v1.1_20230917.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_Protocol_Update_Report_v1.1_20230917.pdf) | unknown | Audit | 2023-09 | stale | Direct | contract_name | 2 | high |
-| [SECBIT_f(x)_Rebalance_Pool_Boost_Report_v1.0_20231213.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_Rebalance_Pool_Boost_Report_v1.0_20231213.pdf) | unknown | Audit | 2023-12 | stale | Direct | contract_name | 5 | high |
-| [SECBIT_f(x)_fxSAVE_And_StabilityPoolUSDCStrategy_Report_v1.1_20250317.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_fxSAVE_And_StabilityPoolUSDCStrategy_Report_v1.1_20250317.pdf) | unknown | Audit | 2025-03 | aging | Direct | contract_name | 2 | high |
-| [SECBIT_sdCRV_Report_v1.0_20230202.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_sdCRV_Report_v1.0_20230202.pdf) | unknown | Audit | 2023-02 | stale | Direct | contract_name | 0 | n/a |
-| [SECBIT_sdCRV_Report_v1.2_20230616.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_sdCRV_Report_v1.2_20230616.pdf) | unknown | Audit | 2023-06 | stale | Direct | contract_name | 0 | n/a |
-| [Supremacy_AladdinDAO_aCVX_v1.0_20231228.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/Supremacy_AladdinDAO_aCVX_v1.0_20231228.pdf) | unknown | Audit | 2023-12 | stale | Direct | contract_name | 1 | high |
-| [TrailofBits_fx_oracle_202406.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/TrailofBits_fx_oracle_202406.pdf) | Trail of Bits | Audit | 2024-07 | aging | Direct | contract_name | 0 | n/a |
-| [TrailofBits_fx_protocol_202403.pdf (also discovered via alternate URL)](https://github.com/AladdinDAO/audit-reports/blob/main/TrailofBits_fx_protocol_202403.pdf) | Trail of Bits | Audit | 2024-04 | stale | Direct | contract_name | 1 | high |
-| [DL audit link](https://aladdin.club/audits/AladdinDao_V3_Report_Secbit.pdf) | unknown | Audit | 2022-03 | stale | Direct | contract_name | 1 | high |
+| [AladdinETH_Report_v1.0_2022_12_22.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/AladdinETH_Report_v1.0_2022_12_22.pdf) | unknown | Audit | 2022-12 | stale | Direct | contract_name | 2 | high |
+| [PeckShield-Audit-Report-AladdinDAO-Concentrator-v1.0-20220704.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/PeckShield-Audit-Report-AladdinDAO-Concentrator-v1.0-20220704.pdf) | PeckShield | Audit | 2022-07 | stale | Direct | contract_name | 1 | n/a |
+| [PeckShield-Audit-Report-AladdinV3Concentrator-v1.0.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/PeckShield-Audit-Report-AladdinV3Concentrator-v1.0.pdf) | PeckShield | Audit | 2022-04 | stale | Direct | n/a | 0 | n/a |
+| [SECBIT_AladdinCVX_v1.0_20221209.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_AladdinCVX_v1.0_20221209.pdf) | unknown | Audit | 2022-12 | stale | Direct | n/a | 0 | n/a |
+| [SECBIT_AladdinCVX_v1.1_20230203.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_AladdinCVX_v1.1_20230203.pdf) | unknown | Audit | 2023-02 | stale | Direct | n/a | 0 | n/a |
+| [SECBIT_AladdinDAO_aFXS_Report.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_AladdinDAO_aFXS_Report.pdf) | unknown | Audit | 2022-08 | stale | Direct | contract_name | 1 | n/a |
+| [SECBIT_AladdinDAO_aFXS_V2_Report_v1.0_20230815.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_AladdinDAO_aFXS_V2_Report_v1.0_20230815.pdf) | unknown | Audit | 2023-08 | stale | Direct | contract_name | 3 | n/a |
+| [SECBIT_AladdinDaoV3_ClevUSD_Strategy_Report.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_AladdinDaoV3_ClevUSD_Strategy_Report.pdf) | unknown | Audit | 2022-09 | stale | Direct | contract_name | 1 | n/a |
+| [SECBIT_Aladdin_aCVX_Report_v1.0_20231018.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Aladdin_aCVX_Report_v1.0_20231018.pdf) | unknown | Audit | 2023-10 | stale | Direct | contract_name | 1 | n/a |
+| [SECBIT_CLever_Furnace_Update_20221111.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_CLever_Furnace_Update_20221111.pdf) | unknown | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
+| [SECBIT_CLever_Report_v1.1.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_CLever_Report_v1.1.pdf) | unknown | Audit | 2022-04 | stale | Direct | contract_name | 2 | n/a |
+| [SECBIT_Concentrator_Harvester_Report_v1.0_20230308.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_Harvester_Report_v1.0_20230308.pdf) | unknown | Audit | 2023-03 | stale | Direct | n/a | 0 | n/a |
+| [SECBIT_Concentrator_IFO_Report_v1.2_20220701.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_IFO_Report_v1.2_20220701.pdf) | unknown | Audit | 2022-07 | stale | Direct | contract_name | 1 | n/a |
+| [SECBIT_Concentrator_Report.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_Report.pdf) | unknown | Audit | 2022-03 | stale | Direct | contract_name | 1 | n/a |
+| [SECBIT_Concentrator_Report_v1.1.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_Report_v1.1.pdf) | unknown | Audit | 2022-03 | stale | Direct | contract_name | 1 | n/a |
+| [SECBIT_Concentrator_aCRV_Update_20230203.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_aCRV_Update_20230203.pdf) | unknown | Audit | 2023-02 | stale | Direct | contract_name | 1 | high |
+| [SECBIT_Concentrator_aFXN_Report_v1.0_20240726.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_aFXN_Report_v1.0_20240726.pdf) | unknown | Audit | 2024-07 | stale | Direct | contract_name | 1 | n/a |
+| [SECBIT_Concentrator_arUSD_Report_v1.0_20240618.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_arUSD_Report_v1.0_20240618.pdf) | unknown | Audit | 2024-06 | stale | Direct | contract_name | 1 | n/a |
+| [SECBIT_Concentrator_asdCRV_Update_Report_v1.0_20231228.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_asdCRV_Update_Report_v1.0_20231228.pdf) | unknown | Audit | 2023-12 | stale | Direct | contract_name | 2 | n/a |
+| [SECBIT_Concentrator_asdPENDLE_v1.0_20240813.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Concentrator_asdPENDLE_v1.0_20240813.pdf) | unknown | Audit | 2024-08 | aging | Direct | contract_name | 1 | n/a |
+| [SECBIT_Generic_CLever_Report.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_Generic_CLever_Report.pdf) | unknown | Audit | 2022-07 | stale | Direct | n/a | 0 | n/a |
+| [SECBIT_TokenSale_Report_v1.1.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_TokenSale_Report_v1.1.pdf) | unknown | Audit | 2022-09 | stale | Direct | n/a | 0 | n/a |
+| [SECBIT_f(x)_Protocol_New_Features_Report_v1.1_20231129.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_Protocol_New_Features_Report_v1.1_20231129.pdf) | unknown | Audit | 2023-11 | stale | Direct | contract_name | 3 | n/a |
+| [SECBIT_f(x)_Protocol_RebalancePool_Report_v1.2_20230725.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_Protocol_RebalancePool_Report_v1.2_20230725.pdf) | unknown | Audit | 2023-07 | stale | Direct | n/a | 0 | n/a |
+| [SECBIT_f(x)_Protocol_Report_v1.0_20230614.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_Protocol_Report_v1.0_20230614.pdf) | unknown | Audit | 2023-06 | stale | Direct | n/a | 0 | n/a |
+| [SECBIT_f(x)_Protocol_Update_Report_v1.1_20230917.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_Protocol_Update_Report_v1.1_20230917.pdf) | unknown | Audit | 2023-09 | stale | Direct | contract_name | 2 | n/a |
+| [SECBIT_f(x)_Rebalance_Pool_Boost_Report_v1.0_20231213.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_Rebalance_Pool_Boost_Report_v1.0_20231213.pdf) | unknown | Audit | 2023-12 | stale | Direct | contract_name | 1 | n/a |
+| [SECBIT_f(x)_fxSAVE_And_StabilityPoolUSDCStrategy_Report_v1.1_20250317.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_f(x)_fxSAVE_And_StabilityPoolUSDCStrategy_Report_v1.1_20250317.pdf) | unknown | Audit | 2025-03 | aging | Direct | contract_name | 2 | n/a |
+| [SECBIT_sdCRV_Report_v1.0_20230202.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_sdCRV_Report_v1.0_20230202.pdf) | unknown | Audit | 2023-02 | stale | Direct | n/a | 0 | n/a |
+| [SECBIT_sdCRV_Report_v1.2_20230616.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/SECBIT_sdCRV_Report_v1.2_20230616.pdf) | unknown | Audit | 2023-06 | stale | Direct | n/a | 0 | n/a |
+| [Supremacy_AladdinDAO_aCVX_v1.0_20231228.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/Supremacy_AladdinDAO_aCVX_v1.0_20231228.pdf) | unknown | Audit | 2023-12 | stale | Direct | contract_name | 1 | n/a |
+| [TrailofBits_fx_oracle_202406.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/TrailofBits_fx_oracle_202406.pdf) | Trail of Bits | Audit | 2024-07 | stale | Direct | n/a | 0 | n/a |
+| [TrailofBits_fx_protocol_202403.pdf](https://github.com/AladdinDAO/audit-reports/blob/main/TrailofBits_fx_protocol_202403.pdf) | Trail of Bits | Audit | 2024-04 | stale | Direct | contract_name | 1 | n/a |
+| [AladdinDao_V3_Report_Secbit.pdf](https://aladdin.club/audits/AladdinDao_V3_Report_Secbit.pdf) | unknown | Audit | 2022-03 | stale | Direct | contract_name | 1 | n/a |
 
 ## Coverage Gaps
 
@@ -266,15 +337,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x5af15d...6e37b7`](./contracts/ethereum-1/0x5af15da84a4a6edf2d9fa6720de921e1026e37b7/) | Vault | core_logic | $329,218.60 | Verified native implementation with $329,218.60 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x0e6746...e5521b`](./contracts/ethereum-1/0x0e67460226a71df07115c1f169418dd159e5521b/) | RevenuePool | core_logic | $28.73 | Verified native implementation with $28.73 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x615959...88056f`](./contracts/ethereum-1/0x615959a1d3e2740054d7130028613ecfa988056f/) | Accumulator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1662a5...adccf4`](./contracts/ethereum-1/0x1662a5c9ce635f2322a9aadeaa060654aaadccf4/) | AdapterFactory | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xdd89f9...d4ea7b`](./contracts/ethereum-1/0xdd89f9fbff81c3754fd8998f40b63fa9d8d4ea7b/) | AdapterRegistry | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xcad2b9...c73f86`](./contracts/ethereum-1/0xcad2b9c980322f460db51cc8e45539f677c73f86/) | AladdinOFTAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc9cfd6...c58187`](./contracts/ethereum-1/0xc9cfd6205914ab1e209ffe70326d8dd15fc58187/) | AutoCompoundingConvexFraxStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x32ee46...04515b`](./contracts/ethereum-1/0x32ee46755ae81ce917392ed1fb21f74a8104515b/) | AngleMerklClaimer | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1649ff...f18ece`](./contracts/ethereum-1/0x1649ff31c30f9fc7ecae5c76ad00ae3aecf18ece/) | AngleVaultGamma | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x01363d...a569d8`](./contracts/ethereum-1/0x01363db6e185433ae63de4c745ca0aef49a569d8/) | Booster | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xa52f3d...c407f0`](./contracts/ethereum-1/0xa52f3dd9c456f77d766075a727c7c045fcc407f0/) | BoostMarketplace | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x097d23...bb79c6`](./contracts/ethereum-1/0x097d23d07f1061cb4ace410a3ddc634820bb79c6/) | ClaimRewardsV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x883fd3...f7df1f`](./contracts/ethereum-1/0x883fd355debf417f82aa9a3e2936971487f7df1f/) | CompounderGateway | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xb3f463...017945`](./contracts/ethereum-1/0xb3f46356ca516664c305dad356ddee5491017945/) | ControllerModule | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x88c88a...c64026`](./contracts/ethereum-1/0x88c88aa6a9cedc2aff9b4ca6820292f39cc64026/) | CRVDepositorV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xdc9718...4c20aa`](./contracts/ethereum-1/0xdc9718e7704f10db1afaad737f8a04bcd14c20aa/) | CRVPoolFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -290,81 +362,107 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x799519...f1c7ab`](./contracts/ethereum-1/0x7995192be61ea0b28ce14183dda51edf78f1c7ab/) | FXNDepositor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3374b9...c0ce01`](./contracts/ethereum-1/0x3374b9466d571edd695cf5e198f7c89b33c0ce01/) | FxUSDBasePool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0b9e51...a7a851`](./contracts/ethereum-1/0x0b9e51d9a436b6b78b5e2666f15b2d0666a7a851/) | FxUSDPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe60eb8...6d7f37`](./contracts/ethereum-1/0xe60eb8098b34ed775ac44b1dde864e098c6d7f37/) | Gauge Controller | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3c310f...4352d1`](./contracts/ethereum-1/0x3c310fc54c0534dc3c45312934508722284352d1/) | GaugeMultiRewards | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5ac1a8...c02956`](./contracts/ethereum-1/0x5ac1a882e6cedc58511b7e42b02bab42e2c02956/) | GaugeRewarder | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8f78dd...66820e`](./contracts/ethereum-1/0x8f78ddf344e20b92b03c13d82d1316fc0a66820e/) | InflationReceiver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5d2c62...964e6a`](./contracts/ethereum-1/0x5d2c6215555b36889ef235c6d5ccde22e9964e6a/) | InversePriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x222786...fdaad1`](./contracts/ethereum-1/0x222786833b5fd5ee21532d8b576391babefdaad1/) | InverseWstETHPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x28604f...44343a`](./contracts/ethereum-1/0x28604ff7b4aeae28d4d9e54d14038c910844343a/) | Liquidity Gauge v4 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4887ae...bd0cd8`](./contracts/ethereum-1/0x4887aea49758b413e9bab127ffa4e59104bd0cd8/) | Liquidity Gauge v4 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5c5ccb...cf0922`](./contracts/ethereum-1/0x5c5ccb2e511fcdeaa16737810787a47507cf0922/) | LockerPreLaunch | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x231928...4b3f79`](./contracts/ethereum-1/0x2319289e56830b50a282c25af4f0045c724b3f79/) | LongPositionEmergencyCloseFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfea5e2...b61e1c`](./contracts/ethereum-1/0xfea5e213bbd81a8a94d0e1edb09dbd7ceab61e1c/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3ac34f...83a13c`](./contracts/ethereum-1/0x3ac34fe88e434812ddc4a29caa8234328983a13c/) | MAVDepositor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x414cbb...c10c29`](./contracts/ethereum-1/0x414cbb5c7cf637b7030965b5ee84504c64c10c29/) | Merkle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf442e3...6f847f`](./contracts/ethereum-1/0xf442e3a8041199747f94b01a64632134256f847f/) | MerkleDistributorSdt | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2989df...f7448c`](./contracts/ethereum-1/0x2989df9c8c9897f07d464366607dcbfaebf7448c/) | MockERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x36ecde...13a1ae`](./contracts/ethereum-1/0x36ecdec1b5e301321166cefd5856a44bfa13a1ae/) | MultiMerkleStash | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3680cc...a7364f`](./contracts/ethereum-1/0x3680cce0d97bbbfa47765d7429ff207d03a7364f/) | OnlyBoostAllocator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x48af33...91bce7`](./contracts/ethereum-1/0x48af330a99a4cee2f367a4ab447ba816d091bce7/) | Optimizer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9b8f14...4fde1a`](./contracts/ethereum-1/0x9b8f14554f40705de7908879e2228d2ac94fde1a/) | OpynPerpVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2be95a...d26f7f`](./contracts/ethereum-1/0x2be95a7c0ad24e2d2876793172d046db05d26f7f/) | PoolConfiguration | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0d73d3...7d4c3a`](./contracts/ethereum-1/0x0d73d31e1e0d4cc266f0805c94f8e2b9b37d4c3a/) | PoolManager | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0fdb73...870799`](./contracts/ethereum-1/0x0fdb73ae370a0b3f349dc046cfeb54c0fa870799/) | PositionAirdrop | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x155c0c...8b3cff`](./contracts/ethereum-1/0x155c0c3cde438a3d10bd38f3257cd8d17b8b3cff/) | PositionOperateFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1f8444...82ea93`](./contracts/ethereum-1/0x1f844447ecf5b1523bfbadad3d9dea975982ea93/) | PositionOperateFlashLoanFacetV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2b162d...87a3bb`](./contracts/ethereum-1/0x2b162de7fbd942f142aa21865f685f71a687a3bb/) | ProxyOFT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1d8a9c...c4d356`](./contracts/ethereum-1/0x1d8a9c30e4e25033498347c1a054717bd0c4d356/) | Redeem | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1c3a4d...a5c6de`](./contracts/ethereum-1/0x1c3a4d06532d9d1c631f99ec50dd72da43a5c6de/) | Registrar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0e6746...e5521b`](./contracts/ethereum-1/0x0e67460226a71df07115c1f169418dd159e5521b/) | RevenuePool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xaf59d1...657a7f`](./contracts/ethereum-1/0xaf59d144357dcc8a852ad601f27bf6310b657a7f/) | RewardClaimHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x524fce...c3a3b3`](./contracts/ethereum-1/0x524fce03270c60279d604ea3b374194e96c3a3b3/) | RewardHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x78f1bb...c85ad7`](./contracts/ethereum-1/0x78f1bba3868b67f4994b3e7f7ec9b0485dc85ad7/) | RewardReceiver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x2c043d...cbfd46`](./contracts/ethereum-1/0x2c043dd5adee81c93a5b5c2ccda00de9c4cbfd46/) | RewardReceiverMigrationModule | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9a207a...05ba12`](./contracts/ethereum-1/0x9a207a85e372fcdac3014f945a65868f2a05ba12/) | RewardRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc3a6cf...505eef`](./contracts/ethereum-1/0xc3a6cfc4c8112fbfd77f0d095a0ee2f2f4505eef/) | Router | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfd98ce...222ff5`](./contracts/ethereum-1/0xfd98cecb88fc61101d4bebf1b6f9e65572222ff5/) | RouterModuleClaim | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xbf0a5d...09b7c9`](./contracts/ethereum-1/0xbf0a5d6a1f9a4098c69ce660f8b115dc8509b7c9/) | RouterModuleDeposit | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf0b84b...53c120`](./contracts/ethereum-1/0xf0b84b9334132843fc256830fb941d535853c120/) | RouterModuleMigrationStakeDAOV1 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8155b8...557707`](./contracts/ethereum-1/0x8155b8858af2b12baf8a79e22021b14f91557707/) | RouterModuleVLSDT | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe88772...4cf63c`](./contracts/ethereum-1/0xe88772dfb857317476b77f1a25b888b9424cf63c/) | RouterModuleWithdraw | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xac1486...1247d3`](./contracts/ethereum-1/0xac14864ce5a98af3248ffbf549441b04421247d3/) | Sanctuary | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x8bde1d...56ade2`](./contracts/ethereum-1/0x8bde1d771423b8d2fe0b046b934fb9a7f956ade2/) | SdPendleBribeBurner | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x94992d...dfe5cd`](./contracts/ethereum-1/0x94992da38be9adadd359c2959588fddfa2dfe5cd/) | SdPendleGaugeStrategy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd1b565...f6abb5`](./contracts/ethereum-1/0xd1b5651e55d4ceed36251c61c50c889b36f6abb5/) | sdCRV | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x506875...bb02f9`](./contracts/ethereum-1/0x50687515e93c43964733282f9db8683f80bb02f9/) | sdMAV | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8bde1d...56ade2`](./contracts/ethereum-1/0x8bde1d771423b8d2fe0b046b934fb9a7f956ade2/) | SdPendleBribeBurner | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x73968b...6cdb2f`](./contracts/ethereum-1/0x73968b9a57c6e53d41345fd57a6e6ae27d6cdb2f/) | SDT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0c0575...85a43f`](./contracts/ethereum-1/0x0c057598dce1891688829581f890dd2a3685a43f/) | sdToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0055e2...be82fa`](./contracts/ethereum-1/0x0055e248ee7feab91969b77ab32f184b72be82fa/) | ShortPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x218b68...d99801`](./contracts/ethereum-1/0x218b689a4f4afba497123b4831f58d6379d99801/) | ShortPoolManager | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3d35dc...174a74`](./contracts/ethereum-1/0x3d35dc5948c948f131ddd9e3a341b99e45174a74/) | ShortPositionOperateFlashLoanFacet | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xac94b8...72aa3e`](./contracts/ethereum-1/0xac94b8ea0e3a080f0fa6ae89cc873d956f72aa3e/) | SmartWalletWhitelist | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf95420...c05d5b`](./contracts/ethereum-1/0xf954200fd969443b8f853b4083b71cd073c05d5b/) | StakeDAOCompounderBurner | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xdd4f84...e66bd5`](./contracts/ethereum-1/0xdd4f84e4f3cd31d6c91d80122b5a26cb4ae66bd5/) | StakeDaoNFT | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc5f572...5bb6cd`](./contracts/ethereum-1/0xc5f572b705cae1893cdceb5161ce40e2fc5bb6cd/) | StakeDaoNFT_V2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6dd223...e38ea2`](./contracts/ethereum-1/0x6dd2236b1e089762cc264c85eebcff195ae38ea2/) | StakeDaoNFT_V3 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x221738...8c751f`](./contracts/ethereum-1/0x221738f73fa4bfca91918e77d112b87d918c751f/) | StakeDaoNFTPalace | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x07fa4c...64eebc`](./contracts/ethereum-1/0x07fa4cca2a020fa9477ef7db5848bd976b64eebc/) | StrategyWrapperLeverageRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc8b194...f71def`](./contracts/ethereum-1/0xc8b194925d55d5de9555ad1db74c149329f71def/) | Token Minter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7c3867...13c5b7`](./contracts/ethereum-1/0x7c3867e04d5a69b750332300643b36135313c5b7/) | UniformBoostProvider | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5af15d...6e37b7`](./contracts/ethereum-1/0x5af15da84a4a6edf2d9fa6720de921e1026e37b7/) | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xce00ad...6be923`](./contracts/ethereum-1/0xce00ad8df94d8c365dc415b84963aa37a06be923/) | VeBoostDelegation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xda9846...2bebdf`](./contracts/ethereum-1/0xda9846665bdb44b0d0caffd0d1d4a539932bebdf/) | VeBoostDelegationMultiRewards | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8fc790...6421e9`](./contracts/ethereum-1/0x8fc7906fc6047679dad53c0c3b40e135486421e9/) | VeFeeGateway | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xab05ca...d2adda`](./contracts/ethereum-1/0xab05ca46d1c78cabb051effe35099714cad2adda/) | vlBoost | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x75d96b...e88ef1`](./contracts/ethereum-1/0x75d96b89e10a4a9a8341a1a180b19c9bf9e88ef1/) | vlSDT | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x752893...183e32`](./contracts/ethereum-1/0x75289388d50364c3013583d97bd70ced0e183e32/) | VoteBountyManagerFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x619ede...dd5a5c`](./contracts/ethereum-1/0x619edef2d18ec9758e96d8ff2c7dcbfb58dd5a5c/) | VoteWeightRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xec6b8a...f1d469`](./contracts/ethereum-1/0xec6b8a3f3605b083f7044c0f31f2cac0caf1d469/) | Voting Escrow | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x09943c...a894a8`](./contracts/ethereum-1/0x09943c4f27f2ada5bb58b845d27405a4b3a894a8/) | Voting Escrow v2.0.0 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x92b8d4...921e95`](./contracts/ethereum-1/0x92b8d4d4db1555ba4e928ccdea02b52126921e95/) | vsdCRVOFTAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x7346aa...3834fc`](./contracts/ethereum-1/0x7346aa8959fb138787bf9a579b4d86098a3834fc/) | vsdToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x051d7e...a74301`](./contracts/ethereum-1/0x051d7e5609917bd9b73f04bac0ded8dd46a74301/) | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc7793b...0d5fde`](./contracts/ethereum-1/0xc7793bc89724925615d7e4080bd6b893d50d5fde/) | YFIAccumulatorV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf908c0...2608c8`](./contracts/ethereum-1/0xf908c0281f4bafbca67e490edae816b8472608c8/) | YFIDepositorV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfb9aa6...595785`](./contracts/ethereum-1/0xfb9aa699f1badb31a7c4b40f7fa1f49469595785/) | YieldBasisDepositor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x325229...808ea9`](./contracts/ethereum-1/0x325229508513d484a90f3618e6aca8a9fb808ea9/) | YieldBasisFallbackHandler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x8f0e63...a3352e`](./contracts/ethereum-1/0x8f0e636a19c1677fdf37da0e3af602f96da3352e/) | YieldnestDepositor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x24129b...975fed`](./contracts/ethereum-1/0x24129b935aff071c4f0554882c0d9573f4975fed/) | yVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 91 |
-| upstream | 12 |
-| standard_library | 5 |
-| needs_review | 30 |
+| native | 122 |
+| upstream | 4 |
+| standard_library | 2 |
+| needs_review | 78 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 14
+- Audits with zero matched contracts: 12
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=20
-- Match method counts: extraction_exact=934
+- Extraction confidence breakdown: high=2
+- Match method counts: contract_name=28, extraction_exact=3
 
 Zero-match audit list:
 
-- [5558] AladdinETH_Report_v1.0_2022_12_22.pdf
 - [5560] PeckShield-Audit-Report-AladdinV3Concentrator-v1.0.pdf
 - [5561] SECBIT_AladdinCVX_v1.0_20221209.pdf
 - [5562] SECBIT_AladdinCVX_v1.1_20230203.pdf
 - [5568] SECBIT_CLever_Furnace_Update_20221111.pdf
 - [5571] SECBIT_Concentrator_Harvester_Report_v1.0_20230308.pdf
-- [5575] SECBIT_Concentrator_aCRV_Update_20230203.pdf
 - [5585] SECBIT_Generic_CLever_Report.pdf
 - [5586] SECBIT_TokenSale_Report_v1.1.pdf
 - [5592] SECBIT_f(x)_Protocol_RebalancePool_Report_v1.2_20230725.pdf

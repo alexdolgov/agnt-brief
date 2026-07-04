@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "farm-hero",
-  "generated_at": "2026-06-19T19:52:31.649Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
-  "lifecycle_status": "unknown",
-  "lifecycle_signal": {
-    "slug": "farm-hero",
-    "tier": 0,
-    "peak_tvl": 21087,
-    "peak_date": "2022-01-10T00:00:00.000Z",
-    "tvl_30d_ago": 1625,
-    "tvl_90d_ago": 1632,
-    "tvl_current": 1609,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 1681,
-    "change_30d_pct": -0.9846153846153847,
-    "change_90d_pct": -1.4093137254901962,
-    "days_since_peak": 1621,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 92.3697064542135
-  },
+  "generated_at": "2026-07-04T14:53:13.755Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-2d9c",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 3,
     "total_addresses": 4,
@@ -34,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 2,
+    "direct_audits": 2,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 5096.401879999999,
-    "tvl_usd": 5096.401879999999,
+    "dl_tvl_usd": 4979.54281,
+    "tvl_usd": 4979.54281,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -54,25 +40,32 @@
       "aging": 0,
       "stale": 2,
       "unknown": 0
+    },
+    "live_implementations": 3,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
     "project_purpose": "Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
     "product_family_count": 1,
-    "total_contracts_indexed": 357,
+    "total_contracts_indexed": 4,
     "live_contracts": 4,
-    "inactive_contracts": 128,
-    "singleton_contracts": 225,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 87,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 2,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 3,
@@ -92,9 +85,9 @@
       "deployment_unit_proxy_count": null,
       "name": "PancakePair",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "pancakeswap",
-      "product_line": "Farm Hero",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -128,7 +121,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-06-03 09:13:49+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 137,
@@ -140,7 +137,7 @@
       "role": "unknown",
       "origin_kind": "upstream",
       "origin_provider": "Uniswap",
-      "product_line": "Farm Hero",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -163,7 +160,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2021-06-22 03:43:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 137,
@@ -173,9 +174,9 @@
       "deployment_unit_proxy_count": null,
       "name": "WaultSwapPair",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "wault-finance",
-      "product_line": "Farm Hero",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -198,7 +199,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-06-25 04:19:33+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -215,7 +220,10 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -226,7 +234,7 @@
     {
       "audit_id": 13114,
       "audit_key": "audit-13114",
-      "report_name": "DL audit link",
+      "report_name": "skynet.certik.com/projects/farmhero",
       "report_url": "https://skynet.certik.com/projects/farmhero",
       "auditor": "CertiK",
       "audit_type": "audit",
@@ -236,6 +244,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -246,17 +257,36 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x35bc504e05fa91f17552a9c3a6a2e7e9651a0622",
+      "name": "PancakePair",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x4bd5df4300b7c5309cb1a0143e4a6d0184b878e1",
+      "name": "WaultSwapPair",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
-    "upstream": 3,
+    "native": 2,
+    "upstream": 1,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 12
-    },
+    "match_method_counts": {},
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -267,7 +297,7 @@
       },
       {
         "audit_id": 13114,
-        "report_name": "DL audit link"
+        "report_name": "skynet.certik.com/projects/farmhero"
       }
     ],
     "inherited_remapped_matches": []

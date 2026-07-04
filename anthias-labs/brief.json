@@ -1,25 +1,25 @@
 {
   "schema_version": "2.0",
   "project_key": "anthias-labs",
-  "generated_at": "2026-06-17T07:01:01.703Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
+  "generated_at": "2026-07-04T14:53:03.892Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-f2f0",
+  "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "anthias-labs",
     "tier": 0,
     "peak_tvl": 25444535,
     "peak_date": "2026-05-09T00:00:00.000Z",
-    "tvl_30d_ago": null,
+    "tvl_30d_ago": 20596423,
     "tvl_90d_ago": null,
-    "tvl_current": 20515432,
+    "tvl_current": 19317200,
     "tier0_reason": "no_rule_matched",
     "tvl_180d_ago": null,
-    "change_30d_pct": null,
+    "change_30d_pct": -6.210898853650462,
     "change_90d_pct": null,
-    "days_since_peak": 22,
+    "days_since_peak": 53,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 19.371951580172325
+    "drop_from_peak_pct": 24.08114355400875
   },
   "summary": {
     "total_contracts": 3,
@@ -34,14 +34,16 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 18647606.58518,
-    "tvl_usd": 705349.1696107285,
+    "dl_tvl_usd": 19431461.72393,
+    "tvl_usd": 601188.8158066769,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "base": 705349.17
+      "base": 601188.82
     },
-    "asd_usd": 705349.1696107285,
+    "asd_usd": 601188.8158066769,
     "website_url": "https://anthias.xyz",
     "chains": [
       "base"
@@ -55,11 +57,20 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 3,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Anthias Labs is a boutique on-chain advisory, DeFi risk-management, monitoring, research, and open-source tooling firm. Its public materials support risk curation, system design, advisory, monitoring, and research activity for DeFi systems on Base, including recorded VaultV2 and MetaMorpho contract surfaces, but do not substantiate a general claim that Anthias deploys and manages vaults to optimize yield. The provenance and implementation authorship of the MetaMorpho contracts should remain unresolved unless independently confirmed.",
-    "relationship_narrative": "All contracts are deployed under the single Anthias Labs family, with VaultV2 and MetaMorpho contracts likely sharing common risk management logic and infrastructure, though no explicit supporting contracts are identified.",
+    "project_purpose": "Risk Curators. Structurally: 3 project-authored contract(s) across 1 chain(s); 2 ERC4626 vaults, 2 ERC20 tokens; built on openzeppelin.",
+    "relationship_narrative": "The protocol forms a single structural family (Core Logic) of 3 contract(s).",
     "product_family_count": 1,
     "total_contracts_indexed": 10,
     "live_contracts": 10,
@@ -69,7 +80,7 @@
     "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 1,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -93,8 +104,8 @@
       "role": "core_logic",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Anthias Labs",
-      "tvl_usd": 705349.1696107285,
+      "product_line": null,
+      "tvl_usd": 601188.8158066769,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "VaultV2",
@@ -107,7 +118,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 10069.333693,
+          "tvl_usd": 34874.114937,
           "is_audited": false
         },
         {
@@ -118,7 +129,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 392.04998821422635,
+          "tvl_usd": 1175.3156999354803,
           "is_audited": false
         },
         {
@@ -129,7 +140,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 65447.02808529975,
+          "tvl_usd": 31837.884231750882,
           "is_audited": false
         },
         {
@@ -140,7 +151,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 75582.985254,
+          "tvl_usd": 35161.633807,
           "is_audited": false
         },
         {
@@ -151,7 +162,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 553857.7725902145,
+          "tvl_usd": 498139.86713099055,
           "is_audited": false
         }
       ],
@@ -160,7 +171,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-06 04:21:01+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -172,7 +187,7 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Anthias Labs",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -228,7 +243,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-11-26 11:25:45+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -263,7 +282,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2024-05-03 16:40:43+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],

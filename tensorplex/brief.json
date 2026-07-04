@@ -1,36 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "tensorplex",
-  "generated_at": "2026-06-17T07:00:46.256Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "wind_down",
-  "lifecycle_signal": {
-    "slug": "tensorplex",
-    "tier": 1,
-    "peak_tvl": 30769042,
-    "peak_date": "2024-12-10T00:00:00.000Z",
-    "tvl_30d_ago": 1822888,
-    "tvl_90d_ago": 2383489,
-    "tvl_current": 492855,
-    "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 3176303,
-    "change_30d_pct": -72.96295768034021,
-    "change_90d_pct": -79.32211980000747,
-    "governance_raw": {
-      "evidence": "The protocol has announced deprecation and is actively guiding users to manually withdraw assets during a wind-down period.",
-      "confidence": 0.95,
-      "lifecycle_status": "wind_down"
-    },
-    "days_since_peak": 550,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 98.39821142302708,
-    "governance_evidence": "The protocol has announced deprecation and is actively guiding users to manually withdraw assets during a wind-down period.",
-    "governance_confidence": 0.95,
-    "governance_text_chars": 1685,
-    "governance_classification": "wind_down",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:54:00.865Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-16bc",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 3,
     "total_addresses": 3,
@@ -43,10 +17,12 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 387400.34195,
-    "tvl_usd": 387400.34195,
+    "dl_tvl_usd": 236279.81631,
+    "tvl_usd": 236279.81631,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -62,22 +38,31 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 1
+    },
+    "live_implementations": 3,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Tensorplex is a liquid staking protocol that allows users to stake TAO tokens and receive a liquid staking derivative (PlxTAO) in return, enabling them to earn staking rewards while maintaining liquidity.",
-    "relationship_narrative": "The PlxTAOProxy serves as the upgradeable proxy for the PlxTAO implementation, ensuring that the core staking logic can be updated without disrupting user balances or staking positions.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 13,
+    "project_purpose": "Liquid Staking. Structurally: 3 project-authored contract(s) across 1 chain(s); role-gated via AccessControl; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.",
+    "product_family_count": 2,
+    "total_contracts_indexed": 3,
     "live_contracts": 3,
-    "inactive_contracts": 5,
-    "singleton_contracts": 5,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 4,
-    "live_deployment_units": 1,
-    "dependencies_extracted": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -124,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-08-01 09:48:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -159,18 +148,22 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-08-03 15:08:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xfb47f57c064a0032ee66f98566dedce2aa6d68f3",
-      "deployment_unit": "unit-27663",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "GnosisSafe",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
+      "origin_provider": "Gnosis Safe",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -181,8 +174,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xfb47f57c064a0032ee66f98566dedce2aa6d68f3",
-          "deployment_unit": "unit-27663",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -194,10 +187,49 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2024-01-11 04:55:59+03",
+      "deploy_coverage_basis": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 21368,
+      "audit_key": "audit-21368",
+      "report_name": "index.html",
+      "report_url": "https://certificate.quantstamp.com/full/tensorplex-stake/7a7c3615-5f16-4129-86e6-ee4f37fdaf0a/index.html",
+      "auditor": "Quantstamp",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 21368,
+          "report_url": "https://certificate.quantstamp.com/full/tensorplex-stake/7a7c3615-5f16-4129-86e6-ee4f37fdaf0a/index.html"
+        },
+        {
+          "audit_id": 21369,
+          "report_url": "https://certificate.quantstamp.com/full/tensorplex-labs/fac85f03-dfa2-4f47-88d6-732ed5ea9360/index.html"
+        }
+      ]
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -232,7 +264,12 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 21368,
+        "report_name": "index.html"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -1,31 +1,35 @@
 {
   "schema_version": "2.0",
   "project_key": "ethereal-dex",
-  "generated_at": "2026-06-17T07:00:57.527Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-07-04T14:53:11.897Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-bd47",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 3,
+    "direct_audits": 3,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 26182176.3951,
-    "tvl_usd": 26182176.3951,
+    "dl_tvl_usd": 23591807.51617,
+    "tvl_usd": 23591807.51617,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://app.ethereal.trade/",
-    "chains": [],
+    "chains": [
+      "ethereum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": null,
@@ -35,18 +39,27 @@
       "aging": 0,
       "stale": 0,
       "unknown": 3
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Ethereal DEX is a non-custodial decentralized exchange for spot and perpetual trading, built on the Ethena Network and using USDe as primary collateral.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
     "product_family_count": 0,
-    "total_contracts_indexed": 0,
+    "total_contracts_indexed": 1,
     "live_contracts": 0,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 1,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
@@ -54,7 +67,7 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -62,12 +75,52 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb3cdc82035c495c484c9ff11ed5f3ff6d342e3cc",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Mainnet",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb3cdc82035c495c484c9ff11ed5f3ff6d342e3cc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 4252,
       "audit_key": "audit-4252",
-      "report_name": "Guardian Audits - Exchange",
+      "report_name": "drive.google.com/file/d/1HeJGheenSIK2AcA113GV-ErQNFELDAGD/view",
       "report_url": "https://drive.google.com/file/d/1HeJGheenSIK2AcA113GV-ErQNFELDAGD/view?usp=sharing",
       "auditor": "Guardian",
       "audit_type": "audit",
@@ -77,6 +130,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -88,7 +144,7 @@
     {
       "audit_id": 4253,
       "audit_key": "audit-4253",
-      "report_name": "Chain Security - Exchange",
+      "report_name": "drive.google.com/file/d/1bgSfCaiyfC438nUNB3K8UVe5Eg006yKb/view",
       "report_url": "https://drive.google.com/file/d/1bgSfCaiyfC438nUNB3K8UVe5Eg006yKb/view?usp=sharing",
       "auditor": "Guardian",
       "audit_type": "audit",
@@ -98,6 +154,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -109,7 +168,7 @@
     {
       "audit_id": 4254,
       "audit_key": "audit-4254",
-      "report_name": "Guardian Audits - Season Zero",
+      "report_name": "drive.google.com/file/d/1HMihTcqKwt75pTAct9F0H3noqDtCJ3u3/view",
       "report_url": "https://drive.google.com/file/d/1HMihTcqKwt75pTAct9F0H3noqDtCJ3u3/view",
       "auditor": "Guardian",
       "audit_type": "audit",
@@ -119,6 +178,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -134,7 +196,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -144,15 +206,15 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 4252,
-        "report_name": "Guardian Audits - Exchange"
+        "report_name": "drive.google.com/file/d/1HeJGheenSIK2AcA113GV-ErQNFELDAGD/view"
       },
       {
         "audit_id": 4253,
-        "report_name": "Chain Security - Exchange"
+        "report_name": "drive.google.com/file/d/1bgSfCaiyfC438nUNB3K8UVe5Eg006yKb/view"
       },
       {
         "audit_id": 4254,
-        "report_name": "Guardian Audits - Season Zero"
+        "report_name": "drive.google.com/file/d/1HMihTcqKwt75pTAct9F0H3noqDtCJ3u3/view"
       }
     ],
     "inherited_remapped_matches": []

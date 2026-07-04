@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "wanswap-dex",
-  "generated_at": "2026-06-17T07:00:42.652Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-07-03T21:07:11.876Z",
+  "pipeline_run_id": "brief-restore-2026-07",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -18,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 936348.0264,
-    "tvl_usd": 936348.0264,
+    "dl_tvl_usd": 904283.06219,
+    "tvl_usd": 904283.06219,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -35,12 +37,20 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "WanSwap Dex is a Wanchain-based cross-chain AMM decentralized exchange that enables users to swap tokens and provide liquidity. Farming, staking, or non-Wanchain deployments should only be included when supported by current official WanSwap documentation or verified WanSwap deployments.",
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 1,
+    "product_family_count": 0,
     "total_contracts_indexed": 0,
     "live_contracts": 0,
     "inactive_contracts": 0,
@@ -67,7 +77,7 @@
     {
       "audit_id": 3226,
       "audit_key": "audit-3226",
-      "report_name": "Haechi Audit",
+      "report_name": "[HAECHI AUDIT] WanSwap Smart Contract Audit Report ver 2.0.pdf",
       "report_url": "https://github.com/wanswap/wanswap-contracts/blob/master/%5BHAECHI%20AUDIT%5D%20WanSwap%20Smart%20Contract%20Audit%20Report%20ver%202.0.pdf",
       "auditor": "HAECHI",
       "audit_type": "audit",
@@ -77,7 +87,10 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -95,16 +108,14 @@
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 2
-    },
+    "match_method_counts": {},
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 3226,
-        "report_name": "Haechi Audit"
+        "report_name": "[HAECHI AUDIT] WanSwap Smart Contract Audit Report ver 2.0.pdf"
       }
     ],
     "inherited_remapped_matches": []

@@ -4,12 +4,12 @@
 
 - Project: Kava Mint (`kava-mint`)
 - Website: [https://www.kava.io/](https://www.kava.io/)
-- Lifecycle: active (Tier 0, 89.5% below peak)
-- Generated: 2026-06-17T19:03:08.388Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:29.070Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $11,055,555.28
+- DeFi Llama TVL: $9,990,204.57
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Kava Mint is the Kava ecosystem CDP/minting component that lets users lock collateral to mint stablecoins; Kava itself is a Cosmos/EVM-compatible blockchain and DeFi hub.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
@@ -32,17 +32,20 @@ Kava Mint is the Kava ecosystem CDP/minting component that lets users lock colla
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-09 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -83,7 +86,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Auditsarrow_outward](https://skynet.certik.com/projects/kava) | CertiK | Audit | 2021-09 | stale | Direct | n/a | 0 | n/a |
+| [skynet.certik.com/projects/kava](https://skynet.certik.com/projects/kava) | CertiK | Audit | 2021-09 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -95,10 +98,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -111,6 +114,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [4750] Auditsarrow_outward
+- [4750] skynet.certik.com/projects/kava
 
 Fork inheritance lineage and inherited audits are included when available.

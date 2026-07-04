@@ -1,74 +1,78 @@
 # Agentic Audit Brief: ioTube
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 10.2% over 90 days
-
 ## Project Overview
 
 - Project: ioTube (`iotube`)
 - Website: [https://iotube.org](https://iotube.org)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-19T06:14:24.527Z
-- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:23.728Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: bsc, ethereum, polygon
-- Contract surface: 15 unique implementations (32 raw deployments)
-- DeFi Llama TVL: $2,752,129.96
-- On-chain TVL (included contracts): $2,016,766.18
-- TVL by chain: Ethereum $1,885,249.34 | Polygon $103,506.11 | Bsc $28,010.73
+- Contract surface: 36 unique implementations (53 raw deployments)
+- DeFi Llama TVL: $2,285,769.39
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-ioTube is a cross-chain bridge centered on IoTeX that enables token transfers between IoTeX and EVM networks such as Ethereum, BSC, and Polygon using bridge components such as MinterPool and TokenSafe. Avalanche and other network support should be treated as homepage-claimed unless backed by verified contract or TVL evidence in the dataset.
+Bridge. Structurally: 25 project-authored contract(s) across 3 chain(s); 6 ERC20 tokens; built on openzeppelin.
 
 ### Architecture
 
-The chain-specific families (BSC, Ethereum, Polygon) share a common architecture of MinterPool, TokenSafe, and TokenCashierWithPayload, with supporting TokenList and WitnessList contracts. The CrossChain IOTX family provides wrapped IoTeX tokens that can be used across these chains, while the Web3 Address Format family may serve as a shared utility for address validation.
+The protocol comprises 6 functional families. Its contracts share 2 common project-authored base contract(s) (erc20burnable, uniqueappendonlyaddresslist). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 97; live-surface contracts included: 32 (32 live, 0 unknown).
-- Excluded by liveness: 65 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 97; live-surface contracts included: 53 (31 live, 22 unknown).
+- Excluded by liveness: 44 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 2/7.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/13 (0.0%)
-- Verified + Unaudited implementations: 13
+- Coverage of deployed-live implementations: 2/14 (14.3%)
+- Deployed-live implementations: 14 of 36 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 2/14
+- Verified + Unaudited implementations: 12
 - Verified by bytecode match: 0
-- Unverified implementations: 2
-- Unique implementations: 15
-- Raw deployments: 32
-- Audits discovered: 0
-- Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $2,016,766.18
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Unverified implementations: 22
+- Unique implementations: 36
+- Raw deployments: 53
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 1
+- ASD (verified + unaudited TVL): n/a
+- Latest audit: 2025-02 (aging)
+- Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 2 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $2,016,766.18 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| Fuzzland | Tier 2 | 2 | 14.3% | 2025-02 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (2)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| CrosschainTokenCashierWithPayloadRouter | adapter | polygon | n/a | 2 deployments: ethereum `0x3030bd...d33305`; polygon [`0x2c43e5...a713a8`](./contracts/polygon-137/0x2c43e50fbdd5fa3ea4e10a5445274b4013a713a8/) | ✅ Audited |
+| TetherToken | unknown | polygon | n/a | [`0x439922...4947f7`](./contracts/polygon-137/0x4399228352476a4a2615c70717ea5eaf724947f7/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (13)
+### ⚠️ Verified + Unaudited (12)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | CrosschainERC20 | token | bsc | n/a | 4 deployments: ethereum `0x9f90b4...1d8fe1`; ethereum `0xf79dea...b77e68`; bsc [`0x2aaf50...b60598`](./contracts/bsc-56/0x2aaf50869739e317ab80a57bf87caa35f5b60598/); polygon `0x300211...74d388` | ⚠️ Unaudited |
-| TokenSafe | token | ethereum | n/a | [`0xc2e0f3...7f0d7a`](./contracts/ethereum-1/0xc2e0f31d739cb3153ba5760a203b3bd7c27f0d7a/) | ⚠️ Unaudited |
-| TokenCashierWithPayload | token | ethereum | n/a | 5 deployments: ethereum [`0x1b9aa8...43bac4`](./contracts/ethereum-1/0x1b9aa865d74b2b77ffdbcf507b56a7b3ab43bac4/); ethereum `0xd57bde...a8d7d4`; bsc `0x78de1e...940204`; polygon `0x6bba6b...21e049`; polygon `0x990b50...18d731` | ⚠️ Unaudited |
 | CrosschainERC20V2 | token | ethereum | n/a | [`0x9c3af6...6c13b5`](./contracts/ethereum-1/0x9c3af6ffccac8a4ccb31a4b769b84a517c6c13b5/) | ⚠️ Unaudited |
 | CrosschainTokenCashierRouter | adapter | bsc | n/a | [`0x2a26fe...48391a`](./contracts/bsc-56/0x2a26fede01bfa03e65cd3c68f421cab83648391a/) | ⚠️ Unaudited |
-| CrosschainTokenCashierWithPayloadRouter | adapter | polygon | n/a | 2 deployments: ethereum `0x3030bd...d33305`; polygon [`0x2c43e5...a713a8`](./contracts/polygon-137/0x2c43e50fbdd5fa3ea4e10a5445274b4013a713a8/) | ⚠️ Unaudited |
 | MinterPool | core_logic | polygon | n/a | 2 deployments: ethereum `0x964f4f...f63b45`; polygon [`0x4799d5...a5a454`](./contracts/polygon-137/0x4799d57abf5f12ca4ef5375c9dadf8fe7fa5a454/) | ⚠️ Unaudited |
+| TokenCashierWithPayload | token | ethereum | n/a | 5 deployments: ethereum [`0x1b9aa8...43bac4`](./contracts/ethereum-1/0x1b9aa865d74b2b77ffdbcf507b56a7b3ab43bac4/); ethereum `0xd57bde...a8d7d4`; bsc `0x78de1e...940204`; polygon `0x6bba6b...21e049`; polygon `0x990b50...18d731` | ⚠️ Unaudited |
 | TokenList | token | polygon | n/a | 2 deployments: bsc `0xa6ae93...321ee3`; polygon [`0x14bf34...966277`](./contracts/polygon-137/0x14bf347a597aac623240ae7ac8383ae198966277/) | ⚠️ Unaudited |
+| TokenSafe | token | ethereum | n/a | [`0xc2e0f3...7f0d7a`](./contracts/ethereum-1/0xc2e0f31d739cb3153ba5760a203b3bd7c27f0d7a/) | ⚠️ Unaudited |
 | TransferValidatorWithPayload | unknown | polygon | n/a | 4 deployments: ethereum `0xe7eba1...0c59d5`; bsc `0x95c6f6...fc794a`; polygon [`0x86b7a9...6c85b2`](./contracts/polygon-137/0x86b7a9470d93e5ebfd1c099e173bce86196c85b2/); polygon `0x87e2d4...890cd6` | ⚠️ Unaudited |
 | Unwrapper | unknown | polygon | n/a | 2 deployments: ethereum `0xedec2d...1b4287`; polygon [`0xc3b3fc...304efe`](./contracts/polygon-137/0xc3b3fcc2df7dbcffbc7fb154eb7d41d6e6304efe/) | ⚠️ Unaudited |
 | VestingManager | operational_periphery | bsc | n/a | 2 deployments: bsc [`0x31603c...00b001`](./contracts/bsc-56/0x31603c352dcb06e5973afcf7d831824e4900b001/); bsc `0x668b60...3baae0` | ⚠️ Unaudited |
@@ -87,19 +91,40 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (2)
+### ❓ Unverified (22)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x0a60b0...9c0b3a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x62ee79...3ebcca` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xbb7606...54c891` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd81651...53d955` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf7f73a...4cddd4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xfbe9a4...c4ce4b` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x082020...20f400` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x116404...ad3123` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x52702a...772fde` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x797f14...bba1ca` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x7c0bef...08aede` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x80ad2e...6b0627` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xd20a13...b9f0f0` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x0aaea7...71b446` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x2f1a0b...c2aed2` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | n/a | `0x33193d...203f32` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x811941...a1ee3f` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x8dd2f9...f2ec1f` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x964f4f...f63b45` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xa0fd74...4e1682` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xf72cfb...1a29be` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xfbe9a4...c4ce4b` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Iotube Audit Report v2-fuzzland.pdf](https://185197389-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MgvoWpXLOm6Tf5h6ulz%2Fuploads%2Fe4XSu5pssWrgS5FyaqCj%2FIotube%20Audit%20Report%20v2-fuzzland.pdf) | Fuzzland | Audit | 2025-02 | aging | Direct | contract_name | 3 | high |
 
 ## Coverage Gaps
 
@@ -107,14 +132,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x2aaf50...b60598`](./contracts/bsc-56/0x2aaf50869739e317ab80a57bf87caa35f5b60598/) | CrosschainERC20 | token | $2,016,297.84 | Verified native implementation with $2,016,297.84 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xc2e0f3...7f0d7a`](./contracts/ethereum-1/0xc2e0f31d739cb3153ba5760a203b3bd7c27f0d7a/) | TokenSafe | token | $242.99 | Verified native implementation with $242.99 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x1b9aa8...43bac4`](./contracts/ethereum-1/0x1b9aa865d74b2b77ffdbcf507b56a7b3ab43bac4/) | TokenCashierWithPayload | token | $225.35 | Verified native implementation with $225.35 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x2aaf50...b60598`](./contracts/bsc-56/0x2aaf50869739e317ab80a57bf87caa35f5b60598/) | CrosschainERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x9c3af6...6c13b5`](./contracts/ethereum-1/0x9c3af6ffccac8a4ccb31a4b769b84a517c6c13b5/) | CrosschainERC20V2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x2a26fe...48391a`](./contracts/bsc-56/0x2a26fede01bfa03e65cd3c68f421cab83648391a/) | CrosschainTokenCashierRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| polygon | [`0x2c43e5...a713a8`](./contracts/polygon-137/0x2c43e50fbdd5fa3ea4e10a5445274b4013a713a8/) | CrosschainTokenCashierWithPayloadRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x4799d5...a5a454`](./contracts/polygon-137/0x4799d57abf5f12ca4ef5375c9dadf8fe7fa5a454/) | MinterPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1b9aa8...43bac4`](./contracts/ethereum-1/0x1b9aa865d74b2b77ffdbcf507b56a7b3ab43bac4/) | TokenCashierWithPayload | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x14bf34...966277`](./contracts/polygon-137/0x14bf347a597aac623240ae7ac8383ae198966277/) | TokenList | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc2e0f3...7f0d7a`](./contracts/ethereum-1/0xc2e0f31d739cb3153ba5760a203b3bd7c27f0d7a/) | TokenSafe | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x86b7a9...6c85b2`](./contracts/polygon-137/0x86b7a9470d93e5ebfd1c099e173bce86196c85b2/) | TransferValidatorWithPayload | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0xc3b3fc...304efe`](./contracts/polygon-137/0xc3b3fcc2df7dbcffbc7fb154eb7d41d6e6304efe/) | Unwrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x31603c...00b001`](./contracts/bsc-56/0x31603c352dcb06e5973afcf7d831824e4900b001/) | VestingManager | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -125,10 +149,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 15 |
+| native | 14 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 22 |
 
 ## Scope Matching Notes
 
@@ -136,7 +160,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: high=1
+- Match method counts: extraction_exact=3
 
 Fork inheritance lineage and inherited audits are included when available.

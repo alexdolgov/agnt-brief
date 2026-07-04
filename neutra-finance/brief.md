@@ -1,50 +1,50 @@
 # Agentic Audit Brief: Neutra Finance
 
-⚠️ Lifecycle status: DECLINING - TVL changed 0.0% over 90 days
-
 ## Project Overview
 
 - Project: Neutra Finance (`neutra-finance`)
-- Lifecycle: declining (Tier 0, 99.8% below peak)
-- Generated: 2026-06-19T19:30:09.357Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:38.697Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: arbitrum
-- Contract surface: 8 unique implementations (8 raw deployments)
-- DeFi Llama TVL: $3,213.78
+- Contract surface: 25 unique implementations (25 raw deployments)
+- DeFi Llama TVL: $3,214.96
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Neutra Finance is a yield protocol on Arbitrum that provides token vesting and reward tracking mechanisms. It enables users to lock tokens and earn rewards over time through a system of vesters and reward trackers.
+Yield. Structurally: 37 project-authored contract(s) across 1 chain(s); 7 ERC20 tokens, 1 ERC1155 multi-token; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The NEU token is the core asset, distributed through various vester contracts (VesterV2, VesterV3, ReserveFreeVester, VesterReserveFree) which manage token locks and releases. RewardTrackerV2 contracts track staking rewards and interact with the vesters, while ERC1967Proxy contracts provide upgradeability for these core components.
+The protocol comprises 3 functional families. Its contracts share 5 common project-authored base contract(s) (governable, controllable, mintableerc20). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 134; live-surface contracts included: 8 (8 live, 0 unknown).
-- Excluded by liveness: 107 inactive, 19 singleton, 0 uninitialized.
-- Deployment units: 0/10 live.
+- Indexed contracts: 80; live-surface contracts included: 25 (2 live, 23 unknown).
+- Excluded by liveness: 55 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Coverage of deployed-live implementations: 0/2 (0.0%)
+- Deployed-live implementations: 2 of 25 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/10
+- Verified + Unaudited implementations: 10
 - Verified by bytecode match: 0
-- Unverified implementations: 6
-- Unique implementations: 8
-- Raw deployments: 8
-- Audits discovered: 1
+- Unverified implementations: 15
+- Unique implementations: 25
+- Raw deployments: 25
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-01 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -56,12 +56,20 @@ The NEU token is the core asset, distributed through various vester contracts (V
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (10)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | EsNEU | unknown | arbitrum | n/a | [`0x22f473...85e53f`](./contracts/arbitrum-42161/0x22f4730e21e40dc751c08826d93010a64185e53f/) | ⚠️ Unaudited |
+| NameWrapper | unknown | arbitrum | n/a | [`0xe5abb3...52d62d`](./contracts/arbitrum-42161/0xe5abb3700484998a6ee280cc615656b7ce52d62d/) | ⚠️ Unaudited |
 | NEU | unknown | arbitrum | n/a | [`0x6609be...e600c3`](./contracts/arbitrum-42161/0x6609be1547166d1c4605f3a243fdcff467e600c3/) | ⚠️ Unaudited |
+| OwnedResolver | unknown | arbitrum | n/a | [`0x62a8fb...e916cb`](./contracts/arbitrum-42161/0x62a8fb652b23e7304ba33ecfaf437b20aee916cb/) | ⚠️ Unaudited |
+| PublicResolver | unknown | arbitrum | n/a | [`0x5e43ce...1276cf`](./contracts/arbitrum-42161/0x5e43ce30f8e8027f2c24f1cc101f225cbb1276cf/) | ⚠️ Unaudited |
+| ReverseRegistrar | unknown | arbitrum | n/a | [`0x693458...50a304`](./contracts/arbitrum-42161/0x693458a6f3906ad10d666f40e9dd787eac50a304/) | ⚠️ Unaudited |
+| RNSRegistry | unknown | arbitrum | n/a | [`0x39302d...178e75`](./contracts/arbitrum-42161/0x39302dfb1a343610cfe27228fd3e90ec72178e75/) | ⚠️ Unaudited |
+| Root | unknown | arbitrum | n/a | [`0x175a1a...e73b61`](./contracts/arbitrum-42161/0x175a1a3d568a526e7ffd8374154804c6d7e73b61/) | ⚠️ Unaudited |
+| StaticMetadataService | unknown | arbitrum | n/a | [`0xfa7b12...f7b1f5`](./contracts/arbitrum-42161/0xfa7b12c4f18486fcc5e8354135d20e348ff7b1f5/) | ⚠️ Unaudited |
+| UniversalResolver | unknown | arbitrum | n/a | [`0xf8ffeb...d96acd`](./contracts/arbitrum-42161/0xf8ffeb5007646509c0742ee49c15839946d96acd/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -75,24 +83,33 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (6)
+### ❓ Unverified (15)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | UnnamedContract | unknown | arbitrum | n/a | `0x031ef5...0531cb` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x0945ff...a6d5a8` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x27721c...b12350` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x2ab7f7...f2ebfd` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x2bd1c6...97351f` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x720726...bc915e` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x7b7e3e...29e514` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8b6013...435781` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xa557f8...3f8b40` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xab4ccb...f73081` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xde751c...a4e5af` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xea2b63...7b08b9` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xefb6a9...6d94f5` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xf5e12b...d05c48` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xfa99f3...b308ad` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [v2_SmartContract_Audit_Solidproof_NeutraFinance.pdf](https://github.com/NeutraFinance/neutra-gmx-contracts/blob/master/audits/solidproof/v2_SmartContract_Audit_Solidproof_NeutraFinance.pdf) | unknown | Audit | 2023-01 | stale | Direct | contract_name | 0 | n/a |
+| [v2_SmartContract_Audit_Solidproof_NeutraFinance.pdf](https://github.com/NeutraFinance/neutra-gmx-contracts/blob/master/audits/solidproof/v2_SmartContract_Audit_Solidproof_NeutraFinance.pdf) | unknown | Audit | 2023-01 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -101,16 +118,24 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | arbitrum | [`0x22f473...85e53f`](./contracts/arbitrum-42161/0x22f4730e21e40dc751c08826d93010a64185e53f/) | EsNEU | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xe5abb3...52d62d`](./contracts/arbitrum-42161/0xe5abb3700484998a6ee280cc615656b7ce52d62d/) | NameWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x6609be...e600c3`](./contracts/arbitrum-42161/0x6609be1547166d1c4605f3a243fdcff467e600c3/) | NEU | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x62a8fb...e916cb`](./contracts/arbitrum-42161/0x62a8fb652b23e7304ba33ecfaf437b20aee916cb/) | OwnedResolver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x5e43ce...1276cf`](./contracts/arbitrum-42161/0x5e43ce30f8e8027f2c24f1cc101f225cbb1276cf/) | PublicResolver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x693458...50a304`](./contracts/arbitrum-42161/0x693458a6f3906ad10d666f40e9dd787eac50a304/) | ReverseRegistrar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x39302d...178e75`](./contracts/arbitrum-42161/0x39302dfb1a343610cfe27228fd3e90ec72178e75/) | RNSRegistry | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x175a1a...e73b61`](./contracts/arbitrum-42161/0x175a1a3d568a526e7ffd8374154804c6d7e73b61/) | Root | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xfa7b12...f7b1f5`](./contracts/arbitrum-42161/0xfa7b12c4f18486fcc5e8354135d20e348ff7b1f5/) | StaticMetadataService | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xf8ffeb...d96acd`](./contracts/arbitrum-42161/0xf8ffeb5007646509c0742ee49c15839946d96acd/) | UniversalResolver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 7 |
+| native | 10 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 15 |
 
 ## Scope Matching Notes
 
@@ -119,7 +144,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
-- Match method counts: extraction_exact=3
+- Match method counts: n/a
 
 Zero-match audit list:
 

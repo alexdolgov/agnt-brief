@@ -1,56 +1,30 @@
 {
   "schema_version": "2.0",
   "project_key": "valas-finance",
-  "generated_at": "2026-06-20T00:32:37.593Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "valas-finance",
-    "tier": 1,
-    "peak_tvl": 306871327,
-    "peak_date": "2022-04-19T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 365524,
-    "tvl_current": 0,
-    "tier0_reason": "current_tvl_zero_after_meaningful_peak",
-    "tvl_180d_ago": 572883,
-    "change_30d_pct": null,
-    "change_90d_pct": -100,
-    "governance_raw": {
-      "evidence": "TVL dropped 100% from peak over 4 years ago with no activity or communications.",
-      "confidence": 0.95,
-      "lifecycle_status": "dead"
-    },
-    "days_since_peak": 1523,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "fallback_mixed",
-    "drop_from_peak_pct": 100,
-    "governance_evidence": "TVL dropped 100% from peak over 4 years ago with no activity or communications.",
-    "governance_confidence": 0.95,
-    "governance_text_chars": 75,
-    "governance_classification": "dead",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:54:04.237Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-ae05",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 5,
-    "total_addresses": 6,
-    "unique_implementations": 5,
-    "total_deployments": 6,
+    "total_contracts": 8,
+    "total_addresses": 9,
+    "unique_implementations": 8,
+    "total_deployments": 9,
     "audited_contracts": 3,
     "unaudited_contracts": 2,
     "contracts_verified_audited": 3,
     "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 3,
     "coverage_pct": 60,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 22074.6782,
-    "tvl_usd": 193685.15097289285,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "bsc": 193685.15
-    },
+    "dl_tvl_usd": 20231.36326,
+    "tvl_usd": 20231.36326,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://valasfinance.com/",
     "chains": [
@@ -65,28 +39,35 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 5,
+    "live_verified_implementations": 5,
+    "live_audited_implementations": 3,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 3
     }
   },
   "topography": {
-    "project_purpose": "Valas Finance is a decentralized lending protocol on BSC that enables users to deposit assets to earn interest and borrow against them. It uses a pool-based model with variable interest rates, collateralized loans, and governance via the VALAS token.",
-    "relationship_narrative": "The Deployment Addresses family provides the core logic and configuration for the lending pools, while the valTokens family represents the tokenized positions. The LendingPool interacts with AToken proxies to mint/burn tokens on deposit/withdraw, and relies on oracles and the configurator for asset parameters.",
-    "product_family_count": 2,
-    "total_contracts_indexed": 46,
+    "project_purpose": "Lending. Structurally: 23 project-authored contract(s) across 1 chain(s); 6 ERC20 tokens; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 4 common project-authored base contract(s) (versionedinitializable, lendingpoolstorage, debttokenbase). Dominant framework: openzeppelin.",
+    "product_family_count": 4,
+    "total_contracts_indexed": 35,
     "live_contracts": 6,
-    "inactive_contracts": 25,
-    "singleton_contracts": 15,
+    "inactive_contracts": 26,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 4,
+    "unknown_contracts": 3,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 27,
-    "unverified_dependencies": 1,
-    "detected_codebases": [
-      "aave-v2"
-    ]
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 5,
+    "unique_implementations": 8,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -95,43 +76,6 @@
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xb1ebdd56729940089ecc3ad0bbeeb12b6842ea6f",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "ValasToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Deployment Addresses",
-      "tvl_usd": 193685.15097289285,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ValasToken",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xb1ebdd56729940089ecc3ad0bbeeb12b6842ea6f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 193685.15097289285,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-14093"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 56,
       "chain_name": "bsc",
@@ -167,7 +111,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-28 22:46:15+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -213,7 +161,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-25 16:57:24+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -225,7 +177,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Deployment Addresses",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -250,7 +202,169 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-28 22:40:15+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x1dbb3063cacdb8cab3cfa93486c5851ed042694c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x1dbb3063cacdb8cab3cfa93486c5851ed042694c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-28 13:47:14+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xec4aaa80e9c7bd617c0acc6e2ab132d84818d1df",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xec4aaa80e9c7bd617c0acc6e2ab132d84818d1df",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-28 20:20:26+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xf1670e915c513864c483242a199c29938c9cb067",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xf1670e915c513864c483242a199c29938c9cb067",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-28 13:57:59+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xb1ebdd56729940089ecc3ad0bbeeb12b6842ea6f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ValasToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ValasToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xb1ebdd56729940089ecc3ad0bbeeb12b6842ea6f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14093"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-28 22:40:06+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -260,9 +374,9 @@
       "deployment_unit_proxy_count": null,
       "name": "WETHGateway",
       "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "Aave",
-      "product_line": "Deployment Addresses",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -285,7 +399,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-28 19:53:24+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -302,23 +420,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AToken",
-        "AaveOracle",
-        "ChefIncentivesController",
-        "Fold",
-        "LendingPool",
-        "MasterChef",
-        "MultiFeeDistribution",
-        "ProtocolOwnedDEXLiquidity",
-        "TokenVesting",
-        "ValasToken"
-      ],
+      "extracted_names": [],
       "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -341,21 +451,29 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x3025d9f822d399fd7fb6275b5164bbde6dc28a29",
+      "name": "WETHGateway",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 4,
-    "upstream": 1,
+    "native": 5,
+    "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 23
+      "contract_name": 3
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

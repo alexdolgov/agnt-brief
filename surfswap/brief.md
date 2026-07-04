@@ -1,16 +1,14 @@
 # Agentic Audit Brief: Surfswap
 
-⚠️ Lifecycle status: DEAD - TVL dropped 4.4% over 90 days
-
 ## Project Overview
 
 - Project: Surfswap (`surfswap`)
-- Lifecycle: dead (Tier 0, 100% below peak)
-- Generated: 2026-06-19T12:59:59.976Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-cc10
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:59.128Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16bc
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $117.00
+- DeFi Llama TVL: $134.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -33,19 +31,21 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 3
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-07 (stale)
-- Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 3 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -85,9 +85,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [V2 Audit by Peckshield - <>](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Surfswap-v1.0.pdf) | PeckShield | Audit | 2022-07 | stale | Direct | n/a | 0 | n/a |
-| [Peckshield](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Beamswap-v1.0.pdf) | PeckShield | Audit | 2022-05 | stale | Direct | n/a | 0 | n/a |
-| [Solidity finance](https://sourcehat.com/audits/BeamSwap) | SourceHat | Audit | 2022-01 | stale | Direct | n/a | 0 | n/a |
+| [PeckShield-Audit-Report-Surfswap-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Surfswap-v1.0.pdf) | PeckShield | Audit | 2022-07 | stale | Direct | n/a | 0 | n/a |
+| [PeckShield-Audit-Report-Beamswap-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Beamswap-v1.0.pdf) | PeckShield | Audit | 2022-05 | stale | Direct | n/a | 0 | n/a |
+| [sourcehat.com/audits/BeamSwap](https://sourcehat.com/audits/BeamSwap) | SourceHat | Audit | 2022-01 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -99,10 +99,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -115,8 +115,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [13948] V2 Audit by Peckshield - <>
-- [13949] Peckshield
-- [13950] Solidity finance
+- [13948] PeckShield-Audit-Report-Surfswap-v1.0.pdf
+- [13949] PeckShield-Audit-Report-Beamswap-v1.0.pdf
+- [13950] sourcehat.com/audits/BeamSwap
 
 Fork inheritance lineage and inherited audits are included when available.

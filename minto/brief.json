@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "minto",
-  "generated_at": "2026-06-18T03:56:50.505Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-bcf3",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "minto",
-    "tier": 0,
-    "peak_tvl": 0,
-    "peak_date": "2022-07-05T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 0,
-    "tvl_current": 0,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 0,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "days_since_peak": 1426,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 0
-  },
+  "generated_at": "2026-07-04T14:53:33.160Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-16da",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 6,
+    "total_contracts": 4,
     "total_addresses": 6,
-    "unique_implementations": 6,
+    "unique_implementations": 4,
     "total_deployments": 6,
     "audited_contracts": 1,
     "unaudited_contracts": 2,
     "contracts_verified_audited": 1,
     "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 3,
+    "contracts_unverified": 1,
     "coverage_pct": 33.3,
     "total_audits": 2,
+    "direct_audits": 2,
+    "inherited_audits": 0,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 3761396.56474,
-    "tvl_usd": 3761396.56474,
+    "dl_tvl_usd": 3799069.35698,
+    "tvl_usd": 3799069.35698,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -54,26 +40,35 @@
       "aging": 0,
       "stale": 1,
       "unknown": 1
+    },
+    "live_implementations": 3,
+    "live_verified_implementations": 3,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 1
     }
   },
   "topography": {
-    "project_purpose": "Minto is a Bitcoin mining hashpower tokenization and staking project centered on BTCMT, a token representing exposure to mining power, with staking/mining-related participation rather than multi-chain yield optimization, farming strategies, or auto-compounding vaults.",
-    "relationship_narrative": "The GnosisSafeProxy serves as a shared governance contract for both families, while the StakingOwn contract likely manages staking for the BTCMT token. The TransparentUpgradeableProxy points to MintoAutofarmV2, indicating a single upgradeable vault implementation used across deployments.",
-    "product_family_count": 2,
-    "total_contracts_indexed": 12,
+    "project_purpose": "Yield. Structurally: 4 project-authored contract(s) across 1 chain(s); 1 ERC20 token; role-gated via AccessControl; built on openzeppelin.",
+    "relationship_narrative": "The protocol forms a single structural family (Core Logic) of 4 contract(s).",
+    "product_family_count": 1,
+    "total_contracts_indexed": 7,
     "live_contracts": 3,
-    "inactive_contracts": 2,
-    "singleton_contracts": 4,
+    "inactive_contracts": 1,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 3,
-    "deployment_units": 2,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 2,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 6,
+    "unique_implementations": 4,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -92,7 +87,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Contracts and Addresses",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -117,7 +112,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-05-17 16:23:20+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -152,7 +151,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-06-06 16:39:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -164,7 +167,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Contracts and Addresses",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -187,7 +190,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-06-06 17:11:48+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 128,
@@ -197,13 +204,13 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Minto",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "UnnamedContract",
       "deployments": [
         {
           "chain_id": 128,
@@ -215,31 +222,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 128,
-      "chain_name": "heco",
-      "address": "0x78ae303182fca96a4629a78ee13235e6525ebcfb",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Minto",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 128,
           "chain_name": "heco",
@@ -250,31 +233,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 128,
-      "chain_name": "heco",
-      "address": "0xe742fce58484ff7be7835d95e350c23ce55a7e12",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Minto",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 128,
           "chain_name": "heco",
@@ -292,14 +251,18 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 2675,
       "audit_key": "audit-2675",
-      "report_name": "Audit report",
+      "report_name": "MintoAuditReport.pdf",
       "report_url": "https://files.minto.finance/MintoAuditReport.pdf",
       "auditor": "yAudit",
       "audit_type": "audit",
@@ -309,21 +272,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BTCMT",
-        "Staking"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 12203,
       "audit_key": "audit-12203",
-      "report_name": "DL audit link",
+      "report_name": "ingreso.php",
       "report_url": "https://devcfirma.cconducir.com/ingreso.php",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -333,6 +296,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -374,24 +340,22 @@
     }
   ],
   "origin_summary": {
-    "native": 6,
+    "native": 3,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 1
+      "contract_name": 1
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 12203,
-        "report_name": "DL audit link"
+        "report_name": "ingreso.php"
       }
     ],
     "inherited_remapped_matches": []

@@ -4,64 +4,74 @@
 
 - Project: Hybra (`hybra`)
 - Website: [https://www.hybra.finance?code=GRYN2U](https://www.hybra.finance?code=GRYN2U)
-- Lifecycle: active (Tier 0, 92.2% below peak)
-- Generated: 2026-06-17T16:15:53.324Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:21.686Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: hyperliquid
-- Contract surface: 66 unique implementations (72 raw deployments)
-- DeFi Llama TVL: $1,589,153.00
+- Contract surface: 76 unique implementations (91 raw deployments)
+- DeFi Llama TVL: $2,148,492.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Hybra is a decentralized exchange (DEX) protocol on HyperEVM that facilitates token swaps, liquidity provision, and yield farming. It employs a ve(3,3) tokenomics model with gauges, bribes, and voting to incentivize liquidity and governance.
+Dexs. Structurally: 13 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens, 1 ERC721 NFT; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The Hybra V4 family relies on shared infrastructure contracts such as GaugeFactory, BribeFactoryV3, VoterV3, and MinterUpgradeable to manage liquidity incentives, governance voting, and token emissions across the protocol.
+The protocol comprises 6 functional families. Its contracts share 6 common project-authored base contract(s) (peripheryimmutablestate, peripheryvalidation, blocktimestamp). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 92; live-surface contracts included: 72 (20 live, 52 unknown).
-- Excluded by liveness: 0 inactive, 20 singleton, 0 uninitialized.
-- Deployment units: 1/11 live.
+- Indexed contracts: 92; live-surface contracts included: 91 (24 live, 67 unknown).
+- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/10 (0.0%)
-- Verified + Unaudited implementations: 10
+- Coverage of deployed-live implementations: 7/14 (50.0%)
+- Deployed-live implementations: 14 of 76 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 7/14
+- Verified + Unaudited implementations: 7
 - Verified by bytecode match: 0
-- Unverified implementations: 56
-- Unique implementations: 66
-- Raw deployments: 72
-- Audits discovered: 0
-- Scoreable audits (matched contracts): 0
+- Unverified implementations: 62
+- Unique implementations: 76
+- Raw deployments: 91
+- Audits discovered: 4 (4 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
-- Tier 1 coverage: No Tier 1 coverage
+- Latest audit: 2025-11 (fresh)
+- Audit staleness (calendar age): 4 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 7 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Tier 1 coverage: 50.0% (Code4rena)
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| Code4rena | Tier 1 | 7 | 50.0% | 2025-11 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
-
-- None
-
-### ⚠️ Verified + Unaudited (10)
+### ✅ Verified + Audited (7)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CLFactory | registry | hyperliquid | n/a | [`0x32b9da...1324c2`](./contracts/hyperliquid-999/0x32b9da73215255d50d84feb51540b75acc1324c2/) | ⚠️ Unaudited |
-| CLPool | core_logic | hyperliquid | n/a | 2 deployments: hyperliquid [`0xa421f7...9552ab`](./contracts/hyperliquid-999/0xa421f7aada7d11eb6002bc53090fb8d5409552ab/); hyperliquid `0xe31c7b...4e1e23` | ⚠️ Unaudited |
+| BribeFactoryV3 | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x2555f7...5fc82f`](./contracts/hyperliquid-999/0x2555f79ac6e8096c755096e3a8d175a4bf5fc82f/); hyperliquid `0x6ba9f9...7f752a` | ✅ Audited |
+| CLFactory | registry | hyperliquid | n/a | [`0x32b9da...1324c2`](./contracts/hyperliquid-999/0x32b9da73215255d50d84feb51540b75acc1324c2/) | ✅ Audited |
+| CLPool | core_logic | hyperliquid | n/a | 2 deployments: hyperliquid [`0xa421f7...9552ab`](./contracts/hyperliquid-999/0xa421f7aada7d11eb6002bc53090fb8d5409552ab/); hyperliquid `0xe31c7b...4e1e23` | ✅ Audited |
+| GaugeFactory | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x84fa8d...e0de45`](./contracts/hyperliquid-999/0x84fa8d513ee93ddea72b6fbd45fa957bd9e0de45/); hyperliquid `0xb4892c...aa5a46` | ✅ Audited |
+| GaugeFactoryCL | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x1c0ebc...abdd09`](./contracts/hyperliquid-999/0x1c0ebc5cf683e20d427d08d9e0920b07f9abdd09/); hyperliquid `0xeb6088...63e4f9` | ✅ Audited |
+| HYBR | unknown | hyperliquid | n/a | [`0x067b0c...25a9c8`](./contracts/hyperliquid-999/0x067b0c72aa4c6bd3bfefff443c536dcd6a25a9c8/) | ✅ Audited |
+| VoterV3 | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x5623f0...9e4fa3`](./contracts/hyperliquid-999/0x5623f012d15eb828c12fe32e46d40adc2a9e4fa3/); hyperliquid `0xcd9599...920576` | ✅ Audited |
+
+### ⚠️ Verified + Unaudited (7)
+
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
 | GrowthHYBR | unknown | hyperliquid | n/a | [`0x348b11...2b8aa5`](./contracts/hyperliquid-999/0x348b11cbb801fab12834e66691b7f25fe72b8aa5/) | ⚠️ Unaudited |
-| HYBR | unknown | hyperliquid | n/a | [`0x067b0c...25a9c8`](./contracts/hyperliquid-999/0x067b0c72aa4c6bd3bfefff443c536dcd6a25a9c8/) | ⚠️ Unaudited |
 | NonfungiblePositionManager | governance | hyperliquid | n/a | 3 deployments: hyperliquid [`0x48b88f...097350`](./contracts/hyperliquid-999/0x48b88f07f22fcab3b72e5659f94f1bb773097350/); hyperliquid `0x88d4c3...43176f`; hyperliquid `0xcc9e39...1a2568` | ⚠️ Unaudited |
 | PositionValueQuery | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x05db07...07dbc0`](./contracts/hyperliquid-999/0x05db07299ee752aef6aa1b3e895c973a6007dbc0/); hyperliquid `0x2ea324...17c068` | ⚠️ Unaudited |
 | QuoterV2 | periphery | hyperliquid | n/a | 2 deployments: hyperliquid [`0x8cd6ac...91e4e2`](./contracts/hyperliquid-999/0x8cd6acff822ee9e3240501b3ceda64364791e4e2/); hyperliquid `0xf5fcff...29a3e6` | ⚠️ Unaudited |
@@ -81,13 +91,18 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (56)
+### ❓ Unverified (62)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Proxy (impl: 0x5faebfc659fe95a49f536d8e8ba6ab9dbede7d9a) | proxy | hyperliquid | unit-32806 | `0x110e1c...a41525` | ❓ Unverified |
+| MinterUpgradeable | unknown | hyperliquid | n/a | `0xa8265e...3e149b` | ❓ Unverified |
+| Proxy (impl: 0x3cda22a593b35a3554300b8968d20b9fc15bab8c) | unknown | hyperliquid | n/a | 2 deployments: hyperliquid `0x218e66...0f73e6`; hyperliquid `0x3cda22...5bab8c` | ❓ Unverified |
+| Proxy (impl: 0x5faebfc659fe95a49f536d8e8ba6ab9dbede7d9a) | proxy | hyperliquid | n/a | `0x110e1c...a41525` | ❓ Unverified |
+| Proxy (impl: 0xb761a187808fbb307cb5c5e01c01b729da432471) | unknown | hyperliquid | n/a | 2 deployments: hyperliquid `0x45ea86...ecd316`; hyperliquid `0xb761a1...432471` | ❓ Unverified |
+| Proxy (impl: 0xcd5f4e4cf2dcd7d9d72ef997ebd5f57bc0443988) | unknown | hyperliquid | n/a | 2 deployments: hyperliquid `0x742caa...b65d5e`; hyperliquid `0xcd5f4e...443988` | ❓ Unverified |
+| Proxy (impl: 0xdcb84d0b4036a2467ca01e0e5adf0a0d078eb78c) | unknown | hyperliquid | n/a | 2 deployments: hyperliquid `0x9c4bcf...6233e2`; hyperliquid `0xdcb84d...8eb78c` | ❓ Unverified |
 | UnnamedContract | unknown | hyperliquid | n/a | `0x020351...31228b` | ❓ Unverified |
 | UnnamedContract | unknown | hyperliquid | n/a | `0x067440...802aff` | ❓ Unverified |
 | UnnamedContract | unknown | hyperliquid | n/a | `0x088d2c...d3b76d` | ❓ Unverified |
@@ -107,6 +122,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | hyperliquid | n/a | `0x5c981f...6f0836` | ❓ Unverified |
 | UnnamedContract | unknown | hyperliquid | n/a | `0x5e33a1...ac3dcc` | ❓ Unverified |
 | UnnamedContract | unknown | hyperliquid | n/a | `0x5fbb1a...03b793` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | 2 deployments: hyperliquid `0x69edd0...10647b`; hyperliquid `0x775e40...350197` | ❓ Unverified |
 | UnnamedContract | unknown | hyperliquid | n/a | `0x6aeb86...cc0e79` | ❓ Unverified |
 | UnnamedContract | unknown | hyperliquid | n/a | `0x6d1d4a...fd58fc` | ❓ Unverified |
 | UnnamedContract | unknown | hyperliquid | n/a | `0x6f1bf1...154d53` | ❓ Unverified |
@@ -148,6 +164,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [code4rena.com/reports/2025-10-hybra-finance](https://code4rena.com/reports/2025-10-hybra-finance) | Code4rena | Contest | 2025-10 | fresh | Direct | contract_name | 12 | high |
+| [code4rena.com/audits/2025-10-hybra-finance](https://code4rena.com/audits/2025-10-hybra-finance) | Code4rena | Contest | 2025-10 | fresh | Direct | n/a | 0 | n/a |
+| [code4rena.com/audits/2025-11-hybra-finance-mitigation-review](https://code4rena.com/audits/2025-11-hybra-finance-mitigation-review) | Code4rena | Contest | 2025-11 | fresh | Direct | n/a | 0 | n/a |
+| [code4rena.com/audits/2025-11-hybra-finance-mitigation-review-round-2](https://code4rena.com/audits/2025-11-hybra-finance-mitigation-review-round-2) | Code4rena | Contest | 2025-11 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -155,10 +175,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| hyperliquid | [`0x32b9da...1324c2`](./contracts/hyperliquid-999/0x32b9da73215255d50d84feb51540b75acc1324c2/) | CLFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0xa421f7...9552ab`](./contracts/hyperliquid-999/0xa421f7aada7d11eb6002bc53090fb8d5409552ab/) | CLPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | hyperliquid | [`0x348b11...2b8aa5`](./contracts/hyperliquid-999/0x348b11cbb801fab12834e66691b7f25fe72b8aa5/) | GrowthHYBR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| hyperliquid | [`0x067b0c...25a9c8`](./contracts/hyperliquid-999/0x067b0c72aa4c6bd3bfefff443c536dcd6a25a9c8/) | HYBR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | hyperliquid | [`0x48b88f...097350`](./contracts/hyperliquid-999/0x48b88f07f22fcab3b72e5659f94f1bb773097350/) | NonfungiblePositionManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | hyperliquid | [`0x05db07...07dbc0`](./contracts/hyperliquid-999/0x05db07299ee752aef6aa1b3e895c973a6007dbc0/) | PositionValueQuery | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | hyperliquid | [`0x8cd6ac...91e4e2`](./contracts/hyperliquid-999/0x8cd6acff822ee9e3240501b3ceda64364791e4e2/) | QuoterV2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -170,18 +187,24 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 10 |
+| native | 12 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 56 |
+| needs_review | 64 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: high=1
+- Match method counts: extraction_exact=12
+
+Zero-match audit list:
+
+- [20725] code4rena.com/audits/2025-10-hybra-finance
+- [20726] code4rena.com/audits/2025-11-hybra-finance-mitigation-review
+- [20727] code4rena.com/audits/2025-11-hybra-finance-mitigation-review-round-2
 
 Fork inheritance lineage and inherited audits are included when available.

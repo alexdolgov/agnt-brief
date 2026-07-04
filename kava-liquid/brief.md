@@ -1,17 +1,15 @@
 # Agentic Audit Brief: Kava Liquid
 
-⚠️ Lifecycle status: DECLINING - TVL changed 23.4% over 90 days
-
 ## Project Overview
 
 - Project: Kava Liquid (`kava-liquid`)
 - Website: [https://app.kava.io/mint](https://app.kava.io/mint)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T20:24:48.559Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-6f9b
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:29.065Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: kava
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $1,173,872.24
+- DeFi Llama TVL: $1,152,771.18
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -22,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Kava Liquid is a KAVA liquid staking product on the Kava chain for bKAVA. Available evidence does not confirm that the single listed contract handles staking, liquid staking token issuance, or represents the complete live contract surface.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
@@ -34,19 +32,21 @@ Kava Liquid is a KAVA liquid staking product on the Kava chain for bKAVA. Availa
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 

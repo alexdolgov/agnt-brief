@@ -4,12 +4,12 @@
 
 - Project: Gate US (`gate-us`)
 - Website: [https://www.gate.com/en-us](https://www.gate.com/en-us)
-- Lifecycle: active (Tier 0, 13.5% below peak)
-- Generated: 2026-06-17T18:58:13.403Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:17.443Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-2d9c
 - Chains: chain-200, cronos, klaytn, manta, metis, scroll, sei
-- Contract surface: 9 unique implementations (9 raw deployments)
-- DeFi Llama TVL: $49,098,762.82
+- Contract surface: 5 unique implementations (9 raw deployments)
+- DeFi Llama TVL: $48,006,867.13
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,7 +23,7 @@ All contracts belong to a single product family with no shared infrastructure or
 
 ## Contract Surface Quality
 
-- Indexed contracts: 9; live-surface contracts included: 9 (2 live, 7 unknown).
+- Indexed contracts: 9; live-surface contracts included: 9 (0 live, 9 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
@@ -31,17 +31,20 @@ All contracts belong to a single product family with no shared infrastructure or
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 5 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 9
-- Unique implementations: 9
+- Unverified implementations: 5
+- Unique implementations: 5
 - Raw deployments: 9
-- Audits discovered: 0
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2023 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -70,26 +73,23 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (9)
+### ❓ Unverified (5)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | cronos | n/a | `0xfc89c0...0bdec3` | ❓ Unverified |
 | UnnamedContract | unknown | manta | n/a | `0xfc89c0...0bdec3` | ❓ Unverified |
-| UnnamedContract | unknown | chain-200 | n/a | `0x1699db...6affbd` | ❓ Unverified |
-| UnnamedContract | unknown | chain-200 | n/a | `0x67c30f...086ccb` | ❓ Unverified |
-| UnnamedContract | unknown | chain-200 | n/a | `0xe74ac0...a10230` | ❓ Unverified |
+| UnnamedContract | unknown | chain-200 | n/a | 5 deployments: cronos `0xfc89c0...0bdec3`; chain-200 `0x1699db...6affbd`; chain-200 `0x67c30f...086ccb`; chain-200 `0xe74ac0...a10230`; klaytn `0xfc89c0...0bdec3` | ❓ Unverified |
 | UnnamedContract | unknown | metis | n/a | `0xfc89c0...0bdec3` | ❓ Unverified |
 | UnnamedContract | unknown | sei | n/a | `0xfc89c0...0bdec3` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0xfc89c0...0bdec3` | ❓ Unverified |
 | UnnamedContract | unknown | scroll | n/a | `0xfc89c0...0bdec3` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Gate PoR Implementation](https://gimg.staticimgs.com/PoR/Gate.io%20PoR%20Implementation%205.01.2023.pdf) | unknown | Audit | 2023 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -101,18 +101,22 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 6 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 3 |
+| needs_review | 5 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [20442] Gate PoR Implementation
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,17 +1,15 @@
 # Agentic Audit Brief: NeuralAI
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: NeuralAI (`neuralai`)
 - Website: [https://goneural.ai/](https://goneural.ai/)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-17T18:50:17.113Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:38.692Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $1,205,215.33
+- DeFi Llama TVL: $1,089,795.52
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -22,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-NeuralAI is an AI/Web3 gaming infrastructure project. Its Ethereum $NEURAL token is part of the project's tokenomics, while any launchpad, staking, or related ecosystem mechanics should be treated as tokenomics or upcoming ecosystem features only where separately supported. wTAO should not be described as a core NeuralAI staking component without evidence of integration, and the broader project identity should account for both Ethereum and Solana $NEURAL token presence where in scope.
+Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
@@ -30,23 +28,25 @@ NeuralAI is an AI/Web3 gaming infrastructure project. Its Ethereum $NEURAL token
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 1; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
+- Coverage of deployed-live implementations: 0/2 (0.0%)
+- Deployed-live implementations: 2 of 2 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/2
 - Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 2
 - Raw deployments: 2
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-03 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 1 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -87,7 +87,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [- Smart contracts audited by Hacken:](https://hacken.io/audits/neuralai) | Hacken | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
+| [hacken.io/audits/neuralai](https://hacken.io/audits/neuralai) | Hacken | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -118,6 +118,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [3114] - Smart contracts audited by Hacken:
+- [3114] hacken.io/audits/neuralai
 
 Fork inheritance lineage and inherited audits are included when available.

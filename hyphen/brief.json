@@ -1,36 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "hyphen",
-  "generated_at": "2026-06-21T08:21:25.326Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "hyphen",
-    "tier": 1,
-    "peak_tvl": 30155542,
-    "peak_date": "2025-06-07T00:00:00.000Z",
-    "tvl_30d_ago": 100361,
-    "tvl_90d_ago": 100361,
-    "tvl_current": 100361,
-    "tier0_reason": "catastrophic_collapse_from_peak",
-    "tvl_180d_ago": 145588,
-    "change_30d_pct": 0,
-    "change_90d_pct": 0,
-    "governance_raw": {
-      "evidence": "The protocol's TVL has dropped 99.67% from its peak, but the homepage shows active development and partnerships, indicating it is still operational.",
-      "confidence": 0.3,
-      "lifecycle_status": "declining"
-    },
-    "days_since_peak": 379,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 99.66718887029124,
-    "governance_evidence": "The protocol's TVL has dropped 99.67% from its peak, but the homepage shows active development and partnerships, indicating it is still operational.",
-    "governance_confidence": 0.3,
-    "governance_text_chars": 4258,
-    "governance_classification": "declining",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:21.836Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 15,
     "total_addresses": 23,
@@ -44,6 +18,8 @@
     "contracts_unverified": 5,
     "coverage_pct": 70,
     "total_audits": 11,
+    "direct_audits": 11,
+    "inherited_audits": 0,
     "scoreable_audits": 10,
     "dl_tvl_usd": 100361.00731,
     "tvl_usd": 100361.00731,
@@ -69,22 +45,31 @@
       "aging": 9,
       "stale": 0,
       "unknown": 1
+    },
+    "live_implementations": 10,
+    "live_verified_implementations": 10,
+    "live_audited_implementations": 7,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 7
     }
   },
   "topography": {
-    "project_purpose": "Hyphen is a bridge protocol enabling cross-chain asset transfers. It uses smart contract wallets and paymasters to facilitate gasless transactions and account abstraction across Ethereum, Base, Polygon, and Optimism.",
-    "relationship_narrative": "The Nexus & MEE family builds on the Legacy Contracts by upgrading wallet and validator implementations. Sponsorship Paymaster Contracts and Base & Optimism families integrate with the wallet infrastructure to enable gasless and token-based fee payments across chains.",
-    "product_family_count": 7,
-    "total_contracts_indexed": 25,
-    "live_contracts": 9,
-    "inactive_contracts": 2,
+    "project_purpose": "Bridge. Structurally: 9 project-authored contract(s) across 2 chain(s); upgradeable via ERC1967/UUPS proxies; built on solady.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Its contracts share 3 common project-authored base contract(s) (modulemanager, storage, registryadapter). Dominant framework: solady.",
+    "product_family_count": 3,
+    "total_contracts_indexed": 23,
+    "live_contracts": 18,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 14,
+    "unknown_contracts": 5,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 10,
-    "unverified_dependencies": 1,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
@@ -107,7 +92,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "​ Sponsorship Paymaster Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -163,7 +148,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-19 20:45:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -173,9 +162,9 @@
       "deployment_unit_proxy_count": null,
       "name": "EntryPoint",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "​ Legacy Contracts",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -198,7 +187,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-21 11:33:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -210,7 +203,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "​ Composability & Utility",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -244,7 +237,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-05 17:43:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -256,7 +253,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "​ Nexus & MEE",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -282,7 +279,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -294,7 +291,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-05 17:43:35+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -306,7 +307,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "​ Legacy Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -335,7 +336,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-09 15:47:23+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -347,7 +352,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "​ Legacy Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -374,7 +379,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-09 15:47:47+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -386,7 +395,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "​ Nexus & MEE",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -412,7 +421,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -428,7 +437,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-02 09:32:59+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -440,7 +453,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "​ Nexus & MEE",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -466,7 +479,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -479,7 +492,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-02 09:33:59+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -491,7 +508,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "​ Nexus & MEE",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -517,7 +534,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -528,7 +545,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-07 12:58:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -540,7 +561,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "​ Composability & Utility",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -568,7 +589,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-03-30 09:53:59+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -578,9 +603,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "​ Nexus & MEE",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -603,7 +628,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-05 16:55:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -613,9 +642,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "​ Nexus & MEE",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -638,7 +667,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-05 17:00:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -648,9 +681,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "​ Nexus & MEE",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -673,7 +706,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-05 16:58:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -683,9 +720,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "200",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -708,7 +745,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -718,9 +759,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "​ Nexus & MEE",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -743,7 +784,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-03-06 14:09:11+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -760,31 +805,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BaseAccount",
-        "BiconomyMetaFactory",
-        "Bootstrap",
-        "INexusAccountFactory",
-        "K1Validator",
-        "K1ValidatorFactory",
-        "ModuleManager",
-        "Nexus",
-        "NexusAccountFactory",
-        "RegistryAdapter",
-        "RegistryBootstrap",
-        "RegistryFactory"
-      ],
-      "matched_contracts": 6,
+      "extracted_names": [],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 13267,
       "audit_key": "audit-13267",
-      "report_name": "* [Core audit]()",
+      "report_name": "report-cantinacode-biconomy-0708-updated.pdf",
       "report_url": "https://github.com/bcnmy/nexus/blob/main/audits/report-cantinacode-biconomy-0708-updated.pdf",
       "auditor": "Spearbit",
       "audit_type": "audit",
@@ -794,46 +829,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BaseAccount",
-        "Bootstrap",
-        "Constants",
-        "EIP712",
-        "ExecLib",
-        "ExecutionHelper",
-        "IERC7484",
-        "IFallback",
-        "IHook",
-        "IModuleManagerEvents",
-        "INexus",
-        "IStorage",
-        "IValidator",
-        "K1Validator",
-        "K1ValidatorFactory",
-        "LocalCallDataParserLib",
-        "ModeLib",
-        "ModuleManager",
-        "ModuleTypeLib",
-        "Nexus",
-        "NexusAccountFactory",
-        "NonceLib",
-        "Receiver",
-        "RegistryAdapter",
-        "RegistryBootstrap",
-        "RegistryFactory",
-        "Storage"
-      ],
-      "matched_contracts": 7,
+      "extracted_names": [],
+      "matched_contracts": 5,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 13268,
       "audit_key": "audit-13268",
-      "report_name": "* [ERC-7739]()",
+      "report_name": "report-cantinacode-biconomy-erc7739-addon-final.pdf",
       "report_url": "https://github.com/bcnmy/nexus/blob/main/audits/report-cantinacode-biconomy-erc7739-addon-final.pdf",
       "auditor": "Spearbit",
       "audit_type": "audit",
@@ -843,18 +853,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Constants",
-        "ERC7739Validator",
-        "K1Validator",
-        "Nexus",
-        "SentinelList"
-      ],
-      "matched_contracts": 3,
+      "extracted_names": [],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -870,18 +877,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "K1Validator",
-        "ModuleManager",
-        "Nexus",
-        "NexusBootstrap",
-        "NexusProxy"
-      ],
-      "matched_contracts": 5,
+      "extracted_names": [],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -897,44 +901,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AssociatedArrayLib",
-        "BaseAccount",
-        "BiconomyMetaFactory",
-        "BootstrapLib",
-        "BytesLib",
-        "EnumerableMap4337",
-        "EnumerableSet4337",
-        "ExecLib",
-        "ExecutionHelper",
-        "Initializable",
-        "K1Validator",
-        "K1ValidatorFactory",
-        "LocalCallDataParserLib",
-        "ModeLib",
-        "ModuleManager",
-        "ModuleTypeLib",
-        "Nexus",
-        "NexusAccountFactory",
-        "NexusBootstrap",
-        "NonceLib",
-        "ProxyLib",
-        "RegistryAdapter",
-        "RegistryFactory",
-        "Stakeable",
-        "Storage"
-      ],
-      "matched_contracts": 9,
+      "extracted_names": [],
+      "matched_contracts": 6,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 13271,
       "audit_key": "audit-13271",
-      "report_name": "The composability module is **audited by Pashov Audit Group** ([May 2026 report]()) and deployed deterministically at `0x0000821108B5C9F3fe17E40811bE5b66DaF8f0e7` (module) and `0x00008211dea1Aca67ac55fc44AE3bF88CF41281d` (storage) on every supported chain.",
+      "report_name": "2026-05-Composability-Nexus-Pashov-Review.pdf",
       "report_url": "https://github.com/bcnmy/erc8211-contracts/blob/main/audits/2026-05-Composability-Nexus-Pashov-Review.pdf",
       "auditor": "Pashov Audit Group",
       "audit_type": "audit",
@@ -944,26 +925,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "ComposabilityDataTypes",
-        "ComposableExecutionLib",
-        "ComposableExecutionModule",
-        "K1MeeValidator",
-        "Nexus",
-        "NexusAccountFactory",
-        "NodePaymaster"
-      ],
-      "matched_contracts": 6,
+      "extracted_names": [],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 13272,
       "audit_key": "audit-13272",
-      "report_name": "* [Zenith Report (2025-03)]()",
+      "report_name": "2025-03-Composability_Zenith-Audit-Report.pdf",
       "report_url": "https://github.com/bcnmy/composability/blob/main/audits/2025-03-Composability_Zenith-Audit-Report.pdf",
       "auditor": "Pashov Audit Group",
       "audit_type": "audit",
@@ -973,24 +949,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "ComposableExecutionLib",
-        "ComposableExecutionModule",
-        "ModuleManager",
-        "Nexus",
-        "Storage"
-      ],
-      "matched_contracts": 3,
+      "extracted_names": [],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 13273,
       "audit_key": "audit-13273",
-      "report_name": "* [Pashov Report (2025-03)]()",
+      "report_name": "2025-03-Composability-Pashov-Review.pdf",
       "report_url": "https://github.com/bcnmy/composability/blob/main/audits/2025-03-Composability-Pashov-Review.pdf",
       "auditor": "Pashov Audit Group",
       "audit_type": "audit",
@@ -1000,30 +973,16 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "ComposabilityDataTypes",
-        "ComposableExecutionBase",
-        "ComposableExecutionLib",
-        "ComposableExecutionModule",
-        "Constants",
-        "Storage"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 13273,
-          "report_url": "https://github.com/bcnmy/composability/blob/main/audits/2025-03-Composability-Pashov-Review.pdf"
-        },
-        {
-          "audit_id": 16248,
-          "report_url": "https://github.com/bcnmy/erc8211-contracts/blob/main/audits/2025-03-Composability-Pashov-Review.pdf"
-        }
-      ]
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     },
     {
       "audit_id": 13274,
@@ -1038,19 +997,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "EcdsaLib",
-        "K1MeeValidator",
-        "NodePaymaster",
-        "PermitValidatorLib",
-        "SimpleValidatorLib",
-        "TxValidatorLib"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1066,17 +1021,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BaseNodePaymaster",
-        "Constants",
-        "K1MeeValidator",
-        "NodePaymaster"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1092,6 +1045,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -1145,6 +1101,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x0000000071727de22e5e9d8baf0edac6f37da032",
+      "name": "EntryPoint",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x000000001f1c68bd5bf69aa1ccc1d429700d41da",
       "name": "EtherForwarder",
       "role": "unknown",
@@ -1154,18 +1120,16 @@
     }
   ],
   "origin_summary": {
-    "native": 14,
+    "native": 10,
     "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 0
+    "standard_library": 0,
+    "needs_review": 5
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 45
+      "contract_name": 28
     },
-    "extraction_confidence_counts": {
-      "high": 10
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [

@@ -1,13 +1,11 @@
 # Agentic Audit Brief: Solace
 
-⚠️ Lifecycle status: DEAD - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Solace (`solace`)
-- Lifecycle: dead (Tier 0, 100% below peak)
-- Generated: 2026-06-19T08:29:54.266Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-cc10
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:56.468Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16bc
 - Chains: ethereum, polygon
 - Contract surface: 1 unique implementations (2 raw deployments)
 - DeFi Llama TVL: $0.00
@@ -25,27 +23,29 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 ## Contract Surface Quality
 
-- Indexed contracts: 62; live-surface contracts included: 2 (2 live, 0 unknown).
-- Excluded by liveness: 60 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/2 live.
-- Detected codebases: uniswap-v2
+- Indexed contracts: 2; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 2
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -85,7 +85,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://hacken.io/audits) | Hacken | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [hacken.io/audits](https://hacken.io/audits) | Hacken | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -115,6 +115,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [13855] DL audit link
+- [13855] hacken.io/audits
 
 Fork inheritance lineage and inherited audits are included when available.

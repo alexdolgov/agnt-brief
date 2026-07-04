@@ -5,26 +5,25 @@
 - Project: Sovryn (`sovryn`)
 - Website: [https://sovryn.com/](https://sovryn.com/)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:57.643Z
-- Pipeline run: brief-regen-topo-2026-06-17
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $30,778,855.00
+- Generated: 2026-07-04T14:53:57.735Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-17a2
+- Chains: base, ethereum
+- Contract surface: 6 unique implementations (6 raw deployments)
+- DeFi Llama TVL: $29,850,114.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Sovryn is a non-custodial Bitcoin DeFi protocol offering trading, margin trading, lending and borrowing on Bitcoin sidechain ecosystems. Its broader product and ecosystem surface includes staking and governance, the Zero/Sovryn Dollar stablecoin system, and Origins/BitcoinOS-related initiatives.
 
+### Architecture
+
+No relationship narrative (skeletal or single-family surface).
+
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Indexed contracts: 6; live-surface contracts included: 6 (0 live, 6 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
@@ -32,17 +31,20 @@ Sovryn is a non-custodial Bitcoin DeFi protocol offering trading, margin trading
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 6 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
-- Audits discovered: 11
+- Unverified implementations: 6
+- Unique implementations: 6
+- Raw deployments: 6
+- Audits discovered: 11 (11 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-09 (stale)
-- Staleness: 0 fresh, 0 aging, 5 stale, 6 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 11 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -71,26 +73,33 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (6)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x5a0d86...b4eaa7` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x5684a0...1ea40e` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xba20a5...c61474` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xc17c64...44fc21` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe5bc23...e773da` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xefc78f...14abbd` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Least Authority - Sovryn Bi-directional FastBTC Final Audit Report.pdf](https://github.com/DistributedCollective/sovryn-audits/blob/main/Least%20Authority%20-%20Sovryn%20Bi-directional%20FastBTC%20Final%20Audit%20Report.pdf) | Least Authority | Audit | 2022-09 | stale | Direct | n/a | 0 | n/a |
-| [Smart Contract Audit_ Zero.pdf](https://github.com/DistributedCollective/sovryn-audits/blob/main/Smart%20Contract%20Audit_%20Zero.pdf) | Unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Smart Contract Audit_Origins.pdf](https://github.com/DistributedCollective/sovryn-audits/blob/main/Smart%20Contract%20Audit_Origins.pdf) | Unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Smart Contract Audit_ Zero.pdf](https://github.com/DistributedCollective/sovryn-audits/blob/main/Smart%20Contract%20Audit_%20Zero.pdf) | Unknown | Audit | 2021-10 | stale | Direct | n/a | 0 | n/a |
+| [Smart Contract Audit_Origins.pdf](https://github.com/DistributedCollective/sovryn-audits/blob/main/Smart%20Contract%20Audit_Origins.pdf) | Unknown | Audit | 2021-10 | stale | Direct | n/a | 0 | n/a |
 | [Sovryn Governance Security Audit v210115.pdf](https://github.com/DistributedCollective/sovryn-audits/blob/main/Sovryn%20Governance%20Security%20Audit%20v210115.pdf) | yAudit | Audit | 2021-01 | stale | Direct | n/a | 0 | n/a |
 | [Sovryn Security Audit Smart Contracts v201218.pdf](https://github.com/DistributedCollective/sovryn-audits/blob/main/Sovryn%20Security%20Audit%20Smart%20Contracts%20v201218.pdf) | yAudit | Audit | 2020-12 | stale | Direct | n/a | 0 | n/a |
-| [Sovryn Security Recheck.pdf](https://github.com/DistributedCollective/sovryn-audits/blob/main/Sovryn%20Security%20Recheck.pdf) | Unknown | Audit | 2020 | stale | Direct | n/a | 0 | n/a |
-| [Sovryn_CSOV_Token_Contract_Audit.pdf](https://github.com/DistributedCollective/sovryn-audits/blob/main/Sovryn_CSOV_Token_Contract_Audit.pdf) | Unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Sovryn_Genesis_Sale_Contract_Audit.pdf](https://github.com/DistributedCollective/sovryn-audits/blob/main/Sovryn_Genesis_Sale_Contract_Audit.pdf) | Unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Sovryn_Governance_Smart_Contract_Audit.pdf](https://github.com/DistributedCollective/sovryn-audits/blob/main/Sovryn_Governance_Smart_Contract_Audit.pdf) | Unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Sovryn_Staking_Smart_Contract_Audit.pdf](https://github.com/DistributedCollective/sovryn-audits/blob/main/Sovryn_Staking_Smart_Contract_Audit.pdf) | Unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Sovryn Security Recheck.pdf](https://github.com/DistributedCollective/sovryn-audits/blob/main/Sovryn%20Security%20Recheck.pdf) | Unknown | Audit | 2020-01 | stale | Direct | n/a | 0 | n/a |
+| [Sovryn_CSOV_Token_Contract_Audit.pdf](https://github.com/DistributedCollective/sovryn-audits/blob/main/Sovryn_CSOV_Token_Contract_Audit.pdf) | Unknown | Audit | 2021-01 | stale | Direct | n/a | 0 | n/a |
+| [Sovryn_Genesis_Sale_Contract_Audit.pdf](https://github.com/DistributedCollective/sovryn-audits/blob/main/Sovryn_Genesis_Sale_Contract_Audit.pdf) | Unknown | Audit | 2021-01 | stale | Direct | n/a | 0 | n/a |
+| [Sovryn_Governance_Smart_Contract_Audit.pdf](https://github.com/DistributedCollective/sovryn-audits/blob/main/Sovryn_Governance_Smart_Contract_Audit.pdf) | Unknown | Audit | 2020-12 | stale | Direct | n/a | 0 | n/a |
+| [Sovryn_Staking_Smart_Contract_Audit.pdf](https://github.com/DistributedCollective/sovryn-audits/blob/main/Sovryn_Staking_Smart_Contract_Audit.pdf) | Unknown | Audit | 2021-01 | stale | Direct | n/a | 0 | n/a |
 | [certik-pre-sovryn-2021-10-11.pdf](https://github.com/DistributedCollective/sovryn-audits/blob/main/certik-pre-sovryn-2021-10-11.pdf) | CertiK | Audit | 2021-10 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
@@ -106,7 +115,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 6 |
 
 ## Scope Matching Notes
 

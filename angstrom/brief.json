@@ -1,33 +1,33 @@
 {
   "schema_version": "2.0",
   "project_key": "angstrom",
-  "generated_at": "2026-06-19T06:13:15.945Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
+  "generated_at": "2026-07-04T14:53:00.783Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-f2f0",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "angstrom",
     "tier": 1,
     "peak_tvl": 11383268,
     "peak_date": "2026-05-21T00:00:00.000Z",
-    "tvl_30d_ago": 11383268,
-    "tvl_90d_ago": 9748636,
-    "tvl_current": 3088281,
+    "tvl_30d_ago": 10985250,
+    "tvl_90d_ago": 9757959,
+    "tvl_current": 2938836,
     "tier0_reason": "sustained_90d_and_30d_decline",
-    "tvl_180d_ago": 2867665,
-    "change_30d_pct": -72.86999655986313,
-    "change_90d_pct": -68.32089125083756,
+    "tvl_180d_ago": 3050050,
+    "change_30d_pct": -73.24743633508568,
+    "change_90d_pct": -69.88267730987597,
     "governance_raw": {
-      "evidence": "TVL dropped 72.87% from peak in 24 days, but the protocol is actively promoting new features (Uniswap Incentives, Angstrom) and has a live app, indicating ongoing operations.",
-      "confidence": 0.9,
+      "evidence": "TVL has dropped 74% from peak in 41 days, but the protocol is actively promoting new features (Angstrom) and has a live app, indicating ongoing operations.",
+      "confidence": 0.7,
       "lifecycle_status": "declining"
     },
-    "days_since_peak": 24,
+    "days_since_peak": 41,
     "detection_method": "tvl_trajectory+governance_signal",
     "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 72.86999655986313,
-    "governance_evidence": "TVL dropped 72.87% from peak in 24 days, but the protocol is actively promoting new features (Uniswap Incentives, Angstrom) and has a live app, indicating ongoing operations.",
-    "governance_confidence": 0.9,
-    "governance_text_chars": 1446,
+    "drop_from_peak_pct": 74.18284450475909,
+    "governance_evidence": "TVL has dropped 74% from peak in 41 days, but the protocol is actively promoting new features (Angstrom) and has a live app, indicating ongoing operations.",
+    "governance_confidence": 0.7,
+    "governance_text_chars": 1442,
     "governance_classification": "declining",
     "governance_fallback_reason": null
   },
@@ -42,49 +42,60 @@
     "contracts_verified_unaudited": 12,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 7.7,
+    "coverage_pct": 10,
     "total_audits": 3,
+    "direct_audits": 3,
+    "inherited_audits": 0,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 3061809.17523,
-    "tvl_usd": 182652801.0352513,
+    "dl_tvl_usd": 2967672.31629,
+    "tvl_usd": 223534408.45885116,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "base": 21078425.92,
-      "ethereum": 161574375.12
+      "base": 18223008.14,
+      "ethereum": 205311400.31
     },
-    "asd_usd": 182652801.0352513,
+    "asd_usd": 223534408.45885116,
     "website_url": "https://angstrom.xyz/",
     "chains": [
       "base",
       "ethereum"
     ],
-    "tier1_coverage_pct": 7.7,
+    "tier1_coverage_pct": 10,
     "tier1_auditors": [
       "Spearbit"
     ],
     "latest_audit_date": "2025-07",
-    "audit_freshness": "fresh",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
-      "fresh": 1,
-      "aging": 2,
+      "fresh": 0,
+      "aging": 3,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 13,
+    "live_verified_implementations": 10,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 3,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 1
     }
   },
   "topography": {
-    "project_purpose": "Angstrom is a hybrid DEX built on Uniswap V4, currently tracked on Ethereum. It uses app-level sequencing and batch auctions to redirect MEV value to liquidity providers and swappers. Base deployments should be treated separately as live contract surface unless documentation proves an active Base product with TVL.",
-    "relationship_narrative": "The L1 family provides governance and core DEX logic, while L2 instances leverage a factory for deployment and MEV tax features. The AngstromInspector likely serves both layers for trade analysis.",
-    "product_family_count": 3,
-    "total_contracts_indexed": 15,
+    "project_purpose": "Dexs. Structurally: 15 project-authored contract(s) across 2 chain(s); 1 ERC20 token; role-gated via AccessControl; built on solady.",
+    "relationship_narrative": "The protocol comprises 5 functional families. Its contracts share 10 common project-authored base contract(s) (protocolfees, nodelegatecall, erc6909claims). Dominant framework: solady.",
+    "product_family_count": 5,
+    "total_contracts_indexed": 16,
     "live_contracts": 15,
-    "inactive_contracts": 0,
+    "inactive_contracts": 1,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 25,
-    "unverified_dependencies": 4,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
@@ -108,7 +119,7 @@
       "origin_kind": "upstream",
       "origin_provider": "Uniswap",
       "product_line": null,
-      "tvl_usd": 182652801.0352513,
+      "tvl_usd": 223534408.45885116,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "PoolManager",
@@ -121,7 +132,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 161574375.1175947,
+          "tvl_usd": 205311400.3146283,
           "is_audited": false
         },
         {
@@ -132,7 +143,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 21078425.9176566,
+          "tvl_usd": 18223008.14422284,
           "is_audited": false
         }
       ],
@@ -141,7 +152,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-01-23 19:16:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -153,7 +168,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "L1 – Ethereum Mainnet (chain ID 1) ​",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -178,7 +193,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-22 05:36:23+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -213,7 +232,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-26 17:34:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -225,7 +248,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Angstrom",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -248,7 +271,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-04-28 21:32:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -260,7 +287,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "L2 – MEV Tax Pool & Hook Factory ​",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -294,7 +321,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-26 18:16:43+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -306,7 +337,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "L2 – MEV Tax Pool & Hook Factory ​",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -329,7 +360,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-26 17:33:21+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -364,7 +399,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-12 19:23:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -376,7 +415,7 @@
       "role": "governance",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "L1 – Ethereum Mainnet (chain ID 1) ​",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -399,7 +438,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-22 05:36:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -434,7 +477,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-04-28 21:11:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -469,7 +516,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-12 19:24:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -504,7 +555,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-12 19:25:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -516,7 +571,7 @@
       "role": "governance",
       "origin_kind": "standard_library",
       "origin_provider": "openzeppelin",
-      "product_line": "L1 – Ethereum Mainnet (chain ID 1) ​",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -539,7 +594,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-07-22 05:36:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -574,23 +633,30 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2026-05-12 19:23:11+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 2046,
       "audit_key": "audit-2046",
-      "report_name": "VIEW REPORT",
+      "report_name": "cantina.xyz/portfolio/39f1c6a9-dbd5-4322-b6a3-84b794b97cb8",
       "report_url": "https://cantina.xyz/portfolio/39f1c6a9-dbd5-4322-b6a3-84b794b97cb8?utm_source=x&utm_medium=social&utm_campaign=july",
       "auditor": "Spearbit",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -602,7 +668,7 @@
     {
       "audit_id": 2047,
       "audit_key": "audit-2047",
-      "report_name": "VIEW REPORT",
+      "report_name": "cantina.xyz/competitions/84df57a3-0526-49b8-a7c5-334888f43940",
       "report_url": "https://cantina.xyz/competitions/84df57a3-0526-49b8-a7c5-334888f43940",
       "auditor": "Spearbit",
       "audit_type": "contest",
@@ -612,56 +678,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Angstrom",
-        "Asset",
-        "CalldataReader",
-        "ConfigEntry",
-        "Constants",
-        "DeltaTracker",
-        "GrowthOutsideUpdater",
-        "HookBuffer",
-        "IAngstromComposable",
-        "IDaiPermit",
-        "IERC2612",
-        "IHooks",
-        "IUniV4",
-        "MixedSignLib",
-        "OrderInvalidation",
-        "Pair",
-        "PermitSubmitterHook",
-        "PoolConfigStore",
-        "PoolRewards",
-        "PoolUpdateVariantMap",
-        "PoolUpdates",
-        "Positions",
-        "Price",
-        "RayMathLib",
-        "Settlement",
-        "SignatureLib",
-        "StoreDeployer",
-        "SwapCall",
-        "TickLib",
-        "ToBOrderBuffer",
-        "ToBOrderVariantMap",
-        "TopLevelAuth",
-        "TypedDataHasher",
-        "UniConsumer",
-        "UserOrderBuffer",
-        "UserOrderVariantMap",
-        "X128MathLib"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 2048,
       "audit_key": "audit-2048",
-      "report_name": "VIEW REPORT",
+      "report_name": "cantina.xyz/portfolio/c2fe4e46-66a3-416e-ab26-40dd4b437ff6",
       "report_url": "https://cantina.xyz/portfolio/c2fe4e46-66a3-416e-ab26-40dd4b437ff6",
       "auditor": "Spearbit",
       "audit_type": "audit",
@@ -671,6 +702,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -789,21 +823,19 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 1
+      "contract_name": 1
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 2046,
-        "report_name": "VIEW REPORT"
+        "report_name": "cantina.xyz/portfolio/39f1c6a9-dbd5-4322-b6a3-84b794b97cb8"
       },
       {
         "audit_id": 2048,
-        "report_name": "VIEW REPORT"
+        "report_name": "cantina.xyz/portfolio/c2fe4e46-66a3-416e-ab26-40dd4b437ff6"
       }
     ],
     "inherited_remapped_matches": []

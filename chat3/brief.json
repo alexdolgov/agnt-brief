@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "chat3",
-  "generated_at": "2026-06-19T19:58:42.255Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
-  "lifecycle_status": "unknown",
-  "lifecycle_signal": {
-    "slug": "chat3",
-    "tier": 0,
-    "peak_tvl": 54536,
-    "peak_date": "2024-04-23T00:00:00.000Z",
-    "tvl_30d_ago": 7731,
-    "tvl_90d_ago": 8590,
-    "tvl_current": 6144,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 13561,
-    "change_30d_pct": -20.527745440434614,
-    "change_90d_pct": -28.474970896391156,
-    "days_since_peak": 787,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 88.73404723485405
-  },
+  "generated_at": "2026-07-04T14:53:10.241Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-bd47",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 1,
+    "contracts_unverified": 2,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6211.73108,
-    "tvl_usd": 6211.73108,
+    "dl_tvl_usd": 4832.48878,
+    "tvl_usd": 4832.48878,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,18 +39,27 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 1,
+    "product_family_count": 0,
     "total_contracts_indexed": 2,
-    "live_contracts": 1,
-    "inactive_contracts": 1,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 2,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
@@ -72,7 +67,7 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 2,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -84,14 +79,53 @@
     {
       "chain_id": 5000,
       "chain_name": "mantle",
+      "address": "0x443991824fdd854140ea92c87378f48b4c5d0c81",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x443991824fdd854140ea92c87378f48b4c5d0c81",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-10-31 18:49:40+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
       "address": "0xad3dbd09835cf15c543bc59d31865d659b71060e",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Chat3",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -114,14 +148,18 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-10-23 08:48:40+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 12895,
       "audit_key": "audit-12895",
-      "report_name": "DL audit link",
+      "report_name": "PeckShield-Audit-Report-Chat3-v1.0.pdf",
       "report_url": "https://chat3-assets.s3.ap-southeast-1.amazonaws.com/assets/PeckShield-Audit-Report-Chat3-v1.0.pdf",
       "auditor": "PeckShield",
       "audit_type": "audit",
@@ -131,6 +169,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -143,10 +184,10 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -156,7 +197,7 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 12895,
-        "report_name": "DL audit link"
+        "report_name": "PeckShield-Audit-Report-Chat3-v1.0.pdf"
       }
     ],
     "inherited_remapped_matches": []

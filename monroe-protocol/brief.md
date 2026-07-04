@@ -1,16 +1,14 @@
 # Agentic Audit Brief: Monroe Protocol
 
-⚠️ Lifecycle status: DECLINING - TVL changed 6.2% over 90 days
-
 ## Project Overview
 
 - Project: Monroe Protocol (`monroe-protocol`)
-- Lifecycle: declining (Tier 0, 99.3% below peak)
-- Generated: 2026-06-19T20:55:30.929Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:35.100Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16da
 - Chains: avalanche, manta
 - Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $6,437.06
+- DeFi Llama TVL: $6,500.72
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -25,27 +23,29 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 ## Contract Surface Quality
 
-- Indexed contracts: 5; live-surface contracts included: 2 (1 live, 1 unknown).
-- Excluded by liveness: 3 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 2; live-surface contracts included: 2 (0 live, 2 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 1; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/1 (100.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 2 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/1
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 2
 - Raw deployments: 2
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-03 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -89,7 +89,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://app.monroeprotocol.com/audit-Peckshield.pdf) | PeckShield | Audit | 2024-03 | stale | Direct | contract_name | 1 | high |
+| [audit-Peckshield.pdf](https://app.monroeprotocol.com/audit-Peckshield.pdf) | PeckShield | Audit | 2024-03 | stale | Direct | contract_name | 1 | n/a |
 
 ## Coverage Gaps
 
@@ -101,10 +101,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -112,7 +112,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=4
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=1
 
 Fork inheritance lineage and inherited audits are included when available.

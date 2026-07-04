@@ -4,63 +4,75 @@
 
 - Project: King Protocol (`king-protocol`)
 - Website: [https://kingprotocol.org/](https://kingprotocol.org/)
-- Lifecycle: active (Tier 0, 94% below peak)
-- Generated: 2026-06-19T06:14:24.610Z
-- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:29.225Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: arbitrum, base, mantle, swellchain
-- Contract surface: 15 unique implementations (15 raw deployments)
-- DeFi Llama TVL: $1,142,997.99
-- On-chain TVL (included contracts): $3,674.42
-- TVL by chain: Base $3,674.42
+- Contract surface: 21 unique implementations (35 raw deployments)
+- DeFi Llama TVL: $1,181,064.78
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-King Protocol is a rewards and vault-share protocol focused on consolidating DeFi and restaking rewards into a liquid token. Its observed deployments include cross-chain token components such as KingOFTL2/LayerZero OFT-related contracts, but these should be treated as cross-chain deployment infrastructure rather than the sole or primary product definition unless further supported by current documentation.
+Liquid Restaking. Structurally: 5 project-authored contract(s) across 2 chain(s); 2 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The LRTSquaredCore contract manages the core restaking logic and interacts with the PriceProvider for asset pricing and the Swapper1InchV6 for trade execution. KingOFTL2 tokens are the liquid restaking tokens that are minted to users and can be bridged across chains via LayerZero.
+The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 35; live-surface contracts included: 15 (11 live, 4 unknown).
-- Excluded by liveness: 2 inactive, 18 singleton, 0 uninitialized.
-- Deployment units: 0/9 live.
-- Detected codebases: uniswap-v2, uniswap-v3
-- Unverified dependencies: 1/2.
+- Indexed contracts: 35; live-surface contracts included: 35 (11 live, 24 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
-- Verified + Unaudited implementations: 3
+- Coverage of deployed-live implementations: 4/6 (66.7%)
+- Deployed-live implementations: 7 of 21 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 4/9
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
 - Unverified implementations: 12
-- Unique implementations: 15
-- Raw deployments: 15
-- Audits discovered: 5
-- Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $3,674.42
+- Unique implementations: 21
+- Raw deployments: 35
+- Audits discovered: 5 (5 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 1
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-03 (aging)
-- Staleness: 0 fresh, 3 aging, 0 stale, 2 unknown
+- Audit staleness (calendar age): 0 fresh, 5 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 4 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| unknown | Tier 2 | 4 | 44.4% | 2025-02 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
-
-- None
-
-### ⚠️ Verified + Unaudited (3)
+### ✅ Verified + Audited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Pool | core_logic | base | n/a | [`0xdc5f7c...3015ac`](./contracts/base-8453/0xdc5f7c7916c7792603fdc17f05f7929b423015ac/) | ⚠️ Unaudited |
+| KingOFTL2 | unknown | mantle | n/a | 2 deployments: mantle [`0x548c41...7b98ed`](./contracts/mantle-5000/0x548c4116a97e0138f78000088ea3f155717b98ed/); mantle `0x5a57eb...7a7ab0` | ✅ Audited |
+| KingOFTL2 | unknown | base | n/a | 2 deployments: base [`0x2a57db...9bb283`](./contracts/base-8453/0x2a57db06506ab9764db8dcf06ac17a5fed9bb283/); base `0x6d0431...91570d` | ✅ Audited |
+| KingOFTL2 | unknown | base | n/a | 2 deployments: base [`0x4d6a22...51beab`](./contracts/base-8453/0x4d6a22986acca58aa890fbb233f3b4563251beab/); base `0xe22c24...5fbac0` | ✅ Audited |
+| KingOFTL2 | unknown | base | n/a | 2 deployments: base [`0xcc0112...e852a9`](./contracts/base-8453/0xcc011273240610838aea80b485fbdff2b2e852a9/); base `0xf25768...1d689d` | ✅ Audited |
+
+### ⚠️ Verified + Unaudited (5)
+
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| ArbitrageFoundation | unknown | base | n/a | 8 deployments: base [`0x117212...546dc2`](./contracts/base-8453/0x11721202e81eb2f7445bac9f9bf11f0b87546dc2/); base `0x2e7a78...d4eab1`; base `0x44d021...9b42fd`; base `0x506131...55dac7`; base `0x64f582...d7eae2`; base `0xb2bad5...3a18fe`; base `0xe5bb8e...6e29fb`; base `0xe92e65...47cedb` | ⚠️ Unaudited |
 | CurveTwocryptoOptimized | unknown | base | n/a | [`0x3253c8...9e0886`](./contracts/base-8453/0x3253c8105e8e70ae6abaf2fd21c703d8729e0886/) | ⚠️ Unaudited |
+| Pool | core_logic | base | n/a | [`0xdc5f7c...3015ac`](./contracts/base-8453/0xdc5f7c7916c7792603fdc17f05f7929b423015ac/) | ⚠️ Unaudited |
 | RamsesBeaconProxy | registry | arbitrum | n/a | [`0x93e6e5...7bc942`](./contracts/arbitrum-42161/0x93e6e571d04848de3ba31525fca36f1e4f7bc942/) | ⚠️ Unaudited |
+| UniswapV3Plugin | unknown | base | n/a | 4 deployments: base [`0x409994...200ec2`](./contracts/base-8453/0x409994fd2fdcfccddea418b7f203b4db51200ec2/); base `0x84acc4...983af0`; base `0x8bd78c...e4a459`; base `0xa12772...675ef7` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -97,10 +109,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [NM_0452_King_Cross_Chain_FINAL.pdf](https://github.com/King-Protocol/king-cross-chain/blob/master/audit/NM_0452_King_Cross_Chain_FINAL.pdf) | unknown | Audit | 2025-02 | aging | Direct | contract_name | 0 | n/a |
-| [NM_0314_EtherFi_LRT_2.pdf (also discovered via alternate URL)](https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0314_EtherFi_LRT_2.pdf) | NM | Audit | n/a | unknown | Direct | contract_name|n/a | 0 | n/a |
-| [NM_0390_LRT_Square_Strategies_DRAFT.pdf (also discovered via alternate URL)](https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0390_LRT_Square_Strategies_DRAFT.pdf) | NM | Audit | n/a | unknown | Direct | contract_name|n/a | 0 | n/a |
-| [Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf](https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf) | Ether_Fi | Audit | 2025 | aging | Direct | n/a | 0 | n/a |
+| [NM_0452_King_Cross_Chain_FINAL.pdf](https://github.com/King-Protocol/king-cross-chain/blob/master/audit/NM_0452_King_Cross_Chain_FINAL.pdf) | unknown | Audit | 2025-02 | aging | Direct | contract_name | 8 | high |
+| [NM_0314_EtherFi_LRT_2.pdf](https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0314_EtherFi_LRT_2.pdf) | NM | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
+| [NM_0390_LRT_Square_Strategies_DRAFT.pdf](https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/NM_0390_LRT_Square_Strategies_DRAFT.pdf) | NM | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |
+| [Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf](https://github.com/LRT2-protocol/lrt-square-sc/blob/master/audits/Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf) | Ether_Fi | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
 | [Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf](https://github.com/King-Protocol/king-protocol-sc/blob/master/audits/Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf) | Ether Fi | Audit | 2025-03 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
@@ -109,29 +121,30 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0xdc5f7c...3015ac`](./contracts/base-8453/0xdc5f7c7916c7792603fdc17f05f7929b423015ac/) | Pool | core_logic | $3,674.42 | Verified native implementation with $3,674.42 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x117212...546dc2`](./contracts/base-8453/0x11721202e81eb2f7445bac9f9bf11f0b87546dc2/) | ArbitrageFoundation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xdc5f7c...3015ac`](./contracts/base-8453/0xdc5f7c7916c7792603fdc17f05f7929b423015ac/) | Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x93e6e5...7bc942`](./contracts/arbitrum-42161/0x93e6e571d04848de3ba31525fca36f1e4f7bc942/) | RamsesBeaconProxy | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 12 |
+| native | 7 |
 | upstream | 2 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 12 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 5
+- Audits with zero matched contracts: 4
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: extraction_exact=22
+- Extraction confidence breakdown: high=1
+- Match method counts: extraction_exact=8
 
 Zero-match audit list:
 
-- [3122] NM_0452_King_Cross_Chain_FINAL.pdf
 - [3126] NM_0314_EtherFi_LRT_2.pdf
 - [3127] NM_0390_LRT_Square_Strategies_DRAFT.pdf
 - [3128] Ether_Fi_Cross_Chain_Cumulative_Merkle_Smart_Contract_Security_Assessment.pdf

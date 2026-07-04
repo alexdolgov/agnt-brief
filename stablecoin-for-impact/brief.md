@@ -1,19 +1,17 @@
 # Agentic Audit Brief: Stablecoin for Impact
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Stablecoin for Impact (`stablecoin-for-impact`)
 - Website: [https://impactstake.com/](https://impactstake.com/)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-20T00:09:07.905Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:58.620Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16bc
 - Chains: ethereum
 - Contract surface: 2 unique implementations (4 raw deployments)
-- DeFi Llama TVL: $20,167.55
-- On-chain TVL (included contracts): $108,712,555.13
-- TVL by chain: Ethereum $108,712,555.13
+- DeFi Llama TVL: $20,172.98
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
@@ -28,25 +26,27 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 - Indexed contracts: 4; live-surface contracts included: 4 (4 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 2/2 live.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 2 of 2 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 2
 - Raw deployments: 4
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
-- ASD (verified + unaudited TVL): $108,712,555.13
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-11 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 1 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $108,712,555.13 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -62,7 +62,7 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ATokenInstance | token | ethereum | unit-40700 (3 proxies) | 3 deployments: ethereum [`0x018008...754e63`](./contracts/ethereum-1/0x018008bfb33d285247a21d44e50697654f754e63/); ethereum `0x238789...d4086a`; ethereum `0x98c23e...e16f5c` | ⚠️ Unaudited |
+| ATokenInstance | token | ethereum | n/a | 3 deployments: ethereum [`0x018008...754e63`](./contracts/ethereum-1/0x018008bfb33d285247a21d44e50697654f754e63/); ethereum `0x238789...d4086a`; ethereum `0x98c23e...e16f5c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,28 +82,30 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AaveImpact | unknown | ethereum | unit-40701 | `0xd88316...92f0a6` | ❓ Unverified |
+| AaveImpact | unknown | ethereum | n/a | `0xd88316...92f0a6` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://sfi-public3.s3.eu-west-2.amazonaws.com/Audit-Report.pdf) | unknown | Audit | 2025-11 | fresh | Direct | contract_name | 1 | high |
+| [Audit-Report.pdf](https://sfi-public3.s3.eu-west-2.amazonaws.com/Audit-Report.pdf) | unknown | Audit | 2025-11 | fresh | Direct | contract_name | 1 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0x018008...754e63`](./contracts/ethereum-1/0x018008bfb33d285247a21d44e50697654f754e63/) | ATokenInstance | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
-| upstream | 2 |
+| native | 1 |
+| upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -111,7 +113,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=1
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=1
 
 Fork inheritance lineage and inherited audits are included when available.

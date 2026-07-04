@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "carina",
-  "generated_at": "2026-06-19T09:45:21.556Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
-  "lifecycle_status": "unknown",
-  "lifecycle_signal": {
-    "slug": "carina",
-    "tier": 0,
-    "peak_tvl": null,
-    "peak_date": null,
-    "tvl_30d_ago": null,
-    "tvl_90d_ago": null,
-    "tvl_current": null,
-    "tier0_reason": "no_historical_tvl",
-    "tvl_180d_ago": null,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "days_since_peak": null,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": null
-  },
+  "generated_at": "2026-07-04T14:53:10.085Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-1bf2",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 2,
     "total_addresses": 2,
@@ -32,8 +16,10 @@
     "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 50,
+    "coverage_pct": 100,
     "total_audits": 3,
+    "direct_audits": 3,
+    "inherited_audits": 0,
     "scoreable_audits": 2,
     "dl_tvl_usd": null,
     "tvl_usd": null,
@@ -53,22 +39,31 @@
       "aging": 0,
       "stale": 0,
       "unknown": 1
+    },
+    "live_implementations": 2,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 1
     }
   },
   "topography": {
-    "project_purpose": "Carina is a DEX aggregator on Sei that optimizes trade execution by routing orders across multiple liquidity sources. It uses a settlement contract to execute swaps and a native token flow mechanism to manage token transfers efficiently.",
-    "relationship_narrative": "The Settlement contract orchestrates swaps by interacting with the VaultRelayer for liquidity access and the NativeTokenFlow for handling native token transfers. The Authenticator proxy manages access control, while Permit2 provides gasless token approvals, supporting the core swap flow.",
+    "project_purpose": "DEX Aggregator. Structurally: 2 project-authored contract(s) across 1 chain(s); built on permit2.",
+    "relationship_narrative": "The protocol forms a single structural family (Core Logic) of 2 contract(s).",
     "product_family_count": 1,
-    "total_contracts_indexed": 8,
-    "live_contracts": 1,
+    "total_contracts_indexed": 2,
+    "live_contracts": 2,
     "inactive_contracts": 0,
-    "singleton_contracts": 6,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 1,
-    "deployment_units": 3,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 3,
-    "unverified_dependencies": 2,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
@@ -90,8 +85,8 @@
       "name": "Permit2",
       "role": "unknown",
       "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Carina",
+      "origin_provider": "Permit2",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -114,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2024-05-29 06:28:10+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1329,
@@ -126,7 +125,7 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Carina",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -152,7 +151,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-03 06:34:27+03",
+      "deploy_coverage_basis": "match_unverified"
     }
   ],
   "audits": [
@@ -169,28 +172,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Authenticator",
-        "CallDataHelper",
-        "IAuthenticator",
-        "IEIP1271",
-        "INativeTokenFlow",
-        "ISettlement",
-        "IVaultRelayer",
-        "IWrappedNativeToken",
-        "NativeTokenFlow",
-        "OrderHelper",
-        "OrderSigning",
-        "Settlement",
-        "TradeHelper",
-        "TransferHelper",
-        "VaultRelayer"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -206,22 +196,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "NativeTokenFlow",
-        "Settlement",
-        "VaultRelayer"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 12887,
       "audit_key": "audit-12887",
-      "report_name": "Rendered PDF capture",
+      "report_name": "privacy_policy.pdf",
       "report_url": "https://raw.githubusercontent.com/carina-finance/carina-docs/db68b3858579371607e8423bbd4cc70d867072a3/privacy_policy.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -231,6 +220,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -265,17 +257,15 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 12
+      "contract_name": 2
     },
-    "extraction_confidence_counts": {
-      "high": 2
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 12887,
-        "report_name": "Rendered PDF capture"
+        "report_name": "privacy_policy.pdf"
       }
     ],
     "inherited_remapped_matches": []

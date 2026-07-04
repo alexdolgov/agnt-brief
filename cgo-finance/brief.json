@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "cgo-finance",
-  "generated_at": "2026-06-17T20:22:42.897Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-6f9b",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "cgo-finance",
-    "tier": 0,
-    "peak_tvl": 39906099,
-    "peak_date": "2022-11-02T00:00:00.000Z",
-    "tvl_30d_ago": 1200191,
-    "tvl_90d_ago": 1140340,
-    "tvl_current": 1246550,
-    "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 1846677,
-    "change_30d_pct": 3.8626351972311075,
-    "change_90d_pct": 9.313888840170476,
-    "days_since_peak": 1300,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 96.87629201741818
-  },
+  "generated_at": "2026-07-04T14:53:10.191Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-1bf2",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 2,
+    "total_contracts": 1,
     "total_addresses": 2,
-    "unique_implementations": 2,
+    "unique_implementations": 1,
     "total_deployments": 2,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 2,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1045272.67835,
-    "tvl_usd": 1045272.67835,
+    "dl_tvl_usd": 893041.82201,
+    "tvl_usd": 893041.82201,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,12 +39,21 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "CGO Finance is a Cronos yield optimizer/yield aggregator.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 1,
+    "product_family_count": 0,
     "total_contracts_indexed": 2,
     "live_contracts": 0,
     "inactive_contracts": 0,
@@ -72,7 +67,7 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -89,13 +84,13 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "CGO Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "UnnamedContract",
       "deployments": [
         {
           "chain_id": 25,
@@ -107,31 +102,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 25,
-      "chain_name": "cronos",
-      "address": "0x869c3e35ef9e5f50003d9a2a80f1d61d670d4cb6",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "CGO Finance",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 25,
           "chain_name": "cronos",
@@ -149,17 +120,21 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 2,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

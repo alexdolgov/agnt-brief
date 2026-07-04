@@ -4,12 +4,12 @@
 
 - Project: Goldsand by InshAllah (`goldsand-by-inshallah`)
 - Website: [https://goldsand.fi/](https://goldsand.fi/)
-- Lifecycle: active (Tier 0, 91.3% below peak)
-- Generated: 2026-06-21T10:14:09.255Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:19.871Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $231,104.84
+- DeFi Llama TVL: $218,365.18
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,25 +23,28 @@ The Goldsand contract serves as the main liquid staking token, while the Withdra
 
 ## Contract Surface Quality
 
-- Indexed contracts: 2; live-surface contracts included: 2 (2 live, 0 unknown).
+- Indexed contracts: 2; live-surface contracts included: 2 (0 live, 2 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 2/2 live.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 2 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 2
 - Unique implementations: 2
 - Raw deployments: 2
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -76,8 +79,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Goldsand | unknown | ethereum | unit-42278 | `0x665942...6fd36f` | ❓ Unverified |
-| WithdrawalVault | operational_periphery | ethereum | unit-42277 | `0x22b35d...f35c13` | ❓ Unverified |
+| Goldsand | unknown | ethereum | n/a | `0x665942...6fd36f` | ❓ Unverified |
+| WithdrawalVault | operational_periphery | ethereum | n/a | `0x22b35d...f35c13` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -95,10 +98,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

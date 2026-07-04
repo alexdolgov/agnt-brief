@@ -1,18 +1,16 @@
 # Agentic Audit Brief: Gravis Finance
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 4.7% over 90 days
-
 ## Project Overview
 
 - Project: Gravis Finance (`gravis-finance`)
-- Lifecycle: unknown (Tier 0, 85.9% below peak)
-- Generated: 2026-06-20T01:58:24.852Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:19.909Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $33,046.22
-- On-chain TVL (included contracts): $13,439,201.97
-- TVL by chain: Bsc $13,439,201.97
+- DeFi Llama TVL: $32,327.28
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
@@ -33,19 +31,21 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $13,439,201.97
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-10 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $13,439,201.97 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x190cec...1cf539`](./contracts/bsc-56/0x190cec0657a02e9eab1c1df5d59f9139131cf539/) | GravisToken | token | $13,439,201.97 | Verified native implementation with $13,439,201.97 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x190cec...1cf539`](./contracts/bsc-56/0x190cec0657a02e9eab1c1df5d59f9139131cf539/) | GravisToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

@@ -1,16 +1,14 @@
 # Agentic Audit Brief: Equito Finance
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 11.1% over 90 days
-
 ## Project Overview
 
 - Project: Equito Finance (`equito-finance`)
-- Lifecycle: declining (Tier 0, 100% below peak)
-- Generated: 2026-06-19T12:06:09.550Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-cc10
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:11.879Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-2d9c
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $7.95
+- DeFi Llama TVL: $7.53
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -25,27 +23,29 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 ## Contract Surface Quality
 
-- Indexed contracts: 12; live-surface contracts included: 1 (1 live, 0 unknown).
-- Excluded by liveness: 11 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 5; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 4 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 3
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-11 (stale)
-- Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 3 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -85,9 +85,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://skynet.certik.com/projects/equito-finance) | CertiK | Audit | 2022-11 | stale | Direct | contract_name | 0 | n/a |
-| [REP-final-20221216T155748Z.pdf](https://github.com/EquitoBridge/equito-algo-contracts-v1/blob/271bd7b7c6de956f7c567f5a6412a02853817725/audit/REP-final-20221216T155748Z.pdf) | unknown | Audit | 2022-11 | stale | Direct | contract_name | 0 | n/a |
-| [REP-final-20221216T155626Z.pdf](https://github.com/EquitoBridge/equito-evm-contracts-v1/blob/main/audit/REP-final-20221216T155626Z.pdf) | unknown | Audit | 2022-11 | stale | Direct | contract_name | 0 | n/a |
+| [skynet.certik.com/projects/equito-finance](https://skynet.certik.com/projects/equito-finance) | CertiK | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
+| [REP-final-20221216T155748Z.pdf](https://github.com/EquitoBridge/equito-algo-contracts-v1/blob/271bd7b7c6de956f7c567f5a6412a02853817725/audit/REP-final-20221216T155748Z.pdf) | unknown | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
+| [REP-final-20221216T155626Z.pdf](https://github.com/EquitoBridge/equito-evm-contracts-v1/blob/main/audit/REP-final-20221216T155626Z.pdf) | unknown | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -113,11 +113,11 @@ Verified + unaudited native implementations ranked by TVL:
 - Audits with zero matched contracts: 3
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
-- Match method counts: extraction_exact=14
+- Match method counts: n/a
 
 Zero-match audit list:
 
-- [13087] DL audit link
+- [13087] skynet.certik.com/projects/equito-finance
 - [13088] REP-final-20221216T155748Z.pdf
 - [13089] REP-final-20221216T155626Z.pdf
 

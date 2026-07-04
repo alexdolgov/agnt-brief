@@ -1,57 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "knightswap",
-  "generated_at": "2026-06-21T15:37:35.366Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "knightswap",
-    "tier": 1,
-    "peak_tvl": 149214455,
-    "peak_date": "2022-05-07T00:00:00.000Z",
-    "tvl_30d_ago": 560650,
-    "tvl_90d_ago": 693776,
-    "tvl_current": 531648,
-    "tier0_reason": "catastrophic_collapse_from_peak",
-    "tvl_180d_ago": 882427,
-    "change_30d_pct": -5.172924284312852,
-    "change_90d_pct": -23.36892599340421,
-    "governance_raw": {
-      "evidence": "TVL dropped 99.64% from peak over 1506 days, with no recent activity or team communications indicating ongoing operations.",
-      "confidence": 0.95,
-      "lifecycle_status": "dead"
-    },
-    "days_since_peak": 1506,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 99.64370207966782,
-    "governance_evidence": "TVL dropped 99.64% from peak over 1506 days, with no recent activity or team communications indicating ongoing operations.",
-    "governance_confidence": 0.95,
-    "governance_text_chars": 3115,
-    "governance_classification": "dead",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:29.291Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-ae05",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 7,
-    "total_addresses": 8,
-    "unique_implementations": 7,
-    "total_deployments": 8,
+    "total_contracts": 11,
+    "total_addresses": 12,
+    "unique_implementations": 11,
+    "total_deployments": 12,
     "audited_contracts": 0,
     "unaudited_contracts": 5,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 2,
+    "contracts_unverified": 6,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 904580,
-    "tvl_usd": 124400.87515769132,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "bsc": 124400.88
-    },
-    "asd_usd": 124400.87515769132,
+    "dl_tvl_usd": 875758,
+    "tvl_usd": 875758,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://knightswap.financial",
     "chains": [
       "bsc",
@@ -66,28 +40,35 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 5,
+    "live_verified_implementations": 5,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "KnightSwap is a decentralized exchange and lending protocol on BSC and Fantom. It enables users to trade tokens, provide liquidity, and earn yield through farming and staking mechanisms.",
-    "relationship_narrative": "KnightFactory creates and registers liquidity pools, while MasterChef distributes KnightToken rewards to liquidity providers. KnightToken serves as the central incentive and governance token across the protocol.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 20,
-    "live_contracts": 2,
-    "inactive_contracts": 12,
+    "project_purpose": "Dexs. Structurally: 17 project-authored contract(s) across 1 chain(s); 7 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 5 functional families. Contracts are linked by 5 cross-contract reference(s). Dominant framework: openzeppelin.",
+    "product_family_count": 5,
+    "total_contracts_indexed": 31,
+    "live_contracts": 6,
+    "inactive_contracts": 19,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 6,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 1,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 7,
+    "unique_implementations": 11,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -99,41 +80,6 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0xd23811058eb6e7967d9a00dc3886e75610c4abba",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "KnightToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "KnightSwap",
-      "tvl_usd": 124400.87515769132,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "KnightToken",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xd23811058eb6e7967d9a00dc3886e75610c4abba",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 124400.87515769132,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
       "address": "0xf0bc2e21a76513aa7cc2730c7a1d6dee0790751f",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -141,7 +87,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "KnightSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -164,7 +110,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-10-28 13:17:26+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -199,7 +149,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-10-28 13:52:48+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xd23811058eb6e7967d9a00dc3886e75610c4abba",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "KnightToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "KnightToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xd23811058eb6e7967d9a00dc3886e75610c4abba",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-10-28 15:23:24+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -211,7 +204,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "KnightSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -245,7 +238,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-10-30 16:23:42+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -280,7 +277,167 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-08-05 14:51:04+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x1ea8fbd271d56db3d4e5e09c93365d0aa79d02b9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x1ea8fbd271d56db3d4e5e09c93365d0aa79d02b9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-17 18:16:19+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x77e6d5352d3de6aec92d3ab4b25f159cd98b3f27",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x77e6d5352d3de6aec92d3ab4b25f159cd98b3f27",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-12-24 08:36:55+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xcaeb6e7d0d973c75cfe3e57b7ba546931dad8262",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xcaeb6e7d0d973c75cfe3e57b7ba546931dad8262",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-17 18:19:58+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xcc84b344f36f2c77431cbb20c175d19a52f61620",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xcc84b344f36f2c77431cbb20c175d19a52f61620",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-14 19:02:10+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -315,7 +472,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-17 18:16:10+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 250,
@@ -327,11 +488,11 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "KnightSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "UnnamedContract",
       "deployments": [
         {
           "chain_id": 250,
@@ -350,7 +511,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -367,6 +532,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -378,16 +546,6 @@
   ],
   "auditor_coverage": [],
   "coverage_gaps": [
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xd23811058eb6e7967d9a00dc3886e75610c4abba",
-      "name": "KnightToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 124400.87515769132,
-      "risk_note": "Verified native implementation with $124,400.88 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 56,
       "chain_name": "bsc",
@@ -404,6 +562,16 @@
       "address": "0x05e61e0cdcd2170a76f9568a110cee3afdd6c46f",
       "name": "KnightRouter",
       "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xd23811058eb6e7967d9a00dc3886e75610c4abba",
+      "name": "KnightToken",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -433,7 +601,7 @@
     "native": 5,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 2
+    "needs_review": 6
   },
   "scope_matching_notes": {
     "match_method_counts": {},

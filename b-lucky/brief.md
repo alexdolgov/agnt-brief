@@ -4,44 +4,47 @@
 
 - Project: B-Lucky (`b-lucky`)
 - Website: [https://b-lucky.gg/](https://b-lucky.gg/)
-- Lifecycle: active (Tier 0, 47.7% below peak)
-- Generated: 2026-06-17T18:51:18.531Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
+- Lifecycle: active (Tier 0, 55.9% below peak)
+- Generated: 2026-07-04T14:53:05.116Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
 - Chains: bsc
 - Contract surface: 19 unique implementations (19 raw deployments)
-- DeFi Llama TVL: $1,086,587.92
-- On-chain TVL (included contracts): $2,666,478.06
-- TVL by chain: Bsc $2,666,478.06
+- DeFi Llama TVL: $1,019,242.40
+- On-chain TVL (included contracts): $2,646,188.25
+- TVL by chain: Bsc $2,646,188.25
 
 ## Project Description
 
-B-Lucky is a decentralized on-chain lottery protocol on BSC/BNB Chain.
+Luck Games. Structurally: 2 project-authored contract(s) across 1 chain(s); 1 ERC20 token; built on openzeppelin.
 
 ### Architecture
 
-All game contracts likely share the same token (0x67b4...) for wagering and payouts, and were deployed by two deployer addresses that may represent different game versions or administrative roles.
+The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 19; live-surface contracts included: 19 (18 live, 1 unknown).
+- Indexed contracts: 19; live-surface contracts included: 19 (2 live, 17 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
-- Detected codebases: uniswap-v3
+- Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 2 of 19 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/2
 - Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 17
 - Unique implementations: 19
 - Raw deployments: 19
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $2,666,478.06
+- ASD (verified + unaudited TVL): $2,646,188.25
 - Latest audit: 2025-09 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 1 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -101,7 +104,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://b-lucky.gg/audit/bailsec.pdf) | unknown | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
+| [bailsec.pdf](https://b-lucky.gg/audit/bailsec.pdf) | unknown | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -109,16 +112,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x67b479...704444`](./contracts/bsc-56/0x67b47971426bb2180453b3993ff2ec319e704444/) | Token | token | $2,200,551.18 | Verified native implementation with $2,200,551.18 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x67b479...704444`](./contracts/bsc-56/0x67b47971426bb2180453b3993ff2ec319e704444/) | Token | token | $2,362,119.07 | Verified native implementation with $2,362,119.07 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 18 |
+| native | 1 |
 | upstream | 1 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 17 |
 
 ## Scope Matching Notes
 
@@ -131,6 +134,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [3235] DL audit link
+- [3235] bailsec.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

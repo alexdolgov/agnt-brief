@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Hyphen
 
-⚠️ Lifecycle status: DECLINING - TVL changed 0.0% over 90 days
-
 ## Project Overview
 
 - Project: Hyphen (`hyphen`)
 - Website: [https://www.biconomy.io](https://www.biconomy.io)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-21T08:21:25.326Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:21.836Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: base, ethereum, optimism, polygon
 - Contract surface: 15 unique implementations (23 raw deployments)
 - DeFi Llama TVL: $100,361.01
@@ -17,35 +15,37 @@
 
 ## Project Description
 
-Hyphen is a bridge protocol enabling cross-chain asset transfers. It uses smart contract wallets and paymasters to facilitate gasless transactions and account abstraction across Ethereum, Base, Polygon, and Optimism.
+Bridge. Structurally: 9 project-authored contract(s) across 2 chain(s); upgradeable via ERC1967/UUPS proxies; built on solady.
 
 ### Architecture
 
-The Nexus & MEE family builds on the Legacy Contracts by upgrading wallet and validator implementations. Sponsorship Paymaster Contracts and Base & Optimism families integrate with the wallet infrastructure to enable gasless and token-based fee payments across chains.
+The protocol comprises 3 functional families. Its contracts share 3 common project-authored base contract(s) (modulemanager, storage, registryadapter). Dominant framework: solady.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 25; live-surface contracts included: 23 (9 live, 14 unknown).
-- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 23; live-surface contracts included: 23 (18 live, 5 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 1/10.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 7/10 (70.0%)
+- Coverage of deployed-live implementations: 7/10 (70.0%)
+- Deployed-live implementations: 10 of 15 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 7/10
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 5
 - Unique implementations: 15
 - Raw deployments: 23
-- Audits discovered: 11
+- Audits discovered: 11 (11 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 10
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-05 (fresh)
-- Staleness: 1 fresh, 9 aging, 0 stale, 1 unknown
+- Audit staleness (calendar age): 1 fresh, 9 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 7 match-unverified
 - Tier 1 coverage: 50.0% (Cyfrin, Spearbit)
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -106,16 +106,16 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [CodeHawks-Cyfrin-Competition-170924.pdf](https://github.com/bcnmy/nexus/blob/main/audits/CodeHawks-Cyfrin-Competition-170924.pdf) | Cyfrin | Audit | 2024-09 | aging | Direct | contract_name | 6 | high |
-| [* [Core audit]()](https://github.com/bcnmy/nexus/blob/main/audits/report-cantinacode-biconomy-0708-updated.pdf) | Spearbit | Audit | 2025-03 | aging | Direct | contract_name | 7 | high |
-| [* [ERC-7739]()](https://github.com/bcnmy/nexus/blob/main/audits/report-cantinacode-biconomy-erc7739-addon-final.pdf) | Spearbit | Audit | 2024-11 | aging | Direct | contract_name | 3 | high |
-| [Biconomy-Nexus_Zenith-Audit-Report.pdf](https://github.com/bcnmy/nexus/blob/main/audits/Biconomy-Nexus_Zenith-Audit-Report.pdf) | Zenith | Audit | 2025-03 | aging | Direct | contract_name | 5 | high |
-| [Nexus-Pashov-Review_2025-03.pdf](https://github.com/bcnmy/nexus/blob/main/audits/Nexus-Pashov-Review_2025-03.pdf) | Pashov Audit Group | Audit | 2025-03 | aging | Direct | contract_name | 9 | high |
-| [The composability module is **audited by Pashov Audit Group** ([May 2026 report]()) and deployed deterministically at `0x0000821108B5C9F3fe17E40811bE5b66DaF8f0e7` (module) and `0x00008211dea1Aca67ac55fc44AE3bF88CF41281d` (storage) on every supported chain.](https://github.com/bcnmy/erc8211-contracts/blob/main/audits/2026-05-Composability-Nexus-Pashov-Review.pdf) | Pashov Audit Group | Audit | 2026-05 | fresh | Direct | contract_name | 6 | high |
-| [* [Zenith Report (2025-03)]()](https://github.com/bcnmy/composability/blob/main/audits/2025-03-Composability_Zenith-Audit-Report.pdf) | Pashov Audit Group | Audit | 2025-03 | aging | Direct | contract_name | 3 | high |
-| [* [Pashov Report (2025-03)]() (also discovered via alternate URL)](https://github.com/bcnmy/composability/blob/main/audits/2025-03-Composability-Pashov-Review.pdf) | Pashov Audit Group | Audit | 2025-03 | aging | Direct | contract_name | 1 | high |
-| [2025-02 Zenith Audit Report - Biconomy MEE Contracts.pdf](https://github.com/bcnmy/mee-contracts/blob/main/audit/2025-02%20Zenith%20Audit%20Report%20-%20Biconomy%20MEE%20Contracts.pdf) | Zenith | Audit | 2025-02 | aging | Direct | contract_name | 2 | high |
-| [2025-04 Zenith Audit Report - Node PM Sponsorship.pdf](https://github.com/bcnmy/mee-contracts/blob/main/audit/2025-04%20Zenith%20Audit%20Report%20-%20Node%20PM%20Sponsorship.pdf) | Zenith | Audit | 2025-04 | aging | Direct | contract_name | 2 | high |
+| [CodeHawks-Cyfrin-Competition-170924.pdf](https://github.com/bcnmy/nexus/blob/main/audits/CodeHawks-Cyfrin-Competition-170924.pdf) | Cyfrin | Audit | 2024-09 | aging | Direct | contract_name | 4 | n/a |
+| [report-cantinacode-biconomy-0708-updated.pdf](https://github.com/bcnmy/nexus/blob/main/audits/report-cantinacode-biconomy-0708-updated.pdf) | Spearbit | Audit | 2025-03 | aging | Direct | contract_name | 5 | n/a |
+| [report-cantinacode-biconomy-erc7739-addon-final.pdf](https://github.com/bcnmy/nexus/blob/main/audits/report-cantinacode-biconomy-erc7739-addon-final.pdf) | Spearbit | Audit | 2024-11 | aging | Direct | contract_name | 2 | n/a |
+| [Biconomy-Nexus_Zenith-Audit-Report.pdf](https://github.com/bcnmy/nexus/blob/main/audits/Biconomy-Nexus_Zenith-Audit-Report.pdf) | Zenith | Audit | 2025-03 | aging | Direct | contract_name | 3 | n/a |
+| [Nexus-Pashov-Review_2025-03.pdf](https://github.com/bcnmy/nexus/blob/main/audits/Nexus-Pashov-Review_2025-03.pdf) | Pashov Audit Group | Audit | 2025-03 | aging | Direct | contract_name | 6 | n/a |
+| [2026-05-Composability-Nexus-Pashov-Review.pdf](https://github.com/bcnmy/erc8211-contracts/blob/main/audits/2026-05-Composability-Nexus-Pashov-Review.pdf) | Pashov Audit Group | Audit | 2026-05 | fresh | Direct | contract_name | 3 | n/a |
+| [2025-03-Composability_Zenith-Audit-Report.pdf](https://github.com/bcnmy/composability/blob/main/audits/2025-03-Composability_Zenith-Audit-Report.pdf) | Pashov Audit Group | Audit | 2025-03 | aging | Direct | contract_name | 2 | n/a |
+| [2025-03-Composability-Pashov-Review.pdf](https://github.com/bcnmy/composability/blob/main/audits/2025-03-Composability-Pashov-Review.pdf) | Pashov Audit Group | Audit | 2025-03 | aging | Direct | contract_name | 1 | n/a |
+| [2025-02 Zenith Audit Report - Biconomy MEE Contracts.pdf](https://github.com/bcnmy/mee-contracts/blob/main/audit/2025-02%20Zenith%20Audit%20Report%20-%20Biconomy%20MEE%20Contracts.pdf) | Zenith | Audit | 2025-02 | aging | Direct | contract_name | 1 | n/a |
+| [2025-04 Zenith Audit Report - Node PM Sponsorship.pdf](https://github.com/bcnmy/mee-contracts/blob/main/audit/2025-04%20Zenith%20Audit%20Report%20-%20Node%20PM%20Sponsorship.pdf) | Zenith | Audit | 2025-04 | aging | Direct | contract_name | 1 | n/a |
 | [.gitkeep](https://github.com/bcnmy/nexus/blob/main/audits/.gitkeep) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
@@ -125,16 +125,17 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | optimism | [`0x000000...146852`](./contracts/optimism-10/0x0000006087310897e0bffcb3f0ed3704f7146852/) | BiconomySponsorshipPaymaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x000000...7da032`](./contracts/ethereum-1/0x0000000071727de22e5e9d8baf0edac6f37da032/) | EntryPoint | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x000000...0d41da`](./contracts/ethereum-1/0x000000001f1c68bd5bf69aa1ccc1d429700d41da/) | EtherForwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 14 |
+| native | 10 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 0 |
+| standard_library | 0 |
+| needs_review | 5 |
 
 ## Scope Matching Notes
 
@@ -142,8 +143,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=10
-- Match method counts: extraction_exact=45
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=28
 
 Zero-match audit list:
 

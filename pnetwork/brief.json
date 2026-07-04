@@ -1,36 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "pnetwork",
-  "generated_at": "2026-06-17T07:00:45.419Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "pnetwork",
-    "tier": 1,
-    "peak_tvl": 278996924,
-    "peak_date": "2021-10-26T00:00:00.000Z",
-    "tvl_30d_ago": 13099805,
-    "tvl_90d_ago": 13099805,
-    "tvl_current": 13099805,
-    "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 13099805,
-    "change_30d_pct": 0,
-    "change_90d_pct": 0,
-    "governance_raw": {
-      "evidence": "TVL dropped 95% from peak but 90-day change is 0%, and the homepage shows staking and DAO features still operational, indicating natural decline without shutdown.",
-      "confidence": 0.9,
-      "lifecycle_status": "declining"
-    },
-    "days_since_peak": 1669,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 95.30467762433108,
-    "governance_evidence": "TVL dropped 95% from peak but 90-day change is 0%, and the homepage shows staking and DAO features still operational, indicating natural decline without shutdown.",
-    "governance_confidence": 0.9,
-    "governance_text_chars": 283,
-    "governance_classification": "declining",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:43.938Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d094",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 1,
     "total_addresses": 1,
@@ -43,7 +17,9 @@
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 4,
+    "direct_audits": 1,
+    "inherited_audits": 3,
     "scoreable_audits": 0,
     "dl_tvl_usd": 13099805.903339999,
     "tvl_usd": 13099805.903339999,
@@ -56,26 +32,35 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2020-07",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
-      "unknown": 0
+      "stale": 1,
+      "unknown": 3
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "pNetwork is primarily a cross-chain interoperability and bridge protocol, governed by the pNetwork DAO, for moving assets and messages across blockchains. Farming, staking, or reward contracts should be treated only as ancillary or legacy components where current pNetwork ownership and operation are independently verified, not as a core current product line.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
     "product_family_count": 1,
-    "total_contracts_indexed": 15,
+    "total_contracts_indexed": 1,
     "live_contracts": 1,
-    "inactive_contracts": 14,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 3,
+    "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
@@ -87,8 +72,18 @@
     "is_skeletal": true
   },
   "fork_lineage": {
-    "entries": [],
-    "inherited_audit_count": 0
+    "entries": [
+      {
+        "fork_id": 89,
+        "relationship_type": "code_fork",
+        "audit_inheritance_mode": "scoped_inherit",
+        "parent_project_key": "ten-finance",
+        "parent_project_name": "TEN Finance",
+        "parent_github_url": null,
+        "inherited_audits": 3
+      }
+    ],
+    "inherited_audit_count": 3
   },
   "contracts": [
     {
@@ -101,7 +96,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "pNetwork",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -124,10 +119,117 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-05-22 00:29:33+03",
+      "deploy_coverage_basis": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 19125,
+      "audit_key": "audit-19125",
+      "report_name": "skynet.certik.com/projects/tenfinance",
+      "report_url": "https://skynet.certik.com/projects/tenfinance",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": true,
+      "inherited_from_project_key": "ten-finance",
+      "inherited_from_project_name": "TEN Finance",
+      "inherited_via_fork_id": 89,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "TENLock"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 19126,
+      "audit_key": "audit-19126",
+      "report_name": "audit.md",
+      "report_url": "https://tenfinance.gitbook.io/ten/documentation-1/audit.md",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": true,
+      "inherited_from_project_key": "ten-finance",
+      "inherited_from_project_name": "TEN Finance",
+      "inherited_via_fork_id": 89,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "TENLock"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 19127,
+      "audit_key": "audit-19127",
+      "report_name": "spaces/-MTg9bsJ23imtGvbcYvG/uploads/a4RWF03WuDG7oB33JzOD/PeckShield-Audit-Report-TenLend-v1.0.pdf",
+      "report_url": "https://3931236349-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MTg9bsJ23imtGvbcYvG%2Fuploads%2Fa4RWF03WuDG7oB33JzOD%2FPeckShield-Audit-Report-TenLend-v1.0.pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": true,
+      "inherited_from_project_key": "ten-finance",
+      "inherited_from_project_name": "TEN Finance",
+      "inherited_via_fork_id": 89,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "TENLock"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 20632,
+      "audit_key": "audit-20632",
+      "report_name": "20200915_pNetwork DAO staking+reward audit.pdf",
+      "report_url": "https://github.com/cryptonicsconsulting/audits/blob/master/pNetwork/20200915_pNetwork%20DAO%20staking%2Breward%20audit.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2020-07",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -152,7 +254,24 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 19125,
+        "report_name": "skynet.certik.com/projects/tenfinance"
+      },
+      {
+        "audit_id": 19126,
+        "report_name": "audit.md"
+      },
+      {
+        "audit_id": 19127,
+        "report_name": "spaces/-MTg9bsJ23imtGvbcYvG/uploads/a4RWF03WuDG7oB33JzOD/PeckShield-Audit-Report-TenLend-v1.0.pdf"
+      },
+      {
+        "audit_id": 20632,
+        "report_name": "20200915_pNetwork DAO staking+reward audit.pdf"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

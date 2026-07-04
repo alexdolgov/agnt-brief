@@ -1,48 +1,61 @@
 {
   "schema_version": "2.0",
   "project_key": "saucerswap",
-  "generated_at": "2026-06-17T07:00:56.763Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-07-04T14:53:54.617Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-38b2",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 1,
+    "total_addresses": 1,
+    "unique_implementations": 1,
+    "total_deployments": 1,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 8,
+    "direct_audits": 8,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 28917193,
-    "tvl_usd": 28917193,
+    "dl_tvl_usd": 23329726,
+    "tvl_usd": 23329726,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://www.saucerswap.finance",
-    "chains": [],
+    "chains": [
+      "base"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2022-07",
+    "latest_audit_date": "2023-09",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 3,
-      "unknown": 5
+      "stale": 6,
+      "unknown": 2
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 0,
-    "total_contracts_indexed": 0,
-    "live_contracts": 0,
+    "product_family_count": 1,
+    "total_contracts_indexed": 1,
+    "live_contracts": 1,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
@@ -54,7 +67,7 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -62,12 +75,52 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xa4ff56ef7ef4a2cad03cfa130208c9bc1b45d293",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "InterchainToken",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "​ Bridged SAUCE",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "InterchainToken",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xa4ff56ef7ef4a2cad03cfa130208c9bc1b45d293",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-04 02:31:41+03",
+      "deploy_coverage_basis": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 4268,
       "audit_key": "audit-4268",
-      "report_name": "* Core: Audited on July 12, 2022, by Hacken.[ View Report]()",
+      "report_name": "hacken.io/audits/saucerswap/sca-saucerswap-staking-jul2022",
       "report_url": "https://hacken.io/audits/saucerswap/sca-saucerswap-staking-jul2022",
       "auditor": "Hacken",
       "audit_type": "audit",
@@ -77,6 +130,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -88,7 +144,7 @@
     {
       "audit_id": 4269,
       "audit_key": "audit-4269",
-      "report_name": "* Masterchef: Audited on July 12, 2022, by Hacken.[ View Report]()",
+      "report_name": "hacken.io/audits/saucerswap",
       "report_url": "https://hacken.io/audits/saucerswap",
       "auditor": "Hacken",
       "audit_type": "audit",
@@ -98,6 +154,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -109,16 +168,19 @@
     {
       "audit_id": 4270,
       "audit_key": "audit-4270",
-      "report_name": "* Updated Router: Audited on June 7, 2023, by Omniscia.[ View Report]()",
+      "report_name": "omniscia.io/reports/saucerswap-labs-router-implementation-64660c885d5517001401256c",
       "report_url": "https://omniscia.io/reports/saucerswap-labs-router-implementation-64660c885d5517001401256c",
       "auditor": "Hacken",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2023-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -130,16 +192,19 @@
     {
       "audit_id": 4271,
       "audit_key": "audit-4271",
-      "report_name": "* Core: Audited on September 27, 2023, by Omniscia.[ View Report]()",
+      "report_name": "omniscia.io/reports/saucerswap-core-64c64695c767620014d91ed0",
       "report_url": "https://omniscia.io/reports/saucerswap-core-64c64695c767620014d91ed0",
       "auditor": "Omniscia",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2023-09",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -151,16 +216,19 @@
     {
       "audit_id": 4272,
       "audit_key": "audit-4272",
-      "report_name": "* Periphery: Audited on September 27, 2023, by Omniscia.[ View Report]()",
+      "report_name": "omniscia.io/reports/saucerswap-periphery-64c65c6cc767620014d91f14",
       "report_url": "https://omniscia.io/reports/saucerswap-periphery-64c65c6cc767620014d91f14",
       "auditor": "Omniscia",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2023-09",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -172,7 +240,7 @@
     {
       "audit_id": 4273,
       "audit_key": "audit-4273",
-      "report_name": "* Wallet: Audited on August 20, 2025, by QuantStamp. [View Report]()",
+      "report_name": "index.html",
       "report_url": "https://certificate.quantstamp.com/full/saucer-swap-wallet/d30efab8-8abd-46b1-bba5-6360b87e3aa3/index.html",
       "auditor": "Quantstamp",
       "audit_type": "audit",
@@ -182,6 +250,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -193,7 +264,7 @@
     {
       "audit_id": 4274,
       "audit_key": "audit-4274",
-      "report_name": "* Vesting: Audited on July 12, 2022, by Hacken.[ View Report]()",
+      "report_name": "hacken.io/audits/saucerswap/sca-saucerswap-erc20-vesting-jul2022",
       "report_url": "https://hacken.io/audits/saucerswap/sca-saucerswap-erc20-vesting-jul2022",
       "auditor": "Hacken",
       "audit_type": "audit",
@@ -203,6 +274,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -214,7 +288,7 @@
     {
       "audit_id": 4275,
       "audit_key": "audit-4275",
-      "report_name": "* Staking: Audited on November 25, 2022, by Hacken.[ View Report]()",
+      "report_name": "hacken.io/audits/saucerswap/sca-saucerswap-erc20-staking-jul2022",
       "report_url": "https://hacken.io/audits/saucerswap/sca-saucerswap-erc20-staking-jul2022",
       "auditor": "Hacken",
       "audit_type": "audit",
@@ -224,6 +298,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -234,9 +311,20 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xa4ff56ef7ef4a2cad03cfa130208c9bc1b45d293",
+      "name": "InterchainToken",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
@@ -249,35 +337,35 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 4268,
-        "report_name": "* Core: Audited on July 12, 2022, by Hacken.[ View Report]()"
+        "report_name": "hacken.io/audits/saucerswap/sca-saucerswap-staking-jul2022"
       },
       {
         "audit_id": 4269,
-        "report_name": "* Masterchef: Audited on July 12, 2022, by Hacken.[ View Report]()"
+        "report_name": "hacken.io/audits/saucerswap"
       },
       {
         "audit_id": 4270,
-        "report_name": "* Updated Router: Audited on June 7, 2023, by Omniscia.[ View Report]()"
+        "report_name": "omniscia.io/reports/saucerswap-labs-router-implementation-64660c885d5517001401256c"
       },
       {
         "audit_id": 4271,
-        "report_name": "* Core: Audited on September 27, 2023, by Omniscia.[ View Report]()"
+        "report_name": "omniscia.io/reports/saucerswap-core-64c64695c767620014d91ed0"
       },
       {
         "audit_id": 4272,
-        "report_name": "* Periphery: Audited on September 27, 2023, by Omniscia.[ View Report]()"
+        "report_name": "omniscia.io/reports/saucerswap-periphery-64c65c6cc767620014d91f14"
       },
       {
         "audit_id": 4273,
-        "report_name": "* Wallet: Audited on August 20, 2025, by QuantStamp. [View Report]()"
+        "report_name": "index.html"
       },
       {
         "audit_id": 4274,
-        "report_name": "* Vesting: Audited on July 12, 2022, by Hacken.[ View Report]()"
+        "report_name": "hacken.io/audits/saucerswap/sca-saucerswap-erc20-vesting-jul2022"
       },
       {
         "audit_id": 4275,
-        "report_name": "* Staking: Audited on November 25, 2022, by Hacken.[ View Report]()"
+        "report_name": "hacken.io/audits/saucerswap/sca-saucerswap-erc20-staking-jul2022"
       }
     ],
     "inherited_remapped_matches": []

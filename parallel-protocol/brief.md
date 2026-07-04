@@ -4,44 +4,47 @@
 
 - Project: Parallel Protocol (`parallel-protocol`)
 - Website: [https://parallel.best/](https://parallel.best/)
-- Lifecycle: active (Tier 0, 93.7% below peak)
-- Generated: 2026-06-18T01:16:46.694Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-ac25
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:42.953Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: arbitrum, avalanche, base, berachain, bsc, ethereum, fantom, fraxtal, gnosis, hyperliquid, ink, linea, optimism, plasma, polygon, scroll, sei, sonic, unichain
-- Contract surface: 34 unique implementations (103 raw deployments)
-- DeFi Llama TVL: $3,903,603.00
-- On-chain TVL (included contracts): $606,664.36
-- TVL by chain: Ethereum $606,664.36
+- Contract surface: 32 unique implementations (107 raw deployments)
+- DeFi Llama TVL: $2,623,734.00
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Parallel Protocol is an over-collateralized decentralized stablecoin protocol centered on USDp, enabling users to deposit collateral, mint stablecoins, and access savings or yield products. TokenP is a technical contract implementation name for the stablecoin. Bridge, flash-token, or parallelizer components should be described only as supporting contract modules where independently documented, not as the protocol's primary public-facing product identity.
+CDP. Structurally: 46 project-authored contract(s) across 10 chain(s); 1 ERC4626 vault, 9 ERC20 tokens, 1 Chainlink feed; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The Core Protocol's TokenP stablecoin is used across the Flashloan, Bridging, and Savings modules, creating a unified token economy. The Parallelizer Module operates as a separate yield layer, interacting with external protocols via Swapper adapters and distributing rewards, while governance is shared through ParallelAccessManager instances.
+The protocol comprises 6 functional families. Its contracts share 15 common project-authored base contract(s) (oft, oftcore, oapp). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 230; live-surface contracts included: 103 (96 live, 7 unknown).
-- Excluded by liveness: 47 inactive, 80 singleton, 0 uninitialized.
-- Deployment units: 1/41 live.
+- Indexed contracts: 223; live-surface contracts included: 107 (92 live, 15 unknown).
+- Excluded by liveness: 116 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 38/107.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 9/26 (34.6%)
+- Coverage of deployed-live implementations: 9/24 (37.5%)
+- Deployed-live implementations: 25 of 32 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 9/26
 - Verified + Unaudited implementations: 17
 - Verified by bytecode match: 0
-- Unverified implementations: 8
-- Unique implementations: 34
-- Raw deployments: 103
-- Audits discovered: 5
+- Unverified implementations: 6
+- Unique implementations: 32
+- Raw deployments: 107
+- Audits discovered: 5 (5 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 5
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-02 (aging)
-- Staleness: 0 fresh, 3 aging, 2 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 3 aging, 2 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 9 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -58,7 +61,6 @@ The Core Protocol's TokenP stablecoin is used across the Flashloan, Bridging, an
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| VaultsCore | core_logic | polygon | n/a | 4 deployments: ethereum `0x173ae6...8c674b`; ethereum `0xe26348...f93204`; polygon [`0x0a9202...1b400f`](./contracts/polygon-137/0x0a9202c6417a7b6b166e7f7fe2719b09261b400f/); polygon `0xcababc...5e6e5f` | ✅ Audited |
 | BridgeableToken | operational_periphery | ethereum | n/a | 3 deployments: ethereum [`0x74e3f9...f60e30`](./contracts/ethereum-1/0x74e3f9d724da6d7e4db8ecab4f18e6ba44f60e30/); ethereum `0xd4dee6...c838eb`; polygon `0xe462df...6bc9a8` | ✅ Audited |
 | MainFeeDistributor | operational_periphery | polygon | n/a | [`0x90337e...348545`](./contracts/polygon-137/0x90337e484b1cb02132fc150d3afa262147348545/) | ✅ Audited |
 | PeripheralMigrationContract | operational_periphery | polygon | n/a | [`0x9c6885...5316cb`](./contracts/polygon-137/0x9c68850e18eacd4ea7ca2998b6bbed9cf55316cb/) | ✅ Audited |
@@ -66,6 +68,7 @@ The Core Protocol's TokenP stablecoin is used across the Flashloan, Bridging, an
 | RewardMerkleDistributor | operational_periphery | polygon | n/a | [`0x7b54f3...420c72`](./contracts/polygon-137/0x7b54f3d993d3bca077946034ea710f9c07420c72/) | ✅ Audited |
 | sPRL1 | unknown | base | n/a | 4 deployments: ethereum `0xead729...1b5901`; polygon `0xdb7be3...aa9475`; sonic `0x7df74b...6e2811`; base [`0x01fa35...922e48`](./contracts/base-8453/0x01fa35fde0e813e2d6687660a74a313d8d922e48/) | ✅ Audited |
 | sPRL2 | unknown | ethereum | n/a | [`0xe8a2d8...322135`](./contracts/ethereum-1/0xe8a2d848fe656e34a6caa35f375b42979e322135/) | ✅ Audited |
+| VaultsCore | core_logic | polygon | n/a | 4 deployments: ethereum `0x173ae6...8c674b`; ethereum `0xe26348...f93204`; polygon [`0x0a9202...1b400f`](./contracts/polygon-137/0x0a9202c6417a7b6b166e7f7fe2719b09261b400f/); polygon `0xcababc...5e6e5f` | ✅ Audited |
 | VaultsCoreState | core_logic | polygon | n/a | 4 deployments: ethereum `0x963d98...745249`; ethereum `0xdb7553...06386f`; polygon [`0x02c69c...6f25d8`](./contracts/polygon-137/0x02c69c480ab4a35f2c7117e2c17c904cd76f25d8/); polygon `0xfad382...81f346` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (17)
@@ -80,7 +83,7 @@ The Core Protocol's TokenP stablecoin is used across the Flashloan, Bridging, an
 | ERC1967Proxy | proxy | scroll | n/a | [`0x9ee196...f26aa4`](./contracts/scroll-534352/0x9ee1963f05553ef838604dd39403be21cef26aa4/) | ⚠️ Unaudited |
 | GenericHarvester | operational_periphery | avalanche | n/a | 5 deployments: ethereum `0x36da06...12636c`; sonic `0x120805...06a9d2`; hyperliquid `0x57770c...db7e0e`; base `0xca43ec...6b410a`; avalanche [`0x0d45b1...32cae4`](./contracts/avalanche-43114/0x0d45b129dc868963025db79a9074ea9c9e32cae4/) | ⚠️ Unaudited |
 | Getters | unknown | sonic | n/a | 3 deployments: sonic [`0x90e4ae...a4ee43`](./contracts/sonic-146/0x90e4ae8ba8c6fd51fced0f9331668b05c7a4ee43/); base `0xbe65f0...57d588`; avalanche `0xf6cc47...e22dbb` | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | unit-33762 | [`0x25fc7f...706f9b`](./contracts/ethereum-1/0x25fc7ffa8f9da3582a36633d04804f0004706f9b/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | n/a | [`0x25fc7f...706f9b`](./contracts/ethereum-1/0x25fc7ffa8f9da3582a36633d04804f0004706f9b/) | ⚠️ Unaudited |
 | ParallelAccessManager | governance | optimism | n/a | 17 deployments: ethereum `0x94ea88...355f7a`; optimism [`0x0e4e7c...debf46`](./contracts/optimism-10/0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46/); bsc `0xfd28f1...85998e`; gnosis `0xfd28f1...85998e`; unichain `0xfd28f1...85998e`; polygon `0x7df74b...6e2811`; sonic `0x8efb3d...094b78`; fraxtal `0xfd28f1...85998e`; hyperliquid `0xfd28f1...85998e`; sei `0xfd28f1...85998e`; base [`0x0e4e7c...debf46`](./contracts/base-8453/0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46/); plasma `0xfd28f1...85998e`; arbitrum [`0x0e4e7c...debf46`](./contracts/arbitrum-42161/0x0e4e7ca9d7b1e6293d0713efefb4bca010debf46/); avalanche `0xfd28f1...85998e`; linea `0xfd28f1...85998e`; berachain `0xfd28f1...85998e`; scroll `0xfd28f1...85998e` | ⚠️ Unaudited |
 | Redeemer | unknown | avalanche | n/a | 3 deployments: sonic `0xe5c82b...032cc8`; base `0xe9fe47...5990e8`; avalanche [`0x6efedd...f262a2`](./contracts/avalanche-43114/0x6efeddf9269c3683ba516cb0e2124fe335f262a2/) | ⚠️ Unaudited |
 | RewardHandler | unknown | base | n/a | 3 deployments: sonic `0xfb2d07...91e3f7`; base [`0x2b6c7c...6e4dec`](./contracts/base-8453/0x2b6c7c275404e93a14a05b549af292231d6e4dec/); avalanche `0x36da06...12636c` | ⚠️ Unaudited |
@@ -102,30 +105,28 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (8)
+### ❓ Unverified (6)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | fantom | n/a | `0xf6abf8...c51f58` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x098e37...02d8b6` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x9e7733...2c64ef` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xd4dee6...c838eb` | ❓ Unverified |
+| UnnamedContract | unknown | hyperliquid | n/a | `0xca43ec...6b410a` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xa360e5...41c2f5` | ❓ Unverified |
-| UnnamedContract | unknown | ink | n/a | `0x9e0dcf...991277` | ❓ Unverified |
-| UnnamedContract | unknown | ink | n/a | `0x9ee196...f26aa4` | ❓ Unverified |
-| UnnamedContract | unknown | ink | n/a | `0x9ffacb...c699ec` | ❓ Unverified |
-| UnnamedContract | unknown | ink | n/a | `0xcb3e56...de600b` | ❓ Unverified |
-| UnnamedContract | unknown | ink | n/a | `0xe23b5d...05cf7b` | ❓ Unverified |
-| UnnamedContract | unknown | ink | n/a | `0xfd28f1...85998e` | ❓ Unverified |
+| UnnamedContract | unknown | ink | n/a | 7 deployments: fantom `0xf6abf8...c51f58`; ink `0x9e0dcf...991277`; ink `0x9ee196...f26aa4`; ink `0x9ffacb...c699ec`; ink `0xcb3e56...de600b`; ink `0xe23b5d...05cf7b`; ink `0xfd28f1...85998e` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Rendered PDF capture](https://raw.githubusercontent.com/code-423n4/2022-04-mimo/b18670f44d595483df2c0f76d1c57a7bfbfbc083/core/audits/certik.pdf) | CertiK | Audit | 2021-06 | stale | Direct | contract_name | 4 | high |
-| [Rendered PDF capture](https://certificate.quantstamp.com/full/ten-x-titan.pdf) | Quantstamp | Audit | 2021-01 | stale | Direct | contract_name | 4 | high |
-| [Rendered PDF capture](https://raw.githubusercontent.com/parallel-protocol/parallel-prl/dba8cdcac982a9b59006730cd890870bfc807e15/docs/audits/Parallel%20Protocol%20-%20Zenith%20Audit%20Report.pdf) | Guardian | Audit | 2025-02 | aging | Direct | contract_name | 8 | high |
-| [Rendered PDF capture](https://raw.githubusercontent.com/parallel-protocol/parallel-prl/dba8cdcac982a9b59006730cd890870bfc807e15/docs/audits/Bailsec%20-%20Parallel%20Protocol%20-%20PRL%20Token%20-%20Final%20Report%20-%20January%202025.pdf) | Guardian | Audit | 2025-01 | aging | Direct | contract_name | 13 | high |
-| [Rendered PDF capture](https://raw.githubusercontent.com/parallel-protocol/bridging-module/ad58d439a5e0cae78fa7e53aa0698347bd83b921/docs/audits/Bailsec%20-%20Parallel%20Bridge%20-%20BridgeableToken%20-%20Final%20Report%20-%20December%202024.pdf) | Guardian | Audit | 2024-12 | aging | Direct | contract_name | 7 | high |
+| [certik.pdf](https://raw.githubusercontent.com/code-423n4/2022-04-mimo/b18670f44d595483df2c0f76d1c57a7bfbfbc083/core/audits/certik.pdf) | CertiK | Audit | 2021-06 | stale | Direct | contract_name | 1 | n/a |
+| [ten-x-titan.pdf](https://certificate.quantstamp.com/full/ten-x-titan.pdf) | Quantstamp | Audit | 2021-01 | stale | Direct | contract_name | 1 | n/a |
+| [Parallel Protocol - Zenith Audit Report.pdf](https://raw.githubusercontent.com/parallel-protocol/parallel-prl/dba8cdcac982a9b59006730cd890870bfc807e15/docs/audits/Parallel%20Protocol%20-%20Zenith%20Audit%20Report.pdf) | Guardian | Audit | 2025-02 | aging | Direct | contract_name | 5 | n/a |
+| [Bailsec - Parallel Protocol - PRL Token - Final Report - January 2025.pdf](https://raw.githubusercontent.com/parallel-protocol/parallel-prl/dba8cdcac982a9b59006730cd890870bfc807e15/docs/audits/Bailsec%20-%20Parallel%20Protocol%20-%20PRL%20Token%20-%20Final%20Report%20-%20January%202025.pdf) | Guardian | Audit | 2025-01 | aging | Direct | contract_name | 6 | n/a |
+| [Bailsec - Parallel Bridge - BridgeableToken - Final Report - December 2024.pdf](https://raw.githubusercontent.com/parallel-protocol/bridging-module/ad58d439a5e0cae78fa7e53aa0698347bd83b921/docs/audits/Bailsec%20-%20Parallel%20Bridge%20-%20BridgeableToken%20-%20Final%20Report%20-%20December%202024.pdf) | Guardian | Audit | 2024-12 | aging | Direct | contract_name | 2 | n/a |
 
 ## Coverage Gaps
 
@@ -153,10 +154,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 31 |
+| native | 24 |
 | upstream | 0 |
 | standard_library | 2 |
-| needs_review | 1 |
+| needs_review | 6 |
 
 ## Scope Matching Notes
 
@@ -164,7 +165,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=5
-- Match method counts: extraction_exact=67
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=15
 
 Fork inheritance lineage and inherited audits are included when available.

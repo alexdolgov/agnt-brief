@@ -1,51 +1,51 @@
 # Agentic Audit Brief: Parasail
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 52.2% over 90 days
-
 ## Project Overview
 
 - Project: Parasail (`parasail`)
 - Website: [https://www.parasail.network/](https://www.parasail.network/)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:00:50.404Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:42.963Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: arbitrum
-- Contract surface: 27 unique implementations (27 raw deployments)
-- DeFi Llama TVL: $2,692,575.52
-- On-chain TVL (included contracts): $17,207,293.45
-- TVL by chain: Arbitrum $17,207,293.45
+- Contract surface: 35 unique implementations (40 raw deployments)
+- DeFi Llama TVL: $2,600,797.25
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Parasail is a DePIN/restaking incentive interface tracked across multiple networks, including Fluence, Arbitrum, Swan, and Filecoin, with TVL primarily on Filecoin rather than Arbitrum. It should not be described as an Arbitrum-only restaking protocol.
+Restaking. Structurally: 2 project-authored contract(s) across 1 chain(s); 1 ERC20 token; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol consists of a single product family where the ERC1967Proxy serves as the upgradeable entry point, delegating to implementation contracts, while the InterchainToken facilitates cross-chain asset transfers.
+The protocol comprises 3 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 43; live-surface contracts included: 27 (0 live, 27 unknown).
-- Excluded by liveness: 0 inactive, 16 singleton, 0 uninitialized.
-- Deployment units: 0/8 live.
+- Indexed contracts: 43; live-surface contracts included: 40 (1 live, 39 unknown).
+- Excluded by liveness: 3 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 35 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 26
-- Unique implementations: 27
-- Raw deployments: 27
-- Audits discovered: 0
+- Unverified implementations: 34
+- Unique implementations: 35
+- Raw deployments: 40
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $17,207,293.45
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $17,207,293.45 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -75,18 +75,22 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (26)
+### ❓ Unverified (34)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| Proxy (impl: 0xaa5d9edfd680297533a14e121b70ae9fadd77831) | unknown | arbitrum | n/a | 2 deployments: arbitrum `0x0ec4dc...010caa`; arbitrum `0xaa5d9e...d77831` | ❓ Unverified |
+| Proxy (impl: 0xc4f869b9040ce060d3f3204abd579b00461a4e45) | unknown | arbitrum | n/a | 2 deployments: arbitrum `0x369d4b...5df44e`; arbitrum `0xc4f869...1a4e45` | ❓ Unverified |
+| Proxy (impl: 0xcbe7efd39be37699e2377ddab28b627aa321d209) | unknown | arbitrum | n/a | 2 deployments: arbitrum `0x19eb5d...81ee02`; arbitrum `0xcbe7ef...21d209` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x0fafc1...1bbbfb` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x12b785...71855a` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x16e7d8...fe0362` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x174fcc...574818` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x1e8895...beca03` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x22dbba...fc032a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x277aeb...40bce0` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x28a141...3d2582` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x2ab36b...852b25` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x304ece...d181ff` | ❓ Unverified |
@@ -94,7 +98,10 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | arbitrum | n/a | `0x43ba49...9272df` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x445895...662909` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x4e7088...c18e39` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x618d55...0f31dd` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x7c588e...158127` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | 2 deployments: arbitrum `0x885266...10085e`; arbitrum `0xc7a6aa...5a5fa3` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8eebfa...786ef3` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x901a72...5b336e` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x906be3...270319` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x92a159...1fb2fe` | ❓ Unverified |
@@ -105,6 +112,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | arbitrum | n/a | `0xd76ac8...bd66b9` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xd9694e...59f7e7` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xd99ab1...203dad` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | 2 deployments: arbitrum `0xd9a340...47e74c`; arbitrum `0xe87792...39b2a4` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xeae9f8...2f689c` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xf5b42a...301f47` | ❓ Unverified |
 
@@ -119,16 +127,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| arbitrum | [`0xc87b37...9d056c`](./contracts/arbitrum-42161/0xc87b37a581ec3257b734886d9d3a581f5a9d056c/) | InterchainToken | token | $17,207,293.45 | Verified native implementation with $17,207,293.45 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0xc87b37...9d056c`](./contracts/arbitrum-42161/0xc87b37a581ec3257b734886d9d3a581f5a9d056c/) | InterchainToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 18 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 9 |
+| needs_review | 34 |
 
 ## Scope Matching Notes
 

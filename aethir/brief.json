@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
   "project_key": "aethir",
-  "generated_at": "2026-06-19T06:13:13.447Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
-  "lifecycle_status": "active",
+  "generated_at": "2026-07-04T14:52:58.067Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-f2f0",
+  "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "aethir",
     "tier": 0,
@@ -16,32 +16,34 @@
     "tvl_180d_ago": 0,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 214,
+    "days_since_peak": 245,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 0
   },
   "summary": {
-    "total_contracts": 5,
-    "total_addresses": 5,
-    "unique_implementations": 5,
-    "total_deployments": 5,
+    "total_contracts": 6,
+    "total_addresses": 7,
+    "unique_implementations": 6,
+    "total_deployments": 7,
     "audited_contracts": 0,
-    "unaudited_contracts": 5,
+    "unaudited_contracts": 6,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 5,
+    "contracts_verified_unaudited": 6,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6787676.00008,
-    "tvl_usd": 257030903.7042486,
+    "dl_tvl_usd": 6461829.84648,
+    "tvl_usd": 173808593.8282114,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 257030903.7
+      "ethereum": 173808593.83
     },
-    "asd_usd": 257030903.7042486,
+    "asd_usd": 173808593.8282114,
     "website_url": "https://aethir.com/",
     "chains": [
       "ethereum"
@@ -54,27 +56,36 @@
       "fresh": 0,
       "aging": 0,
       "stale": 0,
-      "unknown": 0
+      "unknown": 1
+    },
+    "live_implementations": 6,
+    "live_verified_implementations": 6,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Aethir is an on-demand distributed GPU compute and cloud infrastructure network. Its Ethereum contracts, including ATH token-related wrapper, staking or reward components, checker-node/reward infrastructure, and related Web3 mechanisms, support the tokenized and incentive layers of the broader GPU compute network rather than defining the entire project as only a token, wrapper, staking, or governance system.",
-    "relationship_narrative": "The TransparentUpgradeableProxy serves as the upgradeable proxy for the AethirWrapper implementation, allowing the wrapper logic to be updated while preserving state. The AethirToken is the core asset that the wrapper likely interacts with.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 8,
-    "live_contracts": 5,
-    "inactive_contracts": 1,
-    "singleton_contracts": 2,
+    "project_purpose": "Developer Tools. Structurally: 7 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 5 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.",
+    "product_family_count": 5,
+    "total_contracts_indexed": 9,
+    "live_contracts": 6,
+    "inactive_contracts": 3,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 1,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 1,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 5,
+    "unique_implementations": 6,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -93,8 +104,8 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Aethir",
-      "tvl_usd": 257030903.7042486,
+      "product_line": null,
+      "tvl_usd": 173808593.8282114,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "AethirToken",
@@ -107,7 +118,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 257030903.7042486,
+          "tvl_usd": 173808593.8282114,
           "is_audited": false
         }
       ],
@@ -116,7 +127,61 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-05 09:57:59+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1ecb43e02d6573119eaf0e6509a4725b8633a13c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AethirWrapper",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Aethir",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x1ecb43e02d6573119eaf0e6509a4725b8633a13c",
+      "impl_name": "AethirWrapper",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1ecb43e02d6573119eaf0e6509a4725b8633a13c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3f69bb14860f7f3348ac8a5f0d445322143f7fee",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-11 12:18:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -151,7 +216,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-11 12:13:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -186,7 +255,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-11 12:14:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -221,7 +294,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-05 09:58:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -256,10 +333,39 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-11 13:40:23+03",
+      "deploy_coverage_basis": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 20638,
+      "audit_key": "audit-20638",
+      "report_name": "skynet.certik.com/projects/aethir",
+      "report_url": "https://skynet.certik.com/projects/aethir",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -269,8 +375,18 @@
       "name": "AethirToken",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 257030903.7042486,
-      "risk_note": "Verified native implementation with $257,030,903.70 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 173808593.8282114,
+      "risk_note": "Verified native implementation with $173,808,593.83 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1ecb43e02d6573119eaf0e6509a4725b8633a13c",
+      "name": "AethirWrapper",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -314,7 +430,7 @@
     }
   ],
   "origin_summary": {
-    "native": 5,
+    "native": 6,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
@@ -324,7 +440,12 @@
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 20638,
+        "report_name": "skynet.certik.com/projects/aethir"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

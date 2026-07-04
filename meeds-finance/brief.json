@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "meeds-finance",
-  "generated_at": "2026-06-17T07:00:43.070Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "unknown",
-  "lifecycle_signal": {
-    "slug": "meeds-finance",
-    "tier": 0,
-    "peak_tvl": 0,
-    "peak_date": "2024-03-29T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 0,
-    "tvl_current": 0,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 0,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "days_since_peak": 807,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 0
-  },
+  "generated_at": "2026-07-04T14:53:30.551Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-16da",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 4,
     "total_addresses": 9,
@@ -34,18 +18,14 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1344336.94192,
-    "tvl_usd": 1854269.8643424693,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "arbitrum": 2837.37,
-      "base": 2837.3,
-      "ethereum": 1845672.42,
-      "optimism": 2837.86,
-      "polygon": 84.92
-    },
-    "asd_usd": 1854269.8643424693,
+    "dl_tvl_usd": 1271759.09608,
+    "tvl_usd": 1271759.09608,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://www.meeds.io/",
     "chains": [
       "arbitrum",
@@ -63,25 +43,32 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 4,
+    "live_verified_implementations": 3,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Meeds Finance is a Web3 community app and decentralized engagement platform with an Ethereum token, staking, and reward components.",
-    "relationship_narrative": "The TokenFactory registry supports the creation and management of tokens used within the Meeds Finance ecosystem, while the proxy contracts (DeedTenantRentingProxy and DeedTenantProvisioningProxy) provide upgradeable infrastructure for renting and provisioning deeds, likely integrating with the core staking and reward mechanisms.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 10,
-    "live_contracts": 3,
-    "inactive_contracts": 1,
+    "project_purpose": "Farm. Structurally: 7 project-authored contract(s) across 2 chain(s); 2 ERC20 tokens, 1 ERC1155 multi-token; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Its contracts share 2 common project-authored base contract(s) (managerrole, erc1967upgrade). Dominant framework: openzeppelin.",
+    "product_family_count": 3,
+    "total_contracts_indexed": 16,
+    "live_contracts": 9,
+    "inactive_contracts": 7,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 6,
-    "deployment_units": 2,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 4,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v3"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 4,
@@ -103,8 +90,8 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Meeds Finance",
-      "tvl_usd": 1836869.7772995986,
+      "product_line": null,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "MeedsToken",
@@ -117,7 +104,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 1836869.7772995986,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -126,97 +113,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0x4e7d4e5fd3e4a68adcbeacaa3748b9c67bb02a69",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UniswapV3Pool",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "Uniswap",
-      "product_line": null,
-      "tvl_usd": 17400.087042870768,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "UniswapV3Pool",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xc82b1c50609217075d28aa22f11a80450212b3d1",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 3127.1008885306264,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xfa127d9a1154610eedbab7323b64363089f9989e",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 5675.540502203923,
-          "is_audited": false
-        },
-        {
-          "chain_id": 10,
-          "chain_name": "optimism",
-          "address": "0xe133306fc90133e33a8c322e8c81f06ec2369b17",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2837.8575925525456,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x4e7d4e5fd3e4a68adcbeacaa3748b9c67bb02a69",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 84.91997142924248,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xada40f483dd44e9e6e126a2db59379d45551dd55",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2837.302087317751,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xc76979618841ab656bb834b4fe812319677225a1",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 2837.3660008366796,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-03 12:21:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -228,7 +129,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Meeds Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -251,7 +152,105 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-09 11:02:05+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x4e7d4e5fd3e4a68adcbeacaa3748b9c67bb02a69",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UniswapV3Pool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV3Pool",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc82b1c50609217075d28aa22f11a80450212b3d1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfa127d9a1154610eedbab7323b64363089f9989e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0xe133306fc90133e33a8c322e8c81f06ec2369b17",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x4e7d4e5fd3e4a68adcbeacaa3748b9c67bb02a69",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xada40f483dd44e9e6e126a2db59379d45551dd55",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xc76979618841ab656bb834b4fe812319677225a1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-01-21 17:00:53+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -263,7 +262,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Meeds Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -286,7 +285,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-17 11:42:38+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],
@@ -299,8 +302,8 @@
       "name": "MeedsToken",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 1836869.7772995986,
-      "risk_note": "Verified native implementation with $1,836,869.78 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,

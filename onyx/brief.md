@@ -4,44 +4,47 @@
 
 - Project: Onyx (`onyx`)
 - Website: [https://app.onyx.org/](https://app.onyx.org/)
-- Lifecycle: active (Tier 1, dead)
-- Generated: 2026-06-17T07:00:40.604Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:39.008Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: ethereum
-- Contract surface: 5 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $46,620,839.00
+- Contract surface: 7 unique implementations (7 raw deployments)
+- DeFi Llama TVL: $48,123,511.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Onyx is an Onyxcoin/XCN-powered app and protocol ecosystem on Ethereum that includes staking and app features such as swap, bridge, farm and governance, alongside a Compound-style liquidity/lending market with oTokens and a Comptroller for risk management.
+Structural profile: 17 project-authored contract(s) across 1 chain(s); 4 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The Lending family relies on the OnyxDAORegistry for configuration and access control, while the Governance & Staking family manages protocol parameters and incentives. Both families share the same deployer clusters and are part of the broader Onyx ecosystem.
+The protocol comprises 4 functional families. Its contracts share 9 common project-authored base contract(s) (chngovernancestorage, otokeninterface, otokenstorage). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 46; live-surface contracts included: 5 (5 live, 0 unknown).
-- Excluded by liveness: 16 inactive, 25 singleton, 0 uninitialized.
-- Deployment units: 0/8 live.
-- Detected codebases: compound-v2
-- Dependencies extracted: 23; unverified dependencies: 0.
+- Indexed contracts: 36; live-surface contracts included: 7 (5 live, 2 unknown).
+- Excluded by liveness: 29 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/5 (0.0%)
+- Coverage of deployed-live implementations: 0/5 (0.0%)
+- Deployed-live implementations: 5 of 7 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/5
 - Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 5
-- Raw deployments: 5
-- Audits discovered: 1
+- Unverified implementations: 2
+- Unique implementations: 7
+- Raw deployments: 7
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-03 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -76,11 +79,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x36f0c2...f41067` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x58e9a7...ffebba` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -92,16 +98,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0xdec2f3...4ef767`](./contracts/ethereum-1/0xdec2f31c3984f3440540dc78ef21b1369d4ef767/) | CHNGovernance | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x28ca9c...a5da93`](./contracts/ethereum-1/0x28ca9caae31602d0312ebf6466c9dd57fca5da93/) | CHNReward | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x23445c...0e19a9`](./contracts/ethereum-1/0x23445c63feef8d85956dc0f19ade87606d0e19a9/) | CHNStaking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3fa642...249216`](./contracts/ethereum-1/0x3fa642c0bbad64569eb8424af35f518347249216/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xadb90c...df3b31`](./contracts/ethereum-1/0xadb90c593e0bc8395a53087d8c558f5563df3b31/) | OnyxDAORegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 5 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 5 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

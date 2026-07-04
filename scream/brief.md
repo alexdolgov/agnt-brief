@@ -1,14 +1,12 @@
 # Agentic Audit Brief: Scream
 
-⚠️ Lifecycle status: DEAD - TVL changed 0.0% over 90 days
-
 ## Project Overview
 
 - Project: Scream (`scream`)
 - Website: [https://scream.sh/](https://scream.sh/)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-17T20:03:30.803Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-6f9b
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:54.647Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-0679
 - Chains: fantom
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $1,288,676.91
@@ -22,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Scream is a Fantom-based decentralized lending and borrowing protocol. Its complete contract architecture is not established by the current brief; the listed single contract is insufficient to represent the protocol's lending surface, which likely includes controller, market token, oracle, interest-rate, rewards/distribution, and dripper-related components that must be mapped before coverage can be assessed.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
@@ -34,19 +32,21 @@ Scream is a Fantom-based decentralized lending and borrowing protocol. Its compl
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 

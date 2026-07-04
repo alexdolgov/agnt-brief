@@ -4,44 +4,47 @@
 
 - Project: PAAL AI (`paal-ai`)
 - Website: [https://www.paal.ai/](https://www.paal.ai/)
-- Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-17T07:01:01.720Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:39.378Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: ethereum
-- Contract surface: 3 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $1,299,518.17
-- On-chain TVL (included contracts): $830,132.91
-- TVL by chain: Ethereum $830,132.91
+- Contract surface: 4 unique implementations (6 raw deployments)
+- DeFi Llama TVL: $832,540.23
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-PAAL AI is an AI bot and application ecosystem with on-chain infrastructure identified in this brief limited to the PAALAI token and Ethereum staking pools. The Ethereum contracts include the native PAALAI token and multiple staking pool contracts used for token staking participation.
+Telegram Bot. Structurally: 3 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens; built on openzeppelin.
 
 ### Architecture
 
-The PAALAI token is the central asset used across all staking pools. Each StakingPool contract operates independently but shares the same token, allowing users to stake PAALAI in different pools, likely with varying reward structures or conditions.
+The protocol forms a single structural family (Core Logic) of 3 contract(s).
 
 ## Contract Surface Quality
 
-- Indexed contracts: 5; live-surface contracts included: 5 (5 live, 0 unknown).
+- Indexed contracts: 6; live-surface contracts included: 6 (5 live, 1 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
-- Detected codebases: uniswap-v2
-- Unverified dependencies: 1/2.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
+- Coverage of deployed-live implementations: 0/2 (0.0%)
+- Deployed-live implementations: 3 of 4 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/3
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 3
-- Raw deployments: 5
-- Audits discovered: 0
+- Unverified implementations: 1
+- Unique implementations: 4
+- Raw deployments: 6
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $830,132.91
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- ASD (verified + unaudited TVL): n/a
+- Latest audit: 2025-05 (aging)
+- Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -58,8 +61,8 @@ The PAALAI token is the central asset used across all staking pools. Each Stakin
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| StakingPool | core_logic | ethereum | n/a | 3 deployments: ethereum [`0x163ad6...942d7b`](./contracts/ethereum-1/0x163ad6ac78ffe40e194310faeada8f6615942d7b/); ethereum `0x843106...80894f`; ethereum `0x85e253...69d624` | ⚠️ Unaudited |
 | PAALAI | unknown | ethereum | n/a | [`0x14fee6...d10e16`](./contracts/ethereum-1/0x14fee680690900ba0cccfc76ad70fd1b95d10e16/) | ⚠️ Unaudited |
+| StakingPool | core_logic | ethereum | n/a | 3 deployments: ethereum [`0x163ad6...942d7b`](./contracts/ethereum-1/0x163ad6ac78ffe40e194310faeada8f6615942d7b/); ethereum `0x843106...80894f`; ethereum `0x85e253...69d624` | ⚠️ Unaudited |
 | UniswapV2Pair | unknown | ethereum | n/a | [`0x2a6c34...a9259f`](./contracts/ethereum-1/0x2a6c340bcbb0a79d3deecd3bc5cbc2605ea9259f/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -74,16 +77,19 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x4a24d5...2544bf` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [skynet.certik.com/projects/paal-ai](https://skynet.certik.com/projects/paal-ai) | CertiK | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -91,8 +97,8 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x163ad6...942d7b`](./contracts/ethereum-1/0x163ad6ac78ffe40e194310faeada8f6615942d7b/) | StakingPool | core_logic | $830,132.91 | Verified native implementation with $830,132.91 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x14fee6...d10e16`](./contracts/ethereum-1/0x14fee680690900ba0cccfc76ad70fd1b95d10e16/) | PAALAI | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x163ad6...942d7b`](./contracts/ethereum-1/0x163ad6ac78ffe40e194310faeada8f6615942d7b/) | StakingPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
@@ -101,15 +107,19 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 2 |
 | upstream | 1 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [21358] skynet.certik.com/projects/paal-ai
 
 Fork inheritance lineage and inherited audits are included when available.

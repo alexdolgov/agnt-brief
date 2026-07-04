@@ -1,25 +1,25 @@
 {
   "schema_version": "2.0",
   "project_key": "armitage-by-wintermute",
-  "generated_at": "2026-06-17T07:01:01.861Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-07-04T14:53:04.136Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-f2f0",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "armitage-by-wintermute",
     "tier": 0,
-    "peak_tvl": 52011311,
-    "peak_date": "2026-06-04T00:00:00.000Z",
-    "tvl_30d_ago": null,
+    "peak_tvl": 59679457,
+    "peak_date": "2026-06-23T00:00:00.000Z",
+    "tvl_30d_ago": 51847460,
     "tvl_90d_ago": null,
-    "tvl_current": 51999009,
+    "tvl_current": 56363689,
     "tier0_reason": "no_rule_matched",
     "tvl_180d_ago": null,
-    "change_30d_pct": null,
+    "change_30d_pct": 8.71060800278355,
     "change_90d_pct": null,
     "days_since_peak": 8,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 0.023652547423770955
+    "drop_from_peak_pct": 5.555962079212618
   },
   "summary": {
     "total_contracts": 7,
@@ -34,14 +34,16 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 52007611.72767,
-    "tvl_usd": 51808883.671592,
+    "dl_tvl_usd": 56367700.68822,
+    "tvl_usd": 56389000.797446,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 51808883.67
+      "ethereum": 56389000.8
     },
-    "asd_usd": 51808883.671592,
+    "asd_usd": 56389000.797446,
     "website_url": "https://armitage.wintermute.com",
     "chains": [
       "ethereum"
@@ -55,20 +57,29 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 7,
+    "live_verified_implementations": 3,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 4,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Armitage by Wintermute is Wintermute's onchain vault curation product for yield-bearing DeFi vaults. It curates and manages risk for depositors, currently including Prime and Select USDC vaults on Ethereum.",
-    "relationship_narrative": "The protocol consists of a single product family with two instances of the VaultV2 contract, likely representing separate vaults for different assets or strategies, sharing the same core logic.",
-    "product_family_count": 1,
+    "project_purpose": "Risk Curators. Structurally: 7 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 1 ERC20 token; built on solmate.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: solmate.",
+    "product_family_count": 4,
     "total_contracts_indexed": 9,
-    "live_contracts": 8,
+    "live_contracts": 9,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 1,
-    "deployment_units": 1,
-    "live_deployment_units": 1,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
@@ -91,10 +102,10 @@
       "deployment_unit_proxy_count": null,
       "name": "VaultV2",
       "role": "core_logic",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Armitage by Wintermute",
-      "tvl_usd": 51808883.671592,
+      "product_line": null,
+      "tvl_usd": 56389000.797446,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "VaultV2",
@@ -107,7 +118,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 20591258.595348,
+          "tvl_usd": 23667869.181967,
           "is_audited": false
         },
         {
@@ -118,7 +129,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 31217625.076244,
+          "tvl_usd": 32721131.615479,
           "is_audited": false
         }
       ],
@@ -127,7 +138,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-04-22 20:32:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -162,7 +177,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2023-12-28 12:09:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -197,7 +216,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-12-10 12:36:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -232,7 +255,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-09-16 13:37:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -242,7 +269,7 @@
       "deployment_unit_proxy_count": null,
       "name": "RegistryList",
       "role": "registry",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -267,18 +294,22 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-16 13:46:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x4687e45bb5518a995913a24bb2816fe2031d74d8",
-      "deployment_unit": "unit-18913",
-      "deployment_unit_proxy_count": 2,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "Safe",
       "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "gnosis-safe",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -289,8 +320,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x4687e45bb5518a995913a24bb2816fe2031d74d8",
-          "deployment_unit": "unit-18913",
-          "deployment_unit_proxy_count": 2,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -300,8 +331,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xb83a77677c51aaf6c45b0b64199eae6938559e5e",
-          "deployment_unit": "unit-18913",
-          "deployment_unit_proxy_count": 2,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -313,7 +344,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2026-04-23 13:33:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -323,7 +358,7 @@
       "deployment_unit_proxy_count": null,
       "name": "VaultV2Factory",
       "role": "registry",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -348,17 +383,52 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-16 13:37:23+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5dc53a23adc9f2bed98de6f59f7f309a7c71ff2b",
+      "name": "VaultV2",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 56389000.797446,
+      "risk_note": "Verified native implementation with $56,389,000.80 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3696c5eae4a7ffd04ea163564571e9cd8ed9364e",
+      "name": "RegistryList",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa1d94f746defa1928926b84fb2596c06926c0405",
+      "name": "VaultV2Factory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 3,
     "upstream": 3,
-    "standard_library": 0,
-    "needs_review": 4
+    "standard_library": 1,
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

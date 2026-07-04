@@ -1,50 +1,50 @@
 # Agentic Audit Brief: Kine Finance
 
-⚠️ Lifecycle status: DECLINING - TVL changed 12.0% over 90 days
-
 ## Project Overview
 
 - Project: Kine Finance (`kine-finance`)
-- Lifecycle: declining (Tier 0, 95.8% below peak)
-- Generated: 2026-06-17T07:00:43.026Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:29.214Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: avalanche, bsc, ethereum, polygon
-- Contract surface: 7 unique implementations (15 raw deployments)
-- DeFi Llama TVL: $964,569.55
+- Contract surface: 13 unique implementations (24 raw deployments)
+- DeFi Llama TVL: $916,821.05
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Kine Finance is a liquidity-pool-backed derivatives trading protocol. Its current project identity should be described around derivatives trading and liquidity pools, consistent with DefiLlama. Compound-style kToken/KErc20Delegator contracts, where present, should be treated as legacy or implementation-level collateral/accounting components rather than the core product purpose.
+Yield. Structurally: 36 project-authored contract(s) across 4 chain(s); 7 ERC20 tokens, 1 ERC1155 multi-token; role-gated via AccessControl; built on openzeppelin.
 
 ### Architecture
 
-The protocol consists of a single product family where Unitroller proxies delegate governance logic to ControllerV2 implementations, and KMCDDelegator proxies use KMCDDelegate for stablecoin market operations. KEther contracts handle ETH-specific markets, while the Kine token likely serves as a governance or incentive token across deployments.
+The protocol comprises 4 functional families. Its contracts share 15 common project-authored base contract(s) (tokendispenserbase, irewarddistributionrecipient, kusdminterdelegate). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 170; live-surface contracts included: 15 (15 live, 0 unknown).
-- Excluded by liveness: 88 inactive, 67 singleton, 0 uninitialized.
-- Deployment units: 2/35 live.
-- Detected codebases: uniswap-v2
-- Dependencies extracted: 24; unverified dependencies: 0.
+- Indexed contracts: 165; live-surface contracts included: 23 (21 live, 2 unknown).
+- Excluded by liveness: 142 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/7 (0.0%)
-- Verified + Unaudited implementations: 7
+- Coverage of deployed-live implementations: 0/11 (0.0%)
+- Deployed-live implementations: 11 of 13 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/11
+- Verified + Unaudited implementations: 11
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 7
-- Raw deployments: 15
-- Audits discovered: 0
+- Unverified implementations: 2
+- Unique implementations: 13
+- Raw deployments: 24
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -56,17 +56,21 @@ The protocol consists of a single product family where Unitroller proxies delega
 
 - None
 
-### ⚠️ Verified + Unaudited (7)
+### ⚠️ Verified + Unaudited (11)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ControllerV2 | governance | ethereum | unit-26637 | [`0xbb7d94...fd1a92`](./contracts/ethereum-1/0xbb7d94a423f4978545ecf73161f0678e8afd1a92/) | ⚠️ Unaudited |
+| Controller | unknown | bsc | n/a | 2 deployments: ethereum `0xd819d9...8d4ab4`; bsc [`0xc11c33...1908da`](./contracts/bsc-56/0xc11c339a1b24b3a10f81a309a1d271de141908da/) | ⚠️ Unaudited |
+| ControllerV2 | governance | ethereum | n/a | [`0xbb7d94...fd1a92`](./contracts/ethereum-1/0xbb7d94a423f4978545ecf73161f0678e8afd1a92/) | ⚠️ Unaudited |
+| ControllerV2 | unknown | bsc | n/a | [`0x3c2ddd...32b571`](./contracts/bsc-56/0x3c2ddd486c07343b711a4415cdc9ab90ed32b571/) | ⚠️ Unaudited |
+| ControllerV2 | unknown | polygon | n/a | 2 deployments: polygon [`0x171d5c...0d7f28`](./contracts/polygon-137/0x171d5c31d196fae671e95594372f049bfd0d7f28/); polygon `0xdff18a...b96881` | ⚠️ Unaudited |
+| ControllerV2 | unknown | avalanche | n/a | 2 deployments: avalanche [`0x0ec312...6679c6`](./contracts/avalanche-43114/0x0ec3126390c606be63a0fa6585e68075f06679c6/); avalanche `0xdff18a...b96881` | ⚠️ Unaudited |
 | KEther | unknown | avalanche | n/a | 4 deployments: ethereum `0xa58e82...d35780`; bsc `0x5fbe4e...60b055`; polygon `0xf186a6...2425f9`; avalanche [`0x0544be...a2fc39`](./contracts/avalanche-43114/0x0544be6693763d64c02f49f16986ba1390a2fc39/) | ⚠️ Unaudited |
 | Kine | unknown | polygon | n/a | 3 deployments: ethereum `0xcbfef8...85f05d`; bsc `0xbfa9df...752d7f`; polygon [`0xa9c174...6ccd87`](./contracts/polygon-137/0xa9c1740fa56e4c0f6ce5a792fd27095c8b6ccd87/) | ⚠️ Unaudited |
 | KineExchangeTreasury | operational_periphery | bsc | n/a | 2 deployments: bsc [`0x1568a7...59eba3`](./contracts/bsc-56/0x1568a7f0bdf67d37dc963c345dbc4a598859eba3/); polygon `0x1d903b...32a19f` | ⚠️ Unaudited |
 | KineRanch | unknown | polygon | n/a | 2 deployments: ethereum `0xa8d764...9cc692`; polygon [`0x66a782...7adeda`](./contracts/polygon-137/0x66a782c9a077f5adc988cc0b5fb1cdcc9d7adeda/) | ⚠️ Unaudited |
 | KineUSD | unknown | ethereum | n/a | 2 deployments: ethereum [`0xd4c220...896a06`](./contracts/ethereum-1/0xd4c220ccac0335334d425a90f58de7c667896a06/); bsc `0xd819d9...8d4ab4` | ⚠️ Unaudited |
-| KUSDMinterV3 | unknown | ethereum | unit-26639 | [`0xcea2d0...d7d128`](./contracts/ethereum-1/0xcea2d0a0413b6bf052eb2eca9c256ee25ad7d128/) | ⚠️ Unaudited |
+| KUSDMinterV3 | unknown | ethereum | n/a | [`0xcea2d0...d7d128`](./contracts/ethereum-1/0xcea2d0a0413b6bf052eb2eca9c256ee25ad7d128/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -80,11 +84,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | polygon | n/a | `0x9a5c4b...8c5199` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x1641b4...200e5d` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -97,7 +104,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| bsc | [`0xc11c33...1908da`](./contracts/bsc-56/0xc11c339a1b24b3a10f81a309a1d271de141908da/) | Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xbb7d94...fd1a92`](./contracts/ethereum-1/0xbb7d94a423f4978545ecf73161f0678e8afd1a92/) | ControllerV2 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x3c2ddd...32b571`](./contracts/bsc-56/0x3c2ddd486c07343b711a4415cdc9ab90ed32b571/) | ControllerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x171d5c...0d7f28`](./contracts/polygon-137/0x171d5c31d196fae671e95594372f049bfd0d7f28/) | ControllerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x0ec312...6679c6`](./contracts/avalanche-43114/0x0ec3126390c606be63a0fa6585e68075f06679c6/) | ControllerV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | avalanche | [`0x0544be...a2fc39`](./contracts/avalanche-43114/0x0544be6693763d64c02f49f16986ba1390a2fc39/) | KEther | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0xa9c174...6ccd87`](./contracts/polygon-137/0xa9c1740fa56e4c0f6ce5a792fd27095c8b6ccd87/) | Kine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x1568a7...59eba3`](./contracts/bsc-56/0x1568a7f0bdf67d37dc963c345dbc4a598859eba3/) | KineExchangeTreasury | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -109,10 +120,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 7 |
+| native | 11 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

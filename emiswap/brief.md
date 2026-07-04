@@ -1,50 +1,50 @@
 # Agentic Audit Brief: EmiSwap
 
-⚠️ Lifecycle status: DECLINING - TVL changed 0.0% over 90 days
-
 ## Project Overview
 
 - Project: EmiSwap (`emiswap`)
-- Lifecycle: declining (Tier 0, 96% below peak)
-- Generated: 2026-06-20T02:02:32.683Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:11.772Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-1cbb
 - Chains: aurora, ethereum, polygon
-- Contract surface: 4 unique implementations (5 raw deployments)
+- Contract surface: 32 unique implementations (33 raw deployments)
 - DeFi Llama TVL: $33,547.84
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-EmiSwap is a decentralized exchange (DEX) protocol that enables users to swap tokens, provide liquidity, and earn rewards across multiple chains including Ethereum, Polygon, Avalanche, and Aurora.
+Dexs. Structurally: 12 project-authored contract(s) across 2 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The EmiFactory registries deploy and track liquidity pools, while the EmiVault manages user deposits and rewards. Proxy contracts provide upgradeability for the factory and token implementations, and the ESW token likely serves as the governance or reward token across the system.
+The protocol comprises 3 functional families. Its contracts share 5 common project-authored base contract(s) (upgradeableproxy, proxy, lptokenwrapper). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 62; live-surface contracts included: 5 (3 live, 2 unknown).
-- Excluded by liveness: 49 inactive, 8 singleton, 0 uninitialized.
-- Deployment units: 1/5 live.
-- Detected codebases: uniswap-v2
-- Dependencies extracted: 2; unverified dependencies: 0.
+- Indexed contracts: 50; live-surface contracts included: 33 (2 live, 31 unknown).
+- Excluded by liveness: 17 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Coverage of deployed-live implementations: 0/2 (0.0%)
+- Deployed-live implementations: 2 of 32 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/5
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
-- Unverified implementations: 2
-- Unique implementations: 4
-- Raw deployments: 5
-- Audits discovered: 1
+- Unverified implementations: 27
+- Unique implementations: 32
+- Raw deployments: 33
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -56,12 +56,15 @@ The EmiFactory registries deploy and track liquidity pools, while the EmiVault m
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| EmiList | unknown | ethereum | n/a | [`0x99e401...01c73b`](./contracts/ethereum-1/0x99e401f9f825822f005d68b7d903038cc601c73b/) | ⚠️ Unaudited |
 | EmiRouter | adapter | ethereum | n/a | 2 deployments: ethereum [`0x22b8cc...d79f01`](./contracts/ethereum-1/0x22b8ccdeeeacb1f3879e36e06af413d44fd79f01/); polygon `0x386807...c2c46a` | ⚠️ Unaudited |
-| ESW | unknown | ethereum | unit-40933 | [`0x5a75a0...18031d`](./contracts/ethereum-1/0x5a75a093747b72a0e14056352751edf03518031d/) | ⚠️ Unaudited |
+| EmiVamp | unknown | ethereum | n/a | [`0xe629c4...e1a3af`](./contracts/ethereum-1/0xe629c4dc9538614019d17d09f54617ef89e1a3af/) | ⚠️ Unaudited |
+| ESW | unknown | ethereum | n/a | [`0x5a75a0...18031d`](./contracts/ethereum-1/0x5a75a093747b72a0e14056352751edf03518031d/) | ⚠️ Unaudited |
+| TransparentUpgradeableProxy | unknown | ethereum | n/a | [`0x8b50a7...b2681e`](./contracts/ethereum-1/0x8b50a72b86bc55a49ef034ef961d2d4e69b2681e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -75,12 +78,37 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (2)
+### ❓ Unverified (27)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x2694f5...0aff62` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3d2934...c1c865` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x40651e...8860c2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4120b8...e733d8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x412c95...55e02b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x42148b...97436e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4856bb...3a6a69` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4b77a7...db9316` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4bcb48...c1de9c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4e7ec6...2a99e7` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x528930...a23e71` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x538fab...3086b1` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x57271b...b3eec0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6941d1...ddbf27` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xba2398...4d365d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc2e079...fdb234` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xcab605...e90ce4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xcfd8b0...a13960` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd1a838...0eb69c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd2a2a3...4a7d8f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd45ccd...606f8f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xdd134d...fc8379` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe06ec5...903f24` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe5f877...8fe472` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf3ffa7...d53b08` | ❓ Unverified |
 | UnnamedContract | unknown | aurora | n/a | `0x5a75a0...18031d` | ❓ Unverified |
 | UnnamedContract | unknown | aurora | n/a | `0xe094e3...2044e1` | ❓ Unverified |
 
@@ -88,7 +116,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://habanero188resmi.com/) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [habanero188resmi.com](https://habanero188resmi.com/) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -96,16 +124,19 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| ethereum | [`0x99e401...01c73b`](./contracts/ethereum-1/0x99e401f9f825822f005d68b7d903038cc601c73b/) | EmiList | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x22b8cc...d79f01`](./contracts/ethereum-1/0x22b8ccdeeeacb1f3879e36e06af413d44fd79f01/) | EmiRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe629c4...e1a3af`](./contracts/ethereum-1/0xe629c4dc9538614019d17d09f54617ef89e1a3af/) | EmiVamp | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5a75a0...18031d`](./contracts/ethereum-1/0x5a75a093747b72a0e14056352751edf03518031d/) | ESW | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 4 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 0 |
+| needs_review | 27 |
 
 ## Scope Matching Notes
 
@@ -118,6 +149,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [13078] DL audit link
+- [13078] habanero188resmi.com
 
 Fork inheritance lineage and inherited audits are included when available.

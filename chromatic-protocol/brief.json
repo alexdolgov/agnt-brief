@@ -1,52 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "chromatic-protocol",
-  "generated_at": "2026-06-19T19:28:59.785Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "chromatic-protocol",
-    "tier": 1,
-    "peak_tvl": 113976,
-    "peak_date": "2024-03-15T00:00:00.000Z",
-    "tvl_30d_ago": 3408,
-    "tvl_90d_ago": 3408,
-    "tvl_current": 3395,
-    "tier0_reason": "long_term_collapse_from_peak",
-    "tvl_180d_ago": 3440,
-    "change_30d_pct": -0.3814553990610329,
-    "change_90d_pct": -0.3814553990610329,
-    "governance_raw": {
-      "evidence": "TVL dropped 97% from peak but protocol still has active development, documentation, and community channels, indicating ongoing operations.",
-      "confidence": 0.8,
-      "lifecycle_status": "declining"
-    },
-    "days_since_peak": 826,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 97.02130273039938,
-    "governance_evidence": "TVL dropped 97% from peak but protocol still has active development, documentation, and community channels, indicating ongoing operations.",
-    "governance_confidence": 0.8,
-    "governance_text_chars": 2823,
-    "governance_classification": "declining",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:10.262Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-1cbb",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 10,
-    "total_addresses": 15,
-    "unique_implementations": 10,
-    "total_deployments": 15,
+    "total_contracts": 13,
+    "total_addresses": 36,
+    "unique_implementations": 13,
+    "total_deployments": 36,
     "audited_contracts": 6,
-    "unaudited_contracts": 3,
+    "unaudited_contracts": 4,
     "contracts_verified_audited": 6,
-    "contracts_verified_unaudited": 3,
+    "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 1,
-    "coverage_pct": 66.7,
+    "contracts_unverified": 3,
+    "coverage_pct": 60,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 3392.77004,
-    "tvl_usd": 3392.77004,
+    "dl_tvl_usd": 975.52514,
+    "tvl_usd": 975.52514,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -63,18 +39,27 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 10,
+    "live_verified_implementations": 10,
+    "live_audited_implementations": 6,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 6
     }
   },
   "topography": {
-    "project_purpose": "Chromatic Protocol is a decentralized derivatives platform on Arbitrum One that enables users to trade perpetual futures and provide liquidity. It uses a vault-based system for settlement and liquidity provision, with dedicated LP tokens and market factory contracts to create and manage trading markets.",
-    "relationship_narrative": "The ChromaticRouter and ChromaticLens in the Arbitrum One family serve as the user interface layer, routing trades and queries to the core Chromatic Protocol contracts. The ChromaticMarketFactory creates markets that use ChromaticVault for settlement, while ChromaticLP tokens represent liquidity positions and are tracked by the ChromaticLPRegistry.",
-    "product_family_count": 2,
-    "total_contracts_indexed": 52,
-    "live_contracts": 0,
-    "inactive_contracts": 37,
+    "project_purpose": "Derivatives. Structurally: 29 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens, 2 ERC1155 multi-tokens; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 5 functional families. Its contracts share 9 common project-authored base contract(s) (marketfacetbase, chromaticcommonlp, chromaticlpbase). Dominant framework: openzeppelin.",
+    "product_family_count": 5,
+    "total_contracts_indexed": 50,
+    "live_contracts": 33,
+    "inactive_contracts": 14,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 15,
+    "unknown_contracts": 3,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
@@ -82,7 +67,7 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 10,
+    "unique_implementations": 13,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -126,12 +111,16 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-16 08:05:20+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0xcab81a613bff3f56f6d6a14edcad87f7cb525b27",
+      "address": "0x0e339ccae40e18793ba3d8ccb9394d7901c5affb",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "ChromaticLP",
@@ -144,6 +133,193 @@
       "impl_address": null,
       "impl_name": "ChromaticLP",
       "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x0e339ccae40e18793ba3d8ccb9394d7901c5affb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x1971cd6ba8fe74d0ef2ee904f9d76aab6c1ddc6c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x30ff22b782e6a09b34c2ff3206a8bd2e0d650912",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x42688bf565d020cace88b057008ae0d8196e2df2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x4568e81b9faeee48fc48d4817c8a2a578f01434f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x4780b91f47c0848a8abd69576bbd83a5a12f9c81",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x67096c11e78dc6ad1b7cb6e2599ce02fc7668e47",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x8052bd81c69c84c9caa67147d663bccfe4f7f1f1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x832e20f49e690e85b3ef7b200eaba64012e0988b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x848f268caaaf07da06826f2b6364a9067af33605",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x87186524edd20ef1bec3527f39ccdd822e78b457",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x931194e0ea466843437cf29336485eb4d0748a2a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x93f7240b32c5da858975823a9b607ae00c3a8c93",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x969b07852b60a559d7da12cd17f59282917b9bd3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x9706de4b4bb1027ce059344cd42bb57e079f64c7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xad6fe0a0d746aeeedeeab19adbadbe58249cd0c7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xb7f379913e7b8a60954977a18eab930d0709c1bb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 42161,
           "chain_name": "arbitrum",
@@ -164,7 +340,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -175,7 +351,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -186,7 +362,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -196,7 +372,61 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-03-13 02:38:13+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x3e13af6d1a3ed3b69e44dd92f96bcae471f9f238",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ChromaticLPLogic",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ChromaticLPLogic",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x3e13af6d1a3ed3b69e44dd92f96bcae471f9f238",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x8b48e672d99ac7cf1be87bbaca41bd6b655ef0a1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-28 10:07:50+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -208,7 +438,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Chromatic Protocol",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -233,7 +463,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-16 07:59:51+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42161,
@@ -245,7 +479,7 @@
       "role": "adapter",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Arbitrum One (mainnet) ​",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -270,7 +504,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-16 07:03:40+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42161,
@@ -305,7 +543,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-16 07:02:24+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -343,7 +585,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -353,7 +595,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-28 10:13:35+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42161,
@@ -388,7 +634,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-28 10:13:20+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -425,7 +675,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-28 10:13:12+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42161,
@@ -471,7 +725,89 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-28 10:13:28+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x61f842e4b5c3e1c759bb3371f7a7e61926ceb099",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x61f842e4b5c3e1c759bb3371f7a7e61926ceb099",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-16 03:57:22+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x81c94f35a170b1935f17de47f74204895c437461",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x81c94f35a170b1935f17de47f74204895c437461",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-16 03:57:28+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -481,7 +817,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -506,7 +842,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-16 08:00:53+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -523,77 +863,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AccountFactory",
-        "AccruedInterest",
-        "BinClosedPosition",
-        "BinClosingPosition",
-        "BinLiquidity",
-        "BinMargin",
-        "BinPendingPosition",
-        "BinPosition",
-        "CLBToken",
-        "CLBTokenDeployer",
-        "CLBTokenLib",
-        "ChainlinkAggregator",
-        "ChainlinkFeedOracle",
-        "ChainlinkRound",
-        "ChromaticAccount",
-        "ChromaticBP",
-        "ChromaticBPFactory",
-        "ChromaticLP",
-        "ChromaticLPBase",
-        "ChromaticLPLogic",
-        "ChromaticLPLogicBase",
-        "ChromaticLPRegistry",
-        "ChromaticLPStorage",
-        "ChromaticLPStorageCore",
-        "ChromaticLens",
-        "ChromaticMarket",
-        "ChromaticMarketFactory",
-        "ChromaticRouter",
-        "ChromaticVault",
-        "Constants",
-        "Diamond",
-        "DiamondCutFacetBase",
-        "DiamondLoupeFacet",
-        "DiamondStorage",
-        "Errors",
-        "GelatoLiquidator",
-        "GelatoVaultEarningDistributor",
-        "InterestRate",
-        "KeeperFeePayer",
-        "LiquidatorBase",
-        "LiquidityBin",
-        "LiquidityPool",
-        "LpContext",
-        "LpReceipt",
-        "MarketDeployer",
-        "MarketDiamondCutFacet",
-        "MarketFacetBase",
-        "MarketLensFacet",
-        "MarketLiquidateFacet",
-        "MarketLiquidityFacet",
-        "MarketLiquidityFacetBase",
-        "MarketSettleFacet",
-        "MarketStateFacet",
-        "MarketStorage",
-        "MarketTradeFacet",
-        "MarketTradeFacetBase",
-        "OracleProviderProperties",
-        "OracleProviderRegistry",
-        "Position",
-        "PositionParam",
-        "PositionUtil",
-        "SettlementTokenRegistry",
-        "VaultEarningDistributorBase",
-        "VerifyCallback"
-      ],
-      "matched_contracts": 10,
+      "extracted_names": [],
+      "matched_contracts": 6,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -602,11 +880,21 @@
       "auditor": "Halborn",
       "tier": 2,
       "contracts_covered": 6,
-      "coverage_pct": 66.7,
+      "coverage_pct": 60,
       "latest_audit": "2024-02"
     }
   ],
   "coverage_gaps": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x3e13af6d1a3ed3b69e44dd92f96bcae471f9f238",
+      "name": "ChromaticLPLogic",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
@@ -642,15 +930,13 @@
     "native": 10,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 39
+      "contract_name": 6
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

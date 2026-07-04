@@ -507,7 +507,7 @@ Each project directory contains:
 | [antarctic](./antarctic/brief.md) | $9.96M | arbitrum | 7 | 6/7 (86%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
 | [anvil](./anvil/brief.md) | $11.20M | ethereum | 6 | 6/6 (100%) | 16.7% | 16.7% (OpenZeppelin) | 1 | fresh | ⚠️ declining | - |
 | [ao-bridge](./ao-bridge/brief.md) | $43.01M | ethereum | 1 | 1/1 (100%) | 0.0% | 0.0% (-) | 0 | unknown | ✅ active | - |
-| [aperocket](./aperocket/brief.md) | $36.31K | bsc | 19 | 1/19 (5%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | - |
+| [aperocket](./aperocket/brief.md) | $36.31K | bsc | 17 | 13/17 (76%) | 0.0% | 0.0% (-) | 0 | stale | 💀 dead | - |
 | [apex-protocol](./apex-protocol/brief.md) | $35.17M | 4 | 46 | 32/46 (70%) | 0.0% | 0.0% (-) | 0 | stale | ✅ active | - |
 | [apollodao](./apollodao/brief.md) | $6.52K | - | 0 | - | 0.0% | 0.0% (-) | 0 | stale | ❓ unknown | - |
 | [aptin-finance](./aptin-finance/brief.md) | $13.98M | - | 0 | - | 0.0% | 0.0% (-) | 0 | unknown | ❓ unknown | - |
@@ -1423,5 +1423,5 @@ Each project directory contains:
 | [zoth](./zoth/brief.md) | $2.20M | 5 | 14 | 9/14 (64%) | 33.3% | 0.0% (-) | 4 | fresh | ✅ active | - |
 | [zyberswap](./zyberswap/brief.md) | $65.56K | arbitrum | 9 | 8/9 (89%) | 37.5% | 0.0% (-) | 1 | stale | 💀 dead | - |
 
-_Generated: 2026-06-22T13:36:21.427Z_
+_Generated: 2026-06-24T03:23:53.240Z_
 _Projects: 1411_

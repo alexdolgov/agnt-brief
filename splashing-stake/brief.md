@@ -4,51 +4,54 @@
 
 - Project: Splashing Stake (`splashing-stake`)
 - Website: [https://www.splashing.xyz/](https://www.splashing.xyz/)
-- Lifecycle: active (Tier 0, 78.9% below peak)
-- Generated: 2026-06-18T17:03:24.447Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-748f
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:58.524Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-ae05
 - Chains: sei
-- Contract surface: 5 unique implementations (7 raw deployments)
-- DeFi Llama TVL: $4,309,361.21
+- Contract surface: 12 unique implementations (22 raw deployments)
+- DeFi Llama TVL: $4,908,799.44
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Splashing Stake is a liquid staking protocol on Sei that allows users to stake assets and receive liquid staking tokens in return, enabling them to earn staking rewards while maintaining liquidity.
+Liquid Staking. Structurally: 2 project-authored contract(s) across 1 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The Staking contract relies on StakingStorage for persistent data and OrderQueue for managing staking/unstaking requests, all deployed behind ERC1967Proxy upgradeable proxies.
+The protocol comprises 3 functional families. Contracts are linked by 1 cross-contract reference(s). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 24; live-surface contracts included: 7 (7 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 17 singleton, 0 uninitialized.
-- Deployment units: 3/10 live.
+- Indexed contracts: 22; live-surface contracts included: 20 (16 live, 4 unknown).
+- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/4 (75.0%)
-- Verified + Unaudited implementations: 1
+- Coverage of deployed-live implementations: 3/9 (33.3%)
+- Deployed-live implementations: 11 of 12 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 3/11
+- Verified + Unaudited implementations: 8
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 5
-- Raw deployments: 7
-- Audits discovered: 1
+- Unique implementations: 12
+- Raw deployments: 22
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2025-07 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2025-07 (aging)
+- Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 3 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| PeckShield | Tier 2 | 3 | 75.0% | 2025-07 |
+| PeckShield | Tier 2 | 3 | 27.3% | 2025-07 |
 
 ## Contract Surface
 
@@ -56,15 +59,22 @@ The Staking contract relies on StakingStorage for persistent data and OrderQueue
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| OrderQueue | unknown | sei | unit-38354 (2 proxies) | 2 deployments: sei [`0x88d7ff...c411fe`](./contracts/sei-1329/0x88d7fff259ffac098c66d0d92284a3dfb2c411fe/); sei `0xc45c86...1b4e64` | ✅ Audited |
+| OrderQueue | unknown | sei | n/a | 2 deployments: sei [`0x88d7ff...c411fe`](./contracts/sei-1329/0x88d7fff259ffac098c66d0d92284a3dfb2c411fe/); sei `0xc45c86...1b4e64` | ✅ Audited |
 | Staking | unknown | sei | n/a | [`0xe04262...8f0d6d`](./contracts/sei-1329/0xe042621757737f0d5654a33d24343af7268f0d6d/) | ✅ Audited |
-| StakingStorage | unknown | sei | unit-38356 (2 proxies) | 2 deployments: sei [`0x910d6a...3c4c9d`](./contracts/sei-1329/0x910d6afa46a4729a4bda2e02ca8f24bdf73c4c9d/); sei `0xb54e9b...a7c50b` | ✅ Audited |
+| StakingStorage | unknown | sei | n/a | 2 deployments: sei [`0x910d6a...3c4c9d`](./contracts/sei-1329/0x910d6afa46a4729a4bda2e02ca8f24bdf73c4c9d/); sei `0xb54e9b...a7c50b` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (8)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC1967Proxy | proxy | sei | unit-38350 | [`0x0b7882...8d4433`](./contracts/sei-1329/0x0b7882049aa9c2f9255dc87c01d4e230248d4433/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | sei | n/a | 3 deployments: sei [`0x03cc83...e5f9f9`](./contracts/sei-1329/0x03cc83d643ff38a4c16ddd3cf647515c76e5f9f9/); sei `0x204d44...0b1d12`; sei `0x67dc9a...1cf093` | ⚠️ Unaudited |
+| ERC1967Proxy | proxy | sei | n/a | [`0x0b7882...8d4433`](./contracts/sei-1329/0x0b7882049aa9c2f9255dc87c01d4e230248d4433/) | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | sei | n/a | 3 deployments: sei [`0x0ddb96...3614c8`](./contracts/sei-1329/0x0ddb9616b8e436510fcdf14ce0b083f2503614c8/); sei `0x223745...5b701b`; sei `0xae30a9...bf9344` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | sei | n/a | 2 deployments: sei [`0x3b093d...705cd1`](./contracts/sei-1329/0x3b093d6b9b113f58716c1539481713aec9705cd1/); sei `0x97715b...1a3218` | ⚠️ Unaudited |
+| ERC1967Proxy | unknown | sei | n/a | [`0xfeeb53...f1a8f7`](./contracts/sei-1329/0xfeeb5318cc97f219ef7050d75d325e4ec1f1a8f7/) | ⚠️ Unaudited |
+| OrderQueue | unknown | sei | n/a | 3 deployments: sei [`0x0a4c54...e28ed2`](./contracts/sei-1329/0x0a4c5483111a44fc448111a552d2f87139e28ed2/); sei `0x8f62b4...31b54d`; sei `0xcd628b...cd8931` | ⚠️ Unaudited |
+| OrderQueue | unknown | sei | n/a | 2 deployments: sei [`0x4ed643...0ae090`](./contracts/sei-1329/0x4ed6431003e197121629936068c15c1bca0ae090/); sei `0xdeba5c...e34198` | ⚠️ Unaudited |
+| Staking | unknown | sei | n/a | [`0x151669...f46bf4`](./contracts/sei-1329/0x151669b501b561a52ad95574603ad52546f46bf4/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,21 +100,25 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Rendered PDF capture](https://2818732251-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FniaC1zjJFz2QDJGHFkFf%2Fuploads%2FAWE0jZ4hBKIuXyRpFtSk%2FPeckShield-Audit-Report-SplashingStake-v1.0.pdf) | PeckShield | Audit | 2025-07 | fresh | Direct | contract_name | 5 | high |
+| [spaces/niaC1zjJFz2QDJGHFkFf/uploads/AWE0jZ4hBKIuXyRpFtSk/PeckShield-Audit-Report-SplashingStake-v1.0.pdf](https://2818732251-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FniaC1zjJFz2QDJGHFkFf%2Fuploads%2FAWE0jZ4hBKIuXyRpFtSk%2FPeckShield-Audit-Report-SplashingStake-v1.0.pdf) | PeckShield | Audit | 2025-07 | aging | Direct | contract_name | 3 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| sei | [`0x0a4c54...e28ed2`](./contracts/sei-1329/0x0a4c5483111a44fc448111a552d2f87139e28ed2/) | OrderQueue | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sei | [`0x4ed643...0ae090`](./contracts/sei-1329/0x4ed6431003e197121629936068c15c1bca0ae090/) | OrderQueue | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sei | [`0x151669...f46bf4`](./contracts/sei-1329/0x151669b501b561a52ad95574603ad52546f46bf4/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 6 |
 | upstream | 0 |
-| standard_library | 3 |
+| standard_library | 5 |
 | needs_review | 1 |
 
 ## Scope Matching Notes
@@ -113,7 +127,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=11
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=3
 
 Fork inheritance lineage and inherited audits are included when available.

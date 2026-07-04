@@ -1,0 +1,961 @@
+{
+  "schema_version": "2.0",
+  "project_key": "alongside",
+  "generated_at": "2026-07-04T14:52:59.804Z",
+  "pipeline_run_id": "v2-2026-07-03-89943a",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 15,
+    "total_addresses": 15,
+    "unique_implementations": 15,
+    "total_deployments": 15,
+    "audited_contracts": 9,
+    "unaudited_contracts": 6,
+    "contracts_verified_audited": 9,
+    "contracts_verified_unaudited": 6,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 69.2,
+    "total_audits": 4,
+    "direct_audits": 4,
+    "inherited_audits": 0,
+    "scoreable_audits": 4,
+    "dl_tvl_usd": 355871.91423,
+    "tvl_usd": 355871.91423,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": null,
+    "chains": [
+      "ethereum"
+    ],
+    "tier1_coverage_pct": 46.2,
+    "tier1_auditors": [
+      "Spearbit"
+    ],
+    "latest_audit_date": "2023-11",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 4,
+      "unknown": 0
+    },
+    "live_implementations": 15,
+    "live_verified_implementations": 13,
+    "live_audited_implementations": 9,
+    "live_verified_third_party_excluded": 2,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 9,
+      "diverged": 0,
+      "match_unverified": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Indexes. Structurally: 15 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 2 functional families. Its contracts share 3 common project-authored base contract(s) (contextupgradeable, ownable2step, erc165). Dominant framework: openzeppelin.",
+    "product_family_count": 2,
+    "total_contracts_indexed": 15,
+    "live_contracts": 15,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 15,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0daf7e851f6054085432229150c1706988abc562",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ActiveBounty",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ActiveBounty",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0daf7e851f6054085432229150c1706988abc562",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-19410",
+        "audit-19411"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-10-30 07:49:23+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x774045b30e6fc5dfe73bf386e8845ca1472fb45e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AlongsideGovernor",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AlongsideGovernor",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x774045b30e6fc5dfe73bf386e8845ca1472fb45e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-19411"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-26 23:53:59+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x27c2b9fd547ead2c05c305bee2399a55811257c2",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AstETH",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AstETH",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x27c2b9fd547ead2c05c305bee2399a55811257c2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-12-01 01:19:11+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0d44f856e1a7c70e35c54261c3f07dbfbdca4857",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Controller",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xa6e966ed99b29c803eb953b179b5eefb2468af4c",
+      "impl_name": "Controller",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0d44f856e1a7c70e35c54261c3f07dbfbdca4857",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-19412",
+        "audit-19413"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-10-14 00:53:47+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x22c6b4b20f65ed6c619a571015926170674007ff",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Factory",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Factory",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x22c6b4b20f65ed6c619a571015926170674007ff",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-19412",
+        "audit-19413"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-10-14 00:53:47+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6c72b70f9bd342f0ddb66e147ae7412cd7abaabe",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Fulfiller",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Fulfiller",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6c72b70f9bd342f0ddb66e147ae7412cd7abaabe",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-12-15 00:40:47+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x775715d96cd3b3586728b7420a13ec74f5dc9e8f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "IndexToken",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "IndexToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x775715d96cd3b3586728b7420a13ec74f5dc9e8f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-19410",
+        "audit-19411",
+        "audit-19412",
+        "audit-19413"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-26 23:55:47+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x366a647de921608bee3987025d23f12263da6884",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "InvokeableBounty",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "InvokeableBounty",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x366a647de921608bee3987025d23f12263da6884",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-19410"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-26 23:55:47+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x58ad9d36afac51206672f855bf7e76037c5f5198",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Issuance",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Issuance",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x58ad9d36afac51206672f855bf7e76037c5f5198",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-19410",
+        "audit-19411"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-26 23:55:47+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc89ded85ce03ecc435bdef6f8851c1001ec16367",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Members",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Members",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc89ded85ce03ecc435bdef6f8851c1001ec16367",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-19412",
+        "audit-19413"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-10-14 00:53:47+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x998930c351ecb4918a5c5238b62d5277fe45ab9b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ProxyAdmin",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "OpenZeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x998930c351ecb4918a5c5238b62d5277fe45ab9b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2022-10-14 00:53:47+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe3be63e1b959c152212ce1dd45d0d2f749eb227c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Quoter",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Quoter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe3be63e1b959c152212ce1dd45d0d2f749eb227c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-10-30 07:49:23+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4c362fab50bc81f0f58ef2da6b6e10b55fc1d478",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TimelockController",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "OpenZeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TimelockController",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4c362fab50bc81f0f58ef2da6b6e10b55fc1d478",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2023-10-30 07:49:23+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5056063cad88e36b4de019752280f395640bbaca",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UserRedemption",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UserRedemption",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5056063cad88e36b4de019752280f395640bbaca",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-11-04 03:35:11+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd62a80368adf5919f70193d15dcbd5c77eaf55ac",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Vault",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Vault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd62a80368adf5919f70193d15dcbd5c77eaf55ac",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-19410",
+        "audit-19411"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-26 23:55:47+03",
+      "deploy_coverage_basis": "code_matched"
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 19410,
+      "audit_key": "audit-19410",
+      "report_name": "Cantina-2.pdf",
+      "report_url": "https://github.com/Alongside-Finance/Audits/blob/main/Cantina-2.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ActiveBounty",
+        "ActiveBounty.t.sol",
+        "Bounty.sol",
+        "Config.sol",
+        "CoreDeploy.s.sol",
+        "IndexToken.sol",
+        "InvokeableBounty",
+        "Issuance.sol",
+        "Vault.sol"
+      ],
+      "matched_contracts": 5,
+      "scope_note": null,
+      "extraction_confidence": "medium",
+      "scope_section_found": false,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 19410,
+          "report_url": "https://github.com/Alongside-Finance/Audits/blob/main/Cantina-2.pdf"
+        },
+        {
+          "audit_id": 19414,
+          "report_url": "https://github.com/alongside-finance/audits/blob/main/Cantina-2.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 19411,
+      "audit_key": "audit-19411",
+      "report_name": "Cantina.pdf",
+      "report_url": "https://github.com/Alongside-Finance/Audits/blob/main/Cantina.pdf",
+      "auditor": "Spearbit",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ActiveBounty",
+        "Bounty",
+        "Config",
+        "Governor",
+        "IIndexToken",
+        "IVault",
+        "IndexToken",
+        "Issuance",
+        "Multiplier",
+        "ProposableOwnable",
+        "VArray",
+        "Vault"
+      ],
+      "matched_contracts": 5,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 19411,
+          "report_url": "https://github.com/Alongside-Finance/Audits/blob/main/Cantina.pdf"
+        },
+        {
+          "audit_id": 19415,
+          "report_url": "https://github.com/alongside-finance/audits/blob/main/Cantina.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 19412,
+      "audit_key": "audit-19412",
+      "report_name": "SigmaPrime_Sept_28.pdf",
+      "report_url": "https://github.com/Alongside-Finance/Audits/blob/main/SigmaPrime_Sept_28.pdf",
+      "auditor": "Sigma Prime",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Controller",
+        "DeployAMKT",
+        "DeployAMKTPartTwo",
+        "Factory",
+        "IndexToken",
+        "IndexedMapping",
+        "Members",
+        "OTC",
+        "ProposableOwnable",
+        "ProposableOwnableUpgradeable"
+      ],
+      "matched_contracts": 4,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 19412,
+          "report_url": "https://github.com/Alongside-Finance/Audits/blob/main/SigmaPrime_Sept_28.pdf"
+        },
+        {
+          "audit_id": 19416,
+          "report_url": "https://github.com/alongside-finance/audits/blob/main/SigmaPrime_Sept_28.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 19413,
+      "audit_key": "audit-19413",
+      "report_name": "Solidified_April_22.pdf",
+      "report_url": "https://github.com/Alongside-Finance/Audits/blob/main/Solidified_April_22.pdf",
+      "auditor": "Solidified",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-05",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Controller",
+        "ControllerInterface",
+        "Factory",
+        "FactoryInterface",
+        "FactoryV2",
+        "IndexToken",
+        "IndexedMapping",
+        "Members",
+        "MembersInterface"
+      ],
+      "matched_contracts": 4,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 19413,
+          "report_url": "https://github.com/Alongside-Finance/Audits/blob/main/Solidified_April_22.pdf"
+        },
+        {
+          "audit_id": 19417,
+          "report_url": "https://github.com/alongside-finance/audits/blob/main/Solidified_April_22.pdf"
+        }
+      ]
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Spearbit",
+      "tier": 1,
+      "contracts_covered": 6,
+      "coverage_pct": 40,
+      "latest_audit": "2023-11"
+    },
+    {
+      "auditor": "Sigma Prime",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 26.7,
+      "latest_audit": "2022-09"
+    },
+    {
+      "auditor": "Solidified",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 26.7,
+      "latest_audit": "2022-05"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x27c2b9fd547ead2c05c305bee2399a55811257c2",
+      "name": "AstETH",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6c72b70f9bd342f0ddb66e147ae7412cd7abaabe",
+      "name": "Fulfiller",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe3be63e1b959c152212ce1dd45d0d2f749eb227c",
+      "name": "Quoter",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5056063cad88e36b4de019752280f395640bbaca",
+      "name": "UserRedemption",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 13,
+    "upstream": 0,
+    "standard_library": 2,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {
+      "extraction_exact": 36
+    },
+    "extraction_confidence_counts": {
+      "high": 3,
+      "medium": 1
+    },
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

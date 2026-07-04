@@ -1,79 +1,72 @@
 {
   "schema_version": "2.0",
   "project_key": "iaero-protocol",
-  "generated_at": "2026-06-19T06:14:22.410Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "iaero-protocol",
-    "tier": 0,
-    "peak_tvl": 2339913,
-    "peak_date": "2026-05-11T00:00:00.000Z",
-    "tvl_30d_ago": 1840585,
-    "tvl_90d_ago": 1170762,
-    "tvl_current": 1999278,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 2209174,
-    "change_30d_pct": 8.621878370192086,
-    "change_90d_pct": 70.76724389756414,
-    "days_since_peak": 13,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 14.557592525875961
-  },
+  "generated_at": "2026-07-04T14:53:21.842Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 31,
     "total_addresses": 48,
     "unique_implementations": 31,
     "total_deployments": 48,
-    "audited_contracts": 0,
-    "unaudited_contracts": 29,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 29,
+    "audited_contracts": 2,
+    "unaudited_contracts": 27,
+    "contracts_verified_audited": 2,
+    "contracts_verified_unaudited": 27,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 2,
-    "coverage_pct": 0,
-    "total_audits": 0,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 1559464.70213,
-    "tvl_usd": 2727313.9594903076,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "base": 2727313.96
-    },
-    "asd_usd": 2727313.9594903076,
+    "coverage_pct": 7.1,
+    "total_audits": 8,
+    "direct_audits": 0,
+    "inherited_audits": 8,
+    "scoreable_audits": 8,
+    "dl_tvl_usd": 2228897.26691,
+    "tvl_usd": 2228897.26691,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://app.iaero.finance/",
     "chains": [
       "base"
     ],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "tier1_coverage_pct": 7.1,
+    "tier1_auditors": [
+      "Trail of Bits"
+    ],
+    "latest_audit_date": "2025-10",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
-      "aging": 0,
-      "stale": 0,
+      "fresh": 1,
+      "aging": 1,
+      "stale": 6,
       "unknown": 0
+    },
+    "live_implementations": 29,
+    "live_verified_implementations": 28,
+    "live_audited_implementations": 2,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 2,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "iAero Protocol is a liquid staking and yield optimization platform on Base that unlocks liquidity from locked AERO (veAERO) positions. It issues liquid staking tokens like stiAERO and iAERO, manages permanent-lock vaults, and distributes rewards through a system of staking contracts and harvesters.",
-    "relationship_narrative": "The Liquid Staking & Vaults family deposits AERO into Aerodrome's VotingEscrow via the Aerodrome Integration family, earning rewards that are harvested by RewardsHarvesterV2 and distributed to stakers through the Staking & Rewards Distribution family. The Treasury multisig controls key parameters and holds protocol reserves.",
+    "project_purpose": "Liquid Staking. Structurally: 40 project-authored contract(s) across 1 chain(s); 6 ERC20 tokens, 1 ERC721 NFT; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 7 functional families. Its contracts share 4 common project-authored base contract(s) (erc20permit, eip712, erc2771context). Dominant framework: openzeppelin.",
     "product_family_count": 7,
-    "total_contracts_indexed": 65,
-    "live_contracts": 48,
-    "inactive_contracts": 15,
-    "singleton_contracts": 2,
+    "total_contracts_indexed": 51,
+    "live_contracts": 44,
+    "inactive_contracts": 3,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 3,
-    "live_deployment_units": 2,
-    "dependencies_extracted": 25,
-    "unverified_dependencies": 2,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "unknown_contracts": 4,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 31,
@@ -81,126 +74,20 @@
     "is_skeletal": false
   },
   "fork_lineage": {
-    "entries": [],
-    "inherited_audit_count": 0
+    "entries": [
+      {
+        "fork_id": 40,
+        "relationship_type": "code_fork",
+        "audit_inheritance_mode": "scoped_inherit",
+        "parent_project_key": "folks-finance",
+        "parent_project_name": "Folks Finance",
+        "parent_github_url": null,
+        "inherited_audits": 8
+      }
+    ],
+    "inherited_audit_count": 8
   },
   "contracts": [
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x81034fb34009115f215f5d5f564aac9ffa46a1dc",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "iAEROToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Unlock Liquidity from Your veAERO",
-      "tvl_usd": 1917731.5473289709,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "iAEROToken",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x81034fb34009115f215f5d5f564aac9ffa46a1dc",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1917731.5473289709,
-          "is_audited": false
-        },
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0xb2d6326eaec90ccbc9ce9b5d4a9367b307f8f4c9",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x7ee8964160126081cebc443a42482e95e393e6a8",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "LIQToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Security Audit Report: LIQToken",
-      "tvl_usd": 799935.9893488782,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "LIQToken",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x7ee8964160126081cebc443a42482e95e393e6a8",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 799935.9893488782,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x08d49da370ecffbc4c6fdd2ae82b2d6ae238affd",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "Pool",
-      "role": "core_logic",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 9646.422812458386,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Pool",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x08d49da370ecffbc4c6fdd2ae82b2d6ae238affd",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 9646.422812458386,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 8453,
       "chain_name": "base",
@@ -209,9 +96,9 @@
       "deployment_unit_proxy_count": null,
       "name": "Aero",
       "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "aerodrome",
-      "product_line": "Aerodrome Integrations",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -234,7 +121,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-28 05:40:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -246,7 +137,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Staking &amp; Rewards",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -269,19 +160,23 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-06 03:41:17+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
       "chain_name": "base",
       "address": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
-      "deployment_unit": "unit-27386",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "FiatTokenV2_2",
       "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "circle",
-      "product_line": "Unlock Liquidity from Your veAERO",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0x2ce6311ddae708829bc0784c967b7d77d19fd779",
@@ -291,8 +186,8 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
-          "deployment_unit": "unit-27386",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -304,7 +199,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-18 21:36:29+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -314,7 +213,7 @@
       "deployment_unit_proxy_count": null,
       "name": "GaugeFactory",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -339,19 +238,23 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-28 05:41:21+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
       "chain_name": "base",
       "address": "0x1039cb48254a3150fc604d4b9ea08f66f4739d37",
-      "deployment_unit": "unit-27384",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "GnosisSafeL2",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
-      "product_line": "Treasury",
+      "origin_provider": "Gnosis Safe",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0x3e5c63644e683549055b9be8653de26e0b4cd36e",
@@ -361,8 +264,8 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x1039cb48254a3150fc604d4b9ea08f66f4739d37",
-          "deployment_unit": "unit-27384",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -374,7 +277,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-08-26 01:36:57+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -386,7 +293,7 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Staking &amp; Rewards",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -409,7 +316,61 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-21 21:19:27+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x81034fb34009115f215f5d5f564aac9ffa46a1dc",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "iAEROToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "iAEROToken",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x81034fb34009115f215f5d5f564aac9ffa46a1dc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb2d6326eaec90ccbc9ce9b5d4a9367b307f8f4c9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-26 01:42:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -421,7 +382,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Staking &amp; Rewards",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -444,7 +405,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-29 00:52:29+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -456,7 +421,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Staking &amp; Rewards",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -479,7 +444,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-15 19:16:39+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x7ee8964160126081cebc443a42482e95e393e6a8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LIQToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LIQToken",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7ee8964160126081cebc443a42482e95e393e6a8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-26 01:47:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -514,7 +522,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-28 05:43:01+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -582,7 +594,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-29 01:27:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -594,7 +610,7 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Staking &amp; Rewards",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -639,7 +655,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-10 00:26:19+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x08d49da370ecffbc4c6fdd2ae82b2d6ae238affd",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Pool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Pool",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x08d49da370ecffbc4c6fdd2ae82b2d6ae238affd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-27 16:37:37+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -674,7 +733,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-28 05:42:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -742,7 +805,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-05 19:00:07+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -754,7 +821,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Staking &amp; Rewards",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -777,7 +844,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-10 01:44:33+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -789,7 +860,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Aerodrome Integrations",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -812,7 +883,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-28 01:38:49+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -847,7 +922,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-24 23:04:37+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -857,9 +936,9 @@
       "deployment_unit_proxy_count": null,
       "name": "Router",
       "role": "adapter",
-      "origin_kind": "upstream",
-      "origin_provider": "aerodrome",
-      "product_line": "Aerodrome Integrations",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -882,7 +961,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-28 05:42:53+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -917,7 +1000,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-26 11:37:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -952,7 +1039,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-06 00:37:25+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -964,7 +1055,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Core Tokens",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -987,7 +1078,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-06 03:41:17+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -1055,7 +1150,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-26 19:32:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -1067,7 +1166,7 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Staking &amp; Rewards",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1090,7 +1189,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-19 23:34:29+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -1100,7 +1203,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1125,7 +1228,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-25 23:26:07+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -1160,7 +1267,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-28 05:42:03+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -1170,9 +1281,9 @@
       "deployment_unit_proxy_count": null,
       "name": "Voter",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "aerodrome",
-      "product_line": "Aerodrome Integrations",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1187,15 +1298,28 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-18995",
+        "audit-18996",
+        "audit-18997",
+        "audit-18998",
+        "audit-18999",
+        "audit-19000",
+        "audit-19001",
+        "audit-19002"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-28 05:42:29+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 8453,
@@ -1205,9 +1329,9 @@
       "deployment_unit_proxy_count": null,
       "name": "VotingEscrow",
       "role": "operational_periphery",
-      "origin_kind": "upstream",
-      "origin_provider": "aerodrome",
-      "product_line": "Aerodrome Integrations",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1222,15 +1346,28 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-18995",
+        "audit-18996",
+        "audit-18997",
+        "audit-18998",
+        "audit-18999",
+        "audit-19000",
+        "audit-19001",
+        "audit-19002"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-28 05:41:55+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 8453,
@@ -1298,7 +1435,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-29 01:32:33+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -1355,31 +1496,285 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-10 00:59:03+03",
+      "deploy_coverage_basis": null
     }
   ],
-  "audits": [],
-  "auditor_coverage": [],
+  "audits": [
+    {
+      "audit_id": 18995,
+      "audit_key": "audit-18995",
+      "report_name": "Adevar - Algorand Wormhole NTT - October 2025.pdf",
+      "report_url": "https://github.com/Folks-Finance/audits/blob/main/Adevar%20-%20Algorand%20Wormhole%20NTT%20-%20October%202025.pdf",
+      "auditor": "Adevar",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": true,
+      "inherited_from_project_key": "folks-finance",
+      "inherited_from_project_name": "Folks Finance",
+      "inherited_via_fork_id": 40,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "Voter",
+        "VotingEscrow"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "inherited",
+      "extracted_names": [],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 18996,
+      "audit_key": "audit-18996",
+      "report_name": "Coinspect - Audit of Liquid Staking - August 2024.pdf",
+      "report_url": "https://github.com/Folks-Finance/audits/blob/main/Coinspect%20-%20Audit%20of%20Liquid%20Staking%20-%20August%202024.pdf",
+      "auditor": "Coinspect",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-08",
+      "is_inherited": true,
+      "inherited_from_project_key": "folks-finance",
+      "inherited_from_project_name": "Folks Finance",
+      "inherited_via_fork_id": 40,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "Voter",
+        "VotingEscrow"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "inherited",
+      "extracted_names": [],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 18997,
+      "audit_key": "audit-18997",
+      "report_name": "OtterSec - Audit of XChain Lending - May 2024.pdf",
+      "report_url": "https://github.com/Folks-Finance/audits/blob/main/OtterSec%20-%20Audit%20of%20XChain%20Lending%20-%20May%202024.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-05",
+      "is_inherited": true,
+      "inherited_from_project_key": "folks-finance",
+      "inherited_from_project_name": "Folks Finance",
+      "inherited_via_fork_id": 40,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "Voter",
+        "VotingEscrow"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "inherited",
+      "extracted_names": [],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 18998,
+      "audit_key": "audit-18998",
+      "report_name": "Vantage Point - Smart Contract Audit of xChain Liquid Governance - June 2023.pdf",
+      "report_url": "https://github.com/Folks-Finance/audits/blob/main/Vantage%20Point%20-%20Smart%20Contract%20Audit%20of%20xChain%20Liquid%20Governance%20-%20June%202023.pdf",
+      "auditor": "unknown",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-06",
+      "is_inherited": true,
+      "inherited_from_project_key": "folks-finance",
+      "inherited_from_project_name": "Folks Finance",
+      "inherited_via_fork_id": 40,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "Voter",
+        "VotingEscrow"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "inherited",
+      "extracted_names": [],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 18999,
+      "audit_key": "audit-18999",
+      "report_name": "Vantage Point - Revision Audit of Liquid Governance V3 - March 2023.pdf",
+      "report_url": "https://github.com/Folks-Finance/audits/blob/main/Vantage%20Point%20-%20Revision%20Audit%20of%20Liquid%20Governance%20V3%20-%20March%202023.pdf",
+      "auditor": "Vantage Point",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-03",
+      "is_inherited": true,
+      "inherited_from_project_key": "folks-finance",
+      "inherited_from_project_name": "Folks Finance",
+      "inherited_via_fork_id": 40,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "Voter",
+        "VotingEscrow"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "inherited",
+      "extracted_names": [],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 19000,
+      "audit_key": "audit-19000",
+      "report_name": "Certik - Smart Contract Audit - December 2022.pdf",
+      "report_url": "https://github.com/Folks-Finance/audits/blob/main/Certik%20-%20Smart%20Contract%20Audit%20-%20December%202022.pdf",
+      "auditor": "CertiK",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-12",
+      "is_inherited": true,
+      "inherited_from_project_key": "folks-finance",
+      "inherited_from_project_name": "Folks Finance",
+      "inherited_via_fork_id": 40,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "Voter",
+        "VotingEscrow"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "inherited",
+      "extracted_names": [],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 19001,
+      "audit_key": "audit-19001",
+      "report_name": "Trail of Bits - Smart Contract Audit - December 2022.pdf",
+      "report_url": "https://github.com/Folks-Finance/audits/blob/main/Trail%20of%20Bits%20-%20Smart%20Contract%20Audit%20-%20December%202022.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-12",
+      "is_inherited": true,
+      "inherited_from_project_key": "folks-finance",
+      "inherited_from_project_name": "Folks Finance",
+      "inherited_via_fork_id": 40,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "Voter",
+        "VotingEscrow"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "inherited",
+      "extracted_names": [],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 19002,
+      "audit_key": "audit-19002",
+      "report_name": "Vantage Point - Smart Contract Audit - December 2022.pdf",
+      "report_url": "https://github.com/Folks-Finance/audits/blob/main/Vantage%20Point%20-%20Smart%20Contract%20Audit%20-%20December%202022.pdf",
+      "auditor": "Vantage Point",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-12",
+      "is_inherited": true,
+      "inherited_from_project_key": "folks-finance",
+      "inherited_from_project_name": "Folks Finance",
+      "inherited_via_fork_id": 40,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "Voter",
+        "VotingEscrow"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "inherited",
+      "extracted_names": [],
+      "matched_contracts": 2,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Adevar",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 6.9,
+      "latest_audit": "2025-10"
+    },
+    {
+      "auditor": "CertiK",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 6.9,
+      "latest_audit": "2022-12"
+    },
+    {
+      "auditor": "Coinspect",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 6.9,
+      "latest_audit": "2024-08"
+    },
+    {
+      "auditor": "Trail of Bits",
+      "tier": 1,
+      "contracts_covered": 2,
+      "coverage_pct": 6.9,
+      "latest_audit": "2022-12"
+    },
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 6.9,
+      "latest_audit": "2024-05"
+    },
+    {
+      "auditor": "Vantage Point",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 6.9,
+      "latest_audit": "2023-03"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0x81034fb34009115f215f5d5f564aac9ffa46a1dc",
-      "name": "iAEROToken",
+      "address": "0x940181a94a35a4569e4529a3cdfb74e38fd98631",
+      "name": "Aero",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 1917731.5473289709,
-      "risk_note": "Verified native implementation with $1,917,731.55 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x7ee8964160126081cebc443a42482e95e393e6a8",
-      "name": "LIQToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 799935.9893488782,
-      "risk_note": "Verified native implementation with $799,935.99 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 8453,
@@ -1394,9 +1789,39 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
+      "address": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+      "name": "FiatTokenV2_2",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x35f35ca5b132cadf2916bab57639128eac5bbcb5",
+      "name": "GaugeFactory",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
       "address": "0xfe5c929677d97723dc822c86c93c7e2d1b59c774",
       "name": "iAEROAutoUSDCVault",
       "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x81034fb34009115f215f5d5f564aac9ffa46a1dc",
+      "name": "iAEROToken",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1417,6 +1842,16 @@
       "address": "0xb81efc6be6622bf4086566210a6ad134cd0cdda4",
       "name": "LIQStakingDistributor",
       "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x7ee8964160126081cebc443a42482e95e393e6a8",
+      "name": "LIQToken",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1446,6 +1881,16 @@
       "chain_name": "base",
       "address": "0x180dab53968e599dd43cf431e27cb01aa5c37909",
       "name": "PermalockVault_V5",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x08d49da370ecffbc4c6fdd2ae82b2d6ae238affd",
+      "name": "Pool",
       "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -1497,6 +1942,16 @@
       "address": "0xd3e32b22da6bf601a5917ecd344a7ec46bca072c",
       "name": "RewardTokenRegistry",
       "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xcf77a3ba9a5ca399b7c97c74d54e5b1beb874e43",
+      "name": "Router",
+      "role": "adapter",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1573,13 +2028,15 @@
     }
   ],
   "origin_summary": {
-    "native": 22,
-    "upstream": 5,
+    "native": 28,
+    "upstream": 0,
     "standard_library": 1,
-    "needs_review": 3
+    "needs_review": 2
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
+    "match_method_counts": {
+      "inherited_name_remap": 16
+    },
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

@@ -5,11 +5,11 @@
 - Project: GooseFX (`goosefx`)
 - Website: [https://goosefx.io](https://goosefx.io)
 - Lifecycle: unknown
-- Generated: 2026-06-13T11:03:33.633Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
+- Generated: 2026-07-03T21:05:56.774Z
+- Pipeline run: brief-restore-2026-07
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,543.00
+- DeFi Llama TVL: $1,794.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -22,19 +22,30 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 0 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 0
 - Raw deployments: 0
-- Audits discovered: 3
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-10 (aging)
-- Staleness: 0 fresh, 1 aging, 1 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 1 aging, 1 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -73,7 +84,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://safefiles.defiyield.info/safe/files/audit/pdf/GooseFX_Swap_Program_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2021 | stale | Direct | n/a | 0 | n/a |
+| [GooseFX_Swap_Program_Security_Audit_Report_Halborn_Final.pdf](https://safefiles.defiyield.info/safe/files/audit/pdf/GooseFX_Swap_Program_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2021-01 | stale | Direct | n/a | 0 | n/a |
 | [goosefx_ssl-audit-public.pdf](https://github.com/GooseFX1/gfx-swap/blob/master/audit/goosefx_ssl-audit-public.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [GooseFX-GammaSwap-Oct-2024-OffsideLabs.pdf](https://github.com/GooseFX1/gamma-swap/blob/master/.audit/11-05-2024_OffsideLabs/GooseFX-GammaSwap-Oct-2024-OffsideLabs.pdf) | OffsideLabs | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
 
@@ -103,7 +114,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [13204] DL audit link
+- [13204] GooseFX_Swap_Program_Security_Audit_Report_Halborn_Final.pdf
 - [13205] goosefx_ssl-audit-public.pdf
 - [13206] GooseFX-GammaSwap-Oct-2024-OffsideLabs.pdf
 

@@ -1,50 +1,50 @@
 # Agentic Audit Brief: Rook
 
-⚠️ Lifecycle status: DEAD - TVL changed 13.0% over 90 days
-
 ## Project Overview
 
 - Project: Rook (`rook`)
-- Lifecycle: dead (Tier 0, 99.8% below peak)
-- Generated: 2026-06-17T07:00:45.541Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:53.715Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
 - Chains: ethereum
-- Contract surface: 5 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $1,449,666.24
-- On-chain TVL (included contracts): $68,165.57
-- TVL by chain: Ethereum $68,165.57
+- Contract surface: 14 unique implementations (14 raw deployments)
+- DeFi Llama TVL: $1,219,064.47
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Rook, formerly KeeperDAO, is an open settlement protocol designed to coordinate MEV-aware order flow and liquidity between traders, keepers, and protocols. Rook should not be described as the issuer or bridge for renBTC, renBCH, or renZEC; any Ren assets should be treated only as external integrations unless Rook ownership or control is independently proven.
+Dexs. Structurally: 66 project-authored contract(s) across 1 chain(s); 11 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The Rook family shares a common token logic implementation (RenERC20LogicV1) for its bridged assets, and the Unitroller contract likely serves as a comptroller for the liquidity pools, managing risk and incentives. The HidingVaultNFTProxy interacts with the liquidity pools to manage user positions.
+The protocol comprises 3 functional families. Its contracts share 16 common project-authored base contract(s) (initializableadminupgradeabilityproxy, baseadminupgradeabilityproxy, baseupgradeabilityproxy). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 172; live-surface contracts included: 5 (5 live, 0 unknown).
-- Excluded by liveness: 137 inactive, 30 singleton, 0 uninitialized.
-- Deployment units: 0/11 live.
+- Indexed contracts: 165; live-surface contracts included: 14 (6 live, 8 unknown).
+- Excluded by liveness: 151 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 12/62.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/5 (0.0%)
-- Verified + Unaudited implementations: 5
+- Coverage of deployed-live implementations: 0/6 (0.0%)
+- Deployed-live implementations: 6 of 14 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/6
+- Verified + Unaudited implementations: 6
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 5
-- Raw deployments: 5
-- Audits discovered: 0
+- Unverified implementations: 8
+- Unique implementations: 14
+- Raw deployments: 14
+- Audits discovered: 7 (7 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $68,165.57
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- ASD (verified + unaudited TVL): n/a
+- Latest audit: 2021-01 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 3 stale, 4 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $68,165.57 represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -56,14 +56,15 @@ The Rook family shares a common token logic implementation (RenERC20LogicV1) for
 
 - None
 
-### ⚠️ Verified + Unaudited (5)
+### ⚠️ Verified + Unaudited (6)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| RookToken | token | ethereum | n/a | [`0xfa5047...313d4a`](./contracts/ethereum-1/0xfa5047c9c78b8877af97bdcb85db743fd7313d4a/) | ⚠️ Unaudited |
+| BorrowerProxy | unknown | ethereum | n/a | [`0xde9274...ea8002`](./contracts/ethereum-1/0xde92742213fea5f78c6840b6ecbf214115ea8002/) | ⚠️ Unaudited |
 | DEX | unknown | ethereum | n/a | [`0xf65d91...768594`](./contracts/ethereum-1/0xf65d91333b1d4d3887016b17741ad602d7768594/) | ⚠️ Unaudited |
 | LiquidityPoolV2 | core_logic | ethereum | n/a | [`0x35ffd6...5e40e5`](./contracts/ethereum-1/0x35ffd6e268610e764ff6944d07760d0efe5e40e5/) | ⚠️ Unaudited |
 | LiquidityPoolV4 | core_logic | ethereum | n/a | [`0x4f868c...6275e2`](./contracts/ethereum-1/0x4f868c1aa37fcf307ab38d215382e88fca6275e2/) | ⚠️ Unaudited |
+| RookToken | token | ethereum | n/a | [`0xfa5047...313d4a`](./contracts/ethereum-1/0xfa5047c9c78b8877af97bdcb85db743fd7313d4a/) | ⚠️ Unaudited |
 | zBTC | unknown | ethereum | n/a | [`0x88c64a...78bb7d`](./contracts/ethereum-1/0x88c64a7d2ecc882d558dd16abc1537515a78bb7d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -78,16 +79,32 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (8)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x1d1d44...8e2c1a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2d7e24...6f7f5b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4012ef...d8f4f2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x48ace4...642524` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5be0e8...4fa359` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9d6e6e...b11198` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xab5ebc...3a5a6e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe175a2...490674` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [peckshield_final.pdf](http://web.archive.org/web/20201117220335/https://github.com/keeperdao/docs/blob/master/audits/peckshield_final.pdf) | PeckShield | Audit | 2020-01 | stale | Direct | n/a | 0 | n/a |
+| [quantstamp_draft.pdf](http://web.archive.org/web/20201117220334/https://github.com/keeperdao/docs/blob/master/audits/quantstamp_draft.pdf) | Quantstamp | Audit | 2020-01 | stale | Direct | n/a | 0 | n/a |
+| [PeckShield-Audit-Report-KeeperDAOStaking-v1.0_1.pdf](http://web.archive.org/web/20221212181643/https://github.com/rookprotocol/docs/blob/master/audits/PeckShield-Audit-Report-KeeperDAOStaking-v1.0_1.pdf) | PeckShield | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [PeckShield-kCompound.pdf](http://web.archive.org/web/20221212174138/https://github.com/rookprotocol/docs/blob/master/audits/PeckShield-kCompound.pdf) | PeckShield | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Quantstamp-kCompound.pdf](http://web.archive.org/web/20221212181221/https://github.com/rookprotocol/docs/blob/master/audits/Quantstamp-kCompound.pdf) | Quantstamp | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [KeeperDAO Liquidity Pool and HidingVault - Report.pdf](http://web.archive.org/web/20210805222729/https://github.com/keeperdao/docs/blob/master/audits/KeeperDAO%20Liquidity%20Pool%20and%20HidingVault%20-%20Report.pdf) | unspecified | Audit | 2021-01 | stale | Direct | n/a | 0 | n/a |
+| [Manual audit seed](http://web.archive.org/web/20221212172733/https://github.com/rookprotocol/docs/tree/master/audits) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -95,27 +112,39 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0xfa5047...313d4a`](./contracts/ethereum-1/0xfa5047c9c78b8877af97bdcb85db743fd7313d4a/) | RookToken | token | $68,165.57 | Verified native implementation with $68,165.57 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xde9274...ea8002`](./contracts/ethereum-1/0xde92742213fea5f78c6840b6ecbf214115ea8002/) | BorrowerProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xf65d91...768594`](./contracts/ethereum-1/0xf65d91333b1d4d3887016b17741ad602d7768594/) | DEX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x35ffd6...5e40e5`](./contracts/ethereum-1/0x35ffd6e268610e764ff6944d07760d0efe5e40e5/) | LiquidityPoolV2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x4f868c...6275e2`](./contracts/ethereum-1/0x4f868c1aa37fcf307ab38d215382e88fca6275e2/) | LiquidityPoolV4 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfa5047...313d4a`](./contracts/ethereum-1/0xfa5047c9c78b8877af97bdcb85db743fd7313d4a/) | RookToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x88c64a...78bb7d`](./contracts/ethereum-1/0x88c64a7d2ecc882d558dd16abc1537515a78bb7d/) | zBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 6 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 8 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 7
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [21327] peckshield_final.pdf
+- [21328] quantstamp_draft.pdf
+- [21329] PeckShield-Audit-Report-KeeperDAOStaking-v1.0_1.pdf
+- [21330] PeckShield-kCompound.pdf
+- [21331] Quantstamp-kCompound.pdf
+- [21332] KeeperDAO Liquidity Pool and HidingVault - Report.pdf
+- [24474] Manual audit seed
 
 Fork inheritance lineage and inherited audits are included when available.

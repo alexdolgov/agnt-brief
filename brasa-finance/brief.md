@@ -5,11 +5,11 @@
 - Project: Brasa Finance (`brasa-finance`)
 - Website: [https://brasa.finance](https://brasa.finance)
 - Lifecycle: unknown
-- Generated: 2026-06-13T10:24:13.968Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
+- Generated: 2026-07-03T21:05:37.009Z
+- Pipeline run: brief-restore-2026-07
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,160,937.87
+- DeFi Llama TVL: $936,816.57
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -22,19 +22,30 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 0 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 0
 - Raw deployments: 0
-- Audits discovered: 6
+- Audits discovered: 6 (6 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-04 (fresh)
-- Staleness: 1 fresh, 2 aging, 1 stale, 2 unknown
+- Audit staleness (calendar age): 1 fresh, 2 aging, 1 stale, 2 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -73,12 +84,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://docs.brasa.finance/audits/Neodyme_Report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [View Audit Report](https://github.com/anza-xyz/security-audits/blob/master/spl/NeodymeStakePoolAudit-2023-11-14.pdf) | Neodyme | Audit | 2023-11 | stale | Direct | n/a | 0 | n/a |
+| [Neodyme_Report.pdf](https://docs.brasa.finance/audits/Neodyme_Report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [NeodymeStakePoolAudit-2023-11-14.pdf](https://github.com/anza-xyz/security-audits/blob/master/spl/NeodymeStakePoolAudit-2023-11-14.pdf) | Neodyme | Audit | 2023-11 | stale | Direct | n/a | 0 | n/a |
 | [NeodymeStakeProgramAudit-2026-04-10.pdf](https://github.com/anza-xyz/security-audits/blob/master/core-bpf/NeodymeStakeProgramAudit-2026-04-10.pdf) | Neodyme | Audit | 2026-04 | fresh | Direct | n/a | 0 | n/a |
 | [ZellicAltConfigFeatureGateAudit-2024-10-29.pdf](https://github.com/anza-xyz/security-audits/blob/master/core-bpf/ZellicAltConfigFeatureGateAudit-2024-10-29.pdf) | Zellic | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
 | [ZellicStakeProgramAudit-2025-03-12.pdf](https://github.com/anza-xyz/security-audits/blob/master/core-bpf/ZellicStakeProgramAudit-2025-03-12.pdf) | Zellic | Audit | 2025-03 | aging | Direct | n/a | 0 | n/a |
-| [/URI ()](https://neodyme.io/en) | Neodyme | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [neodyme.io/en](https://neodyme.io/en) | Neodyme | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -106,11 +117,11 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [12847] DL audit link
-- [12848] View Audit Report
+- [12847] Neodyme_Report.pdf
+- [12848] NeodymeStakePoolAudit-2023-11-14.pdf
 - [12849] NeodymeStakeProgramAudit-2026-04-10.pdf
 - [12850] ZellicAltConfigFeatureGateAudit-2024-10-29.pdf
 - [12851] ZellicStakeProgramAudit-2025-03-12.pdf
-- [12852] /URI ()
+- [12852] neodyme.io/en
 
 Fork inheritance lineage and inherited audits are included when available.

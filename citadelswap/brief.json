@@ -1,47 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "citadelswap",
-  "generated_at": "2026-06-19T19:37:21.646Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "citadelswap",
-    "tier": 0,
-    "peak_tvl": 1460588,
-    "peak_date": "2023-11-23T00:00:00.000Z",
-    "tvl_30d_ago": 4435,
-    "tvl_90d_ago": 4541,
-    "tvl_current": 3930,
-    "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 6079,
-    "change_30d_pct": -11.386696730552424,
-    "change_90d_pct": -13.455186082360711,
-    "days_since_peak": 939,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 99.73093028287238
-  },
+  "generated_at": "2026-07-04T14:53:10.281Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-66d5",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 3,
-    "total_addresses": 3,
-    "unique_implementations": 3,
-    "total_deployments": 3,
+    "total_contracts": 5,
+    "total_addresses": 5,
+    "unique_implementations": 5,
+    "total_deployments": 5,
     "audited_contracts": 0,
     "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 2,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3848.69136,
-    "tvl_usd": 347430.17826031346,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "base": 347430.18
-    },
-    "asd_usd": 347430.17826031346,
+    "dl_tvl_usd": 3768.32681,
+    "tvl_usd": 3768.32681,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": null,
     "chains": [
       "base"
@@ -55,28 +39,35 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 3,
+    "live_verified_implementations": 3,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "CitadelSwap is a decentralized exchange (DEX) protocol on Base that enables users to trade tokens via automated market-making (AMM) pools. It appears to be a Uniswap V2 fork, providing liquidity pools and a native token for governance or incentives.",
-    "relationship_narrative": "The protocol consists of a single product family centered around the CitadelToken, which likely serves as the incentive and governance token for the DEX. All 16 contracts are deployed by the same deployer, indicating a unified, self-contained system with no external dependencies.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 13,
+    "project_purpose": "Dexs. Structurally: 10 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Contracts are linked by 1 cross-contract reference(s). Dominant framework: openzeppelin.",
+    "product_family_count": 3,
+    "total_contracts_indexed": 14,
     "live_contracts": 3,
-    "inactive_contracts": 10,
+    "inactive_contracts": 9,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 2,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 4,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 3,
+    "unique_implementations": 5,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -85,41 +76,6 @@
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x7233062d88133b5402d39d62bfa23a1b6c8d0898",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "CitadelToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "CitadelSwap",
-      "tvl_usd": 347430.17826031346,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "CitadelToken",
-      "deployments": [
-        {
-          "chain_id": 8453,
-          "chain_name": "base",
-          "address": "0x7233062d88133b5402d39d62bfa23a1b6c8d0898",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 347430.17826031346,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 8453,
       "chain_name": "base",
@@ -153,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-15 02:58:51+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -188,7 +148,128 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-15 02:56:17+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x7233062d88133b5402d39d62bfa23a1b6c8d0898",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "CitadelToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CitadelToken",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x7233062d88133b5402d39d62bfa23a1b6c8d0898",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-15 02:49:09+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x4076f3f43460293105256535d6ff8bb74c9b27fb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x4076f3f43460293105256535d6ff8bb74c9b27fb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-18 14:03:37+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xdf3700182aad4283f4c23bce3067c705ca4d088f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xdf3700182aad4283f4c23bce3067c705ca4d088f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-21 13:01:21+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -205,6 +286,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -216,16 +300,6 @@
   ],
   "auditor_coverage": [],
   "coverage_gaps": [
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x7233062d88133b5402d39d62bfa23a1b6c8d0898",
-      "name": "CitadelToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 347430.17826031346,
-      "risk_note": "Verified native implementation with $347,430.18 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 8453,
       "chain_name": "base",
@@ -245,13 +319,23 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x7233062d88133b5402d39d62bfa23a1b6c8d0898",
+      "name": "CitadelToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
     "native": 3,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {},

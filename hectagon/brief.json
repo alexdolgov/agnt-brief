@@ -1,36 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "hectagon",
-  "generated_at": "2026-06-19T17:34:16.051Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "hectagon",
-    "tier": 1,
-    "peak_tvl": 1089040,
-    "peak_date": "2022-09-13T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 0,
-    "tvl_current": 0,
-    "tier0_reason": "current_tvl_zero_after_meaningful_peak",
-    "tvl_180d_ago": 0,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "governance_raw": {
-      "evidence": "TVL is 0 with a 100% drop from peak sustained for over 3 years, and the homepage shows no recent updates or activity.",
-      "confidence": 0.9,
-      "lifecycle_status": "dead"
-    },
-    "days_since_peak": 1375,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 100,
-    "governance_evidence": "TVL is 0 with a 100% drop from peak sustained for over 3 years, and the homepage shows no recent updates or activity.",
-    "governance_confidence": 0.9,
-    "governance_text_chars": 3058,
-    "governance_classification": "dead",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:21.343Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 6,
     "total_addresses": 6,
@@ -44,14 +18,14 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 0.48894,
-    "tvl_usd": 112925.23787189767,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "bsc": 112925.24
-    },
-    "asd_usd": 112925.23787189767,
+    "dl_tvl_usd": 0.4889,
+    "tvl_usd": 0.4889,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://www.hectagon.finance",
     "chains": [
       "bsc"
@@ -65,12 +39,21 @@
       "aging": 0,
       "stale": 0,
       "unknown": 1
+    },
+    "live_implementations": 6,
+    "live_verified_implementations": 6,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Hectagon is a DeFi protocol on BSC that provides a suite of tokens (HECTA, gHECTA, pHECTA, tHECTA) and a treasury, likely enabling staking, governance, and liquidity provision through a PancakeSwap pool.",
-    "relationship_narrative": "The HECTA token is the core asset, with gHECTA used for governance, pHECTA and tHECTA as staking derivatives, and the Treasury managing protocol funds. The PancakeSwap pool provides liquidity for HECTA/BUSD trading, linking the token to the broader market.",
-    "product_family_count": 7,
+    "project_purpose": "Services. Structurally: 22 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 8 ERC20 tokens, 2 ERC721 NFTs; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 1 common project-authored base contract(s) (hectagonaccesscontrolled). Dominant framework: openzeppelin.",
+    "product_family_count": 4,
     "total_contracts_indexed": 25,
     "live_contracts": 6,
     "inactive_contracts": 19,
@@ -79,11 +62,9 @@
     "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 27,
-    "unverified_dependencies": 3,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 6,
@@ -98,49 +79,14 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x343915085b919fbd4414f7046f903d194c6f60ee",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "HectagonERC20Token",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "1. HECTA",
-      "tvl_usd": 112925.23787189767,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "HectagonERC20Token",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x343915085b919fbd4414f7046f903d194c6f60ee",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 112925.23787189767,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
       "address": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "BEP20Token",
       "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": "pancakeswap",
-      "product_line": "6. Pool on PancakeSwap",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -163,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-09-02 14:01:43+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -175,7 +125,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "2. gHECTA",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -198,7 +148,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-06 08:27:24+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -233,7 +187,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-06 08:29:15+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x343915085b919fbd4414f7046f903d194c6f60ee",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "HectagonERC20Token",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HectagonERC20Token",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x343915085b919fbd4414f7046f903d194c6f60ee",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-06 08:26:48+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -245,7 +242,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "5. Treasury",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -268,7 +265,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-06 08:27:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -280,7 +281,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "3. pHECTA",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -303,7 +304,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-06 08:26:12+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -320,6 +325,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -334,12 +342,12 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x343915085b919fbd4414f7046f903d194c6f60ee",
-      "name": "HectagonERC20Token",
+      "address": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
+      "name": "BEP20Token",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 112925.23787189767,
-      "risk_note": "Verified native implementation with $112,925.24 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 56,
@@ -357,6 +365,16 @@
       "address": "0x9ae390630eb2e60999e5065267b02f477beeebcf",
       "name": "HectagonBondDepository",
       "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x343915085b919fbd4414f7046f903d194c6f60ee",
+      "name": "HectagonERC20Token",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -383,8 +401,8 @@
     }
   ],
   "origin_summary": {
-    "native": 5,
-    "upstream": 1,
+    "native": 6,
+    "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },

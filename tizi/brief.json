@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "tizi",
-  "generated_at": "2026-06-21T09:01:25.322Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "tizi",
-    "tier": 0,
-    "peak_tvl": 122239,
-    "peak_date": "2026-06-20T00:00:00.000Z",
-    "tvl_30d_ago": 120547,
-    "tvl_90d_ago": 510,
-    "tvl_current": 122214,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": null,
-    "change_30d_pct": 1.3828631156312476,
-    "change_90d_pct": 23863.529411764706,
-    "days_since_peak": 1,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 0.02045173798869428
-  },
+  "generated_at": "2026-07-04T14:54:01.519Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-4c3e",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 1,
     "total_addresses": 1,
     "unique_implementations": 1,
     "total_deployments": 1,
-    "audited_contracts": 0,
-    "unaudited_contracts": 1,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "audited_contracts": 1,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 1,
+    "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 100,
     "total_audits": 1,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 121959.15516,
-    "tvl_usd": 121959.15516,
+    "direct_audits": 1,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 132446.06957,
+    "tvl_usd": 132446.06957,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -46,13 +32,22 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2026-01",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
+      "fresh": 1,
       "aging": 0,
       "stale": 0,
-      "unknown": 1
+      "unknown": 0
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 1,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
@@ -67,7 +62,7 @@
     "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 1,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -91,7 +86,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Tizi",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -106,53 +101,72 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-14011"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-04 08:40:31+03",
+      "deploy_coverage_basis": "code_matched"
     }
   ],
   "audits": [
     {
       "audit_id": 14011,
       "audit_key": "audit-14011",
-      "report_name": "DL audit link",
+      "report_name": "spaces/lxAaGBCj8m8RA8EcZ25F/uploads/EJb3Xu5zhoktjv1DRmti/Tizi audit by Beosin.pdf",
       "report_url": "https://2781107368-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlxAaGBCj8m8RA8EcZ25F%2Fuploads%2FEJb3Xu5zhoktjv1DRmti%2FTizi%20audit%20by%20Beosin.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "fresh",
+      "date": "2026-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ChildstTD",
+        "DepositHelper",
+        "MainTokenStats",
+        "MainVault",
+        "NFTVault",
+        "StakeVault",
+        "StakedTD",
+        "StrategyManager",
+        "SubStrategyManager",
+        "SubVault",
+        "TimelockController",
+        "TiziDollar"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [
+  "auditor_coverage": [
     {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x469bbd88eea8a2d9a5c6c82d9890cf60962c27e6",
-      "name": "TiziDollar",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 100,
+      "latest_audit": "2026-01"
     }
   ],
+  "coverage_gaps": [],
   "origin_summary": {
     "native": 1,
     "upstream": 0,
@@ -160,16 +174,15 @@
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 1
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 14011,
-        "report_name": "DL audit link"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

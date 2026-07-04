@@ -1,36 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "timeless-finance",
-  "generated_at": "2026-06-19T22:47:16.967Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "timeless-finance",
-    "tier": 1,
-    "peak_tvl": 1909387,
-    "peak_date": "2023-03-18T00:00:00.000Z",
-    "tvl_30d_ago": 14130,
-    "tvl_90d_ago": 14225,
-    "tvl_current": 12595,
-    "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 24478,
-    "change_30d_pct": -10.863411181882519,
-    "change_90d_pct": -11.458699472759227,
-    "governance_raw": {
-      "evidence": "TVL has dropped 99.34% from its peak over 3 years ago, but the protocol's documentation and website remain active, indicating ongoing operations without a shutdown announcement.",
-      "confidence": 0.8,
-      "lifecycle_status": "declining"
-    },
-    "days_since_peak": 1189,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 99.34036421113164,
-    "governance_evidence": "TVL has dropped 99.34% from its peak over 3 years ago, but the protocol's documentation and website remain active, indicating ongoing operations without a shutdown announcement.",
-    "governance_confidence": 0.8,
-    "governance_text_chars": 5000,
-    "governance_classification": "declining",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:54:01.505Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-16bc",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 1,
     "total_addresses": 1,
@@ -44,9 +18,11 @@
     "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 12370.2131,
-    "tvl_usd": 12370.2131,
+    "dl_tvl_usd": 12166.13761,
+    "tvl_usd": 12166.13761,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -63,25 +39,32 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
     "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 1,
-    "total_contracts_indexed": 14,
-    "live_contracts": 1,
-    "inactive_contracts": 13,
+    "product_family_count": 0,
+    "total_contracts_indexed": 1,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 1,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 5,
-    "unverified_dependencies": 2,
-    "detected_codebases": [
-      "uniswap-v3"
-    ]
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 1,
@@ -101,7 +84,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -126,7 +109,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-01 02:25:18+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -143,7 +130,10 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -155,15 +145,13 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 2
-    },
+    "match_method_counts": {},
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

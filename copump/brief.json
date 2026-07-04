@@ -1,31 +1,15 @@
 {
   "schema_version": "2.0",
   "project_key": "copump",
-  "generated_at": "2026-06-19T18:14:37.960Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
-  "lifecycle_status": "unknown",
-  "lifecycle_signal": {
-    "slug": "copump",
-    "tier": 0,
-    "peak_tvl": 6118,
-    "peak_date": "2025-09-04T00:00:00.000Z",
-    "tvl_30d_ago": 2138,
-    "tvl_90d_ago": 2101,
-    "tvl_current": 1712,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 3046,
-    "change_30d_pct": -19.92516370439663,
-    "change_90d_pct": -18.5149928605426,
-    "days_since_peak": 288,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 72.01699901928735
-  },
+  "generated_at": "2026-07-04T14:53:10.522Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-ae05",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 4,
-    "total_addresses": 4,
+    "total_addresses": 20,
     "unique_implementations": 4,
-    "total_deployments": 4,
+    "total_deployments": 20,
     "audited_contracts": 4,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 4,
@@ -34,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 100,
     "total_audits": 3,
+    "direct_audits": 3,
+    "inherited_audits": 0,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 1656.75854,
-    "tvl_usd": 1656.75854,
+    "dl_tvl_usd": 1572.64236,
+    "tvl_usd": 1572.64236,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -55,15 +41,24 @@
       "aging": 2,
       "stale": 0,
       "unknown": 1
+    },
+    "live_implementations": 4,
+    "live_verified_implementations": 4,
+    "live_audited_implementations": 4,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 4
     }
   },
   "topography": {
-    "project_purpose": "Copump is a launchpad protocol that enables users to create and launch new tokens on multiple chains. It provides factory contracts for token creation and integrates with decentralized exchanges like Uniswap and SyncSwap to facilitate initial liquidity and trading.",
-    "relationship_narrative": "The Copump contract acts as a shared factory or registry, while the DEX-specific contracts (CopumpUniswap, CopumpSyncSwap, CopumpCelo) handle token creation and liquidity provisioning on their respective exchanges. All contracts are deployed by the same deployer cluster, indicating a unified infrastructure.",
+    "project_purpose": "Launchpad. Structurally: 8 project-authored contract(s) across 3 chain(s); built on openzeppelin.",
+    "relationship_narrative": "The protocol forms a single structural family (Core Logic) of 8 contract(s).",
     "product_family_count": 1,
-    "total_contracts_indexed": 34,
-    "live_contracts": 4,
-    "inactive_contracts": 30,
+    "total_contracts_indexed": 35,
+    "live_contracts": 20,
+    "inactive_contracts": 15,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
@@ -84,21 +79,153 @@
   },
   "contracts": [
     {
-      "chain_id": 59144,
-      "chain_name": "linea",
-      "address": "0xbef63121a00916d88c4558f2a92f7d931c67115b",
+      "chain_id": 42220,
+      "chain_name": "celo",
+      "address": "0x045af95caabb5971183c411abd7c81f2e122706d",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "Copump",
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Copump",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "Copump",
       "deployments": [
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x045af95caabb5971183c411abd7c81f2e122706d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x38fea0959656ff4009a8d807adaa5247dbfeb590",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x644ee35da93acbfa301cde6535e0855c637f96ce",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x7657a160c7fdd0a880ab1de7c6fc1106ac3bd2bf",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x90b4b1bc99bf6731bba000c1329c4d445ae5c607",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0x95e483ce4acf1f24b6cbd8b369e0735a3e56f5bb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xc5878811dab98c21e6bc22620e5ae4da70a04362",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xcd463d22f65661d07a41dac2f0da7b65c95a4322",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42220,
+          "chain_name": "celo",
+          "address": "0xf041b6a41d61dc6fb792f4171039b6bf811533d7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x045af95caabb5971183c411abd7c81f2e122706d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x38fea0959656ff4009a8d807adaa5247dbfeb590",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xb2af16da8a53b3ce4ca9f8a863a906c1936c2604",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 59144,
           "chain_name": "linea",
@@ -109,6 +236,17 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xc5878811dab98c21e6bc22620e5ae4da70a04362",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -119,7 +257,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-25 09:21:42+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -131,7 +273,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Copump",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -156,24 +298,61 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-02-11 13:13:54+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 59144,
       "chain_name": "linea",
-      "address": "0xa74e55412ffb46747dd45eefdb68bf1366205036",
+      "address": "0x2b23394b8583f8829fcf3880f00ceebc82a45e4e",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "CopumpSyncSwap",
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Copump",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "CopumpSyncSwap",
       "deployments": [
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x2b23394b8583f8829fcf3880f00ceebc82a45e4e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x38ab36d99242ce0cb795b09e17de9960e3ce134e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x44e7a3f09f88529737c52dd5e58841ec0b56c06e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 59144,
           "chain_name": "linea",
@@ -193,7 +372,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-05-22 14:58:33+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 146,
@@ -205,7 +388,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Copump",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -230,14 +413,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-09 11:40:45+03",
+      "deploy_coverage_basis": "match_unverified"
     }
   ],
   "audits": [
     {
       "audit_id": 12941,
       "audit_key": "audit-12941",
-      "report_name": "DL audit link",
+      "report_name": "aura.pdf",
       "report_url": "https://copump.xyz/audits/aura.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -247,20 +434,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Copump"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": false,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 12942,
       "audit_key": "audit-12942",
-      "report_name": "DL audit link",
+      "report_name": "hashlock.pdf",
       "report_url": "https://copump.xyz/audits/hashlock.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -270,24 +458,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Copump.sol",
-        "CopumpCelo.sol",
-        "CopumpSyncSwap.sol",
-        "CopumpUniswap.sol",
-        "Token.sol"
-      ],
+      "extracted_names": [],
       "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 12943,
       "audit_key": "audit-12943",
-      "report_name": "/URI ()>>",
+      "report_name": "docs.google.com/document/d/1uPOgfxeo3xUsdXogh6SqOCuIHXHMa3ZFsxKyGCGwee4/edit",
       "report_url": "https://docs.google.com/document/d/1uPOgfxeo3xUsdXogh6SqOCuIHXHMa3ZFsxKyGCGwee4/edit",
       "auditor": "Hashlock",
       "audit_type": "audit",
@@ -297,6 +482,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -324,18 +512,15 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 48
+      "contract_name": 5
     },
-    "extraction_confidence_counts": {
-      "high": 1,
-      "medium": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 12943,
-        "report_name": "/URI ()>>"
+        "report_name": "docs.google.com/document/d/1uPOgfxeo3xUsdXogh6SqOCuIHXHMa3ZFsxKyGCGwee4/edit"
       }
     ],
     "inherited_remapped_matches": []

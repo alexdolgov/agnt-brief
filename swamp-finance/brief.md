@@ -1,51 +1,50 @@
 # Agentic Audit Brief: Swamp Finance
 
-⚠️ Lifecycle status: DECLINING - TVL changed 9.0% over 90 days
-
 ## Project Overview
 
 - Project: Swamp Finance (`swamp-finance`)
-- Lifecycle: declining (Tier 0, 97.2% below peak)
-- Generated: 2026-06-17T16:16:13.237Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:59.162Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-1cbb
 - Chains: bsc
-- Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $1,066,907.68
+- Contract surface: 6 unique implementations (6 raw deployments)
+- DeFi Llama TVL: $993,875.45
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Swamp Finance is a BSC yield optimizer/yield protocol with multiple strategy contracts, alongside NativeFarm and SWAMP token reward components. Any governance-token characterization should be omitted or qualified unless supported by project documentation.
+Yield. Structurally: 7 project-authored contract(s) across 1 chain(s); 1 ERC20 token; role-gated via AccessControl; built on openzeppelin.
+
+### Architecture
+
+The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 55; live-surface contracts included: 2 (2 live, 0 unknown).
-- Excluded by liveness: 53 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 55; live-surface contracts included: 6 (2 live, 4 unknown).
+- Excluded by liveness: 49 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 4/8.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
+- Coverage of deployed-live implementations: 0/2 (0.0%)
+- Deployed-live implementations: 2 of 6 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/2
 - Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 2
-- Audits discovered: 0
+- Unverified implementations: 4
+- Unique implementations: 6
+- Raw deployments: 6
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -76,16 +75,22 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | bsc | n/a | `0x0eb82e...ed93d6` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x3cc084...111abd` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x42cf50...311894` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x8f7f7f...ad9ece` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [skynet.certik.com/projects/swampfinance](https://skynet.certik.com/projects/swampfinance) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -103,15 +108,19 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [20634] skynet.certik.com/projects/swampfinance
 
 Fork inheritance lineage and inherited audits are included when available.

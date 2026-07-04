@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "lockon",
-  "generated_at": "2026-06-18T15:20:02.903Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-4e21",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "lockon",
-    "tier": 0,
-    "peak_tvl": 2524504,
-    "peak_date": "2025-01-18T00:00:00.000Z",
-    "tvl_30d_ago": 1097753,
-    "tvl_90d_ago": 1054076,
-    "tvl_current": 1053456,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 1528047,
-    "change_30d_pct": -4.0352429007253905,
-    "change_90d_pct": -0.058819288172769324,
-    "days_since_peak": 492,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 58.27077318950574
-  },
+  "generated_at": "2026-07-04T14:53:30.168Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-1cbb",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 13,
-    "total_addresses": 24,
-    "unique_implementations": 13,
-    "total_deployments": 24,
+    "total_contracts": 17,
+    "total_addresses": 28,
+    "unique_implementations": 17,
+    "total_deployments": 28,
     "audited_contracts": 9,
     "unaudited_contracts": 1,
     "contracts_verified_audited": 9,
     "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 3,
+    "contracts_unverified": 7,
     "coverage_pct": 90,
     "total_audits": 8,
+    "direct_audits": 8,
+    "inherited_audits": 0,
     "scoreable_audits": 4,
-    "dl_tvl_usd": 907843.72711,
-    "tvl_usd": 907843.72711,
+    "dl_tvl_usd": 879886.66074,
+    "tvl_usd": 879886.66074,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -54,26 +40,35 @@
       "aging": 2,
       "stale": 2,
       "unknown": 3
+    },
+    "live_implementations": 10,
+    "live_verified_implementations": 10,
+    "live_audited_implementations": 9,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 9
     }
   },
   "topography": {
-    "project_purpose": "LOCKON is a DeFi protocol for automated index tokens composed using wallet-portfolio analytics, including analysis of portfolios held by high-performing wallet addresses. Its on-chain system uses Set Protocol-style contracts and related modules for index token issuance, redemption, and rebalancing. Separate incentive-related contracts, if present, should not be treated as part of the current core product without contract-linkage evidence.",
-    "relationship_narrative": "The LOCKON family integrates index management (Controllers and SetTokens) with incentive contracts (LockStaking, LockonVesting, IndexStaking, LockToken, Airdrop) that likely use the SetTokens as staking or reward assets. All contracts share the same deployer cluster and proxy patterns, indicating a unified infrastructure.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 62,
-    "live_contracts": 24,
-    "inactive_contracts": 38,
+    "project_purpose": "Indexes. Structurally: 13 project-authored contract(s) across 2 chain(s); 2 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 5 functional families. Its contracts share 3 common project-authored base contract(s) (extendmodulebase, modulebase, operator). Dominant framework: openzeppelin.",
+    "product_family_count": 5,
+    "total_contracts_indexed": 60,
+    "live_contracts": 21,
+    "inactive_contracts": 32,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 5,
-    "live_deployment_units": 5,
-    "dependencies_extracted": 21,
-    "unverified_dependencies": 4,
+    "unknown_contracts": 7,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 13,
+    "unique_implementations": 17,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -86,12 +81,12 @@
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0xf6e8fef3e5e0a7664caedbcc3e655e188a7e6b99",
-      "deployment_unit": "unit-37980",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "Airdrop",
       "role": "operational_periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -102,8 +97,8 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xf6e8fef3e5e0a7664caedbcc3e655e188a7e6b99",
-          "deployment_unit": "unit-37980",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -118,7 +113,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-16 06:18:52+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42161,
@@ -145,7 +144,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -166,7 +165,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-19 07:42:07+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 137,
@@ -204,7 +207,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -215,7 +218,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -226,7 +229,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -236,18 +239,22 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-19 07:42:17+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x8087cb6c02b7a3c35e8c88cdbbd5eeb3fcf4312d",
-      "deployment_unit": "unit-37978",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "IndexStaking",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -258,8 +265,8 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x8087cb6c02b7a3c35e8c88cdbbd5eeb3fcf4312d",
-          "deployment_unit": "unit-37978",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -274,18 +281,22 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-16 06:16:35+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x555962ce3093b15fac8d37c2a49935c96991f2a0",
-      "deployment_unit": "unit-37977",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "LockonVesting",
       "role": "operational_periphery",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -296,8 +307,8 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x555962ce3093b15fac8d37c2a49935c96991f2a0",
-          "deployment_unit": "unit-37977",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -312,18 +323,22 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-16 06:08:48+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x36f6ddf9ee7c6dbec3e799c81d03a7986411423a",
-      "deployment_unit": "unit-37976",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "LockStaking",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -334,8 +349,8 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x36f6ddf9ee7c6dbec3e799c81d03a7986411423a",
-          "deployment_unit": "unit-37976",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -350,18 +365,22 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-16 06:12:46+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x992c20c4e2f10f6b2c81ee686a200569fbd6ef74",
-      "deployment_unit": "unit-37979",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "LockToken",
       "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -372,8 +391,8 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x992c20c4e2f10f6b2c81ee686a200569fbd6ef74",
-          "deployment_unit": "unit-37979",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -388,7 +407,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-16 05:19:33+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 137,
@@ -426,7 +449,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -437,7 +460,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -448,7 +471,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -458,7 +481,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-11-14 04:33:23+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 137,
@@ -470,7 +497,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "LOCKON",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -515,7 +542,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-12-12 09:05:53+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -542,7 +573,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -564,7 +595,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -574,7 +605,89 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-19 07:42:12+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x9c50cea1d41ad171d4e0992130e9504953a3520f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x9c50cea1d41ad171d4e0992130e9504953a3520f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-07-26 05:56:56+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x175024128546022923641dd116ec8521d53290d0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x175024128546022923641dd116ec8521d53290d0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-09 04:58:25+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -584,9 +697,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "LOCKON",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -609,7 +722,50 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-11-21 14:13:21+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x3d0b47738073ac8c3d343f149e56a6c28872c300",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x3d0b47738073ac8c3d343f149e56a6c28872c300",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-19 07:38:56+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -619,9 +775,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "LOCKON",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -644,7 +800,50 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-22 13:23:54+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xb4106ff9e881063bb62d261f9205cac00d833468",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xb4106ff9e881063bb62d261f9205cac00d833468",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-09 04:55:22+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -654,9 +853,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "LOCKON",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -679,14 +878,18 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-22 13:23:54+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 3228,
       "audit_key": "audit-3228",
-      "report_name": "DL audit link",
+      "report_name": "gitlab.com/lockon-finance/core-contracts/-/tree/main/audits",
       "report_url": "https://gitlab.com/lockon-finance/core-contracts/-/tree/main/audits",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -696,6 +899,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -707,7 +913,7 @@
     {
       "audit_id": 3229,
       "audit_key": "audit-3229",
-      "report_name": "<>\\",
+      "report_name": "blaize.tech/clients/smart-contract-security-audit-for-lockon-finance",
       "report_url": "https://blaize.tech/clients/smart-contract-security-audit-for-lockon-finance",
       "auditor": "Blaize Security",
       "audit_type": "audit",
@@ -717,6 +923,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -728,7 +937,7 @@
     {
       "audit_id": 3230,
       "audit_key": "audit-3230",
-      "report_name": "<>",
+      "report_name": "final_report_LOCKON_Mar_27_2024.pdf",
       "report_url": "https://github.com/lockon-finance/lock-contracts/blob/main/audits/bunzz-audit/final_report_LOCKON_Mar_27_2024.pdf",
       "auditor": "Bunzz",
       "audit_type": "audit",
@@ -738,19 +947,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Airdrop",
-        "IndexStaking",
-        "LockStaking",
-        "LockToken",
-        "LockonVesting",
-        "MerkleAirdrop"
-      ],
+      "extracted_names": [],
       "matched_contracts": 5,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": false,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -766,15 +971,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Position",
-        "PositionUnitAdjusterModule"
-      ],
-      "matched_contracts": 4,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -790,20 +995,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BasicIssuanceModule",
-        "ExchangeIssuanceZeroEx",
-        "ExtendModuleBase",
-        "Operator",
-        "Pausable",
-        "SetTokenCreator",
-        "TradeModule"
-      ],
-      "matched_contracts": 9,
+      "extracted_names": [],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -819,6 +1019,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -840,24 +1043,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Airdrop.sol",
-        "IndexStaking.sol",
-        "LockStaking.sol",
-        "LockToken.sol",
-        "LockonVesting.sol"
-      ],
+      "extracted_names": [],
       "matched_contracts": 5,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 15448,
       "audit_key": "audit-15448",
-      "report_name": "bunzz-audit",
+      "report_name": "bunzz-audit (GitHub directory)",
       "report_url": "https://github.com/lockon-finance/lock-contracts/blob/main/audits/bunzz-audit",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -867,6 +1067,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -912,29 +1115,26 @@
     }
   ],
   "origin_summary": {
-    "native": 8,
+    "native": 10,
     "upstream": 0,
-    "standard_library": 5,
-    "needs_review": 0
+    "standard_library": 0,
+    "needs_review": 7
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 34
+      "contract_name": 14
     },
-    "extraction_confidence_counts": {
-      "high": 3,
-      "medium": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 3228,
-        "report_name": "DL audit link"
+        "report_name": "gitlab.com/lockon-finance/core-contracts/-/tree/main/audits"
       },
       {
         "audit_id": 3229,
-        "report_name": "<>\\"
+        "report_name": "blaize.tech/clients/smart-contract-security-audit-for-lockon-finance"
       },
       {
         "audit_id": 3233,
@@ -942,7 +1142,7 @@
       },
       {
         "audit_id": 15448,
-        "report_name": "bunzz-audit"
+        "report_name": "bunzz-audit (GitHub directory)"
       }
     ],
     "inherited_remapped_matches": []

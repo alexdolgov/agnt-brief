@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "goldfinger",
-  "generated_at": "2026-06-19T06:13:51.622Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "goldfinger",
-    "tier": 0,
-    "peak_tvl": 23932818,
-    "peak_date": "2026-04-16T00:00:00.000Z",
-    "tvl_30d_ago": 23928895,
-    "tvl_90d_ago": 22600365,
-    "tvl_current": 23896734,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": null,
-    "change_30d_pct": -0.13440236166358704,
-    "change_90d_pct": 5.736053377898985,
-    "days_since_peak": 36,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 0.15077204865720367
-  },
+  "generated_at": "2026-07-04T14:53:19.867Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 6,
-    "total_addresses": 13,
-    "unique_implementations": 6,
-    "total_deployments": 13,
-    "audited_contracts": 5,
+    "total_contracts": 8,
+    "total_addresses": 19,
+    "unique_implementations": 8,
+    "total_deployments": 19,
+    "audited_contracts": 7,
     "unaudited_contracts": 0,
-    "contracts_verified_audited": 5,
+    "contracts_verified_audited": 7,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 1,
     "coverage_pct": 100,
     "total_audits": 9,
-    "scoreable_audits": 6,
-    "dl_tvl_usd": 0,
-    "tvl_usd": 0,
+    "direct_audits": 9,
+    "inherited_audits": 0,
+    "scoreable_audits": 8,
+    "dl_tvl_usd": 23884814.65407,
+    "tvl_usd": 23884814.65407,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,26 +39,35 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 7,
+    "live_verified_implementations": 7,
+    "live_audited_implementations": 7,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 2,
+      "diverged": 0,
+      "match_unverified": 5
     }
   },
   "topography": {
-    "project_purpose": "GoldFinger is a BSC Real World Asset protocol centered on ART, a gold-backed token described as yield-bearing and redeemable. Its live surface should account for supporting infrastructure beyond the token itself, including vault, staking, distributor, oracle, registry, and GF token contracts.",
-    "relationship_narrative": "The protocol consists of a single product family centered around the ARTToken contract, with no additional infrastructure or inter-family relationships.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 13,
-    "live_contracts": 13,
+    "project_purpose": "RWA. Structurally: 7 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Contracts are linked by 3 cross-contract reference(s). Dominant framework: openzeppelin.",
+    "product_family_count": 4,
+    "total_contracts_indexed": 19,
+    "live_contracts": 18,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 1,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 3,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 6,
+    "unique_implementations": 8,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -117,7 +112,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -129,7 +124,63 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-22 06:15:12+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x79d28c0b71dd6b0d58d50810a8da2aedefaff6ef",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ARTVault",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ARTVault",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x79d28c0b71dd6b0d58d50810a8da2aedefaff6ef",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xaa8cd8244843bf3e34dc5a978c29854f6c234643",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11789"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-22 06:32:30+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 56,
@@ -167,7 +218,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 56,
@@ -178,7 +229,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 56,
@@ -189,7 +240,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -202,7 +253,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-04 09:54:00+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -240,7 +295,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-03 07:27:56+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -278,7 +337,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-03 07:30:34+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -316,7 +379,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 56,
@@ -327,7 +390,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 56,
@@ -338,7 +401,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -350,7 +413,85 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-05 10:49:43+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x6db461da03b8ad06319ff2af985e1c8dfcc004e0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "GFToken",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "GFToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x6db461da03b8ad06319ff2af985e1c8dfcc004e0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xbad7118c5b445d44dee72e186d594d315ac7792b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xdb399e1d142d82dfcb8a583a4f904dc733551dcc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xdb3fb41167dd5318af04da5aae43e56d6ddd77a3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11788"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-22 06:28:59+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 56,
@@ -360,7 +501,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -385,7 +526,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-22 06:27:09+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -402,6 +547,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -413,7 +561,7 @@
     {
       "audit_id": 11786,
       "audit_key": "audit-11786",
-      "report_name": "GFDistributor",
+      "report_name": "app.solidproof.io/projects/goldfinger",
       "report_url": "https://app.solidproof.io/projects/goldfinger?audit=b14fbb55-1679-47fd-92de-2b5780e48cac",
       "auditor": "SolidProof",
       "audit_type": "audit",
@@ -423,20 +571,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "GFDistributor"
-      ],
-      "matched_contracts": 4,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 11787,
       "audit_key": "audit-11787",
-      "report_name": "GFStaking",
+      "report_name": "app.solidproof.io/projects/goldfinger",
       "report_url": "https://app.solidproof.io/projects/goldfinger?audit=56927176-71cc-496e-8b59-e46b4dcdbdc9",
       "auditor": "SolidProof",
       "audit_type": "audit",
@@ -446,20 +595,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "GFStaking"
-      ],
-      "matched_contracts": 4,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 11788,
       "audit_key": "audit-11788",
-      "report_name": "GFToken",
+      "report_name": "app.solidproof.io/projects/goldfinger",
       "report_url": "https://app.solidproof.io/projects/goldfinger?audit=812d8642-0312-4d0c-a5de-f7d13e850273",
       "auditor": "SolidProof",
       "audit_type": "audit",
@@ -469,18 +619,23 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "GFToken"
+      ],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
       "audit_id": 11789,
       "audit_key": "audit-11789",
-      "report_name": "ARTVault",
+      "report_name": "app.solidproof.io/projects/goldfinger",
       "report_url": "https://app.solidproof.io/projects/goldfinger?audit=bcdbd3a6-0ca2-4d05-9183-601437701a8d",
       "auditor": "SolidProof",
       "audit_type": "audit",
@@ -490,18 +645,23 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ARTVault"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
       "audit_id": 11790,
       "audit_key": "audit-11790",
-      "report_name": "ARTToken",
+      "report_name": "app.solidproof.io/projects/goldfinger",
       "report_url": "https://app.solidproof.io/projects/goldfinger?audit=a5a2744f-aeb6-4ed4-abf3-85ae5c160b43",
       "auditor": "SolidProof",
       "audit_type": "audit",
@@ -511,20 +671,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "ARTToken"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 11791,
       "audit_key": "audit-11791",
-      "report_name": "GFPriceOracle",
+      "report_name": "app.solidproof.io/projects/goldfinger",
       "report_url": "https://app.solidproof.io/projects/goldfinger?audit=00cd8637-f69d-4a1d-b6dd-8a7a34315d1c",
       "auditor": "SolidProof",
       "audit_type": "audit",
@@ -534,26 +695,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "ARTToken",
-        "ARTVault",
-        "GFDistributor",
-        "GFPriceOracle",
-        "GFRegistry",
-        "GFStaking",
-        "GFToken"
-      ],
-      "matched_contracts": 12,
+      "extracted_names": [],
+      "matched_contracts": 5,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 11792,
       "audit_key": "audit-11792",
-      "report_name": "GFRegistry",
+      "report_name": "app.solidproof.io/projects/goldfinger",
       "report_url": "https://app.solidproof.io/projects/goldfinger?audit=e2da520d-75a2-4461-b5c0-53fb5858ff8d",
       "auditor": "SolidProof",
       "audit_type": "audit",
@@ -563,26 +719,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "ARTToken",
-        "ARTVault",
-        "GFDistributor",
-        "GFPriceOracle",
-        "GFRegistry",
-        "GFStaking",
-        "GFToken"
-      ],
-      "matched_contracts": 12,
+      "extracted_names": [],
+      "matched_contracts": 5,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 14537,
       "audit_key": "audit-14537",
-      "report_name": "DL audit link",
+      "report_name": "app.solidproof.io/projects/goldfinger",
       "report_url": "https://app.solidproof.io/projects/goldfinger",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -592,14 +743,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "GFDistributor"
-      ],
-      "matched_contracts": 4,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -607,7 +759,7 @@
     {
       "auditor": "SolidProof",
       "tier": 2,
-      "contracts_covered": 5,
+      "contracts_covered": 7,
       "coverage_pct": 100,
       "latest_audit": "2025-11"
     },
@@ -615,23 +767,24 @@
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 20,
+      "coverage_pct": 14.3,
       "latest_audit": "2026-01"
     }
   ],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 6,
+    "native": 7,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 38
+      "contract_name": 14,
+      "extraction_exact": 6
     },
     "extraction_confidence_counts": {
-      "high": 6
+      "high": 2
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -639,14 +792,6 @@
       {
         "audit_id": 9641,
         "report_name": "goldfinger-zerodrift-report.pdf"
-      },
-      {
-        "audit_id": 11788,
-        "report_name": "GFToken"
-      },
-      {
-        "audit_id": 11789,
-        "report_name": "ARTVault"
       }
     ],
     "inherited_remapped_matches": []

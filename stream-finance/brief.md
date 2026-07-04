@@ -1,56 +1,56 @@
 # Agentic Audit Brief: Stream Finance
 
-⚠️ Lifecycle status: DEAD - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Stream Finance (`stream-finance`)
-- Lifecycle: dead (Tier 0, 100% below peak)
-- Generated: 2026-06-19T08:27:27.823Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-cc10
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:58.950Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-ae05
 - Chains: ethereum
-- Contract surface: 3 unique implementations (14 raw deployments)
+- Contract surface: 4 unique implementations (26 raw deployments)
 - DeFi Llama TVL: $0.00
-- On-chain TVL (included contracts): $412,392.68
-- TVL by chain: Ethereum $412,392.68
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Stream Finance is a yield protocol that allows users to deposit assets into vaults to earn yield. The protocol uses StreamVault contracts to manage deposits and generate returns, while StableWrapper contracts likely handle stablecoin interactions or wrapping.
+Yield. Structurally: 6 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens; built on openzeppelin.
 
 ### Architecture
 
-StreamVault contracts serve as the core yield-generating vaults, while StableWrapper contracts likely act as adapters or wrappers for stablecoin deposits and withdrawals, enabling seamless interaction between the vaults and stablecoin assets.
+The protocol comprises 2 functional families. Its contracts share 1 common project-authored base contract(s) (oft). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 31; live-surface contracts included: 14 (14 live, 0 unknown).
-- Excluded by liveness: 17 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 31; live-surface contracts included: 26 (25 live, 1 unknown).
+- Excluded by liveness: 5 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 4; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 2/2 (100.0%)
-- Verified + Unaudited implementations: 0
+- Coverage of deployed-live implementations: 2/3 (66.7%)
+- Deployed-live implementations: 3 of 4 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 2/3
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 3
-- Raw deployments: 14
-- Audits discovered: 1
+- Unique implementations: 4
+- Raw deployments: 26
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-02 (aging)
-- Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 2 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 2 | 100.0% | 2025-02 |
+| unknown | Tier 2 | 2 | 66.7% | 2025-02 |
 
 ## Contract Surface
 
@@ -58,12 +58,14 @@ StreamVault contracts serve as the core yield-generating vaults, while StableWra
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| StreamVault | core_logic | ethereum | n/a | 8 deployments: ethereum [`0x12fd50...8057d6`](./contracts/ethereum-1/0x12fd502e2052cafb41eccc5b596023d9978057d6/); ethereum `0x2a2f84...3892c2`; ethereum `0x350fa4...7a916a`; ethereum `0x6efa12...0ad48e`; ethereum `0x7e586f...723153`; ethereum `0xc15697...f64f13`; ethereum `0xe2fc85...f26f94`; ethereum `0xf3b466...8de3a7` | ✅ Audited |
 | StableWrapper | unknown | ethereum | n/a | 5 deployments: ethereum [`0x05f47d...2cabe0`](./contracts/ethereum-1/0x05f47d7cbb0f3d7f988e442e8c1401685d2cabe0/); ethereum `0x2ca440...1ab8cb`; ethereum `0x6eaf19...7dbb4c`; ethereum `0xdcfd98...76a427`; ethereum `0xf70f54...386a34` | ✅ Audited |
+| StreamVault | core_logic | ethereum | n/a | 13 deployments: ethereum [`0x12fd50...8057d6`](./contracts/ethereum-1/0x12fd502e2052cafb41eccc5b596023d9978057d6/); ethereum `0x2a0a09...dfdee0`; ethereum `0x2a2f84...3892c2`; ethereum `0x350fa4...7a916a`; ethereum `0x6efa12...0ad48e`; ethereum `0x7e586f...723153`; ethereum `0x8a31d2...01c68b`; ethereum `0x9e0bbb...476984`; ethereum `0xa79108...d21920`; ethereum `0xae2e5f...c8d749`; ethereum `0xc15697...f64f13`; ethereum `0xe2fc85...f26f94`; ethereum `0xf3b466...8de3a7` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (1)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| VaultKeeper | unknown | ethereum | n/a | 7 deployments: ethereum [`0x0735eb...d33bfc`](./contracts/ethereum-1/0x0735ebeec9dd125cce45c2f354883ed9e7d33bfc/); ethereum `0x642f0d...58f5e7`; ethereum `0x66b9ff...2e4e7c`; ethereum `0x7012da...d1b09e`; ethereum `0x80ca28...385d43`; ethereum `0x84acf9...4f0637`; ethereum `0xdffb08...52994c` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -89,13 +91,15 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Zenith Audit Report - Stream Protocol.pdf](https://github.com/zenith-security/reports/blob/main/reports/Zenith%20Audit%20Report%20-%20Stream%20Protocol.pdf) | unknown | Audit | 2025-02 | aging | Direct | contract_name | 13 | high |
+| [Zenith Audit Report - Stream Protocol.pdf](https://github.com/zenith-security/reports/blob/main/reports/Zenith%20Audit%20Report%20-%20Stream%20Protocol.pdf) | unknown | Audit | 2025-02 | aging | Direct | contract_name | 2 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0x0735eb...d33bfc`](./contracts/ethereum-1/0x0735ebeec9dd125cce45c2f354883ed9e7d33bfc/) | VaultKeeper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
@@ -104,7 +108,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -112,7 +116,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=21
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=2
 
 Fork inheritance lineage and inherited audits are included when available.

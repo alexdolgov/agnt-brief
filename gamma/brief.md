@@ -4,46 +4,49 @@
 
 - Project: Gamma (`gamma`)
 - Website: [https://www.gamma.xyz](https://www.gamma.xyz)
-- Lifecycle: active (Tier 1, declining)
-- Generated: 2026-06-18T12:50:57.605Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-a45b
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:17.423Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-2d9c
 - Chains: arbitrum, avalanche, base, berachain, blast, bsc, ethereum, fantom, gnosis, kava, linea, manta, mantle, metis, mode, moonbeam, polygon, polygon-zkevm, sonic, unichain
-- Contract surface: 400 unique implementations (1822 raw deployments)
-- DeFi Llama TVL: $3,060,016.44
+- Contract surface: 1078 unique implementations (2498 raw deployments)
+- DeFi Llama TVL: $2,761,288.83
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Gamma is an active concentrated-liquidity and market-making protocol offering V1 pooled vaults and V2 vaults for automated liquidity management, tools for creating Uniswap V4 LP vaults, limit order book functionality, Perp Vaults, Merkl incentives, and related liquidity infrastructure. It also includes the GAMMA governance token and xGAMMA staking derivative for fee distribution.
+Liquidity Manager. Structurally: 79 project-authored contract(s) across 12 chain(s); 12 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The Token family's GAMMA and xGAMMA tokens are used within the Gamma family's MultiFeeDistribution contracts to distribute protocol fees to stakers. The Gamma family relies on HypeRegistry contracts to track and manage Hypervisor vaults and other components across multiple chains.
+The protocol comprises 7 functional families. Its contracts share 7 common project-authored base contract(s) (erc165, multicall, immutablestate). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 2570; live-surface contracts included: 1822 (1735 live, 87 unknown).
-- Excluded by liveness: 541 inactive, 207 singleton, 0 uninitialized.
-- Deployment units: 0/72 live.
-- Detected codebases: uniswap-v3
-- Unverified dependencies: 52/146.
+- Indexed contracts: 2498; live-surface contracts included: 2498 (1476 live, 1022 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 30/88 (34.1%)
-- Verified + Unaudited implementations: 52
-- Verified by bytecode match: 7
-- Unverified implementations: 312
-- Unique implementations: 400
-- Raw deployments: 1822
-- Audits discovered: 10
+- Coverage of deployed-live implementations: 30/85 (35.3%)
+- Deployed-live implementations: 86 of 1078 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 30/88
+- Verified + Unaudited implementations: 58
+- Verified by bytecode match: 0
+- Unverified implementations: 990
+- Unique implementations: 1078
+- Raw deployments: 2498
+- Audits discovered: 10 (10 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 10
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/gamma/information))
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-03 (fresh)
-- Staleness: 2 fresh, 3 aging, 4 stale, 0 unknown
-- Tier 1 coverage: 5.7% (ConsenSys Diligence, Immunefi, OpenZeppelin)
+- Audit staleness (calendar age): 1 fresh, 4 aging, 4 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 30 match-unverified
+- Tier 1 coverage: 5.9% (ConsenSys Diligence, Immunefi, OpenZeppelin)
 
 ### Auditor Coverage
 
@@ -59,10 +62,11 @@ The Token family's GAMMA and xGAMMA tokens are used within the Gamma family's Mu
 
 ## Contract Surface
 
-### ✅ Verified + Audited (29)
+### ✅ Verified + Audited (30)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| Admin | unknown | mantle | n/a | 18 deployments: bsc `0xa7fb2e...8b3f93`; bsc `0xf769c5...231d42`; gnosis `0x6e9d70...4cbb4c`; manta `0x38f611...57b35f`; manta `0x8421c6...921d54`; manta `0xc4e1f9...071f1c`; metis `0x2fface...27973d`; metis `0x6e9d70...4cbb4c`; mantle [`0x258d48...b200f2`](./contracts/mantle-5000/0x258d485a17e1ba65ff6367d0e8b8acc70ab200f2/); mantle `0x38f611...57b35f`; mode `0x38f611...57b35f`; avalanche `0x297378...37386e`; avalanche `0xb9ce3e...f0051f`; avalanche `0xc80358...b34388`; berachain `0xccb87b...609d6c`; blast `0x3a8d70...3ee972`; blast `0x889dc5...32e3d9`; blast `0xcf4a87...f7ab93` | ✅ Audited |
 | Clearing | unknown | manta | n/a | 4 deployments: manta [`0x1e86a5...3286f6`](./contracts/manta-169/0x1e86a593e55215957c4755f1be19a229af3286f6/); manta `0x32e27f...1e908f`; manta `0xf44cec...812ead`; metis `0xf44cec...812ead` | ✅ Audited |
 | ClearingV2 | unknown | manta | n/a | 4 deployments: manta [`0x688cb9...a1f4c7`](./contracts/manta-169/0x688cb9492bd2c72016f1765d813b2d713aa1f4c7/); manta `0xb2a19f...0aec1d`; manta `0xf79abc...ee0cff`; metis `0xd359e0...42ae71` | ✅ Audited |
 | ClearingV3 | unknown | bsc | n/a | 2 deployments: bsc [`0x67c676...863710`](./contracts/bsc-56/0x67c676bbe4a8087a16b38ed9254c6f49ce863710/); bsc `0xba4335...c273c7` | ✅ Audited |
@@ -93,7 +97,7 @@ The Token family's GAMMA and xGAMMA tokens are used within the Gamma family's Mu
 | WithdrawLogic | operational_periphery | base | n/a | 5 deployments: bsc `0x675d7d...c97974`; unichain `0xb8e045...e4362a`; unichain `0xee5889...efacfd`; polygon `0x883135...81c0d8`; base [`0x150111...4148c3`](./contracts/base-8453/0x15011164801305a7621c0e4eed4dd97b504148c3/) | ✅ Audited |
 | xGamma | unknown | ethereum | n/a | [`0x268050...747d8c`](./contracts/ethereum-1/0x26805021988f1a45dc708b5fb75fc75f21747d8c/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (52)
+### ⚠️ Verified + Unaudited (58)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
@@ -101,13 +105,16 @@ The Token family's GAMMA and xGAMMA tokens are used within the Gamma family's Mu
 | AuctionStateLens | periphery | unichain | n/a | 2 deployments: unichain [`0x2c4938...4758f3`](./contracts/unichain-130/0x2c49383f8a82b5efb201571bddabb4cd294758f3/); unichain `0xdcf274...9b4dac` | ⚠️ Unaudited |
 | BuybackDeployer | unknown | unichain | n/a | 14 deployments: unichain [`0x04b1b8...52b771`](./contracts/unichain-130/0x04b1b8028ffcf6a012953609ae5ab3eef152b771/); unichain `0x0f0263...4c64a6`; unichain `0x18961e...6c9b11`; unichain `0x1a52c3...e9d461`; unichain `0x32adb5...8b3b7f`; unichain `0x44834e...2316c7`; unichain `0x5dc608...332437`; unichain `0x7629f3...9996d4`; unichain `0x83109b...e60c7e`; unichain `0x989707...4d4cc0`; unichain `0xafa994...e9eaf4`; unichain `0xbb949c...3a75ee`; unichain `0xe4d9da...7325eb`; unichain `0xf9a31b...726604` | ⚠️ Unaudited |
 | CallOptionFactoryDeployer | registry | unichain | n/a | 14 deployments: unichain [`0x044c32...4cd4ef`](./contracts/unichain-130/0x044c32b8a70cab92804c5f4c0b784a8ef64cd4ef/); unichain `0x233b16...ee5b90`; unichain `0x4120ca...063576`; unichain `0x4370d6...b6463c`; unichain `0x6357b2...2c1bad`; unichain `0x68ae6a...5a1157`; unichain `0x6cb770...38b4c6`; unichain `0x7d0c01...0ce162`; unichain `0x97422f...748680`; unichain `0xa3debc...6eda4b`; unichain `0xaa22cf...cc4b62`; unichain `0xdb92d3...8c89e6`; unichain `0xf89eeb...53dd66`; unichain `0xfd96bd...943eee` | ⚠️ Unaudited |
+| CamelStrategy | core_logic | unichain | n/a | 62 deployments: bsc `0x2ec776...117642`; bsc `0x769197...52dc04`; unichain [`0x018c22...c69b7e`](./contracts/unichain-130/0x018c229b7cbfb1be6810891327ec5a4bdfc69b7e/); unichain `0x01c79c...9bd963`; unichain `0x0c6f8f...b4611f`; unichain `0x1001bc...534d6b`; unichain `0x1592cf...713ce0`; unichain `0x1f32c2...8c0822`; unichain `0x201ac5...a4270b`; unichain `0x2d1896...1d1e2d`; unichain `0x2e4227...8ea768`; unichain `0x3257ee...c730e1`; unichain `0x32db70...5e0025`; unichain `0x333fe5...44bb10`; unichain `0x33c990...74b25d`; unichain `0x474406...fcdc31`; unichain `0x4856a8...c14f68`; unichain `0x4c2747...6e2b88`; unichain `0x52f501...294ab8`; unichain `0x56a7b7...d2ade7`; unichain `0x594186...57fba7`; unichain `0x5bf7b7...a5cbfc`; unichain `0x60076c...c06174`; unichain `0x6061ad...89bf33`; unichain `0x653f0d...1dcb49`; unichain `0x65419d...5958ff`; unichain `0x67b8ba...3af9f1`; unichain `0x74de29...ee3533`; unichain `0x8141fe...2d0e5f`; unichain `0x86346d...8b2de3`; unichain `0x8997b6...6da80d`; unichain `0x8b8efe...b68fa7`; unichain `0x8ee0eb...81f660`; unichain `0x90e590...3298f7`; unichain `0x91bcc4...8dc088`; unichain `0x92acc6...44f0f0`; unichain `0x95e9a5...f5596a`; unichain `0xa57d16...5ecd36`; unichain `0xa723c4...7957b9`; unichain `0xb05045...59ed98`; unichain `0xbaacf8...c248c3`; unichain `0xbad544...5b70be`; unichain `0xbb96b0...fc9779`; unichain `0xbfc9e9...240b03`; unichain `0xc34d86...1a3365`; unichain `0xc67854...cd1760`; unichain `0xd120ef...c1d54e`; unichain `0xd5629e...7b711c`; unichain `0xdba3b7...663e2d`; unichain `0xdec27d...34fc37`; unichain `0xe3dd1b...c4bcd1`; unichain `0xf2275f...7e3574`; unichain `0xf2dd7d...8a88ee`; unichain `0xfbc9ad...a5b78b`; unichain `0xfe0276...9dd5e9`; polygon `0xaea3a2...1044d4`; polygon `0xd6bb8d...8b3fb8`; base `0x89a1ff...18b80c`; base `0xfda295...302fa6`; arbitrum `0x024ee9...e20349`; arbitrum `0x044f8d...e224df`; arbitrum `0xb713d6...2f4150` | ⚠️ Unaudited |
 | CleopatraHypervisor | unknown | mantle | n/a | 5 deployments: mantle [`0x07d5f8...21357f`](./contracts/mantle-5000/0x07d5f8d1593eeadd121ea269108b4e00e121357f/); mantle `0x224972...aa932d`; mantle `0x56f12f...70dc4e`; mantle `0x8dfd2a...c5a374`; mantle `0xb26d1d...ad891f` | ⚠️ Unaudited |
 | ContinuousClearingAuctionFactory | registry | unichain | n/a | 2 deployments: unichain [`0x7916fa...09f4d4`](./contracts/unichain-130/0x7916fae61d32b9c55211b965c37bd083c909f4d4/); unichain `0x8c03ed...d10e45` | ⚠️ Unaudited |
 | DelegatedAccount | core_logic | unichain | n/a | [`0x5a4b38...18bc56`](./contracts/unichain-130/0x5a4b38a6feb3d901431adf7e1d3ebfc10818bc56/) | ⚠️ Unaudited |
 | DynamicFeeHookRegistry | registry | unichain | n/a | 20 deployments: unichain [`0x0340e3...c77dc3`](./contracts/unichain-130/0x0340e3c5e8971daf8aff06d9c4454e3f24c77dc3/); unichain `0x094057...11fd48`; unichain `0x0b6a89...fb86e5`; unichain `0x211cfd...4b0069`; unichain `0x2f9f18...32edf7`; unichain `0x355c45...5f03ab`; unichain `0x36f7cc...30f397`; unichain `0x48128e...05f85c`; unichain `0x720314...7f5bdc`; unichain `0xbe2b05...f70b2b`; unichain `0xbeea31...306ef9`; unichain `0xceda8d...e445f0`; unichain `0xdaebe1...9db2ef`; unichain `0xe38cf4...39a3ea`; unichain `0xe8ca75...554d1d`; unichain `0xff0f21...2969df`; arbitrum `0x7fc0c8...607623`; arbitrum `0xaad422...33cb13`; arbitrum `0xadc465...95f474`; arbitrum `0xff327c...7d242a` | ⚠️ Unaudited |
 | DynamicFeeLimitOrderHookRegistry | registry | unichain | n/a | 15 deployments: unichain [`0x00999a...2311b6`](./contracts/unichain-130/0x00999af6ca791696be772aa4d40739d8612311b6/); unichain `0x1163d6...a39ac4`; unichain `0x192bf4...124da6`; unichain `0x51268d...b1bda9`; unichain `0x72377a...28cac6`; unichain `0x76be14...ef1da7`; unichain `0x9b4832...c2d3d0`; unichain `0xad1f3d...a15a83`; unichain `0xd11dd2...c81a21`; unichain `0xdca67d...0fc867`; unichain `0xf8ff70...cf5797`; arbitrum `0x27612e...96f003`; arbitrum `0x95a740...5cc6fa`; arbitrum `0xccc605...a8d930`; arbitrum `0xfcb3a1...83bfac` | ⚠️ Unaudited |
+| ExponentialStrategy | core_logic | unichain | n/a | 96 deployments: bsc `0x5ffdb3...245d85`; bsc `0x87247a...862411`; unichain [`0x001e82...fb0d0e`](./contracts/unichain-130/0x001e82575850dc7f9cea5d7585ccb56afffb0d0e/); unichain `0x0cc256...126db1`; unichain `0x0e199a...dc5110`; unichain `0x13f741...6f199f`; unichain `0x171039...f4c185`; unichain `0x1726be...c0997c`; unichain `0x188a84...fb2308`; unichain `0x18bbbc...db003c`; unichain `0x1bc8c9...b8b756`; unichain `0x1c454d...3006c2`; unichain `0x1d1170...ca1ad3`; unichain `0x1e934f...f26b6b`; unichain `0x1ecd6d...d0805f`; unichain `0x1ed6d5...cb32fa`; unichain `0x217cc0...61506e`; unichain `0x22f904...5a0199`; unichain `0x266eb4...12c3f0`; unichain `0x282b9b...2c7f71`; unichain `0x370237...99fbe0`; unichain `0x383363...f3f394`; unichain `0x3b33b4...adfe99`; unichain `0x3b4707...cdbd2b`; unichain `0x41590e...60cf92`; unichain `0x443647...730e77`; unichain `0x470fa6...a86c4e`; unichain `0x477e98...cb6cac`; unichain `0x495cfc...3e067d`; unichain `0x4a7664...7e73c8`; unichain `0x551e27...bc5951`; unichain `0x5788f1...d4f60c`; unichain `0x5987b5...313761`; unichain `0x5a2958...e968d5`; unichain `0x5b3fa5...2df275`; unichain `0x5da448...cff2af`; unichain `0x5da64c...09a48a`; unichain `0x5f7efc...c17161`; unichain `0x614a0a...b3e90f`; unichain `0x63a3d9...e4edbf`; unichain `0x649c42...4a0786`; unichain `0x69b55a...879ad7`; unichain `0x6cdbbf...095f22`; unichain `0x6f1843...33845d`; unichain `0x6fcd75...fcc107`; unichain `0x7305b0...b779d3`; unichain `0x76fefa...8f24af`; unichain `0x77674f...22bea7`; unichain `0x7de18d...10fbb3`; unichain `0x7f8f40...98c584`; unichain `0x83e111...7912ca`; unichain `0x85e5f2...cdd2ca`; unichain `0x8b3754...cd5685`; unichain `0x8dd12a...572508`; unichain `0x8f6301...484bbe`; unichain `0x8f738d...a7e861`; unichain `0x94b6a6...86e643`; unichain `0x988af8...d754ec`; unichain `0x99d148...7470d7`; unichain `0x9ff2ad...9bf694`; unichain `0xa53de9...14ccb4`; unichain `0xa54567...7c141b`; unichain `0xa82fa3...e2e266`; unichain `0xac347e...6dfd97`; unichain `0xaed1ea...1f45e2`; unichain `0xafc371...605277`; unichain `0xb2f637...086214`; unichain `0xb3e241...26e760`; unichain `0xbca822...d177e3`; unichain `0xbe1bc9...f77c6e`; unichain `0xbe42a3...1accc6`; unichain `0xbf1958...fef823`; unichain `0xbf399c...084a25`; unichain `0xc3cb5b...8fbe4e`; unichain `0xcbad45...547add`; unichain `0xcd0cde...39aadb`; unichain `0xd361ce...41613a`; unichain `0xd52ef1...4ecad3`; unichain `0xd9e45f...add906`; unichain `0xdb5365...1a444e`; unichain `0xdda356...33574d`; unichain `0xe02d86...995de4`; unichain `0xe911f4...878fc2`; unichain `0xf0653d...0f1ec3`; unichain `0xf09241...3a7164`; unichain `0xf5b2c6...288a1b`; unichain `0xf63850...136109`; unichain `0xfaf0d3...8e7614`; unichain `0xfcb6c2...7bbf43`; unichain `0xfd06f9...55e076`; polygon `0x0b444d...a8e6c2`; polygon `0x937b55...1bfb59`; base `0x2122e6...338e5c`; base `0x93d1ea...1d4ccf`; arbitrum `0xcc05d2...11d217`; arbitrum `0xdaf6cc...257241` | ⚠️ Unaudited |
 | FeeRecipientV2 | operational_periphery | sonic | n/a | 7 deployments: sonic [`0x074361...da1d64`](./contracts/sonic-146/0x0743618e342f4351890e81f6815f75753cda1d64/); sonic `0x65ac62...26680b`; sonic `0xcfd4a6...0876a8`; avalanche `0x9df9f7...3e97b7`; avalanche `0xaabc1c...3f476c`; avalanche `0xfb92d3...bf2671`; berachain `0x8f88f9...59f8a1` | ⚠️ Unaudited |
 | Gamma | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6bea7c...44e197`](./contracts/ethereum-1/0x6bea7cfef803d1e3d5f7c0103f7ded065644e197/); ethereum `0x8a539c...ed793a` | ⚠️ Unaudited |
+| GaussianStrategy | core_logic | unichain | n/a | 96 deployments: bsc `0x96e445...686cbd`; bsc `0xc03de4...142108`; unichain [`0x08f8b4...188d8e`](./contracts/unichain-130/0x08f8b4c23c38a57f8de29e8694ead60f6f188d8e/); unichain `0x0933e3...41a349`; unichain `0x0c6021...1e4337`; unichain `0x0e38e4...67c756`; unichain `0x0e608b...f3d943`; unichain `0x1017d7...ea3845`; unichain `0x10a265...c65f3e`; unichain `0x10fe77...fc22bf`; unichain `0x13b11c...831c66`; unichain `0x140f45...7aec8f`; unichain `0x1b16f5...c7ad0e`; unichain `0x200eb0...046734`; unichain `0x217687...abe666`; unichain `0x21cac5...75cee5`; unichain `0x231ca7...8f29fc`; unichain `0x23be0e...c35666`; unichain `0x24c09e...095a44`; unichain `0x27612e...96f003`; unichain `0x293c31...d3667b`; unichain `0x29d50b...3668fc`; unichain `0x2cbca8...de722d`; unichain `0x2eac89...2fd677`; unichain `0x3381b0...fd0c9e`; unichain `0x3460e9...7e55a4`; unichain `0x393fcb...9d1dc1`; unichain `0x3943fe...fe4a36`; unichain `0x3b7e13...e6d4e5`; unichain `0x3bde00...85f5ad`; unichain `0x3cf418...f3a1f6`; unichain `0x3cf68e...5cbc1d`; unichain `0x411b51...c1feb6`; unichain `0x413898...b64fdc`; unichain `0x418f62...633d77`; unichain `0x4657f9...78b560`; unichain `0x4ef031...14a3c2`; unichain `0x52d31b...2c5da8`; unichain `0x539306...aa7029`; unichain `0x5662ab...4c3a0d`; unichain `0x572a98...32c22c`; unichain `0x57929c...c6169b`; unichain `0x57c130...9f7bb0`; unichain `0x5bf5fe...ccf775`; unichain `0x5c6a07...34d980`; unichain `0x623fe5...5f20e7`; unichain `0x6730b2...14cb19`; unichain `0x6b147c...95796b`; unichain `0x73a042...a56ba3`; unichain `0x757776...21c1b6`; unichain `0x75d063...308261`; unichain `0x765929...807c1a`; unichain `0x79a3ab...1991a7`; unichain `0x7c6ce0...beaaf0`; unichain `0x7db395...c8ff66`; unichain `0x8070de...644a95`; unichain `0x8182be...1eafa5`; unichain `0x81c4a4...d5fcfd`; unichain `0x841cb6...4a4465`; unichain `0x850ff9...0ee81a`; unichain `0x87475b...266a5a`; unichain `0x89cd65...8c8926`; unichain `0x8a7734...b39aa5`; unichain `0x9084cb...415ac0`; unichain `0x91ce20...7cd6b5`; unichain `0x94f6fc...0c1a87`; unichain `0x953973...d1b7d8`; unichain `0x9b53fa...17be68`; unichain `0x9ea19b...025a14`; unichain `0xa0010b...798aa9`; unichain `0xa090f6...0b6e01`; unichain `0xa73192...8fc07f`; unichain `0xb55c1d...f2553c`; unichain `0xb573c5...ef6d9e`; unichain `0xba0507...cdf9a6`; unichain `0xbe4f37...49dd12`; unichain `0xc118fc...6f8fd3`; unichain `0xc21d9e...aa18ba`; unichain `0xc25805...2d910a`; unichain `0xc66e93...556ca2`; unichain `0xcc33f9...6a72b0`; unichain `0xcc4fee...e8f6ff`; unichain `0xd59529...5e107b`; unichain `0xd8b08d...fe9456`; unichain `0xd91571...eb1bae`; unichain `0xdedaa7...17762a`; unichain `0xe50332...b5b38e`; unichain `0xe76723...47104b`; unichain `0xe895ea...c4c716`; unichain `0xfd9ad6...b7f6e3`; polygon `0x29febe...40b2d9`; polygon `0x5152a3...65fb4c`; base `0x4d71cc...6015f4`; base `0xabba8b...0df54f`; arbitrum `0x959dc8...ece50f`; arbitrum `0x9b99ae...3323fc` | ⚠️ Unaudited |
 | HypeRegistry | registry | avalanche | n/a | 17 deployments: bsc `0x4ce60e...bf98e5`; bsc `0x8a79be...de29ee`; unichain `0x2a0785...3efba1`; manta `0x670003...dc6bf7`; manta `0x683292...161300`; manta `0x8a9570...4968f0`; manta `0xc27ddd...099881`; manta `0xd6cc4a...25f517`; metis `0x38f611...57b35f`; metis `0xfc13eb...153621`; base `0x6809f4...0e9373`; avalanche [`0x04dd4b...13ab51`](./contracts/avalanche-43114/0x04dd4bd444e1fb7863787a434a31fb5f1213ab51/); avalanche `0xa9fe99...84b915`; avalanche `0xb7f05d...b740bc`; linea `0xc27ddd...099881`; berachain `0x116dee...d1b0c3`; berachain `0x9f0db1...e9a567` | ⚠️ Unaudited |
 | InitialDepositLens | periphery | bsc | n/a | 46 deployments: bsc [`0x049a72...bdf734`](./contracts/bsc-56/0x049a72032a08409712268aae1bd6f0a118bdf734/); unichain `0x1a5a1d...55c214`; unichain `0x1d37f4...c78f24`; unichain `0x24036d...f5d419`; unichain `0x2a9e31...05a4b1`; unichain `0x2aa019...8352c9`; unichain `0x2ab862...934aa9`; unichain `0x34624f...1d1013`; unichain `0x3c80d8...e22985`; unichain `0x4c3eef...53aa98`; unichain `0x4cfcc8...a7728c`; unichain `0x4f90d0...8252eb`; unichain `0x505aad...d09947`; unichain `0x52122d...b4d11d`; unichain `0x617582...84f4c9`; unichain `0x6b6741...89fc01`; unichain `0x71e852...ad4c28`; unichain `0x74efd7...07394f`; unichain `0x780ccc...c05c8c`; unichain `0x7d99bd...69c1f3`; unichain `0x86fa3e...acbf37`; unichain `0x8715d5...9cd0e7`; unichain `0x9293c5...e9c7f6`; unichain `0x99cbec...31cd36`; unichain `0x9dcf01...f1ea6a`; unichain `0xa3362a...983ca7`; unichain `0xa7cc89...4b5d1b`; unichain `0xaa5371...66eeb0`; unichain `0xb0a17c...99a7fc`; unichain `0xb51fca...218160`; unichain `0xb824bf...741e12`; unichain `0xbad1d2...0f1048`; unichain `0xbe0067...b805b5`; unichain `0xc40425...44911b`; unichain `0xd83524...d4961e`; unichain `0xdf9b14...6259cf`; unichain `0xe19057...a039ed`; unichain `0xe270e4...cdb708`; unichain `0xe2a639...6a26c8`; unichain `0xe5f396...138b90`; unichain `0xe70845...0a398a`; unichain `0xebf162...8d8cdc`; unichain `0xedb74b...0ed907`; unichain `0xf9873f...8489b7`; polygon `0x56dbae...718d0a`; base `0xa23eca...5bc912` | ⚠️ Unaudited |
 | InitialDepositLensLogic | periphery | polygon | n/a | 5 deployments: bsc `0xba0fe0...52741e`; unichain `0xa40565...101ded`; unichain `0xbc19e5...970e70`; polygon [`0x428ded...ef7091`](./contracts/polygon-137/0x428dedf862f5c05f5813efa5ef54d28cc1ef7091/); base `0x9e3360...fa8d24` | ⚠️ Unaudited |
@@ -129,13 +136,16 @@ The Token family's GAMMA and xGAMMA tokens are used within the Gamma family's Mu
 | SimpleLensLibrary | periphery | base | n/a | 5 deployments: bsc `0x34cf1a...be79c9`; unichain `0xa8782a...d3049c`; unichain `0xe971ee...8a8cda`; polygon `0xf2a761...38ce80`; base [`0x13f741...6f199f`](./contracts/base-8453/0x13f741012541fd57cf2056421658125b7c6f199f/) | ⚠️ Unaudited |
 | SimpleLensRatioUtils | periphery | unichain | n/a | 5 deployments: bsc `0xaad45e...b57c57`; unichain [`0x53d4c1...06db0a`](./contracts/unichain-130/0x53d4c13b6d838c9b9817f582c3ce5be3b106db0a/); unichain `0x557d4c...8a4350`; polygon `0xca3324...15a8c0`; base `0x7c6ce0...beaaf0` | ⚠️ Unaudited |
 | SimpleLensRatioUtilsPositions | periphery | unichain | n/a | 5 deployments: bsc `0xb7471b...b4af73`; unichain [`0x28ed6b...1f7efe`](./contracts/unichain-130/0x28ed6bacdda981c9055de8c513c4a995c81f7efe/); unichain `0xfdaa6e...48886e`; polygon `0xb0617d...8c1184`; base `0xa1b4ca...e31ca6` | ⚠️ Unaudited |
+| SingleUniformStrategy | core_logic | unichain | n/a | 69 deployments: bsc `0x037ace...f8a028`; bsc `0x428ded...ef7091`; bsc `0xc8da58...5f6959`; unichain [`0x02d66a...d570e9`](./contracts/unichain-130/0x02d66aaa86b03314239d865925d1fa4115d570e9/); unichain `0x0530ce...069476`; unichain `0x0cc89e...e7b6d5`; unichain `0x0df4e8...6c9c5f`; unichain `0x0fb62d...765708`; unichain `0x150111...4148c3`; unichain `0x16aa39...09c508`; unichain `0x1b66a5...d91475`; unichain `0x2a8b07...6956d6`; unichain `0x2cc493...ae3ee7`; unichain `0x2debb9...35a05b`; unichain `0x2eb45b...9bd95e`; unichain `0x304b89...e41fa3`; unichain `0x34ad86...4ca304`; unichain `0x35286b...c1ea98`; unichain `0x3b5b36...42e585`; unichain `0x3cfece...e72c3b`; unichain `0x3f9389...18ce1b`; unichain `0x44483a...382ad5`; unichain `0x4981e4...ec733b`; unichain `0x49ae0a...870dea`; unichain `0x4c3c38...4fb879`; unichain `0x4db1fa...9b2d3f`; unichain `0x4e1942...138adc`; unichain `0x50127a...79ca8f`; unichain `0x51f7fc...de2b00`; unichain `0x55cfc2...bb23f4`; unichain `0x639e8a...fa90bb`; unichain `0x6c49f3...58f2df`; unichain `0x6e2b99...f59038`; unichain `0x71f752...1c6dc7`; unichain `0x7d507e...ca715c`; unichain `0x817ac1...bb75b5`; unichain `0x852468...298b92`; unichain `0x91c88d...0be7a0`; unichain `0x954472...86be44`; unichain `0x9bf8d6...b552c2`; unichain `0x9e7803...626c8a`; unichain `0xa168c8...30508d`; unichain `0xa2ab24...f20cd2`; unichain `0xa328b2...88dcfa`; unichain `0xa4d388...73a173`; unichain `0xadd038...3ae95d`; unichain `0xaee0ec...0eadb6`; unichain `0xb81f5a...e1dc82`; unichain `0xba422c...4f2a50`; unichain `0xbc7c1b...9df48c`; unichain `0xcc6338...429b37`; unichain `0xd01c01...263df1`; unichain `0xd4ee1e...e1df09`; unichain `0xdc9005...33a708`; unichain `0xe84895...960486`; unichain `0xe8cb08...a11655`; unichain `0xe9aceb...29b1cb`; unichain `0xee1cdc...1dbe25`; unichain `0xf6a842...6c0e35`; polygon `0x5c1cba...892f85`; polygon `0x5f4001...ea5e99`; polygon `0x6bd13b...7196be`; base `0x549e2c...f33c5b`; base `0xa450f6...a1a165`; base `0xe177fd...77994c`; base `0xf89935...d93d58`; arbitrum `0x07da74...3fb7b2`; arbitrum `0x44b859...c488aa`; arbitrum `0xabf404...8f2a00` | ⚠️ Unaudited |
 | SwapThenLimitOrderHelper | periphery | unichain | n/a | 21 deployments: unichain [`0x019f56...a033bf`](./contracts/unichain-130/0x019f567bbcfcb9d70ce15657d22098ca29a033bf/); unichain `0x19dd5a...29e164`; unichain `0x24e740...f3be4a`; unichain `0x277387...fe20e3`; unichain `0x38d472...ff4ac3`; unichain `0x3aa546...1646c9`; unichain `0x4d72c2...c2607a`; unichain `0x4f71d0...525789`; unichain `0x5aaf1b...84f946`; unichain `0x8665ee...f6d7ce`; unichain `0x8d36e2...98d2b0`; unichain `0xa5cb10...e95646`; unichain `0xb8f9dc...bfcfc5`; unichain `0xb95a04...21df00`; unichain `0xd95001...154a45`; unichain `0xd9de86...d45cc1`; unichain `0xdb9aff...d52cf7`; unichain `0xdbbb91...faea0f`; unichain `0xff19ce...14b269`; base `0xa6d830...362c49`; base `0xd1d27d...7b4354` | ⚠️ Unaudited |
 | TokenFactory | registry | unichain | n/a | 2 deployments: unichain [`0x1bb667...1abab1`](./contracts/unichain-130/0x1bb66795f843d3e207664aafdd19df3ae91abab1/); unichain `0x95d9b1...1d841b` | ⚠️ Unaudited |
 | TokenLaunchFactoryLens | registry | unichain | n/a | 3 deployments: unichain [`0x59d994...4d107f`](./contracts/unichain-130/0x59d994025c4c80385758538edaecdfc7ca4d107f/); unichain `0xb77ccc...7f0931`; unichain `0xcb1f5a...6ad749` | ⚠️ Unaudited |
 | TokenLaunchFactoryV2 | registry | unichain | n/a | 4 deployments: unichain [`0x2cef90...3b459b`](./contracts/unichain-130/0x2cef90b7cf69eb016af4781423e11136903b459b/); unichain `0x39a343...27eb65`; unichain `0x63d381...ea6a15`; unichain `0xd8f7b6...8ae689` | ⚠️ Unaudited |
 | TokenLaunchFactoryV3 | registry | unichain | n/a | 9 deployments: unichain [`0x1e3b4c...d779f8`](./contracts/unichain-130/0x1e3b4cecfa5c05fa74bdf281dfd6e368c9d779f8/); unichain `0x36589d...498283`; unichain `0x834370...f84af3`; unichain `0x992d09...42132c`; unichain `0x9f2fc3...32ad57`; unichain `0xb4e882...32d727`; unichain `0xe3c927...a6d8bb`; unichain `0xf4f9c8...de7219`; unichain `0xf92aea...f2f09a` | ⚠️ Unaudited |
 | TokenVestingFactoryDeployer | operational_periphery | unichain | n/a | 14 deployments: unichain [`0x1435dd...6d7297`](./contracts/unichain-130/0x1435ddc2c8fa2400aeb94a270bf89c7f306d7297/); unichain `0x1b1d73...122fa5`; unichain `0x2eb852...32f854`; unichain `0x3faead...f04b26`; unichain `0x429de3...e8195c`; unichain `0x46cf7b...9c077e`; unichain `0x53b115...93b4b0`; unichain `0x6075c4...1dc7ae`; unichain `0x67b5e8...b98de8`; unichain `0x6ddf6a...e3344e`; unichain `0xadaab6...f76639`; unichain `0xb34818...603202`; unichain `0xb63eaa...9029b0`; unichain `0xeb1438...35d712` | ⚠️ Unaudited |
+| TriangleStrategy | core_logic | unichain | n/a | 96 deployments: bsc `0x9ed988...7c8d0f`; bsc `0xfc9101...409cea`; unichain [`0x00a6c6...436fe4`](./contracts/unichain-130/0x00a6c62a5b337e605cc178e6d84367507f436fe4/); unichain `0x030e32...cc8d37`; unichain `0x07b8e2...0b24f1`; unichain `0x07cef1...4954c3`; unichain `0x0cd379...316598`; unichain `0x11b5b6...5ddc41`; unichain `0x15ba45...607d60`; unichain `0x18dcd1...a8411b`; unichain `0x195a91...11c9ea`; unichain `0x1d1a79...e902ca`; unichain `0x1f7f98...d0759f`; unichain `0x26f2ec...a4f187`; unichain `0x271381...d295f8`; unichain `0x289407...8c1fff`; unichain `0x2a09cc...a0baad`; unichain `0x2a9b32...b9acd9`; unichain `0x2f8476...ac5aa8`; unichain `0x2fb587...76d4e4`; unichain `0x34c4e8...4a383c`; unichain `0x358d98...c90a03`; unichain `0x392fa8...c26773`; unichain `0x3dd8b6...ecb8b6`; unichain `0x3e7e3e...512b18`; unichain `0x418679...f95dfa`; unichain `0x4194e5...3495e3`; unichain `0x421a1c...60a5c2`; unichain `0x42ab89...296ac4`; unichain `0x449866...117ced`; unichain `0x4ddc35...005309`; unichain `0x4dfc6c...c5d1aa`; unichain `0x4e150c...afa2b1`; unichain `0x52a01a...05262e`; unichain `0x5b5ad7...c6b7ff`; unichain `0x5d8565...91ab72`; unichain `0x5dd287...c0c1b8`; unichain `0x5e968a...27ac04`; unichain `0x64cfd8...1ce5ff`; unichain `0x65a1c6...16273b`; unichain `0x65b641...1ba1f5`; unichain `0x6b56f3...1d340c`; unichain `0x6fb31a...bd113f`; unichain `0x744322...87d25a`; unichain `0x74f047...02d60a`; unichain `0x782893...051287`; unichain `0x7e8ebe...f081f3`; unichain `0x83bbb2...83fc8b`; unichain `0x86ef40...683113`; unichain `0x89a1ff...18b80c`; unichain `0x8cd822...4ce1dd`; unichain `0x9046a8...943bc2`; unichain `0x90a806...592c6d`; unichain `0x9683b7...7137aa`; unichain `0x9b1041...7e0a00`; unichain `0x9d487b...400c4d`; unichain `0xa2c52c...3cc477`; unichain `0xa4566e...21a09c`; unichain `0xad382e...2fe500`; unichain `0xae7bce...398ea6`; unichain `0xb0dcc4...a5a0ca`; unichain `0xb1f1c8...87d068`; unichain `0xb2c72f...50908e`; unichain `0xb4d944...1f4db8`; unichain `0xb67857...f1d925`; unichain `0xb84728...bc7b97`; unichain `0xbb2bd1...d114fa`; unichain `0xbb5c26...62c422`; unichain `0xbbc925...0ebbf8`; unichain `0xbeebaa...783c87`; unichain `0xc24cf8...095e67`; unichain `0xc5d196...592f15`; unichain `0xc72b5a...a0e14b`; unichain `0xc8f6ea...67597a`; unichain `0xca1970...cf1722`; unichain `0xcae476...90ff54`; unichain `0xcc2b53...33aa10`; unichain `0xcc4005...cd3cfe`; unichain `0xceb010...a76e32`; unichain `0xd7e754...28983d`; unichain `0xdac551...25e9fb`; unichain `0xe201e1...c63c3e`; unichain `0xe36344...6e57bd`; unichain `0xe87099...79deda`; unichain `0xebf945...33c493`; unichain `0xeeb252...6e539e`; unichain `0xeec601...625024`; unichain `0xefbb86...e69dd3`; unichain `0xfe0264...3bdead`; unichain `0xff327c...7d242a`; polygon `0xa4ae2d...610ea6`; polygon `0xb5d3e1...fe6e40`; base `0x423e8c...813c0e`; base `0xe5defe...bb9e1f`; arbitrum `0x105da8...99b123`; arbitrum `0x1c454d...3006c2` | ⚠️ Unaudited |
 | UERC20Factory | registry | unichain | n/a | [`0xdf15f1...745be1`](./contracts/unichain-130/0xdf15f1ebd814a6eb2bb5bc9582cd1580b1745be1/) | ⚠️ Unaudited |
+| UniformStrategy | core_logic | unichain | n/a | 101 deployments: bsc `0x2a7bb0...6125db`; bsc `0x536f96...c04656`; bsc `0xcc5a96...f431f5`; unichain [`0x00fccd...72bcbc`](./contracts/unichain-130/0x00fccdd26f35672808ea8660e4a3a231ac72bcbc/); unichain `0x01a6aa...9d95e2`; unichain `0x05daf3...8b0092`; unichain `0x0602e0...d8ffff`; unichain `0x08090d...abcbd0`; unichain `0x0945e7...fe5140`; unichain `0x0971d2...8d2335`; unichain `0x0d9f42...23a8f5`; unichain `0x136933...5afd14`; unichain `0x1fd3e4...928ebe`; unichain `0x2024ef...938164`; unichain `0x20c96f...ae6b6d`; unichain `0x28c7e8...edc7b2`; unichain `0x2b23f2...e8a600`; unichain `0x2d7e58...47c61c`; unichain `0x30f56f...10c93d`; unichain `0x32b164...3f3c24`; unichain `0x32f52c...a2a254`; unichain `0x355dec...037ca5`; unichain `0x3958f4...c099c7`; unichain `0x3c50af...cbb5c1`; unichain `0x4080b6...3274a7`; unichain `0x409d2c...e02225`; unichain `0x43b7c3...38b9f8`; unichain `0x449702...7e0df4`; unichain `0x44b859...c488aa`; unichain `0x46cb87...36ac68`; unichain `0x473fc7...a5534b`; unichain `0x493964...3ee12c`; unichain `0x4b2300...0eaa74`; unichain `0x4d566a...c31956`; unichain `0x540e64...6cf14f`; unichain `0x56897d...82b9de`; unichain `0x5a64d5...d878c6`; unichain `0x5b2812...5a5590`; unichain `0x5fba93...68dc1b`; unichain `0x6bab37...a486b6`; unichain `0x6d04f7...10ccbb`; unichain `0x6f5882...5834bc`; unichain `0x731555...aeced2`; unichain `0x7883a0...dd30b4`; unichain `0x7a9f72...527fac`; unichain `0x7eaddb...622849`; unichain `0x823e97...441dd2`; unichain `0x82b25a...9c479e`; unichain `0x85bd0e...cd8b2d`; unichain `0x8abd33...e2934d`; unichain `0x8be7a5...cea3a3`; unichain `0x8c91f4...3f611d`; unichain `0x8d5619...ad6f84`; unichain `0x8f6086...73fc0c`; unichain `0x904121...d88bf9`; unichain `0x91ed4c...b7afae`; unichain `0x957446...3d3137`; unichain `0x969916...35bdb3`; unichain `0x972cd3...6434be`; unichain `0x97ec79...672447`; unichain `0x9b875e...1bccda`; unichain `0x9c981c...301b72`; unichain `0x9d401c...f55144`; unichain `0x9ed038...40298d`; unichain `0xa1b4ca...e31ca6`; unichain `0xa23eca...5bc912`; unichain `0xa3123d...a0aa5d`; unichain `0xa45a15...b5cc9d`; unichain `0xa880ab...717510`; unichain `0xab2f35...fb43f9`; unichain `0xb0fba7...254235`; unichain `0xb3d8e0...007155`; unichain `0xb5f95f...bdf572`; unichain `0xba00a2...5ec8c5`; unichain `0xbe9690...118099`; unichain `0xbea137...1c172d`; unichain `0xc566c7...6d5a61`; unichain `0xc9c078...bd6e2b`; unichain `0xcc9955...653b53`; unichain `0xd3e553...754f0d`; unichain `0xe3dd7c...2f8073`; unichain `0xe5cf83...2efca3`; unichain `0xe774c6...7ab5a0`; unichain `0xe7a2c0...366e8e`; unichain `0xe7eeb8...dab4dc`; unichain `0xec3851...432075`; unichain `0xf19763...1c2098`; unichain `0xf3b50f...6e10db`; unichain `0xf4544a...f87e2d`; unichain `0xf4fc01...e99813`; unichain `0xf94055...05c504`; unichain `0xfc95cf...99bc7a`; polygon `0x030b73...fbe783`; polygon `0x24c1c7...e8398f`; polygon `0xd0f38a...60b2be`; base `0x73c53d...314c4a`; base `0xb01455...841e75`; base `0xf126c5...d45812`; arbitrum `0x338178...988ed5`; arbitrum `0x55daab...e21cc3`; arbitrum `0xbab62c...a3f994` | ⚠️ Unaudited |
 | UnilaunchBuybackDeployer | unknown | unichain | n/a | 5 deployments: unichain [`0x1f76d3...d846e8`](./contracts/unichain-130/0x1f76d32f063dd393bd4c3d0e179c5806b7d846e8/); unichain `0x4bc041...69c290`; unichain `0x65e29e...6286fc`; unichain `0xb38205...aa38ce`; unichain `0xcfdc82...93754c` | ⚠️ Unaudited |
 | UnilaunchCallOptionFactoryDeployer | registry | unichain | n/a | 5 deployments: unichain [`0x14e8cf...4f3cb7`](./contracts/unichain-130/0x14e8cf6d5d1e83416a1984a5240105653a4f3cb7/); unichain `0x87ffe8...59dbf1`; unichain `0xa22cf8...8a2aa3`; unichain `0xe49240...9f8b30`; unichain `0xef692a...f4c641` | ⚠️ Unaudited |
 | UnilaunchDelegatedAccount | core_logic | unichain | n/a | [`0x7d9f6d...622c9f`](./contracts/unichain-130/0x7d9f6d2c7f1a8efdd6074ef130b741cc5f622c9f/) | ⚠️ Unaudited |
@@ -150,33 +160,150 @@ The Token family's GAMMA and xGAMMA tokens are used within the Gamma family's Mu
 | VolatilityDynamicFeeLimitOrderHookRegistry | registry | unichain | n/a | 15 deployments: unichain [`0x0b8e46...4ecc01`](./contracts/unichain-130/0x0b8e46cd2fcd6d6b2eb57128fc0f540fd24ecc01/); unichain `0x1fd1be...11df2c`; unichain `0x3812ef...832948`; unichain `0x3d24c9...296c00`; unichain `0x58a118...11194a`; unichain `0x5f5839...28d4cb`; unichain `0x8544b3...d16dfa`; unichain `0x914ab7...f9d99e`; unichain `0x9f5a52...af23c9`; unichain `0xaf392e...4e1524`; unichain `0xb4843f...ca717f`; arbitrum `0x27ebbe...04c79b`; arbitrum `0x9fd99b...be9611`; arbitrum `0xba00a2...5ec8c5`; arbitrum `0xe31f0f...07d3fc` | ⚠️ Unaudited |
 | VolatilityOracle | operational_periphery | unichain | n/a | 39 deployments: unichain [`0x05b84f...5f289d`](./contracts/unichain-130/0x05b84f803367cfbeeef689c83ae5708af45f289d/); unichain `0x075017...7440e5`; unichain `0x12a6b7...5f755d`; unichain `0x1382ed...94716d`; unichain `0x14e603...9d052f`; unichain `0x156133...2a7a06`; unichain `0x1f71a3...e5c0d6`; unichain `0x203d0e...960a9b`; unichain `0x2ec859...655b8b`; unichain `0x2facc6...c78734`; unichain `0x37c73e...7a5162`; unichain `0x3f8a79...1a8bf6`; unichain `0x4c69d3...6a6c50`; unichain `0x50ab70...c37945`; unichain `0x5290f9...96048b`; unichain `0x5c32af...f12350`; unichain `0x62b89b...bac066`; unichain `0x635d94...68e079`; unichain `0x66208b...c9875b`; unichain `0x70740b...33042a`; unichain `0x7ed4d3...8285e7`; unichain `0x82c505...d71954`; unichain `0x96e74b...f9dc24`; unichain `0x9db986...c9e23f`; unichain `0xa095ae...09dd58`; unichain `0xb11abd...1ad71a`; unichain `0xb275f9...886c41`; unichain `0xbfed69...3d7947`; unichain `0xc347cc...863660`; unichain `0xd2449a...0026b9`; unichain `0xd78afa...77bb6b`; unichain `0xe36a3b...75ff75`; unichain `0xeabd5e...71d186`; unichain `0xf21d25...b6b00e`; unichain `0xfc530e...a1625f`; arbitrum `0x264271...3d4334`; arbitrum `0x43b7c3...38b9f8`; arbitrum `0xbe42a3...1accc6`; arbitrum `0xd5fbd1...0d21f6` | ⚠️ Unaudited |
 
-### ✅ Verified by Bytecode + Audited (1)
+### ✅ Verified by Bytecode + Audited (0)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Admin | unknown | mantle | n/a | 19 deployments: bsc `0xa7fb2e...8b3f93`; bsc `0xf769c5...231d42`; gnosis `0x6e9d70...4cbb4c`; manta `0x38f611...57b35f`; manta `0x8421c6...921d54`; manta `0xc4e1f9...071f1c`; metis `0x2fface...27973d`; metis `0x6e9d70...4cbb4c`; mantle [`0x258d48...b200f2`](./contracts/mantle-5000/0x258d485a17e1ba65ff6367d0e8b8acc70ab200f2/); mantle `0x38f611...57b35f`; mode `0x38f611...57b35f`; avalanche `0x297378...37386e`; avalanche `0x43b47a...879b21`; avalanche `0xb9ce3e...f0051f`; avalanche `0xc80358...b34388`; berachain `0xccb87b...609d6c`; blast `0x3a8d70...3ee972`; blast `0x889dc5...32e3d9`; blast `0xcf4a87...f7ab93` | ✅ Audited (bytecode match) |
+- None
 
-### ⚠️ Verified by Bytecode + Unaudited (6)
+### ⚠️ Verified by Bytecode + Unaudited (0)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| CamelStrategy | core_logic | unichain | n/a | 63 deployments: bsc `0x2ec776...117642`; bsc `0x769197...52dc04`; unichain [`0x018c22...c69b7e`](./contracts/unichain-130/0x018c229b7cbfb1be6810891327ec5a4bdfc69b7e/); unichain `0x01c79c...9bd963`; unichain `0x0c6f8f...b4611f`; unichain `0x1001bc...534d6b`; unichain `0x1592cf...713ce0`; unichain `0x1f32c2...8c0822`; unichain `0x201ac5...a4270b`; unichain `0x2d1896...1d1e2d`; unichain `0x2e4227...8ea768`; unichain `0x3257ee...c730e1`; unichain `0x32db70...5e0025`; unichain `0x333fe5...44bb10`; unichain `0x33c990...74b25d`; unichain `0x474406...fcdc31`; unichain `0x4856a8...c14f68`; unichain `0x4c2747...6e2b88`; unichain `0x52f501...294ab8`; unichain `0x56a7b7...d2ade7`; unichain `0x594186...57fba7`; unichain `0x5bf7b7...a5cbfc`; unichain `0x60076c...c06174`; unichain `0x6061ad...89bf33`; unichain `0x653f0d...1dcb49`; unichain `0x65419d...5958ff`; unichain `0x67b8ba...3af9f1`; unichain `0x74de29...ee3533`; unichain `0x8141fe...2d0e5f`; unichain `0x86346d...8b2de3`; unichain `0x8997b6...6da80d`; unichain `0x8b8efe...b68fa7`; unichain `0x8ee0eb...81f660`; unichain `0x90e590...3298f7`; unichain `0x91bcc4...8dc088`; unichain `0x92acc6...44f0f0`; unichain `0x95e9a5...f5596a`; unichain `0xa57d16...5ecd36`; unichain `0xa723c4...7957b9`; unichain `0xb05045...59ed98`; unichain `0xbaacf8...c248c3`; unichain `0xbad544...5b70be`; unichain `0xbb96b0...fc9779`; unichain `0xbfc9e9...240b03`; unichain `0xc34d86...1a3365`; unichain `0xc67854...cd1760`; unichain `0xd120ef...c1d54e`; unichain `0xd5629e...7b711c`; unichain `0xdba3b7...663e2d`; unichain `0xdec27d...34fc37`; unichain `0xe3dd1b...c4bcd1`; unichain `0xf2275f...7e3574`; unichain `0xf2dd7d...8a88ee`; unichain `0xfbc9ad...a5b78b`; unichain `0xfe0276...9dd5e9`; polygon `0xaea3a2...1044d4`; polygon `0xd6bb8d...8b3fb8`; base `0x89a1ff...18b80c`; base `0xfda295...302fa6`; arbitrum `0x024ee9...e20349`; arbitrum `0x044f8d...e224df`; arbitrum `0xb713d6...2f4150`; arbitrum `0xd295e9...42a71a` | ⚠️ Unaudited (bytecode match) |
-| ExponentialStrategy | core_logic | unichain | n/a | 97 deployments: bsc `0x5ffdb3...245d85`; bsc `0x87247a...862411`; unichain [`0x001e82...fb0d0e`](./contracts/unichain-130/0x001e82575850dc7f9cea5d7585ccb56afffb0d0e/); unichain `0x0cc256...126db1`; unichain `0x0e199a...dc5110`; unichain `0x13f741...6f199f`; unichain `0x171039...f4c185`; unichain `0x1726be...c0997c`; unichain `0x188a84...fb2308`; unichain `0x18bbbc...db003c`; unichain `0x1bc8c9...b8b756`; unichain `0x1c454d...3006c2`; unichain `0x1d1170...ca1ad3`; unichain `0x1e934f...f26b6b`; unichain `0x1ecd6d...d0805f`; unichain `0x1ed6d5...cb32fa`; unichain `0x217cc0...61506e`; unichain `0x22f904...5a0199`; unichain `0x266eb4...12c3f0`; unichain `0x282b9b...2c7f71`; unichain `0x370237...99fbe0`; unichain `0x383363...f3f394`; unichain `0x3b33b4...adfe99`; unichain `0x3b4707...cdbd2b`; unichain `0x41590e...60cf92`; unichain `0x443647...730e77`; unichain `0x470fa6...a86c4e`; unichain `0x477e98...cb6cac`; unichain `0x495cfc...3e067d`; unichain `0x4a7664...7e73c8`; unichain `0x551e27...bc5951`; unichain `0x5788f1...d4f60c`; unichain `0x5987b5...313761`; unichain `0x5a2958...e968d5`; unichain `0x5b3fa5...2df275`; unichain `0x5da448...cff2af`; unichain `0x5da64c...09a48a`; unichain `0x5f7efc...c17161`; unichain `0x614a0a...b3e90f`; unichain `0x63a3d9...e4edbf`; unichain `0x649c42...4a0786`; unichain `0x69b55a...879ad7`; unichain `0x6cdbbf...095f22`; unichain `0x6f1843...33845d`; unichain `0x6fcd75...fcc107`; unichain `0x7305b0...b779d3`; unichain `0x76fefa...8f24af`; unichain `0x77674f...22bea7`; unichain `0x7de18d...10fbb3`; unichain `0x7f8f40...98c584`; unichain `0x83e111...7912ca`; unichain `0x85e5f2...cdd2ca`; unichain `0x8b3754...cd5685`; unichain `0x8dd12a...572508`; unichain `0x8f6301...484bbe`; unichain `0x8f738d...a7e861`; unichain `0x94b6a6...86e643`; unichain `0x988af8...d754ec`; unichain `0x99d148...7470d7`; unichain `0x9ff2ad...9bf694`; unichain `0xa53de9...14ccb4`; unichain `0xa54567...7c141b`; unichain `0xa82fa3...e2e266`; unichain `0xac347e...6dfd97`; unichain `0xaed1ea...1f45e2`; unichain `0xafc371...605277`; unichain `0xb2f637...086214`; unichain `0xb3e241...26e760`; unichain `0xbca822...d177e3`; unichain `0xbe1bc9...f77c6e`; unichain `0xbe42a3...1accc6`; unichain `0xbf1958...fef823`; unichain `0xbf399c...084a25`; unichain `0xc3cb5b...8fbe4e`; unichain `0xcbad45...547add`; unichain `0xcd0cde...39aadb`; unichain `0xd361ce...41613a`; unichain `0xd52ef1...4ecad3`; unichain `0xd9e45f...add906`; unichain `0xdb5365...1a444e`; unichain `0xdda356...33574d`; unichain `0xe02d86...995de4`; unichain `0xe911f4...878fc2`; unichain `0xf0653d...0f1ec3`; unichain `0xf09241...3a7164`; unichain `0xf5b2c6...288a1b`; unichain `0xf63850...136109`; unichain `0xfaf0d3...8e7614`; unichain `0xfcb6c2...7bbf43`; unichain `0xfd06f9...55e076`; polygon `0x0b444d...a8e6c2`; polygon `0x937b55...1bfb59`; base `0x2122e6...338e5c`; base `0x93d1ea...1d4ccf`; arbitrum `0xcc05d2...11d217`; arbitrum `0xd67b78...eda453`; arbitrum `0xdaf6cc...257241` | ⚠️ Unaudited (bytecode match) |
-| GaussianStrategy | core_logic | unichain | n/a | 97 deployments: bsc `0x96e445...686cbd`; bsc `0xc03de4...142108`; unichain [`0x08f8b4...188d8e`](./contracts/unichain-130/0x08f8b4c23c38a57f8de29e8694ead60f6f188d8e/); unichain `0x0933e3...41a349`; unichain `0x0c6021...1e4337`; unichain `0x0e38e4...67c756`; unichain `0x0e608b...f3d943`; unichain `0x1017d7...ea3845`; unichain `0x10a265...c65f3e`; unichain `0x10fe77...fc22bf`; unichain `0x13b11c...831c66`; unichain `0x140f45...7aec8f`; unichain `0x1b16f5...c7ad0e`; unichain `0x200eb0...046734`; unichain `0x217687...abe666`; unichain `0x21cac5...75cee5`; unichain `0x231ca7...8f29fc`; unichain `0x23be0e...c35666`; unichain `0x24c09e...095a44`; unichain `0x27612e...96f003`; unichain `0x293c31...d3667b`; unichain `0x29d50b...3668fc`; unichain `0x2cbca8...de722d`; unichain `0x2eac89...2fd677`; unichain `0x3381b0...fd0c9e`; unichain `0x3460e9...7e55a4`; unichain `0x393fcb...9d1dc1`; unichain `0x3943fe...fe4a36`; unichain `0x3b7e13...e6d4e5`; unichain `0x3bde00...85f5ad`; unichain `0x3cf418...f3a1f6`; unichain `0x3cf68e...5cbc1d`; unichain `0x411b51...c1feb6`; unichain `0x413898...b64fdc`; unichain `0x418f62...633d77`; unichain `0x4657f9...78b560`; unichain `0x4ef031...14a3c2`; unichain `0x52d31b...2c5da8`; unichain `0x539306...aa7029`; unichain `0x5662ab...4c3a0d`; unichain `0x572a98...32c22c`; unichain `0x57929c...c6169b`; unichain `0x57c130...9f7bb0`; unichain `0x5bf5fe...ccf775`; unichain `0x5c6a07...34d980`; unichain `0x623fe5...5f20e7`; unichain `0x6730b2...14cb19`; unichain `0x6b147c...95796b`; unichain `0x73a042...a56ba3`; unichain `0x757776...21c1b6`; unichain `0x75d063...308261`; unichain `0x765929...807c1a`; unichain `0x79a3ab...1991a7`; unichain `0x7c6ce0...beaaf0`; unichain `0x7db395...c8ff66`; unichain `0x8070de...644a95`; unichain `0x8182be...1eafa5`; unichain `0x81c4a4...d5fcfd`; unichain `0x841cb6...4a4465`; unichain `0x850ff9...0ee81a`; unichain `0x87475b...266a5a`; unichain `0x89cd65...8c8926`; unichain `0x8a7734...b39aa5`; unichain `0x9084cb...415ac0`; unichain `0x91ce20...7cd6b5`; unichain `0x94f6fc...0c1a87`; unichain `0x953973...d1b7d8`; unichain `0x9b53fa...17be68`; unichain `0x9ea19b...025a14`; unichain `0xa0010b...798aa9`; unichain `0xa090f6...0b6e01`; unichain `0xa73192...8fc07f`; unichain `0xb55c1d...f2553c`; unichain `0xb573c5...ef6d9e`; unichain `0xba0507...cdf9a6`; unichain `0xbe4f37...49dd12`; unichain `0xc118fc...6f8fd3`; unichain `0xc21d9e...aa18ba`; unichain `0xc25805...2d910a`; unichain `0xc66e93...556ca2`; unichain `0xcc33f9...6a72b0`; unichain `0xcc4fee...e8f6ff`; unichain `0xd59529...5e107b`; unichain `0xd8b08d...fe9456`; unichain `0xd91571...eb1bae`; unichain `0xdedaa7...17762a`; unichain `0xe50332...b5b38e`; unichain `0xe76723...47104b`; unichain `0xe895ea...c4c716`; unichain `0xfd9ad6...b7f6e3`; polygon `0x29febe...40b2d9`; polygon `0x5152a3...65fb4c`; base `0x4d71cc...6015f4`; base `0xabba8b...0df54f`; arbitrum `0x14db99...df3f92`; arbitrum `0x959dc8...ece50f`; arbitrum `0x9b99ae...3323fc` | ⚠️ Unaudited (bytecode match) |
-| SingleUniformStrategy | core_logic | unichain | n/a | 70 deployments: bsc `0x037ace...f8a028`; bsc `0x428ded...ef7091`; bsc `0xc8da58...5f6959`; unichain [`0x02d66a...d570e9`](./contracts/unichain-130/0x02d66aaa86b03314239d865925d1fa4115d570e9/); unichain `0x0530ce...069476`; unichain `0x0cc89e...e7b6d5`; unichain `0x0df4e8...6c9c5f`; unichain `0x0fb62d...765708`; unichain `0x150111...4148c3`; unichain `0x16aa39...09c508`; unichain `0x1b66a5...d91475`; unichain `0x2a8b07...6956d6`; unichain `0x2cc493...ae3ee7`; unichain `0x2debb9...35a05b`; unichain `0x2eb45b...9bd95e`; unichain `0x304b89...e41fa3`; unichain `0x34ad86...4ca304`; unichain `0x35286b...c1ea98`; unichain `0x3b5b36...42e585`; unichain `0x3cfece...e72c3b`; unichain `0x3f9389...18ce1b`; unichain `0x44483a...382ad5`; unichain `0x4981e4...ec733b`; unichain `0x49ae0a...870dea`; unichain `0x4c3c38...4fb879`; unichain `0x4db1fa...9b2d3f`; unichain `0x4e1942...138adc`; unichain `0x50127a...79ca8f`; unichain `0x51f7fc...de2b00`; unichain `0x55cfc2...bb23f4`; unichain `0x639e8a...fa90bb`; unichain `0x6c49f3...58f2df`; unichain `0x6e2b99...f59038`; unichain `0x71f752...1c6dc7`; unichain `0x7d507e...ca715c`; unichain `0x817ac1...bb75b5`; unichain `0x852468...298b92`; unichain `0x91c88d...0be7a0`; unichain `0x954472...86be44`; unichain `0x9bf8d6...b552c2`; unichain `0x9e7803...626c8a`; unichain `0xa168c8...30508d`; unichain `0xa2ab24...f20cd2`; unichain `0xa328b2...88dcfa`; unichain `0xa4d388...73a173`; unichain `0xadd038...3ae95d`; unichain `0xaee0ec...0eadb6`; unichain `0xb81f5a...e1dc82`; unichain `0xba422c...4f2a50`; unichain `0xbc7c1b...9df48c`; unichain `0xcc6338...429b37`; unichain `0xd01c01...263df1`; unichain `0xd4ee1e...e1df09`; unichain `0xdc9005...33a708`; unichain `0xe84895...960486`; unichain `0xe8cb08...a11655`; unichain `0xe9aceb...29b1cb`; unichain `0xee1cdc...1dbe25`; unichain `0xf6a842...6c0e35`; polygon `0x5c1cba...892f85`; polygon `0x5f4001...ea5e99`; polygon `0x6bd13b...7196be`; base `0x549e2c...f33c5b`; base `0xa450f6...a1a165`; base `0xe177fd...77994c`; base `0xf89935...d93d58`; arbitrum `0x07da74...3fb7b2`; arbitrum `0x44b859...c488aa`; arbitrum `0x751e74...6c90e5`; arbitrum `0xabf404...8f2a00` | ⚠️ Unaudited (bytecode match) |
-| TriangleStrategy | core_logic | unichain | n/a | 97 deployments: bsc `0x9ed988...7c8d0f`; bsc `0xfc9101...409cea`; unichain [`0x00a6c6...436fe4`](./contracts/unichain-130/0x00a6c62a5b337e605cc178e6d84367507f436fe4/); unichain `0x030e32...cc8d37`; unichain `0x07b8e2...0b24f1`; unichain `0x07cef1...4954c3`; unichain `0x0cd379...316598`; unichain `0x11b5b6...5ddc41`; unichain `0x15ba45...607d60`; unichain `0x18dcd1...a8411b`; unichain `0x195a91...11c9ea`; unichain `0x1d1a79...e902ca`; unichain `0x1f7f98...d0759f`; unichain `0x26f2ec...a4f187`; unichain `0x271381...d295f8`; unichain `0x289407...8c1fff`; unichain `0x2a09cc...a0baad`; unichain `0x2a9b32...b9acd9`; unichain `0x2f8476...ac5aa8`; unichain `0x2fb587...76d4e4`; unichain `0x34c4e8...4a383c`; unichain `0x358d98...c90a03`; unichain `0x392fa8...c26773`; unichain `0x3dd8b6...ecb8b6`; unichain `0x3e7e3e...512b18`; unichain `0x418679...f95dfa`; unichain `0x4194e5...3495e3`; unichain `0x421a1c...60a5c2`; unichain `0x42ab89...296ac4`; unichain `0x449866...117ced`; unichain `0x4ddc35...005309`; unichain `0x4dfc6c...c5d1aa`; unichain `0x4e150c...afa2b1`; unichain `0x52a01a...05262e`; unichain `0x5b5ad7...c6b7ff`; unichain `0x5d8565...91ab72`; unichain `0x5dd287...c0c1b8`; unichain `0x5e968a...27ac04`; unichain `0x64cfd8...1ce5ff`; unichain `0x65a1c6...16273b`; unichain `0x65b641...1ba1f5`; unichain `0x6b56f3...1d340c`; unichain `0x6fb31a...bd113f`; unichain `0x744322...87d25a`; unichain `0x74f047...02d60a`; unichain `0x782893...051287`; unichain `0x7e8ebe...f081f3`; unichain `0x83bbb2...83fc8b`; unichain `0x86ef40...683113`; unichain `0x89a1ff...18b80c`; unichain `0x8cd822...4ce1dd`; unichain `0x9046a8...943bc2`; unichain `0x90a806...592c6d`; unichain `0x9683b7...7137aa`; unichain `0x9b1041...7e0a00`; unichain `0x9d487b...400c4d`; unichain `0xa2c52c...3cc477`; unichain `0xa4566e...21a09c`; unichain `0xad382e...2fe500`; unichain `0xae7bce...398ea6`; unichain `0xb0dcc4...a5a0ca`; unichain `0xb1f1c8...87d068`; unichain `0xb2c72f...50908e`; unichain `0xb4d944...1f4db8`; unichain `0xb67857...f1d925`; unichain `0xb84728...bc7b97`; unichain `0xbb2bd1...d114fa`; unichain `0xbb5c26...62c422`; unichain `0xbbc925...0ebbf8`; unichain `0xbeebaa...783c87`; unichain `0xc24cf8...095e67`; unichain `0xc5d196...592f15`; unichain `0xc72b5a...a0e14b`; unichain `0xc8f6ea...67597a`; unichain `0xca1970...cf1722`; unichain `0xcae476...90ff54`; unichain `0xcc2b53...33aa10`; unichain `0xcc4005...cd3cfe`; unichain `0xceb010...a76e32`; unichain `0xd7e754...28983d`; unichain `0xdac551...25e9fb`; unichain `0xe201e1...c63c3e`; unichain `0xe36344...6e57bd`; unichain `0xe87099...79deda`; unichain `0xebf945...33c493`; unichain `0xeeb252...6e539e`; unichain `0xeec601...625024`; unichain `0xefbb86...e69dd3`; unichain `0xfe0264...3bdead`; unichain `0xff327c...7d242a`; polygon `0xa4ae2d...610ea6`; polygon `0xb5d3e1...fe6e40`; base `0x423e8c...813c0e`; base `0xe5defe...bb9e1f`; arbitrum `0x105da8...99b123`; arbitrum `0x1632d1...fdfcca`; arbitrum `0x1c454d...3006c2` | ⚠️ Unaudited (bytecode match) |
-| UniformStrategy | core_logic | unichain | n/a | 102 deployments: bsc `0x2a7bb0...6125db`; bsc `0x536f96...c04656`; bsc `0xcc5a96...f431f5`; unichain [`0x00fccd...72bcbc`](./contracts/unichain-130/0x00fccdd26f35672808ea8660e4a3a231ac72bcbc/); unichain `0x01a6aa...9d95e2`; unichain `0x05daf3...8b0092`; unichain `0x0602e0...d8ffff`; unichain `0x08090d...abcbd0`; unichain `0x0945e7...fe5140`; unichain `0x0971d2...8d2335`; unichain `0x0d9f42...23a8f5`; unichain `0x136933...5afd14`; unichain `0x1fd3e4...928ebe`; unichain `0x2024ef...938164`; unichain `0x20c96f...ae6b6d`; unichain `0x28c7e8...edc7b2`; unichain `0x2b23f2...e8a600`; unichain `0x2d7e58...47c61c`; unichain `0x30f56f...10c93d`; unichain `0x32b164...3f3c24`; unichain `0x32f52c...a2a254`; unichain `0x355dec...037ca5`; unichain `0x3958f4...c099c7`; unichain `0x3c50af...cbb5c1`; unichain `0x4080b6...3274a7`; unichain `0x409d2c...e02225`; unichain `0x43b7c3...38b9f8`; unichain `0x449702...7e0df4`; unichain `0x44b859...c488aa`; unichain `0x46cb87...36ac68`; unichain `0x473fc7...a5534b`; unichain `0x493964...3ee12c`; unichain `0x4b2300...0eaa74`; unichain `0x4d566a...c31956`; unichain `0x540e64...6cf14f`; unichain `0x56897d...82b9de`; unichain `0x5a64d5...d878c6`; unichain `0x5b2812...5a5590`; unichain `0x5fba93...68dc1b`; unichain `0x6bab37...a486b6`; unichain `0x6d04f7...10ccbb`; unichain `0x6f5882...5834bc`; unichain `0x731555...aeced2`; unichain `0x7883a0...dd30b4`; unichain `0x7a9f72...527fac`; unichain `0x7eaddb...622849`; unichain `0x823e97...441dd2`; unichain `0x82b25a...9c479e`; unichain `0x85bd0e...cd8b2d`; unichain `0x8abd33...e2934d`; unichain `0x8be7a5...cea3a3`; unichain `0x8c91f4...3f611d`; unichain `0x8d5619...ad6f84`; unichain `0x8f6086...73fc0c`; unichain `0x904121...d88bf9`; unichain `0x91ed4c...b7afae`; unichain `0x957446...3d3137`; unichain `0x969916...35bdb3`; unichain `0x972cd3...6434be`; unichain `0x97ec79...672447`; unichain `0x9b875e...1bccda`; unichain `0x9c981c...301b72`; unichain `0x9d401c...f55144`; unichain `0x9ed038...40298d`; unichain `0xa1b4ca...e31ca6`; unichain `0xa23eca...5bc912`; unichain `0xa3123d...a0aa5d`; unichain `0xa45a15...b5cc9d`; unichain `0xa880ab...717510`; unichain `0xab2f35...fb43f9`; unichain `0xb0fba7...254235`; unichain `0xb3d8e0...007155`; unichain `0xb5f95f...bdf572`; unichain `0xba00a2...5ec8c5`; unichain `0xbe9690...118099`; unichain `0xbea137...1c172d`; unichain `0xc566c7...6d5a61`; unichain `0xc9c078...bd6e2b`; unichain `0xcc9955...653b53`; unichain `0xd3e553...754f0d`; unichain `0xe3dd7c...2f8073`; unichain `0xe5cf83...2efca3`; unichain `0xe774c6...7ab5a0`; unichain `0xe7a2c0...366e8e`; unichain `0xe7eeb8...dab4dc`; unichain `0xec3851...432075`; unichain `0xf19763...1c2098`; unichain `0xf3b50f...6e10db`; unichain `0xf4544a...f87e2d`; unichain `0xf4fc01...e99813`; unichain `0xf94055...05c504`; unichain `0xfc95cf...99bc7a`; polygon `0x030b73...fbe783`; polygon `0x24c1c7...e8398f`; polygon `0xd0f38a...60b2be`; base `0x73c53d...314c4a`; base `0xb01455...841e75`; base `0xf126c5...d45812`; arbitrum `0x134e2a...0f03ba`; arbitrum `0x338178...988ed5`; arbitrum `0x55daab...e21cc3`; arbitrum `0xbab62c...a3f994` | ⚠️ Unaudited (bytecode match) |
+- None
 
-### ❓ Unverified (312)
+### ❓ Unverified (990)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x031464...ee2abf` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x033d2e...bf2143` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x045a63...1ccda7` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x07432c...568ea0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x194335...6ff9d1` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1b718a...fe0e1f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1d0d7d...9e34a4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1d5cc2...52a744` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1dceb4...00c161` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1f3b71...672de2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x24ccf1...61bd2e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x252541...575694` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x25b2cd...4c08f1` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x28462a...2ea013` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2ac79b...6706db` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2ad5ad...af4a02` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2b88e2...0ae7cc` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2c5114...01a111` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x31ccdb...f14946` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x33412f...31dbb4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x336d7e...cf146f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x33d306...b7f514` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x34276e...0e2b94` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x34b954...7a2b28` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3661e5...877d0e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x380372...3f8a28` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x388a39...98e22c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x39b96f...16013c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3c2deb...b78b04` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3f100a...5a2711` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3f805d...9ce953` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x40d2eb...80e0bb` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x45af26...064e2f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x468281...e96f79` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x46b760...82aca3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x49a888...59cd93` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4d7f0f...d0c832` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x51bbf7...808865` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x55eed1...76da7b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x572563...8ba7b5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x586880...f8ef13` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5964f3...cbc670` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5d40e4...493b74` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5e6c48...f11660` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5fa064...0acaef` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x684ba9...e6e35f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6954fe...1d5de3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6ab5a4...bb55d2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6d25c4...c85e62` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6f2d4c...b68319` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x704ece...c01dbe` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x71ffa5...d8cd05` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x73a095...2be0d0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x73fd19...d3e8c5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x747566...4bde92` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x758f70...81b4cf` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x767fff...7eae8d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x76eed6...85ddcf` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x785454...7448b3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7ab903...0ce316` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7cf843...2cd75f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7d4558...fd9db3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x81cfdc...fb2dec` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x82fb26...410368` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x845112...fc4709` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x85a532...dc6b37` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8633c9...9c19d4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x86ac98...a1635c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8759e9...4adf4b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x883953...996867` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x898fa6...f73086` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8cd73c...4e77f1` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8f82eb...1b94c9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x922618...1ed3ed` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x923886...2085dd` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x92d853...975b16` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x950cc5...42db9a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x953c32...b51a73` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9575fa...508b0b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9595f5...a8fa76` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x96a8ba...4d6d75` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x994303...0f38e8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9a1018...7f9c08` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9b737f...03e4e3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9bbbd9...0409d9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9be019...558103` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9ec53b...595738` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa1c739...26daa5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa21b30...1e24ab` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa47b1d...4aa918` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa625ea...a5c276` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xac571c...b1d02f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb2219a...7d312b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb3575f...d54729` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb542f4...09f5fa` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xbe51c2...3a0ce6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc40ccd...11b38c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc42300...d24c71` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc8d5da...de1c07` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xca17f5...b78536` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd12fa3...860929` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd28c2e...4a7c18` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd29a17...70857a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd338d8...903e6a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd3a7b7...e9b6d6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd4bc33...bd814b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe02e8a...1807f0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe065ff...d57ba1` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe163e3...98b836` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe25811...ce869f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe300a0...937623` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xeb42c4...211308` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xeb5a0f...af8c89` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xede66e...dc7dff` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xee768e...0352b5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf009e8...5ce402` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf0a9f5...b29bca` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf19f91...81a458` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf367c8...f5c72f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf402ce...adbd9b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf5ad91...cef3e0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf6eeca...c7927c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf7e64a...8c7c8e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf94431...06920f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xfbceac...e0ac64` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xfcba35...289536` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x0108f9...c8d9cf` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x05eb0f...0d8495` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0x0b444d...a8e6c2` | ❓ Unverified |
@@ -216,40 +343,100 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | bsc | n/a | `0xfa2f9e...55cb29` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0xfdafe1...70dea3` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0xfee3d9...763808` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0x055522...c068b9` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0x116dee...d1b0c3` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0x1e86a5...3286f6` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0x216d3d...416ebb` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0x2577d8...800691` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0x31547c...8bd607` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0x317a0d...d890c0` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0x47e385...4a7c38` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0x5accda...f04501` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0x683292...161300` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0x78727b...692279` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0x7eccd6...8fbcce` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0x8be859...28e262` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0xc0766f...017d38` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0xc27ddd...099881` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0xcf4a87...f7ab93` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0xdb7608...b3bc34` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0xf1ac4c...e037ec` | ❓ Unverified |
+| UnnamedContract | unknown | gnosis | n/a | `0xf44cec...812ead` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x033409...99e5c9` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x080f35...cea253` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x082286...719688` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x082a4a...866187` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x0f6a25...8b3993` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x10c25b...c34e5d` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x110b91...7d5404` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x1169de...5133cc` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x11f15a...683bf3` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x13a00b...1fc73d` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x1a3bfe...2b1c01` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x1be011...16122a` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x1f7d40...fa4704` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x20c63c...01715b` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x23b252...bd7583` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x24153f...8efb6f` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x24b0a1...e01935` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x24f8a8...7f79c4` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x254047...7dc499` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x278880...987d43` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x27d2fb...3e022f` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x283497...c73815` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x2839b1...56d070` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x2aa815...d91700` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x2f0f77...b3d3b3` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x2fe0a6...840ace` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x2ff54d...da99d0` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x30ceb4...4fa0d5` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x327c65...6db54a` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x361ffa...662fee` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x3761ee...8066ea` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x3957dd...9cf0e6` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x39a89c...db7ce7` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x3d1431...a277cd` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x3e79a7...17b081` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x417c9c...dbd275` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x424f8f...a681f5` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x437032...8768b1` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x4391a6...8bcb8b` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x448391...85208f` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x44ed19...0cbeaa` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x464efb...965ae5` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x46a161...626be4` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x4753e1...a36cf8` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x4bf75c...8959a9` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x510735...85d3b1` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x5783d5...a66081` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x58f40e...3324a3` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x59401b...e3f9e5` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x5ad410...11fcd1` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x5c1cba...892f85` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x5c356a...f55383` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x5cc4d7...f3a1e0` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x5d1a44...6d8ee4` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x5d4512...e1650f` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x5e863b...e65d17` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x5e9f01...085986` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x5eaca9...f803ae` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x600344...767537` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x605b24...000229` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x62b249...974bfd` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x636983...d282ab` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x6c7596...b238cc` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x6d720d...fb5150` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x6e5400...38b42b` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x6e87ec...965c1f` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x71ee6d...552517` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x745731...f2470b` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x74ab82...7939c5` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x76a4ad...f3eb3e` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x786f6d...26920d` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x79f85a...726ac0` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x7bf1c0...9bfd3e` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x7c3306...35dcc0` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x7c4891...b8a25c` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x7cf6bb...0d6f26` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x7fd328...320849` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x800669...30fffc` | ❓ Unverified |
@@ -260,43 +447,83 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | unichain | n/a | `0x8bd030...6ae47f` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x8d1ce4...8f5624` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x8db387...80eb91` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x8e62ae...356fe3` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x8e71aa...ba4b32` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x909829...c09f9d` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x92c1ba...f8a025` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x953f20...4bbe6e` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x98e93e...06b3bb` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x9a4212...126e0f` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0x9bc7c4...0eb755` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x9cc8d4...d37e97` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0x9f62e7...13507c` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xa0c9d8...004c0e` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xa0deeb...842fff` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xa0f80f...c4c295` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xa88ee5...c8192a` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xaa6af3...6c6dea` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xaf6d41...f2f848` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xb01455...841e75` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xb02819...3e4557` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xb0fc2d...32e6c3` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xb22d8d...9954b8` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xb22d8f...d18272` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xb622e2...93ecfb` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xb881fe...12d037` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xb8f6eb...6bc688` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xb907c8...90e211` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xba7eb8...cef50d` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xbbf070...b73da9` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xbc7bd2...f916b0` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xbf3e88...d804c7` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xc0932e...19792f` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xc09f07...9ad354` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xc24673...451e1a` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xc2e0e3...9ab00a` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xc38dee...65f848` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xc3b081...fd669c` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xc636f8...e54265` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xc79037...c036c1` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xc7fa5c...e013b5` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xc8b1ee...a9a63b` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xc97b1f...cd866a` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xcb38c5...a7d21f` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xcb6a6c...8df920` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xcbdd41...5e6d0a` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xccd1fa...458fff` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xcd351e...ff4c79` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xd0deac...de1e24` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xd0e1e7...aea2b1` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xd2d297...20db4f` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xd5cd27...17957b` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xd62d5a...b7329b` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xd71195...c49c75` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xd8a247...814f00` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xdaa3b0...6d30d5` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xdc9abd...54a091` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xe5a99e...6544bf` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xe5defe...bb9e1f` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xe61b51...9a0d59` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xe8a0f4...4622a3` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xe8e8e8...798533` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xe91488...c820d8` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xe94ed1...e36a45` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xe95503...23636d` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xea1dec...62776a` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xed3f6c...b3d26e` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xedf402...17c949` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xf0acc7...343487` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xf1c411...eb826e` | ❓ Unverified |
 | UnnamedContract | unknown | unichain | n/a | `0xf29b78...52f335` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xf368d4...8312fa` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xf41c6e...7ed7e5` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xf72c52...19eb21` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xf788d9...d12e23` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xfa8e72...547903` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xfc281d...53a197` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xfc9101...409cea` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xfcda76...d9836e` | ❓ Unverified |
+| UnnamedContract | unknown | unichain | n/a | `0xfeac7b...a8bb1b` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | n/a | `0x09eb6f...9dea15` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | n/a | `0x1193a4...baf9ba` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | n/a | `0x134e2a...0f03ba` | ❓ Unverified |
@@ -339,95 +566,368 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | polygon | n/a | `0xe99ebb...3184cf` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | n/a | `0xee0fb7...3597e7` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | n/a | `0xf793e4...2a7447` | ❓ Unverified |
-| UnnamedContract | unknown | fantom | n/a | `0xf874d4...4f9aca` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x015b8a...3dbaff` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x099dd2...6cc182` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x1e86a5...3286f6` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x216d3d...416ebb` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x270517...681917` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x392aeb...40a596` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x3cf539...ce11a1` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x447643...d397d9` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x562c87...504dc1` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x5accda...f04501` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x683292...161300` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x6d257b...da5aa7` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x6e9d70...4cbb4c` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x78727b...692279` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x7e382f...591857` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x7ef5e8...2e51cc` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x816907...561218` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x824161...6be059` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x8cb79d...d452ff` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0x9d4472...359ffa` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xb24dc8...c2ef55` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xbbcd75...110a3b` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xc9ae8d...33caa7` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xcc8657...f06bb9` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xcf4a87...f7ab93` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xd925a1...723f33` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xde4f68...5dce72` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xe8a656...552524` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xecfa9c...993f17` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xf0cecc...205342` | ❓ Unverified |
+| UnnamedContract | unknown | sonic | n/a | `0xfa81e2...5688d0` | ❓ Unverified |
 | UnnamedContract | unknown | metis | n/a | `0x17a7e6...4e2164` | ❓ Unverified |
 | UnnamedContract | unknown | metis | n/a | `0x3ae59b...e63a96` | ❓ Unverified |
 | UnnamedContract | unknown | metis | n/a | `0xcf1930...3bf228` | ❓ Unverified |
-| UnnamedContract | unknown | polygon-zkevm | n/a | `0xd08b59...fd89b8` | ❓ Unverified |
-| UnnamedContract | unknown | polygon-zkevm | n/a | `0xf9adaa...26baaa` | ❓ Unverified |
-| UnnamedContract | unknown | polygon-zkevm | n/a | `0xff8fae...cf45bd` | ❓ Unverified |
-| UnnamedContract | unknown | kava | n/a | `0x683292...161300` | ❓ Unverified |
-| UnnamedContract | unknown | kava | n/a | `0xf14fb9...61e6fc` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x03ae90...4a08cb` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x06895d...c547b8` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x0f548d...6e1569` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x120da4...355561` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x15f0b8...bc073d` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x1a7ce3...bdd404` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x1c1dbd...90b0cc` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x1cc4ee...dbfa0f` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x1e2d8f...df35dd` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x1e86a5...3286f6` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x1e9792...65e5e0` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x24bdfc...f9ae90` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x25dd58...31cf95` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x25ea03...258f06` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x2eab29...85ca37` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x2ecbd5...be7677` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x317a0d...d890c0` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x3273c1...b2c7e5` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x34c14d...09068e` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x382065...fdea4c` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x3aaaed...134869` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x3fe6f2...4d6f15` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x562c87...504dc1` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x566452...36ec67` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x59822e...81f51a` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x5ac782...b5e9be` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x5b8f58...8e1b7d` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x6002d7...c31908` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x62034f...cb97e8` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x62f88f...13b937` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x653f13...d81864` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x688cb9...a1f4c7` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x6b3d98...506fa6` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x6c5095...5870a8` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x77a2af...b9493a` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x77a9bb...256e7c` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x7bfb66...75699e` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x7e1c83...6860c9` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x7e382f...591857` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0x824c2e...b22451` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xa15c28...1ea310` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xa35377...fae691` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xa3d974...bfe1e8` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xa6e267...d32319` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xa79d88...638485` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xaad476...f5e0e6` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xb11bcb...f13286` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xb5db9a...f92224` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xb692b0...55a0c5` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xb7dfc3...611063` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xbfedaf...523b1b` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xc27ddd...099881` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xc9591e...64150d` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xcc8657...f06bb9` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xd08b59...fd89b8` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xd17aa3...5c5053` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xd25f8f...b87916` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xd2dfbc...0511b6` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xd4bcfc...5929bd` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xd58222...544719` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xe97e64...ece31a` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xecfa9c...993f17` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xed354a...3b8bb1` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xf897f1...929815` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xfa81e2...5688d0` | ❓ Unverified |
+| UnnamedContract | unknown | moonbeam | n/a | `0xfc13eb...153621` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | 6 deployments: fantom `0xf874d4...4f9aca`; polygon-zkevm `0xd08b59...fd89b8`; polygon-zkevm `0xf9adaa...26baaa`; polygon-zkevm `0xff8fae...cf45bd`; kava `0x683292...161300`; kava `0xf14fb9...61e6fc` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x013351...a2a5ea` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x0180c9...9f7efa` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x02a009...16a29e` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x099dd2...6cc182` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x0be15c...3b9f30` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x1559d1...392e55` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x1ae685...5490e9` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x1e86a5...3286f6` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x1f1808...ce4be1` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x1f7792...d57f4f` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x22cbd4...72f679` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x2687aa...8c36c7` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | n/a | `0x279560...e4c499` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x280de5...35508b` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x2dbafd...87715f` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x2fa5e2...203aa4` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x317a0d...d890c0` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x3aaaed...134869` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x3ce4ee...72b11f` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x3cf539...ce11a1` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x3fe127...e7f918` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x451f2d...47c3a0` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x47db9e...3c914f` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x4cb8b7...108863` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x4dac86...e01c61` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x5125f7...c10a54` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x55eaa7...52f2bc` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x5778df...4e02d0` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x57f32f...b43bbb` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x62f88f...13b937` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x654fb3...38c003` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x66a5d4...6d6785` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x683292...161300` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x6a9641...5db8fa` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x711fa5...21c31e` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x745cc8...b0c298` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x753325...388b1a` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x77a9bb...256e7c` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x78727b...692279` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x7e382f...591857` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x7ec87b...ef91c1` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x808b93...b0710f` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x848019...89ad77` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x849214...cd6fe6` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x85324d...e1da17` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x891edb...662a95` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x89bd07...493344` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x8d0790...00464f` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x94fa35...652094` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x97083c...9525f1` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x9789b7...d15e27` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0x9aad09...e7b325` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xa0470a...2e2032` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xa1a3d3...90d917` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xa5e900...3d8456` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xa99945...18a3d9` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xac9a83...8be6e8` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xad039a...a97bbd` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xb086c1...f80995` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xb65372...be3120` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | n/a | `0xb833e6...6ffef2` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xb8e819...4370d6` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xba1af4...4bc858` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xbb575a...904f2a` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xbd9a81...a01f3d` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xbf44c1...2a9536` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xc01f26...e85eed` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xc0766f...017d38` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xc27ddd...099881` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xc491c1...fce4ce` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xcaadc3...f89361` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xccb87b...609d6c` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xcec206...4d85e3` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xcf4a87...f7ab93` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xcfb62e...e39a71` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xd58222...544719` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xd6cc4a...25f517` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xdb340b...f52cd6` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xe495c0...2bbb00` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xe49e28...3ed537` | ❓ Unverified |
 | UnnamedContract | unknown | mantle | n/a | `0xe75490...bd68e1` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xe7db86...9cde7d` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xe7f55c...fcff5d` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xf44cec...812ead` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xf740c9...6111bd` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xf8e668...54c712` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xfa81e2...5688d0` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xfb877e...2019fc` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xfc13eb...153621` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xfcf203...21a1e5` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xff8fae...cf45bd` | ❓ Unverified |
+| UnnamedContract | unknown | mantle | n/a | `0xffcb8f...9c4a37` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x030b73...fbe783` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x049a72...bdf734` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x05a608...dddecd` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x07b8e2...0b24f1` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x082286...719688` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x0855b1...28f7a4` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x0a83c7...89516c` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x0cc256...126db1` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x11b5b6...5ddc41` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x18a07e...72a930` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x18db1d...8d1059` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x1fd3e4...928ebe` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x24c1c7...e8398f` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x2596e8...66d48a` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x25f60b...caf6f2` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x27134d...358c0f` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x28bd3f...f20186` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x2e4227...8ea768` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x304b89...e41fa3` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x33e964...6455bd` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x3dd8b6...ecb8b6` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x3e79a7...17b081` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x404dc8...8e005f` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x41677f...2b0524` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x474140...b0e220` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x4c3eef...53aa98` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x4ce60e...bf98e5` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x4f6201...64a7ba` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x540e64...6cf14f` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x54eaf5...77adfb` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x54fd10...72461a` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x552815...04f612` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x56dbae...718d0a` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x572954...21fbc4` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x59dc20...0e5a23` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x5c356a...f55383` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x60e8ca...4517b1` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x623fe5...5f20e7` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x628a82...529ff2` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x638b88...3fb6d7` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x65a1c6...16273b` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x67c676...863710` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x692e60...3aa82e` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x6b443a...9dfd7d` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x6c4651...31dc5d` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x7682bb...ef7647` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x771438...6f2630` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x772d8d...678e50` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x778673...b75895` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x7b5005...888d4d` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x7c4891...b8a25c` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x7f5e8a...9e8370` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x8235c5...23a280` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x883135...81c0d8` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x893726...c7f585` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x8b3754...cd5685` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x8f6bac...294535` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x923df6...01d79c` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x93dd7d...c0a2ff` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x96e445...686cbd` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x972387...49e91d` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x9b504a...ce9fe8` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0x9e265a...5f47b3` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x9ed988...7c8d0f` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xa338d2...edad67` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xa4ff01...5cbfcc` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xa566a5...d92253` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xa5fbdd...e38157` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xac166a...4c595d` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xaf74ea...ebc6c4` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xb448c7...8d764a` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xb55c1d...f2553c` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xb713d6...2f4150` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xba0fe0...52741e` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xbb76bd...f2d19f` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xbea137...1c172d` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xbedba5...d06974` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xc0148b...551158` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xc0413f...57b924` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xc0c06e...602560` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xc1835b...9bbb1a` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xc1a75d...226dbf` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xc21e5d...f7c7ec` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xc38dee...65f848` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xc40425...44911b` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xc7cde1...8fe517` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xc8607d...0b9525` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xc8da58...5f6959` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xcc5a96...f431f5` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xcd46be...d1cb7e` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xcde8d3...6b111d` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xce9f5f...98ea12` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xd8858b...85371b` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xda490e...d09331` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xdd6ee7...9f38e6` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xde923d...e9830d` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe0c4b7...3fbc13` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xe19e00...9da0d3` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe774c6...7ab5a0` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe7f3f5...7ac5b9` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xe99ebb...3184cf` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xed4355...fd746e` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf3dffe...d021ff` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xf68717...8f63f5` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf769c5...231d42` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xf793e4...2a7447` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xf9873f...8489b7` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xfc9101...409cea` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xfcb871...3958e2` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xfcd479...4556bc` | ❓ Unverified |
 | UnnamedContract | unknown | base | n/a | `0xfe0276...9dd5e9` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0x1e86a5...3286f6` | ❓ Unverified |
 | UnnamedContract | unknown | mode | n/a | `0x1e9792...65e5e0` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0x2fcc0d...36a46f` | ❓ Unverified |
 | UnnamedContract | unknown | mode | n/a | `0x32e27f...1e908f` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0x683292...161300` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0x6d257b...da5aa7` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0x7eccd6...8fbcce` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0xbc7d3b...c574e2` | ❓ Unverified |
 | UnnamedContract | unknown | mode | n/a | `0xc27ddd...099881` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0xf3b112...0d4f60` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0xf44cec...812ead` | ❓ Unverified |
+| UnnamedContract | unknown | mode | n/a | `0xfc13eb...153621` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x0080d7...83ac46` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x009528...8ac824` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x030e32...cc8d37` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x036c23...b58331` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x064238...86d4ce` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x09eb6f...9dea15` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x1278fc...73bd8b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x134e2a...0f03ba` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x14db99...df3f92` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x1632d1...fdfcca` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x1b35f4...55539e` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x1bcc00...807f6f` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x1d889b...3fe91d` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x1dae6e...84c31a` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x1e1677...424973` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x1ea745...551595` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x282b4a...570d48` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x286870...c0d94c` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x289407...8c1fff` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x2a7bb0...6125db` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x2ab0fb...e2c87e` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x2af0f8...475643` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x2bf669...783671` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x2de5f8...3475f5` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x32253b...041a29` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x356666...26c12e` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x38abaf...963905` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x396428...a005c9` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x39f70d...8363a2` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x3d1c6e...454098` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x3ee902...af37e8` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x41cf34...99eb0b` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x423051...ab32a5` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x477e98...cb6cac` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x486f4c...16277e` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x4884a3...16b908` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x49ec13...4b5ea9` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x4d923d...0bc52f` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x4f9d54...be83b6` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x536f96...c04656` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x540e64...6cf14f` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x5e9f01...085986` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x604e3f...aab20c` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x62651e...d161b7` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x66272d...9f3f26` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x751e74...6c90e5` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x778673...b75895` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x7d4007...4d11b2` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x7db395...c8ff66` | ❓ Unverified |
@@ -435,10 +935,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | arbitrum | n/a | `0x8438fd...9c7873` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x856064...e446cf` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x858fe2...29e700` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x883135...81c0d8` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x8affb2...cd4016` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x8e30a0...86cf0c` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x95be42...bd4846` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x965c9f...287cf1` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x96e445...686cbd` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x97140b...5b7c07` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x979012...d019eb` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0x9ab43f...eac57a` | ❓ Unverified |
@@ -450,20 +952,25 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | arbitrum | n/a | `0xabb925...64ae3d` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xae4be7...ff568c` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xb028cb...4abfc7` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xb0617d...8c1184` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xb448c7...8d764a` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xb7cff7...913165` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xbbacb4...395b95` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xbe9207...bebab7` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xbeebaa...783c87` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xc0148b...551158` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xc2b966...692e46` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xc3cb5b...8fbe4e` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xc46e17...dc5036` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xc77287...8e50ec` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xc8607d...0b9525` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xce247f...79ed29` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xd27388...0fa447` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xd295e9...42a71a` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xd305ae...62799e` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xd55d52...e2d6ee` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xd64bd5...acd8f5` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xd67b78...eda453` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xd7c156...126b38` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xd8b08d...fe9456` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xe15f83...035eb5` | ❓ Unverified |
@@ -479,31 +986,203 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | arbitrum | n/a | `0xf793e4...2a7447` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xfd06f9...55e076` | ❓ Unverified |
 | UnnamedContract | unknown | arbitrum | n/a | `0xfe252c...02f365` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x012f34...777391` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x03ae90...4a08cb` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x05ddeb...47fa1d` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x08c0fe...a84481` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x09a8eb...7dbbee` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x0b4603...255d49` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x0bf7a4...b1e600` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x0dfc5e...f0931d` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x1983ac...ac3ba3` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x19ccd7...7849ca` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x1a0d41...b3b257` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x1ad248...b3a4d3` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x1e86a5...3286f6` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x1e9792...65e5e0` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x1efb5d...bffc22` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x1f1ca4...ad123e` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x269f7f...944684` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x2c4378...8e7233` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x2ff4da...cb4478` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x303c3b...2633b2` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x30e5c7...d2f174` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x35e831...ddec6c` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x36260c...6bef58` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x36dddb...93ef79` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x40a780...1509aa` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x43b47a...879b21` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x4a96e9...bb65be` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x4fa44b...befc7e` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x533331...87c5b6` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x562c87...504dc1` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x57c41f...38af85` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x57f32f...b43bbb` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x5a424f...ee0b0d` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x5a4a03...180b58` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x5d66ac...1bd46c` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x64e146...00a7ea` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x683292...161300` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x71ea95...3fb3e6` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x77cf3c...a5cc4c` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x78727b...692279` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x7a73ca...950208` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x7e55f9...d2ecb8` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x7ef5e8...2e51cc` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x834812...aebd2f` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x839d5b...92c291` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x84f1f9...f63655` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x8550fe...cbd949` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x8a29a9...f38f38` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x8bdedc...84c4a7` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x8dbfe3...4dae84` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x8ef383...4bf9b6` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x8f88f9...59f8a1` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x911bfb...5c8886` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x938a81...87bccb` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x94d026...a7a2ef` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x976861...84a593` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x9d8d8b...39d967` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x9e7cf4...8fec4a` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0x9f817e...a50c34` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xa163c5...576f9a` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xa37d32...9dc348` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xa3d107...3c8584` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xa41113...090481` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xa45f03...d47c4d` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xa57901...b1b148` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xa8fe1c...341447` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xac419b...0677b2` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xaf0a0f...1c738e` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xb072b0...c8633a` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xb0fe42...f70fb1` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xb1bfc4...52b536` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xb5d462...986e90` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xbaaa5a...89d6fe` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xbc73a3...efdc65` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xbe9f34...bc3426` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xbf145c...4105e2` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xc362c8...65b112` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xc36eb3...704be9` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xcc65ab...f54dc3` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xce8f3d...eac4f3` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xcfbeca...a86834` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xd256cc...0615c9` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xd69120...8d4f4a` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xe2a816...58b28e` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xe3f75c...44d1f2` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xea392b...1c31b6` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xedfe13...e32fc3` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xee40b8...64df20` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xef757d...fdbc58` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xf30b4f...2f8866` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xf9403d...141760` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xfa3004...c80545` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0xfa81e2...5688d0` | ❓ Unverified |
+| UnnamedContract | unknown | avalanche | n/a | `0xfeed73...a828da` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x0180c9...9f7efa` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x06895d...c547b8` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x08c0fe...a84481` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x0b79d5...ca3445` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x1e86a5...3286f6` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x20da82...50679a` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x2577d8...800691` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x27ffa4...0e8660` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x2dbafd...87715f` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x2fa5e2...203aa4` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x2fcc0d...36a46f` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x31547c...8bd607` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x447643...d397d9` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x44fa59...1cecc7` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x57c41f...38af85` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x5e3d92...890ba5` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x606a84...83b7fd` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x6e9d70...4cbb4c` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x7a58c0...c9e5b2` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x7d4506...4d0ef5` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x7edaa3...0b83a9` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x7ef5e8...2e51cc` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x8be859...28e262` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x961605...24f77e` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x99f7a5...8c1520` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0x9e04a2...7b1703` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0xba1af4...4bc858` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0xbc7d3b...c574e2` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0xc225fa...9e4dfe` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0xc88699...937486` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0xdb7608...b3bc34` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0xdbce89...055ea4` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0xe8d5de...9f497d` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0xecfa9c...993f17` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0xf04d67...927551` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0xf14fb9...61e6fc` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0xf2ed3e...fcbf8c` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0xf3eb61...e0c0d6` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0xf3ff11...78d71e` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0xf44cec...812ead` | ❓ Unverified |
+| UnnamedContract | unknown | berachain | n/a | `0xfc13eb...153621` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x016fcf...a9a593` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x055522...c068b9` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x099dd2...6cc182` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x19f4eb...f79ee5` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x1de562...78693a` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x1e86a5...3286f6` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x284fcb...1ee94a` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x2fcc0d...36a46f` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x38f611...57b35f` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x447643...d397d9` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x4cf9a2...d60f3d` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x58bfce...5240c0` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x5accda...f04501` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x659e5a...a4b8de` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x66f82e...f03a5b` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x683292...161300` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x6c5095...5870a8` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x753325...388b1a` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x7d4506...4d0ef5` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x7eccd6...8fbcce` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x7f8e02...b97790` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x8a9570...4968f0` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x8ef383...4bf9b6` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x9039f1...4dc128` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x961605...24f77e` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x98a694...4418b2` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0x9e7cf4...8fec4a` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xa35377...fae691` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xa39faf...f86de1` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xbc7d3b...c574e2` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xc225fa...9e4dfe` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xc27ddd...099881` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xc47812...7fd581` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xca8759...d37ada` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xcd5a60...70f2c8` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xdbce89...055ea4` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xe76796...98be6e` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xe7b226...176a49` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xe7db86...9cde7d` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xecfa9c...993f17` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xf14fb9...61e6fc` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xf3eb61...e0c0d6` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xf44cec...812ead` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xf5da15...996433` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xf8a024...d729ca` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xf9f1ac...ba2918` | ❓ Unverified |
+| UnnamedContract | unknown | blast | n/a | `0xfc13eb...153621` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [AE_Gamma_audit_09_03_22.pdf](https://github.com/GammaStrategies/hypervisor/blob/master/audits/AE_Gamma_audit_09_03_22.pdf) | Arbitrary Execution | Audit | 2022-03 | stale | Direct | contract_name | 137 | high |
-| [Bailsec - Gamma - Vaults - Final Report.pdf](https://github.com/GammaStrategies/hypervisor/blob/master/audits/Bailsec%20-%20Gamma%20-%20Vaults%20-%20Final%20Report.pdf) | Bailsec | Audit | 2025-02 | aging | Direct | contract_name | 39 | high |
-| [ConsenSys-Diligence-Audit-28-03-22.pdf](https://github.com/GammaStrategies/hypervisor/blob/master/audits/ConsenSys-Diligence-Audit-28-03-22.pdf) | Consensys Diligence | Audit | 2022-02 | stale | Direct | contract_name | 119 | high |
-| [Gamma_Position_Managers_report.pdf](https://github.com/GammaStrategies/hypervisor/blob/master/audits/Gamma_Position_Managers_report.pdf) | unknown | Audit | 2025-07 | fresh | Direct | contract_name | 47 | high |
-| [REP-Hypervisor-2021-07-07.pdf](https://github.com/GammaStrategies/hypervisor/blob/master/audits/REP-Hypervisor-2021-07-07.pdf) | REP | Audit | 2021-07 | stale | Direct | contract_name | 103 | high |
-| [Gamma_LimitOrders_Report.pdf](https://github.com/GammaStrategies/gamma-univ4-limit-order-hook/blob/main/audits/Gamma_LimitOrders_Report.pdf) | unknown | Audit | 2025-04 | aging | Direct | contract_name | 75 | high |
-| [report-competition-gamma.pdf](https://github.com/GammaStrategies/gamma-univ4-limit-order-hook/blob/main/audits/report-competition-gamma.pdf) | unknown | Audit | 2025-05 | aging | Direct | contract_name | 87 | medium |
-| [Gamma_Gamma_MultiPositionManager_report.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/audits/Gamma_Gamma_MultiPositionManager_report.pdf) | unknown | Audit | 2026-03 | fresh | Direct | contract_name | 215 | high |
-| [Active Bug Bounty Program](https://immunefi.com/bug-bounty/gamma/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
-| [Gamma Security Review (Jan 2024).pdf](https://github.com/GammaStrategies/hypervisor/blob/master/Gamma%20Security%20Review%20(Jan%202024).pdf) | OpenZeppelin | Audit | 2024-01 | stale | Direct | contract_name | 27 | high |
+| [AE_Gamma_audit_09_03_22.pdf](https://github.com/GammaStrategies/hypervisor/blob/master/audits/AE_Gamma_audit_09_03_22.pdf) | Arbitrary Execution | Audit | 2022-03 | stale | Direct | contract_name | 3 | n/a |
+| [Bailsec - Gamma - Vaults - Final Report.pdf](https://github.com/GammaStrategies/hypervisor/blob/master/audits/Bailsec%20-%20Gamma%20-%20Vaults%20-%20Final%20Report.pdf) | Bailsec | Audit | 2025-02 | aging | Direct | contract_name | 4 | n/a |
+| [ConsenSys-Diligence-Audit-28-03-22.pdf](https://github.com/GammaStrategies/hypervisor/blob/master/audits/ConsenSys-Diligence-Audit-28-03-22.pdf) | Consensys Diligence | Audit | 2022-02 | stale | Direct | contract_name | 2 | n/a |
+| [Gamma_Position_Managers_report.pdf](https://github.com/GammaStrategies/hypervisor/blob/master/audits/Gamma_Position_Managers_report.pdf) | unknown | Audit | 2025-07 | aging | Direct | contract_name | 7 | n/a |
+| [REP-Hypervisor-2021-07-07.pdf](https://github.com/GammaStrategies/hypervisor/blob/master/audits/REP-Hypervisor-2021-07-07.pdf) | REP | Audit | 2021-07 | stale | Direct | contract_name | 1 | n/a |
+| [Gamma_LimitOrders_Report.pdf](https://github.com/GammaStrategies/gamma-univ4-limit-order-hook/blob/main/audits/Gamma_LimitOrders_Report.pdf) | unknown | Audit | 2025-04 | aging | Direct | contract_name | 4 | n/a |
+| [report-competition-gamma.pdf](https://github.com/GammaStrategies/gamma-univ4-limit-order-hook/blob/main/audits/report-competition-gamma.pdf) | unknown | Audit | 2025-05 | aging | Direct | contract_name | 5 | n/a |
+| [Gamma_Gamma_MultiPositionManager_report.pdf](https://github.com/GammaStrategies/GammaV2/blob/main/audits/Gamma_Gamma_MultiPositionManager_report.pdf) | unknown | Audit | 2026-03 | fresh | Direct | contract_name | 13 | n/a |
+| [immunefi.com/bug-bounty/gamma/information](https://immunefi.com/bug-bounty/gamma/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
+| [Gamma Security Review (Jan 2024).pdf](https://github.com/GammaStrategies/hypervisor/blob/master/Gamma%20Security%20Review%20(Jan%202024).pdf) | OpenZeppelin | Audit | 2024-01 | stale | Direct | contract_name | 3 | n/a |
 
 ## Coverage Gaps
 
@@ -511,32 +1190,58 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| arbitrum | [`0x418749...fc7e07`](./contracts/arbitrum-42161/0x41874907a1a5ed455da40b248dc10fe5effc7e07/) | AntiBotStandardToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x2c4938...4758f3`](./contracts/unichain-130/0x2c49383f8a82b5efb201571bddabb4cd294758f3/) | AuctionStateLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x04b1b8...52b771`](./contracts/unichain-130/0x04b1b8028ffcf6a012953609ae5ab3eef152b771/) | BuybackDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x044c32...4cd4ef`](./contracts/unichain-130/0x044c32b8a70cab92804c5f4c0b784a8ef64cd4ef/) | CallOptionFactoryDeployer | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x018c22...c69b7e`](./contracts/unichain-130/0x018c229b7cbfb1be6810891327ec5a4bdfc69b7e/) | CamelStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| mantle | [`0x07d5f8...21357f`](./contracts/mantle-5000/0x07d5f8d1593eeadd121ea269108b4e00e121357f/) | CleopatraHypervisor | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | [`0x7916fa...09f4d4`](./contracts/unichain-130/0x7916fae61d32b9c55211b965c37bd083c909f4d4/) | ContinuousClearingAuctionFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | [`0x5a4b38...18bc56`](./contracts/unichain-130/0x5a4b38a6feb3d901431adf7e1d3ebfc10818bc56/) | DelegatedAccount | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x0340e3...c77dc3`](./contracts/unichain-130/0x0340e3c5e8971daf8aff06d9c4454e3f24c77dc3/) | DynamicFeeHookRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x00999a...2311b6`](./contracts/unichain-130/0x00999af6ca791696be772aa4d40739d8612311b6/) | DynamicFeeLimitOrderHookRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x001e82...fb0d0e`](./contracts/unichain-130/0x001e82575850dc7f9cea5d7585ccb56afffb0d0e/) | ExponentialStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x074361...da1d64`](./contracts/sonic-146/0x0743618e342f4351890e81f6815f75753cda1d64/) | FeeRecipientV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6bea7c...44e197`](./contracts/ethereum-1/0x6bea7cfef803d1e3d5f7c0103f7ded065644e197/) | Gamma | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x08f8b4...188d8e`](./contracts/unichain-130/0x08f8b4c23c38a57f8de29e8694ead60f6f188d8e/) | GaussianStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| avalanche | [`0x04dd4b...13ab51`](./contracts/avalanche-43114/0x04dd4bd444e1fb7863787a434a31fb5f1213ab51/) | HypeRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x049a72...bdf734`](./contracts/bsc-56/0x049a72032a08409712268aae1bd6f0a118bdf734/) | InitialDepositLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x428ded...ef7091`](./contracts/polygon-137/0x428dedf862f5c05f5813efa5ef54d28cc1ef7091/) | InitialDepositLensLogic | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | [`0x7482fa...3c3691`](./contracts/unichain-130/0x7482facd32d2341dbc8984459be75116dc3c3691/) | LaunchpadOrderBookFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | [`0x44169f...b2837f`](./contracts/unichain-130/0x44169f8971cdc3f2efe434971518fb188cb2837f/) | LaunchpadPositionFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| arbitrum | [`0x572a98...32c22c`](./contracts/arbitrum-42161/0x572a9853be18c54b8e9924658a70f6c40932c22c/) | LimitOrderLensTickLogic | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x3fe127...e7f918`](./contracts/manta-169/0x3fe1278d7dd785e234b9d2969c8ca7d8e1e7f918/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x3273c1...b2c7e5`](./contracts/manta-169/0x3273c153ecc6891a68af60ee0b67c16dd7b2c7e5/) | MintableToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | [`0x4fc42c...a14d8c`](./contracts/unichain-130/0x4fc42c016aebdf9167a19b56fc2a56785ca14d8c/) | MultiPositionLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x34c2c9...647fcd`](./contracts/base-8453/0x34c2c92d01dbbe45b4542296c6730cf7d9647fcd/) | PoolFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x153270...d3d29f`](./contracts/sonic-146/0x1532701e046caaaa7969b4adab12ad19cfd3d29f/) | RebalanceProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x0ab9cf...7330c3`](./contracts/unichain-130/0x0ab9cff1202930cfa30436bea1ac0357387330c3/) | RebalanceSwapLogic | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x1e9792...65e5e0`](./contracts/manta-169/0x1e97925c365cd96d74ec55a04569915c4d65e5e0/) | Rewarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| berachain | [`0x3791db...c18186`](./contracts/berachain-80094/0x3791db67681ec64482b6c76fd9b5357523c18186/) | SendLock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x009528...8ac824`](./contracts/unichain-130/0x009528340fd69814182d904d70deec21048ac824/) | SimpleLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x0108f9...c8d9cf`](./contracts/polygon-137/0x0108f9dfc04596ce4ee55cb74ea92e5eeec8d9cf/) | SimpleLensInMin | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x05d647...7e30a8`](./contracts/base-8453/0x05d647f51a933186d4945f2de1cad196537e30a8/) | SimpleLensInMinPreview | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x13f741...6f199f`](./contracts/base-8453/0x13f741012541fd57cf2056421658125b7c6f199f/) | SimpleLensLibrary | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | [`0x53d4c1...06db0a`](./contracts/unichain-130/0x53d4c13b6d838c9b9817f582c3ce5be3b106db0a/) | SimpleLensRatioUtils | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x28ed6b...1f7efe`](./contracts/unichain-130/0x28ed6bacdda981c9055de8c513c4a995c81f7efe/) | SimpleLensRatioUtilsPositions | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x02d66a...d570e9`](./contracts/unichain-130/0x02d66aaa86b03314239d865925d1fa4115d570e9/) | SingleUniformStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x019f56...a033bf`](./contracts/unichain-130/0x019f567bbcfcb9d70ce15657d22098ca29a033bf/) | SwapThenLimitOrderHelper | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x1bb667...1abab1`](./contracts/unichain-130/0x1bb66795f843d3e207664aafdd19df3ae91abab1/) | TokenFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | [`0x59d994...4d107f`](./contracts/unichain-130/0x59d994025c4c80385758538edaecdfc7ca4d107f/) | TokenLaunchFactoryLens | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x2cef90...3b459b`](./contracts/unichain-130/0x2cef90b7cf69eb016af4781423e11136903b459b/) | TokenLaunchFactoryV2 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x1e3b4c...d779f8`](./contracts/unichain-130/0x1e3b4cecfa5c05fa74bdf281dfd6e368c9d779f8/) | TokenLaunchFactoryV3 | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x1435dd...6d7297`](./contracts/unichain-130/0x1435ddc2c8fa2400aeb94a270bf89c7f306d7297/) | TokenVestingFactoryDeployer | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x00a6c6...436fe4`](./contracts/unichain-130/0x00a6c62a5b337e605cc178e6d84367507f436fe4/) | TriangleStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | [`0xdf15f1...745be1`](./contracts/unichain-130/0xdf15f1ebd814a6eb2bb5bc9582cd1580b1745be1/) | UERC20Factory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x00fccd...72bcbc`](./contracts/unichain-130/0x00fccdd26f35672808ea8660e4a3a231ac72bcbc/) | UniformStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x1f76d3...d846e8`](./contracts/unichain-130/0x1f76d32f063dd393bd4c3d0e179c5806b7d846e8/) | UnilaunchBuybackDeployer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x14e8cf...4f3cb7`](./contracts/unichain-130/0x14e8cf6d5d1e83416a1984a5240105653a4f3cb7/) | UnilaunchCallOptionFactoryDeployer | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | [`0x7d9f6d...622c9f`](./contracts/unichain-130/0x7d9f6d2c7f1a8efdd6074ef130b741cc5f622c9f/) | UnilaunchDelegatedAccount | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x1d1b7f...a9434a`](./contracts/unichain-130/0x1d1b7f5638c6444f28dcb8cb1e492a8c5ba9434a/) | UnilaunchInitialDepositLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x0a79c4...707d26`](./contracts/unichain-130/0x0a79c4fdc717f5551a56b964b5c58f0b75707d26/) | UnilaunchMultiPositionFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x0bc272...32ef30`](./contracts/unichain-130/0x0bc272226803808b7883d2e2fa59bc138e32ef30/) | UnilaunchOrderBookFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x138093...f85adb`](./contracts/unichain-130/0x1380933d39848583010b7a651ccad7cfdaf85adb/) | UnilaunchSimpleLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| unichain | [`0xaab276...27c6c7`](./contracts/unichain-130/0xaab276f8f02085a0971cf7f1ad562279b227c6c7/) | UnilaunchSuperchainLBPStrategyFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x2462fc...ef51fd`](./contracts/unichain-130/0x2462fc6277784438305485ea7bbb6c982cef51fd/) | UnilaunchTokenLaunchFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x00d2c1...677653`](./contracts/unichain-130/0x00d2c101532a4b62d81924b014bb1978e2677653/) | UnilaunchTokenVestingFactoryDeployer | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | unichain | [`0x0d9aae...860a0a`](./contracts/unichain-130/0x0d9aaed03403177383261641242db2c6b6860a0a/) | VolatilityDynamicFeeHookRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -547,10 +1252,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 77 |
+| native | 87 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 323 |
+| standard_library | 1 |
+| needs_review | 990 |
 
 ## Scope Matching Notes
 
@@ -558,7 +1263,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=8, medium=2
-- Match method counts: extraction_exact=1762
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=44
 
 Fork inheritance lineage and inherited audits are included when available.

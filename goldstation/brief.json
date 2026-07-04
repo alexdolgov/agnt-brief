@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "goldstation",
-  "generated_at": "2026-06-17T07:00:52.127Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "goldstation",
-    "tier": 0,
-    "peak_tvl": 5706643.97143,
-    "peak_date": "2025-06-21T00:00:00.000Z",
-    "tvl_30d_ago": 2171891.43663,
-    "tvl_90d_ago": 2083502.76618,
-    "tvl_current": 2106077.5748,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 2950205.95196,
-    "change_30d_pct": -3.030255597495216,
-    "change_90d_pct": 1.083502694905936,
-    "days_since_peak": 337,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 63.094288248154925
-  },
+  "generated_at": "2026-07-04T14:53:19.873Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 5,
+    "total_contracts": 2,
     "total_addresses": 5,
-    "unique_implementations": 5,
+    "unique_implementations": 2,
     "total_deployments": 5,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 5,
+    "contracts_unverified": 2,
     "coverage_pct": 0,
     "total_audits": 3,
+    "direct_audits": 3,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1755730.32415,
-    "tvl_usd": 1755730.32415,
+    "dl_tvl_usd": 1748120.46032,
+    "tvl_usd": 1748120.46032,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -47,37 +33,44 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2024-12",
+    "latest_audit_date": "2025-03",
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 1,
+      "aging": 2,
       "stale": 1,
-      "unknown": 1
+      "unknown": 0
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "GOLDSTATION is a broad RWA-focused DeFi platform with swap, liquidity provision, earn, and mint-burn functionality. Gold appears to be one RWA vertical or product area rather than the entirety of the platform; specific gold-related claims should be tied to identified audited contracts or documented product materials.",
-    "relationship_narrative": "The DEX likely provides liquidity for the RWA token, while the staking contract may distribute rewards from DEX fees or RWA yields. All families share the same deployer and operate on Klaytn and Avalanche.",
-    "product_family_count": 3,
-    "total_contracts_indexed": 7,
-    "live_contracts": 1,
-    "inactive_contracts": 2,
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": 0,
+    "total_contracts_indexed": 5,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 4,
+    "unknown_contracts": 5,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v3"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 5,
+    "unique_implementations": 2,
     "has_non_token_contracts": false,
-    "is_skeletal": false
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -94,11 +87,11 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "GOLDSTATION DEX",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "UnnamedContract",
       "deployments": [
         {
           "chain_id": 8217,
@@ -110,31 +103,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8217,
-      "chain_name": "klaytn",
-      "address": "0x4836cc1f355bb2a61c210eaa0cd3f729160cd95e",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "GOLDSTATION DEX",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 8217,
           "chain_name": "klaytn",
@@ -145,31 +114,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8217,
-      "chain_name": "klaytn",
-      "address": "0x4d55b04ac52b2ca41ad04337ff13cbaefbdc8954",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "GOLDSTATION DEX",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 8217,
           "chain_name": "klaytn",
@@ -180,31 +125,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 8217,
-      "chain_name": "klaytn",
-      "address": "0x6569b14043c03537b5b125f5ac5de3605a47dc76",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "GOLDSTATION Staking",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 8217,
           "chain_name": "klaytn",
@@ -222,7 +143,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -234,7 +159,7 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "GOLDSTATION RWA",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -257,7 +182,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-11-07 07:43:31+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -274,6 +203,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -295,6 +227,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -310,12 +245,15 @@
       "report_url": "https://github.com/CrederLabs/audit/blob/main/StanToken/Certik_Audit_Report_STAN_Token.pdf",
       "auditor": "CertiK",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2025-03",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -331,7 +269,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 5
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {},

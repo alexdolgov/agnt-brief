@@ -1,57 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "kodiak",
-  "generated_at": "2026-06-21T17:16:22.760Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "kodiak",
-    "tier": 1,
-    "peak_tvl": 1389666662,
-    "peak_date": "2025-04-04T00:00:00.000Z",
-    "tvl_30d_ago": 29073653,
-    "tvl_90d_ago": 37465696,
-    "tvl_current": 18193388,
-    "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 136355059,
-    "change_30d_pct": -37.42310950742929,
-    "change_90d_pct": -51.43987716123037,
-    "governance_raw": {
-      "evidence": "TVL dropped 98.7% from peak and 51% in 90 days, but homepage shows active product suite and investor backing, indicating ongoing operations.",
-      "confidence": 0.7,
-      "lifecycle_status": "declining"
-    },
-    "days_since_peak": 443,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 98.69080920644551,
-    "governance_evidence": "TVL dropped 98.7% from peak and 51% in 90 days, but homepage shows active product suite and investor backing, indicating ongoing operations.",
-    "governance_confidence": 0.7,
-    "governance_text_chars": 2471,
-    "governance_classification": "declining",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:29.301Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-16da",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 4,
     "total_addresses": 4,
     "unique_implementations": 4,
     "total_deployments": 4,
-    "audited_contracts": 0,
-    "unaudited_contracts": 4,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 4,
+    "audited_contracts": 2,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 2,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 50,
     "total_audits": 7,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 20611038,
-    "tvl_usd": 15857871.378465995,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "berachain": 15857871.38
-    },
-    "asd_usd": 15857871.378465995,
+    "direct_audits": 7,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 16916591,
+    "tvl_usd": 16916591,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://kodiak.finance/",
     "chains": [
       "berachain"
@@ -65,12 +39,21 @@
       "aging": 6,
       "stale": 0,
       "unknown": 1
+    },
+    "live_implementations": 4,
+    "live_verified_implementations": 4,
+    "live_audited_implementations": 2,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 2,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Kodiak is a Berachain-native liquidity platform with multiple product components, including DEX/AMM infrastructure, Islands liquidity-management vaults, Panda Factory launch infrastructure, Perps, Validator-related components, and Baults. Its contract surface should be modeled from validated Kodiak-owned Berachain deployments and audit-scoped Kodiak contracts, not from generic upstream DEX names or unrelated multi-chain deployments.",
-    "relationship_narrative": "The Kodiak Perps family relies on shared infrastructure such as proxy contracts (ArcProxy, BerryMaster, TransparentUpgradeableProxy) for upgradeability and governance controllers (FarmV2Controller, FarmV3Controller) to manage farming strategies. Liquidity pools and vaults interact with staking tokens and reward distributors to facilitate yield generation across multiple chains.",
-    "product_family_count": 1,
+    "project_purpose": "Liquidity Manager. Structurally: 4 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.",
+    "product_family_count": 2,
     "total_contracts_indexed": 4,
     "live_contracts": 4,
     "inactive_contracts": 0,
@@ -79,7 +62,7 @@
     "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 3,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -93,41 +76,6 @@
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0xc0d1ac00a30fa4e30e44afc7313d6312c87e21df",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "KodiakToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Kodiak Islands",
-      "tvl_usd": 15857871.378465995,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "KodiakToken",
-      "deployments": [
-        {
-          "chain_id": 80094,
-          "chain_name": "berachain",
-          "address": "0xc0d1ac00a30fa4e30e44afc7313d6312c87e21df",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 15857871.378465995,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 80094,
       "chain_name": "berachain",
@@ -161,7 +109,52 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-22 16:49:41+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 80094,
+      "chain_name": "berachain",
+      "address": "0xc0d1ac00a30fa4e30e44afc7313d6312c87e21df",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "KodiakToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "KodiakToken",
+      "deployments": [
+        {
+          "chain_id": 80094,
+          "chain_name": "berachain",
+          "address": "0xc0d1ac00a30fa4e30e44afc7313d6312c87e21df",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3262"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-17 14:42:06+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 80094,
@@ -196,7 +189,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-22 16:49:41+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 80094,
@@ -223,22 +220,28 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-3262"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-22 16:49:41+03",
+      "deploy_coverage_basis": "code_matched"
     }
   ],
   "audits": [
     {
       "audit_id": 3261,
       "audit_key": "audit-3261",
-      "report_name": "Rendered PDF capture",
+      "report_name": "spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/s1TqcqIFZ5UkYF7iD5Nt/kodiak_A3_by_0xmacro.pdf",
       "report_url": "https://584145091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FOSwqNrRJ9Xh6jO57yoLm%2Fuploads%2Fs1TqcqIFZ5UkYF7iD5Nt%2Fkodiak_A3_by_0xmacro.pdf",
       "auditor": "0xMacro",
       "audit_type": "audit",
@@ -248,6 +251,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -259,7 +265,7 @@
     {
       "audit_id": 3262,
       "audit_key": "audit-3262",
-      "report_name": "Rendered PDF capture",
+      "report_name": "spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/ierRx3DPkFpZU4OY3fB5/kodiak_A1_by_0xmacro.pdf",
       "report_url": "https://584145091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FOSwqNrRJ9Xh6jO57yoLm%2Fuploads%2FierRx3DPkFpZU4OY3fB5%2Fkodiak_A1_by_0xmacro.pdf",
       "auditor": "0xMacro",
       "audit_type": "audit",
@@ -269,18 +275,45 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "extracted_names": [
+        "CommunalFarm",
+        "KDK",
+        "KodiakFactoryV1",
+        "KodiakToken",
+        "KodiakV1RouterStaking",
+        "KodiakVaultV1",
+        "NonfungiblePositionManager",
+        "NonfungibleTokenPositionDescriptor",
+        "SwapRouter",
+        "SwapRouter02",
+        "TokenRewards",
+        "TokenRewardsDividendsV2",
+        "UniswapV2ERC20",
+        "UniswapV2Factory",
+        "UniswapV2Pair",
+        "UniswapV2Router01",
+        "UniswapV2Router02",
+        "UniswapV3Factory",
+        "UniswapV3Pool",
+        "V2SwapRouter",
+        "V3SwapRouter",
+        "XKodiakToken",
+        "xKDK"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
       "audit_id": 3264,
       "audit_key": "audit-3264",
-      "report_name": "Rendered PDF capture",
+      "report_name": "spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/Sz7GaLLOLF7H4FmxpGTR/kodiak_A2_by_0xmacro.pdf",
       "report_url": "https://584145091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FOSwqNrRJ9Xh6jO57yoLm%2Fuploads%2FSz7GaLLOLF7H4FmxpGTR%2Fkodiak_A2_by_0xmacro.pdf",
       "auditor": "0xMacro",
       "audit_type": "audit",
@@ -290,6 +323,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -301,7 +337,7 @@
     {
       "audit_id": 16516,
       "audit_key": "audit-16516",
-      "report_name": "Rendered PDF capture",
+      "report_name": "spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf",
       "report_url": "https://584145091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FOSwqNrRJ9Xh6jO57yoLm%2Fuploads%2FEGTuI70lM40vmr8YwZQT%2F%5BKALOS%5D%20KODIAK%20Audit%20Report%20(ENG).pdf",
       "auditor": "0xMacro",
       "audit_type": "audit",
@@ -311,6 +347,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -322,7 +361,7 @@
     {
       "audit_id": 16518,
       "audit_key": "audit-16518",
-      "report_name": "Rendered PDF capture",
+      "report_name": "spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/Ei2WQL3ewlsPDWDnlV9D/AstraSec-AuditReport-Kodiak-Bault.pdf",
       "report_url": "https://584145091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FOSwqNrRJ9Xh6jO57yoLm%2Fuploads%2FEi2WQL3ewlsPDWDnlV9D%2FAstraSec-AuditReport-Kodiak-Bault.pdf",
       "auditor": "0xMacro",
       "audit_type": "audit",
@@ -332,6 +371,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -343,7 +385,7 @@
     {
       "audit_id": 16519,
       "audit_key": "audit-16519",
-      "report_name": "Rendered PDF capture",
+      "report_name": "spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/HLRHY2QFxlXLD1Yxcqku/AstraSec-AuditReport-Kodiak-DEX.pdf",
       "report_url": "https://584145091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FOSwqNrRJ9Xh6jO57yoLm%2Fuploads%2FHLRHY2QFxlXLD1Yxcqku%2FAstraSec-AuditReport-Kodiak-DEX.pdf",
       "auditor": "0xMacro",
       "audit_type": "audit",
@@ -353,6 +395,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -364,7 +409,7 @@
     {
       "audit_id": 16520,
       "audit_key": "audit-16520",
-      "report_name": "Audits",
+      "report_name": "audits.md",
       "report_url": "https://documentation.kodiak.finance/security/audits.md",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -374,6 +419,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -383,18 +431,16 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [
+  "auditor_coverage": [
     {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0xc0d1ac00a30fa4e30e44afc7313d6312c87e21df",
-      "name": "KodiakToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 15857871.378465995,
-      "risk_note": "Verified native implementation with $15,857,871.38 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
+      "auditor": "0xMacro",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 50,
+      "latest_audit": "2024-12"
+    }
+  ],
+  "coverage_gaps": [
     {
       "chain_id": 80094,
       "chain_name": "berachain",
@@ -414,16 +460,6 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 80094,
-      "chain_name": "berachain",
-      "address": "0x040ea7d4b559357425407fdfc3c774c5dfc04677",
-      "name": "XKodiakToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
@@ -436,37 +472,35 @@
     "match_method_counts": {
       "extraction_exact": 2
     },
-    "extraction_confidence_counts": {},
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 3261,
-        "report_name": "Rendered PDF capture"
-      },
-      {
-        "audit_id": 3262,
-        "report_name": "Rendered PDF capture"
+        "report_name": "spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/s1TqcqIFZ5UkYF7iD5Nt/kodiak_A3_by_0xmacro.pdf"
       },
       {
         "audit_id": 3264,
-        "report_name": "Rendered PDF capture"
+        "report_name": "spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/Sz7GaLLOLF7H4FmxpGTR/kodiak_A2_by_0xmacro.pdf"
       },
       {
         "audit_id": 16516,
-        "report_name": "Rendered PDF capture"
+        "report_name": "spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/EGTuI70lM40vmr8YwZQT/[KALOS] KODIAK Audit Report (ENG).pdf"
       },
       {
         "audit_id": 16518,
-        "report_name": "Rendered PDF capture"
+        "report_name": "spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/Ei2WQL3ewlsPDWDnlV9D/AstraSec-AuditReport-Kodiak-Bault.pdf"
       },
       {
         "audit_id": 16519,
-        "report_name": "Rendered PDF capture"
+        "report_name": "spaces/OSwqNrRJ9Xh6jO57yoLm/uploads/HLRHY2QFxlXLD1Yxcqku/AstraSec-AuditReport-Kodiak-DEX.pdf"
       },
       {
         "audit_id": 16520,
-        "report_name": "Audits"
+        "report_name": "audits.md"
       }
     ],
     "inherited_remapped_matches": []

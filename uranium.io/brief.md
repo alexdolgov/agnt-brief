@@ -5,44 +5,47 @@
 - Project: Uranium.io (`uranium.io`)
 - Website: [https://uranium.io/en](https://uranium.io/en)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:52.606Z
-- Pipeline run: brief-regen-topo-2026-06-17
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $7,407,943.89
+- Generated: 2026-07-04T14:54:02.953Z
+- Pipeline run: v2-2026-07-02-1ba3fd
+- Chains: ethereum
+- Contract surface: 1 unique implementations (1 raw deployments)
+- DeFi Llama TVL: $7,368,790.92
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Uranium.io is the xU3O8 real-world asset protocol for fractional ownership and trading of physical uranium ore concentrate. Current public/project sources emphasize Tezos/Archax/Curzon, and DefiLlama currently tracks the protocol's TVL on Etherlink. Ethereum mainnet contracts should not be presented as the live TVL-bearing protocol surface unless an explicit Ethereum-to-Etherlink/product mapping is independently verified.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 7; live-surface contracts included: 0 (0 live, 0 unknown).
-- Excluded by liveness: 2 inactive, 5 singleton, 0 uninitialized.
-- Deployment units: 0/1 live.
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
-- Audits discovered: 0
+- Unique implementations: 1
+- Raw deployments: 1
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -55,9 +58,11 @@ Uranium.io is the xU3O8 real-world asset protocol for fractional ownership and t
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (1)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| ERC1967Proxy | unknown | ethereum | n/a | [`0x0f974d...fe0652`](./contracts/ethereum-1/0x0f974dfb0d5d4850db78c56f07c7d62a3efe0652/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -94,7 +99,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 0 |
 | upstream | 0 |
-| standard_library | 0 |
+| standard_library | 1 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

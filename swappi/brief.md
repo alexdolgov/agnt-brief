@@ -5,11 +5,11 @@
 - Project: Swappi (`swappi`)
 - Website: [https://app.swappi.io](https://app.swappi.io)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:57.647Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-07-03T21:06:57.338Z
+- Pipeline run: brief-restore-2026-07
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $1,613,091.99
+- DeFi Llama TVL: $1,580,526.61
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Swappi is an AMM-based decentralized exchange (DEX) deployed on Conflux Network. It enables users to swap tokens and provide liquidity in automated market maker pools, appears to be based on the Uniswap V2 model, and facilitates permissionless token trading and yield generation for liquidity providers.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
@@ -32,17 +32,20 @@ Swappi is an AMM-based decentralized exchange (DEX) deployed on Conflux Network.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 0 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 0
 - Raw deployments: 0
-- Audits discovered: 2
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 2 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -81,8 +84,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://drive.google.com/file/d/1zj08NuUuMAO-bikOBvPOsOnPcTC5rdHx/view?usp=sharing) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [* All vulnerabilities marked in the [Certik security review]() are not eligible for a reward.](https://skynet.certik.com/projects/swappi-finance) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [drive.google.com/file/d/1zj08NuUuMAO-bikOBvPOsOnPcTC5rdHx/view](https://drive.google.com/file/d/1zj08NuUuMAO-bikOBvPOsOnPcTC5rdHx/view?usp=sharing) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [skynet.certik.com/projects/swappi-finance](https://skynet.certik.com/projects/swappi-finance) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -110,7 +113,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [2941] DL audit link
-- [2942] * All vulnerabilities marked in the [Certik security review]() are not eligible for a reward.
+- [2941] drive.google.com/file/d/1zj08NuUuMAO-bikOBvPOsOnPcTC5rdHx/view
+- [2942] skynet.certik.com/projects/swappi-finance
 
 Fork inheritance lineage and inherited audits are included when available.

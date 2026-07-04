@@ -1,55 +1,57 @@
 {
   "schema_version": "2.0",
   "project_key": "ampleswap",
-  "generated_at": "2026-06-19T23:26:39.891Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "generated_at": "2026-07-04T14:53:00.697Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-f2f0",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "ampleswap",
     "tier": 1,
     "peak_tvl": 334980,
     "peak_date": "2021-11-01T00:00:00.000Z",
-    "tvl_30d_ago": 17163,
-    "tvl_90d_ago": 16543,
-    "tvl_current": 15975,
+    "tvl_30d_ago": 17552,
+    "tvl_90d_ago": 16113,
+    "tvl_current": 14868,
     "tier0_reason": "long_term_collapse_from_peak",
-    "tvl_180d_ago": 21188,
-    "change_30d_pct": -6.92186680650236,
-    "change_90d_pct": -3.4334763948497855,
+    "tvl_180d_ago": 21229,
+    "change_30d_pct": -15.291704649042845,
+    "change_90d_pct": -7.726680320238318,
     "governance_raw": {
-      "evidence": "TVL dropped 95% from peak but protocol still has active products (Trade, Farms, Pools) and ongoing token metrics, indicating continued operation despite decline.",
+      "evidence": "TVL dropped 95.56% from peak, but the protocol still has a live homepage with active products and no shutdown announcement.",
       "confidence": 0.8,
       "lifecycle_status": "declining"
     },
-    "days_since_peak": 1691,
+    "days_since_peak": 1703,
     "detection_method": "tvl_trajectory+governance_signal",
     "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 95.23105857066093,
-    "governance_evidence": "TVL dropped 95% from peak but protocol still has active products (Trade, Farms, Pools) and ongoing token metrics, indicating continued operation despite decline.",
+    "drop_from_peak_pct": 95.56152606125738,
+    "governance_evidence": "TVL dropped 95.56% from peak, but the protocol still has a live homepage with active products and no shutdown announcement.",
     "governance_confidence": 0.8,
-    "governance_text_chars": 495,
+    "governance_text_chars": 601,
     "governance_classification": "declining",
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 30,
+    "total_contracts": 24,
     "total_addresses": 45,
-    "unique_implementations": 30,
+    "unique_implementations": 24,
     "total_deployments": 45,
     "audited_contracts": 5,
-    "unaudited_contracts": 13,
+    "unaudited_contracts": 14,
     "contracts_verified_audited": 5,
-    "contracts_verified_unaudited": 13,
+    "contracts_verified_unaudited": 14,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 12,
+    "contracts_unverified": 5,
     "coverage_pct": 27.8,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 16048.7638,
-    "tvl_usd": 7210.288945219777,
+    "dl_tvl_usd": 14965.52835,
+    "tvl_usd": 7290.931042181364,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "bsc": 7210.29
+      "bsc": 7290.93
     },
     "asd_usd": null,
     "website_url": "https://ampleswap.com",
@@ -65,28 +67,35 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 19,
+    "live_verified_implementations": 18,
+    "live_audited_implementations": 5,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 5
     }
   },
   "topography": {
-    "project_purpose": "AmpleSwap is a decentralized exchange (DEX) protocol enabling token swaps and liquidity provision on multiple chains, primarily BNB Chain. It uses a factory-router pattern to create and manage liquidity pools, and includes a native token (AmpleToken) with associated staking or reward mechanisms.",
-    "relationship_narrative": "The AmpleFactory and AmpleRouter form the core DEX infrastructure, while AmpleToken and SyrupBar provide the incentive layer, likely rewarding liquidity providers. Multi-chain token deployments (PlanetToken, etc.) extend the protocol's footprint, potentially interacting with the core DEX through bridges or wrapped representations.",
-    "product_family_count": 4,
-    "total_contracts_indexed": 45,
-    "live_contracts": 0,
-    "inactive_contracts": 0,
+    "project_purpose": "Dexs. Structurally: 24 project-authored contract(s) across 1 chain(s); 10 ERC20 tokens; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 6 functional families. Its contracts share 2 common project-authored base contract(s) (bep20, pancakeerc20). Dominant framework: openzeppelin.",
+    "product_family_count": 6,
+    "total_contracts_indexed": 52,
+    "live_contracts": 40,
+    "inactive_contracts": 7,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 45,
+    "unknown_contracts": 5,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 30,
+    "unique_implementations": 24,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -105,8 +114,8 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Main contracts - BNB Chain",
-      "tvl_usd": 7210.288945219777,
+      "product_line": null,
+      "tvl_usd": 7290.931042181364,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "AmpleToken",
@@ -119,7 +128,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 7210.288945219777,
+          "tvl_usd": 7290.931042181364,
           "is_audited": true
         },
         {
@@ -131,7 +140,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 56,
@@ -142,7 +151,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 56,
@@ -153,7 +162,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xdbd24c5386ea838df80c27f709161bda5e6b2bf1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -163,7 +183,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-02-18 17:34:48+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -173,9 +197,9 @@
       "deployment_unit_proxy_count": null,
       "name": "Address",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Main contracts - Alvey Chain",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -198,7 +222,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2021-08-11 14:20:55+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -210,7 +238,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Main contracts - BNB Chain",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -235,7 +263,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-08 15:53:05+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -247,7 +279,7 @@
       "role": "adapter",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Main contracts - BNB Chain",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -272,7 +304,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-08 16:06:32+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -307,7 +343,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-12-27 12:44:51+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -335,6 +375,17 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xfc4f0679c0c9a1a7b499d1bd509461a1ede2c6e4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -342,7 +393,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-24 13:49:52+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -377,7 +432,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-02-03 09:30:16+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -412,7 +471,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-16 14:50:20+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xf0a4b40baf4d5a5a01e58141397162a996f6dabd",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BancorConverterRegistry",
+      "role": "registry",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BancorConverterRegistry",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xf0a4b40baf4d5a5a01e58141397162a996f6dabd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-12 09:48:05+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -447,7 +549,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-11-25 13:12:10+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -485,7 +591,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 56,
@@ -496,7 +602,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 56,
@@ -507,7 +613,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 56,
@@ -518,7 +624,40 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xeb642d600bf593cb21e1551e9a15426ff6d42f82",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xf1c73a5d2a3a0da3d6c9009890ecbdf5822c062e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xf5987603323aa99dde0777a55e83c82d59cca272",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -528,7 +667,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-03 13:07:05+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -563,7 +706,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-27 12:37:25+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -573,7 +720,7 @@
       "deployment_unit_proxy_count": null,
       "name": "PDA",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -598,7 +745,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-25 08:52:12+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -610,7 +761,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Main contracts - Decimal Chain",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -633,7 +784,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-08-11 14:17:46+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -668,7 +823,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-12-27 12:39:36+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -707,6 +866,17 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xe2088057235f4503d3f9bef57d579841768017c1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -714,7 +884,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-04-20 11:48:06+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -752,7 +926,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 56,
@@ -763,7 +937,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 56,
@@ -774,7 +948,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 56,
@@ -785,7 +959,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 56,
@@ -796,7 +970,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 56,
@@ -807,7 +981,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -817,7 +991,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-03 13:02:26+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -852,7 +1030,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-03 12:56:56+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -898,7 +1080,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-25 09:40:37+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -908,7 +1094,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -933,7 +1119,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-03 12:38:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -943,7 +1133,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -968,7 +1158,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-08-03 09:24:51+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -978,7 +1172,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1003,7 +1197,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-03 08:32:34+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1013,7 +1211,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1038,147 +1236,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xdbd24c5386ea838df80c27f709161bda5e6b2bf1",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xdbd24c5386ea838df80c27f709161bda5e6b2bf1",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xe2088057235f4503d3f9bef57d579841768017c1",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xe2088057235f4503d3f9bef57d579841768017c1",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xeb642d600bf593cb21e1551e9a15426ff6d42f82",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xeb642d600bf593cb21e1551e9a15426ff6d42f82",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xf0a4b40baf4d5a5a01e58141397162a996f6dabd",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xf0a4b40baf4d5a5a01e58141397162a996f6dabd",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-03 12:15:08+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1188,7 +1250,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1213,119 +1275,18 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xf1c73a5d2a3a0da3d6c9009890ecbdf5822c062e",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xf1c73a5d2a3a0da3d6c9009890ecbdf5822c062e",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xf5987603323aa99dde0777a55e83c82d59cca272",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Main contracts - BNB Chain",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xf5987603323aa99dde0777a55e83c82d59cca272",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xfc4f0679c0c9a1a7b499d1bd509461a1ede2c6e4",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xfc4f0679c0c9a1a7b499d1bd509461a1ede2c6e4",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-03 08:32:24+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 12656,
       "audit_key": "audit-12656",
-      "report_name": "DL audit link",
+      "report_name": "audit-by-etherauthority.pdf",
       "report_url": "https://ampleswap.com/audit-by-etherauthority.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -1335,18 +1296,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AmpleFactory",
-        "AmpleRouter",
-        "AmpleToken",
-        "MasterChef",
-        "SyrupBar"
-      ],
-      "matched_contracts": 18,
+      "extracted_names": [],
+      "matched_contracts": 5,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -1355,21 +1313,11 @@
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 5,
-      "coverage_pct": 27.8,
+      "coverage_pct": 26.3,
       "latest_audit": "2021-09"
     }
   ],
   "coverage_gaps": [
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x01dc97c89df7d3c616a696dd53f600ab3ff12983",
-      "name": "Address",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 56,
       "chain_name": "bsc",
@@ -1426,16 +1374,6 @@
       "address": "0x9447d3b427c5ca8a4ca0ee6843bce9e9e3494f1b",
       "name": "MasterChefTimelock",
       "role": "governance",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x7736bd4a0a9cf18af91d1bbf0daf64bd58513405",
-      "name": "PDA",
-      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1492,18 +1430,16 @@
     }
   ],
   "origin_summary": {
-    "native": 30,
+    "native": 16,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 0
+    "standard_library": 1,
+    "needs_review": 7
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 18
+      "contract_name": 5
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

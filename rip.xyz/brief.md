@@ -4,64 +4,71 @@
 
 - Project: Rip.xyz (`rip.xyz`)
 - Website: [https://www.rip.xyz/](https://www.rip.xyz/)
-- Lifecycle: active (Tier 0, 32.9% below peak)
-- Generated: 2026-06-18T09:34:27.184Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-5311
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:47.072Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-66d5
 - Chains: hyperliquid
-- Contract surface: 8 unique implementations (9 raw deployments)
-- DeFi Llama TVL: $879,290.64
-- On-chain TVL (included contracts): $626,482.87
-- TVL by chain: Hyperliquid $626,482.87
+- Contract surface: 9 unique implementations (11 raw deployments)
+- DeFi Llama TVL: $907,833.61
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Rip.xyz provides tokenized vault strategies on HyperEVM. Its initial strategy, Hypurr Vault, offers NFT-backed vault exposure for fractional access to Hypurr NFTs. External rHYPURR liquidity venues, such as third-party DEX pools, should be treated as dependencies rather than the core project purpose.
+NFT Automated Strategies. Structurally: 5 project-authored contract(s) across 1 chain(s); 2 ERC721 NFTs; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The rHYPURR vault (implemented behind an ERC1967 proxy) accepts wHYPE deposits and mints rHYPURR shares; these shares are paired with wHYPE in a Uniswap V3 pool to provide liquidity. The Nft contract likely interacts with the vault for access or rewards, while wHYPE serves as the common base asset across the system.
+The protocol comprises 3 functional families. Its contracts share 3 common project-authored base contract(s) (erc721enumerable, erc165, erc721uristorage). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 11; live-surface contracts included: 9 (8 live, 1 unknown).
-- Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
-- Deployment units: 0/1 live.
+- Indexed contracts: 11; live-surface contracts included: 11 (7 live, 4 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/4 (0.0%)
+- Coverage of deployed-live implementations: 1/4 (25.0%)
+- Deployed-live implementations: 5 of 9 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/5
 - Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
 - Unverified implementations: 4
-- Unique implementations: 8
-- Raw deployments: 9
-- Audits discovered: 1
-- Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $626,482.87
+- Unique implementations: 9
+- Raw deployments: 11
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 1
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-01 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 1 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 1 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| Three Sigma | Tier 2 | 1 | 20.0% | 2026-01 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (1)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| rHYPURR | unknown | hyperliquid | n/a | 2 deployments: hyperliquid [`0x0df4f6...94667b`](./contracts/hyperliquid-999/0x0df4f69cf9417b1817ab9579bf099537a694667b/); hyperliquid `0x533811...79bee7` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UniswapV3Pool | core_logic | hyperliquid | n/a | [`0x1f6b7b...e34420`](./contracts/hyperliquid-999/0x1f6b7b53623b3039720a186b31ef7f50f0e34420/) | ⚠️ Unaudited |
 | Nft | token | hyperliquid | n/a | 2 deployments: hyperliquid [`0x3c7fd3...83b123`](./contracts/hyperliquid-999/0x3c7fd353d32344476d964deda8ea112a9d83b123/); hyperliquid `0x9125e2...bac685` | ⚠️ Unaudited |
 | RelayApprovalProxyV3 | unknown | hyperliquid | n/a | [`0xccc88a...c315be`](./contracts/hyperliquid-999/0xccc88a9d1b4ed6b0eaba998850414b24f1c315be/) | ⚠️ Unaudited |
 | Seaport | unknown | hyperliquid | n/a | [`0x000000...3eb395`](./contracts/hyperliquid-999/0x0000000000000068f116a894984e2db1123eb395/) | ⚠️ Unaudited |
+| UniswapV3Pool | core_logic | hyperliquid | n/a | [`0x1f6b7b...e34420`](./contracts/hyperliquid-999/0x1f6b7b53623b3039720a186b31ef7f50f0e34420/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -90,7 +97,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [**View the full audit report (PDF)**](https://rip.xyz/audits/hypurrvault/rHYPURR.pdf) | Three Sigma | Audit | 2026-01 | fresh | Direct | contract_name | 0 | n/a |
+| [rHYPURR.pdf](https://rip.xyz/audits/hypurrvault/rHYPURR.pdf) | Three Sigma | Audit | 2026-01 | fresh | Direct | contract_name | 2 | high |
 
 ## Coverage Gaps
 
@@ -98,14 +105,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| hyperliquid | [`0x3c7fd3...83b123`](./contracts/hyperliquid-999/0x3c7fd353d32344476d964deda8ea112a9d83b123/) | Nft | token | $0.00 | Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x3c7fd3...83b123`](./contracts/hyperliquid-999/0x3c7fd353d32344476d964deda8ea112a9d83b123/) | Nft | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0xccc88a...c315be`](./contracts/hyperliquid-999/0xccc88a9d1b4ed6b0eaba998850414b24f1c315be/) | RelayApprovalProxyV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| hyperliquid | [`0x000000...3eb395`](./contracts/hyperliquid-999/0x0000000000000068f116a894984e2db1123eb395/) | Seaport | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
-| upstream | 3 |
+| native | 4 |
+| upstream | 1 |
 | standard_library | 0 |
 | needs_review | 4 |
 
@@ -113,13 +122,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=2
-
-Zero-match audit list:
-
-- [3204] **View the full audit report (PDF)**
 
 Fork inheritance lineage and inherited audits are included when available.

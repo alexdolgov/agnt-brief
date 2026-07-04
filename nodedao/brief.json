@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "nodedao",
-  "generated_at": "2026-06-19T06:14:30.331Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "nodedao",
-    "tier": 0,
-    "peak_tvl": 93317938,
-    "peak_date": "2025-08-23T00:00:00.000Z",
-    "tvl_30d_ago": 38003842,
-    "tvl_90d_ago": 32979270,
-    "tvl_current": 33415309,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 58606251,
-    "change_30d_pct": -12.073866110694809,
-    "change_90d_pct": 1.3221608604435453,
-    "days_since_peak": 276,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 64.19197668083922
-  },
+  "generated_at": "2026-07-04T14:53:38.775Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d094",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 5,
     "total_addresses": 5,
@@ -34,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 7,
+    "direct_audits": 7,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 25126572.20299,
-    "tvl_usd": 25126572.20299,
+    "dl_tvl_usd": 22322204.63927,
+    "tvl_usd": 22322204.63927,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,21 +39,30 @@
       "aging": 1,
       "stale": 6,
       "unknown": 0
+    },
+    "live_implementations": 5,
+    "live_verified_implementations": 4,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "NodeDAO is a DAO-operated staking protocol spanning ETH liquid staking, rnETH restaking, BTC staking products including oBTC/oyBTC, and DeFi/L2 strategy integrations for earning and optimizing staking-related yields.",
-    "relationship_narrative": "The NodeDAOView contract serves as a read-only aggregation point for the protocol, while the ERC1967Proxy enables upgradeability. Other contracts like RestakingPool, ELVault, and DefiStrategy likely interact with the view contract to provide data to users.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 53,
+    "project_purpose": "Liquid Staking. Structurally: 24 project-authored contract(s) across 1 chain(s); 5 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 5 functional families. Its contracts share 22 common project-authored base contract(s) (proxy, erc1967upgrade, oftadapter). Dominant framework: openzeppelin.",
+    "product_family_count": 5,
+    "total_contracts_indexed": 5,
     "live_contracts": 5,
-    "inactive_contracts": 20,
-    "singleton_contracts": 28,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 28,
-    "live_deployment_units": 1,
-    "dependencies_extracted": 2,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -114,18 +109,22 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-03-26 09:41:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x718b7885fec8511dc8f2a378d3045c90e82d6a1d",
-      "deployment_unit": "unit-37388",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "GnosisSafe",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
+      "origin_provider": "Gnosis Safe",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -136,8 +135,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x718b7885fec8511dc8f2a378d3045c90e82d6a1d",
-          "deployment_unit": "unit-37388",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -149,7 +148,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2023-02-22 14:21:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -184,7 +187,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-03-26 09:57:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -194,8 +201,8 @@
       "deployment_unit_proxy_count": null,
       "name": "NethOFTAdapter",
       "role": "adapter",
-      "origin_kind": "upstream",
-      "origin_provider": "layer-zero",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -219,7 +226,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-13 09:48:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -254,7 +265,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-13 09:50:23+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -271,6 +286,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -292,6 +310,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -313,7 +334,10 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -334,6 +358,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -355,6 +382,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -366,7 +396,7 @@
     {
       "audit_id": 15360,
       "audit_key": "audit-15360",
-      "report_name": "DL audit link",
+      "report_name": "MetaTrust.pdf",
       "report_url": "https://www.nodedao.com/paf/MetaTrust.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -376,7 +406,10 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -387,7 +420,7 @@
     {
       "audit_id": 15361,
       "audit_key": "audit-15361",
-      "report_name": "DL audit link",
+      "report_name": "BEOSIN.pdf",
       "report_url": "https://www.nodedao.com/paf/BEOSIN.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -397,7 +430,10 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -431,6 +467,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x3343f9de5612b6f8a433abc3eaae245cfa3283ce",
+      "name": "NethOFTAdapter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xcea3681131dd151ee72a5c8dbba555cb8b8ded56",
       "name": "RNethOFTAdapter",
       "role": "adapter",
@@ -440,14 +486,14 @@
     }
   ],
   "origin_summary": {
-    "native": 3,
-    "upstream": 1,
+    "native": 4,
+    "upstream": 0,
     "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 27
+      "extraction_exact": 23
     },
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
@@ -475,11 +521,11 @@
       },
       {
         "audit_id": 15360,
-        "report_name": "DL audit link"
+        "report_name": "MetaTrust.pdf"
       },
       {
         "audit_id": 15361,
-        "report_name": "DL audit link"
+        "report_name": "BEOSIN.pdf"
       }
     ],
     "inherited_remapped_matches": []

@@ -5,11 +5,11 @@
 - Project: Firelight (`firelight`)
 - Website: [https://firelight.finance/](https://firelight.finance/)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:58.249Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-07-03T21:05:51.671Z
+- Pipeline run: brief-restore-2026-07
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $67,468,072.30
+- DeFi Llama TVL: $62,636,346.20
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Firelight is a DeFi protection and cover marketplace on Flare. The protocol uses staked XRP and other digital assets to back coverage, issues liquid staking tokens on Flare, allows builders or protocols to buy cover, and lets stakers earn fees and rewards for providing protection capacity.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
@@ -32,17 +32,20 @@ Firelight is a DeFi protection and cover marketplace on Flare. The protocol uses
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 0 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 0
 - Raw deployments: 0
-- Audits discovered: 3
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-12 (fresh)
-- Staleness: 3 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 2 fresh, 1 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -81,7 +84,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [2025-07-21_OpenZeppelin_Firelight.pdf](https://github.com/firelight-protocol/firelight-core/blob/main/audits/2025-07-21_OpenZeppelin_Firelight.pdf) | OpenZeppelin | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
+| [2025-07-21_OpenZeppelin_Firelight.pdf](https://github.com/firelight-protocol/firelight-core/blob/main/audits/2025-07-21_OpenZeppelin_Firelight.pdf) | OpenZeppelin | Audit | 2025-07 | aging | Direct | n/a | 0 | n/a |
 | [2025-09-01_Coinspect_Firelight_Frontend.pdf](https://github.com/firelight-protocol/firelight-core/blob/main/audits/2025-09-01_Coinspect_Firelight_Frontend.pdf) | Coinspect | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
 | [2025-12-01_Firelight_Audit_Competition_Summary_Report.pdf](https://github.com/firelight-protocol/firelight-core/blob/main/audits/2025-12-01_Firelight_Audit_Competition_Summary_Report.pdf) | Firelight | Audit | 2025-12 | fresh | Direct | n/a | 0 | n/a |
 

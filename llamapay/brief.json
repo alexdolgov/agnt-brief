@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "llamapay",
-  "generated_at": "2026-06-17T07:00:41.745Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "llamapay",
-    "tier": 0,
-    "peak_tvl": 4273655,
-    "peak_date": "2022-09-23T00:00:00.000Z",
-    "tvl_30d_ago": 1191380,
-    "tvl_90d_ago": 1402860,
-    "tvl_current": 1207404,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 1561033,
-    "change_30d_pct": 1.3449948798871898,
-    "change_90d_pct": -13.932680381506351,
-    "days_since_peak": 1337,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 71.74774285710943
-  },
+  "generated_at": "2026-07-04T14:53:30.155Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-43c7",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 13,
-    "total_addresses": 33,
-    "unique_implementations": 13,
-    "total_deployments": 33,
-    "audited_contracts": 0,
-    "unaudited_contracts": 6,
-    "contracts_verified_audited": 0,
+    "total_contracts": 10,
+    "total_addresses": 39,
+    "unique_implementations": 10,
+    "total_deployments": 39,
+    "audited_contracts": 1,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 1,
     "contracts_verified_unaudited": 5,
-    "contracts_verified_by_bytecode": 1,
-    "contracts_unverified": 7,
-    "coverage_pct": 0,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 4,
+    "coverage_pct": 16.7,
     "total_audits": 1,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 21007339.341310002,
-    "tvl_usd": 21007339.341310002,
+    "direct_audits": 1,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 36149992.29821,
+    "tvl_usd": 36149992.29821,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -66,26 +52,35 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 6,
+    "live_verified_implementations": 6,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 1,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "LlamaPay is a multi-chain protocol for by-the-second recurring payment streams, commonly used for salaries, grants, subscriptions, and other continuous token payments. It also supports related vesting and escrow functionality through factory-deployed payment contracts. Claim automation/bots and upstream Disperse-style batch distribution utilities should be treated as supporting or external utilities rather than the core product purpose.",
-    "relationship_narrative": "The Live family's LlamaPayFactory and Vesting Escrow Factory deploy TokenEscrow instances from the Scheduled Payments family, which hold and release funds. LlamaPayBot contracts interact with these escrows to automate payment execution, while Disperse assists in batch token distributions.",
-    "product_family_count": 4,
-    "total_contracts_indexed": 104,
-    "live_contracts": 23,
-    "inactive_contracts": 71,
+    "project_purpose": "Payments. Structurally: 14 project-authored contract(s) across 8 chain(s); built on solmate.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Its contracts share 2 common project-authored base contract(s) (boringbatchable, baseboringbatchable). Dominant framework: solmate.",
+    "product_family_count": 3,
+    "total_contracts_indexed": 74,
+    "live_contracts": 25,
+    "inactive_contracts": 35,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 10,
-    "deployment_units": 2,
-    "live_deployment_units": 1,
+    "unknown_contracts": 14,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 13,
+    "unique_implementations": 10,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -102,9 +97,9 @@
       "deployment_unit_proxy_count": null,
       "name": "LlamaPayBot",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Bot Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -149,19 +144,23 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-09-03 18:49:49+03",
+      "deploy_coverage_basis": null
     },
     {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x09c39b8311e4b7c678cbdad76556877ecd3aea07",
+      "chain_id": 1088,
+      "chain_name": "metis",
+      "address": "0x06bfb4725c1ccfbfbb45cb59b0f278c3cdf92c38",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "LlamaPayFactory",
-      "role": "registry",
-      "origin_kind": "needs_review",
+      "role": "unknown",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Live",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -192,7 +191,51 @@
         {
           "chain_id": 1088,
           "chain_name": "metis",
+          "address": "0x06bfb4725c1ccfbfbb45cb59b0f278c3cdf92c38",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x0ebe050c13ac5a7643616f2d9beb033f689b411c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
           "address": "0x43634d1c608f16fb0f4926c12b54124c93030600",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0x4ddfc224e5da184dc458769491cb2f17e37567b7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1088,
+          "chain_name": "metis",
+          "address": "0xcfb166f1c719376937886ffe10450e6778c937bc",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -209,7 +252,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 42161,
@@ -234,12 +277,18 @@
           "is_audited": false
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-5984"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-03-06 23:37:54+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 8453,
@@ -249,7 +298,7 @@
       "deployment_unit_proxy_count": null,
       "name": "Simple Vesting Escrow",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -296,7 +345,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-04-21 16:52:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -306,9 +359,9 @@
       "deployment_unit_proxy_count": null,
       "name": "TokenEscrow",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "LlamaPay",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -364,19 +417,23 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-12-15 14:36:38+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x056e39bdd2d35f4eb27478369bdade51e0532b72",
-      "deployment_unit": "unit-25361",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "TokenEscrow",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Scheduled Payments Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0x056e39bdd2d35f4eb27478369bdade51e0532b72",
@@ -386,8 +443,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x056e39bdd2d35f4eb27478369bdade51e0532b72",
-          "deployment_unit": "unit-25361",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -399,7 +456,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-12-13 12:09:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 25,
@@ -411,11 +472,11 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "LlamaPay",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "UnnamedContract",
       "deployments": [
         {
           "chain_id": 25,
@@ -427,31 +488,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0x62e13be78af77c86d38a027ae432f67d9ecd4c10",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Live",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -462,31 +499,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0xc5a4fec44fbde08a7c9de6e07b60de60ac074ab9",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Bot Contracts",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -497,31 +510,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0xd152f549545093347a162dce210e7293f1452150",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Live",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -532,31 +521,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0xda33d4b2753b3c2439ca52678e1a506e4c5294d1",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Scheduled Payments Contracts",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -567,31 +532,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0xde1c04855c2828431ba637675b6929a684f84c7f",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Live",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -602,31 +543,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 7777777,
-      "chain_name": "zora",
-      "address": "0x62e13be78af77c86d38a027ae432f67d9ecd4c10",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "LlamaPay",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 7777777,
           "chain_name": "zora",
@@ -644,7 +561,128 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xb93427b83573c8f27a08a909045c3e809610411a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xb93427b83573c8f27a08a909045c3e809610411a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-03-23 22:00:33+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x4ace3edd57eff1176a862e7b72db090ecf2b84bd",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x4ace3edd57eff1176a862e7b72db090ecf2b84bd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-27 01:16:28+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x62e13be78af77c86d38a027ae432f67d9ecd4c10",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x62e13be78af77c86d38a027ae432f67d9ecd4c10",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-27 01:16:38+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 80094,
@@ -654,9 +692,9 @@
       "deployment_unit_proxy_count": null,
       "name": "Vesting Escrow Factory",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "LlamaPay",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -740,17 +778,6 @@
           "is_audited": false
         },
         {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x62e13be78af77c86d38a027ae432f67d9ecd4c10",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": true,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
           "chain_id": 80094,
           "chain_name": "berachain",
           "address": "0x4ace3edd57eff1176a862e7b72db090ecf2b84bd",
@@ -765,9 +792,13 @@
       "audits_covering": [],
       "is_audited": false,
       "source_verified": true,
-      "verified_by_bytecode": true,
-      "verification_bucket": "verified_bytecode_unaudited",
-      "contamination_flag": null
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-03-06 23:48:29+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -784,34 +815,97 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "LlamaPay"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
-  "coverage_gaps": [],
+  "auditor_coverage": [
+    {
+      "auditor": "PeckShield",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 16.7,
+      "latest_audit": "2022-06"
+    }
+  ],
+  "coverage_gaps": [
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x57547f79d8344accab21dc0a9c9d186e240353d7",
+      "name": "LlamaPayBot",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0d5e12e2bd630fc231d68f3cbf95ff5bb1d62cce",
+      "name": "Simple Vesting Escrow",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x02266e3b5ce26d62ea73ea7f2c542ebc24121c01",
+      "name": "TokenEscrow",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x056e39bdd2d35f4eb27478369bdade51e0532b72",
+      "name": "TokenEscrow",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 80094,
+      "chain_name": "berachain",
+      "address": "0x4ace3edd57eff1176a862e7b72db090ecf2b84bd",
+      "name": "Vesting Escrow Factory",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 6,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 13
+    "needs_review": 4
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 2
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 5984,
-        "report_name": "PeckShield-Audit-Report-LlamaPay-v1.0.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

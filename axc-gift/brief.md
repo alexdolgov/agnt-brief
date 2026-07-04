@@ -1,15 +1,14 @@
-# Agentic Audit Brief: AXC GIFT
+# Agentic Audit Brief: axc-gift
 
 ## Project Overview
 
-- Project: AXC GIFT (`axc-gift`)
+- Project: axc-gift (`axc-gift`)
 - Website: [https://axc.xyz](https://axc.xyz)
-- Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-17T07:01:00.879Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:05.035Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-bd47
 - Chains: bsc
 - Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $5,290,517.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -20,29 +19,32 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-AXC GIFT is a permissioned asset-backed token on BNB Chain/BSC that seeks to match the performance of the GROW Heritage Fund.
+Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 4; live-surface contracts included: 2 (0 live, 2 unknown).
-- Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
-- Deployment units: 0/1 live.
+- Indexed contracts: 2; live-surface contracts included: 2 (0 live, 2 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 2 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 2
 - Unique implementations: 2
 - Raw deployments: 2
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage

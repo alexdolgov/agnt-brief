@@ -5,26 +5,25 @@
 - Project: Canopy (`canopy`)
 - Website: [https://app.canopyhub.xyz](https://app.canopyhub.xyz)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:58.232Z
-- Pipeline run: brief-regen-topo-2026-06-17
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $853,519.27
+- Generated: 2026-07-04T14:53:10.041Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-bd47
+- Chains: ethereum
+- Contract surface: 4 unique implementations (4 raw deployments)
+- DeFi Llama TVL: $803,235.95
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Canopy is a DeFi yield aggregation platform for the Movement Network that simplifies liquidity deployment.
 
+### Architecture
+
+No relationship narrative (skeletal or single-family surface).
+
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Indexed contracts: 4; live-surface contracts included: 4 (0 live, 4 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
@@ -32,17 +31,20 @@ Canopy is a DeFi yield aggregation platform for the Movement Network that simpli
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 4 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
-- Audits discovered: 0
+- Unverified implementations: 4
+- Unique implementations: 4
+- Raw deployments: 4
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -71,11 +73,16 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x113a17...4c7589` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5cd341...ad7579` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x717b41...0de274` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb10bd3...6edc4b` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -95,7 +102,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 

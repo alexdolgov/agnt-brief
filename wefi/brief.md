@@ -1,17 +1,15 @@
 # Agentic Audit Brief: wefi
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 8.4% over 90 days
-
 ## Project Overview
 
 - Project: wefi (`wefi`)
 - Website: [https://wefi.xyz](https://wefi.xyz)
-- Lifecycle: unknown (Tier 0, 82.7% below peak)
-- Generated: 2026-06-21T11:40:11.042Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:54:10.197Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-4c3e
 - Chains: polygon
 - Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $292,376.85
+- DeFi Llama TVL: $499,369.28
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -26,27 +24,29 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 ## Contract Surface Quality
 
-- Indexed contracts: 2; live-surface contracts included: 2 (2 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 3; live-surface contracts included: 2 (1 live, 1 unknown).
+- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 1; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 2 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 2
 - Raw deployments: 2
-- Audits discovered: 3
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-02 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 2 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -89,8 +89,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [PeckShield-Audit-Report-Paxo-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Paxo-v1.0.pdf) | PeckShield | Audit | 2023-02 | stale | Direct | n/a | 0 | n/a |
-| [Paxo Smart Contract Audit Report - QuillAudits.pdf (also discovered via alternate URL)](https://github.com/Quillhash/QuillAudit_Reports/blob/master/Paxo%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf) | unknown | Audit | 2022-03 | stale | Direct | n/a | 0 | n/a |
-| [**Peckshield Audit Report**](https://docs.google.com/document/d/1uNrOZqCMzTxA_BM6PxMxugvjDgTOFCFL966bim28zS0/edit?usp=sharing) | PeckShield | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Paxo Smart Contract Audit Report - QuillAudits.pdf](https://github.com/Quillhash/QuillAudit_Reports/blob/master/Paxo%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf) | unknown | Audit | 2022-03 | stale | Direct | n/a | 0 | n/a |
+| [docs.google.com/document/d/1uNrOZqCMzTxA_BM6PxMxugvjDgTOFCFL966bim28zS0/edit](https://docs.google.com/document/d/1uNrOZqCMzTxA_BM6PxMxugvjDgTOFCFL966bim28zS0/edit?usp=sharing) | PeckShield | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -104,10 +104,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -122,6 +122,6 @@ Zero-match audit list:
 
 - [14123] PeckShield-Audit-Report-Paxo-v1.0.pdf
 - [14124] Paxo Smart Contract Audit Report - QuillAudits.pdf
-- [14125] **Peckshield Audit Report**
+- [14125] docs.google.com/document/d/1uNrOZqCMzTxA_BM6PxMxugvjDgTOFCFL966bim28zS0/edit
 
 Fork inheritance lineage and inherited audits are included when available.

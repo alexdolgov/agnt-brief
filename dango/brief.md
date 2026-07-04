@@ -4,45 +4,48 @@
 
 - Project: Dango (`dango`)
 - Website: [https://dango.exchange/](https://dango.exchange/)
-- Lifecycle: active (Tier 0, 14.4% below peak)
-- Generated: 2026-06-17T07:00:41.593Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:10.781Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-17a2
 - Chains: ethereum
-- Contract surface: 1 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $3,200,872.00
+- Contract surface: 3 unique implementations (6 raw deployments)
+- DeFi Llama TVL: $2,251,931.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Dango is a trading-focused Layer 1 / DeFi hub with spot trading, perpetuals, lending, vaults, unified margin, and on-chain orderbook execution. In the currently verified EVM evidence set, the measured DefiLlama TVL is attributable to the Ethereum Dango Bridge contracts; the listed Ethereum contracts should not be treated as proof of a live multi-chain perps contract surface.
+Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 6; live-surface contracts included: 2 (2 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 4 singleton, 0 uninitialized.
-- Deployment units: 0/2 live.
+- Indexed contracts: 6; live-surface contracts included: 4 (4 live, 0 unknown).
+- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 1; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Coverage of deployed-live implementations: 0/2 (0.0%)
+- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/3
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 2
-- Audits discovered: 2
+- Unique implementations: 3
+- Raw deployments: 6
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-10 (aging)
-- Staleness: 0 fresh, 1 aging, 0 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -55,10 +58,12 @@ Dango is a trading-focused Layer 1 / DeFi hub with spot trading, perpetuals, len
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| HypERC20Collateral | unknown | ethereum | n/a | 2 deployments: ethereum [`0xd05909...c0f36c`](./contracts/ethereum-1/0xd05909852ae07118857f9d071781671d12c0f36c/); ethereum `0xe07165...fc84f9` | ⚠️ Unaudited |
+| HypNative | unknown | ethereum | n/a | 2 deployments: ethereum [`0x9d0ea3...cf73d4`](./contracts/ethereum-1/0x9d0ea335355da17ee89e50df43ab823416cf73d4/); ethereum `0x9d259a...3154cb` | ⚠️ Unaudited |
 | ProxyAdmin | governance | ethereum | n/a | 2 deployments: ethereum [`0x613942...09e601`](./contracts/ethereum-1/0x613942eff27c6886bb2a33a172cdaf03a009e601/); ethereum `0x947303...361fe6` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -83,20 +88,23 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [contest results](https://audits.sherlock.xyz/contests/1066) | Sherlock | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
-| [blog](https://informal.systems/blog/jellyfish-merkle-tree-quint-2025) | Zellic | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
+| [audits.sherlock.xyz/contests/1066](https://audits.sherlock.xyz/contests/1066) | Sherlock | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
+| [informal.systems/blog/jellyfish-merkle-tree-quint-2025](https://informal.systems/blog/jellyfish-merkle-tree-quint-2025) | Zellic | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0xd05909...c0f36c`](./contracts/ethereum-1/0xd05909852ae07118857f9d071781671d12c0f36c/) | HypERC20Collateral | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9d0ea3...cf73d4`](./contracts/ethereum-1/0x9d0ea335355da17ee89e50df43ab823416cf73d4/) | HypNative | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 1 |
 | needs_review | 0 |
@@ -112,7 +120,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [2639] contest results
-- [14306] blog
+- [2639] audits.sherlock.xyz/contests/1066
+- [14306] informal.systems/blog/jellyfish-merkle-tree-quint-2025
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,16 +1,14 @@
 # Agentic Audit Brief: Trick or Treat Farm
 
-⚠️ Lifecycle status: DEAD - TVL dropped 15.6% over 90 days
-
 ## Project Overview
 
 - Project: Trick or Treat Farm (`trick-or-treat-farm`)
-- Lifecycle: dead (Tier 0, 99.9% below peak)
-- Generated: 2026-06-19T18:12:50.746Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:54:02.458Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-4c3e
 - Chains: fantom
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $1,088.21
+- DeFi Llama TVL: $623.91
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -25,27 +23,29 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 ## Contract Surface Quality
 
-- Indexed contracts: 6; live-surface contracts included: 1 (0 live, 1 unknown).
-- Excluded by liveness: 5 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 1; live-surface contracts included: 1 (0 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 1; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-11 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 

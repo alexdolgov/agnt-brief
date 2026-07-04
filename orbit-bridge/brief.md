@@ -4,44 +4,47 @@
 
 - Project: Orbit Bridge (`orbit-bridge`)
 - Website: [https://bridge.orbitchain.io](https://bridge.orbitchain.io)
-- Lifecycle: active (Tier 0, 94.4% below peak)
-- Generated: 2026-06-17T07:00:35.591Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:39.139Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: bsc, ethereum, heco, klaytn, polygon
-- Contract surface: 6 unique implementations (6 raw deployments)
-- DeFi Llama TVL: $15,310,376.14
-- On-chain TVL (included contracts): $820,684.74
-- TVL by chain: Ethereum $631,043.73 | Bsc $189,641.01
+- Contract surface: 19 unique implementations (20 raw deployments)
+- DeFi Llama TVL: $14,578,629.07
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Orbit Bridge is an active interchain bridge supporting a broad set of EVM and non-EVM networks across 15+ chains. It enables cross-chain asset transfers using bridge/vault or equivalent custody contracts that lock, release, or otherwise custody assets on source and destination chains. The currently listed contracts represent only a partial EVM contract surface and should not be treated as complete coverage of all current TVL-bearing Orbit Bridge deployments.
+Bridge. Structurally: 8 project-authored contract(s) across 3 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The Orbit Bridge family consists of vault contracts deployed across multiple chains, all sharing the same core logic for asset locking and release. The ORCToken likely serves as the governance or utility token for the bridge ecosystem, while the unnamed contracts may provide supporting infrastructure such as access control or adapters.
+The protocol comprises 4 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 29; live-surface contracts included: 6 (4 live, 2 unknown).
-- Excluded by liveness: 17 inactive, 6 singleton, 0 uninitialized.
-- Deployment units: 2/5 live.
+- Indexed contracts: 24; live-surface contracts included: 20 (4 live, 16 unknown).
+- Excluded by liveness: 4 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
-- Verified + Unaudited implementations: 3
+- Coverage of deployed-live implementations: 0/4 (0.0%)
+- Deployed-live implementations: 4 of 19 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/4
+- Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
-- Unverified implementations: 3
-- Unique implementations: 6
-- Raw deployments: 6
-- Audits discovered: 1
+- Unverified implementations: 15
+- Unique implementations: 19
+- Raw deployments: 20
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $820,684.74
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-01 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -54,13 +57,14 @@ The Orbit Bridge family consists of vault contracts deployed across multiple cha
 
 - None
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| EthVaultImpl | unknown | ethereum | n/a | [`0x1bf68a...cb489a`](./contracts/ethereum-1/0x1bf68a9d1eaee7826b3593c20a0ca93293cb489a/) | ⚠️ Unaudited |
+| EthVaultImpl | core_logic | ethereum | n/a | [`0x4f16a2...9ff81e`](./contracts/ethereum-1/0x4f16a20450d36bfb3e3926df357f1405d79ff81e/) | ⚠️ Unaudited |
 | ORCToken | token | ethereum | n/a | [`0x662b67...ef2f51`](./contracts/ethereum-1/0x662b67d00a13faf93254714dd601f5ed49ef2f51/) | ⚠️ Unaudited |
-| Vault | core_logic | bsc | unit-21367 | [`0x89c527...beb780`](./contracts/bsc-56/0x89c527764f03bcb7dc469707b23b79c1d7beb780/) | ⚠️ Unaudited |
-| EthVaultImpl | core_logic | ethereum | unit-21366 | [`0x4f16a2...9ff81e`](./contracts/ethereum-1/0x4f16a20450d36bfb3e3926df357f1405d79ff81e/) | ⚠️ Unaudited |
+| Vault | core_logic | bsc | n/a | [`0x89c527...beb780`](./contracts/bsc-56/0x89c527764f03bcb7dc469707b23b79c1d7beb780/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -74,15 +78,27 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (3)
+### ❓ Unverified (15)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | heco | n/a | `0x38c92a...4d279f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0207ec...cab30b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x093333...25d0cf` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x123d6d...0f79d8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2127ed...24b79f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4ff16c...95fbe8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x54ad07...34a4d4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6c943d...0463c6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7f1014...d8a1f4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd23c23...8721b0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd8c163...9b8ac4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xff3eb6...a912a7` | ❓ Unverified |
+| UnnamedContract | unknown | heco | n/a | 2 deployments: heco `0x38c92a...4d279f`; klaytn `0x9abc3f...3f648d` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x6aeec0...dbaee8` | ❓ Unverified |
 | UnnamedContract | unknown | polygon | n/a | `0x98d729...a708b1` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x9abc3f...3f648d` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0x9fad26...c4ee25` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -94,16 +110,21 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0x1bf68a...cb489a`](./contracts/ethereum-1/0x1bf68a9d1eaee7826b3593c20a0ca93293cb489a/) | EthVaultImpl | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x4f16a2...9ff81e`](./contracts/ethereum-1/0x4f16a20450d36bfb3e3926df357f1405d79ff81e/) | EthVaultImpl | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x662b67...ef2f51`](./contracts/ethereum-1/0x662b67d00a13faf93254714dd601f5ed49ef2f51/) | ORCToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x89c527...beb780`](./contracts/bsc-56/0x89c527764f03bcb7dc469707b23b79c1d7beb780/) | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 4 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 6 |
+| needs_review | 15 |
 
 ## Scope Matching Notes
 

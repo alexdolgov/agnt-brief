@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "mugenfinance",
-  "generated_at": "2026-06-17T07:00:56.260Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "mugenfinance",
-    "tier": 0,
-    "peak_tvl": 3357665,
-    "peak_date": "2023-07-10T00:00:00.000Z",
-    "tvl_30d_ago": 3354846,
-    "tvl_90d_ago": 3354846,
-    "tvl_current": 3354846,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 3354846,
-    "change_30d_pct": 0,
-    "change_90d_pct": 0,
-    "days_since_peak": 1049,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 0.08395715474891033
-  },
+  "generated_at": "2026-07-04T14:53:36.982Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d094",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 12,
-    "total_addresses": 16,
-    "unique_implementations": 12,
-    "total_deployments": 16,
+    "total_contracts": 13,
+    "total_addresses": 17,
+    "unique_implementations": 13,
+    "total_deployments": 17,
     "audited_contracts": 0,
     "unaudited_contracts": 10,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 10,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 2,
+    "contracts_unverified": 3,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3354846.66308,
-    "tvl_usd": 3354846.66308,
+    "dl_tvl_usd": 0,
+    "tvl_usd": 0,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,18 +39,27 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 10,
+    "live_verified_implementations": 10,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "MugenFinance is a DeFi project tracked by DefiLlama on Arbitrum One and associated with the on-chain Mugen token contract. The current mugenfinance.com homepage appears stale, mismatched, or repurposed and should not be used as live protocol evidence. Protocol details should be verified against DefiLlama, archived/project documentation, and contract source with manual review; claims about governance and auto-compounding should not be included unless corroborated.",
-    "relationship_narrative": "The Mugen token is the core asset, while xMugen represents staked Mugen for yield accrual. The Treasury contract manages protocol-owned funds and supports the yield strategies.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 16,
-    "live_contracts": 0,
-    "inactive_contracts": 0,
+    "project_purpose": "Yield Aggregator. Structurally: 11 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 2 ERC20 tokens; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Contracts are linked by 1 cross-contract reference(s). Dominant framework: openzeppelin.",
+    "product_family_count": 3,
+    "total_contracts_indexed": 21,
+    "live_contracts": 14,
+    "inactive_contracts": 4,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 16,
+    "unknown_contracts": 3,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
@@ -72,7 +67,7 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 12,
+    "unique_implementations": 13,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -114,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-01-10 20:40:20+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -182,7 +181,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-09-22 22:13:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -217,7 +220,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-01-10 20:14:50+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -229,7 +236,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "MugenFinance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -252,7 +259,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-09-07 22:28:40+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -287,7 +298,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-10-15 00:17:56+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -322,7 +337,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-25 00:30:49+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -357,7 +376,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-09-07 22:30:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -369,7 +392,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "MugenFinance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -392,7 +415,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-09-07 22:33:04+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -427,7 +454,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-05-24 17:57:03+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -462,7 +493,50 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-05-24 17:33:54+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xa58386b51131b09e7dbc2169e986a9d32fad6322",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xa58386b51131b09e7dbc2169e986a9d32fad6322",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-05-24 17:44:14+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -474,7 +548,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "MugenFinance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -508,7 +582,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-09-16 23:45:04+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -543,7 +621,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-09-15 22:51:52+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],
@@ -654,7 +736,7 @@
     "native": 10,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 2
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {},

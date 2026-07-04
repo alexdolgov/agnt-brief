@@ -5,11 +5,11 @@
 - Project: DefiChain DEX (`defichain-dex`)
 - Website: [https://defichain.com/dex](https://defichain.com/dex)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:42.715Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-07-03T21:05:42.631Z
+- Pipeline run: brief-restore-2026-07
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $2,057,516.98
+- DeFi Llama TVL: $2,008,230.74
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-DefiChain DEX is a DefiChain-native decentralized exchange for swapping DFI and wrapped tokens on the DefiChain network. Unsupported claims about multi-chain EVM deployments, yield farming, staking, vaults, liquidity aggregation, and auto-compounding should be removed unless independently verified from authoritative DefiChain sources.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
@@ -32,17 +32,20 @@ DefiChain DEX is a DefiChain-native decentralized exchange for swapping DFI and 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 0 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 0
 - Raw deployments: 0
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage

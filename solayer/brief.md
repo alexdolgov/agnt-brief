@@ -5,11 +5,11 @@
 - Project: Solayer (`solayer`)
 - Website: [https://solayer.org](https://solayer.org)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:43.718Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Generated: 2026-07-03T21:06:54.508Z
+- Pipeline run: brief-restore-2026-07
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $9,592,954.00
+- DeFi Llama TVL: $10,510,245.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -20,7 +20,7 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Solayer is a Solana/SVM-focused protocol building restaking and yield infrastructure around Solana-native assets. Its ecosystem includes Solayer restaking, sSOL/native staking, sUSD, Solayer Chain/InfiniSVM, and Solayer Pay. The protocol should not be described as an unrelated EVM or multichain yield-vault/liquidity-pool/card system unless such components are independently attested by Solayer documentation.
+Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
@@ -32,17 +32,20 @@ Solayer is a Solana/SVM-focused protocol building restaking and yield infrastruc
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 0 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 0
 - Raw deployments: 0
-- Audits discovered: 5
+- Audits discovered: 5 (5 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-10 (aging)
-- Staleness: 0 fresh, 4 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 3 aging, 2 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -81,11 +84,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [1. [OtterSec](): April, 2024 Audit](https://github.com/solayer-labs/token-metadata/blob/07981c9059f64b50132a67c9db57219ed194678d/audit.pdf) | OtterSec | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
-| [2. [OtterSec](): July, 2024 Audit](https://github.com/solayer-labs/solayer-improvement-proposal/blob/main/audits/restaking/OtterSec-audit-report-restaking-program.pdf) | OtterSec | Audit | 2024-07 | aging | Direct | n/a | 0 | n/a |
-| [3. [Halborn - endoAVS](): August, 2024](https://github.com/solayer-labs/solayer-improvement-proposal/blob/main/audits/endoavs/Halborn-audit-report-endoavs-program.pdf) | Halborn | Audit | 2024-08 | aging | Direct | n/a | 0 | n/a |
-| [4. [Halborn - pool](): August, 2024](https://github.com/solayer-labs/solayer-improvement-proposal/blob/main/audits/restaking/Halborn-audit-report-restaking-program.pdf) | Halborn | Audit | 2024-08 | aging | Direct | n/a | 0 | n/a |
-| [5. [Halborn - sUSD](): October, 2024 (also discovered via alternate URL)](https://github.com/solayer-labs/solayer-improvement-proposal/blob/main/audits/stablecoin/Halborn-audit-report-susd-program.pdf) | Halborn | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
+| [audit.pdf](https://github.com/solayer-labs/token-metadata/blob/07981c9059f64b50132a67c9db57219ed194678d/audit.pdf) | OtterSec | Audit | 2024-04 | stale | Direct | n/a | 0 | n/a |
+| [OtterSec-audit-report-restaking-program.pdf](https://github.com/solayer-labs/solayer-improvement-proposal/blob/main/audits/restaking/OtterSec-audit-report-restaking-program.pdf) | OtterSec | Audit | 2024-07 | stale | Direct | n/a | 0 | n/a |
+| [Halborn-audit-report-endoavs-program.pdf](https://github.com/solayer-labs/solayer-improvement-proposal/blob/main/audits/endoavs/Halborn-audit-report-endoavs-program.pdf) | Halborn | Audit | 2024-08 | aging | Direct | n/a | 0 | n/a |
+| [Halborn-audit-report-restaking-program.pdf](https://github.com/solayer-labs/solayer-improvement-proposal/blob/main/audits/restaking/Halborn-audit-report-restaking-program.pdf) | Halborn | Audit | 2024-08 | aging | Direct | n/a | 0 | n/a |
+| [Halborn-audit-report-susd-program.pdf](https://github.com/solayer-labs/solayer-improvement-proposal/blob/main/audits/stablecoin/Halborn-audit-report-susd-program.pdf) | Halborn | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -113,10 +116,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [1995] 1. [OtterSec](): April, 2024 Audit
-- [1996] 2. [OtterSec](): July, 2024 Audit
-- [1997] 3. [Halborn - endoAVS](): August, 2024
-- [1998] 4. [Halborn - pool](): August, 2024
-- [1999] 5. [Halborn - sUSD](): October, 2024
+- [1995] audit.pdf
+- [1996] OtterSec-audit-report-restaking-program.pdf
+- [1997] Halborn-audit-report-endoavs-program.pdf
+- [1998] Halborn-audit-report-restaking-program.pdf
+- [1999] Halborn-audit-report-susd-program.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

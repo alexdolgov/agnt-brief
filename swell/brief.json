@@ -1,52 +1,36 @@
 {
   "schema_version": "2.0",
   "project_key": "swell",
-  "generated_at": "2026-06-21T18:01:22.415Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "swell",
-    "tier": 0,
-    "peak_tvl": 3071730237,
-    "peak_date": "2024-05-28T00:00:00.000Z",
-    "tvl_30d_ago": 128877952.59324,
-    "tvl_90d_ago": 144754065.35527,
-    "tvl_current": 104397045.53772,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 212759971.12552,
-    "change_30d_pct": -18.995418970369403,
-    "change_90d_pct": -27.879714271583143,
-    "days_since_peak": 754,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 96.60136022752833
-  },
+  "generated_at": "2026-07-04T14:53:59.209Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d640",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 27,
-    "total_addresses": 43,
-    "unique_implementations": 27,
-    "total_deployments": 43,
+    "total_contracts": 28,
+    "total_addresses": 49,
+    "unique_implementations": 28,
+    "total_deployments": 49,
     "audited_contracts": 18,
-    "unaudited_contracts": 9,
+    "unaudited_contracts": 10,
     "contracts_verified_audited": 18,
-    "contracts_verified_unaudited": 9,
+    "contracts_verified_unaudited": 10,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 66.7,
+    "coverage_pct": 75,
     "total_audits": 16,
+    "direct_audits": 16,
+    "inherited_audits": 0,
     "scoreable_audits": 15,
-    "dl_tvl_usd": 100536716.47064,
-    "tvl_usd": 56405535.08005628,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 56405535.08
-    },
-    "asd_usd": 8222821.710381646,
+    "dl_tvl_usd": 92570809.4751,
+    "tvl_usd": 92570809.4751,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://www.swellnetwork.io/",
     "chains": [
       "ethereum"
     ],
-    "tier1_coverage_pct": 59.3,
+    "tier1_coverage_pct": 66.7,
     "tier1_auditors": [
       "ChainSecurity",
       "Cyfrin",
@@ -56,29 +40,38 @@
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 4,
-      "stale": 12,
+      "aging": 2,
+      "stale": 14,
       "unknown": 0
+    },
+    "live_implementations": 28,
+    "live_verified_implementations": 24,
+    "live_audited_implementations": 18,
+    "live_verified_third_party_excluded": 4,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 18
     }
   },
   "topography": {
-    "project_purpose": "Swell is a non-custodial liquid staking and restaking protocol on Ethereum. It allows users to stake ETH or BTC to receive liquid tokens (swETH, rswETH, swBTC) that accrue staking rewards while remaining usable in DeFi. The protocol also offers yield-bearing vaults (earnETH, earnBTC) and a governance token (SWELL).",
-    "relationship_narrative": "The ETH liquid staking and restaking families share a common NodeOperatorRegistry and DepositManager pattern, while the BTC liquid staking family uses a separate Yearn-based infrastructure. The Earn vaults operate independently but may accept swETH, rswETH, or swBTC as deposits, creating a token flow between families. Governance and token contracts are shared across the protocol.",
-    "product_family_count": 7,
-    "total_contracts_indexed": 51,
-    "live_contracts": 6,
-    "inactive_contracts": 6,
-    "singleton_contracts": 2,
+    "project_purpose": "Farm. Structurally: 93 project-authored contract(s) across 1 chain(s); 9 ERC20 tokens, 3 ERC721 NFTs, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 8 functional families. Its contracts share 27 common project-authored base contract(s) (whitelist, oftadapter, oftcore). Dominant framework: openzeppelin.",
+    "product_family_count": 8,
+    "total_contracts_indexed": 54,
+    "live_contracts": 49,
+    "inactive_contracts": 5,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 37,
-    "deployment_units": 11,
-    "live_deployment_units": 5,
-    "dependencies_extracted": 16,
-    "unverified_dependencies": 1,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 27,
+    "unique_implementations": 28,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -90,342 +83,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xf951e335afb289353dc249e82926178eac7ded78",
-      "deployment_unit": "unit-43384",
-      "deployment_unit_proxy_count": 1,
-      "name": "swETH",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Mainnet (ETH Liquid Staking)",
-      "tvl_usd": 24068358.65846914,
-      "is_proxy": true,
-      "impl_address": "0xce95ba824ae9a4df9b303c0bbf4d605ba2affbfc",
-      "impl_name": "swETH",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xf951e335afb289353dc249e82926178eac7ded78",
-          "deployment_unit": "unit-43384",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 24068358.65846914,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-13983",
-        "audit-13984",
-        "audit-13985",
-        "audit-13989"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xfae103dc9cf190ed75350761e95403b7b8afa6c0",
-      "deployment_unit": "unit-43385",
-      "deployment_unit_proxy_count": 1,
-      "name": "RswETH",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Mainnet (ETH Liquid Restaking)",
-      "tvl_usd": 23930848.987218075,
-      "is_proxy": true,
-      "impl_address": "0x4796d939b22027c2876d5ce9fde52da9ec4e2362",
-      "impl_name": "RswETH",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xfae103dc9cf190ed75350761e95403b7b8afa6c0",
-          "deployment_unit": "unit-43385",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 23930848.987218075,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-13979",
-        "audit-13986",
-        "audit-13987",
-        "audit-13988"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0a6e7ba5042b38349e437ec6db6214aec7b35676",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "SwellToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "SWELL",
-      "tvl_usd": 7764829.0436792895,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "SwellToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x0a6e7ba5042b38349e437ec6db6214aec7b35676",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 7764829.0436792895,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x358d94b5b2f147d741088803d932acb566acb7b6",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "Yearn V3 Vault",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "Yearn",
-      "product_line": "Swell",
-      "tvl_usd": 457992.66670235636,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Yearn V3 Vault",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x358d94b5b2f147d741088803d932acb566acb7b6",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 80451.79280006135,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x8db2350d78abc13f5673a411d4700bcf87864dde",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 377540.873902295,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x38d43a6cb8da0e855a42fb6b0733a0498531d774",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "SimpleStakingERC20",
-      "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Swell L2 Farm",
-      "tvl_usd": 183502.04429688514,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "SimpleStakingERC20",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x38d43a6cb8da0e855a42fb6b0733a0498531d774",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 183502.04429688514,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-13990",
-        "audit-13991"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x66e47e6957b85cf62564610b76dd206bb04d831a",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "BoringVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "earnBTC",
-      "tvl_usd": 3.6793455422165833,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BoringVault",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x66e47e6957b85cf62564610b76dd206bb04d831a",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x9ed15383940cc380faef0a75edace507cc775f22",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 3.6793455422165833,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-13976",
-        "audit-13978"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x5e6342d8090665be14eeb8154c8a87b7249a4889",
-      "deployment_unit": "unit-43378",
-      "deployment_unit_proxy_count": 1,
-      "name": "DepositManager",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Mainnet (ETH Liquid Restaking)",
-      "tvl_usd": 0.0001724986112756681,
-      "is_proxy": true,
-      "impl_address": "0xee33c44a30e6e8a79e33c45fe0deeaf069d33181",
-      "impl_name": "DepositManager",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x5e6342d8090665be14eeb8154c8a87b7249a4889",
-          "deployment_unit": "unit-43378",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.0001724986112756681,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-13979",
-        "audit-13983",
-        "audit-13984",
-        "audit-13985",
-        "audit-13986",
-        "audit-13987",
-        "audit-13988",
-        "audit-13989"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xb3d9cf8e163bbc840195a97e81f8a34e295b8f39",
-      "deployment_unit": "unit-43382",
-      "deployment_unit_proxy_count": 1,
-      "name": "DepositManager",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Mainnet (ETH Liquid Staking)",
-      "tvl_usd": 0.0001724986112756681,
-      "is_proxy": true,
-      "impl_address": "0xeee6207d514c2845394b5f4b9f12b6d155f4524b",
-      "impl_name": "DepositManager",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xb3d9cf8e163bbc840195a97e81f8a34e295b8f39",
-          "deployment_unit": "unit-43382",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 0.0001724986112756681,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-13979",
-        "audit-13983",
-        "audit-13984",
-        "audit-13985",
-        "audit-13986",
-        "audit-13987",
-        "audit-13988",
-        "audit-13989"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x15a94d49fac6e23e17c1366c999117a1de8ba7b6",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -433,7 +90,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Swell",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -459,7 +116,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -469,7 +126,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-09-20 10:15:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -481,7 +142,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "earnETH",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -507,7 +168,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -518,7 +179,64 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-11-01 04:42:23+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x66e47e6957b85cf62564610b76dd206bb04d831a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BoringVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BoringVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x66e47e6957b85cf62564610b76dd206bb04d831a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9ed15383940cc380faef0a75edace507cc775f22",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [
+        "audit-13976",
+        "audit-13978"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-11-01 04:41:59+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -530,7 +248,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Swell",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -556,7 +274,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -567,19 +285,119 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-09-20 10:29:47+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5e6342d8090665be14eeb8154c8a87b7249a4889",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "DepositManager",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xee33c44a30e6e8a79e33c45fe0deeaf069d33181",
+      "impl_name": "DepositManager",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5e6342d8090665be14eeb8154c8a87b7249a4889",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13979",
+        "audit-13983",
+        "audit-13984",
+        "audit-13985",
+        "audit-13986",
+        "audit-13987",
+        "audit-13988",
+        "audit-13989"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-01-26 06:50:59+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb3d9cf8e163bbc840195a97e81f8a34e295b8f39",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "DepositManager",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xeee6207d514c2845394b5f4b9f12b6d155f4524b",
+      "impl_name": "DepositManager",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb3d9cf8e163bbc840195a97e81f8a34e295b8f39",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13979",
+        "audit-13983",
+        "audit-13984",
+        "audit-13985",
+        "audit-13986",
+        "audit-13987",
+        "audit-13988",
+        "audit-13989"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-04-12 11:30:47+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x8d0b4dfccc8b2a268486d9754b135d8ad1ee7258",
-      "deployment_unit": "unit-43380",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "EigenPod",
       "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Mainnet (ETH Liquid Restaking)",
+      "origin_kind": "upstream",
+      "origin_provider": "Eigen",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0x53cc2d82e08370fe1e44a96f69cec7d5b54ae868",
@@ -589,8 +407,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x8d0b4dfccc8b2a268486d9754b135d8ad1ee7258",
-          "deployment_unit": "unit-43380",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -602,7 +420,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2024-01-26 11:05:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -614,7 +436,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mainnet (BTC Liquid Staking)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -639,7 +461,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-08-13 01:33:59+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -651,7 +477,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "earnETH",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -677,7 +503,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -688,19 +514,23 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-11-01 04:42:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x46ddc39e780088b1b146aba8cbbe15dc321a1a1d",
-      "deployment_unit": "unit-43376",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "NodeOperatorRegistry",
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mainnet (ETH Liquid Staking)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0xea6c9a14b96777a448687272bf0e6f6d9ce0e68a",
@@ -710,8 +540,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x46ddc39e780088b1b146aba8cbbe15dc321a1a1d",
-          "deployment_unit": "unit-43376",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -730,7 +560,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-04-12 11:25:23+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -741,7 +575,7 @@
       "name": "ProxyAdmin",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_provider": "OpenZeppelin",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -776,7 +610,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-01-20 11:38:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -788,7 +626,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Swell",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -814,7 +652,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -824,7 +662,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-09-20 10:26:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -836,7 +678,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mainnet (BTC Liquid Staking)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -862,7 +704,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -872,7 +714,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-09-20 10:25:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -884,7 +730,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mainnet (BTC Liquid Staking)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -910,7 +756,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -920,24 +766,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-09-20 10:16:47+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xa1a3257813ed45d91e9c45e03c66fcdd54b4e7c1",
+      "address": "0x1bb44f9d91b4276621550aeea5d2d96279975bf3",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "RoleManager",
-      "role": "governance",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Swell",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "RoleManager",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1bb44f9d91b4276621550aeea5d2d96279975bf3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8413e65374fca711af5eaddcf7191461a1f4d6af",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -948,6 +820,17 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd905418c46d8141dd80ba065e694abd4dfd5b4a1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -958,7 +841,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-09-20 10:26:35+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -968,9 +855,9 @@
       "deployment_unit_proxy_count": null,
       "name": "RolesAuthority",
       "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "earnETH",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1015,7 +902,97 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-09-20 10:29:11+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xfae103dc9cf190ed75350761e95403b7b8afa6c0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "RswETH",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x4796d939b22027c2876d5ce9fde52da9ec4e2362",
+      "impl_name": "RswETH",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfae103dc9cf190ed75350761e95403b7b8afa6c0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13979",
+        "audit-13986",
+        "audit-13987",
+        "audit-13988"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-01-26 06:51:35+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x38d43a6cb8da0e855a42fb6b0733a0498531d774",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SimpleStakingERC20",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SimpleStakingERC20",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x38d43a6cb8da0e855a42fb6b0733a0498531d774",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13990",
+        "audit-13991"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-09 05:56:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -1061,7 +1038,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-10 23:35:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1096,7 +1077,94 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-10 12:55:59+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0a6e7ba5042b38349e437ec6db6214aec7b35676",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SwellToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SwellToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0a6e7ba5042b38349e437ec6db6214aec7b35676",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-19 18:34:47+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf951e335afb289353dc249e82926178eac7ded78",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "swETH",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xce95ba824ae9a4df9b303c0bbf4d605ba2affbfc",
+      "impl_name": "swETH",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf951e335afb289353dc249e82926178eac7ded78",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13983",
+        "audit-13984",
+        "audit-13985",
+        "audit-13989"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-04-12 11:33:47+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -1142,7 +1210,72 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-17 19:22:23+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2a6a2beebf6d65e03246087a41812db1c5c0caf8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SymbioticAdapter",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd684c1ad18a302bc56069d91a177d69966c41eda",
+      "impl_name": "SymbioticAdapter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2a6a2beebf6d65e03246087a41812db1c5c0caf8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x69dda92dd42040c1290a7870b9fc1dc05e41836a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x9e07af58c4c8893b0509e5d6d0ab8c92083fdae7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-01-20 11:38:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1154,7 +1287,7 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "earnBTC",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1180,7 +1313,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -1192,7 +1325,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-11-01 04:42:35+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -1204,7 +1341,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mainnet (BTC Liquid Staking)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1230,7 +1367,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -1241,7 +1378,61 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-09-20 10:38:47+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x358d94b5b2f147d741088803d932acb566acb7b6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Yearn V3 Vault",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Yearn",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Yearn V3 Vault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x358d94b5b2f147d741088803d932acb566acb7b6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8db2350d78abc13f5673a411d4700bcf87864dde",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2024-09-20 10:28:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1253,7 +1444,7 @@
       "role": "registry",
       "origin_kind": "upstream",
       "origin_provider": "Yearn",
-      "product_line": "Mainnet (BTC Liquid Staking)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1276,7 +1467,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2024-08-13 01:33:11+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -1293,41 +1488,16 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Accountant",
-        "AeraStrategy",
-        "BaseHooks",
-        "BaseStrategy",
-        "DebtAllocator",
-        "DebtAllocatorFactory",
-        "DelayedWithdraw",
-        "Hooks",
-        "Keeper",
-        "Registry",
-        "RegistryFactory",
-        "ReleaseRegistry",
-        "RoleManager",
-        "TokenizedStrategy",
-        "VaultFactory",
-        "VaultV3",
-        "WithdrawLimitModule"
-      ],
-      "matched_contracts": 14,
+      "extracted_names": [],
+      "matched_contracts": 8,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 13974,
-          "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/ChainSecurity_Swell_swBTC_audit.pdf"
-        },
-        {
-          "audit_id": 13981,
-          "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/BTC%20LRT/ChainSecurity_Swell_swBTC_audit.pdf"
-        }
-      ]
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     },
     {
       "audit_id": 13975,
@@ -1342,30 +1512,16 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AeraStrategy",
-        "AeraVaultV2",
-        "DelayedWithdraw",
-        "RoleManager",
-        "VaultV3",
-        "WithdrawLimitModule"
-      ],
-      "matched_contracts": 5,
+      "extracted_names": [],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 13975,
-          "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/9765443eedc0f32f3b8ca6e11979a77e84509f25/Audit%20Reports/BTC%20LRT/NM_0273_SWELL_BTC_LRT.pdf"
-        },
-        {
-          "audit_id": 13982,
-          "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/BTC%20LRT/NM_0273_SWELL_BTC_LRT.pdf"
-        }
-      ]
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     },
     {
       "audit_id": 13976,
@@ -1380,51 +1536,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AaveV3DecoderAndSanitizer",
-        "AccountantWithRateProviders",
-        "AggregationRouterV5",
-        "AtomicQueue",
-        "AtomicSolver",
-        "AuraDecoderAndSanitizer",
-        "BalancerV2DecoderAndSanitizer",
-        "BalancerVault",
-        "BaseDecoderAndSanitizer",
-        "BeforeTransferHook",
-        "BoringVault",
-        "BoringVaultV0Lens",
-        "CellarMigrationAdaptor",
-        "ConvexDecoderAndSanitizer",
-        "CurveDecoderAndSanitizer",
-        "DecoderCustomTypes",
-        "DexAggregatorUManager",
-        "DexSwapperUManager",
-        "ERC4626DecoderAndSanitizer",
-        "EtherFiDecoderAndSanitizer",
-        "EtherFiLiquid1",
-        "EtherFiLiquidDecoderAndSanitizer",
-        "GearboxDecoderAndSanitizer",
-        "IAtomicSolver",
-        "IRateProvider",
-        "IStaking",
-        "IUniswapV3Router",
-        "LidoDecoderAndSanitizer",
-        "LidoLiquidDecoderAndSanitizer",
-        "ManagerWithMerkleVerification",
-        "MorphoBlueDecoderAndSanitizer",
-        "NativeWrapperDecoderAndSanitizer",
-        "OneInchDecoderAndSanitizer",
-        "PendleRouterDecoderAndSanitizer",
-        "PriceRouter",
-        "RawDataDecoderAndSanitizerInterfaces",
-        "TellerWithMultiAssetSupport",
-        "UniswapV3DecoderAndSanitizer"
-      ],
-      "matched_contracts": 8,
+      "extracted_names": [],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1434,29 +1554,21 @@
       "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-boring-vault.pdf",
       "auditor": "Pashov Audit Group",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BoringVaultCrossChainDepositor",
-        "BoringVaultL2OFT",
-        "BoringVaultOFTAdapter",
-        "CrossChainLayerZeroTellerWithMultiAssetSupport",
-        "CrossChainTellerBase",
-        "OAppAuth",
-        "OAppAuthCore",
-        "OAppAuthReceiver",
-        "OAppAuthSender",
-        "TellerWithMultiAssetSupport"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1472,29 +1584,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AccountantWithRateProviders",
-        "BalancerV2DecoderAndSanitizer",
-        "BoringVault",
-        "CurveDecoderAndSanitizer",
-        "DexAggregatorUManager",
-        "DexSwapperUManager",
-        "ManagerWithMerkleVerification",
-        "MorphoBlueDecoderAndSanitizer",
-        "TellerWithMultiAssetSupport",
-        "UniswapV3DecoderAndSanitizer"
-      ],
-      "matched_contracts": 8,
+      "extracted_names": [],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 13979,
       "audit_key": "audit-13979",
-      "report_name": "Rendered PDF capture",
+      "report_name": "Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report_v2_0.pdf",
       "report_url": "https://raw.githubusercontent.com/SwellNetwork/v3-core-public/ba1eeff12ab994a26492fa5dcd0aa8937733dbb4/Audit%20Reports/Marlin/Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report_v2_0.pdf",
       "auditor": "Sigma Prime",
       "audit_type": "audit",
@@ -1504,29 +1608,16 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AccessControlManager",
-        "DepositManager",
-        "NodeOperatorRegistry",
-        "RepricingOracle",
-        "RswETH"
-      ],
+      "extracted_names": [],
       "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 13979,
-          "report_url": "https://raw.githubusercontent.com/SwellNetwork/v3-core-public/ba1eeff12ab994a26492fa5dcd0aa8937733dbb4/Audit%20Reports/Marlin/Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report_v2_0.pdf"
-        },
-        {
-          "audit_id": 13980,
-          "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Marlin/Sigma_Prime_Swell_Liquid_Restaking_Token_Security_Assessment_Report_v2_0.pdf"
-        }
-      ]
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     },
     {
       "audit_id": 13983,
@@ -1541,35 +1632,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AccessControlManager",
-        "AggregatorV3Interface",
-        "DepositDataRoot",
-        "DepositManager",
-        "EnumberableSetValidatorDetails",
-        "IAccessControlManager",
-        "IDepositContract",
-        "IDepositManager",
-        "INodeOperatorRegistry",
-        "IPorAddresses",
-        "IRateProvider",
-        "IRepricingOracle",
-        "IWhitelist",
-        "IswETH",
-        "IswEXIT",
-        "NodeOperatorRegistry",
-        "Repricing",
-        "RepricingOracle",
-        "SwellLib",
-        "Whitelist",
-        "swETH",
-        "swEXIT"
-      ],
+      "extracted_names": [],
       "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1585,19 +1656,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AccessControlManager",
-        "DepositManager",
-        "Repricing",
-        "RepricingOracle",
-        "swETH",
-        "swEXIT"
-      ],
+      "extracted_names": [],
       "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1613,20 +1680,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AccessControlManager",
-        "DepositManager",
-        "IDepositManager",
-        "NodeOperatorRegistry",
-        "RepricingOracle",
-        "swETH",
-        "swEXIT"
-      ],
+      "extracted_names": [],
       "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1642,29 +1704,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AnkrETHRateProvider",
-        "CbETHRateProvider",
-        "DepositManager",
-        "ETHxRateProvider",
-        "EigenLayerManager",
-        "METHRateProvider",
-        "OETHRateProvider",
-        "OsETHRateProvider",
-        "RETHRateProvider",
-        "RswETH",
-        "SfrxETHRateProvider",
-        "StETHRateProvider",
-        "StakerProxy",
-        "SwETHRateProvider",
-        "WbETHRateProvider",
-        "WstETHRateProvider"
-      ],
+      "extracted_names": [],
       "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1674,32 +1722,21 @@
       "report_url": "https://github.com/SwellNetwork/v3-core-public/blob/master/Audit%20Reports/Barracude%20(LRT)/Sigma_Prime_Swell_Network_Restaking_Contracts_Security_Assessment.pdf",
       "auditor": "Sigma Prime",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AnkrETHRateProvider",
-        "DepositManager",
-        "ETHxRateProvider",
-        "EigenLayerManager",
-        "NodeOperatorRegistry",
-        "OETHRateProvider",
-        "RepricingOracle",
-        "RswETH",
-        "RswEXIT",
-        "SfrxETHRateProvider",
-        "StETHRateProvider",
-        "StakerProxy",
-        "WstETHRateProvider"
-      ],
+      "extracted_names": [],
       "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1715,18 +1752,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AccessControlManager",
-        "DepositManager",
-        "NodeOperatorRegistry",
-        "RepricingOracle",
-        "RswETH"
-      ],
+      "extracted_names": [],
       "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1742,22 +1776,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AccessControlManager",
-        "DepositManager",
-        "NodeOperatorRegistry",
-        "SwellStakeVaultHelper",
-        "Whitelist",
-        "stakeAndVault",
-        "swETH",
-        "v3_swETH",
-        "v3_swNFT"
-      ],
+      "extracted_names": [],
       "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1773,16 +1800,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "ISimpleStakingERC20",
-        "SimpleStakingERC20",
-        "Zap"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1798,15 +1824,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "SimpleStakingERC20",
-        "Zap"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1822,7 +1848,10 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -1836,63 +1865,63 @@
       "auditor": "ChainSecurity",
       "tier": 1,
       "contracts_covered": 8,
-      "coverage_pct": 29.6,
+      "coverage_pct": 28.6,
       "latest_audit": "2024-08"
     },
     {
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 8,
-      "coverage_pct": 29.6,
+      "coverage_pct": 28.6,
       "latest_audit": "2024-08"
     },
     {
       "auditor": "Sigma Prime",
       "tier": 2,
       "contracts_covered": 5,
-      "coverage_pct": 18.5,
+      "coverage_pct": 17.9,
       "latest_audit": "2024-07"
     },
     {
       "auditor": "0xMacro",
       "tier": 2,
       "contracts_covered": 4,
-      "coverage_pct": 14.8,
+      "coverage_pct": 14.3,
       "latest_audit": "2024-04"
     },
     {
       "auditor": "Cyfrin",
       "tier": 1,
       "contracts_covered": 4,
-      "coverage_pct": 14.8,
+      "coverage_pct": 14.3,
       "latest_audit": "2024-02"
     },
     {
       "auditor": "Spearbit",
       "tier": 1,
       "contracts_covered": 4,
-      "coverage_pct": 14.8,
+      "coverage_pct": 14.3,
       "latest_audit": "2024-04"
     },
     {
       "auditor": "Barracude",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 11.1,
+      "coverage_pct": 10.7,
       "latest_audit": "2024-06"
     },
     {
       "auditor": "Pashov Audit Group",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 3.7,
+      "coverage_pct": 3.6,
       "latest_audit": "2024-07"
     },
     {
       "auditor": "yAudit",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 3.7,
+      "coverage_pct": 3.6,
       "latest_audit": "2024-04"
     }
   ],
@@ -1900,19 +1929,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x0a6e7ba5042b38349e437ec6db6214aec7b35676",
-      "name": "SwellToken",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 7764829.0436792895,
-      "risk_note": "Verified native implementation with $7,764,829.04 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x8d0b4dfccc8b2a268486d9754b135d8ad1ee7258",
-      "name": "EigenPod",
-      "role": "core_logic",
+      "address": "0x1f5dddf627c3796a589c6271b36a570f18d3a016",
+      "name": "RolesAuthority",
+      "role": "governance",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1940,27 +1959,46 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x0a6e7ba5042b38349e437ec6db6214aec7b35676",
+      "name": "SwellToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x9b07fb810ef909b01f959911cef2cc834433f562",
       "name": "SwETHOFTAdapter",
       "role": "adapter",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2a6a2beebf6d65e03246087a41812db1c5c0caf8",
+      "name": "SymbioticAdapter",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 22,
-    "upstream": 2,
-    "standard_library": 3,
+    "native": 24,
+    "upstream": 3,
+    "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 109
+      "contract_name": 52,
+      "extraction_exact": 1
     },
-    "extraction_confidence_counts": {
-      "high": 15
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [

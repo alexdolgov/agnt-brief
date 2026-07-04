@@ -5,11 +5,11 @@
 - Project: Kaskad (`kaskad`)
 - Website: [https://kaskad.app](https://kaskad.app)
 - Lifecycle: unknown
-- Generated: 2026-06-13T11:40:26.264Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
+- Generated: 2026-07-03T21:06:19.200Z
+- Pipeline run: brief-restore-2026-07
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $2,550,071.36
+- DeFi Llama TVL: $3,063,626.92
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -22,19 +22,30 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 0 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 0
 - Raw deployments: 0
-- Audits discovered: 2
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-04 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 1 unknown
+- Audit staleness (calendar age): 1 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -74,7 +85,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [2026.04.30 - Final - Kaskad Collaborative Audit Report 1 by Sherlock.pdf](https://github.com/Kaskad-Lending/kaskad-public-docs/blob/Audits/2026.04.30%20-%20Final%20-%20Kaskad%20Collaborative%20Audit%20Report%201%20by%20Sherlock.pdf) | Sherlock | Contest | 2026-04 | fresh | Direct | n/a | 0 | n/a |
-| [- Smart contract audits by Sherlock ()](https://audits.sherlock.xyz/contests) | Sherlock | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
+| [audits.sherlock.xyz/contests](https://audits.sherlock.xyz/contests) | Sherlock | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -103,6 +114,6 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [13331] 2026.04.30 - Final - Kaskad Collaborative Audit Report 1 by Sherlock.pdf
-- [13332] - Smart contract audits by Sherlock ()
+- [13332] audits.sherlock.xyz/contests
 
 Fork inheritance lineage and inherited audits are included when available.

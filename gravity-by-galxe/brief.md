@@ -5,25 +5,32 @@
 - Project: Gravity by Galxe (`gravity-by-galxe`)
 - Website: [https://gravity.xyz/](https://gravity.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-06-19T07:16:43.998Z
-- Pipeline run: v2-pipeline-2026-06-12-6a3052-769a
+- Generated: 2026-07-04T14:53:21.013Z
+- Pipeline run: v2-2026-07-04-7d91d2
 - Chains: ethereum
-- Contract surface: 47 unique implementations (61 raw deployments)
-- DeFi Llama TVL: $16,657,151.13
-- On-chain TVL (included contracts): $62,111,518.67
-- TVL by chain: Ethereum $62,111,518.67
+- Contract surface: 34 unique implementations (34 raw deployments)
+- DeFi Llama TVL: $22,195,495.81
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Gravity by Galxe is a canonical bridge protocol that enables the transfer of assets between Ethereum and the Gravity Alpha Layer 2 network. It uses a proxy-based ERC20Bridge contract to lock tokens on Ethereum and mint corresponding representations on the L2.
+Canonical Bridge. Structurally: 32 project-authored contract(s) across 1 chain(s); 9 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The TransparentUpgradeableProxy bridge contract interacts with the token contracts on Ethereum to lock assets, while the corresponding token representations on Gravity Alpha L2 are minted or released. The token contracts share the same deployer clusters, indicating a common infrastructure for asset management across the bridge.
+The protocol comprises 2 functional families. Its contracts share 19 common project-authored base contract(s) (erc20basic, blacklistable, standardtoken). Dominant framework: openzeppelin.
+
+## Fork Lineage
+
+This project reuses audited code from **Folks Finance** (`folks-finance`) in the OFTWrapper, TokenMessaging subsystem.
+8 audits inherited from `folks-finance`, scoped to that subsystem.
+
+Total inherited audits: 8. Inherited coverage reflects forked/shared code audited by the origin project — it is not a direct audit of this project.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 61; live-surface contracts included: 61 (0 live, 61 unknown).
+- Indexed contracts: 34; live-surface contracts included: 34 (34 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
@@ -31,58 +38,79 @@ The TransparentUpgradeableProxy bridge contract interacts with the token contrac
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/25 (0.0%)
-- Verified + Unaudited implementations: 25
+- Coverage of deployed-live implementations: 3/29 (10.3%)
+- Deployed-live implementations: 34 of 34 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 3/34
+- Verified + Unaudited implementations: 31
 - Verified by bytecode match: 0
-- Unverified implementations: 22
-- Unique implementations: 47
-- Raw deployments: 61
-- Audits discovered: 0
-- Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $62,111,518.67
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
-- Tier 1 coverage: No Tier 1 coverage
+- Unverified implementations: 0
+- Unique implementations: 34
+- Raw deployments: 34
+- Audits discovered: 9 (1 direct, 8 inherited from forked code)
+- Scoreable audits (matched contracts): 9
+- ASD (verified + unaudited TVL): n/a
+- Latest audit: 2025-10 (fresh)
+- Audit staleness (calendar age): 1 fresh, 1 aging, 7 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 3 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Tier 1 coverage: 10.3% (SlowMist, Trail of Bits)
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| Adevar | Tier 2 | 2 | 5.9% | 2025-10 |
+| CertiK | Tier 2 | 2 | 5.9% | 2022-12 |
+| Coinspect | Tier 2 | 2 | 5.9% | 2024-08 |
+| Trail of Bits | Tier 1 | 2 | 5.9% | 2022-12 |
+| unknown | Tier 2 | 2 | 5.9% | 2024-05 |
+| Vantage Point | Tier 2 | 2 | 5.9% | 2023-03 |
+| SlowMist | Tier 1 | 1 | 2.9% | 2024-05 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
-
-- None
-
-### ⚠️ Verified + Unaudited (25)
+### ✅ Verified + Audited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| GravityTokenG | token | ethereum | n/a | [`0x9c7beb...260649`](./contracts/ethereum-1/0x9c7beba8f6ef6643abd725e45a4e8387ef260649/) | ⚠️ Unaudited |
-| StargatePoolUSDC | core_logic | ethereum | n/a | [`0xc02639...3189c7`](./contracts/ethereum-1/0xc026395860db2d07ee33e05fe50ed7bd583189c7/) | ⚠️ Unaudited |
-| StargatePoolMigratable | core_logic | ethereum | n/a | [`0x933597...5a3973`](./contracts/ethereum-1/0x933597a323eb81cae705c5bc29985172fd5a3973/) | ⚠️ Unaudited |
-| StargatePoolNative | core_logic | ethereum | n/a | [`0x77b204...e57931`](./contracts/ethereum-1/0x77b2043768d28e9c9ab44e1abfc95944bce57931/) | ⚠️ Unaudited |
-| CreditMessaging | unknown | ethereum | n/a | 4 deployments: ethereum [`0x5489dd...e7f97d`](./contracts/ethereum-1/0x5489ddab89609580835ee6d655cd9b3503e7f97d/); ethereum `0x5c386d...b6345b`; ethereum `0x6b8ad1...44bb9d`; ethereum `0xf5bba7...81e202` | ⚠️ Unaudited |
+| GravityTokenG | unknown | ethereum | n/a | [`0x9c7beb...260649`](./contracts/ethereum-1/0x9c7beba8f6ef6643abd725e45a4e8387ef260649/) | ✅ Audited |
+| OFTWrapper | unknown | ethereum | n/a | [`0x1bf53b...908db4`](./contracts/ethereum-1/0x1bf53b4b70a6b40aa206a6a23e3cc8f6b5908db4/) | ✅ Audited |
+| TokenMessaging | unknown | ethereum | n/a | [`0x4aff12...4f779c`](./contracts/ethereum-1/0x4aff12ce71afd06e7b20f50f2eaa365b8b4f779c/) | ✅ Audited |
+
+### ⚠️ Verified + Unaudited (31)
+
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Controller | unknown | ethereum | n/a | [`0xca0641...febeb7`](./contracts/ethereum-1/0xca06411bd7a7296d7dbdd0050dfc846e95febeb7/) | ⚠️ Unaudited |
+| CreateX | unknown | ethereum | n/a | [`0xba5ed0...8ba5ed`](./contracts/ethereum-1/0xba5ed099633d3b313e4d5f7bdc1305d3c28ba5ed/) | ⚠️ Unaudited |
+| CreditMessaging | unknown | ethereum | n/a | [`0x5489dd...e7f97d`](./contracts/ethereum-1/0x5489ddab89609580835ee6d655cd9b3503e7f97d/) | ⚠️ Unaudited |
 | Dai | unknown | ethereum | n/a | [`0x6b1754...271d0f`](./contracts/ethereum-1/0x6b175474e89094c44da98b954eedeac495271d0f/) | ⚠️ Unaudited |
-| ERC20Bridge | operational_periphery | ethereum | n/a | [`0x798340...364c42`](./contracts/ethereum-1/0x7983403dda368aa7d67145a9b81c5c517f364c42/) | ⚠️ Unaudited |
-| ERC20Inbox | unknown | ethereum | n/a | [`0x7ad2a9...a53c19`](./contracts/ethereum-1/0x7ad2a94beff3294a31894cfb5ba4206957a53c19/) | ⚠️ Unaudited |
-| ERC20Outbox | unknown | ethereum | n/a | [`0x1153a1...e7dabf`](./contracts/ethereum-1/0x1153a1e4b1523dff36f77d696bd6ebf2b0e7dabf/) | ⚠️ Unaudited |
-| FeeLibV1 | unknown | ethereum | n/a | 10 deployments: ethereum [`0x1a6437...c0f246`](./contracts/ethereum-1/0x1a6437bef5b8615ef523d00ef7c9d58d66c0f246/); ethereum `0x3e368b...658a06`; ethereum `0x4eeba4...375290`; ethereum `0x52b354...f74087`; ethereum `0x6d5521...0f73eb`; ethereum `0x6dd697...68a3e3`; ethereum `0xb8b1a9...eae455`; ethereum `0xc6a281...86fba1`; ethereum `0xe171af...3db311`; ethereum `0xf8c61c...1adcc8` | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | ethereum | n/a | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
-| G_OFTAdapter | adapter | ethereum | n/a | [`0x71c066...d36bca`](./contracts/ethereum-1/0x71c066fd4949c44b2cb2f509e2cd2421fbd36bca/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | n/a | [`0xbd6e43...fbfb6d`](./contracts/ethereum-1/0xbd6e434db90fd8ad4e28d85c133ad34ca6fbfb6d/) | ⚠️ Unaudited |
-| OFTWrapper | unknown | ethereum | n/a | [`0x1bf53b...908db4`](./contracts/ethereum-1/0x1bf53b4b70a6b40aa206a6a23e3cc8f6b5908db4/) | ⚠️ Unaudited |
+| EntryPoint | unknown | ethereum | n/a | [`0x000000...7da032`](./contracts/ethereum-1/0x0000000071727de22e5e9d8baf0edac6f37da032/) | ⚠️ Unaudited |
+| Factory | unknown | ethereum | n/a | [`0xe5a5f1...f2322b`](./contracts/ethereum-1/0xe5a5f138005e19a3e6d0fe68b039397eeef2322b/) | ⚠️ Unaudited |
+| FeeLibV1 | unknown | ethereum | n/a | [`0x1a6437...c0f246`](./contracts/ethereum-1/0x1a6437bef5b8615ef523d00ef7c9d58d66c0f246/) | ⚠️ Unaudited |
+| FiatToken | unknown | ethereum | n/a | [`0x8cbde2...77a91a`](./contracts/ethereum-1/0x8cbde23b1416cac07a52591bba744c744d77a91a/) | ⚠️ Unaudited |
+| FiatTokenProxy | unknown | ethereum | n/a | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | ⚠️ Unaudited |
+| FiatTokenUtil | unknown | ethereum | n/a | [`0x6315aa...0355a6`](./contracts/ethereum-1/0x6315aa908c50376d1028412c028aa0629f0355a6/) | ⚠️ Unaudited |
+| FiatTokenV1 | unknown | ethereum | n/a | [`0x088247...57fe56`](./contracts/ethereum-1/0x0882477e7895bdc5cea7cb1552ed914ab157fe56/) | ⚠️ Unaudited |
+| FiatTokenV2 | unknown | ethereum | n/a | [`0xb7277a...3778a2`](./contracts/ethereum-1/0xb7277a6e95992041568d9391d09d0122023778a2/) | ⚠️ Unaudited |
+| FiatTokenV2_1 | unknown | ethereum | n/a | [`0xa2327a...4cbdcf`](./contracts/ethereum-1/0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf/) | ⚠️ Unaudited |
+| GBridgeSender | unknown | ethereum | n/a | [`0xe82c61...5dc876`](./contracts/ethereum-1/0xe82c61ac9ec2041b493118051afa4f18a55dc876/) | ⚠️ Unaudited |
+| GnosisSafe | unknown | ethereum | n/a | [`0xbd6e43...fbfb6d`](./contracts/ethereum-1/0xbd6e434db90fd8ad4e28d85c133ad34ca6fbfb6d/) | ⚠️ Unaudited |
+| GravityPortal | unknown | ethereum | n/a | [`0x76cf85...5f6e53`](./contracts/ethereum-1/0x76cf8526fa9461e50b2c6702a7246ce6915f6e53/) | ⚠️ Unaudited |
+| MasterMinter | unknown | ethereum | n/a | [`0x566c11...674335`](./contracts/ethereum-1/0x566c11b5c2201b69c9269fe924e4395873674335/) | ⚠️ Unaudited |
+| Members | unknown | ethereum | n/a | [`0x3e8640...107ac5`](./contracts/ethereum-1/0x3e8640574aa764763291ed733672d3a105107ac5/) | ⚠️ Unaudited |
+| MiniMeTokenFactory | unknown | ethereum | n/a | [`0x003ea7...f15505`](./contracts/ethereum-1/0x003ea7f54b6dcf6cee86986edc18143a35f15505/) | ⚠️ Unaudited |
+| Multicall3 | unknown | ethereum | n/a | [`0xca11bd...76ca11`](./contracts/ethereum-1/0xca11bde05977b3631167028862be2a173976ca11/) | ⚠️ Unaudited |
+| NEC | unknown | ethereum | n/a | [`0xcc80c0...b97a5e`](./contracts/ethereum-1/0xcc80c051057b774cd75067dc48f8987c4eb97a5e/) | ⚠️ Unaudited |
+| NectarController | unknown | ethereum | n/a | [`0x8d5a41...05d98d`](./contracts/ethereum-1/0x8d5a41e85f4ce2433beef476305d307b9205d98d/) | ⚠️ Unaudited |
+| Permit2 | unknown | ethereum | n/a | [`0x000000...c78ba3`](./contracts/ethereum-1/0x000000000022d473030f116ddee9f6b43ac78ba3/) | ⚠️ Unaudited |
 | RewardLib | unknown | ethereum | n/a | [`0xfa5475...fcdcfd`](./contracts/ethereum-1/0xfa54751cda1f98947c524fd9701c9dad84fcdcfd/) | ⚠️ Unaudited |
-| RewardRegistryLib | registry | ethereum | n/a | [`0x9f22c4...9499ee`](./contracts/ethereum-1/0x9f22c4b3dbe693a34f2af61a16a022f87d9499ee/) | ⚠️ Unaudited |
-| RollupAdminLogic | unknown | ethereum | n/a | [`0xf993af...d58239`](./contracts/ethereum-1/0xf993af239770932a0edab88b6a5ba3708bd58239/) | ⚠️ Unaudited |
-| SequencerInbox | unknown | ethereum | n/a | [`0x8d9937...eb3cf3`](./contracts/ethereum-1/0x8d99372612e8cfe7163b1a453831bc40eaeb3cf3/) | ⚠️ Unaudited |
-| TetherToken | token | ethereum | n/a | [`0xdac17f...831ec7`](./contracts/ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | ⚠️ Unaudited |
-| TokenMessaging | token | ethereum | n/a | 2 deployments: ethereum [`0x4aff12...4f779c`](./contracts/ethereum-1/0x4aff12ce71afd06e7b20f50f2eaa365b8b4f779c/); ethereum `0x6d6620...f4a980` | ⚠️ Unaudited |
-| TokenUpgrader | token | ethereum | n/a | [`0x249ac0...788942`](./contracts/ethereum-1/0x249ac00402716b7bf6d6ed24531d7b4c10788942/) | ⚠️ Unaudited |
-| Treasurer | unknown | ethereum | n/a | 2 deployments: ethereum [`0x1041d1...606918`](./contracts/ethereum-1/0x1041d127b2d4bc700f0f563883bc689502606918/); ethereum `0xca7867...ef0381` | ⚠️ Unaudited |
-| ValidatorUtils | unknown | ethereum | n/a | [`0x2b0e04...e766af`](./contracts/ethereum-1/0x2b0e04dc90e3fa58165cb41e2834b44a56e766af/) | ⚠️ Unaudited |
-| ValidatorWalletCreator | unknown | ethereum | n/a | [`0x9cad81...8c5f71`](./contracts/ethereum-1/0x9cad81628ab7d8e239f1a5b497313341578c5f71/) | ⚠️ Unaudited |
-| WBTC | token | ethereum | n/a | [`0x2260fa...c2c599`](./contracts/ethereum-1/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599/) | ⚠️ Unaudited |
+| RewardRegistryLib | unknown | ethereum | n/a | [`0x9f22c4...9499ee`](./contracts/ethereum-1/0x9f22c4b3dbe693a34f2af61a16a022f87d9499ee/) | ⚠️ Unaudited |
+| SenderCreator | unknown | ethereum | n/a | [`0x7fc984...088348`](./contracts/ethereum-1/0x7fc98430eaedbb6070b35b39d798725049088348/) | ⚠️ Unaudited |
+| StargateStaking | unknown | ethereum | n/a | [`0xff551f...04a6bd`](./contracts/ethereum-1/0xff551feddbedc0aee764139ccd9cb644bb04a6bd/) | ⚠️ Unaudited |
+| TetherToken | unknown | ethereum | n/a | [`0x0e98db...fdba1b`](./contracts/ethereum-1/0x0e98db51010dd1ade14dd3fb164e218805fdba1b/) | ⚠️ Unaudited |
+| Treasurer | unknown | ethereum | n/a | [`0x1041d1...606918`](./contracts/ethereum-1/0x1041d127b2d4bc700f0f563883bc689502606918/) | ⚠️ Unaudited |
+| WBTC | unknown | ethereum | n/a | [`0x2260fa...c2c599`](./contracts/ethereum-1/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599/) | ⚠️ Unaudited |
+| WrapperLockEth | unknown | ethereum | n/a | [`0x991f0e...f3690e`](./contracts/ethereum-1/0x991f0e5c5775ca9dd02e30e67f545c36cff3690e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -96,39 +124,25 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (22)
+### ❓ Unverified (0)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| UnnamedContract | unknown | ethereum | n/a | `0x13379b...0d75e1` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x1502fa...275d3d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x160345...9342d8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x16e28b...1edbcc` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x2ff4db...2c08e0` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x5d76f0...6319ca` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x5db42c...af14ee` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x60e59b...517082` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x63c2a9...942892` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x667b9c...6f7da8` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x6f0611...555b46` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x822b6e...488895` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0x83c618...baaa6a` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xaa5b75...6d1815` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb4292b...425f80` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xb87588...496d2d` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc0441d...def97f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc252b5...f7414f` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xc946c1...dbeed4` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xde4860...abaeb2` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xe520d7...3e79f6` | ❓ Unverified |
-| UnnamedContract | unknown | ethereum | n/a | `0xf6f832...c8ceaa` | ❓ Unverified |
+- None
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Adevar - Algorand Wormhole NTT - October 2025.pdf](https://github.com/Folks-Finance/audits/blob/main/Adevar%20-%20Algorand%20Wormhole%20NTT%20-%20October%202025.pdf) | Adevar | Audit | 2025-10 | fresh | Inherited from Folks Finance — forked code, scoped to OFTWrapper, TokenMessaging | inherited | 2 | n/a |
+| [Coinspect - Audit of Liquid Staking - August 2024.pdf](https://github.com/Folks-Finance/audits/blob/main/Coinspect%20-%20Audit%20of%20Liquid%20Staking%20-%20August%202024.pdf) | Coinspect | Audit | 2024-08 | aging | Inherited from Folks Finance — forked code, scoped to OFTWrapper, TokenMessaging | inherited | 2 | n/a |
+| [OtterSec - Audit of XChain Lending - May 2024.pdf](https://github.com/Folks-Finance/audits/blob/main/OtterSec%20-%20Audit%20of%20XChain%20Lending%20-%20May%202024.pdf) | unknown | Audit | 2024-05 | stale | Inherited from Folks Finance — forked code, scoped to OFTWrapper, TokenMessaging | inherited | 2 | n/a |
+| [Vantage Point - Smart Contract Audit of xChain Liquid Governance - June 2023.pdf](https://github.com/Folks-Finance/audits/blob/main/Vantage%20Point%20-%20Smart%20Contract%20Audit%20of%20xChain%20Liquid%20Governance%20-%20June%202023.pdf) | unknown | Audit | 2023-06 | stale | Inherited from Folks Finance — forked code, scoped to OFTWrapper, TokenMessaging | inherited | 2 | n/a |
+| [Vantage Point - Revision Audit of Liquid Governance V3 - March 2023.pdf](https://github.com/Folks-Finance/audits/blob/main/Vantage%20Point%20-%20Revision%20Audit%20of%20Liquid%20Governance%20V3%20-%20March%202023.pdf) | Vantage Point | Audit | 2023-03 | stale | Inherited from Folks Finance — forked code, scoped to OFTWrapper, TokenMessaging | inherited | 2 | n/a |
+| [Certik - Smart Contract Audit - December 2022.pdf](https://github.com/Folks-Finance/audits/blob/main/Certik%20-%20Smart%20Contract%20Audit%20-%20December%202022.pdf) | CertiK | Audit | 2022-12 | stale | Inherited from Folks Finance — forked code, scoped to OFTWrapper, TokenMessaging | inherited | 2 | n/a |
+| [Trail of Bits - Smart Contract Audit - December 2022.pdf](https://github.com/Folks-Finance/audits/blob/main/Trail%20of%20Bits%20-%20Smart%20Contract%20Audit%20-%20December%202022.pdf) | Trail of Bits | Audit | 2022-12 | stale | Inherited from Folks Finance — forked code, scoped to OFTWrapper, TokenMessaging | inherited | 2 | n/a |
+| [Vantage Point - Smart Contract Audit - December 2022.pdf](https://github.com/Folks-Finance/audits/blob/main/Vantage%20Point%20-%20Smart%20Contract%20Audit%20-%20December%202022.pdf) | Vantage Point | Audit | 2022-12 | stale | Inherited from Folks Finance — forked code, scoped to OFTWrapper, TokenMessaging | inherited | 2 | n/a |
+| [spaces/ZtdkwV6IW7ZSjaMZNmkU/uploads/J7wCsY4imFYBZcKBhMuO/SlowMist Audit Report Galxe G Token.pdf](https://1664081133-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FZtdkwV6IW7ZSjaMZNmkU%2Fuploads%2FJ7wCsY4imFYBZcKBhMuO%2FSlowMist%20Audit%20Report%20Galxe%20G%20Token.pdf) | SlowMist | Audit | 2024-05 | stale | Direct | contract_name | 1 | high |
 
 ## Coverage Gaps
 
@@ -136,16 +150,41 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x9c7beb...260649`](./contracts/ethereum-1/0x9c7beba8f6ef6643abd725e45a4e8387ef260649/) | GravityTokenG | token | $42,285,391.16 | Verified native implementation with $42,285,391.16 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xca0641...febeb7`](./contracts/ethereum-1/0xca06411bd7a7296d7dbdd0050dfc846e95febeb7/) | Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5489dd...e7f97d`](./contracts/ethereum-1/0x5489ddab89609580835ee6d655cd9b3503e7f97d/) | CreditMessaging | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6b1754...271d0f`](./contracts/ethereum-1/0x6b175474e89094c44da98b954eedeac495271d0f/) | Dai | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x000000...7da032`](./contracts/ethereum-1/0x0000000071727de22e5e9d8baf0edac6f37da032/) | EntryPoint | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe5a5f1...f2322b`](./contracts/ethereum-1/0xe5a5f138005e19a3e6d0fe68b039397eeef2322b/) | Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1a6437...c0f246`](./contracts/ethereum-1/0x1a6437bef5b8615ef523d00ef7c9d58d66c0f246/) | FeeLibV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8cbde2...77a91a`](./contracts/ethereum-1/0x8cbde23b1416cac07a52591bba744c744d77a91a/) | FiatToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa0b869...06eb48`](./contracts/ethereum-1/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/) | FiatTokenProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6315aa...0355a6`](./contracts/ethereum-1/0x6315aa908c50376d1028412c028aa0629f0355a6/) | FiatTokenUtil | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x088247...57fe56`](./contracts/ethereum-1/0x0882477e7895bdc5cea7cb1552ed914ab157fe56/) | FiatTokenV1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb7277a...3778a2`](./contracts/ethereum-1/0xb7277a6e95992041568d9391d09d0122023778a2/) | FiatTokenV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa2327a...4cbdcf`](./contracts/ethereum-1/0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf/) | FiatTokenV2_1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe82c61...5dc876`](./contracts/ethereum-1/0xe82c61ac9ec2041b493118051afa4f18a55dc876/) | GBridgeSender | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x76cf85...5f6e53`](./contracts/ethereum-1/0x76cf8526fa9461e50b2c6702a7246ce6915f6e53/) | GravityPortal | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x566c11...674335`](./contracts/ethereum-1/0x566c11b5c2201b69c9269fe924e4395873674335/) | MasterMinter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3e8640...107ac5`](./contracts/ethereum-1/0x3e8640574aa764763291ed733672d3a105107ac5/) | Members | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x003ea7...f15505`](./contracts/ethereum-1/0x003ea7f54b6dcf6cee86986edc18143a35f15505/) | MiniMeTokenFactory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xcc80c0...b97a5e`](./contracts/ethereum-1/0xcc80c051057b774cd75067dc48f8987c4eb97a5e/) | NEC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8d5a41...05d98d`](./contracts/ethereum-1/0x8d5a41e85f4ce2433beef476305d307b9205d98d/) | NectarController | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xfa5475...fcdcfd`](./contracts/ethereum-1/0xfa54751cda1f98947c524fd9701c9dad84fcdcfd/) | RewardLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9f22c4...9499ee`](./contracts/ethereum-1/0x9f22c4b3dbe693a34f2af61a16a022f87d9499ee/) | RewardRegistryLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7fc984...088348`](./contracts/ethereum-1/0x7fc98430eaedbb6070b35b39d798725049088348/) | SenderCreator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0e98db...fdba1b`](./contracts/ethereum-1/0x0e98db51010dd1ade14dd3fb164e218805fdba1b/) | TetherToken | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1041d1...606918`](./contracts/ethereum-1/0x1041d127b2d4bc700f0f563883bc689502606918/) | Treasurer | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2260fa...c2c599`](./contracts/ethereum-1/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599/) | WBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x991f0e...f3690e`](./contracts/ethereum-1/0x991f0e5c5775ca9dd02e30e67f545c36cff3690e/) | WrapperLockEth | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
-| upstream | 7 |
-| standard_library | 0 |
-| needs_review | 38 |
+| native | 29 |
+| upstream | 1 |
+| standard_library | 4 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -153,7 +192,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: high=1
+- Match method counts: extraction_exact=1, inherited_name_remap=16
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,52 +1,65 @@
 {
   "schema_version": "2.0",
   "project_key": "troves",
-  "generated_at": "2026-06-17T07:00:56.197Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-07-04T14:54:02.474Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-bd47",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 2,
     "coverage_pct": 0,
     "total_audits": 2,
+    "direct_audits": 2,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4110082.12707,
-    "tvl_usd": 4110082.12707,
+    "dl_tvl_usd": 4344436.24401,
+    "tvl_usd": 4344436.24401,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://www.troves.fi/",
-    "chains": [],
+    "chains": [
+      "ethereum"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2025-09",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 1,
-      "aging": 0,
+      "aging": 1,
       "stale": 0,
-      "unknown": 1
+      "unknown": 0
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Troves is a live Starknet yield protocol centered on curated vaults and automated strategy products. Users deposit assets into vaults that allocate through strategies and Starknet integrations such as Vesu, Ekubo, Endur, and Extended to generate yield.",
+    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
     "product_family_count": 0,
-    "total_contracts_indexed": 0,
+    "total_contracts_indexed": 2,
     "live_contracts": 0,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 2,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
@@ -54,7 +67,7 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 2,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -62,43 +75,115 @@
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0613a26e199f9bafa9418567f4ef0d78e9496a8d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Security contracts:",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0613a26e199f9bafa9418567f4ef0d78e9496a8d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0636a3f51cc37f5729e4da4b1de6a8549a28f3c0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Security contracts:",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0636a3f51cc37f5729e4da4b1de6a8549a28f3c0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    }
+  ],
   "audits": [
     {
       "audit_id": 2517,
       "audit_key": "audit-2517",
-      "report_name": "3. Audit report: [here](), audited by [Cairo security clan](https://cairosecurityclan.com/).",
+      "report_name": "audit_report_vesu_and_ekubo_strats.pdf",
       "report_url": "https://assets.troves.fi/strkfarm/audit_report_vesu_and_ekubo_strats.pdf",
       "auditor": "Cairo security clan",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2025-03",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 2517,
-          "report_url": "https://assets.troves.fi/strkfarm/audit_report_vesu_and_ekubo_strats.pdf"
-        },
-        {
-          "audit_id": 2520,
-          "report_url": "https://assets.troves.fi/troves/audit_report_vesu_and_ekubo_strats.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     },
     {
       "audit_id": 2518,
       "audit_key": "audit-2518",
-      "report_name": "Audit link - Sherlock",
+      "report_name": "2025_09_23_Final_Vesu_Starknet_Vault_Kit_Collaborative_Audit_Report.pdf",
       "report_url": "https://github.com/sherlock-protocol/sherlock-reports/blob/main/audits/2025_09_23_Final_Vesu_Starknet_Vault_Kit_Collaborative_Audit_Report.pdf",
       "auditor": "Sherlock",
       "audit_type": "contest",
@@ -108,6 +193,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -123,7 +211,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -133,11 +221,11 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 2517,
-        "report_name": "3. Audit report: [here](), audited by [Cairo security clan](https://cairosecurityclan.com/)."
+        "report_name": "audit_report_vesu_and_ekubo_strats.pdf"
       },
       {
         "audit_id": 2518,
-        "report_name": "Audit link - Sherlock"
+        "report_name": "2025_09_23_Final_Vesu_Starknet_Vault_Kit_Collaborative_Audit_Report.pdf"
       }
     ],
     "inherited_remapped_matches": []

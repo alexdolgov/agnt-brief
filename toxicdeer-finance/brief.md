@@ -1,26 +1,25 @@
 # Agentic Audit Brief: ToxicDeer Finance
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: ToxicDeer Finance (`toxicdeer-finance`)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-20T01:10:07.532Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:54:02.374Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-4c3e
 - Chains: cronos
-- Contract surface: 7 unique implementations (7 raw deployments)
-- DeFi Llama TVL: $23,741.21
+- Contract surface: 1 unique implementations (7 raw deployments)
+- DeFi Llama TVL: $23,771.54
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-ToxicDeer Finance is a DeFi protocol on Cronos offering algorithmic stablecoin mechanisms, likely involving pegged assets, seigniorage, and liquidity provisioning to maintain stability.
-
-### Architecture
-
-All contracts belong to a single product family with no explicit sub-groupings; they likely share common infrastructure such as token standards and access control patterns, but no distinct supporting contracts are identified.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
@@ -32,19 +31,21 @@ All contracts belong to a single product family with no explicit sub-groupings; 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 7
-- Unique implementations: 7
+- Unverified implementations: 1
+- Unique implementations: 1
 - Raw deployments: 7
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-05 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -72,19 +73,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (7)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | cronos | n/a | `0x18cd20...0271d2` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x264f27...5bbe6d` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x40d85d...42db54` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x6d6d6b...50a63a` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x6f7151...159520` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x85b607...742a34` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0xf6c3e1...65b252` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | 7 deployments: cronos `0x18cd20...0271d2`; cronos `0x264f27...5bbe6d`; cronos `0x40d85d...42db54`; cronos `0x6d6d6b...50a63a`; cronos `0x6f7151...159520`; cronos `0x85b607...742a34`; cronos `0xf6c3e1...65b252` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -105,7 +100,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 7 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

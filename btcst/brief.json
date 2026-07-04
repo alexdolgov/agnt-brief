@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "btcst",
-  "generated_at": "2026-06-17T07:00:45.187Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "btcst",
-    "tier": 0,
-    "peak_tvl": 14826723,
-    "peak_date": "2021-12-25T00:00:00.000Z",
-    "tvl_30d_ago": 970504,
-    "tvl_90d_ago": 841393,
-    "tvl_current": 979054,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 1211594,
-    "change_30d_pct": 0.8809855497761988,
-    "change_90d_pct": 16.3610821578026,
-    "days_since_peak": 1612,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 93.39669325447032
-  },
+  "generated_at": "2026-07-04T14:53:09.926Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-1bf2",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 1,
     "total_addresses": 1,
@@ -34,14 +18,14 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 909720.1382299999,
-    "tvl_usd": 263693624.03637958,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "bsc": 263693624.04
-    },
-    "asd_usd": 263693624.03637958,
+    "dl_tvl_usd": 824763.92014,
+    "tvl_usd": 824763.92014,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": null,
     "chains": [
       "bsc"
@@ -55,20 +39,29 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "BTCST is the Bitcoin Standard Hashrate Token on BNB Chain/BSC, anchored at bsc:0x78650b139471520656b9e7aa7a5e9276814a38e9. It represents tokenized Bitcoin mining hashrate and is associated with staking for Bitcoin-denominated rewards. Other token contracts or balances, including 0xba2ae424d960c26247dd6c32edc70b295c744c43, should not be treated as BTCST protocol TVL or core BTCST product-line assets unless project ownership is independently verified.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
     "product_family_count": 1,
-    "total_contracts_indexed": 93,
+    "total_contracts_indexed": 1,
     "live_contracts": 1,
-    "inactive_contracts": 57,
-    "singleton_contracts": 35,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 20,
-    "live_deployment_units": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
@@ -87,14 +80,14 @@
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0xba2ae424d960c26247dd6c32edc70b295c744c43",
-      "deployment_unit": "unit-19940",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "BEP20TokenImplementation",
       "role": "token",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "BTCST",
-      "tvl_usd": 263693624.03637958,
+      "product_line": null,
+      "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0xba5fe23f8a3a24bed3236f05f2fcf35fd0bf0b5c",
       "impl_name": "BEP20TokenImplementation",
@@ -103,11 +96,11 @@
           "chain_id": 56,
           "chain_name": "bsc",
           "address": "0xba2ae424d960c26247dd6c32edc70b295c744c43",
-          "deployment_unit": "unit-19940",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 263693624.03637958,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -116,17 +109,32 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-02-01 16:52:40+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xba2ae424d960c26247dd6c32edc70b295c744c43",
+      "name": "BEP20TokenImplementation",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

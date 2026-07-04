@@ -1,36 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "lusd-chickenbonds",
-  "generated_at": "2026-06-17T07:00:57.590Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "lusd-chickenbonds",
-    "tier": 1,
-    "peak_tvl": 75338329,
-    "peak_date": "2023-01-04T00:00:00.000Z",
-    "tvl_30d_ago": 1490178,
-    "tvl_90d_ago": 1490406,
-    "tvl_current": 1491879,
-    "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 1495116,
-    "change_30d_pct": 0.11414743742022765,
-    "change_90d_pct": 0.09883213030543354,
-    "governance_raw": {
-      "evidence": "TVL has dropped 98% from peak but the protocol still has a functional website and documentation, indicating ongoing operations.",
-      "confidence": 0.7,
-      "lifecycle_status": "declining"
-    },
-    "days_since_peak": 1236,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 98.01976096390457,
-    "governance_evidence": "TVL has dropped 98% from peak but the protocol still has a functional website and documentation, indicating ongoing operations.",
-    "governance_confidence": 0.7,
-    "governance_text_chars": 1021,
-    "governance_classification": "declining",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:30.235Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-16da",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 5,
     "total_addresses": 9,
@@ -42,15 +16,15 @@
     "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 60,
+    "coverage_pct": 75,
     "total_audits": 7,
+    "direct_audits": 7,
+    "inherited_audits": 0,
     "scoreable_audits": 6,
-    "dl_tvl_usd": 1498710.42328,
-    "tvl_usd": 362849.47034178185,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 362849.47
-    },
+    "dl_tvl_usd": 1499600.87985,
+    "tvl_usd": 1499600.87985,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://www.chickenbonds.org",
     "chains": [
@@ -65,25 +39,32 @@
       "aging": 0,
       "stale": 7,
       "unknown": 0
+    },
+    "live_implementations": 5,
+    "live_verified_implementations": 4,
+    "live_audited_implementations": 3,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 3
     }
   },
   "topography": {
-    "project_purpose": "LUSD ChickenBonds is a bonding and liquidity-bootstrapping mechanism first applied to Liquity's LUSD. Users create cancel-anytime, no-lock-up bond positions with protected principal, receiving dynamic NFT representations of their bonds and the option to acquire discounted boosted LUSD (bLUSD). The mechanism amplifies yield through bLUSD and is designed to help protocols bootstrap sustainable liquidity rather than operate as a generic managed yield aggregator.",
-    "relationship_narrative": "The protocol consists of a single product family centered around the ChickenBondManager contract, which serves as the governance and operational hub for all bond management functions.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 58,
+    "project_purpose": "Yield Aggregator. Structurally: 4 project-authored contract(s) across 1 chain(s); 1 ERC20 token, 1 ERC721 NFT; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 2 functional families. Contracts are linked by 3 cross-contract reference(s). Dominant framework: openzeppelin.",
+    "product_family_count": 2,
+    "total_contracts_indexed": 9,
     "live_contracts": 9,
-    "inactive_contracts": 49,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 1,
-    "live_deployment_units": 1,
-    "dependencies_extracted": 126,
-    "unverified_dependencies": 41,
-    "detected_codebases": [
-      "aave-v2"
-    ]
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 5,
@@ -106,7 +87,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 362849.47034178185,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "BLUSDToken",
@@ -119,7 +100,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 362849.47034178185,
+          "tvl_usd": null,
           "is_audited": true
         }
       ],
@@ -134,7 +115,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-10-04 13:02:23+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -176,7 +161,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-10-04 13:03:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -188,7 +177,7 @@
       "role": "governance",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "LUSD ChickenBonds",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -218,18 +207,22 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-10-04 13:04:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xfeb4acf3df3cdea7399794d0869ef76a6efaff52",
-      "deployment_unit": "unit-32383",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "GnosisSafe",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_provider": "Gnosis Safe",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -240,8 +233,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xfeb4acf3df3cdea7399794d0869ef76a6efaff52",
-          "deployment_unit": "unit-32383",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -253,7 +246,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2020-07-21 06:10:10+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -263,7 +260,7 @@
       "deployment_unit_proxy_count": null,
       "name": "Vyper_contract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -332,7 +329,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-10-04 13:03:59+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -349,7 +350,10 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -370,35 +374,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BLUSDToken",
-        "BaseMath",
-        "BondNFT",
-        "ChickenBondManager",
-        "ChickenBondOperationsScript",
-        "ChickenMath",
-        "IBLUSDToken",
-        "IBondNFT",
-        "IChickenBondManager",
-        "ICurveLiquidityGaugeV4",
-        "ICurvePool",
-        "ILUSDToken",
-        "IYearnRegistry",
-        "IYearnVault",
-        "LUSDSilo",
-        "MockCurveLiquidityGaugeV4",
-        "MockCurvePool",
-        "MockLUSDToken",
-        "MockYearnRegistry",
-        "MockYearnVault",
-        "StrategyAPI",
-        "console"
-      ],
+      "extracted_names": [],
       "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -414,30 +398,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BLUSDToken",
-        "BaseMath",
-        "BondNFT",
-        "ChickenBondManager",
-        "ChickenBondOperationsScript",
-        "ChickenMath",
-        "IBAMM",
-        "IBLUSDToken",
-        "IBondNFT",
-        "IBondNFTArtwork",
-        "IChickenBondManager",
-        "ICurveLiquidityGaugeV4",
-        "ICurvePool",
-        "ILUSDToken",
-        "IYearnRegistry",
-        "IYearnVault",
-        "StrategyAPI"
-      ],
+      "extracted_names": [],
       "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -453,37 +422,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BLUSDToken",
-        "BaseMath",
-        "BondNFT",
-        "ChickenBondManager",
-        "ChickenBondOperationsScript",
-        "ChickenMath",
-        "EggTraitWeights",
-        "GenerativeEggArtwork",
-        "IBAMM",
-        "IBLUSDToken",
-        "IBondNFT",
-        "IBondNFTArtwork",
-        "IChickenBondManager",
-        "ICurveGaugeController",
-        "ICurveLiquidityGaugeV5",
-        "ICurvePool",
-        "ILQTYStaking",
-        "ILUSDToken",
-        "IPickleJar",
-        "ITroveManager",
-        "IYearnRegistry",
-        "IYearnVault",
-        "SimpleEggArtwork",
-        "StrategyAPI"
-      ],
+      "extracted_names": [],
       "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -499,17 +446,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BLUSDLPZAP",
-        "BondNFT",
-        "ChickenBondManager",
-        "ChickenInArtwork"
-      ],
+      "extracted_names": [],
       "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -525,18 +470,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BLUSDToken",
-        "BaseMath",
-        "BondNFT",
-        "ChickenBondManager",
-        "ChickenMath"
-      ],
+      "extracted_names": [],
       "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -552,20 +494,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BLUSDToken",
-        "BaseMath",
-        "BondNFT",
-        "ChickenBondManager",
-        "ChickenMath",
-        "GenerativeEggArtwork",
-        "SimpleEggArtwork"
-      ],
+      "extracted_names": [],
       "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -585,20 +522,29 @@
       "latest_audit": "2022-09"
     }
   ],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5fa5b62c8af877cb37031e0a3b2f34a78e3c56a6",
+      "name": "Vyper_contract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 3,
+    "native": 4,
     "upstream": 0,
     "standard_library": 1,
-    "needs_review": 1
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 122
+      "contract_name": 17
     },
-    "extraction_confidence_counts": {
-      "high": 6
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [

@@ -1,33 +1,44 @@
 {
   "schema_version": "2.0",
   "project_key": "mountain-protocol",
-  "generated_at": "2026-06-13T11:49:13.518Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
+  "generated_at": "2026-07-04T14:53:36.963Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-17a2",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
-    "audited_contracts": 0,
+    "total_contracts": 6,
+    "total_addresses": 6,
+    "unique_implementations": 6,
+    "total_deployments": 6,
+    "audited_contracts": 5,
     "unaudited_contracts": 0,
-    "contracts_verified_audited": 0,
+    "contracts_verified_audited": 5,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "contracts_unverified": 1,
+    "coverage_pct": 100,
     "total_audits": 2,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 1402616.88117,
-    "tvl_usd": 1402616.88117,
+    "direct_audits": 2,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 1400998.21278,
+    "tvl_usd": 1400998.21278,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://mountainprotocol.com",
-    "chains": [],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
+    "chains": [
+      "arbitrum",
+      "base",
+      "ethereum",
+      "optimism",
+      "polygon",
+      "zksync-era"
+    ],
+    "tier1_coverage_pct": 100,
+    "tier1_auditors": [
+      "OpenZeppelin"
+    ],
     "latest_audit_date": "2023-10",
     "audit_freshness": "stale",
     "staleness_breakdown": {
@@ -35,23 +46,288 @@
       "aging": 0,
       "stale": 2,
       "unknown": 0
+    },
+    "live_implementations": 5,
+    "live_verified_implementations": 5,
+    "live_audited_implementations": 5,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 5,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
-    "product_family_count": null
+    "project_purpose": "RWA. Structurally: 0 project-authored contract(s) across 1 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol forms a single structural family (Mountain Protocol) of 1 contract(s).",
+    "product_family_count": 1,
+    "total_contracts_indexed": 6,
+    "live_contracts": 5,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 6,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 324,
+      "chain_name": "zksync-era",
+      "address": "0x59d9356e565ab3a36dd77763fc0d87feaf85508c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Mountain Protocol",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 324,
+          "chain_name": "zksync-era",
+          "address": "0x59d9356e565ab3a36dd77763fc0d87feaf85508c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x59d9356e565ab3a36dd77763fc0d87feaf85508c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "USDM",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Mountain Protocol",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7f2f92c4dbda28d8cd7d046e005f65c0540f331e",
+      "impl_name": "USDM",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x59d9356e565ab3a36dd77763fc0d87feaf85508c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13527"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-25 20:35:11+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x59d9356e565ab3a36dd77763fc0d87feaf85508c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "USDM",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Mountain Protocol",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7f2f92c4dbda28d8cd7d046e005f65c0540f331e",
+      "impl_name": "USDM",
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x59d9356e565ab3a36dd77763fc0d87feaf85508c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13527"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-17 17:51:13+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x59d9356e565ab3a36dd77763fc0d87feaf85508c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "USDM",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Mountain Protocol",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7f2f92c4dbda28d8cd7d046e005f65c0540f331e",
+      "impl_name": "USDM",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x59d9356e565ab3a36dd77763fc0d87feaf85508c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13527"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-17 03:34:09+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x59d9356e565ab3a36dd77763fc0d87feaf85508c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "USDM",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Mountain Protocol",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7f2f92c4dbda28d8cd7d046e005f65c0540f331e",
+      "impl_name": "USDM",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x59d9356e565ab3a36dd77763fc0d87feaf85508c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13527"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-17 04:59:59+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x59d9356e565ab3a36dd77763fc0d87feaf85508c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "USDM",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Mountain Protocol",
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7f2f92c4dbda28d8cd7d046e005f65c0540f331e",
+      "impl_name": "USDM",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x59d9356e565ab3a36dd77763fc0d87feaf85508c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13527"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-17 17:52:57+03",
+      "deploy_coverage_basis": "code_matched"
+    }
+  ],
   "audits": [
     {
       "audit_id": 13527,
@@ -66,12 +342,17 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "USDM"
+      ],
+      "matched_contracts": 5,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -87,6 +368,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -96,24 +380,32 @@
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "OpenZeppelin",
+      "tier": 1,
+      "contracts_covered": 5,
+      "coverage_pct": 100,
+      "latest_audit": "2023-10"
+    }
+  ],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
+    "native": 5,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 5
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 13527,
-        "report_name": "OpenZeppelin Mountain Protocol USDM - Audit Report Jun 2023.pdf"
-      },
       {
         "audit_id": 13528,
         "report_name": "OpenZeppelin Mountain Protocol wUSDM - Audit Report Oct 2023.pdf"

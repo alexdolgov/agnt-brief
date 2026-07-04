@@ -1,48 +1,51 @@
 # Agentic Audit Brief: Alium Swap
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 4.9% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 6.8% over 90 days
 
 ## Project Overview
 
 - Project: Alium Swap (`alium-swap`)
-- Lifecycle: declining (Tier 0, 95.8% below peak)
-- Generated: 2026-06-19T23:02:37.118Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: declining (Tier 0, 96% below peak)
+- Generated: 2026-07-04T14:52:59.774Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
 - Chains: bsc
 - Contract surface: 49 unique implementations (50 raw deployments)
-- DeFi Llama TVL: $15,044.57
+- DeFi Llama TVL: $14,224.32
 - On-chain TVL (included contracts): $497,493.04
 - TVL by chain: Bsc $497,493.04
 
 ## Project Description
 
-Alium Swap is a decentralized exchange (DEX) on BSC that enables users to swap tokens and provide liquidity. It appears to be a Uniswap V2 fork, as indicated by its registry reference.
+Dexs. Structurally: 28 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens, 1 ERC721 NFT, 2 ERC1155 multi-tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol consists of a single product family centered around the AliumToken contract, which likely serves as the governance or fee token for the DEX. No additional infrastructure contracts are identified in the provided inventory.
+The protocol comprises 5 functional families. Its contracts share 3 common project-authored base contract(s) (privilegeable, rbac, erc165). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 51; live-surface contracts included: 50 (0 live, 50 unknown).
-- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 92; live-surface contracts included: 50 (5 live, 45 unknown).
+- Excluded by liveness: 42 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
-- Detected codebases: uniswap-v2
+- Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 2/4 (50.0%)
+- Coverage of deployed-live implementations: 2/4 (50.0%)
+- Deployed-live implementations: 4 of 49 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 2/4
 - Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 45
 - Unique implementations: 49
 - Raw deployments: 50
-- Audits discovered: 3
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $497,493.04
 - Latest audit: 2021-04 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 2 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 2 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [declining]. ASD of $497,493.04 represents exposure in a protocol with declining activity.
 
@@ -137,8 +140,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [02_Smart Contract Audit_Aliumswap.pdf](https://github.com/chainsulting/Smart-Contract-Security-Audits/blob/master/Aliumswap/02_Smart%20Contract%20Audit_Aliumswap.pdf) | unknown | Audit | 2021-03 | stale | Direct | n/a | 0 | n/a |
-| [02_Smart Contract Audit_AliumSwap_Core.pdf](https://github.com/chainsulting/Smart-Contract-Security-Audits/blob/master/Aliumswap/02_Smart%20Contract%20Audit_AliumSwap_Core.pdf) | unknown | Audit | 2021-04 | stale | Direct | contract_name | 3 | high |
-| [DL audit link](https://skynet.certik.com/projects/aliumswap) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [02_Smart Contract Audit_AliumSwap_Core.pdf](https://github.com/chainsulting/Smart-Contract-Security-Audits/blob/master/Aliumswap/02_Smart%20Contract%20Audit_AliumSwap_Core.pdf) | unknown | Audit | 2021-04 | stale | Direct | contract_name | 2 | n/a |
+| [skynet.certik.com/projects/aliumswap](https://skynet.certik.com/projects/aliumswap) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -164,12 +167,12 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=4
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=2
 
 Zero-match audit list:
 
 - [12644] 02_Smart Contract Audit_Aliumswap.pdf
-- [12646] DL audit link
+- [12646] skynet.certik.com/projects/aliumswap
 
 Fork inheritance lineage and inherited audits are included when available.

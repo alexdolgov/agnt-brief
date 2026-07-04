@@ -1,50 +1,51 @@
 # Agentic Audit Brief: Dexioprotocol
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Dexioprotocol (`dexioprotocol`)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-19T09:46:00.023Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-cc10
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:11.068Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-2d9c
 - Chains: kava, polygon
-- Contract surface: 6 unique implementations (6 raw deployments)
+- Contract surface: 2 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $0.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-Dexioprotocol is a gaming-focused DeFi protocol that provides staking and token infrastructure for its ecosystem. It enables users to stake DEXI tokens and interact with gaming-related smart contracts on Polygon and Kava.
-
-### Architecture
-
-The DEXI token contract serves as the core asset, while multiple DexiStake contracts enable staking functionality. Proxy contracts (BeaconProxy, UpgradeableBeacon) provide upgradeability and shared infrastructure across the protocol.
+Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 75; live-surface contracts included: 6 (1 live, 5 unknown).
-- Excluded by liveness: 57 inactive, 12 singleton, 0 uninitialized.
-- Deployment units: 0/4 live.
+- Indexed contracts: 7; live-surface contracts included: 6 (1 live, 5 unknown).
+- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 2; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/1 (100.0%)
+- Coverage of deployed-live implementations: 1/1 (100.0%)
+- Deployed-live implementations: 1 of 2 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/1
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 5
-- Unique implementations: 6
+- Unverified implementations: 1
+- Unique implementations: 2
 - Raw deployments: 6
-- Audits discovered: 3
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-12 (stale)
-- Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 3 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -77,25 +78,21 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (5)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | kava | n/a | `0x5a4c7c...5ce212` | ❓ Unverified |
-| UnnamedContract | unknown | kava | n/a | `0x6fa2d4...bce959` | ❓ Unverified |
-| UnnamedContract | unknown | kava | n/a | `0x732bb0...430266` | ❓ Unverified |
-| UnnamedContract | unknown | kava | n/a | `0xb8e29c...0189f5` | ❓ Unverified |
-| UnnamedContract | unknown | kava | n/a | `0xd22a58...34b68b` | ❓ Unverified |
+| UnnamedContract | unknown | kava | n/a | 5 deployments: kava `0x5a4c7c...5ce212`; kava `0x6fa2d4...bce959`; kava `0x732bb0...430266`; kava `0xb8e29c...0189f5`; kava `0xd22a58...34b68b` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://global-uploads.webflow.com/63bd414670efa3b8c932ad2b/63bd414670efa34d8e32b1b9_Final%20Security%20Audit%20of%20DEXI%20token-2022-08-22%20(1).pdf) | yAudit | Audit | 2022-08 | stale | Direct | contract_name | 1 | high |
-| [DL audit link](https://global-uploads.webflow.com/63bd414670efa3b8c932ad2b/63bd414670efa3125f32b1b8_8e64c255-ad07-4326-8e73-1446db7a72d6%20(1).pdf) | unknown | Audit | 2022-08 | stale | Direct | n/a | 0 | n/a |
-| [DL audit link](https://global-uploads.webflow.com/63bd414670efa3b8c932ad2b/63bd414670efa32a4032b263_audit%20(1).pdf) | unknown | Audit | 2022-12 | stale | Direct | contract_name | 1 | high |
+| [63bd414670efa34d8e32b1b9_Final Security Audit of DEXI token-2022-08-22 (1).pdf](https://global-uploads.webflow.com/63bd414670efa3b8c932ad2b/63bd414670efa34d8e32b1b9_Final%20Security%20Audit%20of%20DEXI%20token-2022-08-22%20(1).pdf) | yAudit | Audit | 2022-08 | stale | Direct | contract_name | 1 | n/a |
+| [63bd414670efa3125f32b1b8_8e64c255-ad07-4326-8e73-1446db7a72d6 (1).pdf](https://global-uploads.webflow.com/63bd414670efa3b8c932ad2b/63bd414670efa3125f32b1b8_8e64c255-ad07-4326-8e73-1446db7a72d6%20(1).pdf) | unknown | Audit | 2022-08 | stale | Direct | n/a | 0 | n/a |
+| [63bd414670efa32a4032b263_audit (1).pdf](https://global-uploads.webflow.com/63bd414670efa3b8c932ad2b/63bd414670efa32a4032b263_audit%20(1).pdf) | unknown | Audit | 2022-12 | stale | Direct | contract_name | 1 | n/a |
 
 ## Coverage Gaps
 
@@ -107,10 +104,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 6 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -118,11 +115,11 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2
-- Match method counts: extraction_exact=2
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=2
 
 Zero-match audit list:
 
-- [13024] DL audit link
+- [13024] 63bd414670efa3125f32b1b8_8e64c255-ad07-4326-8e73-1446db7a72d6 (1).pdf
 
 Fork inheritance lineage and inherited audits are included when available.

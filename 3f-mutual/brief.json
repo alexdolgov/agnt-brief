@@ -1,78 +1,89 @@
 {
   "schema_version": "2.0",
   "project_key": "3f-mutual",
-  "generated_at": "2026-06-17T07:00:50.528Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-07-04T14:52:57.797Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-1cbb",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "3f-mutual",
     "tier": 0,
     "peak_tvl": 9224183,
     "peak_date": "2025-08-23T00:00:00.000Z",
-    "tvl_30d_ago": 4482440,
-    "tvl_90d_ago": 3744059,
-    "tvl_current": 4074631,
+    "tvl_30d_ago": 3855985,
+    "tvl_90d_ago": 4106955,
+    "tvl_current": 3008328,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 5639828,
-    "change_30d_pct": -9.097924344776507,
-    "change_90d_pct": 8.82924120586775,
-    "days_since_peak": 273,
+    "tvl_180d_ago": 5757731,
+    "change_30d_pct": -21.98289153095772,
+    "change_90d_pct": -26.750402670591715,
+    "days_since_peak": 312,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 55.82664611055527
+    "drop_from_peak_pct": 67.38651000310813
   },
   "summary": {
-    "total_contracts": 9,
-    "total_addresses": 11,
-    "unique_implementations": 9,
-    "total_deployments": 11,
-    "audited_contracts": 0,
-    "unaudited_contracts": 9,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 9,
+    "total_contracts": 13,
+    "total_addresses": 16,
+    "unique_implementations": 13,
+    "total_deployments": 16,
+    "audited_contracts": 2,
+    "unaudited_contracts": 8,
+    "contracts_verified_audited": 2,
+    "contracts_verified_unaudited": 8,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 0,
-    "total_audits": 0,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 3186142.86029,
-    "tvl_usd": 3186142.86029,
+    "contracts_unverified": 3,
+    "coverage_pct": 22.2,
+    "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 3010576.50982,
+    "tvl_usd": 3010576.50982,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
-    "website_url": null,
+    "website_url": "https://3fmutual.com/",
     "chains": [
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2020-09",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
+      "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 10,
+    "live_verified_implementations": 9,
+    "live_audited_implementations": 2,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 2,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "3F Mutual is an Ethereum insurance pool associated with MakerDAO crash insurance. Users can buy insurance units priced by a formula.",
-    "relationship_narrative": "The protocol consists of a single product family with one core contract, so there are no cross-family relationships or shared infrastructure.",
-    "product_family_count": 1,
+    "project_purpose": "Insurance. Structurally: 37 project-authored contract(s) across 1 chain(s); 6 ERC20 tokens; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 3 common project-authored base contract(s) (lptokenwrapper, irewarddistributionrecipient, erc20mintable). Dominant framework: openzeppelin.",
+    "product_family_count": 4,
     "total_contracts_indexed": 53,
-    "live_contracts": 11,
-    "inactive_contracts": 42,
+    "live_contracts": 13,
+    "inactive_contracts": 37,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 3,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 9,
-    "unverified_dependencies": 3,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 9,
+    "unique_implementations": 13,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -89,7 +100,7 @@
       "deployment_unit_proxy_count": null,
       "name": "blackholeswap",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -114,7 +125,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-08-16 01:04:07+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -124,7 +139,7 @@
       "deployment_unit_proxy_count": null,
       "name": "Hakka",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -149,7 +164,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-04-14 19:30:41+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -159,7 +178,7 @@
       "deployment_unit_proxy_count": null,
       "name": "HakkaRewardsVesting",
       "role": "operational_periphery",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -195,12 +214,16 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-06-22 11:57:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x9933ad4d38702cdc28c5db2f421f1f02cf530780",
+      "address": "0x5dd2777c42c34ed155fd3cc063a956d03f92448f",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "InsuranceImprovementProposalProxy",
@@ -216,21 +239,38 @@
         {
           "chain_id": 1,
           "chain_name": "ethereum",
+          "address": "0x5dd2777c42c34ed155fd3cc063a956d03f92448f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
           "address": "0x9933ad4d38702cdc28c5db2f421f1f02cf530780",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-21315"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-09-19 14:23:05+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 1,
@@ -240,7 +280,7 @@
       "deployment_unit_proxy_count": null,
       "name": "sHakka",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -276,7 +316,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-06-07 15:16:28+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -311,7 +355,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-09-20 13:10:56+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -323,7 +371,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "3F Mutual",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -346,7 +394,169 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-09-19 15:01:23+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe58cde3cbeecc8d9306f482729084b909afa2357",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Underwriter",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Underwriter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe58cde3cbeecc8d9306f482729084b909afa2357",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-21315"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-04-21 22:34:14+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0a3e364ee37bac9e6aff9e864e65b4603d5bc5d4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0a3e364ee37bac9e6aff9e864e65b4603d5bc5d4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-09-20 22:38:26+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5113dbe8c1fa6e5397f0b3b00e890e7fa1139089",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5113dbe8c1fa6e5397f0b3b00e890e7fa1139089",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-05-23 00:15:56+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc2f08a9e8ce03b7f2f706a97b7cd8472b60fa7b5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc2f08a9e8ce03b7f2f706a97b7cd8472b60fa7b5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-06-13 11:37:50+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -381,7 +591,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2019-11-13 22:16:32+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -416,62 +630,66 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-12-08 18:09:38+03",
+      "deploy_coverage_basis": null
     }
   ],
-  "audits": [],
-  "auditor_coverage": [],
+  "audits": [
+    {
+      "audit_id": 21315,
+      "audit_key": "audit-21315",
+      "report_name": "PeckShield-Audit-Report-Hakka-3FMutual-v1.0 (1).pdf",
+      "report_url": "https://raw.githubusercontent.com/hakkafinance/audit-reports/main/PeckShield-Audit-Report-Hakka-3FMutual-v1.0%20(1).pdf",
+      "auditor": "PeckShield",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2020-09",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "3FMutual",
+        "IIP",
+        "InsuranceImprovementProposalProxy",
+        "Ownable",
+        "SafeMath",
+        "Underwriter"
+      ],
+      "matched_contracts": 3,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 21315,
+          "report_url": "https://raw.githubusercontent.com/hakkafinance/audit-reports/main/PeckShield-Audit-Report-Hakka-3FMutual-v1.0%20(1).pdf"
+        },
+        {
+          "audit_id": 23924,
+          "report_url": "https://github.com/hakkafinance/audit-reports/blob/main/PeckShield-Audit-Report-Hakka-3FMutual-v1.0%20(1).pdf"
+        }
+      ]
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "PeckShield",
+      "tier": 2,
+      "contracts_covered": 2,
+      "coverage_pct": 20,
+      "latest_audit": "2020-09"
+    }
+  ],
   "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x35101c731b1548b5e48bb23f99edbc2f5c341935",
-      "name": "blackholeswap",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0e29e5abbb5fd88e28b2d355774e73bd47de3bcd",
-      "name": "Hakka",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x735a80510536a9a18c8824f40dbc92824640c95a",
-      "name": "HakkaRewardsVesting",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x9933ad4d38702cdc28c5db2f421f1f02cf530780",
-      "name": "InsuranceImprovementProposalProxy",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xb925863a15ebdeae1a638bf2b6fd00d4db897a62",
-      "name": "sHakka",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -504,14 +722,18 @@
     }
   ],
   "origin_summary": {
-    "native": 8,
+    "native": 5,
     "upstream": 1,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 7
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 6
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

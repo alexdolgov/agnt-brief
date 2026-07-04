@@ -1,51 +1,51 @@
 # Agentic Audit Brief: VenomBridge
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 63.8% over 90 days
-
 ## Project Overview
 
 - Project: VenomBridge (`venombridge`)
 - Website: [https://venombridge.com](https://venombridge.com)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-19T06:14:50.896Z
-- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:54:09.886Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-4c3e
 - Chains: avalanche, bsc, ethereum, polygon
-- Contract surface: 4 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $860,403.09
+- Contract surface: 5 unique implementations (5 raw deployments)
+- DeFi Llama TVL: $814,961.12
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-VenomBridge is a cross-chain bridge protocol enabling asset transfers between Ethereum and the Venom network. It uses a proxy-based upgradeable contract architecture to manage token locking and minting across chains.
+Bridge. Structurally: 1 project-authored contract(s) across 1 chain(s); 1 ERC20 token; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The TransparentUpgradeableProxy delegates to the Diamond implementation, which likely contains the core bridge logic and interacts with the MultiVaultToken for token management.
+The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 5; live-surface contracts included: 5 (5 live, 0 unknown).
+- Indexed contracts: 5; live-surface contracts included: 5 (4 live, 1 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 4/4 live.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/4 (0.0%)
-- Verified + Unaudited implementations: 3
-- Verified by bytecode match: 1
-- Unverified implementations: 0
-- Unique implementations: 4
+- Coverage of deployed-live implementations: 0/4 (0.0%)
+- Deployed-live implementations: 4 of 5 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/4
+- Verified + Unaudited implementations: 4
+- Verified by bytecode match: 0
+- Unverified implementations: 1
+- Unique implementations: 5
 - Raw deployments: 5
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-11 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -57,12 +57,13 @@ The TransparentUpgradeableProxy delegates to the Diamond implementation, which l
 
 - None
 
-### ⚠️ Verified + Unaudited (3)
+### ⚠️ Verified + Unaudited (4)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Diamond | unknown | bsc | unit-39256 | [`0x4ab740...512525`](./contracts/bsc-56/0x4ab740157721105ae503fbad756a578171512525/) | ⚠️ Unaudited |
-| Diamond | unknown | polygon | unit-39257 | [`0x4ab740...512525`](./contracts/polygon-137/0x4ab740157721105ae503fbad756a578171512525/) | ⚠️ Unaudited |
+| Diamond | unknown | ethereum | n/a | [`0x4ab740...512525`](./contracts/ethereum-1/0x4ab740157721105ae503fbad756a578171512525/) | ⚠️ Unaudited |
+| Diamond | unknown | bsc | n/a | [`0x4ab740...512525`](./contracts/bsc-56/0x4ab740157721105ae503fbad756a578171512525/) | ⚠️ Unaudited |
+| Diamond | unknown | polygon | n/a | [`0x4ab740...512525`](./contracts/polygon-137/0x4ab740157721105ae503fbad756a578171512525/) | ⚠️ Unaudited |
 | MultiVaultToken | core_logic | ethereum | n/a | [`0x46f84d...8d87c9`](./contracts/ethereum-1/0x46f84dc6564cdd93922f7bfb88b03d35308d87c9/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -71,25 +72,25 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ⚠️ Verified by Bytecode + Unaudited (1)
+### ⚠️ Verified by Bytecode + Unaudited (0)
 
 Source not verified, but runtime bytecode matches a verified implementation (bytecode match).
 
-| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
-|---|---|---|---|---|---|
-| Diamond | unknown | ethereum | unit-39255 | 2 deployments: ethereum [`0x4ab740...512525`](./contracts/ethereum-1/0x4ab740157721105ae503fbad756a578171512525/); avalanche [`0x4ab740...512525`](./contracts/avalanche-43114/0x4ab740157721105ae503fbad756a578171512525/) | ⚠️ Unaudited (bytecode match) |
+- None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Proxy (impl: 0x0bc8c8212c0c74773671c4badb18999c2b07f3c6) | proxy | avalanche | n/a | `0x4ab740...512525` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://skynet.certik.com/projects/venom-bridge) | CertiK | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
+| [skynet.certik.com/projects/venom-bridge](https://skynet.certik.com/projects/venom-bridge) | CertiK | Audit | 2022-11 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -97,16 +98,19 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| ethereum | [`0x4ab740...512525`](./contracts/ethereum-1/0x4ab740157721105ae503fbad756a578171512525/) | Diamond | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x4ab740...512525`](./contracts/bsc-56/0x4ab740157721105ae503fbad756a578171512525/) | Diamond | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x4ab740...512525`](./contracts/polygon-137/0x4ab740157721105ae503fbad756a578171512525/) | Diamond | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x46f84d...8d87c9`](./contracts/ethereum-1/0x46f84dc6564cdd93922f7bfb88b03d35308d87c9/) | MultiVaultToken | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 4 |
 | upstream | 0 |
-| standard_library | 3 |
-| needs_review | 0 |
+| standard_library | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -119,6 +123,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [3237] DL audit link
+- [3237] skynet.certik.com/projects/venom-bridge
 
 Fork inheritance lineage and inherited audits are included when available.

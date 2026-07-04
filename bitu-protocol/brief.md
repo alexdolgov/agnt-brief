@@ -4,9 +4,9 @@
 
 - Project: BitU Protocol (`bitu-protocol`)
 - Website: [https://www.bitu.io](https://www.bitu.io)
-- Lifecycle: active (Tier 0, 34% below peak)
-- Generated: 2026-06-19T06:13:20.547Z
-- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
+- Lifecycle: active (Tier 0, 44.1% below peak)
+- Generated: 2026-07-04T14:53:07.525Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-0293
 - Chains: bsc
 - Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $19,547,798.50
@@ -20,30 +20,33 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-BitU Protocol is a BNB Chain CeDeFi/CDP stablecoin protocol centered on the yield-embedded BITU stablecoin. It supports whitelisted collateralized minting, sBITU staking and yield features, and ALMM/CeDeFi trading functionality. Collateral should be described in plural unless project documentation or contract configuration confirms a single USDT-only collateral model.
+Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
 - Indexed contracts: 5; live-surface contracts included: 3 (3 live, 0 unknown).
 - Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/1 live.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 2/3.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 2/3 (66.7%)
+- Coverage of deployed-live implementations: 2/2 (100.0%)
+- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 2/3
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 3
 - Raw deployments: 3
-- Audits discovered: 2
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-05 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
-- Tier 1 coverage: 66.7% (SlowMist)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 2 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 2 match-unverified
+- Tier 1 coverage: 100.0% (SlowMist)
 
 ### Auditor Coverage
 
@@ -89,8 +92,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Rendered PDF capture](https://216194945-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fj4FiwL05RDG9vbiK6wKb%2Fuploads%2F5zJ9iSaosjkSWbY1Alkz%2FSlowMist%20Audit%20Report%20-%20BitU527.pdf) | SlowMist | Audit | 2024-04 | stale | Direct | contract_name | 2 | high |
-| [Rendered PDF capture](https://216194945-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fj4FiwL05RDG9vbiK6wKb%2Fuploads%2Fx0qHqp82jMYKIQkLrwRp%2FBitU_audit_report_2024-05-27.pdf) | unknown | Audit | 2024-05 | stale | Direct | contract_name | 2 | high |
+| [spaces/j4FiwL05RDG9vbiK6wKb/uploads/5zJ9iSaosjkSWbY1Alkz/SlowMist Audit Report - BitU527.pdf](https://216194945-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fj4FiwL05RDG9vbiK6wKb%2Fuploads%2F5zJ9iSaosjkSWbY1Alkz%2FSlowMist%20Audit%20Report%20-%20BitU527.pdf) | SlowMist | Audit | 2024-04 | stale | Direct | contract_name | 2 | n/a |
+| [spaces/j4FiwL05RDG9vbiK6wKb/uploads/x0qHqp82jMYKIQkLrwRp/BitU_audit_report_2024-05-27.pdf](https://216194945-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fj4FiwL05RDG9vbiK6wKb%2Fuploads%2Fx0qHqp82jMYKIQkLrwRp%2FBitU_audit_report_2024-05-27.pdf) | unknown | Audit | 2024-05 | stale | Direct | contract_name | 2 | n/a |
 
 ## Coverage Gaps
 
@@ -113,7 +116,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2
-- Match method counts: extraction_exact=6
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=4
 
 Fork inheritance lineage and inherited audits are included when available.

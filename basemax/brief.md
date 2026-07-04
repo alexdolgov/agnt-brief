@@ -6,55 +6,62 @@
 
 - Project: Basemax (`basemax`)
 - Lifecycle: dead (Tier 0, 100% below peak)
-- Generated: 2026-06-19T11:24:25.929Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-cc10
+- Generated: 2026-07-04T14:53:05.302Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-ae05
 - Chains: base
-- Contract surface: 4 unique implementations (4 raw deployments)
-- DeFi Llama TVL: $0.02
+- Contract surface: 7 unique implementations (8 raw deployments)
+- DeFi Llama TVL: $0.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Basemax is a derivatives protocol on Base that enables leveraged trading and yield generation. Users can deposit collateral into vaults to mint a synthetic stablecoin (BSM), which can be used for leveraged positions or staked in reward farms. The protocol manages liquidations, pricing, and reward distribution through a set of interconnected contracts.
+Derivatives. Structurally: 16 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The Vault contract mints BsmToken as a synthetic asset, which is then used across the protocol for trading and staking. BaseMaxChef and various rewarder contracts distribute incentives to stakers, while PriceManager and SettingsManager provide shared infrastructure for pricing and configuration. LiquidateVault, OrderExecutor, and PositionVault handle risk management and order execution, all relying on the core Vault and BsmToken.
+The protocol comprises 3 functional families. Its contracts share 4 common project-authored base contract(s) (constants, mintablebasetoken, basetoken). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 57; live-surface contracts included: 4 (4 live, 0 unknown).
-- Excluded by liveness: 19 inactive, 34 singleton, 0 uninitialized.
-- Deployment units: 0/17 live.
-- Detected codebases: uniswap-v2
-- Dependencies extracted: 2; unverified dependencies: 0.
+- Indexed contracts: 35; live-surface contracts included: 8 (6 live, 2 unknown).
+- Excluded by liveness: 27 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/4 (0.0%)
+- Coverage of deployed-live implementations: 1/4 (25.0%)
+- Deployed-live implementations: 5 of 7 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/5
 - Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 4
-- Raw deployments: 4
-- Audits discovered: 1
-- Scoreable audits (matched contracts): 0
+- Unverified implementations: 2
+- Unique implementations: 7
+- Raw deployments: 8
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-11 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 1 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| unknown | Tier 2 | 1 | 20.0% | 2023-11 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (1)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| OrderExecutor | unknown | base | n/a | 2 deployments: base [`0x83fdb1...bb4900`](./contracts/base-8453/0x83fdb159053b8d343900e72a358f9c778fbb4900/); base `0xd63c0f...416008` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (4)
 
@@ -77,17 +84,20 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | base | n/a | `0x33c3a1...c57d5b` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0x9d0c67...94b955` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Verichains Public Audit Report - BaseMax Smartcontracts - v1.0.pdf](https://github.com/verichains/public-audit-reports/blob/main/Verichains%20Public%20Audit%20Report%20-%20BaseMax%20Smartcontracts%20-%20v1.0.pdf) | unknown | Audit | 2023-11 | stale | Direct | contract_name | 0 | n/a |
+| [Verichains Public Audit Report - BaseMax Smartcontracts - v1.0.pdf](https://github.com/verichains/public-audit-reports/blob/main/Verichains%20Public%20Audit%20Report%20-%20BaseMax%20Smartcontracts%20-%20v1.0.pdf) | unknown | Audit | 2023-11 | stale | Direct | contract_name | 2 | high |
 
 ## Coverage Gaps
 
@@ -103,22 +113,18 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 4 |
 | upstream | 1 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=2
-
-Zero-match audit list:
-
-- [12740] Verichains Public Audit Report - BaseMax Smartcontracts - v1.0.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

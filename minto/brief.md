@@ -4,44 +4,47 @@
 
 - Project: Minto (`minto`)
 - Website: [https://minto.finance](https://minto.finance)
-- Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-18T03:56:50.505Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-bcf3
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:33.160Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16da
 - Chains: bsc, heco
-- Contract surface: 6 unique implementations (6 raw deployments)
-- DeFi Llama TVL: $3,761,396.56
+- Contract surface: 4 unique implementations (6 raw deployments)
+- DeFi Llama TVL: $3,799,069.36
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Minto is a Bitcoin mining hashpower tokenization and staking project centered on BTCMT, a token representing exposure to mining power, with staking/mining-related participation rather than multi-chain yield optimization, farming strategies, or auto-compounding vaults.
+Yield. Structurally: 4 project-authored contract(s) across 1 chain(s); 1 ERC20 token; role-gated via AccessControl; built on openzeppelin.
 
 ### Architecture
 
-The GnosisSafeProxy serves as a shared governance contract for both families, while the StakingOwn contract likely manages staking for the BTCMT token. The TransparentUpgradeableProxy points to MintoAutofarmV2, indicating a single upgradeable vault implementation used across deployments.
+The protocol forms a single structural family (Core Logic) of 4 contract(s).
 
 ## Contract Surface Quality
 
-- Indexed contracts: 12; live-surface contracts included: 6 (3 live, 3 unknown).
-- Excluded by liveness: 2 inactive, 4 singleton, 0 uninitialized.
-- Deployment units: 0/2 live.
+- Indexed contracts: 7; live-surface contracts included: 6 (3 live, 3 unknown).
+- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 2; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/3 (33.3%)
+- Coverage of deployed-live implementations: 1/3 (33.3%)
+- Deployed-live implementations: 3 of 4 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/3
 - Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 3
-- Unique implementations: 6
+- Unverified implementations: 1
+- Unique implementations: 4
 - Raw deployments: 6
-- Audits discovered: 2
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-07 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -77,22 +80,20 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (3)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | heco | n/a | `0x410a56...f09567` | ❓ Unverified |
-| UnnamedContract | unknown | heco | n/a | `0x78ae30...5ebcfb` | ❓ Unverified |
-| UnnamedContract | unknown | heco | n/a | `0xe742fc...5a7e12` | ❓ Unverified |
+| UnnamedContract | unknown | heco | n/a | 3 deployments: heco `0x410a56...f09567`; heco `0x78ae30...5ebcfb`; heco `0xe742fc...5a7e12` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Audit report](https://files.minto.finance/MintoAuditReport.pdf) | yAudit | Audit | 2021-07 | stale | Direct | contract_name | 1 | high |
-| [DL audit link](https://devcfirma.cconducir.com/ingreso.php) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [MintoAuditReport.pdf](https://files.minto.finance/MintoAuditReport.pdf) | yAudit | Audit | 2021-07 | stale | Direct | contract_name | 1 | n/a |
+| [ingreso.php](https://devcfirma.cconducir.com/ingreso.php) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -107,10 +108,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 6 |
+| native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -118,11 +119,11 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=1
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=1
 
 Zero-match audit list:
 
-- [12203] DL audit link
+- [12203] ingreso.php
 
 Fork inheritance lineage and inherited audits are included when available.

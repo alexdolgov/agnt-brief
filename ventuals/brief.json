@@ -1,31 +1,35 @@
 {
   "schema_version": "2.0",
   "project_key": "ventuals",
-  "generated_at": "2026-06-18T21:10:03.383Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-5cc8",
+  "generated_at": "2026-07-04T14:54:09.891Z",
+  "pipeline_run_id": "v2-2026-07-04-db4eb6",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 0,
-    "total_addresses": 0,
-    "unique_implementations": 0,
-    "total_deployments": 0,
+    "total_contracts": 4,
+    "total_addresses": 4,
+    "unique_implementations": 4,
+    "total_deployments": 4,
     "audited_contracts": 0,
-    "unaudited_contracts": 0,
+    "unaudited_contracts": 4,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 0,
+    "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 2,
+    "direct_audits": 2,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 28431743.16777,
-    "tvl_usd": 28431743.16777,
+    "dl_tvl_usd": 5334523.42468,
+    "tvl_usd": 5334523.42468,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://ventuals.com/trade",
-    "chains": [],
+    "chains": [
+      "hyperliquid"
+    ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2025-10",
@@ -35,41 +39,207 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 4,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 4,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Ventuals is a decentralized trading protocol/interface for creating and trading perpetual futures markets on private-company valuations using Hyperliquid HIP-3 infrastructure. The four tracked HyperEVM proxy contracts should be treated as the currently mapped on-chain contract surface only, not as evidence that Ventuals is primarily a staking or rewards protocol.",
-    "relationship_narrative": null,
+    "project_purpose": "Interface. Structurally: 4 project-authored contract(s) across 1 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin-upgradeable.",
+    "relationship_narrative": "The protocol forms a single structural family (Supporting Contracts) of 4 contract(s).",
     "product_family_count": 1,
-    "total_contracts_indexed": 8,
-    "live_contracts": 0,
+    "total_contracts_indexed": 4,
+    "live_contracts": 4,
     "inactive_contracts": 0,
-    "singleton_contracts": 8,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 4,
+    "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 0,
+    "unique_implementations": 4,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
-  "contracts": [],
+  "contracts": [
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x88888880793f89ce85777ff2e0e2d366bf05b20c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ERC1967Proxy",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "OpenZeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x0000000c21e635b59edff54e70fe21315fa9b245",
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x88888880793f89ce85777ff2e0e2d366bf05b20c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-10-15 22:37:00+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x8888888192a4a0593c13532ba48449fc24c3beda",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ERC1967Proxy",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "OpenZeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x000000046a8b917b5a62b446ac208f78412192d1",
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x8888888192a4a0593c13532ba48449fc24c3beda",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-10-15 22:36:00+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x8888888f0651a534011d7ad277c302e7d2d77930",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ERC1967Proxy",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "OpenZeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x000000015db345fb38a2b061f47855cc290bc900",
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x8888888f0651a534011d7ad277c302e7d2d77930",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-10-15 22:34:00+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x8888888fdaac0e7cf8c6523c8955bf7954c216fa",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ERC1967Proxy",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "OpenZeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x0000000e13468943e2962c6b8b4d9f5ba58d4216",
+      "impl_name": "ERC1967Proxy",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x8888888fdaac0e7cf8c6523c8955bf7954c216fa",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-10-15 22:35:00+03",
+      "deploy_coverage_basis": null
+    }
+  ],
   "audits": [
     {
-      "audit_id": 1803,
-      "audit_key": "audit-1803",
+      "audit_id": 21304,
+      "audit_key": "audit-21304",
       "report_name": "20251008_nethermind.pdf",
       "report_url": "https://github.com/ventuals/ventuals-contracts/blob/main/docs/audits/20251008_nethermind.pdf",
-      "auditor": "Nethermind",
+      "auditor": "Nethermind Security",
       "audit_type": "audit",
       "freshness": "fresh",
       "date": "2025-10",
@@ -77,17 +247,30 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 21304,
+          "report_url": "https://github.com/ventuals/ventuals-contracts/blob/main/docs/audits/20251008_nethermind.pdf"
+        },
+        {
+          "audit_id": 21305,
+          "report_url": "https://raw.githubusercontent.com/ventuals/ventuals-contracts/main/docs/audits/20251008_nethermind.pdf"
+        }
+      ]
     },
     {
-      "audit_id": 1804,
-      "audit_key": "audit-1804",
+      "audit_id": 21306,
+      "audit_key": "audit-21306",
       "report_name": "20251014_zenith.pdf",
       "report_url": "https://github.com/ventuals/ventuals-contracts/blob/main/docs/audits/20251014_zenith.pdf",
       "auditor": "Zenith",
@@ -98,13 +281,26 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 21306,
+          "report_url": "https://github.com/ventuals/ventuals-contracts/blob/main/docs/audits/20251014_zenith.pdf"
+        },
+        {
+          "audit_id": 21307,
+          "report_url": "https://raw.githubusercontent.com/ventuals/ventuals-contracts/main/docs/audits/20251014_zenith.pdf"
+        }
+      ]
     }
   ],
   "auditor_coverage": [],
@@ -112,23 +308,21 @@
   "origin_summary": {
     "native": 0,
     "upstream": 0,
-    "standard_library": 0,
+    "standard_library": 4,
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 7
-    },
+    "match_method_counts": {},
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 1803,
+        "audit_id": 21304,
         "report_name": "20251008_nethermind.pdf"
       },
       {
-        "audit_id": 1804,
+        "audit_id": 21306,
         "report_name": "20251014_zenith.pdf"
       }
     ],

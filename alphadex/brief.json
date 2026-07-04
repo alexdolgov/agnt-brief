@@ -1,0 +1,486 @@
+{
+  "schema_version": "2.0",
+  "project_key": "alphadex",
+  "generated_at": "2026-07-04T14:53:00.572Z",
+  "pipeline_run_id": "v2-2026-07-04-db4eb6",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
+  "summary": {
+    "total_contracts": 7,
+    "total_addresses": 7,
+    "unique_implementations": 7,
+    "total_deployments": 7,
+    "audited_contracts": 0,
+    "unaudited_contracts": 7,
+    "contracts_verified_audited": 0,
+    "contracts_verified_unaudited": 7,
+    "contracts_verified_by_bytecode": 0,
+    "contracts_unverified": 0,
+    "coverage_pct": 0,
+    "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
+    "scoreable_audits": 0,
+    "dl_tvl_usd": 141389.78887,
+    "tvl_usd": 141389.78887,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
+    "website_url": null,
+    "chains": [
+      "moonriver"
+    ],
+    "tier1_coverage_pct": 0,
+    "tier1_auditors": [],
+    "latest_audit_date": "2022-06",
+    "audit_freshness": "stale",
+    "staleness_breakdown": {
+      "fresh": 0,
+      "aging": 0,
+      "stale": 1,
+      "unknown": 0
+    },
+    "live_implementations": 7,
+    "live_verified_implementations": 7,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
+    }
+  },
+  "topography": {
+    "project_purpose": "Dexs. Structurally: 7 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens, 1 ERC721 NFT; role-gated via AccessControl; built on openzeppelin.",
+    "relationship_narrative": "The protocol forms a single structural family (Core Logic) of 7 contract(s).",
+    "product_family_count": 1,
+    "total_contracts_indexed": 7,
+    "live_contracts": 7,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
+  },
+  "surface_sufficiency": {
+    "unique_implementations": 7,
+    "has_non_token_contracts": false,
+    "is_skeletal": false
+  },
+  "fork_lineage": {
+    "entries": [],
+    "inherited_audit_count": 0
+  },
+  "contracts": [
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x8e7cd893d8f371051a39aa65976bca22d7b02a60",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AlphaDEX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "AlphaDEX",
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x8e7cd893d8f371051a39aa65976bca22d7b02a60",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-18 13:58:36+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0xd9341fd84affa37af97747c08b9404ef30157dd0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LaunchpadFactory",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LaunchpadFactory",
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0xd9341fd84affa37af97747c08b9404ef30157dd0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-14 15:10:36+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x29a31b6e45cf5133c0483496471226a6d22ed820",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LPStaking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LPStaking",
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x29a31b6e45cf5133c0483496471226a6d22ed820",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-02 16:17:00+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x55a616ac51d8bbe8a50c951acd5e941285384f5c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MasterChef",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "MasterChef",
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x55a616ac51d8bbe8a50c951acd5e941285384f5c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-14 15:04:24+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0xaa6535409e076f203e0f431c518b998d85266b5b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "RewardNft",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RewardNft",
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0xaa6535409e076f203e0f431c518b998d85266b5b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-27 15:51:42+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x4829b57f0160427f768a5c0aa23cd3d33c7ab833",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Roar",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Roar",
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x4829b57f0160427f768a5c0aa23cd3d33c7ab833",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-14 14:47:54+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x70f0bf009d24f2628762cb1e079a9d720e873236",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "RoarStaking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "RoarStaking",
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x70f0bf009d24f2628762cb1e079a9d720e873236",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-02 16:30:48+03",
+      "deploy_coverage_basis": null
+    }
+  ],
+  "audits": [
+    {
+      "audit_id": 21370,
+      "audit_key": "audit-21370",
+      "report_name": "AlphaDex-Smart-Contract-Security-Report-16.6.22.pdf",
+      "report_url": "https://web.archive.org/web/20220704153703/https://www.rdauditors.com/wp-content/uploads/2022/06/AlphaDex-Smart-Contract-Security-Report-16.6.22.pdf",
+      "auditor": "RD Auditors",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-06",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 21370,
+          "report_url": "https://web.archive.org/web/20220704153703/https://www.rdauditors.com/wp-content/uploads/2022/06/AlphaDex-Smart-Contract-Security-Report-16.6.22.pdf"
+        },
+        {
+          "audit_id": 21371,
+          "report_url": "https://www.rdauditors.com/wp-content/uploads/2022/06/AlphaDex-Smart-Contract-Security-Report-16.6.22.pdf"
+        },
+        {
+          "audit_id": 23926,
+          "report_url": "https://rdauditors.com/wp-content/uploads/2022/06/AlphaDex-Smart-Contract-Security-Report-16.6.22.pdf"
+        }
+      ]
+    }
+  ],
+  "auditor_coverage": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x8e7cd893d8f371051a39aa65976bca22d7b02a60",
+      "name": "AlphaDEX",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0xd9341fd84affa37af97747c08b9404ef30157dd0",
+      "name": "LaunchpadFactory",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x29a31b6e45cf5133c0483496471226a6d22ed820",
+      "name": "LPStaking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x55a616ac51d8bbe8a50c951acd5e941285384f5c",
+      "name": "MasterChef",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0xaa6535409e076f203e0f431c518b998d85266b5b",
+      "name": "RewardNft",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x4829b57f0160427f768a5c0aa23cd3d33c7ab833",
+      "name": "Roar",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x70f0bf009d24f2628762cb1e079a9d720e873236",
+      "name": "RoarStaking",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
+  "origin_summary": {
+    "native": 7,
+    "upstream": 0,
+    "standard_library": 0,
+    "needs_review": 0
+  },
+  "scope_matching_notes": {
+    "match_method_counts": {},
+    "extraction_confidence_counts": {},
+    "audits_with_repo_references": [],
+    "audits_with_not_audit": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 21370,
+        "report_name": "AlphaDex-Smart-Contract-Security-Report-16.6.22.pdf"
+      }
+    ],
+    "inherited_remapped_matches": []
+  },
+  "active_bug_bounty": null
+}

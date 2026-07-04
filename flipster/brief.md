@@ -4,23 +4,23 @@
 
 - Project: Flipster (`flipster`)
 - Website: [https://flipster.io](https://flipster.io)
-- Lifecycle: active (Tier 0, 85.7% below peak)
-- Generated: 2026-06-17T18:53:20.295Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:16.371Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-2d9c
 - Chains: klaytn
-- Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $33,006,244.36
+- Contract surface: 1 unique implementations (2 raw deployments)
+- DeFi Llama TVL: $33,034,127.57
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Flipster is a centralized cryptocurrency exchange and perpetual futures trading platform offering digital asset trading services such as spot trading, perpetuals, copy trading, earn/rewards programs, and proof-of-reserves related services. The two listed Klaytn/Kaia addresses are only the DB-known smart-contract surface and are skeletal/non-representative of the full Flipster exchange, reserve wallet, and off-chain system footprint; they should not be interpreted as securing the project-wide CEX reserve TVL.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
@@ -32,17 +32,20 @@ Flipster is a centralized cryptocurrency exchange and perpetual futures trading 
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 2
-- Unique implementations: 2
+- Unverified implementations: 1
+- Unique implementations: 1
 - Raw deployments: 2
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -71,14 +74,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (2)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | klaytn | n/a | `0x61e57f...737682` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x987753...93e698` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | 2 deployments: klaytn `0x61e57f...737682`; klaytn `0x987753...93e698` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -98,7 +100,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 2 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

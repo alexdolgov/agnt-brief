@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "cyborgswap",
-  "generated_at": "2026-06-20T01:10:31.351Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "cyborgswap",
-    "tier": 0,
-    "peak_tvl": 8957801,
-    "peak_date": "2022-03-13T00:00:00.000Z",
-    "tvl_30d_ago": 23529,
-    "tvl_90d_ago": 24235,
-    "tvl_current": 21543,
-    "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 27930,
-    "change_30d_pct": -8.440647711334949,
-    "change_90d_pct": -11.107901794924697,
-    "days_since_peak": 1560,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 99.75950570904622
-  },
+  "generated_at": "2026-07-04T14:53:10.703Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-1bf2",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 7,
+    "total_contracts": 1,
     "total_addresses": 7,
-    "unique_implementations": 7,
+    "unique_implementations": 1,
     "total_deployments": 7,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 7,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 2,
+    "direct_audits": 2,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 28419.019360000002,
-    "tvl_usd": 28419.019360000002,
+    "dl_tvl_usd": 26937.98322,
+    "tvl_usd": 26937.98322,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,12 +39,21 @@
       "aging": 0,
       "stale": 1,
       "unknown": 1
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "CyborgSwap is a decentralized exchange (DEX) on Cronos that enables users to swap tokens, provide liquidity, and earn fees. It appears to be a fork or adaptation of ChronoSwap, offering automated market-making (AMM) functionality.",
-    "relationship_narrative": "All contracts belong to a single product family with no explicit separation of core and supporting roles; they likely represent the factory, router, and pair contracts typical of a Uniswap-v2 style DEX, sharing a common infrastructure for liquidity pools and swaps.",
-    "product_family_count": 1,
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": 0,
     "total_contracts_indexed": 7,
     "live_contracts": 0,
     "inactive_contracts": 0,
@@ -72,9 +67,9 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 7,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
-    "is_skeletal": false
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -91,11 +86,11 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "CyborgSwap",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "UnnamedContract",
       "deployments": [
         {
           "chain_id": 25,
@@ -107,31 +102,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 25,
-      "chain_name": "cronos",
-      "address": "0x3790f3a1cf8a478042ec112a70881dcfa9c7fd2a",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "CyborgSwap",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 25,
           "chain_name": "cronos",
@@ -142,31 +113,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 25,
-      "chain_name": "cronos",
-      "address": "0x4bbce14d69f9fea118992f1944c084753f1b0bf9",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "CyborgSwap",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 25,
           "chain_name": "cronos",
@@ -177,31 +124,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 25,
-      "chain_name": "cronos",
-      "address": "0x6c50ee65cfcfc59b09c570e55d76daa7c67d6da5",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "CyborgSwap",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 25,
           "chain_name": "cronos",
@@ -212,31 +135,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 25,
-      "chain_name": "cronos",
-      "address": "0x9b76213969885044fef03afcc08d3f4039768f7e",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "CyborgSwap",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 25,
           "chain_name": "cronos",
@@ -247,31 +146,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 25,
-      "chain_name": "cronos",
-      "address": "0xa46d5775c18837e380efb3d8bf9d315bcd028ab1",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "CyborgSwap",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 25,
           "chain_name": "cronos",
@@ -282,31 +157,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 25,
-      "chain_name": "cronos",
-      "address": "0xabad73be9fd441731adb007adb6c1b03e730a8e0",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "CyborgSwap",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 25,
           "chain_name": "cronos",
@@ -324,14 +175,18 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 12965,
       "audit_key": "audit-12965",
-      "report_name": "DL audit link",
+      "report_name": "skynet.certik.com/projects/chronoswap",
       "report_url": "https://skynet.certik.com/projects/chronoswap",
       "auditor": "CertiK",
       "audit_type": "audit",
@@ -341,6 +196,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -362,6 +220,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -377,7 +238,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 7
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -387,7 +248,7 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 12965,
-        "report_name": "DL audit link"
+        "report_name": "skynet.certik.com/projects/chronoswap"
       },
       {
         "audit_id": 12966,

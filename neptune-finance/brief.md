@@ -4,12 +4,12 @@
 
 - Project: Neptune Finance (`neptune-finance`)
 - Website: [https://nept.finance/](https://nept.finance/)
-- Lifecycle: active (Tier 0, 84.1% below peak)
-- Generated: 2026-06-17T16:35:59.935Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:38.633Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: ethereum
 - Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $5,929,052.27
+- DeFi Llama TVL: $4,690,867.98
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -32,17 +32,20 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
+- Coverage of deployed-live implementations: 0/2 (0.0%)
+- Deployed-live implementations: 2 of 2 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/2
 - Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 2
 - Raw deployments: 2
-- Audits discovered: 3
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-12 (aging)
-- Staleness: 0 fresh, 1 aging, 2 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 1 aging, 2 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -84,7 +87,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Audit Report (also discovered via alternate URL)](https://github.com/oak-security/audit-reports/blob/main/Neptune/2024-01-09%20Audit%20Report%20-%20Neptune%20Updates%20v1.0.pdf) | Oak Security | Audit | 2024-01 | stale | Direct | n/a | 0 | n/a |
+| [2024-01-09 Audit Report - Neptune Updates v1.0.pdf](https://github.com/oak-security/audit-reports/blob/main/Neptune/2024-01-09%20Audit%20Report%20-%20Neptune%20Updates%20v1.0.pdf) | Oak Security | Audit | 2024-01 | stale | Direct | n/a | 0 | n/a |
 | [2023-04-09 Audit Report - Neptune Protocol v1.0.pdf](https://github.com/oak-security/audit-reports/blob/main/Neptune/2023-04-09%20Audit%20Report%20-%20Neptune%20Protocol%20v1.0.pdf) | unknown | Audit | 2023-04 | stale | Direct | n/a | 0 | n/a |
 | [2024-12-23 Audit Report - Neptune Updates 2 v1.1.pdf](https://github.com/oak-security/audit-reports/blob/main/Neptune/2024-12-23%20Audit%20Report%20-%20Neptune%20Updates%202%20v1.1.pdf) | unknown | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
 
@@ -92,14 +95,17 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0xdac17f...831ec7`](./contracts/ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | TetherToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc02aaa...756cc2`](./contracts/ethereum-1/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/) | WETH9 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
-| upstream | 2 |
+| native | 2 |
+| upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |
 
@@ -114,7 +120,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [2394] Audit Report
+- [2394] 2024-01-09 Audit Report - Neptune Updates v1.0.pdf
 - [2395] 2023-04-09 Audit Report - Neptune Protocol v1.0.pdf
 - [2396] 2024-12-23 Audit Report - Neptune Updates 2 v1.1.pdf
 

@@ -1,52 +1,36 @@
 {
   "schema_version": "2.0",
   "project_key": "suzaku",
-  "generated_at": "2026-06-17T07:00:46.146Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "suzaku",
-    "tier": 0,
-    "peak_tvl": 10318227,
-    "peak_date": "2025-09-19T00:00:00.000Z",
-    "tvl_30d_ago": 1230254,
-    "tvl_90d_ago": 1398718,
-    "tvl_current": 1227060,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 3901193,
-    "change_30d_pct": -0.2596211839181177,
-    "change_90d_pct": -12.272523839687485,
-    "days_since_peak": 248,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 88.1078406202926
-  },
+  "generated_at": "2026-07-04T14:53:59.151Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-43c7",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 49,
-    "total_addresses": 95,
-    "unique_implementations": 49,
-    "total_deployments": 95,
+    "total_contracts": 52,
+    "total_addresses": 102,
+    "unique_implementations": 52,
+    "total_deployments": 102,
     "audited_contracts": 2,
-    "unaudited_contracts": 19,
+    "unaudited_contracts": 23,
     "contracts_verified_audited": 2,
-    "contracts_verified_unaudited": 19,
+    "contracts_verified_unaudited": 23,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 28,
-    "coverage_pct": 9.5,
+    "contracts_unverified": 27,
+    "coverage_pct": 8.3,
     "total_audits": 2,
+    "direct_audits": 2,
+    "inherited_audits": 0,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 1077074.96116,
-    "tvl_usd": 1179921.48151766,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "avalanche": 1179921.48
-    },
-    "asd_usd": 1179921.48151766,
+    "dl_tvl_usd": 1010414.74711,
+    "tvl_usd": 1010414.74711,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://www.suzaku.network/",
     "chains": [
       "avalanche"
     ],
-    "tier1_coverage_pct": 9.5,
+    "tier1_coverage_pct": 8.3,
     "tier1_auditors": [
       "ChainSecurity"
     ],
@@ -57,26 +41,35 @@
       "aging": 0,
       "stale": 2,
       "unknown": 0
+    },
+    "live_implementations": 25,
+    "live_verified_implementations": 24,
+    "live_audited_implementations": 2,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 2
     }
   },
   "topography": {
-    "project_purpose": "Suzaku is an Avalanche L1 and sovereign-network decentralization and (re)staking hub that connects builders, stakers, and operators.",
-    "relationship_narrative": "The SuzakuToken is the core liquid staking token, while LSTWrapper handles wrapping of staked assets. RewardsNativeToken distributes native token rewards, and BalancerValidatorManager manages validator operations, all supporting the restaking infrastructure.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 105,
-    "live_contracts": 93,
-    "inactive_contracts": 0,
-    "singleton_contracts": 10,
+    "project_purpose": "Restaking. Structurally: 25 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 4 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 6 functional families. Its contracts share 12 common project-authored base contract(s) (erc20upgradeable, contextupgradeable, reentrancyguardupgradeable). Dominant framework: openzeppelin.",
+    "product_family_count": 6,
+    "total_contracts_indexed": 103,
+    "live_contracts": 74,
+    "inactive_contracts": 2,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 2,
-    "deployment_units": 6,
-    "live_deployment_units": 1,
-    "dependencies_extracted": 8,
-    "unverified_dependencies": 1,
+    "unknown_contracts": 27,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 49,
+    "unique_implementations": 52,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -88,50 +81,15 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
-      "address": "0x451532f1c9eb7e4dc2d493db52b682c0acf6f5ef",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "SuzakuToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Suzaku",
-      "tvl_usd": 1179711.617588217,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "SuzakuToken",
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x451532f1c9eb7e4dc2d493db52b682c0acf6f5ef",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1179711.617588217,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
       "address": "0x9ee7478ddf586d19bd946bc4ad7f523a4bf995de",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "AlgebraPool",
       "role": "core_logic",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 209.8639294429849,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "AlgebraPool",
@@ -144,7 +102,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 209.8639294429849,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -153,7 +111,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-28 18:14:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -265,18 +227,22 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-29 15:54:43+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
       "address": "0xcff0fc701ef47d6217fdf9def903990b7afa8ac7",
-      "deployment_unit": "unit-27644",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "BalancerValidatorManager",
       "role": "governance",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "upstream",
+      "origin_provider": "Balancer",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -287,8 +253,8 @@
           "chain_id": 43114,
           "chain_name": "avalanche",
           "address": "0xcff0fc701ef47d6217fdf9def903990b7afa8ac7",
-          "deployment_unit": "unit-27644",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -300,7 +266,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2026-01-28 13:28:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -357,7 +327,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-07 07:09:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -395,7 +369,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -406,7 +380,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -417,7 +391,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -428,7 +402,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -439,7 +413,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -450,7 +424,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 43114,
@@ -461,7 +435,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -471,7 +445,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-21 14:31:36+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 43114,
@@ -483,7 +461,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Suzaku",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -508,7 +486,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-09-30 12:18:22+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 43114,
@@ -543,7 +525,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-07 17:31:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -578,7 +564,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-07 17:31:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -624,7 +614,61 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-21 16:00:02+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x119c46aea0ce94603719c2dd4077a5716b16b68c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LSTWrapper",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xa1c16af728c7e897ddbdc15ea34b34c222438c7e",
+      "impl_name": "LSTWrapper",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x119c46aea0ce94603719c2dd4077a5716b16b68c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xa1c16af728c7e897ddbdc15ea34b34c222438c7e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-20 18:41:07+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -670,7 +714,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-20 20:03:31+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -813,6 +861,17 @@
           "chain_id": 43114,
           "chain_name": "avalanche",
           "address": "0x7e844ef5d0dc7ab538ef5fe2e5be62c337fadb0d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x81a170d95adad2f314f12189e8348d26a6b38b52",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -969,7 +1028,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-29 15:59:22+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1004,7 +1067,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-07 17:31:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1039,7 +1106,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-07 17:31:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1074,7 +1145,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-07 17:31:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1109,7 +1184,111 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 13:28:47+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x0f388c7c6201014ad836400e9e2ebd211bdbcb00",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "RewardsNativeToken",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x430e1e8324b0a271aa0164cecb8b5f86d1d1d077",
+      "impl_name": "RewardsNativeToken",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x0f388c7c6201014ad836400e9e2ebd211bdbcb00",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x430e1e8324b0a271aa0164cecb8b5f86d1d1d077",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-11 13:44:02+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x3d03302456d9d9f1a6760898e4d25128425d6d32",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "RewardsNativeToken",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x3d03302456d9d9f1a6760898e4d25128425d6d32",
+      "impl_name": "RewardsNativeToken",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x3d03302456d9d9f1a6760898e4d25128425d6d32",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xff5d885e58ba4845ace17a3124d4e8a7639efdd4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-11 13:39:10+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1144,7 +1323,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-07 17:31:15+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x451532f1c9eb7e4dc2d493db52b682c0acf6f5ef",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SuzakuToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SuzakuToken",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x451532f1c9eb7e4dc2d493db52b682c0acf6f5ef",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-29 16:51:05+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1154,7 +1376,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1179,7 +1401,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 18:09:45+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1189,7 +1415,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1214,7 +1440,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 18:08:54+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1224,7 +1454,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1249,7 +1479,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-29 15:59:22+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1259,7 +1493,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1284,7 +1518,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 18:19:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1294,7 +1532,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1319,7 +1557,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 20:43:21+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1329,7 +1571,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1354,7 +1596,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 20:25:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1364,7 +1610,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1389,7 +1635,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 20:16:16+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1399,7 +1649,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1424,7 +1674,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 17:36:22+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1434,7 +1688,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1459,7 +1713,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 17:12:13+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1469,7 +1727,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1494,42 +1752,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x81a170d95adad2f314f12189e8348d26a6b38b52",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x81a170d95adad2f314f12189e8348d26a6b38b52",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 18:22:12+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1539,7 +1766,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1564,7 +1791,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 16:38:12+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1574,7 +1805,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1599,7 +1830,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 19:01:24+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1609,7 +1844,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1634,7 +1869,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 19:23:51+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1644,7 +1883,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1669,7 +1908,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 18:19:29+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1679,7 +1922,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1704,7 +1947,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 18:32:36+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1714,7 +1961,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1739,7 +1986,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 20:35:18+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1749,7 +2000,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1774,7 +2025,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 16:45:08+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1784,7 +2039,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1809,7 +2064,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 20:34:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1819,7 +2078,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1844,7 +2103,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 18:03:20+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1854,7 +2117,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1879,7 +2142,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 13:40:50+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1914,7 +2181,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 20:39:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1949,7 +2220,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 20:38:03+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -1984,7 +2259,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 18:20:22+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -2019,7 +2298,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 20:26:57+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -2054,7 +2337,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 16:15:06+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -2089,7 +2376,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 20:18:18+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -2099,7 +2390,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2124,7 +2415,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-28 20:29:38+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -2170,7 +2465,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-11 13:44:02+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -2205,7 +2504,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-07 17:31:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -2262,7 +2565,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-20 20:05:25+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xce634fa642d482be2f60d1bed91414aae6e2f8ed",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "VaultTokenized",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "VaultTokenized",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xce634fa642d482be2f60d1bed91414aae6e2f8ed",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-08 16:06:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -2308,7 +2654,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-14 17:50:04+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -2325,17 +2675,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "DefaultCollateral",
-        "DefaultCollateralFactory",
-        "Factory",
-        "Permit2Lib"
-      ],
-      "matched_contracts": 9,
+      "extracted_names": [],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -2351,6 +2699,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2365,7 +2716,7 @@
       "auditor": "ChainSecurity",
       "tier": 1,
       "contracts_covered": 2,
-      "coverage_pct": 9.5,
+      "coverage_pct": 8,
       "latest_audit": "2024-05"
     }
   ],
@@ -2373,12 +2724,12 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
-      "address": "0x451532f1c9eb7e4dc2d493db52b682c0acf6f5ef",
-      "name": "SuzakuToken",
-      "role": "token",
+      "address": "0x9ee7478ddf586d19bd946bc4ad7f523a4bf995de",
+      "name": "AlgebraPool",
+      "role": "core_logic",
       "origin_kind": "native",
-      "tvl_usd": 1179711.617588217,
-      "risk_note": "Verified native implementation with $1,179,711.62 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 43114,
@@ -2425,6 +2776,16 @@
       "chain_name": "avalanche",
       "address": "0x8264147715e6da0900c11143c6e5879aa6598096",
       "name": "L1RestakeDelegator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x119c46aea0ce94603719c2dd4077a5716b16b68c",
+      "name": "LSTWrapper",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -2493,9 +2854,39 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
+      "address": "0x0f388c7c6201014ad836400e9e2ebd211bdbcb00",
+      "name": "RewardsNativeToken",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x3d03302456d9d9f1a6760898e4d25128425d6d32",
+      "name": "RewardsNativeToken",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
       "address": "0x2eb000900452bcf56f607480f4872c07d45f4415",
       "name": "SlasherFactory",
       "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x451532f1c9eb7e4dc2d493db52b682c0acf6f5ef",
+      "name": "SuzakuToken",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -2533,6 +2924,16 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
+      "address": "0xce634fa642d482be2f60d1bed91414aae6e2f8ed",
+      "name": "VaultTokenized",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
       "address": "0x42de24a11f50e66b755056c3daa832c5cbfc1aa0",
       "name": "VestingWallet",
       "role": "operational_periphery",
@@ -2542,18 +2943,16 @@
     }
   ],
   "origin_summary": {
-    "native": 41,
-    "upstream": 0,
-    "standard_library": 1,
-    "needs_review": 7
+    "native": 24,
+    "upstream": 1,
+    "standard_library": 0,
+    "needs_review": 27
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 9
+      "contract_name": 2
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [

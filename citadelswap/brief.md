@@ -1,50 +1,50 @@
 # Agentic Audit Brief: CitadelSwap
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 13.5% over 90 days
-
 ## Project Overview
 
 - Project: CitadelSwap (`citadelswap`)
-- Lifecycle: declining (Tier 0, 99.7% below peak)
-- Generated: 2026-06-19T19:37:21.646Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:10.281Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-66d5
 - Chains: base
-- Contract surface: 3 unique implementations (3 raw deployments)
-- DeFi Llama TVL: $3,848.69
-- On-chain TVL (included contracts): $347,430.18
-- TVL by chain: Base $347,430.18
+- Contract surface: 5 unique implementations (5 raw deployments)
+- DeFi Llama TVL: $3,768.33
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-CitadelSwap is a decentralized exchange (DEX) protocol on Base that enables users to trade tokens via automated market-making (AMM) pools. It appears to be a Uniswap V2 fork, providing liquidity pools and a native token for governance or incentives.
+Dexs. Structurally: 10 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol consists of a single product family centered around the CitadelToken, which likely serves as the incentive and governance token for the DEX. All 16 contracts are deployed by the same deployer, indicating a unified, self-contained system with no external dependencies.
+The protocol comprises 3 functional families. Contracts are linked by 1 cross-contract reference(s). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 13; live-surface contracts included: 3 (3 live, 0 unknown).
-- Excluded by liveness: 10 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 14; live-surface contracts included: 5 (3 live, 2 unknown).
+- Excluded by liveness: 9 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
-- Detected codebases: uniswap-v2
-- Dependencies extracted: 4; unverified dependencies: 0.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
+- Coverage of deployed-live implementations: 0/3 (0.0%)
+- Deployed-live implementations: 3 of 5 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/3
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 3
-- Raw deployments: 3
-- Audits discovered: 1
+- Unverified implementations: 2
+- Unique implementations: 5
+- Raw deployments: 5
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $347,430.18
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-10 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $347,430.18 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -60,9 +60,9 @@ The protocol consists of a single product family centered around the CitadelToke
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CitadelToken | token | base | n/a | [`0x723306...8d0898`](./contracts/base-8453/0x7233062d88133b5402d39d62bfa23a1b6c8d0898/) | ⚠️ Unaudited |
 | CitadelMaster | unknown | base | n/a | [`0x75776c...f85237`](./contracts/base-8453/0x75776c547d312eba17c9461fd5c10ba6c2f85237/) | ⚠️ Unaudited |
 | CitadelRouter | adapter | base | n/a | [`0x112f3f...3e4234`](./contracts/base-8453/0x112f3f5ce89a46b9d7e18131e8e7cdde313e4234/) | ⚠️ Unaudited |
+| CitadelToken | token | base | n/a | [`0x723306...8d0898`](./contracts/base-8453/0x7233062d88133b5402d39d62bfa23a1b6c8d0898/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -76,11 +76,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | base | n/a | `0x4076f3...9b27fb` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xdf3700...4d088f` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -94,9 +97,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| base | [`0x723306...8d0898`](./contracts/base-8453/0x7233062d88133b5402d39d62bfa23a1b6c8d0898/) | CitadelToken | token | $347,430.18 | Verified native implementation with $347,430.18 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x75776c...f85237`](./contracts/base-8453/0x75776c547d312eba17c9461fd5c10ba6c2f85237/) | CitadelMaster | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x112f3f...3e4234`](./contracts/base-8453/0x112f3f5ce89a46b9d7e18131e8e7cdde313e4234/) | CitadelRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x723306...8d0898`](./contracts/base-8453/0x7233062d88133b5402d39d62bfa23a1b6c8d0898/) | CitadelToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
@@ -105,7 +108,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

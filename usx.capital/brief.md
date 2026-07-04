@@ -1,17 +1,15 @@
 # Agentic Audit Brief: USX.Capital
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 79.5% over 90 days
-
 ## Project Overview
 
 - Project: USX.Capital (`usx.capital`)
 - Website: [https://www.usx.capital/home](https://www.usx.capital/home)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T16:38:42.808Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:54:04.184Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-4c3e
 - Chains: scroll
 - Contract surface: 3 unique implementations (6 raw deployments)
-- DeFi Llama TVL: $763,468.72
+- DeFi Llama TVL: $762,702.53
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -22,11 +20,11 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-USX.Capital is a fully collateralized neodollar/stablecoin wrapper on Scroll. Public materials position USX as private, gasless, spendable in real life, and supporting staking and rewards. Morpho or Blend references should be treated as possible infrastructure dependencies unless directly documented as the user-facing USX protocol flow.
+Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 6; live-surface contracts included: 6 (6 live, 0 unknown).
+- Indexed contracts: 6; live-surface contracts included: 6 (0 live, 6 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
@@ -34,19 +32,21 @@ USX.Capital is a fully collateralized neodollar/stablecoin wrapper on Scroll. Pu
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/3
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 3
 - Raw deployments: 6
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Latest audit: 2026-06 (fresh)
+- Audit staleness (calendar age): 1 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -88,7 +88,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Blend (the yield infrastructure layer used by USX) has undergone 8 independent security audits by leading blockchain security firms. Find their complete audit reports here: <>](https://docs.blend.money/resources/audits) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [docs.blend.money/resources/audits](https://docs.blend.money/resources/audits) | yAudit | Audit | 2026-06 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -101,9 +101,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 0 |
-| upstream | 0 |
+| upstream | 1 |
 | standard_library | 2 |
-| needs_review | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -116,6 +116,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [11712] Blend (the yield infrastructure layer used by USX) has undergone 8 independent security audits by leading blockchain security firms. Find their complete audit reports here: <>
+- [11712] docs.blend.money/resources/audits
 
 Fork inheritance lineage and inherited audits are included when available.

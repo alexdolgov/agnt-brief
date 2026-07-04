@@ -1,25 +1,25 @@
 {
   "schema_version": "2.0",
   "project_key": "bitu-protocol",
-  "generated_at": "2026-06-19T06:13:20.547Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
+  "generated_at": "2026-07-04T14:53:07.525Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-0293",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "bitu-protocol",
     "tier": 0,
     "peak_tvl": 34990023,
     "peak_date": "2025-10-07T00:00:00.000Z",
-    "tvl_30d_ago": 23369026,
-    "tvl_90d_ago": 20728272,
-    "tvl_current": 23093417,
+    "tvl_30d_ago": 22164418,
+    "tvl_90d_ago": 20791001,
+    "tvl_current": 19547798,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 25484241,
-    "change_30d_pct": -1.1793773518844985,
-    "change_90d_pct": 11.410237187161574,
-    "days_since_peak": 227,
+    "tvl_180d_ago": 25932670,
+    "change_30d_pct": -11.805498344238048,
+    "change_90d_pct": -5.979524506780602,
+    "days_since_peak": 267,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 33.99999479851728
+    "drop_from_peak_pct": 44.13322334769543
   },
   "summary": {
     "total_contracts": 3,
@@ -32,8 +32,10 @@
     "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 66.7,
+    "coverage_pct": 100,
     "total_audits": 2,
+    "direct_audits": 2,
+    "inherited_audits": 0,
     "scoreable_audits": 2,
     "dl_tvl_usd": 19547798.50216,
     "tvl_usd": 19547798.50216,
@@ -44,7 +46,7 @@
     "chains": [
       "bsc"
     ],
-    "tier1_coverage_pct": 66.7,
+    "tier1_coverage_pct": 100,
     "tier1_auditors": [
       "SlowMist"
     ],
@@ -55,10 +57,19 @@
       "aging": 0,
       "stale": 2,
       "unknown": 0
+    },
+    "live_implementations": 3,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 2,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 2
     }
   },
   "topography": {
-    "project_purpose": "BitU Protocol is a BNB Chain CeDeFi/CDP stablecoin protocol centered on the yield-embedded BITU stablecoin. It supports whitelisted collateralized minting, sBITU staking and yield features, and ALMM/CeDeFi trading functionality. Collateral should be described in plural unless project documentation or contract configuration confirms a single USDT-only collateral model.",
+    "project_purpose": "Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
     "product_family_count": 2,
     "total_contracts_indexed": 5,
@@ -67,10 +78,10 @@
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 1,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 3,
-    "unverified_dependencies": 2,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
@@ -93,7 +104,7 @@
       "role": "token",
       "origin_kind": "upstream",
       "origin_provider": "pancake-swap",
-      "product_line": "Mint $BITU",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -116,7 +127,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2020-09-04 09:30:28+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -128,7 +143,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mint $BITU",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -154,7 +169,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-25 09:36:22+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -166,7 +185,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Smart Contracts",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -192,14 +211,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-25 10:00:44+03",
+      "deploy_coverage_basis": "match_unverified"
     }
   ],
   "audits": [
     {
       "audit_id": 11487,
       "audit_key": "audit-11487",
-      "report_name": "Rendered PDF capture",
+      "report_name": "spaces/j4FiwL05RDG9vbiK6wKb/uploads/5zJ9iSaosjkSWbY1Alkz/SlowMist Audit Report - BitU527.pdf",
       "report_url": "https://216194945-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fj4FiwL05RDG9vbiK6wKb%2Fuploads%2F5zJ9iSaosjkSWbY1Alkz%2FSlowMist%20Audit%20Report%20-%20BitU527.pdf",
       "auditor": "SlowMist",
       "audit_type": "audit",
@@ -209,27 +232,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BITU",
-        "BITUVault",
-        "BitUMinting",
-        "BitUStaking",
-        "IBITU",
-        "IStakedBITUCooldown",
-        "SingleAdminAccessControl",
-        "StakedBITU"
-      ],
+      "extracted_names": [],
       "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 11488,
       "audit_key": "audit-11488",
-      "report_name": "Rendered PDF capture",
+      "report_name": "spaces/j4FiwL05RDG9vbiK6wKb/uploads/x0qHqp82jMYKIQkLrwRp/BitU_audit_report_2024-05-27.pdf",
       "report_url": "https://216194945-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fj4FiwL05RDG9vbiK6wKb%2Fuploads%2Fx0qHqp82jMYKIQkLrwRp%2FBitU_audit_report_2024-05-27.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -239,19 +256,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BITU.sol",
-        "BITUVault.sol",
-        "BitUMinting.sol",
-        "BitUStaking.sol",
-        "SingleAdminAccessControl.sol",
-        "StakedBITU.sol"
-      ],
+      "extracted_names": [],
       "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -280,11 +293,9 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 6
+      "contract_name": 4
     },
-    "extraction_confidence_counts": {
-      "high": 2
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

@@ -4,12 +4,12 @@
 
 - Project: SpaceFi (`spacefi`)
 - Website: [https://spacefi.io](https://spacefi.io)
-- Lifecycle: active (Tier 0, 86.8% below peak)
-- Generated: 2026-06-17T07:00:49.844Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:58.368Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16bc
 - Chains: scroll, zksync-era
 - Contract surface: 29 unique implementations (29 raw deployments)
-- DeFi Llama TVL: $1,311,602.00
+- DeFi Llama TVL: $826,938.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -23,25 +23,28 @@ The product families represent chain-specific deployments of the same SpaceFi DE
 
 ## Contract Surface Quality
 
-- Indexed contracts: 43; live-surface contracts included: 29 (22 live, 7 unknown).
-- Excluded by liveness: 14 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 29; live-surface contracts included: 29 (0 live, 29 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 29 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 29
 - Unique implementations: 29
 - Raw deployments: 29
-- Audits discovered: 5
+- Audits discovered: 5 (5 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-02 (stale)
-- Staleness: 0 fresh, 0 aging, 5 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 5 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -110,11 +113,11 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [SpaceFi Smart Contract Audit Report - QuillAudits.pdf (also discovered via alternate URL)](https://github.com/Quillhash/QuillAudit_Reports/blob/master/SpaceFi%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf) | unknown | Audit | 2022-06 | stale | Direct | n/a | 0 | n/a |
-| [[Audit Report-5]()](https://scalebit.xyz/reports/zksync-contract-v2-Final-Audit-Report.pdf) | ScaleBit | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
-| [[Audit Report-1](https://github.com/Quillhash/QuillAudit_Reports/blob/master/SpaceFi%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf) | [Audit Report-2]() | [Audit Report-3](https://github.com/Quillhash/QuillAudit_Reports/blob/master/SpaceFi%20Farm%20Smart%20Contract%20Final%20Audit%20Report%20-%20QuillAudits.pdf) | [Audit Report-4](https://github.com/Quillhash/QuillAudit_Reports/blob/master/xEVMToken_by_SpaceFi_Smart_Contract_Audit_Report_QuillAudits.pdf) &#x20;](https://github.com/Quillhash/QuillAudit_smart_contract_audit_Reports/blob/master/SpaceFi%20Swap%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf) | QuillAudits | Audit | 2022-10 | stale | Direct | n/a | 0 | n/a |
-| [[Audit Report-1](https://github.com/Quillhash/QuillAudit_Reports/blob/master/SpaceFi%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf) | [Audit Report-2](https://github.com/Quillhash/QuillAudit_Reports/blob/master/SpaceFi%20Swap%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf) | [Audit Report-3]() | [Audit Report-4](https://github.com/Quillhash/QuillAudit_Reports/blob/master/xEVMToken_by_SpaceFi_Smart_Contract_Audit_Report_QuillAudits.pdf) &#x20;](https://github.com/Quillhash/QuillAudit_smart_contract_audit_Reports/blob/master/SpaceFi%20Farm%20Smart%20Contract%20Final%20Audit%20Report%20-%20QuillAudits.pdf) | QuillAudits | Audit | 2022-10 | stale | Direct | n/a | 0 | n/a |
-| [[Audit Report-1](https://github.com/Quillhash/QuillAudit_Reports/blob/master/SpaceFi%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf) | [Audit Report-2](https://github.com/Quillhash/QuillAudit_Reports/blob/master/SpaceFi%20Swap%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf) | [Audit Report-3](https://github.com/Quillhash/QuillAudit_Reports/blob/master/SpaceFi%20Farm%20Smart%20Contract%20Final%20Audit%20Report%20-%20QuillAudits.pdf) | [Audit Report-4]() &#x20;](https://github.com/Quillhash/QuillAudit_smart_contract_audit_Reports/blob/master/xEVMToken_by_SpaceFi_Smart_Contract_Audit_Report_QuillAudits.pdf) | QuillAudits | Audit | 2023-02 | stale | Direct | n/a | 0 | n/a |
+| [SpaceFi Smart Contract Audit Report - QuillAudits.pdf](https://github.com/Quillhash/QuillAudit_Reports/blob/master/SpaceFi%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf) | unknown | Audit | 2022-06 | stale | Direct | n/a | 0 | n/a |
+| [zksync-contract-v2-Final-Audit-Report.pdf](https://scalebit.xyz/reports/zksync-contract-v2-Final-Audit-Report.pdf) | ScaleBit | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
+| [SpaceFi Swap Smart Contract Audit Report - QuillAudits.pdf](https://github.com/Quillhash/QuillAudit_smart_contract_audit_Reports/blob/master/SpaceFi%20Swap%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf) | QuillAudits | Audit | 2022-10 | stale | Direct | n/a | 0 | n/a |
+| [SpaceFi Farm Smart Contract Final Audit Report - QuillAudits.pdf](https://github.com/Quillhash/QuillAudit_smart_contract_audit_Reports/blob/master/SpaceFi%20Farm%20Smart%20Contract%20Final%20Audit%20Report%20-%20QuillAudits.pdf) | QuillAudits | Audit | 2022-10 | stale | Direct | n/a | 0 | n/a |
+| [xEVMToken_by_SpaceFi_Smart_Contract_Audit_Report_QuillAudits.pdf](https://github.com/Quillhash/QuillAudit_smart_contract_audit_Reports/blob/master/xEVMToken_by_SpaceFi_Smart_Contract_Audit_Report_QuillAudits.pdf) | QuillAudits | Audit | 2023-02 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -143,9 +146,9 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [3049] SpaceFi Smart Contract Audit Report - QuillAudits.pdf
-- [3050] [Audit Report-5]()
-- [3052] [Audit Report-1](https://github.com/Quillhash/QuillAudit_Reports/blob/master/SpaceFi%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf) | [Audit Report-2]() | [Audit Report-3](https://github.com/Quillhash/QuillAudit_Reports/blob/master/SpaceFi%20Farm%20Smart%20Contract%20Final%20Audit%20Report%20-%20QuillAudits.pdf) | [Audit Report-4](https://github.com/Quillhash/QuillAudit_Reports/blob/master/xEVMToken_by_SpaceFi_Smart_Contract_Audit_Report_QuillAudits.pdf) &#x20;
-- [3053] [Audit Report-1](https://github.com/Quillhash/QuillAudit_Reports/blob/master/SpaceFi%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf) | [Audit Report-2](https://github.com/Quillhash/QuillAudit_Reports/blob/master/SpaceFi%20Swap%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf) | [Audit Report-3]() | [Audit Report-4](https://github.com/Quillhash/QuillAudit_Reports/blob/master/xEVMToken_by_SpaceFi_Smart_Contract_Audit_Report_QuillAudits.pdf) &#x20;
-- [3054] [Audit Report-1](https://github.com/Quillhash/QuillAudit_Reports/blob/master/SpaceFi%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf) | [Audit Report-2](https://github.com/Quillhash/QuillAudit_Reports/blob/master/SpaceFi%20Swap%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf) | [Audit Report-3](https://github.com/Quillhash/QuillAudit_Reports/blob/master/SpaceFi%20Farm%20Smart%20Contract%20Final%20Audit%20Report%20-%20QuillAudits.pdf) | [Audit Report-4]() &#x20;
+- [3050] zksync-contract-v2-Final-Audit-Report.pdf
+- [3052] SpaceFi Swap Smart Contract Audit Report - QuillAudits.pdf
+- [3053] SpaceFi Farm Smart Contract Final Audit Report - QuillAudits.pdf
+- [3054] xEVMToken_by_SpaceFi_Smart_Contract_Audit_Report_QuillAudits.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

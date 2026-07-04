@@ -5,26 +5,25 @@
 - Project: BulbaSwap (`bulbaswap`)
 - Website: [https://bulbaswap.io](https://bulbaswap.io)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:01:00.739Z
-- Pipeline run: brief-regen-topo-2026-06-17
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $8,136,543.00
+- Generated: 2026-07-04T14:53:09.951Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-66d5
+- Chains: ethereum
+- Contract surface: 13 unique implementations (13 raw deployments)
+- DeFi Llama TVL: $7,890,800.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 BulbaSwap is a decentralized exchange (DEX) protocol enabling users to swap tokens, provide liquidity, and earn fees. It supports multiple automated market maker (AMM) versions, including V2 and V3, to offer flexible trading and liquidity provision options.
 
+### Architecture
+
+No relationship narrative (skeletal or single-family surface).
+
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Indexed contracts: 13; live-surface contracts included: 13 (0 live, 13 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
@@ -32,17 +31,20 @@ BulbaSwap is a decentralized exchange (DEX) protocol enabling users to swap toke
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 13 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
-- Audits discovered: 0
+- Unverified implementations: 13
+- Unique implementations: 13
+- Raw deployments: 13
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -71,11 +73,25 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (13)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x81606e...e8ae3a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8d2a8b...0efb8b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x90a8a8...4bce5e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa7304d...f6453c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa8da14...223ee2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xacd821...1dbbca` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb78992...acecd6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc312e6...a7bbef` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc6b60e...cbc20a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe0d4c9...5bbfc8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe34f19...244f78` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe87c01...9ee5ef` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xff8578...79cddd` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -95,7 +111,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 13 |
 
 ## Scope Matching Notes
 

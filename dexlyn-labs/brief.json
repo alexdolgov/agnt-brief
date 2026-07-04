@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "dexlyn-labs",
-  "generated_at": "2026-06-13T10:24:13.630Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-13-7547ed-947d",
+  "generated_at": "2026-07-03T21:05:42.857Z",
+  "pipeline_run_id": "brief-restore-2026-07",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -18,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 6,
+    "direct_audits": 6,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 80386.60764,
-    "tvl_usd": 80386.60764,
+    "dl_tvl_usd": 47162.45888,
+    "tvl_usd": 47162.45888,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -29,18 +31,37 @@
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
     "latest_audit_date": "2025-07",
-    "audit_freshness": "fresh",
+    "audit_freshness": "aging",
     "staleness_breakdown": {
-      "fresh": 1,
-      "aging": 2,
+      "fresh": 0,
+      "aging": 3,
       "stale": 0,
       "unknown": 3
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
     "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": null
+    "product_family_count": 0,
+    "total_contracts_indexed": 0,
+    "live_contracts": 0,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
+    "uninitialized_contracts": 0,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 0,
@@ -66,6 +87,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -77,7 +101,7 @@
     {
       "audit_id": 13035,
       "audit_key": "audit-13035",
-      "report_name": "DL audit link",
+      "report_name": "hacken.io/audits/dexlyn",
       "report_url": "https://hacken.io/audits/dexlyn",
       "auditor": "Hacken",
       "audit_type": "audit",
@@ -87,6 +111,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -98,7 +125,7 @@
     {
       "audit_id": 13036,
       "audit_key": "audit-13036",
-      "report_name": "DL audit link",
+      "report_name": "hackenproof.com/audit-programs/dexlyn-sca-dualdefense-audit",
       "report_url": "https://hackenproof.com/audit-programs/dexlyn-sca-dualdefense-audit",
       "auditor": "Hacken",
       "audit_type": "audit",
@@ -108,6 +135,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -119,7 +149,7 @@
     {
       "audit_id": 13037,
       "audit_key": "audit-13037",
-      "report_name": "Hacken",
+      "report_name": "hacken.io/audits/dexlyn/sca-dexlyn-hyperlane-monorepo-dec2024",
       "report_url": "https://hacken.io/audits/dexlyn/sca-dexlyn-hyperlane-monorepo-dec2024",
       "auditor": "Hacken",
       "audit_type": "audit",
@@ -129,6 +159,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -140,16 +173,19 @@
     {
       "audit_id": 13038,
       "audit_key": "audit-13038",
-      "report_name": "View Report",
+      "report_name": "hacken.io/audits/dexlyn/sca-dexlyn-perp-dex-jul2025",
       "report_url": "https://hacken.io/audits/dexlyn/sca-dexlyn-perp-dex-jul2025",
       "auditor": "Hacken",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -161,7 +197,7 @@
     {
       "audit_id": 13039,
       "audit_key": "audit-13039",
-      "report_name": "View Report",
+      "report_name": "hackenproof.com/audit-programs/dexlyn-smart-contract-audit-contest",
       "report_url": "https://hackenproof.com/audit-programs/dexlyn-smart-contract-audit-contest?tab=reports",
       "auditor": "Hacken",
       "audit_type": "audit",
@@ -171,6 +207,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -200,23 +239,23 @@
       },
       {
         "audit_id": 13035,
-        "report_name": "DL audit link"
+        "report_name": "hacken.io/audits/dexlyn"
       },
       {
         "audit_id": 13036,
-        "report_name": "DL audit link"
+        "report_name": "hackenproof.com/audit-programs/dexlyn-sca-dualdefense-audit"
       },
       {
         "audit_id": 13037,
-        "report_name": "Hacken"
+        "report_name": "hacken.io/audits/dexlyn/sca-dexlyn-hyperlane-monorepo-dec2024"
       },
       {
         "audit_id": 13038,
-        "report_name": "View Report"
+        "report_name": "hacken.io/audits/dexlyn/sca-dexlyn-perp-dex-jul2025"
       },
       {
         "audit_id": 13039,
-        "report_name": "View Report"
+        "report_name": "hackenproof.com/audit-programs/dexlyn-smart-contract-audit-contest"
       }
     ],
     "inherited_remapped_matches": []

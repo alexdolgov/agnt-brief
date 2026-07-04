@@ -1,50 +1,50 @@
 # Agentic Audit Brief: JetSwap
 
-⚠️ Lifecycle status: DEAD - TVL dropped 12.3% over 90 days
-
 ## Project Overview
 
 - Project: JetSwap (`jetswap`)
-- Lifecycle: dead (Tier 0, 99.3% below peak)
-- Generated: 2026-06-21T11:47:13.493Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:26.820Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: bsc
-- Contract surface: 32 unique implementations (33 raw deployments)
-- DeFi Llama TVL: $323,092.63
-- On-chain TVL (included contracts): $897,907.08
-- TVL by chain: Bsc $897,907.08
+- Contract surface: 22 unique implementations (39 raw deployments)
+- DeFi Llama TVL: $309,127.67
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-JetSwap is a decentralized exchange (DEX) on BSC that enables users to swap tokens, provide liquidity, and earn rewards. It uses an automated market maker (AMM) model with a factory to create liquidity pools and a native WingsToken for incentives.
+Dexs. Structurally: 54 project-authored contract(s) across 1 chain(s); 22 ERC20 tokens, 1 ERC721 NFT; built on openzeppelin.
 
 ### Architecture
 
-The JetswapFactory creates and manages liquidity pools, while WingsToken serves as the protocol's incentive token. The unnamed supporting contracts likely include pool pair implementations and routers that interact with the factory and token.
+The protocol comprises 4 functional families. Its contracts share 1 common project-authored base contract(s) (contractguard). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 266; live-surface contracts included: 33 (33 live, 0 unknown).
-- Excluded by liveness: 233 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 263; live-surface contracts included: 39 (33 live, 6 unknown).
+- Excluded by liveness: 224 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
-- Detected codebases: uniswap-v2
-- Dependencies extracted: 9; unverified dependencies: 0.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Coverage of deployed-live implementations: 0/16 (0.0%)
+- Deployed-live implementations: 16 of 22 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/16
+- Verified + Unaudited implementations: 16
 - Verified by bytecode match: 0
-- Unverified implementations: 30
-- Unique implementations: 32
-- Raw deployments: 33
-- Audits discovered: 2
+- Unverified implementations: 6
+- Unique implementations: 22
+- Raw deployments: 39
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $897,907.08
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 2 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 2 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $897,907.08 represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -56,12 +56,26 @@ The JetswapFactory creates and manages liquidity pools, while WingsToken serves 
 
 - None
 
-### ⚠️ Verified + Unaudited (2)
+### ⚠️ Verified + Unaudited (16)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| GFORCE | unknown | bsc | n/a | [`0x94babb...1b26ce`](./contracts/bsc-56/0x94babbe728d9411612ee41b20241a6fa251b26ce/) | ⚠️ Unaudited |
+| GFORCEv2 | unknown | bsc | n/a | [`0x5f1363...e64c66`](./contracts/bsc-56/0x5f136383e230f972739fae2e81e7e774afe64c66/) | ⚠️ Unaudited |
+| JetBar | unknown | bsc | n/a | [`0xf64882...4ee3dd`](./contracts/bsc-56/0xf6488205957f0b4497053d6422f49e27944ee3dd/) | ⚠️ Unaudited |
+| JetfuelFortressVault | core_logic | bsc | n/a | [`0x647db6...3e22d2`](./contracts/bsc-56/0x647db6dce3c36ac1a3ba48f0f6b767a6c73e22d2/) | ⚠️ Unaudited |
+| JetfuelVault | core_logic | bsc | n/a | 9 deployments: bsc [`0x184ba4...30b7ba`](./contracts/bsc-56/0x184ba48939c49f54b0aa31f76177eba40130b7ba/); bsc `0x1ae8f4...e722ae`; bsc `0x29c12b...a78433`; bsc `0x414953...6b4f1c`; bsc `0x7c3397...4771f4`; bsc `0xa6d550...4474ff`; bsc `0xc573b7...2169ff`; bsc `0xd13bbd...2fe227`; bsc `0xd1c249...cd3104` | ⚠️ Unaudited |
+| JetfuelVaultDittoBoost | core_logic | bsc | n/a | [`0x3d6d41...73dc20`](./contracts/bsc-56/0x3d6d415be40159f207540f95e398f29a7173dc20/) | ⚠️ Unaudited |
+| JetswapBar | unknown | bsc | n/a | [`0xd07947...d61b47`](./contracts/bsc-56/0xd079475f820bb3a01932083382aed733d3d61b47/) | ⚠️ Unaudited |
+| JetswapRouter | adapter | bsc | n/a | [`0xbe65b8...714800`](./contracts/bsc-56/0xbe65b8f75b9f20f4c522e0067a3887fada714800/) | ⚠️ Unaudited |
+| JetswapVault | core_logic | bsc | n/a | 5 deployments: bsc [`0x465a5e...c826a4`](./contracts/bsc-56/0x465a5e8501bf38898a8aead87f0d864adcc826a4/); bsc `0x755aac...99ae90`; bsc `0xd0b1dc...fa31b5`; bsc `0xed2097...976fb0`; bsc `0xf2f113...17e664` | ⚠️ Unaudited |
+| MasterChef | unknown | bsc | n/a | [`0x63d6ec...b6f9f5`](./contracts/bsc-56/0x63d6ec1cdef04464287e2af710ffef9780b6f9f5/) | ⚠️ Unaudited |
+| SmartChef | unknown | bsc | n/a | 2 deployments: bsc [`0x76fe14...a7d973`](./contracts/bsc-56/0x76fe142b05ff6afbc10b56c7fd8aec3030a7d973/); bsc `0xe7b83b...a54354` | ⚠️ Unaudited |
+| StrategyFortress | core_logic | bsc | n/a | 2 deployments: bsc [`0xdc012e...964e1a`](./contracts/bsc-56/0xdc012ee194179ceb4f5431015148b0da1f964e1a/); bsc `0xe54572...0de789` | ⚠️ Unaudited |
+| StrategyFortressBNB | core_logic | bsc | n/a | [`0x58b8b3...8c506d`](./contracts/bsc-56/0x58b8b3430c70e76a33e91a6c942078b8f88c506d/) | ⚠️ Unaudited |
+| StrategyWingsLP | core_logic | bsc | n/a | 4 deployments: bsc [`0x5d9ebd...707ad8`](./contracts/bsc-56/0x5d9ebde919f6ee1a37263ee9d7bbdc5821707ad8/); bsc `0x70ed48...9d8a30`; bsc `0xa22dbb...f2e0b6`; bsc `0xad74c8...7cbae8` | ⚠️ Unaudited |
+| StrategyWingsSingleVault | core_logic | bsc | n/a | [`0xf150fd...24e06f`](./contracts/bsc-56/0xf150fd19a8f88668099eab23291162124f24e06f/) | ⚠️ Unaudited |
 | WingsToken | token | bsc | n/a | [`0x0487b8...498446`](./contracts/bsc-56/0x0487b824c8261462f88940f97053e65bdb498446/) | ⚠️ Unaudited |
-| JetfuelVault | core_logic | bsc | n/a | 2 deployments: bsc [`0x184ba4...30b7ba`](./contracts/bsc-56/0x184ba48939c49f54b0aa31f76177eba40130b7ba/); bsc `0x1ae8f4...e722ae` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -75,49 +89,25 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (30)
+### ❓ Unverified (6)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | bsc | n/a | `0x29c12b...a78433` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x3d6d41...73dc20` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x414953...6b4f1c` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x465a5e...c826a4` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x58b8b3...8c506d` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x5d9ebd...707ad8` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x5f1363...e64c66` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x63d6ec...b6f9f5` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x647db6...3e22d2` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x70ed48...9d8a30` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x755aac...99ae90` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x76fe14...a7d973` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x7c3397...4771f4` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0x94babb...1b26ce` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xa22dbb...f2e0b6` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xa6d550...4474ff` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xad74c8...7cbae8` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xbe65b8...714800` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xc573b7...2169ff` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xd07947...d61b47` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xd0b1dc...fa31b5` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xd13bbd...2fe227` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xd1c249...cd3104` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xdc012e...964e1a` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe54572...0de789` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xe7b83b...a54354` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xed2097...976fb0` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xf150fd...24e06f` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xf2f113...17e664` | ❓ Unverified |
-| UnnamedContract | unknown | bsc | n/a | `0xf64882...4ee3dd` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x47e2b2...0a6b40` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x6b9040...263aaf` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x733ea2...4ac038` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x813692...2891b8` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x897420...cc4210` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xa1a441...35fd4d` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://jetswap.finance/audit-by-etherauthority.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [DL audit link](https://jetswap.finance/audit-by-hash0x.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [audit-by-etherauthority.pdf](https://jetswap.finance/audit-by-etherauthority.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [audit-by-hash0x.pdf](https://jetswap.finance/audit-by-hash0x.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -125,17 +115,31 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x0487b8...498446`](./contracts/bsc-56/0x0487b824c8261462f88940f97053e65bdb498446/) | WingsToken | token | $884,022.13 | Verified native implementation with $884,022.13 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| bsc | [`0x184ba4...30b7ba`](./contracts/bsc-56/0x184ba48939c49f54b0aa31f76177eba40130b7ba/) | JetfuelVault | core_logic | $13,884.95 | Verified native implementation with $13,884.95 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x94babb...1b26ce`](./contracts/bsc-56/0x94babbe728d9411612ee41b20241a6fa251b26ce/) | GFORCE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x5f1363...e64c66`](./contracts/bsc-56/0x5f136383e230f972739fae2e81e7e774afe64c66/) | GFORCEv2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xf64882...4ee3dd`](./contracts/bsc-56/0xf6488205957f0b4497053d6422f49e27944ee3dd/) | JetBar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x647db6...3e22d2`](./contracts/bsc-56/0x647db6dce3c36ac1a3ba48f0f6b767a6c73e22d2/) | JetfuelFortressVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x184ba4...30b7ba`](./contracts/bsc-56/0x184ba48939c49f54b0aa31f76177eba40130b7ba/) | JetfuelVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x3d6d41...73dc20`](./contracts/bsc-56/0x3d6d415be40159f207540f95e398f29a7173dc20/) | JetfuelVaultDittoBoost | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xd07947...d61b47`](./contracts/bsc-56/0xd079475f820bb3a01932083382aed733d3d61b47/) | JetswapBar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xbe65b8...714800`](./contracts/bsc-56/0xbe65b8f75b9f20f4c522e0067a3887fada714800/) | JetswapRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x465a5e...c826a4`](./contracts/bsc-56/0x465a5e8501bf38898a8aead87f0d864adcc826a4/) | JetswapVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x63d6ec...b6f9f5`](./contracts/bsc-56/0x63d6ec1cdef04464287e2af710ffef9780b6f9f5/) | MasterChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x76fe14...a7d973`](./contracts/bsc-56/0x76fe142b05ff6afbc10b56c7fd8aec3030a7d973/) | SmartChef | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xdc012e...964e1a`](./contracts/bsc-56/0xdc012ee194179ceb4f5431015148b0da1f964e1a/) | StrategyFortress | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x58b8b3...8c506d`](./contracts/bsc-56/0x58b8b3430c70e76a33e91a6c942078b8f88c506d/) | StrategyFortressBNB | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x5d9ebd...707ad8`](./contracts/bsc-56/0x5d9ebde919f6ee1a37263ee9d7bbdc5821707ad8/) | StrategyWingsLP | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xf150fd...24e06f`](./contracts/bsc-56/0xf150fd19a8f88668099eab23291162124f24e06f/) | StrategyWingsSingleVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x0487b8...498446`](./contracts/bsc-56/0x0487b824c8261462f88940f97053e65bdb498446/) | WingsToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 8 |
+| native | 16 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 24 |
+| needs_review | 6 |
 
 ## Scope Matching Notes
 
@@ -148,7 +152,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [13302] DL audit link
-- [13303] DL audit link
+- [13302] audit-by-etherauthority.pdf
+- [13303] audit-by-hash0x.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

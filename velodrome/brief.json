@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "velodrome",
-  "generated_at": "2026-06-18T21:27:41.557Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-a3e5",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "velodrome",
-    "tier": 0,
-    "peak_tvl": 324017466,
-    "peak_date": "2023-03-02T00:00:00.000Z",
-    "tvl_30d_ago": 45978031,
-    "tvl_90d_ago": 37152868,
-    "tvl_current": 37346489,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 51486405,
-    "change_30d_pct": -18.773187568645554,
-    "change_90d_pct": 0.5211468465906858,
-    "days_since_peak": 1181,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 88.47392720489951
-  },
+  "generated_at": "2026-07-04T14:54:09.831Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-4c3e",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 16,
     "total_addresses": 17,
@@ -32,11 +16,13 @@
     "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 75,
+    "coverage_pct": 80,
     "total_audits": 8,
+    "direct_audits": 8,
+    "inherited_audits": 0,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 33863451,
-    "tvl_usd": 33863451,
+    "dl_tvl_usd": 33671001,
+    "tvl_usd": 33671001,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -45,7 +31,7 @@
       "celo",
       "optimism"
     ],
-    "tier1_coverage_pct": 75,
+    "tier1_coverage_pct": 80,
     "tier1_auditors": [
       "Sherlock",
       "Spearbit"
@@ -57,26 +43,32 @@
       "aging": 1,
       "stale": 3,
       "unknown": 3
+    },
+    "live_implementations": 16,
+    "live_verified_implementations": 15,
+    "live_audited_implementations": 12,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 12
     }
   },
   "topography": {
-    "project_purpose": "Velodrome is a decentralized AMM and liquidity hub for the Optimism/Superchain ecosystem, with current deployments beyond only Optimism and Celo. It facilitates token swaps and liquidity provision and uses a ve(3,3) model in which VELO holders can lock tokens to vote on gauge emissions and earn trading fees.",
-    "relationship_narrative": "Velodrome V2 and V3 share the VELO token for governance and emissions, with both versions having their own factory and pool contracts. The Gnosis Safe governs the overall protocol, controlling parameters across both product families.",
-    "product_family_count": 3,
-    "total_contracts_indexed": 121,
+    "project_purpose": "Dexs. Structurally: 55 project-authored contract(s) across 2 chain(s); 4 ERC20 tokens, 3 ERC721 NFTs; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 8 functional families. Its contracts share 14 common project-authored base contract(s) (peripheryimmutablestate, peripheryvalidation, blocktimestamp). Dominant framework: openzeppelin.",
+    "product_family_count": 8,
+    "total_contracts_indexed": 21,
     "live_contracts": 17,
-    "inactive_contracts": 100,
-    "singleton_contracts": 4,
+    "inactive_contracts": 4,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 5,
-    "live_deployment_units": 3,
-    "dependencies_extracted": 17,
-    "unverified_dependencies": 1,
-    "detected_codebases": [
-      "uniswap-v2",
-      "uniswap-v3"
-    ]
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 16,
@@ -98,7 +90,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Velodrome V3",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -123,19 +115,23 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-17 08:28:19+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
       "chain_name": "optimism",
       "address": "0x838352f4e3992187a33a04826273db3992ee2b3f",
-      "deployment_unit": "unit-39139",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "GnosisSafeL2",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
-      "product_line": "Velodrome",
+      "origin_provider": "Gnosis Safe",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0xfb1bffc9d739b8d520daf37df666da4c687191ea",
@@ -145,8 +141,8 @@
           "chain_id": 10,
           "chain_name": "optimism",
           "address": "0x838352f4e3992187a33a04826273db3992ee2b3f",
-          "deployment_unit": "unit-39139",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -158,7 +154,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2023-06-13 19:57:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 10,
@@ -196,7 +196,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-22 03:08:31+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -231,14 +235,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-17 08:30:09+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 10,
       "chain_name": "optimism",
       "address": "0x416b433906b1b72fa758e166e239c43d68dc6f29",
-      "deployment_unit": "unit-39138",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "NonfungiblePositionManager",
       "role": "governance",
       "origin_kind": "native",
@@ -253,8 +261,8 @@
           "chain_id": 10,
           "chain_name": "optimism",
           "address": "0x416b433906b1b72fa758e166e239c43d68dc6f29",
-          "deployment_unit": "unit-39138",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -268,14 +276,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-17 08:28:49+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
       "chain_name": "optimism",
       "address": "0xbb5dfe1380333cee4c2eebd7202c80de2256adf4",
-      "deployment_unit": "unit-39140",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "NonfungiblePositionManager",
       "role": "governance",
       "origin_kind": "native",
@@ -290,8 +302,8 @@
           "chain_id": 10,
           "chain_name": "optimism",
           "address": "0xbb5dfe1380333cee4c2eebd7202c80de2256adf4",
-          "deployment_unit": "unit-39140",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -305,7 +317,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-03-06 04:03:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -340,7 +356,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-17 08:30:17+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 10,
@@ -377,7 +397,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-22 03:07:49+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -415,7 +439,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-22 03:08:23+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -452,7 +480,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-22 03:09:15+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42220,
@@ -487,7 +519,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-04-21 15:04:41+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 10,
@@ -524,7 +560,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-26 12:03:19+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -534,8 +574,8 @@
       "deployment_unit_proxy_count": null,
       "name": "UniversalRouter",
       "role": "adapter",
-      "origin_kind": "upstream",
-      "origin_provider": "Uniswap",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -562,7 +602,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -572,7 +612,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-17 08:55:21+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -584,7 +628,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Velodrome V3",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -609,7 +653,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-22 03:06:09+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -647,7 +695,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-22 03:07:59+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -684,14 +736,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-22 03:07:25+03",
+      "deploy_coverage_basis": "match_unverified"
     }
   ],
   "audits": [
     {
       "audit_id": 3918,
       "audit_key": "audit-3918",
-      "report_name": "Audit",
+      "report_name": "code4rena.com/audits/2022-05-velodrome-finance-contest",
       "report_url": "https://code4rena.com/audits/2022-05-velodrome-finance-contest",
       "auditor": "Code4rena",
       "audit_type": "contest",
@@ -701,6 +757,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -712,7 +771,7 @@
     {
       "audit_id": 3919,
       "audit_key": "audit-3919",
-      "report_name": "Audit",
+      "report_name": "Velodrome-Spearbit-Security-Review.pdf",
       "report_url": "https://raw.githubusercontent.com/spearbit/portfolio/master/pdfs/Velodrome-Spearbit-Security-Review.pdf",
       "auditor": "Spearbit",
       "audit_type": "audit",
@@ -722,40 +781,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AutoCompounder",
-        "AutoCompounderFactory",
-        "BribeVotingReward",
-        "CompoundOptimizer",
-        "EpochGovernor",
-        "FactoryRegistry",
-        "FeesVotingReward",
-        "Gauge",
-        "LockedManagedReward",
-        "Minter",
-        "Pair",
-        "Reward",
-        "RewardsDistributor",
-        "Router",
-        "SinkConverter",
-        "SinkManager",
-        "Velo",
-        "VeloGovernor",
-        "VelodromeTimeLibrary",
-        "Voter",
-        "VotingEscrow"
-      ],
+      "extracted_names": [],
       "matched_contracts": 7,
       "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": false,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 3920,
       "audit_key": "audit-3920",
-      "report_name": "Audit",
+      "report_name": "Velodrome-Spearbit-Security-Review-Nov23.pdf",
       "report_url": "https://raw.githubusercontent.com/spearbit/portfolio/master/pdfs/Velodrome-Spearbit-Security-Review-Nov23.pdf",
       "auditor": "Spearbit",
       "audit_type": "audit",
@@ -765,53 +805,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "CLFactory",
-        "CLGauge",
-        "CLGaugeFactory",
-        "CLPool",
-        "Dispatcher",
-        "ERC721Holder",
-        "GovernorSimple",
-        "GovernorVotesQuorumFraction",
-        "ICLFactory",
-        "ICLGaugeFactory",
-        "ICLPool",
-        "IERC20",
-        "IFeeModule",
-        "IVoter",
-        "Minter",
-        "NonfungiblePositionManager",
-        "PeripheryPayments",
-        "Permit2Payments",
-        "Pool",
-        "PoolAddress",
-        "PoolFactory",
-        "Position",
-        "ReentrancyGuard",
-        "Router",
-        "SafeERC20",
-        "SwapRouter",
-        "TransferHelper",
-        "UniswapV2Library",
-        "UniversalRouter",
-        "V2SwapRouter",
-        "VeloGovernor",
-        "VelodromeTimeLibrary",
-        "VetoGovernor",
-        "VetoGovernorVotesQuorumFraction"
-      ],
-      "matched_contracts": 8,
+      "extracted_names": [],
+      "matched_contracts": 7,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 3921,
       "audit_key": "audit-3921",
-      "report_name": "ChainSecurity Audit",
+      "report_name": "www.chainsecurity.com/security-audit/velodrome-superchain-interoperability",
       "report_url": "https://www.chainsecurity.com/security-audit/velodrome-superchain-interoperability",
       "auditor": "ChainSecurity",
       "audit_type": "audit",
@@ -821,6 +829,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -832,7 +843,7 @@
     {
       "audit_id": 3923,
       "audit_key": "audit-3923",
-      "report_name": "ChainSecurity Slipstream Audit",
+      "report_name": "www.chainsecurity.com/security-audit/velodrome-superchain-slipstream",
       "report_url": "https://www.chainsecurity.com/security-audit/velodrome-superchain-slipstream",
       "auditor": "ChainSecurity",
       "audit_type": "audit",
@@ -842,6 +853,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -853,7 +867,7 @@
     {
       "audit_id": 3924,
       "audit_key": "audit-3924",
-      "report_name": "Sherlock Audit",
+      "report_name": "2024.11.13 - Final - Velodrome.pdf",
       "report_url": "https://raw.githubusercontent.com/sherlock-protocol/sherlock-reports/main/audits/2024.11.13%20-%20Final%20-%20Velodrome.pdf",
       "auditor": "Sherlock",
       "audit_type": "contest",
@@ -863,42 +877,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "CrossChainRegistry",
-        "FeesVotingReward",
-        "ICrosschainERC20",
-        "IHLHandler",
-        "IMailbox",
-        "IVotingEscrow",
-        "IXERC20",
-        "IncentiveVotingReward",
-        "InterchainGasPaymaster",
-        "LeafGauge",
-        "LeafMessageBridge",
-        "RootFeesVotingReward",
-        "RootHLMessageModule",
-        "RootIncentiveVotingReward",
-        "RootMessageBridge",
-        "RootVotingRewardsFactory",
-        "StandardHookMetadata",
-        "TokenBridge",
-        "TypeCasts",
-        "Voter",
-        "XERC20",
-        "XERC20Factory",
-        "XERC20Lockbox"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 15416,
       "audit_key": "audit-15416",
-      "report_name": "Active Bug Bounty Program",
+      "report_name": "immunefi.com/bug-bounty/velodromefinance/information",
       "report_url": "https://immunefi.com/bug-bounty/velodromefinance/information",
       "auditor": "Immunefi",
       "audit_type": "bug_bounty",
@@ -908,6 +901,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -919,7 +915,7 @@
     {
       "audit_id": 15421,
       "audit_key": "audit-15421",
-      "report_name": "ChainSecurity Extended Audit",
+      "report_name": "www.chainsecurity.com/security-audit/superchain-diff",
       "report_url": "https://www.chainsecurity.com/security-audit/superchain-diff",
       "auditor": "ChainSecurity",
       "audit_type": "audit",
@@ -929,6 +925,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -987,37 +986,34 @@
     }
   ],
   "origin_summary": {
-    "native": 14,
-    "upstream": 1,
+    "native": 15,
+    "upstream": 0,
     "standard_library": 1,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 55
+      "contract_name": 15
     },
-    "extraction_confidence_counts": {
-      "high": 2,
-      "medium": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 3918,
-        "report_name": "Audit"
+        "report_name": "code4rena.com/audits/2022-05-velodrome-finance-contest"
       },
       {
         "audit_id": 3921,
-        "report_name": "ChainSecurity Audit"
+        "report_name": "www.chainsecurity.com/security-audit/velodrome-superchain-interoperability"
       },
       {
         "audit_id": 3923,
-        "report_name": "ChainSecurity Slipstream Audit"
+        "report_name": "www.chainsecurity.com/security-audit/velodrome-superchain-slipstream"
       },
       {
         "audit_id": 15421,
-        "report_name": "ChainSecurity Extended Audit"
+        "report_name": "www.chainsecurity.com/security-audit/superchain-diff"
       }
     ],
     "inherited_remapped_matches": []

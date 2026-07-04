@@ -5,26 +5,26 @@
 - Project: Hyperdrive HL (`hyperdrive-hl`)
 - Website: [https://hyperdrive.fi/](https://hyperdrive.fi/)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:57.546Z
-- Pipeline run: brief-regen-topo-2026-06-17
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $2,233,619.00
+- Generated: 2026-07-04T14:53:21.729Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-bd47
+- Chains: ethereum
+- Contract surface: 2 unique implementations (2 raw deployments)
+- DeFi Llama TVL: $2,172,242.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Hyperdrive HL is a DeFi protocol centered on a stablecoin money market with dynamically priced lending and borrowing, including supported leverage functionality. Its product areas include the Money Market, HYPE LST, Liquid HLP, and Earn, which together represent Hyperdrive HL's lending, staking/liquid-staking, liquidity/tokenization, and yield-oriented offerings.
+Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Indexed contracts: 2; live-surface contracts included: 2 (0 live, 2 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
@@ -32,17 +32,20 @@ Hyperdrive HL is a DeFi protocol centered on a stablecoin money market with dyna
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 2 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
-- Audits discovered: 8
+- Unverified implementations: 2
+- Unique implementations: 2
+- Raw deployments: 2
+- Audits discovered: 8 (8 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-08 (fresh)
-- Staleness: 3 fresh, 5 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 1 fresh, 7 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -71,11 +74,14 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x7fb0d6...01f9f6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x86ccfb...c7c1e7` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -87,8 +93,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Apr 2025 - Enigma Dark - Managed_Security_Review_Ambit_Labs_Hyperdrive_LST_Final.pdf](https://github.com/ambitlabsxyz/hyperdrive-audits/blob/main/staking/Apr%202025%20-%20Enigma%20Dark%20-%20Managed_Security_Review_Ambit_Labs_Hyperdrive_LST_Final.pdf) | Enigma Ventures | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
 | [Aug 2025 - Bailsec - Hyperdrive - LST.pdf](https://github.com/ambitlabsxyz/hyperdrive-audits/blob/main/staking/Aug%202025%20-%20Bailsec%20-%20Hyperdrive%20-%20LST.pdf) | Bailsec | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
 | [Bailsec - Hyperdrive - Tokenization - Feb 2025.pdf](https://github.com/ambitlabsxyz/hyperdrive-audits/blob/main/vaults/Bailsec%20-%20Hyperdrive%20-%20Tokenization%20-%20Feb%202025.pdf) | Bailsec | Audit | 2025-02 | aging | Direct | n/a | 0 | n/a |
-| [Bailsec - Hyperdrive - Tokenization - Jul 2025 - 2nd Report.pdf](https://github.com/ambitlabsxyz/hyperdrive-audits/blob/main/vaults/Bailsec%20-%20Hyperdrive%20-%20Tokenization%20-%20Jul%202025%20-%202nd%20Report.pdf) | Bailsec | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [Bailsec - Hyperdrive - Tokenization - Jul 2025.pdf](https://github.com/ambitlabsxyz/hyperdrive-audits/blob/main/vaults/Bailsec%20-%20Hyperdrive%20-%20Tokenization%20-%20Jul%202025.pdf) | Bailsec | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
+| [Bailsec - Hyperdrive - Tokenization - Jul 2025 - 2nd Report.pdf](https://github.com/ambitlabsxyz/hyperdrive-audits/blob/main/vaults/Bailsec%20-%20Hyperdrive%20-%20Tokenization%20-%20Jul%202025%20-%202nd%20Report.pdf) | Bailsec | Audit | 2025-07 | aging | Direct | n/a | 0 | n/a |
+| [Bailsec - Hyperdrive - Tokenization - Jul 2025.pdf](https://github.com/ambitlabsxyz/hyperdrive-audits/blob/main/vaults/Bailsec%20-%20Hyperdrive%20-%20Tokenization%20-%20Jul%202025.pdf) | Bailsec | Audit | 2025-07 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -103,7 +109,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

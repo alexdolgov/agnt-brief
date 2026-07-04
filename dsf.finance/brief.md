@@ -4,44 +4,47 @@
 
 - Project: DSF.Finance (`dsf.finance`)
 - Website: [https://dsf.finance](https://dsf.finance)
-- Lifecycle: active (Tier 0, 74.2% below peak)
-- Generated: 2026-06-21T12:42:46.058Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:11.253Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-2d9c
 - Chains: ethereum
 - Contract surface: 38 unique implementations (91 raw deployments)
-- DeFi Llama TVL: $477,066.01
+- DeFi Llama TVL: $452,052.75
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-DSF.Finance is a yield protocol on Ethereum that allows users to deposit assets and earn returns through automated strategies. The protocol appears to manage vaults or pools that optimize yield generation.
+Yield. Structurally: 38 project-authored contract(s) across 1 chain(s); 4 ERC20 tokens; role-gated via AccessControl; built on openzeppelin.
 
 ### Architecture
 
-The protocol consists of a single product family with two core contracts that likely represent different vaults or pools. No supporting contracts or cross-family relationships are evident from the provided data.
+The protocol comprises 8 functional families. Contracts are linked by 13 cross-contract reference(s). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 93; live-surface contracts included: 91 (6 live, 85 unknown).
-- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 99; live-surface contracts included: 91 (89 live, 2 unknown).
+- Excluded by liveness: 8 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 19/138.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/37 (2.7%)
+- Coverage of deployed-live implementations: 1/36 (2.8%)
+- Deployed-live implementations: 36 of 38 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/37
 - Verified + Unaudited implementations: 36
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 38
 - Raw deployments: 91
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-09 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -123,7 +126,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DSF_security_review.pdf](https://github.com/DSFfinance/DSF_Protocol_Mk1/blob/main/audit/DSF_security_review.pdf) | unknown | Audit | 2023-09 | stale | Direct | contract_name | 3 | medium |
+| [DSF_security_review.pdf](https://github.com/DSFfinance/DSF_Protocol_Mk1/blob/main/audit/DSF_security_review.pdf) | unknown | Audit | 2023-09 | stale | Direct | contract_name | 1 | n/a |
 
 ## Coverage Gaps
 
@@ -159,19 +162,21 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x17d08e...52e6f6`](./contracts/ethereum-1/0x17d08e5fc8d81ac3726b3533d702efe03552e6f6/) | RewardManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0b9d1e...b71257`](./contracts/ethereum-1/0x0b9d1e9ac8d2e407b75222cd132dbfafafb71257/) | RewardManagerMk2 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5f0d24...36adca`](./contracts/ethereum-1/0x5f0d24aeab8b458231566716b2638e840e36adca/) | StaticQuoterV2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2fbe7d...78ba98`](./contracts/ethereum-1/0x2fbe7dc08e4152620c00b89c7969eb80bb78ba98/) | StorageSlot | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x71cbe8...9dd01d`](./contracts/ethereum-1/0x71cbe8edcee5c2fde4b651f9160f6405ff9dd01d/) | SwapAdapterMk3Module | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x0e4b86...e45c2d`](./contracts/ethereum-1/0x0e4b86ef2eb4530b6b1878622dc3e892d1e45c2d/) | SwapAdapterMk4 | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xc3bdf4...2c574c`](./contracts/ethereum-1/0xc3bdf49d229d6c9d6afe1ac11d199b35b02c574c/) | TokenDistribution | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x41f7cb...3ccd8e`](./contracts/ethereum-1/0x41f7cbdff2419af57566f0a34cdf7780163ccd8e/) | TokenPriceOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x07d5c2...e711cd`](./contracts/ethereum-1/0x07d5c219cc9d1ff0903501dd4c7e828196e711cd/) | TwapGuardV3 | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x280582...d12531`](./contracts/ethereum-1/0x28058206aeb39c335ef4efaefcf136d1d7d12531/) | UniversalRouter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 34 |
-| upstream | 2 |
-| standard_library | 1 |
+| native | 36 |
+| upstream | 1 |
+| standard_library | 0 |
 | needs_review | 1 |
 
 ## Scope Matching Notes
@@ -180,7 +185,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: medium=1
-- Match method counts: extraction_exact=3
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=1
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -5,26 +5,26 @@
 - Project: InitiaDEX (`initiadex`)
 - Website: [https://app.initia.xyz/swap](https://app.initia.xyz/swap)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:49.613Z
-- Pipeline run: brief-regen-topo-2026-06-17
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $2,160,984.63
+- Generated: 2026-07-04T14:53:22.061Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-bd47
+- Chains: ethereum
+- Contract surface: 3 unique implementations (3 raw deployments)
+- DeFi Llama TVL: $2,099,536.89
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-InitiaDEX is a decentralized exchange on Initia L1 featuring Balancer-style weighted pools and StableSwap pools for token swaps and liquidity provision.
+Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Indexed contracts: 3; live-surface contracts included: 3 (0 live, 3 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
@@ -32,17 +32,20 @@ InitiaDEX is a decentralized exchange on Initia L1 featuring Balancer-style weig
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
-- Audits discovered: 7
+- Unverified implementations: 3
+- Unique implementations: 3
+- Raw deployments: 3
+- Audits discovered: 7 (7 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 7 unknown
+- Latest audit: 2026-03 (fresh)
+- Audit staleness (calendar age): 1 fresh, 5 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -71,23 +74,27 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x000000...000001` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x000000...0000f1` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0901ae...9ba636` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [chainlight_initia_oct_16_2024.pdf](https://github.com/initia-labs/audits/blob/main/chainlight_initia_oct_16_2024.pdf) | ChainLight | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [code4rena_initia_cosmos_feb_24_2025.pdf](https://github.com/initia-labs/audits/blob/main/code4rena_initia_cosmos_feb_24_2025.pdf) | Code4rena | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
-| [code4rena_initia_movem_jan_24_2025.pdf](https://github.com/initia-labs/audits/blob/main/code4rena_initia_movem_jan_24_2025.pdf) | Code4rena | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
-| [code4rena_initia_rollup_modules_jan_21_2025.pdf](https://github.com/initia-labs/audits/blob/main/code4rena_initia_rollup_modules_jan_21_2025.pdf) | Code4rena | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
-| [iUSD Vault - Zellic Audit Report.pdf](https://github.com/initia-labs/audits/blob/main/iUSD%20Vault%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [ottersec_initia_audit_nov_20_2024.pdf](https://github.com/initia-labs/audits/blob/main/ottersec_initia_audit_nov_20_2024.pdf) | Ottersec | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [zellic_initia_jun_18_2024.pdf](https://github.com/initia-labs/audits/blob/main/zellic_initia_jun_18_2024.pdf) | Zellic | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [chainlight_initia_oct_16_2024.pdf](https://github.com/initia-labs/audits/blob/main/chainlight_initia_oct_16_2024.pdf) | ChainLight | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
+| [code4rena_initia_cosmos_feb_24_2025.pdf](https://github.com/initia-labs/audits/blob/main/code4rena_initia_cosmos_feb_24_2025.pdf) | Code4rena | Contest | 2025-02 | aging | Direct | n/a | 0 | n/a |
+| [code4rena_initia_movem_jan_24_2025.pdf](https://github.com/initia-labs/audits/blob/main/code4rena_initia_movem_jan_24_2025.pdf) | Code4rena | Contest | 2025-01 | aging | Direct | n/a | 0 | n/a |
+| [code4rena_initia_rollup_modules_jan_21_2025.pdf](https://github.com/initia-labs/audits/blob/main/code4rena_initia_rollup_modules_jan_21_2025.pdf) | Code4rena | Contest | 2025-01 | aging | Direct | n/a | 0 | n/a |
+| [iUSD Vault - Zellic Audit Report.pdf](https://github.com/initia-labs/audits/blob/main/iUSD%20Vault%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
+| [ottersec_initia_audit_nov_20_2024.pdf](https://github.com/initia-labs/audits/blob/main/ottersec_initia_audit_nov_20_2024.pdf) | Ottersec | Audit | 2024-11 | aging | Direct | n/a | 0 | n/a |
+| [zellic_initia_jun_18_2024.pdf](https://github.com/initia-labs/audits/blob/main/zellic_initia_jun_18_2024.pdf) | Zellic | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -102,7 +109,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 

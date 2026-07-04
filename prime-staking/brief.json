@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "prime-staking",
-  "generated_at": "2026-06-19T06:14:34.846Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "prime-staking",
-    "tier": 0,
-    "peak_tvl": 13826987,
-    "peak_date": "2025-07-30T00:00:00.000Z",
-    "tvl_30d_ago": 6200434,
-    "tvl_90d_ago": 6115730,
-    "tvl_current": 4647682,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 8533740,
-    "change_30d_pct": -25.042634112386324,
-    "change_90d_pct": -24.00446062857582,
-    "days_since_peak": 297,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 66.38687806678347
-  },
+  "generated_at": "2026-07-04T14:53:44.153Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-66d5",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 6,
-    "total_addresses": 6,
-    "unique_implementations": 6,
-    "total_deployments": 6,
+    "total_contracts": 9,
+    "total_addresses": 9,
+    "unique_implementations": 9,
+    "total_deployments": 9,
     "audited_contracts": 0,
     "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 5,
+    "contracts_unverified": 8,
     "coverage_pct": 0,
     "total_audits": 2,
+    "direct_audits": 2,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2467609.09669,
-    "tvl_usd": 2467609.09669,
+    "dl_tvl_usd": 478348.46722,
+    "tvl_usd": 478348.46722,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,26 +39,35 @@
       "aging": 0,
       "stale": 0,
       "unknown": 1
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Prime Staking is an XDC staking/liquid staking protocol. Its public TVL-bearing product is associated with XDC staking and liquid staking; Base PRFI/ONFT/vesting contracts should be treated only as ancillary or unverified infrastructure unless independently documented as part of the Prime Staking staking system.",
-    "relationship_narrative": "The ONFTDiamond token contract is the primary liquid staking derivative, while PRFI is a related token. The PRFIVestingV2Proxy manages vesting of PRFI tokens, indicating a shared token economy where staking rewards or allocations are distributed through vesting.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 10,
-    "live_contracts": 6,
-    "inactive_contracts": 2,
-    "singleton_contracts": 2,
+    "project_purpose": "Liquid Staking. Structurally: 8 project-authored contract(s) across 1 chain(s); 1 ERC20 token, 1 ERC721 NFT; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 2 functional families. Its contracts share 12 common project-authored base contract(s) (oapp, oappsender, oappcore). Dominant framework: openzeppelin.",
+    "product_family_count": 2,
+    "total_contracts_indexed": 15,
+    "live_contracts": 1,
+    "inactive_contracts": 6,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 2,
+    "unknown_contracts": 8,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 2,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 6,
+    "unique_implementations": 9,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -91,7 +86,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "PRFI (Base Mainnet, chain ID 8453 )",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -114,7 +109,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-25 17:47:43+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x1e8559dc36662ef13c924e0ef65a4c8bbcb97582",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x1e8559dc36662ef13c924e0ef65a4c8bbcb97582",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-25 17:30:17+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -149,7 +187,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-19 03:09:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -184,7 +226,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-19 03:09:01+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -219,7 +265,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-28 20:24:03+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -254,7 +304,89 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-17 19:36:19+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x8da56bed633b73547535f0563f287472e1bc9fa5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x8da56bed633b73547535f0563f287472e1bc9fa5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-01 18:48:45+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0xc7f1716625d999fb8d70b67e47310fe401000c7a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xc7f1716625d999fb8d70b67e47310fe401000c7a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-03 20:50:31+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -289,14 +421,18 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-01 18:48:29+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 2515,
       "audit_key": "audit-2515",
-      "report_name": "Read the full report (PDF)",
+      "report_name": "NM_0843_xdc_prime_stake_FINAL_updated_tests.pdf",
       "report_url": "https://github.com/PrimeNumbersLabs/primestaking-gitbook/blob/main/NM_0843_xdc_prime_stake_FINAL_updated_tests.pdf",
       "auditor": "yAudit",
       "audit_type": "audit",
@@ -306,6 +442,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -317,7 +456,7 @@
     {
       "audit_id": 2516,
       "audit_key": "audit-2516",
-      "report_name": "**XDC Staking Contract (V1 / liquid staking)**",
+      "report_name": "www.quillaudits.com/leaderboard/prime-numbers/prime-numbers-staking-contract",
       "report_url": "https://www.quillaudits.com/leaderboard/prime-numbers/prime-numbers-staking-contract",
       "auditor": "QuillAudits",
       "audit_type": "audit",
@@ -327,6 +466,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -353,7 +495,7 @@
     "native": 1,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 5
+    "needs_review": 8
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -363,11 +505,11 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 2515,
-        "report_name": "Read the full report (PDF)"
+        "report_name": "NM_0843_xdc_prime_stake_FINAL_updated_tests.pdf"
       },
       {
         "audit_id": 2516,
-        "report_name": "**XDC Staking Contract (V1 / liquid staking)**"
+        "report_name": "www.quillaudits.com/leaderboard/prime-numbers/prime-numbers-staking-contract"
       }
     ],
     "inherited_remapped_matches": []

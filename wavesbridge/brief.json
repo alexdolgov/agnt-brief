@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "wavesbridge",
-  "generated_at": "2026-06-19T06:14:53.756Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "wavesbridge",
-    "tier": 0,
-    "peak_tvl": 4973017,
-    "peak_date": "2025-08-23T00:00:00.000Z",
-    "tvl_30d_ago": 1079802,
-    "tvl_90d_ago": 1152950,
-    "tvl_current": 1049431,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 2346508,
-    "change_30d_pct": -2.812645281264528,
-    "change_90d_pct": -8.978620061581163,
-    "days_since_peak": 275,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 78.89749823899656
-  },
+  "generated_at": "2026-07-04T14:54:10.189Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-4c3e",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 6,
     "total_addresses": 7,
@@ -34,14 +18,14 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 353348.73796000006,
-    "tvl_usd": 136632939.38298398,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 136632939.38
-    },
-    "asd_usd": 136632939.38298398,
+    "dl_tvl_usd": 1102614.0328099998,
+    "tvl_usd": 1102614.0328099998,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://wavesbridge.io/",
     "chains": [
       "arbitrum",
@@ -57,15 +41,24 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 6,
+    "live_verified_implementations": 6,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "WavesBridge is a multi-chain token bridge supporting asset transfers across Waves, Ethereum, and other connected networks. The Ethereum contracts tracked in this brief represent only the Ethereum-side contract surface of the broader multi-chain bridge system; token contracts such as Neiro and RealGames should be treated as external or supported assets unless separately verified as core WavesBridge components.",
-    "relationship_narrative": "The Bridge contract serves as the operational core, interacting with token contracts like PepeToken and SimpleToken to manage locked assets. Supporting contracts Neiro and RealGames likely provide auxiliary functions or token instances used within the bridge ecosystem.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 7,
+    "project_purpose": "Bridge. Structurally: 27 project-authored contract(s) across 2 chain(s); 9 ERC20 tokens; role-gated via AccessControl; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 5 functional families. Its contracts share 2 common project-authored base contract(s) (endpoint, typecast). Dominant framework: openzeppelin.",
+    "product_family_count": 5,
+    "total_contracts_indexed": 62,
     "live_contracts": 7,
-    "inactive_contracts": 0,
+    "inactive_contracts": 55,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
@@ -88,41 +81,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x4d224452801aced8b2f0aebe155379bb5d594381",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "SimpleToken",
-      "role": "token",
-      "origin_kind": "upstream",
-      "origin_provider": null,
-      "product_line": "WavesBridge",
-      "tvl_usd": 136632939.38298398,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "SimpleToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x4d224452801aced8b2f0aebe155379bb5d594381",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 136632939.38298398,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x3ac7a6635d99f376c3c05442f7eef62d349c3a55",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -130,7 +88,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "WavesBridge",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -164,7 +122,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-09-03 18:24:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -174,9 +136,9 @@
       "deployment_unit_proxy_count": null,
       "name": "Neiro",
       "role": "unknown",
-      "origin_kind": "upstream",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "WavesBridge",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -199,7 +161,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-28 00:14:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -209,9 +175,9 @@
       "deployment_unit_proxy_count": null,
       "name": "PepeToken",
       "role": "token",
-      "origin_kind": "upstream",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "WavesBridge",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -234,7 +200,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-04-14 17:51:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -269,7 +239,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-12-06 17:19:02+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -279,9 +253,9 @@
       "deployment_unit_proxy_count": null,
       "name": "RealGames",
       "role": "unknown",
-      "origin_kind": "upstream",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "WavesBridge",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -304,7 +278,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-04 20:09:59+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4d224452801aced8b2f0aebe155379bb5d594381",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SimpleToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "SimpleToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4d224452801aced8b2f0aebe155379bb5d594381",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-02-14 16:25:35+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],
@@ -321,6 +338,26 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x812ba41e071c7b7fa4ebcfb62df5f45f6fa853ee",
+      "name": "Neiro",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6982508145454ce325ddbe47a25d4ec3d2311933",
+      "name": "PepeToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0xac8f44ceca92b2a4b30360e5bd3043850a0ffcbe",
@@ -329,11 +366,31 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1a920b0eae5b49c51ebf042a61c3fa58dae04882",
+      "name": "RealGames",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4d224452801aced8b2f0aebe155379bb5d594381",
+      "name": "SimpleToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 2,
-    "upstream": 4,
+    "native": 6,
+    "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },

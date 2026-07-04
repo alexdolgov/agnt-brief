@@ -1,25 +1,25 @@
 {
   "schema_version": "2.0",
   "project_key": "alium-swap",
-  "generated_at": "2026-06-19T23:02:37.118Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "generated_at": "2026-07-04T14:52:59.774Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-f2f0",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "alium-swap",
     "tier": 0,
     "peak_tvl": 354555,
     "peak_date": "2021-11-07T00:00:00.000Z",
-    "tvl_30d_ago": 16059,
-    "tvl_90d_ago": 15617,
-    "tvl_current": 14854,
+    "tvl_30d_ago": 16942,
+    "tvl_90d_ago": 15246,
+    "tvl_current": 14210,
     "tier0_reason": "long_term_collapse_from_peak",
-    "tvl_180d_ago": 19556,
-    "change_30d_pct": -7.503580546733919,
-    "change_90d_pct": -4.885701479157328,
-    "days_since_peak": 1685,
+    "tvl_180d_ago": 19840,
+    "change_30d_pct": -16.12560500531224,
+    "change_90d_pct": -6.7952249770431585,
+    "days_since_peak": 1697,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 95.81052305002045
+    "drop_from_peak_pct": 95.99215918545782
   },
   "summary": {
     "total_contracts": 49,
@@ -34,8 +34,10 @@
     "contracts_unverified": 45,
     "coverage_pct": 50,
     "total_audits": 3,
+    "direct_audits": 3,
+    "inherited_audits": 0,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 15044.56972,
+    "dl_tvl_usd": 14224.31723,
     "tvl_usd": 497493.04056018597,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
@@ -55,25 +57,32 @@
       "aging": 0,
       "stale": 2,
       "unknown": 1
+    },
+    "live_implementations": 4,
+    "live_verified_implementations": 4,
+    "live_audited_implementations": 2,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 2
     }
   },
   "topography": {
-    "project_purpose": "Alium Swap is a decentralized exchange (DEX) on BSC that enables users to swap tokens and provide liquidity. It appears to be a Uniswap V2 fork, as indicated by its registry reference.",
-    "relationship_narrative": "The protocol consists of a single product family centered around the AliumToken contract, which likely serves as the governance or fee token for the DEX. No additional infrastructure contracts are identified in the provided inventory.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 51,
-    "live_contracts": 0,
-    "inactive_contracts": 1,
+    "project_purpose": "Dexs. Structurally: 28 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens, 1 ERC721 NFT, 2 ERC1155 multi-tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 5 functional families. Its contracts share 3 common project-authored base contract(s) (privilegeable, rbac, erc165). Dominant framework: openzeppelin.",
+    "product_family_count": 5,
+    "total_contracts_indexed": 92,
+    "live_contracts": 5,
+    "inactive_contracts": 42,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 50,
+    "unknown_contracts": 45,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 49,
@@ -95,7 +104,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Alium Swap",
+      "product_line": null,
       "tvl_usd": 497493.04056018597,
       "is_proxy": false,
       "impl_address": null,
@@ -118,7 +127,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-05-15 16:42:17+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -156,7 +169,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -166,7 +179,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-11-23 13:07:19+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -203,7 +220,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-11-23 13:37:51+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -238,7 +259,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-17 13:57:30+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -273,7 +298,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-27 14:10:27+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -308,7 +337,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-12-16 12:39:34+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -343,7 +376,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-05-28 16:49:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -378,7 +415,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-07-14 12:06:27+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -413,7 +454,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-01-18 12:23:04+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -448,7 +493,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-01-16 16:16:06+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -483,7 +532,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-12-16 12:39:49+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -518,7 +571,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-12-16 16:51:31+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -553,7 +610,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-07-14 12:06:36+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -588,7 +649,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-02 12:03:58+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -623,7 +688,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-28 19:27:54+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -658,7 +727,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-12-16 16:35:40+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -693,7 +766,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-07-14 12:06:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -728,7 +805,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-06-23 16:40:07+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -763,7 +844,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-27 14:12:21+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -798,7 +883,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-05 11:02:04+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -833,7 +922,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-12-16 12:39:55+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -868,7 +961,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-05-28 18:34:26+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -903,7 +1000,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-05-21 15:00:14+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -938,7 +1039,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-05-19 11:25:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -973,7 +1078,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-10-08 19:43:36+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1008,7 +1117,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-01-18 12:26:16+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1043,7 +1156,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-12-16 12:39:43+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1078,7 +1195,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-28 19:27:33+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1113,7 +1234,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-29 23:57:40+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1148,7 +1273,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-06-28 16:59:34+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1183,7 +1312,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-07-14 17:16:28+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1218,7 +1351,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-19 17:18:10+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1253,7 +1390,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-07-25 13:18:55+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1288,7 +1429,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-06-22 16:41:04+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1323,7 +1468,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-07-25 13:18:49+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1358,7 +1507,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-03 14:43:06+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1393,7 +1546,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-01-09 16:14:31+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1428,7 +1585,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-02-09 17:22:04+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1463,7 +1624,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-07-14 12:06:21+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1498,7 +1663,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-01-09 16:19:22+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1533,7 +1702,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-07-21 00:30:46+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1568,7 +1741,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-01-18 13:13:28+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1603,7 +1780,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-07-13 12:30:45+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1638,7 +1819,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-07-21 14:13:14+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1673,7 +1858,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-12-23 18:53:50+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1708,7 +1897,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-05-19 11:57:43+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1743,7 +1936,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-01-18 12:28:52+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1778,7 +1975,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-28 19:27:42+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -1813,7 +2014,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-27 14:07:27+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -1830,6 +2035,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -1851,39 +2059,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AliumERC20",
-        "AliumFactory",
-        "AliumLibrary",
-        "AliumMigrator",
-        "AliumOracleLibrary",
-        "AliumPair",
-        "AliumRouter",
-        "AliumRouter01",
-        "IAliumCallee",
-        "IAliumERC20",
-        "IAliumFactory",
-        "IAliumMigrator",
-        "IAliumPair",
-        "IAliumRouter01",
-        "IAliumRouter02",
-        "IERC20",
-        "IWETH",
-        "Math",
-        "SafeMath",
-        "UQ112x112"
-      ],
-      "matched_contracts": 3,
+      "extracted_names": [],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 12646,
       "audit_key": "audit-12646",
-      "report_name": "DL audit link",
+      "report_name": "skynet.certik.com/projects/aliumswap",
       "report_url": "https://skynet.certik.com/projects/aliumswap",
       "auditor": "CertiK",
       "audit_type": "audit",
@@ -1893,6 +2083,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -1941,11 +2134,9 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 4
+      "contract_name": 2
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
@@ -1955,7 +2146,7 @@
       },
       {
         "audit_id": 12646,
-        "report_name": "DL audit link"
+        "report_name": "skynet.certik.com/projects/aliumswap"
       }
     ],
     "inherited_remapped_matches": []

@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "numisme",
-  "generated_at": "2026-06-19T13:33:47.071Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "numisme",
-    "tier": 0,
-    "peak_tvl": 154792,
-    "peak_date": "2022-10-27T00:00:00.000Z",
-    "tvl_30d_ago": 342,
-    "tvl_90d_ago": 332,
-    "tvl_current": 304,
-    "tier0_reason": "current_tvl_near_zero_vs_large_peak",
-    "tvl_180d_ago": 379,
-    "change_30d_pct": -11.11111111111111,
-    "change_90d_pct": -8.433734939759036,
-    "days_since_peak": 1331,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 99.80360742157217
-  },
+  "generated_at": "2026-07-04T14:53:38.844Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d094",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 1,
     "total_addresses": 1,
@@ -34,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 100,
     "total_audits": 3,
+    "direct_audits": 3,
+    "inherited_audits": 0,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 309.07801,
-    "tvl_usd": 309.07801,
+    "dl_tvl_usd": 246.49799,
+    "tvl_usd": 246.49799,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,25 +39,32 @@
       "aging": 0,
       "stale": 3,
       "unknown": 0
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 1
     }
   },
   "topography": {
     "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
     "product_family_count": 1,
-    "total_contracts_indexed": 42,
+    "total_contracts_indexed": 1,
     "live_contracts": 1,
-    "inactive_contracts": 41,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 13,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 1,
@@ -93,7 +86,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "NumisMe",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -118,7 +111,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-21 22:34:04+03",
+      "deploy_coverage_basis": "match_unverified"
     }
   ],
   "audits": [
@@ -135,7 +132,10 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -146,7 +146,7 @@
     {
       "audit_id": 13580,
       "audit_key": "audit-13580",
-      "report_name": "code423n4.com/reports/2021-09-yaxis",
+      "report_name": "code4rena.com/reports/2021-09-yaxis",
       "report_url": "https://code4rena.com/reports/2021-09-yaxis",
       "auditor": "Code4rena",
       "audit_type": "contest",
@@ -156,7 +156,10 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -167,7 +170,7 @@
     {
       "audit_id": 13581,
       "audit_key": "audit-13581",
-      "report_name": "www.certik.com/projects/numisme",
+      "report_name": "skynet.certik.com/projects/numisme",
       "report_url": "https://skynet.certik.com/projects/numisme",
       "auditor": "CertiK",
       "audit_type": "audit",
@@ -177,14 +180,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "NumisMe.sol"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -206,11 +210,9 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 25
+      "contract_name": 1
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
@@ -220,7 +222,7 @@
       },
       {
         "audit_id": 13580,
-        "report_name": "code423n4.com/reports/2021-09-yaxis"
+        "report_name": "code4rena.com/reports/2021-09-yaxis"
       }
     ],
     "inherited_remapped_matches": []

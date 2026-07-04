@@ -4,12 +4,12 @@
 
 - Project: HiYield (`hiyield`)
 - Website: [https://www.hiyield.xyz](https://www.hiyield.xyz)
-- Lifecycle: active (Tier 0, 33.6% below peak)
-- Generated: 2026-06-17T07:00:52.447Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:21.525Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: avalanche, canto, ethereum
 - Contract surface: 3 unique implementations (3 raw deployments)
-- DeFi Llama TVL: $2,729,501.64
+- DeFi Llama TVL: $2,732,303.40
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -20,29 +20,32 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-HiYield is a single Real World Asset (RWA) protocol that tokenizes off-chain assets and enables users to earn yield from real-world financial instruments on-chain. The currently collected contract addresses should be treated as unclassified by chain unless further evidence establishes their specific roles or product relationships.
+Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 4; live-surface contracts included: 3 (1 live, 2 unknown).
-- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 3; live-surface contracts included: 3 (0 live, 3 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 3
 - Unique implementations: 3
 - Raw deployments: 3
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage

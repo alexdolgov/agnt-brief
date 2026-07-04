@@ -4,45 +4,47 @@
 
 - Project: CACHE.Gold (`cache.gold`)
 - Website: [https://cache.gold/](https://cache.gold/)
-- Lifecycle: active (Tier 0, 88.1% below peak)
-- Generated: 2026-06-21T14:31:43.239Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:10.025Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-66d5
 - Chains: ethereum
-- Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $525,930.43
+- Contract surface: 8 unique implementations (8 raw deployments)
+- DeFi Llama TVL: $515,628.99
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+RWA. Structurally: 4 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens; built on openzeppelin.
+
+### Architecture
+
+The protocol forms a single structural family (Core Logic) of 4 contract(s).
 
 ## Contract Surface Quality
 
-- Indexed contracts: 11; live-surface contracts included: 1 (1 live, 0 unknown).
-- Excluded by liveness: 10 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 14; live-surface contracts included: 8 (1 live, 7 unknown).
+- Excluded by liveness: 6 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/1 (100.0%)
+- Coverage of deployed-live implementations: 1/1 (100.0%)
+- Deployed-live implementations: 1 of 8 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/1
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
-- Audits discovered: 2
+- Unverified implementations: 7
+- Unique implementations: 8
+- Raw deployments: 8
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-07 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 2 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -75,17 +77,25 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (7)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x101e22...3acc20` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1158e6...3f549b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3d7956...aed20c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4a2b32...1723da` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4b73d8...977466` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8b9be8...11842b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa6d6f1...a5d77f` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [CACHE_Gold_Audit_Zerotrust.pdf](https://github.com/cache-token/docs/blob/master/CACHE_Gold_Audit_Zerotrust.pdf) | unknown | Audit | 2019-09 | stale | Direct | contract_name | 1 | high |
+| [CACHE_Gold_Audit_Zerotrust.pdf](https://github.com/cache-token/docs/blob/master/CACHE_Gold_Audit_Zerotrust.pdf) | unknown | Audit | 2019-09 | stale | Direct | contract_name | 1 | n/a |
 | [CACHE_Gold_CGT_Audit_Polygon_CertiK.pdf](https://github.com/cache-token/docs/blob/master/CACHE_Gold_CGT_Audit_Polygon_CertiK.pdf) | CertiK | Audit | 2022-07 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
@@ -101,7 +111,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 7 |
 
 ## Scope Matching Notes
 
@@ -109,8 +119,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=1
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=1
 
 Zero-match audit list:
 

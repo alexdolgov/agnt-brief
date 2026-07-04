@@ -1,52 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "glitter-finance",
-  "generated_at": "2026-06-19T12:08:10.704Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "glitter-finance",
-    "tier": 1,
-    "peak_tvl": 191634,
-    "peak_date": "2022-09-24T00:00:00.000Z",
-    "tvl_30d_ago": 17,
-    "tvl_90d_ago": 17,
-    "tvl_current": 13,
-    "tier0_reason": "current_tvl_near_zero_vs_large_peak",
-    "tvl_180d_ago": 25,
-    "change_30d_pct": -23.52941176470588,
-    "change_90d_pct": -23.52941176470588,
-    "governance_raw": {
-      "evidence": "TVL has dropped 99.99% from peak and continues to decline, but the homepage still promotes active products and partnerships, indicating ongoing operations.",
-      "confidence": 0.7,
-      "lifecycle_status": "declining"
-    },
-    "days_since_peak": 1364,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 99.99321623511486,
-    "governance_evidence": "TVL has dropped 99.99% from peak and continues to decline, but the homepage still promotes active products and partnerships, indicating ongoing operations.",
-    "governance_confidence": 0.7,
-    "governance_text_chars": 2553,
-    "governance_classification": "declining",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:19.679Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
+    "total_contracts": 3,
+    "total_addresses": 3,
+    "unique_implementations": 3,
+    "total_deployments": 3,
     "audited_contracts": 0,
     "unaudited_contracts": 1,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 2,
     "coverage_pct": 0,
     "total_audits": 6,
+    "direct_audits": 6,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 13.01819,
-    "tvl_usd": 13.01819,
+    "dl_tvl_usd": 14.744309999999999,
+    "tvl_usd": 14.744309999999999,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -63,26 +39,35 @@
       "aging": 0,
       "stale": 1,
       "unknown": 5
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "project_purpose": "Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 1,
+    "product_family_count": 2,
     "total_contracts_indexed": 8,
     "live_contracts": 1,
-    "inactive_contracts": 3,
-    "singleton_contracts": 4,
+    "inactive_contracts": 5,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 2,
+    "unknown_contracts": 2,
+    "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 3,
     "has_non_token_contracts": false,
     "is_skeletal": true
   },
@@ -101,7 +86,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Glitter Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -124,14 +109,96 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-16 15:10:11+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x446c264ed8888dad27f5452094d2ceadb1e038ea",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x446c264ed8888dad27f5452094d2ceadb1e038ea",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-19 03:52:59+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8a468d6f8b0e8eac1806e783ce4e7e5e4e78ee59",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8a468d6f8b0e8eac1806e783ce4e7e5e4e78ee59",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-13 09:28:23+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 13190,
       "audit_key": "audit-13190",
-      "report_name": "DL audit link",
+      "report_name": "skynet.certik.com/projects/glitter-finance",
       "report_url": "https://skynet.certik.com/projects/glitter-finance",
       "auditor": "CertiK",
       "audit_type": "audit",
@@ -141,6 +208,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -152,7 +222,7 @@
     {
       "audit_id": 13191,
       "audit_key": "audit-13191",
-      "report_name": "DL audit link",
+      "report_name": "Glitter-Finance-Penetration-and-Load-Testing-Summary-Report.pdf",
       "report_url": "https://rdauditors.com/wp-content/uploads/2022/06/Glitter-Finance-Penetration-and-Load-Testing-Summary-Report.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -162,6 +232,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -173,7 +246,7 @@
     {
       "audit_id": 13192,
       "audit_key": "audit-13192",
-      "report_name": "DL audit link",
+      "report_name": "certik_glitter_finance_algorand_audit.pdf",
       "report_url": "https://www.dropbox.com/scl/fi/4d8u1vjhtslagyglrpcs7/certik_glitter_finance_algorand_audit.pdf?rlkey=0wjyjn7hh60aramrc2q2r7bga&dl=0",
       "auditor": "CertiK",
       "audit_type": "audit",
@@ -183,6 +256,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -194,7 +270,7 @@
     {
       "audit_id": 13193,
       "audit_key": "audit-13193",
-      "report_name": "DL audit link",
+      "report_name": "certik_glitter_finance_algorand_addendum.pdf",
       "report_url": "https://www.dropbox.com/scl/fi/52sbhzvyl1794w4uwc7oh/certik_glitter_finance_algorand_addendum.pdf?rlkey=y9pr55way2a10ryv32pqt7wpi&dl=0",
       "auditor": "CertiK",
       "audit_type": "audit",
@@ -204,6 +280,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -215,7 +294,7 @@
     {
       "audit_id": 13194,
       "audit_key": "audit-13194",
-      "report_name": "DL audit link",
+      "report_name": "certik_glitter_finance_solana_audit.pdf",
       "report_url": "https://www.dropbox.com/scl/fi/2j5g0xdjj86mrdl4iqkom/certik_glitter_finance_solana_audit.pdf?rlkey=1r88rkq8ibnlo5k7ywqghbr5l&dl=0",
       "auditor": "CertiK",
       "audit_type": "audit",
@@ -225,6 +304,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -236,7 +318,7 @@
     {
       "audit_id": 13195,
       "audit_key": "audit-13195",
-      "report_name": "**Here**",
+      "report_name": "RD_Audit.pdf",
       "report_url": "https://www.dropbox.com/scl/fi/m2op0hazl11symixqn8pc/RD_Audit.pdf?rlkey=7nri2ruov2ras1f7pwwd5r5ev&dl=0",
       "auditor": "CertiK",
       "audit_type": "audit",
@@ -246,6 +328,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -272,7 +357,7 @@
     "native": 1,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -282,27 +367,27 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 13190,
-        "report_name": "DL audit link"
+        "report_name": "skynet.certik.com/projects/glitter-finance"
       },
       {
         "audit_id": 13191,
-        "report_name": "DL audit link"
+        "report_name": "Glitter-Finance-Penetration-and-Load-Testing-Summary-Report.pdf"
       },
       {
         "audit_id": 13192,
-        "report_name": "DL audit link"
+        "report_name": "certik_glitter_finance_algorand_audit.pdf"
       },
       {
         "audit_id": 13193,
-        "report_name": "DL audit link"
+        "report_name": "certik_glitter_finance_algorand_addendum.pdf"
       },
       {
         "audit_id": 13194,
-        "report_name": "DL audit link"
+        "report_name": "certik_glitter_finance_solana_audit.pdf"
       },
       {
         "audit_id": 13195,
-        "report_name": "**Here**"
+        "report_name": "RD_Audit.pdf"
       }
     ],
     "inherited_remapped_matches": []

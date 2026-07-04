@@ -1,41 +1,55 @@
 # Agentic Audit Brief: Augmented Finance
 
+⚠️ Lifecycle status: DEAD - TVL changed 0.0% over 90 days
+
 ## Project Overview
 
 - Project: Augmented Finance (`augmented-finance`)
 - Website: [https://augmented.finance](https://augmented.finance)
-- Lifecycle: unknown
-- Generated: 2026-06-13T12:24:56.433Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
+- Lifecycle: dead (Tier 1, dead)
+- Generated: 2026-07-04T14:53:04.259Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
+- Chains: ethereum
+- Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $326.65
-- On-chain TVL (included contracts): n/a
-- TVL by chain: n/a
+- On-chain TVL (included contracts): $6,308.00
+- TVL by chain: Ethereum $6,308.00
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+
+## Contract Surface Quality
+
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
-- Audits discovered: 1
+- Unique implementations: 1
+- Raw deployments: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): n/a
-- Latest audit: 2021 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- ASD (verified + unaudited TVL): $6,308.00
+- Latest audit: 2021-01 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
+- Note: This protocol is classified as [dead]. ASD of $6,308.00 represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -47,9 +61,11 @@ Contract surface contains 0 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (1)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| AGFTokenV1 | token | ethereum | n/a | [`0xb3ed70...bebce5`](./contracts/ethereum-1/0xb3ed706b564bba9cab64042f4e1b391be7bebce5/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -73,7 +89,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [PeckShield-Audit-Report-Augmented-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Augmented-v1.0.pdf) | PeckShield | Audit | 2021 | stale | Direct | n/a | 0 | n/a |
+| [PeckShield-Audit-Report-Augmented-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Augmented-v1.0.pdf) | PeckShield | Audit | 2021-01 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -87,7 +103,7 @@ Verified + unaudited native implementations ranked by TVL:
 |---|---:|
 | native | 0 |
 | upstream | 0 |
-| standard_library | 0 |
+| standard_library | 1 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

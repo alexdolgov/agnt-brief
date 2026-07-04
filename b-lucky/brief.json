@@ -1,25 +1,25 @@
 {
   "schema_version": "2.0",
   "project_key": "b-lucky",
-  "generated_at": "2026-06-17T18:51:18.531Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-1121",
+  "generated_at": "2026-07-04T14:53:05.116Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-f2f0",
   "lifecycle_status": "active",
   "lifecycle_signal": {
     "slug": "b-lucky",
     "tier": 0,
     "peak_tvl": 495396,
     "peak_date": "2026-01-14T00:00:00.000Z",
-    "tvl_30d_ago": 277661,
-    "tvl_90d_ago": 291972,
-    "tvl_current": 259022,
+    "tvl_30d_ago": 274788,
+    "tvl_90d_ago": 280510,
+    "tvl_current": 218577,
     "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 445227,
-    "change_30d_pct": -6.712862087221468,
-    "change_90d_pct": -11.285328730152207,
-    "days_since_peak": 131,
+    "tvl_180d_ago": 459303,
+    "change_30d_pct": -20.456133455609415,
+    "change_90d_pct": -22.07871377134505,
+    "days_since_peak": 168,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 47.71415191079459
+    "drop_from_peak_pct": 55.87832764091757
   },
   "summary": {
     "total_contracts": 19,
@@ -34,14 +34,16 @@
     "contracts_unverified": 17,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1086587.92465,
-    "tvl_usd": 2666478.0645899377,
+    "dl_tvl_usd": 1019242.3952299999,
+    "tvl_usd": 2646188.2492329264,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "bsc": 2666478.06
+      "bsc": 2646188.25
     },
-    "asd_usd": 2666478.0645899377,
+    "asd_usd": 2646188.2492329264,
     "website_url": "https://b-lucky.gg/",
     "chains": [
       "bsc"
@@ -55,25 +57,32 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 2,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "B-Lucky is a decentralized on-chain lottery protocol on BSC/BNB Chain.",
-    "relationship_narrative": "All game contracts likely share the same token (0x67b4...) for wagering and payouts, and were deployed by two deployer addresses that may represent different game versions or administrative roles.",
-    "product_family_count": 1,
+    "project_purpose": "Luck Games. Structurally: 2 project-authored contract(s) across 1 chain(s); 1 ERC20 token; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.",
+    "product_family_count": 2,
     "total_contracts_indexed": 19,
-    "live_contracts": 18,
+    "live_contracts": 2,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 1,
+    "unknown_contracts": 17,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v3"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 19,
@@ -95,8 +104,8 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "B-Lucky",
-      "tvl_usd": 2200551.181550421,
+      "product_line": null,
+      "tvl_usd": 2362119.0689324555,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "Token",
@@ -109,7 +118,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 2200551.181550421,
+          "tvl_usd": 2362119.0689324555,
           "is_audited": false
         }
       ],
@@ -118,7 +127,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-28 18:27:41+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -131,7 +144,7 @@
       "origin_kind": "upstream",
       "origin_provider": "Uniswap",
       "product_line": null,
-      "tvl_usd": 465926.883039517,
+      "tvl_usd": 284069.18030047114,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "UniswapV3Pool",
@@ -144,7 +157,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 465926.883039517,
+          "tvl_usd": 284069.18030047114,
           "is_audited": false
         }
       ],
@@ -153,7 +166,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2026-04-24 02:09:44+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -163,7 +180,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -188,7 +205,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-28 20:16:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -198,7 +219,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -223,7 +244,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-12 13:00:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -233,7 +258,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -258,7 +283,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-12 13:00:01+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -268,7 +297,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -293,7 +322,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-12 13:00:04+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -303,7 +336,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -328,7 +361,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-06-12 10:52:16+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -338,7 +375,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -363,7 +400,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-06-12 10:52:14+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -373,7 +414,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -398,7 +439,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-12 13:00:09+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -408,7 +453,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -433,7 +478,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-12 13:00:13+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -443,9 +492,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "B-Lucky",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -468,7 +517,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-12 13:00:07+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -478,7 +531,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -503,7 +556,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-28 20:16:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -513,7 +570,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -538,7 +595,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-12 12:59:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -548,9 +609,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "B-Lucky",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -573,7 +634,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-28 20:16:21+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -583,7 +648,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -608,7 +673,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-28 20:16:14+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -618,7 +687,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -643,7 +712,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-28 20:16:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -653,9 +726,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "B-Lucky",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -678,7 +751,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-28 20:16:10+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -688,9 +765,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "B-Lucky",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -713,7 +790,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-28 20:16:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -723,7 +804,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -748,14 +829,18 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-28 20:16:25+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 3235,
       "audit_key": "audit-3235",
-      "report_name": "DL audit link",
+      "report_name": "bailsec.pdf",
       "report_url": "https://b-lucky.gg/audit/bailsec.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -765,6 +850,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -783,15 +871,15 @@
       "name": "Token",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 2200551.181550421,
-      "risk_note": "Verified native implementation with $2,200,551.18 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 2362119.0689324555,
+      "risk_note": "Verified native implementation with $2,362,119.07 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 18,
+    "native": 1,
     "upstream": 1,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 17
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -801,7 +889,7 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 3235,
-        "report_name": "DL audit link"
+        "report_name": "bailsec.pdf"
       }
     ],
     "inherited_remapped_matches": []

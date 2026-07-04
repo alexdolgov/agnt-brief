@@ -1,52 +1,51 @@
 # Agentic Audit Brief: Moonbase Alpha
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 5.2% over 90 days
-
 ## Project Overview
 
 - Project: Moonbase Alpha (`moonbase-alpha`)
 - Website: [https://exchange.themoonbase.app](https://exchange.themoonbase.app)
-- Lifecycle: unknown (Tier 0, 85.6% below peak)
-- Generated: 2026-06-19T19:15:39.119Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:35.496Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-ae05
 - Chains: arbitrum
-- Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $2,587.04
+- Contract surface: 5 unique implementations (5 raw deployments)
+- DeFi Llama TVL: $2,525.16
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Dexs. Structurally: 15 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+
+### Architecture
+
+The protocol comprises 3 functional families. Its contracts share 5 common project-authored base contract(s) (erc20mintable, erc20burnable, erc20permit). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 22; live-surface contracts included: 1 (1 live, 0 unknown).
-- Excluded by liveness: 21 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 20; live-surface contracts included: 5 (1 live, 4 unknown).
+- Excluded by liveness: 15 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 5 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
-- Audits discovered: 1
+- Unverified implementations: 4
+- Unique implementations: 5
+- Raw deployments: 5
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -76,17 +75,22 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | arbitrum | n/a | `0x0f3d62...91916a` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x4002a0...921926` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8c2610...65014e` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xbbf4ce...fb2e6b` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://rdauditors.com/wp-content/uploads/2023/03/Moonbase-Alpha-Security-Audit-Report-1.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Moonbase-Alpha-Security-Audit-Report-1.pdf](https://rdauditors.com/wp-content/uploads/2023/03/Moonbase-Alpha-Security-Audit-Report-1.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -103,7 +107,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 
@@ -116,6 +120,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [13512] DL audit link
+- [13512] Moonbase-Alpha-Security-Audit-Report-1.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "suibridge",
-  "generated_at": "2026-06-17T07:00:52.332Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "suibridge",
-    "tier": 0,
-    "peak_tvl": 584238041,
-    "peak_date": "2025-10-27T00:00:00.000Z",
-    "tvl_30d_ago": 47023317,
-    "tvl_90d_ago": 71494318,
-    "tvl_current": 40048821,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 169691593,
-    "change_30d_pct": -14.831994944125274,
-    "change_90d_pct": -43.98321136513254,
-    "days_since_peak": 216,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 93.14511925114442
-  },
+  "generated_at": "2026-07-04T14:53:58.969Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-17a2",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
-    "audited_contracts": 0,
-    "unaudited_contracts": 1,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 1,
+    "total_contracts": 5,
+    "total_addresses": 9,
+    "unique_implementations": 5,
+    "total_deployments": 9,
+    "audited_contracts": 5,
+    "unaudited_contracts": 0,
+    "contracts_verified_audited": 5,
+    "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
-    "total_audits": 0,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 34795590.28,
-    "tvl_usd": 34795590.28,
+    "coverage_pct": 100,
+    "total_audits": 2,
+    "direct_audits": 2,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 30994461.25702,
+    "tvl_usd": 30994461.25702,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -46,35 +32,44 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2024-04",
+    "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 0,
+      "stale": 2,
       "unknown": 0
+    },
+    "live_implementations": 5,
+    "live_verified_implementations": 5,
+    "live_audited_implementations": 5,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 5,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "SuiBridge is the canonical/native bridge enabling asset transfers and cross-chain messaging between Ethereum and the Sui blockchain. On Ethereum, the live system includes several ERC1967 proxy deployments for components such as SuiBridge, BridgeCommittee, BridgeConfig, and BridgeLimiter, each pointing to separate implementation contracts, while BridgeVault and the implementation contracts themselves are non-proxy deployments. The bridge uses committee-based validation, configuration and rate-limiting controls, and an Ethereum vault that locks value for bridged assets.",
-    "relationship_narrative": null,
-    "product_family_count": 1,
+    "project_purpose": "Canonical Bridge. Structurally: 3 project-authored contract(s) across 1 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Its contracts share 2 common project-authored base contract(s) (committeeupgradeable, messageverifier). Dominant framework: openzeppelin.",
+    "product_family_count": 3,
     "total_contracts_indexed": 9,
-    "live_contracts": 1,
+    "live_contracts": 9,
     "inactive_contracts": 0,
-    "singleton_contracts": 8,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 4,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 2,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 5,
     "has_non_token_contracts": true,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -84,14 +79,170 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xa470ca92126bd6b6f6e98f3010c7e384f223b63b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BridgeCommittee",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xa470ca92126bd6b6f6e98f3010c7e384f223b63b",
+      "impl_name": "BridgeCommittee",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa470ca92126bd6b6f6e98f3010c7e384f223b63b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xee2d52477a7c1a7be0b0347dbe7e3b15185b416f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-21280"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-09-23 08:38:23+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x72d34fe82c71bf8120647518e5128e53106a1540",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BridgeConfig",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb083c462fa5b04899d87204a4566b3db90fec50c",
+      "impl_name": "BridgeConfig",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x72d34fe82c71bf8120647518e5128e53106a1540",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb083c462fa5b04899d87204a4566b3db90fec50c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-21280"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-09-23 08:38:23+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x12183b0796bbc4678999100e8c6c5715d5736767",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BridgeLimiter",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd754e54261e300ff9653567f03f74bfdef887340",
+      "impl_name": "BridgeLimiter",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x12183b0796bbc4678999100e8c6c5715d5736767",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd754e54261e300ff9653567f03f74bfdef887340",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-21280"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-09-23 08:38:23+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x312e67b47a2a29ae200184949093d92369f80b53",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "BridgeVault",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "SuiBridge",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -106,32 +257,191 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-21280"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-09-23 08:38:23+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xa60f29201aeae592d9ab95747ae1cf425dbb036c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "SuiBridge",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xa60f29201aeae592d9ab95747ae1cf425dbb036c",
+      "impl_name": "SuiBridge",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa60f29201aeae592d9ab95747ae1cf425dbb036c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xda3bd1fe1973470312db04551b65f401bc8a92fd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-21280"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-09-23 08:38:23+03",
+      "deploy_coverage_basis": "code_matched"
     }
   ],
-  "audits": [],
-  "auditor_coverage": [],
+  "audits": [
+    {
+      "audit_id": 21279,
+      "audit_key": "audit-21279",
+      "report_name": "Sui_bridge_v1_OtterSec.pdf",
+      "report_url": "https://raw.githubusercontent.com/sui-foundation/security-audits/main/docs/Sui_bridge_v1_OtterSec.pdf",
+      "auditor": "OtterSec",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 21279,
+          "report_url": "https://raw.githubusercontent.com/sui-foundation/security-audits/main/docs/Sui_bridge_v1_OtterSec.pdf"
+        },
+        {
+          "audit_id": 24477,
+          "report_url": "https://github.com/sui-foundation/security-audits/blob/main/docs/Sui_bridge_v1_OtterSec.pdf"
+        }
+      ]
+    },
+    {
+      "audit_id": 21280,
+      "audit_key": "audit-21280",
+      "report_name": "Sui_Bridge_v1_Zellic.pdf",
+      "report_url": "https://raw.githubusercontent.com/sui-foundation/security-audits/main/docs/Sui_Bridge_v1_Zellic.pdf",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-04",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "BridgeCommittee",
+        "BridgeConfig",
+        "BridgeLimiter",
+        "BridgeVault",
+        "CommitteeUpgradeable",
+        "SuiBridge",
+        "bridge",
+        "chain_ids",
+        "committee",
+        "crypto",
+        "limiter",
+        "message",
+        "message_types",
+        "treasury"
+      ],
+      "matched_contracts": 9,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0,
+      "duplicate_audit_ids": [
+        {
+          "audit_id": 21280,
+          "report_url": "https://raw.githubusercontent.com/sui-foundation/security-audits/main/docs/Sui_Bridge_v1_Zellic.pdf"
+        },
+        {
+          "audit_id": 24478,
+          "report_url": "https://github.com/sui-foundation/security-audits/blob/main/docs/Sui_Bridge_v1_Zellic.pdf"
+        }
+      ]
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Zellic",
+      "tier": 2,
+      "contracts_covered": 5,
+      "coverage_pct": 100,
+      "latest_audit": "2024-04"
+    }
+  ],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 0,
+    "native": 5,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 18
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 21279,
+        "report_name": "Sui_bridge_v1_OtterSec.pdf"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

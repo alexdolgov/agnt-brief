@@ -4,65 +4,73 @@
 
 - Project: Fuji Finance (`fuji-finance`)
 - Website: [https://fuji.finance/](https://fuji.finance/)
-- Lifecycle: active (Tier 0, 94.1% below peak)
-- Generated: 2026-06-21T09:46:05.701Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:16.563Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-1cbb
 - Chains: ethereum, fantom
-- Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $144,602.00
+- Contract surface: 10 unique implementations (22 raw deployments)
+- DeFi Llama TVL: $139,604.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Lending. Structurally: 25 project-authored contract(s) across 1 chain(s); 2 Chainlink feeds; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+
+### Architecture
+
+The protocol comprises 4 functional families. Its contracts share 1 common project-authored base contract(s) (helperfunct). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 251; live-surface contracts included: 2 (1 live, 1 unknown).
-- Excluded by liveness: 218 inactive, 31 singleton, 0 uninitialized.
-- Deployment units: 0/14 live.
-- Detected codebases: aave-v2, aave-v3
-- Unverified dependencies: 4/33.
+- Indexed contracts: 49; live-surface contracts included: 22 (18 live, 4 unknown).
+- Excluded by liveness: 27 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/1 (100.0%)
-- Verified + Unaudited implementations: 0
+- Coverage of deployed-live implementations: 3/6 (50.0%)
+- Deployed-live implementations: 6 of 10 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 3/6
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 2
-- Raw deployments: 2
-- Audits discovered: 3
-- Scoreable audits (matched contracts): 2
+- Unverified implementations: 4
+- Unique implementations: 10
+- Raw deployments: 22
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-12 (stale)
-- Staleness: 0 fresh, 0 aging, 3 stale, 0 unknown
-- Tier 1 coverage: 100.0% (Trail of Bits)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 3 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 2 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
+- Tier 1 coverage: 16.7% (Trail of Bits)
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Trail of Bits | Tier 1 | 1 | 100.0% | 2021-10 |
-| unknown | Tier 2 | 1 | 100.0% | 2022-12 |
+| unknown | Tier 2 | 3 | 50.0% | 2022-12 |
+| Trail of Bits | Tier 1 | 1 | 16.7% | 2021-10 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (1)
+### ✅ Verified + Audited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| AddrMapper | unknown | ethereum | n/a | [`0x2430ab...4a881a`](./contracts/ethereum-1/0x2430ab56fb46bcac05e39aa947d26e8eef4a881a/) | ✅ Audited |
 | FujiERC1155 | token | ethereum | n/a | [`0x1cf24e...a95484`](./contracts/ethereum-1/0x1cf24e4ec41da581bee223e1affebb62a5a95484/) | ✅ Audited |
+| FujiOracle | unknown | ethereum | n/a | [`0xadf849...7734a8`](./contracts/ethereum-1/0xadf849079d415157cbbdb21bb7542b47077734a8/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (3)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| Controller | unknown | ethereum | n/a | 3 deployments: ethereum [`0x30c591...7a724a`](./contracts/ethereum-1/0x30c591b64c39ad8e9f5139521cedb077d27a724a/); ethereum `0x3f3668...5f3736`; ethereum `0xb24f10...c3dab7` | ⚠️ Unaudited |
+| Flasher | unknown | ethereum | n/a | 9 deployments: ethereum [`0x01267e...0cccae`](./contracts/ethereum-1/0x01267e6b6ec2196c6e21a64a7f3e3211f10cccae/); ethereum `0x15d2f1...9cb64e`; ethereum `0x3067fe...f9cfb1`; ethereum `0x54f721...f6d985`; ethereum `0x68c3df...84ed83`; ethereum `0x7b2871...a55947`; ethereum `0x845f59...ae62f5`; ethereum `0xd13e1d...25010a`; ethereum `0xf45f46...d3b9d3` | ⚠️ Unaudited |
+| Fliquidator | unknown | ethereum | n/a | 3 deployments: ethereum [`0x53032d...7d9cd2`](./contracts/ethereum-1/0x53032dc4dd5c85efee772b1fe38de05ed27d9cd2/); ethereum `0xd43e4b...ae6268`; ethereum `0xe3a2df...3b2be0` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -76,48 +84,51 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (4)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x76e779...e3adf6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9e2b7c...f10951` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc79fcb...c3de66` | ❓ Unverified |
 | UnnamedContract | unknown | fantom | n/a | `0xb4e2ec...721d70` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Fuji_Securing_2021-07.pdf](https://github.com/Fujicracy/fuji-protocol/blob/main/audits/Fuji_Securing_2021-07.pdf) | unknown | Audit | 2021-07 | stale | Direct | contract_name | 1 | high |
-| [Fuji_TrailOfBits_2021-11.pdf](https://github.com/Fujicracy/fuji-protocol/blob/main/audits/Fuji_TrailOfBits_2021-11.pdf) | Trail of Bits | Audit | 2021-10 | stale | Direct | contract_name | 1 | high |
-| [2022_11_Fujidao_Labs_OU.pdf](https://github.com/ComposableSecurity/.github/blob/main/reports/2022_11_Fujidao_Labs_OU.pdf) | unknown | Audit | 2022-12 | stale | Direct | contract_name | 0 | n/a |
+| [Fuji_Securing_2021-07.pdf](https://github.com/Fujicracy/fuji-protocol/blob/main/audits/Fuji_Securing_2021-07.pdf) | unknown | Audit | 2021-07 | stale | Direct | contract_name | 1 | n/a |
+| [Fuji_TrailOfBits_2021-11.pdf](https://github.com/Fujicracy/fuji-protocol/blob/main/audits/Fuji_TrailOfBits_2021-11.pdf) | Trail of Bits | Audit | 2021-10 | stale | Direct | contract_name | 1 | n/a |
+| [2022_11_Fujidao_Labs_OU.pdf](https://github.com/ComposableSecurity/.github/blob/main/reports/2022_11_Fujidao_Labs_OU.pdf) | unknown | Audit | 2022-12 | stale | Direct | contract_name | 2 | high |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0x30c591...7a724a`](./contracts/ethereum-1/0x30c591b64c39ad8e9f5139521cedb077d27a724a/) | Controller | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x01267e...0cccae`](./contracts/ethereum-1/0x01267e6b6ec2196c6e21a64a7f3e3211f10cccae/) | Flasher | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x53032d...7d9cd2`](./contracts/ethereum-1/0x53032dc4dd5c85efee772b1fe38de05ed27d9cd2/) | Fliquidator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 6 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 4 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2
-- Match method counts: extraction_exact=166
-
-Zero-match audit list:
-
-- [13143] 2022_11_Fujidao_Labs_OU.pdf
+- Extraction confidence breakdown: high=1
+- Match method counts: contract_name=2, extraction_exact=2
 
 Fork inheritance lineage and inherited audits are included when available.

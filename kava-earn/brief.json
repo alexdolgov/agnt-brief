@@ -1,36 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "kava-earn",
-  "generated_at": "2026-06-17T20:03:03.821Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-6f9b",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "kava-earn",
-    "tier": 1,
-    "peak_tvl": 77621072,
-    "peak_date": "2023-05-24T00:00:00.000Z",
-    "tvl_30d_ago": 1727499,
-    "tvl_90d_ago": 1336047,
-    "tvl_current": 1644507,
-    "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 4321493,
-    "change_30d_pct": -4.8041706536443725,
-    "change_90d_pct": 23.08751114294632,
-    "governance_raw": {
-      "evidence": "The protocol shows a 97.9% TVL drop from peak and a 23% decline in 90 days, with a regional restriction message indicating reduced accessibility, but no shutdown announcement.",
-      "confidence": 0.8,
-      "lifecycle_status": "declining"
-    },
-    "days_since_peak": 1096,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "fallback_mixed",
-    "drop_from_peak_pct": 97.88136525607376,
-    "governance_evidence": "The protocol shows a 97.9% TVL drop from peak and a 23% decline in 90 days, with a regional restriction message indicating reduced accessibility, but no shutdown announcement.",
-    "governance_confidence": 0.8,
-    "governance_text_chars": 153,
-    "governance_classification": "declining",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:29.053Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 1,
     "total_addresses": 1,
@@ -44,9 +18,11 @@
     "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1195362.45598,
-    "tvl_usd": 1195362.45598,
+    "dl_tvl_usd": 1173824.40091,
+    "tvl_usd": 1173824.40091,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,19 +32,28 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2021-09",
-    "audit_freshness": "stale",
+    "latest_audit_date": null,
+    "audit_freshness": "unknown",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 1,
-      "unknown": 0
+      "stale": 0,
+      "unknown": 1
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Kava Earn is a yield aggregator on the Kava chain.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 1,
+    "product_family_count": 0,
     "total_contracts_indexed": 1,
     "live_contracts": 0,
     "inactive_contracts": 0,
@@ -87,18 +72,8 @@
     "is_skeletal": true
   },
   "fork_lineage": {
-    "entries": [
-      {
-        "fork_id": 8,
-        "relationship_type": "protocol_fork",
-        "audit_inheritance_mode": "all_audits_inherit",
-        "parent_project_key": "kava-mint",
-        "parent_project_name": "Kava Mint",
-        "parent_github_url": null,
-        "inherited_audits": 1
-      }
-    ],
-    "inherited_audit_count": 1
+    "entries": [],
+    "inherited_audit_count": 0
   },
   "contracts": [
     {
@@ -109,13 +84,13 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Via Hardhat Verification Plugin ​",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "UnnamedContract",
       "deployments": [
         {
           "chain_id": 2222,
@@ -134,23 +109,30 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
-      "audit_id": 11499,
-      "audit_key": "audit-11499",
+      "audit_id": 20731,
+      "audit_key": "audit-20731",
       "report_name": "skynet.certik.com/projects/kava",
       "report_url": "https://skynet.certik.com/projects/kava",
       "auditor": "CertiK",
       "audit_type": "audit",
-      "freshness": "stale",
-      "date": "2021-09",
-      "is_inherited": true,
-      "inherited_from_project_key": "kava-mint",
-      "inherited_from_project_name": "Kava Mint",
-      "inherited_via_fork_id": 8,
+      "freshness": "unknown",
+      "date": null,
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -163,10 +145,10 @@
   "auditor_coverage": [],
   "coverage_gaps": [],
   "origin_summary": {
-    "native": 1,
+    "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -175,7 +157,7 @@
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 11499,
+        "audit_id": 20731,
         "report_name": "skynet.certik.com/projects/kava"
       }
     ],

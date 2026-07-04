@@ -1,13 +1,11 @@
 # Agentic Audit Brief: PumpBase
 
-⚠️ Lifecycle status: DEAD - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: PumpBase (`pumpbase`)
-- Lifecycle: dead (Tier 0, 100% below peak)
-- Generated: 2026-06-19T08:46:43.120Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-cc10
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:44.250Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-0679
 - Chains: base
 - Contract surface: 14 unique implementations (17 raw deployments)
 - DeFi Llama TVL: $0.00
@@ -16,35 +14,37 @@
 
 ## Project Description
 
-PumpBase is a launchpad protocol on Base that enables users to create and deploy new tokens through a factory contract. It provides a streamlined token creation process, likely supporting fair launches or meme coin deployments.
+Launchpad. Structurally: 1 project-authored contract(s) across 1 chain(s); built on openzeppelin.
 
 ### Architecture
 
-The protocol consists of a single product family centered around the LaunchpadTokenFactory, which serves as both the core and only contract. No additional infrastructure or inter-family relationships are present.
+The protocol forms a single structural family (Registries) of 1 contract(s).
 
 ## Contract Surface Quality
 
-- Indexed contracts: 17; live-surface contracts included: 17 (17 live, 0 unknown).
+- Indexed contracts: 17; live-surface contracts included: 17 (4 live, 13 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 1; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/1 (100.0%)
+- Coverage of deployed-live implementations: 1/1 (100.0%)
+- Deployed-live implementations: 1 of 14 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/1
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 13
 - Unique implementations: 14
 - Raw deployments: 17
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-10 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 1 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -100,7 +100,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://spywolf.co/audits/Pumpbase_0x19798E390E69a36814B25BbBC7e75530E8a0A101.pdf) | unknown | Audit | 2025-10 | fresh | Direct | contract_name | 4 | high |
+| [Pumpbase_0x19798E390E69a36814B25BbBC7e75530E8a0A101.pdf](https://spywolf.co/audits/Pumpbase_0x19798E390E69a36814B25BbBC7e75530E8a0A101.pdf) | unknown | Audit | 2025-10 | fresh | Direct | contract_name | 1 | n/a |
 
 ## Coverage Gaps
 
@@ -112,10 +112,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 14 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 13 |
 
 ## Scope Matching Notes
 
@@ -123,7 +123,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=4
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=1
 
 Fork inheritance lineage and inherited audits are included when available.

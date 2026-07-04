@@ -1,47 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "rip.xyz",
-  "generated_at": "2026-06-18T09:34:27.184Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-5311",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "rip.xyz",
-    "tier": 0,
-    "peak_tvl": 1815791,
-    "peak_date": "2026-04-27T00:00:00.000Z",
-    "tvl_30d_ago": 775523,
-    "tvl_90d_ago": 927453,
-    "tvl_current": 1217503,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": null,
-    "change_30d_pct": 56.991217539647444,
-    "change_90d_pct": 31.27382196186761,
-    "days_since_peak": 52,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 32.94916650649772
-  },
+  "generated_at": "2026-07-04T14:53:47.072Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-66d5",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 8,
-    "total_addresses": 9,
-    "unique_implementations": 8,
-    "total_deployments": 9,
-    "audited_contracts": 0,
+    "total_contracts": 9,
+    "total_addresses": 11,
+    "unique_implementations": 9,
+    "total_deployments": 11,
+    "audited_contracts": 1,
     "unaudited_contracts": 4,
-    "contracts_verified_audited": 0,
+    "contracts_verified_audited": 1,
     "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 4,
-    "coverage_pct": 0,
+    "coverage_pct": 25,
     "total_audits": 1,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 879290.63973,
-    "tvl_usd": 626482.8667275831,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "hyperliquid": 626482.87
-    },
-    "asd_usd": 626482.8667275831,
+    "direct_audits": 1,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 907833.60554,
+    "tvl_usd": 907833.60554,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://www.rip.xyz/",
     "chains": [
       "hyperliquid"
@@ -55,26 +39,35 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 5,
+    "live_verified_implementations": 4,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 1,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Rip.xyz provides tokenized vault strategies on HyperEVM. Its initial strategy, Hypurr Vault, offers NFT-backed vault exposure for fractional access to Hypurr NFTs. External rHYPURR liquidity venues, such as third-party DEX pools, should be treated as dependencies rather than the core project purpose.",
-    "relationship_narrative": "The rHYPURR vault (implemented behind an ERC1967 proxy) accepts wHYPE deposits and mints rHYPURR shares; these shares are paired with wHYPE in a Uniswap V3 pool to provide liquidity. The Nft contract likely interacts with the vault for access or rewards, while wHYPE serves as the common base asset across the system.",
-    "product_family_count": 4,
+    "project_purpose": "NFT Automated Strategies. Structurally: 5 project-authored contract(s) across 1 chain(s); 2 ERC721 NFTs; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Its contracts share 3 common project-authored base contract(s) (erc721enumerable, erc165, erc721uristorage). Dominant framework: openzeppelin.",
+    "product_family_count": 3,
     "total_contracts_indexed": 11,
-    "live_contracts": 8,
+    "live_contracts": 7,
     "inactive_contracts": 0,
-    "singleton_contracts": 2,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 1,
-    "deployment_units": 1,
+    "unknown_contracts": 4,
+    "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 8,
+    "unique_implementations": 9,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -86,41 +79,6 @@
     {
       "chain_id": 999,
       "chain_name": "hyperliquid",
-      "address": "0x1f6b7b53623b3039720a186b31ef7f50f0e34420",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UniswapV3Pool",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "Uniswap",
-      "product_line": null,
-      "tvl_usd": 626482.866727583,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "UniswapV3Pool",
-      "deployments": [
-        {
-          "chain_id": 999,
-          "chain_name": "hyperliquid",
-          "address": "0x1f6b7b53623b3039720a186b31ef7f50f0e34420",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 626482.866727583,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 999,
-      "chain_name": "hyperliquid",
       "address": "0x3c7fd353d32344476d964deda8ea112a9d83b123",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -129,7 +87,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 8.114224194188611e-11,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "Nft",
@@ -153,7 +111,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 8.114224194188611e-11,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -162,7 +120,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-28 16:27:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -172,8 +134,8 @@
       "deployment_unit_proxy_count": null,
       "name": "RelayApprovalProxyV3",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "relay-approval-proxy",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -197,7 +159,63 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-05 15:19:00+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x0df4f69cf9417b1817ab9579bf099537a694667b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "rHYPURR",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x533811ca630cba23aedd9a0b044a0f904b79bee7",
+      "impl_name": "rHYPURR",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x0df4f69cf9417b1817ab9579bf099537a694667b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x533811ca630cba23aedd9a0b044a0f904b79bee7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3204"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-07 05:58:00+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 999,
@@ -207,8 +225,8 @@
       "deployment_unit_proxy_count": null,
       "name": "Seaport",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "seaport",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -232,7 +250,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-02-19 08:21:00+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x1f6b7b53623b3039720a186b31ef7f50f0e34420",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UniswapV3Pool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV3Pool",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x1f6b7b53623b3039720a186b31ef7f50f0e34420",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2026-01-22 02:28:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -267,7 +328,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-31 05:00:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -302,7 +367,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-28 16:07:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -337,7 +406,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-28 16:19:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -372,14 +445,18 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-28 16:11:00+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 3204,
       "audit_key": "audit-3204",
-      "report_name": "**View the full audit report (PDF)**",
+      "report_name": "rHYPURR.pdf",
       "report_url": "https://rip.xyz/audits/hypurrvault/rHYPURR.pdf",
       "auditor": "Three Sigma",
       "audit_type": "audit",
@@ -389,16 +466,29 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "extracted_names": [
+        "rHYPURR"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "Three Sigma",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 20,
+      "latest_audit": "2026-01"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 999,
@@ -407,13 +497,33 @@
       "name": "Nft",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 8.114224194188611e-11,
-      "risk_note": "Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0xccc88a9d1b4ed6b0eaba998850414b24f1c315be",
+      "name": "RelayApprovalProxyV3",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x0000000000000068f116a894984e2db1123eb395",
+      "name": "Seaport",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 1,
-    "upstream": 3,
+    "native": 4,
+    "upstream": 1,
     "standard_library": 0,
     "needs_review": 4
   },
@@ -421,15 +531,12 @@
     "match_method_counts": {
       "extraction_exact": 2
     },
-    "extraction_confidence_counts": {},
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 3204,
-        "report_name": "**View the full audit report (PDF)**"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

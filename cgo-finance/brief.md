@@ -1,27 +1,25 @@
 # Agentic Audit Brief: CGO Finance
 
-⚠️ Lifecycle status: DECLINING - TVL changed 9.3% over 90 days
-
 ## Project Overview
 
 - Project: CGO Finance (`cgo-finance`)
-- Lifecycle: declining (Tier 0, 96.9% below peak)
-- Generated: 2026-06-17T20:22:42.897Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-6f9b
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:10.191Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-1bf2
 - Chains: cronos
-- Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $1,045,272.68
+- Contract surface: 1 unique implementations (2 raw deployments)
+- DeFi Llama TVL: $893,041.82
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-CGO Finance is a Cronos yield optimizer/yield aggregator.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
@@ -33,19 +31,21 @@ CGO Finance is a Cronos yield optimizer/yield aggregator.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 2
-- Unique implementations: 2
+- Unverified implementations: 1
+- Unique implementations: 1
 - Raw deployments: 2
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -73,14 +73,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (2)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | cronos | n/a | `0x5795be...e23ca2` | ❓ Unverified |
-| UnnamedContract | unknown | cronos | n/a | `0x869c3e...0d4cb6` | ❓ Unverified |
+| UnnamedContract | unknown | cronos | n/a | 2 deployments: cronos `0x5795be...e23ca2`; cronos `0x869c3e...0d4cb6` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -97,10 +96,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

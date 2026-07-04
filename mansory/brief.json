@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "mansory",
-  "generated_at": "2026-06-17T07:00:36.878Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "mansory",
-    "tier": 0,
-    "peak_tvl": 33012528,
-    "peak_date": "2025-09-14T00:00:00.000Z",
-    "tvl_30d_ago": 6714431,
-    "tvl_90d_ago": 8378967,
-    "tvl_current": 6266972,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 14998102,
-    "change_30d_pct": -6.664138778103461,
-    "change_90d_pct": -25.205911420823117,
-    "days_since_peak": 272,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 81.01638262904312
-  },
+  "generated_at": "2026-07-04T14:53:30.362Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-16da",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 1,
     "total_addresses": 1,
@@ -34,14 +18,14 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 6179583.0017,
-    "tvl_usd": 170021.61196068127,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "bsc": 170021.61
-    },
-    "asd_usd": 170021.61196068127,
+    "dl_tvl_usd": 6687646.088160001,
+    "tvl_usd": 6687646.088160001,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://www.mansory.com/",
     "chains": [
       "bsc"
@@ -55,25 +39,32 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Mansory / MNSRY should be described as a Mansory-branded utility or RWA-style token associated with luxury automotive benefits, VIP events, NFT-authenticated assets, and lifestyle rewards, consistent with the current DefiLlama framing and homepage evidence. The public homepage does not substantiate broad protocol-level claims that Mansory is primarily a BSC asset-tokenization, lottery, or staking protocol. Separately, the observed BSC contract surface includes components named MyOFTUpgradeable, IpfsProofLotteryUpgradeable, NftTierStaking variants, and URI-builder/helper bytecode, indicating OFT, lottery, staking, and metadata-related smart-contract components where supported by contract names. The project should not be presented as BSC-only: DefiLlama tracks Mansory on both Binance/BSC and Solana, and any BSC-only contract review should explicitly disclose that Solana coverage is excluded.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
     "product_family_count": 1,
-    "total_contracts_indexed": 12,
-    "live_contracts": 0,
-    "inactive_contracts": 6,
-    "singleton_contracts": 5,
+    "total_contracts_indexed": 1,
+    "live_contracts": 1,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 1,
-    "deployment_units": 3,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 1,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v3"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 1,
@@ -93,10 +84,10 @@
       "deployment_unit_proxy_count": null,
       "name": "PancakeV3Pool",
       "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "pancakeswap",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 170021.61196068127,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "PancakeV3Pool",
@@ -109,7 +100,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 170021.61196068127,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -118,15 +109,30 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-30 21:13:26+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x4700ac98ee76e0d63598e2bfc24a2646fdf3649a",
+      "name": "PancakeV3Pool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
-    "upstream": 1,
+    "native": 1,
+    "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },

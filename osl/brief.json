@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "osl",
-  "generated_at": "2026-06-17T18:56:29.569Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-1121",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "osl",
-    "tier": 0,
-    "peak_tvl": 104115598,
-    "peak_date": "2026-04-24T00:00:00.000Z",
-    "tvl_30d_ago": 55339333,
-    "tvl_90d_ago": 45981339,
-    "tvl_current": 41696440,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 22779141,
-    "change_30d_pct": -24.65315763744388,
-    "change_90d_pct": -9.318778211308723,
-    "days_since_peak": 32,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 59.951783593463105
-  },
+  "generated_at": "2026-07-04T14:53:39.172Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d094",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 4,
     "total_addresses": 4,
@@ -34,9 +18,11 @@
     "contracts_unverified": 4,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 92558443.35432,
-    "tvl_usd": 92558443.35432,
+    "dl_tvl_usd": 19582590.58811,
+    "tvl_usd": 19582590.58811,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,18 +39,27 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
     "project_purpose": "OSL is a regulated centralized digital asset exchange and digital asset payments/infrastructure provider. The four listed Scroll addresses are an incomplete, unknown-role on-chain surface and should not be characterized as facilitating OSL's core centralized exchange operations or representing the full multi-chain OSL/DefiLlama reserve surface without further verification.",
     "relationship_narrative": "All contracts belong to a single product family with no explicit sub-families or shared infrastructure identified; they likely interact directly to facilitate exchange operations.",
-    "product_family_count": 1,
+    "product_family_count": 0,
     "total_contracts_indexed": 4,
-    "live_contracts": 4,
+    "live_contracts": 0,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 4,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
@@ -91,7 +86,7 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "OSL",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -114,7 +109,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 534352,
@@ -126,7 +125,7 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "OSL",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -149,7 +148,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 534352,
@@ -161,7 +164,7 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "OSL",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -184,7 +187,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 534352,
@@ -196,7 +203,7 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "OSL",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -219,7 +226,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],

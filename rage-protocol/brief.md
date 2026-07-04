@@ -4,44 +4,47 @@
 
 - Project: RAGE Protocol (`rage-protocol`)
 - Website: [https://ultraroundmoney.com/rage](https://ultraroundmoney.com/rage)
-- Lifecycle: active (Tier 0, 25.2% below peak)
-- Generated: 2026-06-21T10:21:32.909Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:44.523Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-0679
 - Chains: base
 - Contract surface: 23 unique implementations (31 raw deployments)
-- DeFi Llama TVL: $232,882.08
+- DeFi Llama TVL: $232,093.81
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-RAGE Protocol is an onchain capital allocator that enables users to deposit assets into managed vaults and indices. It automates yield strategies and portfolio rebalancing across multiple tokens.
+Onchain Capital Allocator. Structurally: 22 project-authored contract(s) across 1 chain(s); 1 ERC721 NFT; built on openzeppelin.
 
 ### Architecture
 
-All contracts share a common deployer cluster, indicating a unified protocol. The WeightedIndex contracts use a shared implementation behind proxies, while RageBuyingProtocol likely supports the Rage vault's asset acquisition logic.
+The protocol comprises 5 functional families. Its contracts share 1 common project-authored base contract(s) (owned). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 31; live-surface contracts included: 31 (31 live, 0 unknown).
+- Indexed contracts: 31; live-surface contracts included: 31 (29 live, 2 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 1/1 live.
-- Detected codebases: uniswap-v3
-- Unverified dependencies: 2/19.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 6/22 (27.3%)
+- Coverage of deployed-live implementations: 6/22 (27.3%)
+- Deployed-live implementations: 22 of 23 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 6/22
 - Verified + Unaudited implementations: 16
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 23
 - Raw deployments: 31
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-09 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 1 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 6 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -102,13 +105,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| WeightedIndex | unknown | base | unit-42279 (2 proxies) | 2 deployments: base `0x55a81d...56f6c0`; base `0xf760fd...2470ff` | ❓ Unverified |
+| WeightedIndex | unknown | base | n/a | 2 deployments: base `0x55a81d...56f6c0`; base `0xf760fd...2470ff` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://ultraroundmoney.com/rage/audit.pdf) | unknown | Audit | 2025-09 | fresh | Direct | contract_name | 6 | high |
+| [audit.pdf](https://ultraroundmoney.com/rage/audit.pdf) | unknown | Audit | 2025-09 | fresh | Direct | contract_name | 6 | n/a |
 
 ## Coverage Gaps
 
@@ -116,6 +119,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| base | [`0x5babfc...dec402`](./contracts/base-8453/0x5babfc2f240bc5de90eb7e19d789412db1dec402/) | Circle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xe77b94...1fb987`](./contracts/base-8453/0xe77b94b2a3ab82d4bba7ae2e05b6176dd91fb987/) | CircleTemple | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0xbc7755...6259d8`](./contracts/base-8453/0xbc7755a153e852cf76cccddb4c2e7c368f6259d8/) | Hestia | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x4e5524...1887b8`](./contracts/base-8453/0x4e5524e08fee52cef973380fdbea8909361887b8/) | HestiaChaosEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -137,9 +141,9 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 22 |
-| upstream | 1 |
+| upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -147,7 +151,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=6
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=6
 
 Fork inheritance lineage and inherited audits are included when available.

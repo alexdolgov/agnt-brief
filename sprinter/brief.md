@@ -1,51 +1,51 @@
 # Agentic Audit Brief: Sprinter
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 39.9% over 90 days
-
 ## Project Overview
 
 - Project: Sprinter (`sprinter`)
 - Website: [https://sprinter.tech/](https://sprinter.tech/)
-- Lifecycle: unknown (Tier 0, 75% below peak)
-- Generated: 2026-06-18T21:15:07.756Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-5cc8
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:58.563Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16bc
 - Chains: arbitrum, base, ethereum, optimism
 - Contract surface: 16 unique implementations (24 raw deployments)
-- DeFi Llama TVL: $923,972.99
+- DeFi Llama TVL: $680,662.50
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Sprinter is credit and liquidity infrastructure with Sprinter Solve/Credit and Stash/yield components. The currently matched DefiLlama-tracked contract surface covers the Base Stash/ERC-4626 vault subset, including yield-oriented vault infrastructure and integrations such as Aave strategies, rather than the full Sprinter project surface.
+Yield. Structurally: 10 project-authored contract(s) across 3 chain(s); 1 ERC20 token; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The LiquidityPool and LiquidityPoolAave contracts serve as the core vaults, while SprinterLiquidityMining distributes incentives to depositors. The TransparentUpgradeableProxy points to a LiquidityHub implementation, likely managing shared logic or access control across the system.
+The protocol comprises 6 functional families. Its contracts share 1 common project-authored base contract(s) (liquiditypool). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 26; live-surface contracts included: 24 (17 live, 7 unknown).
-- Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
-- Deployment units: 4/8 live.
-- Detected codebases: aave-v2
-- Dependencies extracted: 2; unverified dependencies: 0.
+- Indexed contracts: 24; live-surface contracts included: 24 (24 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 11/16 (68.8%)
+- Coverage of deployed-live implementations: 11/13 (84.6%)
+- Deployed-live implementations: 16 of 16 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 11/16
 - Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 16
 - Raw deployments: 24
-- Audits discovered: 6
+- Audits discovered: 6 (6 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 4
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-03 (fresh)
-- Staleness: 2 fresh, 4 aging, 0 stale, 0 unknown
-- Tier 1 coverage: 37.5% (Spearbit)
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
+- Audit staleness (calendar age): 2 fresh, 4 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 11 match-unverified
+- Tier 1 coverage: 46.2% (Spearbit)
 
 ### Auditor Coverage
 
@@ -63,13 +63,13 @@ The LiquidityPool and LiquidityPoolAave contracts serve as the core vaults, whil
 | CensoredTransferFromMulticall | periphery | base | n/a | [`0x7c472e...29b6bb`](./contracts/base-8453/0x7c472eba1945e970a23c903fc8812d469a29b6bb/) | ✅ Audited |
 | LiquidityPool | core_logic | optimism | n/a | 4 deployments: optimism [`0x0e1632...2810eb`](./contracts/optimism-10/0x0e16326e6921395eda2575740374e754b22810eb/); base [`0x0e1632...2810eb`](./contracts/base-8453/0x0e16326e6921395eda2575740374e754b22810eb/); base `0xb58bb9...e5c032`; arbitrum [`0x0e1632...2810eb`](./contracts/arbitrum-42161/0x0e16326e6921395eda2575740374e754b22810eb/) | ✅ Audited |
 | LiquidityPoolAave | core_logic | optimism | n/a | 4 deployments: optimism [`0x2022a5...5357b5`](./contracts/optimism-10/0x2022a5600f854cc3218e636239f4dfce9e5357b5/); base [`0x2022a5...5357b5`](./contracts/base-8453/0x2022a5600f854cc3218e636239f4dfce9e5357b5/); base `0x7c2552...c09f4b`; arbitrum [`0x2022a5...5357b5`](./contracts/arbitrum-42161/0x2022a5600f854cc3218e636239f4dfce9e5357b5/) | ✅ Audited |
-| Processor | unknown | ethereum | unit-39124 | [`0xffdb38...16286d`](./contracts/ethereum-1/0xffdb380c79d9bf412a61d63060388d761d16286d/) | ✅ Audited |
-| Rebalancer | adapter | optimism | unit-39126 | [`0xa85cf4...869888`](./contracts/optimism-10/0xa85cf46c150db2600b1d03e437bedd5513869888/) | ✅ Audited |
-| Rebalancer | adapter | base | unit-39129 | [`0xa85cf4...869888`](./contracts/base-8453/0xa85cf46c150db2600b1d03e437bedd5513869888/) | ✅ Audited |
-| Rebalancer | adapter | arbitrum | unit-39131 | [`0xa85cf4...869888`](./contracts/arbitrum-42161/0xa85cf46c150db2600b1d03e437bedd5513869888/) | ✅ Audited |
-| Repayer | unknown | optimism | unit-39125 | [`0x36364a...439511`](./contracts/optimism-10/0x36364acc7b9c67692ca215af09a41cbd10439511/) | ✅ Audited |
-| Repayer | unknown | base | unit-39127 | [`0x36364a...439511`](./contracts/base-8453/0x36364acc7b9c67692ca215af09a41cbd10439511/) | ✅ Audited |
-| Repayer | unknown | arbitrum | unit-39130 | [`0x36364a...439511`](./contracts/arbitrum-42161/0x36364acc7b9c67692ca215af09a41cbd10439511/) | ✅ Audited |
+| Processor | unknown | ethereum | n/a | [`0xffdb38...16286d`](./contracts/ethereum-1/0xffdb380c79d9bf412a61d63060388d761d16286d/) | ✅ Audited |
+| Rebalancer | adapter | optimism | n/a | [`0xa85cf4...869888`](./contracts/optimism-10/0xa85cf46c150db2600b1d03e437bedd5513869888/) | ✅ Audited |
+| Rebalancer | adapter | base | n/a | [`0xa85cf4...869888`](./contracts/base-8453/0xa85cf46c150db2600b1d03e437bedd5513869888/) | ✅ Audited |
+| Rebalancer | adapter | arbitrum | n/a | [`0xa85cf4...869888`](./contracts/arbitrum-42161/0xa85cf46c150db2600b1d03e437bedd5513869888/) | ✅ Audited |
+| Repayer | unknown | optimism | n/a | [`0x36364a...439511`](./contracts/optimism-10/0x36364acc7b9c67692ca215af09a41cbd10439511/) | ✅ Audited |
+| Repayer | unknown | base | n/a | [`0x36364a...439511`](./contracts/base-8453/0x36364acc7b9c67692ca215af09a41cbd10439511/) | ✅ Audited |
+| Repayer | unknown | arbitrum | n/a | [`0x36364a...439511`](./contracts/arbitrum-42161/0x36364acc7b9c67692ca215af09a41cbd10439511/) | ✅ Audited |
 | SprinterLiquidityMining | unknown | base | n/a | [`0x479d15...313c21`](./contracts/base-8453/0x479d158959b59328e89f0fbf7dfebb198c313c21/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (5)
@@ -104,12 +104,12 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [* **Secure & Credible:** MPC-secured multi-party threshold signing, risk mitigation mechanisms, and smart contract audits by [Veridise](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf) and [Spearbit/Cantina]() make Sprinter Stash a secure platform. Built in partnership with [ChainSafe](https://chainsafe.io), a team with 7+ years of industry expertise across core protocol development, standardization/EIPs and security audits/council work.](https://cantina.xyz/portfolio/fe3c634c-d06d-47c2-a70a-f19d2f820f58) | Spearbit | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
-| [* [Sprinter Credit]() - Spearbit/Cantina](https://cantina.xyz/portfolio/2a4c73be-7566-4d0b-af12-d94a037c4b01) | Spearbit | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
-| [Sprinter remote collateral security review Cantina - final.pdf](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/Sprinter%20remote%20collateral%20security%20review%20Cantina%20-%20final.pdf) | Spearbit | Audit | 2026-03 | fresh | Direct | contract_name | 1 | high |
-| [VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf) | Sygma Labs | Audit | 2025-02 | aging | Direct | contract_name | 4 | high |
-| [VAR_Sygma_labs_Sprinter_liquidity_pool_250304-final.pdf](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_pool_250304-final.pdf) | Sygma Labs | Audit | 2025-03 | aging | Direct | contract_name | 11 | high |
-| [cantina_sprinter_may2025.pdf](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/cantina_sprinter_may2025.pdf) | Spearbit | Audit | 2025-06 | aging | Direct | contract_name | 5 | medium |
+| [cantina.xyz/portfolio/fe3c634c-d06d-47c2-a70a-f19d2f820f58](https://cantina.xyz/portfolio/fe3c634c-d06d-47c2-a70a-f19d2f820f58) | Spearbit | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
+| [cantina.xyz/portfolio/2a4c73be-7566-4d0b-af12-d94a037c4b01](https://cantina.xyz/portfolio/2a4c73be-7566-4d0b-af12-d94a037c4b01) | Spearbit | Audit | 2026-03 | fresh | Direct | n/a | 0 | n/a |
+| [Sprinter remote collateral security review Cantina - final.pdf](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/Sprinter%20remote%20collateral%20security%20review%20Cantina%20-%20final.pdf) | Spearbit | Audit | 2026-03 | fresh | Direct | contract_name | 1 | n/a |
+| [VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf) | Sygma Labs | Audit | 2025-02 | aging | Direct | contract_name | 4 | n/a |
+| [VAR_Sygma_labs_Sprinter_liquidity_pool_250304-final.pdf](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_pool_250304-final.pdf) | Sygma Labs | Audit | 2025-03 | aging | Direct | contract_name | 5 | n/a |
+| [cantina_sprinter_may2025.pdf](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/cantina_sprinter_may2025.pdf) | Spearbit | Audit | 2025-06 | aging | Direct | contract_name | 5 | n/a |
 
 ## Coverage Gaps
 
@@ -124,9 +124,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 6 |
+| native | 13 |
 | upstream | 0 |
-| standard_library | 10 |
+| standard_library | 3 |
 | needs_review | 0 |
 
 ## Scope Matching Notes
@@ -135,12 +135,12 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=3, medium=1
-- Match method counts: extraction_exact=25
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=15
 
 Zero-match audit list:
 
-- [3209] * **Secure & Credible:** MPC-secured multi-party threshold signing, risk mitigation mechanisms, and smart contract audits by [Veridise](https://github.com/sprintertech/sprinter-stash-contracts/blob/main/audits/VAR_Sygma_labs_Sprinter_liquidity_250212-final.pdf) and [Spearbit/Cantina]() make Sprinter Stash a secure platform. Built in partnership with [ChainSafe](https://chainsafe.io), a team with 7+ years of industry expertise across core protocol development, standardization/EIPs and security audits/council work.
-- [3210] * [Sprinter Credit]() - Spearbit/Cantina
+- [3209] cantina.xyz/portfolio/fe3c634c-d06d-47c2-a70a-f19d2f820f58
+- [3210] cantina.xyz/portfolio/2a4c73be-7566-4d0b-af12-d94a037c4b01
 
 Fork inheritance lineage and inherited audits are included when available.

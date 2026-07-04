@@ -1,57 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "spiritswap",
-  "generated_at": "2026-06-21T12:09:55.491Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "spiritswap",
-    "tier": 1,
-    "peak_tvl": 373029262,
-    "peak_date": "2022-01-17T00:00:00.000Z",
-    "tvl_30d_ago": 352410,
-    "tvl_90d_ago": 334718,
-    "tvl_current": 278328,
-    "tier0_reason": "catastrophic_collapse_from_peak",
-    "tvl_180d_ago": 469064,
-    "change_30d_pct": -21.02153741380778,
-    "change_90d_pct": -16.84701748934924,
-    "governance_raw": {
-      "evidence": "TVL dropped 99.93% from peak over 1616 days, homepage shows no active development or user activity, and the protocol appears abandoned.",
-      "confidence": 0.95,
-      "lifecycle_status": "dead"
-    },
-    "days_since_peak": 1616,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 99.92538708665703,
-    "governance_evidence": "TVL dropped 99.93% from peak over 1616 days, homepage shows no active development or user activity, and the protocol appears abandoned.",
-    "governance_confidence": 0.95,
-    "governance_text_chars": 1252,
-    "governance_classification": "dead",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:58.520Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-ae05",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 12,
-    "total_addresses": 13,
-    "unique_implementations": 12,
-    "total_deployments": 13,
+    "total_contracts": 14,
+    "total_addresses": 19,
+    "unique_implementations": 14,
+    "total_deployments": 19,
     "audited_contracts": 0,
     "unaudited_contracts": 7,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 7,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 5,
+    "contracts_unverified": 7,
     "coverage_pct": 0,
     "total_audits": 5,
+    "direct_audits": 5,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 337649,
-    "tvl_usd": 0.6008479343653343,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "sonic": 0.6
-    },
-    "asd_usd": 0.6008479343653343,
+    "dl_tvl_usd": 259330,
+    "tvl_usd": 259330,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://www.spiritswap.finance/chain/ftm/swap",
     "chains": [
       "fantom",
@@ -66,26 +40,35 @@
       "aging": 0,
       "stale": 3,
       "unknown": 2
+    },
+    "live_implementations": 7,
+    "live_verified_implementations": 7,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "SpiritSwap is a decentralized exchange and lending protocol on Sonic and Fantom. It provides automated market making with concentrated liquidity, yield farming incentives, and lending markets for users to swap tokens, provide liquidity, and earn rewards.",
-    "relationship_narrative": "The Swaps/Liquidity family provides the core AMM infrastructure, with the AlgebraFactory deploying pools and the NonfungiblePositionManager managing LP positions. The Farming family builds on top by allowing users to stake those LP positions in the FarmingCenter to earn rewards from AlgebraEternalFarming. The legacy SpiritSwap AMM contracts appear to be separate, possibly an older version, and may not directly interact with the Algebra-based families.",
-    "product_family_count": 3,
-    "total_contracts_indexed": 33,
+    "project_purpose": "Dexs. Structurally: 14 project-authored contract(s) across 1 chain(s); 1 ERC721 NFT; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 7 functional families. Its contracts share 6 common project-authored base contract(s) (peripheryimmutablestate, peripheryvalidation, blocktimestamp). Dominant framework: openzeppelin.",
+    "product_family_count": 7,
+    "total_contracts_indexed": 29,
     "live_contracts": 8,
-    "inactive_contracts": 16,
-    "singleton_contracts": 4,
+    "inactive_contracts": 10,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 5,
-    "deployment_units": 2,
+    "unknown_contracts": 11,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 5,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 12,
+    "unique_implementations": 14,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -104,8 +87,8 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "All of Swaps/Liquidity:",
-      "tvl_usd": 0.6008479343653343,
+      "product_line": null,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "AlgebraCommunityVault",
@@ -118,7 +101,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 0.6008479343653343,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -127,7 +110,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-08 00:12:22+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -137,9 +124,9 @@
       "deployment_unit_proxy_count": null,
       "name": "AlgebraEternalFarming",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "algebra",
-      "product_line": "Farming:",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -162,7 +149,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-10 16:26:24+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -174,7 +165,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "All of Swaps/Liquidity:",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -197,7 +188,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-08 00:12:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -207,9 +202,9 @@
       "deployment_unit_proxy_count": null,
       "name": "FarmingCenter",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "algebra",
-      "product_line": "Farming:",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -232,7 +227,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-10 16:26:26+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -244,7 +243,7 @@
       "role": "governance",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "All of Swaps/Liquidity:",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -267,7 +266,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-10 16:16:18+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -279,7 +282,7 @@
       "role": "periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "All of Swaps/Liquidity:",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -302,7 +305,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-18 23:13:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -312,8 +319,8 @@
       "deployment_unit_proxy_count": null,
       "name": "SwapRouter",
       "role": "adapter",
-      "origin_kind": "upstream",
-      "origin_provider": "algebra",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -348,7 +355,245 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-18 23:13:14+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x085b00de2b00fc6529e881399ece936e22f831ea",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x085b00de2b00fc6529e881399ece936e22f831ea",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-18 23:13:16+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x0b1019859c10fc7018081f29580724455fe9fee0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x0b1019859c10fc7018081f29580724455fe9fee0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-10 16:16:58+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x271b8ea9de9f2a27341524d4ad8a0d3ea1bc8243",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x271b8ea9de9f2a27341524d4ad8a0d3ea1bc8243",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-18 23:13:15+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x62fa59126b12736f31e96c35fc86493450763e5a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x62fa59126b12736f31e96c35fc86493450763e5a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-10 16:16:16+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x6f161bd48ae6ae015b03b22d24037ebcbdaf7382",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0x6f161bd48ae6ae015b03b22d24037ebcbdaf7382",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-10 16:16:56+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0xe57c42af3c5e19ef833f045a00801ad107c66ddb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 146,
+          "chain_name": "sonic",
+          "address": "0xe57c42af3c5e19ef833f045a00801ad107c66ddb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-10 16:16:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 250,
@@ -360,11 +605,11 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "SpiritSwap AMM",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "UnnamedContract",
       "deployments": [
         {
           "chain_id": 250,
@@ -376,31 +621,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0x5b2af7fd27e2ea14945c82dd254c79d3ed34685e",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "SpiritSwap AMM",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -411,31 +632,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0x5cc61a78f164885776aa610fb0fe1257df78e59b",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "SpiritSwap AMM",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -446,31 +643,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0x9d3591719038752db0c8beee2040ffcc3b2c6b9c",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "SpiritSwap AMM",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -481,31 +654,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 250,
-      "chain_name": "fantom",
-      "address": "0xef45d134b73241eda7703fa787148d9c9f4950b0",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "SpiritSwap AMM",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 250,
           "chain_name": "fantom",
@@ -523,7 +672,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -540,6 +693,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -551,7 +707,7 @@
     {
       "audit_id": 13883,
       "audit_key": "audit-13883",
-      "report_name": ".css-mc6j7r{display:inline-block;line-height:1em;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;color:#60E6C5;width:auto;height:18px;}",
+      "report_name": "Zokyo SpiritSwap V2 Audit.pdf",
       "report_url": "https://github.com/Spirit-DAO/spiritswap-contract/blob/main/Zokyo%20SpiritSwap%20V2%20Audit.pdf",
       "auditor": "Zokyo",
       "audit_type": "audit",
@@ -561,6 +717,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -572,7 +731,7 @@
     {
       "audit_id": 13884,
       "audit_key": "audit-13884",
-      "report_name": ".css-hjeyoq{display:inline-block;line-height:1em;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;color:#60E6C5;width:auto;height:22px;}",
+      "report_name": "PeckShield-Audit-Report-SpiritV2-v1.0.pdf",
       "report_url": "https://github.com/Spirit-DAO/spiritswap-contract/blob/main/PeckShield-Audit-Report-SpiritV2-v1.0.pdf",
       "auditor": "PeckShield",
       "audit_type": "audit",
@@ -582,6 +741,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -593,7 +755,7 @@
     {
       "audit_id": 13885,
       "audit_key": "audit-13885",
-      "report_name": "- [Audits](): All Audits for on-chain contracts are done by our partners at Hashlock",
+      "report_name": "audits.md",
       "report_url": "https://docs.silverswap.io/silverswap/technical-details/audits.md",
       "auditor": "Hashlock",
       "audit_type": "audit",
@@ -603,6 +765,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -614,7 +779,7 @@
     {
       "audit_id": 13886,
       "audit_key": "audit-13886",
-      "report_name": "All Audits are performed by [Hashlock](https://www.bing.com/search?pglt=299\\&q=hashlock\\&cvid=44f7d89fda28454692e287c3419fdfa8\\&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQRRg90gEIMjI5NmowajGoAgCwAgA\\&FORM=ANNTA1\\&adppc=EDGEESS\\&PC=U531), and can be found [here]().",
+      "report_name": "hashlock.com/audits/silverswap",
       "report_url": "https://hashlock.com/audits/silverswap",
       "auditor": "Hashlock",
       "audit_type": "audit",
@@ -624,6 +789,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -642,8 +810,18 @@
       "name": "AlgebraCommunityVault",
       "role": "core_logic",
       "origin_kind": "native",
-      "tvl_usd": 0.6008479343653343,
-      "risk_note": "Verified native implementation with $0.60 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0xf5d228fd454e99384bfaa4e695b70a8cdd4c0c08",
+      "name": "AlgebraEternalFarming",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 146,
@@ -651,6 +829,16 @@
       "address": "0xb860200bd68dc39ceafd6ebb82883f189f4cda76",
       "name": "AlgebraFactory",
       "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x967f26d3a2714a55bdd1bd9c6e6ed148527e51d6",
+      "name": "FarmingCenter",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -674,13 +862,23 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 146,
+      "chain_name": "sonic",
+      "address": "0x2e6b9c8d4a0972f87f21437a3ac7e4a1810f5438",
+      "name": "SwapRouter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 4,
-    "upstream": 3,
+    "native": 7,
+    "upstream": 0,
     "standard_library": 0,
-    "needs_review": 5
+    "needs_review": 7
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -694,19 +892,19 @@
       },
       {
         "audit_id": 13883,
-        "report_name": ".css-mc6j7r{display:inline-block;line-height:1em;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;color:#60E6C5;width:auto;height:18px;}"
+        "report_name": "Zokyo SpiritSwap V2 Audit.pdf"
       },
       {
         "audit_id": 13884,
-        "report_name": ".css-hjeyoq{display:inline-block;line-height:1em;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;color:#60E6C5;width:auto;height:22px;}"
+        "report_name": "PeckShield-Audit-Report-SpiritV2-v1.0.pdf"
       },
       {
         "audit_id": 13885,
-        "report_name": "- [Audits](): All Audits for on-chain contracts are done by our partners at Hashlock"
+        "report_name": "audits.md"
       },
       {
         "audit_id": 13886,
-        "report_name": "All Audits are performed by [Hashlock](https://www.bing.com/search?pglt=299\\&q=hashlock\\&cvid=44f7d89fda28454692e287c3419fdfa8\\&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQRRg90gEIMjI5NmowajGoAgCwAgA\\&FORM=ANNTA1\\&adppc=EDGEESS\\&PC=U531), and can be found [here]()."
+        "report_name": "hashlock.com/audits/silverswap"
       }
     ],
     "inherited_remapped_matches": []

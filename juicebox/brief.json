@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "juicebox",
-  "generated_at": "2026-06-17T07:01:01.835Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "juicebox",
-    "tier": 0,
-    "peak_tvl": 25711019,
-    "peak_date": "2025-08-23T00:00:00.000Z",
-    "tvl_30d_ago": 12522278,
-    "tvl_90d_ago": 10399913,
-    "tvl_current": 10839675,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 14776794,
-    "change_30d_pct": -13.436876261651435,
-    "change_90d_pct": 4.2285161423946525,
-    "days_since_peak": 273,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 57.84035241854863
-  },
+  "generated_at": "2026-07-04T14:53:26.924Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 57,
+    "total_contracts": 50,
     "total_addresses": 210,
-    "unique_implementations": 57,
+    "unique_implementations": 50,
     "total_deployments": 210,
     "audited_contracts": 7,
     "unaudited_contracts": 42,
     "contracts_verified_audited": 7,
     "contracts_verified_unaudited": 42,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 8,
+    "contracts_unverified": 1,
     "coverage_pct": 14.3,
     "total_audits": 10,
+    "direct_audits": 10,
+    "inherited_audits": 0,
     "scoreable_audits": 4,
-    "dl_tvl_usd": 8630201,
-    "tvl_usd": 8630201,
+    "dl_tvl_usd": 8209787,
+    "tvl_usd": 8209787,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -62,28 +48,35 @@
       "aging": 0,
       "stale": 10,
       "unknown": 0
+    },
+    "live_implementations": 49,
+    "live_verified_implementations": 49,
+    "live_audited_implementations": 7,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 7
     }
   },
   "topography": {
-    "project_purpose": "Juicebox is a programmable treasury protocol that enables projects to raise funds, manage payouts, and issue tokens through configurable funding cycles. It supports multi-chain deployments, NFT-based contribution tiers, and cross-chain treasury operations.",
-    "relationship_narrative": "The Juicebox Core family provides shared infrastructure (controller, tokens, rulesets, splits) used by all other families. Payment Terminals, Hooks, and Swap Terminal extend the core payment flow, while Suckers and Omnichain Deployers enable cross-chain expansion, all relying on the core registry and permission systems.",
-    "product_family_count": 12,
-    "total_contracts_indexed": 236,
-    "live_contracts": 24,
-    "inactive_contracts": 26,
+    "project_purpose": "Launchpad. Structurally: 48 project-authored contract(s) across 3 chain(s); 1 ERC20 token, 3 ERC721 NFTs; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 7 functional families. Its contracts share 7 common project-authored base contract(s) (jbpermissioned, jbdeadline, jbsuckerdeployer). Dominant framework: openzeppelin.",
+    "product_family_count": 7,
+    "total_contracts_indexed": 210,
+    "live_contracts": 202,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 186,
+    "unknown_contracts": 8,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 279,
-    "unverified_dependencies": 24,
-    "detected_codebases": [
-      "uniswap-v3"
-    ]
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 57,
+    "unique_implementations": 50,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -158,7 +151,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-11 17:48:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -226,7 +223,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-11 17:48:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -294,7 +295,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-11 17:47:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -304,9 +309,9 @@
       "deployment_unit_proxy_count": null,
       "name": "ERC2771Forwarder",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Which addresses should I use? ​",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -362,7 +367,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-10 20:34:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -430,7 +439,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-18 16:43:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -542,7 +555,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-18 16:44:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -554,7 +571,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "721 Hook ​",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -654,7 +671,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-18 16:45:05+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -666,7 +687,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "721 Hook ​",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -722,7 +743,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-10 22:28:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -734,7 +759,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Suckers ​",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -768,7 +793,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-10 21:24:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -780,7 +809,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Suckers ​",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -814,7 +843,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-10 21:22:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 10,
@@ -882,7 +915,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-11 15:20:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -950,7 +987,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-11 15:20:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -962,7 +1003,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Suckers ​",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1106,7 +1147,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-10 21:28:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1116,9 +1161,9 @@
       "deployment_unit_proxy_count": null,
       "name": "JBChainlinkV3PriceFeed",
       "role": "operational_periphery",
-      "origin_kind": "upstream",
-      "origin_provider": "Chainlink",
-      "product_line": "Which addresses should I use? ​",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1143,7 +1188,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-11 14:42:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 10,
@@ -1153,9 +1202,9 @@
       "deployment_unit_proxy_count": null,
       "name": "JBChainlinkV3SequencerPriceFeed",
       "role": "operational_periphery",
-      "origin_kind": "upstream",
-      "origin_provider": "Chainlink",
-      "product_line": "Which addresses should I use? ​",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1200,7 +1249,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-11 14:41:51+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1238,7 +1291,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -1249,7 +1302,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 10,
@@ -1260,7 +1313,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -1271,7 +1324,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -1282,7 +1335,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -1293,7 +1346,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -1304,7 +1357,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -1317,7 +1370,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-18 18:05:23+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -1352,7 +1409,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-02-21 17:25:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1420,7 +1481,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-11 14:30:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1488,7 +1553,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-11 14:31:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1556,7 +1625,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-11 14:30:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1624,7 +1697,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-11 14:31:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1662,7 +1739,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -1673,7 +1750,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -1684,7 +1761,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -1697,7 +1774,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-10 20:36:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -1765,7 +1846,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-10 20:37:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1777,7 +1862,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Juicebox V3",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1803,7 +1888,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -1816,7 +1901,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-09-20 18:04:35+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -1828,7 +1917,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Juicebox V3",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1851,7 +1940,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-02-21 17:25:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1863,7 +1956,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Juicebox V3",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1886,7 +1979,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-10 22:40:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1954,7 +2051,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-10 20:39:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2022,7 +2123,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-10 20:38:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2034,7 +2139,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Which addresses should I use? ​",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -2090,7 +2195,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-11 14:28:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2202,7 +2311,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-17 18:11:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2314,7 +2427,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-18 17:38:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2326,7 +2443,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Suckers ​",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -2360,7 +2477,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-10 21:20:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2428,7 +2549,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-10 20:35:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2466,7 +2591,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -2477,7 +2602,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -2488,7 +2613,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -2499,7 +2624,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-10 20:37:35+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -2534,7 +2663,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-11-01 10:24:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2572,7 +2705,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -2583,7 +2716,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -2594,7 +2727,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -2605,7 +2738,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-10 20:35:47+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -2673,7 +2810,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-10 20:37:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2741,7 +2882,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-17 18:10:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2809,7 +2954,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-10 20:36:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2877,7 +3026,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-10 21:30:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2945,7 +3098,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-11 15:53:53+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -2957,7 +3114,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Swap Terminal ​",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -3013,7 +3170,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-14 15:57:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3025,7 +3186,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Swap Terminal ​",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -3125,7 +3286,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-12 16:36:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3237,7 +3402,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-17 18:10:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3275,7 +3444,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 8453,
@@ -3286,7 +3455,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -3297,7 +3466,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -3307,7 +3476,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-10 20:38:23+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -3375,7 +3548,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-12 14:39:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3443,7 +3620,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-12 14:39:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3455,7 +3636,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Juicebox V1",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -3478,7 +3659,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-07-15 22:14:03+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3490,7 +3675,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Juicebox V1",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -3513,257 +3698,16 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 84532,
-      "chain_name": "chain-84532",
-      "address": "0x79e5ca5ebe4f110965248afad88b8e539e1aa8fd",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 84532,
-          "chain_name": "chain-84532",
-          "address": "0x79e5ca5ebe4f110965248afad88b8e539e1aa8fd",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 84532,
-      "chain_name": "chain-84532",
-      "address": "0xc7369f75bd678e1a9a46b82e2512e84489d4d32d",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 84532,
-          "chain_name": "chain-84532",
-          "address": "0xc7369f75bd678e1a9a46b82e2512e84489d4d32d",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-10 23:18:10+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 421614,
       "chain_name": "chain-421614",
       "address": "0x5f820a86d63eb1b98c562728719dc1e30967c41c",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 421614,
-          "chain_name": "chain-421614",
-          "address": "0x5f820a86d63eb1b98c562728719dc1e30967c41c",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 421614,
-      "chain_name": "chain-421614",
-      "address": "0xb35ab801c008a64d8f3eea0a8a6209b0d176f2df",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 421614,
-          "chain_name": "chain-421614",
-          "address": "0xb35ab801c008a64d8f3eea0a8a6209b0d176f2df",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 11155111,
-      "chain_name": "chain-11155111",
-      "address": "0xca3f2cc5a35c0412e8147746602b76ba4ac29fc5",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 11155111,
-          "chain_name": "chain-11155111",
-          "address": "0xca3f2cc5a35c0412e8147746602b76ba4ac29fc5",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 11155111,
-      "chain_name": "chain-11155111",
-      "address": "0xf082e3218a690ea6386506bed338f6878d21815f",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 11155111,
-          "chain_name": "chain-11155111",
-          "address": "0xf082e3218a690ea6386506bed338f6878d21815f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 11155420,
-      "chain_name": "chain-11155420",
-      "address": "0x79e5ca5ebe4f110965248afad88b8e539e1aa8fd",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 11155420,
-          "chain_name": "chain-11155420",
-          "address": "0x79e5ca5ebe4f110965248afad88b8e539e1aa8fd",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 11155420,
-      "chain_name": "chain-11155420",
-      "address": "0xc7369f75bd678e1a9a46b82e2512e84489d4d32d",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
@@ -3774,8 +3718,85 @@
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "UnnamedContract",
       "deployments": [
+        {
+          "chain_id": 84532,
+          "chain_name": "chain-84532",
+          "address": "0x79e5ca5ebe4f110965248afad88b8e539e1aa8fd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 84532,
+          "chain_name": "chain-84532",
+          "address": "0xc7369f75bd678e1a9a46b82e2512e84489d4d32d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 421614,
+          "chain_name": "chain-421614",
+          "address": "0x5f820a86d63eb1b98c562728719dc1e30967c41c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 421614,
+          "chain_name": "chain-421614",
+          "address": "0xb35ab801c008a64d8f3eea0a8a6209b0d176f2df",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 11155111,
+          "chain_name": "chain-11155111",
+          "address": "0xca3f2cc5a35c0412e8147746602b76ba4ac29fc5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 11155111,
+          "chain_name": "chain-11155111",
+          "address": "0xf082e3218a690ea6386506bed338f6878d21815f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 11155420,
+          "chain_name": "chain-11155420",
+          "address": "0x79e5ca5ebe4f110965248afad88b8e539e1aa8fd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 11155420,
           "chain_name": "chain-11155420",
@@ -3793,7 +3814,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -3805,45 +3830,26 @@
       "auditor": "unknown",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022",
+      "date": "2022-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "JB3DayReconfigurationBufferBallot",
-        "JB7DayReconfigurationBufferBallot",
-        "JBController",
-        "JBDirectory",
-        "JBETHPaymentTerminal",
-        "JBFundingCycleStore",
-        "JBProjects",
-        "JBSingleTokenPaymentTerminalStore",
-        "JBSplitsStore",
-        "JBTokenStore",
-        "Multipay"
-      ],
-      "matched_contracts": 18,
+      "extracted_names": [],
+      "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": false,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 7040,
-          "report_url": "https://github.com/jbx-protocol/juice-contracts-v2/blob/main/security/postmortem/5.24.2022.md"
-        },
-        {
-          "audit_id": 7041,
-          "report_url": "https://github.com/jbx-protocol/juice-contracts-v3/blob/main/security/postmortem/5.24.2022.md"
-        }
-      ]
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
     },
     {
       "audit_id": 11935,
       "audit_key": "audit-11935",
-      "report_name": "DL audit link",
+      "report_name": "hacken.io/audits/constitution-dao/sca-constitution-dao-governance-erc20-jan2022",
       "report_url": "https://hacken.io/audits/constitution-dao/sca-constitution-dao-governance-erc20-jan2022",
       "auditor": "Hacken",
       "audit_type": "audit",
@@ -3853,6 +3859,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -3864,7 +3873,7 @@
     {
       "audit_id": 11936,
       "audit_key": "audit-11936",
-      "report_name": "DL audit link",
+      "report_name": "hackmd.io/@berndartmueller/2023-01-juice-v3-migration",
       "report_url": "https://hackmd.io/@berndartmueller/2023-01-juice-v3-migration",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -3874,6 +3883,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -3885,7 +3897,7 @@
     {
       "audit_id": 11937,
       "audit_key": "audit-11937",
-      "report_name": "DL audit link",
+      "report_name": "code4rena.com/reports/2022-10-juicebox",
       "report_url": "https://code4rena.com/reports/2022-10-juicebox",
       "auditor": "Code4rena",
       "audit_type": "contest",
@@ -3895,7 +3907,10 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -3906,7 +3921,7 @@
     {
       "audit_id": 11938,
       "audit_key": "audit-11938",
-      "report_name": "C4 Juicebox contest repository",
+      "report_name": "2022-10-juicebox (GitHub directory)",
       "report_url": "https://github.com/code-423n4/2022-10-juicebox",
       "auditor": "Code4rena",
       "audit_type": "contest",
@@ -3916,7 +3931,10 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -3927,7 +3945,7 @@
     {
       "audit_id": 11939,
       "audit_key": "audit-11939",
-      "report_name": "DL audit link",
+      "report_name": "certik-audit-report-12b48328d22ac38207dad74162cac1db.pdf",
       "report_url": "https://docs.juicebox.money/assets/files/certik-audit-report-12b48328d22ac38207dad74162cac1db.pdf",
       "auditor": "CertiK",
       "audit_type": "audit",
@@ -3937,78 +3955,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "IJBController",
-        "IJBControllerUtility",
-        "IJBDirectory",
-        "IJBETHPaymentTerminal",
-        "IJBFeeGauge",
-        "IJBFundingCycleBallot",
-        "IJBFundingCycleDataSource",
-        "IJBFundingCycleStore",
-        "IJBOperatable",
-        "IJBOperatorStore",
-        "IJBPayDelegate",
-        "IJBPrices",
-        "IJBProjects",
-        "IJBRedemptionDelegate",
-        "IJBSplitAllocator",
-        "IJBSplitsStore",
-        "IJBTerminal",
-        "IJBTerminalUtility",
-        "IJBToken",
-        "IJBTokenStore",
-        "IJBTokenUriResolver",
-        "JB3DayReconfigurationBufferBallot",
-        "JB7DayReconfigurationBufferBallot",
-        "JBBallotState",
-        "JBConstants",
-        "JBController",
-        "JBControllerUtility",
-        "JBCurrencies",
-        "JBDidPayData",
-        "JBDidRedeemData",
-        "JBDirectory",
-        "JBETHPaymentTerminal",
-        "JBETHPaymentTerminalStore",
-        "JBFakeFundingCycleMetadataResolver",
-        "JBFakeProject",
-        "JBFee",
-        "JBFundAccessConstraints",
-        "JBFundingCycle",
-        "JBFundingCycleData",
-        "JBFundingCycleMetadata",
-        "JBFundingCycleMetadataResolver",
-        "JBFundingCycleStore",
-        "JBGroupedSplits",
-        "JBOperatable",
-        "JBOperations",
-        "JBOperatorData",
-        "JBOperatorStore",
-        "JBPayParamsData",
-        "JBPrices",
-        "JBProject",
-        "JBProjectMetadata",
-        "JBProjects",
-        "JBRedeemParamsData",
-        "JBSplit",
-        "JBSplitsGroups",
-        "JBSplitsStore",
-        "JBToken",
-        "JBTokenStore",
-        "JBTokens"
-      ],
-      "matched_contracts": 26,
+      "extracted_names": [],
+      "matched_contracts": 6,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 11940,
       "audit_key": "audit-11940",
-      "report_name": "DL audit link",
+      "report_name": "code4rena.com/audits/2022-07-juicebox-v2-contest",
       "report_url": "https://code4rena.com/audits/2022-07-juicebox-v2-contest",
       "auditor": "Code4rena",
       "audit_type": "contest",
@@ -4018,6 +3979,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -4029,7 +3993,7 @@
     {
       "audit_id": 11941,
       "audit_key": "audit-11941",
-      "report_name": "View report",
+      "report_name": "code4rena.com/reports/2022-07-juicebox",
       "report_url": "https://code4rena.com/reports/2022-07-juicebox",
       "auditor": "Code4rena",
       "audit_type": "contest",
@@ -4039,35 +4003,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "JBChainlinkV3PriceFeed",
-        "JBController",
-        "JBDirectory",
-        "JBERC20PaymentTerminal",
-        "JBETHERC20ProjectPayer",
-        "JBETHERC20SplitsPayer",
-        "JBETHPaymentTerminal",
-        "JBFundingCycleMetadataResolver",
-        "JBFundingCycleStore",
-        "JBOperatorStore",
-        "JBPayoutRedemptionPaymentTerminal",
-        "JBPrices",
-        "JBSingleTokenPaymentTerminalStore",
-        "JBSplitsStore",
-        "JBToken",
-        "JBTokenStore"
-      ],
-      "matched_contracts": 19,
+      "extracted_names": [],
+      "matched_contracts": 5,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 11942,
       "audit_key": "audit-11942",
-      "report_name": "DL audit link",
+      "report_name": "peckshield-audit-report-ab36ee2b5dfb2a387410b4d64276f6ba.pdf",
       "report_url": "https://docs.juicebox.money/assets/files/peckshield-audit-report-ab36ee2b5dfb2a387410b4d64276f6ba.pdf",
       "auditor": "PeckShield",
       "audit_type": "audit",
@@ -4077,18 +4027,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "JBController",
-        "JBDirectory",
-        "JBETHPaymentTerminal",
-        "JBSplitsStore",
-        "JBTokenStore"
-      ],
-      "matched_contracts": 14,
+      "extracted_names": [],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -4104,6 +4051,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -4169,6 +4119,16 @@
       "chain_name": "ethereum",
       "address": "0x03ef9ea1467df70d4b1e1d619aa9a2a2f820ee24",
       "name": "CTPublisher",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc29d6995ab3b0df4650ad643adeac55e7acbb566",
+      "name": "ERC2771Forwarder",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -4260,6 +4220,16 @@
       "address": "0x172ad9b3df724ee0422ea85b7799a3f7ca761816",
       "name": "JBCCIPSuckerDeployer",
       "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x6ed8eedc0689bd6a8c7168301897a0113c28bba4",
+      "name": "JBChainlinkV3SequencerPriceFeed",
+      "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -4546,41 +4516,38 @@
     }
   ],
   "origin_summary": {
-    "native": 53,
-    "upstream": 2,
-    "standard_library": 1,
+    "native": 49,
+    "upstream": 0,
+    "standard_library": 0,
     "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 116
+      "contract_name": 18
     },
-    "extraction_confidence_counts": {
-      "high": 3,
-      "medium": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 11935,
-        "report_name": "DL audit link"
+        "report_name": "hacken.io/audits/constitution-dao/sca-constitution-dao-governance-erc20-jan2022"
       },
       {
         "audit_id": 11936,
-        "report_name": "DL audit link"
+        "report_name": "hackmd.io/@berndartmueller/2023-01-juice-v3-migration"
       },
       {
         "audit_id": 11937,
-        "report_name": "DL audit link"
+        "report_name": "code4rena.com/reports/2022-10-juicebox"
       },
       {
         "audit_id": 11938,
-        "report_name": "C4 Juicebox contest repository"
+        "report_name": "2022-10-juicebox (GitHub directory)"
       },
       {
         "audit_id": 11940,
-        "report_name": "DL audit link"
+        "report_name": "code4rena.com/audits/2022-07-juicebox-v2-contest"
       },
       {
         "audit_id": 11943,

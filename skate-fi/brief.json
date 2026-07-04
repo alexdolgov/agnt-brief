@@ -1,52 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "skate-fi",
-  "generated_at": "2026-06-21T09:12:45.153Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "skate-fi",
-    "tier": 1,
-    "peak_tvl": 31898727,
-    "peak_date": "2024-02-29T00:00:00.000Z",
-    "tvl_30d_ago": 93748,
-    "tvl_90d_ago": 154727,
-    "tvl_current": 118981,
-    "tier0_reason": "catastrophic_collapse_from_peak",
-    "tvl_180d_ago": 202866,
-    "change_30d_pct": 26.915774203183002,
-    "change_90d_pct": -23.102625915321827,
-    "governance_raw": {
-      "evidence": "TVL dropped 99.6% from peak over 843 days with no recent communications or activity, indicating abandonment.",
-      "confidence": 0.95,
-      "lifecycle_status": "dead"
-    },
-    "days_since_peak": 843,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 99.62700392401239,
-    "governance_evidence": "TVL dropped 99.6% from peak over 843 days with no recent communications or activity, indicating abandonment.",
-    "governance_confidence": 0.95,
-    "governance_text_chars": 1545,
-    "governance_classification": "dead",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:56.374Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-1cbb",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 5,
-    "total_addresses": 7,
-    "unique_implementations": 5,
-    "total_deployments": 7,
+    "total_contracts": 7,
+    "total_addresses": 17,
+    "unique_implementations": 7,
+    "total_deployments": 17,
     "audited_contracts": 3,
     "unaudited_contracts": 2,
     "contracts_verified_audited": 3,
     "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 60,
+    "contracts_unverified": 2,
+    "coverage_pct": 75,
     "total_audits": 4,
+    "direct_audits": 4,
+    "inherited_audits": 0,
     "scoreable_audits": 4,
-    "dl_tvl_usd": 112272.37307,
-    "tvl_usd": 112272.37307,
+    "dl_tvl_usd": 118981.58634,
+    "tvl_usd": 118981.58634,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -65,29 +41,35 @@
       "aging": 0,
       "stale": 4,
       "unknown": 0
+    },
+    "live_implementations": 5,
+    "live_verified_implementations": 4,
+    "live_audited_implementations": 3,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 3
     }
   },
   "topography": {
-    "project_purpose": "Skate Fi is a liquidity management protocol that deploys automated vaults to optimize liquidity provision across multiple chains. It uses factory contracts to create and manage vaults that concentrate liquidity within specific price ranges, aiming to maximize yields for depositors.",
-    "relationship_narrative": "The RangeProtocolFactory and RangeLiquiChargedFactory registries deploy and manage instances of RangeProtocolVault and VaultLib, which serve as the core logic for liquidity vaults. The ERC1967Proxy acts as an upgradeable proxy for the vault implementation, enabling seamless upgrades across all vaults.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 105,
-    "live_contracts": 3,
-    "inactive_contracts": 94,
-    "singleton_contracts": 4,
+    "project_purpose": "Liquidity Manager. Structurally: 10 project-authored contract(s) across 3 chain(s); 3 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 2 common project-authored base contract(s) (ownableupgradeable, rangeprotocolvaultstorage). Dominant framework: openzeppelin.",
+    "product_family_count": 4,
+    "total_contracts_indexed": 67,
+    "live_contracts": 15,
+    "inactive_contracts": 50,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 4,
-    "deployment_units": 2,
+    "unknown_contracts": 2,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 2,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "aave-v2",
-      "uniswap-v3"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 5,
+    "unique_implementations": 7,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -106,7 +88,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Skate Fi",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -134,16 +116,20 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-12-22 07:11:29+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
-      "chain_id": 169,
-      "chain_name": "manta",
-      "address": "0xe9c45a2446699954847521890b27dd9b24f7cc70",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5ee485c06a9c6bf499ee5fc1b5e16a9a607a43d8",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "RangeProtocolVault",
-      "role": "core_logic",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -152,6 +138,39 @@
       "impl_address": null,
       "impl_name": "RangeProtocolVault",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5ee485c06a9c6bf499ee5fc1b5e16a9a607a43d8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x89046305c73f2d9444bc62cde041d2e92747a046",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb25071dcdffb946230fe2ffceb589adace440c11",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 169,
           "chain_name": "manta",
@@ -162,6 +181,17 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xfd1bfd323332002403a299ea061305251b400fa8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -174,7 +204,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-06 11:48:35+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 5000,
@@ -220,7 +254,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-12-27 11:12:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -231,7 +269,7 @@
       "name": "TimelockController",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_provider": "OpenZeppelin",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -255,16 +293,98 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2023-06-21 12:28:23+03",
+      "deploy_coverage_basis": null
     },
     {
-      "chain_id": 169,
-      "chain_name": "manta",
-      "address": "0x62fd6208a1a6f0b06e1e2788efb4ee74bf5a8f33",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x249c2a212208bc0f11480456ee090d04603ab070",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x249c2a212208bc0f11480456ee090d04603ab070",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-01-19 07:29:23+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 5000,
+      "chain_name": "mantle",
+      "address": "0x4f1288650b3bd800a00ccd20d18b3b8914e654ff",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0x4f1288650b3bd800a00ccd20d18b3b8914e654ff",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-10 17:03:09+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5c584afadb09d02467da79ea777fa0cae49437fb",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "VaultLib",
-      "role": "core_logic",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -273,6 +393,39 @@
       "impl_address": null,
       "impl_name": "VaultLib",
       "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5c584afadb09d02467da79ea777fa0cae49437fb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x90ce9788d0e5a1ff01d4d2d34b6b69038e909cc9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb0f6b84ee516005a475fbc335c949edd17754c19",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 169,
           "chain_name": "manta",
@@ -293,7 +446,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
+        },
+        {
+          "chain_id": 5000,
+          "chain_name": "mantle",
+          "address": "0xe621d00cb578bcac68896e55d60a20317c893e55",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -303,7 +467,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-06 11:47:11+03",
+      "deploy_coverage_basis": "match_unverified"
     }
   ],
   "audits": [
@@ -320,17 +488,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Ownable",
-        "RangeProtocolFactory",
-        "RangeProtocolVault",
-        "RangeProtocolVaultStorage"
-      ],
+      "extracted_names": [],
       "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -346,18 +512,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "IRangeProtocolFactory",
-        "IRangeProtocolVault",
-        "RangeProtocolFactory",
-        "RangeProtocolVault",
-        "RangeProtocolVaultStorage"
-      ],
+      "extracted_names": [],
       "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -373,30 +536,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "DataTypes",
-        "FactoryErrors",
-        "IRangeProtocolFactory",
-        "IRangeProtocolVault",
-        "IiZiSwapCallback",
-        "IiZiSwapFactory",
-        "IiZiSwapPool",
-        "LogPowMath",
-        "MintMath",
-        "MulDivMath",
-        "OwnableUpgradeable",
-        "RangeProtocolFactory",
-        "RangeProtocolVault",
-        "RangeProtocolVaultStorage",
-        "TwoPower",
-        "VaultErrors",
-        "VaultLib"
-      ],
-      "matched_contracts": 4,
+      "extracted_names": [],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -412,17 +560,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "RangeProtocolFactory",
-        "RangeProtocolStorage",
-        "RangeProtocolVault",
-        "VaultErrors"
-      ],
+      "extracted_names": [],
       "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -465,15 +611,13 @@
     "native": 4,
     "upstream": 0,
     "standard_library": 1,
-    "needs_review": 0
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 288
+      "contract_name": 9
     },
-    "extraction_confidence_counts": {
-      "high": 4
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

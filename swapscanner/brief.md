@@ -4,23 +4,23 @@
 
 - Project: Swapscanner (`swapscanner`)
 - Website: [https://swapscanner.io/](https://swapscanner.io/)
-- Lifecycle: active (Tier 0, 82.4% below peak)
-- Generated: 2026-06-17T19:07:07.147Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:59.179Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16bc
 - Chains: klaytn
-- Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $3,101,384.00
+- Contract surface: 1 unique implementations (2 raw deployments)
+- DeFi Llama TVL: $3,083,259.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Swapscanner is a DEX aggregator on Kaia, formerly Klaytn, focused on routing and price optimization for token swaps. Any staking or wrapping functionality should be treated as separate site features unless official documentation verifies liquid-staking derivative issuance.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
@@ -32,17 +32,20 @@ Swapscanner is a DEX aggregator on Kaia, formerly Klaytn, focused on routing and
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 2
-- Unique implementations: 2
+- Unverified implementations: 1
+- Unique implementations: 1
 - Raw deployments: 2
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-04 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -71,20 +74,19 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (2)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | klaytn | n/a | `0x888888...28d5f3` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x999999...ac80e9` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | 2 deployments: klaytn `0x888888...28d5f3`; klaytn `0x999999...ac80e9` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Rendered PDF capture](https://2552220674-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FB0n61krC2LiDSllARDiL%2Fuploads%2Fd1qZS2rjUPCnHg4A17dJ%2F%5BCertiK%20AUDIT%5DSwapscanner_2023.04.06..pdf) | CertiK | Audit | 2023-04 | stale | Direct | n/a | 0 | n/a |
+| [spaces/B0n61krC2LiDSllARDiL/uploads/d1qZS2rjUPCnHg4A17dJ/[CertiK AUDIT]Swapscanner_2023.04.06..pdf](https://2552220674-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FB0n61krC2LiDSllARDiL%2Fuploads%2Fd1qZS2rjUPCnHg4A17dJ%2F%5BCertiK%20AUDIT%5DSwapscanner_2023.04.06..pdf) | CertiK | Audit | 2023-04 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -96,10 +98,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -112,6 +114,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [2563] Rendered PDF capture
+- [2563] spaces/B0n61krC2LiDSllARDiL/uploads/d1qZS2rjUPCnHg4A17dJ/[CertiK AUDIT]Swapscanner_2023.04.06..pdf
 
 Fork inheritance lineage and inherited audits are included when available.

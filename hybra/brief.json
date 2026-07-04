@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "hybra",
-  "generated_at": "2026-06-17T16:15:53.324Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-a893",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "hybra",
-    "tier": 0,
-    "peak_tvl": 24053364,
-    "peak_date": "2025-07-14T00:00:00.000Z",
-    "tvl_30d_ago": 2006172,
-    "tvl_90d_ago": 2001725,
-    "tvl_current": 1885342,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 6597733,
-    "change_30d_pct": -6.02291328958833,
-    "change_90d_pct": -5.814135308296594,
-    "days_since_peak": 314,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 92.16183648989804
-  },
+  "generated_at": "2026-07-04T14:53:21.686Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 66,
-    "total_addresses": 72,
-    "unique_implementations": 66,
-    "total_deployments": 72,
-    "audited_contracts": 0,
-    "unaudited_contracts": 10,
-    "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 10,
+    "total_contracts": 76,
+    "total_addresses": 91,
+    "unique_implementations": 76,
+    "total_deployments": 91,
+    "audited_contracts": 7,
+    "unaudited_contracts": 7,
+    "contracts_verified_audited": 7,
+    "contracts_verified_unaudited": 7,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 56,
-    "coverage_pct": 0,
-    "total_audits": 0,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 1589153,
-    "tvl_usd": 1589153,
+    "contracts_unverified": 62,
+    "coverage_pct": 50,
+    "total_audits": 4,
+    "direct_audits": 4,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 2148492,
+    "tvl_usd": 2148492,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -44,35 +30,46 @@
     "chains": [
       "hyperliquid"
     ],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "tier1_coverage_pct": 50,
+    "tier1_auditors": [
+      "Code4rena"
+    ],
+    "latest_audit_date": "2025-11",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
+      "fresh": 4,
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 14,
+    "live_verified_implementations": 14,
+    "live_audited_implementations": 7,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 7,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Hybra is a decentralized exchange (DEX) protocol on HyperEVM that facilitates token swaps, liquidity provision, and yield farming. It employs a ve(3,3) tokenomics model with gauges, bribes, and voting to incentivize liquidity and governance.",
-    "relationship_narrative": "The Hybra V4 family relies on shared infrastructure contracts such as GaugeFactory, BribeFactoryV3, VoterV3, and MinterUpgradeable to manage liquidity incentives, governance voting, and token emissions across the protocol.",
-    "product_family_count": 1,
+    "project_purpose": "Dexs. Structurally: 13 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens, 1 ERC721 NFT; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 6 functional families. Its contracts share 6 common project-authored base contract(s) (peripheryimmutablestate, peripheryvalidation, blocktimestamp). Dominant framework: openzeppelin.",
+    "product_family_count": 6,
     "total_contracts_indexed": 92,
-    "live_contracts": 20,
-    "inactive_contracts": 0,
-    "singleton_contracts": 20,
+    "live_contracts": 24,
+    "inactive_contracts": 1,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 52,
-    "deployment_units": 11,
-    "live_deployment_units": 1,
+    "unknown_contracts": 67,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 66,
+    "unique_implementations": 76,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -84,6 +81,58 @@
     {
       "chain_id": 999,
       "chain_name": "hyperliquid",
+      "address": "0x2555f79ac6e8096c755096e3a8d175a4bf5fc82f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BribeFactoryV3",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x6ba9f916068cea67766de6951f2cbd4aeb7f752a",
+      "impl_name": "BribeFactoryV3",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x2555f79ac6e8096c755096e3a8d175a4bf5fc82f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x6ba9f916068cea67766de6951f2cbd4aeb7f752a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-20724"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-17 11:00:00+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
       "address": "0x32b9da73215255d50d84feb51540b75acc1324c2",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -91,7 +140,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Hybra V4",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -106,15 +155,21 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-20724"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-17 12:55:00+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 999,
@@ -141,7 +196,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 999,
@@ -152,15 +207,125 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-20724"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-17 12:55:00+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x84fa8d513ee93ddea72b6fbd45fa957bd9e0de45",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "GaugeFactory",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x84fa8d513ee93ddea72b6fbd45fa957bd9e0de45",
+      "impl_name": "GaugeFactory",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x84fa8d513ee93ddea72b6fbd45fa957bd9e0de45",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xb4892c817a07985f85c98ddb6ee99c3ba5aa5a46",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-20724"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-17 10:59:00+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x1c0ebc5cf683e20d427d08d9e0920b07f9abdd09",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "GaugeFactoryCL",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x1c0ebc5cf683e20d427d08d9e0920b07f9abdd09",
+      "impl_name": "GaugeFactoryCL",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x1c0ebc5cf683e20d427d08d9e0920b07f9abdd09",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xeb60888176d0c6af4c539d64b2e83e470a63e4f9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-20724"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-17 10:59:00+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 999,
@@ -195,7 +360,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-17 10:57:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -222,15 +391,60 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-20724"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-17 10:57:00+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0xa8265e40e4cdf6db345861f4fcb75f9cc63e149b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MinterUpgradeable",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x8a89c7f32f0ed4d186eb73d458354fda68e01d2f",
+      "impl_name": "MinterUpgradeable",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xa8265e40e4cdf6db345861f4fcb75f9cc63e149b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
       "audits_covering": [],
       "is_audited": false,
-      "source_verified": true,
+      "source_verified": false,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-17 11:02:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -287,7 +501,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-17 12:56:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -333,14 +551,68 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-17 13:00:00+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x218e666db7a8cea1dc3e1db3185d24276c0f73e6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Proxy (impl: 0x3cda22a593b35a3554300b8968d20b9fc15bab8c)",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x3cda22a593b35a3554300b8968d20b9fc15bab8c",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x218e666db7a8cea1dc3e1db3185d24276c0f73e6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x3cda22a593b35a3554300b8968d20b9fc15bab8c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-17 11:05:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
       "chain_name": "hyperliquid",
       "address": "0x110e1c60ccdccbef58ad125022f0310176a41525",
-      "deployment_unit": "unit-32806",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "Proxy (impl: 0x5faebfc659fe95a49f536d8e8ba6ab9dbede7d9a)",
       "role": "proxy",
       "origin_kind": "needs_review",
@@ -355,8 +627,8 @@
           "chain_id": 999,
           "chain_name": "hyperliquid",
           "address": "0x110e1c60ccdccbef58ad125022f0310176a41525",
-          "deployment_unit": "unit-32806",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -368,7 +640,161 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-01 16:15:00+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x45ea86b0231054e8378e5215a85c86539fecd316",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Proxy (impl: 0xb761a187808fbb307cb5c5e01c01b729da432471)",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xb761a187808fbb307cb5c5e01c01b729da432471",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x45ea86b0231054e8378e5215a85c86539fecd316",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xb761a187808fbb307cb5c5e01c01b729da432471",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-17 11:05:00+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x742caa5ba7c92ca6cfebfd0e73c21739b3b65d5e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Proxy (impl: 0xcd5f4e4cf2dcd7d9d72ef997ebd5f57bc0443988)",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xcd5f4e4cf2dcd7d9d72ef997ebd5f57bc0443988",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x742caa5ba7c92ca6cfebfd0e73c21739b3b65d5e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xcd5f4e4cf2dcd7d9d72ef997ebd5f57bc0443988",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-15 02:23:00+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x9c4bcfa85cf860d076cb90a6bfab4c7a816233e2",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Proxy (impl: 0xdcb84d0b4036a2467ca01e0e5adf0a0d078eb78c)",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xdcb84d0b4036a2467ca01e0e5adf0a0d078eb78c",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x9c4bcfa85cf860d076cb90a6bfab4c7a816233e2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xdcb84d0b4036a2467ca01e0e5adf0a0d078eb78c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-17 12:13:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -414,7 +840,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-17 12:59:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -449,7 +879,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-17 10:57:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -484,7 +918,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-17 11:02:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -530,7 +968,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-17 12:59:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -565,7 +1007,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-04 17:44:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -600,7 +1046,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-02 12:10:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -635,7 +1085,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-12 07:23:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -670,7 +1124,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-20 12:59:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -705,7 +1163,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-15 02:29:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -740,7 +1202,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-19 10:27:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -775,7 +1241,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-15 10:34:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -810,7 +1280,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-23 09:16:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -845,7 +1319,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-24 15:00:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -880,7 +1358,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-15 09:26:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -915,7 +1397,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-17 12:57:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -950,7 +1436,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-23 09:11:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -985,7 +1475,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-15 06:17:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1020,7 +1514,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-01 02:50:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1055,7 +1553,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-15 09:46:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1090,7 +1592,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-15 10:24:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1125,7 +1631,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-24 15:00:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1160,7 +1670,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-15 10:43:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1195,7 +1709,61 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-19 09:04:00+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x69edd0c8f85faff4f4610941816a2301fc10647b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x69edd0c8f85faff4f4610941816a2301fc10647b",
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x69edd0c8f85faff4f4610941816a2301fc10647b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x775e40fe28e92fbacf696dbc76bae15f14350197",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-17 10:55:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1230,7 +1798,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-07 23:30:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1265,7 +1837,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-21 12:17:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1300,7 +1876,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-16 18:09:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1335,7 +1915,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-17 10:55:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1370,7 +1954,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-04-07 11:06:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1405,7 +1993,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-21 11:54:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1440,7 +2032,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-16 03:07:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1475,7 +2071,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-17 10:55:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1510,7 +2110,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-15 14:22:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1545,7 +2149,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-17 10:55:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1580,7 +2188,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-15 01:24:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1615,7 +2227,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-15 01:24:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1650,7 +2266,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-15 01:23:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1685,7 +2305,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-15 01:22:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1720,7 +2344,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-17 12:57:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1755,7 +2383,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-09 18:15:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1790,7 +2422,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-19 09:08:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1825,7 +2461,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-17 12:57:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1860,7 +2500,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-08 00:39:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1895,7 +2539,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-16 17:02:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1930,7 +2578,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-18 04:53:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -1965,7 +2617,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-17 12:56:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -2000,7 +2656,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-17 14:18:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -2035,7 +2695,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-15 10:28:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -2070,7 +2734,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-17 10:57:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -2105,7 +2773,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-15 10:32:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -2140,7 +2812,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-08 15:57:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -2175,7 +2851,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-01 16:15:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -2210,7 +2890,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-09 17:32:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -2245,7 +2929,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-15 01:24:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -2280,7 +2968,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-14 18:46:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -2315,7 +3007,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-19 10:28:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -2350,7 +3046,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-16 17:01:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -2385,7 +3085,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-09 16:20:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -2420,7 +3124,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-08 00:43:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -2455,47 +3163,193 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-21 11:58:00+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x5623f012d15eb828c12fe32e46d40adc2a9e4fa3",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "VoterV3",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xcd9599ff0b72d2cc5246b15bc6d6836581920576",
+      "impl_name": "VoterV3",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x5623f012d15eb828c12fe32e46d40adc2a9e4fa3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0xcd9599ff0b72d2cc5246b15bc6d6836581920576",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-20724"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-17 11:04:00+03",
+      "deploy_coverage_basis": "code_matched"
     }
   ],
-  "audits": [],
-  "auditor_coverage": [],
+  "audits": [
+    {
+      "audit_id": 20724,
+      "audit_key": "audit-20724",
+      "report_name": "code4rena.com/reports/2025-10-hybra-finance",
+      "report_url": "https://code4rena.com/reports/2025-10-hybra-finance",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Bribe",
+        "BribeFactoryV3",
+        "CLFactory",
+        "CLPool",
+        "DynamicSwapFeeModule",
+        "GaugeCL",
+        "GaugeFactory",
+        "GaugeFactoryCL",
+        "GaugeManager",
+        "GaugeV2",
+        "GovernanceHYBR",
+        "HYBR",
+        "VoterV3",
+        "VotingEscrow"
+      ],
+      "matched_contracts": 12,
+      "scope_note": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 20725,
+      "audit_key": "audit-20725",
+      "report_name": "code4rena.com/audits/2025-10-hybra-finance",
+      "report_url": "https://code4rena.com/audits/2025-10-hybra-finance",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "fresh",
+      "date": "2025-10",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 20726,
+      "audit_key": "audit-20726",
+      "report_name": "code4rena.com/audits/2025-11-hybra-finance-mitigation-review",
+      "report_url": "https://code4rena.com/audits/2025-11-hybra-finance-mitigation-review",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 20727,
+      "audit_key": "audit-20727",
+      "report_name": "code4rena.com/audits/2025-11-hybra-finance-mitigation-review-round-2",
+      "report_url": "https://code4rena.com/audits/2025-11-hybra-finance-mitigation-review-round-2",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "fresh",
+      "date": "2025-11",
+      "is_inherited": false,
+      "inherited_from_project_key": null,
+      "inherited_from_project_name": null,
+      "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
+  "auditor_coverage": [
+    {
+      "auditor": "Code4rena",
+      "tier": 1,
+      "contracts_covered": 7,
+      "coverage_pct": 50,
+      "latest_audit": "2025-11"
+    }
+  ],
   "coverage_gaps": [
-    {
-      "chain_id": 999,
-      "chain_name": "hyperliquid",
-      "address": "0x32b9da73215255d50d84feb51540b75acc1324c2",
-      "name": "CLFactory",
-      "role": "registry",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 999,
-      "chain_name": "hyperliquid",
-      "address": "0xa421f7aada7d11eb6002bc53090fb8d5409552ab",
-      "name": "CLPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 999,
       "chain_name": "hyperliquid",
       "address": "0x348b11cbb801fab12834e66691b7f25fe72b8aa5",
       "name": "GrowthHYBR",
-      "role": "unknown",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 999,
-      "chain_name": "hyperliquid",
-      "address": "0x067b0c72aa4c6bd3bfefff443c536dcd6a25a9c8",
-      "name": "HYBR",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -2563,17 +3417,34 @@
     }
   ],
   "origin_summary": {
-    "native": 10,
+    "native": 12,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 56
+    "needs_review": 64
   },
   "scope_matching_notes": {
-    "match_method_counts": {},
-    "extraction_confidence_counts": {},
+    "match_method_counts": {
+      "extraction_exact": 12
+    },
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 20725,
+        "report_name": "code4rena.com/audits/2025-10-hybra-finance"
+      },
+      {
+        "audit_id": 20726,
+        "report_name": "code4rena.com/audits/2025-11-hybra-finance-mitigation-review"
+      },
+      {
+        "audit_id": 20727,
+        "report_name": "code4rena.com/audits/2025-11-hybra-finance-mitigation-review-round-2"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

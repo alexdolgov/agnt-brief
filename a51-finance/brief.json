@@ -1,52 +1,54 @@
 {
   "schema_version": "2.0",
   "project_key": "a51-finance",
-  "generated_at": "2026-06-19T23:16:12.601Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "generated_at": "2026-07-04T14:52:57.874Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-43c7",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "a51-finance",
     "tier": 1,
     "peak_tvl": 3643279,
     "peak_date": "2023-04-14T00:00:00.000Z",
-    "tvl_30d_ago": 16815,
-    "tvl_90d_ago": 18027,
-    "tvl_current": 13935,
+    "tvl_30d_ago": 15959,
+    "tvl_90d_ago": 17939,
+    "tvl_current": 13018,
     "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 27334,
-    "change_30d_pct": -17.127564674397856,
-    "change_90d_pct": -22.69928440672325,
+    "tvl_180d_ago": 26670,
+    "change_30d_pct": -18.428472961965035,
+    "change_90d_pct": -27.431852388650423,
     "governance_raw": {
-      "evidence": "TVL has dropped 99.6% from its peak, but the protocol still has an active website, documentation, and ongoing features like Carbon and A51 token, indicating it is still operational albeit with significantly reduced usage.",
-      "confidence": 0.8,
+      "evidence": "TVL has dropped 99.6% from its peak, but the protocol's homepage still shows active development and features, indicating it is still operational but declining.",
+      "confidence": 0.7,
       "lifecycle_status": "declining"
     },
-    "days_since_peak": 1162,
+    "days_since_peak": 1174,
     "detection_method": "tvl_trajectory+governance_signal",
     "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 99.61751488151197,
-    "governance_evidence": "TVL has dropped 99.6% from its peak, but the protocol still has an active website, documentation, and ongoing features like Carbon and A51 token, indicating it is still operational albeit with significantly reduced usage.",
-    "governance_confidence": 0.8,
+    "drop_from_peak_pct": 99.64268451578921,
+    "governance_evidence": "TVL has dropped 99.6% from its peak, but the protocol's homepage still shows active development and features, indicating it is still operational but declining.",
+    "governance_confidence": 0.7,
     "governance_text_chars": 1215,
     "governance_classification": "declining",
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 23,
-    "total_addresses": 28,
-    "unique_implementations": 23,
-    "total_deployments": 28,
-    "audited_contracts": 9,
-    "unaudited_contracts": 8,
-    "contracts_verified_audited": 9,
-    "contracts_verified_unaudited": 8,
+    "total_contracts": 26,
+    "total_addresses": 49,
+    "unique_implementations": 26,
+    "total_deployments": 49,
+    "audited_contracts": 14,
+    "unaudited_contracts": 10,
+    "contracts_verified_audited": 14,
+    "contracts_verified_unaudited": 10,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 6,
-    "coverage_pct": 52.9,
+    "contracts_unverified": 2,
+    "coverage_pct": 66.7,
     "total_audits": 8,
-    "scoreable_audits": 4,
-    "dl_tvl_usd": 13531,
-    "tvl_usd": 13531,
+    "direct_audits": 8,
+    "inherited_audits": 0,
+    "scoreable_audits": 7,
+    "dl_tvl_usd": 13042,
+    "tvl_usd": 13042,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -68,28 +70,35 @@
       "aging": 0,
       "stale": 8,
       "unknown": 0
+    },
+    "live_implementations": 21,
+    "live_verified_implementations": 21,
+    "live_audited_implementations": 14,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 5,
+      "diverged": 0,
+      "match_unverified": 9
     }
   },
   "topography": {
-    "project_purpose": "A51 Finance is a liquidity management protocol that automates Uniswap V3 position management. It offers active and passive vault strategies to optimize yields and reduce impermanent loss for liquidity providers.",
-    "relationship_narrative": "V2 and V3 families operate independently but share the same deployer clusters and multi-chain deployment patterns. Both use factory/registry contracts to create and manage vault instances, with V3 introducing CLTBase vaults and CLTHelper periphery for concentrated liquidity.",
-    "product_family_count": 2,
-    "total_contracts_indexed": 274,
-    "live_contracts": 8,
-    "inactive_contracts": 246,
+    "project_purpose": "Structural profile: 36 project-authored contract(s) across 4 chain(s); 3 ERC20 tokens, 2 ERC721 NFTs; role-gated via AccessControl; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 5 functional families. Its contracts share 3 common project-authored base contract(s) (peripherypayments, owned, modetickscalculation). Dominant framework: openzeppelin.",
+    "product_family_count": 5,
+    "total_contracts_indexed": 76,
+    "live_contracts": 38,
+    "inactive_contracts": 27,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 20,
+    "unknown_contracts": 11,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 12,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v3"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 23,
+    "unique_implementations": 26,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -108,7 +117,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "A51 Finance V2",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -131,7 +140,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-12-28 12:24:39+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x0587d2b60af1ad9dce86c8f9495c759cb15697a5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "A51LiquidityLocker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "A51LiquidityLocker",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x0587d2b60af1ad9dce86c8f9495c759cb15697a5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-12-27 12:07:31+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -143,7 +195,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "A51 Finance V3",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -169,7 +221,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 59144,
@@ -180,7 +232,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -190,7 +242,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-13 14:16:51+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 169,
@@ -202,7 +258,7 @@
       "role": "periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "A51 Finance V3",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -236,7 +292,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-08 13:29:29+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -273,7 +333,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-08 13:30:19+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 169,
@@ -308,7 +372,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-08 13:51:29+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -345,7 +413,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-08 13:52:39+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x809dad6cfcfa220028e462a494d4e6378c7c3fbb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LiquidityMigrator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LiquidityMigrator",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x809dad6cfcfa220028e462a494d4e6378c7c3fbb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-19 13:15:50+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -373,6 +484,17 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xbd58d9192a9acb9cd7f068a5c07d503f605ae147",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -380,7 +502,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-13 14:16:51+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -417,7 +543,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-08 13:56:39+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -429,7 +559,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "A51 Finance V2",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -452,16 +582,20 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-07-20 21:31:59+03",
+      "deploy_coverage_basis": null
     },
     {
-      "chain_id": 169,
-      "chain_name": "manta",
-      "address": "0x9d80597d9403bdb35b3d7d9f400377e790b01053",
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x9c225a02426e3229c073a6132e083561e95000b5",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "PoolActions",
-      "role": "core_logic",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -480,6 +614,17 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x9c225a02426e3229c073a6132e083561e95000b5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -489,12 +634,16 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-13 14:16:51+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
-      "chain_id": 169,
-      "chain_name": "manta",
-      "address": "0xc203e40fb4d742a0559705e33c9c2af41af2b4dc",
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x0f7ee2b5451bfba623314f8c94bbd965b3e8ab56",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "Position",
@@ -517,6 +666,17 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x0f7ee2b5451bfba623314f8c94bbd965b3e8ab56",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -524,7 +684,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-13 14:16:51+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -559,16 +723,20 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-08 13:58:39+03",
+      "deploy_coverage_basis": null
     },
     {
-      "chain_id": 169,
-      "chain_name": "manta",
-      "address": "0xc22e20950aa1f2e91fac75ab7fd8a21ef2c3ab1e",
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x6e7e838e20ed6657aaf1166f9b7a845565956f51",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "StrategyFeeShares",
-      "role": "core_logic",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -587,6 +755,17 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x6e7e838e20ed6657aaf1166f9b7a845565956f51",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -594,16 +773,20 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-13 14:16:51+03",
+      "deploy_coverage_basis": null
     },
     {
-      "chain_id": 169,
-      "chain_name": "manta",
-      "address": "0x44ae07568378d2159ed41d0f060a3d6baefbeb97",
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x171c1c6775ef30017879c2f43336e6f878b9b57e",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "TransferHelper",
-      "role": "periphery",
+      "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
@@ -622,6 +805,17 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0x171c1c6775ef30017879c2f43336e6f878b9b57e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -632,7 +826,95 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-13 14:16:51+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc4a8ec5b29a392dd6df0d18e07c33301e0275464",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ULMState",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ULMState",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc4a8ec5b29a392dd6df0d18e07c33301e0275464",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12606",
+        "audit-12607"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-19 04:11:48+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xde5bf92e3372aa59c73ca7dfc6cec599e1b2b08c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Unipilot",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Unipilot",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xde5bf92e3372aa59c73ca7dfc6cec599e1b2b08c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12606",
+        "audit-12607"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-19 03:55:39+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 1,
@@ -644,7 +926,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "A51 Finance V2",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -670,7 +952,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -681,7 +963,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xd1299921ea4980fb89873557ac58842346815c67",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -691,7 +984,63 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-05-19 10:23:19+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6e665791f0219a10a4d52ac0915931cf045220b8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnipilotFarm",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UnipilotFarm",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6e665791f0219a10a4d52ac0915931cf045220b8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8fddc464ee63575463afd214586344a09b309102",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12603"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-25 20:46:19+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 137,
@@ -703,7 +1052,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "A51 Finance V2",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -728,7 +1077,125 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-05-02 13:39:22+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x381e3c53380db31adc8f1d2eb6a5a8ddf793edab",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UniStrategy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniStrategy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x381e3c53380db31adc8f1d2eb6a5a8ddf793edab",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7b0909218ad3f30d49caa711b8274819281b21fd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbe46a8d428ef46cd3b816c8ff78c6409a5f787b1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xee899a6007c46c28205e8760ddbd81ccbb30d8e3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12606",
+        "audit-12607"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-23 23:09:48+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x137eb39148e1db79d2d174c60eb172a8111aede8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x137eb39148e1db79d2d174c60eb172a8111aede8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-15 13:44:36+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1101,
@@ -738,13 +1205,13 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "A51 Finance V2",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "UnnamedContract",
       "deployments": [
         {
           "chain_id": 1101,
@@ -756,31 +1223,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1101,
-      "chain_name": "polygon-zkevm",
-      "address": "0x30beb7a1d66cbe9594e159979f0c7e31a9f68e74",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "A51 Finance V2",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 1101,
           "chain_name": "polygon-zkevm",
@@ -791,31 +1234,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1101,
-      "chain_name": "polygon-zkevm",
-      "address": "0x965356eb2c208ce4130e267342ca720042cce7b2",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "A51 Finance V3",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 1101,
           "chain_name": "polygon-zkevm",
@@ -826,31 +1245,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1101,
-      "chain_name": "polygon-zkevm",
-      "address": "0xbd712d4dbd4b8d0cd2a98adb0f9fc2928031b16f",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "A51 Finance V2",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 1101,
           "chain_name": "polygon-zkevm",
@@ -861,31 +1256,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1101,
-      "chain_name": "polygon-zkevm",
-      "address": "0xbd7887e11a9356957680a34955a135cf465e7052",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "A51 Finance V3",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 1101,
           "chain_name": "polygon-zkevm",
@@ -896,31 +1267,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1101,
-      "chain_name": "polygon-zkevm",
-      "address": "0xc99fa77ab721817da9dd3c3b4f8ecb13772fcece",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "A51 Finance V2",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 1101,
           "chain_name": "polygon-zkevm",
@@ -938,7 +1285,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 169,
@@ -966,6 +1317,17 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": true
+        },
+        {
+          "chain_id": 59144,
+          "chain_name": "linea",
+          "address": "0xafb17876b2e8b5b5d1585393b6a19930a0ab6398",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -975,7 +1337,75 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-13 14:16:51+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1538e779c6a25701c3cbc8133ee755f2adaf2a11",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "V3Oracle",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "V3Oracle",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1538e779c6a25701c3cbc8133ee755f2adaf2a11",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2148eb8fd9cbfd7d63d6f595e9ce8e2837e1f32f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x458766536f95b9333d48a78a91ab1aaf4226221a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12606",
+        "audit-12607"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-19 08:38:45+03",
+      "deploy_coverage_basis": "code_matched"
     }
   ],
   "audits": [
@@ -992,12 +1422,17 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "UnipilotFarm"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -1013,7 +1448,10 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -1034,19 +1472,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "UnipilotActiveFactory",
-        "UnipilotActiveVault",
-        "UnipilotMigrator",
-        "UnipilotPassiveFactory",
-        "UnipilotPassiveVault",
-        "UnipilotStrategy"
-      ],
-      "matched_contracts": 4,
+      "extracted_names": [],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1062,12 +1496,22 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "extracted_names": [
+        "PeripheryPayments.sol",
+        "ULMState.sol",
+        "UniStrategy.sol",
+        "Unipilot.sol",
+        "UniswapLiquidityManager.sol",
+        "V3Oracle.sol"
+      ],
+      "matched_contracts": 9,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -1083,12 +1527,22 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "extracted_names": [
+        "PeripheryPayments.sol",
+        "ULMState.sol",
+        "UniStrategy.sol",
+        "Unipilot.sol",
+        "UniswapLiquidityManager.sol",
+        "V3Oracle.sol"
+      ],
+      "matched_contracts": 9,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -1104,47 +1558,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BlockTimestamp",
-        "ChainId",
-        "ERC20",
-        "ERC721Permit",
-        "IERC1271",
-        "IERC20",
-        "IERC20PermitAllowed",
-        "IERC721Permit",
-        "IHandler",
-        "ILiquidityMigrator",
-        "INonfungiblePositionManager",
-        "IOracle",
-        "IULMEvents",
-        "IULMState",
-        "IUniStrategy",
-        "IUnipilot",
-        "IUniswapLiquidityManager",
-        "IV3Migrator",
-        "IWETH9",
-        "LiquidityAmounts",
-        "LiquidityMigrator",
-        "LiquidityReserves",
-        "LowGasSafeMath",
-        "OracleLibrary",
-        "PeripheryPayments",
-        "PositionKey",
-        "SafeUint128",
-        "Sqrt",
-        "TransferHelper",
-        "ULMState",
-        "UniStrategy",
-        "Unipilot",
-        "UniswapLiquidityManager",
-        "V3Oracle"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1160,48 +1582,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BlockTimestamp",
-        "ChainId",
-        "ERC20",
-        "ERC721Permit",
-        "FixedPoint128",
-        "IERC1271",
-        "IERC20",
-        "IERC20PermitAllowed",
-        "IERC721Permit",
-        "IExchangeManager",
-        "ILiquidityMigrator",
-        "INonfungiblePositionManager",
-        "IOracle",
-        "IULMEvents",
-        "IULMState",
-        "IUniStrategy",
-        "IUnipilot",
-        "IUniswapLiquidityManager",
-        "IWETH9",
-        "LiquidityAmounts",
-        "LiquidityMigrator",
-        "LiquidityReserves",
-        "LowGasSafeMath",
-        "OracleLibrary",
-        "PeripheryPayments",
-        "PositionKey",
-        "SafeCast",
-        "SafeUint128",
-        "Sqrt",
-        "TransferHelper",
-        "ULMState",
-        "UniStrategy",
-        "Unipilot",
-        "UniswapLiquidityManager",
-        "V3Oracle"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1217,22 +1606,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AccessControl",
-        "CLTBase",
-        "CLTModules",
-        "CLTPayments",
-        "GovernanceFeeHandler",
-        "ModeTicksCalculation",
-        "Modes",
-        "PoolActions",
-        "UserPositions"
-      ],
-      "matched_contracts": 8,
+      "extracted_names": [],
+      "matched_contracts": 6,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -1240,15 +1622,22 @@
     {
       "auditor": "unknown",
       "tier": 2,
-      "contracts_covered": 8,
-      "coverage_pct": 47.1,
+      "contracts_covered": 9,
+      "coverage_pct": 37.5,
       "latest_audit": "2023-02"
+    },
+    {
+      "auditor": "BlockApex",
+      "tier": 2,
+      "contracts_covered": 4,
+      "coverage_pct": 16.7,
+      "latest_audit": "2021-10"
     },
     {
       "auditor": "Hacken",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 5.9,
+      "coverage_pct": 4.2,
       "latest_audit": "2021-11"
     }
   ],
@@ -1258,6 +1647,16 @@
       "chain_name": "polygon",
       "address": "0xe9e7c09e82328c3107d367f6c617cf9977e63ed0",
       "name": "A51",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x0587d2b60af1ad9dce86c8f9495c759cb15697a5",
+      "name": "A51LiquidityLocker",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -1284,6 +1683,16 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x809dad6cfcfa220028e462a494d4e6378c7c3fbb",
+      "name": "LiquidityMigrator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 169,
       "chain_name": "manta",
       "address": "0x7794a94ff4c4c6840cbf92b793092730a068a0e2",
@@ -1304,9 +1713,9 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 169,
-      "chain_name": "manta",
-      "address": "0xc203e40fb4d742a0559705e33c9c2af41af2b4dc",
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x0f7ee2b5451bfba623314f8c94bbd965b3e8ab56",
       "name": "Position",
       "role": "unknown",
       "origin_kind": "native",
@@ -1324,47 +1733,36 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
-      "chain_id": 169,
-      "chain_name": "manta",
-      "address": "0xc22e20950aa1f2e91fac75ab7fd8a21ef2c3ab1e",
+      "chain_id": 59144,
+      "chain_name": "linea",
+      "address": "0x6e7e838e20ed6657aaf1166f9b7a845565956f51",
       "name": "StrategyFeeShares",
-      "role": "core_logic",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 17,
+    "native": 25,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 6
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 117
+      "contract_name": 10,
+      "extraction_exact": 20
     },
     "extraction_confidence_counts": {
-      "high": 4
+      "high": 3
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 12603,
-        "report_name": "Unipilot-Farming-V2-Audit.pdf"
-      },
-      {
         "audit_id": 12604,
         "report_name": "Final-Audit-Unipilot-Staking.pdf"
-      },
-      {
-        "audit_id": 12606,
-        "report_name": "BlockApex First Audit.pdf"
-      },
-      {
-        "audit_id": 12607,
-        "report_name": "BlockApex Second Audit.pdf"
       }
     ],
     "inherited_remapped_matches": []

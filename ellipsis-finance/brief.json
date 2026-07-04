@@ -1,57 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "ellipsis-finance",
-  "generated_at": "2026-06-18T15:21:08.021Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-18-32b207-ac25",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "ellipsis-finance",
-    "tier": 1,
-    "peak_tvl": 3455197666,
-    "peak_date": "2021-04-23T00:00:00.000Z",
-    "tvl_30d_ago": 1008001,
-    "tvl_90d_ago": 1215554,
-    "tvl_current": 989948,
-    "tier0_reason": "catastrophic_collapse_from_peak",
-    "tvl_180d_ago": 1227568,
-    "change_30d_pct": -1.7909704454658277,
-    "change_90d_pct": -18.559932343606288,
-    "governance_raw": {
-      "evidence": "TVL has dropped over 99.97% from its peak over 5 years ago with no recent activity or communications, indicating the protocol is effectively dead.",
-      "confidence": 0.95,
-      "lifecycle_status": "dead"
-    },
-    "days_since_peak": 1858,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "fallback_mixed",
-    "drop_from_peak_pct": 99.97134901977559,
-    "governance_evidence": "TVL has dropped over 99.97% from its peak over 5 years ago with no recent activity or communications, indicating the protocol is effectively dead.",
-    "governance_confidence": 0.95,
-    "governance_text_chars": 75,
-    "governance_classification": "dead",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:11.759Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d640",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 15,
-    "total_addresses": 41,
-    "unique_implementations": 15,
-    "total_deployments": 41,
+    "total_contracts": 20,
+    "total_addresses": 46,
+    "unique_implementations": 20,
+    "total_deployments": 46,
     "audited_contracts": 4,
     "unaudited_contracts": 11,
     "contracts_verified_audited": 4,
     "contracts_verified_unaudited": 11,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 26.7,
+    "contracts_unverified": 5,
+    "coverage_pct": 28.6,
     "total_audits": 3,
+    "direct_audits": 3,
+    "inherited_audits": 0,
     "scoreable_audits": 2,
-    "dl_tvl_usd": 1095739.93543,
-    "tvl_usd": 347922.37818172376,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "bsc": 347922.38
-    },
-    "asd_usd": 297850.37390703836,
+    "dl_tvl_usd": 1070786.4398,
+    "tvl_usd": 1070786.4398,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://ellipsis.finance/",
     "chains": [
       "bsc"
@@ -65,28 +39,35 @@
       "aging": 0,
       "stale": 2,
       "unknown": 1
+    },
+    "live_implementations": 15,
+    "live_verified_implementations": 14,
+    "live_audited_implementations": 4,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 4
     }
   },
   "topography": {
-    "project_purpose": "Ellipsis Finance is a historical Curve-like decentralized exchange on BNB Chain/BSC for low-slippage stablecoin and pegged-asset swaps, with related locking, fee distribution, and incentive/voting mechanisms. This description should be sourced to DefiLlama and historical documentation; the current homepage is disabled or unavailable.",
-    "relationship_narrative": "All contracts belong to a single product family sharing the Ellipsis ecosystem. The Vyper_contracts serve as the core AMM pools, while EllipsisToken2 is the governance token. TokenLocker locks tokens for voting power, MultiFeeDistribution distributes fees, FeeDistributor handles fee allocation, IncentiveVoting manages gauge weights, and EllipsisLpStaking allows staking LP tokens for rewards.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 142,
+    "project_purpose": "Dexs. Structurally: 23 project-authored contract(s) across 1 chain(s); 1 ERC20 token; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Contracts are linked by 6 cross-contract reference(s). Dominant framework: openzeppelin.",
+    "product_family_count": 4,
+    "total_contracts_indexed": 135,
     "live_contracts": 41,
-    "inactive_contracts": 101,
+    "inactive_contracts": 89,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 5,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 19,
-    "unverified_dependencies": 1,
-    "detected_codebases": [
-      "curve-stableswap"
-    ]
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 15,
+    "unique_implementations": 20,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -95,150 +76,6 @@
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x85259443fad3dc9ecfafe62f043a020992f0e4fc",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "PancakeStableSwapTwoPool",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "pancakeswap",
-      "product_line": null,
-      "tvl_usd": 288882.9653891108,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PancakeStableSwapTwoPool",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x85259443fad3dc9ecfafe62f043a020992f0e4fc",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 288882.9653891108,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xaf41054c1487b0e5e2b9250c0332ecbce6ce9d71",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "EllipsisToken2",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Ellipsis Finance",
-      "tvl_usd": 50020.125991275425,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "EllipsisToken2",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xaf41054c1487b0e5e2b9250c0332ecbce6ce9d71",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 50020.125991275425,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-3132"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x22a93f53a0a3e6847d05dd504283e8e296a49aae",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "TokenLocker",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Ellipsis Finance",
-      "tvl_usd": 8967.408517927595,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "TokenLocker",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x22a93f53a0a3e6847d05dd504283e8e296a49aae",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 8967.408517927595,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xcce949de564fe60e7f96c85e55177f8b9e4cf61b",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "LpTokenStaker",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 51.87828341,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "LpTokenStaker",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xcce949de564fe60e7f96c85e55177f8b9e4cf61b",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 51.87828341,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-3131"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    },
     {
       "chain_id": 56,
       "chain_name": "bsc",
@@ -272,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-07-08 16:16:21+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -284,7 +125,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Ellipsis Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -307,7 +148,52 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-12 03:23:32+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xaf41054c1487b0e5e2b9250c0332ecbce6ce9d71",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "EllipsisToken2",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "EllipsisToken2",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xaf41054c1487b0e5e2b9250c0332ecbce6ce9d71",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3132"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-30 22:43:24+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -319,7 +205,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Ellipsis Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -342,7 +228,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-12 03:22:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -354,7 +244,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Ellipsis Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -379,7 +269,52 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-12 03:20:05+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xcce949de564fe60e7f96c85e55177f8b9e4cf61b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LpTokenStaker",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LpTokenStaker",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xcce949de564fe60e7f96c85e55177f8b9e4cf61b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-3131"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-03-23 20:57:08+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -416,7 +351,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-30 22:48:57+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -428,7 +367,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Ellipsis Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -451,7 +390,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-03-23 21:21:17+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -461,7 +404,7 @@
       "deployment_unit_proxy_count": null,
       "name": "PancakeStableSwap",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -497,7 +440,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-11-30 04:28:21+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x85259443fad3dc9ecfafe62f043a020992f0e4fc",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PancakeStableSwapTwoPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PancakeStableSwapTwoPool",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x85259443fad3dc9ecfafe62f043a020992f0e4fc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-02-17 11:09:44+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -620,7 +606,245 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-05-18 23:32:28+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x22a93f53a0a3e6847d05dd504283e8e296a49aae",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TokenLocker",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TokenLocker",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x22a93f53a0a3e6847d05dd504283e8e296a49aae",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-12 03:18:56+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x1037f82a4e0b4038aba73137f7474e0550086925",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x1037f82a4e0b4038aba73137f7474e0550086925",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-07-31 14:16:31+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x8a2d34989838ecf4fdec82c1a6f381e5a4a7dda9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x8a2d34989838ecf4fdec82c1a6f381e5a4a7dda9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-06 15:17:36+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x98cfa2e66f366a88160f1342fde1da7db35ba049",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x98cfa2e66f366a88160f1342fde1da7db35ba049",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-07-31 17:57:19+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xca9090fa24e0adfb54d0a38d0b28ca34cfd383e7",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xca9090fa24e0adfb54d0a38d0b28ca34cfd383e7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-11 18:01:06+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xe8552e631a3a3f4949913b3b2cea85307e475d9f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xe8552e631a3a3f4949913b3b2cea85307e475d9f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-06 15:28:45+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -666,7 +890,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-11 23:24:04+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -701,7 +929,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-09 21:27:56+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -912,7 +1144,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-25 22:35:01+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -929,23 +1165,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "EpsStaker",
-        "FeeConverter",
-        "LpTokenStaker",
-        "MerkleDistributor"
-      ],
+      "extracted_names": [],
       "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 3132,
       "audit_key": "audit-3132",
-      "report_name": "here",
+      "report_name": "PeckShield-Audit-Report-EllipsisV2Staking-v1.0.pdf",
       "report_url": "https://github.com/ellipsis-finance/ellipsis-audits/blob/master/PeckShield-Audit-Report-EllipsisV2Staking-v1.0.pdf",
       "auditor": "PeckShield",
       "audit_type": "audit",
@@ -955,22 +1189,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "EllipsisToken2",
-        "IncentiveVoting",
-        "LPStaking"
-      ],
+      "extracted_names": [],
       "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 11900,
       "audit_key": "audit-11900",
-      "report_name": "The Ellipsis codebase is based on code from Curve Finance; [their audits can be found here]().&#x20;",
+      "report_name": "www.curve.finance/audits",
       "report_url": "https://www.curve.finance/audits",
       "auditor": "Curve Finance",
       "audit_type": "audit",
@@ -980,6 +1213,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -1006,16 +1242,6 @@
     }
   ],
   "coverage_gaps": [
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x22a93f53a0a3e6847d05dd504283e8e296a49aae",
-      "name": "TokenLocker",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 8967.408517927595,
-      "risk_note": "Verified native implementation with $8,967.41 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 56,
       "chain_name": "bsc",
@@ -1049,8 +1275,38 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
+      "address": "0x169f653a54acd441ab34b73da9946e2c451787ef",
+      "name": "PancakeStableSwap",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x85259443fad3dc9ecfafe62f043a020992f0e4fc",
+      "name": "PancakeStableSwapTwoPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
       "address": "0x052e566a25ace8934dcc52c41a27b04a7c7eccbe",
       "name": "RewardsToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x22a93f53a0a3e6847d05dd504283e8e296a49aae",
+      "name": "TokenLocker",
       "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -1088,24 +1344,22 @@
     }
   ],
   "origin_summary": {
-    "native": 12,
-    "upstream": 2,
+    "native": 14,
+    "upstream": 1,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 5
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 6
+      "contract_name": 4
     },
-    "extraction_confidence_counts": {
-      "high": 2
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 11900,
-        "report_name": "The Ellipsis codebase is based on code from Curve Finance; [their audits can be found here]().&#x20;"
+        "report_name": "www.curve.finance/audits"
       }
     ],
     "inherited_remapped_matches": []

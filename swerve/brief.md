@@ -1,57 +1,56 @@
 # Agentic Audit Brief: Swerve
 
-⚠️ Lifecycle status: DEAD - TVL dropped 0.0% over 90 days
-
 ## Project Overview
 
 - Project: Swerve (`swerve`)
-- Lifecycle: dead (Tier 0, 99.2% below peak)
-- Generated: 2026-06-21T11:38:02.287Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:59.221Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-66d5
 - Chains: ethereum
-- Contract surface: 2 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $305,212.54
+- Contract surface: 6 unique implementations (9 raw deployments)
+- DeFi Llama TVL: $305,074.76
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Dexs. Structurally: 4 project-authored contract(s) across 1 chain(s); built on openzeppelin.
+
+### Architecture
+
+The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 17; live-surface contracts included: 5 (5 live, 0 unknown).
-- Excluded by liveness: 12 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 1/2 live.
+- Indexed contracts: 16; live-surface contracts included: 9 (5 live, 4 unknown).
+- Excluded by liveness: 7 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/2 (50.0%)
-- Verified + Unaudited implementations: 1
+- Coverage of deployed-live implementations: 1/2 (50.0%)
+- Deployed-live implementations: 2 of 6 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/3
+- Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 5
-- Audits discovered: 1
+- Unverified implementations: 3
+- Unique implementations: 6
+- Raw deployments: 9
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2020-09 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 1 | 50.0% | 2020-09 |
+| unknown | Tier 2 | 1 | 33.3% | 2020-09 |
 
 ## Contract Surface
 
@@ -59,13 +58,14 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Vyper_contract | unknown | ethereum | unit-42380 | [`0x329239...f9f88d`](./contracts/ethereum-1/0x329239599afb305da0a2ec69c58f8a6697f9f88d/) | ✅ Audited |
+| Vyper_contract | unknown | ethereum | n/a | [`0x329239...f9f88d`](./contracts/ethereum-1/0x329239599afb305da0a2ec69c58f8a6697f9f88d/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | Vyper_contract | unknown | ethereum | n/a | 4 deployments: ethereum [`0x2c988c...f67974`](./contracts/ethereum-1/0x2c988c3974ad7e604e276ae0294a7228def67974/); ethereum `0x77c6e4...83a059`; ethereum `0xb4d0c9...6b4bfa`; ethereum `0xb8baa0...cbd433` | ⚠️ Unaudited |
+| YPoolDelegator | unknown | ethereum | n/a | [`0xe9f8ca...a602b1`](./contracts/ethereum-1/0xe9f8ca518756911ba8ca01bcb571e12ce8a602b1/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -79,17 +79,21 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x7e12d7...5f49b4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xba08a5...fb9979` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc1aaeb...6af74e` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Swerve Finance Audit - by Cryptic Labs v3.pdf](https://github.com/crypticlabs/swerve-audit-report/blob/master/Swerve%20Finance%20Audit%20-%20by%20Cryptic%20Labs%20v3.pdf) | unknown | Audit | 2020-09 | stale | Direct | contract_name | 1 | high |
+| [Swerve Finance Audit - by Cryptic Labs v3.pdf](https://github.com/crypticlabs/swerve-audit-report/blob/master/Swerve%20Finance%20Audit%20-%20by%20Cryptic%20Labs%20v3.pdf) | unknown | Audit | 2020-09 | stale | Direct | contract_name | 1 | n/a |
 
 ## Coverage Gaps
 
@@ -98,15 +102,16 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0x2c988c...f67974`](./contracts/ethereum-1/0x2c988c3974ad7e604e276ae0294a7228def67974/) | Vyper_contract | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe9f8ca...a602b1`](./contracts/ethereum-1/0xe9f8ca518756911ba8ca01bcb571e12ce8a602b1/) | YPoolDelegator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 
@@ -114,7 +119,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=5
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=1
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -1,50 +1,50 @@
 # Agentic Audit Brief: Seedify
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Seedify (`seedify`)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-20T01:37:44.517Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:55.241Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-43c7
 - Chains: arbitrum, bsc, ethereum
-- Contract surface: 5 unique implementations (35 raw deployments)
-- DeFi Llama TVL: $32,109.66
+- Contract surface: 8 unique implementations (38 raw deployments)
+- DeFi Llama TVL: $29,401.21
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Seedify is a launchpad and incubator for blockchain projects, enabling users to stake SFUND tokens to participate in initial DEX offerings (IDOs) and earn rewards. It provides token locking, staking, and cross-chain token functionality to support project launches and community engagement.
+Launchpad. Structurally: 11 project-authored contract(s) across 3 chain(s); 3 ERC20 tokens, 2 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The SFUND_OFTv1 token serves as the cross-chain utility token, while IDOLocking contracts manage staking for IDO participation across multiple chains. SMD_v5 likely handles reward distribution or staking mechanics, and InitializableERC20 may be used for project tokens launched through the platform.
+The protocol comprises 3 functional families. Its contracts share 9 common project-authored base contract(s) (erc165, accesscontrolenumerable, erc721base). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 79; live-surface contracts included: 35 (35 live, 0 unknown).
-- Excluded by liveness: 44 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 79; live-surface contracts included: 38 (35 live, 3 unknown).
+- Excluded by liveness: 41 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 3; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/5 (0.0%)
+- Coverage of deployed-live implementations: 0/5 (0.0%)
+- Deployed-live implementations: 5 of 8 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/5
 - Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 5
-- Raw deployments: 35
-- Audits discovered: 1
+- Unverified implementations: 3
+- Unique implementations: 8
+- Raw deployments: 38
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-11 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -78,17 +78,21 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | arbitrum | n/a | `0x41484c...699838` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x5ede64...cd74a4` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0x8482d2...4f872c` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://assets.website-files.com/5f99eb79d508ca853be5f2e8/61cadee5f08b9f251e0e719e_Seedify%20audit%20report.pdf) | yAudit | Audit | 2021-11 | stale | Direct | n/a | 0 | n/a |
+| [61cadee5f08b9f251e0e719e_Seedify audit report.pdf](https://assets.website-files.com/5f99eb79d508ca853be5f2e8/61cadee5f08b9f251e0e719e_Seedify%20audit%20report.pdf) | yAudit | Audit | 2021-11 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -97,6 +101,7 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | bsc | [`0x027fc3...d22a9e`](./contracts/bsc-56/0x027fc3a49383d0e7bd6b81ef6c7512afd7d22a9e/) | IDOLocking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x477bc8...045d12`](./contracts/bsc-56/0x477bc8d23c634c154061869478bce96be6045d12/) | InitializableERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x560363...32fa60`](./contracts/ethereum-1/0x560363bda52bc6a44ca6c8c9b4a5fadbda32fa60/) | SFUND_OFTv1 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x1f1056...eb789e`](./contracts/bsc-56/0x1f10564bad9367cff4247a138ebba9a9aaeb789e/) | SMD_v5 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xa63fd3...0c2f68`](./contracts/arbitrum-42161/0xa63fd3833e40bde451f85bdfbe63c6aa4f0c2f68/) | Staking | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -105,10 +110,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 4 |
+| native | 5 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 0 |
+| standard_library | 0 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 
@@ -121,6 +126,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [13814] DL audit link
+- [13814] 61cadee5f08b9f251e0e719e_Seedify audit report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

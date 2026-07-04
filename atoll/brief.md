@@ -7,8 +7,8 @@
 - Project: Atoll (`atoll`)
 - Website: [https://atoll.money/](https://atoll.money/)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-19T09:01:04.375Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-cc10
+- Generated: 2026-07-04T14:53:04.251Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
 - Chains: sonic
 - Contract surface: 4 unique implementations (4 raw deployments)
 - DeFi Llama TVL: $0.00
@@ -17,33 +17,36 @@
 
 ## Project Description
 
-Atoll is a yield protocol on Sonic that issues a yield-bearing token (AtToken) backed by stablecoins, using automated market operations to manage reserves and maintain its peg.
+Yield. Structurally: 9 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens; built on openzeppelin.
 
 ### Architecture
 
-The Atoll family uses GovToken for governance, while PsmAMO and RebalanceAMO manage AtToken's reserves and peg. GnosisSafeProxy likely controls administrative functions across the protocol.
+The protocol comprises 4 functional families. Its contracts share 1 common project-authored base contract(s) (ownable2step). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 9; live-surface contracts included: 4 (4 live, 0 unknown).
-- Excluded by liveness: 5 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 10; live-surface contracts included: 4 (4 live, 0 unknown).
+- Excluded by liveness: 6 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 1; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/4 (0.0%)
+- Coverage of deployed-live implementations: 0/3 (0.0%)
+- Deployed-live implementations: 4 of 4 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/4
 - Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 4
 - Raw deployments: 4
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): $19,722.40
 - Latest audit: 2024-12 (aging)
-- Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [dead]. ASD of $19,722.40 represents exposure in a protocol with dead activity.
 
@@ -105,8 +108,8 @@ Verified + unaudited native implementations ranked by TVL:
 | Origin Kind | Contracts |
 |---|---:|
 | native | 3 |
-| upstream | 0 |
-| standard_library | 1 |
+| upstream | 1 |
+| standard_library | 0 |
 | needs_review | 0 |
 
 ## Scope Matching Notes

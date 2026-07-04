@@ -4,44 +4,47 @@
 
 - Project: GLIF (`glif`)
 - Website: [https://glif.io](https://glif.io)
-- Lifecycle: active (Tier 0, 90% below peak)
-- Generated: 2026-06-17T07:00:36.826Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:19.305Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: base
-- Contract surface: 4 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $25,413,698.24
+- Contract surface: 5 unique implementations (8 raw deployments)
+- DeFi Llama TVL: $24,093,272.14
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-GLIF is a Filecoin/DePIN yield, credit, and liquidity protocol with activity on Filecoin and Base. Its product surface should not be described as Base-only; project-level coverage and TVL should account for Filecoin as well as Base, with any Base-only figures clearly labeled as such.
+Liquid Staking. Structurally: 6 project-authored contract(s) across 1 chain(s); 2 ERC4626 vaults, 3 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin-upgradeable.
 
 ### Architecture
 
-The GLIF family consists of a single product family centered around the PoolV2 contract, which is accessed via an ERC1967Proxy. All other contracts in the inventory are periphery contracts that support the pool's operations, such as managing rewards and user interactions.
+The protocol comprises 4 functional families. Its contracts share 8 common project-authored base contract(s) (proxy, ownable2stepupgradeable, ownableupgradeable). Dominant framework: openzeppelin-upgradeable.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 13; live-surface contracts included: 5 (5 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 8 singleton, 0 uninitialized.
-- Deployment units: 1/5 live.
+- Indexed contracts: 13; live-surface contracts included: 8 (8 live, 0 unknown).
+- Excluded by liveness: 5 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/4 (0.0%)
-- Verified + Unaudited implementations: 4
+- Coverage of deployed-live implementations: 0/5 (0.0%)
+- Deployed-live implementations: 5 of 5 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/5
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 4
-- Raw deployments: 5
-- Audits discovered: 0
+- Unique implementations: 5
+- Raw deployments: 8
+- Audits discovered: 5 (5 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2025-11 (fresh)
+- Audit staleness (calendar age): 2 fresh, 0 aging, 3 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -54,13 +57,14 @@ The GLIF family consists of a single product family centered around the PoolV2 c
 
 - None
 
-### ⚠️ Verified + Unaudited (4)
+### ⚠️ Verified + Unaudited (5)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | ERC20Token | token | base | n/a | 2 deployments: base [`0x4a7c37...e53746`](./contracts/base-8453/0x4a7c3792995c9f6e0a3fb8d01ecd633c53e53746/); base `0x9f3f9a...ce0711` | ⚠️ Unaudited |
-| Periphery | periphery | base | n/a | [`0x24d242...4ad082`](./contracts/base-8453/0x24d242e7e7c8bf7f022204d94aaf49c76a4ad082/) | ⚠️ Unaudited |
-| PeripheryV2 | periphery | base | unit-23309 | [`0x35e137...f1ecff`](./contracts/base-8453/0x35e1371b87b742a99ab863d3cecf04e73ef1ecff/) | ⚠️ Unaudited |
+| Periphery | periphery | base | n/a | 2 deployments: base [`0x24d242...4ad082`](./contracts/base-8453/0x24d242e7e7c8bf7f022204d94aaf49c76a4ad082/); base `0x6e7c44...d39488` | ⚠️ Unaudited |
+| PeripheryV2 | periphery | base | n/a | [`0x35e137...f1ecff`](./contracts/base-8453/0x35e1371b87b742a99ab863d3cecf04e73ef1ecff/) | ⚠️ Unaudited |
+| PeripheryV3 | unknown | base | n/a | 2 deployments: base [`0x592286...7019f9`](./contracts/base-8453/0x5922866c7258bc5a74a03276e9a86d37167019f9/); base `0xadf046...62d11c` | ⚠️ Unaudited |
 | Pool | core_logic | base | n/a | [`0xed236d...024cf0`](./contracts/base-8453/0xed236d2f99346a17555f4161b2b099be80024cf0/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -85,29 +89,48 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [(see report here)](https://docs.glif.io/docs/file/infinity-pool-audit-consensys.pdf) | Consensys Diligence | Audit | 2023-04 | stale | Direct | n/a | 0 | n/a |
+| [(see report here)](https://docs.glif.io/docs/file/infinity-pool-audit-sherlock.pdf) | Sherlock | Contest | 2023-08 | stale | Direct | n/a | 0 | n/a |
+| [Hexens - GLIF LP+ & RWTFuture Contracts (Nov 2025)](https://hexens.io/audit-reports/glif-lpplus-rwtfuture-contracts-nov-2025) | Hexens | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
+| [Hexens - GLIF+ NFT (Aug 2025)](https://hexens.io/audit-reports/glif-glif-plus-nft-aug-2025) | Hexens | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
+| [Hexens - InfinityPoolV2 & AgentPoliceV2 Migration (Jul 2024)](https://hexens.io/audit-reports/glif-infinitypoolv2-agentpolicev2-migration-jul-2024) | Hexens | Audit | 2024-07 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| base | [`0x4a7c37...e53746`](./contracts/base-8453/0x4a7c3792995c9f6e0a3fb8d01ecd633c53e53746/) | ERC20Token | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x24d242...4ad082`](./contracts/base-8453/0x24d242e7e7c8bf7f022204d94aaf49c76a4ad082/) | Periphery | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x35e137...f1ecff`](./contracts/base-8453/0x35e1371b87b742a99ab863d3cecf04e73ef1ecff/) | PeripheryV2 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x592286...7019f9`](./contracts/base-8453/0x5922866c7258bc5a74a03276e9a86d37167019f9/) | PeripheryV3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0xed236d...024cf0`](./contracts/base-8453/0xed236d2f99346a17555f4161b2b099be80024cf0/) | Pool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 5 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 4 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [20434] (see report here)
+- [20435] (see report here)
+- [20436] Hexens - GLIF LP+ & RWTFuture Contracts (Nov 2025)
+- [20437] Hexens - GLIF+ NFT (Aug 2025)
+- [20438] Hexens - InfinityPoolV2 & AgentPoliceV2 Migration (Jul 2024)
 
 Fork inheritance lineage and inherited audits are included when available.

@@ -5,8 +5,8 @@
 - Project: DFS Network (`dfs-network`)
 - Website: [https://dfs.fun/](https://dfs.fun/)
 - Lifecycle: unknown
-- Generated: 2026-06-13T11:32:27.148Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
+- Generated: 2026-07-03T21:05:42.899Z
+- Pipeline run: brief-restore-2026-07
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
 - DeFi Llama TVL: $96,033.21
@@ -22,19 +22,30 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 0 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 0
 - Raw deployments: 0
-- Audits discovered: 2
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2020 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 1 unknown
+- Latest audit: 2020-01 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -73,8 +84,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://www.slowmist.com/en/security-audit-certificate.html?id=ca2c97083e94d0958e9376b770b16a7f8ddd53fb1e5f1b9cbabc0ccf8d157d40) | SlowMist | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [DeFis-Network_Swap_audit_report_2020_20_cn_1_0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/DeFis-Network_Swap_audit_report_2020_20_cn_1_0.pdf) | PeckShield | Audit | 2020 | stale | Direct | n/a | 0 | n/a |
+| [security-audit-certificate.html](https://www.slowmist.com/en/security-audit-certificate.html?id=ca2c97083e94d0958e9376b770b16a7f8ddd53fb1e5f1b9cbabc0ccf8d157d40) | SlowMist | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [DeFis-Network_Swap_audit_report_2020_20_cn_1_0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/DeFis-Network_Swap_audit_report_2020_20_cn_1_0.pdf) | PeckShield | Audit | 2020-01 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -102,7 +113,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [13026] DL audit link
+- [13026] security-audit-certificate.html
 - [13027] DeFis-Network_Swap_audit_report_2020_20_cn_1_0.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

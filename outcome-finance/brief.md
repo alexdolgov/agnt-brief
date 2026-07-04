@@ -1,50 +1,50 @@
 # Agentic Audit Brief: Outcome Finance
 
-⚠️ Lifecycle status: DECLINING - TVL changed 60.3% over 90 days
-
 ## Project Overview
 
 - Project: Outcome Finance (`outcome-finance`)
-- Lifecycle: declining (Tier 0, 99.4% below peak)
-- Generated: 2026-06-17T16:25:15.502Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-a893
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:39.187Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: boba, ethereum
 - Contract surface: 4 unique implementations (4 raw deployments)
-- DeFi Llama TVL: $1,048,764.91
+- DeFi Llama TVL: $986,643.19
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Outcome Finance is listed by DefiLlama as a Synthetics project that helps DAOs generate positive outcomes and uses UMA-related outcome/synthetic infrastructure. The currently recorded contract surface consists primarily of UMA creator/factory contracts, rather than verified trading venues or the deployed collateral-holding outcome contracts.
+Synthetics. Structurally: 3 project-authored contract(s) across 1 chain(s); built on openzeppelin.
 
 ### Architecture
 
-The LongShortPairCreator and ExpiringMultiPartyCreator contracts are factory contracts that deploy individual synthetic token pairs, sharing the same deployer cluster and likely relying on UMA's oracle and collateral infrastructure. The unnamed contract may serve as a registry or helper for these factories.
+The protocol comprises 2 functional families. Its contracts share 1 common project-authored base contract(s) (lockable). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 23; live-surface contracts included: 4 (3 live, 1 unknown).
-- Excluded by liveness: 19 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 4; live-surface contracts included: 4 (3 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 7; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
+- Coverage of deployed-live implementations: 0/3 (0.0%)
+- Deployed-live implementations: 3 of 4 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/3
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 4
 - Raw deployments: 4
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -61,8 +61,8 @@ The LongShortPairCreator and ExpiringMultiPartyCreator contracts are factory con
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | ExpiringMultiParty | unknown | ethereum | n/a | [`0x4f1424...af153c`](./contracts/ethereum-1/0x4f1424cef6ace40c0ae4fc64d74b734f1eaf153c/) | ⚠️ Unaudited |
-| OptimisticOracleV2 | unknown | ethereum | n/a | [`0xa0ae66...23ffae`](./contracts/ethereum-1/0xa0ae6609447e57a42c51b50eae921d701823ffae/) | ⚠️ Unaudited |
-| SkinnyOptimisticOracle | unknown | ethereum | n/a | [`0xee3afe...887c24`](./contracts/ethereum-1/0xee3afe347d5c74317041e2618c49534daf887c24/) | ⚠️ Unaudited |
+| OptimisticOracleV2 | operational_periphery | ethereum | n/a | [`0xa0ae66...23ffae`](./contracts/ethereum-1/0xa0ae6609447e57a42c51b50eae921d701823ffae/) | ⚠️ Unaudited |
+| SkinnyOptimisticOracle | operational_periphery | ethereum | n/a | [`0xee3afe...887c24`](./contracts/ethereum-1/0xee3afe347d5c74317041e2618c49534daf887c24/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -93,14 +93,18 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0x4f1424...af153c`](./contracts/ethereum-1/0x4f1424cef6ace40c0ae4fc64d74b734f1eaf153c/) | ExpiringMultiParty | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa0ae66...23ffae`](./contracts/ethereum-1/0xa0ae6609447e57a42c51b50eae921d701823ffae/) | OptimisticOracleV2 | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xee3afe...887c24`](./contracts/ethereum-1/0xee3afe347d5c74317041e2618c49534daf887c24/) | SkinnyOptimisticOracle | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
-| upstream | 3 |
+| native | 3 |
+| upstream | 0 |
 | standard_library | 0 |
 | needs_review | 1 |
 

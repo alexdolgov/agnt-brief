@@ -5,26 +5,25 @@
 - Project: Coinsquare (`coinsquare`)
 - Website: [https://coinsquare.com](https://coinsquare.com)
 - Lifecycle: unknown
-- Generated: 2026-06-19T06:13:48.400Z
-- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $8,989,665.69
+- Generated: 2026-07-04T14:53:10.341Z
+- Pipeline run: v2-2026-07-02-1ba3fd
+- Chains: ethereum
+- Contract surface: 5 unique implementations (5 raw deployments)
+- DeFi Llama TVL: $10,315,028.27
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Coinsquare is a centralized cryptocurrency exchange providing custodial cryptocurrency trading and related financial services. No validated Coinsquare-owned smart contract surface has been identified from the provided inventory; the listed KittyCore contract is an unrelated CryptoKitties contract and should not be counted as a Coinsquare contract.
+CEX. Structurally: 5 project-authored contract(s) across 1 chain(s); 1 ERC20 token; built on openzeppelin.
+
+### Architecture
+
+The protocol comprises 2 functional families. Its contracts share 2 common project-authored base contract(s) (clockauction, clockauctionbase). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Indexed contracts: 5; live-surface contracts included: 5 (5 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
@@ -32,17 +31,20 @@ Coinsquare is a centralized cryptocurrency exchange providing custodial cryptocu
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Coverage of deployed-live implementations: 0/5 (0.0%)
+- Deployed-live implementations: 5 of 5 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/5
+- Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
-- Audits discovered: 0
+- Unique implementations: 5
+- Raw deployments: 5
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -55,9 +57,15 @@ Coinsquare is a centralized cryptocurrency exchange providing custodial cryptocu
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (5)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| GeneScience | unknown | ethereum | n/a | [`0xf97e0a...946a2b`](./contracts/ethereum-1/0xf97e0a5b616dffc913e72455fde9ea8bbe946a2b/) | ⚠️ Unaudited |
+| KittyCore | unknown | ethereum | n/a | [`0x06012c...7a266d`](./contracts/ethereum-1/0x06012c8cf97bead5deae237070f9587f8e7a266d/) | ⚠️ Unaudited |
+| Migrations | unknown | ethereum | n/a | [`0x08ea78...141751`](./contracts/ethereum-1/0x08ea78fb540fe5361afd39a6b421a0662e141751/) | ⚠️ Unaudited |
+| SaleClockAuction | unknown | ethereum | n/a | [`0x7163cd...89a9e5`](./contracts/ethereum-1/0x7163cd869f445a0fe0c5049a979c9e27b589a9e5/) | ⚠️ Unaudited |
+| SiringClockAuction | unknown | ethereum | n/a | [`0x6b5a1e...2c4aac`](./contracts/ethereum-1/0x6b5a1ed9e51448c1c76dc4ddf24e243d402c4aac/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -86,13 +94,19 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0xf97e0a...946a2b`](./contracts/ethereum-1/0xf97e0a5b616dffc913e72455fde9ea8bbe946a2b/) | GeneScience | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x06012c...7a266d`](./contracts/ethereum-1/0x06012c8cf97bead5deae237070f9587f8e7a266d/) | KittyCore | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x08ea78...141751`](./contracts/ethereum-1/0x08ea78fb540fe5361afd39a6b421a0662e141751/) | Migrations | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7163cd...89a9e5`](./contracts/ethereum-1/0x7163cd869f445a0fe0c5049a979c9e27b589a9e5/) | SaleClockAuction | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6b5a1e...2c4aac`](./contracts/ethereum-1/0x6b5a1ed9e51448c1c76dc4ddf24e243d402c4aac/) | SiringClockAuction | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 5 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |

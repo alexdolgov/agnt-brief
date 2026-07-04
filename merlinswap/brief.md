@@ -1,28 +1,26 @@
 # Agentic Audit Brief: MerlinSwap
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 42.8% over 90 days
-
 ## Project Overview
 
 - Project: MerlinSwap (`merlinswap`)
 - Website: [https://merlinswap.org](https://merlinswap.org)
-- Lifecycle: declining (Tier 0, 94.8% below peak)
-- Generated: 2026-06-17T19:00:08.252Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-1121
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:30.623Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16da
 - Chains: merlin
-- Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $6,894,830.37
+- Contract surface: 1 unique implementations (2 raw deployments)
+- DeFi Llama TVL: $6,477,600.74
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-MerlinSwap is a decentralized exchange (DEX) protocol on the Merlin chain, enabling users to swap tokens and provide liquidity through automated market-making pools.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
@@ -34,19 +32,21 @@ MerlinSwap is a decentralized exchange (DEX) protocol on the Merlin chain, enabl
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 2
-- Unique implementations: 2
+- Unverified implementations: 1
+- Unique implementations: 1
 - Raw deployments: 2
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -74,14 +74,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (2)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | merlin | n/a | `0x261507...4c0467` | ❓ Unverified |
-| UnnamedContract | unknown | merlin | n/a | `0xbd40c7...430bba` | ❓ Unverified |
+| UnnamedContract | unknown | merlin | n/a | 2 deployments: merlin `0x261507...4c0467`; merlin `0xbd40c7...430bba` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -101,7 +100,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 2 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

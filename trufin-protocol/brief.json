@@ -1,50 +1,26 @@
 {
   "schema_version": "2.0",
   "project_key": "trufin-protocol",
-  "generated_at": "2026-06-19T06:16:40.460Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-fda2",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "trufin-protocol",
-    "tier": 1,
-    "peak_tvl": 317192395,
-    "peak_date": "2024-12-07T00:00:00.000Z",
-    "tvl_30d_ago": 15219597,
-    "tvl_90d_ago": 21176098,
-    "tvl_current": 6387915,
-    "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 74443115,
-    "change_30d_pct": -58.02835646699449,
-    "change_90d_pct": -69.83431508486596,
-    "governance_raw": {
-      "evidence": "TVL has dropped 98% from peak but the protocol's homepage shows active product offerings and institutional focus, indicating ongoing operations.",
-      "confidence": 0.8,
-      "lifecycle_status": "declining"
-    },
-    "days_since_peak": 532,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 97.9861071385397,
-    "governance_evidence": "TVL has dropped 98% from peak but the protocol's homepage shows active product offerings and institutional focus, indicating ongoing operations.",
-    "governance_confidence": 0.8,
-    "governance_text_chars": 2554,
-    "governance_classification": "declining",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:54:02.499Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-ae05",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
-    "audited_contracts": 1,
-    "unaudited_contracts": 1,
-    "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 1,
+    "total_contracts": 9,
+    "total_addresses": 17,
+    "unique_implementations": 9,
+    "total_deployments": 17,
+    "audited_contracts": 3,
+    "unaudited_contracts": 5,
+    "contracts_verified_audited": 3,
+    "contracts_verified_unaudited": 5,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 50,
+    "contracts_unverified": 1,
+    "coverage_pct": 42.9,
     "total_audits": 13,
-    "scoreable_audits": 4,
+    "direct_audits": 13,
+    "inherited_audits": 0,
+    "scoreable_audits": 7,
     "dl_tvl_usd": null,
     "tvl_usd": null,
     "tvl_source": null,
@@ -54,7 +30,7 @@
     "chains": [
       "ethereum"
     ],
-    "tier1_coverage_pct": 50,
+    "tier1_coverage_pct": 14.3,
     "tier1_auditors": [
       "OpenZeppelin"
     ],
@@ -65,34 +41,143 @@
       "aging": 3,
       "stale": 7,
       "unknown": 0
+    },
+    "live_implementations": 8,
+    "live_verified_implementations": 7,
+    "live_audited_implementations": 3,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 2,
+      "diverged": 0,
+      "match_unverified": 1
     }
   },
   "topography": {
-    "project_purpose": "TruYields is an institutional onchain yield platform with product lines including TruCore, TruStake, and TruVault. TruStake includes liquid staking products such as MATIC/POL staking, while TruVault and related products cover additional yield strategies. The Ethereum contracts listed in this brief represent only a subset of the broader TruYields platform and should not be treated as the complete multi-chain protocol surface.",
-    "relationship_narrative": null,
-    "product_family_count": 2,
+    "project_purpose": "Liquid Staking. Structurally: 7 project-authored contract(s) across 1 chain(s); 1 ERC20 token; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.",
+    "product_family_count": 3,
     "total_contracts_indexed": 24,
-    "live_contracts": 2,
-    "inactive_contracts": 11,
-    "singleton_contracts": 11,
+    "live_contracts": 13,
+    "inactive_contracts": 10,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 6,
-    "live_deployment_units": 1,
-    "dependencies_extracted": 1,
+    "unknown_contracts": 1,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 9,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5701773567a4a903ef1de459d0b542adb2439937",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MasterWhitelist",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x948ddfecd6ec588beab5a5aaa210504d2f6b14d8",
+      "impl_name": "MasterWhitelist",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x5701773567a4a903ef1de459d0b542adb2439937",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x948ddfecd6ec588beab5a5aaa210504d2f6b14d8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-07-07 12:36:47+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb78610ade922b1aa0df2b0981f0dec17733f0334",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MasterWhitelist",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xc90a7cb712e5ac2dd377602866051ac61487757c",
+      "impl_name": "MasterWhitelist",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb78610ade922b1aa0df2b0981f0dec17733f0334",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc90a7cb712e5ac2dd377602866051ac61487757c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-10-27 11:45:47+03",
+      "deploy_coverage_basis": null
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -126,19 +211,198 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-10 15:12:11+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x022420797d9491b455c345375c48b62a21155158",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ProxyAdmin",
+      "role": "unknown",
+      "origin_kind": "standard_library",
+      "origin_provider": "OpenZeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ProxyAdmin",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x022420797d9491b455c345375c48b62a21155158",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x567676ddb095b582b49ed21538fc45c9ce791131",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf7a2a6bd2117a7b907c461d357f0cd4c86b5430a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2023-06-14 17:06:11+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1608b68d47c8752dbbfe748fdc902e401f96a603",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Staker",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x1608b68d47c8752dbbfe748fdc902e401f96a603",
+      "impl_name": "Staker",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1608b68d47c8752dbbfe748fdc902e401f96a603",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xcfab8530ccf1f9936daede537d6ebbc75289006d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2217",
+        "audit-2222"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-02-27 20:07:11+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0ee0f1e438e4f0d8e3aa8d1f35592aa5303863a4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TruStakeMATICv2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe0579d3d0471720e9e9b76e3fb73dff06e6ceb71",
+      "impl_name": "TruStakeMATICv2",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x0ee0f1e438e4f0d8e3aa8d1f35592aa5303863a4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6ba703406bc530d7e160f2b25a253e21d1de5ad9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe0579d3d0471720e9e9b76e3fb73dff06e6ceb71",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-05-19 20:11:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xa43a7c62d56df036c187e1966c03e2799d8987ed",
-      "deployment_unit": "unit-39400",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "TruStakeMATICv2",
       "role": "unknown",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "TruStake",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0xb32079a7d0eafa81c56709b32347214a86f54557",
@@ -148,8 +412,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xa43a7c62d56df036c187e1966c03e2799d8987ed",
-          "deployment_unit": "unit-39400",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -166,14 +430,109 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-14 17:06:23+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbe63b28453eeb284ae9413949accf41ed817f8db",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TruStakePOL",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xbe63b28453eeb284ae9413949accf41ed817f8db",
+      "impl_name": "TruStakePOL",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbe63b28453eeb284ae9413949accf41ed817f8db",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc10214cde5d6754ec1e2220362f2120142c8e5e8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-2212"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-26 14:17:47+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x66d55290f20d0984f1a1ede2e9f324b5a86ef9b5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x66d55290f20d0984f1a1ede2e9f324b5a86ef9b5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-14 12:45:47+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 2211,
       "audit_key": "audit-2211",
-      "report_name": "Download PDF",
+      "report_name": "TruYields-audit-report-Solana-TruRLP-vaults.pdf",
       "report_url": "https://truyields.com/audits/TruYields-audit-report-Solana-TruRLP-vaults.pdf",
       "auditor": "Unknown",
       "audit_type": "audit",
@@ -183,6 +542,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -194,7 +556,7 @@
     {
       "audit_id": 2212,
       "audit_key": "audit-2212",
-      "report_name": "Download PDF",
+      "report_name": "TruPOL-Nethermind-audit-september-2025.pdf",
       "report_url": "https://truyields.com/audits/TruPOL-Nethermind-audit-september-2025.pdf",
       "auditor": "Nethermind",
       "audit_type": "audit",
@@ -204,18 +566,25 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "extracted_names": [
+        "TruStakePOL",
+        "TruStakePOLStorage",
+        "Types"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
       "audit_id": 2213,
       "audit_key": "audit-2213",
-      "report_name": "Download PDF",
+      "report_name": "TruFin_Solana_Staker_Solana_Program_Security_Assessment_Report_Halborn_Final.pdf",
       "report_url": "https://truyields.com/audits/TruFin_Solana_Staker_Solana_Program_Security_Assessment_Report_Halborn_Final.pdf",
       "auditor": "Halborn",
       "audit_type": "audit",
@@ -225,6 +594,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -236,7 +608,7 @@
     {
       "audit_id": 2214,
       "audit_key": "audit-2214",
-      "report_name": "Download PDF",
+      "report_name": "TruINJ-Zellic-Nov24.pdf",
       "report_url": "https://truyields.com/audits/TruINJ-Zellic-Nov24.pdf",
       "auditor": "Zellic",
       "audit_type": "audit",
@@ -246,6 +618,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -257,7 +632,7 @@
     {
       "audit_id": 2215,
       "audit_key": "audit-2215",
-      "report_name": "Download PDF",
+      "report_name": "TruNEAR-BlockSec-Sep24.pdf",
       "report_url": "https://truyields.com/audits/TruNEAR-BlockSec-Sep24.pdf",
       "auditor": "BlockSec",
       "audit_type": "audit",
@@ -267,6 +642,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -288,6 +666,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -299,7 +680,7 @@
     {
       "audit_id": 2217,
       "audit_key": "audit-2217",
-      "report_name": "Download PDF",
+      "report_name": "Trufin Audit Report MoveBit-Apr24.pdf",
       "report_url": "https://truyields.com/audits/Trufin%20Audit%20Report%20MoveBit-Apr24.pdf",
       "auditor": "MoveBit",
       "audit_type": "audit",
@@ -309,18 +690,26 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "extracted_names": [
+        "master_whitelist",
+        "staker",
+        "staker.spec",
+        "truAPT"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
       "audit_id": 2218,
       "audit_key": "audit-2218",
-      "report_name": "Download PDF",
+      "report_name": "TruMATIC-Nethermind-Dec23.pdf",
       "report_url": "https://truyields.com/audits/TruMATIC-Nethermind-Dec23.pdf",
       "auditor": "Nethermind",
       "audit_type": "audit",
@@ -330,24 +719,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "ERC4626Storage",
-        "IMasterWhitelist",
-        "IStakeManager",
-        "ITruStakeMATICv2",
-        "IValidatorShare",
-        "MaliciousValidator_Deposit",
-        "MaliciousValidator_Withdraw",
-        "MasterWhitelist",
-        "TruStakeMATICv2",
-        "TruStakeMATICv2Storage",
-        "Types"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -363,27 +743,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "IMasterWhitelist",
-        "IStakeManager",
-        "ITruStakeMATICv2",
-        "IValidatorShare",
-        "MasterWhitelist",
-        "TruStakeMATICv2",
-        "TruStakeMATICv2Storage",
-        "Types"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 2220,
       "audit_key": "audit-2220",
-      "report_name": "Download PDF",
+      "report_name": "TruMATIC-Nethermind-Jun23.pdf",
       "report_url": "https://truyields.com/audits/TruMATIC-Nethermind-Jun23.pdf",
       "auditor": "Nethermind",
       "audit_type": "audit",
@@ -393,25 +767,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "IMasterWhitelist",
-        "IStakeManager",
-        "IValidatorShare",
-        "MasterWhitelist",
-        "TruStakeMATICv2",
-        "TruStakeMATICv2Storage"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 2221,
       "audit_key": "audit-2221",
-      "report_name": "Download PDF",
+      "report_name": "TruMATIC-ZokyoAudit-May23.pdf",
       "report_url": "https://truyields.com/audits/TruMATIC-ZokyoAudit-May23.pdf",
       "auditor": "Zokyo",
       "audit_type": "audit",
@@ -421,23 +791,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Staker.sol",
-        "StakerStorage.sol",
-        "TruStakeMATICv2.sol",
-        "TruStakeMATICv2Storage.sol"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 2222,
       "audit_key": "audit-2222",
-      "report_name": "Download PDF",
+      "report_name": "Trufin-audit-report-20230309.pdf",
       "report_url": "https://truyields.com/audits/Trufin-audit-report-20230309.pdf",
       "auditor": "yAudit",
       "audit_type": "audit",
@@ -447,18 +815,24 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "extracted_names": [
+        "Staker",
+        "StakerStorage"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
       "audit_id": 15576,
       "audit_key": "audit-15576",
-      "report_name": "View audit",
+      "report_name": "www.halborn.com/audits/truyields/smart-contract-assessment-954e48",
       "report_url": "https://www.halborn.com/audits/truyields/smart-contract-assessment-954e48",
       "auditor": "Halborn",
       "audit_type": "audit",
@@ -468,6 +842,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -481,26 +858,60 @@
     {
       "auditor": "Nethermind",
       "tier": 2,
-      "contracts_covered": 1,
-      "coverage_pct": 50,
+      "contracts_covered": 2,
+      "coverage_pct": 25,
       "latest_audit": "2025-09"
+    },
+    {
+      "auditor": "MoveBit",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 12.5,
+      "latest_audit": "2024-04"
     },
     {
       "auditor": "OpenZeppelin",
       "tier": 1,
       "contracts_covered": 1,
-      "coverage_pct": 50,
+      "coverage_pct": 12.5,
       "latest_audit": "2023-07"
+    },
+    {
+      "auditor": "yAudit",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 12.5,
+      "latest_audit": "2023-03"
     },
     {
       "auditor": "Zokyo",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 50,
+      "coverage_pct": 12.5,
       "latest_audit": "2023-05"
     }
   ],
   "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x5701773567a4a903ef1de459d0b542adb2439937",
+      "name": "MasterWhitelist",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb78610ade922b1aa0df2b0981f0dec17733f0334",
+      "name": "MasterWhitelist",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -510,59 +921,58 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x0ee0f1e438e4f0d8e3aa8d1f35592aa5303863a4",
+      "name": "TruStakeMATICv2",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 1,
+    "native": 7,
     "upstream": 0,
     "standard_library": 1,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 59
+      "contract_name": 4,
+      "extraction_exact": 6
     },
     "extraction_confidence_counts": {
-      "high": 4
+      "high": 3
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 2211,
-        "report_name": "Download PDF"
-      },
-      {
-        "audit_id": 2212,
-        "report_name": "Download PDF"
+        "report_name": "TruYields-audit-report-Solana-TruRLP-vaults.pdf"
       },
       {
         "audit_id": 2213,
-        "report_name": "Download PDF"
+        "report_name": "TruFin_Solana_Staker_Solana_Program_Security_Assessment_Report_Halborn_Final.pdf"
       },
       {
         "audit_id": 2214,
-        "report_name": "Download PDF"
+        "report_name": "TruINJ-Zellic-Nov24.pdf"
       },
       {
         "audit_id": 2215,
-        "report_name": "Download PDF"
+        "report_name": "TruNEAR-BlockSec-Sep24.pdf"
       },
       {
         "audit_id": 2216,
         "report_name": "TruFin Audit Report OtterSec-May24.pdf"
       },
       {
-        "audit_id": 2217,
-        "report_name": "Download PDF"
-      },
-      {
-        "audit_id": 2222,
-        "report_name": "Download PDF"
-      },
-      {
         "audit_id": 15576,
-        "report_name": "View audit"
+        "report_name": "www.halborn.com/audits/truyields/smart-contract-assessment-954e48"
       }
     ],
     "inherited_remapped_matches": []

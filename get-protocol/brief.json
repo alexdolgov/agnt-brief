@@ -1,72 +1,65 @@
 {
   "schema_version": "2.0",
   "project_key": "get-protocol",
-  "generated_at": "2026-06-21T09:04:19.252Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "unknown",
-  "lifecycle_signal": {
-    "slug": "get-protocol",
-    "tier": 0,
-    "peak_tvl": 0,
-    "peak_date": "2023-03-27T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 0,
-    "tvl_current": 0,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 0,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "days_since_peak": 1182,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 0
-  },
+  "generated_at": "2026-07-04T14:53:19.261Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-17a2",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 2,
-    "total_addresses": 2,
-    "unique_implementations": 2,
-    "total_deployments": 2,
+    "total_contracts": 4,
+    "total_addresses": 4,
+    "unique_implementations": 4,
+    "total_deployments": 4,
     "audited_contracts": 1,
     "unaudited_contracts": 1,
     "contracts_verified_audited": 1,
     "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 2,
     "coverage_pct": 50,
     "total_audits": 2,
+    "direct_audits": 2,
+    "inherited_audits": 0,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 122808.17576,
-    "tvl_usd": 1709008.9589487195,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 1709008.96
-    },
-    "asd_usd": 60246.36591738967,
+    "dl_tvl_usd": 0,
+    "tvl_usd": 0,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://www.get-protocol.io",
     "chains": [
       "ethereum"
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": "2022",
+    "latest_audit_date": "2022-01",
     "audit_freshness": "stale",
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
       "stale": 2,
       "unknown": 0
+    },
+    "live_implementations": 2,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 1
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
+    "project_purpose": "Services. Structurally: 2 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 1 ERC20 token; built on openzeppelin.",
+    "relationship_narrative": "The protocol forms a single structural family (Tokens) of 2 contract(s).",
     "product_family_count": 1,
     "total_contracts_indexed": 4,
     "live_contracts": 2,
-    "inactive_contracts": 2,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 2,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
@@ -74,9 +67,9 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 2,
+    "unique_implementations": 4,
     "has_non_token_contracts": false,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
@@ -93,8 +86,8 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "GET Protocol",
-      "tvl_usd": 1648762.5930313298,
+      "product_line": null,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "GetToken",
@@ -107,7 +100,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 1648762.5930313298,
+          "tvl_usd": null,
           "is_audited": true
         }
       ],
@@ -118,7 +111,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2017-10-13 15:45:29+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -130,8 +127,8 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "GET Protocol",
-      "tvl_usd": 60246.36591738967,
+      "product_line": null,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "GovernanceLockedRevenueDistributionToken",
@@ -144,7 +141,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 60246.36591738967,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -153,14 +150,96 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-01-26 11:31:35+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xbd9fb53b9491790c2f7157151f10017a958724e1",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbd9fb53b9491790c2f7157151f10017a958724e1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2017-10-13 15:17:01+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf72aae2efd626c48b849cc4128c3b855d3d5c932",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf72aae2efd626c48b849cc4128c3b855d3d5c932",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2017-10-13 15:21:59+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 13178,
       "audit_key": "audit-13178",
-      "report_name": "DL audit link",
+      "report_name": "get-protocol-token-sale-matthew-di-ferrante.pdf",
       "report_url": "https://get-protocol.io/files/get-protocol-token-sale-matthew-di-ferrante.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -170,36 +249,33 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "GetCrowdsale",
-        "GetFinalizeAgent",
-        "GetPreCrowdsale",
-        "GetPreFinalizeAgent",
-        "GetPrePricingStrategy",
-        "GetPricingStrategy",
-        "GetToken",
-        "GetWhitelist"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 13179,
       "audit_key": "audit-13179",
-      "report_name": "DL audit link",
+      "report_name": "reports.yacademy.dev/docs/12-2022-GET-Protocol-Staking",
       "report_url": "https://reports.yacademy.dev/docs/12-2022-GET-Protocol-Staking",
       "auditor": "unknown",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2022",
+      "date": "2022-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -215,7 +291,7 @@
       "tier": 2,
       "contracts_covered": 1,
       "coverage_pct": 50,
-      "latest_audit": "2022"
+      "latest_audit": "2022-01"
     }
   ],
   "coverage_gaps": [
@@ -226,29 +302,27 @@
       "name": "GovernanceLockedRevenueDistributionToken",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 60246.36591738967,
-      "risk_note": "Verified native implementation with $60,246.37 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
     "native": 2,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 1
+      "contract_name": 1
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 13179,
-        "report_name": "DL audit link"
+        "report_name": "reports.yacademy.dev/docs/12-2022-GET-Protocol-Staking"
       }
     ],
     "inherited_remapped_matches": []

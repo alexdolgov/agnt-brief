@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "keeta-bridge",
-  "generated_at": "2026-06-17T07:00:57.558Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "keeta-bridge",
-    "tier": 0,
-    "peak_tvl": 1384573,
-    "peak_date": "2025-11-30T00:00:00.000Z",
-    "tvl_30d_ago": 998207,
-    "tvl_90d_ago": 993468,
-    "tvl_current": 1101996,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 909907,
-    "change_30d_pct": 10.397542794230054,
-    "change_90d_pct": 10.924156590851442,
-    "days_since_peak": 176,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 20.408963629942228
-  },
+  "generated_at": "2026-07-04T14:53:29.158Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 4,
     "total_addresses": 4,
@@ -34,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 1342968.02181,
-    "tvl_usd": 1342968.02181,
+    "dl_tvl_usd": 1061302.7304,
+    "tvl_usd": 1061302.7304,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,18 +39,27 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 4,
+    "live_verified_implementations": 4,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Keeta Bridge is a canonical bridge between Base and the Keeta network.",
-    "relationship_narrative": "The Bridge contract serves as the core operational component, while the supporting Contract likely provides auxiliary functionality such as access control or registry services. Both contracts are deployed by the same deployer, indicating a unified infrastructure.",
-    "product_family_count": 1,
+    "project_purpose": "Canonical Bridge. Structurally: 4 project-authored contract(s) across 1 chain(s); 1 ERC20 token; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.",
+    "product_family_count": 3,
     "total_contracts_indexed": 4,
-    "live_contracts": 0,
+    "live_contracts": 4,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 4,
+    "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
@@ -114,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-08 23:59:37+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -149,7 +148,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-08 23:58:17+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -161,7 +164,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Keeta Bridge",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -184,7 +187,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-23 03:29:41+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -196,7 +203,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Keeta Bridge",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -219,7 +226,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-03-05 21:32:33+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],

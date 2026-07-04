@@ -1,47 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "snowbank",
-  "generated_at": "2026-06-19T06:14:39.491Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "snowbank",
-    "tier": 0,
-    "peak_tvl": 68674707,
-    "peak_date": "2021-11-21T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 0,
-    "tvl_current": 0,
-    "tier0_reason": "current_tvl_zero_after_meaningful_peak",
-    "tvl_180d_ago": 0,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "days_since_peak": 1666,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 100
-  },
+  "generated_at": "2026-07-04T14:53:56.439Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-ae05",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 6,
-    "total_addresses": 9,
-    "unique_implementations": 6,
-    "total_deployments": 9,
+    "total_contracts": 7,
+    "total_addresses": 10,
+    "unique_implementations": 7,
+    "total_deployments": 10,
     "audited_contracts": 0,
     "unaudited_contracts": 6,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 6,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 4100767.0295,
-    "tvl_usd": 36054640.0961111,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "avalanche": 36054640.1
-    },
-    "asd_usd": 36054640.0961111,
+    "dl_tvl_usd": 3791753.43424,
+    "tvl_usd": 3791753.43424,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": null,
     "chains": [
       "avalanche"
@@ -55,28 +39,35 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 6,
+    "live_verified_implementations": 6,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Snowbank is an Avalanche-based OHM-style reserve currency protocol that issues the SB token, which is backed by a basket of assets. It includes staking mechanisms for SB holders; any auto-compounding functionality should be treated as inferred from contract names unless verified by current project documentation.",
-    "relationship_narrative": "The TimeERC20Token serves as the core SB token, while TimeStaking handles staking rewards and AutoFarmV2_CrossChain provides auto-compounding functionality, likely interacting with the staking contract to reinvest rewards.",
-    "product_family_count": 1,
+    "project_purpose": "Reserve Currency. Structurally: 19 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Its contracts share 2 common project-authored base contract(s) (joeerc20, erc20permit). Dominant framework: openzeppelin.",
+    "product_family_count": 3,
     "total_contracts_indexed": 27,
     "live_contracts": 9,
-    "inactive_contracts": 18,
+    "inactive_contracts": 17,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 1,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 2,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 6,
+    "unique_implementations": 7,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -85,41 +76,6 @@
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 43114,
-      "chain_name": "avalanche",
-      "address": "0x7d1232b90d3f809a54eeaeebc639c62df8a8942f",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "TimeERC20Token",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Snowbank",
-      "tvl_usd": 36054640.0961111,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "TimeERC20Token",
-      "deployments": [
-        {
-          "chain_id": 43114,
-          "chain_name": "avalanche",
-          "address": "0x7d1232b90d3f809a54eeaeebc639c62df8a8942f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 36054640.0961111,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
@@ -153,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-06 15:53:28+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -163,8 +123,8 @@
       "deployment_unit_proxy_count": null,
       "name": "JoePair",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "trader-joe",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -221,7 +181,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-12-30 04:19:31+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -256,7 +220,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-02-16 19:33:29+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -291,7 +259,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-05 16:31:00+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0x7d1232b90d3f809a54eeaeebc639c62df8a8942f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TimeERC20Token",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TimeERC20Token",
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0x7d1232b90d3f809a54eeaeebc639c62df8a8942f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-05 16:07:49+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -303,7 +314,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Snowbank",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -326,7 +337,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-05 16:28:36+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
+      "address": "0xfc3625cd7a5c9d40bfe6ee075a73867b32073f5e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 43114,
+          "chain_name": "avalanche",
+          "address": "0xfc3625cd7a5c9d40bfe6ee075a73867b32073f5e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-12-22 18:59:53+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],
@@ -335,18 +389,18 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
-      "address": "0x7d1232b90d3f809a54eeaeebc639c62df8a8942f",
-      "name": "TimeERC20Token",
-      "role": "token",
+      "address": "0x472c18c4079ecb68629f4fba1141172404bfee9c",
+      "name": "ETHTimeBondDepository",
+      "role": "unknown",
       "origin_kind": "native",
-      "tvl_usd": 36054640.0961111,
-      "risk_note": "Verified native implementation with $36,054,640.10 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
-      "address": "0x472c18c4079ecb68629f4fba1141172404bfee9c",
-      "name": "ETHTimeBondDepository",
+      "address": "0x425c45adfb53861e5db8f17d9b072ab60d4404d8",
+      "name": "JoePair",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -375,6 +429,16 @@
     {
       "chain_id": 43114,
       "chain_name": "avalanche",
+      "address": "0x7d1232b90d3f809a54eeaeebc639c62df8a8942f",
+      "name": "TimeERC20Token",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 43114,
+      "chain_name": "avalanche",
       "address": "0x85784d5e2ccae89bcb39ebf0ac6cdc93d42d99ad",
       "name": "TimeStaking",
       "role": "unknown",
@@ -384,10 +448,10 @@
     }
   ],
   "origin_summary": {
-    "native": 5,
-    "upstream": 1,
+    "native": 6,
+    "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},

@@ -1,51 +1,50 @@
 # Agentic Audit Brief: KawaiiSwap
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: KawaiiSwap (`kawaiiswap`)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-19T18:02:14.708Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:29.076Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: bsc
-- Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $798.68
+- Contract surface: 5 unique implementations (5 raw deployments)
+- DeFi Llama TVL: $733.15
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Yield. Structurally: 14 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens; built on openzeppelin.
+
+### Architecture
+
+The protocol forms a single structural family (Core Logic) of 14 contract(s).
 
 ## Contract Surface Quality
 
-- Indexed contracts: 70; live-surface contracts included: 2 (2 live, 0 unknown).
-- Excluded by liveness: 68 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 69; live-surface contracts included: 5 (2 live, 3 unknown).
+- Excluded by liveness: 64 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
-- Detected codebases: uniswap-v2
-- Unverified dependencies: 9/17.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/2 (50.0%)
+- Coverage of deployed-live implementations: 1/2 (50.0%)
+- Deployed-live implementations: 2 of 5 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/2
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 2
-- Audits discovered: 2
+- Unverified implementations: 3
+- Unique implementations: 5
+- Raw deployments: 5
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-11 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -79,17 +78,21 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | bsc | n/a | `0xbec316...4e3e4e` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xccf2ed...cbb953` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xf8e4da...969e70` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [SmartContract_Audit_Solidproof_Calcifire.pdf](https://github.com/solidproof/smart-contract-audits/blob/main/SmartContract_Audit_Solidproof_Calcifire.pdf) | unknown | Audit | 2021-11 | stale | Direct | contract_name | 1 | high |
+| [SmartContract_Audit_Solidproof_Calcifire.pdf](https://github.com/solidproof/smart-contract-audits/blob/main/SmartContract_Audit_Solidproof_Calcifire.pdf) | unknown | Audit | 2021-11 | stale | Direct | contract_name | 1 | n/a |
 | [KYC_Certificate_Calcifer_&_Howls_Castle.png](https://github.com/solidproof/kyc-certificates/blob/main/KYC_Certificate_Calcifer_%26_Howls_Castle.png) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
@@ -107,7 +110,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 
@@ -115,8 +118,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=4
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=1
 
 Zero-match audit list:
 

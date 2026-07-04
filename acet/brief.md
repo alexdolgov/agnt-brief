@@ -7,21 +7,21 @@
 - Project: ACET (`acet`)
 - Website: [https://acet.finance/](https://acet.finance/)
 - Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-19T22:47:26.879Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Generated: 2026-07-04T14:52:57.988Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
 - Chains: bsc
 - Contract surface: 8 unique implementations (11 raw deployments)
-- DeFi Llama TVL: $12,019.32
-- On-chain TVL (included contracts): $2,535,477.19
-- TVL by chain: Bsc $2,535,477.19
+- DeFi Llama TVL: $8,667.22
+- On-chain TVL (included contracts): $2,087,748.90
+- TVL by chain: Bsc $2,087,748.90
 
 ## Project Description
 
-ACET is a yield farming protocol on BSC that allows users to stake liquidity pool tokens and earn ACET token rewards. It provides farming pools for various LP tokens and a native ACET token for rewards.
+Farm. Structurally: 9 project-authored contract(s) across 1 chain(s); 1 ERC20 token; role-gated via AccessControl; built on openzeppelin.
 
 ### Architecture
 
-The ACET family of farm contracts distributes rewards in the AcetToken from the FINAL FARM family. The Pool contracts likely represent the staking pools, while the FarmV4 and FarmV2Transition contracts manage reward distribution and migration.
+The protocol comprises 3 functional families. Its contracts share 2 common project-authored base contract(s) (owned, farmbase). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
@@ -29,21 +29,24 @@ The ACET family of farm contracts distributes rewards in the AcetToken from the 
 - Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 15; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/8 (37.5%)
+- Coverage of deployed-live implementations: 3/8 (37.5%)
+- Deployed-live implementations: 8 of 8 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 3/8
 - Verified + Unaudited implementations: 5
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 8
 - Raw deployments: 11
-- Audits discovered: 2
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-10 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 3 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
@@ -95,8 +98,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [PeckShield-Audit-Report-Acet-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Acet-v1.0.pdf) | PeckShield | Audit | 2021-10 | stale | Direct | contract_name | 5 | high |
-| [www.certik.com/projects/acet-finance](https://skynet.certik.com/projects/acet-finance) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [PeckShield-Audit-Report-Acet-v1.0.pdf](https://github.com/peckshield/publications/blob/master/audit_reports/PeckShield-Audit-Report-Acet-v1.0.pdf) | PeckShield | Audit | 2021-10 | stale | Direct | contract_name | 3 | n/a |
+| [skynet.certik.com/projects/acet-finance](https://skynet.certik.com/projects/acet-finance) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -125,11 +128,11 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=6
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=3
 
 Zero-match audit list:
 
-- [12620] www.certik.com/projects/acet-finance
+- [12620] skynet.certik.com/projects/acet-finance
 
 Fork inheritance lineage and inherited audits are included when available.

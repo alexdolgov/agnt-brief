@@ -1,62 +1,66 @@
 # Agentic Audit Brief: Poolside
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 19.8% over 90 days
-
 ## Project Overview
 
 - Project: Poolside (`poolside`)
 - Website: [https://www.poolside.party](https://www.poolside.party)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-20T01:44:00.725Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:44.083Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: base
-- Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $30,606.06
+- Contract surface: 2 unique implementations (2 raw deployments)
+- DeFi Llama TVL: $28,738.37
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Dexs. Structurally: 7 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+
+### Architecture
+
+The protocol comprises 2 functional families. Contracts are linked by 2 cross-contract reference(s). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 104; live-surface contracts included: 1 (1 live, 0 unknown).
-- Excluded by liveness: 103 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 9; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 7 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 13; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 1/2 (50.0%)
+- Deployed-live implementations: 2 of 2 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/2
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
-- Audits discovered: 2
-- Scoreable audits (matched contracts): 0
+- Unique implementations: 2
+- Raw deployments: 2
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-08 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 2 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 1 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| unknown | Tier 2 | 1 | 50.0% | 2023-08 |
+| yAudit | Tier 2 | 1 | 50.0% | 2023-08 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
+### ✅ Verified + Audited (1)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| ButtonswapFactory | unknown | base | n/a | [`0x75a92d...9ba64a`](./contracts/base-8453/0x75a92dfb38c3506dce3bbb5eb32a10852f9ba64a/) | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (1)
 
@@ -86,8 +90,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [statemind_2023-08-11.pdf](https://github.com/buttonwood-protocol/buttonswap-core/blob/main/notes/statemind_2023-08-11.pdf) | unknown | Audit | 2023-08 | stale | Direct | contract_name | 0 | n/a |
-| [🔎 Security Audit Completed](https://2693699415-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F1OyEScoUCIfVRkK0pfQm%2Fuploads%2FRAecNiY4W8m84dbjdayw%2Fbuttonswap.pdf) | yAudit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [statemind_2023-08-11.pdf](https://github.com/buttonwood-protocol/buttonswap-core/blob/main/notes/statemind_2023-08-11.pdf) | unknown | Audit | 2023-08 | stale | Direct | contract_name | 1 | high |
+| [spaces/1OyEScoUCIfVRkK0pfQm/uploads/RAecNiY4W8m84dbjdayw/buttonswap.pdf](https://2693699415-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F1OyEScoUCIfVRkK0pfQm%2Fuploads%2FRAecNiY4W8m84dbjdayw%2Fbuttonswap.pdf) | yAudit | Audit | 2023-08 | stale | Direct | contract_name | 1 | high |
 
 ## Coverage Gaps
 
@@ -101,7 +105,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |
@@ -110,14 +114,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 2
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: extraction_exact=5
-
-Zero-match audit list:
-
-- [13692] statemind_2023-08-11.pdf
-- [13693] 🔎 Security Audit Completed
+- Extraction confidence breakdown: high=2
+- Match method counts: extraction_exact=2
 
 Fork inheritance lineage and inherited audits are included when available.

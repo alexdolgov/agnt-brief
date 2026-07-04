@@ -1,36 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "tymio",
-  "generated_at": "2026-06-21T10:19:31.187Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "tymio",
-    "tier": 1,
-    "peak_tvl": 1095118,
-    "peak_date": "2024-12-13T00:00:00.000Z",
-    "tvl_30d_ago": 288079,
-    "tvl_90d_ago": 925554,
-    "tvl_current": 216502,
-    "tier0_reason": "sustained_90d_and_30d_decline",
-    "tvl_180d_ago": 564577,
-    "change_30d_pct": -24.846309519263812,
-    "change_90d_pct": -76.60838805731485,
-    "governance_raw": {
-      "evidence": "The homepage is inaccessible due to a Cloudflare block, indicating no active maintenance or user access.",
-      "confidence": 0.9,
-      "lifecycle_status": "dead"
-    },
-    "days_since_peak": 555,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 80.23025829180051,
-    "governance_evidence": "The homepage is inaccessible due to a Cloudflare block, indicating no active maintenance or user access.",
-    "governance_confidence": 0.9,
-    "governance_text_chars": 742,
-    "governance_classification": "dead",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:54:02.625Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-4c3e",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 1,
     "total_addresses": 2,
@@ -44,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 100,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 209172.40848,
-    "tvl_usd": 209172.40848,
+    "dl_tvl_usd": 200680.25462,
+    "tvl_usd": 200680.25462,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -64,6 +40,15 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 1
     }
   },
   "topography": {
@@ -78,7 +63,7 @@
     "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 1,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -102,7 +87,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "TYMIO",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -128,7 +113,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -138,7 +123,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-03 09:03:35+03",
+      "deploy_coverage_basis": "match_unverified"
     }
   ],
   "audits": [
@@ -155,14 +144,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "PayerV3"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -184,11 +174,9 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 2
+      "contract_name": 1
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

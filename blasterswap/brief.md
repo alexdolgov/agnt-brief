@@ -1,51 +1,54 @@
 # Agentic Audit Brief: Blasterswap
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 14.4% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 22.8% over 90 days
 
 ## Project Overview
 
 - Project: Blasterswap (`blasterswap`)
 - Website: [https://blasterswap.com/](https://blasterswap.com/)
-- Lifecycle: declining (Tier 0, 98.3% below peak)
-- Generated: 2026-06-21T11:40:11.568Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: declining (Tier 0, 98.4% below peak)
+- Generated: 2026-07-04T14:53:07.574Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-66d5
 - Chains: blast
-- Contract surface: 3 unique implementations (6 raw deployments)
-- DeFi Llama TVL: $302,507.00
-- On-chain TVL (included contracts): $2,643.46
-- TVL by chain: Blast $2,643.46
+- Contract surface: 4 unique implementations (7 raw deployments)
+- DeFi Llama TVL: $288,534.00
+- On-chain TVL (included contracts): $2,361.66
+- TVL by chain: Blast $2,361.66
 
 ## Project Description
 
-Blasterswap is a decentralized exchange and yield protocol on Blast that enables users to provide liquidity and earn yield through vaults. It appears to offer automated yield strategies and token swapping, leveraging Blast's native yield features.
+Dexs. Structurally: 5 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The Vault contracts form the core yield-generating logic, while Andy and Pacmoon appear to be supporting tokens or adapters that interact with the vaults. All contracts are deployed on Blast and share the same deployer cluster, indicating a unified infrastructure.
+The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 7; live-surface contracts included: 6 (6 live, 0 unknown).
-- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 11; live-surface contracts included: 7 (6 live, 1 unknown).
+- Excluded by liveness: 4 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 1/4.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
+- Coverage of deployed-live implementations: 0/3 (0.0%)
+- Deployed-live implementations: 3 of 4 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/3
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 3
-- Raw deployments: 6
-- Audits discovered: 1
+- Unverified implementations: 1
+- Unique implementations: 4
+- Raw deployments: 7
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $2,643.46
+- ASD (verified + unaudited TVL): $2,361.66
 - Latest audit: 2024-03 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $2,643.46 represents exposure in a protocol with declining activity.
+- Note: This protocol is classified as [declining]. ASD of $2,361.66 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -77,11 +80,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | blast | n/a | `0x44fa62...23ea6a` | ❓ Unverified |
 
 ## Audit Inventory
 
@@ -95,14 +100,15 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| blast | [`0x013249...a84260`](./contracts/blast-81457/0x013249266842e078999088807033d80531a84260/) | Vault | core_logic | $2,643.46 | Verified native implementation with $2,643.46 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x013249...a84260`](./contracts/blast-81457/0x013249266842e078999088807033d80531a84260/) | Vault | core_logic | $2,361.66 | Verified native implementation with $2,361.66 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| blast | [`0x0ecd76...e9d505`](./contracts/blast-81457/0x0ecd76c73caf3ef7995cb236366f71fae2e9d505/) | Andy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | blast | [`0x5ffd9e...a29c06`](./contracts/blast-81457/0x5ffd9ebd27f2fcab044c0f0a26a45cb62fa29c06/) | Pacmoon | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 1 |

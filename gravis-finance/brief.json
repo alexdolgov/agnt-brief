@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "gravis-finance",
-  "generated_at": "2026-06-20T01:58:24.852Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
-  "lifecycle_status": "unknown",
-  "lifecycle_signal": {
-    "slug": "gravis-finance",
-    "tier": 0,
-    "peak_tvl": 235291,
-    "peak_date": "2022-11-05T00:00:00.000Z",
-    "tvl_30d_ago": 35202,
-    "tvl_90d_ago": 34777,
-    "tvl_current": 33142,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 39858,
-    "change_30d_pct": -5.851940230668712,
-    "change_90d_pct": -4.701383098024556,
-    "days_since_peak": 1323,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 85.91446336663961
-  },
+  "generated_at": "2026-07-04T14:53:19.909Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 1,
     "total_addresses": 1,
@@ -34,14 +18,14 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 33046.21547,
-    "tvl_usd": 13439201.970261209,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "bsc": 13439201.97
-    },
-    "asd_usd": 13439201.970261209,
+    "dl_tvl_usd": 32327.28155,
+    "tvl_usd": 32327.28155,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": null,
     "chains": [
       "bsc"
@@ -55,6 +39,15 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
@@ -93,8 +86,8 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Gravis Finance",
-      "tvl_usd": 13439201.970261209,
+      "product_line": null,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "GravisToken",
@@ -107,7 +100,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 13439201.970261209,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -116,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-28 10:20:13+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -133,6 +130,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -151,8 +151,8 @@
       "name": "GravisToken",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 13439201.970261209,
-      "risk_note": "Verified native implementation with $13,439,201.97 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {

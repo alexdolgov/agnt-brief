@@ -4,44 +4,47 @@
 
 - Project: Katana Pre-Launch (`katana-pre-launch`)
 - Website: [https://app.katana.network/](https://app.katana.network/)
-- Lifecycle: active (Tier 0, 92.6% below peak)
-- Generated: 2026-06-17T07:00:43.014Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:29.044Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: base, ethereum
-- Contract surface: 53 unique implementations (178 raw deployments)
-- DeFi Llama TVL: $17,494,776.38
-- On-chain TVL (included contracts): $35,474,536.72
-- TVL by chain: Ethereum $35,474,536.72
+- Contract surface: 208 unique implementations (333 raw deployments)
+- DeFi Llama TVL: $17,262,971.46
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Katana Pre-Launch is an Ethereum pre-launch deposit/farm product where users deposit eligible tokens into Yearn vaults to earn Krates and a pro-rata KAT allocation. Bridge, swap, perps, chain infrastructure, LayerZero, Agglayer, OP Stack, SP1, and other app or chain components should be treated as dependencies or out-of-scope unless directly tied to the pre-launch deposit contracts.
+Farm. Structurally: 48 project-authored contract(s) across 2 chain(s); 1 ERC20 token; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The Katana Pre-Launch vaults mint yield-bearing tokens that can be bridged via the Vault Bridge or LayerZero adapters, while the Agglayer bridge provides a canonical path to the Katana chain. Shared infrastructure like GnosisSafe and Permit2 supports governance and token approvals across families.
+The protocol comprises 9 functional families. Its contracts share 14 common project-authored base contract(s) (executor, eip712, owneriscreator). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 656; live-surface contracts included: 178 (172 live, 6 unknown).
-- Excluded by liveness: 411 inactive, 67 singleton, 0 uninitialized.
-- Deployment units: 4/38 live.
+- Indexed contracts: 333; live-surface contracts included: 333 (174 live, 159 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 11/57.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/49 (0.0%)
+- Coverage of deployed-live implementations: 0/41 (0.0%)
+- Deployed-live implementations: 49 of 208 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/49
 - Verified + Unaudited implementations: 49
 - Verified by bytecode match: 0
-- Unverified implementations: 4
-- Unique implementations: 53
-- Raw deployments: 178
-- Audits discovered: 28
+- Unverified implementations: 159
+- Unique implementations: 208
+- Raw deployments: 333
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $35,474,536.72
-- Latest audit: 2025-09 (fresh)
-- Staleness: 6 fresh, 7 aging, 6 stale, 9 unknown
+- ASD (verified + unaudited TVL): n/a
+- Latest audit: 2025-03 (aging)
+- Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -58,15 +61,13 @@ The Katana Pre-Launch vaults mint yield-bearing tokens that can be bridged via t
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Yearn V3 Vault | core_logic | ethereum | n/a | 6 deployments: ethereum [`0x48c03b...eedfcb`](./contracts/ethereum-1/0x48c03b6ffd0008460f8657db1037c7e09deedfcb/); ethereum `0x77570c...97ea2f`; ethereum `0xa5dab3...7d3896`; ethereum `0xd80631...84b00d`; ethereum `0xe1ac97...55544a`; ethereum `0xf470eb...cc014d` | ⚠️ Unaudited |
-| BoringVault | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x69d210...44c16b`](./contracts/ethereum-1/0x69d210d3b60e939bfa6e87cccc4fab7e8f44c16b/); ethereum `0x752310...565ab5` | ⚠️ Unaudited |
-| TokenChwomper | token | ethereum | n/a | 3 deployments: ethereum [`0x5c2e11...92559c`](./contracts/ethereum-1/0x5c2e112783a6854653b4bc7dc22248d3e592559c/); ethereum `0xdbeca8...b3e9eb`; ethereum `0xde7259...1d5667` | ⚠️ Unaudited |
-| AgglayerBridge | operational_periphery | ethereum | unit-26598 | [`0x2a3dd3...ca2ede`](./contracts/ethereum-1/0x2a3dd3eb832af982ec71669e178424b10dca2ede/) | ⚠️ Unaudited |
-| AgoraDollar | unknown | ethereum | unit-26593 | [`0x000000...a9012a`](./contracts/ethereum-1/0x00000000efe302beaa2b3e6e1b18d08d69a9012a/) | ⚠️ Unaudited |
+| AgglayerBridge | operational_periphery | ethereum | n/a | [`0x2a3dd3...ca2ede`](./contracts/ethereum-1/0x2a3dd3eb832af982ec71669e178424b10dca2ede/) | ⚠️ Unaudited |
+| AgoraDollar | unknown | ethereum | n/a | [`0x000000...a9012a`](./contracts/ethereum-1/0x00000000efe302beaa2b3e6e1b18d08d69a9012a/) | ⚠️ Unaudited |
 | ArcticArchitectureLens | periphery | ethereum | n/a | [`0xe0efe9...a857fe`](./contracts/ethereum-1/0xe0efe934dc4744090e8ef93f1d125e4015a857fe/) | ⚠️ Unaudited |
 | BoringOnChainQueue | unknown | ethereum | n/a | [`0x52e523...ce2506`](./contracts/ethereum-1/0x52e523b849c584f86bf460a3cf2962b118ce2506/) | ⚠️ Unaudited |
 | BoringSolver | unknown | ethereum | n/a | [`0x102b3f...d06137`](./contracts/ethereum-1/0x102b3fdb4537df5b15ab91a85bc6f62fbcd06137/) | ⚠️ Unaudited |
-| BridgeExtension | operational_periphery | ethereum | unit-26607 | [`0x64b20e...52f6a6`](./contracts/ethereum-1/0x64b20eb25aed030fd510ef93b9135278b152f6a6/) | ⚠️ Unaudited |
+| BoringVault | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x69d210...44c16b`](./contracts/ethereum-1/0x69d210d3b60e939bfa6e87cccc4fab7e8f44c16b/); ethereum `0x752310...565ab5` | ⚠️ Unaudited |
+| BridgeExtension | operational_periphery | ethereum | n/a | [`0x64b20e...52f6a6`](./contracts/ethereum-1/0x64b20eb25aed030fd510ef93b9135278b152f6a6/) | ⚠️ Unaudited |
 | CommitStore | unknown | ethereum | n/a | 57 deployments: ethereum [`0x013467...5e9084`](./contracts/ethereum-1/0x01346721418045a6c07b71052e452ef8615e9084/); ethereum `0x0428df...b587de`; ethereum `0x0d26ba...052045`; ethereum `0x0f254e...a380d7`; ethereum `0x0f5552...2bbe75`; ethereum `0x0f89c7...c52959`; ethereum `0x10d561...945c75`; ethereum `0x180776...3f5633`; ethereum `0x1bddba...0533b9`; ethereum `0x27a4e7...9926fb`; ethereum `0x2aa101...a007ce`; ethereum `0x38a806...c43271`; ethereum `0x3f1c35...4c4527`; ethereum `0x459154...f1e5d0`; ethereum `0x4b50cd...ee3282`; ethereum `0x52275d...01f694`; ethereum `0x57b548...3fb9b3`; ethereum `0x57d6cd...3dd114`; ethereum `0x5fd81c...2e15ff`; ethereum `0x607c09...8f128c`; ethereum `0x67b972...a00b90`; ethereum `0x681827...703248`; ethereum `0x6c8b96...4bf4b9`; ethereum `0x6f4abc...c5bf75`; ethereum `0x6fe6f7...29d0a4`; ethereum `0x700b6a...794e02`; ethereum `0x70ac0f...27006a`; ethereum `0x807dd6...799a04`; ethereum `0x83f3da...30250d`; ethereum `0x8705f7...646159`; ethereum `0x8a1680...f8a2cf`; ethereum `0x8d846b...77b1ab`; ethereum `0x8fc54e...e9e262`; ethereum `0x913a2a...ddc04b`; ethereum `0x95deb0...b82d64`; ethereum `0x98d0f8...a67ed9`; ethereum `0x9b9ec8...83dcdb`; ethereum `0x9d93d5...794f8a`; ethereum `0x9f592c...d705cd`; ethereum `0xa4755c...110320`; ethereum `0xa48269...536d1c`; ethereum `0xa58818...3741b9`; ethereum `0xa9f9bf...a9a2b8`; ethereum `0xc46890...56ad8d`; ethereum `0xc5164a...224f9f`; ethereum `0xd07926...d40235`; ethereum `0xd2428f...a6cd99`; ethereum `0xd8f93a...bff802`; ethereum `0xd9d3d9...c3da72`; ethereum `0xdac3a8...205ffe`; ethereum `0xdcf6f2...954110`; ethereum `0xe41677...7470a6`; ethereum `0xf19173...fd4793`; ethereum `0xf7b343...e75ed3`; ethereum `0xf7d68c...bb8f02`; ethereum `0xfa94e5...7eb210`; ethereum `0xfe73bc...fb0165` | ⚠️ Unaudited |
 | ConduitController | governance | ethereum | n/a | [`0x000000...00ad63`](./contracts/ethereum-1/0x00000000f9490004c11cef243f5400493c00ad63/) | ⚠️ Unaudited |
 | CreateX | unknown | ethereum | n/a | [`0xba5ed0...8ba5ed`](./contracts/ethereum-1/0xba5ed099633d3b313e4d5f7bdc1305d3c28ba5ed/) | ⚠️ Unaudited |
@@ -85,13 +86,13 @@ The Katana Pre-Launch vaults mint yield-bearing tokens that can be bridged via t
 | Multicall3 | periphery | ethereum | n/a | [`0xca11bd...76ca11`](./contracts/ethereum-1/0xca11bde05977b3631167028862be2a173976ca11/) | ⚠️ Unaudited |
 | MultiSend | unknown | ethereum | n/a | [`0x998739...8f9eda`](./contracts/ethereum-1/0x998739bfdaadde7c933b942a68053933098f9eda/) | ⚠️ Unaudited |
 | MyOVaultComposer | core_logic | ethereum | n/a | [`0x7b6dd0...2566e9`](./contracts/ethereum-1/0x7b6dd022e7ed1dabcf0c3537f710eb5c8f2566e9/) | ⚠️ Unaudited |
-| NativeLBTC | unknown | ethereum | unit-26619 | [`0xb0f70c...817072`](./contracts/ethereum-1/0xb0f70c0bd6fd87dbeb7c10dc692a2a6106817072/) | ⚠️ Unaudited |
+| NativeLBTC | unknown | ethereum | n/a | [`0xb0f70c...817072`](./contracts/ethereum-1/0xb0f70c0bd6fd87dbeb7c10dc692a2a6106817072/) | ⚠️ Unaudited |
 | OptimismPortal2 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x5decbe...61ce8a`](./contracts/ethereum-1/0x5decbeeefecc5353355cd79a8fecc4c03f61ce8a/); ethereum `0xa7a8e4...14dc0a` | ⚠️ Unaudited |
 | Pauser | unknown | ethereum | n/a | [`0xe50a6c...282c74`](./contracts/ethereum-1/0xe50a6c887c18c5541d8cf311825016fbbb282c74/) | ⚠️ Unaudited |
 | Permit2 | unknown | ethereum | n/a | [`0x000000...c78ba3`](./contracts/ethereum-1/0x000000000022d473030f116ddee9f6b43ac78ba3/) | ⚠️ Unaudited |
 | PriceRegistry | operational_periphery | ethereum | n/a | [`0xed1a8c...d2d4f5`](./contracts/ethereum-1/0xed1a8c49bbd5618fa6cc952c509557f816d2d4f5/) | ⚠️ Unaudited |
 | ProxyAdmin | governance | ethereum | n/a | 3 deployments: ethereum [`0x890636...b8a1fb`](./contracts/ethereum-1/0x89063623f00238106c9a60032fae2ab702b8a1fb/); ethereum `0xeb8f92...a0275f`; base [`0x890636...b8a1fb`](./contracts/base-8453/0x89063623f00238106c9a60032fae2ab702b8a1fb/) | ⚠️ Unaudited |
-| ProxyMock | unknown | ethereum | unit-26629 | [`0xecac9c...5c11c1`](./contracts/ethereum-1/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ⚠️ Unaudited |
+| ProxyMock | unknown | ethereum | n/a | [`0xecac9c...5c11c1`](./contracts/ethereum-1/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ⚠️ Unaudited |
 | ReadLib1002 | unknown | ethereum | n/a | [`0x74f55b...9fdb9d`](./contracts/ethereum-1/0x74f55bc2a79a27a0bf1d1a35db5d0fc36b9fdb9d/) | ⚠️ Unaudited |
 | ReceiveUln302 | unknown | ethereum | n/a | [`0xc02ab4...6024c2`](./contracts/ethereum-1/0xc02ab410f0734efa3f14628780e6e695156024c2/) | ⚠️ Unaudited |
 | RedSnwapper | unknown | ethereum | n/a | [`0xac4c6e...f80b75`](./contracts/ethereum-1/0xac4c6e212a361c968f1725b4d055b47e63f80b75/) | ⚠️ Unaudited |
@@ -106,7 +107,9 @@ The Katana Pre-Launch vaults mint yield-bearing tokens that can be bridged via t
 | StakeManager | governance | ethereum | n/a | [`0x97a350...2c389f`](./contracts/ethereum-1/0x97a3500083348a147f419b8a65717909762c389f/) | ⚠️ Unaudited |
 | TokenAdminRegistry | registry | ethereum | n/a | [`0xb22764...c05cb6`](./contracts/ethereum-1/0xb22764f98dd05c789929716d677382df22c05cb6/) | ⚠️ Unaudited |
 | TokenBridge | operational_periphery | ethereum | n/a | [`0x50002c...1cd907`](./contracts/ethereum-1/0x50002cdfe7ccb0c41f519c6eb0653158d11cd907/) | ⚠️ Unaudited |
+| TokenChwomper | token | ethereum | n/a | 3 deployments: ethereum [`0x5c2e11...92559c`](./contracts/ethereum-1/0x5c2e112783a6854653b4bc7dc22248d3e592559c/); ethereum `0xdbeca8...b3e9eb`; ethereum `0xde7259...1d5667` | ⚠️ Unaudited |
 | ValidatorShare | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7e94d6...8cc67b`](./contracts/ethereum-1/0x7e94d6cabb20114b22a088d828772645f68cc67b/); ethereum `0xfb3a3a...58d797` | ⚠️ Unaudited |
+| Yearn V3 Vault | core_logic | ethereum | n/a | 6 deployments: ethereum [`0x48c03b...eedfcb`](./contracts/ethereum-1/0x48c03b6ffd0008460f8657db1037c7e09deedfcb/); ethereum `0x77570c...97ea2f`; ethereum `0xa5dab3...7d3896`; ethereum `0xd80631...84b00d`; ethereum `0xe1ac97...55544a`; ethereum `0xf470eb...cc014d` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -120,103 +123,246 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (4)
+### ❓ Unverified (159)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | UnnamedContract | unknown | ethereum | n/a | `0x000f3d...beac02` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x031848...596447` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0330f9...acb1e0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x053fa9...0bb462` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x07245e...e4df89` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x087ceb...384e2e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0ab536...57ad21` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0d8745...d8f874` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0f04f5...7d20ba` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x13dff8...9fdd92` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x152442...27fcb9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x153fb4...eb12d4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x16cc4e...170347` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x173272...453059` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x175bfe...92888f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x19044c...0274da` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1ab914...6665ca` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1ace9d...159df5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1c3f27...c06eaf` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1c8565...298e80` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0x1d2af2...ce158c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1e283d...ed0bba` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1e45f2...279c85` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x245b6e...23eefc` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x26bc65...e0e61e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x271689...25ddd3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2c24b5...32374f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2d61dc...529aaa` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2dc70f...c34dff` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x319ae5...d8f627` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x37152c...f1c564` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3715d2...cecbc6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x38de71...491251` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3ad884...d9076c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3b01de...f1eab9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3ced11...98c14c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3dd459...8c4855` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3ec70c...7fc7d1` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3ef366...ba6552` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x417d01...689e02` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4224f6...e51d36` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x442896...fcedc5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4474b8...232dd5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4690f3...5b985e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x46ce93...1faeb8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4a59d3...0d321c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4b4ca2...abefb2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4ccd4c...59c17a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4e341b...14c260` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0x4e59b4...b4956c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4e9ae4...938227` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4e9c57...fb9ed0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4ed3c8...9881e1` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4f8b7a...904c15` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x519fbc...2a462a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x51e64b...664fae` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x53e82a...7a765e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x556979...ee0c2d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x566513...f6ef5e` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0x5aa71f...4ddd03` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5ac73e...323487` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5b19bd...a18c1c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5d93bb...929334` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5e8752...70b422` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x5ebb3f...e73056` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x60adff...c2962c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x614f72...84261c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x61ab01...39d849` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x639f13...3c77de` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x667efc...a7cd81` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x694d16...cab683` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6bd792...d22c70` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6d4f9f...9845cc` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6f4756...48dd5b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6f8a42...a35168` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x747c74...92f6ac` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x76a15d...fe00a7` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x771d10...3b9cbf` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x807275...d293c0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8169e5...520dfc` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x81c16f...9d525e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8287f4...2e88f0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x839dc0...95ab82` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8775e9...491027` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x87d8ee...c2357b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8d09c4...c131d4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8f051c...ab8f91` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8f45f7...ff949b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8fafc8...c9ce0b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x901de2...9106b3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x902f09...98089e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x93ed06...9a7f24` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x94fe59...867a9b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9512a8...231874` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x96ed42...e3e763` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x980205...3ec981` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9bfac7...ef3ba5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9c9e25...4fbd95` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9d2a80...7ab639` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa36797...c25ee3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xa65874...d161d9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xad132b...bb050a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xaf3477...913d9c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb00aa6...4a44fc` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb03734...9d9231` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb25156...fb4577` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb26ac1...29090c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb2ec4d...3945f5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb360a5...9c428d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb3e790...bbf91b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb42ab6...621665` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb5bada...957bb3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb830a5...0a592f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xbe4fb2...9fc220` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xbec6f0...b56af7` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xbf2e10...951320` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc03f31...a91113` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc1b15d...dacb36` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc3ce54...58c6b4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc4a313...0a9a12` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc55332...4958b7` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc5fd95...b0c05d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc6dd63...d30e45` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc905e7...534688` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xcb566e...e1aaaa` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xcb8b43...3b6905` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xcc0de8...6fd346` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xcc865b...fd6f29` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xccb2d2...a2e6f7` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xcff08a...3def77` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd23108...daf705` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd28d73...e84092` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd53903...d1e3da` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd87129...9859c0` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd9e705...62d0c3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xdac2d2...da4232` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xdcc1a1...994068` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xdd55f5...be306a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe01f3c...28976b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe04f26...08e832` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe20403...6fc6d2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe30779...02de80` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe5971a...76cf4a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe64ae0...73e321` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe6d3bd...27ac3b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe84c69...e1ee83` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe85e8d...88c99b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe9ae26...e07b2d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xedb24c...711e63` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf641db...63a141` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf6c8bd...18c46d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf82fa8...c4f667` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xfa6f20...b3e759` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xfaea28...66f3e3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xfe7c30...d3a098` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xfe9ab7...5c9805` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xff2331...73bc9c` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xd53903...d1e3da` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xeb8f92...a0275f` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [cantina.pdf](https://github.com/succinctlabs/sp1/blob/dev/audits/cantina.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [code4rena.pdf](https://github.com/succinctlabs/sp1/blob/dev/audits/code4rena.pdf) | Code4rena | Contest | n/a | unknown | Direct | n/a | 0 | n/a |
-| [hypercube-zellic.pdf](https://github.com/succinctlabs/sp1/blob/dev/audits/hypercube-zellic.pdf) | Zellic | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [kalos.md](https://github.com/succinctlabs/sp1/blob/dev/audits/kalos.md) | Kalos | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [rkm0959.md](https://github.com/succinctlabs/sp1/blob/dev/audits/rkm0959.md) | rkm0959 | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [sp1-v4.md](https://github.com/succinctlabs/sp1/blob/dev/audits/sp1-v4.md) | Unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [veridise.pdf](https://github.com/succinctlabs/sp1/blob/dev/audits/veridise.pdf) | Veridise | Audit | 2024 | stale | Direct | n/a | 0 | n/a |
-| [zellic.pdf](https://github.com/succinctlabs/sp1/blob/dev/audits/zellic.pdf) | Zellic | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [2024-06_pessimistic-proofs_d9d33885b6_trail-of-bits_audit.pdf](https://github.com/agglayer/agglayer/blob/main/docs/audits/2024-06_pessimistic-proofs_d9d33885b6_trail-of-bits_audit.pdf) | Trail of Bits | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
-| [2024-06_pessimistic-proofs_d9d33885b6_trail-of-bits_response.pdf](https://github.com/agglayer/agglayer/blob/main/docs/audits/2024-06_pessimistic-proofs_d9d33885b6_trail-of-bits_response.pdf) | Trail of Bits | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
-| [2024-12_aggregation-layer_d9d33885b6_sigma-prime_audit.pdf](https://github.com/agglayer/agglayer/blob/main/docs/audits/2024-12_aggregation-layer_d9d33885b6_sigma-prime_audit.pdf) | Sigma Prime | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
-| [2025-04_aggregation-layer_d7b3dd1c28_sigma-prime_audit-part-1.pdf](https://github.com/agglayer/agglayer/blob/main/docs/audits/2025-04_aggregation-layer_d7b3dd1c28_sigma-prime_audit-part-1.pdf) | Sigma Prime | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
-| [2025-04_aggregation-layer_f084ad78b6_sigma-prime_audit-part-2.pdf](https://github.com/agglayer/agglayer/blob/main/docs/audits/2025-04_aggregation-layer_f084ad78b6_sigma-prime_audit-part-2.pdf) | Sigma Prime | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
-| [2025-07_aggregation-layer_d7b3dd1_sigma-prime_audit-part-1.pdf](https://github.com/agglayer/agglayer/blob/main/docs/audits/2025-07_aggregation-layer_d7b3dd1_sigma-prime_audit-part-1.pdf) | Sigma Prime | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [2025-07_aggregation_layer_f084ad7_sigma-prime_audit-part-2.pdf](https://github.com/agglayer/agglayer/blob/main/docs/audits/2025-07_aggregation_layer_f084ad7_sigma-prime_audit-part-2.pdf) | Sigma Prime | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [2025-07_aggregation_layer_f084ad7_sigma-prime_response.pdf](https://github.com/agglayer/agglayer/blob/main/docs/audits/2025-07_aggregation_layer_f084ad7_sigma-prime_response.pdf) | Sigma Prime | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [Hexens_Polygon_zkEVM_PUBLIC_27.02.23.pdf](https://github.com/agglayer/agglayer-contracts/blob/main/audits/Hexens_Polygon_zkEVM_PUBLIC_27.02.23.pdf) | Hexens | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Sigma Prime - Polygon - LXLY Banana - Security Assessment Report - 2.0.pdf](https://github.com/agglayer/agglayer-contracts/blob/main/audits/Sigma%20Prime%20-%20Polygon%20-%20LXLY%20Banana%20-%20Security%20Assessment%20Report%20-%202.0.pdf) | Sigma Prime | Audit | 2024-06 | stale | Direct | n/a | 0 | n/a |
-| [Sigma_Prime_Polygon_AggLayer_v0.3.0_Smart_Contract_Updates_Security_Assessment_Report_v2_1.pdf](https://github.com/agglayer/agglayer-contracts/blob/main/audits/Sigma_Prime_Polygon_AggLayer_v0.3.0_Smart_Contract_Updates_Security_Assessment_Report_v2_1.pdf) | Sigma Prime | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
-| [Sigma_Prime_Polygon_AggOracleCommittee_Contract_Security_Assessment_Report_v2_0.pdf](https://github.com/agglayer/agglayer-contracts/blob/main/audits/Sigma_Prime_Polygon_AggOracleCommittee_Contract_Security_Assessment_Report_v2_0.pdf) | Sigma Prime | Audit | 2025-08 | fresh | Direct | n/a | 0 | n/a |
-| [Sigma_Prime_Polygon_Agglayer_Contracts_v0_3_5_Security_Assessment_Report_v2_0.pdf](https://github.com/agglayer/agglayer-contracts/blob/main/audits/Sigma_Prime_Polygon_Agglayer_Contracts_v0_3_5_Security_Assessment_Report_v2_0.pdf) | Sigma Prime | Audit | 2025-09 | fresh | Direct | n/a | 0 | n/a |
-| [Sigma_Prime_Polygon_LXLY_Bridge_Security_Assessment_Report.pdf](https://github.com/agglayer/agglayer-contracts/blob/main/audits/Sigma_Prime_Polygon_LXLY_Bridge_Security_Assessment_Report.pdf) | Sigma Prime | Audit | 2024-02 | stale | Direct | n/a | 0 | n/a |
-| [Sigma_Prime_Polygon_LXLY_Sovereign_Chains_Security_Assessment_Report_v2_0.pdf](https://github.com/agglayer/agglayer-contracts/blob/main/audits/Sigma_Prime_Polygon_LXLY_Sovereign_Chains_Security_Assessment_Report_v2_0.pdf) | Sigma Prime | Audit | 2025-01 | aging | Direct | n/a | 0 | n/a |
-| [Sigma_Prime_Polygon_PR_478_Changes_Security_Assessment_Report_v2_0.pdf](https://github.com/agglayer/agglayer-contracts/blob/main/audits/Sigma_Prime_Polygon_PR_478_Changes_Security_Assessment_Report_v2_0.pdf) | Sigma Prime | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [Sigma_Prime_Polygon_Polygon_LXLY_UpgradeableWrappedTokens_Security_Assessment_Report_v2_0.pdf](https://github.com/agglayer/agglayer-contracts/blob/main/audits/Sigma_Prime_Polygon_Polygon_LXLY_UpgradeableWrappedTokens_Security_Assessment_Report_v2_0.pdf) | Sigma Prime | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
-| [Spearbits-full-agglayer-v0.3.0.pdf](https://github.com/agglayer/agglayer-contracts/blob/main/audits/Spearbits-full-agglayer-v0.3.0.pdf) | Spearbit | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [zkEVM-bridge-Spearbit-27-March.pdf](https://github.com/agglayer/agglayer-contracts/blob/main/audits/zkEVM-bridge-Spearbit-27-March.pdf) | Spearbit | Audit | 2023 | stale | Direct | n/a | 0 | n/a |
 | [Polygon-Certora (Kat Token) Final report.pdf](https://github.com/katana-network/kat-token/blob/main/audit/Polygon-Certora%20(Kat%20Token)%20Final%20report.pdf) | Polygon-Certora | Audit | 2025-03 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0x2a3dd3...ca2ede`](./contracts/ethereum-1/0x2a3dd3eb832af982ec71669e178424b10dca2ede/) | AgglayerBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x000000...a9012a`](./contracts/ethereum-1/0x00000000efe302beaa2b3e6e1b18d08d69a9012a/) | AgoraDollar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe0efe9...a857fe`](./contracts/ethereum-1/0xe0efe934dc4744090e8ef93f1d125e4015a857fe/) | ArcticArchitectureLens | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x52e523...ce2506`](./contracts/ethereum-1/0x52e523b849c584f86bf460a3cf2962b118ce2506/) | BoringOnChainQueue | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x102b3f...d06137`](./contracts/ethereum-1/0x102b3fdb4537df5b15ab91a85bc6f62fbcd06137/) | BoringSolver | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x69d210...44c16b`](./contracts/ethereum-1/0x69d210d3b60e939bfa6e87cccc4fab7e8f44c16b/) | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x64b20e...52f6a6`](./contracts/ethereum-1/0x64b20eb25aed030fd510ef93b9135278b152f6a6/) | BridgeExtension | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x013467...5e9084`](./contracts/ethereum-1/0x01346721418045a6c07b71052e452ef8615e9084/) | CommitStore | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x000000...00ad63`](./contracts/ethereum-1/0x00000000f9490004c11cef243f5400493c00ad63/) | ConduitController | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x282fd4...e6c2e0`](./contracts/ethereum-1/0x282fd46e108e40a45e4ce425ba75f80245e6c2e0/) | DefaultEmissionManager | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x589ded...94236b`](./contracts/ethereum-1/0x589dedbd617e0cbcb916a9223f4d1300c294236b/) | DVN | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x66a71d...5cd675`](./contracts/ethereum-1/0x66a71dcef29a0ffbdbe3c6a460a3b5bc225cd675/) | Endpoint | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x433708...5ff108`](./contracts/ethereum-1/0x4337084d9e255ff0702461cf8895ce9e3b5ff108/) | EntryPoint | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1f4c1e...9884f6`](./contracts/ethereum-1/0x1f4c1e0afbeb5b5b86d7722549274434b29884f6/) | ERC20Predicate | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x0f1b1a...2e4ba2`](./contracts/ethereum-1/0x0f1b1a46adeadf3c0d583ac86f40bc9e0b2e4ba2/) | EVM2EVMOffRamp | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8469b5...a7d0df`](./contracts/ethereum-1/0x8469b5abd81987f9347c0babd47b9eb11da7d0df/) | EVM2EVMOnRamp | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xd1b301...af49de`](./contracts/ethereum-1/0xd1b3015cefcac84db3efcbb18fbdd50ba5af49de/) | LockReleaseTokenPool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2ccd6b...52b0f6`](./contracts/ethereum-1/0x2ccd6b51e7bea429ba0d4c526c60c4f71852b0f6/) | LockReleaseTokenPoolAndProxy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x51cdec...84bfeb`](./contracts/ethereum-1/0x51cdecc111c21bed72ab99f415bab6d35984bfeb/) | ManagerWithMerkleVerification | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7b6dd0...2566e9`](./contracts/ethereum-1/0x7b6dd022e7ed1dabcf0c3537f710eb5c8f2566e9/) | MyOVaultComposer | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb0f70c...817072`](./contracts/ethereum-1/0xb0f70c0bd6fd87dbeb7c10dc692a2a6106817072/) | NativeLBTC | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5decbe...61ce8a`](./contracts/ethereum-1/0x5decbeeefecc5353355cd79a8fecc4c03f61ce8a/) | OptimismPortal2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xe50a6c...282c74`](./contracts/ethereum-1/0xe50a6c887c18c5541d8cf311825016fbbb282c74/) | Pauser | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xed1a8c...d2d4f5`](./contracts/ethereum-1/0xed1a8c49bbd5618fa6cc952c509557f816d2d4f5/) | PriceRegistry | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xecac9c...5c11c1`](./contracts/ethereum-1/0xecac9c5f704e954931349da37f60e39f515c11c1/) | ProxyMock | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x74f55b...9fdb9d`](./contracts/ethereum-1/0x74f55bc2a79a27a0bf1d1a35db5d0fc36b9fdb9d/) | ReadLib1002 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc02ab4...6024c2`](./contracts/ethereum-1/0xc02ab410f0734efa3f14628780e6e695156024c2/) | ReceiveUln302 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xac4c6e...f80b75`](./contracts/ethereum-1/0xac4c6e212a361c968f1725b4d055b47e63f80b75/) | RedSnwapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x13022e...b2e533`](./contracts/ethereum-1/0x13022e3e6c77524308bd56aed716e88311b2e533/) | RegistryModuleOwnerCustom | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xdcd484...adf84f`](./contracts/ethereum-1/0xdcd48419bd5cd9d1b097695f2af4ee125aadf84f/) | RMN | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf0235d...d62dfa`](./contracts/ethereum-1/0xf0235dca8fb0d3999685724dcbb9dd00c5d62dfa/) | RootChainManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x80226f...146f7d`](./contracts/ethereum-1/0x80226fc0ee2b096224eeac085bb9a8cba1146f7d/) | Router | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x000000...3eb395`](./contracts/ethereum-1/0x0000000000000068f116a894984e2db1123eb395/) | Seaport | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x449ed7...4add33`](./contracts/ethereum-1/0x449ed7c3e6fee6a97311d4b55475df59c44add33/) | SenderCreator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xbb2ea7...72dce1`](./contracts/ethereum-1/0xbb2ea70c9e858123480642cf96acbcce1372dce1/) | SendUln302 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xce0042...fdcf9f`](./contracts/ethereum-1/0xce0042b868300000d44a59004da54a005ffdcf9f/) | SingletonFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x97a350...2c389f`](./contracts/ethereum-1/0x97a3500083348a147f419b8a65717909762c389f/) | StakeManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xb22764...c05cb6`](./contracts/ethereum-1/0xb22764f98dd05c789929716d677382df22c05cb6/) | TokenAdminRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x50002c...1cd907`](./contracts/ethereum-1/0x50002cdfe7ccb0c41f519c6eb0653158d11cd907/) | TokenBridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5c2e11...92559c`](./contracts/ethereum-1/0x5c2e112783a6854653b4bc7dc22248d3e592559c/) | TokenChwomper | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7e94d6...8cc67b`](./contracts/ethereum-1/0x7e94d6cabb20114b22a088d828772645f68cc67b/) | ValidatorShare | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 41 |
 | upstream | 2 |
-| standard_library | 2 |
-| needs_review | 49 |
+| standard_library | 6 |
+| needs_review | 159 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 28
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
 
 Zero-match audit list:
 
-- [1919] cantina.pdf
-- [1920] code4rena.pdf
-- [1921] hypercube-zellic.pdf
-- [1922] kalos.md
-- [1923] rkm0959.md
-- [1924] sp1-v4.md
-- [1925] veridise.pdf
-- [1926] zellic.pdf
-- [1927] 2024-06_pessimistic-proofs_d9d33885b6_trail-of-bits_audit.pdf
-- [1928] 2024-06_pessimistic-proofs_d9d33885b6_trail-of-bits_response.pdf
-- [1929] 2024-12_aggregation-layer_d9d33885b6_sigma-prime_audit.pdf
-- [1930] 2025-04_aggregation-layer_d7b3dd1c28_sigma-prime_audit-part-1.pdf
-- [1931] 2025-04_aggregation-layer_f084ad78b6_sigma-prime_audit-part-2.pdf
-- [1932] 2025-07_aggregation-layer_d7b3dd1_sigma-prime_audit-part-1.pdf
-- [1933] 2025-07_aggregation_layer_f084ad7_sigma-prime_audit-part-2.pdf
-- [1934] 2025-07_aggregation_layer_f084ad7_sigma-prime_response.pdf
-- [1935] Hexens_Polygon_zkEVM_PUBLIC_27.02.23.pdf
-- [1936] Sigma Prime - Polygon - LXLY Banana - Security Assessment Report - 2.0.pdf
-- [1937] Sigma_Prime_Polygon_AggLayer_v0.3.0_Smart_Contract_Updates_Security_Assessment_Report_v2_1.pdf
-- [1938] Sigma_Prime_Polygon_AggOracleCommittee_Contract_Security_Assessment_Report_v2_0.pdf
-- [1939] Sigma_Prime_Polygon_Agglayer_Contracts_v0_3_5_Security_Assessment_Report_v2_0.pdf
-- [1940] Sigma_Prime_Polygon_LXLY_Bridge_Security_Assessment_Report.pdf
-- [1941] Sigma_Prime_Polygon_LXLY_Sovereign_Chains_Security_Assessment_Report_v2_0.pdf
-- [1942] Sigma_Prime_Polygon_PR_478_Changes_Security_Assessment_Report_v2_0.pdf
-- [1943] Sigma_Prime_Polygon_Polygon_LXLY_UpgradeableWrappedTokens_Security_Assessment_Report_v2_0.pdf
-- [1944] Spearbits-full-agglayer-v0.3.0.pdf
-- [1945] zkEVM-bridge-Spearbit-27-March.pdf
 - [1946] Polygon-Certora (Kat Token) Final report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

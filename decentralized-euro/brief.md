@@ -4,44 +4,47 @@
 
 - Project: Decentralized Euro (`decentralized-euro`)
 - Website: [https://deuro.com/](https://deuro.com/)
-- Lifecycle: active (Tier 0, 71.5% below peak)
-- Generated: 2026-06-18T09:42:48.321Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-5311
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:10.824Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-1bf2
 - Chains: arbitrum, base, ethereum, polygon
-- Contract surface: 38 unique implementations (61 raw deployments)
-- DeFi Llama TVL: $1,835,041.72
-- On-chain TVL (included contracts): $181,039,634.80
-- TVL by chain: Ethereum $171,171,082.27 | Polygon $9,868,552.53
+- Contract surface: 111 unique implementations (134 raw deployments)
+- DeFi Llama TVL: $1,776,571.25
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Decentralized Euro is a collateralized debt position (CDP) protocol that issues the EUR-pegged dEURO stablecoin against supported collateral assets. Its in-scope protocol surface is focused on dEURO minting/CDP functionality, savings, and protocol-share/governance-related tokens; external euro stablecoins, bridges, and standard tokens should be treated only as integrations or counterparty assets, not as dEURO-owned protocol contracts.
+CDP. Structurally: 54 project-authored contract(s) across 4 chain(s); 2 ERC4626 vaults, 13 ERC20 tokens, 1 ERC1155 multi-token; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The Decentralized Euro Core family provides the foundational CDP and stablecoin logic, while the Active EUR Stablecoin Bridges family extends it cross-chain. SavingsVault, MintingHub, PositionFactory, and PositionRoller families interact with the core to manage vaults, minting, and positions, and the DEPS/nDEPS tokens serve as governance and equity across the system.
+The protocol comprises 7 functional families. Its contracts share 7 common project-authored base contract(s) (leadrate, upgradeabilityproxy, proxy). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 205; live-surface contracts included: 61 (61 live, 0 unknown).
-- Excluded by liveness: 111 inactive, 33 singleton, 0 uninitialized.
-- Deployment units: 8/22 live.
+- Indexed contracts: 134; live-surface contracts included: 134 (60 live, 74 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 27; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 11/37 (29.7%)
+- Coverage of deployed-live implementations: 11/37 (29.7%)
+- Deployed-live implementations: 37 of 111 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 11/37
 - Verified + Unaudited implementations: 26
 - Verified by bytecode match: 0
-- Unverified implementations: 1
-- Unique implementations: 38
-- Raw deployments: 61
-- Audits discovered: 3
+- Unverified implementations: 74
+- Unique implementations: 111
+- Raw deployments: 134
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 2
-- ASD (verified + unaudited TVL): $181,039,634.80
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-04 (aging)
-- Staleness: 0 fresh, 2 aging, 0 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 2 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 11 match-unverified
 - Tier 1 coverage: 29.7% (ChainSecurity)
 
 ### Auditor Coverage
@@ -73,30 +76,30 @@ The Decentralized Euro Core family provides the foundational CDP and stablecoin 
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| EURSToken | token | ethereum | unit-36325 | [`0xdb25f2...807ad8`](./contracts/ethereum-1/0xdb25f211ab05b1c97d595516f45794528a807ad8/) | ⚠️ Unaudited |
-| HadronToken | token | ethereum | unit-36318 | [`0x50753c...91e408`](./contracts/ethereum-1/0x50753cfaf86c094925bf976f218d043f8791e408/) | ⚠️ Unaudited |
-| ChildERC20 | token | polygon | n/a | 4 deployments: polygon [`0x53e0bc...abad39`](./contracts/polygon-137/0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39/); polygon `0x556f50...aa9e6d`; polygon `0x578360...11ed5f`; polygon `0x71b821...085978` | ⚠️ Unaudited |
-| TetherToken | token | ethereum | unit-36324 | [`0xc581b7...ede491`](./contracts/ethereum-1/0xc581b735a1688071a1746c968e0798d642ede491/) | ⚠️ Unaudited |
-| SavingsVaultDEURO | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x1e9f00...b4fa40`](./contracts/ethereum-1/0x1e9f008b1c538be32f190516735bf1c634b4fa40/); ethereum `0x75beb3...612979` | ⚠️ Unaudited |
-| UChildERC20 | token | polygon | unit-36335 | [`0xc2ff25...f14e47`](./contracts/polygon-137/0xc2ff25dd99e467d2589b2c26edd270f220f14e47/) | ⚠️ Unaudited |
-| UChildERC20Proxy | token | polygon | n/a | 3 deployments: polygon [`0x313d00...5bd604`](./contracts/polygon-137/0x313d009888329c9d1cf4f75ca3f32566335bd604/); polygon `0x5a2fdf...908d19`; polygon `0x9d74de...0acacb` | ⚠️ Unaudited |
-| AgEURNameable | unknown | ethereum | unit-36315 | [`0x1a7e4e...fcbce8`](./contracts/ethereum-1/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8/) | ⚠️ Unaudited |
+| AgEURNameable | unknown | ethereum | n/a | [`0x1a7e4e...fcbce8`](./contracts/ethereum-1/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8/) | ⚠️ Unaudited |
 | BridgedDecentralizedEURO | operational_periphery | base | n/a | [`0x1b5f7f...65a264`](./contracts/base-8453/0x1b5f7fa46ed0f487f049c42f374ca4827d65a264/) | ⚠️ Unaudited |
 | BridgedDEPS | operational_periphery | base | n/a | [`0x5f674b...282722`](./contracts/base-8453/0x5f674bf6d559229bdd29d642d2e0978f1e282722/) | ⚠️ Unaudited |
-| ChildChainManager | governance | polygon | unit-36332 | [`0xa6fa4f...d1c0aa`](./contracts/polygon-137/0xa6fa4fb5f76172d178d61b04b0ecd319c5d1c0aa/) | ⚠️ Unaudited |
+| ChildChainManager | governance | polygon | n/a | [`0xa6fa4f...d1c0aa`](./contracts/polygon-137/0xa6fa4fb5f76172d178d61b04b0ecd319c5d1c0aa/) | ⚠️ Unaudited |
 | ChildERC1155 | token | polygon | n/a | [`0xa0c68c...c77c77`](./contracts/polygon-137/0xa0c68c638235ee32657e8f720a23cec1bfc77c77/) | ⚠️ Unaudited |
+| ChildERC20 | token | polygon | n/a | 4 deployments: polygon [`0x53e0bc...abad39`](./contracts/polygon-137/0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39/); polygon `0x556f50...aa9e6d`; polygon `0x578360...11ed5f`; polygon `0x71b821...085978` | ⚠️ Unaudited |
 | ClonableBeaconProxy | registry | arbitrum | n/a | [`0x5e85fa...57d537`](./contracts/arbitrum-42161/0x5e85faf503621830ca857a5f38b982e0cc57d537/) | ⚠️ Unaudited |
 | CoinLendingGateway | core_logic | ethereum | n/a | [`0x1da37d...ee89d2`](./contracts/ethereum-1/0x1da37d613fb590eed37520b72e9c6f0f6eee89d2/) | ⚠️ Unaudited |
 | EUR | unknown | ethereum | n/a | [`0x3231cb...da273f`](./contracts/ethereum-1/0x3231cb76718cdef2155fc47b5286d82e6eda273f/) | ⚠️ Unaudited |
-| FiatTokenV2_2 | token | ethereum | unit-36316 | [`0x1abaea...1bc33c`](./contracts/ethereum-1/0x1abaea1f7c830bd89acc67ec4af516284b1bc33c/) | ⚠️ Unaudited |
+| EURSToken | token | ethereum | n/a | [`0xdb25f2...807ad8`](./contracts/ethereum-1/0xdb25f211ab05b1c97d595516f45794528a807ad8/) | ⚠️ Unaudited |
+| FiatTokenV2_2 | token | ethereum | n/a | [`0x1abaea...1bc33c`](./contracts/ethereum-1/0x1abaea1f7c830bd89acc67ec4af516284b1bc33c/) | ⚠️ Unaudited |
 | FPSWrapper | unknown | ethereum | n/a | [`0x5052d3...80b182`](./contracts/ethereum-1/0x5052d3cc819f53116641e89b96ff4cd1ee80b182/) | ⚠️ Unaudited |
 | Frankencoin | unknown | ethereum | n/a | [`0xb58e61...0921cb`](./contracts/ethereum-1/0xb58e61c3098d85632df34eecfb899a1ed80921cb/) | ⚠️ Unaudited |
 | FxChild | unknown | polygon | n/a | [`0x839725...afa28a`](./contracts/polygon-137/0x8397259c983751daf40400790063935a11afa28a/) | ⚠️ Unaudited |
+| HadronToken | token | ethereum | n/a | [`0x50753c...91e408`](./contracts/ethereum-1/0x50753cfaf86c094925bf976f218d043f8791e408/) | ⚠️ Unaudited |
 | MasterMinter | unknown | ethereum | n/a | [`0x023987...27a72c`](./contracts/ethereum-1/0x02398771fd1db790ef2b656ca3bcb3075f27a72c/) | ⚠️ Unaudited |
 | MaticWETH | token | polygon | n/a | [`0x7ceb23...b9f619`](./contracts/polygon-137/0x7ceb23fd6bc0add59e62ac25578270cff1b9f619/) | ⚠️ Unaudited |
+| SavingsVaultDEURO | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x1e9f00...b4fa40`](./contracts/ethereum-1/0x1e9f008b1c538be32f190516735bf1c634b4fa40/); ethereum `0x75beb3...612979` | ⚠️ Unaudited |
+| TetherToken | token | ethereum | n/a | [`0xc581b7...ede491`](./contracts/ethereum-1/0xc581b735a1688071a1746c968e0798d642ede491/) | ⚠️ Unaudited |
 | TetherToken | token | ethereum | n/a | [`0xdac17f...831ec7`](./contracts/ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | ⚠️ Unaudited |
 | UChildERC20 | token | polygon | n/a | [`0x422432...804046`](./contracts/polygon-137/0x42243231fb4a64a5bcfc7f4b7a9ad92576804046/) | ⚠️ Unaudited |
-| UChildUSDT0 | token | polygon | unit-36334 | [`0xc2132d...b58e8f`](./contracts/polygon-137/0xc2132d05d31c914a87c6611c10748aeb04b58e8f/) | ⚠️ Unaudited |
+| UChildERC20 | token | polygon | n/a | [`0xc2ff25...f14e47`](./contracts/polygon-137/0xc2ff25dd99e467d2589b2c26edd270f220f14e47/) | ⚠️ Unaudited |
+| UChildERC20Proxy | token | polygon | n/a | 3 deployments: polygon [`0x313d00...5bd604`](./contracts/polygon-137/0x313d009888329c9d1cf4f75ca3f32566335bd604/); polygon `0x5a2fdf...908d19`; polygon `0x9d74de...0acacb` | ⚠️ Unaudited |
+| UChildUSDT0 | token | polygon | n/a | [`0xc2132d...b58e8f`](./contracts/polygon-137/0xc2132d05d31c914a87c6611c10748aeb04b58e8f/) | ⚠️ Unaudited |
 | VNXManager | governance | ethereum | n/a | [`0xcdb386...84c9ae`](./contracts/ethereum-1/0xcdb3867935247049e87c38ea270edd305d84c9ae/) | ⚠️ Unaudited |
 | VNXProxyAdmin | governance | ethereum | n/a | [`0xc8bb8e...400400`](./contracts/ethereum-1/0xc8bb8eda94931ca2f20ef43ea7dbd58e68400400/) | ⚠️ Unaudited |
 
@@ -112,21 +115,94 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (1)
+### ❓ Unverified (74)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x042b24...174a81` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x071b13...251036` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0cde50...486392` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0d43c5...6f0820` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x0e5dfe...fcb9ea` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x11e2a3...d2c923` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x13e657...cdde06` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x167144...1ee5a8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x183e33...3eb09e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x18a885...5d6b7d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1c17d6...d584c4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x1faa6f...5f02cc` | ❓ Unverified |
 | UnnamedContract | unknown | ethereum | n/a | `0x215587...668d8b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x233db7...7cbfe3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2353d1...2c609f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2e7e62...580880` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2ff329...d295e4` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x34c9c6...9817cb` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x35f728...7e16a5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3ea4e0...3baa9b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x3fd2c5...69d53f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4125cd...d8402b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x422d17...86bf4e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4539b0...0a4e7a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x496d5a...6adeef` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4be1f1...2faf4a` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x4d4bad...9828ee` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x54e556...e0fa16` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x54eb7e...4f42a7` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x57724f...90f509` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6015bf...afbf89` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6196d6...6efbf3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x63cf7c...706b7e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x651be1...f15265` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x65faa4...a8a03b` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6ba75d...89b5d3` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6c9195...b9e6be` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6ca959...d8115c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6d57b2...e4a488` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x6e9e62...c47944` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x774681...57254e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x78c1b5...d52938` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x79d4f0...cfbf4f` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7a7870...09b0d8` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7a83d8...3ebdd6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7ba927...44f8fd` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7bbe8f...e346df` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7e03cd...f51566` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x7f0a5b...6df70e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x82d59b...dcc451` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8a026c...5e6f59` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x8d8b5d...0fa020` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9b8fd8...044b37` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x9c39f0...6581f5` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xaa881b...0b8762` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xac493a...ca5370` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xac8d2d...dabb67` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xb661bc...dbb4a9` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xba2262...04fa1c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xbc5142...853a52` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc27925...e81584` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc64254...88e3e2` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xcd142b...b22453` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xcfa9b5...be2080` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd19769...bcaa23` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd1d719...2f81fc` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xdffbaf...bea65e` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xe4fadb...7f7619` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xeb8b5e...f11c53` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf38a10...a6bf9c` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf72ee0...6e6ba6` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf7958b...13b623` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xf93cb1...cddc54` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xfa792e...f87e65` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [www.chainsecurity.com/security-audit/deuro-smart-contracts](https://www.chainsecurity.com/security-audit/deuro-smart-contracts) | ChainSecurity | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [deuro_audit_report.pdf](https://github.com/d-EURO/landingPage/blob/develop/audits/deuro_audit_report.pdf) | unknown | Audit | 2025-01 | aging | Direct | contract_name | 22 | high |
-| [ChainSecurity_dEURO_dEURO_audit.pdf](https://github.com/d-EURO/landingPage/blob/develop/audits/ChainSecurity_dEURO_dEURO_audit.pdf) | ChainSecurity | Audit | 2025-04 | aging | Direct | contract_name | 25 | high |
+| [deuro_audit_report.pdf](https://github.com/d-EURO/landingPage/blob/develop/audits/deuro_audit_report.pdf) | unknown | Audit | 2025-01 | aging | Direct | contract_name | 8 | n/a |
+| [ChainSecurity_dEURO_dEURO_audit.pdf](https://github.com/d-EURO/landingPage/blob/develop/audits/ChainSecurity_dEURO_dEURO_audit.pdf) | ChainSecurity | Audit | 2025-04 | aging | Direct | contract_name | 11 | n/a |
 
 ## Coverage Gaps
 
@@ -134,23 +210,41 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x1e9f00...b4fa40`](./contracts/ethereum-1/0x1e9f008b1c538be32f190516735bf1c634b4fa40/) | SavingsVaultDEURO | core_logic | $1,118,381.75 | Verified native implementation with $1,118,381.75 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1a7e4e...fcbce8`](./contracts/ethereum-1/0x1a7e4e63778b4f12a199c062f3efdd288afcbce8/) | AgEURNameable | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x1b5f7f...65a264`](./contracts/base-8453/0x1b5f7fa46ed0f487f049c42f374ca4827d65a264/) | BridgedDecentralizedEURO | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x5f674b...282722`](./contracts/base-8453/0x5f674bf6d559229bdd29d642d2e0978f1e282722/) | BridgedDEPS | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xa6fa4f...d1c0aa`](./contracts/polygon-137/0xa6fa4fb5f76172d178d61b04b0ecd319c5d1c0aa/) | ChildChainManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xa0c68c...c77c77`](./contracts/polygon-137/0xa0c68c638235ee32657e8f720a23cec1bfc77c77/) | ChildERC1155 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x53e0bc...abad39`](./contracts/polygon-137/0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39/) | ChildERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x5e85fa...57d537`](./contracts/arbitrum-42161/0x5e85faf503621830ca857a5f38b982e0cc57d537/) | ClonableBeaconProxy | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1da37d...ee89d2`](./contracts/ethereum-1/0x1da37d613fb590eed37520b72e9c6f0f6eee89d2/) | CoinLendingGateway | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x3231cb...da273f`](./contracts/ethereum-1/0x3231cb76718cdef2155fc47b5286d82e6eda273f/) | EUR | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xdb25f2...807ad8`](./contracts/ethereum-1/0xdb25f211ab05b1c97d595516f45794528a807ad8/) | EURSToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1abaea...1bc33c`](./contracts/ethereum-1/0x1abaea1f7c830bd89acc67ec4af516284b1bc33c/) | FiatTokenV2_2 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x5052d3...80b182`](./contracts/ethereum-1/0x5052d3cc819f53116641e89b96ff4cd1ee80b182/) | FPSWrapper | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xb58e61...0921cb`](./contracts/ethereum-1/0xb58e61c3098d85632df34eecfb899a1ed80921cb/) | Frankencoin | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x839725...afa28a`](./contracts/polygon-137/0x8397259c983751daf40400790063935a11afa28a/) | FxChild | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x50753c...91e408`](./contracts/ethereum-1/0x50753cfaf86c094925bf976f218d043f8791e408/) | HadronToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x023987...27a72c`](./contracts/ethereum-1/0x02398771fd1db790ef2b656ca3bcb3075f27a72c/) | MasterMinter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x7ceb23...b9f619`](./contracts/polygon-137/0x7ceb23fd6bc0add59e62ac25578270cff1b9f619/) | MaticWETH | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1e9f00...b4fa40`](./contracts/ethereum-1/0x1e9f008b1c538be32f190516735bf1c634b4fa40/) | SavingsVaultDEURO | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc581b7...ede491`](./contracts/ethereum-1/0xc581b735a1688071a1746c968e0798d642ede491/) | TetherToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xdac17f...831ec7`](./contracts/ethereum-1/0xdac17f958d2ee523a2206206994597c13d831ec7/) | TetherToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x422432...804046`](./contracts/polygon-137/0x42243231fb4a64a5bcfc7f4b7a9ad92576804046/) | UChildERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xc2ff25...f14e47`](./contracts/polygon-137/0xc2ff25dd99e467d2589b2c26edd270f220f14e47/) | UChildERC20 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0x313d00...5bd604`](./contracts/polygon-137/0x313d009888329c9d1cf4f75ca3f32566335bd604/) | UChildERC20Proxy | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| polygon | [`0xc2132d...b58e8f`](./contracts/polygon-137/0xc2132d05d31c914a87c6611c10748aeb04b58e8f/) | UChildUSDT0 | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xcdb386...84c9ae`](./contracts/ethereum-1/0xcdb3867935247049e87c38ea270edd305d84c9ae/) | VNXManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc8bb8e...400400`](./contracts/ethereum-1/0xc8bb8eda94931ca2f20ef43ea7dbd58e68400400/) | VNXProxyAdmin | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 20 |
-| upstream | 12 |
-| standard_library | 2 |
-| needs_review | 4 |
+| native | 37 |
+| upstream | 0 |
+| standard_library | 0 |
+| needs_review | 74 |
 
 ## Scope Matching Notes
 
@@ -158,8 +252,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2
-- Match method counts: extraction_exact=51
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=19
 
 Zero-match audit list:
 

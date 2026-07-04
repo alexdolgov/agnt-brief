@@ -5,11 +5,11 @@
 - Project: Kinetic (`kinetic`)
 - Website: [https://kinetic.market](https://kinetic.market)
 - Lifecycle: unknown
-- Generated: 2026-06-13T10:42:53.276Z
-- Pipeline run: v2-pipeline-2026-06-13-7547ed-947d
+- Generated: 2026-07-03T21:06:19.918Z
+- Pipeline run: brief-restore-2026-07
 - Chains: n/a
 - Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $59,941,965.69
+- DeFi Llama TVL: $55,502,719.13
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -22,19 +22,30 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
+## Contract Surface Quality
+
+- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
+
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 0 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 0
 - Raw deployments: 0
-- Audits discovered: 3
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-04 (aging)
-- Staleness: 0 fresh, 1 aging, 0 stale, 2 unknown
+- Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 2 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -73,9 +84,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Kinetic-audit-reports.pdf (also discovered via alternate URL)](https://kinetic.market/docs/Kinetic-audit-reports.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Hacken Proof - April 2025](https://kinetic.market/docs/Kinetic-hackenproof.pdf) | Hacken | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
-| [### [Shapeshifter: On-Chain Lending: Review of Kinetic Markets]()](https://drive.google.com/file/d/1SckGRwxnMXOW9en6YiYn-fCI3M9HgZZ1/view) | Shapeshifter | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Kinetic-audit-reports.pdf](https://kinetic.market/docs/Kinetic-audit-reports.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Kinetic-hackenproof.pdf](https://kinetic.market/docs/Kinetic-hackenproof.pdf) | Hacken | Audit | 2025-04 | aging | Direct | n/a | 0 | n/a |
+| [drive.google.com/file/d/1SckGRwxnMXOW9en6YiYn-fCI3M9HgZZ1/view](https://drive.google.com/file/d/1SckGRwxnMXOW9en6YiYn-fCI3M9HgZZ1/view) | Shapeshifter | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -104,7 +115,7 @@ Verified + unaudited native implementations ranked by TVL:
 Zero-match audit list:
 
 - [13340] Kinetic-audit-reports.pdf
-- [13341] Hacken Proof - April 2025
-- [13342] ### [Shapeshifter: On-Chain Lending: Review of Kinetic Markets]()
+- [13341] Kinetic-hackenproof.pdf
+- [13342] drive.google.com/file/d/1SckGRwxnMXOW9en6YiYn-fCI3M9HgZZ1/view
 
 Fork inheritance lineage and inherited audits are included when available.

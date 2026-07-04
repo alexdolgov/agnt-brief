@@ -1,63 +1,39 @@
 {
   "schema_version": "2.0",
   "project_key": "liquidloans",
-  "generated_at": "2026-06-19T06:14:26.649Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "liquidloans",
-    "tier": 1,
-    "peak_tvl": 181922159,
-    "peak_date": "2024-03-04T00:00:00.000Z",
-    "tvl_30d_ago": 3525992,
-    "tvl_90d_ago": 4561922,
-    "tvl_current": 3149283,
-    "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 11455391,
-    "change_30d_pct": -10.683773530966604,
-    "change_90d_pct": -30.965873594506878,
-    "governance_raw": {
-      "evidence": "TVL has dropped 98.27% from peak and 30.97% in 90 days, but the protocol's homepage remains active with no shutdown announcement, indicating ongoing but declining operations.",
-      "confidence": 0.7,
-      "lifecycle_status": "declining"
-    },
-    "days_since_peak": 811,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 98.2688843309077,
-    "governance_evidence": "TVL has dropped 98.27% from peak and 30.97% in 90 days, but the protocol's homepage remains active with no shutdown announcement, indicating ongoing but declining operations.",
-    "governance_confidence": 0.7,
-    "governance_text_chars": 5000,
-    "governance_classification": "declining",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:30.095Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-1cbb",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 20,
-    "total_addresses": 39,
-    "unique_implementations": 20,
-    "total_deployments": 39,
-    "audited_contracts": 6,
-    "unaudited_contracts": 14,
-    "contracts_verified_audited": 6,
-    "contracts_verified_unaudited": 14,
+    "total_contracts": 21,
+    "total_addresses": 41,
+    "unique_implementations": 21,
+    "total_deployments": 41,
+    "audited_contracts": 10,
+    "unaudited_contracts": 11,
+    "contracts_verified_audited": 10,
+    "contracts_verified_unaudited": 11,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 30,
+    "coverage_pct": 50,
     "total_audits": 4,
-    "scoreable_audits": 2,
-    "dl_tvl_usd": 2859995.07224,
-    "tvl_usd": 3041629.6482,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "base": 3041629.65
-    },
-    "asd_usd": 3041629.6482,
+    "direct_audits": 4,
+    "inherited_audits": 0,
+    "scoreable_audits": 3,
+    "dl_tvl_usd": 3339450.45476,
+    "tvl_usd": 3339450.45476,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://www.liquidloans.io",
     "chains": [
       "base"
     ],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
+    "tier1_coverage_pct": 35,
+    "tier1_auditors": [
+      "Trail of Bits"
+    ],
     "latest_audit_date": "2025-11",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
@@ -65,26 +41,35 @@
       "aging": 0,
       "stale": 3,
       "unknown": 0
+    },
+    "live_implementations": 21,
+    "live_verified_implementations": 20,
+    "live_audited_implementations": 10,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 7,
+      "diverged": 0,
+      "match_unverified": 3
     }
   },
   "topography": {
-    "project_purpose": "LiquidLoans is a collateralized debt position (CDP) protocol live on Base and PulseChain that allows users to deposit ETH and PLS collateral and borrow the stablecoin USDL. It manages vaults, liquidations, and stability mechanisms to maintain the peg and solvency of the system.",
-    "relationship_narrative": "The LiquidLoans family shares a single set of core logic contracts that manage vaults, pools, and stability. Supporting contracts like PriceFeed and LockupContractFactory provide oracle data and lockup functionality used across the core operations.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 39,
-    "live_contracts": 37,
+    "project_purpose": "CDP. Structurally: 21 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 6 functional families. Its contracts share 2 common project-authored base contract(s) (basemath, liquidloansbase). Dominant framework: openzeppelin.",
+    "product_family_count": 6,
+    "total_contracts_indexed": 41,
+    "live_contracts": 41,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 2,
+    "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 35,
-    "unverified_dependencies": 3,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 20,
+    "unique_implementations": 21,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -104,7 +89,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 3041629.6482,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "ActivePool",
@@ -118,7 +103,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 8453,
@@ -128,16 +113,22 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 3041629.6482,
-          "is_audited": false
+          "tvl_usd": null,
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-2671"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:55:47+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 8453,
@@ -164,7 +155,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 8453,
@@ -175,15 +166,21 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-2671"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:55:53+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 8453,
@@ -195,7 +192,7 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "LiquidLoans",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -229,7 +226,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:56:07+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -267,7 +268,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -277,7 +278,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:56:13+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 8453,
@@ -289,7 +294,7 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "LiquidLoans",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -304,7 +309,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 8453,
@@ -315,15 +320,21 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-2671"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:56:19+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 8453,
@@ -333,8 +344,8 @@
       "deployment_unit_proxy_count": null,
       "name": "ERC20Mock",
       "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -369,7 +380,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:57:51+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -396,7 +411,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 8453,
@@ -407,15 +422,21 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-2671"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:57:01+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 8453,
@@ -461,7 +482,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:56:25+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -473,7 +498,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "LiquidLoans",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -507,7 +532,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:56:37+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -553,7 +582,61 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:57:39+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x567e6039c035eec2b95410290de48f78e862e61d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LockupAirdrop",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LockupAirdrop",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x567e6039c035eec2b95410290de48f78e862e61d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x98485c8924ef4f280350a869b45493c825a4e108",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "review",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:57:13+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -565,7 +648,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "LiquidLoans",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -591,7 +674,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -601,7 +684,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 08:03:17+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 8453,
@@ -613,7 +700,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "LiquidLoans",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -639,7 +726,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -649,7 +736,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:57:19+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 8453,
@@ -661,7 +752,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "LiquidLoans",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -691,13 +782,18 @@
         }
       ],
       "audits_covering": [
-        "audit-2670"
+        "audit-2670",
+        "audit-2671"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:56:31+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 8453,
@@ -743,7 +839,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:57:45+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -755,7 +855,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "LiquidLoans",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -785,13 +885,18 @@
         }
       ],
       "audits_covering": [
-        "audit-2670"
+        "audit-2670",
+        "audit-2671"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:56:43+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 8453,
@@ -803,7 +908,7 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "LiquidLoans",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -837,7 +942,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:56:49+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -879,13 +988,18 @@
         }
       ],
       "audits_covering": [
-        "audit-2670"
+        "audit-2670",
+        "audit-2671"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:56:55+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 8453,
@@ -897,7 +1011,7 @@
       "role": "core_logic",
       "origin_kind": "upstream",
       "origin_provider": "Uniswap",
-      "product_line": "LiquidLoans",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -920,7 +1034,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2026-01-27 07:57:27+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -966,7 +1084,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:57:33+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -978,7 +1100,7 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "LiquidLoans",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1012,14 +1134,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 07:55:59+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 2670,
       "audit_key": "audit-2670",
-      "report_name": "read and download here",
+      "report_name": "Liquid_Loans_Protocol_Smart_Contract_Security_Assessment_Report_Halborn.pdf",
       "report_url": "https://llprod-resource.s3.ap-southeast-2.amazonaws.com/Audit/Liquid_Loans_Protocol_Smart_Contract_Security_Assessment_Report_Halborn.pdf",
       "auditor": "Halborn",
       "audit_type": "audit",
@@ -1029,28 +1155,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "CommunityPoints",
-        "FetchCaller",
-        "LockupContract",
-        "LockupContractCreator",
-        "LockupContractFactory",
-        "LockupSacrifice",
-        "PriceFeed",
-        "StabilityPool",
-        "UsingFetch"
-      ],
-      "matched_contracts": 10,
+      "extracted_names": [],
+      "matched_contracts": 5,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 2671,
       "audit_key": "audit-2671",
-      "report_name": "Trail of Bits",
+      "report_name": "Liquity.pdf",
       "report_url": "https://github.com/trailofbits/publications/blob/master/reviews/Liquity.pdf",
       "auditor": "Trail of Bits",
       "audit_type": "audit",
@@ -1060,18 +1179,37 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ActivePool",
+        "BorrowerOperations",
+        "CustomDurationLockupContract",
+        "DefaultPool",
+        "GasPool",
+        "LQTYStaking",
+        "LQTYToken",
+        "LUSDToken",
+        "LiquityBase",
+        "LockupContractFactory",
+        "OneYearLockupContract",
+        "PriceFeed",
+        "SortedTroves",
+        "StabilityPool",
+        "TroveManager"
+      ],
+      "matched_contracts": 14,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
       "audit_id": 2672,
       "audit_key": "audit-2672",
-      "report_name": "Coinspect",
+      "report_name": "www.coinspect.com/blog/liquity-audit",
       "report_url": "https://www.coinspect.com/blog/liquity-audit",
       "auditor": "Trail of Bits",
       "audit_type": "audit",
@@ -1081,6 +1219,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -1092,7 +1233,7 @@
     {
       "audit_id": 2673,
       "audit_key": "audit-2673",
-      "report_name": "read and download here",
+      "report_name": "Halborn+Audit+Report+-+Liquid+Loans+on+Base.pdf",
       "report_url": "https://llprod-resource.s3.ap-southeast-2.amazonaws.com/Audit/Base/Halborn+Audit+Report+-+Liquid+Loans+on+Base.pdf",
       "auditor": "Halborn",
       "audit_type": "audit",
@@ -1102,57 +1243,35 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "CommunityIssuance",
-        "IERC20Metadata",
-        "IPriceFeedSecondaryUpdateable",
-        "ITickMathWrapper",
-        "IUniswapV2Pool",
-        "IUniswapV3Pool",
-        "LockupAirdrop",
-        "SecondaryCallerUpdateable",
-        "TickMathWrapper",
-        "UniswapV2Caller",
-        "UniswapV3Caller"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
+      "auditor": "Trail of Bits",
+      "tier": 1,
+      "contracts_covered": 7,
+      "coverage_pct": 33.3,
+      "latest_audit": "2021-01"
+    },
+    {
       "auditor": "Halborn",
       "tier": 2,
       "contracts_covered": 6,
-      "coverage_pct": 30,
+      "coverage_pct": 28.6,
       "latest_audit": "2025-11"
     }
   ],
   "coverage_gaps": [
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x5ff161b090fa731e6d403e5d1b37a2ef30ee8fb2",
-      "name": "ActivePool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 3041629.6482,
-      "risk_note": "Verified native implementation with $3,041,629.65 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x3c7f9041f3043cbb38fdbf244cb0d0f9d0eeef8b",
-      "name": "BorrowerOperations",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 8453,
       "chain_name": "base",
@@ -1166,19 +1285,9 @@
     {
       "chain_id": 8453,
       "chain_name": "base",
-      "address": "0x529ad5e88c8f53ce6a18b6e874a69c91c53a585e",
-      "name": "DefaultPool",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 8453,
-      "chain_name": "base",
-      "address": "0x9ebd99538d7bfd01247ebaedbfe3302f60cc6cde",
-      "name": "GasPool",
-      "role": "core_logic",
+      "address": "0xa16770020925f504d9446adf218e91d56833c9af",
+      "name": "ERC20Mock",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1209,6 +1318,16 @@
       "address": "0x00fce0bb56105164a960fccb6e5e23e502fb88bb",
       "name": "LOANToken",
       "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x567e6039c035eec2b95410290de48f78e862e61d",
+      "name": "LockupAirdrop",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -1255,28 +1374,25 @@
     }
   ],
   "origin_summary": {
-    "native": 18,
+    "native": 20,
     "upstream": 1,
-    "standard_library": 1,
+    "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 12
+      "contract_name": 6,
+      "extraction_exact": 14
     },
     "extraction_confidence_counts": {
-      "high": 2
+      "high": 1
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
-        "audit_id": 2671,
-        "report_name": "Trail of Bits"
-      },
-      {
         "audit_id": 2672,
-        "report_name": "Coinspect"
+        "report_name": "www.coinspect.com/blog/liquity-audit"
       }
     ],
     "inherited_remapped_matches": []

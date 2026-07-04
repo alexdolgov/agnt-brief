@@ -4,44 +4,47 @@
 
 - Project: Dnax (`dnax`)
 - Website: [https://dnax.us/](https://dnax.us/)
-- Lifecycle: active (Tier 0, 42.5% below peak)
-- Generated: 2026-06-17T07:01:00.906Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:11.129Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-2d9c
 - Chains: bsc
 - Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $3,354,305.09
+- DeFi Llama TVL: $3,333,809.44
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Dnax is a BSC onchain trading and DEX protocol focused on automated trading features, including automated limit orders, custom price ranges, grid and recurring orders, and orderbook-like trading functionality through its upgradeable core controller contract.
+Dexs. Structurally: 2 project-authored contract(s) across 1 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol consists of a single product family where the OptimizedTransparentUpgradeableProxy serves as the governance-controlled entry point, delegating all logic to the CarbonController implementation.
+The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 4; live-surface contracts included: 2 (0 live, 2 unknown).
-- Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
-- Deployment units: 0/2 live.
+- Indexed contracts: 2; live-surface contracts included: 2 (2 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 1/1.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 2 of 2 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/2
 - Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 2
 - Raw deployments: 2
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -59,7 +62,7 @@ The protocol consists of a single product family where the OptimizedTransparentU
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | Multicall3 | periphery | bsc | n/a | [`0xca11bd...76ca11`](./contracts/bsc-56/0xca11bde05977b3631167028862be2a173976ca11/) | ⚠️ Unaudited |
-| OptimizedTransparentUpgradeableProxy | proxy | bsc | unit-32612 | [`0xea9dfe...95f48b`](./contracts/bsc-56/0xea9dfe485a700229068d9419488103f6ee95f48b/) | ⚠️ Unaudited |
+| OptimizedTransparentUpgradeableProxy | proxy | bsc | n/a | [`0xea9dfe...95f48b`](./contracts/bsc-56/0xea9dfe485a700229068d9419488103f6ee95f48b/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

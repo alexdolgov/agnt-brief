@@ -1,52 +1,51 @@
 # Agentic Audit Brief: Sonic Gateway
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 32.0% over 90 days
-
 ## Project Overview
 
 - Project: Sonic Gateway (`sonic-gateway`)
 - Website: [https://gateway.soniclabs.com/ethereum/sonic/s](https://gateway.soniclabs.com/ethereum/sonic/s)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:01:00.683Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:57.694Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16bc
 - Chains: sonic
 - Contract surface: 3 unique implementations (3 raw deployments)
-- DeFi Llama TVL: $45,448,524.34
+- DeFi Llama TVL: $35,594,379.80
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
-## ⚠️ Limited Contract Surface
-
-This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
-
 ## Project Description
 
-Sonic Gateway is Sonic's canonical bridge between Ethereum and Sonic, enabling users to deposit tokens on Ethereum and receive equivalent tokens on the Sonic network for cross-chain asset transfers.
+Canonical Bridge. Structurally: 11 project-authored contract(s) across 1 chain(s); role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+
+### Architecture
+
+The protocol comprises 5 functional families. Contracts are linked by 2 cross-contract reference(s). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 17; live-surface contracts included: 3 (3 live, 0 unknown).
-- Excluded by liveness: 8 inactive, 6 singleton, 0 uninitialized.
-- Deployment units: 2/6 live.
+- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 3; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
+- Coverage of deployed-live implementations: 0/3 (0.0%)
+- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/3
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 3
 - Raw deployments: 3
-- Audits discovered: 2
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2018-06 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 2 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -62,9 +61,9 @@ Sonic Gateway is Sonic's canonical bridge between Ethereum and Sonic, enabling u
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Bridge | unknown | sonic | unit-32520 | [`0x9ef762...c895b3`](./contracts/sonic-146/0x9ef7629f9b930168b76283add7120777b3c895b3/) | ⚠️ Unaudited |
-| MessageBus | unknown | sonic | n/a | [`0xb5b371...925308`](./contracts/sonic-146/0xb5b371b75f9850ddd6ccb6c436db54972a925308/) | ⚠️ Unaudited |
-| UpdateManager | governance | sonic | unit-32519 | [`0x1d3c99...176bb7`](./contracts/sonic-146/0x1d3c99da3cef5c26f02a86dc7d685efa40176bb7/) | ⚠️ Unaudited |
+| Bridge | operational_periphery | sonic | n/a | [`0x9ef762...c895b3`](./contracts/sonic-146/0x9ef7629f9b930168b76283add7120777b3c895b3/) | ⚠️ Unaudited |
+| MessageBus | operational_periphery | sonic | n/a | [`0xb5b371...925308`](./contracts/sonic-146/0xb5b371b75f9850ddd6ccb6c436db54972a925308/) | ⚠️ Unaudited |
+| UpdateManager | governance | sonic | n/a | [`0x1d3c99...176bb7`](./contracts/sonic-146/0x1d3c99da3cef5c26f02a86dc7d685efa40176bb7/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -95,16 +94,20 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| sonic | [`0x9ef762...c895b3`](./contracts/sonic-146/0x9ef7629f9b930168b76283add7120777b3c895b3/) | Bridge | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0xb5b371...925308`](./contracts/sonic-146/0xb5b371b75f9850ddd6ccb6c436db54972a925308/) | MessageBus | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sonic | [`0x1d3c99...176bb7`](./contracts/sonic-146/0x1d3c99da3cef5c26f02a86dc7d685efa40176bb7/) | UpdateManager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 3 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

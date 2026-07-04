@@ -1,51 +1,51 @@
 # Agentic Audit Brief: Topaz
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Topaz (`topaz`)
 - Website: [https://www.topazdex.com](https://www.topazdex.com)
-- Lifecycle: unknown (Tier 0, 35.3% below peak)
-- Generated: 2026-06-21T16:23:12.538Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:54:01.559Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-4c3e
 - Chains: bsc
-- Contract surface: 94 unique implementations (114 raw deployments)
-- DeFi Llama TVL: $1,054,022.00
+- Contract surface: 95 unique implementations (115 raw deployments)
+- DeFi Llama TVL: $920,262.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Topaz is a decentralized exchange (DEX) protocol on BSC that offers both classic constant-product AMM pools and concentrated liquidity (Slipstream) pools. It features a ve(3,3) tokenomics model where users lock TOPAZ tokens to receive veTOPAZ, enabling governance participation and directing emissions to liquidity pools.
+Dexs. Structurally: 49 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 3 ERC20 tokens, 2 ERC721 NFTs; built on openzeppelin.
 
 ### Architecture
 
-The AMM and Slipstream families both rely on the Core Token & ve(3,3) family for emissions and rewards, with gauges created via the Factories & Infrastructure family to direct incentives. Governance contracts control protocol parameters and upgrades across all families.
+The protocol comprises 8 functional families. Its contracts share 7 common project-authored base contract(s) (connectorbase, peripheryimmutablestate, peripheryvalidation). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 116; live-surface contracts included: 114 (114 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
-- Deployment units: 0/1 live.
-- Detected codebases: uniswap-v2, uniswap-v3
-- Unverified dependencies: 7/28.
+- Indexed contracts: 177; live-surface contracts included: 115 (65 live, 50 unknown).
+- Excluded by liveness: 62 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 2/45 (4.4%)
+- Coverage of deployed-live implementations: 2/45 (4.4%)
+- Deployed-live implementations: 45 of 95 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 2/45
 - Verified + Unaudited implementations: 43
 - Verified by bytecode match: 0
-- Unverified implementations: 49
-- Unique implementations: 94
-- Raw deployments: 114
-- Audits discovered: 1
+- Unverified implementations: 50
+- Unique implementations: 95
+- Raw deployments: 115
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-04 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 1 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 2 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -122,7 +122,7 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (49)
+### ❓ Unverified (50)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
@@ -165,6 +165,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | UnnamedContract | unknown | bsc | n/a | `0xa87370...2daadc` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0xb09de1...296679` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0xb291ad...fbc208` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0xb2f75d...1e353e` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0xb795f3...82a094` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0xbeec11...5f72f7` | ❓ Unverified |
 | UnnamedContract | unknown | bsc | n/a | `0xc5d870...e719d0` | ❓ Unverified |
@@ -182,7 +183,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Topaz-Dex-Security-Review.pdf](https://github.com/shieldify-security/audits-portfolio/blob/main/reports/Topaz-Dex-Security-Review.pdf) | unknown | Audit | 2026-04 | fresh | Direct | contract_name | 2 | high |
+| [Topaz-Dex-Security-Review.pdf](https://github.com/shieldify-security/audits-portfolio/blob/main/reports/Topaz-Dex-Security-Review.pdf) | unknown | Audit | 2026-04 | fresh | Direct | contract_name | 2 | n/a |
 
 ## Coverage Gaps
 
@@ -209,6 +210,7 @@ Verified + unaudited native implementations ranked by TVL:
 | bsc | [`0xcb24e3...375033`](./contracts/bsc-56/0xcb24e31896d7476efb7b76a366566cfbcf375033/) | DelegationLogicLibrary | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xbae558...749084`](./contracts/bsc-56/0xbae5585afb875a45292470078aa4d4a261749084/) | EpochGovernor | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x268d1c...13d6a4`](./contracts/bsc-56/0x268d1c8a538ecf6628838c11d581e1eabd13d6a4/) | FactoryRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xe79eb7...7c731b`](./contracts/bsc-56/0xe79eb7c4d06ff38e6483921de8e85a37ec7c731b/) | Forwarder | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xfc080d...d4cb08`](./contracts/bsc-56/0xfc080d1ecd7c332022cebf942aeb62d5e1d4cb08/) | GaugeFactory | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xe4b23f...aa9480`](./contracts/bsc-56/0xe4b23f13b24232c1e68ad0575191216152aa9480/) | ManagedRewardsFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x47c357...1a9ee2`](./contracts/bsc-56/0x47c3570b90e7234fe695ad5f1be69e21fe1a9ee2/) | MixedRouteQuoterV1 | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -237,10 +239,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 44 |
+| native | 45 |
 | upstream | 0 |
-| standard_library | 1 |
-| needs_review | 49 |
+| standard_library | 0 |
+| needs_review | 50 |
 
 ## Scope Matching Notes
 
@@ -248,7 +250,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=4
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=2
 
 Fork inheritance lineage and inherited audits are included when available.

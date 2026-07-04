@@ -1,47 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "unitas",
-  "generated_at": "2026-06-19T06:14:48.743Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "unitas",
-    "tier": 0,
-    "peak_tvl": 105976700,
-    "peak_date": "2026-04-21T00:00:00.000Z",
-    "tvl_30d_ago": 92601434,
-    "tvl_90d_ago": 68182686,
-    "tvl_current": 65049264,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 26086976,
-    "change_30d_pct": -29.75350252135404,
-    "change_90d_pct": -4.595627106858184,
-    "days_since_peak": 36,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 38.61927763366853
-  },
+  "generated_at": "2026-07-04T14:54:02.889Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-4c3e",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 12,
     "total_addresses": 12,
     "unique_implementations": 12,
     "total_deployments": 12,
     "audited_contracts": 3,
-    "unaudited_contracts": 2,
+    "unaudited_contracts": 3,
     "contracts_verified_audited": 3,
-    "contracts_verified_unaudited": 2,
+    "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 7,
+    "contracts_unverified": 6,
     "coverage_pct": 60,
     "total_audits": 5,
-    "scoreable_audits": 3,
-    "dl_tvl_usd": 59863077.28403,
-    "tvl_usd": 48508892.105960816,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "bsc": 48508892.11
-    },
-    "asd_usd": 704685.7817389332,
+    "direct_audits": 5,
+    "inherited_audits": 0,
+    "scoreable_audits": 4,
+    "dl_tvl_usd": 56654489.341019996,
+    "tvl_usd": 56654489.341019996,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://app.unitas.so",
     "chains": [
       "bsc"
@@ -57,25 +41,32 @@
       "aging": 2,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 6,
+    "live_verified_implementations": 5,
+    "live_audited_implementations": 3,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 1,
+      "diverged": 0,
+      "match_unverified": 2
     }
   },
   "topography": {
-    "project_purpose": "Unitas is a yield-bearing stablecoin protocol listed as Basis Trading, with deployments on Binance/BSC and Solana. Its contract and program surface should not be treated as BSC-only unless the brief is explicitly scoped to BSC coverage.",
-    "relationship_narrative": "The protocol consists of a single product family centered around the USDu stablecoin, with all functionality likely contained within that contract or its associated deployer cluster, indicating a tightly integrated system without separate infrastructure contracts.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 12,
-    "live_contracts": 11,
-    "inactive_contracts": 0,
+    "project_purpose": "Basis Trading. Structurally: 11 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 3 ERC20 tokens; role-gated via AccessControl; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 1 common project-authored base contract(s) (singleadminaccesscontrol). Dominant framework: openzeppelin.",
+    "product_family_count": 4,
+    "total_contracts_indexed": 17,
+    "live_contracts": 6,
+    "inactive_contracts": 5,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 1,
+    "unknown_contracts": 6,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 11,
-    "unverified_dependencies": 1,
-    "detected_codebases": [
-      "uniswap-v3"
-    ]
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 12,
@@ -90,53 +81,15 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x385c279445581a186a4182a5503094ebb652ec71",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "StakedUSDuV2",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 47804206.32422189,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "StakedUSDuV2",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x385c279445581a186a4182a5503094ebb652ec71",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 47804206.32422189,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-4620",
-        "audit-4621"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
       "address": "0x8aab5522d601bbb85501d703b55a272e47852120",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "PancakeV3Pool",
       "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "pancakeswap",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 704685.7817389332,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "PancakeV3Pool",
@@ -149,7 +102,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 704685.7817389332,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -158,7 +111,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-12 07:17:37+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -169,7 +126,7 @@
       "name": "SafeProxy",
       "role": "unknown",
       "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
+      "origin_provider": "Gnosis Safe",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -193,7 +150,53 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-11-21 13:28:43+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x385c279445581a186a4182a5503094ebb652ec71",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "StakedUSDuV2",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StakedUSDuV2",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x385c279445581a186a4182a5503094ebb652ec71",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-4620",
+        "audit-4621"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-22 10:13:01+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -231,7 +234,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-22 10:13:44+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -266,7 +273,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-23 11:43:25+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -276,7 +287,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -301,7 +312,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-19 16:04:06+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -311,7 +326,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -336,7 +351,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-19 16:04:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -346,7 +365,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -371,7 +390,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-19 16:05:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -381,7 +404,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -406,7 +429,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-19 16:04:54+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -416,7 +443,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -441,42 +468,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xe60106a5cab7e7c64830919d36ab20caaf50ac91",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xe60106a5cab7e7c64830919d36ab20caaf50ac91",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-26 12:31:31+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -488,7 +484,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Unitas",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -509,13 +505,57 @@
       "audits_covering": [
         "audit-4620",
         "audit-4621",
-        "audit-4622"
+        "audit-4622",
+        "audit-4623"
       ],
       "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-22 10:12:25+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xe60106a5cab7e7c64830919d36ab20caaf50ac91",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "XGLDToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "XGLDToken",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xe60106a5cab7e7c64830919d36ab20caaf50ac91",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-19 16:01:02+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -532,6 +572,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -553,20 +596,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "SingleAdminAccessControl",
-        "StakedUSDu",
-        "StakedUSDuV2",
-        "USDu",
-        "USDuSilo",
-        "UnitasMinting",
-        "UnitasMintingV2"
-      ],
+      "extracted_names": [],
       "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -582,20 +620,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "SingleAdminAccessControl",
-        "StakedUSDu",
-        "StakedUSDuV2",
-        "USDu",
-        "USDuSilo",
-        "UnitasMinting",
-        "UnitasMintingV2"
-      ],
+      "extracted_names": [],
       "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -611,19 +644,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AccessRegistry",
-        "BlacklistState",
-        "Cooldown",
-        "SUSDU",
-        "USDU",
-        "VaultConfig"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -639,12 +668,20 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "Guardian",
+        "SUSDU",
+        "USDU",
+        "Vault"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
@@ -653,30 +690,52 @@
       "auditor": "SlowMist",
       "tier": 1,
       "contracts_covered": 3,
-      "coverage_pct": 60,
+      "coverage_pct": 50,
       "latest_audit": "2025-10"
     },
     {
       "auditor": "unknown",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 60,
+      "coverage_pct": 50,
       "latest_audit": "2025-09"
     }
   ],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x8aab5522d601bbb85501d703b55a272e47852120",
+      "name": "PancakeV3Pool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xe60106a5cab7e7c64830919d36ab20caaf50ac91",
+      "name": "XGLDToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 9,
-    "upstream": 1,
+    "native": 5,
+    "upstream": 0,
     "standard_library": 1,
-    "needs_review": 1
+    "needs_review": 6
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 7
+      "contract_name": 7,
+      "extraction_exact": 1
     },
     "extraction_confidence_counts": {
-      "high": 3
+      "high": 1
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
@@ -684,10 +743,6 @@
       {
         "audit_id": 4619,
         "report_name": "Unipay Audit Report-2026-1-9.pdf"
-      },
-      {
-        "audit_id": 4623,
-        "report_name": "20250326-Unipay-Final-Audit-Report.pdf"
       }
     ],
     "inherited_remapped_matches": []

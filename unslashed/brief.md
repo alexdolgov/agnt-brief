@@ -1,16 +1,14 @@
 # Agentic Audit Brief: Unslashed
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 19.8% over 90 days
-
 ## Project Overview
 
 - Project: Unslashed (`unslashed`)
-- Lifecycle: declining (Tier 0, 98.6% below peak)
-- Generated: 2026-06-17T07:01:00.922Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:54:02.927Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-4c3e
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $2,445,762.04
+- DeFi Llama TVL: $2,315,625.67
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -21,31 +19,33 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Unslashed is a decentralized insurance protocol that allows users to provide underwriting capital and earn premiums by depositing assets into vaults. Unsupported or third-party components such as MasterChef rewards, Uniswap pairs, BAC pools, BlackPoolToken, ArcProxy, and other non-surface tokens or pools should not be described as part of the Unslashed contract surface unless independently verified as Unslashed-owned.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 3; live-surface contracts included: 1 (0 live, 1 unknown).
-- Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
-- Deployment units: 0/2 live.
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 0
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2021-05 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of n/a represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -61,7 +61,7 @@ Unslashed is a decentralized insurance protocol that allows users to provide und
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ComptrollerLib | unknown | ethereum | unit-32617 | [`0xba4f4c...86e87d`](./contracts/ethereum-1/0xba4f4c8b685098f8f207c647c9e326288c86e87d/) | ⚠️ Unaudited |
+| ComptrollerLib | unknown | ethereum | n/a | [`0xba4f4c...86e87d`](./contracts/ethereum-1/0xba4f4c8b685098f8f207c647c9e326288c86e87d/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,29 +85,36 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [ChainSecurity_AvantgardeFinance_UnslashedEnzymeBridge_Audit.pdf](https://reports.chainsecurity.com/AvantgardeFinance/ChainSecurity_AvantgardeFinance_UnslashedEnzymeBridge_Audit.pdf) | ChainSecurity | Audit | 2021-05 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0xba4f4c...86e87d`](./contracts/ethereum-1/0xba4f4c8b685098f8f207c647c9e326288c86e87d/) | ComptrollerLib | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [21059] ChainSecurity_AvantgardeFinance_UnslashedEnzymeBridge_Audit.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

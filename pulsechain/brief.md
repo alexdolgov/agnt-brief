@@ -4,44 +4,47 @@
 
 - Project: Pulsechain (`pulsechain`)
 - Website: [https://pulsechain.com/](https://pulsechain.com/)
-- Lifecycle: active (Tier 0, 70.3% below peak)
-- Generated: 2026-06-17T07:00:47.049Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:44.241Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-0679
 - Chains: ethereum
 - Contract surface: 3 unique implementations (4 raw deployments)
-- DeFi Llama TVL: $48,050,402.68
-- On-chain TVL (included contracts): $475,395.57
-- TVL by chain: Ethereum $475,395.57
+- DeFi Llama TVL: $47,419,692.38
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-PulseChain is an Ethereum-fork Layer 1 blockchain. The covered Ethereum-side contracts appear to be bridge/Omnibridge infrastructure used for asset transfers and message passing between Ethereum and PulseChain, rather than representing the full scope of the PulseChain network.
+Chain. Structurally: 6 project-authored contract(s) across 1 chain(s); 1 ERC20 token; built on openzeppelin.
 
 ### Architecture
 
-The EternalStorageProxy contracts serve as upgradeable proxies for the core bridge contracts (ForeignOmnibridge, ForeignAMB, BridgeValidators), sharing a common upgradeability pattern and deployer cluster.
+The protocol comprises 3 functional families. Its contracts share 8 common project-authored base contract(s) (eternalstorage, ownedupgradeabilityproxy, upgradeabilityownerstorage). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 13; live-surface contracts included: 4 (4 live, 0 unknown).
-- Excluded by liveness: 1 inactive, 8 singleton, 0 uninitialized.
-- Deployment units: 0/4 live.
+- Indexed contracts: 9; live-surface contracts included: 4 (3 live, 1 unknown).
+- Excluded by liveness: 5 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 2; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
+- Coverage of deployed-live implementations: 0/2 (0.0%)
+- Deployed-live implementations: 2 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/2
 - Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 3
 - Raw deployments: 4
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $475,395.57
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -90,16 +93,19 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0xa1077a...0f9a27`](./contracts/ethereum-1/0xa1077a294dde1b09bb078844df40758a5d0f9a27/) | PermittableToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x8ac4ae...350f55`](./contracts/ethereum-1/0x8ac4ae65b3656e26dc4e0e69108b392283350f55/) | WETHOmnibridgeRouter | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 3 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

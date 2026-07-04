@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "solayer",
-  "generated_at": "2026-06-17T07:00:43.718Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
+  "generated_at": "2026-07-03T21:06:54.508Z",
+  "pipeline_run_id": "brief-restore-2026-07",
   "lifecycle_status": null,
   "lifecycle_signal": null,
   "summary": {
@@ -18,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 5,
+    "direct_audits": 5,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 9592954,
-    "tvl_usd": 9592954,
+    "dl_tvl_usd": 10510245,
+    "tvl_usd": 10510245,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -32,15 +34,23 @@
     "audit_freshness": "aging",
     "staleness_breakdown": {
       "fresh": 0,
-      "aging": 4,
-      "stale": 1,
+      "aging": 3,
+      "stale": 2,
       "unknown": 0
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Solayer is a Solana/SVM-focused protocol building restaking and yield infrastructure around Solana-native assets. Its ecosystem includes Solayer restaking, sSOL/native staking, sUSD, Solayer Chain/InfiniSVM, and Solayer Pay. The protocol should not be described as an unrelated EVM or multichain yield-vault/liquidity-pool/card system unless such components are independently attested by Solayer documentation.",
+    "project_purpose": "Contract surface contains 0 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 1,
+    "product_family_count": 0,
     "total_contracts_indexed": 0,
     "live_contracts": 0,
     "inactive_contracts": 0,
@@ -67,7 +77,7 @@
     {
       "audit_id": 1995,
       "audit_key": "audit-1995",
-      "report_name": "1. [OtterSec](): April, 2024 Audit",
+      "report_name": "audit.pdf",
       "report_url": "https://github.com/solayer-labs/token-metadata/blob/07981c9059f64b50132a67c9db57219ed194678d/audit.pdf",
       "auditor": "OtterSec",
       "audit_type": "audit",
@@ -77,6 +87,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -88,16 +101,19 @@
     {
       "audit_id": 1996,
       "audit_key": "audit-1996",
-      "report_name": "2. [OtterSec](): July, 2024 Audit",
+      "report_name": "OtterSec-audit-report-restaking-program.pdf",
       "report_url": "https://github.com/solayer-labs/solayer-improvement-proposal/blob/main/audits/restaking/OtterSec-audit-report-restaking-program.pdf",
       "auditor": "OtterSec",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -109,7 +125,7 @@
     {
       "audit_id": 1997,
       "audit_key": "audit-1997",
-      "report_name": "3. [Halborn - endoAVS](): August, 2024",
+      "report_name": "Halborn-audit-report-endoavs-program.pdf",
       "report_url": "https://github.com/solayer-labs/solayer-improvement-proposal/blob/main/audits/endoavs/Halborn-audit-report-endoavs-program.pdf",
       "auditor": "Halborn",
       "audit_type": "audit",
@@ -119,6 +135,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -130,7 +149,7 @@
     {
       "audit_id": 1998,
       "audit_key": "audit-1998",
-      "report_name": "4. [Halborn - pool](): August, 2024",
+      "report_name": "Halborn-audit-report-restaking-program.pdf",
       "report_url": "https://github.com/solayer-labs/solayer-improvement-proposal/blob/main/audits/restaking/Halborn-audit-report-restaking-program.pdf",
       "auditor": "Halborn",
       "audit_type": "audit",
@@ -140,6 +159,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -151,7 +173,7 @@
     {
       "audit_id": 1999,
       "audit_key": "audit-1999",
-      "report_name": "5. [Halborn - sUSD](): October, 2024",
+      "report_name": "Halborn-audit-report-susd-program.pdf",
       "report_url": "https://github.com/solayer-labs/solayer-improvement-proposal/blob/main/audits/stablecoin/Halborn-audit-report-susd-program.pdf",
       "auditor": "Halborn",
       "audit_type": "audit",
@@ -161,23 +183,16 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
       "extraction_confidence": null,
       "scope_section_found": null,
-      "repo_reference_count": 0,
-      "duplicate_audit_ids": [
-        {
-          "audit_id": 1999,
-          "report_url": "https://github.com/solayer-labs/solayer-improvement-proposal/blob/main/audits/stablecoin/Halborn-audit-report-susd-program.pdf"
-        },
-        {
-          "audit_id": 2000,
-          "report_url": "https://raw.githubusercontent.com/solayer-labs/solayer-improvement-proposal/main/audits/stablecoin/Halborn-audit-report-susd-program.pdf"
-        }
-      ]
+      "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [],
@@ -196,23 +211,23 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 1995,
-        "report_name": "1. [OtterSec](): April, 2024 Audit"
+        "report_name": "audit.pdf"
       },
       {
         "audit_id": 1996,
-        "report_name": "2. [OtterSec](): July, 2024 Audit"
+        "report_name": "OtterSec-audit-report-restaking-program.pdf"
       },
       {
         "audit_id": 1997,
-        "report_name": "3. [Halborn - endoAVS](): August, 2024"
+        "report_name": "Halborn-audit-report-endoavs-program.pdf"
       },
       {
         "audit_id": 1998,
-        "report_name": "4. [Halborn - pool](): August, 2024"
+        "report_name": "Halborn-audit-report-restaking-program.pdf"
       },
       {
         "audit_id": 1999,
-        "report_name": "5. [Halborn - sUSD](): October, 2024"
+        "report_name": "Halborn-audit-report-susd-program.pdf"
       }
     ],
     "inherited_remapped_matches": []

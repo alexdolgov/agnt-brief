@@ -1,17 +1,15 @@
 # Agentic Audit Brief: Burve
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 9.0% over 90 days
-
 ## Project Overview
 
 - Project: Burve (`burve`)
 - Website: [https://www.burve.fi/pools/](https://www.burve.fi/pools/)
-- Lifecycle: unknown (Tier 0, 52.8% below peak)
-- Generated: 2026-06-21T05:09:25.887Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:10.005Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-1bf2
 - Chains: berachain
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $41,739.57
+- DeFi Llama TVL: $32,267.77
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -28,25 +26,27 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 - Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 1/1 live.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 2
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-05 (aging)
-- Staleness: 0 fresh, 2 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 2 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -62,7 +62,7 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| SimplexAdminFacet | unknown | berachain | unit-41054 | [`0xa1bed1...c21089`](./contracts/berachain-80094/0xa1bed164c12cd9479a1049f97bde5b3d6ec21089/) | ⚠️ Unaudited |
+| SimplexAdminFacet | unknown | berachain | n/a | [`0xa1bed1...c21089`](./contracts/berachain-80094/0xa1bed164c12cd9479a1049f97bde5b3d6ec21089/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 

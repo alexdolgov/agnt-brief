@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "ekubo",
-  "generated_at": "2026-06-17T07:00:48.533Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "ekubo",
-    "tier": 0,
-    "peak_tvl": 100907054,
-    "peak_date": "2024-08-01T00:00:00.000Z",
-    "tvl_30d_ago": 38755501,
-    "tvl_90d_ago": 43148323,
-    "tvl_current": 27036520,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 61358746,
-    "change_30d_pct": -30.23823895348431,
-    "change_90d_pct": -37.340507996104506,
-    "days_since_peak": 659,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 73.20651140999517
-  },
+  "generated_at": "2026-07-04T14:53:11.627Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-2d9c",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 14,
     "total_addresses": 15,
@@ -34,14 +18,14 @@
     "contracts_unverified": 6,
     "coverage_pct": 37.5,
     "total_audits": 5,
+    "direct_audits": 5,
+    "inherited_audits": 0,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 20901566.75685,
-    "tvl_usd": 5648264.121123274,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 5648264.12
-    },
-    "asd_usd": 5648264.121123274,
+    "dl_tvl_usd": 20683454.92332,
+    "tvl_usd": 20683454.92332,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://ekubo.org/",
     "chains": [
       "ethereum"
@@ -57,21 +41,30 @@
       "aging": 1,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 8,
+    "live_verified_implementations": 8,
+    "live_audited_implementations": 3,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 3
     }
   },
   "topography": {
-    "project_purpose": "Ekubo is a live decentralized exchange protocol built around concentrated liquidity and a singleton-style Core design. The project is primarily associated with Starknet and also supports Ethereum; its public interface advertises swaps on Ethereum, Arbitrum, and Starknet. The currently listed contract surface is an incomplete Ethereum-only subset and should not be treated as the full Ekubo deployment surface or as the original Starknet Core/periphery/governance surface. Arbitrum should be treated as interface-supported but outside the currently covered audited contract surface unless Arbitrum deployments are separately verified and added.",
-    "relationship_narrative": "The EVM Contracts (V2) family extends the original Ekubo DEX to EVM chains, sharing the same concentrated liquidity design but with separate Core instances. Governance contracts are independent but may control parameters or upgrades across families via the StarknetOwnerProxy.",
-    "product_family_count": 3,
-    "total_contracts_indexed": 17,
-    "live_contracts": 11,
-    "inactive_contracts": 2,
+    "project_purpose": "Dexs. Structurally: 8 project-authored contract(s) across 1 chain(s); 1 ERC20 token, 1 ERC721 NFT; built on solady.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 5 common project-authored base contract(s) (usescore, payablemulticallable, slippagechecker). Dominant framework: solady.",
+    "product_family_count": 4,
+    "total_contracts_indexed": 15,
+    "live_contracts": 9,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 4,
+    "unknown_contracts": 6,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 11,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -88,41 +81,6 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x04c46e830bb56ce22735d5d8fc9cb90309317d0f",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "EkuboToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Governance contracts",
-      "tvl_usd": 5648264.121123274,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "EkuboToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x04c46e830bb56ce22735d5d8fc9cb90309317d0f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 5648264.121123274,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
       "address": "0x00000000000014aa86c5d3c41765bb24e11bd701",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -130,7 +88,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Ekubo",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -156,7 +114,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -166,7 +124,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-31 18:05:47+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x04c46e830bb56ce22735d5d8fc9cb90309317d0f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "EkuboToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "EkuboToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x04c46e830bb56ce22735d5d8fc9cb90309317d0f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-29 01:52:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -178,7 +179,7 @@
       "role": "adapter",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "EVM Contracts (V2)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -201,7 +202,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-13 14:21:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -213,7 +218,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "EVM Contracts (V2)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -236,7 +241,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-03-14 22:42:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -248,7 +257,7 @@
       "role": "adapter",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "EVM Contracts (V2)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -273,7 +282,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-03-14 22:48:35+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -285,7 +298,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "EVM Contracts (V2)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -310,7 +323,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-01-24 05:36:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -322,7 +339,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "EVM Contracts (V2)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -345,7 +362,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-29 20:19:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -357,7 +378,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "EVM Contracts (V2)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -380,7 +401,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-29 20:19:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -390,9 +415,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "EVM Contracts (V2)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -415,7 +440,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-03-14 22:48:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -425,9 +454,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "EVM Contracts (V2)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -450,7 +479,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-11 00:01:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -460,9 +493,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "EVM Contracts (V2)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -485,7 +518,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-03-14 22:48:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -495,9 +532,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "EVM Contracts (V2)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -520,7 +557,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-03-14 22:49:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -530,9 +571,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "EVM Contracts (V2)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -555,7 +596,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-04 23:15:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -565,9 +610,9 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "EVM Contracts (V2)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -590,14 +635,18 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-04 23:15:11+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 1821,
       "audit_key": "audit-1821",
-      "report_name": "The Governance Starknet L1 Proxy has been audited by Cairo Security Clan and the report can be found on [GitHub]().",
+      "report_name": "Ekubo_Governance_L1_Proxy.pdf",
       "report_url": "https://github.com/EkuboProtocol/governance/blob/main/l1_proxy/Ekubo_Governance_L1_Proxy.pdf",
       "auditor": "Cairo Security Clan",
       "audit_type": "audit",
@@ -607,14 +656,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "StarknetOwnerProxy"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -630,44 +680,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BaseOrdersTest",
-        "BasePositions",
-        "BaseTWAMMTest",
-        "CoreLib",
-        "Counts",
-        "FlashAccountant",
-        "FullTest",
-        "ICore",
-        "IFlashAccountant",
-        "IOracle",
-        "IOrders",
-        "ITWAMM",
-        "Oracle",
-        "OracleCollisionTest",
-        "OracleLib",
-        "OrderConfig",
-        "OrderKey",
-        "Orders",
-        "OrdersTest",
-        "PoolConfig",
-        "PoolId",
-        "PoolKey",
-        "Router",
-        "Snapshot",
-        "SqrtRatio",
-        "StorageSlot",
-        "TWAMM",
-        "TWAMMLib",
-        "TWAMMStartTimeBugPoC",
-        "TWAMMStorageLayout",
-        "TwammPoolState"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -683,6 +704,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -704,6 +728,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -725,26 +752,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BaseNonfungibleToken",
-        "BasePositions",
-        "Core",
-        "CoreStorageLayout",
-        "FlashAccountant",
-        "Incentives",
-        "MEVCapture",
-        "Orders",
-        "RevenueBuybacks",
-        "RevenueBuybacksLib",
-        "TWAMM",
-        "TWAMMStorageLayout",
-        "TokenWrapper"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -779,8 +795,8 @@
       "name": "EkuboToken",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 5648264.121123274,
-      "risk_note": "Verified native implementation with $5,648,264.12 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -824,18 +840,16 @@
     }
   ],
   "origin_summary": {
-    "native": 14,
+    "native": 8,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 6
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 6
+      "contract_name": 3
     },
-    "extraction_confidence_counts": {
-      "high": 3
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [

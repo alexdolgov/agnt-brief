@@ -1,51 +1,54 @@
 # Agentic Audit Brief: Angstrom
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 68.3% over 90 days
+⚠️ Lifecycle status: DECLINING - TVL dropped 69.9% over 90 days
 
 ## Project Overview
 
 - Project: Angstrom (`angstrom`)
 - Website: [https://angstrom.xyz/](https://angstrom.xyz/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-19T06:13:15.945Z
-- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
+- Generated: 2026-07-04T14:53:00.783Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
 - Chains: base, ethereum
 - Contract surface: 13 unique implementations (15 raw deployments)
-- DeFi Llama TVL: $3,061,809.18
-- On-chain TVL (included contracts): $182,652,801.04
-- TVL by chain: Ethereum $161,574,375.12 | Base $21,078,425.92
+- DeFi Llama TVL: $2,967,672.32
+- On-chain TVL (included contracts): $223,534,408.46
+- TVL by chain: Ethereum $205,311,400.31 | Base $18,223,008.14
 
 ## Project Description
 
-Angstrom is a hybrid DEX built on Uniswap V4, currently tracked on Ethereum. It uses app-level sequencing and batch auctions to redirect MEV value to liquidity providers and swappers. Base deployments should be treated separately as live contract surface unless documentation proves an active Base product with TVL.
+Dexs. Structurally: 15 project-authored contract(s) across 2 chain(s); 1 ERC20 token; role-gated via AccessControl; built on solady.
 
 ### Architecture
 
-The L1 family provides governance and core DEX logic, while L2 instances leverage a factory for deployment and MEV tax features. The AngstromInspector likely serves both layers for trade analysis.
+The protocol comprises 5 functional families. Its contracts share 10 common project-authored base contract(s) (protocolfees, nodelegatecall, erc6909claims). Dominant framework: solady.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 15; live-surface contracts included: 15 (15 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 16; live-surface contracts included: 15 (15 live, 0 unknown).
+- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 4/25.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/13 (7.7%)
+- Coverage of deployed-live implementations: 1/10 (10.0%)
+- Deployed-live implementations: 13 of 13 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/13
 - Verified + Unaudited implementations: 12
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 13
 - Raw deployments: 15
-- Audits discovered: 3
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
-- ASD (verified + unaudited TVL): $182,652,801.04
-- Latest audit: 2025-07 (fresh)
-- Staleness: 1 fresh, 2 aging, 0 stale, 0 unknown
-- Tier 1 coverage: 7.7% (Spearbit)
-- Note: This protocol is classified as [declining]. ASD of $182,652,801.04 represents exposure in a protocol with declining activity.
+- ASD (verified + unaudited TVL): $223,534,408.46
+- Latest audit: 2025-07 (aging)
+- Audit staleness (calendar age): 0 fresh, 3 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
+- Tier 1 coverage: 10.0% (Spearbit)
+- Note: This protocol is classified as [declining]. ASD of $223,534,408.46 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -100,9 +103,9 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [VIEW REPORT](https://cantina.xyz/portfolio/39f1c6a9-dbd5-4322-b6a3-84b794b97cb8?utm_source=x&utm_medium=social&utm_campaign=july) | Spearbit | Audit | 2025-07 | fresh | Direct | n/a | 0 | n/a |
-| [VIEW REPORT](https://cantina.xyz/competitions/84df57a3-0526-49b8-a7c5-334888f43940) | Spearbit | Contest | 2024-11 | aging | Direct | contract_name | 1 | high |
-| [VIEW REPORT](https://cantina.xyz/portfolio/c2fe4e46-66a3-416e-ab26-40dd4b437ff6) | Spearbit | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
+| [cantina.xyz/portfolio/39f1c6a9-dbd5-4322-b6a3-84b794b97cb8](https://cantina.xyz/portfolio/39f1c6a9-dbd5-4322-b6a3-84b794b97cb8?utm_source=x&utm_medium=social&utm_campaign=july) | Spearbit | Audit | 2025-07 | aging | Direct | n/a | 0 | n/a |
+| [cantina.xyz/competitions/84df57a3-0526-49b8-a7c5-334888f43940](https://cantina.xyz/competitions/84df57a3-0526-49b8-a7c5-334888f43940) | Spearbit | Contest | 2024-11 | aging | Direct | contract_name | 1 | n/a |
+| [cantina.xyz/portfolio/c2fe4e46-66a3-416e-ab26-40dd4b437ff6](https://cantina.xyz/portfolio/c2fe4e46-66a3-416e-ab26-40dd4b437ff6) | Spearbit | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -135,12 +138,12 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=1
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=1
 
 Zero-match audit list:
 
-- [2046] VIEW REPORT
-- [2048] VIEW REPORT
+- [2046] cantina.xyz/portfolio/39f1c6a9-dbd5-4322-b6a3-84b794b97cb8
+- [2048] cantina.xyz/portfolio/c2fe4e46-66a3-416e-ab26-40dd4b437ff6
 
 Fork inheritance lineage and inherited audits are included when available.

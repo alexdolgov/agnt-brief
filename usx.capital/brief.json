@@ -1,36 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "usx.capital",
-  "generated_at": "2026-06-17T16:38:42.808Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-a893",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "usx.capital",
-    "tier": 1,
-    "peak_tvl": 4806076,
-    "peak_date": "2026-02-28T00:00:00.000Z",
-    "tvl_30d_ago": 1715036,
-    "tvl_90d_ago": 4792269,
-    "tvl_current": 984208,
-    "tier0_reason": "sustained_90d_and_30d_decline",
-    "tvl_180d_ago": null,
-    "change_30d_pct": -42.61298305108464,
-    "change_90d_pct": -79.46258859842801,
-    "governance_raw": {
-      "evidence": "TVL dropped 79.5% from peak, but no shutdown or exploit announced; regional restriction suggests operational issues.",
-      "confidence": 0.7,
-      "lifecycle_status": "declining"
-    },
-    "days_since_peak": 91,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 79.52158892202287,
-    "governance_evidence": "TVL dropped 79.5% from peak, but no shutdown or exploit announced; regional restriction suggests operational issues.",
-    "governance_confidence": 0.7,
-    "governance_text_chars": 325,
-    "governance_classification": "declining",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:54:04.184Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-4c3e",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 3,
     "total_addresses": 6,
@@ -44,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 763468.72315,
-    "tvl_usd": 763468.72315,
+    "dl_tvl_usd": 762702.52996,
+    "tvl_usd": 762702.52996,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -56,25 +32,34 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2026-06",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
+      "fresh": 1,
       "aging": 0,
       "stale": 0,
-      "unknown": 1
+      "unknown": 0
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "USX.Capital is a fully collateralized neodollar/stablecoin wrapper on Scroll. Public materials position USX as private, gasless, spendable in real life, and supporting staking and rewards. Morpho or Blend references should be treated as possible infrastructure dependencies unless directly documented as the user-facing USX protocol flow.",
+    "project_purpose": "Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 2,
+    "product_family_count": 3,
     "total_contracts_indexed": 6,
-    "live_contracts": 6,
+    "live_contracts": 0,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 6,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
@@ -100,8 +85,8 @@
       "name": "ERC1967Proxy",
       "role": "proxy",
       "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "USX.Capital",
+      "origin_provider": "OpenZeppelin",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -157,7 +142,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-11-03 10:21:16+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 534352,
@@ -167,9 +156,9 @@
       "deployment_unit_proxy_count": null,
       "name": "MetaMorphoV1_1",
       "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "USX.Capital",
+      "origin_kind": "upstream",
+      "origin_provider": "MetaMorpho",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -192,7 +181,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-09-15 20:54:32+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 534352,
@@ -203,8 +196,8 @@
       "name": "SafeProxy",
       "role": "unknown",
       "origin_kind": "standard_library",
-      "origin_provider": "gnosis-safe",
-      "product_line": "USX.Capital",
+      "origin_provider": "Gnosis Safe",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -227,23 +220,30 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-11-11 04:18:21+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 11712,
       "audit_key": "audit-11712",
-      "report_name": "Blend (the yield infrastructure layer used by USX) has undergone 8 independent security audits by leading blockchain security firms. Find their complete audit reports here: <>",
+      "report_name": "docs.blend.money/resources/audits",
       "report_url": "https://docs.blend.money/resources/audits",
       "auditor": "yAudit",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "fresh",
+      "date": "2026-06",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -257,9 +257,9 @@
   "coverage_gaps": [],
   "origin_summary": {
     "native": 0,
-    "upstream": 0,
+    "upstream": 1,
     "standard_library": 2,
-    "needs_review": 1
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -269,7 +269,7 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 11712,
-        "report_name": "Blend (the yield infrastructure layer used by USX) has undergone 8 independent security audits by leading blockchain security firms. Find their complete audit reports here: <>"
+        "report_name": "docs.blend.money/resources/audits"
       }
     ],
     "inherited_remapped_matches": []

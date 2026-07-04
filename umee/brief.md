@@ -4,44 +4,47 @@
 
 - Project: Umee (`umee`)
 - Lifecycle: unknown
-- Generated: 2026-06-17T20:27:51.689Z
-- Pipeline run: v2-pipeline-2026-06-17-2a130c-6f9b
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $105,416.02
+- Generated: 2026-07-04T14:54:02.772Z
+- Pipeline run: v2-2026-07-02-1ba3fd
+- Chains: ethereum
+- Contract surface: 1 unique implementations (1 raw deployments)
+- DeFi Llama TVL: $117,264.70
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Umee is a decentralized lending protocol and blockchain with activity across Umee/Cosmos modules and Ethereum. The listed Ethereum proxy should be treated as partial EVM coverage, not as the complete lending surface for the protocol.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 2; live-surface contracts included: 0 (0 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 2 singleton, 0 uninitialized.
-- Deployment units: 0/1 live.
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
-- Verified + Unaudited implementations: 0
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
-- Audits discovered: 7
+- Unique implementations: 1
+- Raw deployments: 1
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2022-07 (stale)
-- Staleness: 0 fresh, 0 aging, 7 stale, 0 unknown
+- Latest audit: n/a (unknown)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -54,9 +57,11 @@ Umee is a decentralized lending protocol and blockchain with activity across Ume
 
 - None
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (1)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| CosmosERC20 | unknown | ethereum | n/a | [`0xc0a4df...eeddac`](./contracts/ethereum-1/0xc0a4df35568f116c370e6a6a6022ceb908eeddac/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -80,25 +85,20 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Least Authority - Umee_Peggo Orchestrator_Final Audit Report.pdf](https://github.com/umee-network/docs/blob/main/docs/.vuepress/public/audits/Least%20Authority%20-%20Umee_Peggo%20Orchestrator_Final%20Audit%20Report.pdf) | unknown | Audit | 2022-06 | stale | Direct | n/a | 0 | n/a |
-| [PeckShield-Audit-Report-Umee-v1.0.pdf](https://github.com/umee-network/docs/blob/main/docs/.vuepress/public/audits/PeckShield-Audit-Report-Umee-v1.0.pdf) | PeckShield | Audit | 2022-01 | stale | Direct | n/a | 0 | n/a |
-| [Trail of Bits Full Audit.pdf](https://github.com/umee-network/docs/blob/main/docs/.vuepress/public/audits/Trail%20of%20Bits%20Full%20Audit.pdf) | Trail of Bits | Audit | 2022-03 | stale | Direct | n/a | 0 | n/a |
-| [UMEE_WASM_Integration_Security_Audit_Report_Halborn_Final.pdf](https://github.com/umee-network/docs/blob/main/docs/.vuepress/public/audits/UMEE_WASM_Integration_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2022-07 | stale | Direct | n/a | 0 | n/a |
-| [Umee Leverage Module Audit Report_RV Inc..pdf](https://github.com/umee-network/docs/blob/main/docs/.vuepress/public/audits/Umee%20Leverage%20Module%20Audit%20Report_RV%20Inc..pdf) | unknown | Audit | 2022-06 | stale | Direct | n/a | 0 | n/a |
-| [Umee_Oracle_Price_Feeder_Cosmos_Security_Audit_Report_Halborn_Final.pdf](https://github.com/umee-network/docs/blob/main/docs/.vuepress/public/audits/Umee_Oracle_Price_Feeder_Cosmos_Security_Audit_Report_Halborn_Final.pdf) | Halborn | Audit | 2022-06 | stale | Direct | n/a | 0 | n/a |
-| [Umee_WebApp_Pentest_Report_Halborn_Final.pdf](https://github.com/umee-network/docs/blob/main/docs/.vuepress/public/audits/Umee_WebApp_Pentest_Report_Halborn_Final.pdf) | Halborn | Audit | 2022-03 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0xc0a4df...eeddac`](./contracts/ethereum-1/0xc0a4df35568f116c370e6a6a6022ceb908eeddac/) | CosmosERC20 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |
@@ -107,19 +107,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 7
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
-
-Zero-match audit list:
-
-- [8768] Least Authority - Umee_Peggo Orchestrator_Final Audit Report.pdf
-- [8769] PeckShield-Audit-Report-Umee-v1.0.pdf
-- [8770] Trail of Bits Full Audit.pdf
-- [8771] UMEE_WASM_Integration_Security_Audit_Report_Halborn_Final.pdf
-- [8772] Umee Leverage Module Audit Report_RV Inc..pdf
-- [8773] Umee_Oracle_Price_Feeder_Cosmos_Security_Audit_Report_Halborn_Final.pdf
-- [8774] Umee_WebApp_Pentest_Report_Halborn_Final.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

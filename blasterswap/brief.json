@@ -1,47 +1,49 @@
 {
   "schema_version": "2.0",
   "project_key": "blasterswap",
-  "generated_at": "2026-06-21T11:40:11.568Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "generated_at": "2026-07-04T14:53:07.574Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-66d5",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "blasterswap",
     "tier": 0,
     "peak_tvl": 18029754,
     "peak_date": "2024-05-22T00:00:00.000Z",
-    "tvl_30d_ago": 377167,
-    "tvl_90d_ago": 367362,
-    "tvl_current": 314433,
+    "tvl_30d_ago": 356907,
+    "tvl_90d_ago": 380350,
+    "tvl_current": 293632,
     "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 511842,
-    "change_30d_pct": -16.63295039067575,
-    "change_90d_pct": -14.40785927776961,
-    "days_since_peak": 760,
+    "tvl_180d_ago": 511402,
+    "change_30d_pct": -17.728708038788817,
+    "change_90d_pct": -22.799526751676087,
+    "days_since_peak": 770,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
-    "drop_from_peak_pct": 98.25603277781826
+    "drop_from_peak_pct": 98.37140318165184
   },
   "summary": {
-    "total_contracts": 3,
-    "total_addresses": 6,
-    "unique_implementations": 3,
-    "total_deployments": 6,
+    "total_contracts": 4,
+    "total_addresses": 7,
+    "unique_implementations": 4,
+    "total_deployments": 7,
     "audited_contracts": 0,
     "unaudited_contracts": 3,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 3,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 302507,
-    "tvl_usd": 2643.4585615561928,
+    "dl_tvl_usd": 288534,
+    "tvl_usd": 2361.658871931811,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "blast": 2643.46
+      "blast": 2361.66
     },
-    "asd_usd": 2643.4585615561928,
+    "asd_usd": 2361.658871931811,
     "website_url": "https://blasterswap.com/",
     "chains": [
       "blast"
@@ -55,26 +57,35 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 3,
+    "live_verified_implementations": 3,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Blasterswap is a decentralized exchange and yield protocol on Blast that enables users to provide liquidity and earn yield through vaults. It appears to offer automated yield strategies and token swapping, leveraging Blast's native yield features.",
-    "relationship_narrative": "The Vault contracts form the core yield-generating logic, while Andy and Pacmoon appear to be supporting tokens or adapters that interact with the vaults. All contracts are deployed on Blast and share the same deployer cluster, indicating a unified infrastructure.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 7,
+    "project_purpose": "Dexs. Structurally: 5 project-authored contract(s) across 1 chain(s); 2 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.",
+    "product_family_count": 2,
+    "total_contracts_indexed": 11,
     "live_contracts": 6,
-    "inactive_contracts": 1,
+    "inactive_contracts": 4,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 1,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 4,
-    "unverified_dependencies": 1,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 3,
+    "unique_implementations": 4,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -93,8 +104,8 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Blasterswap Vaults",
-      "tvl_usd": 2643.4585615561928,
+      "product_line": null,
+      "tvl_usd": 2361.658871931811,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "Vault",
@@ -107,7 +118,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 14.436074423547973,
+          "tvl_usd": 13.437318007630084,
           "is_audited": false
         },
         {
@@ -118,7 +129,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 1730.544752998834,
+          "tvl_usd": 1449.74381979037,
           "is_audited": false
         },
         {
@@ -138,7 +149,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-17 11:07:07+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 81457,
@@ -148,7 +163,7 @@
       "deployment_unit_proxy_count": null,
       "name": "Andy",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -184,7 +199,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-03-02 07:16:21+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 81457,
@@ -196,7 +215,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Blasterswap Vaults",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -219,7 +238,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-03-14 18:04:17+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x44fa628241794c0cce502593ab4ef0834b23ea6a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 81457,
+          "chain_name": "blast",
+          "address": "0x44fa628241794c0cce502593ab4ef0834b23ea6a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-08-10 06:29:37+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -236,6 +298,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -254,8 +319,18 @@
       "name": "Vault",
       "role": "core_logic",
       "origin_kind": "native",
-      "tvl_usd": 2643.4585615561928,
-      "risk_note": "Verified native implementation with $2,643.46 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 2361.658871931811,
+      "risk_note": "Verified native implementation with $2,361.66 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 81457,
+      "chain_name": "blast",
+      "address": "0x0ecd76c73caf3ef7995cb236366f71fae2e9d505",
+      "name": "Andy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 81457,
@@ -269,7 +344,7 @@
     }
   ],
   "origin_summary": {
-    "native": 2,
+    "native": 3,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 1

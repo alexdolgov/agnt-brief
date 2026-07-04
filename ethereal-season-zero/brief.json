@@ -1,36 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "ethereal-season-zero",
-  "generated_at": "2026-06-17T07:01:01.689Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "ethereal-season-zero",
-    "tier": 1,
-    "peak_tvl": 1318800362,
-    "peak_date": "2025-08-08T00:00:00.000Z",
-    "tvl_30d_ago": 3436402,
-    "tvl_90d_ago": 5094060,
-    "tvl_current": 2821324,
-    "tier0_reason": "catastrophic_collapse_from_peak",
-    "tvl_180d_ago": 68099969,
-    "change_30d_pct": -17.898895414448017,
-    "change_90d_pct": -44.61541481647252,
-    "governance_raw": {
-      "evidence": "TVL dropped 99.79% from peak 289 days ago with no recent activity or team communications, indicating the protocol is effectively dead.",
-      "confidence": 0.95,
-      "lifecycle_status": "dead"
-    },
-    "days_since_peak": 289,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 99.7860689091925,
-    "governance_evidence": "TVL dropped 99.79% from peak 289 days ago with no recent activity or team communications, indicating the protocol is effectively dead.",
-    "governance_confidence": 0.95,
-    "governance_text_chars": 1189,
-    "governance_classification": "dead",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:11.901Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-2d9c",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 1,
     "total_addresses": 1,
@@ -44,14 +18,14 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 4,
+    "direct_audits": 4,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2628769.21057,
-    "tvl_usd": 2820387.978379198,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 2820387.98
-    },
-    "asd_usd": 2820387.978379198,
+    "dl_tvl_usd": 2444815.23214,
+    "tvl_usd": 2444815.23214,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://www.ethereal.trade/",
     "chains": [
       "ethereum"
@@ -65,6 +39,15 @@
       "aging": 0,
       "stale": 0,
       "unknown": 4
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
@@ -103,8 +86,8 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Ethereal Season Zero",
-      "tvl_usd": 2820387.978379198,
+      "product_line": null,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "EtherealPreDepositVault",
@@ -117,7 +100,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 2820387.978379198,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -126,14 +109,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-02-13 02:49:47+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 2776,
       "audit_key": "audit-2776",
-      "report_name": "DL audit link",
+      "report_name": "drive.google.com/file/d/1HMihTcqKwt75pTAct9F0H3noqDtCJ3u3/view",
       "report_url": "https://drive.google.com/file/d/1HMihTcqKwt75pTAct9F0H3noqDtCJ3u3/view?usp=sharing",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -143,6 +130,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -154,7 +144,7 @@
     {
       "audit_id": 2777,
       "audit_key": "audit-2777",
-      "report_name": "Guardian Audits - Exchange",
+      "report_name": "drive.google.com/file/d/1HeJGheenSIK2AcA113GV-ErQNFELDAGD/view",
       "report_url": "https://drive.google.com/file/d/1HeJGheenSIK2AcA113GV-ErQNFELDAGD/view?usp=sharing",
       "auditor": "Guardian",
       "audit_type": "audit",
@@ -164,6 +154,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -175,7 +168,7 @@
     {
       "audit_id": 2778,
       "audit_key": "audit-2778",
-      "report_name": "Chain Security - Exchange",
+      "report_name": "drive.google.com/file/d/1bgSfCaiyfC438nUNB3K8UVe5Eg006yKb/view",
       "report_url": "https://drive.google.com/file/d/1bgSfCaiyfC438nUNB3K8UVe5Eg006yKb/view?usp=sharing",
       "auditor": "Guardian",
       "audit_type": "audit",
@@ -185,6 +178,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -196,7 +192,7 @@
     {
       "audit_id": 2779,
       "audit_key": "audit-2779",
-      "report_name": "Guardian Audits - Season Zero",
+      "report_name": "drive.google.com/file/d/1HMihTcqKwt75pTAct9F0H3noqDtCJ3u3/view",
       "report_url": "https://drive.google.com/file/d/1HMihTcqKwt75pTAct9F0H3noqDtCJ3u3/view",
       "auditor": "Guardian",
       "audit_type": "audit",
@@ -206,6 +202,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -224,8 +223,8 @@
       "name": "EtherealPreDepositVault",
       "role": "core_logic",
       "origin_kind": "native",
-      "tvl_usd": 2820387.978379198,
-      "risk_note": "Verified native implementation with $2,820,387.98 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
@@ -242,19 +241,19 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 2776,
-        "report_name": "DL audit link"
+        "report_name": "drive.google.com/file/d/1HMihTcqKwt75pTAct9F0H3noqDtCJ3u3/view"
       },
       {
         "audit_id": 2777,
-        "report_name": "Guardian Audits - Exchange"
+        "report_name": "drive.google.com/file/d/1HeJGheenSIK2AcA113GV-ErQNFELDAGD/view"
       },
       {
         "audit_id": 2778,
-        "report_name": "Chain Security - Exchange"
+        "report_name": "drive.google.com/file/d/1bgSfCaiyfC438nUNB3K8UVe5Eg006yKb/view"
       },
       {
         "audit_id": 2779,
-        "report_name": "Guardian Audits - Season Zero"
+        "report_name": "drive.google.com/file/d/1HMihTcqKwt75pTAct9F0H3noqDtCJ3u3/view"
       }
     ],
     "inherited_remapped_matches": []

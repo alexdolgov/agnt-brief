@@ -4,44 +4,48 @@
 
 - Project: GOLDSTATION (`goldstation`)
 - Website: [https://goldstation.io](https://goldstation.io)
-- Lifecycle: active (Tier 0, 63.1% below peak)
-- Generated: 2026-06-17T07:00:52.127Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:19.873Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: avalanche, klaytn
-- Contract surface: 5 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $1,755,730.32
+- Contract surface: 2 unique implementations (5 raw deployments)
+- DeFi Llama TVL: $1,748,120.46
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
+## ⚠️ Limited Contract Surface
+
+This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+Coverage assessment and audit matching are based on this incomplete surface.
+
 ## Project Description
 
-GOLDSTATION is a broad RWA-focused DeFi platform with swap, liquidity provision, earn, and mint-burn functionality. Gold appears to be one RWA vertical or product area rather than the entirety of the platform; specific gold-related claims should be tied to identified audited contracts or documented product materials.
-
-### Architecture
-
-The DEX likely provides liquidity for the RWA token, while the staking contract may distribute rewards from DEX fees or RWA yields. All families share the same deployer and operate on Klaytn and Avalanche.
+Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 7; live-surface contracts included: 5 (1 live, 4 unknown).
-- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 5; live-surface contracts included: 5 (0 live, 5 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
-- Detected codebases: uniswap-v3
+- Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 2 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 5
-- Unique implementations: 5
+- Unverified implementations: 2
+- Unique implementations: 2
 - Raw deployments: 5
-- Audits discovered: 3
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: 2024-12 (aging)
-- Staleness: 0 fresh, 1 aging, 1 stale, 1 unknown
+- Latest audit: 2025-03 (aging)
+- Audit staleness (calendar age): 0 fresh, 2 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -70,16 +74,13 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (5)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| UnnamedContract | unknown | klaytn | n/a | `0x347e5c...62ae88` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x4836cc...0cd95e` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x4d55b0...dc8954` | ❓ Unverified |
-| UnnamedContract | unknown | klaytn | n/a | `0x6569b1...47dc76` | ❓ Unverified |
+| UnnamedContract | unknown | klaytn | n/a | 4 deployments: klaytn `0x347e5c...62ae88`; klaytn `0x4836cc...0cd95e`; klaytn `0x4d55b0...dc8954`; klaytn `0x6569b1...47dc76` | ❓ Unverified |
 | UnnamedContract | unknown | avalanche | n/a | `0x1b27d7...64281d` | ❓ Unverified |
 
 ## Audit Inventory
@@ -88,7 +89,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 |---|---|---|---|---|---|---|---|---|
 | [SlowMist Audit Report - GoldCollateralManager.pdf](https://github.com/CrederLabs/audit/blob/main/GoldCollateralManager/SlowMist%20Audit%20Report%20-%20GoldCollateralManager.pdf) | SlowMist | Audit | 2023-08 | stale | Direct | n/a | 0 | n/a |
 | [Certik_Audit_Report_Goldstation_V3.pdf](https://github.com/CrederLabs/audit/blob/main/GoldstationV3/Certik_Audit_Report_Goldstation_V3.pdf) | CertiK | Audit | 2024-12 | aging | Direct | n/a | 0 | n/a |
-| [Certik_Audit_Report_STAN_Token.pdf](https://github.com/CrederLabs/audit/blob/main/StanToken/Certik_Audit_Report_STAN_Token.pdf) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Certik_Audit_Report_STAN_Token.pdf](https://github.com/CrederLabs/audit/blob/main/StanToken/Certik_Audit_Report_STAN_Token.pdf) | CertiK | Audit | 2025-03 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -103,7 +104,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 5 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

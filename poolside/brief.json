@@ -1,52 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "poolside",
-  "generated_at": "2026-06-20T01:44:00.725Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "poolside",
-    "tier": 1,
-    "peak_tvl": 3368230,
-    "peak_date": "2024-03-19T00:00:00.000Z",
-    "tvl_30d_ago": 37791,
-    "tvl_90d_ago": 39295,
-    "tvl_current": 31512,
-    "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 57943,
-    "change_30d_pct": -16.615067079463365,
-    "change_90d_pct": -19.80659116935997,
-    "governance_raw": {
-      "evidence": "TVL dropped 99% from peak over 823 days, but the protocol's homepage shows active development and marketing, indicating it is still operational but declining.",
-      "confidence": 0.8,
-      "lifecycle_status": "declining"
-    },
-    "days_since_peak": 823,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 99.06443443589066,
-    "governance_evidence": "TVL dropped 99% from peak over 823 days, but the protocol's homepage shows active development and marketing, indicating it is still operational but declining.",
-    "governance_confidence": 0.8,
-    "governance_text_chars": 1858,
-    "governance_classification": "declining",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:44.083Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d094",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 1,
-    "total_addresses": 1,
-    "unique_implementations": 1,
-    "total_deployments": 1,
-    "audited_contracts": 0,
+    "total_contracts": 2,
+    "total_addresses": 2,
+    "unique_implementations": 2,
+    "total_deployments": 2,
+    "audited_contracts": 1,
     "unaudited_contracts": 1,
-    "contracts_verified_audited": 0,
+    "contracts_verified_audited": 1,
     "contracts_verified_unaudited": 1,
     "contracts_verified_by_bytecode": 0,
     "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "coverage_pct": 50,
     "total_audits": 2,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 30606.06339,
-    "tvl_usd": 30606.06339,
+    "direct_audits": 2,
+    "inherited_audits": 0,
+    "scoreable_audits": 2,
+    "dl_tvl_usd": 28738.36982,
+    "tvl_usd": 28738.36982,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -61,36 +37,87 @@
     "staleness_breakdown": {
       "fresh": 0,
       "aging": 0,
-      "stale": 1,
-      "unknown": 1
+      "stale": 2,
+      "unknown": 0
+    },
+    "live_implementations": 2,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 1,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
-    "relationship_narrative": null,
+    "project_purpose": "Dexs. Structurally: 7 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 2 functional families. Contracts are linked by 2 cross-contract reference(s). Dominant framework: openzeppelin.",
     "product_family_count": 2,
-    "total_contracts_indexed": 104,
-    "live_contracts": 1,
-    "inactive_contracts": 103,
+    "total_contracts_indexed": 9,
+    "live_contracts": 2,
+    "inactive_contracts": 7,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 13,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 1,
+    "unique_implementations": 2,
     "has_non_token_contracts": true,
-    "is_skeletal": true
+    "is_skeletal": false
   },
   "fork_lineage": {
     "entries": [],
     "inherited_audit_count": 0
   },
   "contracts": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x75a92dfb38c3506dce3bbb5eb32a10852f9ba64a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ButtonswapFactory",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ButtonswapFactory",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x75a92dfb38c3506dce3bbb5eb32a10852f9ba64a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13692",
+        "audit-13693"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-08 05:07:01+03",
+      "deploy_coverage_basis": "code_matched"
+    },
     {
       "chain_id": 8453,
       "chain_name": "base",
@@ -124,7 +151,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-04 04:35:01+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -141,37 +172,92 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "extracted_names": [
+        "ButtonswapERC20",
+        "ButtonswapFactory",
+        "ButtonswapPair",
+        "IButtonswapCallee",
+        "IButtonswapERC20",
+        "IButtonswapERC20Errors",
+        "IButtonswapERC20Events",
+        "IButtonswapFactory",
+        "IButtonswapFactoryErrors",
+        "IButtonswapFactoryEvents",
+        "IButtonswapPair",
+        "IButtonswapPairErrors",
+        "IButtonswapPairEvents",
+        "Math",
+        "PairMath",
+        "UQ112x112"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
       "audit_id": 13693,
       "audit_key": "audit-13693",
-      "report_name": "🔎 Security Audit Completed",
+      "report_name": "spaces/1OyEScoUCIfVRkK0pfQm/uploads/RAecNiY4W8m84dbjdayw/buttonswap.pdf",
       "report_url": "https://2693699415-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F1OyEScoUCIfVRkK0pfQm%2Fuploads%2FRAecNiY4W8m84dbjdayw%2Fbuttonswap.pdf",
       "auditor": "yAudit",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "stale",
+      "date": "2023-08",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ButtonswapERC20",
+        "ButtonswapFactory",
+        "ButtonswapPair",
+        "IButtonswapCallee",
+        "IButtonswapERC20",
+        "IButtonswapERC20Errors",
+        "IButtonswapERC20Events",
+        "IButtonswapFactory",
+        "IButtonswapFactoryErrors",
+        "IButtonswapFactoryEvents",
+        "IButtonswapPair",
+        "IButtonswapPairErrors",
+        "IButtonswapPairEvents",
+        "Math",
+        "PairMath",
+        "UQ112x112"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 50,
+      "latest_audit": "2023-08"
+    },
+    {
+      "auditor": "yAudit",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 50,
+      "latest_audit": "2023-08"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 8453,
@@ -185,28 +271,21 @@
     }
   ],
   "origin_summary": {
-    "native": 1,
+    "native": 2,
     "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 5
+      "extraction_exact": 2
     },
-    "extraction_confidence_counts": {},
+    "extraction_confidence_counts": {
+      "high": 2
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 13692,
-        "report_name": "statemind_2023-08-11.pdf"
-      },
-      {
-        "audit_id": 13693,
-        "report_name": "🔎 Security Audit Completed"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

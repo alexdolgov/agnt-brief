@@ -1,69 +1,72 @@
 # Agentic Audit Brief: Latch
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 89.6% over 90 days
-
 ## Project Overview
 
 - Project: Latch (`latch`)
 - Website: [https://savings.latch.io/](https://savings.latch.io/)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-17T07:01:01.714Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:29.409Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16da
 - Chains: ethereum
 - Contract surface: 3 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $1,560,879.72
-- On-chain TVL (included contracts): $375,749.61
-- TVL by chain: Ethereum $375,749.61
+- DeFi Llama TVL: $1,552,461.96
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Latch is a yield/interoperability protocol on Ethereum where users can deposit idle tokens, select a preferred vault, and earn yield and/or points. Public descriptions position Latch as unifying yield, liquidity, and chains; the currently surfaced DepositPool contract should not be assumed to represent all protocol yield generation or total value at risk without further verification.
+Yield. Structurally: 3 project-authored contract(s) across 1 chain(s); built on openzeppelin.
 
 ### Architecture
 
-The protocol consists of a single product family with one core contract, so there are no cross-family relationships or shared infrastructure.
+The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 7; live-surface contracts included: 5 (5 live, 0 unknown).
-- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 1/1 live.
+- Indexed contracts: 5; live-surface contracts included: 5 (5 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 2; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
-- Verified + Unaudited implementations: 3
+- Coverage of deployed-live implementations: 2/2 (100.0%)
+- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 2/3
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 3
 - Raw deployments: 5
-- Audits discovered: 0
-- Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $375,749.61
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
-- Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $375,749.61 represents exposure in a protocol with declining activity.
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 2
+- ASD (verified + unaudited TVL): n/a
+- Latest audit: 2024-12 (aging)
+- Audit staleness (calendar age): 0 fresh, 2 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 2 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
+- Tier 1 coverage: 100.0% (SlowMist)
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| SlowMist | Tier 1 | 2 | 66.7% | 2024-12 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
-
-- None
-
-### ⚠️ Verified + Unaudited (3)
+### ✅ Verified + Audited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| StakingPool | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x29403b...119b95`](./contracts/ethereum-1/0x29403b1ac2b745c806e4d4988e4c1b6f4c119b95/); ethereum `0x899f88...d3245b` | ⚠️ Unaudited |
-| DepositPool | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x7cc08f...b8f90c`](./contracts/ethereum-1/0x7cc08f23a6e8222c86a62fce3d4d252dd1b8f90c/); ethereum `0xfe606e...31a023` | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | unit-32618 | [`0x774388...4562e7`](./contracts/ethereum-1/0x774388454c92fe33e781ab535a5e9d186a4562e7/) | ⚠️ Unaudited |
+| DepositPool | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x7cc08f...b8f90c`](./contracts/ethereum-1/0x7cc08f23a6e8222c86a62fce3d4d252dd1b8f90c/); ethereum `0xfe606e...31a023` | ✅ Audited |
+| StakingPool | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x29403b...119b95`](./contracts/ethereum-1/0x29403b1ac2b745c806e4d4988e4c1b6f4c119b95/); ethereum `0x899f88...d3245b` | ✅ Audited |
+
+### ⚠️ Verified + Unaudited (1)
+
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| GnosisSafe | governance | ethereum | n/a | [`0x774388...4562e7`](./contracts/ethereum-1/0x774388454c92fe33e781ab535a5e9d186a4562e7/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -87,15 +90,14 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Latch - SmartSavings - SlowMist Audit Report.pdf](https://1701983824-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FIGuGSFluXTKk154QgK0V%2Fuploads%2FlaOJpIXpYQKR4iYk70Ud%2FLatch%20-%20SmartSavings%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2024-09 | aging | Direct | contract_name | 2 | high |
+| [Latch - StakingPool - SlowMist Audit Report.pdf](https://1701983824-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FIGuGSFluXTKk154QgK0V%2Fuploads%2FIoFGYLwRiZjAvu3cazuS%2FLatch%20-%20StakingPool%20-%20SlowMist%20Audit%20Report.pdf) | SlowMist | Audit | 2024-12 | aging | Direct | contract_name | 2 | high |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| ethereum | [`0x29403b...119b95`](./contracts/ethereum-1/0x29403b1ac2b745c806e4d4988e4c1b6f4c119b95/) | StakingPool | core_logic | $375,544.42 | Verified native implementation with $375,544.42 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x7cc08f...b8f90c`](./contracts/ethereum-1/0x7cc08f23a6e8222c86a62fce3d4d252dd1b8f90c/) | DepositPool | core_logic | $205.19 | Verified native implementation with $205.19 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
@@ -112,7 +114,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
+- Extraction confidence breakdown: high=2
+- Match method counts: extraction_exact=4
 
 Fork inheritance lineage and inherited audits are included when available.

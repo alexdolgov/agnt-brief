@@ -4,44 +4,47 @@
 
 - Project: Plasma One (`plasma-one`)
 - Website: [https://www.plasma.to/one](https://www.plasma.to/one)
-- Lifecycle: active (Tier 0, 22.1% below peak)
-- Generated: 2026-06-17T07:00:35.596Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:43.195Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: plasma
 - Contract surface: 4 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $5,456,746.30
-- On-chain TVL (included contracts): $0.62
-- TVL by chain: Plasma $0.62
+- DeFi Llama TVL: $8,754,593.48
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Plasma One is a non-custodial stablecoin money app and crypto card product focused on stablecoin transfers, spending, and an Earn interface. Earn/yield functionality should be described as using or integrating third-party DeFi or vault providers unless Plasma One-operated vault contracts are verified. Do not assert Plasma One-owned bridge or vault internals without documented contract mapping.
+Crypto Card Issuer. Structurally: 3 project-authored contract(s) across 1 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The BoringVault holds user deposits and generates yield, while ATokenInstance represents tokenized positions. Multiple TetherTokenOFTExtension adapters enable cross-chain USDT transfers, and OUpgradeable contracts likely manage oracle or upgrade logic, all sharing the same deployer cluster.
+The protocol comprises 3 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 16; live-surface contracts included: 5 (3 live, 2 unknown).
-- Excluded by liveness: 0 inactive, 11 singleton, 0 uninitialized.
-- Deployment units: 0/4 live.
-- Detected codebases: aave-v2
-- Dependencies extracted: 5; unverified dependencies: 0.
+- Indexed contracts: 5; live-surface contracts included: 5 (3 live, 2 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 2 of 4 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/2
 - Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
 - Unverified implementations: 2
 - Unique implementations: 4
 - Raw deployments: 5
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $0.62
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -93,7 +96,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| plasma | [`0x1cf1c7...c53d77`](./contracts/plasma-9745/0x1cf1c71440ebd9cc998ce0b1b25ccef275c53d77/) | BoringVault | core_logic | $0.62 | Verified native implementation with $0.62 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| plasma | [`0x1cf1c7...c53d77`](./contracts/plasma-9745/0x1cf1c71440ebd9cc998ce0b1b25ccef275c53d77/) | BoringVault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 

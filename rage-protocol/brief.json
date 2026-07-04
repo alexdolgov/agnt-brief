@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "rage-protocol",
-  "generated_at": "2026-06-21T10:21:32.909Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "rage-protocol",
-    "tier": 0,
-    "peak_tvl": 325744,
-    "peak_date": "2026-04-24T00:00:00.000Z",
-    "tvl_30d_ago": 238234,
-    "tvl_90d_ago": 241016,
-    "tvl_current": 243558,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": null,
-    "change_30d_pct": 2.2347775716312532,
-    "change_90d_pct": 1.0547017625385866,
-    "days_since_peak": 58,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 25.230242153347415
-  },
+  "generated_at": "2026-07-04T14:53:44.523Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-0679",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 23,
     "total_addresses": 31,
@@ -34,9 +18,11 @@
     "contracts_unverified": 1,
     "coverage_pct": 27.3,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 232882.07739,
-    "tvl_usd": 232882.07739,
+    "dl_tvl_usd": 232093.80753,
+    "tvl_usd": 232093.80753,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,25 +39,32 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 22,
+    "live_verified_implementations": 22,
+    "live_audited_implementations": 6,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 6
     }
   },
   "topography": {
-    "project_purpose": "RAGE Protocol is an onchain capital allocator that enables users to deposit assets into managed vaults and indices. It automates yield strategies and portfolio rebalancing across multiple tokens.",
-    "relationship_narrative": "All contracts share a common deployer cluster, indicating a unified protocol. The WeightedIndex contracts use a shared implementation behind proxies, while RageBuyingProtocol likely supports the Rage vault's asset acquisition logic.",
-    "product_family_count": 1,
+    "project_purpose": "Onchain Capital Allocator. Structurally: 22 project-authored contract(s) across 1 chain(s); 1 ERC721 NFT; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 5 functional families. Its contracts share 1 common project-authored base contract(s) (owned). Dominant framework: openzeppelin.",
+    "product_family_count": 5,
     "total_contracts_indexed": 31,
-    "live_contracts": 31,
+    "live_contracts": 29,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 1,
-    "live_deployment_units": 1,
-    "dependencies_extracted": 19,
-    "unverified_dependencies": 2,
-    "detected_codebases": [
-      "uniswap-v3"
-    ]
+    "unknown_contracts": 2,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 23,
@@ -91,9 +84,9 @@
       "deployment_unit_proxy_count": null,
       "name": "Circle",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "Circle",
-      "product_line": "RAGE Protocol",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -116,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-08 06:46:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -151,7 +148,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-15 16:42:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -163,7 +164,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "RAGE Protocol",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -186,7 +187,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-01-31 18:08:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -221,7 +226,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-01-31 18:08:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -256,7 +265,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-20 18:35:57+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -268,7 +281,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "RAGE Protocol",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -293,7 +306,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-24 19:58:39+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 8453,
@@ -305,7 +322,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "RAGE Protocol",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -330,7 +347,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-24 20:56:25+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 8453,
@@ -365,7 +386,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-24 20:37:43+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -402,7 +427,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-24 20:56:09+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 8453,
@@ -448,7 +477,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-06-09 16:53:57+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -485,7 +518,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-24 20:56:17+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 8453,
@@ -522,7 +559,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-24 20:37:37+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 8453,
@@ -612,7 +653,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-06-20 04:31:37+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -647,7 +692,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-29 01:41:05+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -684,7 +733,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-24 20:37:29+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 8453,
@@ -719,7 +772,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-31 23:06:07+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -754,7 +811,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-06-09 17:11:33+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -800,7 +861,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-06-21 04:17:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -835,7 +900,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-06-09 19:05:15+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -870,7 +939,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-06-09 18:43:43+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -905,7 +978,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-06-09 18:43:49+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -940,19 +1017,23 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-06-09 18:43:53+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
       "chain_name": "base",
       "address": "0x55a81da2a319dd60fb028c53cb4419493b56f6c0",
-      "deployment_unit": "unit-42279",
-      "deployment_unit_proxy_count": 2,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "WeightedIndex",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "RAGE Protocol",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0xb11fe78c5cfe5d50f0acf075f5b93fa821b2c3fd",
@@ -962,8 +1043,8 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0x55a81da2a319dd60fb028c53cb4419493b56f6c0",
-          "deployment_unit": "unit-42279",
-          "deployment_unit_proxy_count": 2,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -973,8 +1054,8 @@
           "chain_id": 8453,
           "chain_name": "base",
           "address": "0xf760fd8feb1f5e3bf3651e2e4f227285a82470ff",
-          "deployment_unit": "unit-42279",
-          "deployment_unit_proxy_count": 2,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": false,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -986,14 +1067,18 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-09 16:48:47+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 13732,
       "audit_key": "audit-13732",
-      "report_name": "DL audit link",
+      "report_name": "audit.pdf",
       "report_url": "https://ultraroundmoney.com/rage/audit.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -1003,19 +1088,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Rage",
-        "RageBuyingProtocol",
-        "RageChaosEngine",
-        "RageOptionNft",
-        "RageOracle",
-        "RageSwapper"
-      ],
+      "extracted_names": [],
       "matched_contracts": 6,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -1029,6 +1110,16 @@
     }
   ],
   "coverage_gaps": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x5babfc2f240bc5de90eb7e19d789412db1dec402",
+      "name": "Circle",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 8453,
       "chain_name": "base",
@@ -1182,17 +1273,15 @@
   ],
   "origin_summary": {
     "native": 22,
-    "upstream": 1,
+    "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 6
+      "contract_name": 6
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

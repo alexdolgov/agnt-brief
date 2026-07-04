@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "capx-ai",
-  "generated_at": "2026-06-17T07:01:00.898Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "capx-ai",
-    "tier": 0,
-    "peak_tvl": 2685916,
-    "peak_date": "2026-02-04T00:00:00.000Z",
-    "tvl_30d_ago": 2152052,
-    "tvl_90d_ago": 2388632,
-    "tvl_current": 2212841,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 1821417,
-    "change_30d_pct": 2.824699403174273,
-    "change_90d_pct": -7.359484424557655,
-    "days_since_peak": 130,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 17.613171819222938
-  },
+  "generated_at": "2026-07-04T14:53:10.070Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-1bf2",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 2,
     "total_addresses": 2,
@@ -34,14 +18,14 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 4,
+    "direct_audits": 4,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 2216946.72861,
-    "tvl_usd": 1946022.9861277482,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "bsc": 1946022.99
-    },
-    "asd_usd": 1946022.9861277482,
+    "dl_tvl_usd": 2215353.8282,
+    "tvl_usd": 2215353.8282,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://capx.ai",
     "chains": [
       "bsc"
@@ -55,25 +39,32 @@
       "aging": 1,
       "stale": 2,
       "unknown": 0
+    },
+    "live_implementations": 2,
+    "live_verified_implementations": 2,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Capx AI is an Ethereum Layer 2 / Capx Chain ecosystem for building, tokenizing, owning, and trading AI apps. The listed BSC FactoryBurnMintERC20 contract should be treated as an associated factory/registry contract rather than the complete protocol surface or the TVL-bearing Capx Chain trading infrastructure.",
-    "relationship_narrative": "The single product family contains the core factory contract, which serves as the registry and deployer for all AI agent tokens; no additional infrastructure contracts are present.",
-    "product_family_count": 1,
+    "project_purpose": "AI Agents. Structurally: 2 project-authored contract(s) across 1 chain(s); 1 ERC20 token; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.",
+    "product_family_count": 2,
     "total_contracts_indexed": 2,
-    "live_contracts": 1,
+    "live_contracts": 2,
     "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 1,
+    "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v3"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
     "unique_implementations": 2,
@@ -88,41 +79,6 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x39aae24d8c04e6aa9405fa7583a9e7bacb390ab7",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "PancakeV3Pool",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "pancakeswap",
-      "product_line": null,
-      "tvl_usd": 1946022.9861277482,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "PancakeV3Pool",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x39aae24d8c04e6aa9405fa7583a9e7bacb390ab7",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1946022.9861277482,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
       "address": "0x71fb1795b084ff2b65eabf51cad22bbefd42ed5f",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -130,7 +86,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Capx AI",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -153,14 +109,57 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-05 00:01:35+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x39aae24d8c04e6aa9405fa7583a9e7bacb390ab7",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PancakeV3Pool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PancakeV3Pool",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x39aae24d8c04e6aa9405fa7583a9e7bacb390ab7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-05 08:46:30+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 2880,
       "audit_key": "audit-2880",
-      "report_name": "DL audit link",
+      "report_name": "openzeppelin-audit-report.pdf",
       "report_url": "https://www.capx.ai/openzeppelin-audit-report.pdf",
       "auditor": "OpenZeppelin",
       "audit_type": "audit",
@@ -170,6 +169,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -186,11 +188,14 @@
       "auditor": "Dedaub",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2024",
+      "date": "2024-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -207,11 +212,14 @@
       "auditor": "Dedaub",
       "audit_type": "audit",
       "freshness": "stale",
-      "date": "2024",
+      "date": "2024-01",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -233,6 +241,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -253,11 +264,21 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x39aae24d8c04e6aa9405fa7583a9e7bacb390ab7",
+      "name": "PancakeV3Pool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 1,
-    "upstream": 1,
+    "native": 2,
+    "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },
@@ -269,7 +290,7 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 2880,
-        "report_name": "DL audit link"
+        "report_name": "openzeppelin-audit-report.pdf"
       },
       {
         "audit_id": 14480,

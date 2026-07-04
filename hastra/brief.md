@@ -4,45 +4,48 @@
 
 - Project: Hastra (`hastra`)
 - Website: [https://hastra.io/](https://hastra.io/)
-- Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-21T18:50:10.902Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:21.333Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: ethereum
-- Contract surface: 1 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $402,817,033.73
+- Contract surface: 3 unique implementations (5 raw deployments)
+- DeFi Llama TVL: $407,592,146.84
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 18; live-surface contracts included: 2 (2 live, 0 unknown).
-- Excluded by liveness: 0 inactive, 16 singleton, 0 uninitialized.
-- Deployment units: 0/8 live.
+- Indexed contracts: 18; live-surface contracts included: 5 (5 live, 0 unknown).
+- Excluded by liveness: 13 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Coverage of deployed-live implementations: 0/3 (0.0%)
+- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/3
+- Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 2
-- Audits discovered: 1
+- Unique implementations: 3
+- Raw deployments: 5
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-11 (fresh)
-- Staleness: 1 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 1 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -55,11 +58,13 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 - None
 
-### ⚠️ Verified + Unaudited (1)
+### ⚠️ Verified + Unaudited (3)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| HastraAutoNavEngine | unknown | ethereum | n/a | 2 deployments: ethereum [`0x3c331b...69f443`](./contracts/ethereum-1/0x3c331b892f193fcdbb9f9c2f227fe56c6169f443/); ethereum `0xd52452...29bc75` | ⚠️ Unaudited |
+| HastraAutoNavEngine | unknown | ethereum | n/a | 3 deployments: ethereum [`0x3c331b...69f443`](./contracts/ethereum-1/0x3c331b892f193fcdbb9f9c2f227fe56c6169f443/); ethereum `0x748d07...b14da3`; ethereum `0xd52452...29bc75` | ⚠️ Unaudited |
+| HastraNavEngine | unknown | ethereum | n/a | [`0x1376de...30c3a7`](./contracts/ethereum-1/0x1376de100324d42337f1a2c08351d7242f30c3a7/) | ⚠️ Unaudited |
+| HastraSMBNavEngine | unknown | ethereum | n/a | [`0x9fd0b0...db019e`](./contracts/ethereum-1/0x9fd0b0ef9fb4591a7c315bc19f0fb29a9edb019e/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -83,7 +88,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://hastra.io/Hastra_vault-mint_&_vault-stake_Solana_Programs_Summary_Audit_Report.pdf) | unknown | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
+| [Hastra_vault-mint_&_vault-stake_Solana_Programs_Summary_Audit_Report.pdf](https://hastra.io/Hastra_vault-mint_&_vault-stake_Solana_Programs_Summary_Audit_Report.pdf) | unknown | Audit | 2025-11 | fresh | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -92,12 +97,14 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | ethereum | [`0x3c331b...69f443`](./contracts/ethereum-1/0x3c331b892f193fcdbb9f9c2f227fe56c6169f443/) | HastraAutoNavEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x1376de...30c3a7`](./contracts/ethereum-1/0x1376de100324d42337f1a2c08351d7242f30c3a7/) | HastraNavEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x9fd0b0...db019e`](./contracts/ethereum-1/0x9fd0b0ef9fb4591a7c315bc19f0fb29a9edb019e/) | HastraSMBNavEngine | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 1 |
+| native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |
@@ -113,6 +120,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [13220] DL audit link
+- [13220] Hastra_vault-mint_&_vault-stake_Solana_Programs_Summary_Audit_Report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

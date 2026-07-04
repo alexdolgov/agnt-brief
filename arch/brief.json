@@ -1,58 +1,60 @@
 {
   "schema_version": "2.0",
   "project_key": "arch",
-  "generated_at": "2026-06-21T12:39:13.907Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
+  "generated_at": "2026-07-04T14:53:04.118Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-f2f0",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
     "slug": "arch",
     "tier": 1,
     "peak_tvl": 5000001,
     "peak_date": "2024-12-07T00:00:00.000Z",
-    "tvl_30d_ago": 709200,
-    "tvl_90d_ago": 2113599,
-    "tvl_current": 377295,
-    "tier0_reason": "hard_90d_decline",
-    "tvl_180d_ago": 2950705,
-    "change_30d_pct": -46.79991539763113,
-    "change_90d_pct": -82.1491683143302,
+    "tvl_30d_ago": 661924,
+    "tvl_90d_ago": 1931576,
+    "tvl_current": 215764,
+    "tier0_reason": "severe_long_term_collapse_from_peak",
+    "tvl_180d_ago": 2995401,
+    "change_30d_pct": -67.4035085598951,
+    "change_90d_pct": -88.82963963105774,
     "governance_raw": {
-      "evidence": "TVL dropped 92% from peak, but the homepage shows active marketing, new user signups, and positive reviews, indicating the protocol is still operational and not shutting down.",
+      "evidence": "TVL dropped 95.7% from peak and 88.8% in 90 days, but the homepage shows active marketing, new user onboarding, and positive reviews, indicating ongoing operations.",
       "confidence": 0.7,
       "lifecycle_status": "declining"
     },
-    "days_since_peak": 561,
+    "days_since_peak": 571,
     "detection_method": "tvl_trajectory+governance_signal",
     "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 92.4541015091797,
-    "governance_evidence": "TVL dropped 92% from peak, but the homepage shows active marketing, new user signups, and positive reviews, indicating the protocol is still operational and not shutting down.",
+    "drop_from_peak_pct": 95.68472086305583,
+    "governance_evidence": "TVL dropped 95.7% from peak and 88.8% in 90 days, but the homepage shows active marketing, new user onboarding, and positive reviews, indicating ongoing operations.",
     "governance_confidence": 0.7,
     "governance_text_chars": 5000,
     "governance_classification": "declining",
     "governance_fallback_reason": null
   },
   "summary": {
-    "total_contracts": 7,
-    "total_addresses": 23,
-    "unique_implementations": 7,
-    "total_deployments": 23,
+    "total_contracts": 10,
+    "total_addresses": 29,
+    "unique_implementations": 10,
+    "total_deployments": 29,
     "audited_contracts": 1,
     "unaudited_contracts": 6,
     "contracts_verified_audited": 1,
     "contracts_verified_unaudited": 6,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 14.3,
+    "contracts_unverified": 3,
+    "coverage_pct": 20,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 479445.55585999996,
-    "tvl_usd": 213362.49963251367,
+    "dl_tvl_usd": 214722.05615,
+    "tvl_usd": 153736.70548214452,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 11444.9,
-      "polygon": 201917.6
+      "ethereum": 11063.32,
+      "polygon": 142673.39
     },
-    "asd_usd": 213362.49963251367,
+    "asd_usd": 153736.70548214452,
     "website_url": "https://www.arch.finance",
     "chains": [
       "ethereum",
@@ -67,29 +69,35 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 7,
+    "live_verified_implementations": 5,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 2,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 1
     }
   },
   "topography": {
-    "project_purpose": "Arch is a DeFi protocol that creates and manages tokenized index products (Chambers and SetTokens) across Ethereum and Polygon. It enables users to gain diversified exposure to curated baskets of assets through structured vaults, with liquidity provided via Uniswap pools.",
-    "relationship_narrative": "The Arch family's Chamber contracts are the core vaults that issue and manage the index tokens (SetTokens, FxERC20s, UChildERC20s) found in the Ethereum and Polygon Network families. These tokens are then paired with liquidity pools (Uniswap V2/V3) on their respective chains to enable trading, with the Polygon Network utilizing proxy-based tokens (UChildERC20Proxy) for cross-chain compatibility.",
-    "product_family_count": 3,
-    "total_contracts_indexed": 26,
-    "live_contracts": 13,
-    "inactive_contracts": 3,
+    "project_purpose": "Indexes. Structurally: 6 project-authored contract(s) across 2 chain(s); 3 ERC20 tokens; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.",
+    "product_family_count": 2,
+    "total_contracts_indexed": 29,
+    "live_contracts": 26,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 10,
-    "deployment_units": 2,
-    "live_deployment_units": 2,
-    "dependencies_extracted": 7,
+    "unknown_contracts": 3,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v2",
-      "uniswap-v3"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 7,
+    "unique_implementations": 10,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -108,8 +116,8 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Polygon Network",
-      "tvl_usd": 171166.99658826095,
+      "product_line": null,
+      "tvl_usd": 126370.79051559164,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "FxERC20",
@@ -122,7 +130,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 171166.99658826095,
+          "tvl_usd": 126370.79051559164,
           "is_audited": false
         },
         {
@@ -142,42 +150,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0x9a41e03fef7f16f552c6fba37ffa7590fb1ec0c4",
-      "deployment_unit": "unit-42598",
-      "deployment_unit_proxy_count": 1,
-      "name": "UChildERC20",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Polygon Network",
-      "tvl_usd": 23548.242794495207,
-      "is_proxy": true,
-      "impl_address": "0x8bebd98fa8110a9d159610db816c22e79bcbe90c",
-      "impl_name": "UChildERC20",
-      "deployments": [
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x9a41e03fef7f16f552c6fba37ffa7590fb1ec0c4",
-          "deployment_unit": "unit-42598",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 23548.242794495207,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -189,8 +166,8 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Ethereum Network",
-      "tvl_usd": 11441.6162797418,
+      "product_line": null,
+      "tvl_usd": 11060.294679343904,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "SetToken",
@@ -214,7 +191,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 11441.6162797418,
+          "tvl_usd": 11060.294679343904,
           "is_audited": false
         },
         {
@@ -234,33 +211,37 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-09-23 20:35:21+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0xbcd2c5c78000504efbc1ce6489dfcac71835406a",
-      "deployment_unit": "unit-42599",
-      "deployment_unit_proxy_count": 1,
+      "address": "0x9a41e03fef7f16f552c6fba37ffa7590fb1ec0c4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "UChildERC20",
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Polygon Network",
-      "tvl_usd": 7006.287288857505,
+      "product_line": null,
+      "tvl_usd": 9491.52841580807,
       "is_proxy": true,
-      "impl_address": "0xedb294871df5e2da531e5bad1c1e93282c11908c",
+      "impl_address": "0x8bebd98fa8110a9d159610db816c22e79bcbe90c",
       "impl_name": "UChildERC20",
       "deployments": [
         {
           "chain_id": 137,
           "chain_name": "polygon",
-          "address": "0xbcd2c5c78000504efbc1ce6489dfcac71835406a",
-          "deployment_unit": "unit-42599",
-          "deployment_unit_proxy_count": 1,
+          "address": "0x9a41e03fef7f16f552c6fba37ffa7590fb1ec0c4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 7006.287288857505,
+          "tvl_usd": 9491.52841580807,
           "is_audited": false
         }
       ],
@@ -269,7 +250,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-05-31 15:45:22+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xbcd2c5c78000504efbc1ce6489dfcac71835406a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UChildERC20",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": 6624.965688459608,
+      "is_proxy": true,
+      "impl_address": "0xedb294871df5e2da531e5bad1c1e93282c11908c",
+      "impl_name": "UChildERC20",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xbcd2c5c78000504efbc1ce6489dfcac71835406a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": 6624.965688459608,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-24 00:43:58+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -281,8 +305,8 @@
       "role": "core_logic",
       "origin_kind": "upstream",
       "origin_provider": "Uniswap",
-      "product_line": "Ethereum Network",
-      "tvl_usd": 199.3566811581726,
+      "product_line": null,
+      "tvl_usd": 189.12618294127984,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "UniswapV3Pool",
@@ -306,7 +330,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 4.8654339376989017e-14,
+          "tvl_usd": 4.483550676589476e-14,
           "is_audited": false
         },
         {
@@ -317,7 +341,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 3.285265851103495,
+          "tvl_usd": 3.024350485507354,
           "is_audited": false
         },
         {
@@ -328,7 +352,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 5.151867790391681e-14,
+          "tvl_usd": 4.7427071534887254e-14,
           "is_audited": false
         },
         {
@@ -339,7 +363,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 1.2491981290002506e-12,
+          "tvl_usd": 1.1500448679907675e-12,
           "is_audited": false
         },
         {
@@ -350,7 +374,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 9.053548884742969e-13,
+          "tvl_usd": 8.347064851690532e-13,
           "is_audited": false
         },
         {
@@ -372,7 +396,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 195.04669830706683,
+          "tvl_usd": 185.0771154557704,
           "is_audited": false
         }
       ],
@@ -381,7 +405,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2023-04-28 01:13:50+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -393,7 +421,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Ethereum Network",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -419,7 +447,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -430,7 +458,29 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x89c53b02558e4d1c24b9bf3bed1279871187ef0b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x8f0d5660929ca6ac394c5c41f59497629b1dbc23",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -441,7 +491,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -452,7 +502,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -463,7 +513,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xe15a66b7b8e385caa6f69fd0d55984b96d7263cf",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -474,7 +535,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -484,7 +545,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-01 03:42:49+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 137,
@@ -496,7 +561,7 @@
       "role": "unknown",
       "origin_kind": "upstream",
       "origin_provider": "Uniswap",
-      "product_line": "Polygon Network",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -519,14 +584,135 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2021-11-25 22:03:50+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x0d20e86abab680c038ac8bbdc1446585e67f8951",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x0d20e86abab680c038ac8bbdc1446585e67f8951",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x4e39ceae6e771605ddd7d1121f3320f7a2319318",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x4e39ceae6e771605ddd7d1121f3320f7a2319318",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xe8e8486228753e01dbc222da262aa706bd67e601",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xe8e8486228753e01dbc222da262aa706bd67e601",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 12672,
       "audit_key": "audit-12672",
-      "report_name": "DL audit link",
+      "report_name": "Chambers-audit-report.pdf",
       "report_url": "https://arch-document.s3.amazonaws.com/Chambers-audit-report.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -536,19 +722,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "ArrayUtils",
-        "Chamber",
-        "ChamberGod",
-        "IssuerWizard",
-        "RebalancerWizard",
-        "StreamingFeeWizard"
-      ],
-      "matched_contracts": 7,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": false,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -569,18 +751,8 @@
       "name": "FxERC20",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 171166.99658826095,
-      "risk_note": "Verified native implementation with $171,167.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0x9a41e03fef7f16f552c6fba37ffa7590fb1ec0c4",
-      "name": "UChildERC20",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 23548.242794495207,
-      "risk_note": "Verified native implementation with $23,548.24 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 126370.79051559164,
+      "risk_note": "Verified native implementation with $126,370.79 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -589,8 +761,18 @@
       "name": "SetToken",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 11441.6162797418,
-      "risk_note": "Verified native implementation with $11,441.62 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 11060.294679343904,
+      "risk_note": "Verified native implementation with $11,060.29 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x9a41e03fef7f16f552c6fba37ffa7590fb1ec0c4",
+      "name": "UChildERC20",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 9491.52841580807,
+      "risk_note": "Verified native implementation with $9,491.53 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 137,
@@ -599,23 +781,21 @@
       "name": "UChildERC20",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 7006.287288857505,
-      "risk_note": "Verified native implementation with $7,006.29 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 6624.965688459608,
+      "risk_note": "Verified native implementation with $6,624.97 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
     "native": 5,
     "upstream": 2,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 10
+      "contract_name": 1
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

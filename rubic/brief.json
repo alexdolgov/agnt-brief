@@ -1,52 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "rubic",
-  "generated_at": "2026-06-21T10:05:05.467Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "rubic",
-    "tier": 1,
-    "peak_tvl": 1566320,
-    "peak_date": "2022-04-12T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 0,
-    "tvl_current": 0,
-    "tier0_reason": "current_tvl_zero_after_meaningful_peak",
-    "tvl_180d_ago": 0,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "governance_raw": {
-      "evidence": "TVL dropped 100% from peak, but homepage shows active development (Private Mode beta, gasless Solana swaps) and accumulated volume, indicating ongoing operations.",
-      "confidence": 0.7,
-      "lifecycle_status": "declining"
-    },
-    "days_since_peak": 1531,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 100,
-    "governance_evidence": "TVL dropped 100% from peak, but homepage shows active development (Private Mode beta, gasless Solana swaps) and accumulated volume, indicating ongoing operations.",
-    "governance_confidence": 0.7,
-    "governance_text_chars": 368,
-    "governance_classification": "declining",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:53.775Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-0679",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 4,
+    "total_contracts": 1,
     "total_addresses": 4,
-    "unique_implementations": 4,
+    "unique_implementations": 1,
     "total_deployments": 4,
     "audited_contracts": 0,
     "unaudited_contracts": 0,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 0,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 4,
+    "contracts_unverified": 1,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 148213.05882,
-    "tvl_usd": 148213.05882,
+    "dl_tvl_usd": 127060.50896,
+    "tvl_usd": 127060.50896,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -63,12 +39,21 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 0,
+    "live_verified_implementations": 0,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Rubic is a DEX aggregator that enables users to swap tokens across multiple decentralized exchanges, finding the best rates and routing trades efficiently.",
-    "relationship_narrative": "All contracts belong to a single product family with no explicit separation of roles; they likely work together to perform aggregation logic, but no shared infrastructure or dependencies are discernible from the provided data.",
-    "product_family_count": 1,
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
+    "relationship_narrative": null,
+    "product_family_count": 0,
     "total_contracts_indexed": 4,
     "live_contracts": 0,
     "inactive_contracts": 0,
@@ -82,9 +67,9 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 4,
+    "unique_implementations": 1,
     "has_non_token_contracts": false,
-    "is_skeletal": false
+    "is_skeletal": true
   },
   "fork_lineage": {
     "entries": [],
@@ -101,11 +86,11 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Rubic",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
-      "impl_name": null,
+      "impl_name": "UnnamedContract",
       "deployments": [
         {
           "chain_id": 2222,
@@ -117,31 +102,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 2222,
-      "chain_name": "kava",
-      "address": "0x8d9ae5a2ecc16a66740a53cc9080cce29a7fd9f5",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Rubic",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 2222,
           "chain_name": "kava",
@@ -152,31 +113,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 2222,
-      "chain_name": "kava",
-      "address": "0x8e3bcc334657560253b83f08331d85267316e08a",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Rubic",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 2222,
           "chain_name": "kava",
@@ -187,31 +124,7 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 2222,
-      "chain_name": "kava",
-      "address": "0xa96cdb86332b105065ca99432916e631e469cf5d",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Rubic",
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
+        },
         {
           "chain_id": 2222,
           "chain_name": "kava",
@@ -229,14 +142,18 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 13793,
       "audit_key": "audit-13793",
-      "report_name": "DL audit link",
+      "report_name": "skynet.certik.com/projects/rubic-finance",
       "report_url": "https://skynet.certik.com/projects/rubic-finance",
       "auditor": "CertiK",
       "audit_type": "audit",
@@ -246,6 +163,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -261,7 +181,7 @@
     "native": 0,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 4
+    "needs_review": 1
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -271,7 +191,7 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 13793,
-        "report_name": "DL audit link"
+        "report_name": "skynet.certik.com/projects/rubic-finance"
       }
     ],
     "inherited_remapped_matches": []

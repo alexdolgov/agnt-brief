@@ -1,19 +1,17 @@
 # Agentic Audit Brief: Giveth
 
-⚠️ Lifecycle status: UNKNOWN - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Giveth (`giveth`)
 - Website: [https://giveth.io](https://giveth.io)
-- Lifecycle: unknown (Tier 0, TVL trajectory)
-- Generated: 2026-06-21T09:05:23.805Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:19.290Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-2d9c
 - Chains: ethereum, gnosis
 - Contract surface: 3 unique implementations (5 raw deployments)
-- DeFi Llama TVL: $115,799.29
-- On-chain TVL (included contracts): $452,564.17
-- TVL by chain: Gnosis $452,564.17
+- DeFi Llama TVL: $117,788.10
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
@@ -26,27 +24,29 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 ## Contract Surface Quality
 
-- Indexed contracts: 9; live-surface contracts included: 5 (5 live, 0 unknown).
-- Excluded by liveness: 4 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 1/2 live.
-- Detected codebases: balancer-v2, uniswap-v2, uniswap-v3
-- Unverified dependencies: 1/1.
+- Indexed contracts: 5; live-surface contracts included: 5 (5 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
+- Coverage of deployed-live implementations: 0/2 (0.0%)
+- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/3
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 3
 - Raw deployments: 5
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $452,564.17
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2022-05 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of $452,564.17 represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -62,8 +62,8 @@ Contract surface contains 3 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| PermittableToken | token | gnosis | unit-42055 | [`0x4f4f9b...d59e75`](./contracts/gnosis-100/0x4f4f9b8d5b4d0dc10506e5551b0513b61fd59e75/) | ⚠️ Unaudited |
 | GIV | unknown | ethereum | n/a | [`0x900db9...230da0`](./contracts/ethereum-1/0x900db999074d9277c5da2a43f252d74366230da0/) | ⚠️ Unaudited |
+| PermittableToken | token | gnosis | n/a | [`0x4f4f9b...d59e75`](./contracts/gnosis-100/0x4f4f9b8d5b4d0dc10506e5551b0513b61fd59e75/) | ⚠️ Unaudited |
 | UniswapV2Pair | unknown | gnosis | n/a | 3 deployments: ethereum `0xbeba16...461eeb`; gnosis [`0x08ea9f...2ae10e`](./contracts/gnosis-100/0x08ea9f608656a4a775ef73f5b187a2f1ae2ae10e/); gnosis `0xb7189a...d5fa57` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -88,22 +88,25 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Giveth GIVeconomy Contracts Code Review.pdf](https://github.com/lastperson/code-reviews/blob/main/Giveth%20GIVeconomy%20Contracts%20Code%20Review.pdf) | unknown | Audit | 2022-05 | stale | Direct | contract_name | 0 | n/a |
+| [Giveth GIVeconomy Contracts Code Review.pdf](https://github.com/lastperson/code-reviews/blob/main/Giveth%20GIVeconomy%20Contracts%20Code%20Review.pdf) | unknown | Audit | 2022-05 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0x900db9...230da0`](./contracts/ethereum-1/0x900db999074d9277c5da2a43f252d74366230da0/) | GIV | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| gnosis | [`0x4f4f9b...d59e75`](./contracts/gnosis-100/0x4f4f9b8d5b4d0dc10506e5551b0513b61fd59e75/) | PermittableToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 2 |
 | upstream | 1 |
 | standard_library | 0 |
-| needs_review | 2 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 
@@ -112,7 +115,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
-- Match method counts: extraction_exact=1
+- Match method counts: n/a
 
 Zero-match audit list:
 

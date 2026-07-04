@@ -6,44 +6,47 @@
 
 - Project: Aspida (`aspida`)
 - Lifecycle: dead (Tier 0, 100% below peak)
-- Generated: 2026-06-19T18:58:05.015Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Generated: 2026-07-04T14:53:04.171Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-bd47
 - Chains: ethereum
-- Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $1,900.55
+- Contract surface: 3 unique implementations (3 raw deployments)
+- DeFi Llama TVL: $1,823.75
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 3; live-surface contracts included: 2 (2 live, 0 unknown).
-- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 2/2 live.
+- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 2/2 (100.0%)
-- Verified + Unaudited implementations: 0
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 2/3
+- Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 2
-- Audits discovered: 1
+- Unique implementations: 3
+- Raw deployments: 3
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-01 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 2 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
@@ -51,7 +54,7 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| yAudit | Tier 2 | 2 | 100.0% | 2024-01 |
+| yAudit | Tier 2 | 2 | 66.7% | 2024-01 |
 
 ## Contract Surface
 
@@ -59,12 +62,14 @@ Contract surface contains 2 implementation(s). Insufficient contract coverage fo
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| aETH | unknown | ethereum | unit-39844 | [`0xfc8775...8c5b39`](./contracts/ethereum-1/0xfc87753df5ef5c368b5fba8d4c5043b77e8c5b39/) | ✅ Audited |
-| saETH | unknown | ethereum | unit-39843 | [`0xf16178...5c9e89`](./contracts/ethereum-1/0xf1617882a71467534d14eee865922de1395c9e89/) | ✅ Audited |
+| aETH | unknown | ethereum | n/a | [`0xfc8775...8c5b39`](./contracts/ethereum-1/0xfc87753df5ef5c368b5fba8d4c5043b77e8c5b39/) | ✅ Audited |
+| saETH | unknown | ethereum | n/a | [`0xf16178...5c9e89`](./contracts/ethereum-1/0xf1617882a71467534d14eee865922de1395c9e89/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (0)
+### ⚠️ Verified + Unaudited (1)
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| ProxyAdminPro | unknown | ethereum | n/a | [`0xff39f7...2c87a6`](./contracts/ethereum-1/0xff39f76ebde476343a60fb19501d8fef982c87a6/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -88,21 +93,23 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Aspida Network Contracts Security Audit Report.pdf](https://github.com/aspidanet/documents/blob/main/audits/Aspida%20Network%20Contracts%20Security%20Audit%20Report.pdf) | yAudit | Audit | 2024-01 | stale | Direct | contract_name | 2 | high |
+| [Aspida Network Contracts Security Audit Report.pdf](https://github.com/aspidanet/documents/blob/main/audits/Aspida%20Network%20Contracts%20Security%20Audit%20Report.pdf) | yAudit | Audit | 2024-01 | stale | Direct | contract_name | 2 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| ethereum | [`0xff39f7...2c87a6`](./contracts/ethereum-1/0xff39f76ebde476343a60fb19501d8fef982c87a6/) | ProxyAdminPro | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 1 |
 | upstream | 0 |
-| standard_library | 0 |
+| standard_library | 2 |
 | needs_review | 0 |
 
 ## Scope Matching Notes
@@ -111,7 +118,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=2
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=2
 
 Fork inheritance lineage and inherited audits are included when available.

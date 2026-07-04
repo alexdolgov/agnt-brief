@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "punks-terminal",
-  "generated_at": "2026-06-17T18:48:14.606Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-17-2a130c-1121",
-  "lifecycle_status": "unknown",
-  "lifecycle_signal": {
-    "slug": "punks-terminal",
-    "tier": 0,
-    "peak_tvl": 2037192,
-    "peak_date": "2026-05-15T00:00:00.000Z",
-    "tvl_30d_ago": 1610131,
-    "tvl_90d_ago": null,
-    "tvl_current": 1008057,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": null,
-    "change_30d_pct": -37.392858096639344,
-    "change_90d_pct": null,
-    "days_since_peak": 33,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 50.51732973622516
-  },
+  "generated_at": "2026-07-04T14:53:44.281Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-0679",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 6,
     "total_addresses": 13,
@@ -34,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 985465.11322,
-    "tvl_usd": 985465.11322,
+    "dl_tvl_usd": 1331494.45254,
+    "tvl_usd": 1331494.45254,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,21 +39,30 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 6,
+    "live_verified_implementations": 6,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Punks Terminal is a CryptoPunks-focused Stash trading terminal on Ethereum. Its StashFactory deploys user-managed Stash contracts that support ETH/WETH liquidity, order placement, trading, and withdrawals for CryptoPunks-related activity.",
-    "relationship_narrative": "The project consists of a single product family with one registry contract, so there are no cross-family relationships or shared infrastructure.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 13,
-    "live_contracts": 4,
-    "inactive_contracts": 0,
+    "project_purpose": "NFT Marketplace. Structurally: 10 project-authored contract(s) across 1 chain(s); 4 ERC721 NFTs; built on solady.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Contracts are linked by 8 cross-contract reference(s). Dominant framework: solady.",
+    "product_family_count": 4,
+    "total_contracts_indexed": 15,
+    "live_contracts": 13,
+    "inactive_contracts": 2,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 9,
+    "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 1,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -89,8 +84,8 @@
       "deployment_unit_proxy_count": null,
       "name": "CryptoPunks721",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "cryptopunks",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -114,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-01-18 01:48:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -124,8 +123,8 @@
       "deployment_unit_proxy_count": null,
       "name": "CryptoPunksMarket",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "cryptopunks",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -149,7 +148,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2017-06-22 22:40:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -184,7 +187,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-01-18 01:48:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -296,7 +303,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-11 17:26:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -308,7 +319,7 @@
       "role": "registry",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Punks Terminal",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -331,7 +342,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-01-18 01:48:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -341,8 +356,8 @@
       "deployment_unit_proxy_count": null,
       "name": "WrappedPunk",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "cryptopunks",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -366,12 +381,36 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-09-08 18:11:25+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],
   "auditor_coverage": [],
   "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x000000000000003607fce1ac9e043a86675c5c2f",
+      "name": "CryptoPunks721",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb",
+      "name": "CryptoPunksMarket",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -401,11 +440,21 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb7f7f6c52f2e2fdb1963eab30438024864c313f6",
+      "name": "WrappedPunk",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 3,
-    "upstream": 3,
+    "native": 6,
+    "upstream": 0,
     "standard_library": 0,
     "needs_review": 0
   },

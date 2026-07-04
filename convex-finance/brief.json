@@ -1,47 +1,33 @@
 {
   "schema_version": "2.0",
   "project_key": "convex-finance",
-  "generated_at": "2026-06-21T19:31:24.134Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "convex-finance",
-    "tier": 0,
-    "peak_tvl": 21166711170,
-    "peak_date": "2022-01-05T00:00:00.000Z",
-    "tvl_30d_ago": 575929287,
-    "tvl_90d_ago": 671989464,
-    "tvl_current": 507777046,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 917835044,
-    "change_30d_pct": -11.833439024259935,
-    "change_90d_pct": -24.436754859597023,
-    "days_since_peak": 1628,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 97.60105836980625
-  },
+  "generated_at": "2026-07-04T14:53:10.492Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-f007",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 111,
-    "total_addresses": 156,
-    "unique_implementations": 111,
-    "total_deployments": 156,
-    "audited_contracts": 7,
-    "unaudited_contracts": 95,
-    "contracts_verified_audited": 7,
-    "contracts_verified_unaudited": 95,
+    "total_contracts": 122,
+    "total_addresses": 170,
+    "unique_implementations": 122,
+    "total_deployments": 170,
+    "audited_contracts": 8,
+    "unaudited_contracts": 98,
+    "contracts_verified_audited": 8,
+    "contracts_verified_unaudited": 98,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 9,
-    "coverage_pct": 6.9,
+    "contracts_unverified": 16,
+    "coverage_pct": 8.2,
     "total_audits": 7,
-    "scoreable_audits": 5,
-    "dl_tvl_usd": 657978990.92985,
-    "tvl_usd": 206610231.1156739,
+    "direct_audits": 7,
+    "inherited_audits": 0,
+    "scoreable_audits": 6,
+    "dl_tvl_usd": 569504311.63565,
+    "tvl_usd": 177851413.2439364,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "ethereum": 206610231.12
+      "ethereum": 177851413.24
     },
-    "asd_usd": 167342800.51657388,
+    "asd_usd": 144232747.38332844,
     "website_url": "https://www.convexfinance.com/",
     "chains": [
       "arbitrum",
@@ -49,8 +35,10 @@
       "fraxtal",
       "polygon"
     ],
-    "tier1_coverage_pct": 0,
-    "tier1_auditors": [],
+    "tier1_coverage_pct": 1,
+    "tier1_auditors": [
+      "ChainSecurity"
+    ],
     "latest_audit_date": "2021-04",
     "audit_freshness": "stale",
     "staleness_breakdown": {
@@ -58,31 +46,35 @@
       "aging": 0,
       "stale": 7,
       "unknown": 0
+    },
+    "live_implementations": 106,
+    "live_verified_implementations": 97,
+    "live_audited_implementations": 8,
+    "live_verified_third_party_excluded": 9,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 1,
+      "diverged": 0,
+      "match_unverified": 7
     }
   },
   "topography": {
-    "project_purpose": "Convex Finance is a yield optimization protocol that aggregates liquidity for Curve Finance pools, allowing users to earn boosted CRV rewards and CVX tokens. It simplifies staking by auto-compounding rewards and providing liquid staking derivatives like cvxCRV.",
-    "relationship_narrative": "All product families share a common booster architecture where a Booster contract manages pool registration and reward distribution, while VoterProxy contracts handle governance delegation to underlying protocols. Tokens like cvxCRV, cvxFXS, cvxPrisma, and cvxFXN are liquid staking derivatives that flow through staking and reward contracts, with supporting registries and factories enabling scalable deployment across chains.",
+    "project_purpose": "Yield. Structurally: 258 project-authored contract(s) across 4 chain(s); 2 ERC4626 vaults, 27 ERC20 tokens, 9 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 9 functional families. Its contracts share 16 common project-authored base contract(s) (poolconstant, poolerrors, stakingproxybase). Dominant framework: openzeppelin.",
     "product_family_count": 9,
-    "total_contracts_indexed": 1060,
-    "live_contracts": 155,
-    "inactive_contracts": 747,
-    "singleton_contracts": 157,
+    "total_contracts_indexed": 378,
+    "live_contracts": 154,
+    "inactive_contracts": 208,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 1,
-    "deployment_units": 64,
-    "live_deployment_units": 7,
-    "dependencies_extracted": 287,
-    "unverified_dependencies": 7,
-    "detected_codebases": [
-      "compound-v2",
-      "curve-stableswap",
-      "uniswap-v2",
-      "uniswap-v3"
-    ]
+    "unknown_contracts": 16,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 111,
+    "unique_implementations": 122,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -99,10 +91,10 @@
       "deployment_unit_proxy_count": null,
       "name": "ConvexToken",
       "role": "token",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Curve Mainnet&amp;#x20;",
-      "tvl_usd": 123122910.58019565,
+      "product_line": null,
+      "tvl_usd": 105466529.64343275,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "ConvexToken",
@@ -115,7 +107,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 123122910.58019565,
+          "tvl_usd": 105466529.64343275,
           "is_audited": false
         }
       ],
@@ -124,7 +116,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-05-17 12:08:45+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -134,10 +130,10 @@
       "deployment_unit_proxy_count": null,
       "name": "cvxCrvToken",
       "role": "token",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Curve Mainnet&amp;#x20;",
-      "tvl_usd": 36823553.991176024,
+      "product_line": null,
+      "tvl_usd": 31331091.330429923,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "cvxCrvToken",
@@ -150,7 +146,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 36823553.991176024,
+          "tvl_usd": 31331091.330429923,
           "is_audited": false
         }
       ],
@@ -159,7 +155,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-05-17 12:15:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -171,8 +171,8 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Curve Mainnet&amp;#x20;",
-      "tvl_usd": 30976584.66798955,
+      "product_line": null,
+      "tvl_usd": 26353059.6857604,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "BaseRewardPool",
@@ -185,7 +185,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 30976584.66798955,
+          "tvl_usd": 26353059.6857604,
           "is_audited": true
         }
       ],
@@ -196,7 +196,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-05-17 12:20:51+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -208,8 +212,8 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Curve Mainnet&amp;#x20;",
-      "tvl_usd": 7623164.075366185,
+      "product_line": null,
+      "tvl_usd": 6536609.880589242,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "cvxRewardPool",
@@ -222,7 +226,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 7623164.075366185,
+          "tvl_usd": 6536609.880589242,
           "is_audited": true
         }
       ],
@@ -233,7 +237,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-05-17 12:21:37+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -246,7 +254,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 2386876.4169275137,
+      "tvl_usd": 2347222.7371216454,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "PrismaToken",
@@ -259,7 +267,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 2386876.4169275137,
+          "tvl_usd": 2347222.7371216454,
           "is_audited": false
         }
       ],
@@ -268,7 +276,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-30 23:45:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -280,7 +292,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Frax FPIS (Sunsetted)",
+      "product_line": null,
       "tvl_usd": 2129509.327707633,
       "is_proxy": false,
       "impl_address": null,
@@ -303,7 +315,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-03-18 17:05:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -315,8 +331,8 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "FX Protocol",
-      "tvl_usd": 1957511.6085545523,
+      "product_line": null,
+      "tvl_usd": 2054177.2200114517,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "cvxFxnToken",
@@ -329,7 +345,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 1957511.6085545523,
+          "tvl_usd": 2054177.2200114517,
           "is_audited": false
         }
       ],
@@ -338,7 +354,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-26 08:24:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -350,8 +370,8 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Frax FXS",
-      "tvl_usd": 666381.855644271,
+      "product_line": null,
+      "tvl_usd": 727696.2941582974,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "cvxFxsToken",
@@ -364,7 +384,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 666381.855644271,
+          "tvl_usd": 727696.2941582974,
           "is_audited": true
         }
       ],
@@ -375,7 +395,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-12-22 12:09:04+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -387,7 +411,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "PRISMA",
+      "product_line": null,
       "tvl_usd": 386021.62370675156,
       "is_proxy": false,
       "impl_address": null,
@@ -410,7 +434,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-10-27 15:28:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -423,7 +451,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 244868.7706549234,
+      "tvl_usd": 247360.0890023384,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "DebtToken",
@@ -436,7 +464,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 244868.7706549234,
+          "tvl_usd": 247360.0890023384,
           "is_audited": false
         }
       ],
@@ -445,7 +473,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-30 23:34:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -458,7 +490,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 118986.53652480475,
+      "tvl_usd": 114184.16862340218,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "Stake_FXS_WETH",
@@ -471,7 +503,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 47237.7158821704,
+          "tvl_usd": 47187.56595747487,
           "is_audited": false
         },
         {
@@ -493,7 +525,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 71748.82064263434,
+          "tvl_usd": 66996.6026659273,
           "is_audited": false
         }
       ],
@@ -502,7 +534,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2020-12-16 21:16:01+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -512,10 +548,10 @@
       "deployment_unit_proxy_count": null,
       "name": "StabilityPool",
       "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "liquity",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 107279.97668148982,
+      "tvl_usd": 97180.6539943512,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "StabilityPool",
@@ -528,7 +564,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 107279.97668148982,
+          "tvl_usd": 97180.6539943512,
           "is_audited": false
         }
       ],
@@ -537,7 +573,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-30 23:39:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -550,7 +590,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 64809.368471247384,
+      "tvl_usd": 59069.26477163867,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "ReservePool",
@@ -563,7 +603,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 64809.368471247384,
+          "tvl_usd": 59069.26477163867,
           "is_audited": false
         }
       ],
@@ -572,19 +612,23 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-19 16:47:59+03",
+      "deploy_coverage_basis": null
     },
     {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xaffe966b27ba3e4ebb8a0ec124c7b7019cc762f8",
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "Booster",
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "FX Protocol",
+      "product_line": "Convex Finance",
       "tvl_usd": 1300.0001,
       "is_proxy": false,
       "impl_address": null,
@@ -610,7 +654,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 1,
@@ -621,7 +665,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 1300.0001,
-          "is_audited": true
+          "is_audited": false
+        },
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         },
         {
           "chain_id": 137,
@@ -632,7 +687,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 252,
@@ -643,7 +698,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
         },
         {
           "chain_id": 42161,
@@ -654,7 +720,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -667,7 +733,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-28 07:52:11+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -680,7 +750,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 472.2816531838453,
+      "tvl_usd": 401.2888581320075,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "RevenuePool",
@@ -693,7 +763,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 110.99472642556866,
+          "tvl_usd": 285.0820871296936,
           "is_audited": false
         },
         {
@@ -715,7 +785,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 361.28692675827665,
+          "tvl_usd": 116.20677100231384,
           "is_audited": false
         },
         {
@@ -746,7 +816,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-03-17 18:40:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -759,7 +833,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 0.034320126129390845,
+      "tvl_usd": 0.03566844367452158,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "GeneralTokenConverter",
@@ -772,7 +846,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 0.034320126129390845,
+          "tvl_usd": 0.03566844367452158,
           "is_audited": false
         }
       ],
@@ -781,18 +855,22 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-10-17 10:01:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x6ecfa38fee8a5277b91efda204c235814f0122e8",
-      "deployment_unit": "unit-43810",
-      "deployment_unit_proxy_count": 2,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "AaveFundingPool",
       "role": "core_logic",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "upstream",
+      "origin_provider": "Aave",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -803,8 +881,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x6ecfa38fee8a5277b91efda204c235814f0122e8",
-          "deployment_unit": "unit-43810",
-          "deployment_unit_proxy_count": 2,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -814,8 +892,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xab709e26fa6b0a30c119d8c55b887ded24952473",
-          "deployment_unit": "unit-43810",
-          "deployment_unit_proxy_count": 2,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -827,7 +905,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-03-17 17:48:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -862,7 +944,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-05 14:08:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -897,7 +983,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-30 23:38:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -909,7 +999,7 @@
       "role": "adapter",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Curve Mainnet&amp;#x20;",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -932,7 +1022,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-01-20 04:20:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -942,7 +1036,7 @@
       "deployment_unit_proxy_count": null,
       "name": "CommunalFarm_SaddleD4",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -967,7 +1061,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-07-07 23:27:33+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -979,7 +1077,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Curve Mainnet&amp;#x20;",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1002,7 +1100,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-05-17 13:07:17+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1040,15 +1142,21 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-12947"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-10-29 14:29:44+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 1,
@@ -1060,7 +1168,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Curve Mainnet&amp;#x20;",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1085,7 +1193,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-05-17 12:15:46+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -1120,7 +1232,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-10-17 02:57:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1155,18 +1271,22 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-10-30 05:16:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xb0903ab70a7467ee5756074b31ac88aebb8fb777",
-      "deployment_unit": "unit-43827",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "CvxCompounder",
       "role": "adapter",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -1177,8 +1297,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xb0903ab70a7467ee5756074b31ac88aebb8fb777",
-          "deployment_unit": "unit-43827",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1190,7 +1310,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-10-17 10:16:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1202,7 +1326,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Curve Mainnet&amp;#x20;",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1227,7 +1351,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-01-20 04:19:47+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -1262,7 +1390,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-01-16 06:58:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1274,7 +1406,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Frax FPIS (Sunsetted)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1297,7 +1429,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-03-18 17:06:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 252,
@@ -1307,7 +1443,7 @@
       "deployment_unit_proxy_count": null,
       "name": "cvxFXB",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1332,18 +1468,22 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-08-05 05:20:57+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x00bac667a4ccf9089ab1db978238c555c4349545",
-      "deployment_unit": "unit-43773",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "CvxFxnCompounder",
       "role": "adapter",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -1354,8 +1494,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x00bac667a4ccf9089ab1db978238c555c4349545",
-          "deployment_unit": "unit-43773",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1367,7 +1507,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-27 10:24:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1379,7 +1523,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "FX Protocol",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1402,7 +1546,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-26 08:25:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1414,7 +1562,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Frax FXS",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1437,7 +1585,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-03-08 05:26:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1449,7 +1601,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Curve Mainnet&amp;#x20;",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1472,7 +1624,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-03 18:49:34+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1484,7 +1640,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Curve Mainnet&amp;#x20;",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1507,7 +1663,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-03-04 16:01:08+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1519,7 +1679,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "PRISMA",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1542,7 +1702,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-10-27 15:29:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 252,
@@ -1552,7 +1716,7 @@
       "deployment_unit_proxy_count": null,
       "name": "cvxToken",
       "role": "token",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1575,6 +1739,17 @@
           "chain_id": 252,
           "chain_name": "fraxtal",
           "address": "0x3fc86ca96014862f9a12427e5220936c56d5dac9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 252,
+          "chain_name": "fraxtal",
+          "address": "0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -1610,7 +1785,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-03-29 09:54:45+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1656,7 +1835,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-19 17:06:11+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 252,
+      "chain_name": "fraxtal",
+      "address": "0xcf50b810e57ac33b91dcf525c6ddd9881b139332",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ExtraRewardPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Convex Finance",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ExtraRewardPool",
+      "deployments": [
+        {
+          "chain_id": 252,
+          "chain_name": "fraxtal",
+          "address": "0xcf50b810e57ac33b91dcf525c6ddd9881b139332",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-12 16:27:41+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1691,7 +1913,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-27 06:58:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1726,7 +1952,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-25 14:42:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 137,
@@ -1738,7 +1968,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Curve Arbitrum",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1783,7 +2013,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-12 16:46:25+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1795,7 +2029,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Frax FXS",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -1818,7 +2052,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-02-13 07:13:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1853,7 +2091,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-11 10:21:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1888,7 +2130,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-05-14 23:07:13+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 252,
@@ -1898,7 +2144,7 @@
       "deployment_unit_proxy_count": null,
       "name": "FpisMigrate",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1923,7 +2169,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-05-03 04:46:53+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1958,7 +2208,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2020-12-16 20:42:40+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x59cfcd384746ec3035299d90782be065e466800b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "FraxVoterProxy",
+      "role": "unknown",
+      "origin_kind": "upstream",
+      "origin_provider": "Frax",
+      "product_line": "Convex Finance",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FraxVoterProxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x59cfcd384746ec3035299d90782be065e466800b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2021-12-21 10:21:06+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -1993,7 +2286,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-26 17:15:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2005,7 +2302,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "FX Protocol",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -2028,7 +2325,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-26 08:24:59+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd11a4ee017ca0beca8fa45ff2abfe9c6267b7881",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "FxnVoterProxy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Convex Finance",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FxnVoterProxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd11a4ee017ca0beca8fa45ff2abfe9c6267b7881",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-25 15:43:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2063,7 +2403,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-17 18:09:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2098,18 +2442,22 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-31 17:00:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x07d1718ff05a8c53c8f05adaed57c0d672945f9a",
-      "deployment_unit": "unit-43775",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "FxUSDCompounder4626",
       "role": "adapter",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -2120,8 +2468,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x07d1718ff05a8c53c8f05adaed57c0d672945f9a",
-          "deployment_unit": "unit-43775",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -2133,7 +2481,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-15 04:24:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2168,7 +2520,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-19 16:42:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2178,8 +2534,8 @@
       "deployment_unit_proxy_count": null,
       "name": "Gauge Controller",
       "role": "operational_periphery",
-      "origin_kind": "upstream",
-      "origin_provider": "curve-finance",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -2203,7 +2559,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-17 16:56:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2238,19 +2598,23 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-01-01 14:38:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xa3c5a1e09150b75ff251c1a7815a07182c3de2fb",
-      "deployment_unit": "unit-43821",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "GnosisSafe",
       "role": "governance",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Curve Mainnet&amp;#x20;",
+      "origin_kind": "standard_library",
+      "origin_provider": "Gnosis Safe",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0x34cfac646f301356faa8b21e94227e3583fe3f5f",
@@ -2260,8 +2624,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xa3c5a1e09150b75ff251c1a7815a07182c3de2fb",
-          "deployment_unit": "unit-43821",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -2273,7 +2637,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2021-04-26 12:38:48+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2308,7 +2676,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-03-12 16:11:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2343,7 +2715,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 03:55:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2378,7 +2754,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-25 14:36:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2413,7 +2793,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-19 16:43:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2470,7 +2854,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-12 05:56:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2482,7 +2870,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Curve Mainnet&amp;#x20;",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -2505,7 +2893,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-05-17 13:17:26+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2562,7 +2954,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-25 07:19:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2597,7 +2993,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-27 06:58:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2632,7 +3032,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-17 16:57:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2689,7 +3093,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-31 17:01:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2779,7 +3187,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-12 05:57:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2814,7 +3226,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-03-12 16:10:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2860,7 +3276,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-07-13 15:13:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2895,7 +3315,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-30 05:23:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2941,7 +3365,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-12 05:57:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -2951,7 +3379,7 @@
       "deployment_unit_proxy_count": null,
       "name": "PrismaVault",
       "role": "core_logic",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2976,7 +3404,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-30 23:46:35+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8ad7a9e2b3cd9214f36cb871336d8ab34ddfdd5b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "PrismaVoterProxy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": "Convex Finance",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "PrismaVoterProxy",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8ad7a9e2b3cd9214f36cb871336d8ab34ddfdd5b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-10-27 15:28:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3055,7 +3526,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-07-12 18:22:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3090,7 +3565,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-03-17 17:47:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3125,7 +3604,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-31 17:02:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3160,18 +3643,22 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-12-27 08:58:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x606462126e4bd5c4d153fe09967e4c46c9c7fecf",
-      "deployment_unit": "unit-43805",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "SdPendleCompounder",
       "role": "adapter",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_kind": "native",
+      "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
@@ -3182,8 +3669,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x606462126e4bd5c4d153fe09967e4c46c9c7fecf",
-          "deployment_unit": "unit-43805",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -3195,7 +3682,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-04-08 10:40:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3252,7 +3743,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-31 17:02:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3320,7 +3815,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-12 05:58:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3377,7 +3876,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-12 05:59:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3412,7 +3915,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-03 14:55:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 252,
@@ -3422,7 +3929,7 @@
       "deployment_unit_proxy_count": null,
       "name": "StakedCvxFxs",
       "role": "token",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -3447,7 +3954,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-11 08:34:17+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3482,7 +3993,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-14 21:29:42+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3493,7 +4008,7 @@
       "name": "TimelockController",
       "role": "governance",
       "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
+      "origin_provider": "OpenZeppelin",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -3517,7 +4032,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2026-04-06 10:15:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3527,8 +4046,8 @@
       "deployment_unit_proxy_count": null,
       "name": "Token Minter",
       "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "upstream",
+      "origin_provider": "Circle CCTP",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -3552,7 +4071,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2023-09-17 16:56:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3562,9 +4085,9 @@
       "deployment_unit_proxy_count": null,
       "name": "TokenLocker",
       "role": "token",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Convex Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -3587,7 +4110,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-08-30 23:42:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3622,7 +4149,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-18 07:59:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3657,7 +4188,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-16 09:22:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3692,7 +4227,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-01-25 07:41:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3727,7 +4266,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-03-06 04:12:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3762,7 +4305,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-04-08 16:43:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3774,7 +4321,7 @@
       "role": "unknown",
       "origin_kind": "upstream",
       "origin_provider": "Uniswap",
-      "product_line": "Curve Mainnet&amp;#x20;",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -3808,7 +4355,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2021-05-17 13:29:39+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x007fd070a7e1b0fa1364044a373ac1339bad89cf",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x007fd070a7e1b0fa1364044a373ac1339bad89cf",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3843,7 +4433,50 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-17 17:55:11+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x343ad5b3db703105d95216ab13c9ec8925306550",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x343ad5b3db703105d95216ab13c9ec8925306550",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-10-27 09:20:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3878,7 +4511,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-17 18:05:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3913,7 +4550,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-17 18:00:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3948,7 +4589,50 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-17 17:53:47+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb48390877e12d401d9733a875806919c9a6cbe8b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb48390877e12d401d9733a875806919c9a6cbe8b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-05 16:29:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -3983,7 +4667,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-17 18:03:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -4018,7 +4706,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-17 17:51:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -4053,7 +4745,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-17 18:04:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -4088,7 +4784,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-17 17:56:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 252,
@@ -4100,7 +4800,7 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Convex Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -4123,7 +4823,167 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 252,
+      "chain_name": "fraxtal",
+      "address": "0x67082fe8971915a6e83f12a2b96c6c381cc5812b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 252,
+          "chain_name": "fraxtal",
+          "address": "0x67082fe8971915a6e83f12a2b96c6c381cc5812b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-26 05:41:57+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 252,
+      "chain_name": "fraxtal",
+      "address": "0xa46944d0845f786117d0e1034fc10585747c861b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 252,
+          "chain_name": "fraxtal",
+          "address": "0xa46944d0845f786117d0e1034fc10585747c861b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-12 16:27:15+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 252,
+      "chain_name": "fraxtal",
+      "address": "0xf105463f14e955de791fc0afaed2962850a7104d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 252,
+          "chain_name": "fraxtal",
+          "address": "0xf105463f14e955de791fc0afaed2962850a7104d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-04-26 16:36:13+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 252,
+      "chain_name": "fraxtal",
+      "address": "0xf403c135812408bfbe8713b5a23a04b3d48aae31",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": "Convex Finance",
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 252,
+          "chain_name": "fraxtal",
+          "address": "0xf403c135812408bfbe8713b5a23a04b3d48aae31",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-12 16:26:35+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -4158,7 +5018,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-27 03:55:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -4168,7 +5032,7 @@
       "deployment_unit_proxy_count": null,
       "name": "veFPISYieldDistributorV5",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -4193,7 +5057,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-02-15 20:35:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -4228,7 +5096,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-05-14 02:18:52+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -4263,7 +5135,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-06-22 00:01:46+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -4298,7 +5174,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-10-24 21:51:17+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -4333,14 +5213,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-17 16:57:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x0e4f31a2f48418c90f5e9fa84bf761d832c54ced",
-      "deployment_unit": "unit-43780",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "VestingManagerProxy",
       "role": "operational_periphery",
       "origin_kind": "native",
@@ -4355,8 +5239,8 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0x0e4f31a2f48418c90f5e9fa84bf761d832c54ced",
-          "deployment_unit": "unit-43780",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -4368,7 +5252,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-26 16:31:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 252,
@@ -4378,9 +5266,9 @@
       "deployment_unit_proxy_count": null,
       "name": "VoterProxy",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Convex Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -4407,7 +5295,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-02-12 16:26:13+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -4417,9 +5309,9 @@
       "deployment_unit_proxy_count": null,
       "name": "Voting Escrow",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Convex Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -4442,7 +5334,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-17 16:56:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -4452,7 +5348,7 @@
       "deployment_unit_proxy_count": null,
       "name": "Vyper_contract",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -4488,7 +5384,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-22 05:44:35+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -4505,37 +5405,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "BaseRewardPool",
-        "Booster",
-        "CrvDepositor",
-        "Cvx",
-        "DebugInterfaces",
-        "DepositToken",
-        "ExtraRewardStashV1",
-        "ExtraRewardStashV2",
-        "Interfaces",
-        "ManagedRewardPool",
-        "RewardFactory",
-        "StashFactory",
-        "TokenFactory",
-        "VirtualBalanceRewardPool",
-        "VoterProxy",
-        "cCrv",
-        "cCrvRewardPool",
-        "cvxRewardPool"
-      ],
-      "matched_contracts": 10,
+      "extracted_names": [],
+      "matched_contracts": 5,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 12946,
       "audit_key": "audit-12946",
-      "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>",
+      "report_name": "PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf",
       "report_url": "https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf",
       "auditor": "PeckShield",
       "audit_type": "audit",
@@ -4545,6 +5429,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -4556,7 +5443,7 @@
     {
       "audit_id": 12947,
       "audit_key": "audit-12947",
-      "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>",
+      "report_name": "Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf",
       "report_url": "https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf",
       "auditor": "ChainSecurity",
       "audit_type": "audit",
@@ -4566,18 +5453,42 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "ConvexSiloWrapper",
+        "ConvexSiloWrapperFactory",
+        "ConvexStakingWrapper",
+        "ConvexStakingWrapperSilo",
+        "ConvexStakingWrapperSiloFactory",
+        "CurveCryptoSwapRegistryFetcher",
+        "CurveLPTokenDetailsBaseCache",
+        "CurveNPAPTokensPriceProvider",
+        "CurvePAPTokensPriceProvider",
+        "CurvePriceProvider",
+        "CurvePriceProviderETH",
+        "CurveReentrancyCheck",
+        "ForwarderPriceProvider",
+        "IConvexSiloWrapper",
+        "ICurveHackyPool",
+        "ICurveReentrancyCheck",
+        "IWrapperDepositor",
+        "ShareCollateralTokenConvex",
+        "SiloConvex",
+        "SiloRouterV2"
+      ],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
       "audit_id": 12948,
       "audit_key": "audit-12948",
-      "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>",
+      "report_name": "convex-cvxcrv-staking-wrapper.pdf",
       "report_url": "https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf",
       "auditor": "PeckShield",
       "audit_type": "audit",
@@ -4587,20 +5498,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "CvxCrvStakingWrapper"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "medium",
-      "scope_section_found": false,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 12949,
       "audit_key": "audit-12949",
-      "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>",
+      "report_name": "PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf",
       "report_url": "https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf",
       "auditor": "PeckShield",
       "audit_type": "audit",
@@ -4610,29 +5522,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Booster",
-        "FeeRegistry",
-        "FraxVoterProxy",
-        "FxsDepositor",
-        "IVoteEscrow",
-        "MultiRewards",
-        "PoolRegistry",
-        "StakingProxyERC20",
-        "StakingProxyUniV3",
-        "cvxFxsToken"
-      ],
-      "matched_contracts": 7,
+      "extracted_names": [],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 12950,
       "audit_key": "audit-12950",
-      "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>",
+      "report_name": "PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf",
       "report_url": "https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf",
       "auditor": "PeckShield",
       "audit_type": "audit",
@@ -4642,25 +5546,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Booster",
-        "ConvexRewardPool",
-        "RewardFactory",
-        "RewardManager",
-        "TokenFactory",
-        "VoterProxy"
-      ],
-      "matched_contracts": 7,
+      "extracted_names": [],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 12951,
       "audit_key": "audit-12951",
-      "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>",
+      "report_name": "convex-sidechain-audit-nomoi.pdf",
       "report_url": "https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf",
       "auditor": "PeckShield",
       "audit_type": "audit",
@@ -4670,18 +5570,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "Booster",
-        "ConvexRewardPool",
-        "DrainerGauge",
-        "ExtraRewardPool",
-        "VoterProxy"
-      ],
-      "matched_contracts": 7,
+      "extracted_names": [],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": "low",
-      "scope_section_found": false,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -4690,14 +5587,21 @@
       "auditor": "yAudit",
       "tier": 2,
       "contracts_covered": 5,
-      "coverage_pct": 4.9,
+      "coverage_pct": 4.7,
       "latest_audit": "2021-04"
     },
     {
       "auditor": "PeckShield",
       "tier": 2,
       "contracts_covered": 4,
-      "coverage_pct": 3.9,
+      "coverage_pct": 3.8,
+      "latest_audit": "2021-04"
+    },
+    {
+      "auditor": "ChainSecurity",
+      "tier": 1,
+      "contracts_covered": 1,
+      "coverage_pct": 0.9,
       "latest_audit": "2021-04"
     }
   ],
@@ -4705,12 +5609,32 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b",
+      "name": "ConvexToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 105466529.64343275,
+      "risk_note": "Verified native implementation with $105,466,529.64 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x62b9c7356a2dc64a1969e19c23e4f579f9810aa7",
+      "name": "cvxCrvToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": 31331091.330429923,
+      "risk_note": "Verified native implementation with $31,331,091.33 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0xda47862a83dac0c112ba89c6abc2159b95afd71c",
       "name": "PrismaToken",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 2386876.4169275137,
-      "risk_note": "Verified native implementation with $2,386,876.42 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 2347222.7371216454,
+      "risk_note": "Verified native implementation with $2,347,222.74 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -4729,8 +5653,8 @@
       "name": "cvxFxnToken",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 1957511.6085545523,
-      "risk_note": "Verified native implementation with $1,957,511.61 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 2054177.2200114517,
+      "risk_note": "Verified native implementation with $2,054,177.22 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -4749,8 +5673,8 @@
       "name": "DebtToken",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 244868.7706549234,
-      "risk_note": "Verified native implementation with $244,868.77 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 247360.0890023384,
+      "risk_note": "Verified native implementation with $247,360.09 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -4759,8 +5683,18 @@
       "name": "Stake_FXS_WETH",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 118986.53652480475,
-      "risk_note": "Verified native implementation with $118,986.54 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 114184.16862340218,
+      "risk_note": "Verified native implementation with $114,184.17 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xed8b26d99834540c5013701bb3715fafd39993ba",
+      "name": "StabilityPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": 97180.6539943512,
+      "risk_note": "Verified native implementation with $97,180.65 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -4769,8 +5703,8 @@
       "name": "ReservePool",
       "role": "core_logic",
       "origin_kind": "native",
-      "tvl_usd": 64809.368471247384,
-      "risk_note": "Verified native implementation with $64,809.37 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 59069.26477163867,
+      "risk_note": "Verified native implementation with $59,069.26 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -4779,8 +5713,8 @@
       "name": "RevenuePool",
       "role": "core_logic",
       "origin_kind": "native",
-      "tvl_usd": 472.2816531838453,
-      "risk_note": "Verified native implementation with $472.28 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 401.2888581320075,
+      "risk_note": "Verified native implementation with $401.29 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -4789,8 +5723,8 @@
       "name": "GeneralTokenConverter",
       "role": "token",
       "origin_kind": "native",
-      "tvl_usd": 0.034320126129390845,
-      "risk_note": "Verified native implementation with $0.03 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
+      "tvl_usd": 0.03566844367452158,
+      "risk_note": "Verified native implementation with $0.04 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
       "chain_id": 1,
@@ -4825,6 +5759,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x0639076265e9f88542c91dcdeda65127974a5ca5",
+      "name": "CommunalFarm_SaddleD4",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x5f465e9fcffc217c5849906216581a657cd60605",
       "name": "ConvexMasterChef",
       "role": "unknown",
@@ -4835,9 +5779,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x3ba207c25a278524e1cc7faaea950753049072a4",
-      "name": "ConvexStakingWrapperAbra",
-      "role": "unknown",
+      "address": "0xb0903ab70a7467ee5756074b31ac88aebb8fb777",
+      "name": "CvxCompounder",
+      "role": "adapter",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -4858,6 +5802,26 @@
       "address": "0xfa87db3eaa93b7293021e38416650d2e666bc483",
       "name": "cvxFpisStaking",
       "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 252,
+      "chain_name": "fraxtal",
+      "address": "0x8301a2c86615edf08d8980eccca8287322423390",
+      "name": "cvxFXB",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x00bac667a4ccf9089ab1db978238c555c4349545",
+      "name": "CvxFxnCompounder",
+      "role": "adapter",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -4913,11 +5877,31 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 252,
+      "chain_name": "fraxtal",
+      "address": "0x3a562a8ceb9866bcf39bb5eda32f282d619e08e0",
+      "name": "cvxToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x2ac0a3b5cb25d6071f05e9729922261bdf8e7cb4",
       "name": "DebtReducer",
       "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 252,
+      "chain_name": "fraxtal",
+      "address": "0xcf50b810e57ac33b91dcf525c6ddd9881b139332",
+      "name": "ExtraRewardPool",
+      "role": "core_logic",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -4983,6 +5967,16 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 252,
+      "chain_name": "fraxtal",
+      "address": "0xcde8b51ce5809238c953dd4e95c689d88b602ecf",
+      "name": "FpisMigrate",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x5c28b966ab37cfb9397bbc04595f91f0fbf06d9b",
@@ -4997,6 +5991,16 @@
       "chain_name": "ethereum",
       "address": "0x56b3c8ef8a095f8637b6a84942aa898326b82b91",
       "name": "FxnDepositor",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xd11a4ee017ca0beca8fa45ff2abfe9c6267b7881",
+      "name": "FxnVoterProxy",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -5025,8 +6029,28 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x07d1718ff05a8c53c8f05adaed57c0d672945f9a",
+      "name": "FxUSDCompounder4626",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x0b9e51d9a436b6b78b5e2666f15b2d0666a7a851",
       "name": "FxUSDPriceOracle",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xe60eb8098b34ed775ac44b1dde864e098c6d7f37",
+      "name": "Gauge Controller",
       "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -5038,16 +6062,6 @@
       "address": "0x5ac1a882e6cedc58511b7e42b02bab42e2c02956",
       "name": "GaugeRewarder",
       "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa3c5a1e09150b75ff251c1a7815a07182c3de2fb",
-      "name": "GnosisSafe",
-      "role": "governance",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -5205,6 +6219,26 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0x06bdf212c290473dcacea9793890c5024c7eb02c",
+      "name": "PrismaVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8ad7a9e2b3cd9214f36cb871336d8ab34ddfdd5b",
+      "name": "PrismaVoterProxy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x05c630e9fc8a064f0e8e6fbb9e2b5d2215da5653",
       "name": "RebalancePoolGaugeClaimer",
       "role": "operational_periphery",
@@ -5238,6 +6272,16 @@
       "address": "0x680f26dbc8fa2b463607ebb49a68a69c33476665",
       "name": "SdCRVBribeBurnerV2",
       "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x606462126e4bd5c4d153fe09967e4c46c9c7fecf",
+      "name": "SdPendleCompounder",
+      "role": "adapter",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -5283,6 +6327,16 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 252,
+      "chain_name": "fraxtal",
+      "address": "0x8c279f6bfa31c47f29e5d05a68796f2a6c216892",
+      "name": "StakedCvxFxs",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xeb81b86248d3c2b618ccb071adb122109da96da2",
@@ -5295,9 +6349,9 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xc8b194925d55d5de9555ad1db74c149329f71def",
-      "name": "Token Minter",
-      "role": "operational_periphery",
+      "address": "0x3f78544364c3eccdce4d9c89a630aea26122829d",
+      "name": "TokenLocker",
+      "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -5365,6 +6419,16 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
+      "address": "0xe6d31c144ba99af564be7e81261f7bd951b802f6",
+      "name": "veFPISYieldDistributorV5",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
       "address": "0x19a0a70a68fbc604bf20a03b787df8f7ac1d50f0",
       "name": "veFXSYieldDistributor",
       "role": "operational_periphery",
@@ -5411,33 +6475,48 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xec6b8a3f3605b083f7044c0f31f2cac0caf1d469",
+      "name": "Voting Escrow",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x3669c421b77340b2979d1a00a792cc2ee0fce737",
+      "name": "Vyper_contract",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 77,
-    "upstream": 6,
-    "standard_library": 6,
-    "needs_review": 22
+    "native": 97,
+    "upstream": 7,
+    "standard_library": 2,
+    "needs_review": 16
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 241
+      "contract_name": 12,
+      "extraction_exact": 2
     },
     "extraction_confidence_counts": {
-      "high": 3,
-      "low": 1,
-      "medium": 1
+      "high": 1
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 12946,
-        "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>"
-      },
-      {
-        "audit_id": 12947,
-        "report_name": "<table data-view=\"cards\"><thead><tr><th></th><th></th><th align=\"right\"></th><th data-hidden></th><th data-hidden data-card-target data-type=\"content-ref\"></th><th data-hidden data-card-cover data-type=\"files\"></th><th data-hidden data-type=\"number\"></th></tr></thead><tbody><tr><td><strong>General Contracts Audit by MixBytes</strong></td><td></td><td align=\"right\"><em>April 2021</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf\">https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf</a></td><td><a href=\"/files/ppNpnYdQI0oM57grig0P\">/files/ppNpnYdQI0oM57grig0P</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Peckshield</strong></td><td></td><td align=\"right\"><em>Sept 2022</em></td><td>Bu nasil</td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf\">https://github.com/convex-eth/platform/blob/main/audit/PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Chainsecurity</strong></td><td></td><td align=\"right\"><em>April 2023</em></td><td>Bi de bu</td><td><a href=\"\">https://github.com/convex-eth/platform/blob/main/audit/Smart-Contract-Audit-Silo_Finance_Curve__Convex_Feature-ChainSecurity.pdf</a></td><td><a href=\"/files/7J165WeEHs3iAPwrDlCC\">/files/7J165WeEHs3iAPwrDlCC</a></td><td>null</td></tr><tr><td><strong>Convex Wrapper Audit by Nomoi</strong></td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf\">https://github.com/convex-eth/platform/blob/main/audit/convex-cvxcrv-staking-wrapper.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr><tr><td>Convex Frax audit by Peckshield </td><td></td><td align=\"right\"><em>April 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf\">https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Peckshield</td><td></td><td align=\"right\"><em>Nov 2022</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf</a></td><td><a href=\"/files/fdUa5cuHwk6JzKlG6Dwx\">/files/fdUa5cuHwk6JzKlG6Dwx</a></td><td>null</td></tr><tr><td>Convex Sidechain Audit by Nomoi</td><td></td><td align=\"right\"><em>Jan 2023</em></td><td></td><td><a href=\"https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf\">https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf</a></td><td><a href=\"/files/qi74ZorUhDKs8UmttbnR\">/files/qi74ZorUhDKs8UmttbnR</a></td><td>null</td></tr></tbody></table>"
+        "report_name": "PeckShield-Audit-Report-ConvexStakingWrapperOhmSync-v1.0.pdf"
       }
     ],
     "inherited_remapped_matches": []

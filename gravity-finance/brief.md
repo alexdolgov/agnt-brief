@@ -1,52 +1,52 @@
 # Agentic Audit Brief: Gravity Finance
 
-⚠️ Lifecycle status: DEAD - TVL dropped 1.5% over 90 days
-
 ## Project Overview
 
 - Project: Gravity Finance (`gravity-finance`)
 - Website: [https://gravityfinance.io/](https://gravityfinance.io/)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-21T07:46:39.676Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:21.021Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: polygon
-- Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $90,366.82
-- On-chain TVL (included contracts): $96,917.92
-- TVL by chain: Polygon $96,917.92
+- Contract surface: 3 unique implementations (3 raw deployments)
+- DeFi Llama TVL: $87,650.21
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 2 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Contract surface contains 2 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
+Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 4; live-surface contracts included: 2 (1 live, 1 unknown).
-- Excluded by liveness: 2 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 4; live-surface contracts included: 3 (2 live, 1 unknown).
+- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 2/2 (100.0%)
+- Coverage of deployed-live implementations: 2/2 (100.0%)
+- Deployed-live implementations: 2 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 2/2
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 2
-- Audits discovered: 2
+- Unverified implementations: 1
+- Unique implementations: 3
+- Raw deployments: 3
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-09 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 2 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 2 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -79,18 +79,20 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | polygon | n/a | `0xe03ba1...22681c` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Gravity.pdf](https://github.com/Tibereum/obelisk-audits/blob/main/Gravity.pdf) | unknown | Audit | 2021-09 | stale | Direct | n/a | 0 | n/a |
-| [Cybersecurity_Audit_CTDSEC_Gravity_v4.pdf](https://github.com/JorgeRodriguezsec/CTDsec/blob/main/Audits/Cybersecurity_Audit_CTDSEC_Gravity_v4.pdf) | unknown | Audit | 2021-07 | stale | Direct | contract_name | 2 | high |
+| [Cybersecurity_Audit_CTDSEC_Gravity_v4.pdf](https://github.com/JorgeRodriguezsec/CTDsec/blob/main/Audits/Cybersecurity_Audit_CTDSEC_Gravity_v4.pdf) | unknown | Audit | 2021-07 | stale | Direct | contract_name | 2 | n/a |
 
 ## Coverage Gaps
 
@@ -105,7 +107,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 2 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -113,8 +115,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=3
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=2
 
 Zero-match audit list:
 

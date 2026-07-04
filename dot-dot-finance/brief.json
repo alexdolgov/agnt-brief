@@ -1,47 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "dot-dot-finance",
-  "generated_at": "2026-06-19T19:29:50.648Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "dot-dot-finance",
-    "tier": 0,
-    "peak_tvl": 89289742,
-    "peak_date": "2022-05-06T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 38083,
-    "tvl_current": 0,
-    "tier0_reason": "current_tvl_zero_after_meaningful_peak",
-    "tvl_180d_ago": 34954,
-    "change_30d_pct": null,
-    "change_90d_pct": -100,
-    "days_since_peak": 1505,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 100
-  },
+  "generated_at": "2026-07-04T14:53:11.226Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d640",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 17,
-    "total_addresses": 38,
-    "unique_implementations": 17,
-    "total_deployments": 38,
+    "total_contracts": 22,
+    "total_addresses": 43,
+    "unique_implementations": 22,
+    "total_deployments": 43,
     "audited_contracts": 4,
     "unaudited_contracts": 13,
     "contracts_verified_audited": 4,
     "contracts_verified_unaudited": 13,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 5,
     "coverage_pct": 23.5,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 3085.9901499999996,
-    "tvl_usd": 4956.5370601200375,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "bsc": 4956.54
-    },
-    "asd_usd": 4956.5370601200375,
+    "dl_tvl_usd": 2698.43902,
+    "tvl_usd": 2698.43902,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": null,
     "chains": [
       "bsc"
@@ -55,28 +39,35 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 17,
+    "live_verified_implementations": 17,
+    "live_audited_implementations": 4,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 4
     }
   },
   "topography": {
-    "project_purpose": "Dot Dot Finance is a yield protocol on BSC that allows users to stake LP tokens to earn rewards. It uses token lockers and reward tokens to incentivize liquidity provision and long-term participation.",
-    "relationship_narrative": "The DddLpStaker interacts with TokenLocker to manage staked positions, while RewardsToken and ValasRewardsToken are distributed as incentives. Supporting contracts like DotDot and Vyper_contract provide additional logic and integrations.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 113,
+    "project_purpose": "Yield. Structurally: 32 project-authored contract(s) across 1 chain(s); 4 ERC20 tokens; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Contracts are linked by 37 cross-contract reference(s). Dominant framework: openzeppelin.",
+    "product_family_count": 4,
+    "total_contracts_indexed": 109,
     "live_contracts": 38,
-    "inactive_contracts": 75,
+    "inactive_contracts": 66,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 5,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 43,
-    "unverified_dependencies": 40,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 17,
+    "unique_implementations": 22,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -85,87 +76,6 @@
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x22a93f53a0a3e6847d05dd504283e8e296a49aae",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "TokenLocker",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 4904.658776710037,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "TokenLocker",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x22a93f53a0a3e6847d05dd504283e8e296a49aae",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 4904.658776710037,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x51133c54b7bb6cc89dac86b73c75b1bf98070e0d",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xcce949de564fe60e7f96c85e55177f8b9e4cf61b",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "LpTokenStaker",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 51.87828341,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "LpTokenStaker",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0xcce949de564fe60e7f96c85e55177f8b9e4cf61b",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 51.87828341,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
     {
       "chain_id": 56,
       "chain_name": "bsc",
@@ -199,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-14 05:22:56+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -234,7 +148,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-14 05:41:17+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -271,7 +189,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-14 05:24:14+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -283,7 +205,7 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Dot Dot Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -308,7 +230,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-14 05:25:29+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -320,7 +246,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Dot Dot Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -343,7 +269,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-14 05:27:50+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -380,7 +310,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-14 05:30:38+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -415,7 +349,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-12 03:22:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -450,7 +388,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-12 03:20:05+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -487,7 +429,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-14 05:37:29+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xcce949de564fe60e7f96c85e55177f8b9e4cf61b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LpTokenStaker",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LpTokenStaker",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xcce949de564fe60e7f96c85e55177f8b9e4cf61b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-03-23 20:57:08+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -522,7 +507,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-03-23 21:21:17+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -532,9 +521,9 @@
       "deployment_unit_proxy_count": null,
       "name": "PancakePair",
       "role": "unknown",
-      "origin_kind": "upstream",
-      "origin_provider": "pancakeswap",
-      "product_line": "Dot Dot Finance",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -557,7 +546,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-14 05:46:38+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -658,7 +651,256 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-01-31 14:41:14+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x22a93f53a0a3e6847d05dd504283e8e296a49aae",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TokenLocker",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TokenLocker",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x22a93f53a0a3e6847d05dd504283e8e296a49aae",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x51133c54b7bb6cc89dac86b73c75b1bf98070e0d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-14 05:39:11+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x1037f82a4e0b4038aba73137f7474e0550086925",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x1037f82a4e0b4038aba73137f7474e0550086925",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-07-31 14:16:31+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x8a2d34989838ecf4fdec82c1a6f381e5a4a7dda9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x8a2d34989838ecf4fdec82c1a6f381e5a4a7dda9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-06 15:17:36+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x98cfa2e66f366a88160f1342fde1da7db35ba049",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x98cfa2e66f366a88160f1342fde1da7db35ba049",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-07-31 17:57:19+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xca9090fa24e0adfb54d0a38d0b28ca34cfd383e7",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xca9090fa24e0adfb54d0a38d0b28ca34cfd383e7",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-11 18:01:06+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xe8552e631a3a3f4949913b3b2cea85307e475d9f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0xe8552e631a3a3f4949913b3b2cea85307e475d9f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-08-06 15:28:45+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -704,7 +946,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-11 23:24:04+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -716,7 +962,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Dot Dot Finance",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -739,7 +985,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-09 21:27:56+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -917,7 +1167,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-01-31 14:41:14+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -934,19 +1188,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "DddIncentiveDistributor",
-        "DddLpStaker",
-        "DddToken",
-        "DotDotVoting",
-        "EllipsisProxy",
-        "LpDepositor"
-      ],
+      "extracted_names": [],
       "matched_contracts": 4,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -960,26 +1210,6 @@
     }
   ],
   "coverage_gaps": [
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x22a93f53a0a3e6847d05dd504283e8e296a49aae",
-      "name": "TokenLocker",
-      "role": "token",
-      "origin_kind": "native",
-      "tvl_usd": 4904.658776710037,
-      "risk_note": "Verified native implementation with $4,904.66 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0xcce949de564fe60e7f96c85e55177f8b9e4cf61b",
-      "name": "LpTokenStaker",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 51.87828341,
-      "risk_note": "Verified native implementation with $51.88 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 56,
       "chain_name": "bsc",
@@ -1033,6 +1263,16 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
+      "address": "0xcce949de564fe60e7f96c85e55177f8b9e4cf61b",
+      "name": "LpTokenStaker",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
       "address": "0x4076cc26efee47825917d0fec3a79d0bb9a6bb5c",
       "name": "MultiFeeDistribution",
       "role": "unknown",
@@ -1043,8 +1283,28 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
+      "address": "0xc19956eca8a3333671490ef6d6d4329df049dddd",
+      "name": "PancakePair",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
       "address": "0x151f1611b2e304ded36661f65506f9d7d172beba",
       "name": "RewardsToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x22a93f53a0a3e6847d05dd504283e8e296a49aae",
+      "name": "TokenLocker",
       "role": "token",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -1082,18 +1342,16 @@
     }
   ],
   "origin_summary": {
-    "native": 16,
-    "upstream": 1,
+    "native": 17,
+    "upstream": 0,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 5
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 4
+      "contract_name": 4
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

@@ -3,14 +3,14 @@
 ## Project Overview
 
 - Project: BTCST (`btcst`)
-- Lifecycle: active (Tier 0, 93.4% below peak)
-- Generated: 2026-06-17T07:00:45.187Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:09.926Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-1bf2
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $909,720.14
-- On-chain TVL (included contracts): $263,693,624.04
-- TVL by chain: Bsc $263,693,624.04
+- DeFi Llama TVL: $824,763.92
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
@@ -19,29 +19,32 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-BTCST is the Bitcoin Standard Hashrate Token on BNB Chain/BSC, anchored at bsc:0x78650b139471520656b9e7aa7a5e9276814a38e9. It represents tokenized Bitcoin mining hashrate and is associated with staking for Bitcoin-denominated rewards. Other token contracts or balances, including 0xba2ae424d960c26247dd6c32edc70b295c744c43, should not be treated as BTCST protocol TVL or core BTCST product-line assets unless project ownership is independently verified.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 93; live-surface contracts included: 1 (1 live, 0 unknown).
-- Excluded by liveness: 57 inactive, 35 singleton, 0 uninitialized.
-- Deployment units: 1/20 live.
+- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $263,693,624.04
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -58,7 +61,7 @@ BTCST is the Bitcoin Standard Hashrate Token on BNB Chain/BSC, anchored at bsc:0
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| BEP20TokenImplementation | token | bsc | unit-19940 | [`0xba2ae4...744c43`](./contracts/bsc-56/0xba2ae424d960c26247dd6c32edc70b295c744c43/) | ⚠️ Unaudited |
+| BEP20TokenImplementation | token | bsc | n/a | [`0xba2ae4...744c43`](./contracts/bsc-56/0xba2ae424d960c26247dd6c32edc70b295c744c43/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -87,16 +90,18 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| bsc | [`0xba2ae4...744c43`](./contracts/bsc-56/0xba2ae424d960c26247dd6c32edc70b295c744c43/) | BEP20TokenImplementation | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 0 |
 
 ## Scope Matching Notes
 

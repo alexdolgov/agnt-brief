@@ -1,47 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "elyfi",
-  "generated_at": "2026-06-17T07:00:46.718Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "elyfi",
-    "tier": 0,
-    "peak_tvl": 4313851,
-    "peak_date": "2022-05-05T00:00:00.000Z",
-    "tvl_30d_ago": 39,
-    "tvl_90d_ago": 40,
-    "tvl_current": 39,
-    "tier0_reason": "current_tvl_near_zero_vs_large_peak",
-    "tvl_180d_ago": 40,
-    "change_30d_pct": 0,
-    "change_90d_pct": -2.5,
-    "days_since_peak": 1501,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 99.99909593539508
-  },
+  "generated_at": "2026-07-04T14:53:11.764Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-ae05",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 11,
-    "total_addresses": 12,
-    "unique_implementations": 11,
-    "total_deployments": 12,
+    "total_contracts": 18,
+    "total_addresses": 25,
+    "unique_implementations": 18,
+    "total_deployments": 25,
     "audited_contracts": 1,
-    "unaudited_contracts": 8,
+    "unaudited_contracts": 14,
     "contracts_verified_audited": 1,
-    "contracts_verified_unaudited": 8,
+    "contracts_verified_unaudited": 14,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 2,
-    "coverage_pct": 11.1,
+    "contracts_unverified": 3,
+    "coverage_pct": 6.7,
     "total_audits": 2,
+    "direct_audits": 2,
+    "inherited_audits": 0,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 2146453.65543,
-    "tvl_usd": 535262.1663952231,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 535262.17
-    },
-    "asd_usd": 100628.24053326459,
+    "dl_tvl_usd": 2119331.8733200002,
+    "tvl_usd": 2119331.8733200002,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": null,
     "chains": [
       "bsc",
@@ -57,26 +41,35 @@
       "aging": 0,
       "stale": 2,
       "unknown": 0
+    },
+    "live_implementations": 15,
+    "live_verified_implementations": 15,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 1
     }
   },
   "topography": {
-    "project_purpose": "ELYFI is a decentralized protocol that bridges real-world assets (RWA) into DeFi by tokenizing them into on-chain assets. It enables users to deposit tokenized RWAs as collateral to borrow stablecoins or earn yield through lending pools.",
-    "relationship_narrative": "The ELYFI family shares the MoneyPool proxy, which uses the Validation implementation for core logic. The ElyfiToken likely serves as a governance or incentive token across the LToken lending pools, while the unnamed contracts provide infrastructure such as access control or pool management.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 55,
-    "live_contracts": 9,
-    "inactive_contracts": 41,
-    "singleton_contracts": 2,
+    "project_purpose": "RWA. Structurally: 19 project-authored contract(s) across 2 chain(s); 1 ERC4626 vault, 6 ERC20 tokens, 2 ERC1155 multi-tokens; role-gated via AccessControl; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 1 common project-authored base contract(s) (singleadminaccesscontrol). Dominant framework: openzeppelin.",
+    "product_family_count": 4,
+    "total_contracts_indexed": 31,
+    "live_contracts": 21,
+    "inactive_contracts": 6,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 3,
-    "deployment_units": 1,
+    "unknown_contracts": 4,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 11,
-    "unverified_dependencies": 2,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 11,
+    "unique_implementations": 18,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -85,89 +78,6 @@
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x4da34f8264cb33a5c9f17081b9ef5ff6091116f4",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "ElyfiToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "ELYFI",
-      "tvl_usd": 434633.92586195853,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "ElyfiToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x4da34f8264cb33a5c9f17081b9ef5ff6091116f4",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 434633.92586195853,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-14348"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x24a7fb55e4ac2cb40944bc560423b496dfa8803f",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "StakingPoolV2",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 100628.24053326459,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "StakingPoolV2",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x24a7fb55e4ac2cb40944bc560423b496dfa8803f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 55001.64110128748,
-          "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x3f0c3e32bb166901acd0abc9452a3f0c5b8b2c9d",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 45626.59943197711,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -201,7 +111,191 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-20 13:17:47+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4b19e558ad35b63e385e7c197c0c25072df73dd3",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "CrossChainZap",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "CrossChainZap",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4b19e558ad35b63e385e7c197c0c25072df73dd3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x87e093b368773ff13daf4b57ffb03c364ffca395",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa0d697a25b95e2f3bd1402c15450bcce54297a6e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-27 11:26:59+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4da34f8264cb33a5c9f17081b9ef5ff6091116f4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ElyfiToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ElyfiToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x4da34f8264cb33a5c9f17081b9ef5ff6091116f4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-14348"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-07-01 14:14:02+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc10b6dafe4d7f7c693f44c51e716166b599644ba",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "ERC20Metadata",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "ERC20Metadata",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc10b6dafe4d7f7c693f44c51e716166b599644ba",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-18 11:27:17+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x66368d5be45fbf209fc1f34733da31708a7c03a0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Index",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Index",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x66368d5be45fbf209fc1f34733da31708a7c03a0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-20 08:47:33+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -236,7 +330,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-20 08:48:21+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x51ec26d9c0806e42a6bb8fba40bcc5f7d54400ef",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Rate",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Rate",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x51ec26d9c0806e42a6bb8fba40bcc5f7d54400ef",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-20 08:47:42+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -271,7 +408,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-20 13:21:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -306,7 +447,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-20 13:18:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -341,7 +486,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-20 10:51:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -376,7 +525,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-20 10:51:23+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -411,28 +564,154 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-20 13:22:35+03",
+      "deploy_coverage_basis": null
     },
     {
-      "chain_id": 8217,
-      "chain_name": "klaytn",
-      "address": "0x60961ca3a40be41dddef708bf51ef2f8e9760a3b",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x24a7fb55e4ac2cb40944bc560423b496dfa8803f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "StakingPoolV2",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "StakingPoolV2",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x24a7fb55e4ac2cb40944bc560423b496dfa8803f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x3f0c3e32bb166901acd0abc9452a3f0c5b8b2c9d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa33cfb48338450aecc3e7da69e7f99ac923cfc28",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xf26546ee9562ed60f680c747f28a6ae67a805c90",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x73653254ed0f28d6e5a59191bbb38b06c899fbca",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-04-18 11:55:24+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x144d0b69da2cae4c299357e2fc5b4c37a234aa43",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "TimeConverter",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "TimeConverter",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x144d0b69da2cae4c299357e2fc5b4c37a234aa43",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-20 08:47:21+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x0d768c1507b5099cb37e5d28b1959b831b5ebf9e",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "ELYFI",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": null,
       "deployments": [
         {
-          "chain_id": 8217,
-          "chain_name": "klaytn",
-          "address": "0x60961ca3a40be41dddef708bf51ef2f8e9760a3b",
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x0d768c1507b5099cb37e5d28b1959b831b5ebf9e",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": false,
@@ -446,24 +725,78 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-20 08:55:21+03",
+      "deploy_coverage_basis": null
     },
     {
-      "chain_id": 8217,
-      "chain_name": "klaytn",
-      "address": "0x7f97f905a8d6fe4c493d339f094232e3577b4dbd",
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x1bfbf29ac46b53352a12bf493f3350b7a17b1cf8",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "ELYFI",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": null,
       "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x1bfbf29ac46b53352a12bf493f3350b7a17b1cf8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-20 08:48:00+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8217,
+      "chain_name": "klaytn",
+      "address": "0x60961ca3a40be41dddef708bf51ef2f8e9760a3b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UnnamedContract",
+      "deployments": [
+        {
+          "chain_id": 8217,
+          "chain_name": "klaytn",
+          "address": "0x60961ca3a40be41dddef708bf51ef2f8e9760a3b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
         {
           "chain_id": 8217,
           "chain_name": "klaytn",
@@ -481,14 +814,57 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": null,
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x926f61222cd96dd1f1c4066f8626e8514babb016",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Validation",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "Validation",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x926f61222cd96dd1f1c4066f8626e8514babb016",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-01-20 08:47:54+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 2834,
       "audit_key": "audit-2834",
-      "report_name": "DL audit link",
+      "report_name": "skynet.certik.com/projects/elyfi",
       "report_url": "https://skynet.certik.com/projects/elyfi",
       "auditor": "CertiK",
       "audit_type": "audit",
@@ -498,6 +874,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -519,15 +898,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "ElyfiAccessControl",
-        "ElyfiToken"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -536,21 +915,11 @@
       "auditor": "Haechi Audit",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 11.1,
+      "coverage_pct": 6.7,
       "latest_audit": "2021-07"
     }
   ],
   "coverage_gaps": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x24a7fb55e4ac2cb40944bc560423b496dfa8803f",
-      "name": "StakingPoolV2",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "tvl_usd": 100628.24053326459,
-      "risk_note": "Verified native implementation with $100,628.24 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage"
-    },
     {
       "chain_id": 1,
       "chain_name": "ethereum",
@@ -562,11 +931,51 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x4b19e558ad35b63e385e7c197c0c25072df73dd3",
+      "name": "CrossChainZap",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xc10b6dafe4d7f7c693f44c51e716166b599644ba",
+      "name": "ERC20Metadata",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x66368d5be45fbf209fc1f34733da31708a7c03a0",
+      "name": "Index",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 56,
       "chain_name": "bsc",
       "address": "0x0bdfef5f8b75741d33a22d85022244cbe793da24",
       "name": "MoneyPool",
       "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x51ec26d9c0806e42a6bb8fba40bcc5f7d54400ef",
+      "name": "Rate",
+      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -620,27 +1029,55 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x24a7fb55e4ac2cb40944bc560423b496dfa8803f",
+      "name": "StakingPoolV2",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x144d0b69da2cae4c299357e2fc5b4c37a234aa43",
+      "name": "TimeConverter",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0x926f61222cd96dd1f1c4066f8626e8514babb016",
+      "name": "Validation",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 9,
+    "native": 15,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 2
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 1
+      "contract_name": 1
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 2834,
-        "report_name": "DL audit link"
+        "report_name": "skynet.certik.com/projects/elyfi"
       }
     ],
     "inherited_remapped_matches": []

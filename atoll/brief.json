@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "atoll",
-  "generated_at": "2026-06-19T09:01:04.375Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
+  "generated_at": "2026-07-04T14:53:04.251Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-f2f0",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "atoll",
@@ -17,17 +17,17 @@
     "change_30d_pct": null,
     "change_90d_pct": null,
     "governance_raw": {
-      "evidence": "TVL is zero with a 100% drop from peak sustained for over a year, and no recent activity or communications indicate ongoing operations.",
+      "evidence": "The domain atoll.money is parked and for sale, with no active protocol or team communications.",
       "confidence": 0.95,
       "lifecycle_status": "dead"
     },
-    "days_since_peak": 473,
+    "days_since_peak": 485,
     "detection_method": "tvl_trajectory+governance_signal",
     "governance_source": "docs_homepage",
     "drop_from_peak_pct": 100,
-    "governance_evidence": "TVL is zero with a 100% drop from peak sustained for over a year, and no recent activity or communications indicate ongoing operations.",
+    "governance_evidence": "The domain atoll.money is parked and for sale, with no active protocol or team communications.",
     "governance_confidence": 0.95,
-    "governance_text_chars": 1003,
+    "governance_text_chars": 402,
     "governance_classification": "dead",
     "governance_fallback_reason": null
   },
@@ -44,6 +44,8 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": 0,
     "tvl_usd": 19722.399999999998,
@@ -65,21 +67,30 @@
       "aging": 1,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 4,
+    "live_verified_implementations": 3,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Atoll is a yield protocol on Sonic that issues a yield-bearing token (AtToken) backed by stablecoins, using automated market operations to manage reserves and maintain its peg.",
-    "relationship_narrative": "The Atoll family uses GovToken for governance, while PsmAMO and RebalanceAMO manage AtToken's reserves and peg. GnosisSafeProxy likely controls administrative functions across the protocol.",
-    "product_family_count": 2,
-    "total_contracts_indexed": 9,
+    "project_purpose": "Yield. Structurally: 9 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 1 common project-authored base contract(s) (ownable2step). Dominant framework: openzeppelin.",
+    "product_family_count": 4,
+    "total_contracts_indexed": 10,
     "live_contracts": 4,
-    "inactive_contracts": 5,
+    "inactive_contracts": 6,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 1,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -103,7 +114,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Atoll",
+      "product_line": null,
       "tvl_usd": 19722.399999999998,
       "is_proxy": false,
       "impl_address": null,
@@ -126,7 +137,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-12-20 21:39:57+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -136,9 +151,9 @@
       "deployment_unit_proxy_count": null,
       "name": "GnosisSafeProxy",
       "role": "governance",
-      "origin_kind": "standard_library",
+      "origin_kind": "upstream",
       "origin_provider": "gnosis-safe",
-      "product_line": "Atoll",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -161,7 +176,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2024-12-19 23:05:57+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -173,7 +192,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Sonic mainnet",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -196,7 +215,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-01-01 21:38:10+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 146,
@@ -231,7 +254,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-01-11 22:02:58+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -248,6 +275,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -292,8 +322,8 @@
   ],
   "origin_summary": {
     "native": 3,
-    "upstream": 0,
-    "standard_library": 1,
+    "upstream": 1,
+    "standard_library": 0,
     "needs_review": 0
   },
   "scope_matching_notes": {

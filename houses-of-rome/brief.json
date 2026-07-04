@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "houses-of-rome",
-  "generated_at": "2026-06-19T06:13:53.313Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
-  "lifecycle_status": "dead",
-  "lifecycle_signal": {
-    "slug": "houses-of-rome",
-    "tier": 0,
-    "peak_tvl": 39771256,
-    "peak_date": "2022-01-05T00:00:00.000Z",
-    "tvl_30d_ago": 0,
-    "tvl_90d_ago": 0,
-    "tvl_current": 0,
-    "tier0_reason": "current_tvl_zero_after_meaningful_peak",
-    "tvl_180d_ago": 0,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "days_since_peak": 1624,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 100
-  },
+  "generated_at": "2026-07-04T14:53:21.654Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 13,
-    "total_addresses": 14,
-    "unique_implementations": 13,
-    "total_deployments": 14,
+    "total_contracts": 22,
+    "total_addresses": 23,
+    "unique_implementations": 22,
+    "total_deployments": 23,
     "audited_contracts": 0,
     "unaudited_contracts": 13,
     "contracts_verified_audited": 0,
     "contracts_verified_unaudited": 13,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
+    "contracts_unverified": 9,
     "coverage_pct": 0,
-    "total_audits": 0,
+    "total_audits": 13,
+    "direct_audits": 0,
+    "inherited_audits": 13,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 0.00075,
-    "tvl_usd": 0.00075,
+    "dl_tvl_usd": 0.00074,
+    "tvl_usd": 0.00074,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -46,41 +32,58 @@
     ],
     "tier1_coverage_pct": 0,
     "tier1_auditors": [],
-    "latest_audit_date": null,
-    "audit_freshness": "unknown",
+    "latest_audit_date": "2025-09",
+    "audit_freshness": "fresh",
     "staleness_breakdown": {
-      "fresh": 0,
-      "aging": 0,
-      "stale": 0,
+      "fresh": 1,
+      "aging": 5,
+      "stale": 7,
       "unknown": 0
+    },
+    "live_implementations": 13,
+    "live_verified_implementations": 12,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Houses of Rome is a reserve-currency protocol on Moonriver that issues the ROME token, using bonding and staking mechanics inspired by OlympusDAO to build a treasury-backed currency.",
-    "relationship_narrative": "The Rome token is staked in RomeStaking to earn rewards, while RomeTreasury holds reserves and mints ROME for bond sales. Cross-chain tokens like AnyswapV5ERC20 and CrossChainCanonicalFRAX serve as reserve assets, and SolarPair provides liquidity for trading.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 50,
+    "project_purpose": "Reserve Currency. Structurally: 31 project-authored contract(s) across 1 chain(s); 6 ERC20 tokens, 2 Chainlink feeds; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 8 common project-authored base contract(s) (owned, policy, ipolicy). Dominant framework: openzeppelin.",
+    "product_family_count": 4,
+    "total_contracts_indexed": 56,
     "live_contracts": 14,
-    "inactive_contracts": 36,
+    "inactive_contracts": 33,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
+    "unknown_contracts": 9,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 11,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 13,
+    "unique_implementations": 22,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
   "fork_lineage": {
-    "entries": [],
-    "inherited_audit_count": 0
+    "entries": [
+      {
+        "fork_id": 38,
+        "relationship_type": "code_fork",
+        "audit_inheritance_mode": "scoped_inherit",
+        "parent_project_key": "frax-finance",
+        "parent_project_name": "Frax Finance",
+        "parent_github_url": null,
+        "inherited_audits": 13
+      }
+    ],
+    "inherited_audit_count": 13
   },
   "contracts": [
     {
@@ -93,7 +96,7 @@
       "role": "token",
       "origin_kind": "upstream",
       "origin_provider": "Anyswap",
-      "product_line": "Houses of Rome",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -127,7 +130,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2021-09-18 11:46:36+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1285,
@@ -162,7 +169,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-19 01:16:42+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1285,
@@ -172,7 +183,7 @@
       "deployment_unit_proxy_count": null,
       "name": "CrossChainBridgeBacker_MOON_AnySwap",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -197,7 +208,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-10-12 23:36:06+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1285,
@@ -207,9 +222,9 @@
       "deployment_unit_proxy_count": null,
       "name": "CrossChainCanonicalFRAX",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Houses of Rome",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -232,7 +247,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-27 20:14:42+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1285,
@@ -267,7 +286,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-27 20:10:54+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1285,
@@ -302,7 +325,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-12-25 07:23:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1285,
@@ -337,7 +364,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-19 01:17:12+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1285,
@@ -349,7 +380,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Houses of Rome",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -372,7 +403,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-19 01:16:12+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1285,
@@ -407,7 +442,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-12-19 02:00:48+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1285,
@@ -442,7 +481,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-30 13:13:24+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1285,
@@ -454,7 +497,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Houses of Rome",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -477,7 +520,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-30 03:20:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1285,
@@ -487,9 +534,9 @@
       "deployment_unit_proxy_count": null,
       "name": "SolarPair",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Houses of Rome",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -512,7 +559,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-30 11:28:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1285,
@@ -547,10 +598,704 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-30 02:43:18+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x1d7ca62f6af49ec66f6680b8606e634e55ef22c1",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x1d7ca62f6af49ec66f6680b8606e634e55ef22c1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-24 10:33:06+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x218c3c3d49d0e7b37aff0d8bb079de36ae61a4c0",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x218c3c3d49d0e7b37aff0d8bb079de36ae61a4c0",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-03 11:48:30+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x2c78f1b70ccf63cdee49f9233e9faa99d43aa07e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x2c78f1b70ccf63cdee49f9233e9faa99d43aa07e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-03 11:40:42+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x340fe1d898eccaad394e2ba0fc1f93d27c7b717a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0x340fe1d898eccaad394e2ba0fc1f93d27c7b717a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-12-08 07:58:18+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0xc1be9a4d5d45beeacae296a7bd5fadbfc14602c4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0xc1be9a4d5d45beeacae296a7bd5fadbfc14602c4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-03 11:58:19+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0xc8bc73f917b8beef6ea444ffdcc76b71fe67d9f8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0xc8bc73f917b8beef6ea444ffdcc76b71fe67d9f8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-30 12:46:42+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0xcb3c890bf2914f1cd76b20b7230c566717580c0a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0xcb3c890bf2914f1cd76b20b7230c566717580c0a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-11-30 03:12:06+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0xd67de0e0a0fd7b15dc8348bb9be742f3c5850454",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0xd67de0e0a0fd7b15dc8348bb9be742f3c5850454",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-09-09 09:04:24+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0xe0ce60af0850bf54072635e66e79df17082a1109",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 1285,
+          "chain_name": "moonriver",
+          "address": "0xe0ce60af0850bf54072635e66e79df17082a1109",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-03-09 09:11:24+03",
+      "deploy_coverage_basis": null
     }
   ],
-  "audits": [],
+  "audits": [
+    {
+      "audit_id": 18971,
+      "audit_key": "audit-18971",
+      "report_name": "Fraxtal North Star Audit Report.pdf",
+      "report_url": "https://github.com/FraxFinance/frax-solidity/blob/master/src/audits/Fraxtal%20North%20Star%20Audit%20Report.pdf",
+      "auditor": "Frax Security Cartel",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-03",
+      "is_inherited": true,
+      "inherited_from_project_key": "frax-finance",
+      "inherited_from_project_name": "Frax Finance",
+      "inherited_via_fork_id": 38,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "CrossChainBridgeBacker_OPTI_Celer"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 18972,
+      "audit_key": "audit-18972",
+      "report_name": "Curve AMO Audit Report - Frax Security Cartel - May 2024.pdf",
+      "report_url": "https://github.com/FraxFinance/frax-solidity/blob/master/src/audits/Curve%20AMO%20Audit%20Report%20-%20Frax%20Security%20Cartel%20-%20May%202024.pdf",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "stale",
+      "date": "2024-05",
+      "is_inherited": true,
+      "inherited_from_project_key": "frax-finance",
+      "inherited_from_project_name": "Frax Finance",
+      "inherited_via_fork_id": 38,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "CrossChainBridgeBacker_OPTI_Celer"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 18973,
+      "audit_key": "audit-18973",
+      "report_name": "Fraxtal Audit - April 2024 - Frax Security Cartel.pdf",
+      "report_url": "https://github.com/FraxFinance/frax-solidity/blob/master/src/audits/Fraxtal%20Audit%20-%20April%202024%20-%20Frax%20Security%20Cartel.pdf",
+      "auditor": "Frax Security Cartel",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-04",
+      "is_inherited": true,
+      "inherited_from_project_key": "frax-finance",
+      "inherited_from_project_name": "Frax Finance",
+      "inherited_via_fork_id": 38,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "CrossChainBridgeBacker_OPTI_Celer"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 18974,
+      "audit_key": "audit-18974",
+      "report_name": "frxETH V2 Audit Report - Frax Security Cartel - March 2024.pdf",
+      "report_url": "https://github.com/FraxFinance/frax-solidity/blob/master/src/audits/frxETH%20V2%20Audit%20Report%20-%20Frax%20Security%20Cartel%20-%20March%202024.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2024-03",
+      "is_inherited": true,
+      "inherited_from_project_key": "frax-finance",
+      "inherited_from_project_name": "Frax Finance",
+      "inherited_via_fork_id": 38,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "CrossChainBridgeBacker_OPTI_Celer"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 18975,
+      "audit_key": "audit-18975",
+      "report_name": "FXB, sFRAX, frxETH Redemption Queue, Frax Oracles - Trail of Bits - Oct 2023.pdf",
+      "report_url": "https://github.com/FraxFinance/frax-solidity/blob/master/src/audits/FXB%2C%20sFRAX%2C%20frxETH%20Redemption%20Queue%2C%20Frax%20Oracles%20-%20Trail%20of%20Bits%20-%20Oct%202023.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-10",
+      "is_inherited": true,
+      "inherited_from_project_key": "frax-finance",
+      "inherited_from_project_name": "Frax Finance",
+      "inherited_via_fork_id": 38,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "CrossChainBridgeBacker_OPTI_Celer"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 18976,
+      "audit_key": "audit-18976",
+      "report_name": "2023-05-fraxgov-securityreview.pdf",
+      "report_url": "https://github.com/trailofbits/publications/blob/master/reviews/2023-05-fraxgov-securityreview.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2023-05",
+      "is_inherited": true,
+      "inherited_from_project_key": "frax-finance",
+      "inherited_from_project_name": "Frax Finance",
+      "inherited_via_fork_id": 38,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "CrossChainBridgeBacker_OPTI_Celer"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 18977,
+      "audit_key": "audit-18977",
+      "report_name": "2022-10-fraxfinance-fraxlend-fraxferry-securityreview.pdf",
+      "report_url": "https://github.com/trailofbits/publications/blob/master/reviews/2022-10-fraxfinance-fraxlend-fraxferry-securityreview.pdf",
+      "auditor": "Trail of Bits",
+      "audit_type": "audit",
+      "freshness": "stale",
+      "date": "2022-10",
+      "is_inherited": true,
+      "inherited_from_project_key": "frax-finance",
+      "inherited_from_project_name": "Frax Finance",
+      "inherited_via_fork_id": 38,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "CrossChainBridgeBacker_OPTI_Celer"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 18978,
+      "audit_key": "audit-18978",
+      "report_name": "code4rena.com/reports/2022-09-frax",
+      "report_url": "https://code4rena.com/reports/2022-09-frax",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "stale",
+      "date": "2022-09",
+      "is_inherited": true,
+      "inherited_from_project_key": "frax-finance",
+      "inherited_from_project_name": "Frax Finance",
+      "inherited_via_fork_id": 38,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "CrossChainBridgeBacker_OPTI_Celer"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 24754,
+      "audit_key": "audit-24754",
+      "report_name": "Frax0 Mesh - Zellic Audit Report.pdf",
+      "report_url": "https://github.com/FraxFinance/frax-solidity/blob/master/src/audits/Frax0%20Mesh%20-%20Zellic%20Audit%20Report.pdf",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "fresh",
+      "date": "2025-09",
+      "is_inherited": true,
+      "inherited_from_project_key": "frax-finance",
+      "inherited_from_project_name": "Frax Finance",
+      "inherited_via_fork_id": 38,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "CrossChainBridgeBacker_OPTI_Celer"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 24755,
+      "audit_key": "audit-24755",
+      "report_name": "ChainSecurity_Frax_FXB_sfrxUSD_Upgrade_Audit.pdf",
+      "report_url": "https://github.com/FraxFinance/frax-solidity/blob/master/src/audits/ChainSecurity_Frax_FXB_sfrxUSD_Upgrade_Audit.pdf",
+      "auditor": "ChainSecurity",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-07",
+      "is_inherited": true,
+      "inherited_from_project_key": "frax-finance",
+      "inherited_from_project_name": "Frax Finance",
+      "inherited_via_fork_id": 38,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "CrossChainBridgeBacker_OPTI_Celer"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 24756,
+      "audit_key": "audit-24756",
+      "report_name": "Frax - Zellic Audit Report.pdf",
+      "report_url": "https://github.com/FraxFinance/frax-solidity/blob/master/src/audits/Frax%20-%20Zellic%20Audit%20Report.pdf",
+      "auditor": "Zellic",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2025-07",
+      "is_inherited": true,
+      "inherited_from_project_key": "frax-finance",
+      "inherited_from_project_name": "Frax Finance",
+      "inherited_via_fork_id": 38,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "CrossChainBridgeBacker_OPTI_Celer"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 24758,
+      "audit_key": "audit-24758",
+      "report_name": "Frax-Certora (Bamm) report - Final.pdf",
+      "report_url": "https://github.com/FraxFinance/frax-solidity/blob/master/src/audits/Frax-Certora%20(Bamm)%20report%20-%20%20Final.pdf",
+      "auditor": "Certora",
+      "audit_type": "audit",
+      "freshness": "aging",
+      "date": "2024-10",
+      "is_inherited": true,
+      "inherited_from_project_key": "frax-finance",
+      "inherited_from_project_name": "Frax Finance",
+      "inherited_via_fork_id": 38,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "CrossChainBridgeBacker_OPTI_Celer"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    },
+    {
+      "audit_id": 24759,
+      "audit_key": "audit-24759",
+      "report_name": "FPISLocker + FraxtalERC4626MintRedeemer (Fraxtal sFRAX) - May 2024 - Frax Security Cartel.pdf",
+      "report_url": "https://github.com/FraxFinance/frax-solidity/blob/master/src/audits/FPISLocker%20%2B%20FraxtalERC4626MintRedeemer%20(Fraxtal%20sFRAX)%20-%20May%202024%20-%20Frax%20Security%20Cartel.pdf",
+      "auditor": "Code4rena",
+      "audit_type": "contest",
+      "freshness": "aging",
+      "date": "2024-10",
+      "is_inherited": true,
+      "inherited_from_project_key": "frax-finance",
+      "inherited_from_project_name": "Frax Finance",
+      "inherited_via_fork_id": 38,
+      "inheritance_mode": "scoped",
+      "inheritance_scope": [
+        "CrossChainBridgeBacker_OPTI_Celer"
+      ],
+      "scope_match": "protocol_wide",
+      "scope_format": "n/a",
+      "extracted_names": [],
+      "matched_contracts": 0,
+      "scope_note": null,
+      "extraction_confidence": null,
+      "scope_section_found": null,
+      "repo_reference_count": 0
+    }
+  ],
   "auditor_coverage": [],
   "coverage_gaps": [
     {
@@ -558,6 +1303,26 @@
       "chain_name": "moonriver",
       "address": "0x3d2d044e8c6dad46b4f7896418d3d4dfaad902be",
       "name": "aRome",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0xc7f48fb6dbb6f8a3eed90553017cdf5725dc44ac",
+      "name": "CrossChainBridgeBacker_MOON_AnySwap",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
+      "address": "0x1a93b23281cc1cde4c4741353f3064709a16197d",
+      "name": "CrossChainCanonicalFRAX",
       "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -636,6 +1401,16 @@
     {
       "chain_id": 1285,
       "chain_name": "moonriver",
+      "address": "0x069c2065100b4d3d982383f7ef3ecd1b95c05894",
+      "name": "SolarPair",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1285,
+      "chain_name": "moonriver",
       "address": "0x89f52002e544585b42f8c7cf557609ca4c8ce12a",
       "name": "sRome",
       "role": "unknown",
@@ -645,17 +1420,70 @@
     }
   ],
   "origin_summary": {
-    "native": 9,
+    "native": 12,
     "upstream": 1,
     "standard_library": 0,
-    "needs_review": 3
+    "needs_review": 9
   },
   "scope_matching_notes": {
     "match_method_counts": {},
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [],
+    "audits_with_zero_matches": [
+      {
+        "audit_id": 18971,
+        "report_name": "Fraxtal North Star Audit Report.pdf"
+      },
+      {
+        "audit_id": 18972,
+        "report_name": "Curve AMO Audit Report - Frax Security Cartel - May 2024.pdf"
+      },
+      {
+        "audit_id": 18973,
+        "report_name": "Fraxtal Audit - April 2024 - Frax Security Cartel.pdf"
+      },
+      {
+        "audit_id": 18974,
+        "report_name": "frxETH V2 Audit Report - Frax Security Cartel - March 2024.pdf"
+      },
+      {
+        "audit_id": 18975,
+        "report_name": "FXB, sFRAX, frxETH Redemption Queue, Frax Oracles - Trail of Bits - Oct 2023.pdf"
+      },
+      {
+        "audit_id": 18976,
+        "report_name": "2023-05-fraxgov-securityreview.pdf"
+      },
+      {
+        "audit_id": 18977,
+        "report_name": "2022-10-fraxfinance-fraxlend-fraxferry-securityreview.pdf"
+      },
+      {
+        "audit_id": 18978,
+        "report_name": "code4rena.com/reports/2022-09-frax"
+      },
+      {
+        "audit_id": 24754,
+        "report_name": "Frax0 Mesh - Zellic Audit Report.pdf"
+      },
+      {
+        "audit_id": 24755,
+        "report_name": "ChainSecurity_Frax_FXB_sfrxUSD_Upgrade_Audit.pdf"
+      },
+      {
+        "audit_id": 24756,
+        "report_name": "Frax - Zellic Audit Report.pdf"
+      },
+      {
+        "audit_id": 24758,
+        "report_name": "Frax-Certora (Bamm) report - Final.pdf"
+      },
+      {
+        "audit_id": 24759,
+        "report_name": "FPISLocker + FraxtalERC4626MintRedeemer (Fraxtal sFRAX) - May 2024 - Frax Security Cartel.pdf"
+      }
+    ],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

@@ -1,50 +1,50 @@
 # Agentic Audit Brief: LatteSwap
 
-⚠️ Lifecycle status: DEAD - TVL dropped 3.5% over 90 days
-
 ## Project Overview
 
 - Project: LatteSwap (`latteswap`)
-- Lifecycle: dead (Tier 0, 99.9% below peak)
-- Generated: 2026-06-21T06:55:35.537Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:29.414Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-43c7
 - Chains: bsc
-- Contract surface: 3 unique implementations (3 raw deployments)
-- DeFi Llama TVL: $54,936.79
+- Contract surface: 4 unique implementations (4 raw deployments)
+- DeFi Llama TVL: $52,934.89
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-LatteSwap is a decentralized exchange and yield farming platform on BSC. It provides token swapping, liquidity provision, and staking rewards through its LATTE token and MasterBarista contracts. The protocol also includes NFT offerings and various yield strategies.
+Dexs. Structurally: 33 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens, 2 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The LatteSwap family is self-contained, with the factory deploying pairs and the MasterBarista managing staking and rewards. No cross-family dependencies are evident from the contract surface.
+The protocol comprises 4 functional families. Its contracts share 10 common project-authored base contract(s) (ownableupgradeable, contextupgradeable, pausableupgradeable). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 91; live-surface contracts included: 3 (3 live, 0 unknown).
-- Excluded by liveness: 22 inactive, 66 singleton, 0 uninitialized.
-- Deployment units: 0/27 live.
-- Detected codebases: uniswap-v2
-- Unverified dependencies: 1/3.
+- Indexed contracts: 90; live-surface contracts included: 4 (3 live, 1 unknown).
+- Excluded by liveness: 86 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 2/3 (66.7%)
+- Coverage of deployed-live implementations: 2/3 (66.7%)
+- Deployed-live implementations: 3 of 4 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 2/3
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 3
-- Raw deployments: 3
-- Audits discovered: 2
+- Unverified implementations: 1
+- Unique implementations: 4
+- Raw deployments: 4
+- Audits discovered: 2 (2 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 2
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-10 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 2 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 2 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -80,18 +80,20 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (1)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | bsc | n/a | `0x5f7a11...6fa609` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [PeckShield-Audit-Report-LatteSwap-v1.0.pdf](https://github.com/latteswap-official/latteswap-contract/blob/main/audit/protocol/PeckShield-Audit-Report-LatteSwap-v1.0.pdf) | PeckShield | Audit | 2021-07 | stale | Direct | contract_name | 1 | high |
-| [LatteSwap_v2_Audit_Report_by_WatchPug_v1.1.pdf](https://github.com/latteswap-official/latteswap-contract/blob/main/audit/latte-v2/LatteSwap_v2_Audit_Report_by_WatchPug_v1.1.pdf) | WatchPug | Audit | 2021-10 | stale | Direct | contract_name | 1 | high |
+| [PeckShield-Audit-Report-LatteSwap-v1.0.pdf](https://github.com/latteswap-official/latteswap-contract/blob/main/audit/protocol/PeckShield-Audit-Report-LatteSwap-v1.0.pdf) | PeckShield | Audit | 2021-07 | stale | Direct | contract_name | 1 | n/a |
+| [LatteSwap_v2_Audit_Report_by_WatchPug_v1.1.pdf](https://github.com/latteswap-official/latteswap-contract/blob/main/audit/latte-v2/LatteSwap_v2_Audit_Report_by_WatchPug_v1.1.pdf) | WatchPug | Audit | 2021-10 | stale | Direct | contract_name | 1 | n/a |
 
 ## Coverage Gaps
 
@@ -108,7 +110,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -116,7 +118,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=2
-- Match method counts: extraction_exact=14
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=2
 
 Fork inheritance lineage and inherited audits are included when available.

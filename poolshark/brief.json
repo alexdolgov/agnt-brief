@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "poolshark",
-  "generated_at": "2026-06-21T07:21:20.466Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "unknown",
-  "lifecycle_signal": {
-    "slug": "poolshark",
-    "tier": 0,
-    "peak_tvl": 878982,
-    "peak_date": "2024-03-09T00:00:00.000Z",
-    "tvl_30d_ago": 71945,
-    "tvl_90d_ago": 72504,
-    "tvl_current": 62702,
-    "tier0_reason": "no_rule_matched",
-    "tvl_180d_ago": 92354,
-    "change_30d_pct": -12.847313920355827,
-    "change_90d_pct": -13.519254110118062,
-    "days_since_peak": 834,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 92.86652058858998
-  },
+  "generated_at": "2026-07-04T14:53:44.078Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d094",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 1,
     "total_addresses": 1,
@@ -34,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 60460.93603,
-    "tvl_usd": 60460.93603,
+    "dl_tvl_usd": 59560.81116,
+    "tvl_usd": 59560.81116,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,15 +39,24 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
     "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
-    "product_family_count": 2,
-    "total_contracts_indexed": 9,
+    "product_family_count": 1,
+    "total_contracts_indexed": 1,
     "live_contracts": 1,
-    "inactive_contracts": 8,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
@@ -91,7 +86,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Poolshark",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -114,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-12-11 16:42:56+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -131,7 +130,10 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "contract_name",
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
       "scope_note": null,
@@ -160,9 +162,7 @@
     "needs_review": 0
   },
   "scope_matching_notes": {
-    "match_method_counts": {
-      "extraction_exact": 5
-    },
+    "match_method_counts": {},
     "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],

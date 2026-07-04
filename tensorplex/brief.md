@@ -1,51 +1,51 @@
 # Agentic Audit Brief: Tensorplex
 
-⚠️ Lifecycle status: WIND_DOWN - TVL dropped 79.3% over 90 days
-
 ## Project Overview
 
 - Project: Tensorplex (`tensorplex`)
 - Website: [https://stake.tensorplex.ai/](https://stake.tensorplex.ai/)
-- Lifecycle: wind_down (Tier 1, wind_down)
-- Generated: 2026-06-17T07:00:46.256Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:54:00.865Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16bc
 - Chains: ethereum
 - Contract surface: 3 unique implementations (3 raw deployments)
-- DeFi Llama TVL: $387,400.34
+- DeFi Llama TVL: $236,279.82
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Tensorplex is a liquid staking protocol that allows users to stake TAO tokens and receive a liquid staking derivative (PlxTAO) in return, enabling them to earn staking rewards while maintaining liquidity.
+Liquid Staking. Structurally: 3 project-authored contract(s) across 1 chain(s); role-gated via AccessControl; built on openzeppelin.
 
 ### Architecture
 
-The PlxTAOProxy serves as the upgradeable proxy for the PlxTAO implementation, ensuring that the core staking logic can be updated without disrupting user balances or staking positions.
+The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 13; live-surface contracts included: 3 (3 live, 0 unknown).
-- Excluded by liveness: 5 inactive, 5 singleton, 0 uninitialized.
-- Deployment units: 1/4 live.
+- Indexed contracts: 3; live-surface contracts included: 3 (3 live, 0 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 1; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/3 (0.0%)
+- Coverage of deployed-live implementations: 0/2 (0.0%)
+- Deployed-live implementations: 3 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/3
 - Verified + Unaudited implementations: 3
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 3
 - Raw deployments: 3
-- Audits discovered: 0
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [wind_down]. ASD of n/a represents exposure in a protocol with wind_down activity.
 
 ### Auditor Coverage
 
@@ -63,7 +63,7 @@ The PlxTAOProxy serves as the upgradeable proxy for the PlxTAO implementation, e
 |---|---|---|---|---|---|
 | BridgeWrapper | operational_periphery | ethereum | n/a | [`0xecaec5...b03b1c`](./contracts/ethereum-1/0xecaec5e1cfaa7a7f0c5a097dcbdf9140f3b03b1c/) | ⚠️ Unaudited |
 | ConsensusBridge | operational_periphery | ethereum | n/a | [`0x353876...8b17d5`](./contracts/ethereum-1/0x3538767654f6a2d2f3330a601b6b0a390b8b17d5/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | unit-27663 | [`0xfb47f5...6d68f3`](./contracts/ethereum-1/0xfb47f57c064a0032ee66f98566dedce2aa6d68f3/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | n/a | [`0xfb47f5...6d68f3`](./contracts/ethereum-1/0xfb47f57c064a0032ee66f98566dedce2aa6d68f3/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -87,6 +87,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [index.html (also discovered via alternate URL)](https://certificate.quantstamp.com/full/tensorplex-stake/7a7c3615-5f16-4129-86e6-ee4f37fdaf0a/index.html) | Quantstamp | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -110,9 +111,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [21368] index.html
 
 Fork inheritance lineage and inherited audits are included when available.

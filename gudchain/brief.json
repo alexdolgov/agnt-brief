@@ -1,36 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "gudchain",
-  "generated_at": "2026-06-21T07:37:17.714Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-21-727228-48f6",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "gudchain",
-    "tier": 1,
-    "peak_tvl": 3986022,
-    "peak_date": "2024-12-17T00:00:00.000Z",
-    "tvl_30d_ago": 81739,
-    "tvl_90d_ago": 80854,
-    "tvl_current": 76342,
-    "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 147634,
-    "change_30d_pct": -6.602723302218036,
-    "change_90d_pct": -5.580428921265491,
-    "governance_raw": {
-      "evidence": "TVL dropped 98% from peak but homepage shows active branding and wallet connection options, indicating ongoing operations.",
-      "confidence": 0.8,
-      "lifecycle_status": "declining"
-    },
-    "days_since_peak": 551,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 98.08475718397942,
-    "governance_evidence": "TVL dropped 98% from peak but homepage shows active branding and wallet connection options, indicating ongoing operations.",
-    "governance_confidence": 0.8,
-    "governance_text_chars": 424,
-    "governance_classification": "declining",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:21.114Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 1,
     "total_addresses": 1,
@@ -44,13 +18,13 @@
     "contracts_unverified": 0,
     "coverage_pct": 100,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 75249.48607,
-    "tvl_usd": 17492.04044767312,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 17492.04
-    },
+    "dl_tvl_usd": 74049.14038,
+    "tvl_usd": 74049.14038,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://gudchain.com/",
     "chains": [
@@ -65,6 +39,15 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 1
     }
   },
   "topography": {
@@ -73,11 +56,11 @@
     "product_family_count": 1,
     "total_contracts_indexed": 3,
     "live_contracts": 1,
-    "inactive_contracts": 0,
-    "singleton_contracts": 2,
+    "inactive_contracts": 2,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 1,
+    "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
@@ -104,7 +87,7 @@
       "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 17492.04044767312,
+      "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "GudPartnerPool",
@@ -117,7 +100,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 17492.04044767312,
+          "tvl_usd": null,
           "is_audited": true
         }
       ],
@@ -128,14 +111,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-06-30 13:47:23+03",
+      "deploy_coverage_basis": "match_unverified"
     }
   ],
   "audits": [
     {
       "audit_id": 13210,
       "audit_key": "audit-13210",
-      "report_name": "DL audit link",
+      "report_name": "Gudchain - Smart Contract Audit Report.pdf",
       "report_url": "https://cdn.gudchain.com/documents/Gudchain%20-%20Smart%20Contract%20Audit%20Report.pdf",
       "auditor": "unknown",
       "audit_type": "audit",
@@ -145,18 +132,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "GudDeposits",
-        "GudPartnerPool",
-        "GudTimelock",
-        "GudVaultV0",
-        "GudVaultV1"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -178,11 +162,9 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 3
+      "contract_name": 1
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

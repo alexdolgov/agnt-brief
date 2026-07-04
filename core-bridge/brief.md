@@ -4,44 +4,47 @@
 
 - Project: CORE Bridge (`core-bridge`)
 - Website: [https://bridge.coredao.org/bridge](https://bridge.coredao.org/bridge)
-- Lifecycle: active (Tier 0, 78% below peak)
-- Generated: 2026-06-17T07:00:52.427Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:10.526Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-1bf2
 - Chains: arbitrum, avalanche, base, ethereum, optimism, polygon
 - Contract surface: 3 unique implementations (6 raw deployments)
-- DeFi Llama TVL: $3,821,049.32
+- DeFi Llama TVL: $3,738,707.52
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-CORE Bridge is a cross-chain bridge for the Core DAO ecosystem, with observed bridge TVL across Ethereum, BNB Chain, Polygon, Arbitrum, Optimism, Avalanche, and Base. The listed Avalanche/Base contracts should be treated as a partial contract inventory only, and LayerZero contracts should be treated as third-party messaging dependencies rather than CORE-owned core bridge contracts unless independently verified.
+Canonical Bridge. Structurally: 3 project-authored contract(s) across 3 chain(s); built on openzeppelin.
 
 ### Architecture
 
-The OriginalTokenBridge relies on the UltraLightNodeV2 for cross-chain message verification and delivery. Both contracts are deployed by the same deployer, indicating a shared infrastructure for the bridge functionality.
+The protocol comprises 2 functional families. Its contracts share 1 common project-authored base contract(s) (tokenbridgebase). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 9; live-surface contracts included: 6 (3 live, 3 unknown).
-- Excluded by liveness: 3 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 10; live-surface contracts included: 6 (4 live, 2 unknown).
+- Excluded by liveness: 4 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 1; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 2
 - Unique implementations: 3
 - Raw deployments: 6
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -98,10 +101,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 1 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 

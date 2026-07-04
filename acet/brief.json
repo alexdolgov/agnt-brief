@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "acet",
-  "generated_at": "2026-06-19T22:47:26.879Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
+  "generated_at": "2026-07-04T14:52:57.988Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-f2f0",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
     "slug": "acet",
@@ -16,7 +16,7 @@
     "tvl_180d_ago": 0,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 575,
+    "days_since_peak": 587,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 0
@@ -34,12 +34,14 @@
     "contracts_unverified": 0,
     "coverage_pct": 37.5,
     "total_audits": 2,
+    "direct_audits": 2,
+    "inherited_audits": 0,
     "scoreable_audits": 1,
-    "dl_tvl_usd": 12019.3172,
-    "tvl_usd": 2535477.18596332,
+    "dl_tvl_usd": 8667.21798,
+    "tvl_usd": 2087748.895440661,
     "tvl_source": "on_chain",
     "tvl_by_chain": {
-      "bsc": 2535477.19
+      "bsc": 2087748.9
     },
     "asd_usd": null,
     "website_url": "https://acet.finance/",
@@ -55,12 +57,21 @@
       "aging": 0,
       "stale": 1,
       "unknown": 1
+    },
+    "live_implementations": 8,
+    "live_verified_implementations": 8,
+    "live_audited_implementations": 3,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 3
     }
   },
   "topography": {
-    "project_purpose": "ACET is a yield farming protocol on BSC that allows users to stake liquidity pool tokens and earn ACET token rewards. It provides farming pools for various LP tokens and a native ACET token for rewards.",
-    "relationship_narrative": "The ACET family of farm contracts distributes rewards in the AcetToken from the FINAL FARM family. The Pool contracts likely represent the staking pools, while the FarmV4 and FarmV2Transition contracts manage reward distribution and migration.",
-    "product_family_count": 2,
+    "project_purpose": "Farm. Structurally: 9 project-authored contract(s) across 1 chain(s); 1 ERC20 token; role-gated via AccessControl; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Its contracts share 2 common project-authored base contract(s) (owned, farmbase). Dominant framework: openzeppelin.",
+    "product_family_count": 3,
     "total_contracts_indexed": 13,
     "live_contracts": 11,
     "inactive_contracts": 2,
@@ -69,7 +80,7 @@
     "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 15,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -93,8 +104,8 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "FINAL FARM",
-      "tvl_usd": 2532137.239823962,
+      "product_line": null,
+      "tvl_usd": 2084408.9493013034,
       "is_proxy": false,
       "impl_address": null,
       "impl_name": "AcetToken",
@@ -107,7 +118,7 @@
           "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 2532137.239823962,
+          "tvl_usd": 2084408.9493013034,
           "is_audited": true
         }
       ],
@@ -118,7 +129,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-08-24 13:22:37+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -130,7 +145,7 @@
       "role": "core_logic",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "ACET",
+      "product_line": null,
       "tvl_usd": 3339.9461393578035,
       "is_proxy": false,
       "impl_address": null,
@@ -156,7 +171,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         },
         {
           "chain_id": 56,
@@ -167,7 +182,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": 100,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -177,7 +192,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-21 11:17:17+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -214,7 +233,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2021-08-24 13:23:55+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 56,
@@ -226,7 +249,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "ACET",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -260,7 +283,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-22 09:25:14+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -272,7 +299,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "ACET",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -295,7 +322,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-20 13:32:07+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -307,7 +338,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "ACET",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -330,7 +361,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-20 13:32:25+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -365,7 +400,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-20 13:31:25+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 56,
@@ -400,7 +439,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-06-05 16:51:25+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -417,22 +460,21 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AcetAdaptor",
-        "AcetToken",
-        "Pool"
-      ],
-      "matched_contracts": 5,
+      "extracted_names": [],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
       "audit_id": 12620,
       "audit_key": "audit-12620",
-      "report_name": "www.certik.com/projects/acet-finance",
+      "report_name": "skynet.certik.com/projects/acet-finance",
       "report_url": "https://skynet.certik.com/projects/acet-finance",
       "auditor": "CertiK",
       "audit_type": "audit",
@@ -442,6 +484,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -520,17 +565,15 @@
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 6
+      "contract_name": 3
     },
-    "extraction_confidence_counts": {
-      "high": 1
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
       {
         "audit_id": 12620,
-        "report_name": "www.certik.com/projects/acet-finance"
+        "report_name": "skynet.certik.com/projects/acet-finance"
       }
     ],
     "inherited_remapped_matches": []

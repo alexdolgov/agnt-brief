@@ -5,26 +5,25 @@
 - Project: Mystic Finance (`mystic-finance`)
 - Website: [https://www.mysticfinance.xyz/](https://www.mysticfinance.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-06-17T07:00:53.471Z
-- Pipeline run: brief-regen-topo-2026-06-17
-- Chains: n/a
-- Contract surface: 0 unique implementations (0 raw deployments)
-- DeFi Llama TVL: $4,978,719.00
+- Generated: 2026-07-04T14:53:37.773Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-17a2
+- Chains: ethereum
+- Contract surface: 5 unique implementations (5 raw deployments)
+- DeFi Llama TVL: $5,089,033.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
-
-## ⚠️ Limited Contract Surface
-
-This brief covers only 0 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
-Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
 Mystic Finance is a DeFi lending and money-market protocol that enables users to supply assets, borrow against collateral, access leverage, and participate in curated lending markets.
 
+### Architecture
+
+No relationship narrative (skeletal or single-family surface).
+
 ## Contract Surface Quality
 
-- Indexed contracts: 0; live-surface contracts included: 0 (0 live, 0 unknown).
+- Indexed contracts: 5; live-surface contracts included: 5 (0 live, 5 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
@@ -32,17 +31,20 @@ Mystic Finance is a DeFi lending and money-market protocol that enables users to
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/0 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 5 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/0
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 0
-- Raw deployments: 0
-- Audits discovered: 10
+- Unverified implementations: 5
+- Unique implementations: 5
+- Raw deployments: 5
+- Audits discovered: 10 (10 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2026-05 (fresh)
-- Staleness: 3 fresh, 0 aging, 0 stale, 7 unknown
+- Audit staleness (calendar age): 3 fresh, 2 aging, 0 stale, 5 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -71,23 +73,29 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (5)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x0b14d0...8fcda7` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0x2525d4...e19456` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xbb748a...230e07` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc0df57...815b16` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xfbb53a...957d64` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [| Permissioning and custodian integration (sunsetted) | [Hacken](https://hacken.io/) | [Audit here]() |](https://hacken.io/audits/mystic-finance) | Hacken | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [| Liquid Staking Token (myPLUME) | [Kann Audits](https://kannaudits.com/) | [Audit 1 here]() |](https://github.com/Kann-Audits/Kann-Audits/blob/main/reports/pdf-format/Mystic%20Finance.pdf) | Hacken | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [| Liquid Staking Token (myPLUME) | [Kann Audits](https://kannaudits.com/) | [Audit 2 here]() |](https://github.com/Kann-Audits/Kann-Audits/blob/main/reports/pdf-format/Mystic%20Finance_v2.pdf) | Kann Audits | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Audit here](https://drive.google.com/file/d/1_rKbNL9EFs3KT6x_amWQTyrzlUTvt0R5/view?usp=sharing) | Octane Security | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [here](https://drive.google.com/file/d/1WZ7LJIszm-GOsrHX5-MhIhDLADwSXmzh/view?usp=sharing) | Octane Security | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Audit here](https://drive.google.com/file/d/1O8Er8ZmVqqSmHuYteDkaBOhh7lBG0uQs/view?usp=sharing) | Kann Audits | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
-| [Audit here](https://drive.google.com/file/d/1LerNUP9OjGmfDgyTsr11DxtGMJeCP3dR/view?usp=sharing) | Kann Audits | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [hacken.io/audits/mystic-finance](https://hacken.io/audits/mystic-finance) | Hacken | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Mystic Finance.pdf](https://github.com/Kann-Audits/Kann-Audits/blob/main/reports/pdf-format/Mystic%20Finance.pdf) | Hacken | Audit | 2025-06 | aging | Direct | n/a | 0 | n/a |
+| [Mystic Finance_v2.pdf](https://github.com/Kann-Audits/Kann-Audits/blob/main/reports/pdf-format/Mystic%20Finance_v2.pdf) | Kann Audits | Audit | 2025-06 | aging | Direct | n/a | 0 | n/a |
+| [drive.google.com/file/d/1_rKbNL9EFs3KT6x_amWQTyrzlUTvt0R5/view](https://drive.google.com/file/d/1_rKbNL9EFs3KT6x_amWQTyrzlUTvt0R5/view?usp=sharing) | Octane Security | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [drive.google.com/file/d/1WZ7LJIszm-GOsrHX5-MhIhDLADwSXmzh/view](https://drive.google.com/file/d/1WZ7LJIszm-GOsrHX5-MhIhDLADwSXmzh/view?usp=sharing) | Octane Security | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [drive.google.com/file/d/1O8Er8ZmVqqSmHuYteDkaBOhh7lBG0uQs/view](https://drive.google.com/file/d/1O8Er8ZmVqqSmHuYteDkaBOhh7lBG0uQs/view?usp=sharing) | Kann Audits | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [drive.google.com/file/d/1LerNUP9OjGmfDgyTsr11DxtGMJeCP3dR/view](https://drive.google.com/file/d/1LerNUP9OjGmfDgyTsr11DxtGMJeCP3dR/view?usp=sharing) | Kann Audits | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [MysticFinance-security-review-2025-12-09.pdf](https://github.com/Kann-Audits/Kann-Audits/blob/main/reports/pdf-format/MysticFinance-security-review-2025-12-09.pdf) | unknown | Audit | 2025-12 | fresh | Direct | n/a | 0 | n/a |
 | [MysticFinance-security-review-2026-02-13.pdf](https://github.com/Kann-Audits/Kann-Audits/blob/main/reports/pdf-format/MysticFinance-security-review-2026-02-13.pdf) | unknown | Audit | 2026-02 | fresh | Direct | n/a | 0 | n/a |
 | [MysticFinance-security-review-2026-05-11.pdf](https://github.com/Kann-Audits/Kann-Audits/blob/main/reports/pdf-format/MysticFinance-security-review-2026-05-11.pdf) | unknown | Audit | 2026-05 | fresh | Direct | n/a | 0 | n/a |
@@ -105,7 +113,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 5 |
 
 ## Scope Matching Notes
 
@@ -118,13 +126,13 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [2428] | Permissioning and custodian integration (sunsetted) | [Hacken](https://hacken.io/) | [Audit here]() |
-- [2429] | Liquid Staking Token (myPLUME) | [Kann Audits](https://kannaudits.com/) | [Audit 1 here]() |
-- [2430] | Liquid Staking Token (myPLUME) | [Kann Audits](https://kannaudits.com/) | [Audit 2 here]() |
-- [2431] Audit here
-- [2432] here
-- [2433] Audit here
-- [2434] Audit here
+- [2428] hacken.io/audits/mystic-finance
+- [2429] Mystic Finance.pdf
+- [2430] Mystic Finance_v2.pdf
+- [2431] drive.google.com/file/d/1_rKbNL9EFs3KT6x_amWQTyrzlUTvt0R5/view
+- [2432] drive.google.com/file/d/1WZ7LJIszm-GOsrHX5-MhIhDLADwSXmzh/view
+- [2433] drive.google.com/file/d/1O8Er8ZmVqqSmHuYteDkaBOhh7lBG0uQs/view
+- [2434] drive.google.com/file/d/1LerNUP9OjGmfDgyTsr11DxtGMJeCP3dR/view
 - [2435] MysticFinance-security-review-2025-12-09.pdf
 - [2436] MysticFinance-security-review-2026-02-13.pdf
 - [2437] MysticFinance-security-review-2026-05-11.pdf

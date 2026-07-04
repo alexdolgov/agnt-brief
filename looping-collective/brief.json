@@ -1,83 +1,77 @@
 {
   "schema_version": "2.0",
   "project_key": "looping-collective",
-  "generated_at": "2026-06-19T06:14:26.396Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-32b207-c216",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "looping-collective",
-    "tier": 0,
-    "peak_tvl": 58724180,
-    "peak_date": "2025-06-17T00:00:00.000Z",
-    "tvl_30d_ago": 16233934,
-    "tvl_90d_ago": 16573510,
-    "tvl_current": 15297572,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 34218899,
-    "change_30d_pct": -5.767930311900985,
-    "change_90d_pct": -7.698658883966039,
-    "days_since_peak": 339,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 73.9501309341399
-  },
+  "generated_at": "2026-07-04T14:53:30.192Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-43c7",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 10,
-    "total_addresses": 37,
-    "unique_implementations": 10,
-    "total_deployments": 37,
-    "audited_contracts": 4,
-    "unaudited_contracts": 4,
-    "contracts_verified_audited": 4,
-    "contracts_verified_unaudited": 4,
+    "total_contracts": 30,
+    "total_addresses": 77,
+    "unique_implementations": 30,
+    "total_deployments": 77,
+    "audited_contracts": 25,
+    "unaudited_contracts": 2,
+    "contracts_verified_audited": 25,
+    "contracts_verified_unaudited": 2,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 2,
-    "coverage_pct": 50,
+    "contracts_unverified": 3,
+    "coverage_pct": 92.6,
     "total_audits": 13,
-    "scoreable_audits": 6,
-    "dl_tvl_usd": 11937641,
-    "tvl_usd": 204075.2594195031,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "hyperliquid": 204075.26
-    },
+    "direct_audits": 13,
+    "inherited_audits": 0,
+    "scoreable_audits": 8,
+    "dl_tvl_usd": 10751137,
+    "tvl_usd": 10751137,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
     "asd_usd": null,
     "website_url": "https://www.loopingcollective.org/",
     "chains": [
       "ethereum",
       "hyperliquid"
     ],
-    "tier1_coverage_pct": 37.5,
+    "tier1_coverage_pct": 55.6,
     "tier1_auditors": [
+      "ChainSecurity",
       "Spearbit"
     ],
     "latest_audit_date": "2026-03",
     "audit_freshness": "fresh",
     "staleness_breakdown": {
       "fresh": 6,
-      "aging": 2,
-      "stale": 3,
-      "unknown": 2
+      "aging": 3,
+      "stale": 4,
+      "unknown": 0
+    },
+    "live_implementations": 27,
+    "live_verified_implementations": 27,
+    "live_audited_implementations": 25,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 21,
+      "diverged": 0,
+      "match_unverified": 4
     }
   },
   "topography": {
-    "project_purpose": "Looping Collective is an active yield protocol offering user-facing vault products including LHYPE, wHLP, and LcBTC/loopedBTC. Its vaults aggregate deposits and deploy capital across DeFi strategies, including leveraged looping and Hyperliquid integrations, with supporting rate providers, accountants, adapters, and oracle-related components used to optimize and report yields.",
-    "relationship_narrative": "The Vault Infrastructure family provides reusable UltraVault logic and rate providers used by other vault products. Wrapped HLP operates independently as an adapter to Hyperliquid, while Contract Addresses and Looped Hype are separate BoringVault-based products that do not share the UltraVault infrastructure.",
+    "project_purpose": "Yield. Structurally: 11 project-authored contract(s) across 2 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin-upgradeable.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 5 common project-authored base contract(s) (ownable2step, ownable2stepupgradeable, ownableupgradeable). Dominant framework: openzeppelin-upgradeable.",
     "product_family_count": 4,
-    "total_contracts_indexed": 98,
-    "live_contracts": 37,
-    "inactive_contracts": 5,
-    "singleton_contracts": 56,
+    "total_contracts_indexed": 93,
+    "live_contracts": 74,
+    "inactive_contracts": 16,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 28,
+    "unknown_contracts": 3,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 7,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 10,
+    "unique_implementations": 30,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -89,56 +83,6 @@
     {
       "chain_id": 999,
       "chain_name": "hyperliquid",
-      "address": "0x1359b05241ca5076c9f59605214f4f84114c0de8",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "BoringVault",
-      "role": "core_logic",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Contract Addresses",
-      "tvl_usd": 204075.2594195031,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "BoringVault",
-      "deployments": [
-        {
-          "chain_id": 999,
-          "chain_name": "hyperliquid",
-          "address": "0x1359b05241ca5076c9f59605214f4f84114c0de8",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 1949.3731782380837,
-          "is_audited": true
-        },
-        {
-          "chain_id": 999,
-          "chain_name": "hyperliquid",
-          "address": "0x5748ae796ae46a4f1348a1693de4b50560485562",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 202125.88624126502,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-12448",
-        "audit-12454",
-        "audit-12456"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 999,
-      "chain_name": "hyperliquid",
       "address": "0x470bd109a24f608590d85fc1f5a4b6e625e8bdff",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -146,7 +90,7 @@
       "role": "operational_periphery",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Contract Addresses",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -172,7 +116,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -185,7 +129,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-18 07:12:00+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 999,
@@ -197,7 +145,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Wrapped HLP",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -222,7 +170,65 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-02-19 00:09:00+03",
+      "deploy_coverage_basis": "match_unverified"
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x1359b05241ca5076c9f59605214f4f84114c0de8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "BoringVault",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "BoringVault",
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x1359b05241ca5076c9f59605214f4f84114c0de8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x5748ae796ae46a4f1348a1693de4b50560485562",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [
+        "audit-12448",
+        "audit-12454",
+        "audit-12456"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-18 07:10:00+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 999,
@@ -257,7 +263,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-02-18 12:00:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -295,7 +305,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-02-18 11:11:00+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -418,7 +432,541 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-08 18:55:59+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x26573c17e2399c19f64e61bf295c85e150a95318",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVault",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x597768db24cbc1d824b67d8edac5b9db15c4da81",
+      "impl_name": "UltraVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x26573c17e2399c19f64e61bf295c85e150a95318",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x597768db24cbc1d824b67d8edac5b9db15c4da81",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11619",
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-08 12:37:23+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x36bdaefd92579da58bfe207e16dafa39835bbcb3",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVault",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x82157fe14852caecb8e7095a52423213347d391f",
+      "impl_name": "UltraVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x36bdaefd92579da58bfe207e16dafa39835bbcb3",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x82157fe14852caecb8e7095a52423213347d391f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11619",
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-12 15:42:47+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x472425cc95be779126afa4aa17980210d299914f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVault",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x48bf9f7ef43799aac9d8647b78410db8f83a14c1",
+      "impl_name": "UltraVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x472425cc95be779126afa4aa17980210d299914f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x48bf9f7ef43799aac9d8647b78410db8f83a14c1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11619",
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-10 09:25:47+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x546329a16dcedc46e93f7b03a65f49a84700bca1",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVault",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x6860133c130478c132cdaf42507267df29a23832",
+      "impl_name": "UltraVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x546329a16dcedc46e93f7b03a65f49a84700bca1",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6860133c130478c132cdaf42507267df29a23832",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11619",
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-21 10:04:35+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x599c419e42183e4553036e3775a4347af5afa67e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVault",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x776c938f5ab906b872cede6ad590bd5eb0b6c871",
+      "impl_name": "UltraVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x599c419e42183e4553036e3775a4347af5afa67e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x776c938f5ab906b872cede6ad590bd5eb0b6c871",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11619",
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-01 09:48:47+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6b13ca53fa4c0bc8c0c26aa5c8860195978ca3c6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVault",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x6b13ca53fa4c0bc8c0c26aa5c8860195978ca3c6",
+      "impl_name": "UltraVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6b13ca53fa4c0bc8c0c26aa5c8860195978ca3c6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xc46efcc8e39c8f02425e367423871cd4633b7908",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11619",
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-16 13:58:59+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x77e6492477ec87decd9f713eeff040de1986948a",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVault",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x77e6492477ec87decd9f713eeff040de1986948a",
+      "impl_name": "UltraVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x77e6492477ec87decd9f713eeff040de1986948a",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xbb876b2012af9ca8591723b4fe7f05ac50e6c1ec",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11619",
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-05-19 08:56:47+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x88300e0041cc88bdb1404031b53aa68058ecd847",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVault",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x88300e0041cc88bdb1404031b53aa68058ecd847",
+      "impl_name": "UltraVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x88300e0041cc88bdb1404031b53aa68058ecd847",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xaa3cb36be406e6cf208d218fd214e0f1a71e957d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11619",
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-04 14:00:23+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x8ecc0b419dfe3ae197bc96f2a03636b5e1be91db",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVault",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe66f6a37c807f71591854e22075b3a613b46abe2",
+      "impl_name": "UltraVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8ecc0b419dfe3ae197bc96f2a03636b5e1be91db",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xe66f6a37c807f71591854e22075b3a613b46abe2",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11619",
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-11 07:18:35+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xef8699b5f1e970af12c2971f88fe430b42410729",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVault",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xef8699b5f1e970af12c2971f88fe430b42410729",
+      "impl_name": "UltraVault",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xef8699b5f1e970af12c2971f88fe430b42410729",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfacaa225fcfcd8644a77f2cce833907537198ae9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11619",
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-01 16:51:35+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 1,
@@ -445,7 +993,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -456,7 +1004,18 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2c50ac2b52c747fc3df36000849b0ca5fcbc54aa",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -467,7 +1026,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -478,7 +1037,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -489,7 +1048,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -500,7 +1059,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -511,7 +1070,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -522,7 +1081,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -533,15 +1092,490 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11619",
+        "audit-11620"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-08 12:34:59+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x152b3f3b2b7bcb00b8ca23136c743ad726c0f55e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVaultRateProvider",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x152b3f3b2b7bcb00b8ca23136c743ad726c0f55e",
+      "impl_name": "UltraVaultRateProvider",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x152b3f3b2b7bcb00b8ca23136c743ad726c0f55e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa392c6676ae58a30fd25c4a699a1fdc4297df87c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-12 15:42:11+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x189e4ddf25ec21e3f98e180de3eeccfdcb06e767",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVaultRateProvider",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x189e4ddf25ec21e3f98e180de3eeccfdcb06e767",
+      "impl_name": "UltraVaultRateProvider",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x189e4ddf25ec21e3f98e180de3eeccfdcb06e767",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x75df902b1d023c8728caf27700ba39ab849fda35",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-16 13:58:35+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x1bf8d6a5b98aaba6d5762f78bda3345a1b434828",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVaultRateProvider",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x1bf8d6a5b98aaba6d5762f78bda3345a1b434828",
+      "impl_name": "UltraVaultRateProvider",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x1bf8d6a5b98aaba6d5762f78bda3345a1b434828",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x306269644da8b0e3aedab261ef7ad63a26b1637d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-12-01 16:50:35+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x25b8a339d23358b9d9d2e52981aca01ec3efbf0d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVaultRateProvider",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd8f8cc78ffdeebe852d35b98a6eabd5a65dcfa6d",
+      "impl_name": "UltraVaultRateProvider",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x25b8a339d23358b9d9d2e52981aca01ec3efbf0d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xd8f8cc78ffdeebe852d35b98a6eabd5a65dcfa6d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-12 12:59:47+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2f1b7cdc97bf10326e1b404700540283f3613cc5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVaultRateProvider",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x2f1b7cdc97bf10326e1b404700540283f3613cc5",
+      "impl_name": "UltraVaultRateProvider",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x2f1b7cdc97bf10326e1b404700540283f3613cc5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x92e9f91be50656c1cb6867d3ea211750e027c484",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-08 12:36:11+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x6d4f69dece3abd36a9c333f1d849b0413e5d401e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVaultRateProvider",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x6d4f69dece3abd36a9c333f1d849b0413e5d401e",
+      "impl_name": "UltraVaultRateProvider",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x6d4f69dece3abd36a9c333f1d849b0413e5d401e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x8bd34774424e5fbe28c5cf9f18b2f62566f2a70e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-10 09:24:35+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x740ed28e7314e65ceae39307f2a0e7dc8ba7e474",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVaultRateProvider",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0x740ed28e7314e65ceae39307f2a0e7dc8ba7e474",
+      "impl_name": "UltraVaultRateProvider",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x740ed28e7314e65ceae39307f2a0e7dc8ba7e474",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x7a2e3526c663e63b4f9e7b0f9098b584d6b8555b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-21 10:04:11+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x94ee5265675db9d085823e28d432fb16b1a6b816",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVaultRateProvider",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xa333c039e4bbf8417c0947425b6284f49931e39c",
+      "impl_name": "UltraVaultRateProvider",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0x94ee5265675db9d085823e28d432fb16b1a6b816",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xa333c039e4bbf8417c0947425b6284f49931e39c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-09-11 07:16:47+03",
+      "deploy_coverage_basis": "code_matched"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xad4b339966abb404763429a86646fe8dc6a17c38",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UltraVaultRateProvider",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": "0xad4b339966abb404763429a86646fe8dc6a17c38",
+      "impl_name": "UltraVaultRateProvider",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xad4b339966abb404763429a86646fe8dc6a17c38",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xfba0f791e650e5cebe63496332814e40c38381ae",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-11620"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-04 12:55:11+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 999,
@@ -553,7 +1587,7 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "Wrapped HLP",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -576,7 +1610,50 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-06-18 09:03:00+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 999,
+      "chain_name": "hyperliquid",
+      "address": "0x5017f5e8d3bf1592da6ada8433f4738dc35f6edb",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 999,
+          "chain_name": "hyperliquid",
+          "address": "0x5017f5e8d3bf1592da6ada8433f4738dc35f6edb",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-02-26 03:46:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 999,
@@ -611,7 +1688,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-02-18 11:13:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -638,7 +1719,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -649,7 +1730,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -660,7 +1741,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -671,7 +1752,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -682,7 +1763,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -693,7 +1774,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -704,7 +1785,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -715,7 +1796,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -726,7 +1807,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         },
         {
           "chain_id": 1,
@@ -737,15 +1818,22 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": false
+          "is_audited": true
         }
       ],
-      "audits_covering": [],
-      "is_audited": false,
+      "audits_covering": [
+        "audit-11619",
+        "audit-11620"
+      ],
+      "is_audited": true,
       "source_verified": true,
       "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-08 12:35:11+03",
+      "deploy_coverage_basis": "code_matched"
     }
   ],
   "audits": [
@@ -756,18 +1844,33 @@
       "report_url": "https://github.com/UltraYield/contracts/blob/main/audits/v1_May_2025_ChainSecurity.pdf",
       "auditor": "ChainSecurity",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "aging",
+      "date": "2025-05",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AsyncVault",
+        "BaseControlledAsyncRedeem",
+        "BaseERC7540",
+        "FixedPointMathLib",
+        "InitializableOwnable",
+        "OracleAdmin",
+        "Pausable",
+        "ScaleUtils",
+        "UltraVault",
+        "UltraVaultOracle",
+        "VaultPriceManager"
+      ],
+      "matched_contracts": 40,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -777,18 +1880,32 @@
       "report_url": "https://github.com/UltraYield/contracts/blob/main/audits/v2_Sep_2025_Omniscia.pdf",
       "auditor": "Omniscia",
       "audit_type": "audit",
-      "freshness": "unknown",
-      "date": null,
+      "freshness": "fresh",
+      "date": "2025-09",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
-      "scope_format": "n/a",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
+      "scope_format": "contract_name",
+      "extracted_names": [
+        "AddressUpdates",
+        "BaseControlledAsyncRedeem",
+        "FixedPointMathLib",
+        "OracleAdmin",
+        "RedeemQueue",
+        "UltraFeeder",
+        "UltraVault",
+        "UltraVaultOracle",
+        "UltraVaultRateProvider",
+        "VaultPriceManager"
+      ],
+      "matched_contracts": 58,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     },
     {
@@ -804,51 +1921,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AaveV3DecoderAndSanitizer",
-        "AccountantWithRateProviders",
-        "AggregationRouterV5",
-        "AtomicQueue",
-        "AtomicSolver",
-        "AuraDecoderAndSanitizer",
-        "BalancerV2DecoderAndSanitizer",
-        "BalancerVault",
-        "BaseDecoderAndSanitizer",
-        "BeforeTransferHook",
-        "BoringVault",
-        "BoringVaultV0Lens",
-        "CellarMigrationAdaptor",
-        "ConvexDecoderAndSanitizer",
-        "CurveDecoderAndSanitizer",
-        "DecoderCustomTypes",
-        "DexAggregatorUManager",
-        "DexSwapperUManager",
-        "ERC4626DecoderAndSanitizer",
-        "EtherFiDecoderAndSanitizer",
-        "EtherFiLiquid1",
-        "EtherFiLiquidDecoderAndSanitizer",
-        "GearboxDecoderAndSanitizer",
-        "IAtomicSolver",
-        "IRateProvider",
-        "IStaking",
-        "IUniswapV3Router",
-        "LidoDecoderAndSanitizer",
-        "LidoLiquidDecoderAndSanitizer",
-        "ManagerWithMerkleVerification",
-        "MorphoBlueDecoderAndSanitizer",
-        "NativeWrapperDecoderAndSanitizer",
-        "OneInchDecoderAndSanitizer",
-        "PendleRouterDecoderAndSanitizer",
-        "PriceRouter",
-        "RawDataDecoderAndSanitizerInterfaces",
-        "TellerWithMultiAssetSupport",
-        "UniswapV3DecoderAndSanitizer"
-      ],
-      "matched_contracts": 5,
+      "extracted_names": [],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -864,6 +1945,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -879,12 +1963,15 @@
       "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-boring-vault.pdf",
       "auditor": "Pashov Audit Group",
       "audit_type": "audit",
-      "freshness": "aging",
+      "freshness": "stale",
       "date": "2024-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -900,12 +1987,15 @@
       "report_url": "https://github.com/Ion-Protocol/nucleus-boring-vault/blob/master/audit/pashov-hlp-controller%3Aaccount.pdf",
       "auditor": "Pashov Audit Group",
       "audit_type": "audit",
-      "freshness": "fresh",
+      "freshness": "aging",
       "date": "2025-07",
       "is_inherited": false,
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -927,18 +2017,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AtomicQueueUCP",
-        "CrossChainTellerBase",
-        "MultiChainHyperlaneTellerWithMultiAssetSupport",
-        "MultiChainTellerBase",
-        "TellerWithMultiAssetSupport"
-      ],
+      "extracted_names": [],
       "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -954,6 +2041,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -975,28 +2065,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AssetSpecificFeeModule",
-        "BeforeTransferHook",
-        "BoringVault",
-        "CrossChainTellerBase",
-        "DecoderCustomTypes",
-        "DexAggregatorWrapperWithPredicateProxy",
-        "DistributorCodeDepositor",
-        "FreezeListBeforeTransferHook",
-        "IFallbackHook",
-        "MultiChainHyperlaneTellerWithMultiAssetSupport",
-        "MultiChainLayerZeroTellerWithMultiAssetSupport",
-        "NucleusDecoderAndSanitizer",
-        "TellerWithMultiAssetSupport",
-        "TellerWithMultiAssetSupportPredicateProxy",
-        "WarpRouteWrapper"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1012,17 +2089,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AccountantWithRateProviders",
-        "CrossChainTellerBase",
-        "TellerWithMultiAssetSupport",
-        "WithdrawQueue"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1038,23 +2113,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AccountantWithRateProviders",
-        "BalancerV2DecoderAndSanitizer",
-        "BoringVault",
-        "CurveDecoderAndSanitizer",
-        "DexAggregatorUManager",
-        "DexSwapperUManager",
-        "ManagerWithMerkleVerification",
-        "MorphoBlueDecoderAndSanitizer",
-        "TellerWithMultiAssetSupport",
-        "UniswapV3DecoderAndSanitizer"
-      ],
-      "matched_contracts": 5,
+      "extracted_names": [],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": false,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -1070,6 +2137,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -1091,47 +2161,59 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "AccountantWithRateProviders",
-        "CrossChainTellerBase",
-        "TellerWithMultiAssetSupport",
-        "WithdrawQueue"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
   "auditor_coverage": [
     {
+      "auditor": "Omniscia",
+      "tier": 2,
+      "contracts_covered": 21,
+      "coverage_pct": 77.8,
+      "latest_audit": "2025-09"
+    },
+    {
+      "auditor": "ChainSecurity",
+      "tier": 1,
+      "contracts_covered": 12,
+      "coverage_pct": 44.4,
+      "latest_audit": "2025-05"
+    },
+    {
       "auditor": "0xMacro",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 37.5,
+      "coverage_pct": 11.1,
       "latest_audit": "2024-04"
     },
     {
       "auditor": "Pashov Audit Group",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 37.5,
+      "coverage_pct": 11.1,
       "latest_audit": "2026-03"
     },
     {
       "auditor": "Spearbit",
       "tier": 1,
       "contracts_covered": 3,
-      "coverage_pct": 37.5,
+      "coverage_pct": 11.1,
       "latest_audit": "2024-04"
     },
     {
       "auditor": "Zenith",
       "tier": 2,
       "contracts_covered": 1,
-      "coverage_pct": 12.5,
+      "coverage_pct": 3.7,
       "latest_audit": "2026-01"
     }
   ],
@@ -1155,52 +2237,25 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x1467ce4ad75991303adda4c7ec8e553534246f1d",
-      "name": "UltraVaultOracle",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x0ecb66d64a3c5cc592b72f135f6f317da42396b5",
-      "name": "VaultPriceManager",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 8,
+    "native": 27,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 2
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 17
+      "contract_name": 10,
+      "extraction_exact": 98
     },
     "extraction_confidence_counts": {
-      "high": 6
+      "high": 2
     },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [
-      {
-        "audit_id": 11619,
-        "report_name": "v1_May_2025_ChainSecurity.pdf"
-      },
-      {
-        "audit_id": 11620,
-        "report_name": "v2_Sep_2025_Omniscia.pdf"
-      },
       {
         "audit_id": 12449,
         "report_name": "0xmacro-boring-vault-arctic-1.pdf"

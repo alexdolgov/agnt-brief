@@ -4,14 +4,14 @@
 
 - Project: ShardingDAO (`shardingdao`)
 - Website: [https://shardingdao.com/](https://shardingdao.com/)
-- Lifecycle: active (Tier 0, 47.7% below peak)
-- Generated: 2026-06-17T07:00:46.019Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:56.021Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-0679
 - Chains: ethereum
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $6,279,557.56
-- On-chain TVL (included contracts): $1,376,629.69
-- TVL by chain: Ethereum $1,376,629.69
+- DeFi Llama TVL: $5,899,522.52
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
@@ -20,29 +20,32 @@ Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-ShardingDAO is an Ethereum staking and NFT-fragmentation protocol. It supports staking assets such as WBTC and ETH for rewards, fractionalizing NFTs into tradable shards, shard marketplace trading, collective shard ownership, buyout and governance mechanisms, and SHD-related reward/token features.
+Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 22; live-surface contracts included: 1 (1 live, 0 unknown).
-- Excluded by liveness: 9 inactive, 12 singleton, 0 uninitialized.
-- Deployment units: 0/6 live.
-- Detected codebases: uniswap-v2
-- Dependencies extracted: 2; unverified dependencies: 0.
+- Indexed contracts: 18; live-surface contracts included: 1 (1 live, 0 unknown).
+- Excluded by liveness: 17 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $1,376,629.69
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -83,7 +86,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Audit: <>](https://shardingdao.com/files/shd_smart_contract_audit_report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [shd_smart_contract_audit_report.pdf](https://shardingdao.com/files/shd_smart_contract_audit_report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -91,7 +94,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x5845cd...db060f`](./contracts/ethereum-1/0x5845cd0205b5d43af695412a79cf7c1aeddb060f/) | SHDToken | token | $1,376,629.69 | Verified native implementation with $1,376,629.69 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x5845cd...db060f`](./contracts/ethereum-1/0x5845cd0205b5d43af695412a79cf7c1aeddb060f/) | SHDToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
@@ -113,6 +116,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [2141] Audit: <>
+- [2141] shd_smart_contract_audit_report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

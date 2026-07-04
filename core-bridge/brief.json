@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "core-bridge",
-  "generated_at": "2026-06-17T07:00:52.427Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "core-bridge",
-    "tier": 0,
-    "peak_tvl": 17337164,
-    "peak_date": "2025-05-14T00:00:00.000Z",
-    "tvl_30d_ago": 4053948,
-    "tvl_90d_ago": 2597053,
-    "tvl_current": 3812923,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 3190173,
-    "change_30d_pct": -5.945438866014068,
-    "change_90d_pct": 46.81729637400546,
-    "days_since_peak": 396,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 78.00722771036833
-  },
+  "generated_at": "2026-07-04T14:53:10.526Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-1bf2",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 3,
     "total_addresses": 6,
@@ -34,9 +18,11 @@
     "contracts_unverified": 2,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3821049.32099,
-    "tvl_usd": 3821049.32099,
+    "dl_tvl_usd": 3738707.52301,
+    "tvl_usd": 3738707.52301,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -58,21 +44,30 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "CORE Bridge is a cross-chain bridge for the Core DAO ecosystem, with observed bridge TVL across Ethereum, BNB Chain, Polygon, Arbitrum, Optimism, Avalanche, and Base. The listed Avalanche/Base contracts should be treated as a partial contract inventory only, and LayerZero contracts should be treated as third-party messaging dependencies rather than CORE-owned core bridge contracts unless independently verified.",
-    "relationship_narrative": "The OriginalTokenBridge relies on the UltraLightNodeV2 for cross-chain message verification and delivery. Both contracts are deployed by the same deployer, indicating a shared infrastructure for the bridge functionality.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 9,
-    "live_contracts": 3,
-    "inactive_contracts": 3,
+    "project_purpose": "Canonical Bridge. Structurally: 3 project-authored contract(s) across 3 chain(s); built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 2 functional families. Its contracts share 1 common project-authored base contract(s) (tokenbridgebase). Dominant framework: openzeppelin.",
+    "product_family_count": 2,
+    "total_contracts_indexed": 10,
+    "live_contracts": 4,
+    "inactive_contracts": 4,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 3,
+    "unknown_contracts": 2,
     "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 1,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
@@ -152,7 +147,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2024-09-06 17:53:51+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 10,
@@ -162,7 +161,7 @@
       "deployment_unit_proxy_count": null,
       "name": "UnnamedContract",
       "role": "unknown",
-      "origin_kind": "native",
+      "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -187,7 +186,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-29 12:30:41+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 43114,
@@ -199,7 +202,7 @@
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
-      "product_line": "CORE Bridge",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -222,7 +225,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-09-29 12:44:41+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],
@@ -240,10 +247,10 @@
     }
   ],
   "origin_summary": {
-    "native": 2,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {},

@@ -3,12 +3,12 @@
 ## Project Overview
 
 - Project: Tizi (`tizi`)
-- Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-21T09:01:25.322Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:54:01.519Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-4c3e
 - Chains: base
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $121,959.16
+- DeFi Llama TVL: $132,446.07
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
@@ -27,38 +27,43 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 1; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
-- Verified + Unaudited implementations: 1
+- Coverage of deployed-live implementations: 1/1 (100.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/1
+- Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
-- Scoreable audits (matched contracts): 0
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Latest audit: 2026-01 (fresh)
+- Audit staleness (calendar age): 1 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 1 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| unknown | Tier 2 | 1 | 100.0% | 2026-01 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
-
-- None
-
-### ⚠️ Verified + Unaudited (1)
+### ✅ Verified + Audited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| TiziDollar | unknown | base | n/a | [`0x469bbd...2c27e6`](./contracts/base-8453/0x469bbd88eea8a2d9a5c6c82d9890cf60962c27e6/) | ⚠️ Unaudited |
+| TiziDollar | unknown | base | n/a | [`0x469bbd...2c27e6`](./contracts/base-8453/0x469bbd88eea8a2d9a5c6c82d9890cf60962c27e6/) | ✅ Audited |
+
+### ⚠️ Verified + Unaudited (0)
+
+- None
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -82,15 +87,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://2781107368-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlxAaGBCj8m8RA8EcZ25F%2Fuploads%2FEJb3Xu5zhoktjv1DRmti%2FTizi%20audit%20by%20Beosin.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [spaces/lxAaGBCj8m8RA8EcZ25F/uploads/EJb3Xu5zhoktjv1DRmti/Tizi audit by Beosin.pdf](https://2781107368-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FlxAaGBCj8m8RA8EcZ25F%2Fuploads%2FEJb3Xu5zhoktjv1DRmti%2FTizi%20audit%20by%20Beosin.pdf) | unknown | Audit | 2026-01 | fresh | Direct | contract_name | 1 | high |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-| Chain | Address | Name | Role | TVL USD | Risk Note |
-|---|---|---|---|---:|---|
-| base | [`0x469bbd...2c27e6`](./contracts/base-8453/0x469bbd88eea8a2d9a5c6c82d9890cf60962c27e6/) | TiziDollar | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+- None
 
 ## Origin Classification
 
@@ -105,13 +108,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
-- Match method counts: n/a
-
-Zero-match audit list:
-
-- [14011] DL audit link
+- Extraction confidence breakdown: high=1
+- Match method counts: extraction_exact=1
 
 Fork inheritance lineage and inherited audits are included when available.

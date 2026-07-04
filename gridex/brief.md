@@ -1,66 +1,72 @@
 # Agentic Audit Brief: Gridex
 
-⚠️ Lifecycle status: DEAD - TVL dropped 10.4% over 90 days
-
 ## Project Overview
 
 - Project: Gridex (`gridex`)
-- Lifecycle: dead (Tier 0, 99.8% below peak)
-- Generated: 2026-06-21T06:48:37.747Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:21.028Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: arbitrum, base
-- Contract surface: 2 unique implementations (2 raw deployments)
-- DeFi Llama TVL: $54,054.07
+- Contract surface: 5 unique implementations (5 raw deployments)
+- DeFi Llama TVL: $52,290.13
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Gridex is a decentralized exchange protocol that facilitates trading of digital assets through an order book model. It provides a factory for creating trading grids and a native token (GDX) likely used for governance or fee incentives.
+Dexs. Structurally: 6 project-authored contract(s) across 2 chain(s); 1 ERC20 token; built on openzeppelin.
 
 ### Architecture
 
-The GridFactory contract serves as a registry for deploying and managing trading grids, while the GDX token likely functions as the protocol's native asset for fees or governance, though no direct on-chain dependency is visible from the provided contract surface.
+The protocol comprises 3 functional families. Its contracts share 3 common project-authored base contract(s) (abstractpayments, abstractselfpermit2612, multicall). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 6; live-surface contracts included: 2 (2 live, 0 unknown).
-- Excluded by liveness: 4 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 6; live-surface contracts included: 5 (3 live, 2 unknown).
+- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/2 (0.0%)
-- Verified + Unaudited implementations: 2
+- Coverage of deployed-live implementations: 1/3 (33.3%)
+- Deployed-live implementations: 3 of 5 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/5
+- Verified + Unaudited implementations: 4
 - Verified by bytecode match: 0
 - Unverified implementations: 0
-- Unique implementations: 2
-- Raw deployments: 2
-- Audits discovered: 1
-- Scoreable audits (matched contracts): 0
+- Unique implementations: 5
+- Raw deployments: 5
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
+- Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2023-02 (stale)
-- Staleness: 0 fresh, 0 aging, 1 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 1 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 1 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
-- None
+| Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
+|---|---|---:|---:|---|
+| CertiK | Tier 2 | 1 | 20.0% | 2023-02 |
 
 ## Contract Surface
 
-### ✅ Verified + Audited (0)
-
-- None
-
-### ⚠️ Verified + Unaudited (2)
+### ✅ Verified + Audited (1)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| GridFactory | unknown | base | n/a | [`0x32d1f0...efa19c`](./contracts/base-8453/0x32d1f0dce675902f89d72251db4ab1d728efa19c/) | ✅ Audited |
+
+### ⚠️ Verified + Unaudited (4)
+
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| AggregateMulticall | unknown | base | n/a | [`0xdb3698...306595`](./contracts/base-8453/0xdb36980c07ba859613c786caa69ceba2b5306595/) | ⚠️ Unaudited |
 | GDX | unknown | arbitrum | n/a | [`0x2f2711...a6975d`](./contracts/arbitrum-42161/0x2f27118e3d2332afb7d165140cf1bb127ea6975d/) | ⚠️ Unaudited |
+| Quoter | unknown | base | n/a | [`0x320c95...6e69a3`](./contracts/base-8453/0x320c95b7e5728dae3e3ead997494c029d16e69a3/) | ⚠️ Unaudited |
 | SwapRouterHub | adapter | base | n/a | [`0x426b75...757733`](./contracts/base-8453/0x426b751aba5f49914bfbd4a1e45aee099d757733/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
@@ -85,7 +91,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [CertiK-Audit-for-Gridex.pdf](https://github.com/GridexProtocol/core/blob/main/audits/certik/CertiK-Audit-for-Gridex.pdf) | CertiK | Audit | 2023-02 | stale | Direct | contract_name | 0 | n/a |
+| [CertiK-Audit-for-Gridex.pdf](https://github.com/GridexProtocol/core/blob/main/audits/certik/CertiK-Audit-for-Gridex.pdf) | CertiK | Audit | 2023-02 | stale | Direct | contract_name | 1 | high |
 
 ## Coverage Gaps
 
@@ -93,14 +99,16 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
+| base | [`0xdb3698...306595`](./contracts/base-8453/0xdb36980c07ba859613c786caa69ceba2b5306595/) | AggregateMulticall | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x2f2711...a6975d`](./contracts/arbitrum-42161/0x2f27118e3d2332afb7d165140cf1bb127ea6975d/) | GDX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x320c95...6e69a3`](./contracts/base-8453/0x320c95b7e5728dae3e3ead997494c029d16e69a3/) | Quoter | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | base | [`0x426b75...757733`](./contracts/base-8453/0x426b751aba5f49914bfbd4a1e45aee099d757733/) | SwapRouterHub | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 2 |
+| native | 5 |
 | upstream | 0 |
 | standard_library | 0 |
 | needs_review | 0 |
@@ -109,13 +117,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 1
+- Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: n/a
+- Extraction confidence breakdown: high=1
 - Match method counts: extraction_exact=1
-
-Zero-match audit list:
-
-- [13207] CertiK-Audit-for-Gridex.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

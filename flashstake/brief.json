@@ -1,58 +1,31 @@
 {
   "schema_version": "2.0",
   "project_key": "flashstake",
-  "generated_at": "2026-06-20T02:44:07.681Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-a815",
-  "lifecycle_status": "declining",
-  "lifecycle_signal": {
-    "slug": "flashstake",
-    "tier": 1,
-    "peak_tvl": 5459122,
-    "peak_date": "2023-05-29T00:00:00.000Z",
-    "tvl_30d_ago": 45664,
-    "tvl_90d_ago": 45171,
-    "tvl_current": 37199,
-    "tier0_reason": "severe_long_term_collapse_from_peak",
-    "tvl_180d_ago": 62310,
-    "change_30d_pct": -18.537578836720392,
-    "change_90d_pct": -17.64849128865865,
-    "governance_raw": {
-      "evidence": "TVL dropped 99.3% from peak, but the protocol still has a functional website and dApp, no shutdown announcement.",
-      "confidence": 0.7,
-      "lifecycle_status": "declining"
-    },
-    "days_since_peak": 1118,
-    "detection_method": "tvl_trajectory+governance_signal",
-    "governance_source": "docs_homepage",
-    "drop_from_peak_pct": 99.31859005898751,
-    "governance_evidence": "TVL dropped 99.3% from peak, but the protocol still has a functional website and dApp, no shutdown announcement.",
-    "governance_confidence": 0.7,
-    "governance_text_chars": 2741,
-    "governance_classification": "declining",
-    "governance_fallback_reason": null
-  },
+  "generated_at": "2026-07-04T14:53:16.356Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-43c7",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 12,
-    "total_addresses": 18,
-    "unique_implementations": 12,
-    "total_deployments": 18,
+    "total_contracts": 15,
+    "total_addresses": 21,
+    "unique_implementations": 15,
+    "total_deployments": 21,
     "audited_contracts": 3,
     "unaudited_contracts": 9,
     "contracts_verified_audited": 3,
     "contracts_verified_unaudited": 9,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 25,
+    "contracts_unverified": 3,
+    "coverage_pct": 27.3,
     "total_audits": 3,
+    "direct_audits": 3,
+    "inherited_audits": 0,
     "scoreable_audits": 3,
-    "dl_tvl_usd": 36640.74938,
-    "tvl_usd": 1250340.1246326338,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "arbitrum": 274924.62,
-      "ethereum": 975415.5
-    },
-    "asd_usd": 274924.6246326338,
+    "dl_tvl_usd": 34610.04215,
+    "tvl_usd": 34610.04215,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://flashstake.io/",
     "chains": [
       "arbitrum",
@@ -68,28 +41,35 @@
       "aging": 0,
       "stale": 3,
       "unknown": 0
+    },
+    "live_implementations": 12,
+    "live_verified_implementations": 11,
+    "live_audited_implementations": 3,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 3
     }
   },
   "topography": {
-    "project_purpose": "Flashstake is a DeFi protocol that lets users instantly receive upfront yield on staked assets by locking tokens for a chosen duration. It issues fTokens representing the staked position and uses a time-based incentive mechanism to distribute rewards.",
-    "relationship_narrative": "All families share the Flash Protocol core logic (FlashProtocol, FlashProtocolProxyV2) and token standards (FlashToken, FlashNFT, FTokenAccumulatorV3) deployed across chains. The FlashFTokenFactory registry and FlashBack/FlashBackLM contracts provide shared infrastructure for fToken creation and liquidity mining rewards on mainnet and Arbitrum.",
-    "product_family_count": 5,
-    "total_contracts_indexed": 73,
+    "project_purpose": "Yield. Structurally: 27 project-authored contract(s) across 3 chain(s); 6 ERC20 tokens, 2 ERC721 NFTs; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.",
+    "product_family_count": 4,
+    "total_contracts_indexed": 72,
     "live_contracts": 18,
-    "inactive_contracts": 55,
+    "inactive_contracts": 51,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 1,
-    "live_deployment_units": 1,
-    "dependencies_extracted": 3,
+    "unknown_contracts": 3,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 12,
+    "unique_implementations": 15,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -98,78 +78,6 @@
     "inherited_audit_count": 0
   },
   "contracts": [
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xb1f1f47061a7be15c69f378cb3f69423bd58f2f8",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "FlashToken",
-      "role": "token",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": "Mainnet (Ethereum)",
-      "tvl_usd": 975415.5,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "FlashToken",
-      "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xb1f1f47061a7be15c69f378cb3f69423bd58f2f8",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 975415.5,
-          "is_audited": true
-        }
-      ],
-      "audits_covering": [
-        "audit-13129"
-      ],
-      "is_audited": true,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_audited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0xc628534100180582e43271448098cb2c185795bd",
-      "deployment_unit": "unit-41038",
-      "deployment_unit_proxy_count": 1,
-      "name": "StandardArbERC20",
-      "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "openzeppelin",
-      "product_line": "Arbitrum",
-      "tvl_usd": 274924.6246326338,
-      "is_proxy": true,
-      "impl_address": "0x3f770ac673856f105b586bb393d122721265ad46",
-      "impl_name": "StandardArbERC20",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0xc628534100180582e43271448098cb2c185795bd",
-          "deployment_unit": "unit-41038",
-          "deployment_unit_proxy_count": 1,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 274924.6246326338,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
@@ -203,7 +111,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-03-09 16:05:55+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -215,7 +127,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mainnet (Ethereum)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -241,7 +153,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -251,7 +163,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-03-03 00:04:05+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 1,
@@ -263,7 +179,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mainnet (Ethereum)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -289,7 +205,7 @@
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
-          "is_audited": true
+          "is_audited": false
         }
       ],
       "audits_covering": [
@@ -301,7 +217,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-03-03 00:08:46+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42161,
@@ -313,7 +233,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Arbitrum",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -347,7 +267,52 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-03-09 04:07:22+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xb1f1f47061a7be15c69f378cb3f69423bd58f2f8",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "FlashToken",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "FlashToken",
+      "deployments": [
+        {
+          "chain_id": 1,
+          "chain_name": "ethereum",
+          "address": "0xb1f1f47061a7be15c69f378cb3f69423bd58f2f8",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-13129"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-07-29 02:31:28+03",
+      "deploy_coverage_basis": "match_unverified"
     },
     {
       "chain_id": 42161,
@@ -359,7 +324,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Arbitrum",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -404,7 +369,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-05-27 18:43:21+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 10,
@@ -414,9 +383,9 @@
       "deployment_unit_proxy_count": null,
       "name": "L2StandardERC20",
       "role": "token",
-      "origin_kind": "standard_library",
-      "origin_provider": "Optimism",
-      "product_line": "Optimistic Ethereum (Optimism)",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -439,7 +408,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-10-21 15:57:43+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -451,7 +424,7 @@
       "role": "unknown",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Mainnet (Ethereum)",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -485,7 +458,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-12 18:44:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -520,7 +497,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-07-19 00:14:47+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xc628534100180582e43271448098cb2c185795bd",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "StandardArbERC20",
+      "role": "token",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x3f770ac673856f105b586bb393d122721265ad46",
+      "impl_name": "StandardArbERC20",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xc628534100180582e43271448098cb2c185795bd",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-02-20 23:38:54+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -532,7 +552,7 @@
       "role": "unknown",
       "origin_kind": "upstream",
       "origin_provider": "Uniswap",
-      "product_line": "Flashstake",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -555,7 +575,128 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2022-08-01 19:45:11+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x720face4d24018cbe1d68b1df64a730890598f47",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 10,
+          "chain_name": "optimism",
+          "address": "0x720face4d24018cbe1d68b1df64a730890598f47",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-03 12:53:55+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x3b090839c26fe3b2bdfa2f4cd7f3ab001ccdf73f",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x3b090839c26fe3b2bdfa2f4cd7f3ab001ccdf73f",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-03-02 23:51:06+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x9d791ed4bf553c7d14ebe778b207a6594b5307dc",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x9d791ed4bf553c7d14ebe778b207a6594b5307dc",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-06-03 01:46:20+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -590,7 +731,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-07-06 22:39:59+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -607,17 +752,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "FlashBack",
-        "FlashProtocol",
-        "FlashStrategy",
-        "FlashStrategyAAVEv2"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -633,31 +776,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "DataTypes",
-        "FlashBack",
-        "FlashFToken",
-        "FlashFTokenFactory",
-        "FlashNFT",
-        "FlashProtocol",
-        "FlashStrategyAAVEv2",
-        "FlashToken",
-        "IAaveIncentivesController",
-        "IERC20C",
-        "IFlashFToken",
-        "IFlashFTokenFactory",
-        "IFlashNFT",
-        "IFlashStrategy",
-        "ILendingPool",
-        "ILendingPoolAddressesProvider",
-        "IUserIncentive",
-        "UserIncentive"
-      ],
-      "matched_contracts": 5,
+      "extracted_names": [],
+      "matched_contracts": 3,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     },
     {
@@ -673,17 +800,15 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [
-        "FlashBack",
-        "FlashProtocol",
-        "FlashStrategy",
-        "FlashStrategyAAVEv2"
-      ],
-      "matched_contracts": 2,
+      "extracted_names": [],
+      "matched_contracts": 1,
       "scope_note": null,
-      "extraction_confidence": "high",
-      "scope_section_found": true,
+      "extraction_confidence": null,
+      "scope_section_found": null,
       "repo_reference_count": 0
     }
   ],
@@ -735,6 +860,16 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 10,
+      "chain_name": "optimism",
+      "address": "0x86bea60374f220de9769b2fef2db725bc1cdd335",
+      "name": "L2StandardERC20",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x21d929770398df5146346390d2973bf3f30b7684",
@@ -755,6 +890,16 @@
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     },
     {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xc628534100180582e43271448098cb2c185795bd",
+      "name": "StandardArbERC20",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0x082aeb8d095b4ea1ad935035ef1239928ac59dd1",
@@ -766,18 +911,16 @@
     }
   ],
   "origin_summary": {
-    "native": 9,
+    "native": 11,
     "upstream": 1,
-    "standard_library": 2,
-    "needs_review": 0
+    "standard_library": 0,
+    "needs_review": 3
   },
   "scope_matching_notes": {
     "match_method_counts": {
-      "extraction_exact": 35
+      "contract_name": 5
     },
-    "extraction_confidence_counts": {
-      "high": 3
-    },
+    "extraction_confidence_counts": {},
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
     "audits_with_zero_matches": [],

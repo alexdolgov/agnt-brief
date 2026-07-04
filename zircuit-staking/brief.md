@@ -1,59 +1,59 @@
 # Agentic Audit Brief: Zircuit Staking
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 70.8% over 90 days
-
 ## Project Overview
 
 - Project: Zircuit Staking (`zircuit-staking`)
 - Website: [https://app.zircuit.com/liquidity-hub](https://app.zircuit.com/liquidity-hub)
-- Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-06-18T07:37:29.259Z
-- Pipeline run: v2-pipeline-2026-06-18-32b207-94c2
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:54:14.924Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-c970
 - Chains: base, ethereum
-- Contract surface: 13 unique implementations (15 raw deployments)
-- DeFi Llama TVL: $41,475,058.79
-- On-chain TVL (included contracts): $178,402,442.05
-- TVL by chain: Ethereum $176,888,678.72 | Base $1,513,763.33
+- Contract surface: 20 unique implementations (22 raw deployments)
+- DeFi Llama TVL: $38,414,098.77
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Zircuit Staking is a Zircuit Liquidity Hub and farming/staking rewards program where users deposit supported assets to earn staking or restaking APR, Zircuit points, partner points, and potential airdrop rewards. rsETH may be one supported deposit asset, but the protocol should not be described as issuing rsETH unless supported by primary documentation and contract ownership evidence. Broader Zircuit rollup, bridge, OFT/token, and institutional/compliance lending infrastructure should be separated from the zircuit-staking product scope unless directly proven to be part of its TVL surface.
+Farm. Structurally: 22 project-authored contract(s) across 2 chain(s); 1 ERC20 token; upgradeable via ERC1967/UUPS proxies; built on openzeppelin-upgradeable.
 
 ### Architecture
 
-The Zircuit Staking family issues rsETH, which may be used within the Institutional Contracts for compliant lending strategies. The Ethereum family provides the cross-chain infrastructure that likely supports Zircuit's L2 operations, with governance controlled by the Multisig addresses.
+The protocol comprises 6 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin-upgradeable.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 23; live-surface contracts included: 15 (14 live, 1 unknown).
-- Excluded by liveness: 8 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 10/16 live.
+- Indexed contracts: 22; live-surface contracts included: 22 (21 live, 1 unknown).
+- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 6/7.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 4/12 (33.3%)
-- Verified + Unaudited implementations: 8
+- Coverage of deployed-live implementations: 4/17 (23.5%)
+- Deployed-live implementations: 19 of 20 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 4/19
+- Verified + Unaudited implementations: 15
 - Verified by bytecode match: 0
 - Unverified implementations: 1
-- Unique implementations: 13
-- Raw deployments: 15
-- Audits discovered: 11
+- Unique implementations: 20
+- Raw deployments: 22
+- Audits discovered: 11 (11 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 4
-- ASD (verified + unaudited TVL): $140,430,966.05
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-05 (aging)
-- Staleness: 0 fresh, 7 aging, 3 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 5 aging, 5 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 4 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [declining]. ASD of $140,430,966.05 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| Dedaub | Tier 2 | 4 | 33.3% | 2024-07 |
-| Ottersec | Tier 2 | 1 | 8.3% | 2024-02 |
-| Unknown | Tier 2 | 1 | 8.3% | 2024-09 |
+| Dedaub | Tier 2 | 4 | 21.1% | 2024-07 |
+| Ottersec | Tier 2 | 1 | 5.3% | 2024-02 |
+| Unknown | Tier 2 | 1 | 5.3% | 2024-09 |
 
 ## Contract Surface
 
@@ -61,23 +61,30 @@ The Zircuit Staking family issues rsETH, which may be used within the Institutio
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| L1StandardBridge | operational_periphery | ethereum | n/a | [`0x386b76...b26dd8`](./contracts/ethereum-1/0x386b76d9ca5f5fb150b6bfb35cf5379b22b26dd8/) | ✅ Audited |
+| L2OutputOracle | operational_periphery | ethereum | n/a | [`0x92ef6a...9245a4`](./contracts/ethereum-1/0x92ef6af472b39f1b363da45e35530c24619245a4/) | ✅ Audited |
+| OptimismPortal | unknown | ethereum | n/a | [`0x17bfaf...043fb1`](./contracts/ethereum-1/0x17bfafa932d2e23bd9b909fd5b4d2e2a27043fb1/) | ✅ Audited |
 | ZtakingPool | core_logic | ethereum | n/a | [`0xf047ab...aeafa6`](./contracts/ethereum-1/0xf047ab4c75cebf0eb9ed34ae2c186f3611aeafa6/) | ✅ Audited |
-| L1StandardBridge | operational_periphery | ethereum | unit-35873 | [`0x386b76...b26dd8`](./contracts/ethereum-1/0x386b76d9ca5f5fb150b6bfb35cf5379b22b26dd8/) | ✅ Audited |
-| L2OutputOracle | operational_periphery | ethereum | unit-35879 | [`0x92ef6a...9245a4`](./contracts/ethereum-1/0x92ef6af472b39f1b363da45e35530c24619245a4/) | ✅ Audited |
-| OptimismPortal | unknown | ethereum | unit-35869 | [`0x17bfaf...043fb1`](./contracts/ethereum-1/0x17bfafa932d2e23bd9b909fd5b4d2e2a27043fb1/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (8)
+### ⚠️ Verified + Unaudited (15)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| ERC20RevocableComplianceTokenBasicPackageUpgradable | token | ethereum | unit-35874 | [`0x48ab4e...02717f`](./contracts/ethereum-1/0x48ab4e39ac59f4e88974804b04a991b3a402717f/) | ⚠️ Unaudited |
-| TokenizedStrategy | core_logic | base | unit-35884 (2 proxies) | 2 deployments: base [`0x1a48ce...37e1cc`](./contracts/base-8453/0x1a48cec817bcb5436efe99bab6dde228cc37e1cc/); base `0xe83ef4...ab1dc5` | ⚠️ Unaudited |
-| CrisisControlRegistry | registry | ethereum | unit-35878 | [`0x7d43eb...80f35e`](./contracts/ethereum-1/0x7d43eb137185aea81a020563099e940bb380f35e/) | ⚠️ Unaudited |
-| GnosisSafe | governance | ethereum | unit-35871 (2 proxies) | 2 deployments: ethereum [`0x2c0b27...2db276`](./contracts/ethereum-1/0x2c0b27f7c8f083b539557a0ba787041bf22db276/); ethereum `0xc463ea...2baf38` | ⚠️ Unaudited |
-| L1CrossDomainMessenger | unknown | ethereum | unit-35870 | [`0x2a721c...5ea091`](./contracts/ethereum-1/0x2a721cbe81a128be0f01040e3353c3805a5ea091/) | ⚠️ Unaudited |
-| ResolverRegistry | registry | ethereum | unit-35876 | [`0x6c8910...d5cf0e`](./contracts/ethereum-1/0x6c89104690452ad7e209f0ab72287c2561d5cf0e/) | ⚠️ Unaudited |
-| RSETH | token | ethereum | unit-35881 | [`0xa1290d...99e5a7`](./contracts/ethereum-1/0xa1290d69c65a6fe4df752f95823fae25cb99e5a7/) | ⚠️ Unaudited |
+| CrisisControlRegistry | registry | ethereum | n/a | [`0x7d43eb...80f35e`](./contracts/ethereum-1/0x7d43eb137185aea81a020563099e940bb380f35e/) | ⚠️ Unaudited |
+| ERC20RevocableComplianceTokenBasicPackageUpgradable | token | ethereum | n/a | [`0x48ab4e...02717f`](./contracts/ethereum-1/0x48ab4e39ac59f4e88974804b04a991b3a402717f/) | ⚠️ Unaudited |
+| GnosisSafe | governance | ethereum | n/a | 2 deployments: ethereum [`0x2c0b27...2db276`](./contracts/ethereum-1/0x2c0b27f7c8f083b539557a0ba787041bf22db276/); ethereum `0xc463ea...2baf38` | ⚠️ Unaudited |
+| L1CrossDomainMessenger | unknown | ethereum | n/a | [`0x2a721c...5ea091`](./contracts/ethereum-1/0x2a721cbe81a128be0f01040e3353c3805a5ea091/) | ⚠️ Unaudited |
+| L1ERC721Bridge | unknown | ethereum | n/a | [`0x994eeb...0dd244`](./contracts/ethereum-1/0x994eeb321f9cd79b077a5455fc248c77f30dd244/) | ⚠️ Unaudited |
+| OptimismMintableERC20Factory | unknown | ethereum | n/a | [`0xc77ece...90e932`](./contracts/ethereum-1/0xc77ece87c91c44afb5f19638f9a0f75b5d90e932/) | ⚠️ Unaudited |
+| ProxyAdmin | unknown | ethereum | n/a | [`0x5b1ef6...fc5257`](./contracts/ethereum-1/0x5b1ef673d9c316b3ee9ed3b4e3cc84952bfc5257/) | ⚠️ Unaudited |
+| ResolverRegistry | registry | ethereum | n/a | [`0x6c8910...d5cf0e`](./contracts/ethereum-1/0x6c89104690452ad7e209f0ab72287c2561d5cf0e/) | ⚠️ Unaudited |
+| RSETH | token | ethereum | n/a | [`0xa1290d...99e5a7`](./contracts/ethereum-1/0xa1290d69c65a6fe4df752f95823fae25cb99e5a7/) | ⚠️ Unaudited |
 | SP1VerifierGateway | periphery | ethereum | n/a | [`0xf35a40...e31f67`](./contracts/ethereum-1/0xf35a4088ea0231c44b9db52d25c0e9e2fee31f67/) | ⚠️ Unaudited |
+| SuperchainConfig | unknown | ethereum | n/a | [`0x745393...6d3da0`](./contracts/ethereum-1/0x745393cc03b5fe668ecd52c0e625f59aad6d3da0/) | ⚠️ Unaudited |
+| SystemConfig | unknown | ethereum | n/a | [`0x30f82a...a428ff`](./contracts/ethereum-1/0x30f82a1ca89226e8b8815d6ebb728e3b18a428ff/) | ⚠️ Unaudited |
+| TokenizedStrategy | core_logic | base | n/a | 2 deployments: base [`0x1a48ce...37e1cc`](./contracts/base-8453/0x1a48cec817bcb5436efe99bab6dde228cc37e1cc/); base `0xe83ef4...ab1dc5` | ⚠️ Unaudited |
+| Verifier | unknown | ethereum | n/a | [`0x6bce74...a1447c`](./contracts/ethereum-1/0x6bce7408c0781dce7b71494274302d4b75a1447c/) | ⚠️ Unaudited |
+| VerifierV2 | unknown | ethereum | n/a | [`0xc25d09...dc9737`](./contracts/ethereum-1/0xc25d093d3a3f58952252d2e763beaf2559dc9737/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -106,13 +113,13 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Zircuit-USDCAdapter_Secure3_Audit_Report-updated.pdf](https://github.com/zircuit-labs/audit-report/blob/main/Zircuit-USDCAdapter_Secure3_Audit_Report-updated.pdf) | Secure3 | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
 | [Zircuit_zrc_token_Secure3_Audit_Report.pdf](https://github.com/zircuit-labs/audit-report/blob/main/Zircuit_zrc_token_Secure3_Audit_Report.pdf) | Secure3 | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
 | [Zircuit-Labs_Zkr-Staking_report_2024-09-17.pdf](https://github.com/zircuit-labs/audit-report/blob/main/Zircuit-Labs_Zkr-Staking_report_2024-09-17.pdf) | Unknown | Audit | 2024-09 | aging | Direct | n/a | 0 | n/a |
-| [Zircuit_Labs_zkr_staking_Migration_Contracts_Smart_Contract_Security.pdf](https://github.com/zircuit-labs/audit-report/blob/main/Zircuit_Labs_zkr_staking_Migration_Contracts_Smart_Contract_Security.pdf) | Unknown | Audit | 2024-08 | aging | Direct | n/a | 0 | n/a |
-| [Zircuit-ZRC-Token-audit-report-2024-1.1.pdf](https://github.com/zircuit-labs/audit-report/blob/main/Zircuit-ZRC-Token-audit-report-2024-1.1.pdf) | Unknown | Audit | 2024-07 | aging | Direct | n/a | 0 | n/a |
-| [Zircuit_OP_Bridge_July_24,_2024_Dedaub_Audit_Reports_gdoc.pdf](https://github.com/zircuit-labs/audit-report/blob/main/Zircuit_OP_Bridge_July_24%2C_2024_Dedaub_Audit_Reports_gdoc.pdf) | Dedaub | Audit | 2024-07 | aging | Direct | contract_name | 3 | high |
-| [dedaub-audit-zkr-staking-ztakingpool.pdf](https://github.com/zircuit-labs/audit-report/blob/main/dedaub-audit-zkr-staking-ztakingpool.pdf) | Dedaub | Audit | 2024-03 | stale | Direct | contract_name | 1 | high |
-| [ztakingpool_ottersec.pdf](https://github.com/zircuit-labs/audit-report/blob/main/ztakingpool_ottersec.pdf) | Ottersec | Audit | 2024-02 | stale | Direct | contract_name | 1 | high |
-| [DL audit link](https://dubiw3zgo51jg.cloudfront.net/zircuit_audit_final.pdf) | unknown | Audit | 2024-02 | stale | Direct | contract_name | 1 | high |
-| [index.html (also discovered via alternate URL)](https://certificate.quantstamp.com/full/zircuit-l-2-upgradeable-contract/e765bc0e-0cbc-40f8-9a84-a7cfbd91cae0/index.html) | Quantstamp | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Zircuit_Labs_zkr_staking_Migration_Contracts_Smart_Contract_Security.pdf](https://github.com/zircuit-labs/audit-report/blob/main/Zircuit_Labs_zkr_staking_Migration_Contracts_Smart_Contract_Security.pdf) | Unknown | Audit | 2024-08 | aging | Direct | contract_name | 0 | n/a |
+| [Zircuit-ZRC-Token-audit-report-2024-1.1.pdf](https://github.com/zircuit-labs/audit-report/blob/main/Zircuit-ZRC-Token-audit-report-2024-1.1.pdf) | Unknown | Audit | 2024-07 | stale | Direct | n/a | 0 | n/a |
+| [Zircuit_OP_Bridge_July_24,_2024_Dedaub_Audit_Reports_gdoc.pdf](https://github.com/zircuit-labs/audit-report/blob/main/Zircuit_OP_Bridge_July_24%2C_2024_Dedaub_Audit_Reports_gdoc.pdf) | Dedaub | Audit | 2024-07 | stale | Direct | contract_name | 3 | n/a |
+| [dedaub-audit-zkr-staking-ztakingpool.pdf](https://github.com/zircuit-labs/audit-report/blob/main/dedaub-audit-zkr-staking-ztakingpool.pdf) | Dedaub | Audit | 2024-03 | stale | Direct | contract_name | 1 | n/a |
+| [ztakingpool_ottersec.pdf](https://github.com/zircuit-labs/audit-report/blob/main/ztakingpool_ottersec.pdf) | Ottersec | Audit | 2024-02 | stale | Direct | contract_name | 1 | n/a |
+| [zircuit_audit_final.pdf](https://dubiw3zgo51jg.cloudfront.net/zircuit_audit_final.pdf) | unknown | Audit | 2024-02 | stale | Direct | contract_name | 1 | n/a |
+| [index.html](https://certificate.quantstamp.com/full/zircuit-l-2-upgradeable-contract/e765bc0e-0cbc-40f8-9a84-a7cfbd91cae0/index.html) | Quantstamp | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 | [ZRC_OFT_final_report_Quantstamp.pdf](https://github.com/zircuit-labs/audit-report/blob/main/ZRC_OFT_final_report_Quantstamp.pdf) | Quantstamp | Audit | 2025-05 | aging | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
@@ -121,17 +128,28 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x48ab4e...02717f`](./contracts/ethereum-1/0x48ab4e39ac59f4e88974804b04a991b3a402717f/) | ERC20RevocableComplianceTokenBasicPackageUpgradable | token | $138,917,202.72 | Verified native implementation with $138,917,202.72 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
-| base | [`0x1a48ce...37e1cc`](./contracts/base-8453/0x1a48cec817bcb5436efe99bab6dde228cc37e1cc/) | TokenizedStrategy | core_logic | $1,513,763.33 | Verified native implementation with $1,513,763.33 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x7d43eb...80f35e`](./contracts/ethereum-1/0x7d43eb137185aea81a020563099e940bb380f35e/) | CrisisControlRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x48ab4e...02717f`](./contracts/ethereum-1/0x48ab4e39ac59f4e88974804b04a991b3a402717f/) | ERC20RevocableComplianceTokenBasicPackageUpgradable | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x2a721c...5ea091`](./contracts/ethereum-1/0x2a721cbe81a128be0f01040e3353c3805a5ea091/) | L1CrossDomainMessenger | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x994eeb...0dd244`](./contracts/ethereum-1/0x994eeb321f9cd79b077a5455fc248c77f30dd244/) | L1ERC721Bridge | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc77ece...90e932`](./contracts/ethereum-1/0xc77ece87c91c44afb5f19638f9a0f75b5d90e932/) | OptimismMintableERC20Factory | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6c8910...d5cf0e`](./contracts/ethereum-1/0x6c89104690452ad7e209f0ab72287c2561d5cf0e/) | ResolverRegistry | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xa1290d...99e5a7`](./contracts/ethereum-1/0xa1290d69c65a6fe4df752f95823fae25cb99e5a7/) | RSETH | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xf35a40...e31f67`](./contracts/ethereum-1/0xf35a4088ea0231c44b9db52d25c0e9e2fee31f67/) | SP1VerifierGateway | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x745393...6d3da0`](./contracts/ethereum-1/0x745393cc03b5fe668ecd52c0e625f59aad6d3da0/) | SuperchainConfig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x30f82a...a428ff`](./contracts/ethereum-1/0x30f82a1ca89226e8b8815d6ebb728e3b18a428ff/) | SystemConfig | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| base | [`0x1a48ce...37e1cc`](./contracts/base-8453/0x1a48cec817bcb5436efe99bab6dde228cc37e1cc/) | TokenizedStrategy | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x6bce74...a1447c`](./contracts/ethereum-1/0x6bce7408c0781dce7b71494274302d4b75a1447c/) | Verifier | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0xc25d09...dc9737`](./contracts/ethereum-1/0xc25d093d3a3f58952252d2e763beaf2559dc9737/) | VerifierV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 3 |
+| native | 17 |
 | upstream | 0 |
-| standard_library | 3 |
-| needs_review | 7 |
+| standard_library | 2 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 
@@ -139,8 +157,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 7
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=4
-- Match method counts: extraction_exact=9
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=6, extraction_exact=2
 
 Zero-match audit list:
 

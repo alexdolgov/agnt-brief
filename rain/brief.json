@@ -1,42 +1,28 @@
 {
   "schema_version": "2.0",
   "project_key": "rain",
-  "generated_at": "2026-06-17T07:00:36.194Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "rain",
-    "tier": 0,
-    "peak_tvl": 4196720,
-    "peak_date": "2026-02-01T00:00:00.000Z",
-    "tvl_30d_ago": 3381163,
-    "tvl_90d_ago": 3779955,
-    "tvl_current": 3426476,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 1680925,
-    "change_30d_pct": 1.3401601756555364,
-    "change_90d_pct": -9.351407622577518,
-    "days_since_peak": 112,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 18.353476047961266
-  },
+  "generated_at": "2026-07-04T14:53:44.543Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d640",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
-    "total_contracts": 31,
-    "total_addresses": 128,
-    "unique_implementations": 31,
-    "total_deployments": 128,
+    "total_contracts": 33,
+    "total_addresses": 131,
+    "unique_implementations": 33,
+    "total_deployments": 131,
     "audited_contracts": 0,
-    "unaudited_contracts": 30,
+    "unaudited_contracts": 33,
     "contracts_verified_audited": 0,
-    "contracts_verified_unaudited": 30,
+    "contracts_verified_unaudited": 33,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 1,
+    "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 3,
+    "direct_audits": 3,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 26144530.33293,
-    "tvl_usd": 26144530.33293,
+    "dl_tvl_usd": 29513996.97343,
+    "tvl_usd": 29513996.97343,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,26 +39,35 @@
       "aging": 0,
       "stale": 0,
       "unknown": 2
+    },
+    "live_implementations": 33,
+    "live_verified_implementations": 32,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Rain is a prediction market protocol on Arbitrum One that allows users to create and participate in markets for forecasting events. Its contract architecture uses a mix of ERC1967 proxy-backed components and direct project-specific contracts, including Rain, RainDeployer, Reservoir, and diamond/facet-style deployments; only the proxy shell bytecode should be treated as OpenZeppelin standard-library code, while the implementations and direct deployments are native Rain protocol logic.",
-    "relationship_narrative": "The RainDeployer contract creates and manages market instances, while the Reservoir contract handles liquidity or outcome payouts. All core contracts are accessed through ERC1967Proxy upgradeable proxies, sharing a common deployment infrastructure.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 138,
-    "live_contracts": 127,
-    "inactive_contracts": 0,
-    "singleton_contracts": 10,
+    "project_purpose": "Prediction Market. Structurally: 30 project-authored contract(s) across 1 chain(s); role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 8 functional families. Its contracts share 3 common project-authored base contract(s) (modifiers, contextupgradeable, proxy). Dominant framework: openzeppelin.",
+    "product_family_count": 8,
+    "total_contracts_indexed": 131,
+    "live_contracts": 130,
+    "inactive_contracts": 1,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 1,
-    "deployment_units": 8,
-    "live_deployment_units": 3,
+    "unknown_contracts": 0,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 31,
+    "unique_implementations": 33,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -89,7 +84,7 @@
       "deployment_unit_proxy_count": null,
       "name": "AccessControlFacet",
       "role": "governance",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -114,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-29 14:15:11+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -124,7 +123,7 @@
       "deployment_unit_proxy_count": null,
       "name": "AppStorageFacet",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -149,7 +148,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-29 14:15:14+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -159,7 +162,7 @@
       "deployment_unit_proxy_count": null,
       "name": "CancelOrderFacet",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -272,7 +275,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-14 10:57:50+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -282,7 +289,7 @@
       "deployment_unit_proxy_count": null,
       "name": "ClaimFacet",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -395,17 +402,21 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-14 10:57:54+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0x106ac39ad87d0294dbbbf25167898b498b143bae",
-      "deployment_unit": "unit-22107",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "Conduit",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -417,8 +428,8 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0x106ac39ad87d0294dbbbf25167898b498b143bae",
-          "deployment_unit": "unit-22107",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -430,7 +441,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-29 14:03:45+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -440,7 +455,7 @@
       "deployment_unit_proxy_count": null,
       "name": "Conduit",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -476,7 +491,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-02 17:26:34+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -486,7 +505,7 @@
       "deployment_unit_proxy_count": null,
       "name": "DiamondCutFacet",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -610,7 +629,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-14 10:57:44+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -620,7 +643,7 @@
       "deployment_unit_proxy_count": null,
       "name": "DiamondInit",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -645,7 +668,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-29 14:15:40+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -655,7 +682,7 @@
       "deployment_unit_proxy_count": null,
       "name": "DiamondLoupeFacet",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -779,7 +806,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-14 10:57:47+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -789,7 +820,7 @@
       "deployment_unit_proxy_count": null,
       "name": "DisputeFacet",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -902,19 +933,23 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-14 10:57:58+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
       "address": "0xcccb3c03d9355b01883779ef15c1be09cf3623f1",
-      "deployment_unit": "unit-22112",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "ERC1967Proxy",
       "role": "proxy",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": "Rain",
+      "origin_kind": "standard_library",
+      "origin_provider": "OpenZeppelin",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0x4a80de373abf970f019e2b894bea460abb7baa13",
@@ -924,8 +959,8 @@
           "chain_id": 42161,
           "chain_name": "arbitrum",
           "address": "0xcccb3c03d9355b01883779ef15c1be09cf3623f1",
-          "deployment_unit": "unit-22112",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -937,7 +972,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-02-17 17:10:56+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -947,7 +986,7 @@
       "deployment_unit_proxy_count": null,
       "name": "GetterFacet",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1060,7 +1099,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-14 10:58:15+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x32bcb5b172badd45cfbbe4504d0e21ef27426b4c",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "HelperFacet",
+      "role": "periphery",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "HelperFacet",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x32bcb5b172badd45cfbbe4504d0e21ef27426b4c",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-29 14:15:20+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -1070,7 +1152,7 @@
       "deployment_unit_proxy_count": null,
       "name": "InfoFacet",
       "role": "periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1183,7 +1265,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-14 10:58:02+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -1193,7 +1279,7 @@
       "deployment_unit_proxy_count": null,
       "name": "MarketTerminationFacet",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1218,7 +1304,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-29 14:15:24+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -1228,7 +1318,7 @@
       "deployment_unit_proxy_count": null,
       "name": "MarketThresholdFacet",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1253,7 +1343,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-29 14:15:28+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -1263,7 +1357,7 @@
       "deployment_unit_proxy_count": null,
       "name": "MetadataFacet",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1288,7 +1382,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-29 14:15:31+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -1298,7 +1396,7 @@
       "deployment_unit_proxy_count": null,
       "name": "Operator",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1323,7 +1421,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-29 11:42:19+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -1333,7 +1435,7 @@
       "deployment_unit_proxy_count": null,
       "name": "OracleFeeFacet",
       "role": "operational_periphery",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1446,7 +1548,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-14 10:58:18+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -1456,7 +1562,7 @@
       "deployment_unit_proxy_count": null,
       "name": "PausableFacet",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1481,7 +1587,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-29 14:15:34+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -1491,7 +1601,7 @@
       "deployment_unit_proxy_count": null,
       "name": "QueueFacet",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1516,7 +1626,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-29 14:15:37+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x25118290e6a5f4139381d072181157035864099d",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Rain",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x47716e35f0fa48301aedc77778f794e0ed2c3f0b",
+      "impl_name": "Rain",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x25118290e6a5f4139381d072181157035864099d",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-26 16:50:01+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -1526,7 +1679,7 @@
       "deployment_unit_proxy_count": null,
       "name": "Rain",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1551,7 +1704,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-08-26 16:49:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -1561,7 +1718,7 @@
       "deployment_unit_proxy_count": null,
       "name": "RainDecisionDiamond",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1586,7 +1743,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-29 14:15:44+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -1596,7 +1757,7 @@
       "deployment_unit_proxy_count": null,
       "name": "RainDeployer",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1676,7 +1837,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-11 14:19:10+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -1686,7 +1851,7 @@
       "deployment_unit_proxy_count": null,
       "name": "RainDiamondFactory",
       "role": "registry",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1799,7 +1964,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-14 10:57:37+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -1809,7 +1978,7 @@
       "deployment_unit_proxy_count": null,
       "name": "RainPoolDiamond",
       "role": "core_logic",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1834,7 +2003,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-11-24 22:40:45+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -1844,7 +2017,7 @@
       "deployment_unit_proxy_count": null,
       "name": "RandomNumberService",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1880,30 +2053,45 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-24 21:53:29+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0x3783c98c39c48750d92a7086d3eacbd231ef26b5",
-      "deployment_unit": "unit-22109",
-      "deployment_unit_proxy_count": 1,
-      "name": "Reservoir",
+      "address": "0x8e4fd92a32036201ad38b4ccf37ebda72e6ad086",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "RandomNumberService",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Rain",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": true,
-      "impl_address": "0xe4db83f2e8ba24be5450c23f0f6c00f8008e2a9f",
-      "impl_name": "Reservoir",
+      "impl_address": "0xdc85fca5915abc1e621ffaac3ab3e812bc50e224",
+      "impl_name": "RandomNumberService",
       "deployments": [
         {
           "chain_id": 42161,
           "chain_name": "arbitrum",
-          "address": "0x3783c98c39c48750d92a7086d3eacbd231ef26b5",
-          "deployment_unit": "unit-22109",
-          "deployment_unit_proxy_count": 1,
+          "address": "0x8e4fd92a32036201ad38b4ccf37ebda72e6ad086",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        },
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0xdc85fca5915abc1e621ffaac3ab3e812bc50e224",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
           "tvl_usd": null,
@@ -1915,7 +2103,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-02-24 21:58:12+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x3783c98c39c48750d92a7086d3eacbd231ef26b5",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Reservoir",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xe4db83f2e8ba24be5450c23f0f6c00f8008e2a9f",
+      "impl_name": "Reservoir",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x3783c98c39c48750d92a7086d3eacbd231ef26b5",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-29 14:04:00+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -1925,7 +2156,7 @@
       "deployment_unit_proxy_count": null,
       "name": "Reservoir",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -1950,7 +2181,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-01-29 14:03:53+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -1960,7 +2195,7 @@
       "deployment_unit_proxy_count": null,
       "name": "ResolutionFacet",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2073,7 +2308,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-14 10:58:06+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -2083,7 +2322,7 @@
       "deployment_unit_proxy_count": null,
       "name": "TradingFacet",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -2196,49 +2435,18 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x32bcb5b172badd45cfbbe4504d0e21ef27426b4c",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UnnamedContract",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": null,
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x32bcb5b172badd45cfbbe4504d0e21ef27426b4c",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": false,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": false,
-      "verified_by_bytecode": false,
-      "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-14 10:58:10+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
     {
       "audit_id": 2735,
       "audit_key": "audit-2735",
-      "report_name": "DL audit link",
+      "report_name": "hacken.io/audits/rain/sca-rain-token-aug2025",
       "report_url": "https://hacken.io/audits/rain/sca-rain-token-aug2025",
       "auditor": "Hacken",
       "audit_type": "audit",
@@ -2248,6 +2456,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2259,7 +2470,7 @@
     {
       "audit_id": 11854,
       "audit_key": "audit-11854",
-      "report_name": "Rendered PDF capture",
+      "report_name": "Terms_of_Service_Hacken_io.pdf",
       "report_url": "https://assets.hacken.io/assets/Terms_of_Service_Hacken_io.pdf",
       "auditor": "Hacken",
       "audit_type": "audit",
@@ -2269,6 +2480,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2280,7 +2494,7 @@
     {
       "audit_id": 11855,
       "audit_key": "audit-11855",
-      "report_name": "Rendered PDF capture",
+      "report_name": "Privacy_Notice_Hacken_io.pdf",
       "report_url": "https://assets.hacken.io/assets/Privacy_Notice_Hacken_io.pdf",
       "auditor": "Hacken",
       "audit_type": "audit",
@@ -2290,6 +2504,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -2300,12 +2517,333 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x08d5de6df06755d23730b7c79d4a43f78325c9a9",
+      "name": "AccessControlFacet",
+      "role": "governance",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xf33a30106b6448638b6ef09ee8a867bf245b09e8",
+      "name": "AppStorageFacet",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x0921fd1248a20b371b3eeaf58c7e51d246ba84d7",
+      "name": "CancelOrderFacet",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x38d3d0c3cd1c58d72941e923a983abf6eb2b5a52",
+      "name": "ClaimFacet",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x106ac39ad87d0294dbbbf25167898b498b143bae",
+      "name": "Conduit",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x177d2fc09efbce70ec80af45a44a43089405a91f",
+      "name": "Conduit",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x03cfee1e3388c58e988ac84b0129c305828d2818",
+      "name": "DiamondCutFacet",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x8cc83934b0a785e6b9863f7328c2f9fbe1714231",
+      "name": "DiamondInit",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x002c695d2872d7ab57d496ad9cc391a3fdab5250",
+      "name": "DiamondLoupeFacet",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x058d7dfefe0b13dbe00cfbbd2cbe04d47188bf68",
+      "name": "DisputeFacet",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x1ea6ecb3463877f3f6abe98f7109097f7a90ec38",
+      "name": "GetterFacet",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x32bcb5b172badd45cfbbe4504d0e21ef27426b4c",
+      "name": "HelperFacet",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x0ab66d9b24e8f15025e588c7fa8655ec1a9878a2",
+      "name": "InfoFacet",
+      "role": "periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xbe669656a3e300260a89be50c83a255bcd9ed052",
+      "name": "MarketTerminationFacet",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x51a8c582a52d089b6160bce38bb3e62622067d59",
+      "name": "MarketThresholdFacet",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x1260e79c65d5cec02c4aca63b9fe000a69d251bf",
+      "name": "MetadataFacet",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0xe45ceeb4f1c2cf4c702bb7183efa75f51e2a46d0",
+      "name": "Operator",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x267c800b7701e3feae0d7d259ba6481692d9314b",
+      "name": "OracleFeeFacet",
+      "role": "operational_periphery",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x459a994233488a448a4c4e086a56b1e609873649",
+      "name": "PausableFacet",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x2f20d43ddcf14bbe6ddeeda60618808eec81416a",
+      "name": "QueueFacet",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x25118290e6a5f4139381d072181157035864099d",
+      "name": "Rain",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x6b6f8622607fa837b27293258548a9fc3b85ddad",
+      "name": "Rain",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x4e25b638c778dec7cbf42c6494ea99394aa5d96a",
+      "name": "RainDecisionDiamond",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x16d071c5d21d0090b3829b569f9482f52a1aa686",
+      "name": "RainDeployer",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x153b100927bb9afd796f13955f73120e4da5a1fe",
+      "name": "RainDiamondFactory",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x6a368244019146427f7243f9875f82a99ce03b32",
+      "name": "RainPoolDiamond",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x43f7fedcb8de1b82976c3a355598e7d0924a61bd",
+      "name": "RandomNumberService",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x8e4fd92a32036201ad38b4ccf37ebda72e6ad086",
+      "name": "RandomNumberService",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x3783c98c39c48750d92a7086d3eacbd231ef26b5",
+      "name": "Reservoir",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x3d65a08baa7f9109f1307dcc978228de0f44b144",
+      "name": "Reservoir",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x16dc011486d897e76bb239896694ff878b5ae889",
+      "name": "ResolutionFacet",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x165f692cddd35ca514dbc28aa25a4fec15dd1bf2",
+      "name": "TradingFacet",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 32,
     "upstream": 0,
-    "standard_library": 0,
-    "needs_review": 31
+    "standard_library": 1,
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},
@@ -2315,15 +2853,15 @@
     "audits_with_zero_matches": [
       {
         "audit_id": 2735,
-        "report_name": "DL audit link"
+        "report_name": "hacken.io/audits/rain/sca-rain-token-aug2025"
       },
       {
         "audit_id": 11854,
-        "report_name": "Rendered PDF capture"
+        "report_name": "Terms_of_Service_Hacken_io.pdf"
       },
       {
         "audit_id": 11855,
-        "report_name": "Rendered PDF capture"
+        "report_name": "Privacy_Notice_Hacken_io.pdf"
       }
     ],
     "inherited_remapped_matches": []

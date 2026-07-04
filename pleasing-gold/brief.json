@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "pleasing-gold",
-  "generated_at": "2026-06-17T07:00:36.743Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "unknown",
-  "lifecycle_signal": {
-    "slug": "pleasing-gold",
-    "tier": 0,
-    "peak_tvl": null,
-    "peak_date": null,
-    "tvl_30d_ago": null,
-    "tvl_90d_ago": null,
-    "tvl_current": null,
-    "tier0_reason": "no_historical_tvl",
-    "tvl_180d_ago": null,
-    "change_30d_pct": null,
-    "change_90d_pct": null,
-    "days_since_peak": null,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": null
-  },
+  "generated_at": "2026-07-04T14:53:43.205Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d094",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 11,
     "total_addresses": 14,
@@ -34,14 +18,14 @@
     "contracts_unverified": 4,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
     "dl_tvl_usd": null,
-    "tvl_usd": 4943872.9564897,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "arbitrum": 4943872.96
-    },
-    "asd_usd": 4943872.9564897,
+    "tvl_usd": null,
+    "tvl_source": null,
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://www.pleasinggold.com/",
     "chains": [
       "arbitrum",
@@ -56,19 +40,28 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 6,
+    "live_verified_implementations": 4,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 2,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Pleasing Gold is a real-world asset (RWA) protocol on Arbitrum One evidenced by the PGOLD gold-backed token product. PLSP and PUSD are related token contracts in the observed contract surface, but their specific product roles are not independently confirmed by the available evidence.",
-    "relationship_narrative": "All tokens are deployed by the same deployer and share a common proxy pattern, indicating a unified token ecosystem. PGOLD, PLSP, and PUSD likely interact within a single RWA platform, though no explicit adapter or registry contracts are present.",
-    "product_family_count": 1,
+    "project_purpose": "RWA. Structurally: 8 project-authored contract(s) across 2 chain(s); 2 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 5 functional families. Its contracts share 1 common project-authored base contract(s) (tokenpool). Dominant framework: openzeppelin.",
+    "product_family_count": 5,
     "total_contracts_indexed": 20,
-    "live_contracts": 13,
-    "inactive_contracts": 0,
-    "singleton_contracts": 6,
+    "live_contracts": 9,
+    "inactive_contracts": 6,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 1,
-    "deployment_units": 3,
+    "unknown_contracts": 5,
+    "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
     "unverified_dependencies": 0,
@@ -85,76 +78,6 @@
   },
   "contracts": [
     {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x5b5ce779709360a6b6906b79cac5029a5b7ccdc4",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "LockReleaseTokenPool",
-      "role": "core_logic",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": 4608525.512874854,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "LockReleaseTokenPool",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x5b5ce779709360a6b6906b79cac5029a5b7ccdc4",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 4608525.512874854,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x2a0c9a36a640797a8430a218428f3f3dd3739ac6",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "UniswapV3Pool",
-      "role": "core_logic",
-      "origin_kind": "upstream",
-      "origin_provider": "Uniswap",
-      "product_line": null,
-      "tvl_usd": 335347.4436148461,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "UniswapV3Pool",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x2a0c9a36a640797a8430a218428f3f3dd3739ac6",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": 335347.4436148461,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
-    },
-    {
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xf3067615579d59c64f16f1382b6a8032622f810a",
@@ -162,7 +85,7 @@
       "deployment_unit_proxy_count": null,
       "name": "BurnMintTokenPool",
       "role": "core_logic",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -187,7 +110,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-21 09:59:59+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -197,7 +124,7 @@
       "deployment_unit_proxy_count": null,
       "name": "FactoryBurnMintERC20",
       "role": "registry",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -222,7 +149,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-21 09:59:59+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x5b5ce779709360a6b6906b79cac5029a5b7ccdc4",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LockReleaseTokenPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "LockReleaseTokenPool",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x5b5ce779709360a6b6906b79cac5029a5b7ccdc4",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-05-21 09:57:03+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -232,7 +202,7 @@
       "deployment_unit_proxy_count": null,
       "name": "MyOFTAdapter",
       "role": "adapter",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -290,7 +260,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-26 10:53:06+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -300,8 +274,8 @@
       "deployment_unit_proxy_count": null,
       "name": "ProxyAdmin",
       "role": "governance",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "OpenZeppelin",
       "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
@@ -325,7 +299,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-10-14 10:14:04+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -360,7 +338,50 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-10-16 17:08:23+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x2a0c9a36a640797a8430a218428f3f3dd3739ac6",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UniswapV3Pool",
+      "role": "core_logic",
+      "origin_kind": "upstream",
+      "origin_provider": "Uniswap",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": "UniswapV3Pool",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x2a0c9a36a640797a8430a218428f3f3dd3739ac6",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2025-10-23 20:31:26+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -395,7 +416,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-22 05:56:48+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -430,7 +455,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-10-22 06:17:28+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -465,7 +494,11 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-26 10:27:40+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
@@ -500,17 +533,62 @@
       "source_verified": false,
       "verified_by_bytecode": false,
       "verification_bucket": "unverified",
-      "contamination_flag": "cleared"
+      "contamination_flag": null,
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2026-03-26 10:52:57+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xf3067615579d59c64f16f1382b6a8032622f810a",
+      "name": "BurnMintTokenPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xfb0bd86210d2a10543bb40289e92d108b3a5334f",
+      "name": "FactoryBurnMintERC20",
+      "role": "registry",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x5b5ce779709360a6b6906b79cac5029a5b7ccdc4",
+      "name": "LockReleaseTokenPool",
+      "role": "core_logic",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x0f7c3de66af37aac0c0668db05f9d4e0ce48441e",
+      "name": "MyOFTAdapter",
+      "role": "adapter",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 4,
     "upstream": 2,
-    "standard_library": 0,
-    "needs_review": 9
+    "standard_library": 1,
+    "needs_review": 4
   },
   "scope_matching_notes": {
     "match_method_counts": {},

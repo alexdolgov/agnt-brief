@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "orangex",
-  "generated_at": "2026-06-17T07:01:00.816Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "orangex",
-    "tier": 0,
-    "peak_tvl": 61365162,
-    "peak_date": "2025-10-07T00:00:00.000Z",
-    "tvl_30d_ago": 42071921,
-    "tvl_90d_ago": 33917196,
-    "tvl_current": 40034221,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 44968258,
-    "change_30d_pct": -4.843372851931339,
-    "change_90d_pct": 18.03517307267971,
-    "days_since_peak": 231,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 34.7606692539979
-  },
+  "generated_at": "2026-07-04T14:53:39.134Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d094",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 1,
     "total_addresses": 1,
@@ -34,9 +18,11 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 0,
+    "direct_audits": 0,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 33703827.57774,
-    "tvl_usd": 33703827.57774,
+    "dl_tvl_usd": 31382750.19069,
+    "tvl_usd": 31382750.19069,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,18 +39,27 @@
       "aging": 0,
       "stale": 0,
       "unknown": 0
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "OrangeX is an active centralized crypto exchange and trading platform. The listed on-chain contracts appear to be OrangeX-related token or ancillary deployments, such as ecosystem token contracts, and should not be treated as representing the exchange's full custody, matching, trading, or operational infrastructure.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
     "product_family_count": 1,
-    "total_contracts_indexed": 4,
-    "live_contracts": 0,
-    "inactive_contracts": 3,
+    "total_contracts_indexed": 1,
+    "live_contracts": 1,
+    "inactive_contracts": 0,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 1,
+    "unknown_contracts": 0,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
@@ -89,9 +84,9 @@
       "deployment_unit_proxy_count": null,
       "name": "GPS",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "OrangeX",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -114,17 +109,32 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2025-01-14 12:07:21+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x0c1dc73159e30c4b06170f2593d3118968a0dca5",
+      "name": "GPS",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

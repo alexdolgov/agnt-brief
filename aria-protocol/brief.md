@@ -1,50 +1,53 @@
 # Agentic Audit Brief: Aria Protocol
 
-⚠️ Lifecycle status: DEAD - TVL dropped 100.0% over 90 days
+⚠️ Lifecycle status: DEAD - TVL trajectory indicates non-active lifecycle.
 
 ## Project Overview
 
 - Project: Aria Protocol (`aria-protocol`)
 - Website: [https://ariaprotocol.xyz](https://ariaprotocol.xyz)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-19T06:13:15.912Z
-- Pipeline run: v2-pipeline-2026-06-19-32b207-c216
-- Chains: bsc
-- Contract surface: 1 unique implementations (1 raw deployments)
+- Generated: 2026-07-04T14:53:04.131Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-bd47
+- Chains: bsc, ethereum
+- Contract surface: 3 unique implementations (3 raw deployments)
 - DeFi Llama TVL: $0.00
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
-This brief covers only 1 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
+This brief covers only 3 contract implementation(s). The pipeline may not have discovered all deployed contracts for this project.
 Coverage assessment and audit matching are based on this incomplete surface.
 
 ## Project Description
 
-Aria is an intellectual-property real-world asset protocol focused on music/IP rights, royalties and yield, staking or vault participation, and licensing/remix use cases, with current project context tied to the Story ecosystem. The BSC AriaOFT contract should be treated separately as a token/bridge-related deployment unless independently evidenced as the current core protocol surface.
+Contract surface contains 3 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 1; live-surface contracts included: 1 (1 live, 0 unknown).
+- Indexed contracts: 3; live-surface contracts included: 3 (1 live, 2 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 1; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 3 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 1
-- Raw deployments: 1
-- Audits discovered: 1
+- Unverified implementations: 2
+- Unique implementations: 3
+- Raw deployments: 3
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 - Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
@@ -76,17 +79,20 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (2)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0xfe8201...58f1f5` | ❓ Unverified |
+| UnnamedContract | unknown | bsc | n/a | `0x6a6d1f...978e12` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [PASHOV](https://www.pashov.com/) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [www.pashov.com](https://www.pashov.com/) | Pashov Audit Group | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -103,7 +109,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 1 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
@@ -116,6 +122,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [2943] PASHOV
+- [2943] www.pashov.com
 
 Fork inheritance lineage and inherited audits are included when available.

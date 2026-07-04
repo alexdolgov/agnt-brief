@@ -1,26 +1,10 @@
 {
   "schema_version": "2.0",
   "project_key": "easedefi.org",
-  "generated_at": "2026-06-17T07:00:52.834Z",
-  "pipeline_run_id": "brief-regen-topo-2026-06-17",
-  "lifecycle_status": "active",
-  "lifecycle_signal": {
-    "slug": "easedefi.org",
-    "tier": 0,
-    "peak_tvl": 12867489,
-    "peak_date": "2025-08-23T00:00:00.000Z",
-    "tvl_30d_ago": 4681587,
-    "tvl_90d_ago": 4668366,
-    "tvl_current": 3628191,
-    "tier0_reason": "healthy_tvl_level_and_change",
-    "tvl_180d_ago": 8672049,
-    "change_30d_pct": -22.500831448822805,
-    "change_90d_pct": -22.28135069101266,
-    "days_since_peak": 293,
-    "detection_method": "tvl_trajectory",
-    "governance_signal": null,
-    "drop_from_peak_pct": 71.80342644940283
-  },
+  "generated_at": "2026-07-04T14:53:11.320Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-2d9c",
+  "lifecycle_status": null,
+  "lifecycle_signal": null,
   "summary": {
     "total_contracts": 1,
     "total_addresses": 1,
@@ -34,14 +18,14 @@
     "contracts_unverified": 0,
     "coverage_pct": 0,
     "total_audits": 1,
+    "direct_audits": 1,
+    "inherited_audits": 0,
     "scoreable_audits": 0,
-    "dl_tvl_usd": 3607399.17525,
-    "tvl_usd": 296256.5089373987,
-    "tvl_source": "on_chain",
-    "tvl_by_chain": {
-      "ethereum": 296256.51
-    },
-    "asd_usd": 296256.5089373987,
+    "dl_tvl_usd": 3456570.82089,
+    "tvl_usd": 3456570.82089,
+    "tvl_source": "defillama",
+    "tvl_by_chain": {},
+    "asd_usd": null,
     "website_url": "https://easedefi.org",
     "chains": [
       "ethereum"
@@ -55,22 +39,31 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 1,
+    "live_verified_implementations": 1,
+    "live_audited_implementations": 0,
+    "live_verified_third_party_excluded": 0,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 0,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "EaseDeFi is a DeFi coverage protocol on Ethereum offering multiple coverage and yield-related products, including stNXM underwriting, premium-free Uninsurance mutual coverage without traditional premium purchases, and in-development cross-asset yield vaults. The currently recorded contract surface covers only the OwnedUpgradeabilityProxy at 0x1337def1fc06783d4b03cb8c1bf3ebf7d0593fc4 with implementation 0xc38bfa29f70b3f0f40784d7861f1665e47f37f2e, and should not be treated as representing the entire current Ease protocol unless additional product contract addresses are verified.",
+    "project_purpose": "Contract surface contains 1 implementation(s). Insufficient contract coverage for automated architecture assessment. Manual review recommended.",
     "relationship_narrative": null,
     "product_family_count": 1,
-    "total_contracts_indexed": 13,
+    "total_contracts_indexed": 1,
     "live_contracts": 1,
-    "inactive_contracts": 8,
-    "singleton_contracts": 4,
+    "inactive_contracts": 0,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 0,
-    "deployment_units": 5,
-    "live_deployment_units": 1,
-    "dependencies_extracted": 11,
-    "unverified_dependencies": 2,
+    "deployment_units": 0,
+    "live_deployment_units": 0,
+    "dependencies_extracted": 0,
+    "unverified_dependencies": 0,
     "detected_codebases": []
   },
   "surface_sufficiency": {
@@ -87,14 +80,14 @@
       "chain_id": 1,
       "chain_name": "ethereum",
       "address": "0xea5edef1edb2f47b9637c029a6ac3b80a7ae1550",
-      "deployment_unit": "unit-32021",
-      "deployment_unit_proxy_count": 1,
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
       "name": "GvToken",
       "role": "token",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
-      "tvl_usd": 296256.5089373987,
+      "tvl_usd": null,
       "is_proxy": true,
       "impl_address": "0x871d2c5678b0866bfac567ff8bdc71c8d4e57a03",
       "impl_name": "GvToken",
@@ -103,11 +96,11 @@
           "chain_id": 1,
           "chain_name": "ethereum",
           "address": "0xea5edef1edb2f47b9637c029a6ac3b80a7ae1550",
-          "deployment_unit": "unit-32021",
-          "deployment_unit_proxy_count": 1,
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
           "source_verified": true,
           "verified_by_bytecode": false,
-          "tvl_usd": 296256.5089373987,
+          "tvl_usd": null,
           "is_audited": false
         }
       ],
@@ -116,7 +109,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2022-09-04 21:55:31+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -133,6 +130,9 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "n/a",
       "extracted_names": [],
       "matched_contracts": 0,
@@ -143,12 +143,23 @@
     }
   ],
   "auditor_coverage": [],
-  "coverage_gaps": [],
+  "coverage_gaps": [
+    {
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0xea5edef1edb2f47b9637c029a6ac3b80a7ae1550",
+      "name": "GvToken",
+      "role": "token",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    }
+  ],
   "origin_summary": {
-    "native": 0,
+    "native": 1,
     "upstream": 0,
     "standard_library": 0,
-    "needs_review": 1
+    "needs_review": 0
   },
   "scope_matching_notes": {
     "match_method_counts": {},

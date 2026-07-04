@@ -4,44 +4,47 @@
 
 - Project: Feather (`feather`)
 - Website: [https://app.feather.zone/](https://app.feather.zone/)
-- Lifecycle: active (Tier 0, TVL trajectory)
-- Generated: 2026-06-17T07:00:35.860Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:13.761Z
+- Pipeline run: v2-pipeline-2026-07-01-2b719a-2d9c
 - Chains: celo, klaytn, sei
 - Contract surface: 10 unique implementations (15 raw deployments)
-- DeFi Llama TVL: $15,858,309.71
+- DeFi Llama TVL: $16,939,129.86
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Feather is an isolated-risk lending and borrowing protocol with Feather Vaults powered by Morpho. It curates lending markets and vault risk parameters, including support from an on-chain risk engine for lending parameters and oracle feeds, across supported chains.
+Risk Curators. Structurally: 9 project-authored contract(s) across 2 chain(s); 1 ERC4626 vault, 1 ERC20 token; built on openzeppelin.
 
 ### Architecture
 
-All MetaMorpho vaults are deployed by the same deployer cluster and likely share a common SafeProxy for administrative control, with the unnamed contract possibly serving as a registry or factory.
+The protocol comprises 4 functional families. Contracts are linked by 4 cross-contract reference(s). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 15; live-surface contracts included: 15 (12 live, 3 unknown).
+- Indexed contracts: 15; live-surface contracts included: 15 (14 live, 1 unknown).
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Dependencies extracted: 4; unverified dependencies: 0.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/9 (0.0%)
+- Coverage of deployed-live implementations: 0/4 (0.0%)
+- Deployed-live implementations: 9 of 10 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/9
 - Verified + Unaudited implementations: 9
 - Verified by bytecode match: 0
 - Unverified implementations: 1
 - Unique implementations: 10
 - Raw deployments: 15
-- Audits discovered: 0
+- Audits discovered: 0 (0 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -97,16 +100,21 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| sei | [`0x6efa8e...ea56c4`](./contracts/sei-1329/0x6efa8e3aa8279eb2fd46b6083a9e52da72ea56c4/) | AdaptiveCurveIrm | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sei | [`0xf94573...5761ad`](./contracts/sei-1329/0xf9457356f18a3349bb317ac144c3bcc62e5761ad/) | Bundler3 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sei | [`0x65ed61...f6d27b`](./contracts/sei-1329/0x65ed61058ceb4895b7d62437bacea39b04f6d27b/) | PreLiquidationFactory | registry | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| sei | [`0xd87850...159d6b`](./contracts/sei-1329/0xd878509446be2c601f0f032f501851001b159d6b/) | PublicAllocator | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
-| upstream | 2 |
-| standard_library | 0 |
-| needs_review | 8 |
+| native | 4 |
+| upstream | 4 |
+| standard_library | 1 |
+| needs_review | 1 |
 
 ## Scope Matching Notes
 

@@ -1,27 +1,25 @@
 # Agentic Audit Brief: Manta CeDeFi
 
-⚠️ Lifecycle status: UNKNOWN - TVL dropped 34.1% over 90 days
-
 ## Project Overview
 
 - Project: Manta CeDeFi (`manta-cedefi`)
 - Website: [https://cedefi.manta.network](https://cedefi.manta.network)
-- Lifecycle: unknown (Tier 0, 81.4% below peak)
-- Generated: 2026-06-17T07:00:45.368Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:30.378Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16da
 - Chains: manta
 - Contract surface: 17 unique implementations (45 raw deployments)
-- DeFi Llama TVL: $26,475,528.10
+- DeFi Llama TVL: $26,383,821.20
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Manta CeDeFi is a Manta-based yield and basis-trading product that combines centralized and decentralized finance to generate returns. Its on-chain surface is broader than a single vault and includes multiple deposit, vault, withdrawal, token or staking, routing or management, messaging, and upgrade components, including TransparentUpgradeableProxy deployments whose current implementations should be tracked separately from the proxy shells.
+Basis Trading. Structurally: 14 project-authored contract(s) across 1 chain(s); upgradeable via ERC1967/UUPS proxies; built on openzeppelin-upgradeable.
 
 ### Architecture
 
-The protocol consists of a single product family with one core contract, so there are no inter-family relationships. All functionality is encapsulated within the TransparentUpgradeableProxy vault.
+The protocol comprises 7 functional families. Its contracts share 9 common project-authored base contract(s) (basemessageendv2, initializable, pausableupgradeable). Dominant framework: openzeppelin-upgradeable.
 
 ## Contract Surface Quality
 
@@ -33,19 +31,21 @@ The protocol consists of a single product family with one core contract, so ther
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/15 (0.0%)
+- Coverage of deployed-live implementations: 0/0 (0.0%)
+- Deployed-live implementations: 0 of 17 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/15
 - Verified + Unaudited implementations: 15
 - Verified by bytecode match: 0
 - Unverified implementations: 2
 - Unique implementations: 17
 - Raw deployments: 45
-- Audits discovered: 0
+- Audits discovered: 5 (5 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
-- Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 0 unknown
+- Latest audit: 2023-06 (stale)
+- Audit staleness (calendar age): 0 fresh, 0 aging, 5 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [unknown]. ASD of n/a represents exposure in a protocol with unknown activity.
 
 ### Auditor Coverage
 
@@ -102,29 +102,56 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
+| [Atlantic-Halborn-zkSBT.pdf](https://github.com/Manta-Network/Atlantic-Audits/blob/main/Atlantic-Halborn-zkSBT.pdf) | Halborn | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
+| [Atlantic-Secure3-Dapps.pdf](https://github.com/Manta-Network/Atlantic-Audits/blob/main/Atlantic-Secure3-Dapps.pdf) | Secure3 | Audit | 2023-04 | stale | Direct | n/a | 0 | n/a |
+| [Atlantic-Veridise-Chain.pdf](https://github.com/Manta-Network/Atlantic-Audits/blob/main/Atlantic-Veridise-Chain.pdf) | Veridise | Audit | 2023-04 | stale | Direct | n/a | 0 | n/a |
+| [Atlantic-Veridise-ZK.pdf](https://github.com/Manta-Network/Atlantic-Audits/blob/main/Atlantic-Veridise-ZK.pdf) | Veridise | Audit | 2023-05 | stale | Direct | n/a | 0 | n/a |
+| [Atlantic-Veridise-zkSBT.pdf](https://github.com/Manta-Network/Atlantic-Audits/blob/main/Atlantic-Veridise-zkSBT.pdf) | Veridise | Audit | 2023-06 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
 Verified + unaudited native implementations ranked by TVL:
 
-- None
+| Chain | Address | Name | Role | TVL USD | Risk Note |
+|---|---|---|---|---:|---|
+| manta | [`0x0f8130...686b74`](./contracts/manta-169/0x0f813042a20697d121a18de2f1b4dd3cea686b74/) | BatchTransfer | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x97f62d...57a957`](./contracts/manta-169/0x97f62d9b3251d8013f0bef0d0eafeba25557a957/) | DepositManager | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x9e7478...2ef15a`](./contracts/manta-169/0x9e7478b044ba9c27948f770e32aa00954e2ef15a/) | DepositManagerV2 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x2cf590...075560`](./contracts/manta-169/0x2cf5900d1f47f49ce8d0d08718b88a84db075560/) | Manager | governance | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x1860f0...47647e`](./contracts/manta-169/0x1860f0eabc4e4d4955f88dacd1e01ea9a047647e/) | MToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0xc8693e...d4018e`](./contracts/manta-169/0xc8693e492d1ec721a254daf3c075a440edd4018e/) | MTokenDepositEntry | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x46df6b...00f8a5`](./contracts/manta-169/0x46df6ba8e85bb6147c241bf3904918a6c800f8a5/) | MTokenStake | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0xefacdd...0412c9`](./contracts/manta-169/0xefacdd72800324b3e5ff35edaa3de629d30412c9/) | Router | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x8ff636...5ff870`](./contracts/manta-169/0x8ff636868fec5ad39b7afbcfde2ca9e60d5ff870/) | SyncOApp | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x9286c6...5aa90e`](./contracts/manta-169/0x9286c6fe4e3ec48c77bd75ac1e0f7be7c95aa90e/) | SyncOAppV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x399440...d9858c`](./contracts/manta-169/0x39944059395a387a8ec327b4fb5ab7c5f6d9858c/) | TokenDistributer | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x09f21a...480931`](./contracts/manta-169/0x09f21ae31fb70af04480b5f0811821cce9480931/) | Vault | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| manta | [`0x37f151...dfbeb0`](./contracts/manta-169/0x37f1516de5425cdda58c20c6ac29ba775adfbeb0/) | WithdrawQueue | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 0 |
+| native | 13 |
 | upstream | 0 |
-| standard_library | 0 |
-| needs_review | 17 |
+| standard_library | 2 |
+| needs_review | 2 |
 
 ## Scope Matching Notes
 
 - Repo-reference audits: 0
 - Not-audit entries: 0
-- Audits with zero matched contracts: 0
+- Audits with zero matched contracts: 5
 - Inherited remapped matches: 0
 - Extraction confidence breakdown: n/a
 - Match method counts: n/a
+
+Zero-match audit list:
+
+- [20812] Atlantic-Halborn-zkSBT.pdf
+- [20813] Atlantic-Secure3-Dapps.pdf
+- [20814] Atlantic-Veridise-Chain.pdf
+- [20815] Atlantic-Veridise-ZK.pdf
+- [20816] Atlantic-Veridise-zkSBT.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

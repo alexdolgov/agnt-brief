@@ -5,43 +5,46 @@
 - Project: Bondlink Finance (`bondlink-finance`)
 - Website: [https://www.bondlink.finance](https://www.bondlink.finance)
 - Lifecycle: active (Tier 0, 48% below peak)
-- Generated: 2026-06-21T10:03:21.058Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Generated: 2026-07-04T14:53:07.688Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-17a2
 - Chains: ethereum
-- Contract surface: 3 unique implementations (3 raw deployments)
+- Contract surface: 6 unique implementations (6 raw deployments)
 - DeFi Llama TVL: $151,991.52
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Bondlink Finance is a Real World Asset (RWA) protocol on Ethereum that tokenizes off-chain assets into on-chain tokens, enabling users to gain exposure to real-world yields. The protocol issues a stablecoin-like token (USDb) backed by these assets.
+RWA. Structurally: 4 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 3 ERC20 tokens; role-gated via AccessControl; built on openzeppelin.
 
 ### Architecture
 
-The protocol consists of a single product family with one core token contract (USDb). No supporting contracts or cross-family relationships are present in the current contract surface.
+The protocol comprises 2 functional families. Its contracts share 3 common project-authored base contract(s) (erc20permit, eip712, nonces). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 7; live-surface contracts included: 3 (3 live, 0 unknown).
-- Excluded by liveness: 4 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 7; live-surface contracts included: 6 (3 live, 3 unknown).
+- Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 1/6.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 2/3 (66.7%)
+- Coverage of deployed-live implementations: 2/3 (66.7%)
+- Deployed-live implementations: 3 of 6 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 2/3
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
-- Unverified implementations: 0
-- Unique implementations: 3
-- Raw deployments: 3
-- Audits discovered: 1
+- Unverified implementations: 3
+- Unique implementations: 6
+- Raw deployments: 6
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2024-12 (aging)
-- Staleness: 0 fresh, 1 aging, 0 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 1 aging, 0 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 2 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
 
 ### Auditor Coverage
@@ -77,17 +80,21 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (0)
+### ❓ Unverified (3)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
-- None
+| Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
+|---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0x68f00f...16320d` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xc3f466...724d85` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xcc75ab...20105b` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://beosin.com/audits/Bondlink_202412031841.pdf) | unknown | Audit | 2024-12 | aging | Direct | contract_name | 2 | high |
+| [Bondlink_202412031841.pdf](https://beosin.com/audits/Bondlink_202412031841.pdf) | unknown | Audit | 2024-12 | aging | Direct | contract_name | 2 | n/a |
 
 ## Coverage Gaps
 
@@ -104,7 +111,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 3 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 3 |
 
 ## Scope Matching Notes
 
@@ -112,7 +119,7 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 0
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=3
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=2
 
 Fork inheritance lineage and inherited audits are included when available.

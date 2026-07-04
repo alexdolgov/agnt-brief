@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0",
   "project_key": "basemax",
-  "generated_at": "2026-06-19T11:24:25.929Z",
-  "pipeline_run_id": "v2-pipeline-2026-06-19-727228-cc10",
+  "generated_at": "2026-07-04T14:53:05.302Z",
+  "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-ae05",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
     "slug": "basemax",
@@ -16,27 +16,29 @@
     "tvl_180d_ago": 0,
     "change_30d_pct": null,
     "change_90d_pct": null,
-    "days_since_peak": 904,
+    "days_since_peak": 916,
     "detection_method": "tvl_trajectory",
     "governance_signal": null,
     "drop_from_peak_pct": 100
   },
   "summary": {
-    "total_contracts": 4,
-    "total_addresses": 4,
-    "unique_implementations": 4,
-    "total_deployments": 4,
-    "audited_contracts": 0,
+    "total_contracts": 7,
+    "total_addresses": 8,
+    "unique_implementations": 7,
+    "total_deployments": 8,
+    "audited_contracts": 1,
     "unaudited_contracts": 4,
-    "contracts_verified_audited": 0,
+    "contracts_verified_audited": 1,
     "contracts_verified_unaudited": 4,
     "contracts_verified_by_bytecode": 0,
-    "contracts_unverified": 0,
-    "coverage_pct": 0,
+    "contracts_unverified": 2,
+    "coverage_pct": 25,
     "total_audits": 1,
-    "scoreable_audits": 0,
-    "dl_tvl_usd": 0.02098,
-    "tvl_usd": 0.02098,
+    "direct_audits": 1,
+    "inherited_audits": 0,
+    "scoreable_audits": 1,
+    "dl_tvl_usd": 0,
+    "tvl_usd": 0,
     "tvl_source": "defillama",
     "tvl_by_chain": {},
     "asd_usd": null,
@@ -53,28 +55,35 @@
       "aging": 0,
       "stale": 1,
       "unknown": 0
+    },
+    "live_implementations": 5,
+    "live_verified_implementations": 4,
+    "live_audited_implementations": 1,
+    "live_verified_third_party_excluded": 1,
+    "deploy_coverage_basis_breakdown": {
+      "code_matched": 1,
+      "diverged": 0,
+      "match_unverified": 0
     }
   },
   "topography": {
-    "project_purpose": "Basemax is a derivatives protocol on Base that enables leveraged trading and yield generation. Users can deposit collateral into vaults to mint a synthetic stablecoin (BSM), which can be used for leveraged positions or staked in reward farms. The protocol manages liquidations, pricing, and reward distribution through a set of interconnected contracts.",
-    "relationship_narrative": "The Vault contract mints BsmToken as a synthetic asset, which is then used across the protocol for trading and staking. BaseMaxChef and various rewarder contracts distribute incentives to stakers, while PriceManager and SettingsManager provide shared infrastructure for pricing and configuration. LiquidateVault, OrderExecutor, and PositionVault handle risk management and order execution, all relying on the core Vault and BsmToken.",
-    "product_family_count": 1,
-    "total_contracts_indexed": 57,
-    "live_contracts": 4,
-    "inactive_contracts": 19,
-    "singleton_contracts": 34,
+    "project_purpose": "Derivatives. Structurally: 16 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Its contracts share 4 common project-authored base contract(s) (constants, mintablebasetoken, basetoken). Dominant framework: openzeppelin.",
+    "product_family_count": 3,
+    "total_contracts_indexed": 35,
+    "live_contracts": 6,
+    "inactive_contracts": 27,
+    "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 0,
-    "deployment_units": 17,
+    "unknown_contracts": 2,
+    "deployment_units": 0,
     "live_deployment_units": 0,
-    "dependencies_extracted": 2,
+    "dependencies_extracted": 0,
     "unverified_dependencies": 0,
-    "detected_codebases": [
-      "uniswap-v2"
-    ]
+    "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 4,
+    "unique_implementations": 7,
     "has_non_token_contracts": false,
     "is_skeletal": false
   },
@@ -116,7 +125,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-07 07:54:39+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -128,7 +141,7 @@
       "role": "token",
       "origin_kind": "native",
       "origin_provider": null,
-      "product_line": "Basemax",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -151,7 +164,11 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-07 07:54:43+03",
+      "deploy_coverage_basis": null
     },
     {
       "chain_id": 8453,
@@ -186,7 +203,63 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "review"
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-07 07:54:47+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x83fdb159053b8d343900e72a358f9c778fbb4900",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "OrderExecutor",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0xd63c0f3c9685cbdc7ebdc81e3c33154e70416008",
+      "impl_name": "OrderExecutor",
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x83fdb159053b8d343900e72a358f9c778fbb4900",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        },
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0xd63c0f3c9685cbdc7ebdc81e3c33154e70416008",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": true
+        }
+      ],
+      "audits_covering": [
+        "audit-12740"
+      ],
+      "is_audited": true,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_audited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-07 07:56:05+03",
+      "deploy_coverage_basis": "code_matched"
     },
     {
       "chain_id": 8453,
@@ -198,7 +271,7 @@
       "role": "unknown",
       "origin_kind": "upstream",
       "origin_provider": "Uniswap",
-      "product_line": "Basemax",
+      "product_line": null,
       "tvl_usd": null,
       "is_proxy": false,
       "impl_address": null,
@@ -221,7 +294,89 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": null
+      "contamination_flag": null,
+      "is_live": true,
+      "is_own_surface": false,
+      "effective_deploy_date": "2023-11-20 06:03:23+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x33c3a1acb2089312c83ce1b2a296d12755c57d5b",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x33c3a1acb2089312c83ce1b2a296d12755c57d5b",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-17 10:24:11+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 8453,
+      "chain_name": "base",
+      "address": "0x9d0c67e387014bcda5736ebb1760bfb3e194b955",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "UnnamedContract",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": false,
+      "impl_address": null,
+      "impl_name": null,
+      "deployments": [
+        {
+          "chain_id": 8453,
+          "chain_name": "base",
+          "address": "0x9d0c67e387014bcda5736ebb1760bfb3e194b955",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": false,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": false,
+      "verified_by_bytecode": false,
+      "verification_bucket": "unverified",
+      "contamination_flag": "cleared",
+      "is_live": false,
+      "is_own_surface": true,
+      "effective_deploy_date": "2023-11-17 10:43:29+03",
+      "deploy_coverage_basis": null
     }
   ],
   "audits": [
@@ -238,16 +393,30 @@
       "inherited_from_project_key": null,
       "inherited_from_project_name": null,
       "inherited_via_fork_id": null,
+      "inheritance_mode": null,
+      "inheritance_scope": [],
+      "scope_match": null,
       "scope_format": "contract_name",
-      "extracted_names": [],
-      "matched_contracts": 0,
+      "extracted_names": [
+        "Multicall",
+        "OrderExecutor"
+      ],
+      "matched_contracts": 2,
       "scope_note": null,
-      "extraction_confidence": null,
-      "scope_section_found": null,
+      "extraction_confidence": "high",
+      "scope_section_found": true,
       "repo_reference_count": 0
     }
   ],
-  "auditor_coverage": [],
+  "auditor_coverage": [
+    {
+      "auditor": "unknown",
+      "tier": 2,
+      "contracts_covered": 1,
+      "coverage_pct": 20,
+      "latest_audit": "2023-11"
+    }
+  ],
   "coverage_gaps": [
     {
       "chain_id": 8453,
@@ -281,24 +450,21 @@
     }
   ],
   "origin_summary": {
-    "native": 3,
+    "native": 4,
     "upstream": 1,
     "standard_library": 0,
-    "needs_review": 0
+    "needs_review": 2
   },
   "scope_matching_notes": {
     "match_method_counts": {
       "extraction_exact": 2
     },
-    "extraction_confidence_counts": {},
+    "extraction_confidence_counts": {
+      "high": 1
+    },
     "audits_with_repo_references": [],
     "audits_with_not_audit": [],
-    "audits_with_zero_matches": [
-      {
-        "audit_id": 12740,
-        "report_name": "Verichains Public Audit Report - BaseMax Smartcontracts - v1.0.pdf"
-      }
-    ],
+    "audits_with_zero_matches": [],
     "inherited_remapped_matches": []
   },
   "active_bug_bounty": null

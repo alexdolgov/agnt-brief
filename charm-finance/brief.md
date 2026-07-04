@@ -1,52 +1,52 @@
 # Agentic Audit Brief: Charm Finance
 
-⚠️ Lifecycle status: DECLINING - TVL dropped 38.8% over 90 days
-
 ## Project Overview
 
 - Project: Charm Finance (`charm-finance`)
 - Website: [https://www.charm.fi/](https://www.charm.fi/)
-- Lifecycle: declining (Tier 0, 82% below peak)
-- Generated: 2026-06-17T07:00:37.799Z
-- Pipeline run: brief-regen-topo-2026-06-17
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:53:10.237Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-1cbb
 - Chains: arbitrum, base, berachain, boba, ethereum, polygon
-- Contract surface: 7 unique implementations (16 raw deployments)
-- DeFi Llama TVL: $2,322,579.00
-- On-chain TVL (included contracts): $14,189.53
-- TVL by chain: Ethereum $14,189.53
+- Contract surface: 12 unique implementations (25 raw deployments)
+- DeFi Llama TVL: $2,272,199.00
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## Project Description
 
-Charm Finance is a permissionless liquidity management protocol with both legacy Ethereum V1 products and active V2 AlphaPro vault deployments. Its contracts include vaults and strategy/periphery components for managing concentrated liquidity positions on Uniswap V3-style AMMs, including user deposits, range rebalancing, and fee compounding.
+Liquidity Manager. Structurally: 18 project-authored contract(s) across 3 chain(s); 7 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol consists of a single product family, Charm Finance V2, centered around the AlphaProVaultFactory which deploys and manages vault instances. No shared infrastructure or cross-family dependencies are present.
+The protocol comprises 4 functional families. Its contracts share 5 common project-authored base contract(s) (optionsymbol, erc20upgradesafe, contextupgradesafe). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 49; live-surface contracts included: 16 (15 live, 1 unknown).
-- Excluded by liveness: 33 inactive, 0 singleton, 0 uninitialized.
-- Deployment units: 0/2 live.
-- Detected codebases: uniswap-v3
-- Unverified dependencies: 1/14.
+- Indexed contracts: 52; live-surface contracts included: 25 (18 live, 7 unknown).
+- Excluded by liveness: 27 inactive, 0 singleton, 0 uninitialized.
+- Deployment units: 0/0 live.
+- Detected codebases: none
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 3/5 (60.0%)
+- Coverage of deployed-live implementations: 3/5 (60.0%)
+- Deployed-live implementations: 5 of 12 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 3/5
 - Verified + Unaudited implementations: 2
 - Verified by bytecode match: 0
-- Unverified implementations: 2
-- Unique implementations: 7
-- Raw deployments: 16
-- Audits discovered: 6
+- Unverified implementations: 7
+- Unique implementations: 12
+- Raw deployments: 25
+- Audits discovered: 6 (6 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 4
 - Active bug bounty: Immunefi ([program](https://immunefi.com/bug-bounty/charm/information))
-- ASD (verified + unaudited TVL): $0.00
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-06 (aging)
-- Staleness: 0 fresh, 1 aging, 4 stale, 0 unknown
+- Audit staleness (calendar age): 0 fresh, 1 aging, 4 stale, 0 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 3 match-unverified
 - Tier 1 coverage: 60.0% (Code4rena, Spearbit)
-- Note: This protocol is classified as [declining]. ASD of $0.00 represents exposure in a protocol with declining activity.
 
 ### Auditor Coverage
 
@@ -62,16 +62,16 @@ The protocol consists of a single product family, Charm Finance V2, centered aro
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| AlphaVault | core_logic | ethereum | n/a | 3 deployments: ethereum [`0x9bf7b4...164322`](./contracts/ethereum-1/0x9bf7b46c7ad5ab62034e9349ab912c0345164322/); ethereum `0xbd7c6d...4e8a66`; ethereum `0xe72f3e...2c6c11` | ✅ Audited |
-| AlphaProVault | core_logic | berachain | n/a | 2 deployments: berachain [`0x0a4b7a...e9baea`](./contracts/berachain-80094/0x0a4b7ac0723d0d08de255aa9d574958c66e9baea/); berachain `0xf0f42c...05df61` | ✅ Audited |
+| AlphaProVault | core_logic | berachain | n/a | 6 deployments: ethereum `0xfaf1af...6d8a07`; polygon `0xfaf1af...6d8a07`; base `0xfaf1af...6d8a07`; arbitrum `0xfaf1af...6d8a07`; berachain [`0x0a4b7a...e9baea`](./contracts/berachain-80094/0x0a4b7ac0723d0d08de255aa9d574958c66e9baea/); berachain `0xf0f42c...05df61` | ✅ Audited |
 | AlphaProVaultFactory | registry | berachain | n/a | 6 deployments: ethereum `0x5b7b8b...9b2afa`; polygon `0x5b7b8b...9b2afa`; base `0x5b7b8b...9b2afa`; arbitrum `0x5b7b8b...9b2afa`; berachain [`0x189bd7...6ed137`](./contracts/berachain-80094/0x189bd734c2f1beeaca81e0edbb1ce3b8a16ed137/); berachain `0x78f25a...b4ad15` | ✅ Audited |
+| AlphaVault | core_logic | ethereum | n/a | 3 deployments: ethereum [`0x9bf7b4...164322`](./contracts/ethereum-1/0x9bf7b46c7ad5ab62034e9349ab912c0345164322/); ethereum `0xbd7c6d...4e8a66`; ethereum `0xe72f3e...2c6c11` | ✅ Audited |
 
 ### ⚠️ Verified + Unaudited (2)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| CubePool | core_logic | ethereum | n/a | [`0x23f6a2...bc1b67`](./contracts/ethereum-1/0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67/) | ⚠️ Unaudited |
 | AlphaProPeriphery | periphery | berachain | n/a | 2 deployments: berachain [`0xe2ac68...331a66`](./contracts/berachain-80094/0xe2ac68fe15a8e64639aedcda30867cac04331a66/); berachain `0xf1b21f...39a7ee` | ⚠️ Unaudited |
+| CubePool | core_logic | ethereum | n/a | [`0x23f6a2...bc1b67`](./contracts/ethereum-1/0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67/) | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -85,24 +85,29 @@ Source not verified, but runtime bytecode matches a verified implementation (byt
 
 - None
 
-### ❓ Unverified (2)
+### ❓ Unverified (7)
 
 Source code not publicly verified. These contracts cannot be audited without decompilation or project cooperation.
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
+| UnnamedContract | unknown | ethereum | n/a | `0xbed8a8...fe1319` | ❓ Unverified |
+| UnnamedContract | unknown | ethereum | n/a | `0xd4b456...1067cf` | ❓ Unverified |
+| UnnamedContract | unknown | polygon | n/a | `0xbed8a8...fe1319` | ❓ Unverified |
 | UnnamedContract | unknown | boba | n/a | `0xfaf1af...6d8a07` | ❓ Unverified |
+| UnnamedContract | unknown | base | n/a | `0xbed8a8...fe1319` | ❓ Unverified |
+| UnnamedContract | unknown | arbitrum | n/a | `0xbed8a8...fe1319` | ❓ Unverified |
 | UnnamedContract | unknown | berachain | n/a | `0xfcc5d3...780d3b` | ❓ Unverified |
 
 ## Audit Inventory
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Active Bug Bounty Program](https://immunefi.com/bug-bounty/charm/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
-| [Rendered PDF capture](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FIM3bniGpiEo24osqeSJ5%2Freport-cantinacode-charm-0604.pdf) | Spearbit | Audit | 2025-06 | aging | Direct | contract_name | 4 | high |
-| [Rendered PDF capture](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FcDHlWmzrwu3w7pAxW6dG%2FPeckShield-Audit-Report-Charm-v1.0.pdf) | PeckShield | Audit | 2023-06 | stale | Direct | contract_name | 2 | high |
-| [Rendered PDF capture](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FLx7bFYx6tcfSpsdqT3jV%2FPeckShield-Audit-Report-Charm-AlphaPro-v1.0.pdf) | PeckShield | Audit | 2022-03 | stale | Direct | contract_name | 4 | high |
-| [Rendered PDF capture](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2Fcblzw4RcfNUsNN1dnlPG%2FREP-Charm%20Finance%20Alpha%20Vaults-2021-06-30.pdf) | Code4rena | Contest | 2021-06 | stale | Direct | contract_name | 3 | high |
+| [immunefi.com/bug-bounty/charm/information](https://immunefi.com/bug-bounty/charm/information) | Immunefi | Bug Bounty | Ongoing | n/a | Direct | n/a | n/a | n/a |
+| [spaces/ncWpbfiN022KvH5AGrQq/uploads/IM3bniGpiEo24osqeSJ5/report-cantinacode-charm-0604.pdf](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FIM3bniGpiEo24osqeSJ5%2Freport-cantinacode-charm-0604.pdf) | Spearbit | Audit | 2025-06 | aging | Direct | contract_name | 2 | n/a |
+| [spaces/ncWpbfiN022KvH5AGrQq/uploads/cDHlWmzrwu3w7pAxW6dG/PeckShield-Audit-Report-Charm-v1.0.pdf](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FcDHlWmzrwu3w7pAxW6dG%2FPeckShield-Audit-Report-Charm-v1.0.pdf) | PeckShield | Audit | 2023-06 | stale | Direct | contract_name | 1 | n/a |
+| [spaces/ncWpbfiN022KvH5AGrQq/uploads/Lx7bFYx6tcfSpsdqT3jV/PeckShield-Audit-Report-Charm-AlphaPro-v1.0.pdf](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2FLx7bFYx6tcfSpsdqT3jV%2FPeckShield-Audit-Report-Charm-AlphaPro-v1.0.pdf) | PeckShield | Audit | 2022-03 | stale | Direct | contract_name | 2 | n/a |
+| [spaces/ncWpbfiN022KvH5AGrQq/uploads/cblzw4RcfNUsNN1dnlPG/REP-Charm Finance Alpha Vaults-2021-06-30.pdf](https://3306594273-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FncWpbfiN022KvH5AGrQq%2Fuploads%2Fcblzw4RcfNUsNN1dnlPG%2FREP-Charm%20Finance%20Alpha%20Vaults-2021-06-30.pdf) | Code4rena | Contest | 2021-06 | stale | Direct | contract_name | 1 | n/a |
 | [Audit Report - Charm Finance [27.10.2020].pdf](https://github.com/solidified-platform/audits/blob/master/Audit%20Report%20-%20Charm%20Finance%20%5B27.10.2020%5D.pdf) | unknown | Audit | 2020-10 | stale | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
@@ -111,17 +116,17 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| ethereum | [`0x23f6a2...bc1b67`](./contracts/ethereum-1/0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67/) | CubePool | core_logic | $0.00 | Verified native implementation with $0.00 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
 | berachain | [`0xe2ac68...331a66`](./contracts/berachain-80094/0xe2ac68fe15a8e64639aedcda30867cac04331a66/) | AlphaProPeriphery | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| ethereum | [`0x23f6a2...bc1b67`](./contracts/ethereum-1/0x23f6a2d8d691294c3a1144eed14f5632e8bc1b67/) | CubePool | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 7 |
+| native | 5 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 0 |
+| needs_review | 7 |
 
 ## Scope Matching Notes
 
@@ -129,8 +134,8 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 1
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=4
-- Match method counts: extraction_exact=26
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=6
 
 Zero-match audit list:
 

@@ -1,19 +1,17 @@
 # Agentic Audit Brief: Thoreum Finance
 
-⚠️ Lifecycle status: DEAD - TVL dropped 6.3% over 90 days
-
 ## Project Overview
 
 - Project: Thoreum Finance (`thoreum-finance`)
 - Website: [https://thoreum.finance/](https://thoreum.finance/)
-- Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-06-21T05:12:50.375Z
-- Pipeline run: v2-pipeline-2026-06-21-727228-48f6
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:54:01.457Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-16bc
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
-- DeFi Llama TVL: $45,085.88
-- On-chain TVL (included contracts): $36,800.00
-- TVL by chain: Bsc $36,800.00
+- DeFi Llama TVL: $42,817.94
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
@@ -30,23 +28,25 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 - Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
-- Unverified dependencies: 1/2.
+- Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 1/1 (100.0%)
+- Coverage of deployed-live implementations: 1/1 (100.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/1
 - Verified + Unaudited implementations: 0
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 3
+- Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2021-06 (stale)
-- Staleness: 0 fresh, 0 aging, 2 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 2 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 1 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of n/a represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -89,8 +89,8 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
 | [Thoreum.pdf](https://github.com/TechRate/Smart-Contract-Audits/blob/main/2018-21%20N-Z/Thoreum.pdf) | unknown | Audit | 2021-06 | stale | Direct | n/a | 0 | n/a |
-| [DL audit link](https://paladinsec.co/assets/audits/20210621_Paladin_Thoreum_Finance.pdf) | Paladin | Audit | 2021-06 | stale | Direct | contract_name | 1 | high |
-| [DL audit link](https://skynet.certik.com/projects/thoreumfinance) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [20210621_Paladin_Thoreum_Finance.pdf](https://paladinsec.co/assets/audits/20210621_Paladin_Thoreum_Finance.pdf) | Paladin | Audit | 2021-06 | stale | Direct | contract_name | 1 | n/a |
+| [skynet.certik.com/projects/thoreumfinance](https://skynet.certik.com/projects/thoreumfinance) | CertiK | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -113,12 +113,12 @@ Verified + unaudited native implementations ranked by TVL:
 - Not-audit entries: 0
 - Audits with zero matched contracts: 2
 - Inherited remapped matches: 0
-- Extraction confidence breakdown: high=1
-- Match method counts: extraction_exact=1
+- Extraction confidence breakdown: n/a
+- Match method counts: contract_name=1
 
 Zero-match audit list:
 
 - [14006] Thoreum.pdf
-- [14008] DL audit link
+- [14008] skynet.certik.com/projects/thoreumfinance
 
 Fork inheritance lineage and inherited audits are included when available.

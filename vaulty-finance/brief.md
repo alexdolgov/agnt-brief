@@ -1,18 +1,16 @@
 # Agentic Audit Brief: Vaulty Finance
 
-⚠️ Lifecycle status: DEAD - TVL trajectory indicates non-active lifecycle.
-
 ## Project Overview
 
 - Project: Vaulty Finance (`vaulty-finance`)
-- Lifecycle: dead (Tier 0, 100% below peak)
-- Generated: 2026-06-19T17:01:34.582Z
-- Pipeline run: v2-pipeline-2026-06-19-727228-a815
+- Lifecycle: unknown
+- Generated: 2026-07-04T14:54:09.736Z
+- Pipeline run: v2-pipeline-2026-07-01-3e33f2-4c3e
 - Chains: bsc
 - Contract surface: 1 unique implementations (1 raw deployments)
 - DeFi Llama TVL: $0.00
-- On-chain TVL (included contracts): $30,618.15
-- TVL by chain: Bsc $30,618.15
+- On-chain TVL (included contracts): n/a
+- TVL by chain: n/a
 
 ## ⚠️ Limited Contract Surface
 
@@ -33,19 +31,21 @@ Contract surface contains 1 implementation(s). Insufficient contract coverage fo
 
 ## Audit Coverage Summary
 
-- Verified implementations audited: 0/1 (0.0%)
+- Coverage of deployed-live implementations: 0/1 (0.0%)
+- Deployed-live implementations: 1 of 1 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/1
 - Verified + Unaudited implementations: 1
 - Verified by bytecode match: 0
 - Unverified implementations: 0
 - Unique implementations: 1
 - Raw deployments: 1
-- Audits discovered: 1
+- Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
-- ASD (verified + unaudited TVL): $30,618.15
+- ASD (verified + unaudited TVL): n/a
 - Latest audit: n/a (unknown)
-- Staleness: 0 fresh, 0 aging, 0 stale, 1 unknown
+- Audit staleness (calendar age): 0 fresh, 0 aging, 0 stale, 1 unknown
+- Coverage code basis (deployed vs audited code): 0 code-matched, 0 diverged (deployed code modified beyond the audited fork baseline), 0 match-unverified
 - Tier 1 coverage: No Tier 1 coverage
-- Note: This protocol is classified as [dead]. ASD of $30,618.15 represents exposure in a protocol with dead activity.
 
 ### Auditor Coverage
 
@@ -85,7 +85,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [DL audit link](https://rdauditors.com/wp-content/uploads/2021/10/Vaulty-Smart-Contract-Security-Audit-Report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
+| [Vaulty-Smart-Contract-Security-Audit-Report.pdf](https://rdauditors.com/wp-content/uploads/2021/10/Vaulty-Smart-Contract-Security-Audit-Report.pdf) | unknown | Audit | n/a | unknown | Direct | n/a | 0 | n/a |
 
 ## Coverage Gaps
 
@@ -93,7 +93,7 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
-| bsc | [`0x38a5cb...eb8526`](./contracts/bsc-56/0x38a5cbe2fb53d1d407dd5a22c4362daf48eb8526/) | RewardToken | token | $30,618.15 | Verified native implementation with $30,618.15 on-chain TVL and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x38a5cb...eb8526`](./contracts/bsc-56/0x38a5cbe2fb53d1d407dd5a22c4362daf48eb8526/) | RewardToken | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
@@ -115,6 +115,6 @@ Verified + unaudited native implementations ranked by TVL:
 
 Zero-match audit list:
 
-- [14094] DL audit link
+- [14094] Vaulty-Smart-Contract-Security-Audit-Report.pdf
 
 Fork inheritance lineage and inherited audits are included when available.

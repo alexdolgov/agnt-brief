@@ -448,14 +448,28 @@ library StableMath {
         _revert(Errors.STABLE_GET_BALANCE_DIDNT_CONVERGE);
     }
 
-    function _getRate(
+    function _computeProportionalAmountsIn(
         uint256[] memory balances,
-        uint256 amp,
-        uint256 supply
-    ) internal pure returns (uint256) {
-        // When calculating the current BPT rate, we may not have paid the protocol fees, therefore
-        // the invariant should be smaller than its current value. Then, we round down overall.
-        uint256 invariant = _calculateInvariant(amp, balances);
-        return invariant.divDown(supply);
+        uint256 bptAmountOut,
+        uint256 totalBPT
+    ) internal pure returns (uint256[] memory) {
+        /************************************************************************************
+        // tokensInForExactBptOut                                                          //
+        // (per token)                                                                     //
+        // aI = amountIn                   /   bptOut   \                                  //
+        // b = balance           aI = b * | ------------ |                                 //
+        // bptOut = bptAmountOut           \  totalBPT  /                                  //
+        // bpt = totalBPT                                                                  //
+        ************************************************************************************/
+
+        // Tokens in, so we round up overall.
+        uint256 bptRatio = bptAmountOut.divUp(totalBPT);
+
+        uint256[] memory amountsIn = new uint256[](balances.length);
+        for (uint256 i = 0; i < balances.length; i++) {
+            amountsIn[i] = balances[i].mulUp(bptRatio);
+        }
+
+        return amountsIn;
     }
 }

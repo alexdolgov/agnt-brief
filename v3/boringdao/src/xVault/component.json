@@ -1,7 +1,7 @@
 {
   "component": "xVault",
   "main_contract": "xVault",
-  "source_file_count": 3,
+  "source_file_count": 1,
   "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
@@ -9,15 +9,15 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x0205ae93e18aa23d31e3df53899547b986e419c5",
+      "address": "0x109a325a32f8518c963e682f2d96f5e82d9dd9e6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": null
     },
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x109a325a32f8518c963e682f2d96f5e82d9dd9e6",
+      "address": "0x2ead6dd0706c2d95c63ca26b39222a54f058d285",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

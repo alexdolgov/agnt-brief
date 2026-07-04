@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "katana-pre-launch",
-  "generated_at": "2026-07-04T06:10:43.044Z",
+  "generated_at": "2026-07-04T11:05:41.975Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -51,7 +51,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Farm. Structurally: 47 project-authored contract(s) across 1 chain(s); 1 ERC20 token; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "project_purpose": "Farm. Structurally: 48 project-authored contract(s) across 2 chain(s); 1 ERC20 token; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
     "relationship_narrative": "The protocol comprises 9 functional families. Its contracts share 14 common project-authored base contract(s) (executor, eip712, owneriscreator). Dominant framework: openzeppelin.",
     "product_family_count": 9,
     "total_contracts_indexed": 654,

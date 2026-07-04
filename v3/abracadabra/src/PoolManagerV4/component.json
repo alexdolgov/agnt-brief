@@ -2,7 +2,7 @@
   "component": "PoolManagerV4",
   "main_contract": "PoolManagerV4",
   "source_file_count": 8,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +12,31 @@
       "address": "0x0e4e9d97440182ea72d988d48eb9b156a0c02e11",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1d545f155d85b8610bab0686c024a3662a4d274a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x782bce229a8b603c99161e867a49d5426da37f95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc461e1ce3795ee30ba2ec59843d5fae14d5782d5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

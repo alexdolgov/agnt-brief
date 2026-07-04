@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "brotocol",
-  "generated_at": "2026-07-03T21:05:37.059Z",
+  "generated_at": "2026-07-04T11:05:40.813Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-f007",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -57,12 +57,12 @@
     }
   },
   "topography": {
-    "project_purpose": "Bridge Aggregator. Structurally: 176 project-authored contract(s) across 7 chain(s); 17 ERC20 tokens, 4 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "project_purpose": "Bridge Aggregator. Structurally: 286 project-authored contract(s) across 7 chain(s); 68 ERC20 tokens, 4 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
     "relationship_narrative": "The protocol comprises 6 functional families. Its contracts share 50 common project-authored base contract(s) (erc20withpermit, checkpoints, authorizations). Dominant framework: openzeppelin.",
     "product_family_count": 6,
-    "total_contracts_indexed": 592,
+    "total_contracts_indexed": 584,
     "live_contracts": 395,
-    "inactive_contracts": 81,
+    "inactive_contracts": 73,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 116,
@@ -398,7 +398,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2022-09-29 15:13:23+03",
       "deploy_coverage_basis": null
@@ -534,7 +534,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2022-09-29 15:13:47+03",
       "deploy_coverage_basis": null
@@ -572,7 +572,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2022-09-29 15:09:59+03",
       "deploy_coverage_basis": null
@@ -610,7 +610,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2022-09-29 15:14:11+03",
       "deploy_coverage_basis": null
@@ -953,7 +953,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2025-07-23 13:17:47+03",
       "deploy_coverage_basis": null
@@ -1176,7 +1176,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-09-10 16:39:12+03",
       "deploy_coverage_basis": null
@@ -1225,7 +1225,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-09-14 15:41:37+03",
       "deploy_coverage_basis": null
@@ -1285,7 +1285,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-09-14 15:40:31+03",
       "deploy_coverage_basis": null
@@ -1367,7 +1367,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2025-10-10 19:27:23+03",
       "deploy_coverage_basis": null
@@ -3236,7 +3236,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2025-01-28 17:54:23+03",
       "deploy_coverage_basis": "match_unverified"
@@ -3345,7 +3345,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2025-10-10 19:27:11+03",
       "deploy_coverage_basis": null
@@ -3383,7 +3383,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-09-15 19:35:18+03",
       "deploy_coverage_basis": null
@@ -3459,7 +3459,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-09-15 19:37:03+03",
       "deploy_coverage_basis": null
@@ -3497,7 +3497,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-09-15 19:37:24+03",
       "deploy_coverage_basis": null
@@ -3535,7 +3535,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-09-15 19:36:02+03",
       "deploy_coverage_basis": null
@@ -3595,7 +3595,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2024-03-11 15:45:35+03",
       "deploy_coverage_basis": null
@@ -3671,7 +3671,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2023-01-13 14:17:47+03",
       "deploy_coverage_basis": null
@@ -3807,7 +3807,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2022-09-29 17:08:59+03",
       "deploy_coverage_basis": null
@@ -3845,7 +3845,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2022-09-29 17:12:23+03",
       "deploy_coverage_basis": null
@@ -4285,7 +4285,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2024-03-11 18:50:47+03",
       "deploy_coverage_basis": null
@@ -4323,7 +4323,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-09-15 19:56:51+03",
       "deploy_coverage_basis": null
@@ -4410,7 +4410,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-09-10 15:42:36+03",
       "deploy_coverage_basis": null
@@ -4459,7 +4459,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-09-10 16:38:52+03",
       "deploy_coverage_basis": null
@@ -4497,7 +4497,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-09-15 19:34:31+03",
       "deploy_coverage_basis": null
@@ -4535,7 +4535,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-09-10 15:52:38+03",
       "deploy_coverage_basis": null
@@ -4573,7 +4573,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-09-10 15:52:59+03",
       "deploy_coverage_basis": null
@@ -4763,7 +4763,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-09-10 15:42:51+03",
       "deploy_coverage_basis": null
@@ -5494,7 +5494,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2024-03-11 18:50:59+03",
       "deploy_coverage_basis": null
@@ -6147,7 +6147,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-09-15 19:34:06+03",
       "deploy_coverage_basis": null
@@ -6523,7 +6523,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2022-09-29 15:14:23+03",
       "deploy_coverage_basis": null
@@ -6621,7 +6621,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2024-03-11 18:50:23+03",
       "deploy_coverage_basis": null
@@ -6659,7 +6659,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-09-15 19:57:18+03",
       "deploy_coverage_basis": null
@@ -7656,7 +7656,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-09-10 15:43:09+03",
       "deploy_coverage_basis": null
@@ -11707,7 +11707,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2021-12-31 12:52:04+03",
       "deploy_coverage_basis": null
@@ -11908,7 +11908,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2024-03-11 23:22:11+03",
       "deploy_coverage_basis": null
@@ -11957,7 +11957,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2023-12-14 17:43:47+03",
       "deploy_coverage_basis": null
@@ -12082,7 +12082,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2024-03-11 18:50:35+03",
       "deploy_coverage_basis": null

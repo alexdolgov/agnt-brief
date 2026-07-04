@@ -15,35 +15,21 @@
 pragma solidity ^0.7.0;
 pragma experimental ABIEncoderV2;
 
-import "@balancer-labs/v2-interfaces/contracts/pool-utils/IPoolVersion.sol";
-import "@balancer-labs/v2-interfaces/contracts/pool-utils/IVersion.sol";
 import "@balancer-labs/v2-interfaces/contracts/vault/IVault.sol";
+import "@balancer-labs/v2-interfaces/contracts/standalone-utils/IProtocolFeePercentagesProvider.sol";
 
-import "@balancer-labs/v2-pool-utils/contracts/factories/BasePoolFactory.sol";
+import "@balancer-labs/v2-pool-utils/contracts/factories/BasePoolSplitCodeFactory.sol";
 import "@balancer-labs/v2-pool-utils/contracts/factories/FactoryWidePauseWindow.sol";
 
 import "./ComposableStablePool.sol";
 
-contract ComposableStablePoolFactory is IVersion, IPoolVersion, BasePoolFactory, FactoryWidePauseWindow {
-    string private _version;
-    string private _poolVersion;
+contract ComposableStablePoolFactory is BasePoolSplitCodeFactory, FactoryWidePauseWindow {
+    IProtocolFeePercentagesProvider private _protocolFeeProvider;
 
-    constructor(
-        IVault vault,
-        IProtocolFeePercentagesProvider protocolFeeProvider,
-        string memory factoryVersion,
-        string memory poolVersion
-    ) BasePoolFactory(vault, protocolFeeProvider, type(ComposableStablePool).creationCode) {
-        _version = factoryVersion;
-        _poolVersion = poolVersion;
-    }
-
-    function version() external view override returns (string memory) {
-        return _version;
-    }
-
-    function getPoolVersion() public view override returns (string memory) {
-        return _poolVersion;
+    constructor(IVault vault, IProtocolFeePercentagesProvider protocolFeeProvider)
+        BasePoolSplitCodeFactory(vault, type(ComposableStablePool).creationCode)
+    {
+        _protocolFeeProvider = protocolFeeProvider;
     }
 
     /**
@@ -56,10 +42,9 @@ contract ComposableStablePoolFactory is IVersion, IPoolVersion, BasePoolFactory,
         uint256 amplificationParameter,
         IRateProvider[] memory rateProviders,
         uint256[] memory tokenRateCacheDurations,
-        bool exemptFromYieldProtocolFeeFlag,
+        bool[] memory exemptFromYieldProtocolFeeFlags,
         uint256 swapFeePercentage,
-        address owner,
-        bytes32 salt
+        address owner
     ) external returns (ComposableStablePool) {
         (uint256 pauseWindowDuration, uint256 bufferPeriodDuration) = getPauseConfiguration();
         return
@@ -68,22 +53,20 @@ contract ComposableStablePoolFactory is IVersion, IPoolVersion, BasePoolFactory,
                     abi.encode(
                         ComposableStablePool.NewPoolParams({
                             vault: getVault(),
-                            protocolFeeProvider: getProtocolFeePercentagesProvider(),
+                            protocolFeeProvider: _protocolFeeProvider,
                             name: name,
                             symbol: symbol,
                             tokens: tokens,
                             rateProviders: rateProviders,
                             tokenRateCacheDurations: tokenRateCacheDurations,
-                            exemptFromYieldProtocolFeeFlag: exemptFromYieldProtocolFeeFlag,
+                            exemptFromYieldProtocolFeeFlags: exemptFromYieldProtocolFeeFlags,
                             amplificationParameter: amplificationParameter,
                             swapFeePercentage: swapFeePercentage,
                             pauseWindowDuration: pauseWindowDuration,
                             bufferPeriodDuration: bufferPeriodDuration,
-                            owner: owner,
-                            version: getPoolVersion()
+                            owner: owner
                         })
-                    ),
-                    salt
+                    )
                 )
             );
     }

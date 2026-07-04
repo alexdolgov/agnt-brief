@@ -9,15 +9,15 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x30176cecb6dbf0869d59493142925a0287b12216",
+      "address": "0x26dcfbfa8bc267b250432c01c982eaf81cc5480c",
       "is_proxy": true,
-      "implementation_address": "0x53fbd93f0e0ab9b23f7545120ac0a0f1a944c725",
+      "implementation_address": "0x2c00ce1a935ff8c9e78580533e2e17c36281c26e",
       "liveness": "live"
     },
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x53fbd93f0e0ab9b23f7545120ac0a0f1a944c725",
+      "address": "0x2c00ce1a935ff8c9e78580533e2e17c36281c26e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

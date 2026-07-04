@@ -5,7 +5,7 @@
 - Project: Flex (`flex`)
 - Website: [https://flexmeow.com/](https://flexmeow.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:52.249Z
+- Generated: 2026-07-04T11:05:41.693Z
 - Pipeline run: v2-pipeline-2026-07-01-2b719a-2d9c
 - Chains: ethereum
 - Contract surface: 15 unique implementations (16 raw deployments)

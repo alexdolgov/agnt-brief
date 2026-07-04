@@ -21,7 +21,6 @@ library Errors {
     error InvalidAddress(address addr);
     error InvalidParam(string paramName);
     error InvalidParams();
-    error Exception(string desc);
     error UnsafePrice(address token, uint256 spotPrice, uint256 safePrice);
     error AlreadySet(string param);
     error AlreadyRegistered(address param);

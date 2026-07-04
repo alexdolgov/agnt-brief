@@ -12,7 +12,7 @@
       "address": "0xbddac3069f4e26f4e4f445926c8eeb9dcb68c26b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "gnosis",
@@ -20,7 +20,7 @@
       "address": "0x8f67bb1f24eba8d123ae7f18c13b925ba7f13552",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "polygon",
@@ -28,7 +28,7 @@
       "address": "0x9e4cbe2eaff2fa727bc805e6cbbf2ff01ddb812b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "base",
@@ -36,7 +36,7 @@
       "address": "0xce66e8300dc1d1f5b0e46e9145fdf680a7e41146",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "arbitrum",
@@ -44,7 +44,7 @@
       "address": "0xb4e5fd87f3092f271f51ca416f311513d958cb4e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

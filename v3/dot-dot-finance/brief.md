@@ -4,7 +4,7 @@
 
 - Project: Dot Dot Finance (`dot-dot-finance`)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:43.653Z
+- Generated: 2026-07-04T11:05:40.910Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-d640
 - Chains: bsc
 - Contract surface: 22 unique implementations (43 raw deployments)

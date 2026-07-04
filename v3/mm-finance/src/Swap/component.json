@@ -2,7 +2,7 @@
   "component": "Swap",
   "main_contract": "Swap",
   "source_file_count": 26,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "polygon",
       "chain_id": 137,
       "address": "0x45e46c9dc647d0f89b8e692f327553e5bab22368",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x9ee5794322ed1b53131459b44247cd0fe25dab56",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

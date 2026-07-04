@@ -28,7 +28,7 @@
       "address": "0xabbd4a2b18aec5349e959c43102378c24aab4cfc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "blast",

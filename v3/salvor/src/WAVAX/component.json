@@ -12,7 +12,7 @@
       "address": "0x7fc6d48e6e8e8b9505c171325539c651bf1d51d4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "avalanche",
@@ -20,7 +20,7 @@
       "address": "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

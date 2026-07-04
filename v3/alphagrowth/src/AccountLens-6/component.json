@@ -1,7 +1,7 @@
 {
   "component": "AccountLens-6",
   "main_contract": "AccountLens",
-  "source_file_count": 13,
+  "source_file_count": 12,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +9,10 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xa60c4257c809353039a71527dfe701b577e34bc7",
+      "address": "0xb8507b1d6d234bbbf96a8e2bc6af562a6327cd94",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

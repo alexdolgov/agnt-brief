@@ -2,11 +2,9 @@
   "component": "STOTokenCheckpointsUpgradeable",
   "main_contract": "STOTokenCheckpointsUpgradeable",
   "source_file_count": 32,
-  "deployment_count": 5,
-  "audited": true,
-  "audits_covering": [
-    "https://skynet.certik.com/projects/brickken"
-  ],
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
@@ -23,14 +21,6 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x643630f8bd8fc10c4b72669ff899d64ecbe3af54",
-      "is_proxy": true,
-      "implementation_address": "0x5dc006a13c0f2cb4ea104b3b6ea1d1514a09618a",
-      "liveness": "live"
     },
     {
       "chain": "ethereum",

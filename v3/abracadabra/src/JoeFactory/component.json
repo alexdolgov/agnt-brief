@@ -2,7 +2,7 @@
   "component": "JoeFactory",
   "main_contract": "JoeFactory",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -13,6 +13,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xe2ecc226fd2d5cead96f3f9f00efae9fafe75eb8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
   "component": "WasabiLongPool",
   "main_contract": "WasabiLongPool",
-  "source_file_count": 35,
-  "deployment_count": 19,
+  "source_file_count": 43,
+  "deployment_count": 18,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x000728488ae4e80b2ed7c3a06462bdeab5fbf1cf",
+      "address": "0x023afc8b575ef583ef5596d3834d82b7116a6078",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live"
     },
     {
       "chain": "ethereum",
@@ -101,14 +101,6 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xa5a6457dd024bf2e5edf8dbd54dfbca24cac7b96",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
     },
     {
       "chain": "ethereum",

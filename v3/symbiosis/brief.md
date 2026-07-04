@@ -5,7 +5,7 @@
 - Project: Symbiosis (`symbiosis`)
 - Website: [https://symbiosis.finance](https://symbiosis.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:58.247Z
+- Generated: 2026-07-04T11:05:46.660Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-b097
 - Chains: arbitrum, avalanche, base, cronos, ethereum, optimism, polygon
 - Contract surface: 177 unique implementations (308 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-Cross Chain Bridge. Structurally: 86 project-authored contract(s) across 6 chain(s); 19 ERC20 tokens, 3 ERC1155 multi-tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Cross Chain Bridge. Structurally: 138 project-authored contract(s) across 6 chain(s); 19 ERC20 tokens, 3 ERC1155 multi-tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 8 functional families. Its contracts share 28 common project-authored base contract(s) (oapp, oappsender, oappcore). Dominant framework: openzeppelin.
+The protocol comprises 8 functional families. Its contracts share 32 common project-authored base contract(s) (oapp, oappsender, oappcore). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

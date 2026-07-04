@@ -20,8 +20,6 @@
 
 pragma solidity ^0.8.9;
 
-import { IDolomiteAccountRegistry } from "./IDolomiteAccountRegistry.sol";
-import { IDolomiteMigrator } from "./IDolomiteMigrator.sol";
 import { IEventEmitterRegistry } from "./IEventEmitterRegistry.sol";
 import { IExpiry } from "./IExpiry.sol";
 import { IGenericTraderProxyV1 } from "./IGenericTraderProxyV1.sol";
@@ -37,10 +35,6 @@ import { IDolomitePriceOracle } from "../protocol/interfaces/IDolomitePriceOracl
  */
 interface IDolomiteRegistry {
 
-    struct IsolationModeStorage {
-        bytes4[] isolationModeMulticallFunctions;
-    }
-
     // ========================================================
     // ======================== Events ========================
     // ========================================================
@@ -51,17 +45,12 @@ interface IDolomiteRegistry {
     event LiquidatorAssetRegistrySet(address indexed _liquidatorAssetRegistry);
     event EventEmitterSet(address indexed _eventEmitter);
     event ChainlinkPriceOracleSet(address indexed _chainlinkPriceOracle);
-    event DolomiteMigratorSet(address indexed _dolomiteMigrator);
     event RedstonePriceOracleSet(address indexed _redstonePriceOracle);
     event OracleAggregatorSet(address indexed _oracleAggregator);
-    event DolomiteAccountRegistrySet(address indexed _dolomiteAccountRegistry);
-    event IsolationModeMulticallFunctionsSet(bytes4[] _selectors);
 
     // ========================================================
-    // =================== Write Functions ====================
+    // =================== Admin Functions ====================
     // ========================================================
-
-    function lazyInitialize(address _dolomiteMigrator, address _oracleAggregator) external;
 
     /**
      *
@@ -101,8 +90,6 @@ interface IDolomiteRegistry {
      */
     function ownerSetChainlinkPriceOracle(address _chainlinkPriceOracle) external;
 
-    function ownerSetDolomiteMigrator(address _dolomiteMigrator) external;
-
     /**
      *
      * @param  _redstonePriceOracle    The new address of the Redstone price oracle that's compatible with
@@ -116,18 +103,6 @@ interface IDolomiteRegistry {
      *                              DolomiteMargin.
      */
     function ownerSetOracleAggregator(address _oracleAggregator) external;
-
-    /**
-     *
-     * @param  _dolomiteAccountRegistry    The new address of the Dolomite address registry
-     */
-    function ownerSetDolomiteAccountRegistry(address _dolomiteAccountRegistry) external;
-
-    /**
-     *
-     * @param  _selectors    Allowed function selectors for isolation mode multicall
-     */
-    function ownerSetIsolationModeMulticallFunctions(bytes4[] memory _selectors) external;
 
     // ========================================================
     // =================== Getter Functions ===================
@@ -164,11 +139,6 @@ interface IDolomiteRegistry {
     function chainlinkPriceOracle() external view returns (IDolomitePriceOracle);
 
     /**
-     * @return The address of the migrator contract
-     */
-    function dolomiteMigrator() external view returns (IDolomiteMigrator);
-
-    /**
      * @return The address of the Redstone price oracle that's compatible with DolomiteMargin
      */
     function redstonePriceOracle() external view returns (IDolomitePriceOracle);
@@ -177,16 +147,6 @@ interface IDolomiteRegistry {
      * @return The address of the oracle aggregator that's compatible with DolomiteMargin
      */
     function oracleAggregator() external view returns (IDolomitePriceOracle);
-
-    /**
-     * @return The address of the Dolomite address registry
-     */
-    function dolomiteAccountRegistry() external view returns (IDolomiteAccountRegistry);
-
-    /**
-     * @return The array of allowed function selectors for isolation mode multicall
-     */
-    function isolationModeMulticallFunctions() external view returns (bytes4[] memory);
 
     /**
      * @return The base (denominator) for the slippage tolerance variable. Always 1e18.

@@ -154,8 +154,7 @@ struct InterestRateInfo {
 
 enum InterestRateModelType {
     UNKNOWN,
-    KINK,
-    ADAPTIVE_CURVE
+    KINK
 }
 
 struct InterestRateModelDetailedInfo {
@@ -169,15 +168,6 @@ struct KinkIRMInfo {
     uint256 slope1;
     uint256 slope2;
     uint256 kink;
-}
-
-struct AdaptiveCurveIRMInfo {
-    int256 targetUtilization;
-    int256 initialRateAtTarget;
-    int256 minRateAtTarget;
-    int256 maxRateAtTarget;
-    int256 curveSteepness;
-    int256 adjustmentSpeed;
 }
 
 struct AccountRewardInfo {
@@ -309,31 +299,11 @@ struct RateProviderOracleInfo {
     address rateProvider;
 }
 
-struct OndoOracleInfo {
-    address base;
-    address quote;
-    address rwaOracle;
-}
-
 struct PendleProviderOracleInfo {
     address base;
     address quote;
     address pendleMarket;
     uint32 twapWindow;
-}
-
-struct PendleUniversalOracleInfo {
-    address base;
-    address quote;
-    address pendleMarket;
-    uint32 twapWindow;
-}
-
-struct CurveEMAOracleInfo {
-    address base;
-    address quote;
-    address pool;
-    uint256 priceOracleIndex;
 }
 
 struct SwaapSafeguardProviderOracleInfo {

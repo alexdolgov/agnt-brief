@@ -1,22 +1,22 @@
 # brickken — deployments
 
-90 verified deployment(s) across 35 component(s).
+87 verified deployment(s) across 35 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| base | `0x278d7bdc2451b0fa4087a68ce084a86cb91d4d83` | ERC1967Proxy-5 | proxy | inactive | no |
+| base | `0x278d7bdc2451b0fa4087a68ce084a86cb91d4d83` | ERC1967Proxy-2 | proxy | inactive | no |
 | base | `0x2c82a5eac210667e807b409d9e92cf607f2aca94` | STOEscrowManagedUpgradeable | impl | live | yes |
 | base | `0x409a37fa3636519380624cfb437e48ccaa9d86f7` | STOEscrowManagedUpgradeable-4 | impl | live | no |
-| base | `0x478dff0e27ca0f8e4d6cd5dd586b9f8d28158477` | UpgradeableBeaconToken | proxy | live | yes |
+| base | `0x478dff0e27ca0f8e4d6cd5dd586b9f8d28158477` | UpgradeableBeaconToken-2 | proxy | live | yes |
 | base | `0x6d04327079a19297180004891051de7ac5685e89` | STOEscrowManagedUpgradeable-3 | impl | live | no |
-| base | `0x816e88407c5edaa8b471b78f72bc3ec695984607` | ERC1967Proxy-2 | impl | live | no |
+| base | `0x816e88407c5edaa8b471b78f72bc3ec695984607` | STOFactoryManagedUpgradeable | impl | live | no |
 | base | `0x89b281df2702f19189fdd73f1d7865707bc7ba3b` | P2PHandler | impl | live | no |
 | base | `0x8bedc6dabef2d289db22ace495f9bd300001ad48` | STOTokenCheckpointsUpgradeable-2 | impl | inactive | no |
-| base | `0xb409eb0e7695fa8c72452857cac888371103ab3e` | STOTokenCheckpointsUpgradeable | impl | inactive | yes |
-| base | `0xbc2074b87828c30e1ac6285da672602ffdd3f074` | ERC1967Proxy-6 | impl | live | no |
+| base | `0xb409eb0e7695fa8c72452857cac888371103ab3e` | STOTokenCheckpointsUpgradeable | impl | inactive | no |
+| base | `0xbc2074b87828c30e1ac6285da672602ffdd3f074` | STOFactoryManagedUpgradeable-4 | impl | live | no |
 | base | `0xbd3d7e8dba0e406a66fa68608564387da83b38aa` | STOTokenCheckpointsUpgradeable-3 | impl | inactive | no |
-| base | `0xd1ba506b8c0af146d528ab02a6ab5f4ebf76ea5c` | STOEscrowManagedUpgradeable-5 | proxy | live | yes |
-| base | `0xe1961920e5e47dde355492ca56af6ee511703fe2` | ERC1967Proxy-7 | impl | live | no |
+| base | `0xd1ba506b8c0af146d528ab02a6ab5f4ebf76ea5c` | UpgradeableBeaconEscrow | proxy | live | yes |
+| base | `0xe1961920e5e47dde355492ca56af6ee511703fe2` | STOFactoryManagedUpgradeable-5 | impl | live | no |
 | base | `0xf6b6235f6725f84457f5d6f0b0aa3c962a079977` | STOEscrowManagedUpgradeable-2 | impl | live | no |
 | base | `0xff362452d0969f61d8a7fe1ea70a7caa534aeb07` | PriceAndSwapManager | impl | live | no |
 | ethereum | `0x00f56834493ed61eb3f4f08b3d01abb8c4fb6735` | VestingWallet | impl | inactive | no |
@@ -33,15 +33,14 @@
 | ethereum | `0x3d51655203787f1cd6aba27d022fc6b5873fe9d1` | Migrator | impl | inactive | no |
 | ethereum | `0x4459432f1626cc4de0e0a004e74ff282ae9c4a6f` | STOEscrowManagedUpgradeable | impl | live | yes |
 | ethereum | `0x44b751a65312702312d741ce01a86f764cec90a8` | NegativeCarbonBalance | impl | inactive | no |
-| ethereum | `0x46ff5d33a12f3c34e24a4dd4da590da166c3ebac` | STOTokenCheckpointsUpgradeable | impl | inactive | yes |
+| ethereum | `0x46ff5d33a12f3c34e24a4dd4da590da166c3ebac` | STOTokenCheckpointsUpgradeable | impl | inactive | no |
 | ethereum | `0x482b09786c7eb62ef8eee311c3e17a7ac3d91143` | PerpetualStaking-2 | impl | inactive | no |
 | ethereum | `0x48f33af935645cd7f27d7cf65a366bee515d9bae` | VestingWallet | impl | inactive | no |
 | ethereum | `0x513f0b5f188d33d6b0efbba0b5f07f37cb7cbdeb` | STOEscrowManagedUpgradeable-3 | impl | live | no |
-| ethereum | `0x5dc006a13c0f2cb4ea104b3b6ea1d1514a09618a` | STOTokenCheckpointsUpgradeable | impl | inactive | yes |
+| ethereum | `0x5dc006a13c0f2cb4ea104b3b6ea1d1514a09618a` | STOTokenCheckpointsUpgradeable | impl | inactive | no |
 | ethereum | `0x5e431ba8d7b61f3d812a9f20eb170d64cd248cd2` | VestingWallet | impl | inactive | no |
 | ethereum | `0x61794595f4014e8b92488af83a9bd703167bcf97` | VestingWallet | impl | inactive | no |
 | ethereum | `0x6260f35e28b6f58be7035a49c9a6eecc9b0e3db6` | VestingWallet | impl | inactive | no |
-| ethereum | `0x643630f8bd8fc10c4b72669ff899d64ecbe3af54` | STOTokenCheckpointsUpgradeable | proxy | live | yes |
 | ethereum | `0x64fdd96dc513e01327f3f307de9e1fd66df3ed45` | P2PHandler | impl | inactive | no |
 | ethereum | `0x67e71d61f88c6b097ffb60f914c0422d48cf951c` | STOFactory | impl | inactive | no |
 | ethereum | `0x6a5b55b571604748068f49dfc7f71feb2a6ad143` | VestingWallet | impl | inactive | no |
@@ -61,29 +60,28 @@
 | ethereum | `0xb7526069485e760612294b23240eecde2bb6b3ee` | STOEscrowManagedUpgradeable-4 | impl | live | no |
 | ethereum | `0xb81b6ab76b84f9e207df3cb6695b2556bb18f37c` | VestingWallet | impl | inactive | no |
 | ethereum | `0xb8a0e9773fa3d63cadb8957f052d20cacc90e8bf` | VestingWallet | impl | inactive | no |
-| ethereum | `0xbb0b08a9bf9b31185c5b925b1e32baf2d29e1b69` | ERC1967Proxy-2 | impl | live | no |
+| ethereum | `0xbb0b08a9bf9b31185c5b925b1e32baf2d29e1b69` | STOFactoryManagedUpgradeable | impl | live | no |
 | ethereum | `0xbc718a5787e27d713d8523b726a75cfbb2dd8afe` | OwnedTimelockWallet | impl | inactive | no |
 | ethereum | `0xbd3ae91c2c3fde0188a1d517181773198eacccbe` | VestingWallet | impl | inactive | no |
 | ethereum | `0xc1bb5d0d82e987faca788c2f387460c55aef32c0` | PerpetualStaking | impl | inactive | no |
 | ethereum | `0xcc0f1564deb8dc85aa410813e06775c7f08dff20` | MerkleAirdrop | impl | inactive | no |
-| ethereum | `0xccda54c76724edaf4591373f29d18648518bbd88` | ERC1967Proxy-3 | impl | live | no |
+| ethereum | `0xccda54c76724edaf4591373f29d18648518bbd88` | STOFactoryManagedUpgradeable-2 | impl | live | no |
 | ethereum | `0xcce3f7589b33b4413347c20a201347dec09720c3` | VestingWallet | impl | inactive | no |
 | ethereum | `0xcd26bc3d7138ae6c8420eba668d4b92244c8fd04` | VestingWallet | impl | inactive | no |
 | ethereum | `0xcdda2b27b1762f075e437d7e831d7a74f1ca183d` | VestingWallet | impl | inactive | no |
-| ethereum | `0xd4ddc16834099e8e43c4b0c5a67f580a137419d7` | STOTokenCheckpointsUpgradeable | impl | inactive | yes |
+| ethereum | `0xd4ddc16834099e8e43c4b0c5a67f580a137419d7` | STOTokenCheckpointsUpgradeable | impl | inactive | no |
 | ethereum | `0xde22d957c055959a91646962a4019193836c8a76` | VestingWallet | impl | inactive | no |
 | ethereum | `0xdf66aa19d631365dff24134884e197792b11ef7b` | Staking | impl | inactive | no |
-| ethereum | `0xe2f8f2910d923e660a4a526f7c08ef3ddd7a713d` | STOEscrowManagedUpgradeable-5 | proxy | live | yes |
+| ethereum | `0xe2f8f2910d923e660a4a526f7c08ef3ddd7a713d` | UpgradeableBeaconEscrow | proxy | live | yes |
 | ethereum | `0xe44af4fef642fe6888b838a0a72d8f0a2d74b04e` | VestingWallet | impl | inactive | no |
 | ethereum | `0xee046214759b58bb0eb10d760448e2783de8a546` | Proxy | proxy | unknown | no |
 | ethereum | `0xef46cfd3bf441060121dceb457363546af11e84b` | VestingWallet | impl | inactive | no |
-| ethereum | `0xf48a4248c1dcd17dc2afd9eddaf9f6687983f0fa` | ERC1967Proxy-4 | impl | live | no |
+| ethereum | `0xf48a4248c1dcd17dc2afd9eddaf9f6687983f0fa` | STOFactoryManagedUpgradeable-3 | impl | live | no |
 | ethereum | `0xf6b6235f6725f84457f5d6f0b0aa3c962a079977` | WBrickken | impl | live | no |
 | ethereum | `0xf9b60ac7e4f8f4e43cbc84b902e7b514e0f2095f` | VestingWallet | impl | inactive | no |
 | ethereum | `0xfa8dbf6791371abcd675979e9894e448d84e359e` | WBKNVault | impl | inactive | no |
 | ethereum | `0xfe867cb4ecde197d9801924806d48f2e45c90877` | WBKNVault-2 | impl | inactive | no |
 | polygon | `0x1bb57e2abf2822c01ccaebccbc9d16c7fd0c1956` | ERC1967Proxy | proxy | inactive | no |
-| polygon | `0x26840ff7cb44ea734c68616714e3a5692d1d40ff` | ERC1967Proxy | impl | live | no |
 | polygon | `0x27576e72f8cd047e4de23c683acfbf8576476f14` | STOEscrowManagedUpgradeable | impl | live | yes |
 | polygon | `0x409a37fa3636519380624cfb437e48ccaa9d86f7` | STOEscrowManagedUpgradeable | impl | live | yes |
 | polygon | `0x5e4e3a4ca61c1f8b3cd4bb560a0040270ad13666` | STOTokenCheckpointsUpgradeable-2 | impl | inactive | no |
@@ -91,6 +89,12 @@
 | polygon | `0xb409eb0e7695fa8c72452857cac888371103ab3e` | STOTokenCheckpointsUpgradeable-3 | impl | inactive | no |
 | polygon | `0xc6c230fa8f40022de997727436fae01caabcde61` | STOEscrowManagedUpgradeable-2 | impl | live | no |
 | polygon | `0xd1ba506b8c0af146d528ab02a6ab5f4ebf76ea5c` | STOEscrowManagedUpgradeable | proxy | live | yes |
-| polygon | `0xd515ca5b14330ed1f25f8f9bc7fd8b08050a0634` | ERC1967Proxy | impl | live | no |
 | polygon | `0xd84620b75d0e7183491dc5188e14db89fdbd19b0` | PriceAndSwapManager-2 | impl | live | no |
-| polygon | `0xff362452d0969f61d8a7fe1ea70a7caa534aeb07` | STOTokenCheckpointsUpgradeable-4 | proxy | live | yes |
+| polygon | `0xff362452d0969f61d8a7fe1ea70a7caa534aeb07` | UpgradeableBeaconToken | proxy | live | yes |
+
+## Source unavailable (3)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- ethereum `0x643630f8bd8fc10c4b72669ff899d64ecbe3af54`
+- polygon `0x26840ff7cb44ea734c68616714e3a5692d1d40ff`
+- polygon `0xd515ca5b14330ed1f25f8f9bc7fd8b08050a0634`

@@ -1,0 +1,18 @@
+{
+  "component": "STOFactoryManagedUpgradeable-5",
+  "main_contract": "STOFactoryManagedUpgradeable",
+  "source_file_count": 53,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xe1961920e5e47dde355492ca56af6ee511703fe2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

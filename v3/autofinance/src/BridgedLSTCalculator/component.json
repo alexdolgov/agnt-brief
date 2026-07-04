@@ -1,7 +1,7 @@
 {
   "component": "BridgedLSTCalculator",
   "main_contract": "BridgedLSTCalculator",
-  "source_file_count": 66,
+  "source_file_count": 70,
   "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
@@ -9,7 +9,7 @@
     {
       "chain": "base",
       "chain_id": 8453,
-      "address": "0x58897ec6b7d7102bb24a29e99a14a6d9e517943e",
+      "address": "0x4cb4b14128c868f35afe9cac7c23cf821aa64f99",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

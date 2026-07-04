@@ -2,7 +2,7 @@
   "component": "TridentRouter-2",
   "main_contract": "TridentRouter",
   "source_file_count": 13,
-  "deployment_count": 3,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,14 +10,6 @@
       "chain": "chain-1088",
       "chain_id": 1088,
       "address": "0x0be808376ecb75a5cf9bb6d237d16cd37893d904",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x1b02da8cb0d097eb8d57a175b88c7d8b47997506",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

@@ -1,18 +1,22 @@
 {
   "component": "FarmingRewards-7",
   "main_contract": "FarmingRewards",
-  "source_file_count": 29,
+  "source_file_count": 25,
   "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/1inch/1inch-audits/blob/master/Liquidity%20Protocol/Cure53%20-%201inch%20Liquidity%20Protocol%20audit.pdf",
+    "https://github.com/1inch/1inch-audits/blob/master/Liquidity%20Protocol/Farming/Gulamov%20-%201inch%20Farming%20audit.pdf",
+    "https://github.com/1inch/1inch-audits/blob/master/Liquidity%20Protocol/Gulamov%20-%201inch%20Liquidity%20Protocol%20audit.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x0da1b305d7101359434d71eceaab71e1ff5437e6",
+      "address": "0x18d410f651289bb978fc32f90d2d7e608f4f4560",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

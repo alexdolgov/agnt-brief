@@ -28,7 +28,7 @@
       "address": "0x7a3b799e929c9bef403976405d8908fa92080449",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "polygon",
@@ -36,7 +36,7 @@
       "address": "0xe56f37ef2e54ecaa41a9675da1c3445736d60b42",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "arbitrum",
@@ -52,7 +52,7 @@
       "address": "0xd825d06061fdc0585e4373f0a3f01a8c02b0e6a4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

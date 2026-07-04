@@ -7,20 +7,20 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x356d6e38efd2f33b162ec63534b449b96846751f",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd24125b4c13a7acc43ea1587bad55147d2ab5b3d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x7844dbe5e350b5a841282af76861127e2d5a3e97",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe84cea5553cc9d65166a7850dab2e7712072d97f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

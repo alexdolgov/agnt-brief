@@ -1,6 +1,6 @@
 # cryptex-finance — deployments
 
-294 verified deployment(s) across 96 component(s).
+295 verified deployment(s) across 96 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -64,6 +64,7 @@
 | arbitrum | `0x3b9b0217a19bb454aefd54015a97500d82170bc5` | ChainlinkFeedOracle | impl | inactive | no |
 | arbitrum | `0x3d43c9b84546c9658cdfd184478ecb5d3b745a4c` | PositionStorageLocalLib | impl | inactive | no |
 | arbitrum | `0x3dd09c846149e50d412cdce968e1d912117ff937` | MarketFactory | impl | live | no |
+| arbitrum | `0x3f96f8411454c2764742131b95868de422a3ab6d` | PositionStorageGlobalLib | impl | unknown | no |
 | arbitrum | `0x40e52d4dee5fb7a703fc61f6174a9212bd65f091` | MagicValueLib | impl | live | no |
 | arbitrum | `0x40ffe6eb459a50fea7d0f5aabcd833764130bcf1` | CheckpointStorageLib | impl | unknown | no |
 | arbitrum | `0x427bc8694ea59f063b7caa43e3dd77d416922250` | Product | impl | inactive | no |
@@ -96,7 +97,7 @@
 | arbitrum | `0x5b495f170bfcba51db96ff16ba8bc4686cfa92b4` | Incentivizer | impl | inactive | no |
 | arbitrum | `0x5bea99bf18624aa504580546ac9d9ac3b9aeb747` | ProxyAdmin | impl | live | no |
 | arbitrum | `0x5cb82695a206b5c7d0a8fa5c747ea4414614f650` | Oracle | impl | live | no |
-| arbitrum | `0x5f52a20d8126ef29d813f522aa254f92500e0b92` | PositionStorageGlobalLib-2 | impl | live | no |
+| arbitrum | `0x5f52a20d8126ef29d813f522aa254f92500e0b92` | PositionStorageGlobalLib | impl | live | no |
 | arbitrum | `0x609f9888e9c1691abe1b2ce1a228f193c093a1d2` | CheckpointLib | impl | live | no |
 | arbitrum | `0x61fcc50003b0fbabad47b5ac74becb6d1e0361d1` | TransparentUpgradeableProxy-2 | impl | inactive | no |
 | arbitrum | `0x62fb1dc193ab898e5984afcb53d25f580f4fc2de` | OracleFactory | impl | live | no |
@@ -175,7 +176,7 @@
 | arbitrum | `0xa7e49ff62c323d565dc02bef7ee59cf5362feffe` | Oracle | impl | live | no |
 | arbitrum | `0xa8b58125953c7f2948e82a4558c745c1cd3237ee` | Controller | impl | live | no |
 | arbitrum | `0xa910e37d012a07f7a18a97e99f6a81a0637b1443` | MultiInvoker_Arbitrum | impl | live | no |
-| arbitrum | `0xa9e35cdcf878623c7a2aa19efebad73634dfb76d` | PositionStorageGlobalLib | impl | inactive | no |
+| arbitrum | `0xa9e35cdcf878623c7a2aa19efebad73634dfb76d` | PositionStorageGlobalLib-2 | impl | inactive | no |
 | arbitrum | `0xaad878cd67f6332a222253aad31f11e13337026d` | PythFactory_Arbitrum | impl | live | no |
 | arbitrum | `0xaae7b0f787f4dc03db1cc5bd6ffb0b065afdeb0a` | InvariantLib | impl | live | no |
 | arbitrum | `0xac8ab380eb8462e132a8ab858ea4e9072067430c` | MarketFactory | impl | live | no |
@@ -186,7 +187,7 @@
 | arbitrum | `0xaf8ced28fce00abd30463d55da81156aa5aeeec2` | TransparentUpgradeableProxy | impl | live | no |
 | arbitrum | `0xaff9b28730779f5027ee08a4e8823f983697e1dc` | TransparentUpgradeableProxy-3 | impl | live | no |
 | arbitrum | `0xb092493412fcae3432487efb33204f7b4fef12ff` | BatchKeeper | impl | inactive | no |
-| arbitrum | `0xb1c72d544c725dd240aaba4eb48d670ca839ad0c` | PositionStorageGlobalLib | impl | inactive | no |
+| arbitrum | `0xb1c72d544c725dd240aaba4eb48d670ca839ad0c` | PositionStorageGlobalLib-2 | impl | inactive | no |
 | arbitrum | `0xb43e8290fe8239cf5f9b7e30d5cb52a6fe061efa` | Market | impl | live | no |
 | arbitrum | `0xb5aa1d6f7b6ba69176a38accf4012fd865fcfc06` | Market | impl | live | no |
 | arbitrum | `0xb5ae2b4e766f2714129720d88a0934feb6c90ea6` | BatchKeeper | impl | live | no |
@@ -298,8 +299,3 @@
 | ethereum | `0xc8bb1cd417d20116387a5e0603e195ca4f3cf59a` | LiquidityReward | impl | inactive | no |
 | ethereum | `0xdc4cdd5db9ee777efd891690dc283638cb3a5f94` | LiquidityReward | impl | inactive | no |
 | ethereum | `0xe0c99c503c4ae5ec50ac63c59c7ef4725c355fdd` | RewardHandler | impl | inactive | no |
-
-## Source unavailable (1)
-Verified on-chain but no source in the verification cache (skipped from the tree):
-
-- arbitrum `0x3f96f8411454c2764742131b95868de422a3ab6d`

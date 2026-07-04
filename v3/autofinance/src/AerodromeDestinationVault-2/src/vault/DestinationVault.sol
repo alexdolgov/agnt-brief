@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 import { Roles } from "src/libs/Roles.sol";
 import { Errors } from "src/utils/Errors.sol";
@@ -20,8 +20,6 @@ import { IDexLSTStats } from "src/interfaces/stats/IDexLSTStats.sol";
 import { SystemComponent } from "src/SystemComponent.sol";
 import { IERC1271 } from "openzeppelin-contracts/interfaces/IERC1271.sol";
 import { Address } from "openzeppelin-contracts/utils/Address.sol";
-import { ContractTypes } from "src/libs/ContractTypes.sol";
-import { IRootPriceOracle } from "src/interfaces/oracles/IRootPriceOracle.sol";
 
 abstract contract DestinationVault is
     SecurityBase,
@@ -52,6 +50,7 @@ abstract contract DestinationVault is
     error NothingToRecover();
     error DuplicateToken(address token);
     error VaultShutdown();
+    error VaultNotShutdown();
     error InvalidIncentiveCalculator(address calc, address local, string param);
     error PricesOutOfRange(uint256 spot, uint256 safe);
     error ExtensionNotActive();
@@ -320,7 +319,7 @@ abstract contract DestinationVault is
     function withdrawBaseAsset(
         uint256 shares,
         address to
-    ) external onlyAutopool returns (uint256 amount, address[] memory tokens, uint256[] memory tokenAmounts) {
+    ) external returns (uint256 amount, address[] memory tokens, uint256[] memory tokenAmounts) {
         return _withdrawBaseAsset(msg.sender, shares, to);
     }
 
@@ -418,25 +417,14 @@ abstract contract DestinationVault is
     }
 
     /// @inheritdoc IDestinationVault
-    function getRangePricesLP() external virtual override returns (uint256, uint256, bool) {
-        bytes32 key = ContractTypes.DV_DEBT_REPORTING_ROOT_PRICE_ORACLE;
-        address pool = getPool();
-        address token = address(_underlying);
-        address bAsset = _baseAsset;
-
-        // Specific oracle will be set that will utilize ZK to perform cheaper debt reporting operations
-        // However, if those prices aren't set in transient storage in the zk oracle then these calls will
-        // fail. In that case, fallback to the on-chain oracle
-        try systemRegistry.getUniqueContract(key) returns (address oracle) {
-            try IRootPriceOracle(oracle).getRangePricesLP(token, pool, bAsset) returns (
-                uint256 spotPrice, uint256 safePrice, bool isSpotSafe
-            ) {
-                return (spotPrice, safePrice, isSpotSafe);
-            } catch { }
-        } catch { }
-
-        // slither-disable-next-line unused-return
-        return systemRegistry.rootPriceOracle().getRangePricesLP(token, pool, bAsset);
+    function getRangePricesLP()
+        external
+        virtual
+        override
+        returns (uint256 spotPrice, uint256 safePrice, bool isSpotSafe)
+    {
+        (spotPrice, safePrice, isSpotSafe) =
+            systemRegistry.rootPriceOracle().getRangePricesLP(address(_underlying), getPool(), _baseAsset);
     }
 
     /// @inheritdoc IDestinationVault
@@ -521,6 +509,7 @@ abstract contract DestinationVault is
     function setIncentiveCalculator(
         address incentiveCalculator_
     ) external hasRole(Roles.AUTO_POOL_DESTINATION_UPDATER) {
+        if (!_shutdown) revert VaultNotShutdown();
         _validateCalculator(incentiveCalculator_);
 
         emit IncentiveCalculatorUpdated(incentiveCalculator_);

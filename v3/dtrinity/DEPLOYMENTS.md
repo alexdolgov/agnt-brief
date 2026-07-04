@@ -1,6 +1,6 @@
 # dtrinity — deployments
 
-429 verified deployment(s) across 177 component(s).
+428 verified deployment(s) across 177 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -264,7 +264,6 @@
 | chain-252 | `0x4c968591e5dddca8f62bfcf5374d388b04276a75` | API3WrapperWithThresholding-2 | impl | inactive | no |
 | chain-252 | `0x5432ed4a370718d6904485e2fc114762c68cc7be` | DStakeCollateralVault-2 | impl | live | yes |
 | chain-252 | `0x57bbd5026503bb54cc50a4129c4896cba40bebae` | AmoManagerV2-2 | impl | live | no |
-| chain-252 | `0x58acc2600835211dcb5847c5fa422791fd492409` | DStakeToken-2 | proxy | live | no |
 | chain-252 | `0x598502c7a3f5445d76b6f9f5020e15cdfe484df5` | WrappedTokenGatewayV3-3 | impl | inactive | no |
 | chain-252 | `0x5ecfa6940a33a2dad5c473896452f018c6c04577` | CurveStableSwapNG-2 | impl | live | no |
 | chain-252 | `0x614914b028a7d1fd4fab1e5a53a3e2df000bcb0e` | dLendBalanceChecker | impl | inactive | no |
@@ -386,7 +385,7 @@
 | ethereum | `0x81036951050a25cf6f0501ff3f981e3ed3b72786` | IncentivizedERC20-9 | impl | live | no |
 | ethereum | `0x837c1c92b0e7ae7bb4e1dddf08772c0181fc638a` | HardPegOracleWrapperV1_1 | impl | live | no |
 | ethereum | `0x837c4ac320cd6a17c66cb5deea99dc9bd007d270` | DefaultReserveInterestRateStrategy-3 | impl | live | no |
-| ethereum | `0x84c58066a4408454b7380f168c95f571419253f4` | OracleAggregatorV1_1 | impl | live | no |
+| ethereum | `0x84c58066a4408454b7380f168c95f571419253f4` | CollateralHolderVault-2 | impl | live | yes |
 | ethereum | `0x889bf3e00e93bc9ce17a7f8141ef109283913f37` | ERC4626OracleWrapperV1_1 | impl | live | no |
 | ethereum | `0x88a4eed28a1d7bcee95228721678662421a1c748` | InitializableImmutableAdminUpgradeabilityProxy | impl | live | no |
 | ethereum | `0x88e49f238ea53b2a18b6d947e68223e353aaaa38` | AmoDebtToken | impl | live | no |
@@ -434,8 +433,9 @@
 | ethereum | `0xfda3a0effe2f3917aa60e0741c6788619ae19e84` | L2Pool | impl | live | no |
 | ethereum | `0xfdb85fdfcee413eb05287f9d4157c1ef1f336207` | PoolAddressesProviderRegistry-2 | impl | live | no |
 
-## Source unavailable (2)
+## Source unavailable (3)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
 - chain-146 `0x53b40058665223c0044ab9e068d646dd91e80f6d`
+- chain-252 `0x58acc2600835211dcb5847c5fa422791fd492409`
 - chain-252 `0xba82d5f8ac6cfbdff4685f29754a67ccb4e7dc8f`

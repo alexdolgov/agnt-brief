@@ -9,10 +9,10 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x21cfa80d878104890b327038c44d8dfab278ddff",
+      "address": "0x1b03612cf7881b8bc16def13c94d0097adca4d19",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

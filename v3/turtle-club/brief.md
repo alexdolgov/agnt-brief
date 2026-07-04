@@ -5,7 +5,7 @@
 - Project: Turtle Club (`turtle-club`)
 - Website: [https://app.turtle.xyz/](https://app.turtle.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:07:02.190Z
+- Generated: 2026-07-04T11:05:47.732Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-4c3e
 - Chains: avalanche, bsc, ethereum, linea
 - Contract surface: 761 unique implementations (2075 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-Onchain Capital Allocator. Structurally: 549 project-authored contract(s) across 4 chain(s); 14 ERC4626 vaults, 59 ERC20 tokens, 7 ERC721 NFTs, 9 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Onchain Capital Allocator. Structurally: 713 project-authored contract(s) across 4 chain(s); 15 ERC4626 vaults, 62 ERC20 tokens, 7 ERC721 NFTs, 9 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 10 functional families. Its contracts share 116 common project-authored base contract(s) (feemodule, shared, evcutil). Dominant framework: openzeppelin.
+The protocol comprises 10 functional families. Its contracts share 119 common project-authored base contract(s) (feemodule, shared, evcutil). Dominant framework: openzeppelin.
 
 ## Fork Lineage
 

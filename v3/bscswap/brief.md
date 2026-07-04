@@ -4,7 +4,7 @@
 
 - Project: BSCSwap (`bscswap`)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:37.081Z
+- Generated: 2026-07-04T11:05:40.821Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-d640
 - Chains: bsc
 - Contract surface: 16 unique implementations (19 raw deployments)
@@ -22,8 +22,8 @@ The protocol comprises 3 functional families. Its contracts share 2 common proje
 
 ## Contract Surface Quality
 
-- Indexed contracts: 118; live-surface contracts included: 19 (11 live, 8 unknown).
-- Excluded by liveness: 99 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 113; live-surface contracts included: 19 (11 live, 8 unknown).
+- Excluded by liveness: 94 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.

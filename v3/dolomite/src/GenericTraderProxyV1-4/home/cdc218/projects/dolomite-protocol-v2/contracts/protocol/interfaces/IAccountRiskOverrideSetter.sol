@@ -32,9 +32,7 @@ import { Decimal } from "../lib/Decimal.sol";
 interface IAccountRiskOverrideSetter {
 
     /**
-     * @notice  Gets the risk overrides for a given account owner. In the context of an operation, this function is
-     *          called within `_verifyFinalState`, after all of the operation's actions have occurred. Thus, it is safe
-     *          to read the account's state from Dolomite Margin's storage.
+     * @notice  Gets the risk overrides for a given account owner.
      *
      * @param   _account                    The account whose risk override should be retrieved.
      * @return  marginRatioOverride         The margin ratio override for this account.

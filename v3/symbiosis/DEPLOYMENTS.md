@@ -1,6 +1,6 @@
 # symbiosis — deployments
 
-307 verified deployment(s) across 105 component(s).
+307 verified deployment(s) across 102 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -65,16 +65,16 @@
 | avalanche | `0x292fc50e4eb66c3f6514b9e402dbc25961824d62` | ERC1967Upgrade | proxy | live | yes |
 | avalanche | `0x3e6a3ebbc9d88acc192221797ad90bf72d391778` | MulticallRouterV2 | impl | live | yes |
 | avalanche | `0x4cfa66497fa84d739a0f785fbcee9196f1c64e4a` | MetaRouterGateway | impl | live | yes |
-| avalanche | `0x5523985926aa12ba58dc5ad00ddca99678d7227e` | AdminUpgradeabilityProxy-6 | proxy | live | no |
+| avalanche | `0x5523985926aa12ba58dc5ad00ddca99678d7227e` | ERC1967Upgrade | proxy | live | yes |
 | avalanche | `0x5b1bab64961cf72822817ef32950ff7fcab28b62` | Portal | impl | inactive | yes |
-| avalanche | `0x7057ab3fb2bee9c18e0cde4240de4ff7f159e365` | AdminUpgradeabilityProxy-2 | impl | live | no |
+| avalanche | `0x7057ab3fb2bee9c18e0cde4240de4ff7f159e365` | BridgeV2 | impl | live | no |
 | avalanche | `0x7775b274f0c3fa919b756b22a4d9674e55927ab8` | MulticallRouterV2 | impl | live | yes |
 | avalanche | `0x8dc3151dccd58fcb6a0bec0df20c06fba133f027` | Portal-2 | impl | inactive | no |
 | avalanche | `0x97cbe92630ec56a7f484d28bbbced857121c2aad` | MulticallRouterV2 | impl | live | yes |
 | avalanche | `0xa257f3fe4e4032291516dc355edf90664e9eb932` | MulticallRouterV2 | impl | live | yes |
 | avalanche | `0xa738e84fde890bc60b99af7cce43990e534304de` | MetaRouter-4 | impl | live | no |
 | avalanche | `0xc17d768bf4fdc6f20a4a0d8be8767840d106d077` | MulticallRouterV2 | impl | live | yes |
-| avalanche | `0xe75c7e85fe6add07077467064ad15847e6ba9877` | Portal-7 | proxy | live | yes |
+| avalanche | `0xe75c7e85fe6add07077467064ad15847e6ba9877` | ERC1967Upgrade | proxy | live | yes |
 | avalanche | `0xe7eb022e21e85200e7b0daebf3757764e83f5c4e` | Depository-2 | impl | live | no |
 | avalanche | `0xf1c374d065719ce1fdc63e2c5c13146813c0a83b` | MetaRouter-2 | impl | live | no |
 | avalanche | `0xf85fc807d05d3ab2309364226970aac57b4e1ea4` | MulticallRouterV2 | impl | live | yes |
@@ -91,8 +91,8 @@
 | base | `0x253ddb32f0f45ffbc0ebcdfc5edd47857aff79d7` | MulticallRouter | impl | inactive | no |
 | base | `0x318c2b9a03c37702742c3d40c72e4056e430135a` | AdminUpgradeabilityProxy | proxy | live | yes |
 | base | `0x3338be49a5f60e2593337919f9ad7098e9a7dd7e` | OnchainSwapV3 | impl | live | yes |
-| base | `0x44487a445a7595446309464a82244b4bd4e325d5` | TransparentUpgradeableProxy | proxy | live | no |
-| base | `0x464c30aebacd4e8928167c567f8920d16f203027` | TransparentUpgradeableProxy-5 | impl | live | no |
+| base | `0x44487a445a7595446309464a82244b4bd4e325d5` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| base | `0x464c30aebacd4e8928167c567f8920d16f203027` | SyntFabric | impl | live | no |
 | base | `0x5523985926aa12ba58dc5ad00ddca99678d7227e` | OnchainSwapV3 | impl | live | yes |
 | base | `0x5aa5f7f84ed0e5db0a4a85c3947ea16b53352fd4` | AdminUpgradeabilityProxy | proxy | live | yes |
 | base | `0x5b1bab64961cf72822817ef32950ff7fcab28b62` | OnchainSwapV3 | impl | live | yes |
@@ -108,8 +108,8 @@
 | base | `0x8e1d36f9da8cfe842bcf8670a12acd51c26d195d` | Unwrapper | impl | inactive | no |
 | base | `0x97cbe92630ec56a7f484d28bbbced857121c2aad` | OnchainSwapV3 | impl | live | yes |
 | base | `0x9a31bac4b3b958c835c243800b474818d04393dd` | MulticallRouter | impl | inactive | no |
-| base | `0x9d74807b8fa79d49bb95cf988af3c25fb1437b4f` | TransparentUpgradeableProxy-6 | impl | live | no |
-| base | `0x9f6424fe88fbe7785fa34f0e369f192bf38e7a6e` | TransparentUpgradeableProxy | proxy | live | no |
+| base | `0x9d74807b8fa79d49bb95cf988af3c25fb1437b4f` | Synthesis | impl | live | no |
+| base | `0x9f6424fe88fbe7785fa34f0e369f192bf38e7a6e` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | base | `0xa18348e793e77239ec68caa51b74c5cdc82c8a9d` | MetaRouterGateway-2 | impl | live | no |
 | base | `0xa385b1436fd2a6a1c6865e22c522a1aa40cadcc6` | MulticallRouter | impl | inactive | no |
 | base | `0xa9a96ee51dd54b9f51d46b1fbd2a19c1295ec75b` | AdminUpgradeabilityProxy | proxy | live | yes |
@@ -152,13 +152,13 @@
 | ethereum | `0x4a67d9b00c077b093ddfb67de2a1c66a70bac0fe` | MomFab | impl | inactive | no |
 | ethereum | `0x4d224452801aced8b2f0aebe155379bb5d594381` | Astgik | impl | live | no |
 | ethereum | `0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9` | FflonkVerifier-2 | impl | live | no |
-| ethereum | `0x5132a183e9f3cb7c848b0aac5ae0c4f0491b7ab2` | TransparentUpgradeableProxy-2 | proxy | live | no |
+| ethereum | `0x5132a183e9f3cb7c848b0aac5ae0c4f0491b7ab2` | TransparentUpgradeableProxy-3 | proxy | live | no |
 | ethereum | `0x521c420c2a2b461034becbb41d4888b68951f14f` | TapFab | impl | inactive | no |
 | ethereum | `0x5503e7690e550045e984c2b55902d8986ca2808e` | WETH | impl | inactive | no |
-| ethereum | `0x5523985926aa12ba58dc5ad00ddca99678d7227e` | AdminUpgradeabilityProxy-3 | proxy | live | yes |
+| ethereum | `0x5523985926aa12ba58dc5ad00ddca99678d7227e` | TransparentUpgradeableProxy-4 | proxy | live | yes |
 | ethereum | `0x552f355ccb9b91c8fb47d9c011abad5b72ec30e9` | GemFab | impl | inactive | no |
 | ethereum | `0x566c11b5c2201b69c9269fe924e4395873674335` | MasterMinter | impl | inactive | no |
-| ethereum | `0x580bda1e7a0cfae92fa7f6c20a3794f169ce3cfb` | TransparentUpgradeableProxy-3 | proxy | live | no |
+| ethereum | `0x580bda1e7a0cfae92fa7f6c20a3794f169ce3cfb` | TransparentUpgradeableProxy-5 | proxy | live | no |
 | ethereum | `0x59adcf176ed2f6788a41b8ea4c4904518e62b6a4` | DSToken | impl | inactive | no |
 | ethereum | `0x5b58c971af1ee0fe5d5f772d68ab3829262dfd2b` | WOFTAdapterFactory | impl | inactive | no |
 | ethereum | `0x5c2973d7ef3bb244d81578b61c932a49dfbe7362` | wstETHOFTAdapterUpgradeable | proxy | live | no |
@@ -193,7 +193,7 @@
 | ethereum | `0x9c7beba8f6ef6643abd725e45a4e8387ef260649` | GravityTokenG | impl | live | no |
 | ethereum | `0x9dc6c56296e91466fc12d31a694639699e4c37e5` | GemPit | impl | inactive | no |
 | ethereum | `0x9dda491445b0b33976527ed741e0476a16380c49` | TopFab | impl | inactive | no |
-| ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | AdminUpgradeabilityProxy-4 | proxy | live | no |
+| ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | AdminUpgradeabilityProxy-2 | proxy | live | no |
 | ethereum | `0xa2327a938febf5fec13bacfb16ae10ecbc4cbdcf` | FiatTokenV2_1 | impl | inactive | no |
 | ethereum | `0xa2d339411624cfb6243f909b064e07320919ee3f` | wstETHOFTAdapterUpgradeable | proxy | live | no |
 | ethereum | `0xa460c960e41bc0640bf9c0bb0b3cdaa1f6955839` | wstETHOFTAdapterUpgradeable | impl | live | no |
@@ -205,7 +205,7 @@
 | ethereum | `0xb6cd0d1757a44b77ba666ee6a76ce45c33cae97a` | ERC20Mock | impl | inactive | no |
 | ethereum | `0xb7277a6e95992041568d9391d09d0122023778a2` | FiatTokenV2 | impl | inactive | no |
 | ethereum | `0xb8b21b885ad567b37cb2bea8b85d33f0864e9339` | wstETHOFTAdapterUpgradeable | proxy | live | no |
-| ethereum | `0xb8f275fbf7a959f4bce59999a2ef122a099e81a8` | TransparentUpgradeableProxy-4 | proxy | live | yes |
+| ethereum | `0xb8f275fbf7a959f4bce59999a2ef122a099e81a8` | TransparentUpgradeableProxy-6 | proxy | live | yes |
 | ethereum | `0xbab93b7ad7fe8692a878b95a8e689423437cc500` | WOFTAdapterFactory | impl | inactive | no |
 | ethereum | `0xbb0d083fb1be0a9f6157ec484b6c79e0a4e31c2e` | WOFTAdapterFactory | impl | inactive | no |
 | ethereum | `0xbbfb7cb70f84fb6fe1cb13e42a0b71efde769428` | AdminUpgradeabilityProxy | proxy | live | yes |
@@ -283,14 +283,14 @@
 | polygon | `0x35d39bb2cbc51ce6c03f0306d0d8d56948b1f990` | Portal-2 | impl | inactive | no |
 | polygon | `0x3941870e18ae68b0cf572b7a543c6647e836cbb1` | MerkleDistributor | impl | inactive | no |
 | polygon | `0x4fda0599b78a49d289577a8df2046459abc04d82` | ProxyAdmin | impl | live | yes |
-| polygon | `0x5523985926aa12ba58dc5ad00ddca99678d7227e` | AdminUpgradeabilityProxy-5 | proxy | live | yes |
+| polygon | `0x5523985926aa12ba58dc5ad00ddca99678d7227e` | TransparentUpgradeableProxy | proxy | live | yes |
 | polygon | `0x5ad095de83693ba063941f2f2c5a0df02383b651` | Portal-4 | impl | inactive | no |
-| polygon | `0x5be6e69ec8a59b1ed8201b184adb0774d551a774` | AdminUpgradeabilityProxy-2 | impl | live | no |
+| polygon | `0x5be6e69ec8a59b1ed8201b184adb0774d551a774` | BridgeV2 | impl | live | no |
 | polygon | `0x624ffe62eba13e6057878bca1d7a9e35651e1d9c` | ProxyAdmin | impl | live | yes |
 | polygon | `0x62f54e18992b07e0298d171cb23c0be56a975d8b` | MerkleDistributor | impl | inactive | no |
-| polygon | `0x7057ab3fb2bee9c18e0cde4240de4ff7f159e365` | AdminUpgradeabilityProxy-2 | impl | live | no |
+| polygon | `0x7057ab3fb2bee9c18e0cde4240de4ff7f159e365` | BridgeV2 | impl | live | no |
 | polygon | `0x7b4e28e7273aa8cb64c56ff191ebf43b64f409f9` | ProxyAdmin-2 | proxy | live | no |
-| polygon | `0x8dc3151dccd58fcb6a0bec0df20c06fba133f027` | AdminUpgradeabilityProxy-2 | impl | live | no |
+| polygon | `0x8dc3151dccd58fcb6a0bec0df20c06fba133f027` | BridgeV2 | impl | live | no |
 | polygon | `0x8e1d36f9da8cfe842bcf8670a12acd51c26d195d` | ProxyAdmin | impl | live | yes |
 | polygon | `0x97cbe92630ec56a7f484d28bbbced857121c2aad` | Portal | impl | inactive | yes |
 | polygon | `0x9a31bac4b3b958c835c243800b474818d04393dd` | MetaRouter-2 | impl | live | no |
@@ -300,13 +300,13 @@
 | polygon | `0xab83653fd41511d638b69229afbf998eb9b0f30c` | MetaRouterGateway | impl | live | yes |
 | polygon | `0xb657f823fd8c4b94901e78b75481d5b39d59ec61` | MetaRouter-2 | impl | live | no |
 | polygon | `0xb79a4f5828eb55c10d7abf4bfe9a9f5d11aa84e0` | ProxyAdmin-2 | proxy | live | no |
-| polygon | `0xb8f275fbf7a959f4bce59999a2ef122a099e81a8` | Portal-5 | proxy | live | yes |
+| polygon | `0xb8f275fbf7a959f4bce59999a2ef122a099e81a8` | TransparentUpgradeableProxy | proxy | live | yes |
 | polygon | `0xb91d3060c90aac7c4c706aef2b37997b3b2a1dcf` | ProxyAdmin | impl | live | yes |
 | polygon | `0xc17d768bf4fdc6f20a4a0d8be8767840d106d077` | ProxyAdmin-2 | proxy | live | no |
 | polygon | `0xda1c70c902746996a8c989bb07aa6c408ef880d8` | ProxyAdmin | impl | live | yes |
 | polygon | `0xe24c543a6e930c728e12648c42ea73bf953d820f` | ProxyAdmin | impl | live | yes |
 | polygon | `0xe75c7e85fe6add07077467064ad15847e6ba9877` | MetaRouter-2 | impl | live | no |
-| polygon | `0xebd15fca7ab58470c40653ecb60f10fa08322f67` | Portal-6 | impl | inactive | no |
+| polygon | `0xebd15fca7ab58470c40653ecb60f10fa08322f67` | Portal-5 | impl | inactive | no |
 | polygon | `0xee981b2459331ad268cc63ce6167b446af4161f8` | MultiSender | impl | inactive | no |
 | polygon | `0xf5b0861e787706195c98e2f0d2d6efbdac1d1e08` | ProxyAdmin | impl | live | yes |
 | polygon | `0xf951789c6a356bfbc3033648aa10b5dd3e9d88c0` | MetaRouter-3 | impl | live | no |

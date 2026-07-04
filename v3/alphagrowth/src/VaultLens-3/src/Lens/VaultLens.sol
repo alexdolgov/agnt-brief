@@ -22,7 +22,11 @@ contract VaultLens is Utils {
         oracleLens = OracleLens(_oracleLens);
         utilsLens = UtilsLens(_utilsLens);
         irmLens = IRMLens(_irmLens);
-        backupUnitOfAccounts = [address(840), getWETHAddress(), 0xbBbBBBBbbBBBbbbBbbBbbbbBBbBbbbbBbBbbBBbB];
+
+        address WETH = getWETHAddress();
+        backupUnitOfAccounts.push(address(840));
+        if (WETH != address(0)) backupUnitOfAccounts.push(WETH);
+        backupUnitOfAccounts.push(0xbBbBBBBbbBBBbbbBbbBbbbbBBbBbbbbBbBbbBBbB);
     }
 
     function getVaultInfoFull(address vault) public view returns (VaultInfoFull memory) {
@@ -80,11 +84,20 @@ contract VaultLens is Utils {
         result.creator = IEVault(vault).creator();
         result.governorAdmin = IEVault(vault).governorAdmin();
 
-        uint256[] memory cash = new uint256[](1);
-        uint256[] memory borrows = new uint256[](1);
-        cash[0] = result.totalCash;
-        borrows[0] = result.totalBorrowed;
-        result.irmInfo = getVaultInterestRateModelInfo(vault, cash, borrows);
+        if (result.interestRateModel == address(0)) {
+            result.irmInfo.queryFailure = true;
+        } else {
+            result.irmInfo.vault = vault;
+            result.irmInfo.interestRateModel = result.interestRateModel;
+            result.irmInfo.interestRateInfo = new InterestRateInfo[](1);
+            result.irmInfo.interestRateInfo[0].cash = result.totalCash;
+            result.irmInfo.interestRateInfo[0].borrows = result.totalBorrowed;
+            result.irmInfo.interestRateInfo[0].borrowSPY = IEVault(vault).interestRate();
+            (result.irmInfo.interestRateInfo[0].borrowAPY, result.irmInfo.interestRateInfo[0].supplyAPY) = _computeAPYs(
+                result.irmInfo.interestRateInfo[0].borrowSPY, result.totalCash, result.totalBorrowed, result.interestFee
+            );
+            result.irmInfo.interestRateModelInfo = irmLens.getInterestRateModelInfo(result.interestRateModel);
+        }
 
         result.collateralLTVInfo = getRecognizedCollateralsLTVInfo(vault);
 

@@ -5,7 +5,7 @@
 - Project: dTRINITY (`dtrinity`)
 - Website: [https://dtrinity.org/](https://dtrinity.org/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:44.114Z
+- Generated: 2026-07-04T11:05:41.643Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-f007
 - Chains: ethereum, fraxtal, sonic
 - Contract surface: 212 unique implementations (402 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-Lending. Structurally: 108 project-authored contract(s) across 3 chain(s); 6 ERC4626 vaults, 24 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Lending. Structurally: 188 project-authored contract(s) across 3 chain(s); 8 ERC4626 vaults, 37 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 10 functional families. Its contracts share 21 common project-authored base contract(s) (versionedinitializable, proxy, erc1967upgrade). Dominant framework: openzeppelin.
+The protocol comprises 10 functional families. Its contracts share 23 common project-authored base contract(s) (versionedinitializable, proxy, erc1967upgrade). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

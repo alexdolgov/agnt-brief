@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "alchemix",
-  "generated_at": "2026-07-03T21:05:26.541Z",
+  "generated_at": "2026-07-04T11:05:39.348Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-f2f0",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
@@ -85,12 +85,12 @@
     }
   },
   "topography": {
-    "project_purpose": "Synthetics. Structurally: 122 project-authored contract(s) across 3 chain(s); 22 ERC20 tokens, 2 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 10 functional families. Its contracts share 22 common project-authored base contract(s) (proxy, multicall, mutexlock). Dominant framework: openzeppelin.",
+    "project_purpose": "Synthetics. Structurally: 204 project-authored contract(s) across 3 chain(s); 26 ERC20 tokens, 8 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 10 functional families. Its contracts share 23 common project-authored base contract(s) (proxy, multicall, mutexlock). Dominant framework: openzeppelin.",
     "product_family_count": 10,
-    "total_contracts_indexed": 1013,
+    "total_contracts_indexed": 1010,
     "live_contracts": 305,
-    "inactive_contracts": 153,
+    "inactive_contracts": 150,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 555,

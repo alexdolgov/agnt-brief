@@ -5,23 +5,21 @@ import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/cryptography/EIP712Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/utils/MulticallUpgradeable.sol";
-
 import "@openzeppelin/contracts/utils/Address.sol";
 
 import "./Hash.sol";
 import "./PerpUtils.sol";
 import "./IWasabiPerps.sol";
 import "./addressProvider/IAddressProvider.sol";
-import "./vaults/IWasabiVault.sol";
 import "./weth/IWETH.sol";
 import "./admin/PerpManager.sol";
 import "./admin/Roles.sol";
 
-abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgradeable, ReentrancyGuardUpgradeable, EIP712Upgradeable, MulticallUpgradeable {
+abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgradeable, ReentrancyGuardUpgradeable, EIP712Upgradeable {
     using Address for address;
     using SafeERC20 for IERC20;
     using Hash for OpenPositionRequest;
+    using Hash for Position;
 
     /// @dev indicates if this pool is an long pool
     bool public isLongPool;
@@ -35,8 +33,9 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     /// @dev the ERC20 vaults
     mapping(address => address) public vaults;
 
-    /// @dev the base tokens
-    mapping(address => bool) public baseTokens;
+    /// @dev the quote tokens
+    /// @custom:oz-renamed-from baseTokens
+    mapping(address => bool) public quoteTokens;
 
     /// @dev magic bytes for closed position
     bytes32 internal constant CLOSED_POSITION_HASH = bytes32(uint256(1));
@@ -65,6 +64,7 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     /// @dev Initializes the pool as per UUPSUpgradeable
     /// @param _isLongPool a flag indicating if this is a long pool or a short pool
     /// @param _addressProvider an address provider
+    /// @param _manager The PerpManager contract that will own this vault
     function __BaseWasabiPool_init(bool _isLongPool, IAddressProvider _addressProvider, PerpManager _manager) public onlyInitializing {
         __Ownable_init(address(_manager));
         __EIP712_init(_isLongPool ? "WasabiLongPool" : "WasabiShortPool", "1");
@@ -73,7 +73,7 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
 
         isLongPool = _isLongPool;
         addressProvider = _addressProvider;
-        baseTokens[_getWethAddress()] = true;
+        quoteTokens[_getWethAddress()] = true;
     }
 
     function setAddressProvider(IAddressProvider _addressProvider) external onlyAdmin {
@@ -84,47 +84,27 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     function _authorizeUpgrade(address) internal view override onlyAdmin {}
 
     /// @inheritdoc IWasabiPerps
-    function withdraw(address _token, uint256 _amount, address _receiver) external {
-        IWasabiVault vault = getVault(_token);
-        if (msg.sender != address(vault) ||
-            vault.getPoolAddress() != address(this) ||
-            vault.asset() != _token) revert InvalidVault();
-        IERC20(_token).safeTransfer(_receiver, _amount);
-    }
-
-    /// @inheritdoc IWasabiPerps
-    function donate(address token, uint256 amount) external onlyAdmin {
-        if (amount > 0) {
-            IERC20(token).safeTransferFrom(msg.sender, address(this), amount);
-
-            IWasabiVault vault = getVault(token);
-            vault.recordInterestEarned(amount);
-
-            emit NativeYieldClaimed(address(vault), token, amount);
-        }
-    }
-
-    /// @inheritdoc IWasabiPerps
     function getVault(address _asset) public view returns (IWasabiVault) {
-        if (_asset == address(0)) {
-            _asset = _getWethAddress();
-        }
         if (vaults[_asset] == address(0)) revert InvalidVault();
         return IWasabiVault(vaults[_asset]);
     }
 
     /// @inheritdoc IWasabiPerps
-    function addVault(IWasabiVault _vault) external onlyAdmin {
-        if (_vault.getPoolAddress() != address(this)) revert InvalidVault();
-        // Only long pool can have ETH vault
+    function addVault(IWasabiVault _vault) external onlyRole(Roles.VAULT_ADMIN_ROLE) {
+        if (_vault.getPoolAddress(isLongPool) != address(this)) revert InvalidVault();
         address asset = _vault.asset();
-        if (asset == _getWethAddress() && !isLongPool) revert InvalidVault();
         if (vaults[asset] != address(0)) revert VaultAlreadyExists();
         vaults[asset] = address(_vault);
         emit NewVault(address(this), asset, address(_vault));
     }
 
-    /// @dev Records the repayment of a position
+    /// @inheritdoc IWasabiPerps
+    function addQuoteToken(address _token) external onlyAdmin {
+        quoteTokens[_token] = true;
+    }
+
+    /// @dev Repays a position
+    /// @notice This function now handles the actual repayment to the V2 vault
     /// @param _principal the principal
     /// @param _principalCurrency the principal currency
     /// @param _isLiquidation true if this is a liquidation
@@ -137,22 +117,19 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
         uint256 _principalRepaid,
         uint256 _interestPaid
     ) internal {
-        if (_principalRepaid < _principal) {
-            // Only liquidations can cause bad debt
-            if (!_isLiquidation) revert InsufficientPrincipalRepaid();
-            getVault(_principalCurrency).recordLoss(_principal - _principalRepaid);
-        } else {
-            getVault(_principalCurrency).recordInterestEarned(_interestPaid);
-        }
+        IWasabiVault vault = getVault(_principalCurrency);
+        uint256 totalRepayment = _principalRepaid + _interestPaid;
+        IERC20(_principalCurrency).safeTransfer(address(vault), totalRepayment);
+        vault.recordRepayment(totalRepayment, _principal, _isLiquidation);
     }
 
     /// @dev Pays the close amounts to the trader and the fee receiver
-    /// @param _unwrapWETH flag indicating whether to unwrap payments (ignored if `_token != WETH`)
+    /// @param _payoutType whether to send WETH to the trader, send ETH, or deposit tokens to the vault (if `_token != WETH` then `WRAPPED` and `UNWRAPPED` have no effect)
     /// @param _token the payout token (`currency` for longs, `collateralCurrency` for shorts)
-    /// @param _trader the trader to pay
+    /// @param _trader the trader
     /// @param _closeAmounts the close amounts
     function _payCloseAmounts(
-        bool _unwrapWETH,
+        PayoutType _payoutType,
         address _token,
         address _trader,
         CloseAmounts memory _closeAmounts
@@ -160,11 +137,10 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
         uint256 positionFeesToTransfer = _closeAmounts.pastFees + _closeAmounts.closeFee;
 
         // Check if the payout token is ETH/WETH or another ERC20 token
-        address wethAddress = _getWethAddress();
-        if (_token == wethAddress) {
+        if (_token == _getWethAddress()) {
             uint256 total = _closeAmounts.payout + positionFeesToTransfer + _closeAmounts.liquidationFee;
-            IWETH wethToken = IWETH(wethAddress);
-            if (_unwrapWETH) {
+            IWETH wethToken = IWETH(_getWethAddress());
+            if (_payoutType == PayoutType.UNWRAPPED) {
                 if (total > address(this).balance) {
                     wethToken.withdraw(total - address(this).balance);
                 }
@@ -185,14 +161,25 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
                 // Fall through to ERC20 transfer
             }
         }
-        IERC20 token = IERC20(_token);
-        token.safeTransfer(_getFeeReceiver(), positionFeesToTransfer);
-        if (_closeAmounts.liquidationFee > 0) {
-            token.safeTransfer(_getLiquidationFeeReceiver(), _closeAmounts.liquidationFee);
+
+        if (positionFeesToTransfer != 0) {
+            IERC20(_token).safeTransfer(_getFeeReceiver(), positionFeesToTransfer);
         }
 
-        if (_closeAmounts.payout > 0) {
-            token.safeTransfer(_trader, _closeAmounts.payout);
+        if (_closeAmounts.liquidationFee != 0) {
+            IERC20(_token).safeTransfer(_getLiquidationFeeReceiver(), _closeAmounts.liquidationFee);
+        }
+
+        if (_closeAmounts.payout != 0) {
+            if (_payoutType == PayoutType.VAULT_DEPOSIT) {
+                IWasabiVault vault = getVault(_token);
+                if (IERC20(_token).allowance(address(this), address(vault)) < _closeAmounts.payout) {
+                    IERC20(_token).approve(address(vault), type(uint256).max);
+                }
+                vault.deposit(_closeAmounts.payout, _trader);
+            } else {
+                IERC20(_token).safeTransfer(_trader, _closeAmounts.payout);
+            }
         }
     }
 
@@ -215,14 +202,32 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
         OpenPositionRequest calldata _request,
         Signature calldata _signature
     ) internal {
-        _validateSignature(_request.hash(), _signature);
-        if (positions[_request.id] != bytes32(0)) revert PositionAlreadyTaken();
-        if (_request.functionCallDataList.length == 0) revert SwapFunctionNeeded();
+        _validateSigner(address(0), _request.hash(), _signature);
+        Position memory existingPosition = _request.existingPosition;
+        address currency = _request.currency;
+        address collateralCurrency = _request.targetCurrency;
+        if (existingPosition.id != 0) {
+            if (positions[_request.id] != existingPosition.hash()) revert InvalidPosition();
+            if (currency != existingPosition.currency) revert InvalidCurrency();
+            if (collateralCurrency != existingPosition.collateralCurrency) revert InvalidTargetCurrency();
+        } else {
+            if (positions[_request.id] != bytes32(0)) revert PositionAlreadyTaken();
+            if (!_isQuoteToken(isLongPool ? currency : collateralCurrency)) revert InvalidCurrency();
+            if (currency == collateralCurrency) revert InvalidTargetCurrency();
+            if (
+                existingPosition.downPayment +
+                existingPosition.principal +
+                existingPosition.collateralAmount +
+                existingPosition.feesToBePaid != 0
+            ) revert InvalidPosition();
+        }
+        // The only time functionCallDataList should be empty is when we are adding collateral to a short position
+        if (_request.functionCallDataList.length == 0) {
+            if (isLongPool || _request.principal > 0) revert SwapFunctionNeeded();
+        }
         if (_request.expiration < block.timestamp) revert OrderExpired();
-        if (isLongPool != _isBaseToken(_request.currency)) revert InvalidCurrency();
-        if (isLongPool == _isBaseToken(_request.targetCurrency)) revert InvalidTargetCurrency();
         PerpUtils.receivePayment(
-            isLongPool ? _request.currency : _request.targetCurrency,
+            isLongPool ? currency : collateralCurrency,
             _request.downPayment + _request.fee,
             _getWethAddress(),
             msg.sender
@@ -230,40 +235,26 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     }
 
     /// @dev Checks if the signer for the given structHash and signature is the expected signer
-    /// @param _structHash the struct hash
-    /// @param _signature the signature
-    function _validateSignature(bytes32 _structHash, IWasabiPerps.Signature calldata _signature) internal view {
-        bytes32 typedDataHash = _hashTypedDataV4(_structHash);
-        address signer = ecrecover(typedDataHash, _signature.v, _signature.r, _signature.s);
-
-        (bool isValidSigner, ) = _getManager().hasRole(Roles.ORDER_SIGNER_ROLE, signer);
-        if (!isValidSigner) {
-            revert IWasabiPerps.InvalidSignature();
-        }
-    }
-
-    /// @dev Checks if the signer for the given structHash and signature is the expected signer
-    /// @param _signer the expected signer
+    /// @param _signer the expected signer, or address(0) to check for the ORDER_SIGNER_ROLE
     /// @param _structHash the struct hash
     /// @param _signature the signature
     function _validateSigner(address _signer, bytes32 _structHash, IWasabiPerps.Signature calldata _signature) internal view {
         bytes32 typedDataHash = _hashTypedDataV4(_structHash);
         address signer = ecrecover(typedDataHash, _signature.v, _signature.r, _signature.s);
 
-        if (_signer != signer) {
+        if (_signer == address(0)) {
+            (bool isValidSigner, ) = _getManager().hasRole(Roles.ORDER_SIGNER_ROLE, signer);
+            if (!isValidSigner) {
+                revert IWasabiPerps.InvalidSignature();
+            }
+        } else if (_signer != signer) {
             revert IWasabiPerps.InvalidSignature();
         }
     }
 
-    /// @dev returns {true} if the given token is a base token
-    function _isBaseToken(address _token) internal view returns(bool) {
-        return baseTokens[_token];
-    }
-
-    /// @dev computes the liquidation fee
-    function _computeLiquidationFee(uint256 _downPayment) internal view returns (uint256) {
-        uint256 liquidationFeeBps = addressProvider.getLiquidationFeeBps();
-        return _downPayment * liquidationFeeBps / 10000;
+    /// @dev returns {true} if the given token is a quote token
+    function _isQuoteToken(address _token) internal view returns(bool) {
+        return quoteTokens[_token];
     }
 
     /// @dev checks if the caller can close out the given trader's position

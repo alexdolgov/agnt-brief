@@ -34,6 +34,7 @@ interface IOracle is IPriceOracle {
     function cache() external view returns (uint208, uint48);
     function rate() external view returns (uint256);
     function rateProvider() external view returns (address);
+    function rwaOracle() external view returns (address);
     function resolveOracle(uint256 inAmount, address base, address quote)
         external
         view
@@ -43,6 +44,7 @@ interface IOracle is IPriceOracle {
     function pendleMarket() external view returns (address);
     function safeguardPool() external view returns (address);
     function poolId() external view returns (bytes32);
+    function priceOracleIndex() external view returns (uint256);
 }
 
 contract OracleLens is Utils {
@@ -76,22 +78,30 @@ contract OracleLens is Utils {
         }
 
         if (_strEq(name, "ChainlinkOracle")) {
+            (bool success, bytes memory result) =
+                IOracle(oracleAddress).feed().staticcall(abi.encodeCall(IOracle.description, ()));
+            string memory feedDescription = success && result.length >= 32 ? abi.decode(result, (string)) : "";
+
             oracleInfo = abi.encode(
                 ChainlinkOracleInfo({
                     base: IOracle(oracleAddress).base(),
                     quote: IOracle(oracleAddress).quote(),
                     feed: IOracle(oracleAddress).feed(),
-                    feedDescription: IOracle(IOracle(oracleAddress).feed()).description(),
+                    feedDescription: feedDescription,
                     maxStaleness: IOracle(oracleAddress).maxStaleness()
                 })
             );
         } else if (_strEq(name, "ChainlinkInfrequentOracle")) {
+            (bool success, bytes memory result) =
+                IOracle(oracleAddress).feed().staticcall(abi.encodeCall(IOracle.description, ()));
+            string memory feedDescription = success && result.length >= 32 ? abi.decode(result, (string)) : "";
+
             oracleInfo = abi.encode(
                 ChainlinkInfrequentOracleInfo({
                     base: IOracle(oracleAddress).base(),
                     quote: IOracle(oracleAddress).quote(),
                     feed: IOracle(oracleAddress).feed(),
-                    feedDescription: IOracle(IOracle(oracleAddress).feed()).description(),
+                    feedDescription: feedDescription,
                     maxStaleness: IOracle(oracleAddress).maxStaleness()
                 })
             );
@@ -162,6 +172,14 @@ contract OracleLens is Utils {
                     rateProvider: IOracle(oracleAddress).rateProvider()
                 })
             );
+        } else if (_strEq(name, "OndoOracle")) {
+            oracleInfo = abi.encode(
+                OndoOracleInfo({
+                    base: IOracle(oracleAddress).base(),
+                    quote: IOracle(oracleAddress).quote(),
+                    rwaOracle: IOracle(oracleAddress).rwaOracle()
+                })
+            );
         } else if (_strEq(name, "PendleOracle")) {
             oracleInfo = abi.encode(
                 PendleProviderOracleInfo({
@@ -169,6 +187,24 @@ contract OracleLens is Utils {
                     quote: IOracle(oracleAddress).quote(),
                     pendleMarket: IOracle(oracleAddress).pendleMarket(),
                     twapWindow: IOracle(oracleAddress).twapWindow()
+                })
+            );
+        } else if (_strEq(name, "PendleUniversalOracle")) {
+            oracleInfo = abi.encode(
+                PendleUniversalOracleInfo({
+                    base: IOracle(oracleAddress).base(),
+                    quote: IOracle(oracleAddress).quote(),
+                    pendleMarket: IOracle(oracleAddress).pendleMarket(),
+                    twapWindow: IOracle(oracleAddress).twapWindow()
+                })
+            );
+        } else if (_strEq(name, "CurveEMAOracle")) {
+            oracleInfo = abi.encode(
+                CurveEMAOracleInfo({
+                    base: IOracle(oracleAddress).base(),
+                    quote: IOracle(oracleAddress).quote(),
+                    pool: IOracle(oracleAddress).pool(),
+                    priceOracleIndex: IOracle(oracleAddress).priceOracleIndex()
                 })
             );
         } else if (_strEq(name, "SwaapSafeguardOracle")) {

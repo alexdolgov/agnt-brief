@@ -319,13 +319,4 @@ interface IAutopool is IERC4626, IERC20Permit {
     function isPastRewarder(
         address _pastRewarder
     ) external view returns (bool);
-
-    /// @notice Redeem exact shares proportionally from all destination vaults including idle
-    /// @param shares The number of shares to redeem
-    /// @param receiver The address to receive the assets
-    /// @param owner The address of the owner of the shares to be redeemed
-    /// @return assets The number of assets received
-    /// @dev This function is used to redeem shares proportionally from all destination vaults including idle
-    /// Any sort of recoup or credit is taken into account when redeeming
-    // function redeemProrata(uint256 shares, address receiver, address owner) external returns (uint256 assets);
 }

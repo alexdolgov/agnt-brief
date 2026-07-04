@@ -14,12 +14,14 @@
 
 pragma solidity ^0.7.0;
 
-import "@balancer-labs/v2-interfaces/contracts/liquidity-mining/IVeDelegation.sol";
-import "@balancer-labs/v2-interfaces/contracts/vault/IVault.sol";
+import "@balancer-labs/v2-solidity-utils/contracts/helpers/Authentication.sol";
 
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/SingletonAuthentication.sol";
+import "@balancer-labs/v2-vault/contracts/interfaces/IVault.sol";
 
-contract VotingEscrowDelegationProxy is SingletonAuthentication {
+import "./interfaces/IVeDelegation.sol";
+
+contract VotingEscrowDelegationProxy is Authentication {
+    IVault private immutable _vault;
     IERC20 private immutable _votingEscrow;
     IVeDelegation private _delegation;
 
@@ -29,7 +31,10 @@ contract VotingEscrowDelegationProxy is SingletonAuthentication {
         IVault vault,
         IERC20 votingEscrow,
         IVeDelegation delegation
-    ) SingletonAuthentication(vault) {
+    ) Authentication(bytes32(uint256(address(this)))) {
+        // VotingEscrowDelegationProxy is a singleton,
+        // so it simply uses its own address to disambiguate action identifiers
+        _vault = vault;
         _votingEscrow = votingEscrow;
         _delegation = delegation;
     }
@@ -46,6 +51,20 @@ contract VotingEscrowDelegationProxy is SingletonAuthentication {
      */
     function getVotingEscrow() external view returns (IERC20) {
         return _votingEscrow;
+    }
+
+    /**
+     * @notice Returns the Balancer Vault.
+     */
+    function getVault() public view returns (IVault) {
+        return _vault;
+    }
+
+    /**
+     * @notice Returns the Balancer Vault's current authorizer.
+     */
+    function getAuthorizer() public view returns (IAuthorizer) {
+        return getVault().getAuthorizer();
     }
 
     /**
@@ -67,18 +86,6 @@ contract VotingEscrowDelegationProxy is SingletonAuthentication {
         return _adjustedBalanceOf(user);
     }
 
-    /**
-     * @notice Get the current veBAL total supply from the votingEscrow contract.
-     * @return The current veBAL total supply.
-     */
-    function totalSupply() external view returns (uint256) {
-        IVeDelegation implementation = _delegation;
-        if (implementation == IVeDelegation(0)) {
-            return IERC20(_votingEscrow).totalSupply();
-        }
-        return implementation.totalSupply();
-    }
-
     // Internal functions
 
     function _adjustedBalanceOf(address user) internal view returns (uint256) {
@@ -87,6 +94,10 @@ contract VotingEscrowDelegationProxy is SingletonAuthentication {
             return IERC20(_votingEscrow).balanceOf(user);
         }
         return implementation.adjusted_balance_of(user);
+    }
+
+    function _canPerform(bytes32 actionId, address account) internal view override returns (bool) {
+        return getAuthorizer().canPerform(actionId, account, address(this));
     }
 
     // Admin functions

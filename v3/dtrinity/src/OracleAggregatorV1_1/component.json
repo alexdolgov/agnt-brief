@@ -2,7 +2,7 @@
   "component": "OracleAggregatorV1_1",
   "main_contract": "OracleAggregatorV1_1",
   "source_file_count": 7,
-  "deployment_count": 3,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,14 +10,6 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x02165d665e171566629822d9380ad93b975b186c",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x84c58066a4408454b7380f168c95f571419253f4",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

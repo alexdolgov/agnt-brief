@@ -1,0 +1,18 @@
+{
+  "component": "IERC20Detailed-6",
+  "main_contract": "IERC20Detailed",
+  "source_file_count": 25,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x22dd9f4393a3cc698d6c09ad14b0b9d515084fc7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

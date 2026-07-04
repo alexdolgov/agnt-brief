@@ -5,7 +5,7 @@
 - Project: Hemi Staking (`hemi-staking`)
 - Website: [https://app.hemi.xyz/en/stake/dashboard/](https://app.hemi.xyz/en/stake/dashboard/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:58.407Z
+- Generated: 2026-07-04T11:05:41.925Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: bsc, ethereum, optimism, swellchain
 - Contract surface: 124 unique implementations (213 raw deployments)
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Farm. Structurally: 51 project-authored contract(s) across 3 chain(s); 1 ERC4626 vault, 7 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Farm. Structurally: 52 project-authored contract(s) across 3 chain(s); 1 ERC4626 vault, 7 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 

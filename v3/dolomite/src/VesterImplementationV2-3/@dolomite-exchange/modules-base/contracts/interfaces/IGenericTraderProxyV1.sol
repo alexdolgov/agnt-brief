@@ -150,7 +150,5 @@ interface IGenericTraderProxyV1 is IGenericTraderBase {
         address _eventEmitterRegistry
     ) external;
 
-    function EVENT_EMITTER_REGISTRY() external view returns (address);
-
     function EXPIRY() external view returns (address);
 }

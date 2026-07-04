@@ -5,7 +5,7 @@
 - Project: Rumpel Labs (`rumpel-labs`)
 - Website: [https://www.rumpel.xyz](https://www.rumpel.xyz)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:51.336Z
+- Generated: 2026-07-04T11:05:46.481Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-b097
 - Chains: ethereum
 - Contract surface: 134 unique implementations (289 raw deployments)
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Synthetics. Structurally: 160 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 30 ERC20 tokens, 3 ERC721 NFTs, 3 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Synthetics. Structurally: 161 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 30 ERC20 tokens, 3 ERC721 NFTs, 3 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 

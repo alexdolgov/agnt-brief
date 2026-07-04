@@ -2,7 +2,7 @@
   "component": "DToken",
   "main_contract": "DToken",
   "source_file_count": 17,
-  "deployment_count": 1,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +12,47 @@
       "address": "0x03601edc8af4b0439d63eb3a45ed11b01c6975d7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x169fcdf7ee4975e5de4859cd4030f25cb399be8c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x29daddfda3442693c21a50351a2b4820ddbbff79",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6e0f1a68a08282aadb2c97b9080fd1c72b153b2c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc293f25d36fbcad9931f47d801e93b903164a4c6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe374b7a44dcd6b6eed4a6a845b6e162ed52924e5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
     }
   ]
 }

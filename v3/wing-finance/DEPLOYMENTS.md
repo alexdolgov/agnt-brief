@@ -43,7 +43,7 @@
 | ethereum | `0x8c159cfd11677a4f2fe4fd0278dd37a95b986069` | WhitePaperInterestRateModel | impl | inactive | no |
 | ethereum | `0x8d44aaf5a5dc3bceec264d0b8f659bb74573ceac` | WhitePaperInterestRateModel | impl | inactive | no |
 | ethereum | `0x92a28fd877daf3a9f13c64e8d855279c9f13dbdc` | BendProxyAdmin | impl | inactive | no |
-| ethereum | `0x99ee778b9a6205657dd03b2b91415c8646d521ec` | CErc20Delegator-2 | impl | live | no |
+| ethereum | `0x99ee778b9a6205657dd03b2b91415c8646d521ec` | CErc20Delegate | impl | live | no |
 | ethereum | `0xa1046abfc2598f48c44fb320d281d3f3c0733c9a` | WhitePaperInterestRateModel | impl | inactive | no |
 | ethereum | `0xa1849880593e96d2f7df77d0d38a7f2372ae10e0` | CCompLikeDelegate | impl | live | no |
 | ethereum | `0xa43a62b90810086a310a1e9aa74cbdf6181c92ee` | TransparentUpgradeableProxy | proxy | inactive | no |

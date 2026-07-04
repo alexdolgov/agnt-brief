@@ -1,26 +1,26 @@
 {
   "component": "Timelock-2",
   "main_contract": "Timelock",
-  "source_file_count": 1,
+  "source_file_count": 17,
   "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0x81a63b858a60c9305672480ceb17ee764e25dc4a",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x09fec993be76230296ce8c3b8edafd32b6240126",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
-      "address": "0xeb5c91be6dbfd30cf616127c2ea823c64e4b1ff8",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x4e39741be5a45ad129eddc1148bd201b8e098eb6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

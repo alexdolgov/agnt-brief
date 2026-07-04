@@ -1,223 +1,17 @@
-// Sources flattened with hardhat v2.6.1 https://hardhat.org
+// COPIED FROM https://github.com/compound-finance/compound-protocol/blob/master/contracts/Governance/GovernorAlpha.sol
+// Copyright 2020 Compound Labs, Inc.
+// Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+// 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+// 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+// 3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+//
+// Ctrl+f for XXX to see all the modifications.
 
-// File contracts/peripherals/interfaces/ITimelockTarget.sol
-
-// SPDX-License-Identifier: MIT
-
+// XXX: pragma solidity ^0.5.16;
 pragma solidity 0.6.12;
 
-interface ITimelockTarget {
-    function setGov(address _gov) external;
-    function withdrawToken(address _token, address _account, uint256 _amount) external;
-}
-
-
-// File contracts/core/interfaces/IVault.sol
-
-
-pragma solidity 0.6.12;
-
-interface IVault {
-    function isInitialized() external view returns (bool);
-    function isSwapEnabled() external view returns (bool);
-    function isLeverageEnabled() external view returns (bool);
-
-    function setError(uint256 _errorCode, string calldata _error) external;
-
-    function router() external view returns (address);
-    function usdg() external view returns (address);
-    function gov() external view returns (address);
-
-    function whitelistedTokenCount() external view returns (uint256);
-    function maxLeverage() external view returns (uint256);
-
-    function minProfitTime() external view returns (uint256);
-    function hasDynamicFees() external view returns (bool);
-    function fundingInterval() external view returns (uint256);
-    function totalTokenWeights() external view returns (uint256);
-
-    function inManagerMode() external view returns (bool);
-    function inPrivateLiquidationMode() external view returns (bool);
-
-    function maxGasPrice() external view returns (uint256);
-
-    function approvedRouters(address _account, address _router) external view returns (bool);
-    function isLiquidator(address _account) external view returns (bool);
-    function isManager(address _account) external view returns (bool);
-
-    function minProfitBasisPoints(address _token) external view returns (uint256);
-    function tokenBalances(address _token) external view returns (uint256);
-    function lastFundingTimes(address _token) external view returns (uint256);
-
-    function setInManagerMode(bool _inManagerMode) external;
-    function setManager(address _manager, bool _isManager) external;
-    function setIsSwapEnabled(bool _isSwapEnabled) external;
-    function setIsLeverageEnabled(bool _isLeverageEnabled) external;
-    function setMaxGasPrice(uint256 _maxGasPrice) external;
-
-    function setFees(
-        uint256 _taxBasisPoints,
-        uint256 _stableTaxBasisPoints,
-        uint256 _mintBurnFeeBasisPoints,
-        uint256 _swapFeeBasisPoints,
-        uint256 _stableSwapFeeBasisPoints,
-        uint256 _marginFeeBasisPoints,
-        uint256 _liquidationFeeUsd,
-        uint256 _minProfitTime,
-        bool _hasDynamicFees
-    ) external;
-
-    function setTokenConfig(
-        address _token,
-        uint256 _tokenDecimals,
-        uint256 _redemptionBps,
-        uint256 _minProfitBps,
-        uint256 _maxUsdgAmount,
-        bool _isStable,
-        bool _isShortable
-    ) external;
-
-    function setPriceFeed(address _priceFeed) external;
-    function withdrawFees(address _token, address _receiver) external returns (uint256);
-
-    function directPoolDeposit(address _token) external;
-    function buyUSDG(address _token, address _receiver) external returns (uint256);
-    function sellUSDG(address _token, address _receiver) external returns (uint256);
-    function swap(address _tokenIn, address _tokenOut, address _receiver) external returns (uint256);
-    function increasePosition(address _account, address _collateralToken, address _indexToken, uint256 _sizeDelta, bool _isLong) external;
-    function decreasePosition(address _account, address _collateralToken, address _indexToken, uint256 _collateralDelta, uint256 _sizeDelta, bool _isLong, address _receiver) external returns (uint256);
-    function tokenToUsdMin(address _token, uint256 _tokenAmount) external view returns (uint256);
-
-    function priceFeed() external view returns (address);
-    function fundingRateFactor() external view returns (uint256);
-    function stableFundingRateFactor() external view returns (uint256);
-    function cumulativeFundingRates(address _token) external view returns (uint256);
-    function getNextFundingRate(address _token) external view returns (uint256);
-    function getFeeBasisPoints(address _token, uint256 _usdgDelta, uint256 _feeBasisPoints, uint256 _taxBasisPoints, bool _increment) external view returns (uint256);
-
-    function liquidationFeeUsd() external view returns (uint256);
-    function taxBasisPoints() external view returns (uint256);
-    function stableTaxBasisPoints() external view returns (uint256);
-    function mintBurnFeeBasisPoints() external view returns (uint256);
-    function swapFeeBasisPoints() external view returns (uint256);
-    function stableSwapFeeBasisPoints() external view returns (uint256);
-    function marginFeeBasisPoints() external view returns (uint256);
-
-    function allWhitelistedTokensLength() external view returns (uint256);
-    function allWhitelistedTokens(uint256) external view returns (address);
-    function whitelistedTokens(address _token) external view returns (bool);
-    function stableTokens(address _token) external view returns (bool);
-    function shortableTokens(address _token) external view returns (bool);
-    function feeReserves(address _token) external view returns (uint256);
-    function globalShortSizes(address _token) external view returns (uint256);
-    function globalShortAveragePrices(address _token) external view returns (uint256);
-    function tokenDecimals(address _token) external view returns (uint256);
-    function tokenWeights(address _token) external view returns (uint256);
-    function guaranteedUsd(address _token) external view returns (uint256);
-    function poolAmounts(address _token) external view returns (uint256);
-    function bufferAmounts(address _token) external view returns (uint256);
-    function reservedAmounts(address _token) external view returns (uint256);
-    function usdgAmounts(address _token) external view returns (uint256);
-    function maxUsdgAmounts(address _token) external view returns (uint256);
-    function getRedemptionAmount(address _token, uint256 _usdgAmount) external view returns (uint256);
-    function getMaxPrice(address _token) external view returns (uint256);
-    function getMinPrice(address _token) external view returns (uint256);
-
-    function getDelta(address _indexToken, uint256 _size, uint256 _averagePrice, bool _isLong, uint256 _lastIncreasedTime) external view returns (bool, uint256);
-    function getPosition(address _account, address _collateralToken, address _indexToken, bool _isLong) external view returns (uint256, uint256, uint256, uint256, uint256, uint256, bool, uint256);
-}
-
-
-// File contracts/core/interfaces/IVaultPriceFeed.sol
-
-
-pragma solidity 0.6.12;
-
-interface IVaultPriceFeed {
-    function adjustmentBasisPoints(address _token) external view returns (uint256);
-    function isAdjustmentAdditive(address _token) external view returns (bool);
-    function setAdjustment(address _token, bool _isAdditive, uint256 _adjustmentBps) external;
-    function setUseV2Pricing(bool _useV2Pricing) external;
-    function setIsAmmEnabled(bool _isEnabled) external;
-    function setIsSecondaryPriceEnabled(bool _isEnabled) external;
-    function setSpreadBasisPoints(address _token, uint256 _spreadBasisPoints) external;
-    function setSpreadThresholdBasisPoints(uint256 _spreadThresholdBasisPoints) external;
-    function setFavorPrimaryPrice(bool _favorPrimaryPrice) external;
-    function setPriceSampleSpace(uint256 _priceSampleSpace) external;
-    function setMaxStrictPriceDeviation(uint256 _maxStrictPriceDeviation) external;
-    function getPrice(address _token, bool _maximise, bool _includeAmmPrice, bool _useSwapPricing) external view returns (uint256);
-    function getAmmPrice(address _token) external view returns (uint256);
-}
-
-
-// File contracts/core/interfaces/IRouter.sol
-
-
-pragma solidity 0.6.12;
-
-interface IRouter {
-    function addPlugin(address _plugin) external;
-    function pluginTransfer(address _token, address _account, address _receiver, uint256 _amount) external;
-    function pluginIncreasePosition(address _account, address _collateralToken, address _indexToken, uint256 _sizeDelta, bool _isLong) external;
-    function pluginDecreasePosition(address _account, address _collateralToken, address _indexToken, uint256 _collateralDelta, uint256 _sizeDelta, bool _isLong, address _receiver) external returns (uint256);
-    function swap(address[] memory _path, uint256 _amountIn, uint256 _minOut, address _receiver) external;
-}
-
-
-// File contracts/tokens/interfaces/IYieldToken.sol
-
-
-pragma solidity 0.6.12;
-
-interface IYieldToken {
-    function totalStaked() external view returns (uint256);
-    function stakedBalance(address _account) external view returns (uint256);
-    function removeAdmin(address _account) external;
-}
-
-
-// File contracts/tokens/interfaces/IBaseToken.sol
-
-
-pragma solidity 0.6.12;
-
-interface IBaseToken {
-    function totalStaked() external view returns (uint256);
-    function stakedBalance(address _account) external view returns (uint256);
-    function removeAdmin(address _account) external;
-    function setInPrivateTransferMode(bool _inPrivateTransferMode) external;
-}
-
-
-// File contracts/tokens/interfaces/IBridge.sol
-
-
-pragma solidity 0.6.12;
-
-interface IBridge {
-    function wrap(uint256 _amount, address _receiver) external;
-    function unwrap(uint256 _amount, address _receiver) external;
-}
-
-
-// File contracts/libraries/math/SafeMath.sol
-
-
-pragma solidity 0.6.12;
-
-/**
- * @dev Wrappers over Solidity's arithmetic operations with added overflow
- * checks.
- *
- * Arithmetic operations in Solidity wrap on overflow. This can easily result
- * in bugs, because programmers usually assume that an overflow raises an
- * error, which is the standard behavior in high level programming languages.
- * `SafeMath` restores this intuition by reverting the transaction when an
- * operation overflows.
- *
- * Using this library instead of the unchecked operations eliminates an entire
- * class of bugs, so it's recommended to use it always.
- */
+// XXX: import "./SafeMath.sol";
 library SafeMath {
     /**
      * @dev Returns the addition of two unsigned integers, reverting on
@@ -231,7 +25,7 @@ library SafeMath {
      */
     function add(uint256 a, uint256 b) internal pure returns (uint256) {
         uint256 c = a + b;
-        require(c >= a, "SafeMath: addition overflow");
+        require(c >= a, 'SafeMath: addition overflow');
 
         return c;
     }
@@ -247,7 +41,7 @@ library SafeMath {
      * - Subtraction cannot overflow.
      */
     function sub(uint256 a, uint256 b) internal pure returns (uint256) {
-        return sub(a, b, "SafeMath: subtraction overflow");
+        return sub(a, b, 'SafeMath: subtraction overflow');
     }
 
     /**
@@ -260,7 +54,11 @@ library SafeMath {
      *
      * - Subtraction cannot overflow.
      */
-    function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+    function sub(
+        uint256 a,
+        uint256 b,
+        string memory errorMessage
+    ) internal pure returns (uint256) {
         require(b <= a, errorMessage);
         uint256 c = a - b;
 
@@ -286,7 +84,7 @@ library SafeMath {
         }
 
         uint256 c = a * b;
-        require(c / a == b, "SafeMath: multiplication overflow");
+        require(c / a == b, 'SafeMath: multiplication overflow');
 
         return c;
     }
@@ -304,7 +102,7 @@ library SafeMath {
      * - The divisor cannot be zero.
      */
     function div(uint256 a, uint256 b) internal pure returns (uint256) {
-        return div(a, b, "SafeMath: division by zero");
+        return div(a, b, 'SafeMath: division by zero');
     }
 
     /**
@@ -319,7 +117,11 @@ library SafeMath {
      *
      * - The divisor cannot be zero.
      */
-    function div(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+    function div(
+        uint256 a,
+        uint256 b,
+        string memory errorMessage
+    ) internal pure returns (uint256) {
         require(b > 0, errorMessage);
         uint256 c = a / b;
         // assert(a == b * c + a % b); // There is no case in which this doesn't hold
@@ -340,7 +142,7 @@ library SafeMath {
      * - The divisor cannot be zero.
      */
     function mod(uint256 a, uint256 b) internal pure returns (uint256) {
-        return mod(a, b, "SafeMath: modulo by zero");
+        return mod(a, b, 'SafeMath: modulo by zero');
     }
 
     /**
@@ -355,339 +157,147 @@ library SafeMath {
      *
      * - The divisor cannot be zero.
      */
-    function mod(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+    function mod(
+        uint256 a,
+        uint256 b,
+        string memory errorMessage
+    ) internal pure returns (uint256) {
         require(b != 0, errorMessage);
         return a % b;
     }
+
+    function min(uint256 x, uint256 y) internal pure returns (uint256 z) {
+        z = x < y ? x : y;
+    }
+
+    // babylonian method (https://en.wikipedia.org/wiki/Methods_of_computing_square_roots#Babylonian_method)
+    function sqrt(uint256 y) internal pure returns (uint256 z) {
+        if (y > 3) {
+            z = y;
+            uint256 x = y / 2 + 1;
+            while (x < z) {
+                z = x;
+                x = (y / x + x) / 2;
+            }
+        } else if (y != 0) {
+            z = 1;
+        }
+    }
 }
-
-
-// File contracts/libraries/token/IERC20.sol
-
-
-pragma solidity 0.6.12;
-
-/**
- * @dev Interface of the ERC20 standard as defined in the EIP.
- */
-interface IERC20 {
-    /**
-     * @dev Returns the amount of tokens in existence.
-     */
-    function totalSupply() external view returns (uint256);
-
-    /**
-     * @dev Returns the amount of tokens owned by `account`.
-     */
-    function balanceOf(address account) external view returns (uint256);
-
-    /**
-     * @dev Moves `amount` tokens from the caller's account to `recipient`.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function transfer(address recipient, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Returns the remaining number of tokens that `spender` will be
-     * allowed to spend on behalf of `owner` through {transferFrom}. This is
-     * zero by default.
-     *
-     * This value changes when {approve} or {transferFrom} are called.
-     */
-    function allowance(address owner, address spender) external view returns (uint256);
-
-    /**
-     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * IMPORTANT: Beware that changing an allowance with this method brings the risk
-     * that someone may use both the old and the new allowance by unfortunate
-     * transaction ordering. One possible solution to mitigate this race
-     * condition is to first reduce the spender's allowance to 0 and set the
-     * desired value afterwards:
-     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     *
-     * Emits an {Approval} event.
-     */
-    function approve(address spender, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Moves `amount` tokens from `sender` to `recipient` using the
-     * allowance mechanism. `amount` is then deducted from the caller's
-     * allowance.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Emitted when `value` tokens are moved from one account (`from`) to
-     * another (`to`).
-     *
-     * Note that `value` may be zero.
-     */
-    event Transfer(address indexed from, address indexed to, uint256 value);
-
-    /**
-     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
-     * a call to {approve}. `value` is the new allowance.
-     */
-    event Approval(address indexed owner, address indexed spender, uint256 value);
-}
-
-
-// File contracts/peripherals/Timelock.sol
-
-
-pragma solidity 0.6.12;
-
-
-
-
-
-
-
 
 contract Timelock {
-    using SafeMath for uint256;
+    using SafeMath for uint;
 
-    uint256 public constant PRICE_PRECISION = 10 ** 30;
+    event NewAdmin(address indexed newAdmin);
+    event NewPendingAdmin(address indexed newPendingAdmin);
+    event NewDelay(uint indexed newDelay);
+    event CancelTransaction(bytes32 indexed txHash, address indexed target, uint value, string signature,  bytes data, uint eta);
+    event ExecuteTransaction(bytes32 indexed txHash, address indexed target, uint value, string signature,  bytes data, uint eta);
+    event QueueTransaction(bytes32 indexed txHash, address indexed target, uint value, string signature, bytes data, uint eta);
 
-    uint256 public buffer;
+    uint public constant GRACE_PERIOD = 14 days;
+    uint public constant MINIMUM_DELAY = 6 hours;
+    uint public constant MAXIMUM_DELAY = 30 days;
+
     address public admin;
+    address public pendingAdmin;
+    uint public delay;
+    bool public admin_initialized;
 
-    mapping (bytes32 => uint256) public pendingActions;
-    mapping (address => bool) public excludedTokens;
+    mapping (bytes32 => bool) public queuedTransactions;
 
-    event SignalPendingAction(bytes32 action);
-    event SignalApprove(address token, address spender, uint256 amount, bytes32 action);
-    event SignalSetGov(address target, address gov, bytes32 action);
-    event SignalSetPriceFeed(address vault, address priceFeed, bytes32 action);
-    event SignalAddPlugin(address router, address plugin, bytes32 action);
-    event ClearAction(bytes32 action);
 
-    modifier onlyAdmin() {
-        require(msg.sender == admin, "Timelock: forbidden");
-        _;
+    constructor(address admin_, uint delay_) public {
+        require(delay_ >= MINIMUM_DELAY, "Timelock::constructor: Delay must exceed minimum delay.");
+        require(delay_ <= MAXIMUM_DELAY, "Timelock::constructor: Delay must not exceed maximum delay.");
+
+        admin = admin_;
+        delay = delay_;
+        admin_initialized = false;
     }
 
-    constructor(uint256 _buffer) public {
-        buffer = _buffer;
+    // XXX: function() external payable { }
+    receive() external payable { }
+
+    function setDelay(uint delay_) public {
+        require(msg.sender == address(this), "Timelock::setDelay: Call must come from Timelock.");
+        require(delay_ >= MINIMUM_DELAY, "Timelock::setDelay: Delay must exceed minimum delay.");
+        require(delay_ <= MAXIMUM_DELAY, "Timelock::setDelay: Delay must not exceed maximum delay.");
+        delay = delay_;
+
+        emit NewDelay(delay);
+    }
+
+    function acceptAdmin() public {
+        require(msg.sender == pendingAdmin, "Timelock::acceptAdmin: Call must come from pendingAdmin.");
         admin = msg.sender;
+        pendingAdmin = address(0);
+
+        emit NewAdmin(admin);
     }
 
-    function setFees(
-        address _vault,
-        uint256 _taxBasisPoints,
-        uint256 _stableTaxBasisPoints,
-        uint256 _mintBurnFeeBasisPoints,
-        uint256 _swapFeeBasisPoints,
-        uint256 _stableSwapFeeBasisPoints,
-        uint256 _marginFeeBasisPoints,
-        uint256 _liquidationFeeUsd,
-        uint256 _minProfitTime,
-        bool _hasDynamicFees
-    ) external onlyAdmin {
-        require(_taxBasisPoints < 100, "Timelock: invalid _taxBasisPoints");
-        require(_stableTaxBasisPoints < 100, "Timelock: invalid _stableTaxBasisPoints");
-        require(_mintBurnFeeBasisPoints < 100, "Timelock: invalid _mintBurnFeeBasisPoints");
-        require(_swapFeeBasisPoints < 100, "Timelock: invalid _swapFeeBasisPoints");
-        require(_stableSwapFeeBasisPoints < 100, "Timelock: invalid _stableSwapFeeBasisPoints");
-        require(_marginFeeBasisPoints < 100, "Timelock: invalid _marginFeeBasisPoints");
-        require(_liquidationFeeUsd < 10 * PRICE_PRECISION, "Timelock: invalid _liquidationFeeUsd");
+    function setPendingAdmin(address pendingAdmin_) public {
+        // allows one time setting of admin for deployment purposes
+        if (admin_initialized) {
+            require(msg.sender == address(this), "Timelock::setPendingAdmin: Call must come from Timelock.");
+        } else {
+            require(msg.sender == admin, "Timelock::setPendingAdmin: First call must come from admin.");
+            admin_initialized = true;
+        }
+        pendingAdmin = pendingAdmin_;
 
-        IVault(_vault).setFees(
-            _taxBasisPoints,
-            _stableTaxBasisPoints,
-            _mintBurnFeeBasisPoints,
-            _swapFeeBasisPoints,
-            _stableSwapFeeBasisPoints,
-            _marginFeeBasisPoints,
-            _liquidationFeeUsd,
-            _minProfitTime,
-            _hasDynamicFees
-        );
+        emit NewPendingAdmin(pendingAdmin);
     }
 
-    function setTokenConfig(
-        address _vault,
-        address _token,
-        uint256 _tokenWeight,
-        uint256 _minProfitBps,
-        uint256 _maxUsdgAmount
-    ) external onlyAdmin {
-        require(_minProfitBps <= 500, "Timelock: invalid _minProfitBps");
+    function queueTransaction(address target, uint value, string memory signature, bytes memory data, uint eta) public returns (bytes32) {
+        require(msg.sender == admin, "Timelock::queueTransaction: Call must come from admin.");
+        require(eta >= getBlockTimestamp().add(delay), "Timelock::queueTransaction: Estimated execution block must satisfy delay.");
 
-        IVault vault = IVault(_vault);
-        uint256 tokenDecimals = vault.tokenDecimals(_token);
-        bool isStable = vault.stableTokens(_token);
-        bool isShortable = vault.shortableTokens(_token);
+        bytes32 txHash = keccak256(abi.encode(target, value, signature, data, eta));
+        queuedTransactions[txHash] = true;
 
-        IVault(_vault).setTokenConfig(
-            _token,
-            tokenDecimals,
-            _tokenWeight,
-            _minProfitBps,
-            _maxUsdgAmount,
-            isStable,
-            isShortable
-        );
+        emit QueueTransaction(txHash, target, value, signature, data, eta);
+        return txHash;
     }
 
-    function removeAdmin(address _token, address _account) external onlyAdmin {
-        IYieldToken(_token).removeAdmin(_account);
+    function cancelTransaction(address target, uint value, string memory signature, bytes memory data, uint eta) public {
+        require(msg.sender == admin, "Timelock::cancelTransaction: Call must come from admin.");
+
+        bytes32 txHash = keccak256(abi.encode(target, value, signature, data, eta));
+        queuedTransactions[txHash] = false;
+
+        emit CancelTransaction(txHash, target, value, signature, data, eta);
     }
 
-    function setIsAmmEnabled(address _priceFeed, bool _isEnabled) external onlyAdmin {
-        IVaultPriceFeed(_priceFeed).setIsAmmEnabled(_isEnabled);
-    }
+    function executeTransaction(address target, uint value, string memory signature, bytes memory data, uint eta) public payable returns (bytes memory) {
+        require(msg.sender == admin, "Timelock::executeTransaction: Call must come from admin.");
 
-    function setIsSecondaryPriceEnabled(address _priceFeed, bool _isEnabled) external onlyAdmin {
-        IVaultPriceFeed(_priceFeed).setIsSecondaryPriceEnabled(_isEnabled);
-    }
+        bytes32 txHash = keccak256(abi.encode(target, value, signature, data, eta));
+        require(queuedTransactions[txHash], "Timelock::executeTransaction: Transaction hasn't been queued.");
+        require(getBlockTimestamp() >= eta, "Timelock::executeTransaction: Transaction hasn't surpassed time lock.");
+        require(getBlockTimestamp() <= eta.add(GRACE_PERIOD), "Timelock::executeTransaction: Transaction is stale.");
 
-    function setMaxStrictPriceDeviation(address _priceFeed, uint256 _maxStrictPriceDeviation) external onlyAdmin {
-        IVaultPriceFeed(_priceFeed).setMaxStrictPriceDeviation(_maxStrictPriceDeviation);
-    }
+        queuedTransactions[txHash] = false;
 
-    function setUseV2Pricing(address _priceFeed, bool _useV2Pricing) external onlyAdmin {
-        IVaultPriceFeed(_priceFeed).setUseV2Pricing(_useV2Pricing);
-    }
+        bytes memory callData;
 
-    function setAdjustment(address _priceFeed, address _token, bool _isAdditive, uint256 _adjustmentBps) external onlyAdmin {
-        IVaultPriceFeed(_priceFeed).setAdjustment(_token, _isAdditive, _adjustmentBps);
-    }
-
-    function setSpreadBasisPoints(address _priceFeed, address _token, uint256 _spreadBasisPoints) external onlyAdmin {
-        IVaultPriceFeed(_priceFeed).setSpreadBasisPoints(_token, _spreadBasisPoints);
-    }
-
-    function setSpreadThresholdBasisPoints(address _priceFeed, uint256 _spreadThresholdBasisPoints) external onlyAdmin {
-        IVaultPriceFeed(_priceFeed).setSpreadThresholdBasisPoints(_spreadThresholdBasisPoints);
-    }
-
-    function setFavorPrimaryPrice(address _priceFeed, bool _favorPrimaryPrice) external onlyAdmin {
-        IVaultPriceFeed(_priceFeed).setFavorPrimaryPrice(_favorPrimaryPrice);
-    }
-
-    function setPriceSampleSpace(address _priceFeed,uint256 _priceSampleSpace) external onlyAdmin {
-        require(_priceSampleSpace <= 5, "Invalid _priceSampleSpace");
-        IVaultPriceFeed(_priceFeed).setPriceSampleSpace(_priceSampleSpace);
-    }
-
-    function setIsSwapEnabled(address _vault, bool _isSwapEnabled) external onlyAdmin {
-        IVault(_vault).setIsSwapEnabled(_isSwapEnabled);
-    }
-
-    function setMaxGasPrice(address _vault,uint256 _maxGasPrice) external onlyAdmin {
-        require(_maxGasPrice > 5000000000, "Invalid _maxGasPrice");
-        IVault(_vault).setMaxGasPrice(_maxGasPrice);
-    }
-
-    function withdrawFees(address _vault,address _token, address _receiver) external onlyAdmin {
-        IVault(_vault).withdrawFees(_token, _receiver);
-    }
-
-    function addExcludedToken(address _token) external onlyAdmin {
-        excludedTokens[_token] = true;
-    }
-
-    function setInPrivateTransferMode(address _token, bool _inPrivateTransferMode) external onlyAdmin {
-        if (excludedTokens[_token]) {
-            // excludedTokens can only have their transfers enabled
-            require(_inPrivateTransferMode == false, "Timelock: invalid _inPrivateTransferMode");
+        if (bytes(signature).length == 0) {
+            callData = data;
+        } else {
+            callData = abi.encodePacked(bytes4(keccak256(bytes(signature))), data);
         }
 
-        IBaseToken(_token).setInPrivateTransferMode(_inPrivateTransferMode);
+        // solium-disable-next-line security/no-call-value
+        (bool success, bytes memory returnData) = target.call.value(value)(callData);
+        require(success, "Timelock::executeTransaction: Transaction execution reverted.");
+
+        emit ExecuteTransaction(txHash, target, value, signature, data, eta);
+
+        return returnData;
     }
 
-    function testBridge(address _bridge, address _token, uint256 _amount, address _receiver) external onlyAdmin {
-        require(!excludedTokens[_token], "Timelock: _token is excluded");
-
-        IBaseToken(_token).setInPrivateTransferMode(false);
-
-        IERC20(_token).transferFrom(admin, address(this), _amount);
-        IERC20(_token).approve(_bridge, _amount);
-        IBridge(_bridge).wrap(_amount, _receiver);
-
-        IBaseToken(_token).setInPrivateTransferMode(true);
-    }
-
-    function signalApprove(address _token, address _spender, uint256 _amount) external onlyAdmin {
-        bytes32 action = keccak256(abi.encodePacked("approve", _token, _spender, _amount));
-        _setPendingAction(action);
-        emit SignalApprove(_token, _spender, _amount, action);
-    }
-
-    function approve(address _token, address _spender, uint256 _amount) external onlyAdmin {
-        bytes32 action = keccak256(abi.encodePacked("approve", _token, _spender, _amount));
-        _validateAction(action);
-        IERC20(_token).approve(_spender, _amount);
-        _clearAction(action);
-    }
-
-    function signalSetGov(address _target, address _gov) external onlyAdmin {
-        bytes32 action = keccak256(abi.encodePacked("setGov", _target, _gov));
-        _setPendingAction(action);
-        emit SignalSetGov(_target, _gov, action);
-    }
-
-    function setGov(address _target, address _gov) external onlyAdmin {
-        bytes32 action = keccak256(abi.encodePacked("setGov", _target, _gov));
-        _validateAction(action);
-        ITimelockTarget(_target).setGov(_gov);
-        _clearAction(action);
-    }
-
-    function signalSetPriceFeed(address _vault, address _priceFeed) external onlyAdmin {
-        bytes32 action = keccak256(abi.encodePacked("setPriceFeed", _vault, _priceFeed));
-        _setPendingAction(action);
-        emit SignalSetPriceFeed(_vault, _priceFeed, action);
-    }
-
-    function setPriceFeed(address _vault, address _priceFeed) external onlyAdmin {
-        bytes32 action = keccak256(abi.encodePacked("setPriceFeed", _vault, _priceFeed));
-        _validateAction(action);
-        IVault(_vault).setPriceFeed(_priceFeed);
-        _clearAction(action);
-    }
-
-    function signalAddPlugin(address _router, address _plugin) external onlyAdmin {
-        bytes32 action = keccak256(abi.encodePacked("addPlugin", _router, _plugin));
-        _setPendingAction(action);
-        emit SignalAddPlugin(_router, _plugin, action);
-    }
-
-    function addPlugin(address _router, address _plugin) external onlyAdmin {
-        bytes32 action = keccak256(abi.encodePacked("addPlugin", _router, _plugin));
-        _validateAction(action);
-        IRouter(_router).addPlugin(_plugin);
-        _clearAction(action);
-    }
-
-    function cancelAction(bytes32 _action) external onlyAdmin {
-        _clearAction(_action);
-    }
-
-    function _setPendingAction(bytes32 _action) private {
-        pendingActions[_action] = block.timestamp.add(buffer);
-        emit SignalPendingAction(_action);
-    }
-
-    function _validateAction(bytes32 _action) private view {
-        require(pendingActions[_action] != 0, "Timelock: action not signalled");
-        require(pendingActions[_action] < block.timestamp, "Timelock: action time not yet passed");
-    }
-
-    function _clearAction(bytes32 _action) private {
-        require(pendingActions[_action] != 0, "Timelock: invalid _action");
-        delete pendingActions[_action];
-        emit ClearAction(_action);
+    function getBlockTimestamp() internal view returns (uint) {
+        // solium-disable-next-line security/no-block-members
+        return block.timestamp;
     }
 }

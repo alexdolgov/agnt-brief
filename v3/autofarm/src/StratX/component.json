@@ -9,58 +9,58 @@
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x164d0474ed98187c13fca034f80a40d120517b70",
+      "address": "0x0989454fcf48c66aee3fe8cf4feccae2e9b4205d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x172d40422ba9699a6bff92244fea0d0018240ec5",
+      "address": "0x0ce9299529dbd160458922ce69d06bdd65205fe3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x512090bfc8416bab0e8df0541aa0759e8abb58a8",
+      "address": "0x1004a537a1c39ee9d38110bfe3042627c2cd5bbe",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x5f93026bcf9120ccf719882fcde147a52da8ca5c",
+      "address": "0x1edf8edc9a666a5522c846e71e135da45aacd2d7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x8db789ec00b617e4ca7c68033e622db68ddbb5d5",
+      "address": "0x65168c89a16fbed4e2e418d5245ff626bd66874b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0xae9720c6dac3495e6537d4b39e62ea81d14868e8",
+      "address": "0x9b3f9f2387a32c60ee4dcd67148a0426ff918fd4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0xe8adf98a266d0dba1caac2e857a3bf125bcc2f72",
+      "address": "0xdf3dadd3767e43b304943c3fba91f46b3d15e9e5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

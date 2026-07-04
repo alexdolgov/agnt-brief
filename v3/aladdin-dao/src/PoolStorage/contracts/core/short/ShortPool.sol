@@ -91,7 +91,7 @@ contract ShortPool is BasePool, IShortPool {
 
   /// @inheritdoc IShortPool
   function redeemByCreditNote(uint256 creditNoteAmount) external onlyPoolManager returns (uint256 rawColls) {
-    rawColls = _redeem(creditNoteAmount, true);
+    (, rawColls) = _redeem(creditNoteAmount, true);
   }
 
   /**********************

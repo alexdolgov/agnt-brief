@@ -1,15 +1,15 @@
 {
   "component": "DShare-3",
   "main_contract": "DShare",
-  "source_file_count": 18,
+  "source_file_count": 20,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x8705e50f6cf4d3c5e153afe4c5e725f6032fc10e",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x45854301aa075c62976c90cf6802a72dd4bda48a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

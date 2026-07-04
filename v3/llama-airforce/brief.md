@@ -5,7 +5,7 @@
 - Project: Llama Airforce (`llama-airforce`)
 - Website: [https://llama.airforce](https://llama.airforce)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:21.640Z
+- Generated: 2026-07-04T11:05:42.067Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
 - Chains: ethereum
 - Contract surface: 99 unique implementations (127 raw deployments)

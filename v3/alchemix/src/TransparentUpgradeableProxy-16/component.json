@@ -1,15 +1,15 @@
 {
   "component": "TransparentUpgradeableProxy-16",
   "main_contract": "TransparentUpgradeableProxy",
-  "source_file_count": 1,
+  "source_file_count": 32,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x1bce0aca8b0e4139e4390cf1a7a6eb644000a2f0",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4370675ab54fc710a27e29ea2bb5563468b5948f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

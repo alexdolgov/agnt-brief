@@ -24,7 +24,7 @@ import "./interfaces/IERC20Minimal.sol";
 import "./interfaces/callback/ICLMintCallback.sol";
 import "./interfaces/callback/ICLSwapCallback.sol";
 import "./interfaces/callback/ICLFlashCallback.sol";
-import "contracts/libraries/VelodromeTimeLibrary.sol";
+import "contracts/libraries/ProtocolTimeLibrary.sol";
 
 contract CLPool is ICLPool {
     using LowGasSafeMath for uint256;
@@ -388,7 +388,6 @@ contract CLPool is ICLPool {
 
         uint256 _feeGrowthGlobal0X128 = feeGrowthGlobal0X128; // SLOAD for gas optimization
         uint256 _feeGrowthGlobal1X128 = feeGrowthGlobal1X128; // SLOAD for gas optimization
-        uint256 _rewardGrowthGlobalX128 = rewardGrowthGlobalX128; // SLOAD for gas optimization
 
         // if we need to update the ticks, do it
         bool flippedLower;
@@ -405,7 +404,6 @@ contract CLPool is ICLPool {
                 liquidityDelta,
                 _feeGrowthGlobal0X128,
                 _feeGrowthGlobal1X128,
-                _rewardGrowthGlobalX128,
                 secondsPerLiquidityCumulativeX128,
                 tickCumulative,
                 time,
@@ -418,7 +416,6 @@ contract CLPool is ICLPool {
                 liquidityDelta,
                 _feeGrowthGlobal0X128,
                 _feeGrowthGlobal1X128,
-                _rewardGrowthGlobalX128,
                 secondsPerLiquidityCumulativeX128,
                 tickCumulative,
                 time,
@@ -591,7 +588,12 @@ contract CLPool is ICLPool {
     }
 
     /// @inheritdoc ICLPoolActions
-    function stake(int128 stakedLiquidityDelta, int24 tickLower, int24 tickUpper) external override lock onlyGauge {
+    function stake(int128 stakedLiquidityDelta, int24 tickLower, int24 tickUpper, bool positionUpdate)
+        external
+        override
+        lock
+        onlyGauge
+    {
         int24 tick = slot0.tick;
         // Increase staked liquidity in the current tick
         if (tick >= tickLower && tick < tickUpper) {
@@ -599,15 +601,17 @@ contract CLPool is ICLPool {
             stakedLiquidity = LiquidityMath.addDelta(stakedLiquidity, stakedLiquidityDelta);
         }
 
-        Position.Info storage nftPosition = positions.get(nft, tickLower, tickUpper);
-        Position.Info storage gaugePosition = positions.get(gauge, tickLower, tickUpper);
+        if (positionUpdate) {
+            Position.Info storage nftPosition = positions.get(nft, tickLower, tickUpper);
+            Position.Info storage gaugePosition = positions.get(gauge, tickLower, tickUpper);
 
-        (uint256 feeGrowthInside0X128, uint256 feeGrowthInside1X128) =
-            ticks.getFeeGrowthInside(tickLower, tickUpper, tick, feeGrowthGlobal0X128, feeGrowthGlobal1X128);
+            (uint256 feeGrowthInside0X128, uint256 feeGrowthInside1X128) =
+                ticks.getFeeGrowthInside(tickLower, tickUpper, tick, feeGrowthGlobal0X128, feeGrowthGlobal1X128);
 
-        // Assign the staked positions virtually to the gauge
-        nftPosition.update(-stakedLiquidityDelta, feeGrowthInside0X128, feeGrowthInside1X128, false);
-        gaugePosition.update(stakedLiquidityDelta, feeGrowthInside0X128, feeGrowthInside1X128, true);
+            // Assign the staked positions virtually to the gauge
+            nftPosition.update(-stakedLiquidityDelta, feeGrowthInside0X128, feeGrowthInside1X128, false);
+            gaugePosition.update(stakedLiquidityDelta, feeGrowthInside0X128, feeGrowthInside1X128, true);
+        }
 
         // Update tick locations where staked liquidity needs to be added or subtracted
         // Only update ticks if current tick is initialized

@@ -1,6 +1,6 @@
 # alchemix — deployments
 
-461 verified deployment(s) across 185 component(s).
+461 verified deployment(s) across 184 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -20,12 +20,12 @@
 | arbitrum | `0x143c2118417f2df7489ad241023b3be915906865` | AlchemistAllocator | impl | live | no |
 | arbitrum | `0x17573150d67d820542efb24210371545a4868b03` | TransparentUpgradeableProxy-5 | proxy | live | no |
 | arbitrum | `0x1944eba354f92641778380e0bd2f2dadb213f262` | WormholeBridgeAdapter | impl | unknown | no |
-| arbitrum | `0x1b03612cf7881b8bc16def13c94d0097adca4d19` | TransparentUpgradeableProxy-20 | impl | inactive | no |
+| arbitrum | `0x1b03612cf7881b8bc16def13c94d0097adca4d19` | TransparentUpgradeableProxy-21 | impl | inactive | no |
 | arbitrum | `0x1eb7d78d7f6d73e5de67fa62fd8b55c54aa9c0d4` | TransparentUpgradeableProxy | proxy | live | no |
-| arbitrum | `0x21cfa80d878104890b327038c44d8dfab278ddff` | TransparentUpgradeableProxy-21 | impl | live | no |
+| arbitrum | `0x21cfa80d878104890b327038c44d8dfab278ddff` | TransmuterV2 | impl | live | no |
 | arbitrum | `0x248a431116c6f6fcd5fe1097d16d0597e24100f5` | StaticATokenV3-3 | impl | live | no |
 | arbitrum | `0x2584e8b0616b3e750492c9629a3b27679c410cb9` | Transmuter | impl | live | yes |
-| arbitrum | `0x27b58d226fe8f792730a795764945cf146815aa7` | TransparentUpgradeableProxy-11 | proxy | live | no |
+| arbitrum | `0x27b58d226fe8f792730a795764945cf146815aa7` | TransparentUpgradeableProxy-12 | proxy | live | no |
 | arbitrum | `0x2a8b5f365fb29c3e1a40a5cd14ad7f89050755ed` | TransparentUpgradeableProxy | proxy | live | no |
 | arbitrum | `0x2e76a67ee5f134c939c4380c9e2b6bbf93aa668b` | Whitelist | impl | live | yes |
 | arbitrum | `0x303241e2b3b4aed0bb0f8623e7442368fed8faf3` | TransparentUpgradeableProxy-6 | proxy | live | no |
@@ -40,12 +40,12 @@
 | arbitrum | `0x3e1ccc66c755fdbc7fbf7d667aa843c062daf304` | ATokenGateway | impl | live | no |
 | arbitrum | `0x41bf483f062e0bf938531f36d1169894c9d6a7ab` | WstETHAdapterArbitrum | impl | live | no |
 | arbitrum | `0x43647374775b8b792f273a82097d182b34964f06` | TransparentUpgradeableProxy-22 | impl | inactive | no |
-| arbitrum | `0x43cd4c711100ba68589d83d1a7d7c552cd9b24ba` | AdminUpgradeabilityProxy-3 | proxy | live | no |
-| arbitrum | `0x43fbf34df6da5fc66e15e023d3b690fd0de33cd7` | Gauge-2 | proxy | live | no |
+| arbitrum | `0x43cd4c711100ba68589d83d1a7d7c552cd9b24ba` | TransparentUpgradeableProxy | proxy | live | no |
+| arbitrum | `0x43fbf34df6da5fc66e15e023d3b690fd0de33cd7` | TransparentUpgradeableProxy-9 | proxy | live | no |
 | arbitrum | `0x49000f5e208349d2fa678263418e21365208e498` | TransparentUpgradeableProxy-6 | proxy | live | no |
 | arbitrum | `0x4bd4faad509c4bc5ba6d68a15c8b1b54a10288b4` | ERC4626Strategy | impl | live | no |
 | arbitrum | `0x4be3d2fe08a18836cef244aba0f8d7189f673011` | TransparentUpgradeableProxy-23 | impl | inactive | no |
-| arbitrum | `0x510a496b2443ba52a3b269fee5a241a4ed4cca58` | TransparentUpgradeableProxy-9 | proxy | live | no |
+| arbitrum | `0x510a496b2443ba52a3b269fee5a241a4ed4cca58` | TransparentUpgradeableProxy-10 | proxy | live | no |
 | arbitrum | `0x52e4c31933b466cd8a7cb0aab819abaf7be7fc0e` | AlchemixHarvester-5 | impl | inactive | no |
 | arbitrum | `0x576bc8bce22216c30a6fb270a7d457955fca7e48` | WstETHAdapterArbitrum | impl | inactive | no |
 | arbitrum | `0x57d45c6a5878a7bddd217088787cccc9e1fa4f9a` | TransparentUpgradeableProxy-5 | impl | inactive | no |
@@ -54,7 +54,7 @@
 | arbitrum | `0x5e06d74c7de317bf8809f7032eb6a49c71351b80` | Whitelist | impl | live | yes |
 | arbitrum | `0x5ea092309a686a7f1e0a05f8125dc5025bc6b258` | RewardRouter-2 | impl | inactive | no |
 | arbitrum | `0x6428f6ec4bbdee53c8ff894a7d6696fd14cb6c9b` | ArbitrumRewardCollector | impl | inactive | no |
-| arbitrum | `0x649020f591288af5cfe73fd8fffd761ae956007e` | TransparentUpgradeableProxy-11 | impl | inactive | no |
+| arbitrum | `0x649020f591288af5cfe73fd8fffd761ae956007e` | TransparentUpgradeableProxy-12 | impl | inactive | no |
 | arbitrum | `0x653e76977c275df945a5c7417297d50ebcadd273` | TransparentUpgradeableProxy-7 | proxy | live | no |
 | arbitrum | `0x654e16a0b161b150f5d1c8a5ba6e7a7b7760703a` | TransparentUpgradeableProxy | proxy | live | no |
 | arbitrum | `0x693b7594ae0633d9c5574d0da46a040f92f5b281` | Transmuter | impl | live | yes |
@@ -62,16 +62,16 @@
 | arbitrum | `0x6e57806138cb011a0c8f95becb9574c3dda04483` | TransparentUpgradeableProxy-6 | impl | inactive | no |
 | arbitrum | `0x6e94c527e6a1def124ebf5be38c8c876a541bffb` | MigrationTool-5 | impl | live | no |
 | arbitrum | `0x7037d479180cb9514af4ed6f77b8390b1f3e6007` | TransparentUpgradeableProxy | proxy | live | no |
-| arbitrum | `0x72b6594a0c8d9ee9725ce780f87f9e00615d4b10` | Gauge-2 | proxy | live | no |
+| arbitrum | `0x72b6594a0c8d9ee9725ce780f87f9e00615d4b10` | TransparentUpgradeableProxy-9 | proxy | live | no |
 | arbitrum | `0x736fa66a6f4457b29e5a4b1dc78ac1b1d9cfc4df` | YTokenGateway-2 | impl | inactive | no |
 | arbitrum | `0x752ca40117180129410b5e3529aedeb6efa22e2b` | TransparentUpgradeableProxy-8 | impl | inactive | no |
-| arbitrum | `0x7554616955e2227c1fcec373e53a809cd37d095c` | TransparentUpgradeableProxy-12 | impl | inactive | no |
+| arbitrum | `0x7554616955e2227c1fcec373e53a809cd37d095c` | TransparentUpgradeableProxy-13 | impl | inactive | no |
 | arbitrum | `0x763f5d567403add750e13234db896cfe6b423059` | AlchemistV3Position | impl | live | yes |
 | arbitrum | `0x7c679d851688072e23fe41d1753004eb11e98d8c` | WETHGateway | impl | live | no |
 | arbitrum | `0x7e108711771dfdb10743f016d46d75a9379ca043` | GnosisSafeProxy-2 | proxy | live | no |
-| arbitrum | `0x80c715df236aa4fe89938b8976d1d45453e0ff86` | ProxyAdmin | impl | live | no |
+| arbitrum | `0x80c715df236aa4fe89938b8976d1d45453e0ff86` | ProxyAdmin-2 | impl | live | no |
 | arbitrum | `0x81b1d4318c7950cf8f1583c74afe3c8ffa1705e8` | MigrationTool-6 | impl | live | no |
-| arbitrum | `0x82af49447d8a07e3bd95bd0d56f35241523fbab1` | ProxyAdmin-2 | proxy | live | no |
+| arbitrum | `0x82af49447d8a07e3bd95bd0d56f35241523fbab1` | ProxyAdmin-3 | proxy | live | no |
 | arbitrum | `0x83adeafe3077c3e845c0e2e9451c47bdaa2a84a9` | AlchemixConnextGateway | impl | inactive | no |
 | arbitrum | `0x843b66a06a4f00c0703fd2ae2e67c9399f7fad92` | CrossChainCanonicalBase | impl | inactive | no |
 | arbitrum | `0x84672c77ddcba0003e84f13f2b5f168f62b36d1e` | TransparentUpgradeableProxy-24 | impl | inactive | no |
@@ -81,14 +81,14 @@
 | arbitrum | `0x88e4830e62cd1bed29dd7ebde46bb9b86dc4f053` | TransparentUpgradeableProxy-5 | impl | inactive | no |
 | arbitrum | `0x8ab0179abcec6efebbe5d8dcec6682e6a4344fbb` | Whitelist | impl | live | yes |
 | arbitrum | `0x8c7c0c380ba4ee38461eb5a6b82e5d930ec11ca2` | VaultV2Factory | impl | live | no |
-| arbitrum | `0x98cabfdd80d9a59d6cd05fe72e7d445882b1f83b` | TransparentUpgradeableProxy-13 | impl | inactive | no |
+| arbitrum | `0x98cabfdd80d9a59d6cd05fe72e7d445882b1f83b` | TransparentUpgradeableProxy-14 | impl | inactive | no |
 | arbitrum | `0x9964aa9cec85ec687e90de5e566d61544a3d5e7c` | WormholeBridgeAdapter | impl | unknown | no |
 | arbitrum | `0x9b2ef5617430b13741bc95157a3fa3387a00ab11` | AlchemixHarvester-6 | impl | live | no |
 | arbitrum | `0x9d4c27802238c96270bd3913e5dbbadba92715e1` | TransparentUpgradeableProxy-5 | impl | inactive | no |
 | arbitrum | `0xa03162cfc317b92da5eaa96c68955fcec4e19c4a` | WstETHAdapterArbitrum | impl | live | no |
 | arbitrum | `0xa05beadfd3a4b37d6f72a83c660cb1366c86e6cf` | ArbitrumRewardCollector | impl | live | no |
-| arbitrum | `0xa40cff63b2092c846d89563bb62e2a4ab3245926` | TransparentUpgradeableProxy-13 | impl | inactive | no |
-| arbitrum | `0xa44f69aeac480e23c0abfa9a55d99c9f098beac6` | AdminUpgradeabilityProxy-4 | impl | live | no |
+| arbitrum | `0xa40cff63b2092c846d89563bb62e2a4ab3245926` | TransparentUpgradeableProxy-14 | impl | inactive | no |
+| arbitrum | `0xa44f69aeac480e23c0abfa9a55d99c9f098beac6` | ProxyAdmin-4 | impl | live | no |
 | arbitrum | `0xa68fa3521f40b423755787059fb718261d01c4f7` | WstETHAdapterArbitrum | impl | live | no |
 | arbitrum | `0xa8a74f44c3eb508564e99a7186a2b314e5d85a80` | ATokenGateway | impl | live | no |
 | arbitrum | `0xa8c4da98ce8e86638e412da43b72544699a51698` | WstETHAdapterArbitrum | impl | live | no |
@@ -96,10 +96,10 @@
 | arbitrum | `0xae8e5edd84800e77f80efff9c95d9c283e21a881` | RewardRouter-2 | impl | inactive | no |
 | arbitrum | `0xaeea02683f652dd1fb4846be71fb8cf26f3393d4` | ERC4626Strategy | impl | live | no |
 | arbitrum | `0xaf11680b507b66884ecf049d842a7e3c1e15e386` | TransparentUpgradeableProxy-6 | impl | inactive | no |
-| arbitrum | `0xaf88d065e77c8cc2239327c5edb3a432268e5831` | FiatTokenProxy-2 | proxy | live | no |
+| arbitrum | `0xaf88d065e77c8cc2239327c5edb3a432268e5831` | FiatTokenProxy | proxy | live | no |
 | arbitrum | `0xb0a2db2b8bd8ba1d6748951474c25394528739dd` | TransparentUpgradeableProxy-25 | impl | inactive | no |
 | arbitrum | `0xb1cfd0753ca65c03f0457150c59f107f7115bb86` | TransparentUpgradeableProxy-7 | impl | inactive | no |
-| arbitrum | `0xb3058de74cc9e41367c9466e2ca2e6d4a68e9ff5` | TransparentUpgradeableProxy-12 | impl | live | no |
+| arbitrum | `0xb3058de74cc9e41367c9466e2ca2e6d4a68e9ff5` | TransparentUpgradeableProxy-13 | impl | live | no |
 | arbitrum | `0xb46ee2e4165f629b4abce04b7eb4237f951ac66f` | TransparentUpgradeableProxy | proxy | live | no |
 | arbitrum | `0xb58609ea0a12731a3817de063d2b9217cbcea90a` | AlchemixConnextGateway | impl | inactive | no |
 | arbitrum | `0xb6d30d097773bf2905af086b46d9bd269f76910a` | MigrationTool-5 | impl | live | no |
@@ -108,7 +108,7 @@
 | arbitrum | `0xb9b47fd9ea94f3b568ab5d4a449b0b7b544822ad` | TransparentUpgradeableProxy-5 | impl | inactive | no |
 | arbitrum | `0xbb2f5d69978160b9220cfca9476926e021264293` | TransparentUpgradeableProxy-26 | impl | inactive | no |
 | arbitrum | `0xc129bd3fd93ec09237369c70ba5e1c06fc5dacb0` | TransparentUpgradeableProxy-7 | impl | inactive | no |
-| arbitrum | `0xc3f26d2fa16129a8d4a5a0f94d25f2cdd9005cdb` | Gauge-2 | proxy | live | no |
+| arbitrum | `0xc3f26d2fa16129a8d4a5a0f94d25f2cdd9005cdb` | TransparentUpgradeableProxy-9 | proxy | live | no |
 | arbitrum | `0xc774f30484818f06a261a89a1d66367e6bbe3e5a` | AlchemistRouter | impl | live | yes |
 | arbitrum | `0xc8a2bde198d21e9abb0b306b4ad27f0711aef20d` | AlchemistCurator | impl | live | yes |
 | arbitrum | `0xcb8fa9a76b8e203d8c3797bf438d8fb81ea3326a` | TransparentUpgradeableProxy-5 | proxy | live | no |
@@ -132,10 +132,10 @@
 | arbitrum | `0xfa995b6abc387376c3e7de5f6d394ab5b6bee26b` | AlchemistV3PositionRenderer | impl | live | yes |
 | arbitrum | `0xfaafe7143ffc553a5033131549cef6634d165693` | AlchemixConnextGateway | impl | inactive | no |
 | arbitrum | `0xfaf83348b325889bfdffee711999a2692665452e` | TransparentUpgradeableProxy-28 | impl | inactive | no |
-| arbitrum | `0xfb4fe921f724f3c7b610a826c827f9f6ecef6886` | TransparentUpgradeableProxy-9 | proxy | live | no |
+| arbitrum | `0xfb4fe921f724f3c7b610a826c827f9f6ecef6886` | TransparentUpgradeableProxy-10 | proxy | live | no |
 | arbitrum | `0xfcc143dc4dd62ad53c464db08f668904e3b04617` | TransparentUpgradeableProxy-7 | impl | inactive | no |
 | arbitrum | `0xfd092e88600852ff6be6c1b8e16c95ed466af5c6` | TransparentUpgradeableProxy-29 | impl | inactive | no |
-| arbitrum | `0xfd599db360cd9713657c95df66650a427d213010` | TransparentUpgradeableProxy-9 | proxy | live | no |
+| arbitrum | `0xfd599db360cd9713657c95df66650a427d213010` | TransparentUpgradeableProxy-10 | proxy | live | no |
 | ethereum | `0x02e2151d4f351881017abdf2dd2b51150841d5b3` | BaseRewardPool | impl | live | no |
 | ethereum | `0x03323143a5f0d0679026c2a9fb6b0391e4d64811` | TransparentUpgradeableProxy-4 | proxy | live | no |
 | ethereum | `0x0538c8bac84e95a9df8ac10aad17dbe81b9e36ee` | TransparentUpgradeableProxy-2 | proxy | live | no |
@@ -148,7 +148,7 @@
 | ethereum | `0x0a27e910aee974d05000e05eab8a4b8ebd93d40c` | VLINK | impl | live | no |
 | ethereum | `0x0b20f9fcaf67b2a90bc881a68562569d8638a1c5` | IdleTrancheAdapter | impl | inactive | no |
 | ethereum | `0x0c49066c0808ee8c673553b7cbd99bcc9abf113d` | PoolShareToken | impl | live | no |
-| ethereum | `0x0fba3630ddf56457d3ffc2864f260fbe73167f42` | TransparentUpgradeableProxy-14 | impl | inactive | no |
+| ethereum | `0x0fba3630ddf56457d3ffc2864f260fbe73167f42` | TransparentUpgradeableProxy-15 | impl | inactive | no |
 | ethereum | `0x103cc17c2b1586e5cd9bad308690bcd0bbe54d5e` | VETH | impl | live | no |
 | ethereum | `0x13c88a2da8e83ba6933fd3aa51e008986b91b1fd` | Proxy | proxy | live | no |
 | ethereum | `0x13ee9d8a44dbb64fb1552ac5b0437164550c60e8` | SDLController | impl | inactive | no |
@@ -157,7 +157,7 @@
 | ethereum | `0x19a0a70a68fbc604bf20a03b787df8f7ac1d50f0` | veFXSYieldDistributor | impl | live | no |
 | ethereum | `0x1b40183efb4dd766f11bda7a7c3ad8982e998421` | VSP | impl | live | no |
 | ethereum | `0x1dff114dfbbcaedca5f0d46dc8e9615dfc2645bd` | MigrationTool | impl | inactive | no |
-| ethereum | `0x1eed2dbeb9fc23ab483f447f38f289ca15f79bac` | TransparentUpgradeableProxy-10 | proxy | live | no |
+| ethereum | `0x1eed2dbeb9fc23ab483f447f38f289ca15f79bac` | TransparentUpgradeableProxy-11 | proxy | live | no |
 | ethereum | `0x20c572cbd7c3e40b580af22582398b6580d124cf` | AdminUpgradeabilityProxy | impl | live | no |
 | ethereum | `0x210a3a20bfe11f4200918134aae34d753d4e1766` | AdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0x211c74db951c161c5a379363716ebdca5125ef59` | Whitelist-2 | impl | inactive | no |
@@ -175,12 +175,12 @@
 | ethereum | `0x35b225880df01cde935db463d0e70a9e737d516e` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | ethereum | `0x35b2c16de6f283ab0949964d90ccf930f378ade6` | Whitelist-2 | impl | inactive | no |
 | ethereum | `0x36033e1fd88470a5192692e01150c3593847fca5` | VesperAdapterV1 | impl | inactive | no |
-| ethereum | `0x3669c421b77340b2979d1a00a792cc2ee0fce737` | Vyper_contract-2 | impl | live | no |
+| ethereum | `0x3669c421b77340b2979d1a00a792cc2ee0fce737` | AnchorVaultProxy-2 | impl | live | no |
 | ethereum | `0x3b36368e1157a91275c41a2d1d6f58ff860d4f9f` | WETHGateway-2 | impl | inactive | no |
 | ethereum | `0x3c2c6fa5398cdd933465f6fd04f3575f7201bcf8` | WstETHAdapterV1 | impl | inactive | no |
 | ethereum | `0x3f950f06064a43d42a8e7c199bb77b8e3a4b2096` | Whitelist-2 | impl | inactive | no |
 | ethereum | `0x407bdc8f42f616823109fedb21c85cfb4def2764` | AdminUpgradeabilityProxy | proxy | live | no |
-| ethereum | `0x4370675ab54fc710a27e29ea2bb5563468b5948f` | TransparentUpgradeableProxy-15 | impl | inactive | no |
+| ethereum | `0x4370675ab54fc710a27e29ea2bb5563468b5948f` | TransparentUpgradeableProxy-16 | impl | inactive | no |
 | ethereum | `0x440e9296007864a571f6555fb6015369150d2835` | TransmuterConduit | impl | inactive | no |
 | ethereum | `0x4610815e65901e66237ef07493a06cbac783c188` | TokeAutoStrategy | impl | live | no |
 | ethereum | `0x467ec89b9e2cd62e66d1b28bd45db1470d4908a5` | TokeAutoStrategy | impl | live | no |
@@ -218,7 +218,7 @@
 | ethereum | `0x6f8d5fd58f5f825fdbf4f3301c0bdd361653488c` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | ethereum | `0x6fb0fe574c04abaed21ebc1fd39fee19c4d1f72c` | AdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0x6fe02be0ec79dcf582cbdb936d7037d2eb17f661` | YearnVaultAdapterWithIndirection | impl | live | no |
-| ethereum | `0x707f9118e33a9b8998bea41dd0d46f38bb963fc8` | Vyper_contract-3 | impl | live | no |
+| ethereum | `0x707f9118e33a9b8998bea41dd0d46f38bb963fc8` | AnchorVaultProxy-3 | impl | live | no |
 | ethereum | `0x745c1085657035ad04c7f87438c13d525a5bd70d` | Proxy | proxy | live | no |
 | ethereum | `0x75619e9f479f9415630d21ddc99919da47c0a737` | Proxy | proxy | live | no |
 | ethereum | `0x763f5d567403add750e13234db896cfe6b423059` | Transmuter | impl | live | yes |
@@ -232,7 +232,7 @@
 | ethereum | `0x7d0038ca6f121c7bfa8c58af8e34d33104040834` | AdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0x7d61e3cde8b58c4be192a7a35e9d626c419302a4` | AlchemistCurator | impl | live | yes |
 | ethereum | `0x7da70f3327efe7643867c6ae5909d8ab01353189` | WstethStrategy | impl | live | no |
-| ethereum | `0x7da96a3891add058ada2e826306d812c638d87a7` | Vyper_contract-4 | impl | live | no |
+| ethereum | `0x7da96a3891add058ada2e826306d812c638d87a7` | AnchorVaultProxy-4 | impl | live | no |
 | ethereum | `0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0` | WstETH | impl | live | no |
 | ethereum | `0x7f896dde137fbfc0347854faa02e243ad6f2be93` | Proxy | proxy | live | no |
 | ethereum | `0x80ca99d65a8855cb20e44a5e9b6c6abf71e3739d` | RETHAdapterV1 | impl | inactive | no |
@@ -266,14 +266,14 @@
 | ethereum | `0x9f3031cb29ab5797f82740c62591ff7148a4cd3d` | AlchemixHarvester-3 | impl | inactive | no |
 | ethereum | `0x9fd9946e526357b35d95bcb4b388614be4cfd4ac` | TransmuterEth | impl | live | no |
 | ethereum | `0xa067c885d958aec176ec3d8dadc847e0c9384809` | ATokenGateway-2 | impl | inactive | no |
-| ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | FiatTokenProxy | proxy | live | no |
+| ethereum | `0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48` | AdminUpgradeabilityProxy-2 | proxy | live | no |
 | ethereum | `0xa17f64b7d3222d538ce0bf137199aed373a6088c` | Proxy | proxy | live | no |
 | ethereum | `0xa22a7ec2d82a471b1dacc4b37345cf428e76d67a` | WETHGateway-3 | impl | inactive | no |
-| ethereum | `0xa258c4606ca8206d8aa700ce2143d7db854d168c` | Vyper_contract-5 | impl | live | no |
+| ethereum | `0xa258c4606ca8206d8aa700ce2143d7db854d168c` | AnchorVaultProxy-5 | impl | live | no |
 | ethereum | `0xa29367a3f057f3191b62bd4055845a33411892b6` | Stake_FXS_WETH | impl | live | no |
-| ethereum | `0xa2f987a546d4cd1c607ee8141276876c26b72bdf` | AnchorVaultProxy | proxy | live | no |
+| ethereum | `0xa2f987a546d4cd1c607ee8141276876c26b72bdf` | AnchorVaultProxy-6 | proxy | live | no |
 | ethereum | `0xa34dc8502d6e6c2031834608156a064991825e72` | Proxy | proxy | live | no |
-| ethereum | `0xa354f35829ae975e850e23e9615b11da1b3dc4de` | Vyper_contract | impl | live | no |
+| ethereum | `0xa354f35829ae975e850e23e9615b11da1b3dc4de` | AnchorVaultProxy | impl | live | no |
 | ethereum | `0xa3d66d606739c1776eca722bd5172aa7512b6a5b` | IdleTrancheAdapter | impl | inactive | no |
 | ethereum | `0xa3dfccbad1333dc69997da28c961ff8b2879e653` | Whitelist-2 | impl | inactive | no |
 | ethereum | `0xa3f16f804ed389b17de6cd5bc73a53f7ce9c16d9` | IdleTrancheAdapter | impl | inactive | no |
@@ -298,7 +298,7 @@
 | ethereum | `0xba680a906d8f624a5f11fba54d3c672f09f26e47` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | ethereum | `0xbafa44efe7901e04e39dad13167d089c559c1138` | frxETHMinter | impl | live | no |
 | ethereum | `0xbc11de1f20e83f0a6889b8c7a7868e722694e315` | StaticAToken | impl | live | no |
-| ethereum | `0xbc2fb245594a68c927c930fbe2d00680a8c90b9e` | TransparentUpgradeableProxy-10 | proxy | live | no |
+| ethereum | `0xbc2fb245594a68c927c930fbe2d00680a8c90b9e` | TransparentUpgradeableProxy-11 | proxy | live | no |
 | ethereum | `0xbc6da0fe9ad5f3b0d58160288917aa56653660e9` | AlToken | impl | live | no |
 | ethereum | `0xbc8003aa713df9c4887700a7a42f26f06c810819` | VesperAdapterV1 | impl | inactive | no |
 | ethereum | `0xbcd7fbc030dbafabd03434b56f661a457613699a` | SDTController | proxy | live | no |
@@ -307,7 +307,7 @@
 | ethereum | `0xc0a7eb8b23512ecd0e9f8f51e3fae7cf9530b212` | Proxy | proxy | live | no |
 | ethereum | `0xc14900dfb1aa54e7674e1ecf9ce02b3b35157ba5` | TransparentUpgradeableProxy-2 | proxy | live | no |
 | ethereum | `0xc6764e58b36e26b08fd1d2aed4538c02171fa872` | veFXSYieldDistributorV4 | impl | live | no |
-| ethereum | `0xc8418af6358ffdda74e09ca9cc3fe03ca6adc5b0` | Vyper_contract-6 | impl | live | no |
+| ethereum | `0xc8418af6358ffdda74e09ca9cc3fe03ca6adc5b0` | AnchorVaultProxy-7 | impl | live | no |
 | ethereum | `0xcad336723c356844dd213121b377813a20561780` | AdminUpgradeabilityProxy | proxy | live | no |
 | ethereum | `0xce4a49d7ed99c7c8746b713ee2f0c9aa631688d8` | StaticAToken | impl | live | no |
 | ethereum | `0xd1c117319b3595fbc39b471ab1fd485629eb05f2` | VETH | proxy | live | no |
@@ -315,7 +315,7 @@
 | ethereum | `0xd6cd22af7524b3d24716e78b0bd14fd5dd15bd30` | TransparentUpgradeableProxy-3 | impl | inactive | no |
 | ethereum | `0xd875628b942f8970de3cceaf6417005f68540d4f` | Stake_FXS_WETH | impl | live | no |
 | ethereum | `0xda2c338350a0e59ce71cdced9679a3a590dd9bec` | Stake_FXS_WETH | impl | live | no |
-| ethereum | `0xda816459f1ab5631232fe5e97a05bbbb94970c95` | Vyper_contract | impl | live | no |
+| ethereum | `0xda816459f1ab5631232fe5e97a05bbbb94970c95` | AnchorVaultProxy | impl | live | no |
 | ethereum | `0xdac17f958d2ee523a2206206994597c13d831ec7` | TetherToken | impl | live | no |
 | ethereum | `0xdb39286fadb3f6039c8b5d79bafa21615c23b4ec` | V1Deprecatooooor | impl | inactive | no |
 | ethereum | `0xdb7d25b0bfd1585a797f6bf7d7ccba26e77253cc` | AlchemistStrategyClassifier | impl | live | no |
@@ -370,7 +370,7 @@
 | optimism | `0x143a08f0c2c1820eff9d0e749683396c7bb7a4e7` | TransparentUpgradeableProxy | proxy | live | no |
 | optimism | `0x143c2118417f2df7489ad241023b3be915906865` | AlchemistAllocator-2 | impl | live | yes |
 | optimism | `0x1ad06ca54de04dbe9e2817f4c13ecb406dcbeaf0` | Pool | impl | live | no |
-| optimism | `0x1bce0aca8b0e4139e4390cf1a7a6eb644000a2f0` | TransparentUpgradeableProxy-16 | impl | inactive | no |
+| optimism | `0x1bce0aca8b0e4139e4390cf1a7a6eb644000a2f0` | TransparentUpgradeableProxy-17 | impl | inactive | no |
 | optimism | `0x1e0bd5c0e3ab80d66b6225263d6739488a2831bd` | RewardCollectorOptimism | impl | inactive | no |
 | optimism | `0x1f32b1c2345538c0c6f582fcb022739c4a194ebb` | OssifiableProxy-2 | proxy | live | no |
 | optimism | `0x1f563a8be28acdcc5546543a227afb9373586ed0` | WstETHAdapterOptimism | impl | inactive | no |
@@ -382,11 +382,11 @@
 | optimism | `0x337b4b933d60f40cb57dd19ae834af103f049810` | StaticATokenV3-2 | impl | live | no |
 | optimism | `0x347371c17d14ee7943943995e2a0a9df4fd83d50` | AlchemistTokenVault-2 | impl | live | yes |
 | optimism | `0x36033e1fd88470a5192692e01150c3593847fca5` | Whitelist | impl | live | yes |
-| optimism | `0x36e8d12227f8c8ef38bb3aeabf816681b5440be5` | TransparentUpgradeableProxy-17 | impl | inactive | no |
+| optimism | `0x36e8d12227f8c8ef38bb3aeabf816681b5440be5` | TransparentUpgradeableProxy-18 | impl | inactive | no |
 | optimism | `0x3892a5c92eafb81cec321b4304495038202ca9e4` | MigrationTool-2 | impl | inactive | no |
 | optimism | `0x3c0546587d27354635a4972390a7b96f962d8bbd` | AlchemistRouter | impl | live | yes |
 | optimism | `0x3c28ba0d3f400b29f75b5c79dca0614cf5ce3a70` | AlchemistStrategyClassifier-2 | impl | live | yes |
-| optimism | `0x3e29d3a9316dab217754d13b28646b76607c5f04` | TransparentUpgradeableProxy-18 | proxy | live | no |
+| optimism | `0x3e29d3a9316dab217754d13b28646b76607c5f04` | TransparentUpgradeableProxy-19 | proxy | live | no |
 | optimism | `0x3fa5629b403c4424711e3eb69341833ac1a7d02d` | RewardCollectorOptimism | impl | inactive | no |
 | optimism | `0x4186eb285b1efdf372ac5896a08c346c7e373cc4` | StaticATokenV3 | impl | live | no |
 | optimism | `0x4200000000000000000000000000000000000006` | WETH9-2 | impl | live | no |
@@ -394,7 +394,7 @@
 | optimism | `0x4bd4faad509c4bc5ba6d68a15c8b1b54a10288b4` | WstethStrategy-2 | impl | live | yes |
 | optimism | `0x4d7959d17b9710be87e3657e69d946914221bb88` | Pool | impl | live | no |
 | optimism | `0x4e7d2115e4feecd802c96e77b8e03d98104415fa` | TransparentUpgradeableProxy | proxy | live | no |
-| optimism | `0x54aed38abe51bb39c8e75ac1d9d9335d6136b6a1` | TransparentUpgradeableProxy-19 | impl | inactive | no |
+| optimism | `0x54aed38abe51bb39c8e75ac1d9d9335d6136b6a1` | TransparentUpgradeableProxy-20 | impl | inactive | no |
 | optimism | `0x56574efc2ae8f9f208442afc8adccc6f7f87e06f` | Whitelist | impl | live | yes |
 | optimism | `0x6076a6b474f336c566e4ba551a5934e3ba5e7193` | ATokenGateway-4 | impl | inactive | no |
 | optimism | `0x60be3fb22ddf30c17604b86ec005f6173b1170aa` | Pool | impl | live | no |
@@ -439,7 +439,7 @@
 | optimism | `0xc8a2bde198d21e9abb0b306b4ad27f0711aef20d` | AlchemistCurator | impl | live | yes |
 | optimism | `0xcb8fa9a76b8e203d8c3797bf438d8fb81ea3326a` | TransparentUpgradeableProxy | proxy | live | no |
 | optimism | `0xd2b1d91dbddd1c026a0c849d08e1ea284866650c` | optimismCompress | impl | inactive | no |
-| optimism | `0xd4bd68da9bf9112cf2137d500c37bd9b842eae85` | AdminUpgradeabilityProxy-2 | impl | live | no |
+| optimism | `0xd4bd68da9bf9112cf2137d500c37bd9b842eae85` | ProxyAdmin | impl | live | no |
 | optimism | `0xd77e2b3819a55ed0f58d5d6b9cdf7f367b6572f8` | WstETHL2Strategy | impl | live | no |
 | optimism | `0xd8320859860f8e116e9bda13cdd60b27bcb6b058` | RewardCollector | impl | inactive | no |
 | optimism | `0xda10009cbd5d07dd0cecc66161fc93d7c9000da1` | Dai-2 | impl | live | no |

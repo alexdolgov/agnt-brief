@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at moonriver.moonscan.io on 2022-03-15
-*/
-
 // SPDX-License-Identifier: MIT
 
 pragma solidity 0.6.12;
@@ -1440,11 +1436,6 @@ contract AutoFarmV2_CrossChain is Ownable, ReentrancyGuard {
     );
     event Deposit(address indexed user, uint256 indexed pid, uint256 amount);
     event Withdraw(address indexed user, uint256 indexed pid, uint256 amount);
-    event EmergencyWithdraw(
-        address indexed user,
-        uint256 indexed pid,
-        uint256 amount
-    );
 
     function poolLength() external view returns (uint256) {
         return poolInfo.length;
@@ -1471,18 +1462,6 @@ contract AutoFarmV2_CrossChain is Ownable, ReentrancyGuard {
         );
 
         emit Add(_allocPoint, _want, _withUpdate, _strat);
-    }
-
-    // Update the given pool's AUTO allocation point. Can only be called by the owner.
-    function set(
-        uint256 _pid,
-        uint256 _allocPoint,
-        bool _withUpdate
-    ) public onlyOwner {
-        totalAllocPoint = totalAllocPoint.sub(poolInfo[_pid].allocPoint).add(
-            _allocPoint
-        );
-        poolInfo[_pid].allocPoint = _allocPoint;
     }
 
     // View function to see staked Want tokens on frontend.

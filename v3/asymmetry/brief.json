@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "asymmetry",
-  "generated_at": "2026-07-03T21:05:31.777Z",
+  "generated_at": "2026-07-04T11:05:39.563Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-f2f0",
   "lifecycle_status": "declining",
   "lifecycle_signal": {
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 700,
-    "total_addresses": 819,
+    "total_addresses": 818,
     "unique_implementations": 700,
-    "total_deployments": 819,
+    "total_deployments": 818,
     "audited_contracts": 44,
     "unaudited_contracts": 58,
     "contracts_verified_audited": 44,
@@ -77,8 +77,8 @@
     "project_purpose": "Indexes. Structurally: 72 project-authored contract(s) across 2 chain(s); 8 ERC20 tokens, 11 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
     "relationship_narrative": "The protocol comprises 10 functional families. Its contracts share 9 common project-authored base contract(s) (basezapper, addremovemanagers, leftoverssweep). Dominant framework: openzeppelin.",
     "product_family_count": 10,
-    "total_contracts_indexed": 820,
-    "live_contracts": 216,
+    "total_contracts_indexed": 819,
+    "live_contracts": 215,
     "inactive_contracts": 1,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
@@ -963,30 +963,19 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x18d49239edc031fec1747200cd315eca4fbfdc67",
+      "address": "0x7df87c1f23192803167106b76e730227e1c288ad",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "AfEthRelayer",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0x18d49239edc031fec1747200cd315eca4fbfdc67",
       "impl_name": "AfEthRelayer",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x18d49239edc031fec1747200cd315eca4fbfdc67",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": true
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -1008,7 +997,7 @@
       "verification_bucket": "verified_audited",
       "contamination_flag": "cleared",
       "is_live": true,
-      "effective_deploy_date": "2023-10-20 20:21:59+03",
+      "effective_deploy_date": "2023-10-20 20:22:23+03",
       "deploy_coverage_basis": "code_matched"
     },
     {
@@ -28608,7 +28597,7 @@
         "VotiumStrategy",
         "frxETH"
       ],
-      "matched_contracts": 11,
+      "matched_contracts": 10,
       "scope_note": null,
       "extraction_confidence": "high",
       "scope_section_found": true,
@@ -29399,9 +29388,9 @@
     }
   ],
   "origin_summary": {
-    "native": 68,
+    "native": 67,
     "upstream": 6,
-    "standard_library": 16,
+    "standard_library": 17,
     "needs_review": 610
   },
   "scope_matching_notes": {

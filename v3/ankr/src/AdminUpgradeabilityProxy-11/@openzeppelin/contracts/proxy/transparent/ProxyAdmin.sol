@@ -12,7 +12,7 @@ import "../../access/Ownable.sol";
 contract ProxyAdmin is Ownable {
 
     /**
-     * @dev Returns the current implementation of `proxy`.1-
+     * @dev Returns the current implementation of `proxy`.
      *
      * Requirements:
      *

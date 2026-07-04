@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "angle",
-  "generated_at": "2026-07-03T21:05:27.205Z",
+  "generated_at": "2026-07-04T11:05:39.431Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-f2f0",
   "lifecycle_status": "dead",
   "lifecycle_signal": {
@@ -33,9 +33,9 @@
   },
   "summary": {
     "total_contracts": 1620,
-    "total_addresses": 1905,
+    "total_addresses": 1898,
     "unique_implementations": 1620,
-    "total_deployments": 1905,
+    "total_deployments": 1898,
     "audited_contracts": 5,
     "unaudited_contracts": 207,
     "contracts_verified_audited": 5,
@@ -90,12 +90,12 @@
     }
   },
   "topography": {
-    "project_purpose": "CDP. Structurally: 274 project-authored contract(s) across 8 chain(s); 5 ERC4626 vaults, 45 ERC20 tokens, 14 ERC721 NFTs, 3 ERC1155 multi-tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 11 functional families. Its contracts share 88 common project-authored base contract(s) (proxy, baserouter, oracleabstract). Dominant framework: openzeppelin.",
+    "project_purpose": "CDP. Structurally: 311 project-authored contract(s) across 9 chain(s); 5 ERC4626 vaults, 46 ERC20 tokens, 14 ERC721 NFTs, 3 ERC1155 multi-tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 11 functional families. Its contracts share 89 common project-authored base contract(s) (proxy, erc1967upgrade, baserouter). Dominant framework: openzeppelin.",
     "product_family_count": 11,
-    "total_contracts_indexed": 2327,
+    "total_contracts_indexed": 2276,
     "live_contracts": 414,
-    "inactive_contracts": 490,
+    "inactive_contracts": 439,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 1423,
@@ -1761,7 +1761,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2022-09-23 18:02:35+03",
       "deploy_coverage_basis": null
@@ -1848,7 +1848,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2022-11-16 11:47:00+03",
       "deploy_coverage_basis": null
@@ -2043,55 +2043,6 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0x3ee021f6f91911b8a2af6047889c54cc4983f78d",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "AngleRouterArbitrum",
-      "role": "adapter",
-      "origin_kind": "native",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x3ee021f6f91911b8a2af6047889c54cc4983f78d",
-      "impl_name": "AngleRouterArbitrum",
-      "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x3ee021f6f91911b8a2af6047889c54cc4983f78d",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x9a33e690aa78a4c346e72f7a5e16e5d7278be835",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2024-08-06 16:00:40+03",
-      "deploy_coverage_basis": null
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
       "address": "0x4b1e2c2762667331bc91648052f646d1b0d35984",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -2136,6 +2087,44 @@
       "contamination_flag": "cleared",
       "is_live": true,
       "effective_deploy_date": "2022-06-27 12:37:53+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 42161,
+      "chain_name": "arbitrum",
+      "address": "0x9a33e690aa78a4c346e72f7a5e16e5d7278be835",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "AngleRouterArbitrum",
+      "role": "adapter",
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x3ee021f6f91911b8a2af6047889c54cc4983f78d",
+      "impl_name": "AngleRouterArbitrum",
+      "deployments": [
+        {
+          "chain_id": 42161,
+          "chain_name": "arbitrum",
+          "address": "0x9a33e690aa78a4c346e72f7a5e16e5d7278be835",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "effective_deploy_date": "2022-11-25 16:24:08+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2190,30 +2179,19 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x042d98c63f642797c132b3e99c20ff6f751aad3a",
+      "address": "0x4579709627ca36bce92f51ac975746f431890930",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "AngleRouterMainnet",
       "role": "adapter",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0x042d98c63f642797c132b3e99c20ff6f751aad3a",
       "impl_name": "AngleRouterMainnet",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x042d98c63f642797c132b3e99c20ff6f751aad3a",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -2231,9 +2209,9 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": null,
       "is_live": true,
-      "effective_deploy_date": "2024-08-26 13:27:47+03",
+      "effective_deploy_date": "2022-11-25 16:10:59+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2464,30 +2442,19 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0xa4337db04ce4826b234dba22d35b38a124a9b02f",
+      "address": "0xaa8787423ea62f55d90a3d98e8b05f684a79e348",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "BPAMOJob",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0xa4337db04ce4826b234dba22d35b38a124a9b02f",
       "impl_name": "BPAMOJob",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0xa4337db04ce4826b234dba22d35b38a124a9b02f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -3214,7 +3181,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2023-08-08 13:55:59+03",
       "deploy_coverage_basis": null
@@ -3615,17 +3582,6 @@
           "verified_by_bytecode": false,
           "tvl_usd": null,
           "is_audited": false
-        },
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x4e551d776014ce6836e6e6d7170144ebf37e52e1",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
         }
       ],
       "audits_covering": [],
@@ -3635,36 +3591,25 @@
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared",
       "is_live": true,
-      "effective_deploy_date": "2022-06-15 10:43:46+03",
+      "effective_deploy_date": "2022-06-15 10:44:01+03",
       "deploy_coverage_basis": null
     },
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0x3e399ae5b4d8bc0021e53b51c8bcdd66dd62c03b",
+      "address": "0x59153e939c5b4721543251ff3049ea04c755373b",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "FlashAngle",
       "role": "unknown",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0x3e399ae5b4d8bc0021e53b51c8bcdd66dd62c03b",
       "impl_name": "FlashAngle",
       "deployments": [
-        {
-          "chain_id": 42161,
-          "chain_name": "arbitrum",
-          "address": "0x3e399ae5b4d8bc0021e53b51c8bcdd66dd62c03b",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 42161,
           "chain_name": "arbitrum",
@@ -3684,7 +3629,7 @@
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared",
       "is_live": true,
-      "effective_deploy_date": "2022-06-24 19:15:49+03",
+      "effective_deploy_date": "2022-06-24 19:18:42+03",
       "deploy_coverage_basis": null
     },
     {
@@ -5378,55 +5323,6 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x0366f1a242c37ca73c73834b7fcd4a66af1d5700",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "IFOByProxy",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x0366f1a242c37ca73c73834b7fcd4a66af1d5700",
-      "impl_name": "IFOByProxy",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x0366f1a242c37ca73c73834b7fcd4a66af1d5700",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x9c21123d94b93361a29b2c2efb3d5cd8b17e0a9e",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2021-01-18 09:22:17+03",
-      "deploy_coverage_basis": null
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
       "address": "0x04178a4a68ac0fb53e11f53170f1be2b3701896a",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -6211,6 +6107,44 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
+      "address": "0x9c21123d94b93361a29b2c2efb3d5cd8b17e0a9e",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "IFOByProxy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x0366f1a242c37ca73c73834b7fcd4a66af1d5700",
+      "impl_name": "IFOByProxy",
+      "deployments": [
+        {
+          "chain_id": 56,
+          "chain_name": "bsc",
+          "address": "0x9c21123d94b93361a29b2c2efb3d5cd8b17e0a9e",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "effective_deploy_date": "2021-01-18 09:22:29+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
       "address": "0xba79c4846a82b3fde3bbf1a90dafe25286101663",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -6385,30 +6319,19 @@
     {
       "chain_id": 1,
       "chain_name": "ethereum",
-      "address": "0x2201fa47bb4080fea7b41a4673eb1ded3eb5af6e",
+      "address": "0xc48b15492a4c4f48808576f6fcbc6dea9388e942",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "KeeperRegistry",
       "role": "operational_periphery",
-      "origin_kind": "native",
-      "origin_provider": null,
+      "origin_kind": "standard_library",
+      "origin_provider": "openzeppelin",
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0x2201fa47bb4080fea7b41a4673eb1ded3eb5af6e",
       "impl_name": "KeeperRegistry",
       "deployments": [
-        {
-          "chain_id": 1,
-          "chain_name": "ethereum",
-          "address": "0x2201fa47bb4080fea7b41a4673eb1ded3eb5af6e",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 1,
           "chain_name": "ethereum",
@@ -6428,7 +6351,7 @@
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared",
       "is_live": true,
-      "effective_deploy_date": "2022-09-19 10:48:11+03",
+      "effective_deploy_date": "2022-09-19 10:48:35+03",
       "deploy_coverage_basis": null
     },
     {
@@ -7508,7 +7431,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2022-09-05 13:38:04+03",
       "deploy_coverage_basis": null
@@ -7546,7 +7469,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2023-05-30 11:54:35+03",
       "deploy_coverage_basis": null
@@ -65025,39 +64948,9 @@
     {
       "chain_id": 42161,
       "chain_name": "arbitrum",
-      "address": "0x3ee021f6f91911b8a2af6047889c54cc4983f78d",
-      "name": "AngleRouterArbitrum",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
       "address": "0x4b1e2c2762667331bc91648052f646d1b0d35984",
       "name": "AngleRouterArbitrum",
       "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x042d98c63f642797c132b3e99c20ff6f751aad3a",
-      "name": "AngleRouterMainnet",
-      "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0xa4337db04ce4826b234dba22d35b38a124a9b02f",
-      "name": "BPAMOJob",
-      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -65128,16 +65021,6 @@
       "address": "0x48fc1a04e5e18c994c3165c9ad0d3553d7f57724",
       "name": "FalconXAAAdapter",
       "role": "adapter",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 42161,
-      "chain_name": "arbitrum",
-      "address": "0x3e399ae5b4d8bc0021e53b51c8bcdd66dd62c03b",
-      "name": "FlashAngle",
-      "role": "unknown",
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
@@ -65325,6 +65208,16 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
+      "address": "0x9c21123d94b93361a29b2c2efb3d5cd8b17e0a9e",
+      "name": "IFOByProxy",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
       "address": "0xba79c4846a82b3fde3bbf1a90dafe25286101663",
       "name": "IFOByProxy",
       "role": "unknown",
@@ -65347,16 +65240,6 @@
       "chain_name": "ethereum",
       "address": "0x3c2c2e6ce8b9b086a46369a9be32f88f9f7b40a8",
       "name": "KeeperMulticall",
-      "role": "operational_periphery",
-      "origin_kind": "native",
-      "tvl_usd": null,
-      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
-    },
-    {
-      "chain_id": 1,
-      "chain_name": "ethereum",
-      "address": "0x2201fa47bb4080fea7b41a4673eb1ded3eb5af6e",
-      "name": "KeeperRegistry",
       "role": "operational_periphery",
       "origin_kind": "native",
       "tvl_usd": null,
@@ -65654,10 +65537,10 @@
     }
   ],
   "origin_summary": {
-    "native": 100,
+    "native": 96,
     "upstream": 28,
-    "standard_library": 73,
-    "needs_review": 1419
+    "standard_library": 78,
+    "needs_review": 1418
   },
   "scope_matching_notes": {
     "match_method_counts": {

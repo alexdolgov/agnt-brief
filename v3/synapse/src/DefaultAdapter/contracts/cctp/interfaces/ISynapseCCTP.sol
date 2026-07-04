@@ -2,9 +2,8 @@
 pragma solidity 0.8.17;
 
 import {ITokenMessenger} from "./ITokenMessenger.sol";
-import {ISynapseCCTPFees} from "./ISynapseCCTPFees.sol";
 
-interface ISynapseCCTP is ISynapseCCTPFees {
+interface ISynapseCCTP {
     /// @notice Send a Circle token supported by CCTP to a given chain
     /// with the request for the action to take on the destination chain.
     /// @dev The request is a bytes array containing information about the end recipient of the tokens,

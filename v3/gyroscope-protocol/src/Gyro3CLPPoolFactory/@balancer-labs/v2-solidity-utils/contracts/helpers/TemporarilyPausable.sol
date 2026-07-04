@@ -14,8 +14,8 @@
 
 pragma solidity ^0.7.0;
 
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/BalancerErrors.sol";
-import "@balancer-labs/v2-solidity-utils/contracts/helpers/ITemporarilyPausable.sol";
+import "./BalancerErrors.sol";
+import "./ITemporarilyPausable.sol";
 
 /**
  * @dev Allows for a contract to be paused during an initial period after deployment, disabling functionality. Can be
@@ -37,12 +37,18 @@ abstract contract TemporarilyPausable is ITemporarilyPausable {
     // The Pause Window and Buffer Period are timestamp-based: they should not be relied upon for sub-minute accuracy.
     // solhint-disable not-rely-on-time
 
+    uint256 private constant _MAX_PAUSE_WINDOW_DURATION = 90 days;
+    uint256 private constant _MAX_BUFFER_PERIOD_DURATION = 30 days;
+
     uint256 private immutable _pauseWindowEndTime;
     uint256 private immutable _bufferPeriodEndTime;
 
     bool private _paused;
 
     constructor(uint256 pauseWindowDuration, uint256 bufferPeriodDuration) {
+        _require(pauseWindowDuration <= _MAX_PAUSE_WINDOW_DURATION, Errors.MAX_PAUSE_WINDOW_DURATION);
+        _require(bufferPeriodDuration <= _MAX_BUFFER_PERIOD_DURATION, Errors.MAX_BUFFER_PERIOD_DURATION);
+
         uint256 pauseWindowEndTime = block.timestamp + pauseWindowDuration;
 
         _pauseWindowEndTime = pauseWindowEndTime;

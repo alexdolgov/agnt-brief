@@ -4,7 +4,7 @@
 
 - Project: LendFlare (`lendflare`)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:21.430Z
+- Generated: 2026-07-04T11:05:42.040Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-b097
 - Chains: ethereum
 - Contract surface: 63 unique implementations (204 raw deployments)

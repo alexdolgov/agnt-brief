@@ -1,0 +1,21 @@
+{
+  "component": "GyroConfig-3",
+  "main_contract": "GyroConfig",
+  "source_file_count": 9,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM-0051%20Security%20Review%20Gyroscope.pdf",
+    "https://github.com/gyrostable/audit-reports/blob/main/Nethermind/NM0094-GYROSCOPE-PROTOCOL-FINAL.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xe02f11277cfa84c696370c097c51848c6a6523b3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

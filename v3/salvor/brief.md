@@ -5,40 +5,40 @@
 - Project: Salvor (`salvor`)
 - Website: [https://salvor.io](https://salvor.io)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:51.441Z
+- Generated: 2026-07-04T11:05:46.507Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-0679
 - Chains: avalanche, base
-- Contract surface: 318 unique implementations (650 raw deployments)
+- Contract surface: 286 unique implementations (560 raw deployments)
 - DeFi Llama TVL: $542,237.21
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-NFT Marketplace. Structurally: 49 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 18 ERC20 tokens, 1 ERC721 NFT; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+NFT Marketplace. Structurally: 126 project-authored contract(s) across 2 chain(s); 1 ERC4626 vault, 26 ERC20 tokens, 2 ERC721 NFTs, 1 ERC1155 multi-token, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 8 functional families. Its contracts share 4 common project-authored base contract(s) (bifknerc20, preventautoswap, base). Dominant framework: openzeppelin.
+The protocol comprises 8 functional families. Its contracts share 20 common project-authored base contract(s) (erc20burnable, erc20permit, eip712). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 650; live-surface contracts included: 650 (114 live, 536 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 650; live-surface contracts included: 555 (237 live, 318 unknown).
+- Excluded by liveness: 95 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 6/46 (13.0%)
-- Deployed-live implementations: 46 of 318 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 6/191
-- Verified + Unaudited implementations: 185
+- Coverage of deployed-live implementations: 6/97 (6.2%)
+- Deployed-live implementations: 97 of 286 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 6/159
+- Verified + Unaudited implementations: 153
 - Verified by bytecode match: 0
 - Unverified implementations: 127
-- Unique implementations: 318
-- Raw deployments: 650
+- Unique implementations: 286
+- Raw deployments: 560
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): n/a
@@ -51,7 +51,7 @@ The protocol comprises 8 functional families. Its contracts share 4 common proje
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 6 | 3.1% | 2023-03 |
+| unknown | Tier 2 | 6 | 3.8% | 2023-03 |
 
 ## Contract Surface
 
@@ -62,17 +62,15 @@ The protocol comprises 8 functional families. Its contracts share 4 common proje
 | Migrations | unknown | avalanche | n/a | 7 deployments: avalanche [`0x49c3f3...7ef110`](./contracts/avalanche-43114/0x49c3f341106d087490fb6cbad749179dab7ef110/); avalanche `0x4c8607...6c5f40`; avalanche `0x7276e6...a3edea`; avalanche `0xa45701...e33fcd`; avalanche `0xcc4db7...08cd10`; avalanche `0xe9affc...3fbbc1`; avalanche `0xf93b7a...5cc4a8` | ✅ Audited |
 | PaymentManager | unknown | base | n/a | [`0xef4364...856c7f`](./contracts/base-8453/0xef4364fe4487353df46eb7c811d4fac78b856c7f/) | ✅ Audited |
 | PaymentManager | unknown | avalanche | n/a | 2 deployments: base `0x8e4fa9...ab19ab`; avalanche [`0x174b0d...41df6a`](./contracts/avalanche-43114/0x174b0d6b0f4cc58e5c7a223841594052c741df6a/) | ✅ Audited |
-| SalvorGovernanceToken | unknown | avalanche | n/a | 2 deployments: avalanche [`0x623494...3c630a`](./contracts/avalanche-43114/0x623494c7c5dadaaf32f7fa2ca2f0d893183c630a/); avalanche `0xf99516...70a90e` | ✅ Audited |
+| SalvorGovernanceToken | token | avalanche | n/a | [`0xf99516...70a90e`](./contracts/avalanche-43114/0xf99516bc189af00ff8effd5a1f2295b67d70a90e/) | ✅ Audited |
 | VeArt | unknown | avalanche | n/a | [`0x72b73f...02ebaa`](./contracts/avalanche-43114/0x72b73fa1569df9ff1ae9b29cd5b164af6c02ebaa/) | ✅ Audited |
 | Vesting | operational_periphery | avalanche | n/a | 2 deployments: avalanche [`0x93640f...d7dcc5`](./contracts/avalanche-43114/0x93640f79cca740bdaaec37cd0eaf553ae5d7dcc5/); avalanche `0xefac81...c2be20` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (185)
+### ⚠️ Verified + Unaudited (153)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Airdrop | unknown | avalanche | n/a | 2 deployments: avalanche [`0x0c58c2...3902d9`](./contracts/avalanche-43114/0x0c58c2041da4cfccf5818bbe3b66dbc23b3902d9/); avalanche `0xcebbe6...4e6c2f` | ⚠️ Unaudited |
 | AirDropGEC | unknown | avalanche | n/a | 3 deployments: avalanche [`0x3cabb8...bebb59`](./contracts/avalanche-43114/0x3cabb887d32fdaa1f9a09ac34d2a48b309bebb59/); avalanche `0xa8700f...d4941e`; avalanche `0xc0ae43...006ca4` | ⚠️ Unaudited |
-| AIVAX | unknown | avalanche | n/a | [`0x09d156...9f2542`](./contracts/avalanche-43114/0x09d156f209e0c54d0365d6bb05f8a048649f2542/) | ⚠️ Unaudited |
 | AntTokenV2 | unknown | avalanche | n/a | 2 deployments: avalanche [`0x5424f5...43e32c`](./contracts/avalanche-43114/0x5424f5896d80a4f333b35980d15856a34e43e32c/); avalanche `0xad25c7...4e1262` | ⚠️ Unaudited |
 | ApexMaker | unknown | avalanche | n/a | [`0xf98ea8...e4f18e`](./contracts/avalanche-43114/0xf98ea8531cf95ec46c327f4a36484ff33ce4f18e/) | ⚠️ Unaudited |
 | ApexMakerV2 | unknown | avalanche | n/a | [`0x3bf597...4e53ab`](./contracts/avalanche-43114/0x3bf59726d92a382256d2d30434c1bdcbdc4e53ab/) | ⚠️ Unaudited |
@@ -106,7 +104,7 @@ The protocol comprises 8 functional families. Its contracts share 4 common proje
 | BIFKNChefV2 | unknown | avalanche | n/a | 3 deployments: avalanche [`0x317828...ea4573`](./contracts/avalanche-43114/0x317828cbe7ac8707743bae02a2bab8219aea4573/); avalanche `0x599587...ed38d3`; avalanche `0x87f073...74d66e` | ⚠️ Unaudited |
 | BIFKNRewarder | unknown | avalanche | n/a | 38 deployments: avalanche [`0x0d4c97...134a4b`](./contracts/avalanche-43114/0x0d4c97526dc88b7c208b36644d131a7ee7134a4b/); avalanche `0x273a7a...433025`; avalanche `0x3438fe...bc7c01`; avalanche `0x3f7229...a2416a`; avalanche `0x43b617...f30ddf`; avalanche `0x49070a...912382`; avalanche `0x4da6c4...9dd044`; avalanche `0x518a8d...6715b0`; avalanche `0x59c76d...bfb5ac`; avalanche `0x5a2d94...b51c64`; avalanche `0x6e33f5...36d041`; avalanche `0x70e5e1...71d058`; avalanche `0x78ce75...9ff37b`; avalanche `0x7d8416...4332b0`; avalanche `0x812f7e...c45248`; avalanche `0x882342...aed475`; avalanche `0x8890c4...1aad8b`; avalanche `0x88db87...9d97f3`; avalanche `0x8d7946...fa85b8`; avalanche `0x8df656...3cd581`; avalanche `0x982c47...da4418`; avalanche `0x9a78ec...0bb340`; avalanche `0x9f1908...745aeb`; avalanche `0xb32f18...d8163e`; avalanche `0xb683a3...eff7b0`; avalanche `0xc05d6a...e0d70a`; avalanche `0xc158d2...67194f`; avalanche `0xc36a0b...7da63d`; avalanche `0xc52749...f37727`; avalanche `0xc9b97d...3cc2f7`; avalanche `0xcc5cd9...361da7`; avalanche `0xdc35e5...42e34c`; avalanche `0xde7780...e015b2`; avalanche `0xe95da2...7c99e8`; avalanche `0xeda361...026a71`; avalanche `0xf07776...9296e1`; avalanche `0xf11e82...31f7ea`; avalanche `0xfde2ea...a81f19` | ⚠️ Unaudited |
 | BLS | unknown | avalanche | n/a | [`0x46b914...dcaf9d`](./contracts/avalanche-43114/0x46b9144771cb3195d66e4eda643a7493fadcaf9d/) | ⚠️ Unaudited |
-| BnanaCourt | unknown | avalanche | n/a | 3 deployments: avalanche [`0x1b8976...037389`](./contracts/avalanche-43114/0x1b897682dd07d742b1ae7e0005d9d7d046037389/); avalanche `0x73b425...74f921`; avalanche `0x80f5c1...9e2238` | ⚠️ Unaudited |
+| BnanaCourt | unknown | avalanche | n/a | [`0x80f5c1...9e2238`](./contracts/avalanche-43114/0x80f5c122df691384199a8b448408b426639e2238/) | ⚠️ Unaudited |
 | Bonez | unknown | avalanche | n/a | [`0x4d6ec4...2ab677`](./contracts/avalanche-43114/0x4d6ec47118f807ace03d3b3a4ee6aa96cb2ab677/) | ⚠️ Unaudited |
 | BonezClaim | unknown | avalanche | n/a | [`0x7ccff2...5a54cf`](./contracts/avalanche-43114/0x7ccff2d7d97f0577fd79e91c2f28e30bb65a54cf/) | ⚠️ Unaudited |
 | BonezStaking | unknown | avalanche | n/a | [`0xd63bbc...cfdfe8`](./contracts/avalanche-43114/0xd63bbc7afd3a76da88f42702ec9a7aade7cfdfe8/) | ⚠️ Unaudited |
@@ -125,23 +123,17 @@ The protocol comprises 8 functional families. Its contracts share 4 common proje
 | BurstFactoryV5 | unknown | avalanche | n/a | 2 deployments: avalanche [`0xb83ad9...13a903`](./contracts/avalanche-43114/0xb83ad9bf9ae8841ff1e0ec37cbf83d4c5d13a903/); avalanche `0xb91b66...f463d1` | ⚠️ Unaudited |
 | BurstFactoryV6 | unknown | avalanche | n/a | 2 deployments: avalanche [`0xbc74a3...c07cdd`](./contracts/avalanche-43114/0xbc74a3c24d8aa980445adc889577e29089c07cdd/); avalanche `0xde2762...d0c9a7` | ⚠️ Unaudited |
 | BurstToken | unknown | avalanche | n/a | 10 deployments: avalanche [`0x1c8df0...1d0dfc`](./contracts/avalanche-43114/0x1c8df0cae834438de0a301c499078c068e1d0dfc/); avalanche `0x2025ad...cffea8`; avalanche `0x52d370...1203b6`; avalanche `0x5410bb...15c0b6`; avalanche `0x6c0a29...b05e98`; avalanche `0x737729...ad4893`; avalanche `0x7824ef...5e3b5e`; avalanche `0x9e8502...ef486a`; avalanche `0xbb5deb...efff66`; avalanche `0xe33d44...b2928d` | ⚠️ Unaudited |
-| Catnip | unknown | avalanche | n/a | [`0x07a9f5...69260c`](./contracts/avalanche-43114/0x07a9f59728f7e0403d6b5f6c84d95ee9cb69260c/) | ⚠️ Unaudited |
-| ChiknPortalz | unknown | avalanche | n/a | 2 deployments: avalanche [`0x5a5f0c...3c3209`](./contracts/avalanche-43114/0x5a5f0cfdde90adb74d1bc34c67b867cfea3c3209/); avalanche `0xf4a52e...32b43e` | ⚠️ Unaudited |
 | ChiknPortalzV3 | unknown | avalanche | n/a | [`0x9cf31e...1e72a9`](./contracts/avalanche-43114/0x9cf31e89a2cc500d7cb2396509e674c1701e72a9/) | ⚠️ Unaudited |
 | ClaimNodeOp | unknown | avalanche | n/a | [`0xb42cfa...afc35c`](./contracts/avalanche-43114/0xb42cfad450b46fdc9cac5fbf14bc2e6091afc35c/) | ⚠️ Unaudited |
 | ClaimProtocolDAO | unknown | avalanche | n/a | 2 deployments: avalanche [`0x4169cf...49476c`](./contracts/avalanche-43114/0x4169cf88c7ed811e6f6e61917c5b915bea49476c/); avalanche `0x6476a7...bb286c` | ⚠️ Unaudited |
 | CloudzPortalz | unknown | avalanche | n/a | [`0xf755a8...393754`](./contracts/avalanche-43114/0xf755a817f9891954c99bf33bb731b8f9e8393754/) | ⚠️ Unaudited |
 | ColonyGovernanceToken | token | avalanche | n/a | [`0xec3492...1793e6`](./contracts/avalanche-43114/0xec3492a2508ddf4fdc0cd76f31f340b30d1793e6/) | ⚠️ Unaudited |
 | ColonyRouter | adapter | avalanche | n/a | [`0xa2e7ab...89a131`](./contracts/avalanche-43114/0xa2e7ab89a2c59818e1ecd925e718a9d63889a131/) | ⚠️ Unaudited |
-| CommunityTreasury | unknown | avalanche | n/a | [`0x650f58...a72358`](./contracts/avalanche-43114/0x650f5865541f6d68bddfe977db933c293ea72358/) | ⚠️ Unaudited |
-| CopperOrbMinter | unknown | avalanche | n/a | 2 deployments: avalanche [`0xae51aa...20770a`](./contracts/avalanche-43114/0xae51aa005bb123f211730fed55a5fbf2a620770a/); avalanche `0xb41b3d...536978` | ⚠️ Unaudited |
+| CopperOrbMinter | unknown | avalanche | n/a | [`0xae51aa...20770a`](./contracts/avalanche-43114/0xae51aa005bb123f211730fed55a5fbf2a620770a/) | ⚠️ Unaudited |
 | CoqnetHardwareRental | unknown | avalanche | n/a | 2 deployments: avalanche [`0x7a212f...b9a6dc`](./contracts/avalanche-43114/0x7a212fb6b84461cf4f889cab42ff9e856db9a6dc/); avalanche `0x8a2de3...9ac366` | ⚠️ Unaudited |
-| DataGalxe | unknown | avalanche | n/a | [`0xbee7db...78c0ad`](./contracts/avalanche-43114/0xbee7db10c2d16f27045bf9b1953015dfd278c0ad/) | ⚠️ Unaudited |
-| DirectDistributor | unknown | avalanche | n/a | 2 deployments: avalanche [`0x837d54...47ba53`](./contracts/avalanche-43114/0x837d54af002188045662cc3bff5b30e40247ba53/); avalanche `0x8a3452...311ced` | ⚠️ Unaudited |
 | DogWifTrainer | unknown | avalanche | n/a | [`0x8e3751...85f63d`](./contracts/avalanche-43114/0x8e3751e7e4bd1093fddcd68fdb10cc86d785f63d/) | ⚠️ Unaudited |
 | Doorkeeper | operational_periphery | avalanche | n/a | [`0x2598eb...ed1e56`](./contracts/avalanche-43114/0x2598ebdfa5d414695ab6f56efdbc989d8eed1e56/) | ⚠️ Unaudited |
 | EarningsBayV2Token | token | avalanche | n/a | [`0x1c7c53...7a42f9`](./contracts/avalanche-43114/0x1c7c53aa86b49a28c627b6450091998e447a42f9/) | ⚠️ Unaudited |
-| EarthPortalz | unknown | avalanche | n/a | [`0x42d6f9...e20653`](./contracts/avalanche-43114/0x42d6f960c5fcf3f920eb402c8bb165bc3be20653/) | ⚠️ Unaudited |
 | EmissionsToken | operational_periphery | avalanche | n/a | [`0xaaab9d...081c6b`](./contracts/avalanche-43114/0xaaab9d12a30504559b0c5a9a5977fee4a6081c6b/) | ⚠️ Unaudited |
 | ERC1967Proxy | unknown | avalanche | n/a | 4 deployments: avalanche [`0x0d8db5...e18a15`](./contracts/avalanche-43114/0x0d8db5209ac4994b8cb78b5d777ea854d7e18a15/); avalanche `0x2542d3...9a2521`; avalanche `0x31e9a8...d21d4e`; avalanche `0x85d148...05c927` | ⚠️ Unaudited |
 | ERC1967Proxy | unknown | avalanche | n/a | 2 deployments: avalanche [`0x143ddb...b4562c`](./contracts/avalanche-43114/0x143ddb612a40ab9865fdcd9fb96dda2323b4562c/); avalanche `0x5974d0...1be4a8` | ⚠️ Unaudited |
@@ -150,38 +142,25 @@ The protocol comprises 8 functional families. Its contracts share 4 common proje
 | GECNFT | unknown | avalanche | n/a | 3 deployments: avalanche [`0x231cb2...fbc36f`](./contracts/avalanche-43114/0x231cb2f2484e9ad123e827fadc26556eaffbc36f/); avalanche `0x2da215...6d4c8f`; avalanche `0x7f3590...b547e3` | ⚠️ Unaudited |
 | GECToken | token | avalanche | n/a | [`0xe8385c...4881f3`](./contracts/avalanche-43114/0xe8385cecb013561b69beb63ff59f4d10734881f3/) | ⚠️ Unaudited |
 | GEGGSINCUBATOR | unknown | avalanche | n/a | [`0xaa2cee...6b1c4f`](./contracts/avalanche-43114/0xaa2cee2d7f93e38014bcc8d236484712ca6b1c4f/) | ⚠️ Unaudited |
-| getWallet | unknown | avalanche | n/a | [`0xbfd603...f11d2d`](./contracts/avalanche-43114/0xbfd6032258ad9470b7877a6e87a85dfa91f11d2d/) | ⚠️ Unaudited |
-| GGAVAXPriceFeed | unknown | avalanche | n/a | [`0x358283...af8020`](./contracts/avalanche-43114/0x3582837738a46985f900e8ab30191198e0af8020/) | ⚠️ Unaudited |
-| GGAVAXRateProvider | unknown | avalanche | n/a | [`0x1bb74e...9a0a7f`](./contracts/avalanche-43114/0x1bb74ec551ccd9fe416c71f904d64f42079a0a7f/) | ⚠️ Unaudited |
 | GoGoGasStation | unknown | avalanche | n/a | 2 deployments: avalanche [`0x27ce13...f62b7e`](./contracts/avalanche-43114/0x27ce13ed07c367258e0e65eb932dffcb84f62b7e/); avalanche `0x52950f...8f7bd2` | ⚠️ Unaudited |
 | GoldenOrbSwapper | adapter | avalanche | n/a | [`0xaa2ef7...e04ba1`](./contracts/avalanche-43114/0xaa2ef728ed07c52c91a5dc2f21f087bf42e04ba1/) | ⚠️ Unaudited |
-| GovernorAlpha | unknown | avalanche | n/a | [`0xb0ff2b...f43ee1`](./contracts/avalanche-43114/0xb0ff2b1047d9e8d294c2ed798fae3fa817f43ee1/) | ⚠️ Unaudited |
 | Husky | unknown | avalanche | n/a | [`0x65378b...f4a654`](./contracts/avalanche-43114/0x65378b697853568da9ff8eab60c13e1ee9f4a654/) | ⚠️ Unaudited |
-| IndexFeeDistributor | unknown | avalanche | n/a | 3 deployments: avalanche [`0x3ec03d...b7d6b6`](./contracts/avalanche-43114/0x3ec03d688eebf5d3aa7eae1ea23379bd4cb7d6b6/); avalanche `0x650a85...1fcd41`; avalanche `0x883594...8bb723` | ⚠️ Unaudited |
+| IndexFeeDistributor | unknown | avalanche | n/a | 2 deployments: avalanche [`0x3ec03d...b7d6b6`](./contracts/avalanche-43114/0x3ec03d688eebf5d3aa7eae1ea23379bd4cb7d6b6/); avalanche `0x650a85...1fcd41` | ⚠️ Unaudited |
 | Juicy | unknown | avalanche | n/a | 4 deployments: avalanche [`0x480d2e...44c4bd`](./contracts/avalanche-43114/0x480d2e674e3d5f1b4eb3b8a6d0c97860de44c4bd/); avalanche `0x9f7051...c43146`; avalanche `0xc65472...a6af55`; avalanche `0xeb0064...8bc48b` | ⚠️ Unaudited |
-| JuicyAdapter | unknown | avalanche | n/a | 2 deployments: avalanche [`0x5c8f07...c51fdc`](./contracts/avalanche-43114/0x5c8f079a48f78a0ee15135cf48b7033cd2c51fdc/); avalanche `0x856ddc...664349` | ⚠️ Unaudited |
-| JuicyAirdrops | unknown | avalanche | n/a | [`0xc3943c...2e9504`](./contracts/avalanche-43114/0xc3943c34420f0f174d1b491e8890feb4d52e9504/) | ⚠️ Unaudited |
-| JuicyStaking | unknown | avalanche | n/a | 4 deployments: avalanche [`0x02d14d...314064`](./contracts/avalanche-43114/0x02d14dd765ee6524bca876b8a203000649314064/); avalanche `0x58fc11...29f5f2`; avalanche `0x99ac35...7c88a2`; avalanche `0xc1c19f...d8ff1e` | ⚠️ Unaudited |
-| JuicySubscriptions | unknown | avalanche | n/a | 3 deployments: avalanche [`0x11522c...1453c9`](./contracts/avalanche-43114/0x11522c62712c4791db1258b8a8dc96e2e71453c9/); avalanche `0x1f49dd...f07b2e`; avalanche `0x37fa51...e5034e` | ⚠️ Unaudited |
+| JuicyStaking | unknown | avalanche | n/a | 2 deployments: avalanche [`0x02d14d...314064`](./contracts/avalanche-43114/0x02d14dd765ee6524bca876b8a203000649314064/); avalanche `0x99ac35...7c88a2` | ⚠️ Unaudited |
+| JuicySubscriptions | unknown | avalanche | n/a | 2 deployments: avalanche [`0x11522c...1453c9`](./contracts/avalanche-43114/0x11522c62712c4791db1258b8a8dc96e2e71453c9/); avalanche `0x37fa51...e5034e` | ⚠️ Unaudited |
 | JuicyTokenSale | unknown | avalanche | n/a | 4 deployments: avalanche [`0x2ce2ed...50a730`](./contracts/avalanche-43114/0x2ce2edcf530caa540c441b61ffc9a80cb350a730/); avalanche `0x471a48...6de731`; avalanche `0xb1bb87...d0a93d`; avalanche `0xde485a...ddf650` | ⚠️ Unaudited |
 | Ket | unknown | avalanche | n/a | [`0xffff00...2b6ed7`](./contracts/avalanche-43114/0xffff003a6bad9b743d658048742935fffe2b6ed7/) | ⚠️ Unaudited |
 | KetPfpMinter | unknown | avalanche | n/a | 2 deployments: avalanche [`0x06d75d...18435d`](./contracts/avalanche-43114/0x06d75d9001fbf39c2303cd6154ee0419a418435d/); avalanche `0x7b1ccf...c75911` | ⚠️ Unaudited |
 | KimboCollege | unknown | avalanche | n/a | [`0x4e6b2a...f4590c`](./contracts/avalanche-43114/0x4e6b2a6a282f62d5a1c449c1a52237e913f4590c/) | ⚠️ Unaudited |
 | KimboTrainer | unknown | avalanche | n/a | [`0xaeb261...a06e22`](./contracts/avalanche-43114/0xaeb261db831fd11a3f700014f3ace6073da06e22/) | ⚠️ Unaudited |
 | KONG | unknown | avalanche | n/a | 2 deployments: avalanche [`0xac48e0...5026ba`](./contracts/avalanche-43114/0xac48e02ac18299e061897345991857a80e5026ba/); avalanche `0xebb5d4...1fc999` | ⚠️ Unaudited |
-| KOVIN | unknown | avalanche | n/a | 2 deployments: avalanche [`0x31166b...7e27ec`](./contracts/avalanche-43114/0x31166bd16ed20c0ac78930f5e4b7bbb4ad7e27ec/); avalanche `0x694200...8c5cbb` | ⚠️ Unaudited |
-| KovinButton | unknown | avalanche | n/a | 5 deployments: avalanche [`0x2c31ea...6710eb`](./contracts/avalanche-43114/0x2c31ea97d6d727ee346cddaa81ed6af4706710eb/); avalanche `0x2e45e0...60e839`; avalanche `0x630164...86d147`; avalanche `0x736ee8...0dab57`; avalanche `0x8ed619...5d17e4` | ⚠️ Unaudited |
-| kovinBuyer | unknown | avalanche | n/a | 4 deployments: avalanche [`0x284a2c...8d3b89`](./contracts/avalanche-43114/0x284a2c979fe7cd1a9bc5d94b95f1e9ab408d3b89/); avalanche `0x5a2c7b...5124b5`; avalanche `0x8e1b68...3445cc`; avalanche `0xe507d2...4d2f76` | ⚠️ Unaudited |
-| KovinJeckpot | unknown | avalanche | n/a | 16 deployments: avalanche [`0x11032f...14a4e0`](./contracts/avalanche-43114/0x11032f940848a70a6d50409853a20dddb414a4e0/); avalanche `0x1ec53e...bff06c`; avalanche `0x21c183...5292b1`; avalanche `0x30648f...c1fbbe`; avalanche `0x3d64aa...78d81f`; avalanche `0x5f2ccc...cf468e`; avalanche `0x60d912...d9cf20`; avalanche `0x61ea33...6e47d4`; avalanche `0x6fe737...f3907d`; avalanche `0x70b145...7febc3`; avalanche `0x85677d...2eab7e`; avalanche `0x995c59...92ec1b`; avalanche `0xac9563...8e26ed`; avalanche `0xd03003...21386f`; avalanche `0xe51e69...5e52bc`; avalanche `0xe7b25a...b9ac6b` | ⚠️ Unaudited |
-| KovinJeckpotData | unknown | avalanche | n/a | 6 deployments: avalanche [`0x10526c...d24c77`](./contracts/avalanche-43114/0x10526c0f2da061debad70c4087876bab42d24c77/); avalanche `0x1f060a...4c7c7c`; avalanche `0x219775...96ad0b`; avalanche `0x4b2cd1...189142`; avalanche `0xc448e3...43d087`; avalanche `0xda44ff...e64251` | ⚠️ Unaudited |
-| KovinVRF | unknown | avalanche | n/a | [`0x516330...e5d7cb`](./contracts/avalanche-43114/0x5163308728d99a70956ed12ade644fa2e5e5d7cb/) | ⚠️ Unaudited |
+| KOVIN | unknown | avalanche | n/a | [`0x694200...8c5cbb`](./contracts/avalanche-43114/0x694200a68b18232916353250955be220e88c5cbb/) | ⚠️ Unaudited |
+| KovinJeckpot | unknown | avalanche | n/a | [`0x70b145...7febc3`](./contracts/avalanche-43114/0x70b145d9636747e45fc2fc6245b0f9cd4d7febc3/) | ⚠️ Unaudited |
 | KycProofVerification | unknown | avalanche | n/a | [`0x580ddd...3fa0e9`](./contracts/avalanche-43114/0x580ddd6fa80f75e40ff6975e0a9d2688b03fa0e9/) | ⚠️ Unaudited |
 | KycStorage | unknown | avalanche | n/a | [`0x61ec16...254092`](./contracts/avalanche-43114/0x61ec16bb9fa514cfe02766b27dbdbecba9254092/) | ⚠️ Unaudited |
 | Laifu | unknown | avalanche | n/a | [`0x21e32d...93c24f`](./contracts/avalanche-43114/0x21e32d59b1f9574674006a4101150a004d93c24f/) | ⚠️ Unaudited |
 | Landwolf | unknown | avalanche | n/a | [`0x4f94b8...4438ec`](./contracts/avalanche-43114/0x4f94b8aef08c92fefe416af073f1df1e284438ec/) | ⚠️ Unaudited |
-| LiquidityPoolManagerV2 | unknown | avalanche | n/a | [`0x912b5d...397994`](./contracts/avalanche-43114/0x912b5d41656048ef681efa9d32488a3ffe397994/) | ⚠️ Unaudited |
-| LitterBox | unknown | avalanche | n/a | [`0x53d573...d0b53e`](./contracts/avalanche-43114/0x53d573b85a32f3c3cd39d4bea55b116cced0b53e/) | ⚠️ Unaudited |
-| LPTP | unknown | avalanche | n/a | 4 deployments: avalanche [`0x0ab862...d01664`](./contracts/avalanche-43114/0x0ab862653f8ab1f1846e887d7f6a060e6dd01664/); avalanche `0x0f4ee6...c3dcc5`; avalanche `0x6a945f...f60805`; avalanche `0xf7326b...d5f70a` | ⚠️ Unaudited |
 | M1ZPortalz | unknown | avalanche | n/a | [`0xda54f8...52e311`](./contracts/avalanche-43114/0xda54f80ddf96fad96be883e349e40b458352e311/) | ⚠️ Unaudited |
 | MasterChefColony | unknown | avalanche | n/a | [`0x2ac45f...3947d0`](./contracts/avalanche-43114/0x2ac45f92eabaa8dcb2ea1807a659a1393c3947d0/) | ⚠️ Unaudited |
 | MemeToken | token | avalanche | n/a | [`0x7a842a...e6bc75`](./contracts/avalanche-43114/0x7a842a6f4580edd3df41c1f31e0395044de6bc75/) | ⚠️ Unaudited |
@@ -196,25 +175,19 @@ The protocol comprises 8 functional families. Its contracts share 4 common proje
 | NodeAsAService | unknown | avalanche | n/a | 2 deployments: avalanche [`0x3ccef5...7e805a`](./contracts/avalanche-43114/0x3ccef51d2e4042b1d01b41e2115a6eae8c7e805a/); avalanche `0xb306c9...b20b04` | ⚠️ Unaudited |
 | NOODS | unknown | avalanche | n/a | 2 deployments: avalanche [`0x206336...a869e1`](./contracts/avalanche-43114/0x206336c741178d976e9c5444987497bd8fa869e1/); avalanche `0xffdb03...22da98` | ⚠️ Unaudited |
 | Ocyticus | unknown | avalanche | n/a | 2 deployments: avalanche [`0x9189d1...ea210b`](./contracts/avalanche-43114/0x9189d18f453b1ec1f02e40a8e3711334f9ea210b/); avalanche `0xffdc3b...ad5542` | ⚠️ Unaudited |
-| OgerzPortalz | unknown | avalanche | n/a | [`0x4962aa...bcfe0b`](./contracts/avalanche-43114/0x4962aa90953d913ad5716fb12b9cbb0fa1bcfe0b/) | ⚠️ Unaudited |
 | OonodzHardwareProvider | unknown | avalanche | n/a | [`0xfe6ca6...e8fe3e`](./contracts/avalanche-43114/0xfe6ca6cd383d1e213f5d1015dd0bb35275e8fe3e/) | ⚠️ Unaudited |
 | Oracle | operational_periphery | avalanche | n/a | [`0x30fb91...a16db7`](./contracts/avalanche-43114/0x30fb915258d844e9dc420b2c3aa97420aea16db7/) | ⚠️ Unaudited |
 | OrbMerger | unknown | avalanche | n/a | [`0x412cb1...347839`](./contracts/avalanche-43114/0x412cb1580c33c421b2765e91a6c231a246347839/) | ⚠️ Unaudited |
 | OrbRedeemer | unknown | avalanche | n/a | 2 deployments: avalanche [`0x1f240d...f8b1d2`](./contracts/avalanche-43114/0x1f240def4c98408e22a28daec1e920810ef8b1d2/); avalanche `0xc874be...7b565a` | ⚠️ Unaudited |
 | Orbs | unknown | avalanche | n/a | 2 deployments: avalanche [`0x62df6e...37fcc5`](./contracts/avalanche-43114/0x62df6e203916617ed20e87babb2105e6df37fcc5/); avalanche `0xec18aa...f8450c` | ⚠️ Unaudited |
 | Orbs | unknown | avalanche | n/a | 3 deployments: avalanche [`0x9df15b...c08e2b`](./contracts/avalanche-43114/0x9df15bc38d6da2a674c3e9b04c1c32ab34c08e2b/); avalanche `0xbca48e...626891`; avalanche `0xd491c8...0f9734` | ⚠️ Unaudited |
-| PangolinFactory | unknown | avalanche | n/a | 2 deployments: avalanche [`0xcdeea3...959737`](./contracts/avalanche-43114/0xcdeea31e087f0cf463043d246a45b87f4e959737/); avalanche `0xefa94d...e9fd88` | ⚠️ Unaudited |
-| PangolinRouter | unknown | avalanche | n/a | [`0xe54ca8...c89106`](./contracts/avalanche-43114/0xe54ca86531e17ef3616d22ca28b0d458b6c89106/) | ⚠️ Unaudited |
 | PitBonus | unknown | avalanche | n/a | [`0xe6666f...5926c9`](./contracts/avalanche-43114/0xe6666f6fa8bc1759b9266d30d41cb443025926c9/) | ⚠️ Unaudited |
 | Png | unknown | avalanche | n/a | [`0x60781c...aca982`](./contracts/avalanche-43114/0x60781c2586d68229fde47564546784ab3faca982/) | ⚠️ Unaudited |
-| PortalzSquadz | unknown | avalanche | n/a | [`0x2644da...cf29e5`](./contracts/avalanche-43114/0x2644daed660c7f78611668458e4905cec1cf29e5/) | ⚠️ Unaudited |
 | ProtocolDAO | unknown | avalanche | n/a | 4 deployments: avalanche [`0x41a763...195d0b`](./contracts/avalanche-43114/0x41a76343eb93b4790e53c8e2789e09ef41195d0b/); avalanche `0x70fd1a...fd1b65`; avalanche `0xa008cc...8ef546`; avalanche `0xfc3ea3...d8051a` | ⚠️ Unaudited |
 | ProxyAdmin | unknown | avalanche | n/a | 10 deployments: avalanche [`0x5313c3...b247cf`](./contracts/avalanche-43114/0x5313c309cd469b751ad3947568d65d4a70b247cf/); avalanche `0x6e8fd3...aed940`; avalanche `0x741c5f...17690c`; avalanche `0x89cf78...b9b64d`; avalanche `0x9484d5...416c71`; avalanche `0xbc5627...e9e190`; avalanche `0xc7fef2...d7a6c6`; avalanche `0xdbfe1e...a56aa7`; avalanche `0xe4d695...4e3027`; avalanche `0xf4c562...1620a9` | ⚠️ Unaudited |
 | RewardsPool | operational_periphery | avalanche | n/a | [`0xaa8fd0...7c1b1d`](./contracts/avalanche-43114/0xaa8fd06cc3f1059b6d35870bbf625c1bac7c1b1d/) | ⚠️ Unaudited |
-| SalvorPortalz | unknown | avalanche | n/a | [`0x992855...e1bb97`](./contracts/avalanche-43114/0x9928555fb856692004ebcbd4f391e06f69e1bb97/) | ⚠️ Unaudited |
 | SQRCAT | unknown | avalanche | n/a | [`0xc8e7fb...03f2d5`](./contracts/avalanche-43114/0xc8e7fb72b53d08c4f95b93b390ed3f132d03f2d5/) | ⚠️ Unaudited |
 | SQRCATMiner | unknown | avalanche | n/a | [`0x2c3694...e9d1a9`](./contracts/avalanche-43114/0x2c3694eefb67bad9c6a0409f3001d5025ee9d1a9/) | ⚠️ Unaudited |
-| SquadzV2 | unknown | avalanche | n/a | [`0x3136b9...bd8fa9`](./contracts/avalanche-43114/0x3136b940bd05d56672d6055d40efd1d296bd8fa9/) | ⚠️ Unaudited |
 | Staking | unknown | avalanche | n/a | 4 deployments: avalanche [`0x439776...374a5f`](./contracts/avalanche-43114/0x439776d3786719e1243b628ef05e905679374a5f/); avalanche `0x5b0d74...1dc557`; avalanche `0x9946e6...531d00`; avalanche `0xb6ddbf...26aecb` | ⚠️ Unaudited |
 | StakingV2 | unknown | avalanche | n/a | 2 deployments: avalanche [`0xbd2890...410bbc`](./contracts/avalanche-43114/0xbd2890ce5a3df6c7e26b83e8da202c7d37410bbc/); avalanche `0xf2501d...a040f9` | ⚠️ Unaudited |
 | StakingV3 | unknown | avalanche | n/a | 3 deployments: avalanche [`0x2b8c3c...43751c`](./contracts/avalanche-43114/0x2b8c3c4d13142d7457dc80c92db4c62f3543751c/); avalanche `0x62685d...82de5b`; avalanche `0xb9ad5f...e318e1` | ⚠️ Unaudited |
@@ -222,10 +195,8 @@ The protocol comprises 8 functional families. Its contracts share 4 common proje
 | Storage | unknown | avalanche | n/a | 9 deployments: avalanche [`0x081b0a...3e1f35`](./contracts/avalanche-43114/0x081b0a036cbf55669685d2ac0f549b386d3e1f35/); avalanche `0x1bbbfa...1f9e72`; avalanche `0x3b9613...414ea4`; avalanche `0x3e186d...b54b7e`; avalanche `0x46ed33...79850b`; avalanche `0x6cb35a...c179dd`; avalanche `0x7a1164...6d078d`; avalanche `0xd9d021...ff1dc1`; avalanche `0xe0f912...56cca7` | ⚠️ Unaudited |
 | SubnetHardwareRentalMapping | unknown | avalanche | n/a | 2 deployments: avalanche [`0x8b85ca...f33d0b`](./contracts/avalanche-43114/0x8b85ca6e43f5b057793fb7567b4b4667dff33d0b/); avalanche `0xf04aa1...f8a9ed` | ⚠️ Unaudited |
 | SubnetStaking | unknown | avalanche | n/a | 2 deployments: avalanche [`0x697d7c...ba2c68`](./contracts/avalanche-43114/0x697d7c12853a59429b62ab4d310975335dba2c68/); avalanche `0x9bfade...590819` | ⚠️ Unaudited |
-| swapper | unknown | avalanche | n/a | 2 deployments: avalanche [`0x7e37a6...1050a1`](./contracts/avalanche-43114/0x7e37a6ca2fcecdbd594cd0d6617b292fbd1050a1/); avalanche `0xac7b33...3817b6` | ⚠️ Unaudited |
 | ThePit | unknown | avalanche | n/a | 2 deployments: avalanche [`0x96b905...19d672`](./contracts/avalanche-43114/0x96b9058ea3af4c47223d470ac8d20322b719d672/); avalanche `0xc9871b...6fa33b` | ⚠️ Unaudited |
-| Timelock | unknown | avalanche | n/a | 3 deployments: avalanche [`0x81a63b...25dc4a`](./contracts/avalanche-43114/0x81a63b858a60c9305672480ceb17ee764e25dc4a/); avalanche `0xcd385f...14af41`; avalanche `0xeb5c91...4b1ff8` | ⚠️ Unaudited |
-| tip | unknown | avalanche | n/a | 11 deployments: avalanche [`0x039f02...caaad3`](./contracts/avalanche-43114/0x039f029934356cce9e3637279e8e6e1077caaad3/); avalanche `0x1da7b5...618a53`; avalanche `0x722f29...a2d1bc`; avalanche `0x80df49...a604b6`; avalanche `0x9df2f8...e82840`; avalanche `0xb0c63b...57e320`; avalanche `0xb85aff...655d9e`; avalanche `0xca2efe...d644d3`; avalanche `0xd15bd1...50522d`; avalanche `0xd5e8ac...23bda6`; avalanche `0xf563cb...399106` | ⚠️ Unaudited |
+| Timelock | governance | avalanche | n/a | [`0xcd385f...14af41`](./contracts/avalanche-43114/0xcd385f1947d532186f3f6aaa93966e3e9c14af41/) | ⚠️ Unaudited |
 | TokenggAVAX | token | avalanche | n/a | 4 deployments: avalanche [`0x576d98...ca7323`](./contracts/avalanche-43114/0x576d98d26419c5ce9595833403f64d919eca7323/); avalanche `0x84e71c...ceb922`; avalanche `0xd960ce...16e584`; avalanche `0xf80eb4...57843e` | ⚠️ Unaudited |
 | TokenggAVAX | unknown | avalanche | n/a | 2 deployments: avalanche [`0xa25eaf...b703e3`](./contracts/avalanche-43114/0xa25eaf2906fa1a3a13edac9b9657108af7b703e3/); avalanche `0xfad33e...163752` | ⚠️ Unaudited |
 | TokenGGP | token | avalanche | n/a | [`0x69260b...2cd11d`](./contracts/avalanche-43114/0x69260b9483f9871ca57f81a90d91e2f96c2cd11d/) | ⚠️ Unaudited |
@@ -244,11 +215,8 @@ The protocol comprises 8 functional families. Its contracts share 4 common proje
 | TransparentUpgradeableProxy | unknown | avalanche | n/a | 2 deployments: avalanche [`0xac59c2...d2f3ba`](./contracts/avalanche-43114/0xac59c21adfddb1e56a959dd60a08c07aaed2f3ba/); avalanche `0xae7bd6...d1bc93` | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | unknown | avalanche | n/a | 3 deployments: avalanche [`0xb244b1...3c6c54`](./contracts/avalanche-43114/0xb244b1507d7cfb8de6883fd985ee5e205d3c6c54/); avalanche `0xba239e...48885d`; avalanche `0xc2de17...de054b` | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | unknown | avalanche | n/a | 3 deployments: avalanche [`0xb79a1f...a75c67`](./contracts/avalanche-43114/0xb79a1ff59b58c7be91ac122c2b1a7ac704a75c67/); avalanche `0xc54c0c...4bfad9`; avalanche `0xfa5951...b9ab76` | ⚠️ Unaudited |
-| TreasuryVester | unknown | avalanche | n/a | [`0x6747ac...12acee`](./contracts/avalanche-43114/0x6747ac215daffee03a42f49febb6ab448e12acee/) | ⚠️ Unaudited |
-| Tuna | unknown | avalanche | n/a | [`0x833d1c...b7fde9`](./contracts/avalanche-43114/0x833d1c982b28df759cbeb2f69a23a8a657b7fde9/) | ⚠️ Unaudited |
 | TwapGGP | unknown | avalanche | n/a | [`0x3155a8...d56cfe`](./contracts/avalanche-43114/0x3155a8f74f8618ebfdf4e04b40e86e5a51d56cfe/) | ⚠️ Unaudited |
 | UniversalClaimer | unknown | avalanche | n/a | [`0xc84c8b...276c20`](./contracts/avalanche-43114/0xc84c8b7acb8a41b0ef8ba02ca999f6fd87276c20/) | ⚠️ Unaudited |
-| Unmasker | unknown | avalanche | n/a | 2 deployments: avalanche [`0x00969a...b0b7dd`](./contracts/avalanche-43114/0x00969acae49bd657454efc17e0e2445a31b0b7dd/); avalanche `0x60c175...8d2ced` | ⚠️ Unaudited |
 | USDCInvestmentPool | operational_periphery | avalanche | n/a | [`0x82d7d9...9c4050`](./contracts/avalanche-43114/0x82d7d932e3e12d18f01838d4c01c1dbb539c4050/) | ⚠️ Unaudited |
 | Vault | unknown | avalanche | n/a | [`0xd45cb6...41e6ba`](./contracts/avalanche-43114/0xd45cb6f5aca41afaaaebdbe4efba49c1bc41e6ba/) | ⚠️ Unaudited |
 | WAVAX | unknown | avalanche | n/a | 2 deployments: avalanche [`0x7fc6d4...1d51d4`](./contracts/avalanche-43114/0x7fc6d48e6e8e8b9505c171325539c651bf1d51d4/); avalanche `0xb31f66...fd66c7` | ⚠️ Unaudited |
@@ -423,7 +391,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 318 |
+| needs_review | 286 |
 
 ## Scope Matching Notes
 

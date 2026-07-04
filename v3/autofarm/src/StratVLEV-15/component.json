@@ -9,10 +9,10 @@
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x97d41b6f6b42c4577f290bb3864a5032ecc54032",
+      "address": "0x6f5bf5ed983cbda107c7518c9428c5db7e3e6db5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

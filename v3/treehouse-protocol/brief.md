@@ -5,7 +5,7 @@
 - Project: Treehouse Protocol (`treehouse-protocol`)
 - Website: [https://www.treehouse.finance/](https://www.treehouse.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:07:02.050Z
+- Generated: 2026-07-04T11:05:47.656Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-d640
 - Chains: arbitrum, avalanche, ethereum, mantle
 - Contract surface: 71 unique implementations (114 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-DOR. Structurally: 105 project-authored contract(s) across 2 chain(s); 5 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+DOR. Structurally: 117 project-authored contract(s) across 4 chain(s); 1 ERC4626 vault, 9 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 9 functional families. Its contracts share 32 common project-authored base contract(s) (rescuable, actionbase, iactionbase). Dominant framework: openzeppelin.
+The protocol comprises 9 functional families. Its contracts share 47 common project-authored base contract(s) (iprotocolpoolcontroller, rescuable, actionbase). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

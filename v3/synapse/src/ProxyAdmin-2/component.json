@@ -1,0 +1,26 @@
+{
+  "component": "ProxyAdmin-2",
+  "main_contract": "ProxyAdmin",
+  "source_file_count": 1,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x8745773cc6e70577819bb76f51fa7640cece505f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "chain-1088",
+      "chain_id": 1088,
+      "address": "0x9f72004d0ff5ccf2857a3564f7b3329057d15599",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    }
+  ]
+}

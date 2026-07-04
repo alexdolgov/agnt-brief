@@ -243,7 +243,7 @@
 | ethereum | `0x99d8a9c45b2eca8864373a26d1459e3dff1e17f3` | MagicInternetMoneyV1 | impl | live | no |
 | ethereum | `0x9a92e217a5b5653d00d4fdd9fbb6e8b4513ffafe` | MarryStrgtVaultWrapper | impl | inactive | no |
 | ethereum | `0x9abe34021128c17de3c2180a02932eb5e1bb18ef` | IncentivizedERC20 | proxy | live | no |
-| ethereum | `0x9aed7a25f2d928225e6fb2388055c7363ad6727b` | DSToken | impl | live | no |
+| ethereum | `0x9aed7a25f2d928225e6fb2388055c7363ad6727b` | DSMath | impl | live | no |
 | ethereum | `0x9b06f3c5de42d4623d7a2bd940ec735103c68a76` | Wonderland | impl | live | no |
 | ethereum | `0x9bc6333081266e55d88942e277fc809b485698b9` | FallbackOracle | impl | inactive | no |
 | ethereum | `0x9d111e09bffc02d9e2fd8f388d45a1a4af049e25` | LendingPool | impl | live | no |

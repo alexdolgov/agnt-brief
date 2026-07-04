@@ -1,7 +1,7 @@
 // SPDX-License-Identifier:UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
 
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 import { Math } from "openzeppelin-contracts/utils/math/Math.sol";
 import { IERC20Metadata } from "openzeppelin-contracts/token/ERC20/extensions/IERC20Metadata.sol";
@@ -41,9 +41,10 @@ contract RootPriceOracle is SystemComponent, SecurityBase, IRootPriceOracle {
     error ReplaceAlreadyMatches(address token, address newOracle);
     error NoThresholdFound(address token);
 
-    constructor(
-        ISystemRegistry _systemRegistry
-    ) SystemComponent(_systemRegistry) SecurityBase(address(_systemRegistry.accessController())) {
+    constructor(ISystemRegistry _systemRegistry)
+        SystemComponent(_systemRegistry)
+        SecurityBase(address(_systemRegistry.accessController()))
+    {
         _weth = address(_systemRegistry.weth());
     }
 
@@ -102,9 +103,7 @@ contract RootPriceOracle is SystemComponent, SecurityBase, IRootPriceOracle {
     /// @notice Remove a token to oracle mapping
     /// @dev Must exist. Does not remove any additional configuration from the oracle itself
     /// @param token address of the token that is registered
-    function removeMapping(
-        address token
-    ) external hasRole(Roles.ORACLE_MANAGER) {
+    function removeMapping(address token) external hasRole(Roles.ORACLE_MANAGER) {
         Errors.verifyNotZero(token, "token");
 
         // If you're trying to remove something that doesn't exist then
@@ -164,9 +163,7 @@ contract RootPriceOracle is SystemComponent, SecurityBase, IRootPriceOracle {
     /// @notice Remove an existing oracle for a specified liquidity pool
     /// @dev Must exist. Does not remove any additional configuration from the oracle itself
     /// @param pool address of the liquidity pool that needs oracle removal
-    function removePoolMapping(
-        address pool
-    ) external hasRole(Roles.ORACLE_MANAGER) {
+    function removePoolMapping(address pool) external hasRole(Roles.ORACLE_MANAGER) {
         Errors.verifyNotZero(pool, "pool");
 
         if (address(poolMappings[pool]) == address(0)) revert MappingDoesNotExist(pool);
@@ -192,9 +189,7 @@ contract RootPriceOracle is SystemComponent, SecurityBase, IRootPriceOracle {
 
     /// @dev This and all price oracles are not view fn's so that we can perform the Curve reentrancy check
     /// @inheritdoc IRootPriceOracle
-    function getPriceInEth(
-        address token
-    ) external returns (uint256 price) {
+    function getPriceInEth(address token) external returns (uint256 price) {
         // Skip the token address(0) check and just rely on the oracle lookup
         // Emit token so we can figure out what was actually 0 later
         IPriceOracle oracle = _checkTokenOracleRegistration(token);
@@ -406,18 +401,14 @@ contract RootPriceOracle is SystemComponent, SecurityBase, IRootPriceOracle {
         return (baseInEth * (10 ** quoteDecimals)) / quoteOracle.getPriceInEth(quote);
     }
 
-    function _checkTokenOracleRegistration(
-        address token
-    ) private view returns (IPriceOracle oracle) {
+    function _checkTokenOracleRegistration(address token) private view returns (IPriceOracle oracle) {
         oracle = tokenMappings[token];
         if (address(oracle) == address(0)) {
             revert MissingTokenOracle(token);
         }
     }
 
-    function _checkSpotOracleRegistration(
-        address pool
-    ) private view returns (ISpotPriceOracle spotOracle) {
+    function _checkSpotOracleRegistration(address pool) private view returns (ISpotPriceOracle spotOracle) {
         spotOracle = poolMappings[pool];
         if (address(spotOracle) == address(0)) {
             revert MissingSpotPriceOracle(pool);

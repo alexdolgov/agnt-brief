@@ -1,12 +1,12 @@
 # convex-finance — deployments
 
-543 verified deployment(s) across 287 component(s).
+541 verified deployment(s) across 287 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x07202292009dec5ea9b99c7005dc8e3ce05bfb73` | VoterProxy | impl | inactive | no |
 | arbitrum | `0x124e37ca2439b52fc6bf90a04cb8021c639bf781` | VoterProxy | impl | inactive | no |
-| arbitrum | `0x1389388d01708118b497f59521f6943be2541bb7` | Booster-2 | impl | inactive | no |
+| arbitrum | `0x1389388d01708118b497f59521f6943be2541bb7` | Booster | impl | inactive | no |
 | arbitrum | `0x1f3718c23f2f0f6bb7fe20f39ad73c668567c40a` | RewardManager | impl | inactive | no |
 | arbitrum | `0x2ca7759dce155e15df9cdbd8322c8eb2934c5558` | BoosterOwner | impl | inactive | no |
 | arbitrum | `0x33b7fb6bb0b33ab366bf816198e32be62c08899e` | RewardManager | impl | inactive | no |
@@ -15,9 +15,9 @@
 | arbitrum | `0x3c995e43e6ddd551e226f4c5544c77bfed147ab9` | RewardManager | impl | inactive | no |
 | arbitrum | `0x3ceead93972703a4668ecd9fcab5b99c8fa39ae3` | PoolManager-4 | impl | inactive | no |
 | arbitrum | `0x4223aa5bfd783dedcc54585cdc1cfe9ea1587c0f` | ExtraRewardPool-2 | impl | inactive | no |
-| arbitrum | `0x42e8786506d369ca54c474b64029558f991c795b` | Booster-2 | impl | inactive | no |
+| arbitrum | `0x42e8786506d369ca54c474b64029558f991c795b` | Booster | impl | inactive | no |
 | arbitrum | `0x4890970bb23fcdf624a0557845a29366033e6fa2` | ConvexRewardPool-3 | impl | inactive | no |
-| arbitrum | `0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b` | Booster-2 | impl | live | no |
+| arbitrum | `0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b` | Booster | impl | live | no |
 | arbitrum | `0x665d4bea98e3a1849526553453e8369b448c6ad4` | ExtraRewardPool-2 | impl | inactive | no |
 | arbitrum | `0x6a226cfb5d66e71757c4eb7066d75031da9955d0` | VoterProxy | impl | inactive | no |
 | arbitrum | `0x6b8d22692985e238eb20b47c32bea34bd4c9c107` | VoterProxy | impl | inactive | no |
@@ -43,7 +43,7 @@
 | arbitrum | `0xe98d9b9af020fc9a475669d2485c80feea993377` | BoosterOwner | impl | inactive | no |
 | arbitrum | `0xedccb35798fae4925718a43cc608ae136208aa8d` | PoolRewardHook-4 | impl | inactive | no |
 | arbitrum | `0xf2afb340d1b50108bd32212e867946b5b8044c23` | ConvexRewardPool-7 | impl | inactive | no |
-| arbitrum | `0xf403c135812408bfbe8713b5a23a04b3d48aae31` | Booster-2 | impl | live | no |
+| arbitrum | `0xf403c135812408bfbe8713b5a23a04b3d48aae31` | Booster | impl | live | no |
 | arbitrum | `0xf53173a3104bfdc4ed2fa579089b5e6bf4fc7a2b` | ProxyFactory-3 | impl | inactive | no |
 | arbitrum | `0xfdc6304b38d0703f0d0d13b665cee92499039383` | ConvexRewardPool-8 | impl | inactive | no |
 | chain-252 | `0x0160cb9cbdc22c2e768c45aab36b5ca647beef0f` | cvxFXBSwapper | impl | inactive | no |
@@ -128,7 +128,7 @@
 | ethereum | `0x11c907b3aedbd863e551c37f21dd3f36b28a6784` | GeneralTokenConverter | impl | live | no |
 | ethereum | `0x1359fce197cf743016cd1a620939a1a80df259a5` | PoolStorage-4 | impl | live | no |
 | ethereum | `0x1371c1dae7d3ad43bb79ecce1b882ad9754f9047` | MigrateTroveZap | impl | inactive | no |
-| ethereum | `0x1389388d01708118b497f59521f6943be2541bb7` | TreasuryFunds | impl | inactive | yes |
+| ethereum | `0x1389388d01708118b497f59521f6943be2541bb7` | TreasuryFunds | impl | inactive | no |
 | ethereum | `0x148e58bb8d9c5278b6505b40923e6152b5238cf8` | TreasuryManager | impl | inactive | no |
 | ethereum | `0x14a3b726724a0e620cde342a7c04c09e0d05f7a6` | TroveManager | impl | inactive | no |
 | ethereum | `0x155c0c3cde438a3d10bd38f3257cd8d17b8b3cff` | PositionOperateFacet | impl | live | no |
@@ -161,7 +161,7 @@
 | ethereum | `0x27445d3f59d6b966072abe20e41a29fbb6a7a04b` | FpisDepositor | impl | inactive | no |
 | ethereum | `0x297b704feda9383527c2ca834ffce29509e4cd3f` | TroveManager | impl | inactive | no |
 | ethereum | `0x29dba2751b5aa26f7d03657066c0984c66999178` | FeeDepositV2 | impl | inactive | no |
-| ethereum | `0x2a465a53404d4ad945b65ba29fc725cd4eca0a74` | TreasuryFunds | impl | inactive | yes |
+| ethereum | `0x2a465a53404d4ad945b65ba29fc725cd4eca0a74` | TreasuryFunds | impl | inactive | no |
 | ethereum | `0x2aa80139d3d6dfa90396547228d3875a8fdc0b04` | StakingProxyERC20 | impl | inactive | no |
 | ethereum | `0x2ac0a3b5cb25d6071f05e9729922261bdf8e7cb4` | PoolStorage-6 | impl | live | no |
 | ethereum | `0x2b470bd54096ab5bafbeb8505053de31c0fe2367` | BoostDelegateV2 | impl | inactive | no |
@@ -193,7 +193,7 @@
 | ethereum | `0x395a8974a00e4a0e91efe0e335ac39a8486158cd` | GaugeExtraRewardDistributor | impl | inactive | no |
 | ethereum | `0x3a562a8ceb9866bcf39bb5eda32f282d619e08e0` | FeeReceiverCvxFpis | impl | inactive | no |
 | ethereum | `0x3b2d30734491ad77880d31e8afe2a4d8ac135a9c` | PoolManager-5 | impl | inactive | no |
-| ethereum | `0x3ba207c25a278524e1cc7faaea950753049072a4` | ConvexStakingWrapperAbra | impl | live | no |
+| ethereum | `0x3ba207c25a278524e1cc7faaea950753049072a4` | ConvexStakingWrapper | impl | live | yes |
 | ethereum | `0x3bab3f90095c424b923d67f4be1790935c8bbb50` | SortedTroves | impl | inactive | no |
 | ethereum | `0x3c5871d69c8d6503001e1a8f3bf7e5ebe447a9cd` | MultiCollateralHintHelpers | impl | inactive | no |
 | ethereum | `0x3c716e88ae0fcc5d78bd11810ca451941e2efe6a` | FeeReceiverCvxPrisma | impl | inactive | no |
@@ -231,7 +231,7 @@
 | ethereum | `0x4c4d57f69f3081694e721dcd1a42536062857ce9` | VotingBalance | impl | inactive | no |
 | ethereum | `0x4c586e8b191d67aa79eb55e89f9a5cbd9bcbdc57` | GaugeExtraRewardDistributor | impl | inactive | no |
 | ethereum | `0x4dbe7f8e2eade56a3b511cbd1ae6adc9fe889282` | MultiRewards | impl | inactive | no |
-| ethereum | `0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b` | ConvexToken | impl | live | no |
+| ethereum | `0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b` | ConvexToken | impl | live | yes |
 | ethereum | `0x4f258fecc91b2ff162ca702c2bd9abf2af089611` | FeeRegistry | impl | inactive | no |
 | ethereum | `0x4fb9445019ba1e3a39bd1dfbe9cc7815e0a3c285` | MarketV2 | impl | live | no |
 | ethereum | `0x4fc2a279ffddde98cb154f04375e69205156b987` | CvxCrvRari | impl | live | no |
@@ -242,7 +242,7 @@
 | ethereum | `0x543a89fe8dd9403b89222540a881d3642da884ed` | PriceFeed | impl | inactive | no |
 | ethereum | `0x54eadf1f41f0f9cef9f3bfd721c0ace8cf5a9266` | StakingProxyRebalancePool | impl | inactive | no |
 | ethereum | `0x55decf506d54878c1768c05db27c025b14ebc55f` | StakingProxyRebalancePool | impl | inactive | no |
-| ethereum | `0x569f5b842b5006ec17be02b8b94510ba8e79fbca` | TreasuryFunds | impl | inactive | yes |
+| ethereum | `0x569f5b842b5006ec17be02b8b94510ba8e79fbca` | TreasuryFunds | impl | inactive | no |
 | ethereum | `0x56a3d20972fdf872ca8c799f83718f7297d371b2` | BoostViewVoodoo2 | impl | inactive | no |
 | ethereum | `0x56b3c8ef8a095f8637b6a84942aa898326b82b91` | FxnDepositor | impl | live | no |
 | ethereum | `0x572a4a527ab4d073d641e0eddbcebe82a20c9d2a` | CurveDepositToken | impl | inactive | no |
@@ -266,12 +266,12 @@
 | ethereum | `0x5fba69a794f395184b5760daf1134028608e5cd1` | PoolUtilities-2 | impl | inactive | no |
 | ethereum | `0x606462126e4bd5c4d153fe09967e4c46c9c7fecf` | Proxy | proxy | live | no |
 | ethereum | `0x60af2b6eea2fdc2b6e2cb4a9668c80966d9759e9` | CurveFactory | impl | inactive | no |
-| ethereum | `0x60bd3d7a39e12085ee8bfeced46d31f9c0f6738b` | TreasuryFunds | impl | inactive | yes |
+| ethereum | `0x60bd3d7a39e12085ee8bfeced46d31f9c0f6738b` | TreasuryFunds | impl | inactive | no |
 | ethereum | `0x61404f7c2d8b1f3373eb3c6e8c4b8d8332c2d5b8` | PrismaDepositor | impl | inactive | no |
 | ethereum | `0x62253f7c165e34fd7343b37839bf5186a9e21d4a` | FeeDistributor | impl | inactive | no |
 | ethereum | `0x62b9c7356a2dc64a1969e19c23e4f579f9810aa7` | cvxCrvToken | impl | live | no |
 | ethereum | `0x63ad87c49d0d915998a10c50a54bba3dac1ba175` | FXSRewardHook | impl | inactive | no |
-| ethereum | `0x63e0354a157953722beb7edeeaf8106ae6ba565a` | TreasuryFunds | impl | inactive | yes |
+| ethereum | `0x63e0354a157953722beb7edeeaf8106ae6ba565a` | TreasuryFunds | impl | inactive | no |
 | ethereum | `0x64167f69a10ab360a8c45b8c7db31d7752111181` | StakingProxyERC20Joint | impl | inactive | no |
 | ethereum | `0x6440e21a3634c319c69cef8d17601dbc4e97c3db` | BurnerBase | impl | live | no |
 | ethereum | `0x6452a35e4f92584c8d1e9d843638f97fd2f96ffa` | StakingProxyERC20Joint | impl | inactive | no |
@@ -308,7 +308,7 @@
 | ethereum | `0x77b459d78e814d2dab2832194c72322aa46bd576` | FeeClaimer | impl | inactive | no |
 | ethereum | `0x782bce229a8b603c99161e867a49d5426da37f95` | PoolManagerV4 | impl | inactive | no |
 | ethereum | `0x7939619bb2d6bcaf0aede6bc187d929a1354fc34` | BoostDelegateV2 | impl | inactive | no |
-| ethereum | `0x79a50f83e7aff970ceab5152a15461a4f1c3799e` | TreasuryFunds | impl | inactive | yes |
+| ethereum | `0x79a50f83e7aff970ceab5152a15461a4f1c3799e` | TreasuryFunds | impl | inactive | no |
 | ethereum | `0x7a299a6f5bc33c7e3c8ba5bbdebeba8a012394e3` | FeeRegistry-2 | impl | inactive | no |
 | ethereum | `0x7a527d8bb09f7d70c148ab5de919e9bf68a0d769` | FeeDepositV2-2 | impl | live | no |
 | ethereum | `0x7abe78f961bff0f6855559c14686bd91df8caa72` | ArbitratorVault | impl | inactive | no |
@@ -335,7 +335,7 @@
 | ethereum | `0x85152ab706eae359eaf99b2e1dc73eabe4891246` | PoolTypes | impl | inactive | no |
 | ethereum | `0x858847c21b075e45727fcb0b544bd843cd750361` | TreasuryManager-2 | impl | inactive | no |
 | ethereum | `0x85fd46037350946ea37bb443cbb977a49e885b39` | PrismaVoterProxy | impl | inactive | no |
-| ethereum | `0x8694d0b289fe886ac9836fcd5fc6e91e613f47b5` | TreasuryFunds | impl | inactive | yes |
+| ethereum | `0x8694d0b289fe886ac9836fcd5fc6e91e613f47b5` | TreasuryFunds | impl | inactive | no |
 | ethereum | `0x86a3fbe2b4986fe3a85651df65def59d0fc14bef` | StakingProxyERC20-2 | impl | inactive | no |
 | ethereum | `0x871b36934c82e79cc133731127805a5b1d830b56` | FeeReceiverVeFxs | impl | inactive | no |
 | ethereum | `0x877288c4e6eba4f635ba7428706447353b47de75` | StashFactory | impl | inactive | no |
@@ -358,22 +358,22 @@
 | ethereum | `0x8fc0d62992f2cd503f766d6b7ea6208c078a3b84` | JointVaultManager | impl | inactive | no |
 | ethereum | `0x906e0d769aae4fb3f53d3c989a50520a8e851f42` | EmissionSchedule | impl | inactive | no |
 | ethereum | `0x91b6d814a393e38e6bfb9a155d043b30fc9937b2` | ArbitratorVault | impl | inactive | no |
-| ethereum | `0x91e575c0cc6e8bc530d897d3d425b57b49a821c6` | TreasuryFunds | impl | inactive | yes |
+| ethereum | `0x91e575c0cc6e8bc530d897d3d425b57b49a821c6` | TreasuryFunds | impl | inactive | no |
 | ethereum | `0x924eca29b9535ed43cdc12aac6f8b5f6a08c7322` | CurveDepositToken | impl | inactive | no |
 | ethereum | `0x925acc1418949549ea2e4242b74c78ba9ba00ee6` | StakeNTroveZap | impl | inactive | no |
 | ethereum | `0x92cf9e5e4d1dfbf7da0d2bb3e884a68416a65070` | ClaimZap | impl | inactive | no |
 | ethereum | `0x93e85b8c3995b407fb2f1198d83f4e500242b3a2` | ChefRewardHook | impl | inactive | no |
-| ethereum | `0x9402ebd77427c4e21bcc26cea4c5d332cbf248d1` | TreasuryFunds | impl | inactive | yes |
+| ethereum | `0x9402ebd77427c4e21bcc26cea4c5d332cbf248d1` | TreasuryFunds | impl | inactive | no |
 | ethereum | `0x94172e0b1714792c54f0b077b64e37c8050e89d6` | MarketV2 | impl | live | no |
 | ethereum | `0x958df8f124509d45a1c39bc4aedbe486ff2ffb3b` | ShortPoolManager | impl | live | no |
 | ethereum | `0x973c2f122dbfa2867e6f7a05d329414bff43eaea` | ChefRewardHook | impl | inactive | no |
-| ethereum | `0x98a0b2d8451dca9d123e03a3b5507875fc672340` | TreasuryFunds | impl | inactive | yes |
+| ethereum | `0x98a0b2d8451dca9d123e03a3b5507875fc672340` | TreasuryFunds | impl | inactive | no |
 | ethereum | `0x98e28afb9c11aa979ae754e1ea2e9877cb0d418c` | LockerAdmin | impl | inactive | no |
 | ethereum | `0x9963e06c9d3fe874b944c5bf63729bd4ae6f07b2` | PoolStorage-2 | impl | live | no |
 | ethereum | `0x9af12dabd518a6da606caac455b2d0efb3ef97f9` | PoolManager | impl | live | no |
 | ethereum | `0x9b622f2c40b80ef5efb14c2b2239511ffbfab702` | vlCvxExtraRewardDistribution | impl | inactive | no |
 | ethereum | `0x9c4d60fa85088d40e3d8030dba283e9708ec9292` | DropMinter | impl | inactive | no |
-| ethereum | `0x9ca3ec5f627ad5d92498fd1b006b35577760ba9a` | TreasuryFunds | impl | inactive | yes |
+| ethereum | `0x9ca3ec5f627ad5d92498fd1b006b35577760ba9a` | TreasuryFunds | impl | inactive | no |
 | ethereum | `0x9ce7c648244f111ccd338cc5e269c5961ad9b308` | VaultEarnedView | impl | inactive | no |
 | ethereum | `0x9d464b601f74c8d3d42379921106b907f1055f80` | TreasuryManagerFrax | impl | live | no |
 | ethereum | `0x9da2a3141e64616ea570ee72d1a4efd0e5381e47` | SpotOracle | impl | inactive | no |
@@ -401,7 +401,7 @@
 | ethereum | `0xae5f315a5b5dd4dbacd38862562a51490e500183` | PoolManagerV2 | impl | inactive | no |
 | ethereum | `0xaf92400476cd81c7379bb54fd2646e8fa476cf3f` | FeeReceiverCvxPrisma | impl | inactive | no |
 | ethereum | `0xafd3d38fecebcdda6d934979d4ac7f17330a96ca` | MultiRewards-2 | impl | inactive | no |
-| ethereum | `0xaffe966b27ba3e4ebb8a0ec124c7b7019cc762f8` | TreasuryFunds | impl | live | yes |
+| ethereum | `0xaffe966b27ba3e4ebb8a0ec124c7b7019cc762f8` | ConvexToken | impl | live | yes |
 | ethereum | `0xb0903ab70a7467ee5756074b31ac88aebb8fb777` | Proxy | proxy | live | no |
 | ethereum | `0xb0c25521fb7dc1eead2f99132c852ac9c715e8d6` | ShortPoolManager-3 | impl | live | no |
 | ethereum | `0xb15ffb543211b558d40160811e5dcbcd7d5aaac9` | RescueToken | impl | inactive | no |
@@ -440,7 +440,7 @@
 | ethereum | `0xcc7218100da61441905e0c327749972e3cbee9ee` | MigrateTroveZap | impl | inactive | no |
 | ethereum | `0xcc8bba630037d147cb5b128755a0e8158eb1e65a` | ArbitratorVault | impl | inactive | no |
 | ethereum | `0xcc8df73215f3983e84fc9896a0d4740183ebab0c` | ConvexStakingWrapperAbra | impl | inactive | no |
-| ethereum | `0xcce10d2d2e71d7803242c0d72040ede966a2de96` | TreasuryFunds | impl | inactive | yes |
+| ethereum | `0xcce10d2d2e71d7803242c0d72040ede966a2de96` | TreasuryFunds | impl | inactive | no |
 | ethereum | `0xcdd65f44095346997b1f12915dc2369d819d7c21` | ArbitratorVault | impl | inactive | no |
 | ethereum | `0xce744c8b9069776f3367e5ad3585c9e5a7bdd448` | ShortPoolManager-3 | impl | live | no |
 | ethereum | `0xce899e1c64db0d23326847df41c0d2ea4875350f` | BoostDelegate | impl | inactive | no |
@@ -506,13 +506,13 @@
 | ethereum | `0xed2647bbf875b2936aaf95a3f5bbc82819e3d3fe` | veFXSYieldDistributorV3 | impl | live | no |
 | ethereum | `0xed8b26d99834540c5013701bb3715fafd39993ba` | StabilityPool-2 | impl | live | no |
 | ethereum | `0xedccb35798fae4925718a43cc608ae136208aa8d` | RewardFactory-2 | impl | inactive | no |
-| ethereum | `0xee3ab4e439ed52c7b8668864e2452ed23a9d67e8` | TreasuryFunds | impl | inactive | yes |
+| ethereum | `0xee3ab4e439ed52c7b8668864e2452ed23a9d67e8` | TreasuryFunds | impl | inactive | no |
 | ethereum | `0xefa259c4a7056de82eea8df9ef85de405d9c2603` | eETHDepositor | impl | inactive | no |
-| ethereum | `0xefffec50266db38524d3e427d406aabfdbb047d8` | TreasuryFunds | impl | inactive | yes |
+| ethereum | `0xefffec50266db38524d3e427d406aabfdbb047d8` | TreasuryFunds | impl | inactive | no |
 | ethereum | `0xf32ffd90133c7ec15e1519b9f7de8143310961ac` | PoolStorage-6 | impl | live | no |
 | ethereum | `0xf37c41ef2281893b5971769370d6cdd35864b503` | Utilities-2 | impl | live | no |
 | ethereum | `0xf3d24bb506038f6639b34b5175e0fcf2d610a098` | PoolStorage | impl | live | no |
-| ethereum | `0xf403c135812408bfbe8713b5a23a04b3d48aae31` | TreasuryFunds | impl | live | yes |
+| ethereum | `0xf403c135812408bfbe8713b5a23a04b3d48aae31` | ConvexToken | impl | live | yes |
 | ethereum | `0xf40d5402a35b181f440c6c3b7729398caf807cae` | StashFactory | impl | inactive | no |
 | ethereum | `0xf538e33eed98912988bfaf5b0e3989fda9ed61ab` | ConvexStakingWrapperAbra | impl | inactive | no |
 | ethereum | `0xf89e5152c6ba530f398213dac29519fc0ef224e4` | BoostCalculator | impl | inactive | no |
@@ -526,13 +526,12 @@
 | ethereum | `0xfeef77d3f69374f66429c91d732a244f074bdf74` | cvxFxsToken | impl | live | yes |
 | polygon | `0x07202292009dec5ea9b99c7005dc8e3ce05bfb73` | VoterProxy-2 | impl | inactive | no |
 | polygon | `0x124e37ca2439b52fc6bf90a04cb8021c639bf781` | VoterProxy-2 | impl | inactive | no |
-| polygon | `0x1389388d01708118b497f59521f6943be2541bb7` | Booster | impl | inactive | no |
+| polygon | `0x1389388d01708118b497f59521f6943be2541bb7` | Booster-2 | impl | inactive | no |
 | polygon | `0x25e12482a25cf36ec70fda2a09c1ed077fc21616` | PoolUtilities | impl | inactive | no |
 | polygon | `0x372516d2f464907d9fc7953f966d033803096b7a` | VoterProxy-2 | impl | inactive | no |
 | polygon | `0x3c995e43e6ddd551e226f4c5544c77bfed147ab9` | RewardManager-3 | impl | inactive | no |
-| polygon | `0x42e8786506d369ca54c474b64029558f991c795b` | Booster | impl | inactive | no |
+| polygon | `0x42e8786506d369ca54c474b64029558f991c795b` | Booster-2 | impl | inactive | no |
 | polygon | `0x43353a1f971ca40326e694fb1bc61f7c0219a8fa` | PoolUtilities | impl | inactive | no |
-| polygon | `0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b` | Booster | impl | live | no |
 | polygon | `0x65eee113d796f06d8cda873813912d0bb668a1f5` | PoolUtilities | impl | inactive | no |
 | polygon | `0x665d4bea98e3a1849526553453e8369b448c6ad4` | FeeDeposit-2 | impl | live | no |
 | polygon | `0x698b7c31005a7172ea4bdb262911ce6dbae43d15` | PoolUtilities | impl | inactive | no |
@@ -544,6 +543,11 @@
 | polygon | `0xba07563bb124531800d04e3a3ddc9ccfd831dbb0` | PoolUtilities | impl | inactive | no |
 | polygon | `0xcf50b810e57ac33b91dcf525c6ddd9881b139332` | RewardFactory-3 | impl | inactive | no |
 | polygon | `0xedccb35798fae4925718a43cc608ae136208aa8d` | PoolRewardHook-3 | impl | inactive | no |
-| polygon | `0xf403c135812408bfbe8713b5a23a04b3d48aae31` | Booster | impl | live | no |
 | polygon | `0xf53173a3104bfdc4ed2fa579089b5e6bf4fc7a2b` | ProxyFactory-2 | impl | inactive | no |
 | polygon | `0xfc0a2ffdea23804494aa1707741e5a6eaa2f8017` | PoolManager-3 | impl | inactive | no |
+
+## Source unavailable (2)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- polygon `0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b`
+- polygon `0xf403c135812408bfbe8713b5a23a04b3d48aae31`

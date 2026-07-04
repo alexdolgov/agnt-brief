@@ -1,4 +1,5 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: LicenseRef-Gyro-1.0
+// for information on licensing please see the README in the GitHub repository <https://github.com/gyrostable/core-protocol>.
 pragma solidity ^0.8.4;
 
 /// @notice Defines different errors emitted by Gyroscope contracts
@@ -29,6 +30,7 @@ library Errors {
     string public constant KEY_FROZEN = "33";
     string public constant INSUFFICIENT_BALANCE = "34";
     string public constant INVALID_ASSET = "35";
+    string public constant FORBIDDEN_EXTERNAL_ACTION = "35";
 
     // Oracle related errors
     string public constant ASSET_NOT_SUPPORTED = "40";
@@ -41,6 +43,7 @@ library Errors {
     string public constant NOT_ENOUGH_TWAPS = "46";
     string public constant ZERO_PRICE_TWAP = "47";
     string public constant INVALID_NUMBER_WEIGHTS = "48";
+    string public constant NO_WETH_PRICE = "49";
 
     //Vault safety check related errors
     string public constant A_VAULT_HAS_ALL_STABLECOINS_OFF_PEG = "51";
@@ -51,9 +54,19 @@ library Errors {
     string public constant TRYING_TO_REDEEM_MORE_THAN_VAULT_CONTAINS = "56";
     string public constant CALLER_NOT_MOTHERBOARD = "57";
     string public constant CALLER_NOT_RESERVE_MANAGER = "58";
+    string public constant VAULT_CANNOT_BE_REMOVED = "59";
 
     string public constant VAULT_FLOW_TOO_HIGH = "60";
     string public constant OPERATION_SUCCEEDS_BUT_SAFETY_MODE_ACTIVATED = "61";
     string public constant ORACLE_GUARDIAN_TIME_LIMIT = "62";
     string public constant NOT_ENOUGH_FLOW_DATA = "63";
+    string public constant SUPPLY_CAP_EXCEEDED = "64";
+    string public constant SAFETY_MODE_ACTIVATED = "65";
+
+    // misc errors
+    string public constant REDEEM_AMOUNT_BUG = "100";
+    string public constant EXTERNAL_ACTION_FAILED = "101";
+    string public constant TOKENS_NOT_SORTED = "102";
+    string public constant NO_SHARES_MINTED = "103";
+    string public constant TRYING_TO_REDEEM_MORE_THAN_SUPPLY = "104";
 }

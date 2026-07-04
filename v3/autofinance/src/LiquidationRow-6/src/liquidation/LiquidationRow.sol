@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
-import { IERC20Metadata as IERC20 } from "openzeppelin-contracts/token/ERC20/extensions/IERC20Metadata.sol";
+import { IERC20 } from "openzeppelin-contracts/token/ERC20/IERC20.sol";
 import { SafeERC20 } from "openzeppelin-contracts/token/ERC20/utils/SafeERC20.sol";
 import { ReentrancyGuard } from "openzeppelin-contracts/security/ReentrancyGuard.sol";
 import { EnumerableSet } from "openzeppelin-contracts/utils/structs/EnumerableSet.sol";
@@ -338,9 +338,7 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
             amountReceived = abi.decode(data, (uint256));
 
             // Expected buy amount from Price Oracle
-            uint256 expectedBuyAmount = _calculateExpectedBuyAmount(
-                params.sellAmount, fromToken, params.buyTokenAddress, sellTokenPrice, buyTokenPrice
-            );
+            uint256 expectedBuyAmount = (params.sellAmount * sellTokenPrice) / buyTokenPrice;
 
             // Allow a margin of error for the swap
             // slither-disable-next-line divide-before-multiply
@@ -398,53 +396,20 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
     }
 
     /**
-     * @notice Calculates the expected buy amount for a swap
-     * @dev Handles decimal differences between tokens by scaling amounts appropriately:
-     *      - If buy token has more decimals than sell token => multiplies by 10^(difference)
-     *      - If sell token has more decimals than buy token => divides by 10^(difference)
-     * @param sellAmount The amount of the token to sell
-     * @param fromToken The address of the token to sell
-     * @param buyTokenAddress The address of the token to buy
-     * @param sellTokenPrice The price in ETH of the token to sell
-     * @param buyTokenPrice The price in ETH of the token to buy
-     * @return expectedBuyAmount The expected buy amount adjusted for decimal differences
-     */
-    function _calculateExpectedBuyAmount(
-        uint256 sellAmount,
-        address fromToken,
-        address buyTokenAddress,
-        uint256 sellTokenPrice,
-        uint256 buyTokenPrice
-    ) internal view returns (uint256 expectedBuyAmount) {
-        uint8 sellTokenDecimals = IERC20(fromToken).decimals();
-        uint8 buyTokenDecimals = IERC20(buyTokenAddress).decimals();
-
-        if (buyTokenDecimals >= sellTokenDecimals) {
-            expectedBuyAmount =
-                (sellAmount * sellTokenPrice * 10 ** (buyTokenDecimals - sellTokenDecimals)) / buyTokenPrice;
-        } else {
-            expectedBuyAmount =
-                (sellAmount * sellTokenPrice) / (buyTokenPrice * 10 ** (sellTokenDecimals - buyTokenDecimals));
-        }
-    }
-
-    /**
      * @notice Update the balance of a specific token and vault
      * @param tokenAddress The address of the token
      * @param vaultAddress The address of the vault
-     * @param expectedBalance The amount of the token to be updated
+     * @param balance The amount of the token to be updated
      */
-    function _increaseBalance(address tokenAddress, address vaultAddress, uint256 expectedBalance) internal {
-        Errors.verifyNotZero(expectedBalance, "expectedBalance");
+    function _increaseBalance(address tokenAddress, address vaultAddress, uint256 balance) internal {
+        Errors.verifyNotZero(balance, "balance");
 
-        uint256 balanceOfToken = IERC20(tokenAddress).balanceOf(address(this));
         uint256 currentBalance = balances[tokenAddress][vaultAddress];
         uint256 totalBalance = totalTokenBalances[tokenAddress];
-        uint256 balance = balanceOfToken - totalBalance;
         uint256 newTotalBalance = totalBalance + balance;
 
         // ensure that this contract has enough balance to cover the new total balance
-
+        uint256 balanceOfToken = IERC20(tokenAddress).balanceOf(address(this));
         if (newTotalBalance > balanceOfToken) {
             /**
              * @dev This should never happen, but just in case. The error is raised if the updated total balance of a
@@ -459,7 +424,6 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
         if (currentBalance == 0) {
             if (!tokenVaults[tokenAddress].add(vaultAddress)) revert Errors.ItemExists();
 
-            // slither-disable-next-line incorrect-equality
             if (totalBalance == 0) {
                 if (!rewardTokens.add(tokenAddress)) revert Errors.ItemExists();
             }
@@ -470,7 +434,7 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
         // Update the balance for the vault and token
         balances[tokenAddress][vaultAddress] = currentBalance + balance;
 
-        emit BalanceUpdated(tokenAddress, vaultAddress, currentBalance + balance, expectedBalance);
+        emit BalanceUpdated(tokenAddress, vaultAddress, currentBalance + balance);
     }
 
     function _setPriceMarginBps(

@@ -6,40 +6,40 @@
 
 - Project: Autofarm (`autofarm`)
 - Lifecycle: dead (Tier 0, 99.7% below peak)
-- Generated: 2026-07-03T21:05:31.912Z
+- Generated: 2026-07-04T11:05:39.625Z
 - Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
 - Chains: aurora, avalanche, boba, bsc, celo, cronos, fantom, gnosis, harmony, heco, moonbeam, moonriver, polygon
-- Contract surface: 518 unique implementations (658 raw deployments)
+- Contract surface: 508 unique implementations (546 raw deployments)
 - DeFi Llama TVL: $5,194,480.81
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Yield Aggregator. Structurally: 22 project-authored contract(s) across 7 chain(s); 1 ERC20 token, 1 ERC721 NFT; role-gated via AccessControl; built on openzeppelin.
+Yield Aggregator. Structurally: 149 project-authored contract(s) across 8 chain(s); 11 ERC20 tokens, 1 ERC721 NFT; role-gated via AccessControl; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 7 functional families. Contracts are linked by 1 cross-contract reference(s). Dominant framework: openzeppelin.
+The protocol comprises 7 functional families. Contracts are linked by 4 cross-contract reference(s). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 674; live-surface contracts included: 658 (20 live, 638 unknown).
-- Excluded by liveness: 16 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 672; live-surface contracts included: 546 (39 live, 507 unknown).
+- Excluded by liveness: 126 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 0/10 (0.0%)
-- Deployed-live implementations: 10 of 518 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 0/24
-- Verified + Unaudited implementations: 24
+- Coverage of deployed-live implementations: 0/12 (0.0%)
+- Deployed-live implementations: 12 of 508 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 0/14
+- Verified + Unaudited implementations: 14
 - Verified by bytecode match: 0
 - Unverified implementations: 494
-- Unique implementations: 518
-- Raw deployments: 658
+- Unique implementations: 508
+- Raw deployments: 546
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 0
 - ASD (verified + unaudited TVL): n/a
@@ -59,16 +59,15 @@ The protocol comprises 7 functional families. Contracts are linked by 1 cross-co
 
 - None
 
-### ⚠️ Verified + Unaudited (24)
+### ⚠️ Verified + Unaudited (14)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
-| Address | unknown | bsc | n/a | [`0x481ca9...a1694b`](./contracts/bsc-56/0x481ca976d8fffb079fe410100cdedfa76ba1694b/) | ⚠️ Unaudited |
 | AutoFarm | unknown | bsc | n/a | 5 deployments: bsc [`0x0df9c5...fd41fb`](./contracts/bsc-56/0x0df9c5fb57bc3b90e73563e9adb672bea2fd41fb/); bsc `0x17f619...60172f`; bsc `0x267ef1...fc1bb8`; bsc `0x65620c...187b62`; bsc `0x68def7...68e3d5` | ⚠️ Unaudited |
 | AutoFarmV2 | unknown | bsc | n/a | 8 deployments: bsc [`0x089519...450452`](./contracts/bsc-56/0x0895196562c7868c5be92459fae7f877ed450452/); bsc `0x1217ff...0a7b99`; bsc `0x238a9d...50e4ab`; bsc `0x25f9b7...00a89e`; bsc `0xf0d2d0...a898f1`; bsc `0xf44d42...e32dfb`; bsc `0xf6c361...07cde2`; bsc `0xfad31b...17968a` | ⚠️ Unaudited |
-| AutoFarmV2_CrossChain | unknown | celo | n/a | 13 deployments: gnosis `0xfada8c...d4680e`; polygon `0x7e8503...d35b13`; polygon `0x89d065...eb0b76`; polygon `0xc26e54...ace833`; moonbeam `0x77286f...8573a6`; moonriver `0xfada8c...d4680e`; celo [`0x1900b5...5a22fc`](./contracts/celo-42220/0x1900b571ff3fcbc60208f3e5d6f25497745a22fc/); celo `0x5f60f1...3242be`; celo `0xdd11b6...12303f`; avalanche `0x864a0b...23f213`; aurora `0x3b2763...5b69a5`; aurora `0x4b6ed3...b2f68f`; aurora `0x625374...71a700` | ⚠️ Unaudited |
+| AutoFarmV2_CrossChain | unknown | aurora | n/a | 9 deployments: gnosis `0xfada8c...d4680e`; polygon `0x89d065...eb0b76`; moonbeam `0x77286f...8573a6`; moonriver `0xfada8c...d4680e`; celo `0xdd11b6...12303f`; avalanche `0x864a0b...23f213`; aurora [`0x3b2763...5b69a5`](./contracts/aurora-1313161554/0x3b2763c77343ce87cb42f9ac70a0175ddb5b69a5/); aurora `0x4b6ed3...b2f68f`; aurora `0x625374...71a700` | ⚠️ Unaudited |
 | AUTOToken | unknown | bsc | n/a | 7 deployments: bsc [`0x097509...fdaff0`](./contracts/bsc-56/0x09750927d289131d40d6e5ff34d431432bfdaff0/); bsc `0x2099a8...b62a85`; bsc `0x37facf...7a9870`; bsc `0x4508ab...85eccb`; bsc `0x9fa3c8...29188f`; bsc `0xaa3a59...759bba`; bsc `0xd26532...848ceb` | ⚠️ Unaudited |
-| AUTOv2 | unknown | bsc | n/a | 4 deployments: bsc [`0x12300e...abfe24`](./contracts/bsc-56/0x12300ea3d3444e9106c65913de24c58462abfe24/); bsc `0xa18408...78b827`; bsc `0xee22d7...ef3220`; bsc `0xf93053...38d3a6` | ⚠️ Unaudited |
+| AUTOv2 | unknown | bsc | n/a | [`0xa18408...78b827`](./contracts/bsc-56/0xa184088a740c695e156f91f5cc086a06bb78b827/) | ⚠️ Unaudited |
 | Berry | unknown | bsc | n/a | 6 deployments: bsc [`0x0cef58...3d5faa`](./contracts/bsc-56/0x0cef58f80fad7904556fc7801e46a7618e3d5faa/); bsc `0x0e3001...7fdbdb`; bsc `0x4bb2cb...0bfbd3`; bsc `0x4faf8a...7238a1`; bsc `0x89c0be...384ed4`; bsc `0xc2f0d6...207fcc` | ⚠️ Unaudited |
 | BerryDispute | unknown | bsc | n/a | [`0x624d25...ebcf9f`](./contracts/bsc-56/0x624d25cb42c7f0940531101d47414e3a58ebcf9f/) | ⚠️ Unaudited |
 | BerryLibrary | unknown | bsc | n/a | [`0x734e3b...3390e1`](./contracts/bsc-56/0x734e3b5bd16b43eb82f203950f983ef6003390e1/) | ⚠️ Unaudited |
@@ -76,17 +75,8 @@ The protocol comprises 7 functional families. Contracts are linked by 1 cross-co
 | BerryMaster | proxy | bsc | n/a | [`0xf859bf...07f830`](./contracts/bsc-56/0xf859bf77cbe8699013d6dbc7c2b926aaf307f830/) | ⚠️ Unaudited |
 | BerryStake | unknown | bsc | n/a | [`0x283af9...f6b3ae`](./contracts/bsc-56/0x283af939416eebf8413b382338bf1537c1f6b3ae/) | ⚠️ Unaudited |
 | BerryTransfer | unknown | bsc | n/a | [`0xee9a08...5b30ca`](./contracts/bsc-56/0xee9a080a7773669870f58d024d25b157cb5b30ca/) | ⚠️ Unaudited |
-| FarmerToken | unknown | bsc | n/a | [`0x864a0b...23f213`](./contracts/bsc-56/0x864a0b7f8466247a0e44558d29cdc37d4623f213/) | ⚠️ Unaudited |
 | Multicall | periphery | aurora | n/a | [`0xd26ddb...4e0a23`](./contracts/aurora-1313161554/0xd26ddb60efb6267db68f18801491c2292c4e0a23/) | ⚠️ Unaudited |
-| Strat1 | unknown | bsc | n/a | 2 deployments: bsc [`0x1a40a8...ff0d48`](./contracts/bsc-56/0x1a40a8c7d965f3929e0c56bb301ebe82f5ff0d48/); bsc `0x9ba2a9...b6f55b` | ⚠️ Unaudited |
-| StratSwipe | unknown | bsc | n/a | [`0x1f042f...1e66ce`](./contracts/bsc-56/0x1f042f2fd6878edcd75f1f1400bc1d53671e66ce/) | ⚠️ Unaudited |
-| StratVLEV | unknown | bsc | n/a | 42 deployments: bsc [`0x13057e...624910`](./contracts/bsc-56/0x13057e42bbf1b5d980ea79df5549be49ee624910/); bsc `0x1a2eb7...5de82c`; bsc `0x238d2b...e6395b`; bsc `0x2c48d2...0866b0`; bsc `0x3a795f...f613e1`; bsc `0x40afa7...10a4de`; bsc `0x414b4f...7330c9`; bsc `0x440c7e...de7c32`; bsc `0x48620b...32c6fe`; bsc `0x52a9f3...fff1f0`; bsc `0x54d001...a0cb39`; bsc `0x5796b4...1743ff`; bsc `0x57d699...6e4b01`; bsc `0x602817...525f4b`; bsc `0x65579f...f58a12`; bsc `0x6a1878...65d073`; bsc `0x6f5bf5...3e6db5`; bsc `0x89e150...fbe9a1`; bsc `0x8e24b8...651d84`; bsc `0x91277c...0307ff`; bsc `0x95d3ee...d80192`; bsc `0x97d41b...c54032`; bsc `0xa05d4f...3a1dec`; bsc `0xb2059d...9345f5`; bsc `0xb33f66...349fa5`; bsc `0xc71b72...ab95f7`; bsc `0xc7322b...7da24c`; bsc `0xcc48c5...0ab5dd`; bsc `0xcd3a59...f29af3`; bsc `0xd12b91...9d84db`; bsc `0xd21c3b...d5dcc9`; bsc `0xd57e87...a1dd3f`; bsc `0xd9dc13...0f0f0a`; bsc `0xdcd765...d50437`; bsc `0xe041ad...12ee3f`; bsc `0xe24776...3a7e8e`; bsc `0xe4bf08...01fd09`; bsc `0xe839e1...907808`; bsc `0xebc44c...e6a3c3`; bsc `0xf67cce...aae43f`; bsc `0xf7cdda...23c492`; bsc `0xfffe1b...cf159a` | ⚠️ Unaudited |
-| StratX | unknown | bsc | n/a | 43 deployments: bsc [`0x098945...b4205d`](./contracts/bsc-56/0x0989454fcf48c66aee3fe8cf4feccae2e9b4205d/); bsc `0x0b4305...288bf0`; bsc `0x0ce929...205fe3`; bsc `0x1004a5...cd5bbe`; bsc `0x164d04...517b70`; bsc `0x172d40...240ec5`; bsc `0x1a5715...a98eba`; bsc `0x1edf8e...acd2d7`; bsc `0x306258...d247f8`; bsc `0x344866...2bc1f1`; bsc `0x36ac93...dab483`; bsc `0x375e7f...811477`; bsc `0x38d409...21c8a7`; bsc `0x3a8475...249084`; bsc `0x3b4e26...fc0c5b`; bsc `0x3f4580...5c23f0`; bsc `0x4551e5...b6ee99`; bsc `0x512090...bb58a8`; bsc `0x5935db...e63ad8`; bsc `0x5f9302...a8ca5c`; bsc `0x65168c...66874b`; bsc `0x671c90...82c893`; bsc `0x6f6851...0b3ed0`; bsc `0x7f7b23...563ff1`; bsc `0x8a1a10...e195cd`; bsc `0x8db789...dbb5d5`; bsc `0x9b3f9f...918fd4`; bsc `0xa5ca6b...6b1e22`; bsc `0xa7df74...cfc2f1`; bsc `0xac622b...73a234`; bsc `0xad1245...2090e0`; bsc `0xae9720...4868e8`; bsc `0xbaa677...9b370c`; bsc `0xc75b6f...f87f60`; bsc `0xd84cf4...fdb2fc`; bsc `0xdd42e8...1dd917`; bsc `0xdf3dad...15e9e5`; bsc `0xe23ec9...871b54`; bsc `0xe8adf9...cc2f72`; bsc `0xe9d78b...791130`; bsc `0xeae1f3...38311b`; bsc `0xed3f07...b78687`; bsc `0xf2aec8...47209d` | ⚠️ Unaudited |
-| StratX_AUTO | unknown | bsc | n/a | [`0xc5eb5a...f9eb40`](./contracts/bsc-56/0xc5eb5a3490d2a2e4a1e1c9a1b965b4eef4f9eb40/) | ⚠️ Unaudited |
-| StratX_Pathed | unknown | bsc | n/a | 2 deployments: bsc [`0x3aa4f1...11e024`](./contracts/bsc-56/0x3aa4f1ad7094d263dad4ead5b8bc09ddc211e024/); bsc `0x7328cb...78e7e4` | ⚠️ Unaudited |
-| TimelockController | unknown | bsc | n/a | 8 deployments: bsc [`0x28579e...876a04`](./contracts/bsc-56/0x28579eca0a326e53340edd93e18698d379876a04/); bsc `0x2a84a5...6fdb21`; bsc `0x6aa35f...77b5ff`; bsc `0x7d09ac...9025b5`; bsc `0x99d334...807b89`; bsc `0xc2f7ba...bd2596`; polygon `0x643743...85d252`; polygon `0xf40951...fa400d` | ⚠️ Unaudited |
-| TimelockController_RewardsDistributor2 | operational_periphery | gnosis | n/a | 6 deployments: gnosis [`0x1dc6cd...5449a1`](./contracts/gnosis-100/0x1dc6cd9f76972039cd8e071ec65cc4bd035449a1/); celo `0x65f100...98eba6`; celo `0xbf19c3...de343a`; avalanche `0x4b6ed3...b2f68f`; avalanche `0x562bdc...e42cbe`; aurora `0xaea5f4...77e800` | ⚠️ Unaudited |
-| TokenTimelock | unknown | bsc | n/a | 2 deployments: bsc [`0x4a712a...549451`](./contracts/bsc-56/0x4a712a0c8fd6b75aa5afbc2b06b4f33126549451/); bsc `0xa2ddd7...d9e6d7` | ⚠️ Unaudited |
+| TimelockController_RewardsDistributor2 | operational_periphery | gnosis | n/a | 4 deployments: gnosis [`0x1dc6cd...5449a1`](./contracts/gnosis-100/0x1dc6cd9f76972039cd8e071ec65cc4bd035449a1/); avalanche `0x4b6ed3...b2f68f`; avalanche `0x562bdc...e42cbe`; aurora `0xaea5f4...77e800` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)
 
@@ -614,16 +604,18 @@ Verified + unaudited native implementations ranked by TVL:
 | Chain | Address | Name | Role | TVL USD | Risk Note |
 |---|---|---|---|---:|---|
 | bsc | [`0x089519...450452`](./contracts/bsc-56/0x0895196562c7868c5be92459fae7f877ed450452/) | AutoFarmV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| aurora | [`0x3b2763...5b69a5`](./contracts/aurora-1313161554/0x3b2763c77343ce87cb42f9ac70a0175ddb5b69a5/) | AutoFarmV2_CrossChain | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xa18408...78b827`](./contracts/bsc-56/0xa184088a740c695e156f91f5cc086a06bb78b827/) | AUTOv2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xf859bf...07f830`](./contracts/bsc-56/0xf859bf77cbe8699013d6dbc7c2b926aaf307f830/) | BerryMaster | proxy | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 87 |
+| native | 89 |
 | upstream | 0 |
 | standard_library | 1 |
-| needs_review | 430 |
+| needs_review | 418 |
 
 ## Scope Matching Notes
 

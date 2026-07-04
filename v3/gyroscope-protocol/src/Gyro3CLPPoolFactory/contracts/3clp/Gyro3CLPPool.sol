@@ -1,11 +1,21 @@
-// SPDX-License-Identifier: LicenseRef-Gyro-1.0
-// for information on licensing please see the README in the GitHub repository <https://github.com/gyrostable/concentrated-lps>.
+// SPDX-License-Identifier: GPL-3.0-or-later
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 pragma solidity 0.7.6;
 pragma experimental ABIEncoderV2;
 
 import "../../libraries/GyroConfigKeys.sol";
-import "../../libraries/GyroConfigHelpers.sol";
 import "../../interfaces/IGyroConfig.sol";
 import "../../libraries/GyroPoolMath.sol";
 import "../../libraries/GyroErrors.sol";
@@ -20,19 +30,15 @@ import "../LocallyPausable.sol";
 /**
  * @dev Gyro Three Pool with immutable weights.
  */
-// We derive from ExtensibleBaseWeightedPool and we override a large part of the functionality. In particular the
-// weights are not used.
 contract Gyro3CLPPool is ExtensibleBaseWeightedPool, CappedLiquidity, LocallyPausable {
     using GyroFixedPoint for uint256;
     using WeightedPoolUserDataHelpers for bytes;
-    using GyroConfigHelpers for IGyroConfig;
 
     uint256 private immutable _root3Alpha;
 
     IGyroConfig public gyroConfig;
 
     uint256 private constant _MAX_TOKENS = 3;
-    bytes32 private constant POOL_TYPE = "3CLP";
 
     IERC20 internal immutable _token0;
     IERC20 internal immutable _token1;
@@ -55,13 +61,14 @@ contract Gyro3CLPPool is ExtensibleBaseWeightedPool, CappedLiquidity, LocallyPau
         address capManager;
         CapParams capParams;
         address pauseManager;
-        PauseParams pauseParams;
     }
 
     struct NewPoolParams {
         IVault vault;
         address configAddress;
         NewPoolConfigParams config;
+        uint256 pauseWindowDuration;
+        uint256 bufferPeriodDuration;
     }
 
     constructor(NewPoolParams memory params)
@@ -72,8 +79,8 @@ contract Gyro3CLPPool is ExtensibleBaseWeightedPool, CappedLiquidity, LocallyPau
             params.config.tokens,
             new address[](3),
             params.config.swapFeePercentage,
-            params.config.pauseParams.pauseWindowDuration,
-            params.config.pauseParams.bufferPeriodDuration,
+            params.pauseWindowDuration,
+            params.bufferPeriodDuration,
             params.config.owner
         )
         CappedLiquidity(params.config.capManager, params.config.capParams)
@@ -168,9 +175,6 @@ contract Gyro3CLPPool is ExtensibleBaseWeightedPool, CappedLiquidity, LocallyPau
         return scalingFactors;
     }
 
-    // on{Swap,Join,Exit}() toplevel entry points are not overloaded and taken from ExtensibleBaseWeightedPool. We
-    // override the lower-level functions.
-
     function _onSwapGivenIn(
         SwapRequest memory swapRequest,
         uint256 currentBalanceTokenIn,
@@ -190,7 +194,7 @@ contract Gyro3CLPPool is ExtensibleBaseWeightedPool, CappedLiquidity, LocallyPau
     }
 
     /** @dev Given two tokens x, y, return the third one among the pool tokens that is neither x nor y. x, y do *not*
-     * have to be ordered, but they have to be among the tokens of this pool and they have to be different.
+     * have to be ordered, but they have to be among the tokens of this pool and different.
      */
     function _getThirdToken(IERC20 x, IERC20 y) internal view returns (IERC20 tokenOther, uint256 scalingFactorOther) {
         // Sort
@@ -206,19 +210,16 @@ contract Gyro3CLPPool is ExtensibleBaseWeightedPool, CappedLiquidity, LocallyPau
         return (_token0, _scalingFactor0);
     }
 
-    /** @dev Reads the balance of a token from the balancer vault and returns the scaled amount. Smaller storage access
-     * compared to getVault().getPoolTokens().
-     */
     function _getScaledTokenBalance(IERC20 token, uint256 scalingFactor) internal view returns (uint256 balance) {
         // Signature of getPoolTokenInfo(): (pool id, token) -> (cash, managed, lastChangeBlock, assetManager)
         // and total amount = cash + managed. See balancer repo, PoolTokens.sol and BalanceAllocation.sol
         (uint256 cash, uint256 managed, , ) = getVault().getPoolTokenInfo(getPoolId(), token);
-        balance = cash + managed; // can't overflow, see BalanceAllocation.sol::total() in the Balancer repo.
+        balance = cash + managed; // can't overflow, see BalanceAllocation.sol
         balance = balance.mulDown(scalingFactor);
     }
 
-    /** @dev Calculate the offset that that takes real reserves to virtual reserves. Variant that uses the info given
-     * during swaps to query less from the vault and save gas.
+    /** @dev Calculate the offset that that takes real reserves to virtual reserves. Variant
+     * that uses the info given during swaps to query less from the vault and save gas.
      */
     function _calculateVirtualOffset(
         SwapRequest memory swapRequest,
@@ -238,7 +239,7 @@ contract Gyro3CLPPool is ExtensibleBaseWeightedPool, CappedLiquidity, LocallyPau
         return _calculateVirtualOffset(balances);
     }
 
-    /** @dev Calculate virtual offsets from scaled balances. Balances can be retrieved in the most gas-efficient way. */
+    /** @dev Calculate virtual offsets from unscaled balances. Balances can be retrieved in the most gas-efficient way.*/
     function _calculateVirtualOffset(
         uint256[] memory balances // Need to be already scaled up.
     ) private view returns (uint256 virtualOffset) {
@@ -267,6 +268,7 @@ contract Gyro3CLPPool is ExtensibleBaseWeightedPool, CappedLiquidity, LocallyPau
         return _calculateVirtualOffset(_getAllBalances());
     }
 
+    /** @dev Calculate the invariant. */
     function _calculateInvariant() private view returns (uint256 invariant) {
         return Gyro3CLPMath._calculateInvariant(_getAllBalances(), _root3Alpha);
     }
@@ -316,15 +318,13 @@ contract Gyro3CLPPool is ExtensibleBaseWeightedPool, CappedLiquidity, LocallyPau
         InputHelpers.ensureInputLengthMatch(amountsIn.length, 3);
         _upscaleArray(amountsIn, scalingFactors);
 
-        uint256 root3Alpha = _root3Alpha;
-        uint256 invariantAfterJoin = Gyro3CLPMath._calculateInvariant(amountsIn, root3Alpha);
-        uint256 virtualOffset = invariantAfterJoin.mulDown(root3Alpha);
+        // uint256[] memory sqrtParams = _sqrtParameters();
 
-        /* We initialize the number of BPT tokens such that one BPT token corresponds to one unit of token2 at the initialized pool price. This makes BPT tokens comparable across pools with different parameters. Note that the invariant does *not* have this property!
-         */
-        (uint256 spotPrice0, uint256 spotPrice1) = Gyro3CLPMath._calcSpotPrice01in2(amountsIn, virtualOffset);
+        uint256 invariantAfterJoin = Gyro3CLPMath._calculateInvariant(amountsIn, _root3Alpha);
 
-        uint256 bptAmountOut = amountsIn[0].mulDown(spotPrice0).add(amountsIn[1].mulDown(spotPrice1)).add(amountsIn[2]);
+        // Set the initial BPT to the value of the invariant times the number of tokens. This makes BPT supply more
+        // consistent in Pools with similar compositions but different number of tokens.
+        uint256 bptAmountOut = Math.mul(invariantAfterJoin, 3);
 
         _lastInvariant = invariantAfterJoin;
 
@@ -367,7 +367,7 @@ contract Gyro3CLPPool is ExtensibleBaseWeightedPool, CappedLiquidity, LocallyPau
     {
         // Due protocol swap fee amounts are computed by measuring the growth of the invariant between the previous join
         // or exit event and now - the invariant's growth is due exclusively to swap fees. This avoids spending gas
-        // accounting for them on each individual swap
+        // computing them on each individual swap
 
         uint256 root3Alpha = _root3Alpha;
 
@@ -466,7 +466,7 @@ contract Gyro3CLPPool is ExtensibleBaseWeightedPool, CappedLiquidity, LocallyPau
             // In the paused state, we do not recompute the invariant to reduce the potential for errors and to avoid
             // lock-up in case the pool is in a state where the involved numerical method does not converge.
             // Instead, we set the invariant such that any following (non-paused) join/exit will ignore and recompute it
-            // (see GyroPoolMath._calcProtocolFees())
+            // (see Gyro3CLPMath._calcProtocolFees())
             _lastInvariant = type(uint256).max;
         }
 
@@ -479,16 +479,6 @@ contract Gyro3CLPPool is ExtensibleBaseWeightedPool, CappedLiquidity, LocallyPau
      */
     function getInvariant() public view override returns (uint256 invariant) {
         return _calculateInvariant();
-    }
-
-    /** @dev Returns the current spot prices of token0 and token1, both quoted in units of token2.
-     */
-    function getPrices() external view returns (uint256 spotPrice0, uint256 spotPrice1) {
-        uint256[] memory balances = _getAllBalances();
-        uint256 root3Alpha = _root3Alpha;
-        uint256 invariant = Gyro3CLPMath._calculateInvariant(balances, root3Alpha);
-        uint256 virtualOffset = invariant.mulDown(root3Alpha);
-        return Gyro3CLPMath._calcSpotPrice01in2(balances, virtualOffset);
     }
 
     function _joinAllTokensInForExactBPTOut(uint256[] memory balances, bytes memory userData)
@@ -636,35 +626,11 @@ contract Gyro3CLPPool is ExtensibleBaseWeightedPool, CappedLiquidity, LocallyPau
         )
     {
         return (
-            gyroConfig.getSwapFeePercForPool(address(this), POOL_TYPE),
-            gyroConfig.getProtocolFeeGyroPortionForPool(address(this), POOL_TYPE),
+            gyroConfig.getUint(GyroConfigKeys.PROTOCOL_SWAP_FEE_PERC_KEY),
+            gyroConfig.getUint(GyroConfigKeys.PROTOCOL_FEE_GYRO_PORTION_KEY),
             gyroConfig.getAddress(GyroConfigKeys.GYRO_TREASURY_KEY),
             gyroConfig.getAddress(GyroConfigKeys.BAL_TREASURY_KEY)
         );
-    }
-
-    /** @notice Effective BPT supply.
-     *
-     *  This is the same as `totalSupply()` but also accounts for the fact that the pool owes
-     *  protocol fees to the pool in the form of unminted LP shares created on the next join/exit,
-     *  diluting LPers. Thus, this is the totalSupply() that the next join/exit operation will see.
-     *
-     *  Equivalent to the respective function in, e.g., WeightedPool, see:
-     *  https://github.com/balancer/balancer-v2-monorepo/blob/master/pkg/pool-weighted/contracts/WeightedPool.sol#L325-L344
-     */
-    function getActualSupply() external view returns (uint256) {
-        uint256 supply = totalSupply();
-        (uint256 gyroFees, uint256 balancerFees, , ) = _getDueProtocolFeeAmounts(_lastInvariant, getInvariant());
-        return supply.add(gyroFees).add(balancerFees);
-    }
-
-    /// @notice Equivalent to but more efficient than `getInvariant().divDown(getActualSupply())`.
-    function getInvariantDivActualSupply() external view returns (uint256) {
-        uint256 invariant = getInvariant();
-        uint256 supply = totalSupply();
-        (uint256 gyroFees, uint256 balancerFees, , ) = _getDueProtocolFeeAmounts(_lastInvariant, invariant);
-        uint256 actualSupply = supply.add(gyroFees).add(balancerFees);
-        return invariant.divDown(actualSupply);
     }
 
     function _setPausedState(bool paused) internal override {

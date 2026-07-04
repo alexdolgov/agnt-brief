@@ -5,7 +5,7 @@
 - Project: Sigma Money (`sigma-money`)
 - Website: [https://sigma.money](https://sigma.money)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:54.225Z
+- Generated: 2026-07-04T11:05:46.573Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-0679
 - Chains: bsc
 - Contract surface: 920 unique implementations (1470 raw deployments)

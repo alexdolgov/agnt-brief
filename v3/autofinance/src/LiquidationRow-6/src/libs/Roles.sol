@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
 
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 library Roles {
     // Naming Conventions:
@@ -13,10 +13,6 @@ library Roles {
     bytes32 public constant DESTINATION_VAULT_FACTORY_MANAGER = keccak256("CREATE_DESTINATION_VAULT_ROLE");
     bytes32 public constant DESTINATION_VAULT_REGISTRY_MANAGER = keccak256("DESTINATION_VAULT_REGISTRY_MANAGER");
     bytes32 public constant DESTINATION_VAULT_MANAGER = keccak256("DESTINATION_VAULT_MANAGER");
-    bytes32 public constant FLUID_DESTINATION_VAULT_MANAGER = keccak256("FLUID_DESTINATION_VAULT_MANAGER");
-    bytes32 public constant DESTINATION_MERKLE_CLAIM_MANAGER = keccak256("DESTINATION_MERKLE_CLAIM_MANAGER");
-    bytes32 public constant EULER_REWARD_MANAGER = keccak256("EULER_REWARD_MANAGER");
-    bytes32 public constant EULER_REWARD_EXECUTOR = keccak256("EULER_REWARD_EXECUTOR");
 
     // Auto Pool Factory and Registry Management
     bytes32 public constant AUTO_POOL_REGISTRY_UPDATER = keccak256("REGISTRY_UPDATER");
@@ -38,7 +34,6 @@ library Roles {
     bytes32 public constant REWARD_LIQUIDATION_MANAGER = keccak256("REWARD_LIQUIDATION_MANAGER");
     bytes32 public constant EXTRA_REWARD_MANAGER = keccak256("EXTRA_REWARD_MANAGER_ROLE");
     bytes32 public constant REWARD_LIQUIDATION_EXECUTOR = keccak256("REWARD_LIQUIDATION_EXECUTOR");
-    bytes32 public constant BANK_SWAP_MANAGER = keccak256("BANK_SWAP_MANAGER");
 
     // Statistics and Reporting
     bytes32 public constant STATS_CALC_REGISTRY_MANAGER = keccak256("STATS_CALC_REGISTRY_MANAGER");
@@ -49,7 +44,6 @@ library Roles {
     bytes32 public constant STATS_INCENTIVE_TOKEN_UPDATER = keccak256("STATS_INCENTIVE_TOKEN_UPDATER");
     bytes32 public constant STATS_GENERAL_MANAGER = keccak256("STATS_GENERAL_MANAGER");
     bytes32 public constant STATS_LST_ETH_TOKEN_EXECUTOR = keccak256("STATS_LST_ETH_TOKEN_EXECUTOR");
-    bytes32 public constant STATS_CACHE_SET_TRANSIENT_EXECUTOR = keccak256("STATS_CACHE_SET_TRANSIENT_EXECUTOR");
 
     // Emergency Management
     bytes32 public constant EMERGENCY_PAUSER = keccak256("EMERGENCY_PAUSER");
@@ -58,7 +52,6 @@ library Roles {
     // Miscellaneous Roles
     bytes32 public constant SOLVER = keccak256("SOLVER_ROLE");
     bytes32 public constant AUTO_POOL_REPORTING_EXECUTOR = keccak256("AUTO_POOL_UPDATE_DEBT_REPORTING_ROLE");
-    bytes32 public constant STRATEGY_HOOK_CONFIGURATION = keccak256("STRATEGY_HOOK_CONFIGURATION");
 
     // Swapper Roles
     bytes32 public constant SWAP_ROUTER_MANAGER = keccak256("SWAP_ROUTER_MANAGER");
@@ -80,10 +73,4 @@ library Roles {
     bytes32 public constant MESSAGE_PROXY_EXECUTOR = keccak256("MESSAGE_PROXY_EXECUTOR");
     bytes32 public constant RECEIVING_ROUTER_MANAGER = keccak256("RECEIVING_ROUTER_MANAGER");
     bytes32 public constant RECEIVING_ROUTER_EXECUTOR = keccak256("RECEIVING_ROUTER_EXECUTOR");
-
-    // Backing Oracle
-    bytes32 public constant BACKING_ORACLE_MANAGER = keccak256("BACKING_ORACLE_MANAGER");
-
-    // Silo Vault Reward Manager
-    bytes32 public constant DESTINATION_VAULT_SILO_MANAGER = keccak256("DESTINATION_VAULT_SILO_MANAGER");
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "ribbon-finance",
-  "generated_at": "2026-07-03T21:06:45.375Z",
+  "generated_at": "2026-07-04T11:05:46.469Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-f007",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -53,8 +53,8 @@
     }
   },
   "topography": {
-    "project_purpose": "Options Vault. Structurally: 126 project-authored contract(s) across 2 chain(s); 20 ERC20 tokens, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 6 functional families. Its contracts share 16 common project-authored base contract(s) (dsmath, optionsvaultstorage, optionsvaultstoragev1). Dominant framework: openzeppelin.",
+    "project_purpose": "Options Vault. Structurally: 149 project-authored contract(s) across 2 chain(s); 29 ERC20 tokens, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 6 functional families. Its contracts share 25 common project-authored base contract(s) (dsmath, optionsvaultstorage, optionsvaultstoragev1). Dominant framework: openzeppelin.",
     "product_family_count": 6,
     "total_contracts_indexed": 572,
     "live_contracts": 206,

@@ -2,7 +2,7 @@
   "component": "PirexDistributorZaps-2",
   "main_contract": "PirexDistributorZaps",
   "source_file_count": 6,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x783c13b94123ccdcc5d597deb93a69983e1d4a51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa1fdfcab1c53e6f80439462f7f394c1f2ba65981",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

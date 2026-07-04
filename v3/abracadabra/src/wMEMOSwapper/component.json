@@ -2,7 +2,7 @@
   "component": "wMEMOSwapper",
   "main_contract": "wMEMOSwapper",
   "source_file_count": 15,
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,22 @@
       "chain": "avalanche",
       "chain_id": 43114,
       "address": "0x13f193d5328d967076c5ed80be9ed5a79224ddab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x1df188958a8674b5177f77667b8d173c3cdd9e51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x469a991a6bb8cbbfee42e7ab846edeef1bc0b3d3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

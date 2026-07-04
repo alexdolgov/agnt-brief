@@ -5,7 +5,7 @@
 - Project: Uplift DAO (`uplift-dao`)
 - Website: [https://uplift.io](https://uplift.io)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:07:02.990Z
+- Generated: 2026-07-04T11:05:47.753Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-4c3e
 - Chains: bsc
 - Contract surface: 47 unique implementations (79 raw deployments)

@@ -20,7 +20,7 @@
 
 pragma solidity ^0.8.9;
 
-import { IFreezableIsolationModeVaultFactory } from "@dolomite-exchange/modules-base/contracts/isolation-mode/interfaces/IFreezableIsolationModeVaultFactory.sol"; // solhint-disable-line max-line-length
+import { IAsyncFreezableIsolationModeVaultFactory } from "@dolomite-exchange/modules-base/contracts/isolation-mode/interfaces/IAsyncFreezableIsolationModeVaultFactory.sol"; // solhint-disable-line max-line-length
 import { IGmxV2Registry } from "./IGmxV2Registry.sol";
 
 
@@ -30,7 +30,7 @@ import { IGmxV2Registry } from "./IGmxV2Registry.sol";
  *
  * @notice  Interface for a subclass of IsolationModeVaultFactory that creates vaults for GM tokens.
  */
-interface IGmxV2IsolationModeVaultFactory is IFreezableIsolationModeVaultFactory {
+interface IGmxV2IsolationModeVaultFactory is IAsyncFreezableIsolationModeVaultFactory {
 
     // ================================================
     // ==================== Structs ===================
@@ -53,7 +53,7 @@ interface IGmxV2IsolationModeVaultFactory is IFreezableIsolationModeVaultFactory
 
     function LONG_TOKEN() external view returns (address);
 
-    function INDEX_TOKEN_MARKET_ID() external view returns (uint256);
+    // function INDEX_TOKEN_MARKET_ID() external view returns (uint256);
 
     function SHORT_TOKEN_MARKET_ID() external view returns (uint256);
 

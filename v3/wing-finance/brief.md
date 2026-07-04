@@ -5,7 +5,7 @@
 - Project: Wing Finance (`wing-finance`)
 - Website: [https://wing.finance](https://wing.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:07:12.045Z
+- Generated: 2026-07-04T11:05:47.806Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-b097
 - Chains: bsc, ethereum, klaytn
 - Contract surface: 171 unique implementations (196 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-Lending. Structurally: 33 project-authored contract(s) across 2 chain(s); 9 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Lending. Structurally: 34 project-authored contract(s) across 2 chain(s); 10 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 4 functional families. Its contracts share 19 common project-authored base contract(s) (ctoken, exponential, carefulmath). Dominant framework: openzeppelin.
+The protocol comprises 4 functional families. Its contracts share 21 common project-authored base contract(s) (ctoken, exponential, carefulmath). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

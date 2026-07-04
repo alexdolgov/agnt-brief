@@ -1,0 +1,26 @@
+{
+  "component": "PoolStorage-4",
+  "main_contract": "PoolStorage",
+  "source_file_count": 57,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x0fdb73ae370a0b3f349dc046cfeb54c0fa870799",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x1359fce197cf743016cd1a620939a1a80df259a5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

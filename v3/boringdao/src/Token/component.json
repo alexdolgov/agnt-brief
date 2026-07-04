@@ -1,55 +1,15 @@
 {
-  "component": "Token",
-  "main_contract": "Token",
-  "source_file_count": 4,
-  "deployment_count": 6,
+  "component": "token",
+  "main_contract": "token",
+  "source_file_count": 1,
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x226d8bfb4da78ddc5bd8fd6c1532c58e88f9fd34",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x4f497f9d85a6fe135ffca99f0f253919fe827211",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
+      "chain": "bsc",
+      "chain_id": 56,
       "address": "0x55e3f23b563769426f8aa4059e9977689c74b47e",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x68d97b7a961a5239b9f911da8deb57f6ef6e5e28",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0x87dd4a7ad23b95cd9ff9c26b5cf325905caf8663",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1088",
-      "chain_id": 1088,
-      "address": "0xd5b59f9f35f9a5be75e7357798bf15a4e958b6b2",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

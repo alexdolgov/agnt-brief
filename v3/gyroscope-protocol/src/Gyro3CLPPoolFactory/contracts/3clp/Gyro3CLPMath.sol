@@ -1,5 +1,4 @@
-// SPDX-License-Identifier: LicenseRef-Gyro-1.0
-// for information on licensing please see the README in the GitHub repository <https://github.com/gyrostable/concentrated-lps>.
+// SPDX-License-Identifier: UNLICENSED
 
 pragma solidity 0.7.6;
 
@@ -17,46 +16,38 @@ import "../../libraries/GyroErrors.sol";
 // should be fixed.
 // solhint-disable private-vars-leading-underscore
 
-/** @dev Math routines for the "symmetric" 3CLP, i.e., the price bounds are [alpha, 1/alpha] for all three asset
+/** @dev Math routines for the "symmetric" CPMMv3, i.e., the price bounds are [alpha, 1/alpha] for all three asset
  * pairs. We pass the parameter root3Alpha = 3rd root of alpha. We don't need to compute root3Alpha; instead, we
  * take this as the fundamental parameter and compute alpha = root3Alpha^3 where needed.
  *
  * A large part of this code is concerned with computing the invariant L from the real reserves, via Newton's method.
- * This can be rather large and we need it to high precision. We apply various techniques to prevent an accumulation of
- * errors. See the 2-CLP/3-CLP math paper (especially Appendix A) for context.
- *
- * Most calculations are unchecked and instead we impose some global bounds to ensure that they don't overflow. See the
- * Overflow Analysis writeup for why this works.
+ * can be rather large and we need it to high precision. We apply various techniques to prevent an accumulation of
+ * errors.
  */
 library Gyro3CLPMath {
     using GyroFixedPoint for uint256;
-    using GyroPoolMath for uint256; // for the function number._sqrt(tolerance)
+    using GyroPoolMath for uint256; // number._sqrt(tolerance)
 
     // Stopping criterion for the Newton iteration that computes the invariant:
     // - Stop if the step width doesn't shrink anymore by at least a factor _INVARIANT_SHRINKING_FACTOR_PER_STEP.
-    // - but in any case, make at least _INVARIANT_MIN_ITERATIONS iterations. This is useful to compensate for a
-    //   less-than-ideal starting point, which is important when alpha is small.
+    // - ... but in any case, make at least _INVARIANT_MIN_ITERATIONS iterations. This is useful to compensate for a
+    // less-than-ideal starting point, which is important when alpha is small.
     uint8 internal constant _INVARIANT_SHRINKING_FACTOR_PER_STEP = 8;
     uint8 internal constant _INVARIANT_MIN_ITERATIONS = 5;
-
-    // Thresholds that prevent against numerical overflow and excessive inaccuracy:
 
     uint256 internal constant _MAX_BALANCES = 1e29; // 1e11 = 100 billion, scaled
     uint256 internal constant _MIN_ROOT_3_ALPHA = 0.15874010519681997e18; // 3rd root of 0.004, scaled
     uint256 internal constant _MAX_ROOT_3_ALPHA = 0.9999666655554938e18; // 3rd root of 0.9999, scaled
-
     // Threshold of l where the normal method of computing the newton step would overflow and we need a workaround.
-    uint256 internal constant _L_THRESHOLD_SIMPLE_NUMERICS = 2e31; // 2e13, scaled
-
+    uint256 internal constant _L_THRESHOLD_SIMPLE_NUMERICS = 4.87e31; // 4.87e13, scaled
     // Threshold of l above which overflows may occur in the Newton iteration. This is far above the theoretically
     // maximum possible (starting or solution or intermediate) value of l, so it would only ever be reached due to some
     // other bug in the Newton iteration.
     uint256 internal constant _L_MAX = 1e34; // 1e16, scaled
-
     // Minimum value of l / L+, where L+ is the local minimum of the function f. This is significantly below the
-    // theoretically minimum possible (starting or solution or intermediate) value of l / L+, so it would only ever be
-    // reached due to a bug in the Newton iteration. We require this because otherwise, rounding errors in
-    // `divDownLarge()` may become significant.
+    // theoretically maximum possible (starting or solution or intermediate) value of l, so it would only ever be reached
+    // due to a bug in the Newton iteration. We require this because otherwise, rounding errors in `divDownLarge()` may
+    // become significant.
     uint256 internal constant _L_VS_LPLUS_MIN = 1.3e18; // 1.3, scaled
 
     /** @dev The invariant L corresponding to the given balances and alpha. */
@@ -68,7 +59,7 @@ library Gyro3CLPMath {
         return _calculateCubic(a, mb, mc, md, root3Alpha);
     }
 
-    /** @dev Prepares cubic coefficients for input to _calculateCubic().
+    /** @dev Prepares cubic coefficients for input to _calculateCubic.
      *  We will have a > 0, b < 0, c <= 0, and d <= 0 and return a, -b, -c, -d, all >= 0
      *  Terms come from cubic in Section 3.1.1.*/
     function _calculateCubicTerms(uint256[] memory balances, uint256 root3Alpha)
@@ -81,8 +72,7 @@ library Gyro3CLPMath {
             uint256 md
         )
     {
-        // Order of operations is chosen to minimize error amplification. This also duplicates some operations, but
-        // minimizing error is more important than saving gas at this point.
+        // Order of operations is chosen to minimize error amplification.
         a = GyroFixedPoint.ONE - root3Alpha.mulDownU(root3Alpha).mulDownU(root3Alpha);
         uint256 bterm = balances[0] + balances[1] + balances[2];
         mb = bterm.mulDownU(root3Alpha).mulDownU(root3Alpha);
@@ -112,7 +102,7 @@ library Gyro3CLPMath {
     }
 
     /** @dev (Minimum safe value, starting point for Newton iteration). Calibrated to the particular polynomial for
-     * computing the invariant. For values < l_lower, errors from rounding can amplify too much when l is large. This
+     * computing the invariant. For values < l_lower, errors from rounding can amplify too much when l is large. This this
      * is only relevant for the branch of calcNewtonDelta() where rootEst > _L_THRESHOLD_SIMPLE_NUMERICS.
      */
     function _calculateCubicStartingPoint(
@@ -183,7 +173,7 @@ library Gyro3CLPMath {
 
         uint256 rootEst2 = rootEst.mulDownU(rootEst);
 
-        // The following is equal to dfRootEst^3 * a but with the order of operations optimized for precision.
+        // The following is equal to dfRootEst^3 * a but with an order of operations optimized for precision.
         // Subtraction does not underflow since rootEst is chosen so that it's always above the (only) local minimum.
         // SOMEDAY alternative with very slightly worse rounding and slightly lower gas:
         // uint256 dfRootEst = 3 * rootEst2;
@@ -201,9 +191,8 @@ library Gyro3CLPMath {
             deltaMinus = deltaMinus - deltaMinus.mulDownU(root3Alpha).mulDownU(root3Alpha).mulDownU(root3Alpha);
             deltaMinus = deltaMinus.divDownU(dfRootEst);
 
-            // NB: We could pull apart the different values here and reorder them in much the same way we did above to
-            // reduce errors. But tests show that this has no significant effect, and it would lead to more complex code
-            // and worse gas.
+            // NB: We could order the operations here in much the same way we did above to reduce errors. But tests show
+            // that this has no significant effect, and it would lead to more complex code.
             deltaPlus = rootEst2.mulDownU(mb);
             deltaPlus = (deltaPlus + rootEst.mulDownU(mc)).divDownU(dfRootEst);
             deltaPlus = deltaPlus + md.divDownU(dfRootEst);
@@ -263,16 +252,16 @@ library Gyro3CLPMath {
             // The factors in total lead to a multiplicative "safety margin" between the employed virtual offsets
             // very slightly larger than 3e-18, compensating for the maximum multiplicative error in the invariant
             // computation.
-            // SOMEDAY These factors could further be adjusted to compensate for potential errors in the invariant when
-            // the balances are very large. (likely not needed)
+            // SOMEDAY These factors can be adjusted to compensate for potential errors in the invariant when the
+            // balances are very large. (this may not be needed, to be revisited later)
             uint256 virtInOver = balanceIn + virtualOffset.mulUpU(GyroFixedPoint.ONE + 2);
             uint256 virtOutUnder = balanceOut + virtualOffset.mulDownU(GyroFixedPoint.ONE - 1);
 
-            // Note that the user can define amountIn so we have to check for overflows
-            amountOut = virtOutUnder.mulDown(amountIn).divDown(virtInOver.add(amountIn));
+            amountOut = virtOutUnder.mulDownU(amountIn).divDownU(virtInOver + amountIn);
         }
 
-        // We need to ensure amountOut <= balanceOut manually
+        // Note that this in particular reverts if amountOut > balanceOut, i.e., if the out-amount would be more than
+        // the balance.
         if (!(amountOut <= balanceOut)) _grequire(false, Gyro3CLPPoolErrors.ASSET_BOUNDS_EXCEEDED);
     }
 
@@ -301,27 +290,18 @@ library Gyro3CLPMath {
         // calculation add an appropriate safety margin.                                             //
         **********************************************************************************************/
 
-        // We need to ensure manually that amountOut <= balanceOut.
+        // Note that this in particular reverts if amountOut > balanceOut, i.e., if the trader tries to take more out of
+        // the pool than is in it.
         if (!(amountOut <= balanceOut)) _grequire(false, Gyro3CLPPoolErrors.ASSET_BOUNDS_EXCEEDED);
 
         {
             // The factors in total lead to a multiplicative "safety margin" between the employed virtual offsets
             // very slightly larger than 3e-18, compensating for the maximum multiplicative error in the invariant
             // computation.
-            // SOMEDAY These factors could further be adjusted to compensate for potential errors in the invariant when
-            // the balances are very large. (likely not needed)
             uint256 virtInOver = balanceIn + virtualOffset.mulUpU(GyroFixedPoint.ONE + 2);
             uint256 virtOutUnder = balanceOut + virtualOffset.mulDownU(GyroFixedPoint.ONE - 1);
 
-            // Note that the user can define amountOut so we have to check for overflows
-            amountIn = virtInOver.mulUp(amountOut).divUp(virtOutUnder.sub(amountOut));
+            amountIn = virtInOver.mulUpU(amountOut).divUpU(virtOutUnder - amountOut);
         }
-    }
-
-    /** @dev Computes relative spot prices of token0 and token1, respectively, in units of token2. */
-    function _calcSpotPrice01in2(uint256[] memory balances, uint256 virtualOffset) internal pure returns (uint256 spotPrice0, uint256 spotPrice1) {
-        uint256 virt2 = balances[2] + virtualOffset;
-        spotPrice0 = virt2.divUp(balances[0].add(virtualOffset));
-        spotPrice1 = virt2.divUp(balances[1].add(virtualOffset));
     }
 }

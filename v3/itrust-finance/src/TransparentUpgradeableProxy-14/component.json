@@ -12,7 +12,7 @@
       "address": "0x3687c0f8760371fc1bd1c7bc28695c388cded5a0",
       "is_proxy": true,
       "implementation_address": "0xfe91b8a83d6d7f8bf9b0cf3cbc6eb9687ee17e79",
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "ethereum",
@@ -20,7 +20,7 @@
       "address": "0x89a13b0be966e53429372bc47721e336befcf347",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "ethereum",
@@ -28,7 +28,7 @@
       "address": "0xfca6b0573034baaca576ea2ef675032fb8df6cec",
       "is_proxy": true,
       "implementation_address": "0x89a13b0be966e53429372bc47721e336befcf347",
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "ethereum",
@@ -36,7 +36,7 @@
       "address": "0xfe91b8a83d6d7f8bf9b0cf3cbc6eb9687ee17e79",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

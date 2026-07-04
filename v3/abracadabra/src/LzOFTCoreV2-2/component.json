@@ -9,42 +9,42 @@
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0x48686c24697fe9042531b64d792304e514e74339",
+      "address": "0xa3ba2164553d2f266863968641a9ca47525cb11d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x41d5a04b4e03dc27dc1f5c5a576ad2187bc601af",
+      "address": "0xab137bb12e93fedb8b639771c4c4fe29ac138ee6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     },
     {
       "chain": "polygon",
       "chain_id": 137,
-      "address": "0xca0d86afc25c57a6d2acdf331cabd4c9cee05533",
+      "address": "0xf4b36812d1645dca9d562846e3abf416d590349e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     },
     {
       "chain": "chain-1285",
       "chain_id": 1285,
-      "address": "0xef2dbdfec54c466f7ff92c9c5c75abb6794f0195",
+      "address": "0x15f57fbcb7a443ac6022e051a46cae19491bc298",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     },
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0xb3a66127ccb143bfb01d3aecd3ce9d17381b130d",
+      "address": "0x56d924066bf9ef61caa26f8f1aeb451ea950e475",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

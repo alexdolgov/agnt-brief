@@ -9,10 +9,10 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xc8418af6358ffdda74e09ca9cc3fe03ca6adc5b0",
+      "address": "0xf8b237d60af4865192bd8b8d2bc1b2d607c1ffad",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

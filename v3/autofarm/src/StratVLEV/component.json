@@ -12,7 +12,7 @@
       "address": "0x13057e42bbf1b5d980ea79df5549be49ee624910",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
@@ -20,7 +20,7 @@
       "address": "0x5796b4e037e60f97360bda147cdd749c4d1743ff",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
@@ -28,7 +28,7 @@
       "address": "0x602817e63abca2caaae6b23c089ee4587b525f4b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
@@ -36,7 +36,7 @@
       "address": "0x89e1509810378f73b4bc0c1decb87fcca6fbe9a1",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
@@ -44,7 +44,7 @@
       "address": "0x91277c4a038da7ed1bdb54df4cf95ecdd70307ff",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
@@ -52,7 +52,7 @@
       "address": "0xcc48c51cea82afcb8a748807799ba6d6bd0ab5dd",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
@@ -60,7 +60,7 @@
       "address": "0xcd3a59ba91d8930baf59389c5ec9aa0ca8f29af3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
@@ -68,7 +68,7 @@
       "address": "0xdcd765e412283d4133949697e0359d3ba4d50437",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
@@ -76,7 +76,7 @@
       "address": "0xfffe1b26e0b2134d7be0440a9a336c215dcf159a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

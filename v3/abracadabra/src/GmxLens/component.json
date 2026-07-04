@@ -2,7 +2,7 @@
   "component": "GmxLens",
   "main_contract": "GmxLens",
   "source_file_count": 8,
-  "deployment_count": 11,
+  "deployment_count": 10,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -37,14 +37,6 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x714085ea0880fa247fbed8c29937392beea2cd74",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
     },
     {
       "chain": "arbitrum",

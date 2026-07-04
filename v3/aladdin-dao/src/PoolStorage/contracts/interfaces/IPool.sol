@@ -195,8 +195,9 @@ interface IPool {
 
   /// @notice Redeem debt tokens to get collateral tokens.
   /// @param rawDebts The amount of debt tokens to redeem.
+  /// @return actualRawDebts The actual amount of debt tokens used.
   /// @return rawColls The amount of collateral tokens to redeemed.
-  function redeem(uint256 rawDebts) external returns (uint256 rawColls);
+  function redeem(uint256 rawDebts) external returns (uint256 actualRawDebts, uint256 rawColls);
 
   /// @notice Rebalance all positions in the given tick.
   /// @param tick The id of tick to rebalance.

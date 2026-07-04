@@ -9,18 +9,18 @@
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0xc483622c06631400e5cb13ed015f9dc41a14bc12",
+      "address": "0x31c459baead0be6951c1e9697af07c25113730fd",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
-      "chain": "polygon",
-      "chain_id": 137,
-      "address": "0x135b6e9c211e6974f7cbb11ff96ac6b1550793d1",
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x38cb4ed792c8801f8774477051dbb182d9741049",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

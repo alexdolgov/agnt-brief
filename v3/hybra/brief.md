@@ -5,7 +5,7 @@
 - Project: Hybra (`hybra`)
 - Website: [https://www.hybra.finance?code=GRYN2U](https://www.hybra.finance?code=GRYN2U)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:58.727Z
+- Generated: 2026-07-04T11:05:41.931Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: hyperliquid
 - Contract surface: 76 unique implementations (87 raw deployments)

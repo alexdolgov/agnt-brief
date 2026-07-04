@@ -14,7 +14,7 @@
       "address": "0xf5e2cfde016bd55bef42a5a4baad7e21cd39720d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "ethereum",
@@ -22,7 +22,7 @@
       "address": "0xfcdeb46a92ff6b2980b60e175c5e6523d5d4cbab",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "optimism",

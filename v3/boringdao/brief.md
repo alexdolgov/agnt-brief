@@ -5,7 +5,7 @@
 - Project: BoringDAO (`boringdao`)
 - Website: [https://www.boringdao.com/](https://www.boringdao.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:36.083Z
+- Generated: 2026-07-04T11:05:40.754Z
 - Pipeline run: v2-pipeline-2026-07-01-2b719a-1bf2
 - Chains: arbitrum, aurora, avalanche, boba, bsc, ethereum, fantom, gnosis, harmony, heco, metis, optimism, polygon
 - Contract surface: 3833 unique implementations (4007 raw deployments)
@@ -15,16 +15,16 @@
 
 ## Project Description
 
-Cross Chain Bridge. Structurally: 180 project-authored contract(s) across 9 chain(s); 84 ERC20 tokens, 3 ERC721 NFTs, 2 ERC1155 multi-tokens, 2 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Cross Chain Bridge. Structurally: 235 project-authored contract(s) across 9 chain(s); 110 ERC20 tokens, 3 ERC721 NFTs, 2 ERC1155 multi-tokens, 2 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 11 functional families. Its contracts share 23 common project-authored base contract(s) (erc20detailed, structs, erc20pausable). Dominant framework: openzeppelin.
+The protocol comprises 11 functional families. Its contracts share 18 common project-authored base contract(s) (erc20detailed, structs, erc20pausable). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 4135; live-surface contracts included: 4007 (232 live, 3775 unknown).
-- Excluded by liveness: 128 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 4112; live-surface contracts included: 4007 (232 live, 3775 unknown).
+- Excluded by liveness: 105 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.

@@ -21,8 +21,6 @@ contract CLFactory is ICLFactory {
     /// @inheritdoc ICLFactory
     IFactoryRegistry public immutable override factoryRegistry;
     /// @inheritdoc ICLFactory
-    ICLFactory public immutable override legacyCLFactory;
-    /// @inheritdoc ICLFactory
     address public override owner;
     /// @inheritdoc ICLFactory
     address public override swapFeeManager;
@@ -36,27 +34,31 @@ contract CLFactory is ICLFactory {
     uint24 public override defaultUnstakedFee;
     /// @inheritdoc ICLFactory
     mapping(int24 => uint24) public override tickSpacingToFee;
-    /// @inheritdoc ICLFactory
-    mapping(address => mapping(address => mapping(int24 => address))) public override getPool;
     /// @dev Used in VotingEscrow to determine if a contract is a valid pool
     mapping(address => bool) private _isPool;
     /// @inheritdoc ICLFactory
     address[] public override allPools;
 
     int24[] private _tickSpacings;
+    mapping(address => mapping(address => mapping(int24 => address))) internal _getPool;
 
-    constructor(address _voter, address _clFactory, address _poolImplementation) {
-        owner = msg.sender;
-        swapFeeManager = msg.sender;
-        unstakedFeeManager = msg.sender;
+    constructor(
+        address _owner,
+        address _swapFeeManager,
+        address _unstakedFeeManager,
+        address _voter,
+        address _poolImplementation
+    ) {
+        owner = _owner;
+        swapFeeManager = _swapFeeManager;
+        unstakedFeeManager = _unstakedFeeManager;
         voter = IVoter(_voter);
         factoryRegistry = IVoter(_voter).factoryRegistry();
-        legacyCLFactory = ICLFactory(_clFactory);
         poolImplementation = _poolImplementation;
         defaultUnstakedFee = 100_000;
-        emit OwnerChanged(address(0), msg.sender);
-        emit SwapFeeManagerChanged(address(0), msg.sender);
-        emit UnstakedFeeManagerChanged(address(0), msg.sender);
+        emit OwnerChanged(address(0), _owner);
+        emit SwapFeeManagerChanged(address(0), _swapFeeManager);
+        emit UnstakedFeeManagerChanged(address(0), _unstakedFeeManager);
         emit DefaultUnstakedFeeChanged(0, 100_000);
 
         enableTickSpacing(1, 100);
@@ -67,8 +69,18 @@ contract CLFactory is ICLFactory {
     }
 
     /// @inheritdoc ICLFactory
+    function createPool(address tokenA, address tokenB, uint24 tickSpacing) external override returns (address) {
+        return createPool({
+            tokenA: tokenA,
+            tokenB: tokenB,
+            tickSpacing: int24(tickSpacing),
+            sqrtPriceX96: 79228162514264337593543950336 // encodePriceSqrt(1, 1)
+        });
+    }
+
+    /// @inheritdoc ICLFactory
     function createPool(address tokenA, address tokenB, int24 tickSpacing, uint160 sqrtPriceX96)
-        external
+        public
         override
         returns (address pool)
     {
@@ -76,11 +88,7 @@ contract CLFactory is ICLFactory {
         (address token0, address token1) = tokenA < tokenB ? (tokenA, tokenB) : (tokenB, tokenA);
         require(token0 != address(0));
         require(tickSpacingToFee[tickSpacing] != 0);
-        require(getPool[token0][token1][tickSpacing] == address(0));
-        if (legacyCLFactory.getPool({tokenA: token0, tokenB: token1, tickSpacing: tickSpacing}) != address(0)) {
-            require(msg.sender == owner);
-        }
-
+        require(_getPool[token0][token1][tickSpacing] == address(0));
         pool = Clones.cloneDeterministic({
             master: poolImplementation,
             salt: keccak256(abi.encode(token0, token1, tickSpacing))
@@ -95,9 +103,9 @@ contract CLFactory is ICLFactory {
         });
         allPools.push(pool);
         _isPool[pool] = true;
-        getPool[token0][token1][tickSpacing] = pool;
+        _getPool[token0][token1][tickSpacing] = pool;
         // populate mapping in the reverse direction, deliberate choice to avoid the cost of comparing addresses
-        getPool[token1][token0][tickSpacing] = pool;
+        _getPool[token1][token0][tickSpacing] = pool;
         emit PoolCreated(token0, token1, tickSpacing, pool);
     }
 
@@ -206,6 +214,14 @@ contract CLFactory is ICLFactory {
         emit TickSpacingEnabled(tickSpacing, fee);
     }
 
+    function getPool(address tokenA, address tokenB, int24 tickSpacing) external view override returns (address) {
+        return _getPool[tokenA][tokenB][tickSpacing];
+    }
+
+    function getPool(address tokenA, address tokenB, uint24 tickSpacing) external view override returns (address) {
+        return _getPool[tokenA][tokenB][int24(tickSpacing)];
+    }
+
     /// @inheritdoc ICLFactory
     function tickSpacings() external view override returns (int24[] memory) {
         return _tickSpacings;
@@ -217,7 +233,7 @@ contract CLFactory is ICLFactory {
     }
 
     /// @inheritdoc ICLFactory
-    function isPool(address pool) external view override returns (bool) {
+    function isPair(address pool) external view override returns (bool) {
         return _isPool[pool];
     }
 }

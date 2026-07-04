@@ -2,7 +2,7 @@
   "component": "Exec",
   "main_contract": "Exec",
   "source_file_count": 18,
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +12,23 @@
       "address": "0x0bf04952a5b3ef6bad343c2218f584a7413bb44d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x14cbac4ec5673defd3968693eba994f07f8436d2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x155020c32ceb5e1bfdd6217c2e7906c92bcac8c1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
     }
   ]
 }

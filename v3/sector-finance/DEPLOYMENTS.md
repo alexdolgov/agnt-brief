@@ -7,11 +7,11 @@
 | chain-1285 | `0x0517ca29c3948779cd61849a51dca85449fe3128` | ScionTimelock | impl | inactive | yes |
 | chain-1285 | `0x087932f702aa80bbec47875186702ec41fab5ada` | MasterChefCompMulti | impl | live | yes |
 | chain-1285 | `0x09fce40f017e0ac7551b49a372760ee474f5f1bc` | MasterChefCompMulti | impl | live | yes |
-| chain-1285 | `0x33c996f17a37fa323586017bf87c14247d9d3ee9` | ERC4626U-2 | impl | live | yes |
+| chain-1285 | `0x33c996f17a37fa323586017bf87c14247d9d3ee9` | AggregatorVaultU | impl | live | yes |
 | chain-1285 | `0x402b16adae502e5b5a49f4593face220ab0b6dfb` | MasterChefCompMulti | impl | live | yes |
 | chain-1285 | `0x615c884c42c3bca1b93d6e28f7d416916d9f4bf8` | HLPVault | impl | live | yes |
 | chain-1285 | `0x689c5e52ea6104b9632905d58a5fcf63e2ae3a4d` | MasterChefCompMulti | impl | live | yes |
-| chain-1285 | `0x710663be3ac476e3c8dc84a7e98316b7de239380` | ERC4626U-3 | impl | live | yes |
+| chain-1285 | `0x710663be3ac476e3c8dc84a7e98316b7de239380` | AggregatorVaultU-2 | impl | live | yes |
 | chain-1285 | `0x7115f16c3db03056f67963ca48e227c3cde59363` | SectorTimelock-2 | impl | live | yes |
 | chain-1285 | `0x813a1942d4be93e1b33764108b5273b4c8f6c739` | ScionVaultFactory | impl | live | no |
 | chain-1285 | `0x91c9b2e4e79b3f89ced5bf62fb5f2608362694b9` | ERC4626U | impl | live | yes |
@@ -21,7 +21,7 @@
 | chain-1285 | `0x97b4d169014c15e7a5890123992fa543086e6b51` | VaultUpgradable | impl | live | no |
 | chain-1285 | `0x97dd9a5a017f682bb0872f2f8a3b7aa6ff040b90` | UniUtils-3 | impl | live | yes |
 | chain-1285 | `0x995a364c5f949c900fa230333a0b4eb511e48cbf` | UniUtils-4 | impl | live | yes |
-| chain-1285 | `0x9ea78f462f4f2ef1ff2841772024d8fe1149dd76` | SectorBeacon-4 | impl | live | yes |
+| chain-1285 | `0x9ea78f462f4f2ef1ff2841772024d8fe1149dd76` | SCYVaultU | impl | live | yes |
 | chain-1285 | `0xaa40216ce9f6b9baab726fbc83a184944a993b2a` | UpgradeableBeacon | impl | live | no |
 | chain-1285 | `0xaa47c9422fd5e12f1a364e659b593e1a10fc5436` | MasterChefCompMulti | impl | live | yes |
 | chain-1285 | `0xaa87f56c1fc6c7a82ebaee7f4a97176faa1bfe91` | MasterChefCompMulti | impl | live | yes |
@@ -29,8 +29,8 @@
 | chain-1285 | `0xb2e0ff67be42a569f6b1f50a5a43e5fd0952e58a` | HLPVault | impl | live | yes |
 | chain-1285 | `0xbf84671e68ec305abe63a813c2abb1d0f9f32123` | USDCmovrSOLARwell | impl | live | no |
 | chain-1285 | `0xc85f25eb74eaa5ad74eb6d9e8bdf686089a156d5` | SectorFactory-2 | impl | live | yes |
-| chain-1285 | `0xccadd7a856a71375db47e32abc5c5fd5f6b00454` | SectorBeacon-5 | impl | live | yes |
-| chain-1285 | `0xcfe9710df9b8d95f1c503a70ac44a7d84d8c1f97` | ERC4626U-4 | impl | live | yes |
+| chain-1285 | `0xccadd7a856a71375db47e32abc5c5fd5f6b00454` | SCYVaultU-2 | impl | live | yes |
+| chain-1285 | `0xcfe9710df9b8d95f1c503a70ac44a7d84d8c1f97` | AggregatorVaultU-3 | impl | live | yes |
 | chain-1285 | `0xd40bd3bcb176314b4e929ace8ece1c081fe9fea2` | USDCmovrSOLARwell | impl | live | no |
 | chain-1285 | `0xd8f376dfae76bad02dcec4260795dfd5c9d200a9` | SectorBase | impl | live | yes |
 | chain-1285 | `0xdbd42bcbe8f81d2da8d46fd158829c931e08cdd2` | SectorBeacon-2 | impl | live | no |

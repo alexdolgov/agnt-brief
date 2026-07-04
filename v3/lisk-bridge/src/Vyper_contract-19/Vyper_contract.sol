@@ -1,495 +1,245 @@
-# @version 0.2.12
-# @author skozin <info@lido.fi>
+# @version 0.2.8
+# @author Lido <info@lido.fi>
 # @licence MIT
 from vyper.interfaces import ERC20
 
 
-interface BridgeConnector:
-    def forward_beth(terra_address: bytes32, amount: uint256, extra_data: Bytes[1024]): nonpayable
-    def forward_ust(terra_address: bytes32, amount: uint256, extra_data: Bytes[1024]): nonpayable
-    def adjust_amount(amount: uint256, decimals: uint256) -> uint256: view
+# Lido DAO Vault (Agent) contract
+interface Vault:
+    def deposit(_token: address, _value: uint256): payable
 
 
-interface RewardsLiquidator:
-    def liquidate(ust_recipient: address) -> uint256: nonpayable
+# The purchase has been executed exchanging ETH to vested LDO
+event PurchaseExecuted:
+    # the address that has received the vested LDO tokens
+    ldo_receiver: indexed(address)
+    # the number of LDO tokens vested to ldo_receiver
+    ldo_allocation: uint256
+    # the amount of ETH that was paid and forwarded to the DAO
+    eth_cost: uint256
+    # the vesting id to be used with the DAO's TokenManager contract
+    vesting_id: uint256
+
+event OfferStarted:
+    started_at: uint256
+    expires_at: uint256
 
 
-interface InsuranceConnector:
-    def total_shares_burnt() -> uint256: view
+MAX_PURCHASERS: constant(uint256) = 50
+ETH_TO_LDO_RATE_PRECISION: constant(uint256) = 10**18
+
+LDO_TOKEN: constant(address) = 0x5A98FcBEA516Cf06857215779Fd812CA3beF1B32
+LIDO_DAO_TOKEN_MANAGER: constant(address) = 0xf73a1260d222f447210581DDf212D915c09a3249
+LIDO_DAO_VAULT: constant(address) = 0x3e40D73EB977Dc6a537aF587D48316feE66E9C8c
+LIDO_DAO_VAULT_ETH_TOKEN: constant(address) = ZERO_ADDRESS
 
 
-interface Mintable:
-    def mint(owner: address, amount: uint256): nonpayable
-    def burn(owner: address, amount: uint256): nonpayable
+# how much LDO in one ETH, ETH_TO_LDO_RATE_PRECISION being 1
+eth_to_ldo_rate: public(uint256)
+ldo_allocations: public(HashMap[address, uint256])
+ldo_allocations_total: public(uint256)
 
-
-interface Lido:
-    def submit(referral: address) -> uint256: payable
-    def totalSupply() -> uint256: view
-    def getTotalShares() -> uint256: view
-    def sharesOf(owner: address) -> uint256: view
-    def getPooledEthByShares(shares_amount: uint256) -> uint256: view
-
-
-event Deposited:
-    sender: indexed(address)
-    amount: uint256
-    terra_address: bytes32
-
-
-event Withdrawn:
-    recipient: indexed(address)
-    amount: uint256
-
-
-event RewardsCollected:
-    steth_amount: uint256
-    ust_amount: uint256
-
-
-event AdminChanged:
-    new_admin: address
-
-
-event BridgeConnectorUpdated:
-    bridge_connector: address
-
-
-event RewardsLiquidatorUpdated:
-    rewards_liquidator: address
-
-
-event InsuranceConnectorUpdated:
-    insurance_connector: address
-
-
-event LiquidationConfigUpdated:
-    liquidations_admin: address
-    no_liquidation_interval: uint256
-    restricted_liquidation_interval: uint256
-
-
-event AnchorRewardsDistributorUpdated:
-    anchor_rewards_distributor: bytes32
-
-
-BETH_DECIMALS: constant(uint256) = 18
-
-# A constant used in `_can_deposit_or_withdraw` when comparing Lido share prices.
-#
-# Due to integer rounding, Lido.getPooledEthByShares(10**18) may return slightly
-# different numbers even if there were no oracle reports between two calls. This
-# might happen if someone submits ETH before the second call. It can be mathematically
-# proven that this difference won't be more than 10 wei given that Lido holds at least
-# 0.1 ETH and the share price is of the same order of magnitude as the amount of ETH
-# held. Both of these conditions are true if Lido operates normally—and if it doesn't,
-# it's desirable for AnchorVault operations to be suspended. See:
-#
-# https://github.com/lidofinance/lido-dao/blob/eb33eb8/contracts/0.4.24/Lido.sol#L445
-# https://github.com/lidofinance/lido-dao/blob/eb33eb8/contracts/0.4.24/StETH.sol#L288
-#
-STETH_SHARE_PRICE_MAX_ERROR: constant(uint256) = 10
-
-# WARNING: since this contract is behind a proxy, don't change the order of the variables
-# and don't remove variables during the code upgrades. You can only append new variables
-# to the end of the list.
-
-admin: public(address)
-
-beth_token: public(address)
-steth_token: public(address)
-bridge_connector: public(address)
-rewards_liquidator: public(address)
-insurance_connector: public(address)
-anchor_rewards_distributor: public(bytes32)
-
-liquidations_admin: public(address)
-no_liquidation_interval: public(uint256)
-restricted_liquidation_interval: public(uint256)
-
-last_liquidation_time: public(uint256)
-last_liquidation_share_price: public(uint256)
-last_liquidation_shares_burnt: public(uint256)
+# in seconds
+offer_expiration_delay: public(uint256)
+offer_started_at: public(uint256)
+offer_expires_at: public(uint256)
+vesting_cliff_delay: public(uint256)
+vesting_end_delay: public(uint256)
 
 
 @external
-def initialize(beth_token: address, steth_token: address, admin: address):
-    assert self.beth_token == ZERO_ADDRESS # dev: already initialized
-    assert beth_token != ZERO_ADDRESS # dev: invalid bETH address
-    assert steth_token != ZERO_ADDRESS # dev: invalid stETH address
-
-    assert ERC20(beth_token).totalSupply() == 0 # dev: non-zero bETH total supply
-
-    self.beth_token = beth_token
-    self.steth_token = steth_token
-    # we're explicitly allowing zero admin address for ossification
-    self.admin = admin
-    self.last_liquidation_share_price = Lido(steth_token).getPooledEthByShares(10**18)
-
-    log AdminChanged(admin)
-
-
-@external
-def change_admin(new_admin: address):
-    """
-    @dev Changes the admin address. Can only be called by the current admin address.
-
-    Setting the admin to zero ossifies the contract, i.e. makes it irreversibly non-administrable.
-    """
-    assert msg.sender == self.admin # dev: unauthorized
-    self.admin = new_admin
-    log AdminChanged(new_admin)
-
-
-@internal
-def _set_bridge_connector(_bridge_connector: address):
-    self.bridge_connector = _bridge_connector
-    log BridgeConnectorUpdated(_bridge_connector)
-
-
-@external
-def set_bridge_connector(_bridge_connector: address):
-    """
-    @dev Sets the bridge connector contract: an adapter contract for communicating
-         with the Terra bridge.
-
-    Can only be called by the current admin address.
-    """
-    assert msg.sender == self.admin # dev: unauthorized
-    self._set_bridge_connector(_bridge_connector)
-
-
-@internal
-def _set_rewards_liquidator(_rewards_liquidator: address):
-    self.rewards_liquidator = _rewards_liquidator # dev: unauthorized
-    log RewardsLiquidatorUpdated(_rewards_liquidator)
-
-
-@external
-def set_rewards_liquidator(_rewards_liquidator: address):
-    """
-    @dev Sets the rewards liquidator contract: a contract for selling stETH rewards to UST.
-
-    Can only be called by the current admin address.
-    """
-    assert msg.sender == self.admin # dev: unauthorized
-    self._set_rewards_liquidator(_rewards_liquidator)
-
-
-@internal
-def _set_insurance_connector(_insurance_connector: address):
-    self.insurance_connector = _insurance_connector
-    log InsuranceConnectorUpdated(_insurance_connector)
-
-
-@external
-def set_insurance_connector(_insurance_connector: address):
-    """
-    @dev Sets the insurance connector contract: a contract for obtaining the total number of
-         shares burnt for the purpose of insurance/cover application from the Lido protocol.
-
-    Can only be called by the current admin address.
-    """
-    assert msg.sender == self.admin # dev: unauthorized
-    self._set_insurance_connector(_insurance_connector)
-
-
-@internal
-def _set_liquidation_config(
-    _liquidations_admin: address,
-    _no_liquidation_interval: uint256,
-    _restricted_liquidation_interval: uint256
-):
-    assert _restricted_liquidation_interval >= _no_liquidation_interval
-
-    self.liquidations_admin = _liquidations_admin
-    self.no_liquidation_interval = _no_liquidation_interval
-    self.restricted_liquidation_interval = _restricted_liquidation_interval
-
-    log LiquidationConfigUpdated(
-        _liquidations_admin,
-        _no_liquidation_interval,
-        _restricted_liquidation_interval
-    )
-
-
-@external
-def set_liquidation_config(
-    _liquidations_admin: address,
-    _no_liquidation_interval: uint256,
-    _restricted_liquidation_interval: uint256,
+def __init__(
+    _eth_to_ldo_rate: uint256,
+    _vesting_cliff_delay: uint256,
+    _vesting_end_delay: uint256,
+    _offer_expiration_delay: uint256,
+    _ldo_purchasers: address[MAX_PURCHASERS],
+    _ldo_allocations: uint256[MAX_PURCHASERS],
+    _ldo_allocations_total: uint256
 ):
     """
-    @dev Sets the liquidation config consisting of liquidation admin, the address that is allowed
-         to sell stETH rewards to UST during after the no-liquidation interval ends and before
-         the restricted liquidation interval ends, as well as both intervals.
-
-    Can only be called by the current admin address.
+    @param _eth_to_ldo_rate How much LDO one gets for one ETH (multiplied by 10**18)
+    @param _vesting_cliff_delay Delay from vesting start to vesting cliff, in seconds
+    @param _vesting_end_delay Delay from vesting start to vesting end, in seconds
+    @param _offer_expiration_delay Delay from the contract deployment to offer expiration, in seconds
+    @param _ldo_purchasers List of valid LDO purchasers, padded by zeroes to the length of 50
+    @param _ldo_allocations List of LDO token allocations, padded by zeroes to the length of 50
+    @param _ldo_allocations_total Checksum of LDO token allocations
     """
-    assert msg.sender == self.admin # dev: unauthorized
-    self._set_liquidation_config(
-        _liquidations_admin,
-        _no_liquidation_interval,
-        _restricted_liquidation_interval
+    assert _eth_to_ldo_rate > 0
+    assert _vesting_end_delay >= _vesting_cliff_delay
+    assert _offer_expiration_delay > 0
+
+    self.eth_to_ldo_rate = _eth_to_ldo_rate
+    self.vesting_cliff_delay = _vesting_cliff_delay
+    self.vesting_end_delay = _vesting_end_delay
+    self.offer_expiration_delay = _offer_expiration_delay
+    self.ldo_allocations_total = _ldo_allocations_total
+
+    allocations_sum: uint256 = 0
+
+    for i in range(MAX_PURCHASERS):
+        purchaser: address = _ldo_purchasers[i]
+        if purchaser == ZERO_ADDRESS:
+            break
+        assert self.ldo_allocations[purchaser] == 0
+        allocation: uint256 = _ldo_allocations[i]
+        assert allocation > 0
+        self.ldo_allocations[purchaser] = allocation
+        allocations_sum += allocation
+
+    assert allocations_sum == _ldo_allocations_total
+
+
+@internal
+@view
+def _get_allocation(_ldo_receiver: address) -> (uint256, uint256):
+    ldo_allocation: uint256 = self.ldo_allocations[_ldo_receiver]
+    eth_cost: uint256 = (ldo_allocation * ETH_TO_LDO_RATE_PRECISION) / self.eth_to_ldo_rate
+    return (ldo_allocation, eth_cost)
+
+
+@external
+@view
+def offer_started() -> bool:
+    """
+    @return Whether the offer has started.
+    """
+    return self.offer_started_at != 0
+
+
+@external
+@view
+def offer_expired() -> bool:
+    """
+    @return Whether the offer has expired.
+    """
+    return block.timestamp >= self.offer_expires_at
+
+
+@internal
+def _start_unless_started():
+    if self.offer_started_at == 0:
+        assert ERC20(LDO_TOKEN).balanceOf(self) == self.ldo_allocations_total, "not funded"
+        started_at: uint256 = block.timestamp
+        expires_at: uint256 = started_at + self.offer_expiration_delay
+        self.offer_started_at = started_at
+        self.offer_expires_at = expires_at
+        log OfferStarted(started_at, expires_at)
+
+
+@external
+def start():
+    """
+    @notice Starts the offer if it 1) hasn't been started yet and 2) has received funding in full.
+    """
+    self._start_unless_started()
+
+
+@external
+@view
+def get_allocation(_ldo_receiver: address = msg.sender) -> (uint256, uint256):
+    """
+    @param _ldo_receiver The LDO purchaser address to check
+    @return
+        A tuple: the first element is the amount of LDO available for purchase (zero if
+        the purchase was already executed for that address), the second element is the
+        Ether cost of the purchase.
+    """
+    return self._get_allocation(_ldo_receiver)
+
+
+@internal
+def _execute_purchase(_ldo_receiver: address, _caller: address, _eth_received: uint256) -> uint256:
+    """
+    @dev
+        We don't use any reentrancy lock here because, among all external calls in this
+        function (Vault.deposit, TokenManager.assignVested, LDO.transfer, and the default
+        payable function of the message sender), only the last one executes the code not
+        under our control, and we make this call after all state mutations.
+    """
+    self._start_unless_started()
+    assert block.timestamp < self.offer_expires_at, "offer expired"
+
+    ldo_allocation: uint256 = 0
+    eth_cost: uint256 = 0
+    ldo_allocation, eth_cost = self._get_allocation(_ldo_receiver)
+
+    assert ldo_allocation > 0, "no allocation"
+    assert _eth_received >= eth_cost, "insufficient funds"
+
+    # clear the purchaser's allocation
+    self.ldo_allocations[_ldo_receiver] = 0
+
+    # forward ETH cost of the purchase to the DAO treasury contract
+    Vault(LIDO_DAO_VAULT).deposit(
+        LIDO_DAO_VAULT_ETH_TOKEN,
+        eth_cost,
+        value=eth_cost
     )
 
+    vesting_start: uint256 = block.timestamp
+    vesting_cliff: uint256 = vesting_start + self.vesting_cliff_delay
+    vesting_end: uint256 = vesting_start + self.vesting_end_delay
 
-@internal
-def _set_anchor_rewards_distributor(_anchor_rewards_distributor: bytes32):
-    self.anchor_rewards_distributor = _anchor_rewards_distributor
-    log AnchorRewardsDistributorUpdated(_anchor_rewards_distributor)
+    # TokenManager can only assign vested tokens from its own balance
+    assert ERC20(LDO_TOKEN).transfer(LIDO_DAO_TOKEN_MANAGER, ldo_allocation)
 
-
-@external
-def set_anchor_rewards_distributor(_anchor_rewards_distributor: bytes32):
-    """
-    @dev Sets the Terra-side UST rewards distributor contract allowing Terra-side bETH holders
-         to claim their staking rewards in the UST form.
-
-    Can only be called by the current admin address.
-    """
-    assert msg.sender == self.admin # dev: unauthorized
-    self._set_anchor_rewards_distributor(_anchor_rewards_distributor)
-
-
-@external
-def configure(
-    _bridge_connector: address,
-    _rewards_liquidator: address,
-    _insurance_connector: address,
-    _liquidations_admin: address,
-    _no_liquidation_interval: uint256,
-    _restricted_liquidation_interval: uint256,
-    _anchor_rewards_distributor: bytes32,
-):
-    """
-    @dev A shortcut function for setting all admin-configurable settings at once.
-
-    Can only be called by the current admin address.
-    """
-    assert msg.sender == self.admin # dev: unauthorized
-    self._set_bridge_connector(_bridge_connector)
-    self._set_rewards_liquidator(_rewards_liquidator)
-    self._set_insurance_connector(_insurance_connector)
-    self._set_liquidation_config(
-        _liquidations_admin,
-        _no_liquidation_interval,
-        _restricted_liquidation_interval
+    # assign vested LDO tokens to the purchaser from the DAO treasury reserves
+    # Vyper has no uint64 data type so we have to use raw_call instead of an interface
+    call_result: Bytes[32] = raw_call(
+        LIDO_DAO_TOKEN_MANAGER,
+        concat(
+            method_id('assignVested(address,uint256,uint64,uint64,uint64,bool)'),
+            convert(_ldo_receiver, bytes32),
+            convert(ldo_allocation, bytes32),
+            convert(vesting_start, bytes32),
+            convert(vesting_cliff, bytes32),
+            convert(vesting_end, bytes32),
+            convert(False, bytes32)
+        ),
+        max_outsize=32
     )
-    self._set_anchor_rewards_distributor(_anchor_rewards_distributor)
+    vesting_id: uint256 = convert(extract32(call_result, 0), uint256)
 
+    log PurchaseExecuted(_ldo_receiver, ldo_allocation, eth_cost, vesting_id)
 
-@internal
-@view
-def _get_rate(_is_withdraw_rate: bool) -> uint256:
-    steth_balance: uint256 = ERC20(self.steth_token).balanceOf(self)
-    beth_supply: uint256 = ERC20(self.beth_token).totalSupply()
-    if steth_balance >= beth_supply:
-        return 10**18
-    elif _is_withdraw_rate:
-        return (steth_balance * 10**18) / beth_supply
-    elif steth_balance == 0:
-        return 10**18
-    else:
-        return (beth_supply * 10**18) / steth_balance
+    # refund any excess ETH to the caller
+    eth_refund: uint256 = _eth_received - eth_cost
+    if eth_refund > 0:
+        # use raw_call to forward all remaining gas just in case the caller is a smart contract
+        raw_call(_caller, b"", value=eth_refund)
 
-
-@external
-@view
-def get_rate() -> uint256:
-    """
-    @dev How much bETH one receives for depositing one stETH, and how much bETH one needs
-         to provide to withdraw one stETH, 10**18 being the 1:1 rate.
-
-    This rate is notmally 10**18 (1:1) but might be different after severe penalties inflicted
-    on the Lido validators.
-    """
-    return self._get_rate(False)
-
-
-@pure
-@internal
-def _diff_abs(new: uint256, old: uint256) -> uint256:
-    if new > old :
-        return new - old
-    else:
-        return old - new
-
-
-@view
-@internal
-def _can_deposit_or_withdraw() -> bool:
-    share_price: uint256 = Lido(self.steth_token).getPooledEthByShares(10**18)
-    return self._diff_abs(share_price, self.last_liquidation_share_price) <= STETH_SHARE_PRICE_MAX_ERROR
-
-
-@view
-@external
-def can_deposit_or_withdraw() -> bool:
-    """
-    @dev Whether deposits and withdrawals are enabled.
-
-    Deposits and withdrawals are disabled if stETH token has rebased (e.g. Lido
-    oracle reported Beacon chain rewards/penalties or insurance was applied) but
-    vault rewards accrued since the last rewards sell operation are not sold to
-    UST yet. Normally, this period should not last more than a couple of minutes
-    each 24h.
-    """
-    return self._can_deposit_or_withdraw()
+    return vesting_id
 
 
 @external
 @payable
-def submit(_amount: uint256, _terra_address: bytes32, _extra_data: Bytes[1024]) -> (uint256, uint256):
+def execute_purchase(_ldo_receiver: address = msg.sender) -> uint256:
     """
-    @dev Locks the `_amount` of provided ETH or stETH tokens in return for bETH tokens
-         minted to the `_terra_address` address on the Terra blockchain.
-
-    When ETH is provided, it will be deposited to Lido and converted to stETH first.
-    In this case, transaction value must be the same as `_amount` argument.
-
-    To provide stETH, set the transavtion value to zero and approve this contract for spending
-    the `_amount` of stETH on your behalf.
-
-    The call fails if `AnchorVault.can_deposit_or_withdraw()` is false.
-
-    The conversion rate from stETH to bETH should normally be 1 but might be different after
-    severe penalties inflicted on the Lido validators. You can obtain the current conversion
-    rate by calling `AnchorVault.get_rate()`.
+    @notice Purchases LDO for the specified address (defaults to message sender) in exchange for ETH.
+    @param _ldo_receiver The address the purchase is executed for. Must be a valid purchaser.
+    @return Vesting ID to be used with the DAO's `TokenManager` contract.
     """
-    assert self._can_deposit_or_withdraw() # dev: share price changed
-
-    steth_token: address = self.steth_token
-    steth_amount: uint256 = _amount
-
-    if msg.value != 0:
-        assert msg.value == _amount # dev: unexpected ETH amount sent
-        shares_minted: uint256 = Lido(steth_token).submit(self, value=_amount)
-        steth_amount = Lido(steth_token).getPooledEthByShares(shares_minted)
-
-    connector: address = self.bridge_connector
-
-    beth_rate: uint256 = self._get_rate(False)
-    beth_amount: uint256 = (steth_amount * beth_rate) / 10**18
-    # the bridge might not support full precision amounts
-    beth_amount = BridgeConnector(connector).adjust_amount(beth_amount, BETH_DECIMALS)
-
-    steth_amount_adj: uint256 = (beth_amount * 10**18) / beth_rate
-    assert steth_amount_adj <= steth_amount # dev: invalid adjusted amount
-
-    if msg.value == 0:
-        ERC20(steth_token).transferFrom(msg.sender, self, steth_amount_adj)
-    elif steth_amount_adj < steth_amount:
-        ERC20(steth_token).transfer(msg.sender, steth_amount - steth_amount_adj)
-
-    Mintable(self.beth_token).mint(connector, beth_amount)
-    BridgeConnector(connector).forward_beth(_terra_address, beth_amount, _extra_data)
-
-    log Deposited(msg.sender, steth_amount_adj, _terra_address)
-
-    return (steth_amount_adj, beth_amount)
+    return self._execute_purchase(_ldo_receiver, msg.sender, msg.value)
 
 
 @external
-def withdraw(_amount: uint256, _recipient: address = msg.sender) -> uint256:
+@payable
+def __default__():
     """
-    @dev Burns the `_amount` of provided Ethereum-side bETH tokens in return for stETH
-         tokens transferred to the `_recipient` Ethereum address.
-
-    To withdraw Terra-side bETH, you should firstly transfer the tokens to the Ethereum
-    blockchain.
-
-    The call fails if `AnchorVault.can_deposit_or_withdraw()` is false.
-
-    The conversion rate from stETH to bETH should normally be 1 but might be different after
-    severe penalties inflicted on the Lido validators. You can obtain the current conversion
-    rate by calling `AnchorVault.get_rate()`.
+    @notice Purchases LDO for the message sender in exchange for ETH.
     """
-    assert self._can_deposit_or_withdraw() # dev: share price changed
-
-    steth_rate: uint256 = self._get_rate(True)
-    steth_amount: uint256 = (_amount * steth_rate) / 10**18
-
-    Mintable(self.beth_token).burn(msg.sender, _amount)
-    ERC20(self.steth_token).transfer(_recipient, steth_amount)
-
-    log Withdrawn(_recipient, _amount)
-
-    return steth_amount
+    self._execute_purchase(msg.sender, msg.sender, msg.value)
 
 
 @external
-def collect_rewards() -> uint256:
+def recover_unsold_tokens():
     """
-    @dev Sells stETH rewards and transfers them to the distributor contract in the
-         Terra blockchain.
+    @notice Transfers unsold LDO tokens back to the DAO treasury.
+    @dev May only be called after the offer expires.
     """
-    time_since_last_liquidation: uint256 = block.timestamp - self.last_liquidation_time
-
-    if msg.sender == self.liquidations_admin:
-        assert time_since_last_liquidation > self.no_liquidation_interval # dev: too early to sell
-    else:
-        assert time_since_last_liquidation > self.restricted_liquidation_interval # dev: too early to sell
-
-    # The code below sells all rewards accrued by stETH held in the vault to UST
-    # and forwards the outcome to the rewards distributor contract in Terra.
-    #
-    # To calculate the amount of rewards, we need to take the amount of stETH shares
-    # the vault holds and determine how these shares' price increased since the last
-    # rewards sell operation. We know that each shares that was transferred to the
-    # vault since then was worth the same amount of stETH because the vault reverts
-    # any deposits and withdrawals if the current share price is different from the
-    # one actual at the last rewards sell time (see `can_deposit_or_withdraw` fn).
-    #
-    # When calculating the difference in share price, we need to account for possible
-    # insurance applications that might have occured since the last rewards sell operation.
-    # Insurance is applied by burning stETH shares, and the resulting price increase of
-    # a single share shouldn't be considered as rewards and should recover bETH/stETH
-    # peg instead:
-    #
-    # rewards = vault_shares_bal * (new_share_price - prev_share_price)
-    #
-    # new_share_price = new_total_ether / new_total_shares
-    # new_total_ether = prev_total_ether + d_ether_io + d_rewards
-    # new_total_shares = prev_total_shares + d_shares_io - d_shares_insurance_burnt
-    #
-    # rewards_corrected = vault_shares_bal * (new_share_price_corrected - prev_share_price)
-    # new_share_price_corrected = new_total_ether / new_total_shares_corrected
-    # new_total_shares_corrected = prev_total_shares + d_shares_io
-    # new_share_price_corrected = new_total_ether / (new_total_shares + d_shares_insurance_burnt)
-
-    steth_token: address = self.steth_token
-    total_pooled_eth: uint256 = Lido(steth_token).totalSupply()
-    total_shares: uint256 = Lido(steth_token).getTotalShares()
-
-    share_price: uint256 = (10**18 * total_pooled_eth) / total_shares
-    shares_burnt: uint256 = InsuranceConnector(self.insurance_connector).total_shares_burnt()
-
-    prev_share_price: uint256 = self.last_liquidation_share_price
-    prev_shares_burnt: uint256 = self.last_liquidation_shares_burnt
-
-    self.last_liquidation_time = block.timestamp
-    self.last_liquidation_share_price = share_price
-    self.last_liquidation_shares_burnt = shares_burnt
-
-    shares_burnt_since: uint256 = shares_burnt - prev_shares_burnt
-    share_price_corrected: uint256 = (10**18 * total_pooled_eth) / (total_shares + shares_burnt_since)
-
-    if share_price_corrected <= prev_share_price:
-        log RewardsCollected(0, 0)
-        return 0
-
-    shares_balance: uint256 = Lido(steth_token).sharesOf(self)
-    steth_to_sell: uint256 = shares_balance * (share_price_corrected - prev_share_price) / 10**18
-
-    connector: address = self.bridge_connector
-    liquidator: address = self.rewards_liquidator
-
-    ERC20(steth_token).transfer(liquidator, steth_to_sell)
-    ust_amount: uint256 = RewardsLiquidator(liquidator).liquidate(connector)
-
-    BridgeConnector(connector).forward_ust(self.anchor_rewards_distributor, ust_amount, b"")
-
-    log RewardsCollected(steth_to_sell, ust_amount)
-
-    return ust_amount
+    assert self.offer_started_at != 0 and block.timestamp >= self.offer_expires_at
+    unsold_ldo_amount: uint256 = ERC20(LDO_TOKEN).balanceOf(self)
+    if unsold_ldo_amount > 0:
+        ERC20(LDO_TOKEN).transfer(LIDO_DAO_VAULT, unsold_ldo_amount)

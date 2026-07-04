@@ -51,8 +51,7 @@ contract IGenericTraderProxyV1 is IGenericTraderProxyBase {
         /// @dev The market ID to transfer
         uint256 marketId;
         /// @dev Note, setting to uint(-1) will transfer all of the user's balance. Setting to `uint(-2)` will transfer
-        ///      the output result of the swap (reverts if `marketId` is not `marketIdsPath[last]` and
-        ///      `transfer.fromAccountNumber` is not the `TRADE_ACCOUNT`).
+        ///      the output result of the swap (reverts if `marketId` is not `marketIdsPath[last]`).
         uint256 amountWei;
     }
 

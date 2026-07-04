@@ -167,7 +167,7 @@
 | ethereum | `0x73bc33999c34a5126ca19dc900f22690c288d55e` | RedemptionAssetsVault | proxy | live | no |
 | ethereum | `0x741ebe27714f596fe93e152441775a880c54d63a` | Migrations | impl | inactive | no |
 | ethereum | `0x7573ee497d884239715fa1e7b816536002e16f5c` | TokenStakingNode | impl | inactive | no |
-| ethereum | `0x77b26a2ebb73ce9bdf5c8c44cb98e98f089d6f99` | RewardsDistributor | proxy | live | no |
+| ethereum | `0x77b26a2ebb73ce9bdf5c8c44cb98e98f089d6f99` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x77fb6fd121afe51c95fea53069686138b8de469a` | AccountingModule | impl | live | no |
 | ethereum | `0x7ae221b6104ec1ff682152936325b844983ed9f0` | ynViewer | proxy | live | no |
 | ethereum | `0x7b31a26e8439fd4b435d8e3aa557c06acec878d4` | GlobalPool_R32 | impl | inactive | no |
@@ -288,7 +288,7 @@
 | ethereum | `0xcc4e08a5bfa887621ad68826a0d5913d7a2cb392` | ProxyAdmin | impl | live | no |
 | ethereum | `0xcd3a6c3e9e823e7c13fb0ee71f9360bacdd1a42e` | Config | impl | inactive | no |
 | ethereum | `0xcdcdf4f8df7e09f9ec6f7029291df58d51a2f251` | AnkrProtocol-2 | impl | inactive | no |
-| ethereum | `0xcebdee3fcb18ed69b8384bd78c34ee71b0fff482` | ynETH | proxy | live | no |
+| ethereum | `0xcebdee3fcb18ed69b8384bd78c34ee71b0fff482` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xcfd4b4bc15c8bf0fd820b0d4558c725727b3ce89` | TransparentUpgradeableProxy-23 | proxy | live | no |
 | ethereum | `0xd01ef7c0a5d8c432fc2d1a85c66cf2327362e5c6` | AdminUpgradeabilityProxy-4 | proxy | live | no |
 | ethereum | `0xd048f3cebc5e2ca2a51bd76f3f7b4097ed35c5df` | TransparentUpgradeableProxy-2 | impl | inactive | no |
@@ -297,7 +297,7 @@
 | ethereum | `0xd3e7e46c62b0fea4cd73920c65971b67ea01de56` | TransparentUpgradeableProxy-5 | proxy | live | no |
 | ethereum | `0xd4502103dd36c5595dccedf33e7308c61428ce3b` | aMATICb_R6 | impl | inactive | no |
 | ethereum | `0xd47b9c9fb1788f6353a543150006d0b7ed0b17bf` | TransparentUpgradeableProxy-5 | impl | inactive | no |
-| ethereum | `0xd4f5ff3052c9bfdb35e3265780c4be1d6f7c06d1` | StakingConfigProxy-2 | impl | live | no |
+| ethereum | `0xd4f5ff3052c9bfdb35e3265780c4be1d6f7c06d1` | StakingConfig | impl | live | no |
 | ethereum | `0xd4f8ccf7872413a85d516cd2e05282b59deb514d` | TransparentUpgradeableProxy-18 | impl | inactive | no |
 | ethereum | `0xd56c14aae5d5434076829172a0e22c5c0756a4dd` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xd5bf05d14be33eb58506620d3ebe70b80bf3b01d` | Provider | impl | live | no |

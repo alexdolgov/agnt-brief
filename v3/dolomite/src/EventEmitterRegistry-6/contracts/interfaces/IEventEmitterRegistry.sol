@@ -157,12 +157,6 @@ interface IEventEmitterRegistry {
 
     event AsyncWithdrawalCancelled(bytes32 indexed key, address indexed token);
 
-    event DistributorRegistered(
-        address oTokenAddress,
-        address pairToken,
-        address paymentToken
-    );
-
     event RewardClaimed(
         address indexed distributor,
         address indexed user,
@@ -288,7 +282,5 @@ interface IEventEmitterRegistry {
 
     function emitAsyncWithdrawalCancelled(bytes32 _key, address _token) external;
 
-    function emitDistributorRegistered(address _oTokenAddress, address _pairToken, address _paymentToken) external;
-
-    function emitRewardClaimed(address _user, uint256 _epoch, uint256 _amount) external;
+    function emitRewardClaimed(address user, uint256 _epoch, uint256 _amount) external;
 }

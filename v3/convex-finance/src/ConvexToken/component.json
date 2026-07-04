@@ -2,14 +2,35 @@
   "component": "ConvexToken",
   "main_contract": "ConvexToken",
   "source_file_count": 4,
-  "deployment_count": 1,
-  "audited": false,
-  "audits_covering": [],
+  "deployment_count": 3,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/convex-eth/frax-cvx-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Frax-Staking-v1.0.pdf",
+    "https://github.com/convex-eth/platform/blob/main/audit/Convex%20Platform%20Security%20Audit%20Report.pdf",
+    "https://github.com/convex-eth/sidechain-platform/blob/main/audits/PeckShield-Audit-Report-Convex-Sidechain-v1.0.pdf",
+    "https://github.com/convex-eth/sidechain-platform/blob/main/audits/convex-sidechain-audit-nomoi.pdf"
+  ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xaffe966b27ba3e4ebb8a0ec124c7b7019cc762f8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf403c135812408bfbe8713b5a23a04b3d48aae31",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

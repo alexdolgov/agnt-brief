@@ -1,17 +1,25 @@
 {
   "component": "TransparentUpgradeableProxy-2",
   "main_contract": "TransparentUpgradeableProxy",
-  "source_file_count": 71,
-  "deployment_count": 1,
+  "source_file_count": 29,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x5132a183e9f3cb7c848b0aac5ae0c4f0491b7ab2",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x44487a445a7595446309464a82244b4bd4e325d5",
       "is_proxy": true,
-      "implementation_address": "0x15caf18ded768e3620e0f656221bf6b400ad2618",
+      "implementation_address": "0x464c30aebacd4e8928167c567f8920d16f203027",
+      "liveness": "live"
+    },
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9f6424fe88fbe7785fa34f0e369f192bf38e7a6e",
+      "is_proxy": true,
+      "implementation_address": "0x9d74807b8fa79d49bb95cf988af3c25fb1437b4f",
       "liveness": "live"
     }
   ]

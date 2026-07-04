@@ -7,7 +7,7 @@
 - Project: Belt Finance (`belt-finance`)
 - Website: [https://belt.fi/](https://belt.fi/)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-07-03T21:05:33.526Z
+- Generated: 2026-07-04T11:05:40.634Z
 - Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
 - Chains: bsc, heco, klaytn
 - Contract surface: 1275 unique implementations (1572 raw deployments)
@@ -25,8 +25,8 @@ The protocol comprises 8 functional families. Its contracts share 19 common proj
 
 ## Contract Surface Quality
 
-- Indexed contracts: 1707; live-surface contracts included: 1561 (205 live, 1356 unknown).
-- Excluded by liveness: 146 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 1706; live-surface contracts included: 1561 (205 live, 1356 unknown).
+- Excluded by liveness: 145 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.

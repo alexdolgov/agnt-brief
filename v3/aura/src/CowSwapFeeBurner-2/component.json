@@ -20,7 +20,7 @@
       "address": "0x397bc40ba584e651f4f5cf4ae089f0130569a1c7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "gnosis",
@@ -52,7 +52,7 @@
       "address": "0x774cb66e2b2db59a9daf175e9b2b7a142e17eb94",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "arbitrum",

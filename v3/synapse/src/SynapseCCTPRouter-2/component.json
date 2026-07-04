@@ -1,0 +1,18 @@
+{
+  "component": "SynapseCCTPRouter-2",
+  "main_contract": "SynapseCCTPRouter",
+  "source_file_count": 23,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd359bc471554504f683fbd4f6e36848612349ddf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

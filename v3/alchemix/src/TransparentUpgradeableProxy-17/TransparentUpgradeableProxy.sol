@@ -1,507 +1,5 @@
 // Sources flattened with hardhat v2.9.9 https://hardhat.org
 
-// File lib/openzeppelin-contracts/contracts/access/IAccessControl.sol
-
-// OpenZeppelin Contracts v4.4.1 (access/IAccessControl.sol)
-
-pragma solidity ^0.8.0;
-
-/**
- * @dev External interface of AccessControl declared to support ERC165 detection.
- */
-interface IAccessControl {
-    /**
-     * @dev Emitted when `newAdminRole` is set as ``role``'s admin role, replacing `previousAdminRole`
-     *
-     * `DEFAULT_ADMIN_ROLE` is the starting admin for all roles, despite
-     * {RoleAdminChanged} not being emitted signaling this.
-     *
-     * _Available since v3.1._
-     */
-    event RoleAdminChanged(bytes32 indexed role, bytes32 indexed previousAdminRole, bytes32 indexed newAdminRole);
-
-    /**
-     * @dev Emitted when `account` is granted `role`.
-     *
-     * `sender` is the account that originated the contract call, an admin role
-     * bearer except when using {AccessControl-_setupRole}.
-     */
-    event RoleGranted(bytes32 indexed role, address indexed account, address indexed sender);
-
-    /**
-     * @dev Emitted when `account` is revoked `role`.
-     *
-     * `sender` is the account that originated the contract call:
-     *   - if using `revokeRole`, it is the admin role bearer
-     *   - if using `renounceRole`, it is the role bearer (i.e. `account`)
-     */
-    event RoleRevoked(bytes32 indexed role, address indexed account, address indexed sender);
-
-    /**
-     * @dev Returns `true` if `account` has been granted `role`.
-     */
-    function hasRole(bytes32 role, address account) external view returns (bool);
-
-    /**
-     * @dev Returns the admin role that controls `role`. See {grantRole} and
-     * {revokeRole}.
-     *
-     * To change a role's admin, use {AccessControl-_setRoleAdmin}.
-     */
-    function getRoleAdmin(bytes32 role) external view returns (bytes32);
-
-    /**
-     * @dev Grants `role` to `account`.
-     *
-     * If `account` had not been already granted `role`, emits a {RoleGranted}
-     * event.
-     *
-     * Requirements:
-     *
-     * - the caller must have ``role``'s admin role.
-     */
-    function grantRole(bytes32 role, address account) external;
-
-    /**
-     * @dev Revokes `role` from `account`.
-     *
-     * If `account` had been granted `role`, emits a {RoleRevoked} event.
-     *
-     * Requirements:
-     *
-     * - the caller must have ``role``'s admin role.
-     */
-    function revokeRole(bytes32 role, address account) external;
-
-    /**
-     * @dev Revokes `role` from the calling account.
-     *
-     * Roles are often managed via {grantRole} and {revokeRole}: this function's
-     * purpose is to provide a mechanism for accounts to lose their privileges
-     * if they are compromised (such as when a trusted device is misplaced).
-     *
-     * If the calling account had been granted `role`, emits a {RoleRevoked}
-     * event.
-     *
-     * Requirements:
-     *
-     * - the caller must be `account`.
-     */
-    function renounceRole(bytes32 role, address account) external;
-}
-
-
-// File lib/openzeppelin-contracts/contracts/utils/Context.sol
-
-// OpenZeppelin Contracts v4.4.1 (utils/Context.sol)
-
-pragma solidity ^0.8.0;
-
-/**
- * @dev Provides information about the current execution context, including the
- * sender of the transaction and its data. While these are generally available
- * via msg.sender and msg.data, they should not be accessed in such a direct
- * manner, since when dealing with meta-transactions the account sending and
- * paying for execution may not be the actual sender (as far as an application
- * is concerned).
- *
- * This contract is only required for intermediate, library-like contracts.
- */
-abstract contract Context {
-    function _msgSender() internal view virtual returns (address) {
-        return msg.sender;
-    }
-
-    function _msgData() internal view virtual returns (bytes calldata) {
-        return msg.data;
-    }
-}
-
-
-// File lib/openzeppelin-contracts/contracts/utils/Strings.sol
-
-// OpenZeppelin Contracts (last updated v4.7.0) (utils/Strings.sol)
-
-pragma solidity ^0.8.0;
-
-/**
- * @dev String operations.
- */
-library Strings {
-    bytes16 private constant _HEX_SYMBOLS = "0123456789abcdef";
-    uint8 private constant _ADDRESS_LENGTH = 20;
-
-    /**
-     * @dev Converts a `uint256` to its ASCII `string` decimal representation.
-     */
-    function toString(uint256 value) internal pure returns (string memory) {
-        // Inspired by OraclizeAPI's implementation - MIT licence
-        // https://github.com/oraclize/ethereum-api/blob/b42146b063c7d6ee1358846c198246239e9360e8/oraclizeAPI_0.4.25.sol
-
-        if (value == 0) {
-            return "0";
-        }
-        uint256 temp = value;
-        uint256 digits;
-        while (temp != 0) {
-            digits++;
-            temp /= 10;
-        }
-        bytes memory buffer = new bytes(digits);
-        while (value != 0) {
-            digits -= 1;
-            buffer[digits] = bytes1(uint8(48 + uint256(value % 10)));
-            value /= 10;
-        }
-        return string(buffer);
-    }
-
-    /**
-     * @dev Converts a `uint256` to its ASCII `string` hexadecimal representation.
-     */
-    function toHexString(uint256 value) internal pure returns (string memory) {
-        if (value == 0) {
-            return "0x00";
-        }
-        uint256 temp = value;
-        uint256 length = 0;
-        while (temp != 0) {
-            length++;
-            temp >>= 8;
-        }
-        return toHexString(value, length);
-    }
-
-    /**
-     * @dev Converts a `uint256` to its ASCII `string` hexadecimal representation with fixed length.
-     */
-    function toHexString(uint256 value, uint256 length) internal pure returns (string memory) {
-        bytes memory buffer = new bytes(2 * length + 2);
-        buffer[0] = "0";
-        buffer[1] = "x";
-        for (uint256 i = 2 * length + 1; i > 1; --i) {
-            buffer[i] = _HEX_SYMBOLS[value & 0xf];
-            value >>= 4;
-        }
-        require(value == 0, "Strings: hex length insufficient");
-        return string(buffer);
-    }
-
-    /**
-     * @dev Converts an `address` with fixed length of 20 bytes to its not checksummed ASCII `string` hexadecimal representation.
-     */
-    function toHexString(address addr) internal pure returns (string memory) {
-        return toHexString(uint256(uint160(addr)), _ADDRESS_LENGTH);
-    }
-}
-
-
-// File lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol
-
-// OpenZeppelin Contracts v4.4.1 (utils/introspection/IERC165.sol)
-
-pragma solidity ^0.8.0;
-
-/**
- * @dev Interface of the ERC165 standard, as defined in the
- * https://eips.ethereum.org/EIPS/eip-165[EIP].
- *
- * Implementers can declare support of contract interfaces, which can then be
- * queried by others ({ERC165Checker}).
- *
- * For an implementation, see {ERC165}.
- */
-interface IERC165 {
-    /**
-     * @dev Returns true if this contract implements the interface defined by
-     * `interfaceId`. See the corresponding
-     * https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]
-     * to learn more about how these ids are created.
-     *
-     * This function call must use less than 30 000 gas.
-     */
-    function supportsInterface(bytes4 interfaceId) external view returns (bool);
-}
-
-
-// File lib/openzeppelin-contracts/contracts/utils/introspection/ERC165.sol
-
-// OpenZeppelin Contracts v4.4.1 (utils/introspection/ERC165.sol)
-
-pragma solidity ^0.8.0;
-
-/**
- * @dev Implementation of the {IERC165} interface.
- *
- * Contracts that want to implement ERC165 should inherit from this contract and override {supportsInterface} to check
- * for the additional interface id that will be supported. For example:
- *
- * ```solidity
- * function supportsInterface(bytes4 interfaceId) public view virtual override returns (bool) {
- *     return interfaceId == type(MyInterface).interfaceId || super.supportsInterface(interfaceId);
- * }
- * ```
- *
- * Alternatively, {ERC165Storage} provides an easier to use but more expensive implementation.
- */
-abstract contract ERC165 is IERC165 {
-    /**
-     * @dev See {IERC165-supportsInterface}.
-     */
-    function supportsInterface(bytes4 interfaceId) public view virtual override returns (bool) {
-        return interfaceId == type(IERC165).interfaceId;
-    }
-}
-
-
-// File lib/openzeppelin-contracts/contracts/access/AccessControl.sol
-
-// OpenZeppelin Contracts (last updated v4.7.0) (access/AccessControl.sol)
-
-pragma solidity ^0.8.0;
-
-
-
-
-/**
- * @dev Contract module that allows children to implement role-based access
- * control mechanisms. This is a lightweight version that doesn't allow enumerating role
- * members except through off-chain means by accessing the contract event logs. Some
- * applications may benefit from on-chain enumerability, for those cases see
- * {AccessControlEnumerable}.
- *
- * Roles are referred to by their `bytes32` identifier. These should be exposed
- * in the external API and be unique. The best way to achieve this is by
- * using `public constant` hash digests:
- *
- * ```
- * bytes32 public constant MY_ROLE = keccak256("MY_ROLE");
- * ```
- *
- * Roles can be used to represent a set of permissions. To restrict access to a
- * function call, use {hasRole}:
- *
- * ```
- * function foo() public {
- *     require(hasRole(MY_ROLE, msg.sender));
- *     ...
- * }
- * ```
- *
- * Roles can be granted and revoked dynamically via the {grantRole} and
- * {revokeRole} functions. Each role has an associated admin role, and only
- * accounts that have a role's admin role can call {grantRole} and {revokeRole}.
- *
- * By default, the admin role for all roles is `DEFAULT_ADMIN_ROLE`, which means
- * that only accounts with this role will be able to grant or revoke other
- * roles. More complex role relationships can be created by using
- * {_setRoleAdmin}.
- *
- * WARNING: The `DEFAULT_ADMIN_ROLE` is also its own admin: it has permission to
- * grant and revoke this role. Extra precautions should be taken to secure
- * accounts that have been granted it.
- */
-abstract contract AccessControl is Context, IAccessControl, ERC165 {
-    struct RoleData {
-        mapping(address => bool) members;
-        bytes32 adminRole;
-    }
-
-    mapping(bytes32 => RoleData) private _roles;
-
-    bytes32 public constant DEFAULT_ADMIN_ROLE = 0x00;
-
-    /**
-     * @dev Modifier that checks that an account has a specific role. Reverts
-     * with a standardized message including the required role.
-     *
-     * The format of the revert reason is given by the following regular expression:
-     *
-     *  /^AccessControl: account (0x[0-9a-f]{40}) is missing role (0x[0-9a-f]{64})$/
-     *
-     * _Available since v4.1._
-     */
-    modifier onlyRole(bytes32 role) {
-        _checkRole(role);
-        _;
-    }
-
-    /**
-     * @dev See {IERC165-supportsInterface}.
-     */
-    function supportsInterface(bytes4 interfaceId) public view virtual override returns (bool) {
-        return interfaceId == type(IAccessControl).interfaceId || super.supportsInterface(interfaceId);
-    }
-
-    /**
-     * @dev Returns `true` if `account` has been granted `role`.
-     */
-    function hasRole(bytes32 role, address account) public view virtual override returns (bool) {
-        return _roles[role].members[account];
-    }
-
-    /**
-     * @dev Revert with a standard message if `_msgSender()` is missing `role`.
-     * Overriding this function changes the behavior of the {onlyRole} modifier.
-     *
-     * Format of the revert message is described in {_checkRole}.
-     *
-     * _Available since v4.6._
-     */
-    function _checkRole(bytes32 role) internal view virtual {
-        _checkRole(role, _msgSender());
-    }
-
-    /**
-     * @dev Revert with a standard message if `account` is missing `role`.
-     *
-     * The format of the revert reason is given by the following regular expression:
-     *
-     *  /^AccessControl: account (0x[0-9a-f]{40}) is missing role (0x[0-9a-f]{64})$/
-     */
-    function _checkRole(bytes32 role, address account) internal view virtual {
-        if (!hasRole(role, account)) {
-            revert(
-                string(
-                    abi.encodePacked(
-                        "AccessControl: account ",
-                        Strings.toHexString(account),
-                        " is missing role ",
-                        Strings.toHexString(uint256(role), 32)
-                    )
-                )
-            );
-        }
-    }
-
-    /**
-     * @dev Returns the admin role that controls `role`. See {grantRole} and
-     * {revokeRole}.
-     *
-     * To change a role's admin, use {_setRoleAdmin}.
-     */
-    function getRoleAdmin(bytes32 role) public view virtual override returns (bytes32) {
-        return _roles[role].adminRole;
-    }
-
-    /**
-     * @dev Grants `role` to `account`.
-     *
-     * If `account` had not been already granted `role`, emits a {RoleGranted}
-     * event.
-     *
-     * Requirements:
-     *
-     * - the caller must have ``role``'s admin role.
-     *
-     * May emit a {RoleGranted} event.
-     */
-    function grantRole(bytes32 role, address account) public virtual override onlyRole(getRoleAdmin(role)) {
-        _grantRole(role, account);
-    }
-
-    /**
-     * @dev Revokes `role` from `account`.
-     *
-     * If `account` had been granted `role`, emits a {RoleRevoked} event.
-     *
-     * Requirements:
-     *
-     * - the caller must have ``role``'s admin role.
-     *
-     * May emit a {RoleRevoked} event.
-     */
-    function revokeRole(bytes32 role, address account) public virtual override onlyRole(getRoleAdmin(role)) {
-        _revokeRole(role, account);
-    }
-
-    /**
-     * @dev Revokes `role` from the calling account.
-     *
-     * Roles are often managed via {grantRole} and {revokeRole}: this function's
-     * purpose is to provide a mechanism for accounts to lose their privileges
-     * if they are compromised (such as when a trusted device is misplaced).
-     *
-     * If the calling account had been revoked `role`, emits a {RoleRevoked}
-     * event.
-     *
-     * Requirements:
-     *
-     * - the caller must be `account`.
-     *
-     * May emit a {RoleRevoked} event.
-     */
-    function renounceRole(bytes32 role, address account) public virtual override {
-        require(account == _msgSender(), "AccessControl: can only renounce roles for self");
-
-        _revokeRole(role, account);
-    }
-
-    /**
-     * @dev Grants `role` to `account`.
-     *
-     * If `account` had not been already granted `role`, emits a {RoleGranted}
-     * event. Note that unlike {grantRole}, this function doesn't perform any
-     * checks on the calling account.
-     *
-     * May emit a {RoleGranted} event.
-     *
-     * [WARNING]
-     * ====
-     * This function should only be called from the constructor when setting
-     * up the initial roles for the system.
-     *
-     * Using this function in any other way is effectively circumventing the admin
-     * system imposed by {AccessControl}.
-     * ====
-     *
-     * NOTE: This function is deprecated in favor of {_grantRole}.
-     */
-    function _setupRole(bytes32 role, address account) internal virtual {
-        _grantRole(role, account);
-    }
-
-    /**
-     * @dev Sets `adminRole` as ``role``'s admin role.
-     *
-     * Emits a {RoleAdminChanged} event.
-     */
-    function _setRoleAdmin(bytes32 role, bytes32 adminRole) internal virtual {
-        bytes32 previousAdminRole = getRoleAdmin(role);
-        _roles[role].adminRole = adminRole;
-        emit RoleAdminChanged(role, previousAdminRole, adminRole);
-    }
-
-    /**
-     * @dev Grants `role` to `account`.
-     *
-     * Internal function without access restriction.
-     *
-     * May emit a {RoleGranted} event.
-     */
-    function _grantRole(bytes32 role, address account) internal virtual {
-        if (!hasRole(role, account)) {
-            _roles[role].members[account] = true;
-            emit RoleGranted(role, account, _msgSender());
-        }
-    }
-
-    /**
-     * @dev Revokes `role` from `account`.
-     *
-     * Internal function without access restriction.
-     *
-     * May emit a {RoleRevoked} event.
-     */
-    function _revokeRole(bytes32 role, address account) internal virtual {
-        if (hasRole(role, account)) {
-            _roles[role].members[account] = false;
-            emit RoleRevoked(role, account, _msgSender());
-        }
-    }
-}
-
-
 // File lib/openzeppelin-contracts-upgradeable/contracts/utils/AddressUpgradeable.sol
 
 // OpenZeppelin Contracts (last updated v4.7.0) (utils/Address.sol)
@@ -863,235 +361,6 @@ abstract contract Initializable {
 }
 
 
-// File lib/openzeppelin-contracts/contracts/utils/math/Math.sol
-
-// OpenZeppelin Contracts (last updated v4.7.0) (utils/math/Math.sol)
-
-pragma solidity ^0.8.0;
-
-/**
- * @dev Standard math utilities missing in the Solidity language.
- */
-library Math {
-    enum Rounding {
-        Down, // Toward negative infinity
-        Up, // Toward infinity
-        Zero // Toward zero
-    }
-
-    /**
-     * @dev Returns the largest of two numbers.
-     */
-    function max(uint256 a, uint256 b) internal pure returns (uint256) {
-        return a >= b ? a : b;
-    }
-
-    /**
-     * @dev Returns the smallest of two numbers.
-     */
-    function min(uint256 a, uint256 b) internal pure returns (uint256) {
-        return a < b ? a : b;
-    }
-
-    /**
-     * @dev Returns the average of two numbers. The result is rounded towards
-     * zero.
-     */
-    function average(uint256 a, uint256 b) internal pure returns (uint256) {
-        // (a + b) / 2 can overflow.
-        return (a & b) + (a ^ b) / 2;
-    }
-
-    /**
-     * @dev Returns the ceiling of the division of two numbers.
-     *
-     * This differs from standard division with `/` in that it rounds up instead
-     * of rounding down.
-     */
-    function ceilDiv(uint256 a, uint256 b) internal pure returns (uint256) {
-        // (a + b - 1) / b can overflow on addition, so we distribute.
-        return a == 0 ? 0 : (a - 1) / b + 1;
-    }
-
-    /**
-     * @notice Calculates floor(x * y / denominator) with full precision. Throws if result overflows a uint256 or denominator == 0
-     * @dev Original credit to Remco Bloemen under MIT license (https://xn--2-umb.com/21/muldiv)
-     * with further edits by Uniswap Labs also under MIT license.
-     */
-    function mulDiv(
-        uint256 x,
-        uint256 y,
-        uint256 denominator
-    ) internal pure returns (uint256 result) {
-        unchecked {
-            // 512-bit multiply [prod1 prod0] = x * y. Compute the product mod 2^256 and mod 2^256 - 1, then use
-            // use the Chinese Remainder Theorem to reconstruct the 512 bit result. The result is stored in two 256
-            // variables such that product = prod1 * 2^256 + prod0.
-            uint256 prod0; // Least significant 256 bits of the product
-            uint256 prod1; // Most significant 256 bits of the product
-            assembly {
-                let mm := mulmod(x, y, not(0))
-                prod0 := mul(x, y)
-                prod1 := sub(sub(mm, prod0), lt(mm, prod0))
-            }
-
-            // Handle non-overflow cases, 256 by 256 division.
-            if (prod1 == 0) {
-                return prod0 / denominator;
-            }
-
-            // Make sure the result is less than 2^256. Also prevents denominator == 0.
-            require(denominator > prod1);
-
-            ///////////////////////////////////////////////
-            // 512 by 256 division.
-            ///////////////////////////////////////////////
-
-            // Make division exact by subtracting the remainder from [prod1 prod0].
-            uint256 remainder;
-            assembly {
-                // Compute remainder using mulmod.
-                remainder := mulmod(x, y, denominator)
-
-                // Subtract 256 bit number from 512 bit number.
-                prod1 := sub(prod1, gt(remainder, prod0))
-                prod0 := sub(prod0, remainder)
-            }
-
-            // Factor powers of two out of denominator and compute largest power of two divisor of denominator. Always >= 1.
-            // See https://cs.stackexchange.com/q/138556/92363.
-
-            // Does not overflow because the denominator cannot be zero at this stage in the function.
-            uint256 twos = denominator & (~denominator + 1);
-            assembly {
-                // Divide denominator by twos.
-                denominator := div(denominator, twos)
-
-                // Divide [prod1 prod0] by twos.
-                prod0 := div(prod0, twos)
-
-                // Flip twos such that it is 2^256 / twos. If twos is zero, then it becomes one.
-                twos := add(div(sub(0, twos), twos), 1)
-            }
-
-            // Shift in bits from prod1 into prod0.
-            prod0 |= prod1 * twos;
-
-            // Invert denominator mod 2^256. Now that denominator is an odd number, it has an inverse modulo 2^256 such
-            // that denominator * inv = 1 mod 2^256. Compute the inverse by starting with a seed that is correct for
-            // four bits. That is, denominator * inv = 1 mod 2^4.
-            uint256 inverse = (3 * denominator) ^ 2;
-
-            // Use the Newton-Raphson iteration to improve the precision. Thanks to Hensel's lifting lemma, this also works
-            // in modular arithmetic, doubling the correct bits in each step.
-            inverse *= 2 - denominator * inverse; // inverse mod 2^8
-            inverse *= 2 - denominator * inverse; // inverse mod 2^16
-            inverse *= 2 - denominator * inverse; // inverse mod 2^32
-            inverse *= 2 - denominator * inverse; // inverse mod 2^64
-            inverse *= 2 - denominator * inverse; // inverse mod 2^128
-            inverse *= 2 - denominator * inverse; // inverse mod 2^256
-
-            // Because the division is now exact we can divide by multiplying with the modular inverse of denominator.
-            // This will give us the correct result modulo 2^256. Since the preconditions guarantee that the outcome is
-            // less than 2^256, this is the final result. We don't need to compute the high bits of the result and prod1
-            // is no longer required.
-            result = prod0 * inverse;
-            return result;
-        }
-    }
-
-    /**
-     * @notice Calculates x * y / denominator with full precision, following the selected rounding direction.
-     */
-    function mulDiv(
-        uint256 x,
-        uint256 y,
-        uint256 denominator,
-        Rounding rounding
-    ) internal pure returns (uint256) {
-        uint256 result = mulDiv(x, y, denominator);
-        if (rounding == Rounding.Up && mulmod(x, y, denominator) > 0) {
-            result += 1;
-        }
-        return result;
-    }
-
-    /**
-     * @dev Returns the square root of a number. If the number is not a perfect square, the value is rounded down.
-     *
-     * Inspired by Henry S. Warren, Jr.'s "Hacker's Delight" (Chapter 11).
-     */
-    function sqrt(uint256 a) internal pure returns (uint256) {
-        if (a == 0) {
-            return 0;
-        }
-
-        // For our first guess, we get the biggest power of 2 which is smaller than the square root of the target.
-        // We know that the "msb" (most significant bit) of our target number `a` is a power of 2 such that we have
-        // `msb(a) <= a < 2*msb(a)`.
-        // We also know that `k`, the position of the most significant bit, is such that `msb(a) = 2**k`.
-        // This gives `2**k < a <= 2**(k+1)` → `2**(k/2) <= sqrt(a) < 2 ** (k/2+1)`.
-        // Using an algorithm similar to the msb computation, we are able to compute `result = 2**(k/2)` which is a
-        // good first approximation of `sqrt(a)` with at least 1 correct bit.
-        uint256 result = 1;
-        uint256 x = a;
-        if (x >> 128 > 0) {
-            x >>= 128;
-            result <<= 64;
-        }
-        if (x >> 64 > 0) {
-            x >>= 64;
-            result <<= 32;
-        }
-        if (x >> 32 > 0) {
-            x >>= 32;
-            result <<= 16;
-        }
-        if (x >> 16 > 0) {
-            x >>= 16;
-            result <<= 8;
-        }
-        if (x >> 8 > 0) {
-            x >>= 8;
-            result <<= 4;
-        }
-        if (x >> 4 > 0) {
-            x >>= 4;
-            result <<= 2;
-        }
-        if (x >> 2 > 0) {
-            result <<= 1;
-        }
-
-        // At this point `result` is an estimation with one bit of precision. We know the true value is a uint128,
-        // since it is the square root of a uint256. Newton's method converges quadratically (precision doubles at
-        // every iteration). We thus need at most 7 iteration to turn our partial result with one bit of precision
-        // into the expected uint128 result.
-        unchecked {
-            result = (result + a / result) >> 1;
-            result = (result + a / result) >> 1;
-            result = (result + a / result) >> 1;
-            result = (result + a / result) >> 1;
-            result = (result + a / result) >> 1;
-            result = (result + a / result) >> 1;
-            result = (result + a / result) >> 1;
-            return min(result, a / result);
-        }
-    }
-
-    /**
-     * @notice Calculates sqrt(a), following the selected rounding direction.
-     */
-    function sqrt(uint256 a, Rounding rounding) internal pure returns (uint256) {
-        uint256 result = sqrt(a);
-        if (rounding == Rounding.Up && result * result < a) {
-            result += 1;
-        }
-        return result;
-    }
-}
-
-
 // File src/base/Errors.sol
 
 pragma solidity ^0.8.13;
@@ -1107,6 +376,83 @@ error IllegalState();
 /// @notice An error used to indicate that an action could not be completed because of an illegal argument was passed
 ///         to the function.
 error IllegalArgument();
+
+
+// File src/base/Multicall.sol
+
+pragma solidity 0.8.13;
+
+/// @title  Multicall
+/// @author Uniswap Labs
+///
+/// @notice Enables calling multiple methods in a single call to the contract
+abstract contract Multicall {
+    error MulticallFailed(bytes data, bytes result);
+
+    function multicall(
+        bytes[] calldata data
+    ) external payable returns (bytes[] memory results) {
+        results = new bytes[](data.length);
+        for (uint256 i = 0; i < data.length; ++i) {
+            (bool success, bytes memory result) = address(this).delegatecall(data[i]);
+
+            if (!success) {
+                revert MulticallFailed(data[i], result);
+            }
+
+            results[i] = result;
+        }
+    }
+}
+
+
+// File src/base/Mutex.sol
+
+pragma solidity ^0.8.13;
+
+/// @title  Mutex
+/// @author Alchemix Finance
+///
+/// @notice Provides a mutual exclusion lock for implementing contracts.
+abstract contract Mutex {
+    /// @notice An error which is thrown when a lock is attempted to be claimed before it has been freed.
+    error LockAlreadyClaimed();
+
+    /// @notice The lock state. Non-zero values indicate the lock has been claimed.
+    uint256 private _lockState;
+
+    /// @dev A modifier which acquires the mutex.
+    modifier lock() {
+        _claimLock();
+
+        _;
+
+        _freeLock();
+    }
+
+    /// @dev Gets if the mutex is locked.
+    ///
+    /// @return if the mutex is locked.
+    function _isLocked() internal returns (bool) {
+        return _lockState == 1;
+    }
+
+    /// @dev Claims the lock. If the lock is already claimed, then this will revert.
+    function _claimLock() internal {
+        // Check that the lock has not been claimed yet.
+        if (_lockState != 0) {
+            revert LockAlreadyClaimed();
+        }
+
+        // Claim the lock.
+        _lockState = 1;
+    }
+
+    /// @dev Frees the lock.
+    function _freeLock() internal {
+        _lockState = 0;
+    }
+}
 
 
 // File src/interfaces/alchemist/IAlchemistV2Actions.sol
@@ -2406,6 +1752,21 @@ interface IAlchemistV2 is
 { }
 
 
+// File src/interfaces/IERC20TokenReceiver.sol
+
+pragma solidity >=0.5.0;
+
+/// @title  IERC20TokenReceiver
+/// @author Alchemix Finance
+interface IERC20TokenReceiver {
+    /// @notice Informs implementors of this interface that an ERC20 token has been transferred.
+    ///
+    /// @param token The token that was transferred.
+    /// @param value The amount of the token that was transferred.
+    function onERC20Received(address token, uint256 value) external;
+}
+
+
 // File src/interfaces/ITokenAdapter.sol
 
 pragma solidity >=0.5.0;
@@ -2453,635 +1814,6 @@ interface ITokenAdapter {
     function unwrap(uint256 amount, address recipient)
         external
         returns (uint256 amountUnderlyingTokens);
-}
-
-
-// File src/interfaces/transmuter/ITransmuterV2.sol
-
-pragma solidity >=0.5.0;
-
-/// @title ITransmuterV2
-/// @author Alchemix Finance
-interface ITransmuterV2 {
-  /// @notice Emitted when the admin address is updated.
-  ///
-  /// @param admin The new admin address.
-  event AdminUpdated(address admin);
-
-  /// @notice Emitted when the pending admin address is updated.
-  ///
-  /// @param pendingAdmin The new pending admin address.
-  event PendingAdminUpdated(address pendingAdmin);
-
-  /// @notice Emitted when the system is paused or unpaused.
-  ///
-  /// @param flag `true` if the system has been paused, `false` otherwise.
-  event Paused(bool flag);
-
-  /// @dev Emitted when a deposit is performed.
-  ///
-  /// @param sender The address of the depositor.
-  /// @param owner  The address of the account that received the deposit.
-  /// @param amount The amount of tokens deposited.
-  event Deposit(
-    address indexed sender,
-    address indexed owner,
-    uint256 amount
-  );
-
-  /// @dev Emitted when a withdraw is performed.
-  ///
-  /// @param sender    The address of the `msg.sender` executing the withdraw.
-  /// @param recipient The address of the account that received the withdrawn tokens.
-  /// @param amount    The amount of tokens withdrawn.
-  event Withdraw(
-    address indexed sender,
-    address indexed recipient,
-    uint256 amount
-  );
-
-  /// @dev Emitted when a claim is performed.
-  ///
-  /// @param sender    The address of the claimer / account owner.
-  /// @param recipient The address of the account that received the claimed tokens.
-  /// @param amount    The amount of tokens claimed.
-  event Claim(
-    address indexed sender,
-    address indexed recipient,
-    uint256 amount
-  );
-
-  /// @dev Emitted when an exchange is performed.
-  ///
-  /// @param sender The address that called `exchange()`.
-  /// @param amount The amount of tokens exchanged.
-  event Exchange(
-    address indexed sender,
-    uint256 amount
-  );
-
-  /// @dev Emitted when a collateral source is set.
-  ///
-  /// @param newCollateralSource The new collateral source.
-  event SetNewCollateralSource(
-    address newCollateralSource
-  );
-
-  /// @notice Gets the version.
-  ///
-  /// @return The version.
-  function version() external view returns (string memory);
-
-  /// @dev Gets the supported underlying token.
-  ///
-  /// @return The underlying token.
-  function underlyingToken() external view returns (address);
-
-  /// @notice Gets the address of the whitelist contract.
-  ///
-  /// @return whitelist The address of the whitelist contract.
-  function whitelist() external view returns (address whitelist);
-
-  /// @dev Gets the unexchanged balance of an account.
-  ///
-  /// @param owner The address of the account owner.
-  ///
-  /// @return The unexchanged balance.
-  function getUnexchangedBalance(address owner) external view returns (uint256);
-
-  /// @dev Gets the exchanged balance of an account, in units of `debtToken`.
-  ///
-  /// @param owner The address of the account owner.
-  ///
-  /// @return The exchanged balance.
-  function getExchangedBalance(address owner) external view returns (uint256);
-
-  /// @dev Gets the claimable balance of an account, in units of `underlyingToken`.
-  ///
-  /// @param owner The address of the account owner.
-  ///
-  /// @return The claimable balance.
-  function getClaimableBalance(address owner) external view returns (uint256);
-
-  /// @dev The conversion factor used to convert between underlying token amounts and debt token amounts.
-  ///
-  /// @return The conversion factor.
-  function conversionFactor() external view returns (uint256);
-
-  /// @dev Deposits tokens to be exchanged into an account.
-  ///
-  /// @param amount The amount of tokens to deposit.
-  /// @param owner  The owner of the account to deposit the tokens into.
-  function deposit(uint256 amount, address owner) external;
-
-  /// @dev Withdraws tokens from the caller's account that were previously deposited to be exchanged.
-  ///
-  /// @param amount    The amount of tokens to withdraw.
-  /// @param recipient The address which will receive the withdrawn tokens.
-  function withdraw(uint256 amount, address recipient) external;
-
-  /// @dev Claims exchanged tokens.
-  ///
-  /// @param amount    The amount of tokens to claim.
-  /// @param recipient The address which will receive the claimed tokens.
-  function claim(uint256 amount, address recipient) external;
-
-  /// @dev Exchanges `amount` underlying tokens for `amount` synthetic tokens staked in the system.
-  ///
-  /// @param amount The amount of tokens to exchange.
-  function exchange(uint256 amount) external;
-}
-
-
-// File src/interfaces/IERC20TokenReceiver.sol
-
-pragma solidity >=0.5.0;
-
-/// @title  IERC20TokenReceiver
-/// @author Alchemix Finance
-interface IERC20TokenReceiver {
-    /// @notice Informs implementors of this interface that an ERC20 token has been transferred.
-    ///
-    /// @param token The token that was transferred.
-    /// @param value The amount of the token that was transferred.
-    function onERC20Received(address token, uint256 value) external;
-}
-
-
-// File src/interfaces/transmuter/ITransmuterBuffer.sol
-
-pragma solidity >=0.5.0;
-
-
-
-/// @title  ITransmuterBuffer
-/// @author Alchemix Finance
-interface ITransmuterBuffer is IERC20TokenReceiver {
-  /// @notice Parameters used to define a given weighting schema.
-  ///
-  /// Weighting schemas can be used to generally weight assets in relation to an action or actions that will be taken.
-  /// In the TransmuterBuffer, there are 2 actions that require weighting schemas: `burnCredit` and `depositFunds`.
-  ///
-  /// `burnCredit` uses a weighting schema that determines which yield-tokens are targeted when burning credit from
-  /// the `Account` controlled by the TransmuterBuffer, via the `Alchemist.donate` function.
-  ///
-  /// `depositFunds` uses a weighting schema that determines which yield-tokens are targeted when depositing
-  /// underlying-tokens into the Alchemist.
-  struct Weighting {
-    // The weights of the tokens used by the schema.
-    mapping(address => uint256) weights;
-    // The tokens used by the schema.
-    address[] tokens;
-    // The total weight of the schema (sum of the token weights).
-    uint256 totalWeight;
-  }
-
-  /// @notice Emitted when the alchemist is set.
-  ///
-  /// @param alchemist The address of the alchemist.
-  event SetAlchemist(address alchemist);
-
-  /// @notice Emitted when the amo is set.
-  ///
-  /// @param underlyingToken The address of the underlying token.
-  /// @param amo             The address of the amo.
-  event SetAmo(address underlyingToken, address amo);
-
-  /// @notice Emitted when the the status of diverting to the amo is set for a given underlying token.
-  ///
-  /// @param underlyingToken The address of the underlying token.
-  /// @param divert          Whether or not to divert funds to the amo.
-  event SetDivertToAmo(address underlyingToken, bool divert);
-
-  /// @notice Emitted when an underlying token is registered.
-  ///
-  /// @param underlyingToken The address of the underlying token.
-  /// @param transmuter      The address of the transmuter for the underlying token.
-  event RegisterAsset(address underlyingToken, address transmuter);
-
-  /// @notice Emitted when an underlying token's flow rate is updated.
-  ///
-  /// @param underlyingToken The underlying token.
-  /// @param flowRate        The flow rate for the underlying token.
-  event SetFlowRate(address underlyingToken, uint256 flowRate);
-
-  /// @notice Emitted when the strategies are refreshed.
-  event RefreshStrategies();
-
-  /// @notice Emitted when a source is set.
-  event SetSource(address source, bool flag);
-
-  /// @notice Emitted when a transmuter is updated.
-  event SetTransmuter(address underlyingToken, address transmuter);
-
-  /// @notice Gets the current version.
-  ///
-  /// @return The version.
-  function version() external view returns (string memory);
-
-  /// @notice Gets the total credit held by the TransmuterBuffer.
-  ///
-  /// @return The total credit.
-  function getTotalCredit() external view returns (uint256);
-
-  /// @notice Gets the total amount of underlying token that the TransmuterBuffer controls in the Alchemist.
-  ///
-  /// @param underlyingToken The underlying token to query.
-  ///
-  /// @return totalBuffered The total buffered.
-  function getTotalUnderlyingBuffered(address underlyingToken) external view returns (uint256 totalBuffered);
-
-  /// @notice Gets the total available flow for the underlying token
-  ///
-  /// The total available flow will be the lesser of `flowAvailable[token]` and `getTotalUnderlyingBuffered`.
-  ///
-  /// @param underlyingToken The underlying token to query.
-  ///
-  /// @return availableFlow The available flow.
-  function getAvailableFlow(address underlyingToken) external view returns (uint256 availableFlow);
-
-  /// @notice Gets the weight of the given weight type and token
-  ///
-  /// @param weightToken The type of weight to query.
-  /// @param token       The weighted token.
-  ///
-  /// @return weight The weight of the token for the given weight type.
-  function getWeight(address weightToken, address token) external view returns (uint256 weight);
-
-  /// @notice Set a source of funds.
-  ///
-  /// @param source The target source.
-  /// @param flag   The status to set for the target source.
-  function setSource(address source, bool flag) external;
-
-  /// @notice Set transmuter by admin.
-  ///
-  /// This function reverts if the caller is not the current admin.
-  ///
-  /// @param underlyingToken The target underlying token to update.
-  /// @param newTransmuter   The new transmuter for the target `underlyingToken`.
-  function setTransmuter(address underlyingToken, address newTransmuter) external;
-
-  /// @notice Set alchemist by admin.
-  ///
-  /// This function reverts if the caller is not the current admin.
-  ///
-  /// @param alchemist The new alchemist whose funds we are handling.
-  function setAlchemist(address alchemist) external;
-
-  /// @notice Set the address of the amo for a target underlying token.
-  ///
-  /// @param underlyingToken The address of the underlying token to set.
-  /// @param amo The address of the underlying token's new amo.
-  function setAmo(address underlyingToken, address amo) external;
-
-  /// @notice Set whether or not to divert funds to the amo.
-  ///
-  /// @param underlyingToken The address of the underlying token to set.
-  /// @param divert          Whether or not to divert underlying token to the amo.
-  function setDivertToAmo(address underlyingToken, bool divert) external;
-
-  /// @notice Refresh the yield-tokens in the TransmuterBuffer.
-  ///
-  /// This requires a call anytime governance adds a new yield token to the alchemist.
-  function refreshStrategies() external;
-
-  /// @notice Registers an underlying-token.
-  ///
-  /// This function reverts if the caller is not the current admin.
-  ///
-  /// @param underlyingToken The underlying-token being registered.
-  /// @param transmuter      The transmuter for the underlying-token.
-  function registerAsset(address underlyingToken, address transmuter) external;
-
-  /// @notice Set flow rate of an underlying token.
-  ///
-  /// This function reverts if the caller is not the current admin.
-  ///
-  /// @param underlyingToken The underlying-token getting the flow rate set.
-  /// @param flowRate        The new flow rate.
-  function setFlowRate(address underlyingToken, uint256 flowRate) external;
-
-  /// @notice Sets up a weighting schema.
-  ///
-  /// @param weightToken The name of the weighting schema.
-  /// @param tokens      The yield-tokens to weight.
-  /// @param weights     The weights of the yield tokens.
-  function setWeights(address weightToken, address[] memory tokens, uint256[] memory weights) external;
-
-  /// @notice Exchanges any available flow into the Transmuter.
-  ///
-  /// This function is a way for the keeper to force funds to be exchanged into the Transmuter.
-  ///
-  /// This function will revert if called by any account that is not a keeper. If there is not enough local balance of
-  /// `underlyingToken` held by the TransmuterBuffer any additional funds will be withdrawn from the Alchemist by
-  /// unwrapping `yieldToken`.
-  ///
-  /// @param underlyingToken The address of the underlying token to exchange.
-  function exchange(address underlyingToken) external;
-
-  /// @notice Flushes funds to the amo.
-  ///
-  /// @param underlyingToken The underlying token to flush.
-  /// @param amount          The amount to flush.
-  function flushToAmo(address underlyingToken, uint256 amount) external;
-
-  /// @notice Burns available credit in the alchemist.
-  function burnCredit() external;
-
-  /// @notice Deposits local collateral into the alchemist
-  ///
-  /// @param underlyingToken The collateral to deposit.
-  /// @param amount          The amount to deposit.
-  function depositFunds(address underlyingToken, uint256 amount) external;
-
-  /// @notice Withdraws collateral from the alchemist
-  ///
-  /// This function reverts if:
-  /// - The caller is not the transmuter.
-  /// - There is not enough flow available to fulfill the request.
-  /// - There is not enough underlying collateral in the alchemist controlled by the buffer to fulfil the request.
-  ///
-  /// @param underlyingToken The underlying token to withdraw.
-  /// @param amount          The amount to withdraw.
-  /// @param recipient       The account receiving the withdrawn funds.
-  function withdraw(
-    address underlyingToken,
-    uint256 amount,
-    address recipient
-  ) external;
-
-  /// @notice Withdraws collateral from the alchemist
-  ///
-  /// @param yieldToken       The yield token to withdraw.
-  /// @param shares           The amount of Alchemist shares to withdraw.
-  /// @param minimumAmountOut The minimum amount of underlying tokens needed to be received as a result of unwrapping the yield tokens.
-  function withdrawFromAlchemist(
-    address yieldToken,
-    uint256 shares,
-    uint256 minimumAmountOut
-  ) external;
-}
-
-
-// File src/libraries/FixedPointMath.sol
-
-pragma solidity ^0.8.13;
-
-/**
- * @notice A library which implements fixed point decimal math.
- */
-library FixedPointMath {
-  /** @dev This will give approximately 60 bits of precision */
-  uint256 public constant DECIMALS = 18;
-  uint256 public constant ONE = 10**DECIMALS;
-
-  /**
-   * @notice A struct representing a fixed point decimal.
-   */
-  struct Number {
-    uint256 n;
-  }
-
-  /**
-   * @notice Encodes a unsigned 256-bit integer into a fixed point decimal.
-   *
-   * @param value The value to encode.
-   * @return      The fixed point decimal representation.
-   */
-  function encode(uint256 value) internal pure returns (Number memory) {
-    return Number(FixedPointMath.encodeRaw(value));
-  }
-
-  /**
-   * @notice Encodes a unsigned 256-bit integer into a uint256 representation of a
-   *         fixed point decimal.
-   *
-   * @param value The value to encode.
-   * @return      The fixed point decimal representation.
-   */
-  function encodeRaw(uint256 value) internal pure returns (uint256) {
-    return value * ONE;
-  }
-
-  /**
-   * @notice Encodes a uint256 MAX VALUE into a uint256 representation of a
-   *         fixed point decimal.
-   *
-   * @return      The uint256 MAX VALUE fixed point decimal representation.
-   */
-  function max() internal pure returns (Number memory) {
-    return Number(type(uint256).max);
-  }
-
-  /**
-   * @notice Creates a rational fraction as a Number from 2 uint256 values
-   *
-   * @param n The numerator.
-   * @param d The denominator.
-   * @return  The fixed point decimal representation.
-   */
-  function rational(uint256 n, uint256 d) internal pure returns (Number memory) {
-    Number memory numerator = encode(n);
-    return FixedPointMath.div(numerator, d);
-  }
-
-  /**
-   * @notice Adds two fixed point decimal numbers together.
-   *
-   * @param self  The left hand operand.
-   * @param value The right hand operand.
-   * @return      The result.
-   */
-  function add(Number memory self, Number memory value) internal pure returns (Number memory) {
-    return Number(self.n + value.n);
-  }
-
-  /**
-   * @notice Adds a fixed point number to a unsigned 256-bit integer.
-   *
-   * @param self  The left hand operand.
-   * @param value The right hand operand. This will be converted to a fixed point decimal.
-   * @return      The result.
-   */
-  function add(Number memory self, uint256 value) internal pure returns (Number memory) {
-    return add(self, FixedPointMath.encode(value));
-  }
-
-  /**
-   * @notice Subtract a fixed point decimal from another.
-   *
-   * @param self  The left hand operand.
-   * @param value The right hand operand.
-   * @return      The result.
-   */
-  function sub(Number memory self, Number memory value) internal pure returns (Number memory) {
-    return Number(self.n - value.n);
-  }
-
-  /**
-   * @notice Subtract a unsigned 256-bit integer from a fixed point decimal.
-   *
-   * @param self  The left hand operand.
-   * @param value The right hand operand. This will be converted to a fixed point decimal.
-   * @return      The result.
-   */
-  function sub(Number memory self, uint256 value) internal pure returns (Number memory) {
-    return sub(self, FixedPointMath.encode(value));
-  }
-
-  /**
-   * @notice Multiplies a fixed point decimal by another fixed point decimal.
-   *
-   * @param self  The fixed point decimal to multiply.
-   * @param number The fixed point decimal to multiply by.
-   * @return      The result.
-   */
-  function mul(Number memory self, Number memory number) internal pure returns (Number memory) {
-    return Number((self.n * number.n) / ONE);
-  }
-
-  /**
-   * @notice Multiplies a fixed point decimal by an unsigned 256-bit integer.
-   *
-   * @param self  The fixed point decimal to multiply.
-   * @param value The unsigned 256-bit integer to multiply by.
-   * @return      The result.
-   */
-  function mul(Number memory self, uint256 value) internal pure returns (Number memory) {
-    return Number(self.n * value);
-  }
-
-  /**
-   * @notice Divides a fixed point decimal by an unsigned 256-bit integer.
-   *
-   * @param self  The fixed point decimal to multiply by.
-   * @param value The unsigned 256-bit integer to divide by.
-   * @return      The result.
-   */
-  function div(Number memory self, uint256 value) internal pure returns (Number memory) {
-    return Number(self.n / value);
-  }
-
-  /**
-   * @notice Compares two fixed point decimals.
-   *
-   * @param self  The left hand number to compare.
-   * @param value The right hand number to compare.
-   * @return      When the left hand number is less than the right hand number this returns -1,
-   *              when the left hand number is greater than the right hand number this returns 1,
-   *              when they are equal this returns 0.
-   */
-  function cmp(Number memory self, Number memory value) internal pure returns (int256) {
-    if (self.n < value.n) {
-      return -1;
-    }
-
-    if (self.n > value.n) {
-      return 1;
-    }
-
-    return 0;
-  }
-
-  /**
-   * @notice Gets if two fixed point numbers are equal.
-   *
-   * @param self  the first fixed point number.
-   * @param value the second fixed point number.
-   *
-   * @return if they are equal.
-   */
-  function equals(Number memory self, Number memory value) internal pure returns (bool) {
-    return self.n == value.n;
-  }
-
-  /**
-   * @notice Truncates a fixed point decimal into an unsigned 256-bit integer.
-   *
-   * @return The integer portion of the fixed point decimal.
-   */
-  function truncate(Number memory self) internal pure returns (uint256) {
-    return self.n / ONE;
-  }
-}
-
-
-// File src/libraries/LiquidityMath.sol
-
-pragma solidity >=0.5.0;
-
-/// @title  LiquidityMath
-/// @author Alchemix Finance
-library LiquidityMath {
-  using FixedPointMath for FixedPointMath.Number;
-
-  uint256 constant PRECISION = 1e18;
-
-  /// @dev Adds a signed delta to an unsigned integer.
-  ///
-  /// @param  x The unsigned value to add the delta to.
-  /// @param  y The signed delta value to add.
-  /// @return z The result.
-  function addDelta(uint256 x, int256 y) internal pure returns (uint256 z) {
-    if (y < 0) {
-      if ((z = x - uint256(-y)) >= x) {
-        revert IllegalArgument();
-      }
-    } else {
-      if ((z = x + uint256(y)) < x) {
-        revert IllegalArgument();
-      }
-    }
-  }
-
-  /// @dev Calculate a uint256 representation of x * y using FixedPointMath
-  ///
-  /// @param  x The first factor
-  /// @param  y The second factor (fixed point)
-  /// @return z The resulting product, after truncation
-  function calculateProduct(uint256 x, FixedPointMath.Number memory y) internal pure returns (uint256 z) {
-    z = y.mul(x).truncate();
-  }
-
-  /// @notice normalises non 18 digit token values to 18 digits.
-  function normalizeValue(uint256 input, uint256 decimals) internal pure returns (uint256) {
-    return (input * PRECISION) / (10**decimals);
-  }
-
-  /// @notice denormalizes 18 digits back to a token's digits
-  function deNormalizeValue(uint256 input, uint256 decimals) internal pure returns (uint256) {
-    return (input * (10**decimals)) / PRECISION;
-  }
-}
-
-
-// File src/libraries/SafeCast.sol
-
-pragma solidity >=0.5.0;
-
-/// @title Safe casting methods
-/// @notice Contains methods for safely casting between types
-library SafeCast {
-  /// @notice Cast a uint256 to a int256, revert on overflow
-  /// @param y The uint256 to be casted
-  /// @return z The casted integer, now type int256
-  function toInt256(uint256 y) internal pure returns (int256 z) {
-    if (y >= 2**255) {
-      revert IllegalArgument();
-    }
-    z = int256(y);
-  }
-
-  /// @notice Cast a int256 to a uint256, revert on underflow
-  /// @param y The int256 to be casted
-  /// @return z The casted integer, now type uint256
-  function toUint256(int256 y) internal pure returns (uint256 z) {
-    if (y < 0) {
-      revert IllegalArgument();
-    }
-    z = uint256(y);
-  }
 }
 
 
@@ -3167,6 +1899,204 @@ interface IERC20 {
         address to,
         uint256 amount
     ) external returns (bool);
+}
+
+
+// File src/interfaces/IAlchemicToken.sol
+
+pragma solidity >=0.5.0;
+
+/// @title  IAlchemicToken
+/// @author Alchemix Finance
+interface IAlchemicToken is IERC20 {
+  /// @notice Gets the total amount of minted tokens for an account.
+  ///
+  /// @param account The address of the account.
+  ///
+  /// @return The total minted.
+  function hasMinted(address account) external view returns (uint256);
+
+  /// @notice Lowers the number of tokens which the `msg.sender` has minted.
+  ///
+  /// This reverts if the `msg.sender` is not whitelisted.
+  ///
+  /// @param amount The amount to lower the minted amount by.
+  function lowerHasMinted(uint256 amount) external;
+
+  /// @notice Sets the mint allowance for a given account'
+  ///
+  /// This reverts if the `msg.sender` is not admin
+  ///
+  /// @param toSetCeiling The account whos allowance to update
+  /// @param ceiling      The amount of tokens allowed to mint
+  function setCeiling(address toSetCeiling, uint256 ceiling) external;
+
+  /// @notice Updates the state of an address in the whitelist map
+  ///
+  /// This reverts if msg.sender is not admin
+  ///
+  /// @param toWhitelist the address whos state is being updated
+  /// @param state the boolean state of the whitelist
+  function setWhitelist(address toWhitelist, bool state) external;
+
+  function mint(address recipient, uint256 amount) external;
+
+  function burn(uint256 amount) external;
+}
+
+
+// File src/interfaces/IWhitelist.sol
+
+pragma solidity ^0.8.13;
+
+/// @title  Whitelist
+/// @author Alchemix Finance
+interface IWhitelist {
+  /// @dev Emitted when a contract is added to the whitelist.
+  ///
+  /// @param account The account that was added to the whitelist.
+  event AccountAdded(address account);
+
+  /// @dev Emitted when a contract is removed from the whitelist.
+  ///
+  /// @param account The account that was removed from the whitelist.
+  event AccountRemoved(address account);
+
+  /// @dev Emitted when the whitelist is deactivated.
+  event WhitelistDisabled();
+
+  /// @dev Returns the list of addresses that are whitelisted for the given contract address.
+  ///
+  /// @return addresses The addresses that are whitelisted to interact with the given contract.
+  function getAddresses() external view returns (address[] memory addresses);
+
+  /// @dev Returns the disabled status of a given whitelist.
+  ///
+  /// @return disabled A flag denoting if the given whitelist is disabled.
+  function disabled() external view returns (bool);
+
+  /// @dev Adds an contract to the whitelist.
+  ///
+  /// @param caller The address to add to the whitelist.
+  function add(address caller) external;
+
+  /// @dev Adds a contract to the whitelist.
+  ///
+  /// @param caller The address to remove from the whitelist.
+  function remove(address caller) external;
+
+  /// @dev Disables the whitelist of the target whitelisted contract.
+  ///
+  /// This can only occur once. Once the whitelist is disabled, then it cannot be reenabled.
+  function disable() external;
+
+  /// @dev Checks that the `msg.sender` is whitelisted when it is not an EOA.
+  ///
+  /// @param account The account to check.
+  ///
+  /// @return whitelisted A flag denoting if the given account is whitelisted.
+  function isWhitelisted(address account) external view returns (bool);
+}
+
+
+// File src/libraries/SafeCast.sol
+
+pragma solidity >=0.5.0;
+
+/// @title Safe casting methods
+/// @notice Contains methods for safely casting between types
+library SafeCast {
+  /// @notice Cast a uint256 to a int256, revert on overflow
+  /// @param y The uint256 to be casted
+  /// @return z The casted integer, now type int256
+  function toInt256(uint256 y) internal pure returns (int256 z) {
+    if (y >= 2**255) {
+      revert IllegalArgument();
+    }
+    z = int256(y);
+  }
+
+  /// @notice Cast a int256 to a uint256, revert on underflow
+  /// @param y The int256 to be casted
+  /// @return z The casted integer, now type uint256
+  function toUint256(int256 y) internal pure returns (uint256 z) {
+    if (y < 0) {
+      revert IllegalArgument();
+    }
+    z = uint256(y);
+  }
+}
+
+
+// File src/libraries/Sets.sol
+
+pragma solidity ^0.8.13;
+
+/// @title  Sets
+/// @author Alchemix Finance
+library Sets {
+    using Sets for AddressSet;
+
+    /// @notice A data structure holding an array of values with an index mapping for O(1) lookup.
+    struct AddressSet {
+        address[] values;
+        mapping(address => uint256) indexes;
+    }
+
+    /// @dev Add a value to a Set
+    ///
+    /// @param self  The Set.
+    /// @param value The value to add.
+    ///
+    /// @return Whether the operation was successful (unsuccessful if the value is already contained in the Set)
+    function add(AddressSet storage self, address value) internal returns (bool) {
+        if (self.contains(value)) {
+            return false;
+        }
+        self.values.push(value);
+        self.indexes[value] = self.values.length;
+        return true;
+    }
+
+    /// @dev Remove a value from a Set
+    ///
+    /// @param self  The Set.
+    /// @param value The value to remove.
+    ///
+    /// @return Whether the operation was successful (unsuccessful if the value was not contained in the Set)
+    function remove(AddressSet storage self, address value) internal returns (bool) {
+        uint256 index = self.indexes[value];
+        if (index == 0) {
+            return false;
+        }
+
+        // Normalize the index since we know that the element is in the set.
+        index--;
+
+        uint256 lastIndex = self.values.length - 1;
+
+        if (index != lastIndex) {
+            address lastValue = self.values[lastIndex];
+            self.values[index] = lastValue;
+            self.indexes[lastValue] = index + 1;
+        }
+
+        self.values.pop();
+
+        delete self.indexes[value];
+
+        return true;
+    }
+
+    /// @dev Returns true if the value exists in the Set
+    ///
+    /// @param self  The Set.
+    /// @param value The value to check.
+    ///
+    /// @return True if the value is contained in the Set, False if it is not.
+    function contains(AddressSet storage self, address value) internal view returns (bool) {
+        return self.indexes[value] != 0;
+    }
 }
 
 
@@ -3399,7 +2329,122 @@ library TokenUtils {
 }
 
 
-// File src/TransmuterBuffer.sol
+// File src/libraries/Limiters.sol
+
+pragma solidity ^0.8.13;
+
+/// @title  Functions
+/// @author Alchemix Finance
+library Limiters {
+    using Limiters for LinearGrowthLimiter;
+
+    /// @dev A maximum cooldown to avoid malicious governance bricking the contract.
+    /// @dev 1 day @ 12 sec / block
+    uint256 constant public MAX_COOLDOWN_BLOCKS = 1 days / 12 seconds;
+
+    /// @dev The scalar used to convert integral types to fixed point numbers.
+    uint256 constant public FIXED_POINT_SCALAR = 1e18;
+
+    /// @dev The configuration and state of a linear growth function (LGF).
+    struct LinearGrowthLimiter {
+        uint256 maximum;        /// The maximum limit of the function.
+        uint256 rate;           /// The rate at which the function increases back to its maximum.
+        uint256 lastValue;      /// The most recently saved value of the function.
+        uint256 lastBlock;      /// The block that `lastValue` was recorded.
+        uint256 minLimit;       /// A minimum limit to avoid malicious governance bricking the contract
+    }
+
+    /// @dev Instantiates a new linear growth function.
+    ///
+    /// @param maximum The maximum value for the LGF.
+    /// @param blocks  The number of blocks that determines the rate of the LGF.
+    /// @param _minLimit The new minimum limit of the LGF.
+    ///
+    /// @return The LGF struct.
+    function createLinearGrowthLimiter(uint256 maximum, uint256 blocks, uint256 _minLimit) internal view returns (LinearGrowthLimiter memory) {
+        if (blocks > MAX_COOLDOWN_BLOCKS) {
+            revert IllegalArgument();
+        }
+
+        if (maximum < _minLimit) {
+            revert IllegalArgument();
+        }
+
+        return LinearGrowthLimiter({
+            maximum: maximum,
+            rate: maximum * FIXED_POINT_SCALAR / blocks,
+            lastValue: maximum,
+            lastBlock: block.number,
+            minLimit: _minLimit
+        });
+    }
+
+    /// @dev Configure an LGF.
+    ///
+    /// @param self    The LGF to configure.
+    /// @param maximum The maximum value of the LFG.
+    /// @param blocks  The number of recovery blocks of the LGF.
+    function configure(LinearGrowthLimiter storage self, uint256 maximum, uint256 blocks) internal {
+        if (blocks > MAX_COOLDOWN_BLOCKS) {
+            revert IllegalArgument();
+        }
+
+        if (maximum < self.minLimit) {
+            revert IllegalArgument();
+        }
+
+        if (self.lastValue > maximum) {
+            self.lastValue = maximum;
+        }
+
+        self.maximum = maximum;
+        self.rate = maximum * FIXED_POINT_SCALAR / blocks;
+    }
+
+    /// @dev Updates the state of an LGF by updating `lastValue` and `lastBlock`.
+    ///
+    /// @param self the LGF to update.
+    function update(LinearGrowthLimiter storage self) internal {
+        self.lastValue = self.get();
+        self.lastBlock = block.number;
+    }
+
+    /// @dev Increase the value of the linear growth limiter.
+    ///
+    /// @param self   The linear growth limiter.
+    /// @param amount The amount to decrease `lastValue`.
+    function increase(LinearGrowthLimiter storage self, uint256 amount) internal {
+        uint256 value = self.get();
+        self.lastValue = value + amount;
+        self.lastBlock = block.number;
+    }
+
+    /// @dev Decrease the value of the linear growth limiter.
+    ///
+    /// @param self   The linear growth limiter.
+    /// @param amount The amount to decrease `lastValue`.
+    function decrease(LinearGrowthLimiter storage self, uint256 amount) internal {
+        uint256 value = self.get();
+        self.lastValue = value - amount;
+        self.lastBlock = block.number;
+    }
+
+    /// @dev Get the current value of the linear growth limiter.
+    ///
+    /// @return The current value.
+    function get(LinearGrowthLimiter storage self) internal view returns (uint256) {
+        uint256 elapsed = block.number - self.lastBlock;
+        if (elapsed == 0) {
+            return self.lastValue;
+        }
+        uint256 delta = elapsed * self.rate / FIXED_POINT_SCALAR;
+        uint256 value = self.lastValue + delta;
+        return value > self.maximum ? self.maximum : value;
+    }
+}
+
+
+// File src/AlchemistV2.sol
 
 pragma solidity ^0.8.13;
 
@@ -3411,560 +2456,1765 @@ pragma solidity ^0.8.13;
 
 
 
-
-/// @title  ITransmuterBuffer
+/// @title  AlchemistV2
 /// @author Alchemix Finance
-///
-/// @notice An interface contract to buffer funds between the Alchemist and the Transmuter
-contract TransmuterBuffer is ITransmuterBuffer, AccessControl, Initializable {
-    using FixedPointMath for FixedPointMath.Number;
+contract AlchemistV2 is IAlchemistV2, Initializable, Multicall, Mutex {
+    using Limiters for Limiters.LinearGrowthLimiter;
+    using Sets for Sets.AddressSet;
 
+    /// @notice A user account.
+    struct Account {
+        // A signed value which represents the current amount of debt or credit that the account has accrued.
+        // Positive values indicate debt, negative values indicate credit.
+        int256 debt;
+        // The share balances for each yield token.
+        mapping(address => uint256) balances;
+        // The last values recorded for accrued weights for each yield token.
+        mapping(address => uint256) lastAccruedWeights;
+        // The set of yield tokens that the account has deposited into the system.
+        Sets.AddressSet depositedTokens;
+        // The allowances for mints.
+        mapping(address => uint256) mintAllowances;
+        // The allowances for withdrawals.
+        mapping(address => mapping(address => uint256)) withdrawAllowances;
+    }
+
+    /// @notice The number of basis points there are to represent exactly 100%.
     uint256 public constant BPS = 10_000;
 
-    /// @notice The identifier of the role which maintains other roles.
-    bytes32 public constant ADMIN = keccak256("ADMIN");
+    /// @notice The scalar used for conversion of integral numbers to fixed point numbers. Fixed point numbers in this
+    ///         implementation have 18 decimals of resolution, meaning that 1 is represented as 1e18, 0.5 is
+    ///         represented as 5e17, and 2 is represented as 2e18.
+    uint256 public constant FIXED_POINT_SCALAR = 1e18;
 
-    /// @notice The identifier of the keeper role.
-    bytes32 public constant KEEPER = keccak256("KEEPER");
+    /// @inheritdoc IAlchemistV2Immutables
+    string public constant override version = "2.2.8";
 
-    /// @inheritdoc ITransmuterBuffer
-    string public constant override version = "2.2.0";
+    /// @inheritdoc IAlchemistV2Immutables
+    address public override debtToken;
 
-    /// @notice The alchemist address.
-    address public alchemist;
+    /// @inheritdoc IAlchemistV2State
+    address public override admin;
 
-    /// @notice The public transmuter address for each address.
-    mapping(address => address) public transmuter;
+    /// @inheritdoc IAlchemistV2State
+    address public override pendingAdmin;
 
-    /// @notice The flowRate for each address.
-    mapping(address => uint256) public flowRate;
+    /// @inheritdoc IAlchemistV2State
+    mapping(address => bool) public override sentinels;
 
-    /// @notice The last update timestamp gor the flowRate for each address.
-    mapping(address => uint256) public lastFlowrateUpdate;
+    /// @inheritdoc IAlchemistV2State
+    mapping(address => bool) public override keepers;
 
-    /// @notice The amount of flow available per ERC20.
-    mapping(address => uint256) public flowAvailable;
+    /// @inheritdoc IAlchemistV2State
+    address public override transmuter;
 
-    /// @notice The yieldTokens of each underlying supported by the Alchemist.
-    mapping(address => address[]) public _yieldTokens;
+    /// @inheritdoc IAlchemistV2State
+    uint256 public override minimumCollateralization;
 
-    /// @notice The total amount of an underlying token that has been exchanged into the transmuter, and has not been claimed.
-    mapping(address => uint256) public currentExchanged;
+    /// @inheritdoc IAlchemistV2State
+    uint256 public override protocolFee;
 
-    /// @notice The underlying-tokens registered in the TransmuterBuffer.
-    address[] public registeredUnderlyings;
+    /// @inheritdoc IAlchemistV2State
+    address public override protocolFeeReceiver;
 
-    /// @notice The debt-token used by the TransmuterBuffer.
-    address public debtToken;
+    /// @inheritdoc IAlchemistV2State
+    address public override whitelist;
 
-    /// @notice A mapping of weighting schemas to be used in actions taken on the Alchemist (burn, deposit).
-    mapping(address => Weighting) public weightings;
+    /// @dev A linear growth function that limits the amount of debt-token minted.
+    Limiters.LinearGrowthLimiter private _mintingLimiter;
 
-    /// @dev A mapping of addresses to denote permissioned sources of funds
-    mapping(address => bool) public sources;
+    // @dev The repay limiters for each underlying token.
+    mapping(address => Limiters.LinearGrowthLimiter) private _repayLimiters;
 
-    /// @dev A mapping of addresses to their respective AMOs.
-    mapping(address => address) public amos;
+    // @dev The liquidation limiters for each underlying token.
+    mapping(address => Limiters.LinearGrowthLimiter) private _liquidationLimiters;
 
-    /// @dev A mapping of underlying tokens to divert to the AMO.
-    mapping(address => bool) public divertToAmo;
+    /// @dev Accounts mapped by the address that owns them.
+    mapping(address => Account) private _accounts;
 
-    /// @custom:oz-upgrades-unsafe-allow constructor
+    /// @dev Underlying token parameters mapped by token address.
+    mapping(address => UnderlyingTokenParams) private _underlyingTokens;
+
+    /// @dev Yield token parameters mapped by token address.
+    mapping(address => YieldTokenParams) private _yieldTokens;
+
+    /// @dev An iterable set of the underlying tokens that are supported by the system.
+    Sets.AddressSet private _supportedUnderlyingTokens;
+
+    /// @dev An iterable set of the yield tokens that are supported by the system.
+    Sets.AddressSet private _supportedYieldTokens;
+
+    /// @inheritdoc IAlchemistV2State
+    address public override transferAdapter;
+
     constructor() initializer {}
 
-    /// @dev Initialize the contract
-    ///
-    /// @param _admin     The governing address of the buffer.
-    /// @param _debtToken The debt token minted by the Alchemist and accepted by the Transmuter.
-    function initialize(address _admin, address _debtToken) external initializer {
-        _setupRole(ADMIN, _admin);
-        _setRoleAdmin(ADMIN, ADMIN);
-        _setRoleAdmin(KEEPER, ADMIN);
-        debtToken = _debtToken;
+    /// @inheritdoc IAlchemistV2State
+    function getYieldTokensPerShare(address yieldToken) external view override returns (uint256) {
+        return convertSharesToYieldTokens(yieldToken, 10**_yieldTokens[yieldToken].decimals);
     }
 
-    /// @dev Only allows the transmuter to call the modified function
-    ///
-    /// Reverts if the caller is not a correct transmuter.
-    ///
-    /// @param underlyingToken the underlying token associated with the transmuter.
-    modifier onlyTransmuter(address underlyingToken) {
-        if (msg.sender != transmuter[underlyingToken]) {
-            revert Unauthorized();
-        }
-        _;
+    /// @inheritdoc IAlchemistV2State
+    function getUnderlyingTokensPerShare(address yieldToken) external view override returns (uint256) {
+        return convertSharesToUnderlyingTokens(yieldToken, 10**_yieldTokens[yieldToken].decimals);
     }
 
-    /// @dev Only allows a governance-permissioned source to call the modified function
-    ///
-    /// Reverts if the caller is not a permissioned source.
-    modifier onlySource() {
-        if (!sources[msg.sender]) {
-            revert Unauthorized();
-        }
-        _;
+    /// @inheritdoc IAlchemistV2State
+    function getSupportedUnderlyingTokens() external view override returns (address[] memory) {
+        return _supportedUnderlyingTokens.values;
     }
 
-    /// @dev Only calls from the admin address are authorized to pass.
-    modifier onlyAdmin() {
-        if (!hasRole(ADMIN, msg.sender)) {
-            revert Unauthorized();
-        }
-        _;
+    /// @inheritdoc IAlchemistV2State
+    function getSupportedYieldTokens() external view override returns (address[] memory) {
+        return _supportedYieldTokens.values;
     }
 
-    /// @dev Only calls from a keeper address are authorized to pass.
-    modifier onlyKeeper() {
-        if (!hasRole(KEEPER, msg.sender)) {
-            revert Unauthorized();
-        }
-        _;
+    /// @inheritdoc IAlchemistV2State
+    function isSupportedUnderlyingToken(address underlyingToken) external view override returns (bool) {
+        return _supportedUnderlyingTokens.contains(underlyingToken);
     }
 
-    /// @inheritdoc ITransmuterBuffer
-    function getWeight(address weightToken, address token)
-        external
-        view
-        override
-        returns (uint256 weight)
+    /// @inheritdoc IAlchemistV2State
+    function isSupportedYieldToken(address yieldToken) external view override returns (bool) {
+        return _supportedYieldTokens.contains(yieldToken);
+    }
+
+    /// @inheritdoc IAlchemistV2State
+    function accounts(address owner)
+        external view override
+        returns (
+            int256 debt,
+            address[] memory depositedTokens
+        )
     {
-        return weightings[weightToken].weights[token];
+        Account storage account = _accounts[owner];
+
+        return (
+            _calculateUnrealizedDebt(owner),
+            account.depositedTokens.values
+        );
     }
 
-    /// @inheritdoc ITransmuterBuffer
-    function getAvailableFlow(address underlyingToken)
-        external
-        view
-        override
+    /// @inheritdoc IAlchemistV2State
+    function positions(address owner, address yieldToken)
+        external view override
+        returns (
+            uint256 shares,
+            uint256 lastAccruedWeight
+        )
+    {
+        Account storage account = _accounts[owner];
+        return (account.balances[yieldToken], account.lastAccruedWeights[yieldToken]);
+    }
+
+    /// @inheritdoc IAlchemistV2State
+    function mintAllowance(address owner, address spender)
+        external view override
         returns (uint256)
     {
-        // total amount of collateral that the buffer controls in the alchemist
-        uint256 totalUnderlyingBuffered = getTotalUnderlyingBuffered(
-            underlyingToken
+        Account storage account = _accounts[owner];
+        return account.mintAllowances[spender];
+    }
+
+    /// @inheritdoc IAlchemistV2State
+    function withdrawAllowance(address owner, address spender, address yieldToken)
+        external view override
+        returns (uint256)
+    {
+        Account storage account = _accounts[owner];
+        return account.withdrawAllowances[spender][yieldToken];
+    }
+
+    /// @inheritdoc IAlchemistV2State
+    function getUnderlyingTokenParameters(address underlyingToken)
+        external view override
+        returns (UnderlyingTokenParams memory)
+    {
+        return _underlyingTokens[underlyingToken];
+    }
+
+    /// @inheritdoc IAlchemistV2State
+    function getYieldTokenParameters(address yieldToken)
+        external view override
+        returns (YieldTokenParams memory)
+    {
+        return _yieldTokens[yieldToken];
+    }
+
+    /// @inheritdoc IAlchemistV2State
+    function getMintLimitInfo()
+        external view override
+        returns (
+            uint256 currentLimit,
+            uint256 rate,
+            uint256 maximum
+        )
+    {
+        return (
+            _mintingLimiter.get(),
+            _mintingLimiter.rate,
+            _mintingLimiter.maximum
+        );
+    }
+
+    /// @inheritdoc IAlchemistV2State
+    function getRepayLimitInfo(address underlyingToken)
+        external view override
+        returns (
+            uint256 currentLimit,
+            uint256 rate,
+            uint256 maximum
+        )
+    {
+        Limiters.LinearGrowthLimiter storage limiter = _repayLimiters[underlyingToken];
+        return (
+            limiter.get(),
+            limiter.rate,
+            limiter.maximum
+        );
+    }
+
+    /// @inheritdoc IAlchemistV2State
+    function getLiquidationLimitInfo(address underlyingToken)
+        external view override
+        returns (
+            uint256 currentLimit,
+            uint256 rate,
+            uint256 maximum
+        )
+    {
+        Limiters.LinearGrowthLimiter storage limiter = _liquidationLimiters[underlyingToken];
+        return (
+            limiter.get(),
+            limiter.rate,
+            limiter.maximum
+        );
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function initialize(InitializationParams memory params) external initializer {
+        _checkArgument(params.protocolFee <= BPS);
+
+        debtToken                = params.debtToken;
+        admin                    = params.admin;
+        transmuter               = params.transmuter;
+        minimumCollateralization = params.minimumCollateralization;
+        protocolFee              = params.protocolFee;
+        protocolFeeReceiver      = params.protocolFeeReceiver;
+        whitelist                = params.whitelist;
+
+        _mintingLimiter = Limiters.createLinearGrowthLimiter(
+            params.mintingLimitMaximum,
+            params.mintingLimitBlocks,
+            params.mintingLimitMinimum
         );
 
-        if (totalUnderlyingBuffered < flowAvailable[underlyingToken]) {
-            return totalUnderlyingBuffered;
-        } else {
-            return flowAvailable[underlyingToken];
-        }
+        emit AdminUpdated(admin);
+        emit TransmuterUpdated(transmuter);
+        emit MinimumCollateralizationUpdated(minimumCollateralization);
+        emit ProtocolFeeUpdated(protocolFee);
+        emit ProtocolFeeReceiverUpdated(protocolFeeReceiver);
+        emit MintingLimitUpdated(params.mintingLimitMaximum, params.mintingLimitBlocks);
     }
 
-    /// @inheritdoc ITransmuterBuffer
-    function getTotalCredit() public view override returns (uint256) {
-        (int256 debt, ) = IAlchemistV2(alchemist).accounts(address(this));
-        return debt >= 0 ? 0 : SafeCast.toUint256(-debt);
+    /// @inheritdoc IAlchemistV2AdminActions
+    function setPendingAdmin(address value) external override {
+        _onlyAdmin();
+        pendingAdmin = value;
+        emit PendingAdminUpdated(value);
     }
 
-    /// @inheritdoc ITransmuterBuffer
-    function getTotalUnderlyingBuffered(address underlyingToken)
-        public
-        view
-        override
-        returns (uint256 totalBuffered)
-    {
-        totalBuffered = TokenUtils.safeBalanceOf(underlyingToken, address(this));
-        for (uint256 i = 0; i < _yieldTokens[underlyingToken].length; ++i) {
-            totalBuffered += _getTotalBuffered(_yieldTokens[underlyingToken][i]);
-        }
-    }
+    /// @inheritdoc IAlchemistV2AdminActions
+    function acceptAdmin() external override {
+        _checkState(pendingAdmin != address(0));
 
-    /// @inheritdoc ITransmuterBuffer
-    function setWeights(
-        address weightToken,
-        address[] memory tokens,
-        uint256[] memory weights
-    ) external override onlyAdmin {
-        if(tokens.length != weights.length) {
-            revert IllegalArgument();
-        }
-        Weighting storage weighting = weightings[weightToken];
-        delete weighting.tokens;
-        weighting.totalWeight = 0;
-        for (uint256 i = 0; i < tokens.length; ++i) {
-            address yieldToken = tokens[i];
-
-            // For any weightToken that is not the debtToken, we want to verify that the yield-tokens being
-            // set for the weight schema accept said weightToken as collateral.
-            //
-            // We don't want to do this check on the debtToken because it is only used in the burnCredit() function
-            // and we want to be able to burn credit to any yield-token in the Alchemist.
-            if (weightToken != debtToken) {
-                IAlchemistV2.YieldTokenParams memory params = IAlchemistV2(alchemist)
-                    .getYieldTokenParameters(yieldToken);
-                address underlyingToken = ITokenAdapter(params.adapter)
-                    .underlyingToken();
-
-                if (weightToken != underlyingToken) {
-                    revert IllegalState();
-                }
-            }
-
-            weighting.tokens.push(yieldToken);
-            weighting.weights[yieldToken] = weights[i];
-            weighting.totalWeight += weights[i];
-        }
-    }
-
-    /// @inheritdoc ITransmuterBuffer
-    function setSource(address source, bool flag) external override onlyAdmin {
-        if (sources[source] == flag) {
-            revert IllegalArgument();
-        }
-        sources[source] = flag;
-        emit SetSource(source, flag);
-    }
-
-    /// @inheritdoc ITransmuterBuffer
-    function setTransmuter(address underlyingToken, address newTransmuter) external override onlyAdmin {
-        if (ITransmuterV2(newTransmuter).underlyingToken() != underlyingToken) {
-            revert IllegalArgument();
-        }
-        transmuter[underlyingToken] = newTransmuter;
-        emit SetTransmuter(underlyingToken, newTransmuter);
-    }
-
-    /// @inheritdoc ITransmuterBuffer
-    function setAlchemist(address _alchemist) external override onlyAdmin {
-        sources[alchemist] = false;
-        sources[_alchemist] = true;
-
-        if (alchemist != address(0)) {
-            for (uint256 i = 0; i < registeredUnderlyings.length; ++i) {
-                TokenUtils.safeApprove(registeredUnderlyings[i], alchemist, 0);
-            }
-            TokenUtils.safeApprove(debtToken, alchemist, 0);
+        if (msg.sender != pendingAdmin) {
+            revert Unauthorized();
         }
 
-        alchemist = _alchemist;
-        for (uint256 i = 0; i < registeredUnderlyings.length; ++i) {
-            TokenUtils.safeApprove(registeredUnderlyings[i], alchemist, type(uint256).max);
+        admin = pendingAdmin;
+        pendingAdmin = address(0);
+
+        emit AdminUpdated(admin);
+        emit PendingAdminUpdated(address(0));
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function setSentinel(address sentinel, bool flag) external override {
+        _onlyAdmin();
+        sentinels[sentinel] = flag;
+        emit SentinelSet(sentinel, flag);
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function setKeeper(address keeper, bool flag) external override {
+        _onlyAdmin();
+        keepers[keeper] = flag;
+        emit KeeperSet(keeper, flag);
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function addUnderlyingToken(address underlyingToken, UnderlyingTokenConfig calldata config) external override lock {
+        _onlyAdmin();
+        _checkState(!_supportedUnderlyingTokens.contains(underlyingToken));
+
+        uint8 tokenDecimals = TokenUtils.expectDecimals(underlyingToken);
+        uint8 debtTokenDecimals = TokenUtils.expectDecimals(debtToken);
+
+        _checkArgument(tokenDecimals <= debtTokenDecimals);
+
+        _underlyingTokens[underlyingToken] = UnderlyingTokenParams({
+            decimals:         tokenDecimals,
+            conversionFactor: 10**(debtTokenDecimals - tokenDecimals),
+            enabled:          false
+        });
+
+        _repayLimiters[underlyingToken] = Limiters.createLinearGrowthLimiter(
+            config.repayLimitMaximum,
+            config.repayLimitBlocks,
+            config.repayLimitMinimum
+        );
+
+        _liquidationLimiters[underlyingToken] = Limiters.createLinearGrowthLimiter(
+            config.liquidationLimitMaximum,
+            config.liquidationLimitBlocks,
+            config.liquidationLimitMinimum
+        );
+
+        _supportedUnderlyingTokens.add(underlyingToken);
+
+        emit AddUnderlyingToken(underlyingToken);
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function addYieldToken(address yieldToken, YieldTokenConfig calldata config) external override lock {
+        _onlyAdmin();
+        _checkArgument(config.maximumLoss <= BPS);
+        _checkArgument(config.creditUnlockBlocks > 0);
+
+        _checkState(!_supportedYieldTokens.contains(yieldToken));
+
+        ITokenAdapter adapter = ITokenAdapter(config.adapter);
+
+        _checkState(yieldToken == adapter.token());
+        _checkSupportedUnderlyingToken(adapter.underlyingToken());
+
+        _yieldTokens[yieldToken] = YieldTokenParams({
+            decimals:              TokenUtils.expectDecimals(yieldToken),
+            underlyingToken:       adapter.underlyingToken(),
+            adapter:               config.adapter,
+            maximumLoss:           config.maximumLoss,
+            maximumExpectedValue:  config.maximumExpectedValue,
+            creditUnlockRate:      FIXED_POINT_SCALAR / config.creditUnlockBlocks,
+            activeBalance:         0,
+            harvestableBalance:    0,
+            totalShares:           0,
+            expectedValue:         0,
+            accruedWeight:         0,
+            pendingCredit:         0,
+            distributedCredit:     0,
+            lastDistributionBlock: 0,
+            enabled:               false
+        });
+
+        _supportedYieldTokens.add(yieldToken);
+
+        TokenUtils.safeApprove(yieldToken, config.adapter, type(uint256).max);
+        TokenUtils.safeApprove(adapter.underlyingToken(), config.adapter, type(uint256).max);
+
+        emit AddYieldToken(yieldToken);
+        emit TokenAdapterUpdated(yieldToken, config.adapter);
+        emit MaximumLossUpdated(yieldToken, config.maximumLoss);
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function setUnderlyingTokenEnabled(address underlyingToken, bool enabled) external override {
+        _onlySentinelOrAdmin();
+        _checkSupportedUnderlyingToken(underlyingToken);
+        _underlyingTokens[underlyingToken].enabled = enabled;
+        emit UnderlyingTokenEnabled(underlyingToken, enabled);
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function setYieldTokenEnabled(address yieldToken, bool enabled) external override {
+        _onlySentinelOrAdmin();
+        _checkSupportedYieldToken(yieldToken);
+        _yieldTokens[yieldToken].enabled = enabled;
+        emit YieldTokenEnabled(yieldToken, enabled);
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function configureRepayLimit(address underlyingToken, uint256 maximum, uint256 blocks) external override {
+        _onlyAdmin();
+        _checkSupportedUnderlyingToken(underlyingToken);
+        _repayLimiters[underlyingToken].update();
+        _repayLimiters[underlyingToken].configure(maximum, blocks);
+        emit RepayLimitUpdated(underlyingToken, maximum, blocks);
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function configureLiquidationLimit(address underlyingToken, uint256 maximum, uint256 blocks) external override {
+        _onlyAdmin();
+        _checkSupportedUnderlyingToken(underlyingToken);
+        _liquidationLimiters[underlyingToken].update();
+        _liquidationLimiters[underlyingToken].configure(maximum, blocks);
+        emit LiquidationLimitUpdated(underlyingToken, maximum, blocks);
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function setTransmuter(address value) external override {
+        _onlyAdmin();
+        _checkArgument(value != address(0));
+        transmuter = value;
+        emit TransmuterUpdated(value);
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function setMinimumCollateralization(uint256 value) external override {
+        _onlyAdmin();
+        _checkArgument(value >= 1e18);
+        minimumCollateralization = value;
+        emit MinimumCollateralizationUpdated(value);
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function setProtocolFee(uint256 value) external override {
+        _onlyAdmin();
+        _checkArgument(value <= BPS);
+        protocolFee = value;
+        emit ProtocolFeeUpdated(value);
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function setProtocolFeeReceiver(address value) external override {
+        _onlyAdmin();
+        _checkArgument(value != address(0));
+        protocolFeeReceiver = value;
+        emit ProtocolFeeReceiverUpdated(value);
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function configureMintingLimit(uint256 maximum, uint256 rate) external override {
+        _onlyAdmin();
+        _mintingLimiter.update();
+        _mintingLimiter.configure(maximum, rate);
+        emit MintingLimitUpdated(maximum, rate);
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function configureCreditUnlockRate(address yieldToken, uint256 blocks) external override {
+        _onlyAdmin();
+        _checkArgument(blocks > 0);
+        _checkSupportedYieldToken(yieldToken);
+        _yieldTokens[yieldToken].creditUnlockRate = FIXED_POINT_SCALAR / blocks;
+        emit CreditUnlockRateUpdated(yieldToken, blocks);
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function setTokenAdapter(address yieldToken, address adapter) external override {
+        _onlyAdmin();
+        _checkState(yieldToken == ITokenAdapter(adapter).token());
+        _checkSupportedYieldToken(yieldToken);
+        _yieldTokens[yieldToken].adapter = adapter;
+        TokenUtils.safeApprove(yieldToken, adapter, type(uint256).max);
+        TokenUtils.safeApprove(ITokenAdapter(adapter).underlyingToken(), adapter, type(uint256).max);
+        emit TokenAdapterUpdated(yieldToken, adapter);
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function setMaximumExpectedValue(address yieldToken, uint256 value) external override {
+        _onlyAdmin();
+        _checkSupportedYieldToken(yieldToken);
+        _yieldTokens[yieldToken].maximumExpectedValue = value;
+        emit MaximumExpectedValueUpdated(yieldToken, value);
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function setMaximumLoss(address yieldToken, uint256 value) external override {
+        _onlyAdmin();
+        _checkArgument(value <= BPS);
+        _checkSupportedYieldToken(yieldToken);
+
+        _yieldTokens[yieldToken].maximumLoss = value;
+
+        emit MaximumLossUpdated(yieldToken, value);
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function snap(address yieldToken) external override lock {
+        _onlyAdmin();
+        _checkSupportedYieldToken(yieldToken);
+
+        uint256 expectedValue = convertYieldTokensToUnderlying(yieldToken, _yieldTokens[yieldToken].activeBalance);
+
+        _yieldTokens[yieldToken].expectedValue = expectedValue;
+
+        emit Snap(yieldToken, expectedValue);
+    }
+
+    /// @inheritdoc IAlchemistV2AdminActions
+    function sweepTokens(address rewardToken, uint256 amount) external override lock {
+        _onlyAdmin();
+
+        if (_supportedYieldTokens.contains(rewardToken)) {
+            revert UnsupportedToken(rewardToken);
         }
-        TokenUtils.safeApprove(debtToken, alchemist, type(uint256).max);
 
-        emit SetAlchemist(alchemist);
-    }
-
-    /// @inheritdoc ITransmuterBuffer
-    function setAmo(address underlyingToken, address amo) external override onlyAdmin {
-        amos[underlyingToken] = amo;
-        emit SetAmo(underlyingToken, amo);
-    }
-
-    /// @inheritdoc ITransmuterBuffer
-    function setDivertToAmo(address underlyingToken, bool divert) external override onlyAdmin {
-        divertToAmo[underlyingToken] = divert;
-        emit SetDivertToAmo(underlyingToken, divert);
-    }
-
-    /// @inheritdoc ITransmuterBuffer
-    function registerAsset(
-        address underlyingToken,
-        address _transmuter
-    ) external override onlyAdmin {
-        if (!IAlchemistV2(alchemist).isSupportedUnderlyingToken(underlyingToken)) {
-            revert IllegalState();
+        if (_supportedUnderlyingTokens.contains(rewardToken)) {
+            revert UnsupportedToken(rewardToken);
         }
 
-        // only add to the array if not already contained in it
-        for (uint256 i = 0; i < registeredUnderlyings.length; ++i) {
-            if (registeredUnderlyings[i] == underlyingToken) {
-                revert IllegalState();
-            }
-        }
+        TokenUtils.safeTransfer(rewardToken, admin, amount);
 
-        if (ITransmuterV2(_transmuter).underlyingToken() != underlyingToken) {
-            revert IllegalArgument();
-        }
-
-        transmuter[underlyingToken] = _transmuter;
-        registeredUnderlyings.push(underlyingToken);
-        TokenUtils.safeApprove(underlyingToken, alchemist, type(uint256).max);
-        emit RegisterAsset(underlyingToken, _transmuter);
+        emit SweepTokens(rewardToken, amount);
     }
 
-    /// @inheritdoc ITransmuterBuffer
-    function setFlowRate(address underlyingToken, uint256 _flowRate)
-        external
-        override
-        onlyAdmin
-    {
-        _exchange(underlyingToken);
-
-        flowRate[underlyingToken] = _flowRate;
-        emit SetFlowRate(underlyingToken, _flowRate);
+    /// @inheritdoc IAlchemistV2AdminActions
+    function setTransferAdapterAddress(address transferAdapterAddress) external override lock {
+        _onlyAdmin();
+        transferAdapter = transferAdapterAddress;
     }
 
-    /// @inheritdoc IERC20TokenReceiver
-    function onERC20Received(address underlyingToken, uint256 amount)
-        external
-        override
-        onlySource
-    {
-        if (divertToAmo[underlyingToken]) {
-            _flushToAmo(underlyingToken, amount);
-        } else {
-            _updateFlow(underlyingToken);
-
-            // total amount of collateral that the buffer controls in the alchemist
-            uint256 localBalance = TokenUtils.safeBalanceOf(underlyingToken, address(this));
-
-            // if there is not enough locally buffered collateral to meet the flow rate, exchange only the exchanged amount
-            if (localBalance < flowAvailable[underlyingToken]) {
-                currentExchanged[underlyingToken] += amount;
-                ITransmuterV2(transmuter[underlyingToken]).exchange(amount);
-            } else {
-                uint256 exchangeable = flowAvailable[underlyingToken] - currentExchanged[underlyingToken];
-                currentExchanged[underlyingToken] += exchangeable;
-                ITransmuterV2(transmuter[underlyingToken]).exchange(exchangeable);
-            }
-        }
+    /// @inheritdoc IAlchemistV2AdminActions
+    function transferDebtV1(
+        address owner, 
+        int256 debt
+    ) external override lock {
+        _onlyTransferAdapter();
+        _poke(owner);
+        _updateDebt(owner, debt);
+        _validate(owner);
     }
 
-    /// @inheritdoc ITransmuterBuffer
-    function exchange(address underlyingToken) external override onlyKeeper {
-        _exchange(underlyingToken);
+    /// @inheritdoc IAlchemistV2Actions
+    function approveMint(address spender, uint256 amount) external override {
+        _onlyWhitelisted();
+        _approveMint(msg.sender, spender, amount);
     }
 
-    /// @inheritdoc ITransmuterBuffer
-    function flushToAmo(address underlyingToken, uint256 amount) external override onlyKeeper {
-        if (divertToAmo[underlyingToken]) {
-            _flushToAmo(underlyingToken, amount);
-        } else {
-            revert IllegalState();
-        }
+    /// @inheritdoc IAlchemistV2Actions
+    function approveWithdraw(address spender, address yieldToken, uint256 shares) external override {
+        _onlyWhitelisted();
+        _checkSupportedYieldToken(yieldToken);
+        _approveWithdraw(msg.sender, spender, yieldToken, shares);
     }
 
-    /// @inheritdoc ITransmuterBuffer
-    function withdraw(
-        address underlyingToken,
+    /// @inheritdoc IAlchemistV2Actions
+    function poke(address owner) external override lock {
+        _onlyWhitelisted();
+        _preemptivelyHarvestDeposited(owner);
+        _distributeUnlockedCreditDeposited(owner);
+        _poke(owner);
+    }
+
+    /// @inheritdoc IAlchemistV2Actions
+    function deposit(
+        address yieldToken,
         uint256 amount,
         address recipient
-    ) external override onlyTransmuter(underlyingToken) {
-        if (amount > flowAvailable[underlyingToken]) {
-            revert IllegalArgument();
-        }
+    ) external override lock returns (uint256) {
+        _onlyWhitelisted();
+        _checkArgument(recipient != address(0));
+        _checkSupportedYieldToken(yieldToken);
 
-        uint256 localBalance = TokenUtils.safeBalanceOf(underlyingToken, address(this));
-        if (amount > localBalance) {
-            revert IllegalArgument();
-        }
+        // Deposit the yield tokens to the recipient.
+        uint256 shares = _deposit(yieldToken, amount, recipient);
 
-        flowAvailable[underlyingToken] -= amount;
-        currentExchanged[underlyingToken] -= amount;
+        // Transfer tokens from the message sender now that the internal storage updates have been committed.
+        TokenUtils.safeTransferFrom(yieldToken, msg.sender, address(this), amount);
 
-        TokenUtils.safeTransfer(underlyingToken, recipient, amount);
+        return shares;
     }
 
-    /// @inheritdoc ITransmuterBuffer
-    function withdrawFromAlchemist(
+    /// @inheritdoc IAlchemistV2Actions
+    function depositUnderlying(
+        address yieldToken,
+        uint256 amount,
+        address recipient,
+        uint256 minimumAmountOut
+    ) external override lock returns (uint256) {
+        _onlyWhitelisted();
+        _checkArgument(recipient != address(0));
+        _checkSupportedYieldToken(yieldToken);
+
+        // Before depositing, the underlying tokens must be wrapped into yield tokens.
+        uint256 amountYieldTokens = _wrap(yieldToken, amount, minimumAmountOut);
+
+        // Deposit the yield-tokens to the recipient.
+        return _deposit(yieldToken, amountYieldTokens, recipient);
+    }
+
+    /// @inheritdoc IAlchemistV2Actions
+    function withdraw(
+        address yieldToken,
+        uint256 shares,
+        address recipient
+    ) external override lock returns (uint256) {
+        _onlyWhitelisted();
+        _checkArgument(recipient != address(0));
+        _checkSupportedYieldToken(yieldToken);
+
+        // Withdraw the shares from the system.
+        uint256 amountYieldTokens = _withdraw(yieldToken, msg.sender, shares, recipient);
+
+        // Transfer the yield tokens to the recipient.
+        TokenUtils.safeTransfer(yieldToken, recipient, amountYieldTokens);
+
+        return amountYieldTokens;
+    }
+
+    /// @inheritdoc IAlchemistV2Actions
+    function withdrawFrom(
+        address owner,
+        address yieldToken,
+        uint256 shares,
+        address recipient
+    ) external override lock returns (uint256) {
+        _onlyWhitelisted();
+        _checkArgument(recipient != address(0));
+        _checkSupportedYieldToken(yieldToken);
+
+        // Preemptively try and decrease the withdrawal allowance. This will save gas when the allowance is not
+        // sufficient for the withdrawal.
+        _decreaseWithdrawAllowance(owner, msg.sender, yieldToken, shares);
+
+        // Withdraw the shares from the system.
+        uint256 amountYieldTokens = _withdraw(yieldToken, owner, shares, recipient);
+
+        // Transfer the yield tokens to the recipient.
+        TokenUtils.safeTransfer(yieldToken, recipient, amountYieldTokens);
+
+        return amountYieldTokens;
+    }
+
+    /// @inheritdoc IAlchemistV2Actions
+    function withdrawUnderlying(
+        address yieldToken,
+        uint256 shares,
+        address recipient,
+        uint256 minimumAmountOut
+    ) external override lock returns (uint256) {
+        _onlyWhitelisted();
+        _checkArgument(recipient != address(0));
+        _checkSupportedYieldToken(yieldToken);
+        _checkLoss(yieldToken);
+
+        uint256 amountYieldTokens = _withdraw(yieldToken, msg.sender, shares, recipient);
+
+        return _unwrap(yieldToken, amountYieldTokens, recipient, minimumAmountOut);
+    }
+
+    /// @inheritdoc IAlchemistV2Actions
+    function withdrawUnderlyingFrom(
+        address owner,
+        address yieldToken,
+        uint256 shares,
+        address recipient,
+        uint256 minimumAmountOut
+    ) external override lock returns (uint256) {
+        _onlyWhitelisted();
+        _checkArgument(recipient != address(0));
+        _checkSupportedYieldToken(yieldToken);
+        _checkLoss(yieldToken);
+        _decreaseWithdrawAllowance(owner, msg.sender, yieldToken, shares);
+
+        uint256 amountYieldTokens = _withdraw(yieldToken, owner, shares, recipient);
+
+        return _unwrap(yieldToken, amountYieldTokens, recipient, minimumAmountOut);
+    }
+
+    /// @inheritdoc IAlchemistV2Actions
+    function mint(uint256 amount, address recipient) external override lock {
+        _onlyWhitelisted();
+        _checkArgument(amount > 0);
+        _checkArgument(recipient != address(0));
+
+        // Mint tokens from the message sender's account to the recipient.
+        _mint(msg.sender, amount, recipient);
+    }
+
+    /// @inheritdoc IAlchemistV2Actions
+    function mintFrom(
+        address owner,
+        uint256 amount,
+        address recipient
+    ) external override lock {
+        _onlyWhitelisted();
+        _checkArgument(amount > 0);
+        _checkArgument(recipient != address(0));
+
+        // Preemptively try and decrease the minting allowance. This will save gas when the allowance is not sufficient
+        // for the mint.
+        _decreaseMintAllowance(owner, msg.sender, amount);
+
+        // Mint tokens from the owner's account to the recipient.
+        _mint(owner, amount, recipient);
+    }
+
+    /// @inheritdoc IAlchemistV2Actions
+    function burn(uint256 amount, address recipient) external override lock returns (uint256) {
+        _onlyWhitelisted();
+
+        _checkArgument(amount > 0);
+        _checkArgument(recipient != address(0));
+
+        // Distribute unlocked credit to depositors.
+        _distributeUnlockedCreditDeposited(recipient);
+
+        // Update the recipient's account, decrease the debt of the recipient by the number of tokens burned.
+        _poke(recipient);
+
+        // Check that the debt is greater than zero.
+        //
+        // It is possible that the number of debt which is repayable is equal to or less than zero after realizing the
+        // credit that was earned since the last update. We do not want to perform a noop so we need to check that the
+        // amount of debt to repay is greater than zero.
+        int256 debt;
+        _checkState((debt = _accounts[recipient].debt) > 0);
+
+        // Limit how much debt can be repaid up to the current amount of debt that the account has. This prevents
+        // situations where the user may be trying to repay their entire debt, but it decreases since they send the
+        // transaction and causes a revert because burning can never decrease the debt below zero.
+        //
+        // Casts here are safe because it is asserted that debt is greater than zero.
+        uint256 credit = amount > uint256(debt) ? uint256(debt) : amount;
+
+        // Update the recipient's debt.
+        _updateDebt(recipient, -SafeCast.toInt256(credit));
+
+        // Burn the tokens from the message sender.
+        TokenUtils.safeBurnFrom(debtToken, msg.sender, credit);
+
+        // Increase the global amount of mintable debt tokens.
+        // Do this after burning instead of before because mint limit increase is an action beneficial to the user.
+        _mintingLimiter.increase(credit);
+
+        emit Burn(msg.sender, credit, recipient);
+
+        return credit;
+    }
+
+    /// @inheritdoc IAlchemistV2Actions
+    function repay(address underlyingToken, uint256 amount, address recipient) external override lock returns (uint256) {
+        _onlyWhitelisted();
+
+        _checkArgument(amount > 0);
+        _checkArgument(recipient != address(0));
+
+        _checkSupportedUnderlyingToken(underlyingToken);
+        _checkUnderlyingTokenEnabled(underlyingToken);
+
+        // Distribute unlocked credit to depositors.
+        _distributeUnlockedCreditDeposited(recipient);
+
+        // Update the recipient's account and decrease the amount of debt incurred.
+        _poke(recipient);
+
+        // Check that the debt is greater than zero.
+        //
+        // It is possible that the amount of debt which is repayable is equal to or less than zero after realizing the
+        // credit that was earned since the last update. We do not want to perform a noop so we need to check that the
+        // amount of debt to repay is greater than zero.
+        int256 debt;
+        _checkState((debt = _accounts[recipient].debt) > 0);
+
+        // Determine the maximum amount of underlying tokens that can be repaid.
+        //
+        // It is implied that this value is greater than zero because `debt` is greater than zero so a noop is not possible
+        // beyond this point. Casting the debt to an unsigned integer is also safe because `debt` is greater than zero.
+        uint256 maximumAmount = normalizeDebtTokensToUnderlying(underlyingToken, uint256(debt));
+
+        // Limit the number of underlying tokens to repay up to the maximum allowed.
+        uint256 actualAmount = amount > maximumAmount ? maximumAmount : amount;
+
+        Limiters.LinearGrowthLimiter storage limiter = _repayLimiters[underlyingToken];
+
+        // Check to make sure that the underlying token repay limit has not been breached.
+        uint256 currentRepayLimit = limiter.get();
+        if (actualAmount > currentRepayLimit) {
+          revert RepayLimitExceeded(underlyingToken, actualAmount, currentRepayLimit);
+        }
+
+        uint256 credit = normalizeUnderlyingTokensToDebt(underlyingToken, actualAmount);
+
+        // Update the recipient's debt.
+        _updateDebt(recipient, -SafeCast.toInt256(credit));
+
+        // Decrease the amount of the underlying token which is globally available to be repaid.
+        limiter.decrease(actualAmount);
+
+        // Transfer the repaid tokens to the transmuter.
+        TokenUtils.safeTransferFrom(underlyingToken, msg.sender, transmuter, actualAmount);
+
+        // Inform the transmuter that it has received tokens.
+        IERC20TokenReceiver(transmuter).onERC20Received(underlyingToken, actualAmount);
+
+        emit Repay(msg.sender, underlyingToken, actualAmount, recipient, credit);
+
+        return actualAmount;
+    }
+
+    /// @inheritdoc IAlchemistV2Actions
+    function liquidate(
         address yieldToken,
         uint256 shares,
         uint256 minimumAmountOut
-    ) external override onlyKeeper {
-        IAlchemistV2(alchemist).withdrawUnderlying(yieldToken, shares, address(this), minimumAmountOut);
-    }
+    ) external override lock returns (uint256) {
+        _onlyWhitelisted();
 
-    /// @inheritdoc ITransmuterBuffer
-    function refreshStrategies() public override {
-        address[] memory supportedYieldTokens = IAlchemistV2(alchemist)
-            .getSupportedYieldTokens();
-        address[] memory supportedUnderlyingTokens = IAlchemistV2(alchemist)
-            .getSupportedUnderlyingTokens();
+        _checkArgument(shares > 0);
 
-        if (registeredUnderlyings.length != supportedUnderlyingTokens.length) {
-            revert IllegalState();
-        }
+        YieldTokenParams storage yieldTokenParams = _yieldTokens[yieldToken];
+        address underlyingToken = yieldTokenParams.underlyingToken;
 
-        // clear current strats
-        for (uint256 j = 0; j < registeredUnderlyings.length; ++j) {
-            delete _yieldTokens[registeredUnderlyings[j]];
-        }
+        _checkSupportedYieldToken(yieldToken);
+        _checkYieldTokenEnabled(yieldToken);
+        _checkUnderlyingTokenEnabled(underlyingToken);
+        _checkLoss(yieldToken);
 
-        uint256 numYTokens = supportedYieldTokens.length;
-        for (uint256 i = 0; i < numYTokens; ++i) {
-            address yieldToken = supportedYieldTokens[i];
+        // Calculate the unrealized debt.
+        //
+        // It is possible that the number of debt which is repayable is equal to or less than zero after realizing the
+        // credit that was earned since the last update. We do not want to perform a noop so we need to check that the
+        // amount of debt to repay is greater than zero.
+        int256 unrealizedDebt;
+        _checkState((unrealizedDebt = _calculateUnrealizedDebt(msg.sender)) > 0);
 
-            IAlchemistV2.YieldTokenParams memory params = IAlchemistV2(alchemist)
-                .getYieldTokenParameters(yieldToken);
-            if (params.enabled) {
-                _yieldTokens[params.underlyingToken].push(yieldToken);
-            }
-        }
-        emit RefreshStrategies();
-    }
-
-    /// @inheritdoc ITransmuterBuffer
-    function burnCredit() external override onlyKeeper {
-        IAlchemistV2(alchemist).poke(address(this));
-        uint256 credit = getTotalCredit();
-        if (credit == 0) {
-            revert IllegalState();
-        }
-        IAlchemistV2(alchemist).mint(credit, address(this));
-
-        _alchemistAction(credit, debtToken, _alchemistDonate);
-    }
-
-    /// @inheritdoc ITransmuterBuffer
-    function depositFunds(address underlyingToken, uint256 amount)
-        external
-        override
-        onlyKeeper
-    {
-        if (amount == 0) {
-            revert IllegalArgument();
-        }
-        uint256 localBalance = TokenUtils.safeBalanceOf(underlyingToken, address(this));
-        if (localBalance < amount) {
-            revert IllegalArgument();
-        }
-        _updateFlow(underlyingToken);
-        
-        // Don't deposit exchanged funds into the Alchemist.
-        // Doing so puts those funds at risk, and could lead to users being unable to claim
-        // their transmuted funds in the event of a vault loss.
-        if (localBalance - amount < currentExchanged[underlyingToken]) {
-            revert IllegalState();
-        }
-        _alchemistAction(amount, underlyingToken, _alchemistDeposit);
-    }
-
-    /// @dev Gets the total value of the yield tokens in units of underlying tokens that this contract holds.
-    ///
-    /// @param yieldToken The address of the target yield token.
-    /// @return totalBuffered The total amount buffered.
-    function _getTotalBuffered(address yieldToken)
-        internal
-        view
-        returns (uint256)
-    {
-        (uint256 balance, ) = IAlchemistV2(alchemist).positions(address(this), yieldToken);
-        IAlchemistV2.YieldTokenParams memory params = IAlchemistV2(alchemist)
-            .getYieldTokenParameters(yieldToken);
-        uint256 tokensPerShare = IAlchemistV2(alchemist)
-            .getUnderlyingTokensPerShare(yieldToken);
-        return (balance * tokensPerShare) / 10**params.decimals;
-    }
-
-    /// @dev Updates the available flow for a give underlying token.
-    ///
-    /// @param underlyingToken the underlying token whos flow is being updated.
-    /// @return marginalFlow the marginal flow.
-    function _updateFlow(address underlyingToken) internal returns (uint256) {
-        // additional flow to be allocated based on flow rate
-        uint256 marginalFlow = (block.timestamp -
-            lastFlowrateUpdate[underlyingToken]) * flowRate[underlyingToken];
-        flowAvailable[underlyingToken] += marginalFlow;
-        lastFlowrateUpdate[underlyingToken] = block.timestamp;
-        return marginalFlow;
-    }
-
-    /// @notice Runs an action on the Alchemist according to a given weighting schema.
-    ///
-    /// This function gets a weighting schema defined under the `weightToken` key, and calls the target action
-    /// with a weighted value of `amount` and the associated token.
-    ///
-    /// @param amount       The amount of funds to use in the action.
-    /// @param weightToken  The key of the weighting schema to be used for the action.
-    /// @param action       The action to be taken.
-    function _alchemistAction(
-        uint256 amount,
-        address weightToken,
-        function(address, uint256) action
-    ) internal {
-        IAlchemistV2(alchemist).poke(address(this));
-
-        Weighting storage weighting = weightings[weightToken];
-        for (uint256 j = 0; j < weighting.tokens.length; ++j) {
-            address token = weighting.tokens[j];
-            uint256 actionAmt = (amount * weighting.weights[token]) / weighting.totalWeight;
-            action(token, actionAmt);
-        }
-    }
-
-    /// @notice Donate credit weight to a target yield-token by burning debt-tokens.
-    ///
-    /// @param token    The target yield-token.
-    /// @param amount      The amount of debt-tokens to burn.
-    function _alchemistDonate(address token, uint256 amount) internal {
-        IAlchemistV2(alchemist).donate(token, amount);
-    }
-
-    /// @notice Deposits funds into the Alchemist.
-    ///
-    /// @param token  The yield-token to deposit.
-    /// @param amount The amount to deposit.
-    function _alchemistDeposit(address token, uint256 amount) internal {
-        IAlchemistV2(alchemist).depositUnderlying(
-            token,
-            amount,
-            address(this),
-            0
+        // Determine the maximum amount of shares that can be liquidated from the unrealized debt.
+        //
+        // It is implied that this value is greater than zero because `debt` is greater than zero. Casting the debt to an
+        // unsigned integer is also safe for this reason.
+        uint256 maximumShares = convertUnderlyingTokensToShares(
+          yieldToken,
+          normalizeDebtTokensToUnderlying(underlyingToken, uint256(unrealizedDebt))
         );
+
+        // Limit the number of shares to liquidate up to the maximum allowed.
+        uint256 actualShares = shares > maximumShares ? maximumShares : shares;
+
+        // Unwrap the yield tokens that the shares are worth.
+        uint256 amountYieldTokens      = convertSharesToYieldTokens(yieldToken, actualShares);
+        uint256 amountUnderlyingTokens = _unwrap(yieldToken, amountYieldTokens, address(this), minimumAmountOut);
+
+        // Again, perform another noop check. It is possible that the amount of underlying tokens that were received by
+        // unwrapping the yield tokens was zero because the amount of yield tokens to unwrap was too small.
+        _checkState(amountUnderlyingTokens > 0);
+
+        Limiters.LinearGrowthLimiter storage limiter = _liquidationLimiters[underlyingToken];
+
+        // Check to make sure that the underlying token liquidation limit has not been breached.
+        uint256 liquidationLimit = limiter.get();
+        if (amountUnderlyingTokens > liquidationLimit) {
+          revert LiquidationLimitExceeded(underlyingToken, amountUnderlyingTokens, liquidationLimit);
+        }
+
+        // Buffers any harvestable yield tokens. This will properly synchronize the balance which is held by users
+        // and the balance which is held by the system. This is required for `_sync` to function correctly.
+        _preemptivelyHarvest(yieldToken);
+
+        // Distribute unlocked credit to depositors.
+        _distributeUnlockedCreditDeposited(msg.sender);
+
+        uint256 credit = normalizeUnderlyingTokensToDebt(underlyingToken, amountUnderlyingTokens);
+
+        // Update the message sender's account, proactively burn shares, decrease the amount of debt incurred, and then
+        // decrease the value of the token that the system is expected to hold.
+        _poke(msg.sender, yieldToken);
+        _burnShares(msg.sender, yieldToken, actualShares);
+        _updateDebt(msg.sender, -SafeCast.toInt256(credit));
+        _sync(yieldToken, amountYieldTokens, _usub);
+
+        // Decrease the amount of the underlying token which is globally available to be liquidated.
+        limiter.decrease(amountUnderlyingTokens);
+
+        // Transfer the liquidated tokens to the transmuter.
+        TokenUtils.safeTransfer(underlyingToken, transmuter, amountUnderlyingTokens);
+
+        // Inform the transmuter that it has received tokens.
+        IERC20TokenReceiver(transmuter).onERC20Received(underlyingToken, amountUnderlyingTokens);
+
+        emit Liquidate(msg.sender, yieldToken, underlyingToken, actualShares, credit);
+
+        return actualShares;
     }
 
-    /// @notice Withdraws funds from the Alchemist.
+    /// @inheritdoc IAlchemistV2Actions
+    function donate(address yieldToken, uint256 amount) external override lock {
+        _onlyWhitelisted();
+        _checkArgument(amount > 0);
+
+        // Distribute any unlocked credit so that the accrued weight is up to date.
+        _distributeUnlockedCredit(yieldToken);
+
+        // Update the message sender's account. This will assure that any credit that was earned is not overridden.
+        _poke(msg.sender);
+
+        uint256 shares = _yieldTokens[yieldToken].totalShares - _accounts[msg.sender].balances[yieldToken];
+
+        _yieldTokens[yieldToken].accruedWeight += amount * FIXED_POINT_SCALAR / shares;
+        _accounts[msg.sender].lastAccruedWeights[yieldToken] = _yieldTokens[yieldToken].accruedWeight;
+
+        TokenUtils.safeBurnFrom(debtToken, msg.sender, amount);
+
+        // Increase the global amount of mintable debt tokens.
+        // Do this after burning instead of before because mint limit increase is an action beneficial to the user.
+        _mintingLimiter.increase(amount);
+
+        emit Donate(msg.sender, yieldToken, amount);
+    }
+
+    /// @inheritdoc IAlchemistV2Actions
+    function harvest(address yieldToken, uint256 minimumAmountOut) external override lock {
+        _onlyKeeper();
+        _checkSupportedYieldToken(yieldToken);
+
+        YieldTokenParams storage yieldTokenParams = _yieldTokens[yieldToken];
+
+        // Buffer any harvestable yield tokens. This will properly synchronize the balance which is held by users
+        // and the balance which is held by the system to be harvested during this call.
+        _preemptivelyHarvest(yieldToken);
+
+        // Load and proactively clear the amount of harvestable tokens so that future calls do not rely on stale data.
+        // Because we cannot call an external unwrap until the amount of harvestable tokens has been calculated,
+        // clearing this data immediately prevents any potential reentrancy attacks which would use stale harvest
+        // buffer values.
+        uint256 harvestableAmount = yieldTokenParams.harvestableBalance;
+        yieldTokenParams.harvestableBalance = 0;
+
+        // Check that the harvest will not be a no-op.
+        _checkState(harvestableAmount != 0);
+
+        address underlyingToken = yieldTokenParams.underlyingToken;
+        uint256 amountUnderlyingTokens = _unwrap(yieldToken, harvestableAmount, address(this), minimumAmountOut);
+
+        // Calculate how much of the unwrapped underlying tokens will be allocated for fees and distributed to users.
+        uint256 feeAmount = amountUnderlyingTokens * protocolFee / BPS;
+        uint256 distributeAmount = amountUnderlyingTokens - feeAmount;
+
+        uint256 credit = normalizeUnderlyingTokensToDebt(underlyingToken, distributeAmount);
+
+        // Distribute credit to all of the users who hold shares of the yield token.
+        _distributeCredit(yieldToken, credit);
+
+        // Transfer the tokens to the fee receiver and transmuter.
+        TokenUtils.safeTransfer(underlyingToken, protocolFeeReceiver, feeAmount);
+        TokenUtils.safeTransfer(underlyingToken, transmuter, distributeAmount);
+
+        // Inform the transmuter that it has received tokens.
+        IERC20TokenReceiver(transmuter).onERC20Received(underlyingToken, distributeAmount);
+
+        emit Harvest(yieldToken, minimumAmountOut, amountUnderlyingTokens, credit);
+    }
+
+    /// @dev Checks that the `msg.sender` is the administrator.
     ///
-    /// @param token            The yield-token to withdraw.
-    /// @param amountUnderlying The amount of underlying to withdraw.
-    function _alchemistWithdraw(address token, uint256 amountUnderlying) internal {
-        uint8 decimals = TokenUtils.expectDecimals(token);
-        uint256 pricePerShare = IAlchemistV2(alchemist).getUnderlyingTokensPerShare(token);
-        uint256 wantShares = amountUnderlying * 10**decimals / pricePerShare;
-        (uint256 availableShares, uint256 lastAccruedWeight) = IAlchemistV2(alchemist).positions(address(this), token);
-        if (wantShares > availableShares) {
-            wantShares = availableShares;
-        }
-        // Allow 1% slippage
-        uint256 minimumAmountOut = amountUnderlying - amountUnderlying * 100 / BPS;
-        if (wantShares > 0) {
-            IAlchemistV2(alchemist).withdrawUnderlying(token, wantShares, address(this), minimumAmountOut);
+    /// @dev `msg.sender` must be the administrator or this call will revert with an {Unauthorized} error.
+    function _onlyAdmin() internal view {
+        if (msg.sender != admin) {
+            revert Unauthorized();
         }
     }
 
-    /// @notice Pull necessary funds from the Alchemist and exchange them.
+    /// @dev Checks that the `msg.sender` is the administrator or a sentinel.
     ///
-    /// @param underlyingToken The underlying-token to exchange.
-    function _exchange(address underlyingToken) internal {
-        _updateFlow(underlyingToken);
-
-        uint256 totalUnderlyingBuffered = getTotalUnderlyingBuffered(underlyingToken);
-        uint256 initialLocalBalance = TokenUtils.safeBalanceOf(underlyingToken, address(this));
-        uint256 want = 0;
-        // Here we assume the invariant underlyingToken.balanceOf(address(this)) >= currentExchanged[underlyingToken].
-        if (totalUnderlyingBuffered < flowAvailable[underlyingToken]) {
-            // Pull the rest of the funds from the Alchemist.
-            want = totalUnderlyingBuffered - initialLocalBalance;
-        } else if (initialLocalBalance < flowAvailable[underlyingToken]) {
-            // totalUnderlyingBuffered > flowAvailable so we have funds available to pull.
-            want = flowAvailable[underlyingToken] - initialLocalBalance;
+    /// @dev `msg.sender` must be either the administrator or a sentinel or this call will revert with an
+    ///      {Unauthorized} error.
+    function _onlySentinelOrAdmin() internal view {
+        // Check if the message sender is the administrator.
+        if (msg.sender == admin) {
+            return;
         }
 
-        if (want > 0) {
-            _alchemistAction(want, underlyingToken, _alchemistWithdraw);
-        }
-
-        uint256 localBalance = TokenUtils.safeBalanceOf(underlyingToken, address(this));
-        uint256 exchangeDelta = 0;
-        if (localBalance > flowAvailable[underlyingToken]) {
-            exchangeDelta = flowAvailable[underlyingToken] - currentExchanged[underlyingToken];
-        } else {
-            exchangeDelta = localBalance - currentExchanged[underlyingToken];
-        }
-
-        if (exchangeDelta > 0) {
-            currentExchanged[underlyingToken] += exchangeDelta;
-            ITransmuterV2(transmuter[underlyingToken]).exchange(exchangeDelta);
+        // Check if the message sender is a sentinel. After this check we can revert since we know that it is neither
+        // the administrator or a sentinel.
+        if (!sentinels[msg.sender]) {
+            revert Unauthorized();
         }
     }
 
-    /// @notice Flush funds to the amo.
+    /// @dev Checks that the `msg.sender` is a keeper.
     ///
-    /// @param underlyingToken The underlyingToken to flush.
-    /// @param amount          The amount to flush.
-    function _flushToAmo(address underlyingToken, uint256 amount) internal {
-        TokenUtils.safeTransfer(underlyingToken, amos[underlyingToken], amount);
-        IERC20TokenReceiver(amos[underlyingToken]).onERC20Received(underlyingToken, amount);
+    /// @dev `msg.sender` must be a keeper or this call will revert with an {Unauthorized} error.
+    function _onlyKeeper() internal view {
+        if (!keepers[msg.sender]) {
+            revert Unauthorized();
+        }
     }
+
+    /// @dev Checks that the `msg.sender` is the V1 transfer adapter.
+    ///
+    /// @dev `msg.sender` must be the administrator or this call will revert with an {Unauthorized} error.
+    function _onlyTransferAdapter() internal view {
+        if (msg.sender != transferAdapter) {
+            revert Unauthorized();
+        }
+    }
+
+    /// @dev Preemptively harvests all of the yield tokens that have been deposited into an account.
+    ///
+    /// @param owner The address which owns the account.
+    function _preemptivelyHarvestDeposited(address owner) internal {
+        Sets.AddressSet storage depositedTokens = _accounts[owner].depositedTokens;
+        for (uint256 i = 0; i < depositedTokens.values.length; ++i) {
+            _preemptivelyHarvest(depositedTokens.values[i]);
+        }
+    }
+
+    /// @dev Preemptively harvests `yieldToken`.
+    ///
+    /// @dev This will earmark yield tokens to be harvested at a future time when the current value of the token is
+    ///      greater than the expected value. The purpose of this function is to synchronize the balance of the yield
+    ///      token which is held by users versus tokens which will be seized by the protocol.
+    ///
+    /// @param yieldToken The address of the yield token to preemptively harvest.
+    function _preemptivelyHarvest(address yieldToken) internal {
+        uint256 activeBalance = _yieldTokens[yieldToken].activeBalance;
+        if (activeBalance == 0) {
+            return;
+        }
+
+        uint256 currentValue = convertYieldTokensToUnderlying(yieldToken, activeBalance);
+        uint256 expectedValue = _yieldTokens[yieldToken].expectedValue;
+        if (currentValue <= expectedValue) {
+            return;
+        }
+
+        uint256 harvestable = convertUnderlyingTokensToYield(yieldToken, currentValue - expectedValue);
+        if (harvestable == 0) {
+            return;
+        }
+        _yieldTokens[yieldToken].activeBalance -= harvestable;
+        _yieldTokens[yieldToken].harvestableBalance += harvestable;
+    }
+
+    /// @dev Checks if a yield token is enabled.
+    ///
+    /// @param yieldToken The address of the yield token.
+    function _checkYieldTokenEnabled(address yieldToken) internal view {
+        if (!_yieldTokens[yieldToken].enabled) {
+          revert TokenDisabled(yieldToken);
+        }
+    }
+
+    /// @dev Checks if an underlying token is enabled.
+    ///
+    /// @param underlyingToken The address of the underlying token.
+    function _checkUnderlyingTokenEnabled(address underlyingToken) internal view {
+        if (!_underlyingTokens[underlyingToken].enabled) {
+          revert TokenDisabled(underlyingToken);
+        }
+    }
+
+    /// @dev Checks if an address is a supported yield token.
+    ///
+    /// If the address is not a supported yield token, this function will revert using a {UnsupportedToken} error.
+    ///
+    /// @param yieldToken The address to check.
+    function _checkSupportedYieldToken(address yieldToken) internal view {
+        if (!_supportedYieldTokens.contains(yieldToken)) {
+            revert UnsupportedToken(yieldToken);
+        }
+    }
+
+    /// @dev Checks if an address is a supported underlying token.
+    ///
+    /// If the address is not a supported yield token, this function will revert using a {UnsupportedToken} error.
+    ///
+    /// @param underlyingToken The address to check.
+    function _checkSupportedUnderlyingToken(address underlyingToken) internal view {
+        if (!_supportedUnderlyingTokens.contains(underlyingToken)) {
+            revert UnsupportedToken(underlyingToken);
+        }
+    }
+
+    /// @dev Checks if `amount` of debt tokens can be minted.
+    ///
+    /// @dev `amount` must be less than the current minting limit or this call will revert with a
+    ///      {MintingLimitExceeded} error.
+    ///
+    /// @param amount The amount to check.
+    function _checkMintingLimit(uint256 amount) internal view {
+        uint256 limit = _mintingLimiter.get();
+        if (amount > limit) {
+            revert MintingLimitExceeded(amount, limit);
+        }
+    }
+
+    /// @dev Checks if the current loss of `yieldToken` has exceeded its maximum acceptable loss.
+    ///
+    /// @dev The loss that `yieldToken` has incurred must be less than its maximum accepted value or this call will
+    ///      revert with a {LossExceeded} error.
+    ///
+    /// @param yieldToken The address of the yield token.
+    function _checkLoss(address yieldToken) internal view {
+        uint256 loss = _loss(yieldToken);
+        uint256 maximumLoss = _yieldTokens[yieldToken].maximumLoss;
+        if (loss > maximumLoss) {
+            revert LossExceeded(yieldToken, loss, maximumLoss);
+        }
+    }
+
+    /// @dev Deposits `amount` yield tokens into the account of `recipient`.
+    ///
+    /// @dev Emits a {Deposit} event.
+    ///
+    /// @param yieldToken The address of the yield token to deposit.
+    /// @param amount     The amount of yield tokens to deposit.
+    /// @param recipient  The recipient of the yield tokens.
+    ///
+    /// @return The number of shares minted to `recipient`.
+    function _deposit(
+        address yieldToken,
+        uint256 amount,
+        address recipient
+    ) internal returns (uint256) {
+        _checkArgument(amount > 0);
+
+        YieldTokenParams storage yieldTokenParams = _yieldTokens[yieldToken];
+        address underlyingToken = yieldTokenParams.underlyingToken;
+
+        // Check that the yield token and it's underlying token are enabled. Disabling the yield token and or the
+        // underlying token prevents the system from holding more of the disabled yield token or underlying token.
+        _checkYieldTokenEnabled(yieldToken);
+        _checkUnderlyingTokenEnabled(underlyingToken);
+
+        // Check to assure that the token has not experienced a sudden unexpected loss. This prevents users from being
+        // able to deposit funds and then have them siphoned if the price recovers.
+        _checkLoss(yieldToken);
+
+        // Buffers any harvestable yield tokens. This will properly synchronize the balance which is held by users
+        // and the balance which is held by the system to eventually be harvested.
+        _preemptivelyHarvest(yieldToken);
+
+        // Distribute unlocked credit to depositors.
+        _distributeUnlockedCreditDeposited(recipient);
+
+        // Update the recipient's account, proactively issue shares for the deposited tokens to the recipient, and then
+        // increase the value of the token that the system is expected to hold.
+        _poke(recipient, yieldToken);
+        uint256 shares = _issueSharesForAmount(recipient, yieldToken, amount);
+        _sync(yieldToken, amount, _uadd);
+
+        // Check that the maximum expected value has not been breached.
+        uint256 maximumExpectedValue = yieldTokenParams.maximumExpectedValue;
+        if (yieldTokenParams.expectedValue > maximumExpectedValue) {
+          revert ExpectedValueExceeded(yieldToken, amount, maximumExpectedValue);
+        }
+
+        emit Deposit(msg.sender, yieldToken, amount, recipient);
+
+        return shares;
+    }
+
+    /// @dev Withdraw `yieldToken` from the account owned by `owner` by burning shares and receiving yield tokens of
+    ///      equivalent value.
+    ///
+    /// @dev Emits a {Withdraw} event.
+    ///
+    /// @param yieldToken The address of the yield token to withdraw.
+    /// @param owner      The address of the account owner to withdraw from.
+    /// @param shares     The number of shares to burn.
+    /// @param recipient  The recipient of the withdrawn shares. This parameter is only used for logging.
+    ///
+    /// @return The amount of yield tokens that the burned shares were exchanged for.
+    function _withdraw(
+        address yieldToken,
+        address owner,
+        uint256 shares,
+        address recipient
+    ) internal returns (uint256) {
+        // Buffers any harvestable yield tokens that the owner of the account has deposited. This will properly
+        // synchronize the balance of all the tokens held by the owner so that the validation check properly
+        // computes the total value of the tokens held by the owner.
+        _preemptivelyHarvestDeposited(owner);
+
+        // Distribute unlocked credit for all of the tokens that the user has deposited into the system. This updates
+        // the accrued weights so that the debt is properly calculated before the account is validated.
+        _distributeUnlockedCreditDeposited(owner);
+
+        uint256 amountYieldTokens = convertSharesToYieldTokens(yieldToken, shares);
+
+        // Update the owner's account, burn shares from the owner's account, and then decrease the value of the token
+        // that the system is expected to hold.
+        _poke(owner);
+        _burnShares(owner, yieldToken, shares);
+        _sync(yieldToken, amountYieldTokens, _usub);
+
+        // Valid the owner's account to assure that the collateralization invariant is still held.
+        _validate(owner);
+
+        emit Withdraw(owner, yieldToken, shares, recipient);
+
+        return amountYieldTokens;
+    }
+
+    /// @dev Mints debt tokens to `recipient` using the account owned by `owner`.
+    ///
+    /// @dev Emits a {Mint} event.
+    ///
+    /// @param owner     The owner of the account to mint from.
+    /// @param amount    The amount to mint.
+    /// @param recipient The recipient of the minted debt tokens.
+    function _mint(address owner, uint256 amount, address recipient) internal {
+        // Check that the system will allow for the specified amount to be minted.
+        _checkMintingLimit(amount);
+
+        // Preemptively harvest all tokens that the user has deposited into the system. This allows the debt to be
+        // properly calculated before the account is validated.
+        _preemptivelyHarvestDeposited(owner);
+
+        // Distribute unlocked credit for all of the tokens that the user has deposited into the system. This updates
+        // the accrued weights so that the debt is properly calculated before the account is validated.
+        _distributeUnlockedCreditDeposited(owner);
+
+        // Update the owner's account, increase their debt by the amount of tokens to mint, and then finally validate
+        // their account to assure that the collateralization invariant is still held.
+        _poke(owner);
+        _updateDebt(owner, SafeCast.toInt256(amount));
+        _validate(owner);
+
+        // Decrease the global amount of mintable debt tokens.
+        _mintingLimiter.decrease(amount);
+
+        // Mint the debt tokens to the recipient.
+        TokenUtils.safeMint(debtToken, recipient, amount);
+
+        emit Mint(owner, amount, recipient);
+    }
+
+    /// @dev Synchronizes the active balance and expected value of `yieldToken`.
+    ///
+    /// @param yieldToken The address of the yield token.
+    /// @param amount     The amount to add or subtract from the debt.
+    /// @param operation  The mathematical operation to perform for the update. Either one of {_uadd} or {_usub}.
+    function _sync(
+        address yieldToken,
+        uint256 amount,
+        function(uint256, uint256) internal pure returns (uint256) operation
+    ) internal {
+        YieldTokenParams memory yieldTokenParams = _yieldTokens[yieldToken];
+
+        uint256 amountUnderlyingTokens = convertYieldTokensToUnderlying(yieldToken, amount);
+        uint256 updatedActiveBalance   = operation(yieldTokenParams.activeBalance, amount);
+        uint256 updatedExpectedValue   = operation(yieldTokenParams.expectedValue, amountUnderlyingTokens);
+
+        _yieldTokens[yieldToken].activeBalance = updatedActiveBalance;
+        _yieldTokens[yieldToken].expectedValue = updatedExpectedValue;
+    }
+
+    /// @dev Gets the amount of loss that `yieldToken` has incurred measured in basis points. When the expected
+    ///      underlying value is less than the actual value, this will return zero.
+    ///
+    /// @param yieldToken The address of the yield token.
+    ///
+    /// @return The loss in basis points.
+    function _loss(address yieldToken) internal view returns (uint256) {
+        YieldTokenParams memory yieldTokenParams = _yieldTokens[yieldToken];
+
+        uint256 amountUnderlyingTokens = convertYieldTokensToUnderlying(yieldToken, yieldTokenParams.activeBalance);
+        uint256 expectedUnderlyingValue = yieldTokenParams.expectedValue;
+
+        return expectedUnderlyingValue > amountUnderlyingTokens
+            ? ((expectedUnderlyingValue - amountUnderlyingTokens) * BPS) / expectedUnderlyingValue
+            : 0;
+    }
+
+    /// @dev Distributes `amount` credit to all depositors of `yieldToken`.
+    ///
+    /// @param yieldToken The address of the yield token to distribute credit for.
+    /// @param amount     The amount of credit to distribute in debt tokens.
+    function _distributeCredit(address yieldToken, uint256 amount) internal {
+        YieldTokenParams storage yieldTokenParams = _yieldTokens[yieldToken];
+
+        uint256 pendingCredit     = yieldTokenParams.pendingCredit;
+        uint256 distributedCredit = yieldTokenParams.distributedCredit;
+        uint256 unlockedCredit    = _calculateUnlockedCredit(yieldToken);
+        uint256 lockedCredit      = pendingCredit - (distributedCredit + unlockedCredit);
+
+        // Distribute any unlocked credit before overriding it.
+        if (unlockedCredit > 0) {
+            yieldTokenParams.accruedWeight += unlockedCredit * FIXED_POINT_SCALAR / yieldTokenParams.totalShares;
+        }
+
+        yieldTokenParams.pendingCredit         = amount + lockedCredit;
+        yieldTokenParams.distributedCredit     = 0;
+        yieldTokenParams.lastDistributionBlock = block.number;
+    }
+
+    /// @dev Distributes unlocked credit for all of the yield tokens that have been deposited into the account owned
+    ///      by `owner`.
+    ///
+    /// @param owner The address of the account owner.
+    function _distributeUnlockedCreditDeposited(address owner) internal {
+        Sets.AddressSet storage depositedTokens = _accounts[owner].depositedTokens;
+        for (uint256 i = 0; i < depositedTokens.values.length; ++i) {
+            _distributeUnlockedCredit(depositedTokens.values[i]);
+        }
+    }
+
+    /// @dev Distributes unlocked credit of `yieldToken` to all depositors.
+    ///
+    /// @param yieldToken The address of the yield token to distribute unlocked credit for.
+    function _distributeUnlockedCredit(address yieldToken) internal {
+        YieldTokenParams storage yieldTokenParams = _yieldTokens[yieldToken];
+
+        uint256 unlockedCredit = _calculateUnlockedCredit(yieldToken);
+        if (unlockedCredit == 0) {
+            return;
+        }
+
+        yieldTokenParams.accruedWeight     += unlockedCredit * FIXED_POINT_SCALAR / yieldTokenParams.totalShares;
+        yieldTokenParams.distributedCredit += unlockedCredit;
+    }
+
+    /// @dev Wraps `amount` of an underlying token into its `yieldToken`.
+    ///
+    /// @param yieldToken       The address of the yield token to wrap the underlying tokens into.
+    /// @param amount           The amount of the underlying token to wrap.
+    /// @param minimumAmountOut The minimum amount of yield tokens that are expected to be received from the operation.
+    ///
+    /// @return The amount of yield tokens that resulted from the operation.
+    function _wrap(
+        address yieldToken,
+        uint256 amount,
+        uint256 minimumAmountOut
+    ) internal returns (uint256) {
+        YieldTokenParams storage yieldTokenParams = _yieldTokens[yieldToken];
+
+        ITokenAdapter adapter = ITokenAdapter(yieldTokenParams.adapter);
+        address underlyingToken = yieldTokenParams.underlyingToken;
+
+        TokenUtils.safeTransferFrom(underlyingToken, msg.sender, address(this), amount);
+        uint256 wrappedShares = adapter.wrap(amount, address(this));
+        if (wrappedShares < minimumAmountOut) {
+            revert SlippageExceeded(wrappedShares, minimumAmountOut);
+        }
+
+        return wrappedShares;
+    }
+
+    /// @dev Unwraps `amount` of `yieldToken` into its underlying token.
+    ///
+    /// @param yieldToken       The address of the yield token to unwrap.
+    /// @param amount           The amount of the underlying token to wrap.
+    /// @param recipient        The recipient of the tokens after they are unwrapped.
+    /// @param minimumAmountOut The minimum amount of underlying tokens that are expected to be received from the
+    ///                         operation.
+    ///
+    /// @return The amount of underlying tokens that resulted from the operation.
+    function _unwrap(
+        address yieldToken,
+        uint256 amount,
+        address recipient,
+        uint256 minimumAmountOut
+    ) internal returns (uint256) {
+        ITokenAdapter adapter = ITokenAdapter(_yieldTokens[yieldToken].adapter);
+        uint256 amountUnwrapped = adapter.unwrap(amount, recipient);
+        if (amountUnwrapped < minimumAmountOut) {
+            revert SlippageExceeded(amountUnwrapped, minimumAmountOut);
+        }
+        return amountUnwrapped;
+    }
+
+    /// @dev Synchronizes the state for all of the tokens deposited in the account owned by `owner`.
+    ///
+    /// @param owner The address of the account owner.
+    function _poke(address owner) internal {
+        Sets.AddressSet storage depositedTokens = _accounts[owner].depositedTokens;
+        for (uint256 i = 0; i < depositedTokens.values.length; ++i) {
+            _poke(owner, depositedTokens.values[i]);
+        }
+    }
+
+    /// @dev Synchronizes the state of `yieldToken` for the account owned by `owner`.
+    ///
+    /// @param owner      The address of the account owner.
+    /// @param yieldToken The address of the yield token to synchronize the state for.
+    function _poke(address owner, address yieldToken) internal {
+        Account storage account = _accounts[owner];
+
+        uint256 currentAccruedWeight = _yieldTokens[yieldToken].accruedWeight;
+        uint256 lastAccruedWeight    = account.lastAccruedWeights[yieldToken];
+
+        if (currentAccruedWeight == lastAccruedWeight) {
+            return;
+        }
+
+        uint256 balance          = account.balances[yieldToken];
+        uint256 unrealizedCredit = (currentAccruedWeight - lastAccruedWeight) * balance / FIXED_POINT_SCALAR;
+
+        account.debt                           -= SafeCast.toInt256(unrealizedCredit);
+        account.lastAccruedWeights[yieldToken]  = currentAccruedWeight;
+    }
+
+    /// @dev Increases the debt by `amount` for the account owned by `owner`.
+    ///
+    /// @param owner     The address of the account owner.
+    /// @param amount    The amount to increase the debt by.
+    function _updateDebt(address owner, int256 amount) internal {
+        Account storage account = _accounts[owner];
+        account.debt += amount;
+    }
+
+    /// @dev Set the mint allowance for `spender` to `amount` for the account owned by `owner`.
+    ///
+    /// @param owner   The address of the account owner.
+    /// @param spender The address of the spender.
+    /// @param amount  The amount of debt tokens to set the mint allowance to.
+    function _approveMint(address owner, address spender, uint256 amount) internal {
+        Account storage account = _accounts[owner];
+        account.mintAllowances[spender] = amount;
+        emit ApproveMint(owner, spender, amount);
+    }
+
+    /// @dev Decrease the mint allowance for `spender` by `amount` for the account owned by `owner`.
+    ///
+    /// @param owner   The address of the account owner.
+    /// @param spender The address of the spender.
+    /// @param amount  The amount of debt tokens to decrease the mint allowance by.
+    function _decreaseMintAllowance(address owner, address spender, uint256 amount) internal {
+        Account storage account = _accounts[owner];
+        account.mintAllowances[spender] -= amount;
+    }
+
+    /// @dev Set the withdraw allowance of `yieldToken` for `spender` to `shares` for the account owned by `owner`.
+    ///
+    /// @param owner      The address of the account owner.
+    /// @param spender    The address of the spender.
+    /// @param yieldToken The address of the yield token to set the withdraw allowance for.
+    /// @param shares     The amount of shares to set the withdraw allowance to.
+    function _approveWithdraw(address owner, address spender, address yieldToken, uint256 shares) internal {
+        Account storage account = _accounts[owner];
+        account.withdrawAllowances[spender][yieldToken] = shares;
+        emit ApproveWithdraw(owner, spender, yieldToken, shares);
+    }
+
+    /// @dev Decrease the withdraw allowance of `yieldToken` for `spender` by `amount` for the account owned by `owner`.
+    ///
+    /// @param owner      The address of the account owner.
+    /// @param spender    The address of the spender.
+    /// @param yieldToken The address of the yield token to decrease the withdraw allowance for.
+    /// @param amount     The amount of shares to decrease the withdraw allowance by.
+    function _decreaseWithdrawAllowance(address owner, address spender, address yieldToken, uint256 amount) internal {
+        Account storage account = _accounts[owner];
+        account.withdrawAllowances[spender][yieldToken] -= amount;
+    }
+
+    /// @dev Checks that the account owned by `owner` is properly collateralized.
+    ///
+    /// @dev If the account is undercollateralized then this will revert with an {Undercollateralized} error.
+    ///
+    /// @param owner The address of the account owner.
+    function _validate(address owner) internal view {
+        int256 debt = _accounts[owner].debt;
+        if (debt <= 0) {
+            return;
+        }
+
+        uint256 collateralization = totalValue(owner) * FIXED_POINT_SCALAR / uint256(debt);
+
+        if (collateralization < minimumCollateralization) {
+            revert Undercollateralized();
+        }
+    }
+
+    /// @dev Gets the total value of the deposit collateral measured in debt tokens of the account owned by `owner`.
+    ///
+    /// @param owner The address of the account owner.
+    ///
+    /// @return The total value.
+    function totalValue(address owner) public view returns (uint256) {
+        uint256 totalValue = 0;
+
+        Sets.AddressSet storage depositedTokens = _accounts[owner].depositedTokens;
+        for (uint256 i = 0; i < depositedTokens.values.length; ++i) {
+            address yieldToken             = depositedTokens.values[i];
+            address underlyingToken        = _yieldTokens[yieldToken].underlyingToken;
+            uint256 shares                 = _accounts[owner].balances[yieldToken];
+            uint256 amountUnderlyingTokens = convertSharesToUnderlyingTokens(yieldToken, shares);
+
+            totalValue += normalizeUnderlyingTokensToDebt(underlyingToken, amountUnderlyingTokens);
+        }
+
+        return totalValue;
+    }
+
+    /// @dev Issues shares of `yieldToken` for `amount` of its underlying token to `recipient`.
+    ///
+    /// IMPORTANT: `amount` must never be 0.
+    ///
+    /// @param recipient  The address of the recipient.
+    /// @param yieldToken The address of the yield token.
+    /// @param amount     The amount of the underlying token.
+    ///
+    /// @return The amount of shares issued to `recipient`.
+    function _issueSharesForAmount(
+        address recipient,
+        address yieldToken,
+        uint256 amount
+    ) internal returns (uint256) {
+        uint256 shares = convertYieldTokensToShares(yieldToken, amount);
+
+        if (_accounts[recipient].balances[yieldToken] == 0) {
+          _accounts[recipient].depositedTokens.add(yieldToken);
+        }
+
+        _accounts[recipient].balances[yieldToken] += shares;
+        _yieldTokens[yieldToken].totalShares += shares;
+
+        return shares;
+    }
+
+    /// @dev Burns `share` shares of `yieldToken` from the account owned by `owner`.
+    ///
+    /// @param owner      The address of the owner.
+    /// @param yieldToken The address of the yield token.
+    /// @param shares     The amount of shares to burn.
+    function _burnShares(address owner, address yieldToken, uint256 shares) internal {
+        Account storage account = _accounts[owner];
+
+        account.balances[yieldToken] -= shares;
+        _yieldTokens[yieldToken].totalShares -= shares;
+
+        if (account.balances[yieldToken] == 0) {
+            account.depositedTokens.remove(yieldToken);
+        }
+    }
+
+    /// @dev Gets the amount of debt that the account owned by `owner` will have after an update occurs.
+    ///
+    /// @param owner The address of the account owner.
+    ///
+    /// @return The amount of debt that the account owned by `owner` will have after an update.
+    function _calculateUnrealizedDebt(address owner) internal view returns (int256) {
+        int256 debt = _accounts[owner].debt;
+
+        Sets.AddressSet storage depositedTokens = _accounts[owner].depositedTokens;
+        for (uint256 i = 0; i < depositedTokens.values.length; ++i) {
+            address yieldToken = depositedTokens.values[i];
+
+            uint256 currentAccruedWeight = _yieldTokens[yieldToken].accruedWeight;
+            uint256 lastAccruedWeight    = _accounts[owner].lastAccruedWeights[yieldToken];
+            uint256 unlockedCredit       = _calculateUnlockedCredit(yieldToken);
+
+            currentAccruedWeight += unlockedCredit > 0
+                ? unlockedCredit * FIXED_POINT_SCALAR / _yieldTokens[yieldToken].totalShares
+                : 0;
+
+            if (currentAccruedWeight == lastAccruedWeight) {
+                continue;
+            }
+
+            uint256 balance = _accounts[owner].balances[yieldToken];
+            uint256 unrealizedCredit = ((currentAccruedWeight - lastAccruedWeight) * balance) / FIXED_POINT_SCALAR;
+
+            debt -= SafeCast.toInt256(unrealizedCredit);
+        }
+
+        return debt;
+    }
+
+    /// @dev Gets the virtual active balance of `yieldToken`.
+    ///
+    /// @dev The virtual active balance is the active balance minus any harvestable tokens which have yet to be realized.
+    ///
+    /// @param yieldToken The address of the yield token to get the virtual active balance of.
+    ///
+    /// @return The virtual active balance.
+    function _calculateUnrealizedActiveBalance(address yieldToken) internal view returns (uint256) {
+        YieldTokenParams storage yieldTokenParams = _yieldTokens[yieldToken];
+
+        uint256 activeBalance = yieldTokenParams.activeBalance;
+        if (activeBalance == 0) {
+          return activeBalance;
+        }
+
+        uint256 currentValue = convertYieldTokensToUnderlying(yieldToken, activeBalance);
+        uint256 expectedValue = yieldTokenParams.expectedValue;
+        if (currentValue <= expectedValue) {
+          return activeBalance;
+        }
+
+        uint256 harvestable = convertUnderlyingTokensToYield(yieldToken, currentValue - expectedValue);
+        if (harvestable == 0) {
+          return activeBalance;
+        }
+
+        return activeBalance - harvestable;
+    }
+
+    /// @dev Calculates the amount of unlocked credit for `yieldToken` that is available for distribution.
+    ///
+    /// @param yieldToken The address of the yield token.
+    ///
+    /// @return The amount of unlocked credit available.
+    function _calculateUnlockedCredit(address yieldToken) internal view returns (uint256) {
+        YieldTokenParams storage yieldTokenParams = _yieldTokens[yieldToken];
+
+        uint256 pendingCredit = yieldTokenParams.pendingCredit;
+        if (pendingCredit == 0) {
+            return 0;
+        }
+
+        uint256 creditUnlockRate      = yieldTokenParams.creditUnlockRate;
+        uint256 distributedCredit     = yieldTokenParams.distributedCredit;
+        uint256 lastDistributionBlock = yieldTokenParams.lastDistributionBlock;
+
+        uint256 percentUnlocked = (block.number - lastDistributionBlock) * creditUnlockRate;
+
+        return percentUnlocked < FIXED_POINT_SCALAR
+            ? (pendingCredit * percentUnlocked / FIXED_POINT_SCALAR) - distributedCredit
+            : pendingCredit - distributedCredit;
+    }
+
+    /// @dev Gets the amount of shares that `amount` of `yieldToken` is exchangeable for.
+    ///
+    /// @param yieldToken The address of the yield token.
+    /// @param amount     The amount of yield tokens.
+    ///
+    /// @return The number of shares.
+    function convertYieldTokensToShares(address yieldToken, uint256 amount) public view returns (uint256) {
+        if (_yieldTokens[yieldToken].totalShares == 0) {
+            return amount;
+        }
+        return amount * _yieldTokens[yieldToken].totalShares / _calculateUnrealizedActiveBalance(yieldToken);
+    }
+
+    /// @dev Gets the amount of yield tokens that `shares` shares of `yieldToken` is exchangeable for.
+    ///
+    /// @param yieldToken The address of the yield token.
+    /// @param shares     The amount of shares.
+    ///
+    /// @return The amount of yield tokens.
+    function convertSharesToYieldTokens(address yieldToken, uint256 shares) public view returns (uint256) {
+        uint256 totalShares = _yieldTokens[yieldToken].totalShares;
+        if (totalShares == 0) {
+          return shares;
+        }
+        return (shares * _calculateUnrealizedActiveBalance(yieldToken)) / totalShares;
+    }
+
+    /// @dev Gets the amount of underlying tokens that `shares` shares of `yieldToken` is exchangeable for.
+    ///
+    /// @param yieldToken The address of the yield token.
+    /// @param shares     The amount of shares.
+    ///
+    /// @return The amount of underlying tokens.
+    function convertSharesToUnderlyingTokens(address yieldToken, uint256 shares) public view returns (uint256) {
+        uint256 amountYieldTokens = convertSharesToYieldTokens(yieldToken, shares);
+        return convertYieldTokensToUnderlying(yieldToken, amountYieldTokens);
+    }
+
+    /// @dev Gets the amount of an underlying token that `amount` of `yieldToken` is exchangeable for.
+    ///
+    /// @param yieldToken The address of the yield token.
+    /// @param amount     The amount of yield tokens.
+    ///
+    /// @return The amount of underlying tokens.
+    function convertYieldTokensToUnderlying(address yieldToken, uint256 amount) public view returns (uint256) {
+        YieldTokenParams storage yieldTokenParams = _yieldTokens[yieldToken];
+        ITokenAdapter adapter = ITokenAdapter(yieldTokenParams.adapter);
+        return amount * adapter.price() / 10**yieldTokenParams.decimals;
+    }
+
+    /// @dev Gets the amount of `yieldToken` that `amount` of its underlying token is exchangeable for.
+    ///
+    /// @param yieldToken The address of the yield token.
+    /// @param amount     The amount of underlying tokens.
+    ///
+    /// @return The amount of yield tokens.
+    function convertUnderlyingTokensToYield(address yieldToken, uint256 amount) public view returns (uint256) {
+        YieldTokenParams storage yieldTokenParams = _yieldTokens[yieldToken];
+        ITokenAdapter adapter = ITokenAdapter(yieldTokenParams.adapter);
+        return amount * 10**yieldTokenParams.decimals / adapter.price();
+    }
+
+    /// @dev Gets the amount of shares of `yieldToken` that `amount` of its underlying token is exchangeable for.
+    ///
+    /// @param yieldToken The address of the yield token.
+    /// @param amount     The amount of underlying tokens.
+    ///
+    /// @return The amount of shares.
+    function convertUnderlyingTokensToShares(address yieldToken, uint256 amount) public view returns (uint256) {
+        uint256 amountYieldTokens = convertUnderlyingTokensToYield(yieldToken, amount);
+        return convertYieldTokensToShares(yieldToken, amountYieldTokens);
+    }
+
+    /// @dev Normalize `amount` of `underlyingToken` to a value which is comparable to units of the debt token.
+    ///
+    /// @param underlyingToken The address of the underlying token.
+    /// @param amount          The amount of the debt token.
+    ///
+    /// @return The normalized amount.
+    function normalizeUnderlyingTokensToDebt(address underlyingToken, uint256 amount) public view returns (uint256) {
+        return amount * _underlyingTokens[underlyingToken].conversionFactor;
+    }
+
+    /// @dev Normalize `amount` of the debt token to a value which is comparable to units of `underlyingToken`.
+    ///
+    /// @dev This operation will result in truncation of some of the least significant digits of `amount`. This
+    ///      truncation amount will be the least significant N digits where N is the difference in decimals between
+    ///      the debt token and the underlying token.
+    ///
+    /// @param underlyingToken The address of the underlying token.
+    /// @param amount          The amount of the debt token.
+    ///
+    /// @return The normalized amount.
+    function normalizeDebtTokensToUnderlying(address underlyingToken, uint256 amount) public view returns (uint256) {
+        return amount / _underlyingTokens[underlyingToken].conversionFactor;
+    }
+
+    /// @dev Checks the whitelist for msg.sender.
+    ///
+    /// Reverts if msg.sender is not in the whitelist.
+    function _onlyWhitelisted() internal view {
+        // Check if the message sender is an EOA. In the future, this potentially may break. It is important that functions
+        // which rely on the whitelist not be explicitly vulnerable in the situation where this no longer holds true.
+        if (tx.origin == msg.sender) {
+          return;
+        }
+
+        // Only check the whitelist for calls from contracts.
+        if (!IWhitelist(whitelist).isWhitelisted(msg.sender)) {
+          revert Unauthorized();
+        }
+    }
+
+    /// @dev Checks an expression and reverts with an {IllegalArgument} error if the expression is {false}.
+    ///
+    /// @param expression The expression to check.
+    function _checkArgument(bool expression) internal pure {
+        if (!expression) {
+            revert IllegalArgument();
+        }
+    }
+
+    /// @dev Checks an expression and reverts with an {IllegalState} error if the expression is {false}.
+    ///
+    /// @param expression The expression to check.
+    function _checkState(bool expression) internal pure {
+        if (!expression) {
+            revert IllegalState();
+        }
+    }
+
+    /// @dev Adds two unsigned 256 bit integers together and returns the result.
+    ///
+    /// @dev This operation is checked and will fail if the result overflows.
+    ///
+    /// @param x The first operand.
+    /// @param y The second operand.
+    ///
+    /// @return z The result.
+    function _uadd(uint256 x, uint256 y) internal pure returns (uint256 z) { z = x + y; }
+
+    /// @dev Subtracts two unsigned 256 bit integers together and returns the result.
+    ///
+    /// @dev This operation is checked and will fail if the result overflows.
+    ///
+    /// @param x The first operand.
+    /// @param y The second operand.
+    ///
+    /// @return z the result.
+    function _usub(uint256 x, uint256 y) internal pure returns (uint256 z) { z = x - y; }
 }

@@ -5,7 +5,7 @@
 - Project: Resupply (`resupply`)
 - Website: [https://resupply.fi/](https://resupply.fi/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:45.220Z
+- Generated: 2026-07-04T11:05:46.450Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
 - Chains: ethereum
 - Contract surface: 50 unique implementations (71 raw deployments)

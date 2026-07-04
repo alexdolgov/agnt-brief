@@ -1015,6 +1015,39 @@ abstract contract Ownable is Context {
     }
 }
 
+interface IPancakeswapFarm {
+    function poolLength() external view returns (uint256);
+
+    function userInfo() external view returns (uint256);
+
+    // Return reward multiplier over the given _from to _to block.
+    function getMultiplier(uint256 _from, uint256 _to)
+        external
+        view
+        returns (uint256);
+
+    // View function to see pending CAKEs on frontend.
+    function pendingCake(uint256 _pid, address _user)
+        external
+        view
+        returns (uint256);
+
+    // Deposit LP tokens to MasterChef for CAKE allocation.
+    function deposit(uint256 _pid, uint256 _amount) external;
+
+    // Withdraw LP tokens from MasterChef.
+    function withdraw(uint256 _pid, uint256 _amount) external;
+
+    // Stake CAKE tokens to MasterChef
+    function enterStaking(uint256 _amount) external;
+
+    // Withdraw CAKE tokens from STAKING.
+    function leaveStaking(uint256 _amount) external;
+
+    // Withdraw without caring about rewards. EMERGENCY ONLY.
+    function emergencyWithdraw(uint256 _pid) external;
+}
+
 interface IPancakeRouter01 {
     // function factory() external pure returns (address);
 
@@ -1217,6 +1250,20 @@ interface IPancakeRouter02 is IPancakeRouter01 {
     // ) external;
 }
 
+interface IAutoFarm {
+    function buyBackBurnRate() external view returns (uint256);
+
+    function buyBackBurnRateMax() external view returns (uint256);
+
+    function devAddress() external view returns (address);
+
+    function controllerAddress() external view returns (address);
+
+    function controllerFee() external view returns (uint256);
+
+    function controllerFeeMax() external view returns (uint256);
+}
+
 /**
  * @dev Contract module which allows children to implement an emergency stop
  * mechanism that can be triggered by an authorized account.
@@ -1388,7 +1435,7 @@ contract StratVLEV is Ownable, Pausable {
         address(0xfD36E2c2a6789Db23113685031d7F16329158384);
 
     address autoFarmAddress =
-        address(0x68Def7d5361350eBAc92d6b9fbE672b54D68e3d5);
+        address(0x17f619f4eec6742cEa2d287dbbcf61Ba3360172F); // TEST
     address AUTOAddress = address(0x4508ABB72232271e452258530D4Ed799C685eccb); // AUTO token
 
     address public pancakeSwapRouterAddress =
@@ -1403,17 +1450,12 @@ contract StratVLEV is Ownable, Pausable {
     uint256 public controllerFee = 30; // 0.3%
     uint256 public controllerFeeMax = 10000;
 
-    uint256 public buyBackBurnRate = 0; // 0%
-    uint256 public buyBackBurnRateMax = 10000;
-    address public buyBackBurnAddress =
-        address(0x0000000000000000000000000000000000000000);
-
     uint256 public entranceFeeFactor = 9990; // < 0.1% entrance fee - goes to pool + prevents front-running
     uint256 public entranceFeeFactorMax = 10000;
     uint256 public entranceFeeFactorLL = 9950; // 0.5% is the max entrance fee settable. LL = lowerlimit
 
     address[] public venusToWantPath = [venusAddress, wbnbAddress];
-    address[] public wantToAUTOPath = [wantAddress, AUTOAddress]; // [wantAddress, wbnbAddress, AUTOAddress];
+    address[] public buyBackBurnPath = [venusAddress, wbnbAddress, AUTOAddress];
 
     /**
      * @dev Variables that can be changed to config profitability and risk:
@@ -1424,12 +1466,10 @@ contract StratVLEV is Ownable, Pausable {
      * {MIN_LEVERAGE_AMOUNT} - The minimum amount of collateral required to leverage.
      */
     uint256 public borrowRate = 595;
-    uint256 public borrowDepth = 4;
+    uint256 public borrowDepth = 3;
     uint256 public constant BORROW_RATE_MAX = 599;
     uint256 public constant BORROW_DEPTH_MAX = 10;
     uint256 public constant MIN_LEVERAGE_AMOUNT = 1e12;
-    uint256 public constant MAX_WLT_TO_CALL_EARN = 100; // For safety
-    bool onlyDev = true;
 
     uint256 public supplyBal = 0;
     uint256 public borrowBal = 0;
@@ -1454,7 +1494,7 @@ contract StratVLEV is Ownable, Pausable {
         onlyOwner
         returns (uint256)
     {
-        updateBalance();
+        updateSupplyBorrowBal();
 
         uint256 sharesAdded = _wantAmt;
         if (wantLockedTotal() > 0 && sharesTotal > 0) {
@@ -1479,31 +1519,43 @@ contract StratVLEV is Ownable, Pausable {
     }
 
     function farm() public returns (uint256) {
-        uint256 wbnbBal = IERC20(wbnbAddress).balanceOf(address(this));
-        if (wbnbBal > 0) {
-            IWBNB(wbnbAddress).withdraw(wbnbBal); // Unwrap. WBNB -> BNB
-        }
-        _leverage(address(this).balance);
-
-        updateBalance();
+        _leverage();
     }
 
     /**
      * @dev Repeatedly supplies and borrows bnb following the configured {borrowRate} and {borrowDepth}
      * into the vToken contract.
      */
-    function _leverage(uint256 _amount) internal {
-        if (_amount < MIN_LEVERAGE_AMOUNT) {
+    function _leverage() internal {
+        // Unwrap all WBNB -> BNB
+        uint256 wantBal = IERC20(wantAddress).balanceOf(address(this));
+        if (wantBal > 0) {
+            IWBNB(wantAddress).withdraw(wantBal); // Unwrap. WBNB -> BNB
+        }
+
+        // Get all BNB
+        uint256 bnbBal = address(this).balance;
+        if (bnbBal < MIN_LEVERAGE_AMOUNT) {
             return;
         }
 
+        // Get portion of supply that is un-levered.
+        uint256 supplyBalTarget = borrowBal.mul(1000).div(borrowRate);
+        uint256 supplyBalUnlevered = supplyBal.sub(supplyBalTarget);
+
+        // Leveraging by (borrowDepth) times
         for (uint256 i = 0; i < borrowDepth; i++) {
-            IVToken(vTokenAddress).mint{value: _amount}(); // Supply
-            _amount = _amount.mul(borrowRate).div(1000);
-            IVToken(vTokenAddress).borrow(_amount); // Borrow
+            IVToken(vTokenAddress).mint{value: bnbBal}(); // Supply into venus
+            if (i == 0) {
+                bnbBal = bnbBal + supplyBalUnlevered;
+            }
+            bnbBal = bnbBal.mul(borrowRate).div(1000);
+            IVToken(vTokenAddress).borrow(bnbBal); // Borrow from venus
         }
 
-        IVToken(vTokenAddress).mint{value: _amount}(); // Supply remaining BNB that was last borrowed.
+        // Supply remaining BNB. If borrowDepth == 0, supply all without borrowing/leveraging.
+        IVToken(vTokenAddress).mint{value: bnbBal}(); // Supply into venus
+        updateSupplyBorrowBal();
     }
 
     /**
@@ -1513,67 +1565,69 @@ contract StratVLEV is Ownable, Pausable {
      */
 
     function _deleverage(bool _delevPartial, uint256 _minAmt) internal {
-        borrowBal = IVToken(vTokenAddress).borrowBalanceCurrent(address(this));
-
-        // Remove from supplied once.
-        uint256 targetUnderlying = borrowBal.mul(1000).div(borrowRate);
-        uint256 balanceOfUnderlying =
-            IVToken(vTokenAddress).balanceOfUnderlying(address(this));
-        IVToken(vTokenAddress).redeemUnderlying( // Remove from supplied
-            balanceOfUnderlying.sub(targetUnderlying)
-        );
+        // Withdraw BNB from supplied
+        uint256 supplyBalTarget = borrowBal.mul(1000).div(borrowRate);
+        IVToken(vTokenAddress).redeemUnderlying(supplyBal.sub(supplyBalTarget));
         uint256 bnbBal = address(this).balance;
+        if (_delevPartial && bnbBal >= _minAmt) {
+            return;
+        } // For partial delev only
 
-        // Recursively repay borrowed + remove more from supplied
         while (bnbBal < borrowBal) {
-            // If only partially deleveraging, when sufficiently deleveraged, do not repay anymore
-            if (_delevPartial && bnbBal >= _minAmt) {
-                return;
-            }
-
-            IVToken(vTokenAddress).repayBorrow{value: bnbBal}(); // Repay borrowed
-
+            // Repay BNB to borrowed
+            IVToken(vTokenAddress).repayBorrow{value: bnbBal}();
+            bnbBal = address(this).balance;
             borrowBal = IVToken(vTokenAddress).borrowBalanceCurrent(
                 address(this)
             );
-            targetUnderlying = borrowBal.mul(1000).div(borrowRate);
-            balanceOfUnderlying = IVToken(vTokenAddress).balanceOfUnderlying(
+
+            // Withdraw BNB from supplied
+            supplyBalTarget = borrowBal.mul(1000).div(borrowRate);
+            IVToken(vTokenAddress).redeemUnderlying(
+                supplyBal.sub(supplyBalTarget)
+            );
+            bnbBal = address(this).balance;
+            if (_delevPartial && bnbBal >= _minAmt) {
+                return;
+            } // For partial delev only
+        }
+
+        IVToken(vTokenAddress).repayBorrow{value: borrowBal}();
+
+        // Withdraw all BNB from supplied
+        uint256 vbnbBal = IERC20(vTokenAddress).balanceOf(address(this));
+        IVToken(vTokenAddress).redeem(vbnbBal);
+        // bnbBal = address(this).balance;
+    }
+
+    function deleverageOnce(uint256 _borrowRate) external {
+        // Withdraw BNB from supplied
+        uint256 supplyBalTarget = borrowBal.mul(1000).div(borrowRate);
+        IVToken(vTokenAddress).redeemUnderlying(supplyBal.sub(supplyBalTarget));
+        uint256 bnbBal = address(this).balance;
+
+        while (bnbBal < borrowBal) {
+            // Repay BNB to borrowed
+            IVToken(vTokenAddress).repayBorrow{value: bnbBal}();
+            bnbBal = address(this).balance;
+            borrowBal = IVToken(vTokenAddress).borrowBalanceCurrent(
                 address(this)
             );
 
-            IVToken(vTokenAddress).redeemUnderlying( // Remove from supplied
-                balanceOfUnderlying.sub(targetUnderlying)
+            // Withdraw BNB from supplied
+            supplyBalTarget = borrowBal.mul(1000).div(borrowRate);
+            IVToken(vTokenAddress).redeemUnderlying(
+                supplyBal.sub(supplyBalTarget)
             );
             bnbBal = address(this).balance;
         }
 
-        // If only partially deleveraging, when sufficiently deleveraged, do not repay
-        if (_delevPartial && bnbBal >= _minAmt) {
-            return;
-        }
-
-        // Make a final repayment of borrowed
         IVToken(vTokenAddress).repayBorrow{value: borrowBal}();
-        uint256 vTokenBal = IERC20(vTokenAddress).balanceOf(address(this));
-        IVToken(vTokenAddress).redeem(vTokenBal);
-    }
 
-    function deleverageOnce(uint256 _borrowRate) external {
-        require(_borrowRate <= BORROW_RATE_MAX, "!safe");
-
-        uint256 bnbBal = address(this).balance;
-        IVToken(vTokenAddress).repayBorrow{value: bnbBal}();
-
-        borrowBal = IVToken(vTokenAddress).borrowBalanceCurrent(address(this));
-        uint256 targetUnderlying = borrowBal.mul(1000).div(_borrowRate);
-        uint256 balanceOfUnderlying =
-            IVToken(vTokenAddress).balanceOfUnderlying(address(this));
-
-        IVToken(vTokenAddress).redeemUnderlying(
-            balanceOfUnderlying.sub(targetUnderlying)
-        );
-
-        updateBalance();
+        // Withdraw all BNB from supplied
+        uint256 vbnbBal = IERC20(vTokenAddress).balanceOf(address(this));
+        IVToken(vTokenAddress).redeem(vbnbBal);
+        // bnbBal = address(this).balance;
     }
 
     /**
@@ -1587,17 +1641,17 @@ contract StratVLEV is Ownable, Pausable {
         require(_borrowRate <= BORROW_RATE_MAX, "!rate");
         require(_borrowDepth <= BORROW_DEPTH_MAX, "!depth");
 
-        _deleverage(false, uint256(-1)); // deleverage all supplied want tokens
+        _deleverage(false, uint256(-1));
         borrowRate = _borrowRate;
         borrowDepth = _borrowDepth;
-        farm();
+        updateSupplyBorrowBal();
+        _leverage();
+
+        StratRebalance(_borrowRate, _borrowDepth);
     }
 
     function earn() external whenNotPaused {
-        if (onlyDev) {
-            require(msg.sender == devAddress, "Not authorised");
-        }
-        require(wantLockedTotal() < MAX_WLT_TO_CALL_EARN, "!safe - use farm()");
+        require(!Address.isContract(msg.sender), "!contract");
 
         IVenusDistribution(venusDistributionAddress).claimVenus(address(this));
 
@@ -1619,11 +1673,16 @@ contract StratVLEV is Ownable, Pausable {
     }
 
     function buyBackBurn() internal {
+        uint256 buyBackBurnRate = IAutoFarm(autoFarmAddress).buyBackBurnRate();
+
         if (buyBackBurnRate <= 0) {
             return;
         }
 
         uint256 wantBal = IERC20(wantAddress).balanceOf(address(this));
+
+        uint256 buyBackBurnRateMax =
+            IAutoFarm(autoFarmAddress).buyBackBurnRateMax();
 
         uint256 buyBackBurnAmt =
             wantBal.mul(buyBackBurnRate).div(buyBackBurnRateMax);
@@ -1631,14 +1690,17 @@ contract StratVLEV is Ownable, Pausable {
         IPancakeRouter02(pancakeSwapRouterAddress).swapExactTokensForTokens(
             buyBackBurnAmt,
             0,
-            wantToAUTOPath,
+            buyBackBurnPath,
             address(this),
             now + 600
         );
 
         // Burn AUTO tokens
         uint256 burnAmt = IERC20(AUTOAddress).balanceOf(address(this));
-        IERC20(AUTOAddress).safeTransfer(buyBackBurnAddress, burnAmt);
+        IERC20(AUTOAddress).safeTransfer(
+            0x0000000000000000000000000000000000000000,
+            burnAmt
+        );
     }
 
     function distributeFees() internal {
@@ -1655,6 +1717,8 @@ contract StratVLEV is Ownable, Pausable {
     }
 
     function withdraw(uint256 _wantAmt) external onlyOwner returns (uint256) {
+        updateSupplyBorrowBal();
+
         uint256 sharesRemoved =
             _wantAmt.mul(sharesTotal).div(wantLockedTotal());
         if (sharesRemoved > sharesTotal) {
@@ -1707,7 +1771,7 @@ contract StratVLEV is Ownable, Pausable {
      * @dev Updates want locked in Venus after interest is accrued to this very block.
      * To be called before sensitive operations.
      */
-    function updateBalance() public {
+    function updateSupplyBorrowBal() public {
         supplyBal = IVToken(vTokenAddress).balanceOfUnderlying(address(this)); // a payable function because of acrueInterest()
         borrowBal = IVToken(vTokenAddress).borrowBalanceCurrent(address(this));
     }
@@ -1721,7 +1785,7 @@ contract StratVLEV is Ownable, Pausable {
 
     function setEntranceFeeFactor(uint256 _entranceFeeFactor) public {
         require(msg.sender == devAddress, "Not authorised");
-        require(_entranceFeeFactor > entranceFeeFactorLL, "!safe - too low");
+        require(_entranceFeeFactor > entranceFeeFactorLL, "too low");
         entranceFeeFactor = _entranceFeeFactor;
     }
 
@@ -1730,34 +1794,9 @@ contract StratVLEV is Ownable, Pausable {
         devAddress = _devAddress;
     }
 
-    function setOnlyDev(bool _onlyDev) public {
-        require(msg.sender == devAddress, "Not authorised");
-        onlyDev = _onlyDev;
-    }
-
     function setControllerFee(uint256 _controllerFee) public {
         require(msg.sender == devAddress, "Not authorised");
         controllerFee = _controllerFee;
-    }
-
-    function setBuyBackBurnRate(uint256 _buyBackBurnRate) public {
-        require(msg.sender == devAddress, "Not authorised");
-        buyBackBurnRate = _buyBackBurnRate;
-    }
-
-    function setBuyBackBurnAddress(address _buyBackBurnAddress) public {
-        require(msg.sender == devAddress, "Not authorised");
-        buyBackBurnAddress = _buyBackBurnAddress;
-    }
-
-    /**
-     * @dev We should not have significant amts of BNB in this contract.
-     * In case we do (eg. Venus returns all user's BNB to this contract or for any other reason),
-     * We can wrap all BNB, allowing users to withdraw() as per normal.
-     */
-    function wrapBNB() public {
-        require(msg.sender == devAddress, "Not authorised");
-        IWBNB(wantAddress).deposit{value: address(this).balance}(); // Wrap. BNB -> WBNB
     }
 
     receive() external payable {}

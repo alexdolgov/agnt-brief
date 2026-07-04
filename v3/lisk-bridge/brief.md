@@ -5,7 +5,7 @@
 - Project: Lisk Bridge (`lisk-bridge`)
 - Website: [https://lisk.com](https://lisk.com)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:21.609Z
+- Generated: 2026-07-04T11:05:42.059Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
 - Chains: ethereum
 - Contract surface: 94 unique implementations (154 raw deployments)
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Canonical Bridge. Structurally: 112 project-authored contract(s) across 1 chain(s); 24 ERC20 tokens, 1 ERC1155 multi-token, 3 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Canonical Bridge. Structurally: 115 project-authored contract(s) across 1 chain(s); 24 ERC20 tokens, 1 ERC1155 multi-token, 3 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 

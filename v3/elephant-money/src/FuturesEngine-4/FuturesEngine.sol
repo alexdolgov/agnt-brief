@@ -1,33 +1,601 @@
+// File: @openzeppelin/contracts/utils/math/SignedMath.sol
+
+
+// OpenZeppelin Contracts (last updated v5.0.0) (utils/math/SignedMath.sol)
+
+pragma solidity ^0.8.18;
+
+/**
+ * @dev Standard signed math utilities missing in the Solidity language.
+ */
+library SignedMath {
+    /**
+     * @dev Returns the largest of two signed numbers.
+     */
+    function max(int256 a, int256 b) internal pure returns (int256) {
+        return a > b ? a : b;
+    }
+
+    /**
+     * @dev Returns the smallest of two signed numbers.
+     */
+    function min(int256 a, int256 b) internal pure returns (int256) {
+        return a < b ? a : b;
+    }
+
+    /**
+     * @dev Returns the average of two signed numbers without overflow.
+     * The result is rounded towards zero.
+     */
+    function average(int256 a, int256 b) internal pure returns (int256) {
+        // Formula from the book "Hacker's Delight"
+        int256 x = (a & b) + ((a ^ b) >> 1);
+        return x + (int256(uint256(x) >> 255) & (a ^ b));
+    }
+
+    /**
+     * @dev Returns the absolute unsigned value of a signed value.
+     */
+    function abs(int256 n) internal pure returns (uint256) {
+        unchecked {
+            // must be unchecked in order to support `n = type(int256).min`
+            return uint256(n >= 0 ? n : -n);
+        }
+    }
+}
+
+// File: @openzeppelin/contracts/utils/math/Math.sol
+
+
+// OpenZeppelin Contracts (last updated v5.0.0) (utils/math/Math.sol)
+
+pragma solidity ^0.8.18;
+
+/**
+ * @dev Standard math utilities missing in the Solidity language.
+ */
+library Math {
+    /**
+     * @dev Muldiv operation overflow.
+     */
+    error MathOverflowedMulDiv();
+
+    enum Rounding {
+        Floor, // Toward negative infinity
+        Ceil, // Toward positive infinity
+        Trunc, // Toward zero
+        Expand // Away from zero
+    }
+
+    /**
+     * @dev Returns the addition of two unsigned integers, with an overflow flag.
+     */
+    function tryAdd(uint256 a, uint256 b) internal pure returns (bool, uint256) {
+        unchecked {
+            uint256 c = a + b;
+            if (c < a) return (false, 0);
+            return (true, c);
+        }
+    }
+
+    /**
+     * @dev Returns the subtraction of two unsigned integers, with an overflow flag.
+     */
+    function trySub(uint256 a, uint256 b) internal pure returns (bool, uint256) {
+        unchecked {
+            if (b > a) return (false, 0);
+            return (true, a - b);
+        }
+    }
+
+    /**
+     * @dev Returns the multiplication of two unsigned integers, with an overflow flag.
+     */
+    function tryMul(uint256 a, uint256 b) internal pure returns (bool, uint256) {
+        unchecked {
+            // Gas optimization: this is cheaper than requiring 'a' not being zero, but the
+            // benefit is lost if 'b' is also tested.
+            // See: https://github.com/OpenZeppelin/openzeppelin-contracts/pull/522
+            if (a == 0) return (true, 0);
+            uint256 c = a * b;
+            if (c / a != b) return (false, 0);
+            return (true, c);
+        }
+    }
+
+    /**
+     * @dev Returns the division of two unsigned integers, with a division by zero flag.
+     */
+    function tryDiv(uint256 a, uint256 b) internal pure returns (bool, uint256) {
+        unchecked {
+            if (b == 0) return (false, 0);
+            return (true, a / b);
+        }
+    }
+
+    /**
+     * @dev Returns the remainder of dividing two unsigned integers, with a division by zero flag.
+     */
+    function tryMod(uint256 a, uint256 b) internal pure returns (bool, uint256) {
+        unchecked {
+            if (b == 0) return (false, 0);
+            return (true, a % b);
+        }
+    }
+
+    /**
+     * @dev Returns the largest of two numbers.
+     */
+    function max(uint256 a, uint256 b) internal pure returns (uint256) {
+        return a > b ? a : b;
+    }
+
+    /**
+     * @dev Returns the smallest of two numbers.
+     */
+    function min(uint256 a, uint256 b) internal pure returns (uint256) {
+        return a < b ? a : b;
+    }
+
+    /**
+     * @dev Returns the average of two numbers. The result is rounded towards
+     * zero.
+     */
+    function average(uint256 a, uint256 b) internal pure returns (uint256) {
+        // (a + b) / 2 can overflow.
+        return (a & b) + (a ^ b) / 2;
+    }
+
+    /**
+     * @dev Returns the ceiling of the division of two numbers.
+     *
+     * This differs from standard division with `/` in that it rounds towards infinity instead
+     * of rounding towards zero.
+     */
+    function ceilDiv(uint256 a, uint256 b) internal pure returns (uint256) {
+        if (b == 0) {
+            // Guarantee the same behavior as in a regular Solidity division.
+            return a / b;
+        }
+
+        // (a + b - 1) / b can overflow on addition, so we distribute.
+        return a == 0 ? 0 : (a - 1) / b + 1;
+    }
+
+    /**
+     * @notice Calculates floor(x * y / denominator) with full precision. Throws if result overflows a uint256 or
+     * denominator == 0.
+     * @dev Original credit to Remco Bloemen under MIT license (https://xn--2-umb.com/21/muldiv) with further edits by
+     * Uniswap Labs also under MIT license.
+     */
+    function mulDiv(uint256 x, uint256 y, uint256 denominator) internal pure returns (uint256 result) {
+        unchecked {
+            // 512-bit multiply [prod1 prod0] = x * y. Compute the product mod 2^256 and mod 2^256 - 1, then use
+            // use the Chinese Remainder Theorem to reconstruct the 512 bit result. The result is stored in two 256
+            // variables such that product = prod1 * 2^256 + prod0.
+            uint256 prod0 = x * y; // Least significant 256 bits of the product
+            uint256 prod1; // Most significant 256 bits of the product
+            assembly {
+                let mm := mulmod(x, y, not(0))
+                prod1 := sub(sub(mm, prod0), lt(mm, prod0))
+            }
+
+            // Handle non-overflow cases, 256 by 256 division.
+            if (prod1 == 0) {
+                // Solidity will revert if denominator == 0, unlike the div opcode on its own.
+                // The surrounding unchecked block does not change this fact.
+                // See https://docs.soliditylang.org/en/latest/control-structures.html#checked-or-unchecked-arithmetic.
+                return prod0 / denominator;
+            }
+
+            // Make sure the result is less than 2^256. Also prevents denominator == 0.
+            if (denominator <= prod1) {
+                revert MathOverflowedMulDiv();
+            }
+
+            ///////////////////////////////////////////////
+            // 512 by 256 division.
+            ///////////////////////////////////////////////
+
+            // Make division exact by subtracting the remainder from [prod1 prod0].
+            uint256 remainder;
+            assembly {
+                // Compute remainder using mulmod.
+                remainder := mulmod(x, y, denominator)
+
+                // Subtract 256 bit number from 512 bit number.
+                prod1 := sub(prod1, gt(remainder, prod0))
+                prod0 := sub(prod0, remainder)
+            }
+
+            // Factor powers of two out of denominator and compute largest power of two divisor of denominator.
+            // Always >= 1. See https://cs.stackexchange.com/q/138556/92363.
+
+            uint256 twos = denominator & (0 - denominator);
+            assembly {
+                // Divide denominator by twos.
+                denominator := div(denominator, twos)
+
+                // Divide [prod1 prod0] by twos.
+                prod0 := div(prod0, twos)
+
+                // Flip twos such that it is 2^256 / twos. If twos is zero, then it becomes one.
+                twos := add(div(sub(0, twos), twos), 1)
+            }
+
+            // Shift in bits from prod1 into prod0.
+            prod0 |= prod1 * twos;
+
+            // Invert denominator mod 2^256. Now that denominator is an odd number, it has an inverse modulo 2^256 such
+            // that denominator * inv = 1 mod 2^256. Compute the inverse by starting with a seed that is correct for
+            // four bits. That is, denominator * inv = 1 mod 2^4.
+            uint256 inverse = (3 * denominator) ^ 2;
+
+            // Use the Newton-Raphson iteration to improve the precision. Thanks to Hensel's lifting lemma, this also
+            // works in modular arithmetic, doubling the correct bits in each step.
+            inverse *= 2 - denominator * inverse; // inverse mod 2^8
+            inverse *= 2 - denominator * inverse; // inverse mod 2^16
+            inverse *= 2 - denominator * inverse; // inverse mod 2^32
+            inverse *= 2 - denominator * inverse; // inverse mod 2^64
+            inverse *= 2 - denominator * inverse; // inverse mod 2^128
+            inverse *= 2 - denominator * inverse; // inverse mod 2^256
+
+            // Because the division is now exact we can divide by multiplying with the modular inverse of denominator.
+            // This will give us the correct result modulo 2^256. Since the preconditions guarantee that the outcome is
+            // less than 2^256, this is the final result. We don't need to compute the high bits of the result and prod1
+            // is no longer required.
+            result = prod0 * inverse;
+            return result;
+        }
+    }
+
+    /**
+     * @notice Calculates x * y / denominator with full precision, following the selected rounding direction.
+     */
+    function mulDiv(uint256 x, uint256 y, uint256 denominator, Rounding rounding) internal pure returns (uint256) {
+        uint256 result = mulDiv(x, y, denominator);
+        if (unsignedRoundsUp(rounding) && mulmod(x, y, denominator) > 0) {
+            result += 1;
+        }
+        return result;
+    }
+
+    /**
+     * @dev Returns the square root of a number. If the number is not a perfect square, the value is rounded
+     * towards zero.
+     *
+     * Inspired by Henry S. Warren, Jr.'s "Hacker's Delight" (Chapter 11).
+     */
+    function sqrt(uint256 a) internal pure returns (uint256) {
+        if (a == 0) {
+            return 0;
+        }
+
+        // For our first guess, we get the biggest power of 2 which is smaller than the square root of the target.
+        //
+        // We know that the "msb" (most significant bit) of our target number `a` is a power of 2 such that we have
+        // `msb(a) <= a < 2*msb(a)`. This value can be written `msb(a)=2**k` with `k=log2(a)`.
+        //
+        // This can be rewritten `2**log2(a) <= a < 2**(log2(a) + 1)`
+        // → `sqrt(2**k) <= sqrt(a) < sqrt(2**(k+1))`
+        // → `2**(k/2) <= sqrt(a) < 2**((k+1)/2) <= 2**(k/2 + 1)`
+        //
+        // Consequently, `2**(log2(a) / 2)` is a good first approximation of `sqrt(a)` with at least 1 correct bit.
+        uint256 result = 1 << (log2(a) >> 1);
+
+        // At this point `result` is an estimation with one bit of precision. We know the true value is a uint128,
+        // since it is the square root of a uint256. Newton's method converges quadratically (precision doubles at
+        // every iteration). We thus need at most 7 iteration to turn our partial result with one bit of precision
+        // into the expected uint128 result.
+        unchecked {
+            result = (result + a / result) >> 1;
+            result = (result + a / result) >> 1;
+            result = (result + a / result) >> 1;
+            result = (result + a / result) >> 1;
+            result = (result + a / result) >> 1;
+            result = (result + a / result) >> 1;
+            result = (result + a / result) >> 1;
+            return min(result, a / result);
+        }
+    }
+
+    /**
+     * @notice Calculates sqrt(a), following the selected rounding direction.
+     */
+    function sqrt(uint256 a, Rounding rounding) internal pure returns (uint256) {
+        unchecked {
+            uint256 result = sqrt(a);
+            return result + (unsignedRoundsUp(rounding) && result * result < a ? 1 : 0);
+        }
+    }
+
+    /**
+     * @dev Return the log in base 2 of a positive value rounded towards zero.
+     * Returns 0 if given 0.
+     */
+    function log2(uint256 value) internal pure returns (uint256) {
+        uint256 result = 0;
+        unchecked {
+            if (value >> 128 > 0) {
+                value >>= 128;
+                result += 128;
+            }
+            if (value >> 64 > 0) {
+                value >>= 64;
+                result += 64;
+            }
+            if (value >> 32 > 0) {
+                value >>= 32;
+                result += 32;
+            }
+            if (value >> 16 > 0) {
+                value >>= 16;
+                result += 16;
+            }
+            if (value >> 8 > 0) {
+                value >>= 8;
+                result += 8;
+            }
+            if (value >> 4 > 0) {
+                value >>= 4;
+                result += 4;
+            }
+            if (value >> 2 > 0) {
+                value >>= 2;
+                result += 2;
+            }
+            if (value >> 1 > 0) {
+                result += 1;
+            }
+        }
+        return result;
+    }
+
+    /**
+     * @dev Return the log in base 2, following the selected rounding direction, of a positive value.
+     * Returns 0 if given 0.
+     */
+    function log2(uint256 value, Rounding rounding) internal pure returns (uint256) {
+        unchecked {
+            uint256 result = log2(value);
+            return result + (unsignedRoundsUp(rounding) && 1 << result < value ? 1 : 0);
+        }
+    }
+
+    /**
+     * @dev Return the log in base 10 of a positive value rounded towards zero.
+     * Returns 0 if given 0.
+     */
+    function log10(uint256 value) internal pure returns (uint256) {
+        uint256 result = 0;
+        unchecked {
+            if (value >= 10 ** 64) {
+                value /= 10 ** 64;
+                result += 64;
+            }
+            if (value >= 10 ** 32) {
+                value /= 10 ** 32;
+                result += 32;
+            }
+            if (value >= 10 ** 16) {
+                value /= 10 ** 16;
+                result += 16;
+            }
+            if (value >= 10 ** 8) {
+                value /= 10 ** 8;
+                result += 8;
+            }
+            if (value >= 10 ** 4) {
+                value /= 10 ** 4;
+                result += 4;
+            }
+            if (value >= 10 ** 2) {
+                value /= 10 ** 2;
+                result += 2;
+            }
+            if (value >= 10 ** 1) {
+                result += 1;
+            }
+        }
+        return result;
+    }
+
+    /**
+     * @dev Return the log in base 10, following the selected rounding direction, of a positive value.
+     * Returns 0 if given 0.
+     */
+    function log10(uint256 value, Rounding rounding) internal pure returns (uint256) {
+        unchecked {
+            uint256 result = log10(value);
+            return result + (unsignedRoundsUp(rounding) && 10 ** result < value ? 1 : 0);
+        }
+    }
+
+    /**
+     * @dev Return the log in base 256 of a positive value rounded towards zero.
+     * Returns 0 if given 0.
+     *
+     * Adding one to the result gives the number of pairs of hex symbols needed to represent `value` as a hex string.
+     */
+    function log256(uint256 value) internal pure returns (uint256) {
+        uint256 result = 0;
+        unchecked {
+            if (value >> 128 > 0) {
+                value >>= 128;
+                result += 16;
+            }
+            if (value >> 64 > 0) {
+                value >>= 64;
+                result += 8;
+            }
+            if (value >> 32 > 0) {
+                value >>= 32;
+                result += 4;
+            }
+            if (value >> 16 > 0) {
+                value >>= 16;
+                result += 2;
+            }
+            if (value >> 8 > 0) {
+                result += 1;
+            }
+        }
+        return result;
+    }
+
+    /**
+     * @dev Return the log in base 256, following the selected rounding direction, of a positive value.
+     * Returns 0 if given 0.
+     */
+    function log256(uint256 value, Rounding rounding) internal pure returns (uint256) {
+        unchecked {
+            uint256 result = log256(value);
+            return result + (unsignedRoundsUp(rounding) && 1 << (result << 3) < value ? 1 : 0);
+        }
+    }
+
+    /**
+     * @dev Returns whether a provided rounding mode is considered rounding up for unsigned integers.
+     */
+    function unsignedRoundsUp(Rounding rounding) internal pure returns (bool) {
+        return uint8(rounding) % 2 == 1;
+    }
+}
+
+// File: @openzeppelin/contracts/utils/Strings.sol
+
+
+// OpenZeppelin Contracts (last updated v5.0.0) (utils/Strings.sol)
+
+pragma solidity ^0.8.18;
+
+
+
+/**
+ * @dev String operations.
+ */
+library Strings {
+    bytes16 private constant HEX_DIGITS = "0123456789abcdef";
+    uint8 private constant ADDRESS_LENGTH = 20;
+
+    /**
+     * @dev The `value` string doesn't fit in the specified `length`.
+     */
+    error StringsInsufficientHexLength(uint256 value, uint256 length);
+
+    /**
+     * @dev Converts a `uint256` to its ASCII `string` decimal representation.
+     */
+    function toString(uint256 value) internal pure returns (string memory) {
+        unchecked {
+            uint256 length = Math.log10(value) + 1;
+            string memory buffer = new string(length);
+            uint256 ptr;
+            /// @solidity memory-safe-assembly
+            assembly {
+                ptr := add(buffer, add(32, length))
+            }
+            while (true) {
+                ptr--;
+                /// @solidity memory-safe-assembly
+                assembly {
+                    mstore8(ptr, byte(mod(value, 10), HEX_DIGITS))
+                }
+                value /= 10;
+                if (value == 0) break;
+            }
+            return buffer;
+        }
+    }
+
+    /**
+     * @dev Converts a `int256` to its ASCII `string` decimal representation.
+     */
+    function toStringSigned(int256 value) internal pure returns (string memory) {
+        return string.concat(value < 0 ? "-" : "", toString(SignedMath.abs(value)));
+    }
+
+    /**
+     * @dev Converts a `uint256` to its ASCII `string` hexadecimal representation.
+     */
+    function toHexString(uint256 value) internal pure returns (string memory) {
+        unchecked {
+            return toHexString(value, Math.log256(value) + 1);
+        }
+    }
+
+    /**
+     * @dev Converts a `uint256` to its ASCII `string` hexadecimal representation with fixed length.
+     */
+    function toHexString(uint256 value, uint256 length) internal pure returns (string memory) {
+        uint256 localValue = value;
+        bytes memory buffer = new bytes(2 * length + 2);
+        buffer[0] = "0";
+        buffer[1] = "x";
+        for (uint256 i = 2 * length + 1; i > 1; --i) {
+            buffer[i] = HEX_DIGITS[localValue & 0xf];
+            localValue >>= 4;
+        }
+        if (localValue != 0) {
+            revert StringsInsufficientHexLength(value, length);
+        }
+        return string(buffer);
+    }
+
+    /**
+     * @dev Converts an `address` with fixed length of 20 bytes to its not checksummed ASCII `string` hexadecimal
+     * representation.
+     */
+    function toHexString(address addr) internal pure returns (string memory) {
+        return toHexString(uint256(uint160(addr)), ADDRESS_LENGTH);
+    }
+
+    /**
+     * @dev Returns true if the two strings are equal.
+     */
+    function equal(string memory a, string memory b) internal pure returns (bool) {
+        return bytes(a).length == bytes(b).length && keccak256(bytes(a)) == keccak256(bytes(b));
+    }
+}
+
+// File: Futuresv9.sol
+
 /*
     SPDX-License-Identifier: MIT
     A Bankteller Production
     Elephant Money
-    Copyright 2023
+    Copyright 2024
 */
 
 /*
     Elephant Money Futures
 
-    - A high yield cashhflow engine that earns 0.5% daily on cash 
-    - Immutable contract and yield generation, 100% on-chain
+    - A high yield cashhflow engine that earns up to 0.5% daily on cash 
+    - 100% on-chain
     - Scalable and always open for business
     - Core yield generation is provided by the unstoppable and proven ELEPHANT Treasury buyback program
-    - Deposit BUSD and earn BUSD rewards
-    - Paid out at 0.5% daily of your remaining balance
+    - Deposit BNB and earn BNB rewards; no stable coin risk
+    - Paid out at up to 0.5% daily of your remaining balance
+    - Health checks establish a safe base group rate the system can handle
+    - Regular deposits provide up to a 0.5% bonus daily rate
     - Auto compound rewards on ever deposit 
     - Claim at any time down to the second
     - No fees or taxes of any kind
     - Yield is paid by a growing Elephant Treasury
-    - 90% of funds are sent to the BUSD Treasury for use by governance contracts
-    - 10% of funds are held in a BUSD buffer pool for yield repayment
-    - 1% referral rewards (paid out via Stampede)
-    - 200 BUSD deposit minimum, 1M BUSD max balance, 2.5M BUSD max payouts, and 50K BUSD max daily claim 
+    - 50% of deposits market buy ELEPHANT
+    - 10% of deposits are held in a BNB Reserve for yield repayment
+    - 10% of deposits buy and hold BTC with variable ELEPHANT buybacks
+    - 20% of deposits buy and hold TRUNK with variable ELEPHANT buybacks
+    - 10% of deposits fund a Rainy Day Fund for 50% redemption of principal  
+    - 200 USD deposit minimum, 1M USD max balance, 2.5M USD max payouts, and 50K USD max daily claim 
 
     Only at https://elephant.money
 
 */
 
-pragma solidity 0.8.17;
+
+pragma solidity ^0.8.18;
+
 
 abstract contract ReentrancyGuard {
     // Booleans are more expensive than uint256 or any type that takes up a full
@@ -723,6 +1291,12 @@ interface ITreasury {
     function withdrawTo(address _to, uint256 _amount) external;
 }
 
+interface ITreasuryV2 {
+    function withdraw(address _to, uint256 _amount, bool _force) external;
+
+    function withdrawToken(address _to, address _tokenAddress, uint256 _amount, bool _force) external;
+}
+
 interface ISponsorData {
     
     function add(address _user, uint256 _amount) external;
@@ -733,6 +1307,14 @@ interface ISponsorData {
 //@dev Callback function called by FarmEngine.yield upon completion
 interface IReferralReport {
     function reward_distribution(address _referrer, address _user, uint _referrer_reward, uint _user_reward) external;
+
+}
+
+interface IEACAggregatorProxy {
+
+    function latestRoundData() external view returns (uint80 roundId , int256 answer , uint256 startedAt , uint256 updatedAt , uint80 answeredInRound);
+
+    function decimals() external view returns (uint8);
 
 }
 
@@ -755,27 +1337,6 @@ interface IPcsPeriodicTwapOracle {
 
 }
 
-///@dev Simple onchain referral storage
-interface IReferralData {
-    
-    function updateReferral(address referrer) external ;
-
-    ///@dev Return the referral of the sender
-    function myReferrer() external view returns (address);
-
-    //@dev Return true if referrer of user is sender
-    function isMyReferral(address _user) external view returns (bool);
-
-    //@dev Return true if user has a referrer
-    function hasReferrer(address _user) external view returns (bool);
-
-    ///@dev Return the referral of a participant
-    function referrerOf(address participant) external view returns (address) ;
-
-    ///@dev Return the referral count of a participant
-    function referralCountOf(address _user) external view returns (uint256) ;
-}
-
 //@dev Tracks summary information for users across all farms
 struct FuturesUser {
     bool exists; //has the user joined
@@ -785,6 +1346,24 @@ struct FuturesUser {
     uint payouts;  //total yield payouts across all farms
     uint rewards; //partner rewards
     uint last_time; //last interaction
+}
+
+//@dev Tracks time that user last completed an action
+struct FuturesUserAction {
+    uint last_deposit;
+    uint last_claim;
+}
+
+//@dev Tracks Rainy Day Fund Stats
+struct FuturesRDFUser {
+    uint last_claim;
+    uint payouts; //actual cash value payed out to user
+}
+
+//@dev Tracks Rainy Day Major Stats
+struct FuturesRDFGlobals {
+    uint total_claimed;
+    uint total_txs;
 }
 
 struct FuturesGlobals {
@@ -846,41 +1425,130 @@ contract FuturesVault is Whitelist {
 
 }
 
+//@dev Immutable Vault that stores ledger for Elephant Money Futures
+contract FuturesRDFVault is Whitelist {
+    mapping(address => FuturesRDFUser) private users; //Asset -> User
+
+    FuturesRDFGlobals private globals;
+
+    constructor() Ownable() {}
+
+
+    //@dev Get User info
+    function getUser(address _user) external view returns (FuturesRDFUser memory) {
+        return users[_user];
+    }
+
+    //@dev Get FuturesGlobal info
+    function getGlobals() external view returns (FuturesRDFGlobals memory) {
+        return globals;
+    }
+
+    //@dev commit User Info
+    function commitUser(address _user, FuturesRDFUser memory _user_data)  onlyWhitelisted isRunning external {
+
+        //update user  
+        users[_user].payouts = _user_data.payouts; 
+        users[_user].last_claim = _user_data.last_claim;
+
+    }
+
+    //@dev commit Globals Info
+    function commitGlobals(FuturesRDFGlobals memory _globals) onlyWhitelisted isRunning external {
+
+        //update globals
+        globals.total_claimed = _globals.total_claimed;
+        globals.total_txs = _globals.total_txs;
+        
+    }
+
+}
+
+//@dev Immutable Vault that stores ledger for Elephant Money Futures Actions (Deposit / Claim)
+contract FuturesActionVault is Whitelist {
+    mapping(address => FuturesUserAction) private users; //Asset -> User
+
+    constructor() Ownable() {}
+
+
+    //@dev Get User info
+    function getUser(address _user) external view returns (FuturesUserAction memory) {
+        return users[_user];
+    }
+
+    //@dev commit User Info
+    function commitUser(address _user, FuturesUserAction memory _user_data)  onlyWhitelisted isRunning external {
+
+        //update user
+        users[_user].last_deposit = _user_data.last_deposit; 
+        users[_user].last_claim = _user_data.last_claim;
+    }
+
+}
+
+contract UintToStringTest {
+
+    using Strings for uint256;
+
+    function uintToString(uint256 number) external pure returns (string memory) {
+       return number.toString();
+    }
+}
+
 //@dev  Business logic for Elephan Money Futures
 //Engine can be swapped out if upgrades are needed
 //Only yield infrastructure and vault can be updated
-contract FuturesEngine is Ownable, IReferralReport {
+contract FuturesEngine is Ownable {
     using SafeMath for uint256;
+    using Strings for uint256;
 
-    AddressRegistry private registry;
+    AddressRegistry internal registry;
 
     //Financial Model
+    uint256 public constant rainyDayPercentage = 10; //share of rainyDayFund
     uint256 public constant referenceApr = 182.5e18; //0.5% daily
+    uint256 public constant bonusApr = 182.5e18; //0.5% daily
+    uint256 public constant bonusPeriod = 45 days;
     uint256 public constant maxBalance = 1000000e18; //1M
     uint256 public constant minimumDeposit = 200e18; //200+ deposits; will compound available rewards
     uint256 public constant maxAvailable = 50000e18; //50K max claim daily, 10 days missed claims 
     uint256 public constant maxPayouts = (maxBalance * 5e18) / 2e18; //2.5M
 
+    bool public forceLiquidity = true; //topOff reserve if claim is large
+    uint256 public slippage = 995; //slippage control for buys / sell
+    uint public rdfCooldown = 7 days; //cool down between RDF claims
+    uint public maxTreasuryPayoutPercentage = 5; // X/1000 , 1 = 0.1%
+
     
     //Immutable long term network contracts
-    ITreasury public immutable collateralBufferPool;
-    ITreasury public  immutable collateralTreasury;
-    IERC20 public immutable collateralToken;
+    ITreasuryV2 public immutable wethTreasury;
+    ITreasuryV2 public immutable rainyDayFund;
+    IEACAggregatorProxy public immutable chainlinkProxy;
+    ITreasury public immutable coreTreasury;
+    IERC20 public immutable coreToken;
+    IUniswapV2Router02 public  immutable collateralRouter;
+    IPcsPeriodicTwapOracle public immutable oracle;
     
     //Updatable components
-    IElephantYieldEngine public yieldEngine;
-    FuturesVault public vault; 
-    bool public enforceMinimum = false;
+    FuturesVault public vault;
+    FuturesActionVault public actionVault;
+    FuturesRDFVault public rdfVault; 
+   
 
     //events
-    event Deposit(address indexed user, uint256 amount);
+    event Deposit(address indexed user, uint256 amount, uint256 wethAmount);
     event CompoundDeposit(address indexed user, uint256 amount);
-    event Claim(address indexed user, uint256 amount);
+    event Claim(address indexed user, uint256 amount, uint256 wethAmount);
+    event RDFClaim(address indexed user, uint256 amount, uint256 wethAmount);
     event Transfer(address indexed user, address indexed new_user, uint256 current_balance);
-    event RewardDistribution(address referrer, address user, uint referrer_reward, uint user_reward);
-    event UpdateYieldEngine(address prev_engine, address engine);
     event UpdateVault(address prev_vault, address vault);
-    event UpdateEnforceMinimum(bool prev_value, bool value);
+    event UpdateActionVault(address prev_vault, address vault);
+    event UpdateSlippage(uint oldSlippage, uint newSlippage);
+    event UpdateForceLiquidity(bool value, bool new_value);
+    event UpdateRDFVault(address oldVault, address newVault);
+    event UpdateRDFCooldown(uint oldCooldown, uint newCooldown);
+    event UpdateMaxTreasuryPayoutPercentage(uint oldPercentage, uint newPercentage);
+
 
     //@dev Creates a FuturesEngine that contains upgradeable business logic for Futures Vault
     constructor() Ownable() {
@@ -890,43 +1558,94 @@ contract FuturesEngine is Ownable, IReferralReport {
 
         /* mythx-disable SWC-113 */
 
-        //setup the core tokens
-        collateralToken = IERC20(registry.collateralAddress());
+        //treasury setup
+        wethTreasury = ITreasuryV2(registry.bnbReserveAddress()); 
+        rainyDayFund = ITreasuryV2(registry.rainyDayFundAddress());
+
+          //setup the core tokens
+        coreToken = IERC20(registry.coreAddress());
+
+        //the collateral router can be upgraded in the future
+        collateralRouter = IUniswapV2Router02(registry.routerAddress());
 
         //treasury setup
-        collateralTreasury = ITreasury(registry.collateralTreasuryAddress());
-        collateralBufferPool = ITreasury(registry.collateralBufferAddress()); 
+        coreTreasury = ITreasury(registry.coreTreasuryAddress());
+        
+        chainlinkProxy = IEACAggregatorProxy(registry.chainlinkBNBAddress());
 
-        /* mythx-enable */
+        oracle = IPcsPeriodicTwapOracle(registry.oracleAddress());
+       
 
     }
 
     //Administrative//
 
-    function updateEnforceMinimum(bool _enforceMinimum) external onlyOwner {
-        
-        emit UpdateEnforceMinimum(enforceMinimum, _enforceMinimum);
-
-        enforceMinimum = _enforceMinimum;
-    }
-
     //@dev Update the FuturesVault
     function updateFuturesVault(address _vault) external onlyOwner {
-        require(_vault != address(0), "vault must be non-zero");
+        require(_vault != address(0), "non-zero");
 
         emit UpdateVault(address(vault), _vault);
 
         vault = FuturesVault(_vault);
     }
 
-    //@dev Update the farm engine which is used for quotes, yield calculations / distribution
-    function updateYieldEngine(address _engine) external onlyOwner {
-        require(_engine != address(0), "engine must be non-zero");
+    //@dev Update the FuturesVault
+    function updateFuturesActionVault(address _vault) external onlyOwner {
+        require(_vault != address(0), "non-zero");
 
-        emit UpdateYieldEngine(address(yieldEngine), _engine);
+        emit UpdateActionVault(address(actionVault), _vault);
 
-        yieldEngine = IElephantYieldEngine(_engine);
+        actionVault = FuturesActionVault(_vault);
     }
+
+    //@dev Update the FuturesVault
+    function updateFuturesRDFVault(address _vault) external onlyOwner {
+        require(_vault != address(0), "non-zero");
+
+        emit UpdateRDFVault(address(rdfVault), _vault);
+
+        rdfVault = FuturesRDFVault(_vault);
+
+    }
+
+    //@dev Updates slippage used when setting thresholds for buys
+    function updateSlippage(uint _slippage) onlyOwner external {
+        require(_slippage < 1000, "slippage < 1000");
+
+        emit UpdateSlippage(slippage, _slippage);
+
+        slippage = _slippage;
+        
+    } 
+
+    //@dev Updates slippage used when setting thresholds for buys
+    function updateMaxTreasuryPayoutPercentage(uint _percentage) onlyOwner external {
+        require(_percentage > 0 && _percentage <= 20, "_percentage <= 20, non-zero, <= 2%");
+
+        emit UpdateMaxTreasuryPayoutPercentage(maxTreasuryPayoutPercentage, _percentage);
+
+        maxTreasuryPayoutPercentage = _percentage;
+        
+    } 
+
+    //@dev Updates the cooldown which controls RDF claim frequency
+    function updateRDFCooldown(uint _cooldown) onlyOwner external {
+        require(_cooldown >= 7 days && _cooldown <= 90 days, "cooldown must be between 30 - 90 days (seconds)");
+
+        emit UpdateRDFCooldown(rdfCooldown, _cooldown);
+
+        rdfCooldown = _cooldown;
+
+    }
+
+    //@dev Forces the yield engine to topoff liquidity in the collateral buffer on every tx
+    //a test harness
+    function updateForceLiquidity(bool _force) external onlyOwner {
+        
+        emit UpdateForceLiquidity(forceLiquidity, _force);
+        forceLiquidity = _force;
+    }
+
 
     ///  Views  ///
 
@@ -950,142 +1669,188 @@ contract FuturesEngine is Ownable, IReferralReport {
         return vault.getGlobals();
     }
 
-    ////  User Functions ////
+    //@dev Converts USD amount to BNB 
+    function estimateWethAmount(uint collateralAmount) public view returns (uint wethAmount){
+        (, int256 answer , , , ) = chainlinkProxy.latestRoundData();
+        uint8 decimals  = chainlinkProxy.decimals();
 
-    //@dev Deposit BUSD in exchange for TRUNK at the current TWAP price
-    //Is not available if the system is paused
-    function deposit(uint _amount) isRunning nonReentrant external {
+        wethAmount = collateralAmount * (10 ** decimals) / uint(answer); 
+    }
+
+    //@dev Converts BNB amount to USD
+    function estimateCollateralAmount(uint wethAmount) public view returns (uint collateralAmount){
+        (, int256 answer , , , ) = chainlinkProxy.latestRoundData();
+        uint8 decimals  = chainlinkProxy.decimals();
+
+        collateralAmount = wethAmount * uint(answer) / (10 ** decimals);
+    }
+
+    //@dev Converts BNB amount to ELEPHANT 
+    function estimateCoreAmount(uint wethAmount) public view returns (uint coreAmount) {
+        address[] memory path = new address[](2);
+
+        path[0] = collateralRouter.WETH();
+        path[1] = registry.coreAddress();
+
+        uint[] memory output =  oracle.consultAmountsOut(wethAmount, path);
+
+        coreAmount = output[1];
+
+    }
+
+     // Estimates the amount of  core tokens getting transfered to USD collateral tokens
+    function estimateCoreToCollateral(uint coreAmount) public view returns (uint wethAmount, uint collateralAmount) {
+         //Convert from core to WETH using the core's Oracle
+        address[] memory path = new address[](2);
+        path[0] = address(coreToken);
+        path[1] = collateralRouter.WETH();
+
+        uint[] memory amounts = oracle.consultAmountsOut(coreAmount, path);
         
-        //Only the key holder can invest their funds
-        address _user = msg.sender; 
+        wethAmount = amounts[1];
+        collateralAmount = estimateCollateralAmount(wethAmount);
+    }
 
-        FuturesUser memory userData = vault.getUser(_user);
+    //@dev Returns the value of the treasury based on percentage of the treasury. _percentage/1000, 1 = 0.1 %
+    function estimatePercentageTreasuryBalance(uint _percentage) public view returns (uint coreAmount, uint wethAmount, uint collateralAmount) {
+        
+        require(_percentage > 0, "must be greater than 0");
+
+        uint256 coreTreasuryBalance = coreToken.balanceOf(address(coreTreasury));
+
+        coreAmount = coreTreasuryBalance * _percentage / 1000;
+
+        (wethAmount, collateralAmount) = estimateCoreToCollateral(coreAmount); 
+
+    }
+
+    //@dev Scales an amount by how close the wethTreasury is to dailyLiability
+    function scaleByPeg(uint amount) public view returns (uint scaledAmount) {
+
         FuturesGlobals memory globalsData = vault.getGlobals();
-        
-        require(_amount >= minimumDeposit || enforceMinimum == false, "amount less than minimum deposit");
-        require(userData.current_balance + _amount <= maxBalance, "max balance exceeded" );
-        require(userData.payouts <= maxPayouts, "max payouts exceeded");
 
-        uint _share = _amount / 100;
-        uint _treasuryAmount; 
-        uint _bufferAmount;
-        
-        //90% goes directly to the treasury
-        
-        _treasuryAmount = _share * 90;
-        _bufferAmount = _amount - _treasuryAmount;
+        uint dailyLiability = globalsData.current_balance * 5 / 1000; //0.5% (0.005) per day
 
-        //Transfer BUSD to the BUSD Treasury
-        TransferHelper.safeTransferFrom(address(collateralToken), _user, address(collateralTreasury), _treasuryAmount, 'Depot: deposit, transfer to treasury');
-        
-        //Transfer 10% to Bufferpool
-        TransferHelper.safeTransferFrom(address(collateralToken), _user, address(collateralBufferPool), _bufferAmount, 'Depot: deposit, transfer to buffer');
-        
+        uint wethTreasuryInCollateral = estimateCollateralAmount(registry.bnbReserveAddress().balance);
 
-        //update user stats
-        if (userData.exists == false) {
-            //attempt to migrate user
-            userData.exists = true;
-            globalsData.total_users += 1;  
+        scaledAmount = amount * wethTreasuryInCollateral / dailyLiability;
 
-            //commit updates
-            vault.commitUser(_user, userData);
-            vault.commitGlobals(globalsData);
+        scaledAmount = scaledAmount.min(amount);
 
-        } 
+    }
 
-        //if user has an existing balance see if we have to claim yield before proceeding
-        //optimistically claim yield before reset
-        //if there is a balance we potentially have yield
-        if (userData.current_balance > 0){
-            compoundYield(_user);
+    //@dev Scales amount by how recently a deposit has been made a given user
+    function depositAPR(address _user) public view returns (uint scaledAmount) {
 
-            //reload user data after a mutable function
-            userData = vault.getUser(_user); 
-            globalsData = vault.getGlobals();
+        FuturesUserAction memory userData = actionVault.getUser(_user);
+
+        uint share = bonusApr / bonusPeriod;
+
+        uint elapsed = block.timestamp.safeSub(userData.last_deposit);
+
+        if (elapsed < bonusPeriod){ //not over period
+            scaledAmount = bonusApr.safeSub(share * elapsed); 
+        } else {
+            scaledAmount = 0;
         }
 
-        //update user
-        userData.deposits += _amount;
-        userData.last_time = block.timestamp;
-        userData.current_balance += _amount;
-
-        globalsData.total_deposited += _amount; 
-        globalsData.current_balance += _amount;
-        globalsData.total_txs += 1;
-
-        //commit updates
-        vault.commitUser(_user, userData);
-        vault.commitGlobals(globalsData);
-
-        //events
-        emit Deposit(_user, _amount);
     }
 
-
-    //@dev Claims earned interest for the caller
-    function claim() nonReentrant external returns (bool success){
-        
-        //Only the owner of funds can claim funds
-        address _user = msg.sender;
-
-        FuturesUser memory userData = vault.getUser(_user);
-
-        //checks
-        require(
-            userData.exists,
-            "User is not registered"
-        );
-        require(
-            userData.current_balance > 0 ,
-            "balance is required to earn yield"
-        );
-
-        success = distributeYield(_user);
-      
-    }
-
-    //@dev Implements the IReferralReport interface which is called by the FarmEngine yield function back to the caller
-    function reward_distribution(address _referrer, address _user, uint _referrer_reward, uint _user_reward) external {
-        
-         //checks 
-        require(msg.sender == address(yieldEngine), "caller must be registered yield engine");
-        require(_referrer != address(0) && _user != address(0), "non-zero addresses required");
+    //@dev Checks if account is eligible for deposits
+    function isEligibleForDeposit(address _user) public view returns (bool eligible) {
 
         //Load data
         FuturesUser memory userData = vault.getUser(_user);
-        FuturesUser memory referrerData =  vault.getUser(_referrer);
-        FuturesGlobals memory globalsData = vault.getGlobals();
-         
-        //track exclusive rewards which are paid out via Stampede airdrops
-        referrerData.rewards += _referrer_reward;
-        userData.rewards += _user_reward;
 
-        //track total rewards
-        globalsData.total_rewards += _referrer_reward + _user_reward;
+        eligible = !isPaused() || userData.current_balance > 0;
+    }
 
-        //commit updates
-        vault.commitUser(_user, userData);
-        vault.commitUser(_referrer, referrerData);
-        vault.commitGlobals(globalsData);
+    //@dev Checks if account  is eligible for rainyday fund claim
+    function isEligibleForRDF(address _user) public  view returns (bool eligible, uint returnCode) {
+        FuturesUser memory userData = vault.getUser(_user);
+        FuturesRDFUser memory userRDFData = rdfVault.getUser(_user);
 
-        emit RewardDistribution(_referrer, _user, _referrer_reward, _user_reward);
+        //checks
+        
+        //User is not registered
+        if (!userData.exists){
+            return (false, 1);
+        }
+
+        //balance is required to earn yield
+        if(!(userData.current_balance > minimumDeposit * 2)){
+            return (false, 2);
+        }
+
+        //check time 
+        uint elapsed = block.timestamp - userRDFData.last_claim;
+        if(!(elapsed >= rdfCooldown)){
+            return (false, 3);
+        }
+
+        //success
+        return (true, 0);
+
+    }
+
+    //@dev Returns maximum RDF claim
+    function maxAvailableRDF() public view returns (uint _available, uint _availableWeth) {
+        _availableWeth = registry.rainyDayFundAddress().balance / rainyDayPercentage;
+        _available = estimateCollateralAmount(_availableWeth);
+
+    }
+
+    //@dev Returns maximum user specific RDF Info
+    function maxUserAvailableRDF(address _user) public view returns (uint _userAvailable, uint _eligible_claim, uint _remainingCooldown, uint _last_claim) {
+        (uint _maxAvailable,) = maxAvailableRDF();
+
+        FuturesUser memory userData = vault.getUser(_user);
+        FuturesRDFUser memory userRDFData = rdfVault.getUser(_user);
+
+        _last_claim = userRDFData.last_claim;
+
+        uint elapsed = block.timestamp - userRDFData.last_claim;
+
+        _remainingCooldown  = rdfCooldown.safeSub(elapsed);
+
+        _userAvailable = userData.current_balance / 2;
+
+        _eligible_claim = _userAvailable;
+
+        (bool eligible, ) = isEligibleForRDF(_user);
+
+        _userAvailable = (eligible) ? _userAvailable.min(_maxAvailable) : 0;
     }
 
 
     //@dev Returns tax bracket and adjusted amount based on the bracket 
-    function available (address _user) public view returns (uint256 _limiterRate, uint256 _adjustedAmount) {
+    function available(address _user) public view returns (uint256 _limiterRate, uint256 _adjustedAmount) {
+
+        (_limiterRate, _adjustedAmount) = availableUncapped(_user);
+        
+        //available should not be more than maxTreasuryPayoutPercentage
+        (,,uint _collateralAmount) = estimatePercentageTreasuryBalance(maxTreasuryPayoutPercentage);
+
+        _adjustedAmount = _adjustedAmount.min(_collateralAmount);
+
+    }
+
+    //@dev Returns tax bracket and adjusted amount based on the bracket 
+    function availableUncapped(address _user) public view returns (uint256 _limiterRate, uint256 _adjustedAmount) {
 
         //Load data
         FuturesUser memory userData = vault.getUser(_user);
 
         //calculate gross available
-        uint256 share;
+        uint share;
+
+        //max of referenceAPR or add personal bonus when severly below peg
+        uint totalApr = referenceApr.min(scaleByPeg(referenceApr) + depositAPR(_user)); 
 
         if(userData.current_balance > 0) {
             //Using 1e18 we capture all significant digits when calculating available divs
             share = userData.current_balance //payout is asymptotic and uses the current balance
-                    * referenceApr //convert to daily apr
+                    * totalApr //convert to daily apr
                     / (365 * 100e18)
                     / 24 hours; //divide the profit by payout rate and seconds in the day;
             _adjustedAmount = share * block.timestamp.safeSub(userData.last_time); 
@@ -1121,14 +1886,16 @@ contract FuturesEngine is Ownable, IReferralReport {
 
     }
 
-    //   Internal Functions  //
+
+    /// Internal Functions ////
 
     //@dev Checks if yield is available and distributes before performing additional operations
     //distributes only when yield is positive
     //inputs are validated by external facing functions 
-    function distributeYield(address _user) private returns (bool success) {
+    function distributeYield(address _user) internal returns (bool success) {
 
         FuturesUser memory userData = vault.getUser(_user);
+        FuturesUserAction memory userActionData = actionVault.getUser(_user);
         FuturesGlobals memory globalsData = vault.getGlobals();
         
         //get available
@@ -1144,32 +1911,100 @@ contract FuturesEngine is Ownable, IReferralReport {
         if (_amount > 0) {
 
             //transfer amount to user; mutable
-            _amount = yieldEngine.yield(_user, _amount);
+            uint _wethAmount = yield(_user, _amount);
 
             //reload data after a mutable function
             userData = vault.getUser(_user);
             globalsData = vault.getGlobals();
         
-            if (_amount > 0) { //second check with delivered yield
-                //user stats
-                userData.payouts += _amount;
-                userData.current_balance = userData.current_balance.safeSub(_amount);
-                userData.last_time = block.timestamp;
+            //user stats
+            userData.payouts += _amount;
+            userData.current_balance = userData.current_balance.safeSub(_amount);
+            userData.last_time = block.timestamp;
+            userActionData.last_claim = block.timestamp;
 
-                //total stats
-                globalsData.total_claimed += _amount;
-                globalsData.total_txs += 1;
-                globalsData.current_balance = globalsData.current_balance.safeSub(_amount);
+            //total stats
+            globalsData.total_claimed += _amount;
+            globalsData.total_txs += 1;
+            globalsData.current_balance = globalsData.current_balance.safeSub(_amount);
 
-                //commit updates
-                vault.commitUser(_user, userData);
-                vault.commitGlobals(globalsData);
+            //commit updates
+            vault.commitUser(_user, userData);
+            actionVault.commitUser(_user, userActionData);
 
-                //log events
-                emit Claim(_user, _amount);
+            vault.commitGlobals(globalsData);
 
-                return true;
-            }
+            //log events
+            emit Claim(_user, _amount, _wethAmount);
+
+            return true;
+
+        } 
+
+        //default
+        return false;
+    } 
+
+    //@dev Checks if yield is available and distributes before performing additional operations
+    //distributes only when yield is positive
+    //inputs are validated by external facing functions 
+    function distributeRDF(address _user, uint _amount) internal returns (bool success) {
+
+        FuturesUser memory userData = vault.getUser(_user);
+        FuturesUserAction memory userActionData = actionVault.getUser(_user);
+        FuturesGlobals memory globalsData = vault.getGlobals();
+        
+        FuturesRDFUser memory userRDFData = rdfVault.getUser(_user);
+        FuturesRDFGlobals memory globalsRDFData = rdfVault.getGlobals();
+
+        // payout remaining allowable divs if exceeds
+        if(userData.payouts + _amount > maxPayouts) {
+            _amount = maxPayouts.safeSub(userData.payouts);
+            _amount = _amount.min(userData.current_balance);  //withdraw up to the current balance
+        }
+
+        uint _liquidations = _amount * 2;
+
+        //attempt to payout yield and update stats;
+        if (_amount > 0) {
+
+            //transfer amount to user; mutable
+            uint _wethAmount = rainyDayPayout(_user, _amount);
+        
+            //user stats
+            //a rdf claim does not penalize your max payout; you lose time, but not the ability to earn
+            userData.payouts += _amount;
+            userData.current_balance = userData.current_balance.safeSub(_liquidations); 
+            
+            userData.last_time = block.timestamp;
+            userActionData.last_claim = block.timestamp;
+            
+            userRDFData.payouts += _amount;
+            userRDFData.last_claim = block.timestamp;    
+
+            //total stats
+            globalsData.total_claimed += _amount;
+            globalsData.total_txs += 1;
+            globalsData.current_balance = globalsData.current_balance.safeSub(_liquidations);
+            
+            globalsRDFData.total_claimed += _amount;
+            globalsRDFData.total_txs += 1;
+
+
+            //core commit updates
+            vault.commitUser(_user, userData);
+            actionVault.commitUser(_user, userActionData);
+            vault.commitGlobals(globalsData);
+
+            //rdf updates
+            rdfVault.commitUser(_user, userRDFData);
+            rdfVault.commitGlobals(globalsRDFData);
+
+
+            //log events
+            emit RDFClaim(_user, _amount, _wethAmount);
+
+            return true;
 
         } 
 
@@ -1179,7 +2014,7 @@ contract FuturesEngine is Ownable, IReferralReport {
 
     //@dev Checks if yield is available and compound before performing additional operations
     //compound only when yield is positive
-    function compoundYield(address _user) private returns (bool success) {
+    function compoundYield(address _user) internal returns (bool success) {
 
         FuturesUser memory userData = vault.getUser(_user);
         FuturesGlobals memory globalsData = vault.getGlobals();
@@ -1214,7 +2049,7 @@ contract FuturesEngine is Ownable, IReferralReport {
             vault.commitGlobals(globalsData);
 
             //log events
-            emit Claim(_user, _amount);
+            emit Claim(_user, _amount, 0);
             emit CompoundDeposit(_user, _amount);
 
             return true;
@@ -1225,6 +2060,248 @@ contract FuturesEngine is Ownable, IReferralReport {
         }
     } 
 
+    //@dev Claim and payout using the reserve
+    function yield(address _user, uint256 _amount)
+        internal
+        
+        returns (uint wethAmount)
+    {
+        if (_amount == 0) {
+            return 0;
+        }
+
+        wethAmount = estimateWethAmount(_amount);
+
+        uint coreAmount = estimateCoreAmount(wethAmount);
+
+        //if yield is greater than 1%
+        if (forceLiquidity && wethAmount > registry.bnbReserveAddress().balance / 100){
+            liquidateCore(registry.bnbReserveAddress(), coreAmount * 110 / 100);
+        }
+
+        wethTreasury.withdraw(_user, wethAmount, false);  //will fail if funds aren't available
+            
+        return wethAmount;
+    }
+
+    //@dev Payout using the rainyDayFund
+    function rainyDayPayout(address _user, uint256 _amount)
+        internal
+        
+        returns (uint _wethAmount)
+    {
+        
+        _wethAmount = estimateWethAmount(_amount); //based on all previous conversions in the block
+
+        rainyDayFund.withdraw(_user, _wethAmount, false);  //will fail if funds aren't available
+    
+    }
+
+    function buyForTreasury(uint _amount)  internal {
+        address[] memory path = new address[](2);
+
+        path[0] = collateralRouter.WETH();
+        path[1] = registry.coreAddress();
+
+        uint[] memory output =  oracle.consultAmountsOut(_amount, path);
+
+        uint minimum =  output[1] * slippage / 1000;
+
+
+        //buy immediately and send to the treasury
+        collateralRouter.swapExactETHForTokensSupportingFeeOnTransferTokens{value: _amount}(minimum, path, registry.coreTreasuryAddress(), block.timestamp);
+
+    }
+
+    //@dev liquidate core tokens from the treasury to the destination
+    function liquidateCore(address destination, uint256 _amount) internal returns (uint wethAmount) {
+   
+        //Convert from collateral to backed
+        address[] memory path = new address[](2);
+
+        path[0] = address(coreToken);
+        path[1] = collateralRouter.WETH();
+
+        //withdraw from treasury
+        coreTreasury.withdraw(_amount);
+        
+        //approve & swap
+        TransferHelper.safeApprove(address(coreToken), address(collateralRouter), _amount, 'FuturesEngine: liquidateCore, approve');
+
+        uint[] memory output =  oracle.consultAmountsOut(_amount, path);
+
+        uint minimumOut = output[1] * slippage / 1000;
+
+        uint initialBalance = destination.balance;
+
+        collateralRouter.swapExactTokensForETHSupportingFeeOnTransferTokens(
+            _amount,
+            minimumOut, 
+            path,
+            destination, 
+            block.timestamp 
+        );
+    
+        wethAmount = destination.balance - initialBalance;
+
+  }
+
+    function updatePaths() internal  {
+        address[] memory path = new address[](2);
+        
+        // BNB -> ELEPHANT
+        path[0] = collateralRouter.WETH();
+        path[1] = registry.coreAddress();
+        oracle.updatePath(path);
+
+        // BNB -> BTCB
+        path[1] = registry.BTCBAddress();
+        oracle.updatePath(path);
+
+        // BNB -> TRUNK
+        path[1] = registry.backedAddress();
+        oracle.updatePath(path);
+
+    }
+
+    ////  User Functions ////
+
+    //@dev Deposit BNB and get credit with dollar amount
+    //Is not available if the system is paused
+    function deposit() nonReentrant external payable {
+
+        //optimistically update price
+        updatePaths();
+        
+        uint _wethAmount = msg.value;
+        uint _amount =  estimateCollateralAmount(_wethAmount);
+        
+        //Only the key holder can invest their funds
+        address _user = msg.sender; 
+
+        FuturesUser memory userData = vault.getUser(_user);
+        FuturesUserAction memory userActionData = actionVault.getUser(_user);
+        FuturesGlobals memory globalsData = vault.getGlobals();
+
+        //if paused, require a balance
+        require(isEligibleForDeposit(_user), "DT1");
+        
+        require(_amount >= minimumDeposit, "DT2");
+        require(userData.current_balance + _amount <= maxBalance, "DT3" );
+        require(userData.payouts <= maxPayouts, "DT4");
+
+        //Deposit distribution accounting
+        uint defaultDepositDistribution = _wethAmount / 10;
+        uint _bnbReserveAmount = defaultDepositDistribution;
+        uint _btcTurbineAmount = defaultDepositDistribution;
+        uint _rainydayFundAmount = defaultDepositDistribution;
+        uint _trunkTurbineAmount = 2 * defaultDepositDistribution;
+        uint _trunkSuperChargerAmount = 4 * defaultDepositDistribution;
+        uint _treasuryAmount = _wethAmount - (_bnbReserveAmount +  _btcTurbineAmount + _rainydayFundAmount +  _trunkTurbineAmount + _trunkSuperChargerAmount);   
+        
+        //Send distributions to repos
+        payable(registry.bnbReserveAddress()).transfer(_bnbReserveAmount);
+        payable(registry.rainyDayFundAddress()).transfer(_rainydayFundAmount);
+        payable(registry.BTCTurbineAddress()).transfer(_btcTurbineAmount);
+        payable(registry.TRUNKTurbineAddress()).transfer(_trunkTurbineAmount);
+        payable(registry.TRUNKSuperChargerAddress()).transfer(_trunkSuperChargerAmount);
+
+        //Buy ELEPHANT
+        buyForTreasury(_treasuryAmount);
+        
+        //END WETH ACCOUNTING 
+
+        //update user stats
+        if (userData.exists == false) {
+            //attempt to migrate user
+            userData.exists = true;
+            globalsData.total_users += 1;  
+
+            //commit updates
+            vault.commitUser(_user, userData);
+            vault.commitGlobals(globalsData);
+
+        } 
+
+        //if user has an existing balance see if we have to claim yield before proceeding
+        //optimistically claim yield before reset
+        //if there is a balance we potentially have yield
+        if (userData.current_balance > 0){
+            compoundYield(_user);
+
+            //reload user data after a mutable function
+            userData = vault.getUser(_user); 
+            globalsData = vault.getGlobals();
+        }
+
+        //update user
+        userData.deposits += _amount;
+        userData.last_time = block.timestamp;
+        userData.current_balance += _amount;
+        userActionData.last_deposit = block.timestamp;
+
+        globalsData.total_deposited += _amount; 
+        globalsData.current_balance += _amount;
+        globalsData.total_txs += 1;
+
+        //commit updates
+        vault.commitUser(_user, userData);
+        actionVault.commitUser(_user, userActionData);
+
+        vault.commitGlobals(globalsData);
+
+        //events
+        emit Deposit(_user, _amount, msg.value);
+    }
+
+
+    //@dev Claims earned interest for the caller
+    function claim() nonReentrant external returns (bool success){
+
+        //optimistically update price
+        updatePaths();
+        
+        //Only the owner of funds can claim funds
+        address _user = msg.sender;
+
+        FuturesUser memory userData = vault.getUser(_user);
+
+        //checks
+        require(
+            userData.exists,
+            "CM1"
+        );
+        require(
+            userData.current_balance > 0 ,
+            "CM2"
+        );
+
+        success = distributeYield(_user);
+      
+    }
+
+    //@dev Claims earned interest for the caller
+    function claimRDF(uint _amount) nonReentrant external returns (bool success){
+
+        //optimistically update price
+        updatePaths();
+        
+        //Only the owner of funds can claim funds
+        address _user = msg.sender;
+
+        //Check eligibilty
+        (bool eligible, ) = isEligibleForRDF(_user);
+        require(eligible, "CF1");
+
+        //Check amount
+        (uint _available,,,) = maxUserAvailableRDF(_user);
+        require(_amount <= _available, "CF2");
+
+        success = distributeRDF(_user, _amount);
+      
+    }
+
+    
     //@dev Transfer account to another wallet address
     function transfer(address _newUser) nonReentrant external  {
 
@@ -1232,11 +2309,18 @@ contract FuturesEngine is Ownable, IReferralReport {
 
         FuturesUser memory userData = vault.getUser(_user);
         FuturesUser memory newData =  vault.getUser(_newUser);
+        FuturesUserAction memory userActionData = actionVault.getUser(_user);
+        FuturesUserAction memory newActionData = actionVault.getUser(_newUser);
+
         FuturesGlobals memory globalsData = vault.getGlobals();
 
+        FuturesRDFUser memory userRDFData = rdfVault.getUser(_user);
+        FuturesRDFUser memory newUserRDFData = rdfVault.getUser(_newUser);
+        
+
         //Only the owner can transfer
-        require(userData.exists, "user must exists");
-        require(newData.exists == false && _newUser != address(0), "new address must not exist");
+        require(userData.exists, "TR1");
+        require(newData.exists == false && _newUser != address(0), "TR2");
 
         //Transfer
         newData.exists = true;
@@ -1245,7 +2329,13 @@ contract FuturesEngine is Ownable, IReferralReport {
         newData.payouts = userData.payouts;
         newData.compound_deposits = userData.compound_deposits;
         newData.rewards = userData.rewards;
-        newData.last_time = userData.last_time; 
+        newData.last_time = userData.last_time;
+
+        newActionData.last_deposit = userActionData.last_deposit;
+        newActionData.last_claim = userActionData.last_claim; 
+
+        newUserRDFData.last_claim = userRDFData.last_claim;
+        newUserRDFData.payouts = userRDFData.payouts;
 
         //Zero out old account
         userData.exists = true; //once an account is created source streams are only counted once
@@ -1256,22 +2346,48 @@ contract FuturesEngine is Ownable, IReferralReport {
         userData.rewards = 0;
         userData.last_time = 0;
 
+        userActionData.last_deposit = 0;
+        userActionData.last_claim = 0;
+
+        userRDFData.last_claim = 0;
+        userRDFData.payouts = 0;
+
         //house keeping
         globalsData.total_txs += 1;
 
         //commit
         vault.commitUser(_user, userData);
         vault.commitUser(_newUser, newData);
+
+        actionVault.commitUser(_user, userActionData);
+        actionVault.commitUser(_newUser, newActionData);
+
+        rdfVault.commitUser(_user, userRDFData);
+        rdfVault.commitUser(_newUser, newUserRDFData);
+
         vault.commitGlobals(globalsData);
 
         //log
         emit Transfer(_user, _newUser, newData.current_balance);
 
     }
+
 }
 
 //@dev Simple onchain oracle for important Elephant Money smart contracts
 contract AddressRegistry {
+    address public constant TRUNKSuperChargerAddress = 
+        address(0xec8c93d29418b4D3E13EdB18cc6dBc24606D7305); //TRUNK Supercharger
+    address public constant rainyDayFundAddress = 
+        address(0xc6a42b74867D1F7049192FfB6d0A9D77696d18bb); //Rainy Day Fund
+    address public constant BTCTurbineAddress = 
+        address(0x6bEaDd1Bc88C0caad109f46Ba72e5842E442deD1); // BTC Turbine Proxy
+    address public constant TRUNKTurbineAddress = 
+        address(0x2E390C82116870f5f59B48Cdd05eAd3063A2cB89); //TRUNK Turbine Proxy
+    address public constant bnbReserveAddress = 
+        address(0x98F6c7c953Cf4cef0fd632b2509c9e349687FC92); //WETH Treasury
+    address public constant BTCBAddress = 
+        address(0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c);
     address public constant coreAddress =
         address(0xE283D0e3B8c102BAdF5E8166B73E02D96d92F688); //ELEPHANT
     address public constant coreTreasuryAddress =
@@ -1292,237 +2408,12 @@ contract AddressRegistry {
         address(0xf15A72B15fC4CAeD6FaDB1ba7347f6CCD1E0Aede); //TRUNK/BUSD LP
     address public constant routerAddress =
         address(0x10ED43C718714eb63d5aA57B78B54704E256024E);
+    address public constant chainlinkBNBAddress = 
+        address(0x0567F2323251f0Aab15c8dFb1967E4e8A7D42aeE); //BNB/USD Price
+    address public constant oracleAddress = address(0x5606ee12d741716c260fDA2f6C89EfDf60326D3C); //TWAPOracle
     //PCS Factory - 0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73
-}
-
-contract ElephantYieldEngine is Whitelist, IElephantYieldEngine {
-    using SafeMath for uint256;
-
-    AddressRegistry private registry;
-
-    ITreasury public immutable collateralBufferPool;
-    ITreasury public  immutable collateralTreasury;
-    ITreasury public  immutable coreTreasury;
-    IERC20 public immutable collateralToken;
-    IERC20 public immutable coreToken;
-
-    bool public forceLiquidity = true;
-
-    IUniswapV2Router02 public  collateralRouter;
-
-    IReferralData public referralData;
-    ISponsorData public sponsorData;
-
-    IPcsPeriodicTwapOracle public oracle;
-
-    event UpdateCollateralRouter(address indexed addr);
-    event NewSponsorship(
-        address indexed from,
-        address indexed to,
-        uint256 amount
-    );
-
-    event UpdateOracle(address indexed addr);
-    event UpdateReferralData(address indexed addr);
-    event UpdateSponsorData(address indexed addr);
-    event UpdateForceLiquidity(bool value, bool new_value);
-
-    /* ========== INITIALIZER ========== */
-
-    constructor() Ownable() {
-        //init reg
-        registry = new AddressRegistry();
-
-        //setup the core tokens
-        coreToken = IERC20(registry.coreAddress());
-        collateralToken = IERC20(registry.collateralAddress());
-
-        //the collateral router can be upgraded in the future
-        collateralRouter = IUniswapV2Router02(registry.routerAddress());
-
-        //treasury setup
-        collateralTreasury = ITreasury(registry.collateralTreasuryAddress());
-
-        collateralBufferPool = ITreasury(registry.collateralBufferAddress());
-        coreTreasury = ITreasury(registry.coreTreasuryAddress());
-       
-    }
-
-    //@dev Update the referral data for partner rewards
-    function updateReferralData(address referralDataAddress)
-        external
-        onlyOwner
-    {
-        require(
-            referralDataAddress != address(0),
-            "Require valid non-zero addresses"
-        );
-
-        referralData = IReferralData(referralDataAddress);
-
-        emit UpdateReferralData(referralDataAddress);
-    }
-
-    //@dev Update the sponsor data used to distribute gifted / rewarded bonds
-    function updateSponsorData(address sponsorDataAddress) external onlyOwner {
-        require(
-            sponsorDataAddress != address(0),
-            "Require valid non-zero addresses"
-        );
-
-        sponsorData = ISponsorData(sponsorDataAddress);
-
-        emit UpdateSponsorData(sponsorDataAddress);
-    }
-
-    //@dev Forces the yield engine to topoff liquidity in the collateral buffer on every tx
-    //a test harness
-    function updateForceLiquidity(bool _force) external onlyOwner {
-        
-        emit UpdateForceLiquidity(forceLiquidity, _force);
-        forceLiquidity = _force;
-    }
-
-    //@dev Update Core collateral liquidity can move from one contract location to another across major PCS releases
-    function updateCollateralRouter(address _router) public onlyOwner {
-        require(_router != address(0), "Router must be set");
-        collateralRouter = IUniswapV2Router02(_router);
-
-        emit UpdateCollateralRouter(_router);
-    }
-
-    //@dev Update the oracle used for price info
-    function updateOracle(address oracleAddress) external onlyOwner {
-        require(
-            oracleAddress != address(0),
-            "Require valid non-zero addresses"
-        );
-
-        //the main oracle 
-        oracle = IPcsPeriodicTwapOracle(oracleAddress);
-
-        address[] memory path = new address[](3);
-        path[0] = address(collateralToken);
-        path[1] = collateralRouter.WETH();
-        path[2] = address(coreToken);
-
-        //make sure our path for liquidation is registered
-        oracle.updatePath(path);
-
-        emit UpdateOracle(oracleAddress);
-    }
-
-    /********** Whitelisted Fuctions **************************************************/
-
-    //@dev Claim and payout using the reserve
-    //Sender must implement IReferralReport to succeed
-    function yield(address _user, uint256 _amount)
-        external
-        onlyWhitelisted
-        returns (uint yieldAmount)
-    {
-        if (_amount == 0) {
-            return 0;
-        }
-
-        //CollateralBuffer should be large enough to support daily yield
-        uint256 cbShare = collateralToken.balanceOf(address(collateralBufferPool)) / 100;
-
-        //if yield is greater than 1%
-        if (_amount > cbShare || forceLiquidity) {
-            (, uint _coreAmount) = estimateCollateralToCore(_amount);
-            liquidateCore(address(collateralBufferPool), _coreAmount * 110 / 100); //Add an additional 10% to the BufferPool
-            
-            //account for TWAP inconsistency; the end user balance will only go down by the delivered amount
-            //the buffer will never be overrun
-            _amount = _amount.min(collateralToken.balanceOf(address(collateralBufferPool)));  
-        }
-
-        //Calculate user referral rewards
-        uint _referrals = _amount / 100;
-        
-        //Add referral bonus for referrer, 1%
-        processReferralBonus(_user, _referrals, msg.sender);
-
-        //Send collateral to user
-        collateralBufferPool.withdrawTo(_user, _amount); 
-            
-        return _amount;
-    }
-
-    /********** Internal Fuctions **************************************************/
-
-    //@dev Add referral bonus if applicable
-    function processReferralBonus(address _user, uint256 _amount, address referral_report) private {
-        address _referrer = referralData.referrerOf(_user);
-
-        //Need to have an upline
-        if (_referrer == address(0)) {
-            return;
-        }
-
-        //partners split 50/50
-        uint256 _share = _amount.div(2);
-
-        //We operate side effect free and just add to pending sponsorships
-        sponsorData.add(_referrer, _share);
-        sponsorData.add(_user, _share);
-
-        //Report the reward distribution to the caller
-        IReferralReport report = IReferralReport(referral_report);
-        report.reward_distribution(_referrer, _user, _share, _share);
-
-        emit NewSponsorship(_user, _referrer, _share);
-        emit NewSponsorship(_referrer, _user, _share);
-    } 
-
-    function estimateCollateralToCore(uint collateralAmount) public view returns (uint wethAmount, uint coreAmount) {
-         //Convert from collateral to core using oracle
-        address[] memory path = new address[](3);
-        path[0] = address(collateralToken);
-        path[1] = collateralRouter.WETH();
-        path[2] = address(coreToken);
-
-        uint[] memory amounts = oracle.consultAmountsOut(collateralAmount, path);
-
-        //Use core router to get amount of coreTokens required to cover 
-        wethAmount = amounts[1];
-        coreAmount = amounts[2];
-    }
-
-
-    //@dev liquidate core tokens from the treasury to the destination
-    function liquidateCore(address destination, uint256 _amount) private returns (uint collateralAmount) {
-   
-        //Convert from collateral to backed
-        address[] memory path = new address[](3);
-
-        path[0] = address(coreToken);
-        path[1] = collateralRouter.WETH();
-        path[2] = address(collateralToken);
-
-        //withdraw from treasury
-        coreTreasury.withdraw(_amount);
-        
-        //approve & swap
-        TransferHelper.safeApprove(address(coreToken), address(collateralRouter), _amount, 'ElephantYieldEngine: liquidateCore, approve');
-
-        uint initialBalance = collateralToken.balanceOf(destination);
-
-        collateralRouter.swapExactTokensForTokensSupportingFeeOnTransferTokens(
-            _amount,
-            0, 
-            path,
-            destination, 
-            block.timestamp 
-        );
     
-        collateralAmount = collateralToken.balanceOf(destination).safeSub(initialBalance);
-
-  }
-
 }
-
 
 /**
  * @title SafeMath

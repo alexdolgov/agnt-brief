@@ -5,7 +5,7 @@ pragma solidity ^0.8.24;
 import { IAuthorizer } from "@balancer-labs/v3-interfaces/contracts/vault/IAuthorizer.sol";
 import { IVault } from "@balancer-labs/v3-interfaces/contracts/vault/IVault.sol";
 
-import { CommonAuthentication } from "./CommonAuthentication.sol";
+import { Authentication } from "@balancer-labs/v3-solidity-utils/contracts/helpers/Authentication.sol";
 
 /**
  * @notice Base contract suitable for Singleton contracts (e.g., pool factories) that have permissioned functions.
@@ -13,20 +13,20 @@ import { CommonAuthentication } from "./CommonAuthentication.sol";
  * functions, to avoid conflicts when multiple contracts (or multiple versions of the same contract) use the same
  * function name.
  */
-abstract contract SingletonAuthentication is CommonAuthentication {
+abstract contract SingletonAuthentication is Authentication {
+    IVault private immutable _vault;
+
     // Use the contract's own address to disambiguate action identifiers.
-    constructor(IVault vault) CommonAuthentication(vault, bytes32(uint256(uint160(address(this))))) {
-        // solhint-disable-previous-line no-empty-blocks
+    constructor(IVault vault) Authentication(bytes32(uint256(uint160(address(this))))) {
+        _vault = vault;
     }
 
     /**
      * @notice Get the address of the Balancer Vault.
-     * @dev This function is virtual to allow for overriding in derived contracts which also inherits contracts with
-     * `getVault()` definition.
      * @return vault An interface pointer to the Vault
      */
-    function getVault() public view virtual returns (IVault) {
-        return _getVault();
+    function getVault() public view returns (IVault) {
+        return _vault;
     }
 
     /**
@@ -35,5 +35,13 @@ abstract contract SingletonAuthentication is CommonAuthentication {
      */
     function getAuthorizer() public view returns (IAuthorizer) {
         return getVault().getAuthorizer();
+    }
+
+    function _canPerform(bytes32 actionId, address account) internal view override returns (bool) {
+        return getAuthorizer().canPerform(actionId, account, address(this));
+    }
+
+    function _canPerform(bytes32 actionId, address account, address where) internal view returns (bool) {
+        return getAuthorizer().canPerform(actionId, account, where);
     }
 }

@@ -12,7 +12,7 @@
       "address": "0xc1a64500e035d9159c8826e982dfb802003227f0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "gnosis",
@@ -20,7 +20,7 @@
       "address": "0x6ee18fbb1bbcc5cf700cd75ea1aef2bb21e3cb3f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "arbitrum",
@@ -28,7 +28,7 @@
       "address": "0x4bb42f71cab7bd13e9f958da4351b9fa2d3a42ff",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "avalanche",
@@ -36,7 +36,7 @@
       "address": "0x25ea7b202cd8447e8e6f4a7c59b19c66dfef1925",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "avalanche",
@@ -44,7 +44,7 @@
       "address": "0x3beb058de1a25dd24223fd9e1796df8589429ace",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

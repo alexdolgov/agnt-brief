@@ -1,7 +1,7 @@
 {
   "component": "CLGauge-3",
   "main_contract": "CLGauge",
-  "source_file_count": 24,
+  "source_file_count": 22,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,7 +9,7 @@
     {
       "chain": "optimism",
       "chain_id": 10,
-      "address": "0x9b23957290d8e4709fb1e1512edc29e17c17dc99",
+      "address": "0xb5f7bd1c65437f789b62cbe98ef16cd9f1fc4b26",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

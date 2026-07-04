@@ -19,12 +19,6 @@ interface ICauldronV2 {
             uint64
         );
 
-    function BORROW_OPENING_FEE() external view returns (uint256);
-
-    function COLLATERIZATION_RATE() external view returns (uint256);
-
-    function LIQUIDATION_MULTIPLIER() external view returns (uint256);
-
     function totalCollateralShare() external view returns (uint256);
 
     function bentoBox() external view returns (address);

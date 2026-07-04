@@ -12,7 +12,7 @@
       "address": "0xab9f53c36b9c82abbe397742d4a0ad75df33241c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "chain-146",
@@ -20,7 +20,7 @@
       "address": "0xc3c4583f14d6c0499ddde96de774ff66bcaf1790",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

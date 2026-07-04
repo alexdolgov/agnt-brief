@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "pickle",
-  "generated_at": "2026-07-03T21:06:42.314Z",
+  "generated_at": "2026-07-04T11:05:43.975Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d094",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -54,9 +54,9 @@
     }
   },
   "topography": {
-    "project_purpose": "Yield Aggregator. Structurally: 33 project-authored contract(s) across 4 chain(s); 23 ERC20 tokens, 1 ERC721 NFT; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 5 common project-authored base contract(s) (erc20detailed, structs, boringownabledata). Dominant framework: openzeppelin.",
-    "product_family_count": 4,
+    "project_purpose": "Yield Aggregator. Structurally: 39 project-authored contract(s) across 5 chain(s); 27 ERC20 tokens, 1 ERC721 NFT; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 5 functional families. Its contracts share 5 common project-authored base contract(s) (erc20detailed, structs, boringownabledata). Dominant framework: openzeppelin.",
+    "product_family_count": 5,
     "total_contracts_indexed": 1186,
     "live_contracts": 67,
     "inactive_contracts": 0,

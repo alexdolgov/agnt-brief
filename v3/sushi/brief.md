@@ -5,7 +5,7 @@
 - Project: Sushi (`sushi`)
 - Website: [https://sushi.com/](https://sushi.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:57.289Z
+- Generated: 2026-07-04T11:05:46.642Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-f007
 - Chains: arbitrum, arbitrum-nova, avalanche, base, blast, bsc, ethereum, fantom, gnosis, harmony, heco, kava, linea, metis, moonriver, optimism, polygon, polygon-zkevm, scroll, sonic
 - Contract surface: 247 unique implementations (363 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-Dexs. Structurally: 131 project-authored contract(s) across 13 chain(s); 11 ERC20 tokens, 7 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Dexs. Structurally: 207 project-authored contract(s) across 14 chain(s); 12 ERC20 tokens, 15 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 7 functional families. Its contracts share 27 common project-authored base contract(s) (misoaccesscontrols, misoadminaccess, safetransfer). Dominant framework: openzeppelin.
+The protocol comprises 7 functional families. Its contracts share 37 common project-authored base contract(s) (bentoadapter, immutablestate, tokenadapter). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

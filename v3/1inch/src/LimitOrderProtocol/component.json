@@ -21,7 +21,7 @@
       "address": "0xf667e1626a463a80e45647977d6fdc88923221a2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",

@@ -5,7 +5,7 @@
 - Project: LlamaPay (`llamapay`)
 - Website: [https://llamapay.io](https://llamapay.io)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:21.647Z
+- Generated: 2026-07-04T11:05:42.073Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-43c7
 - Chains: arbitrum, avalanche, base, berachain, bsc, cronos, ethereum, fantom, gnosis, metis, optimism, polygon, sonic, zora
 - Contract surface: 10 unique implementations (39 raw deployments)
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Payments. Structurally: 6 project-authored contract(s) across 5 chain(s); built on solmate.
+Payments. Structurally: 14 project-authored contract(s) across 8 chain(s); built on solmate.
 
 ### Architecture
 

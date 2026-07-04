@@ -2,7 +2,7 @@
   "component": "TapFab",
   "main_contract": "TapFab",
   "source_file_count": 3,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +12,15 @@
       "address": "0x521c420c2a2b461034becbb41d4888b68951f14f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc2baca5300b95ab18eddd9ef3070a0945298ab50",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

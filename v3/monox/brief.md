@@ -5,7 +5,7 @@
 - Project: MonoX (`monox`)
 - Website: [https://monox.finance/](https://monox.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:30.255Z
+- Generated: 2026-07-04T11:05:43.943Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-d640
 - Chains: ethereum, polygon
 - Contract surface: 42 unique implementations (56 raw deployments)
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Dexs. Structurally: 66 project-authored contract(s) across 2 chain(s); 8 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Dexs. Structurally: 69 project-authored contract(s) across 2 chain(s); 10 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 

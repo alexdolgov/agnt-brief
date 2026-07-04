@@ -33,7 +33,7 @@
 | ethereum | `0x29e3b0e8df4ee3f71a62c34847c34e139fc0b297` | SplitFunds | impl | inactive | no |
 | ethereum | `0x2a24bb027d7fe2a62e39871187d644daf03406f2` | stkCvxCrvDistributorZaps | impl | live | no |
 | ethereum | `0x2a893bb0f62e0a4a5e104753dd88fe1773165787` | RAAC_CoW_Harvester | impl | live | no |
-| ethereum | `0x2c5e808fca6d8299ce194e12ed728f0fdbbf06c8` | GenericDistributor | impl | live | no |
+| ethereum | `0x2c5e808fca6d8299ce194e12ed728f0fdbbf06c8` | GenericDistributor-2 | impl | live | no |
 | ethereum | `0x2dce36d00bb398cb01390a0769260b84edded929` | FXSSwapper | impl | inactive | no |
 | ethereum | `0x2f66e12d94bdac080604768383e65a234dcf775c` | stkCvxCrvDistributorZaps | impl | live | no |
 | ethereum | `0x3074e38941c52a466a228e451e21a0c34607ac3c` | stkCvxCrvMigration | impl | inactive | no |
@@ -75,7 +75,7 @@
 | ethereum | `0x63f0797015489d407fc2ac7e3891467e1ed0166c` | CvxFxsStrategyBase | impl | live | no |
 | ethereum | `0x6508ef65b0bd57eabd0f1d52685a70433b2d290b` | Treasury | impl | live | no |
 | ethereum | `0x6753f23905f15376429e6f0c381fcc4862e48222` | PCvxZaps | impl | inactive | no |
-| ethereum | `0x6788234f40931ca615b0d221c1afbf0ec07afcc5` | GenericDistributor-2 | impl | live | no |
+| ethereum | `0x6788234f40931ca615b0d221c1afbf0ec07afcc5` | GenericDistributor | impl | live | no |
 | ethereum | `0x67c542c99fca130fd0a830794ca9f46143ceb9c7` | AuraBalStrategy | impl | inactive | no |
 | ethereum | `0x68b56567af308fe8d94876ab0fe88541ed025e1c` | DistributorZaps-2 | impl | live | no |
 | ethereum | `0x6ed9c171e02de08aaedf0fc1d589923d807061d6` | GnosisSafeProxyFactory | proxy | live | no |
@@ -118,11 +118,11 @@
 | ethereum | `0x9bc7c6ad7e7cf3a6fcb58fb21e27752ac1e53f99` | GnosisSafeProxyFactory | proxy | live | no |
 | ethereum | `0x9bfd08d7b3cc40129132a17b4d5b9ea3351464bd` | stkCvxPrismaVault | impl | live | no |
 | ethereum | `0x9d37a22cec2f6b3635c61c253d192e68e85b1790` | StashController | impl | inactive | no |
-| ethereum | `0x9da701a9b76e0dd136d3508cb60a4c436dda25e4` | CVXMerkleDistributor | impl | live | no |
+| ethereum | `0x9da701a9b76e0dd136d3508cb60a4c436dda25e4` | GenericDistributor | impl | live | no |
 | ethereum | `0x9eaefbecb59ce28c24ca4f5a1b667626419a5c46` | MerkleStash | impl | inactive | no |
 | ethereum | `0x9ef0b5af11a5309f08e69771b735324afa266c6f` | PCvxZaps | impl | inactive | no |
 | ethereum | `0xa0f1024bad722cf6c757b230fb88286dfbbf3bf7` | LockedBalanceChecker | impl | inactive | no |
-| ethereum | `0xa1fdfcab1c53e6f80439462f7f394c1f2ba65981` | PirexDistributorZaps | impl | live | no |
+| ethereum | `0xa1fdfcab1c53e6f80439462f7f394c1f2ba65981` | PirexDistributorZaps-2 | impl | live | no |
 | ethereum | `0xa3a8749896ef4185a26a2a23f04f722c157288ba` | raac_vault | impl | live | no |
 | ethereum | `0xa83043df401346a67eddeb074679b4570b956183` | MerkleDistributorV2 | impl | inactive | no |
 | ethereum | `0xa9cabe82816caafaf514045259eafad1060241fb` | BBUSDHandler | impl | inactive | no |
@@ -160,7 +160,7 @@
 | ethereum | `0xd2b650143eb80c779b427e2d12b87bbf53216c19` | stkCvxCrvDistributorZaps | impl | live | no |
 | ethereum | `0xd52ca71aafa4d2590aac1e35e3005242dd31e5ed` | UnionZap-2 | impl | live | no |
 | ethereum | `0xd6fc1ecd9965ba9cac895654979564a291c74c29` | AuraBalVault | impl | live | no |
-| ethereum | `0xd835cdedc20ca3075f86dea4e0d914499d0c5b25` | stkCvxCrvZaps | impl | live | no |
+| ethereum | `0xd835cdedc20ca3075f86dea4e0d914499d0c5b25` | stkCvxCrvZaps-2 | impl | live | no |
 | ethereum | `0xd94b0763dadd691a1e9688cf0ef8238d95422154` | PrismaSwapper | impl | inactive | no |
 | ethereum | `0xdd5eb7d90f856f0df11ba59876a8981cebe4bc04` | AddressRegistry | impl | inactive | no |
 | ethereum | `0xde2bef0a01845257b4aef2a2eaa48f6eaeafa8b7` | stkCvxCrvVault | impl | live | no |

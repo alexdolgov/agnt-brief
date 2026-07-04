@@ -48,30 +48,6 @@ interface IAutopilotRouter is IAutopilotRouterBase {
     ) external payable returns (uint256 sharesOut);
 
     /**
-     * *************************   Withdraw   **********************************
-     */
-
-    /**
-     * @notice withdraw `amount` to a AutopoolETH.
-     * @param fromVault The AutopoolETH to withdraw assets from.
-     * @param toVault The AutopoolETH to deposit assets to.
-     * @param to The destination of ownership shares.
-     * @param amount The amount of assets to withdraw from fromVault.
-     * @param maxSharesIn The max amount of fromVault shares withdrawn by caller.
-     * @param minSharesOut The min amount of toVault shares received by `to`.
-     * @return sharesOut the amount of shares received by `to`.
-     * @dev throws MaxSharesError, MinSharesError
-     */
-    function withdrawToDeposit(
-        IAutopool fromVault,
-        IAutopool toVault,
-        address to,
-        uint256 amount,
-        uint256 maxSharesIn,
-        uint256 minSharesOut
-    ) external payable returns (uint256 sharesOut);
-
-    /**
      * *************************   Redeem    ********************************
      */
 

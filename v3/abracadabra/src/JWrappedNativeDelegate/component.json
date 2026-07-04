@@ -2,7 +2,7 @@
   "component": "JWrappedNativeDelegate",
   "main_contract": "JWrappedNativeDelegate",
   "source_file_count": 3,
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +12,23 @@
       "address": "0x267a4576293d55b53c769606e886e1f343149df5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x81b53932b3fa037a7d1d649a3c7fc0baaa3d9136",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd915fdb10530ef2a8337b4b0bb33f1b0bc015531",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

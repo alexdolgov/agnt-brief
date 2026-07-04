@@ -5,7 +5,7 @@
 - Project: Pickle (`pickle`)
 - Website: [https://pickle.finance/](https://pickle.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:42.314Z
+- Generated: 2026-07-04T11:05:43.975Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-d094
 - Chains: arbitrum, ethereum, metis, optimism, polygon
 - Contract surface: 1145 unique implementations (1186 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-Yield Aggregator. Structurally: 33 project-authored contract(s) across 4 chain(s); 23 ERC20 tokens, 1 ERC721 NFT; built on openzeppelin.
+Yield Aggregator. Structurally: 39 project-authored contract(s) across 5 chain(s); 27 ERC20 tokens, 1 ERC721 NFT; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 4 functional families. Its contracts share 5 common project-authored base contract(s) (erc20detailed, structs, boringownabledata). Dominant framework: openzeppelin.
+The protocol comprises 5 functional families. Its contracts share 5 common project-authored base contract(s) (erc20detailed, structs, boringownabledata). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

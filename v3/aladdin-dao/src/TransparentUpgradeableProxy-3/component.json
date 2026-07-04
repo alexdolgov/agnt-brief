@@ -5,18 +5,15 @@
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
-    "https://aladdin.club/audits/AladdinDao_V3_Report_Secbit.pdf",
-    "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/PeckShield-Audit-Report-AladdinDAO-Concentrator-v1.0-20220704.pdf",
-    "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_Concentrator_IFO_Report_v1.2_20220701.pdf",
-    "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_Concentrator_Report_v1.1.pdf"
+    "https://github.com/AladdinDAO/aladdin-v3-contracts/blob/main/audit-reports/SECBIT_AladdinDAO_aFXS_Report.pdf"
   ],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xc8ff37f7d057df1bb9ad681b53fa4726f268e0e8",
+      "address": "0xd6e3bb7b1d6fa75a71d48cfb10096d59abbf99e1",
       "is_proxy": true,
-      "implementation_address": "0xbab0ee407c0ea76d4087c6a69deddf3050d5c8dd",
+      "implementation_address": "0x7fba1017c09c38b9da13460f5bc4dc4a2c0c1806",
       "liveness": "live"
     }
   ]

@@ -306,234 +306,97 @@ contract AlchemistV2 is IAlchemistV2, Initializable, Multicall, Mutex {
 
     /// @inheritdoc IAlchemistV2AdminActions
     function setSentinel(address sentinel, bool flag) external override {
-        _onlyAdmin();
-        sentinels[sentinel] = flag;
-        emit SentinelSet(sentinel, flag);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
     function setKeeper(address keeper, bool flag) external override {
-        _onlyAdmin();
-        keepers[keeper] = flag;
-        emit KeeperSet(keeper, flag);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
     function addUnderlyingToken(address underlyingToken, UnderlyingTokenConfig calldata config) external override lock {
-        _onlyAdmin();
-        _checkState(!_supportedUnderlyingTokens.contains(underlyingToken));
-
-        uint8 tokenDecimals = TokenUtils.expectDecimals(underlyingToken);
-        uint8 debtTokenDecimals = TokenUtils.expectDecimals(debtToken);
-
-        _checkArgument(tokenDecimals <= debtTokenDecimals);
-
-        _underlyingTokens[underlyingToken] = UnderlyingTokenParams({
-            decimals:         tokenDecimals,
-            conversionFactor: 10**(debtTokenDecimals - tokenDecimals),
-            enabled:          false
-        });
-
-        _repayLimiters[underlyingToken] = Limiters.createLinearGrowthLimiter(
-            config.repayLimitMaximum,
-            config.repayLimitBlocks,
-            config.repayLimitMinimum
-        );
-
-        _liquidationLimiters[underlyingToken] = Limiters.createLinearGrowthLimiter(
-            config.liquidationLimitMaximum,
-            config.liquidationLimitBlocks,
-            config.liquidationLimitMinimum
-        );
-
-        _supportedUnderlyingTokens.add(underlyingToken);
-
-        emit AddUnderlyingToken(underlyingToken);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
     function addYieldToken(address yieldToken, YieldTokenConfig calldata config) external override lock {
-        _onlyAdmin();
-        _checkArgument(config.maximumLoss <= BPS);
-        _checkArgument(config.creditUnlockBlocks > 0);
-
-        _checkState(!_supportedYieldTokens.contains(yieldToken));
-
-        ITokenAdapter adapter = ITokenAdapter(config.adapter);
-
-        _checkState(yieldToken == adapter.token());
-        _checkSupportedUnderlyingToken(adapter.underlyingToken());
-
-        _yieldTokens[yieldToken] = YieldTokenParams({
-            decimals:              TokenUtils.expectDecimals(yieldToken),
-            underlyingToken:       adapter.underlyingToken(),
-            adapter:               config.adapter,
-            maximumLoss:           config.maximumLoss,
-            maximumExpectedValue:  config.maximumExpectedValue,
-            creditUnlockRate:      FIXED_POINT_SCALAR / config.creditUnlockBlocks,
-            activeBalance:         0,
-            harvestableBalance:    0,
-            totalShares:           0,
-            expectedValue:         0,
-            accruedWeight:         0,
-            pendingCredit:         0,
-            distributedCredit:     0,
-            lastDistributionBlock: 0,
-            enabled:               false
-        });
-
-        _supportedYieldTokens.add(yieldToken);
-
-        TokenUtils.safeApprove(yieldToken, config.adapter, type(uint256).max);
-        TokenUtils.safeApprove(adapter.underlyingToken(), config.adapter, type(uint256).max);
-
-        emit AddYieldToken(yieldToken);
-        emit TokenAdapterUpdated(yieldToken, config.adapter);
-        emit MaximumLossUpdated(yieldToken, config.maximumLoss);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
     function setUnderlyingTokenEnabled(address underlyingToken, bool enabled) external override {
-        _onlySentinelOrAdmin();
-        _checkSupportedUnderlyingToken(underlyingToken);
-        _underlyingTokens[underlyingToken].enabled = enabled;
-        emit UnderlyingTokenEnabled(underlyingToken, enabled);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
     function setYieldTokenEnabled(address yieldToken, bool enabled) external override {
-        _onlySentinelOrAdmin();
-        _checkSupportedYieldToken(yieldToken);
-        _yieldTokens[yieldToken].enabled = enabled;
-        emit YieldTokenEnabled(yieldToken, enabled);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
     function configureRepayLimit(address underlyingToken, uint256 maximum, uint256 blocks) external override {
-        _onlyAdmin();
-        _checkSupportedUnderlyingToken(underlyingToken);
-        _repayLimiters[underlyingToken].update();
-        _repayLimiters[underlyingToken].configure(maximum, blocks);
-        emit RepayLimitUpdated(underlyingToken, maximum, blocks);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
     function configureLiquidationLimit(address underlyingToken, uint256 maximum, uint256 blocks) external override {
-        _onlyAdmin();
-        _checkSupportedUnderlyingToken(underlyingToken);
-        _liquidationLimiters[underlyingToken].update();
-        _liquidationLimiters[underlyingToken].configure(maximum, blocks);
-        emit LiquidationLimitUpdated(underlyingToken, maximum, blocks);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
     function setTransmuter(address value) external override {
-        _onlyAdmin();
-        _checkArgument(value != address(0));
-        transmuter = value;
-        emit TransmuterUpdated(value);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
     function setMinimumCollateralization(uint256 value) external override {
-        _onlyAdmin();
-        _checkArgument(value >= 1e18);
-        minimumCollateralization = value;
-        emit MinimumCollateralizationUpdated(value);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
     function setProtocolFee(uint256 value) external override {
-        _onlyAdmin();
-        _checkArgument(value <= BPS);
-        protocolFee = value;
-        emit ProtocolFeeUpdated(value);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
     function setProtocolFeeReceiver(address value) external override {
-        _onlyAdmin();
-        _checkArgument(value != address(0));
-        protocolFeeReceiver = value;
-        emit ProtocolFeeReceiverUpdated(value);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
     function configureMintingLimit(uint256 maximum, uint256 rate) external override {
-        _onlyAdmin();
-        _mintingLimiter.update();
-        _mintingLimiter.configure(maximum, rate);
-        emit MintingLimitUpdated(maximum, rate);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
     function configureCreditUnlockRate(address yieldToken, uint256 blocks) external override {
-        _onlyAdmin();
-        _checkArgument(blocks > 0);
-        _checkSupportedYieldToken(yieldToken);
-        _yieldTokens[yieldToken].creditUnlockRate = FIXED_POINT_SCALAR / blocks;
-        emit CreditUnlockRateUpdated(yieldToken, blocks);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
     function setTokenAdapter(address yieldToken, address adapter) external override {
-        _onlyAdmin();
-        _checkState(yieldToken == ITokenAdapter(adapter).token());
-        _checkSupportedYieldToken(yieldToken);
-        _yieldTokens[yieldToken].adapter = adapter;
-        TokenUtils.safeApprove(yieldToken, adapter, type(uint256).max);
-        TokenUtils.safeApprove(ITokenAdapter(adapter).underlyingToken(), adapter, type(uint256).max);
-        emit TokenAdapterUpdated(yieldToken, adapter);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
     function setMaximumExpectedValue(address yieldToken, uint256 value) external override {
-        _onlyAdmin();
-        _checkSupportedYieldToken(yieldToken);
-        _yieldTokens[yieldToken].maximumExpectedValue = value;
-        emit MaximumExpectedValueUpdated(yieldToken, value);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
     function setMaximumLoss(address yieldToken, uint256 value) external override {
-        _onlyAdmin();
-        _checkArgument(value <= BPS);
-        _checkSupportedYieldToken(yieldToken);
-
-        _yieldTokens[yieldToken].maximumLoss = value;
-
-        emit MaximumLossUpdated(yieldToken, value);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
     function snap(address yieldToken) external override lock {
-        _onlyAdmin();
-        _checkSupportedYieldToken(yieldToken);
-
-        uint256 expectedValue = convertYieldTokensToUnderlying(yieldToken, _yieldTokens[yieldToken].activeBalance);
-
-        _yieldTokens[yieldToken].expectedValue = expectedValue;
-
-        emit Snap(yieldToken, expectedValue);
-    }
-
-    /// @inheritdoc IAlchemistV2AdminActions
-    function sweepRewardTokens(address rewardToken, address yieldToken) external override lock {
-        _onlyKeeper();
-
-        if (_supportedYieldTokens.contains(rewardToken) || _supportedUnderlyingTokens.contains(rewardToken)) {
-            revert UnsupportedToken(rewardToken);
-        }
-
-        msg.sender.delegatecall(abi.encodeWithSignature("claim(address)", yieldToken));
-
-        TokenUtils.safeTransfer(rewardToken, msg.sender, TokenUtils.safeBalanceOf(rewardToken, address(this)));
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
     function setTransferAdapterAddress(address transferAdapterAddress) external override lock {
-        _onlyAdmin();
-        transferAdapter = transferAdapterAddress;
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2AdminActions
@@ -541,31 +404,22 @@ contract AlchemistV2 is IAlchemistV2, Initializable, Multicall, Mutex {
         address owner, 
         int256 debt
     ) external override lock {
-        _onlyTransferAdapter();
-        _poke(owner);
-        _updateDebt(owner, debt);
-        _validate(owner);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2Actions
     function approveMint(address spender, uint256 amount) external override {
-        _onlyWhitelisted();
-        _approveMint(msg.sender, spender, amount);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2Actions
     function approveWithdraw(address spender, address yieldToken, uint256 shares) external override {
-        _onlyWhitelisted();
-        _checkSupportedYieldToken(yieldToken);
-        _approveWithdraw(msg.sender, spender, yieldToken, shares);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2Actions
     function poke(address owner) external override lock {
-        _onlyWhitelisted();
-        _preemptivelyHarvestDeposited(owner);
-        _distributeUnlockedCreditDeposited(owner);
-        _poke(owner);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2Actions
@@ -574,17 +428,7 @@ contract AlchemistV2 is IAlchemistV2, Initializable, Multicall, Mutex {
         uint256 amount,
         address recipient
     ) external override lock returns (uint256) {
-        _onlyWhitelisted();
-        _checkArgument(recipient != address(0));
-        _checkSupportedYieldToken(yieldToken);
-
-        // Deposit the yield tokens to the recipient.
-        uint256 shares = _deposit(yieldToken, amount, recipient);
-
-        // Transfer tokens from the message sender now that the internal storage updates have been committed.
-        TokenUtils.safeTransferFrom(yieldToken, msg.sender, address(this), amount);
-
-        return shares;
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2Actions
@@ -594,15 +438,7 @@ contract AlchemistV2 is IAlchemistV2, Initializable, Multicall, Mutex {
         address recipient,
         uint256 minimumAmountOut
     ) external override lock returns (uint256) {
-        _onlyWhitelisted();
-        _checkArgument(recipient != address(0));
-        _checkSupportedYieldToken(yieldToken);
-
-        // Before depositing, the underlying tokens must be wrapped into yield tokens.
-        uint256 amountYieldTokens = _wrap(yieldToken, amount, minimumAmountOut);
-
-        // Deposit the yield-tokens to the recipient.
-        return _deposit(yieldToken, amountYieldTokens, recipient);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2Actions
@@ -611,17 +447,7 @@ contract AlchemistV2 is IAlchemistV2, Initializable, Multicall, Mutex {
         uint256 shares,
         address recipient
     ) external override lock returns (uint256) {
-        _onlyWhitelisted();
-        _checkArgument(recipient != address(0));
-        _checkSupportedYieldToken(yieldToken);
-
-        // Withdraw the shares from the system.
-        uint256 amountYieldTokens = _withdraw(yieldToken, msg.sender, shares, recipient);
-
-        // Transfer the yield tokens to the recipient.
-        TokenUtils.safeTransfer(yieldToken, recipient, amountYieldTokens);
-
-        return amountYieldTokens;
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2Actions
@@ -631,21 +457,7 @@ contract AlchemistV2 is IAlchemistV2, Initializable, Multicall, Mutex {
         uint256 shares,
         address recipient
     ) external override lock returns (uint256) {
-        _onlyWhitelisted();
-        _checkArgument(recipient != address(0));
-        _checkSupportedYieldToken(yieldToken);
-
-        // Preemptively try and decrease the withdrawal allowance. This will save gas when the allowance is not
-        // sufficient for the withdrawal.
-        _decreaseWithdrawAllowance(owner, msg.sender, yieldToken, shares);
-
-        // Withdraw the shares from the system.
-        uint256 amountYieldTokens = _withdraw(yieldToken, owner, shares, recipient);
-
-        // Transfer the yield tokens to the recipient.
-        TokenUtils.safeTransfer(yieldToken, recipient, amountYieldTokens);
-
-        return amountYieldTokens;
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2Actions
@@ -655,14 +467,7 @@ contract AlchemistV2 is IAlchemistV2, Initializable, Multicall, Mutex {
         address recipient,
         uint256 minimumAmountOut
     ) external override lock returns (uint256) {
-        _onlyWhitelisted();
-        _checkArgument(recipient != address(0));
-        _checkSupportedYieldToken(yieldToken);
-        _checkLoss(yieldToken);
-
-        uint256 amountYieldTokens = _withdraw(yieldToken, msg.sender, shares, recipient);
-
-        return _unwrap(yieldToken, amountYieldTokens, recipient, minimumAmountOut);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2Actions
@@ -673,25 +478,12 @@ contract AlchemistV2 is IAlchemistV2, Initializable, Multicall, Mutex {
         address recipient,
         uint256 minimumAmountOut
     ) external override lock returns (uint256) {
-        _onlyWhitelisted();
-        _checkArgument(recipient != address(0));
-        _checkSupportedYieldToken(yieldToken);
-        _checkLoss(yieldToken);
-        _decreaseWithdrawAllowance(owner, msg.sender, yieldToken, shares);
-
-        uint256 amountYieldTokens = _withdraw(yieldToken, owner, shares, recipient);
-
-        return _unwrap(yieldToken, amountYieldTokens, recipient, minimumAmountOut);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2Actions
     function mint(uint256 amount, address recipient) external override lock {
-        _onlyWhitelisted();
-        _checkArgument(amount > 0);
-        _checkArgument(recipient != address(0));
-
-        // Mint tokens from the message sender's account to the recipient.
-        _mint(msg.sender, amount, recipient);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2Actions
@@ -700,119 +492,17 @@ contract AlchemistV2 is IAlchemistV2, Initializable, Multicall, Mutex {
         uint256 amount,
         address recipient
     ) external override lock {
-        _onlyWhitelisted();
-        _checkArgument(amount > 0);
-        _checkArgument(recipient != address(0));
-
-        // Preemptively try and decrease the minting allowance. This will save gas when the allowance is not sufficient
-        // for the mint.
-        _decreaseMintAllowance(owner, msg.sender, amount);
-
-        // Mint tokens from the owner's account to the recipient.
-        _mint(owner, amount, recipient);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2Actions
     function burn(uint256 amount, address recipient) external override lock returns (uint256) {
-        _onlyWhitelisted();
-
-        _checkArgument(amount > 0);
-        _checkArgument(recipient != address(0));
-
-        // Distribute unlocked credit to depositors.
-        _distributeUnlockedCreditDeposited(recipient);
-
-        // Update the recipient's account, decrease the debt of the recipient by the number of tokens burned.
-        _poke(recipient);
-
-        // Check that the debt is greater than zero.
-        //
-        // It is possible that the number of debt which is repayable is equal to or less than zero after realizing the
-        // credit that was earned since the last update. We do not want to perform a noop so we need to check that the
-        // amount of debt to repay is greater than zero.
-        int256 debt;
-        _checkState((debt = _accounts[recipient].debt) > 0);
-
-        // Limit how much debt can be repaid up to the current amount of debt that the account has. This prevents
-        // situations where the user may be trying to repay their entire debt, but it decreases since they send the
-        // transaction and causes a revert because burning can never decrease the debt below zero.
-        //
-        // Casts here are safe because it is asserted that debt is greater than zero.
-        uint256 credit = amount > uint256(debt) ? uint256(debt) : amount;
-
-        // Update the recipient's debt.
-        _updateDebt(recipient, -SafeCast.toInt256(credit));
-
-        // Burn the tokens from the message sender.
-        TokenUtils.safeBurnFrom(debtToken, msg.sender, credit);
-
-        // Increase the global amount of mintable debt tokens.
-        // Do this after burning instead of before because mint limit increase is an action beneficial to the user.
-        _mintingLimiter.increase(credit);
-
-        emit Burn(msg.sender, credit, recipient);
-
-        return credit;
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2Actions
     function repay(address underlyingToken, uint256 amount, address recipient) external override lock returns (uint256) {
-        _onlyWhitelisted();
-
-        _checkArgument(amount > 0);
-        _checkArgument(recipient != address(0));
-
-        _checkSupportedUnderlyingToken(underlyingToken);
-        _checkUnderlyingTokenEnabled(underlyingToken);
-
-        // Distribute unlocked credit to depositors.
-        _distributeUnlockedCreditDeposited(recipient);
-
-        // Update the recipient's account and decrease the amount of debt incurred.
-        _poke(recipient);
-
-        // Check that the debt is greater than zero.
-        //
-        // It is possible that the amount of debt which is repayable is equal to or less than zero after realizing the
-        // credit that was earned since the last update. We do not want to perform a noop so we need to check that the
-        // amount of debt to repay is greater than zero.
-        int256 debt;
-        _checkState((debt = _accounts[recipient].debt) > 0);
-
-        // Determine the maximum amount of underlying tokens that can be repaid.
-        //
-        // It is implied that this value is greater than zero because `debt` is greater than zero so a noop is not possible
-        // beyond this point. Casting the debt to an unsigned integer is also safe because `debt` is greater than zero.
-        uint256 maximumAmount = normalizeDebtTokensToUnderlying(underlyingToken, uint256(debt));
-
-        // Limit the number of underlying tokens to repay up to the maximum allowed.
-        uint256 actualAmount = amount > maximumAmount ? maximumAmount : amount;
-
-        Limiters.LinearGrowthLimiter storage limiter = _repayLimiters[underlyingToken];
-
-        // Check to make sure that the underlying token repay limit has not been breached.
-        uint256 currentRepayLimit = limiter.get();
-        if (actualAmount > currentRepayLimit) {
-          revert RepayLimitExceeded(underlyingToken, actualAmount, currentRepayLimit);
-        }
-
-        uint256 credit = normalizeUnderlyingTokensToDebt(underlyingToken, actualAmount);
-
-        // Update the recipient's debt.
-        _updateDebt(recipient, -SafeCast.toInt256(credit));
-
-        // Decrease the amount of the underlying token which is globally available to be repaid.
-        limiter.decrease(actualAmount);
-
-        // Transfer the repaid tokens to the transmuter.
-        TokenUtils.safeTransferFrom(underlyingToken, msg.sender, transmuter, actualAmount);
-
-        // Inform the transmuter that it has received tokens.
-        IERC20TokenReceiver(transmuter).onERC20Received(underlyingToken, actualAmount);
-
-        emit Repay(msg.sender, underlyingToken, actualAmount, recipient, credit);
-
-        return actualAmount;
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2Actions
@@ -821,153 +511,23 @@ contract AlchemistV2 is IAlchemistV2, Initializable, Multicall, Mutex {
         uint256 shares,
         uint256 minimumAmountOut
     ) external override lock returns (uint256) {
-        _onlyWhitelisted();
-
-        _checkArgument(shares > 0);
-
-        YieldTokenParams storage yieldTokenParams = _yieldTokens[yieldToken];
-        address underlyingToken = yieldTokenParams.underlyingToken;
-
-        _checkSupportedYieldToken(yieldToken);
-        _checkYieldTokenEnabled(yieldToken);
-        _checkUnderlyingTokenEnabled(underlyingToken);
-        _checkLoss(yieldToken);
-
-        // Calculate the unrealized debt.
-        //
-        // It is possible that the number of debt which is repayable is equal to or less than zero after realizing the
-        // credit that was earned since the last update. We do not want to perform a noop so we need to check that the
-        // amount of debt to repay is greater than zero.
-        int256 unrealizedDebt;
-        _checkState((unrealizedDebt = _calculateUnrealizedDebt(msg.sender)) > 0);
-
-        // Determine the maximum amount of shares that can be liquidated from the unrealized debt.
-        //
-        // It is implied that this value is greater than zero because `debt` is greater than zero. Casting the debt to an
-        // unsigned integer is also safe for this reason.
-        uint256 maximumShares = convertUnderlyingTokensToShares(
-          yieldToken,
-          normalizeDebtTokensToUnderlying(underlyingToken, uint256(unrealizedDebt))
-        );
-
-        // Limit the number of shares to liquidate up to the maximum allowed.
-        uint256 actualShares = shares > maximumShares ? maximumShares : shares;
-
-        // Unwrap the yield tokens that the shares are worth.
-        uint256 amountYieldTokens      = convertSharesToYieldTokens(yieldToken, actualShares);
-        uint256 amountUnderlyingTokens = _unwrap(yieldToken, amountYieldTokens, address(this), minimumAmountOut);
-
-        // Again, perform another noop check. It is possible that the amount of underlying tokens that were received by
-        // unwrapping the yield tokens was zero because the amount of yield tokens to unwrap was too small.
-        _checkState(amountUnderlyingTokens > 0);
-
-        Limiters.LinearGrowthLimiter storage limiter = _liquidationLimiters[underlyingToken];
-
-        // Check to make sure that the underlying token liquidation limit has not been breached.
-        uint256 liquidationLimit = limiter.get();
-        if (amountUnderlyingTokens > liquidationLimit) {
-          revert LiquidationLimitExceeded(underlyingToken, amountUnderlyingTokens, liquidationLimit);
-        }
-
-        // Buffers any harvestable yield tokens. This will properly synchronize the balance which is held by users
-        // and the balance which is held by the system. This is required for `_sync` to function correctly.
-        _preemptivelyHarvest(yieldToken);
-
-        // Distribute unlocked credit to depositors.
-        _distributeUnlockedCreditDeposited(msg.sender);
-
-        uint256 credit = normalizeUnderlyingTokensToDebt(underlyingToken, amountUnderlyingTokens);
-
-        // Update the message sender's account, proactively burn shares, decrease the amount of debt incurred, and then
-        // decrease the value of the token that the system is expected to hold.
-        _poke(msg.sender, yieldToken);
-        _burnShares(msg.sender, yieldToken, actualShares);
-        _updateDebt(msg.sender, -SafeCast.toInt256(credit));
-        _sync(yieldToken, amountYieldTokens, _usub);
-
-        // Decrease the amount of the underlying token which is globally available to be liquidated.
-        limiter.decrease(amountUnderlyingTokens);
-
-        // Transfer the liquidated tokens to the transmuter.
-        TokenUtils.safeTransfer(underlyingToken, transmuter, amountUnderlyingTokens);
-
-        // Inform the transmuter that it has received tokens.
-        IERC20TokenReceiver(transmuter).onERC20Received(underlyingToken, amountUnderlyingTokens);
-
-        // In the case that slippage allowed by minimumAmountOut would create an undercollateralized position
-        _validate(msg.sender);
-
-        emit Liquidate(msg.sender, yieldToken, underlyingToken, actualShares, credit);
-
-        return actualShares;
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2Actions
     function donate(address yieldToken, uint256 amount) external override lock {
-        _onlyWhitelisted();
-        _checkArgument(amount > 0);
-
-        // Distribute any unlocked credit so that the accrued weight is up to date.
-        _distributeUnlockedCredit(yieldToken);
-
-        // Update the message sender's account. This will assure that any credit that was earned is not overridden.
-        _poke(msg.sender);
-
-        uint256 shares = _yieldTokens[yieldToken].totalShares - _accounts[msg.sender].balances[yieldToken];
-
-        _yieldTokens[yieldToken].accruedWeight += amount * FIXED_POINT_SCALAR / shares;
-        _accounts[msg.sender].lastAccruedWeights[yieldToken] = _yieldTokens[yieldToken].accruedWeight;
-
-        TokenUtils.safeBurnFrom(debtToken, msg.sender, amount);
-
-        // Increase the global amount of mintable debt tokens.
-        // Do this after burning instead of before because mint limit increase is an action beneficial to the user.
-        _mintingLimiter.increase(amount);
-
-        emit Donate(msg.sender, yieldToken, amount);
+        revert();
     }
 
     /// @inheritdoc IAlchemistV2Actions
     function harvest(address yieldToken, uint256 minimumAmountOut) external override lock {
-        _onlyKeeper();
+        revert();
+    }
+
+    function sweep(address yieldToken) external override lock {
+        _onlyAdmin();
         _checkSupportedYieldToken(yieldToken);
-
-        YieldTokenParams storage yieldTokenParams = _yieldTokens[yieldToken];
-
-        // Buffer any harvestable yield tokens. This will properly synchronize the balance which is held by users
-        // and the balance which is held by the system to be harvested during this call.
-        _preemptivelyHarvest(yieldToken);
-
-        // Load and proactively clear the amount of harvestable tokens so that future calls do not rely on stale data.
-        // Because we cannot call an external unwrap until the amount of harvestable tokens has been calculated,
-        // clearing this data immediately prevents any potential reentrancy attacks which would use stale harvest
-        // buffer values.
-        uint256 harvestableAmount = yieldTokenParams.harvestableBalance;
-        yieldTokenParams.harvestableBalance = 0;
-
-        // Check that the harvest will not be a no-op.
-        _checkState(harvestableAmount != 0);
-
-        address underlyingToken = yieldTokenParams.underlyingToken;
-        uint256 amountUnderlyingTokens = _unwrap(yieldToken, harvestableAmount, address(this), minimumAmountOut);
-
-        // Calculate how much of the unwrapped underlying tokens will be allocated for fees and distributed to users.
-        uint256 feeAmount = amountUnderlyingTokens * protocolFee / BPS;
-        uint256 distributeAmount = amountUnderlyingTokens - feeAmount;
-
-        uint256 credit = normalizeUnderlyingTokensToDebt(underlyingToken, distributeAmount);
-
-        // Distribute credit to all of the users who hold shares of the yield token.
-        _distributeCredit(yieldToken, credit);
-
-        // Transfer the tokens to the fee receiver and transmuter.
-        TokenUtils.safeTransfer(underlyingToken, protocolFeeReceiver, feeAmount);
-        TokenUtils.safeTransfer(underlyingToken, transmuter, distributeAmount);
-
-        // Inform the transmuter that it has received tokens.
-        IERC20TokenReceiver(transmuter).onERC20Received(underlyingToken, distributeAmount);
-
-        emit Harvest(yieldToken, minimumAmountOut, amountUnderlyingTokens, credit);
+        TokenUtils.safeTransfer(yieldToken, admin, TokenUtils.safeBalanceOf(yieldToken, address(this)));
     }
 
     /// @dev Checks that the `msg.sender` is the administrator.

@@ -1,20 +1,17 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 import { IAutopool } from "src/interfaces/vault/IAutopool.sol";
 import { IAutopilotRouterBase } from "src/interfaces/vault/IAutopilotRouterBase.sol";
 import { IRewards } from "src/interfaces/rewarders/IRewards.sol";
 import { SwapParams } from "src/interfaces/liquidation/IAsyncSwapper.sol";
-import { ISwapRouterV2 } from "src/interfaces/swapper/ISwapRouterV2.sol";
 
 /**
  * @title IAutopilotRouter Interface
  * @notice Extends the IAutopilotRouterBase with specific flows to save gas
  */
 interface IAutopilotRouter is IAutopilotRouterBase {
-    error PreviewRedeemWithRoutesResult(uint256);
-
     /**
      * ***************************   Deposit ********************************
      */
@@ -108,37 +105,6 @@ interface IAutopilotRouter is IAutopilotRouterBase {
     ) external payable returns (uint256 amountOut);
 
     /**
-     * @notice previewRedeem `shares` shares from a AutopoolETH with a custom route
-     * @param vault The AutopoolETH to redeem shares from.
-     * @param shares The amount of shares to redeem from vault.
-     * @param customRoute The custom route to use for the swap.
-     * @dev throws PreviewRedeemWithRoutesResult on all executions
-     */
-    function previewRedeemWithRoutes(
-        IAutopool vault,
-        uint256 shares,
-        ISwapRouterV2.UserSwapData[] calldata customRoute
-    ) external payable;
-
-    /**
-     * @notice redeem `shares` shares from a AutopoolETH with a custom route
-     * @param vault The AutopoolETH to redeem shares from.
-     * @param to The destination of assets.
-     * @param shares The amount of shares to redeem from vault.
-     * @param minAmountOut The min amount of assets received by `to`.
-     * @param customRoute The custom route to use for the swap.
-     * @return amountOut the amount of assets received by `to`.
-     * @dev throws MinAmountError
-     */
-    function redeemWithRoutes(
-        IAutopool vault,
-        address to,
-        uint256 shares,
-        uint256 minAmountOut,
-        ISwapRouterV2.UserSwapData[] calldata customRoute
-    ) external payable returns (uint256 amountOut);
-
-    /**
      * @notice swaps token
      * @param swapper Address of the swapper to use
      * @param swapParams  Parameters for the swap
@@ -174,59 +140,4 @@ interface IAutopilotRouter is IAutopilotRouterBase {
         address swapper,
         SwapParams memory swapParams
     ) external payable returns (uint256 amountReceived);
-
-    /**
-     * @notice stake Acc token balance
-     * @param duration The duration of the stake
-     * @param accToke contract address of the AccToke
-     * @param to The destination of ownership shares.
-     */
-    function stakeAccBalance(address accToke, uint256 duration, address to) external payable;
-
-    /**
-     * @notice stake Acc token for specified amount
-     * @param amount Amount of TOKE to stake
-     * @param accToke contract address of the AccToke
-     * @param duration The duration of the stake
-     * @param to The destination of ownership shares.
-     */
-    function stakeAcc(address accToke, uint256 amount, uint256 duration, address to) external payable;
-
-    /**
-     * @notice unstake Acc token balance
-     * @param accToke contract address of the AccToke
-     * @param lockupIds The lockup ids to unstake
-     * @param to The destination of staked TOKE.
-     */
-    function unstakeAcc(address accToke, uint256[] memory lockupIds, address to) external payable;
-
-    /**
-     * @notice Collect staking rewards
-     * @dev rewards can only be sent to user or router
-     * @param accToke contract address of the AccToke
-     * @param recipient The recipient of the rewards
-     * @return amountReceived Swap output amount
-     */
-    function collectAccTokeRewards(address accToke, address recipient) external payable returns (uint256);
-
-    /**
-     * @notice AccTokeV1 function to lock TOKE for `numOfCycles` cycles
-     * @param amount Amount of TOKE to lock up
-     * @param duration Number of cycles to lock for
-     */
-    function lockTokeFor(uint256 amount, uint256 duration) external payable;
-
-    /**
-     * @notice Redeem prorata from a AutopoolETH.
-     * @param vault The AutopoolETH to redeem shares from.
-     * @param to The destination of assets.
-     * @param shares The amount of shares to redeem from vault.
-     * @return amountOut the amount of assets received by `to`.
-     */
-    function redeemProrata(
-        IAutopool vault,
-        address to,
-        uint256 shares,
-        uint256 minAmountOut
-    ) external payable returns (uint256 amountOut);
 }

@@ -5,7 +5,7 @@
 - Project: Convex Finance (`convex-finance`)
 - Website: [https://www.convexfinance.com/](https://www.convexfinance.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:42.116Z
+- Generated: 2026-07-04T11:05:40.863Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-f007
 - Chains: arbitrum, ethereum, fraxtal, polygon
 - Contract surface: 133 unique implementations (182 raw deployments)
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Yield. Structurally: 250 project-authored contract(s) across 4 chain(s); 2 ERC4626 vaults, 27 ERC20 tokens, 9 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Yield. Structurally: 258 project-authored contract(s) across 4 chain(s); 2 ERC4626 vaults, 27 ERC20 tokens, 9 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 

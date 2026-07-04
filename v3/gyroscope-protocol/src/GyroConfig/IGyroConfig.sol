@@ -1,4 +1,5 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: LicenseRef-Gyro-1.0
+// for information on licensing please see the README in the GitHub repository <https://github.com/gyrostable/core-protocol>.
 pragma solidity ^0.8.4;
 
 import "IGovernable.sol";
@@ -27,8 +28,14 @@ interface IGyroConfig is IGovernable {
     /// @notice Returns a uint256 value from the config
     function getUint(bytes32 key) external view returns (uint256);
 
+    /// @notice Returns a uint256 value from the config or `defaultValue` if it does not exist
+    function getUint(bytes32 key, uint256 defaultValue) external view returns (uint256);
+
     /// @notice Returns an address value from the config
     function getAddress(bytes32 key) external view returns (address);
+
+    /// @notice Returns an address value from the config or `defaultValue` if it does not exist
+    function getAddress(bytes32 key, address defaultValue) external view returns (address);
 
     /// @notice Set a uint256 config
     /// NOTE: We avoid overloading to avoid complications with some clients

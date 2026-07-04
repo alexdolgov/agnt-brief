@@ -5,7 +5,7 @@
 - Project: Hypha (`hypha`)
 - Website: [https://www.hypha.sh/](https://www.hypha.sh/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:59.967Z
+- Generated: 2026-07-04T11:05:41.936Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: avalanche
 - Contract surface: 65 unique implementations (107 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-Liquid Staking. Structurally: 44 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on solmate.
+Liquid Staking. Structurally: 45 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 8 functional families. Its contracts share 3 common project-authored base contract(s) (base, baseabstract, erc20upgradeable). Dominant framework: solmate.
+The protocol comprises 8 functional families. Its contracts share 3 common project-authored base contract(s) (base, baseabstract, erc20upgradeable). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

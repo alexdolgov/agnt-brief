@@ -16,7 +16,7 @@ contract UpgradeableBeacon is IBeacon, Ownable {
     address private _implementation;
 
     /**
-     * @dev Emitted when the implementation returned by the beacon is changed.3-1
+     * @dev Emitted when the implementation returned by the beacon is changed.
      */
     event Upgraded(address indexed implementation);
 

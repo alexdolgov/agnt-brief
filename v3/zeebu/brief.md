@@ -5,7 +5,7 @@
 - Project: Zeebu (`zeebu`)
 - Website: [https://www.zeebu.com/](https://www.zeebu.com/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:07:17.934Z
+- Generated: 2026-07-04T11:05:47.812Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-4c3e
 - Chains: base, ethereum
 - Contract surface: 2 unique implementations (4 raw deployments)

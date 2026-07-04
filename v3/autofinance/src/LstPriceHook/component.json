@@ -2,17 +2,25 @@
   "component": "LstPriceHook",
   "main_contract": "LstPriceHook",
   "source_file_count": 68,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x3fab79e63b2140cacd9dff96fe59b0a5661c0626",
+      "chain": "chain-9745",
+      "chain_id": 9745,
+      "address": "0xc91f3b941df65f58371c9c04221629c2b6a4ebc5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x329e4cf6d328da5bcf46339900126c147ddd525c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
     }
   ]
 }

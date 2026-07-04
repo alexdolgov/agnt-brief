@@ -1,0 +1,50 @@
+{
+  "component": "OFT",
+  "main_contract": "OFT",
+  "source_file_count": 18,
+  "deployment_count": 5,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xc608dfb90a430df79a8a1edbc8be7f1a0eb4e763",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xa64f68c089b3e69d48f6047d3be513349e74b3de",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x179f38f78346f5942e95c5c59cb1da7f55cf7cad",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x55380fe7a1910dff29a47b622057ab4139da42c5",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc608dfb90a430df79a8a1edbc8be7f1a0eb4e763",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

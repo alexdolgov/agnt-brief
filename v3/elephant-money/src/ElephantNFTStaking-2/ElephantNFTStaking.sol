@@ -1590,6 +1590,7 @@ contract ElephantNFTStaking is ERC721Holder, ElephantCore {
     IERC20 public rewardsToken;
     IERC721 public nft;
     IElephantNFTTraitTracker public tracker;
+    address public protocolAddress;
 
     uint256 constant internal magnitude = 1e18; //2 ** 64 is old standard
     uint256 constant internal flushThreshold = 0.01e18;
@@ -1669,6 +1670,18 @@ contract ElephantNFTStaking is ERC721Holder, ElephantCore {
     /// @notice event emited when protocol fees are collected
     event Fees(address payer, uint256 wethAmount, uint256 usdAdmount);
 
+    /// @notice event emited when protcol address is updated 
+    event UpdateProtocol(address oldAddr, address newAddr);
+
+
+    /// @dev Maintenance address is updated
+    function updateProtocol(address _protocol) onlyOwner external {
+        require(_protocol != protocolAddress, "duplicate address");
+
+        emit UpdateProtocol(protocolAddress, _protocol);
+
+        protocolAddress = _protocol;
+    }
 
     function updateRarityWeight(uint256 _weight) external onlyOwner {
         require (_weight > 0 && _weight < 1e18, "weight out of range");
@@ -1826,6 +1839,13 @@ contract ElephantNFTStaking is ERC721Holder, ElephantCore {
 
         //By checking weight 
         if (totalWeight > 0 && _wethAmount > flushThreshold) {
+
+            uint _protocolFee = _wethAmount / 10;
+
+            _wethAmount = _wethAmount - _protocolFee;
+
+            //fund protocol 
+            payable(protocolAddress).transfer(_protocolFee);
 
             //consult oracle
             updatePaths();

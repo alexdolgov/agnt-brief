@@ -9,7 +9,7 @@
     {
       "chain": "mantle",
       "chain_id": 5000,
-      "address": "0xfc280671d79b02086dd59c89f69632040d366ea8",
+      "address": "0x2fe6f58436907a99ff73954a1cec4b1192127642",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
@@ -17,10 +17,10 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xff9ae57c0b1e587caaf9a4294621858608ab7c89",
+      "address": "0xbcb38440cf63b2edc2e2613a98e5e59582096c11",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

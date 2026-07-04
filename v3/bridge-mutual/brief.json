@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "bridge-mutual",
-  "generated_at": "2026-07-03T21:05:37.025Z",
+  "generated_at": "2026-07-04T11:05:40.799Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-1cbb",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -53,11 +53,11 @@
   },
   "topography": {
     "project_purpose": "Insurance. Structurally: 15 project-authored contract(s) across 2 chain(s); 2 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 4 common project-authored base contract(s) (ownableupgradeable, contextupgradeable, upgradeabilityproxy). Dominant framework: openzeppelin.",
-    "product_family_count": 4,
-    "total_contracts_indexed": 60,
+    "relationship_narrative": "The protocol comprises 5 functional families. Its contracts share 4 common project-authored base contract(s) (ownableupgradeable, contextupgradeable, upgradeabilityproxy). Dominant framework: openzeppelin.",
+    "product_family_count": 5,
+    "total_contracts_indexed": 57,
     "live_contracts": 18,
-    "inactive_contracts": 15,
+    "inactive_contracts": 12,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 27,
@@ -241,7 +241,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2021-03-09 19:41:46+03",
       "deploy_coverage_basis": null
@@ -301,7 +301,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2021-03-09 19:40:04+03",
       "deploy_coverage_basis": null
@@ -361,7 +361,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2021-03-09 19:40:52+03",
       "deploy_coverage_basis": null
@@ -555,7 +555,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2021-03-02 22:55:13+03",
       "deploy_coverage_basis": null

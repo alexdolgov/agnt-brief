@@ -4,7 +4,7 @@
 
 - Project: Saddle Finance (`saddle-finance`)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:51.394Z
+- Generated: 2026-07-04T11:05:46.490Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
 - Chains: arbitrum, ethereum, fantom, kava, optimism
 - Contract surface: 34 unique implementations (105 raw deployments)
@@ -14,11 +14,11 @@
 
 ## Project Description
 
-Dexs. Structurally: 53 project-authored contract(s) across 3 chain(s); 13 ERC20 tokens, 1 ERC721 NFT; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Dexs. Structurally: 87 project-authored contract(s) across 3 chain(s); 17 ERC20 tokens, 1 ERC721 NFT; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 4 functional families. Its contracts share 16 common project-authored base contract(s) (swap, ownerpausableupgradeable, shareprotocolfee). Dominant framework: openzeppelin.
+The protocol comprises 4 functional families. Its contracts share 17 common project-authored base contract(s) (swap, ownerpausableupgradeable, shareprotocolfee). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

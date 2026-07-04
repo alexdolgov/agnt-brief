@@ -16,6 +16,7 @@ interface IWasabiPerps {
     error InvalidTargetCurrency();
     error InsufficientAmountProvided();
     error PrincipalTooHigh();
+    error InsufficientPrincipalUsed();
     error InsufficientAvailablePrincipal();
     error InsufficientCollateralReceived();
     error SenderNotTrader();
@@ -27,6 +28,7 @@ interface IWasabiPerps {
     error WithdrawerNotVault();
     error WithdrawalNotAllowed();
     error InterestAmountNeeded();
+    error ValueDeviatedTooMuch();
 
     event PositionOpened(
         uint256 positionId,
@@ -52,6 +54,16 @@ interface IWasabiPerps {
         uint256 id,
         address trader,
         uint256 payout,
+        uint256 principalRepaid,
+        uint256 interestPaid,
+        uint256 feeAmount
+    );
+
+
+    event PositionClaimed(
+        uint256 id,
+        address trader,
+        uint256 amountClaimed,
         uint256 principalRepaid,
         uint256 interestPaid,
         uint256 feeAmount
@@ -170,6 +182,12 @@ interface IWasabiPerps {
         uint256[] calldata _interests,
         Position[] calldata _positions,
         FunctionCallData[][] calldata _swapFunctions
+    ) external payable;
+
+    /// @dev Claims a position
+    /// @param _position the position to claim
+    function claimPosition(
+        Position calldata _position
     ) external payable;
 
     /// @dev Withdraws the given amount for the ERC20 token (or ETH) to the receiver

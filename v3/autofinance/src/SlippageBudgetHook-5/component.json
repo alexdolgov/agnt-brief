@@ -1,0 +1,18 @@
+{
+  "component": "SlippageBudgetHook-5",
+  "main_contract": "SlippageBudgetHook",
+  "source_file_count": 66,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x1a1c7e06fe24d822fbfbe93d6e2f4c70a77439c2",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

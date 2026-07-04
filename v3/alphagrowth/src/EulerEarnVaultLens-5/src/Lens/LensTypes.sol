@@ -64,21 +64,6 @@ struct CollateralLiquidityInfo {
     uint256 collateralValue;
 }
 
-struct VaultInfoERC4626 {
-    uint256 timestamp;
-    address vault;
-    string vaultName;
-    string vaultSymbol;
-    uint256 vaultDecimals;
-    address asset;
-    string assetName;
-    string assetSymbol;
-    uint256 assetDecimals;
-    uint256 totalShares;
-    uint256 totalAssets;
-    bool isEVault;
-}
-
 struct VaultInfoFull {
     uint256 timestamp;
     address vault;
@@ -324,31 +309,11 @@ struct RateProviderOracleInfo {
     address rateProvider;
 }
 
-struct OndoOracleInfo {
-    address base;
-    address quote;
-    address rwaOracle;
-}
-
 struct PendleProviderOracleInfo {
     address base;
     address quote;
     address pendleMarket;
     uint32 twapWindow;
-}
-
-struct PendleUniversalOracleInfo {
-    address base;
-    address quote;
-    address pendleMarket;
-    uint32 twapWindow;
-}
-
-struct CurveEMAOracleInfo {
-    address base;
-    address quote;
-    address pool;
-    uint256 priceOracleIndex;
 }
 
 struct SwaapSafeguardProviderOracleInfo {
@@ -423,5 +388,4 @@ struct EulerEarnVaultStrategyInfo {
     uint256 allocationPoints;
     uint256 allocationCap;
     bool isInEmergency;
-    VaultInfoERC4626 info;
 }

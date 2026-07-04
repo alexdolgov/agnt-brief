@@ -1,7 +1,7 @@
 {
   "component": "UtilsLens-2",
   "main_contract": "UtilsLens",
-  "source_file_count": 7,
+  "source_file_count": 19,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +9,10 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x009bd94ad5fa60e676bfd3a45b5305463216a0d8",
+      "address": "0x1ad6edf948b037a9364607f9e3c1e640166ee539",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

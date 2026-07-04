@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "k2",
-  "generated_at": "2026-07-03T21:06:17.620Z",
+  "generated_at": "2026-07-04T11:05:41.959Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -50,9 +50,9 @@
     }
   },
   "topography": {
-    "project_purpose": "Chain. Structurally: 11 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 1 ERC20 token, 1 ERC721 NFT; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 5 functional families. Its contracts share 1 common project-authored base contract(s) (semver). Dominant framework: openzeppelin.",
-    "product_family_count": 5,
+    "project_purpose": "Chain. Structurally: 34 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 1 ERC20 token, 2 ERC721 NFTs; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 7 functional families. Its contracts share 3 common project-authored base contract(s) (semver, erc165, erc721uristorage). Dominant framework: openzeppelin.",
+    "product_family_count": 7,
     "total_contracts_indexed": 59,
     "live_contracts": 31,
     "inactive_contracts": 15,

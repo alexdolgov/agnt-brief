@@ -9,11 +9,13 @@ import "./addressProvider/IAddressProvider.sol";
 contract WasabiShortPool is BaseWasabiPool {
     using Hash for Position;
     using Hash for ClosePositionRequest;
+    using SafeERC20 for IERC20;
 
     /// @dev initializer for proxy
     /// @param _addressProvider address provider contract
-    function initialize(IAddressProvider _addressProvider) public initializer {
-        __BaseWasabiPool_init(false, _addressProvider);
+    /// @param _manager the PerpManager contract
+    function initialize(IAddressProvider _addressProvider, PerpManager _manager) public virtual initializer {
+        __BaseWasabiPool_init(false, _addressProvider, _manager);
     }
 
     /// @inheritdoc IWasabiPerps
@@ -39,9 +41,10 @@ contract WasabiShortPool is BaseWasabiPool {
         uint256 collateralReceived = collateralToken.balanceOf(address(this)) - collateralBalanceBefore;
         if (collateralReceived < _request.minTargetAmount) revert InsufficientCollateralReceived();
 
-        // The effective price = _request.principal / collateralAmount
-        uint256 swappedDownPaymentAmount = _request.downPayment * _request.principal / (collateralReceived - _request.downPayment);        
+        uint256 principalUsed = principalBalanceBefore - principalToken.balanceOf(address(this));
 
+        // The effective price = principalReceived / collateralReceived
+        uint256 swappedDownPaymentAmount = _request.downPayment * principalUsed / collateralReceived;
         uint256 maxPrincipal =
             addressProvider.getDebtController()
                 .computeMaxPrincipal(
@@ -50,6 +53,7 @@ contract WasabiShortPool is BaseWasabiPool {
                     swappedDownPaymentAmount);
 
         if (_request.principal > maxPrincipal + swappedDownPaymentAmount) revert PrincipalTooHigh();
+        validateDifference(_request.principal, principalUsed, 1);
 
         Position memory position = Position(
             _request.id,
@@ -58,7 +62,7 @@ contract WasabiShortPool is BaseWasabiPool {
             _request.targetCurrency,
             block.timestamp,
             _request.downPayment,
-            principalBalanceBefore - principalToken.balanceOf(address(this)),
+            principalUsed,
             collateralReceived + _request.downPayment,
             _request.fee
         );
@@ -106,7 +110,7 @@ contract WasabiShortPool is BaseWasabiPool {
         uint256 _interest,
         Position calldata _position,
         FunctionCallData[] calldata _swapFunctions
-    ) public override payable onlyOwner {
+    ) public override payable onlyRole(Roles.LIQUIDATOR_ROLE) {
         (uint256 payout, uint256 principalRepaid, uint256 interestPaid, uint256 feeAmount) =
             _closePositionInternal(_unwrapWETH, _interest, _position, _swapFunctions);
         uint256 liquidationThreshold = _position.collateralAmount * 5 / 100;
@@ -120,6 +124,43 @@ contract WasabiShortPool is BaseWasabiPool {
             interestPaid,
             feeAmount
         );
+    }
+
+    /// @inheritdoc IWasabiPerps
+    function claimPosition(Position calldata _position) external payable nonReentrant {
+        if (positions[_position.id] != _position.hash()) revert InvalidPosition();
+        if (_position.trader != msg.sender) revert SenderNotTrader();
+
+        // 1. Trader pays principal + interest
+        uint256 interestPaid = _computeInterest(_position, 0);
+        uint256 amountOwed = _position.principal + interestPaid;
+        IERC20(_position.currency).safeTransferFrom(_position.trader, address(this), amountOwed);
+
+        // 2. Trader receives collateral - closeFees
+        uint256 closeFee = _position.feesToBePaid; // Close fee is the same as open fee
+        uint256 claimAmount = _position.collateralAmount - closeFee;
+
+        _payCloseAmounts(
+            true,
+            IWETH(_position.collateralCurrency),
+            _position.trader,
+            claimAmount,
+            _position.feesToBePaid,
+            closeFee);
+
+        // 3. Record interest earned and pay fees
+        getVault(_position.currency).recordInterestEarned(interestPaid);
+
+        emit PositionClaimed(
+            _position.id,
+            _position.trader,
+            claimAmount,
+            _position.principal,
+            interestPaid,
+            closeFee
+        );
+
+        delete positions[_position.id];
     }
 
     /// @dev Closes a given position
@@ -149,7 +190,7 @@ contract WasabiShortPool is BaseWasabiPool {
                 : _position.collateralCurrency
         );
 
-        uint256 collateralBalanceBefore = collateralToken.balanceOf(address(this));
+        uint256 collateralBalanceBefore = collateralToken.balanceOf(address(this)) + address(this).balance;
         uint256 principalBalanceBefore = principalToken.balanceOf(address(this));
 
         // Sell tokens
@@ -160,9 +201,14 @@ contract WasabiShortPool is BaseWasabiPool {
 
         // 1. Deduct interest
         (interestPaid, principalRepaid) = PerpUtils.deduct(principalRepaid, _position.principal);
+        if (interestPaid > 0) {
+            validateDifference(_interest, interestPaid, 3);
+        }
 
         // Payout and fees are paid in collateral
-        (payout, ) = PerpUtils.deduct(_position.collateralAmount, collateralBalanceBefore - collateralToken.balanceOf(address(this)));
+        (payout, ) = PerpUtils.deduct(
+            _position.collateralAmount,
+            collateralBalanceBefore - collateralToken.balanceOf(address(this)) - address(this).balance);
 
         // 2. Deduct fees
         (payout, feeAmount) = PerpUtils.deduct(payout, PerpUtils.computeCloseFee(_position, payout, isLongPool));
@@ -185,5 +231,15 @@ contract WasabiShortPool is BaseWasabiPool {
         );
 
         delete positions[_position.id];
+    }
+
+    /// @dev Validates if the value is deviated x percentage from the value to compare
+    /// @param _value the value
+    /// @param _valueToCompare the value to compare
+    /// @param _percentage the percentage difference
+    function validateDifference(uint256 _value, uint256 _valueToCompare, uint256 _percentage) internal pure {
+        // Check if interest paid is within 3% range of expected interest
+        uint256 diff = _value >= _valueToCompare ? _value - _valueToCompare : _valueToCompare - _value;
+        if (diff * 100 > _percentage * _value) revert ValueDeviatedTooMuch();
     }
 }

@@ -3,9 +3,7 @@ pragma solidity ^0.8.15;
 
 import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
 
-import { ILP } from "./interfaces/ILP.sol";
-
-contract LP is ILP, ERC20Upgradeable {
+contract LP is ERC20Upgradeable {
   address public swapPool;
 
   modifier onlySwapPool() {

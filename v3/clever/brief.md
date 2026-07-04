@@ -5,7 +5,7 @@
 - Project: CLever (`clever`)
 - Website: [https://clever.aladdin.club/](https://clever.aladdin.club/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:39.484Z
+- Generated: 2026-07-04T11:05:40.825Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
 - Chains: ethereum
 - Contract surface: 50 unique implementations (97 raw deployments)
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Yield. Structurally: 71 project-authored contract(s) across 1 chain(s); 4 ERC4626 vaults, 9 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Yield. Structurally: 72 project-authored contract(s) across 1 chain(s); 4 ERC4626 vaults, 9 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 

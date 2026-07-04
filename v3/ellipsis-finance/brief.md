@@ -5,7 +5,7 @@
 - Project: Ellipsis Finance (`ellipsis-finance`)
 - Website: [https://ellipsis.finance/](https://ellipsis.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:46.366Z
+- Generated: 2026-07-04T11:05:41.685Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-d640
 - Chains: bsc
 - Contract surface: 20 unique implementations (46 raw deployments)

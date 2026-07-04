@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "sector-finance",
-  "generated_at": "2026-07-03T21:06:52.923Z",
+  "generated_at": "2026-07-04T11:05:46.531Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d640",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -51,8 +51,8 @@
     }
   },
   "topography": {
-    "project_purpose": "Yield. Structurally: 18 project-authored contract(s) across 2 chain(s); 6 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 19 common project-authored base contract(s) (stratauth, auth, ibase). Dominant framework: openzeppelin.",
+    "project_purpose": "Yield. Structurally: 28 project-authored contract(s) across 2 chain(s); 11 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 26 common project-authored base contract(s) (stratauth, auth, ibase). Dominant framework: openzeppelin.",
     "product_family_count": 4,
     "total_contracts_indexed": 112,
     "live_contracts": 94,

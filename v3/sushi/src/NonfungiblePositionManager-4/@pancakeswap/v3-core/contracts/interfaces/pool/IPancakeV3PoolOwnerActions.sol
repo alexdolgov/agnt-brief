@@ -7,7 +7,7 @@ interface IPancakeV3PoolOwnerActions {
     /// @notice Set the denominator of the protocol's % share of the fees
     /// @param feeProtocol0 new protocol fee for token0 of the pool
     /// @param feeProtocol1 new protocol fee for token1 of the pool
-    function setFeeProtocol(uint32 feeProtocol0, uint32 feeProtocol1) external;
+    function setFeeProtocol(uint16 feeProtocol0, uint16 feeProtocol1) external;
 
     /// @notice Collect the protocol fee accrued to the pool
     /// @param recipient The address to which collected protocol fees should be sent
@@ -20,7 +20,4 @@ interface IPancakeV3PoolOwnerActions {
         uint128 amount0Requested,
         uint128 amount1Requested
     ) external returns (uint128 amount0, uint128 amount1);
-
-    /// @notice Set the LM pool to enable liquidity mining
-    function setLmPool(address lmPool) external;
 }

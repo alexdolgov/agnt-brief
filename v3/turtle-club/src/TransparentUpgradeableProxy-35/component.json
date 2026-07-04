@@ -7,11 +7,11 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "avalanche",
-      "chain_id": 43114,
+      "chain": "linea",
+      "chain_id": 59144,
       "address": "0xaaaea1fb9f3de3f70e89f37b69ab11b47eb9ce6f",
       "is_proxy": true,
-      "implementation_address": "0x776831cb3ea25477440279a070271c864e476eb3",
+      "implementation_address": "0x1155edd0bd4cd22edaf0ccf383b2a6a719c11220",
       "liveness": "live"
     }
   ]

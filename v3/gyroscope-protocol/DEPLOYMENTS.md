@@ -1,6 +1,6 @@
 # gyroscope-protocol — deployments
 
-411 verified deployment(s) across 241 component(s).
+410 verified deployment(s) across 241 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -12,7 +12,7 @@
 | arbitrum | `0x41e9ac0bfed353c2de21a980da0ebb8a464d946a` | GyroECLPMath | impl | live | no |
 | arbitrum | `0x4dfdad359bd4c154dd307350582c4bff636ba299` | AccessControlDefaultAdminRules-2 | impl | live | yes |
 | arbitrum | `0x4e56f19235ff2a14c76332877a35d6af5bde07ec` | ProxyAdmin-4 | impl | live | no |
-| arbitrum | `0x721325c9cbb8c2636db50075eb062b445c951e5f` | FreezableTransparentUpgradeableProxy-22 | impl | live | no |
+| arbitrum | `0x721325c9cbb8c2636db50075eb062b445c951e5f` | GyroECLPPoolFactory-8 | impl | live | no |
 | arbitrum | `0x72f6da3b4bd0ab7028f52339ee3b1f94fffe2dd0` | ConstantRateProvider | impl | inactive | no |
 | arbitrum | `0x7a36527a02d96693b0af2b70421f952816a4a088` | FreezableTransparentUpgradeableProxy | proxy | live | no |
 | arbitrum | `0x8342b910815b0127c98e7717d4276c1d393478b6` | Gyro2CLPPoolFactory-2 | impl | inactive | no |
@@ -23,14 +23,14 @@
 | arbitrum | `0xcfc923dbe1ade0f2bf86400cd7c444ec767ecbfd` | GyroECLPMath | impl | live | no |
 | arbitrum | `0xdca5f1f0d7994a32bc511e7dba0259946653eaf6` | Proxy-2 | proxy | live | no |
 | arbitrum | `0xdcd8db2a23e21a4b9fa3d984d5a31fb554c70832` | ConstantRateProvider | impl | inactive | no |
-| arbitrum | `0xde0e16c5e234339ac3becf8c26be91be3cb9ec2e` | FreezableTransparentUpgradeableProxy-2 | impl | live | no |
+| arbitrum | `0xde0e16c5e234339ac3becf8c26be91be3cb9ec2e` | GyroECLPPoolFactory | impl | live | no |
 | arbitrum | `0xe548a29631f9e49830be8edc22d407b2d2915f31` | ERC4626RateProviderFactory | impl | live | no |
 | arbitrum | `0xea50f402653c41cadbafd1f788341db7b7f37816` | Proxy | proxy | live | yes |
 | arbitrum | `0xefde1c764df6522a068b38106563de166ac97f58` | GovernanceProxy | impl | live | yes |
 | base | `0x03f3fb107e74f2eac9358862e91ad3c692712054` | PoolRecoveryHelper | impl | inactive | no |
 | base | `0x0c6052254551eae3ecac77b01dfcf1025418828f` | NoProtocolFeeLiquidityBootstrappingPoolFactory | impl | inactive | no |
 | base | `0x15cfd6d15b72ec3c97475e44b60efda22f7b627f` | QuotientRateProvider | impl | inactive | no |
-| base | `0x15e86be6084c6a5a8c17732d398dfbc2ec574cec` | FreezableTransparentUpgradeableProxy-5 | proxy | live | no |
+| base | `0x15e86be6084c6a5a8c17732d398dfbc2ec574cec` | FreezableTransparentUpgradeableProxy-2 | proxy | live | no |
 | base | `0x161f4014c27773840ccb4ec1957113e6dd028846` | ERC4626LinearPoolFactory | impl | inactive | no |
 | base | `0x1b6f057520b4e826271d47b8bdab98e35af17e59` | ProtocolFeeControllerMigration | impl | live | no |
 | base | `0x2498a2b0d6462d2260eac50ae1c3e03f4829ba95` | ChildChainGaugeFactory-2 | impl | live | no |
@@ -47,7 +47,7 @@
 | base | `0x59562f93c447656f6e4799fc1fc7c3d977c3324f` | Child_Liquidity_Gauge | impl | inactive | no |
 | base | `0x5d56ea1b2595d2dbe4f5014b967c78ce75324f0c` | PoolOwner-5 | impl | inactive | no |
 | base | `0x5e10c2a55fb6e4c14c50c7f6b82bb28a813a4748` | ConstantRateProvider | impl | inactive | no |
-| base | `0x5f6848976c2914403b425f18b589a65772f082e3` | FreezableTransparentUpgradeableProxy-5 | impl | live | no |
+| base | `0x5f6848976c2914403b425f18b589a65772f082e3` | FreezableTransparentUpgradeableProxy-2 | impl | live | no |
 | base | `0x682f0ddbfd41d1272982f64a499fb62d80e27589` | ProtocolIdRegistry-2 | impl | inactive | no |
 | base | `0x698caed853be9cea96c268f565e2b61d3b2bcda4` | MockStaticAToken | impl | inactive | no |
 | base | `0x6cad2ea22bfa7f4c14aae92e47f510cd5c509bc7` | AuthorizerAdaptor | impl | inactive | no |
@@ -61,7 +61,7 @@
 | base | `0x8df317a729fcaa260306d7de28888932cb579b88` | ComposableStablePoolFactory-3 | impl | inactive | no |
 | base | `0x9129e834e15ea19b6069e8f08a8ecfc13686b8dc` | AuthorizerAdaptorEntrypoint-2 | impl | inactive | no |
 | base | `0x9a62c91626d39d0216b3959112f9d4678e20134d` | ManagedPoolFactory-2 | impl | inactive | no |
-| base | `0x9b683ca24b0e013512e2566b68704dbe9677413c` | FreezableTransparentUpgradeableProxy-11 | impl | live | yes |
+| base | `0x9b683ca24b0e013512e2566b68704dbe9677413c` | GyroConfig-2 | impl | live | yes |
 | base | `0x9dd32684176638d977883448a4c914311c07bd62` | GearboxLinearPoolFactory | impl | inactive | no |
 | base | `0x9f7e65887413a8497b87ba2058ce6e4ef4b37013` | Child_Liquidity_Gauge | impl | live | no |
 | base | `0xa42cc94b1d87e557dd73ccde28f1b621e24e67ef` | ConstantRateProvider | impl | inactive | no |
@@ -74,7 +74,7 @@
 | base | `0xb521dd5c8e13fe202626cac98873fea2b7760ce4` | MockGearboxDieselToken | impl | inactive | no |
 | base | `0xc49ca921c4cd1117162eaeec0ee969649997950c` | StablePoolFactory | impl | live | no |
 | base | `0xd87f44df0159dc78029ab9ca7d7e57e7249f5acd` | VotingEscrowDelegationProxy-3 | impl | live | no |
-| base | `0xdca5f1f0d7994a32bc511e7dba0259946653eaf6` | FreezableTransparentUpgradeableProxy-5 | impl | live | no |
+| base | `0xdca5f1f0d7994a32bc511e7dba0259946653eaf6` | FreezableTransparentUpgradeableProxy-2 | impl | live | no |
 | base | `0xded7fef7d8ecdcb74f22f0169e1a9ec696e6695d` | ProtocolFeePercentagesProvider-2 | impl | inactive | no |
 | base | `0xdf9b5b00ef9bca66e9902bd813db14e4343be025` | BatchRelayerLibrary-4 | impl | inactive | no |
 | base | `0xe8b48dc91e494c3c018119e8f3191a806a236016` | OneSidedECLPJoiner | impl | live | no |
@@ -86,9 +86,9 @@
 | chain-1329 | `0x27ce6a70b572302cd5466591313a0029b38d7bb0` | UpdatableRateProviderBalV2-2 | impl | live | no |
 | chain-1329 | `0x4ac5000fa00e31b587f1b50d596b40b52e9c6c24` | Gyro3CLPPool | impl | unknown | no |
 | chain-1329 | `0x5943834e22cafeab2e0c9c2d4a57fa5875cfa4c4` | QueryProcessor-2 | impl | live | no |
-| chain-1329 | `0x66d89dbe4f8c9765bd9d83abc0a3eed0c66c0c93` | FreezableTransparentUpgradeableProxy-2 | impl | live | no |
+| chain-1329 | `0x66d89dbe4f8c9765bd9d83abc0a3eed0c66c0c93` | GyroECLPPoolFactory | impl | live | no |
 | chain-1329 | `0x78898a5cdf6d1eb009277c744cb2241eacb3a4b9` | GovernanceRoleManager | impl | live | yes |
-| chain-1329 | `0x788fb3a1428fd851c2204dc6e30d775cb45262c0` | FreezableTransparentUpgradeableProxy-11 | impl | live | yes |
+| chain-1329 | `0x788fb3a1428fd851c2204dc6e30d775cb45262c0` | GyroConfig-2 | impl | live | yes |
 | chain-1329 | `0x7cd75be2af9bb0279f2445f08ec7590643218d23` | GyroTokenPaused | impl | live | no |
 | chain-1329 | `0x8c12a15ce60daea80fdb1b73def39e6ba048ef03` | ProxyAdmin-2 | impl | live | yes |
 | chain-1329 | `0x9e4658f0d695bb79d76fb9ff809514085569a172` | PoolOwner | impl | inactive | no |
@@ -97,9 +97,8 @@
 | chain-1329 | `0xf7f808e3ea7e7ab00938db17c622b07c40ffa38c` | L2Gyfi | impl | live | no |
 | chain-1329 | `0xfce81cafe4b3f7e2263efc2d907f488ebf2b238e` | PauseManager | impl | inactive | no |
 | chain-146 | `0x049919ae32e50aee5ea1a0998a841d175ec6f1b3` | StableSurgeHook | impl | live | no |
-| chain-146 | `0x05d8c43b2c66978dbfa6d8ef6e2b58ffcca3971e` | Gyro3CLPPoolFactory | impl | inactive | no |
+| chain-146 | `0x05d8c43b2c66978dbfa6d8ef6e2b58ffcca3971e` | Gyro3CLPPoolFactory-4 | impl | inactive | no |
 | chain-146 | `0x096f0a6490aac8324cf387cc248fb2f991ef3089` | ProxyAdmin | impl | live | yes |
-| chain-146 | `0x0e355824f66364bb721cf1c728654f2bd10a627e` | Gyro3CLPPoolFactory | proxy | live | no |
 | chain-146 | `0x10e0b3db47dbdb9b38a4657881d3769263245587` | QuotientRateProvider | impl | live | no |
 | chain-146 | `0x113cf97f53297b9a14baaba5733ee37040106d71` | LevelNftDescriptor | impl | live | no |
 | chain-146 | `0x13024ff3879ce1d3a827958ab1e5fdf29250a05d` | UpdatableRateProviderBalV2 | impl | live | yes |
@@ -110,21 +109,21 @@
 | chain-146 | `0x20a7e5f22a16cfb5b33258abdc1d6d48f104bc89` | UpdatableRateProviderBalV2 | impl | live | yes |
 | chain-146 | `0x218cb380c31896396325ef007820146791a7bd9f` | UpdatableRateProviderBalV2 | impl | live | yes |
 | chain-146 | `0x22f5b7fdd99076f1f20f8118854ce3984544d56d` | WeightedPoolFactory-2 | impl | inactive | no |
-| chain-146 | `0x2426d2133effc36c1579c868e569027a7daff07f` | FreezableTransparentUpgradeableProxy-3 | impl | live | yes |
+| chain-146 | `0x2426d2133effc36c1579c868e569027a7daff07f` | GyroConfig | impl | live | yes |
 | chain-146 | `0x2d0e0814e62d80056181f5cd932274405966e4f0` | Beets | impl | live | no |
 | chain-146 | `0x315f64a6a80b3c55a96dc3fc987cfa4287ec52ee` | PoolOwner | impl | inactive | no |
 | chain-146 | `0x33c11b9ea53a8072873ab8e9678023d3f68f7a47` | ProxyAdmin | impl | live | yes |
 | chain-146 | `0x34a02efc91dfa24b883ba6f12613325a5fa48bca` | PoolOwner | impl | inactive | no |
 | chain-146 | `0x3c35e59488b124deec2a1b1f7c0745682c17781a` | PythAggregatorV3 | impl | inactive | no |
 | chain-146 | `0x3d9319bb29daf6081d01dc56b6203efcc90f0bad` | StableSurgePoolFactory-3 | impl | live | no |
-| chain-146 | `0x3f1f8541500c4bcc26d47298ebf34e3aafb068da` | FreezableTransparentUpgradeableProxy-3 | impl | live | yes |
+| chain-146 | `0x3f1f8541500c4bcc26d47298ebf34e3aafb068da` | GyroConfig | impl | live | yes |
 | chain-146 | `0x455a56994df75ef70795c7a2d6a1d40534b72aeb` | Simple_Vesting_Escrow | impl | inactive | no |
 | chain-146 | `0x4726eb55c37f0353f6d5011b5652d44a87d60fc3` | WeightedPoolFactory-3 | impl | live | no |
 | chain-146 | `0x482ee54595f79b6ba34b75754a4983134148affb` | StablePoolFactory | impl | live | no |
 | chain-146 | `0x4881eff86856216b38eee74a20bc3156a599ec83` | UpdatableRateProviderBalV2 | impl | live | yes |
 | chain-146 | `0x492e4b1b6ef658c459ae82c7fba61d0c086a8f7d` | Reliquary | impl | inactive | no |
 | chain-146 | `0x496b562c9fe6e86d7c169a8e7ed8947ecba2f7b4` | MaBeetsBoost | impl | inactive | no |
-| chain-146 | `0x4a1d66cb3f33008657d100c38e4fa158aa0defec` | FreezableTransparentUpgradeableProxy-4 | impl | live | no |
+| chain-146 | `0x4a1d66cb3f33008657d100c38e4fa158aa0defec` | GyroECLPPoolFactory-2 | impl | live | no |
 | chain-146 | `0x4b13e4d3e345debdc88f27b7e629ed96c289d0f1` | ProxyAdmin | impl | live | yes |
 | chain-146 | `0x4b16176b5c5727a9f646e4a9005c2597ad4bbc0d` | TimelockController | impl | inactive | no |
 | chain-146 | `0x4c5e12950d0a32d3fbc95504ea1b232752e28010` | BeetsShadowArbitrage | impl | inactive | no |
@@ -183,9 +182,9 @@
 | chain-146 | `0xdc580ce8e689a49d3ce58fad4c52786c39a923e6` | CombinedRateProviderFactory | impl | inactive | no |
 | chain-146 | `0xdc831599565f3e68b9358b0f3db45f6be4f0b26e` | ConstantRateProviderFactory | impl | inactive | no |
 | chain-146 | `0xdcd40648f19182dc15b0acdf07c45e07d68a67f2` | TimelockController | impl | inactive | no |
-| chain-146 | `0xde62378b913337667c7a238caf695b146421e23d` | FreezableTransparentUpgradeableProxy-3 | impl | live | yes |
+| chain-146 | `0xde62378b913337667c7a238caf695b146421e23d` | GyroConfig | impl | live | yes |
 | chain-146 | `0xe0f1dfae777bb7d44d3cb7d8fcdce6731165211e` | EventEmitter | impl | inactive | no |
-| chain-146 | `0xe22c6ddc731a9fd55b3ed224e7b58ad669b38739` | FreezableTransparentUpgradeableProxy-4 | impl | live | no |
+| chain-146 | `0xe22c6ddc731a9fd55b3ed224e7b58ad669b38739` | GyroECLPPoolFactory-2 | impl | live | no |
 | chain-146 | `0xe36d5d493c0575b3153cbe3c92fa75972a598b9c` | NftDescriptor | impl | live | no |
 | chain-146 | `0xe5da20f15420ad15de0fa650600afc998bbe3955` | SonicStaking | proxy | live | no |
 | chain-146 | `0xe61fce9f91ad1cb58f2d610cd32e54f7235884a7` | Gyro2CLPPoolFactory-3 | impl | inactive | no |
@@ -195,10 +194,10 @@
 | chain-146 | `0xeecee50a4333c8b8a8f76c81b6092477ae8ea81b` | ProxyAdmin | proxy | live | yes |
 | chain-146 | `0xefd42bd332bd8d2b68d83ab6acc833fae0f66fef` | LegendsOfMaBeets | impl | live | no |
 | chain-146 | `0xf00c004d5453bbd71c2267b015516b80add7ce76` | Child_Liquidity_Gauge-2 | impl | inactive | no |
-| chain-146 | `0xf023731dd8758d7c869af10005e6380cb57775a9` | FreezableTransparentUpgradeableProxy-9 | impl | live | no |
+| chain-146 | `0xf023731dd8758d7c869af10005e6380cb57775a9` | GyroECLPPoolFactory-3 | impl | live | no |
 | chain-146 | `0xf4fa7f3308a1543e7d89950519341c7ce479400b` | SonicStaking | proxy | live | no |
 | chain-146 | `0xf750f4e0813898c544a4349526206e1165f0e5d0` | TimelockController | impl | inactive | no |
-| chain-146 | `0xf804356137a460bec75c7daf70244029629c4491` | FreezableTransparentUpgradeableProxy-4 | impl | live | no |
+| chain-146 | `0xf804356137a460bec75c7daf70244029629c4491` | GyroECLPPoolFactory-2 | impl | live | no |
 | chain-146 | `0xfa45ac4009f4f0391298dba18f0ebb3884947be3` | GyroECLPMath-4 | impl | live | no |
 | chain-146 | `0xfa5084c5428b1a999858b163b12ff63117a68312` | X33RateProvider | impl | inactive | no |
 | chain-146 | `0xfaa8d74aa92851c52b09cb7d6dece6cf2c14a6f5` | BeetsNftDescriptor | impl | inactive | no |
@@ -210,7 +209,7 @@
 | ethereum | `0x1fb7317359d88076a24cdb97d84cec796baba876` | CouncillorNFT | impl | inactive | no |
 | ethereum | `0x2519a729535470830d345b78109818f94c1c2869` | ReserveManager | impl | live | yes |
 | ethereum | `0x28f93f0dccdac0a7891250fb9c72156595b9464a` | TrustedSignerPriceOracle | impl | inactive | yes |
-| ethereum | `0x29609b3fd68c647c3a619e69de386f2f02ee26e6` | FreezableTransparentUpgradeableProxy-12 | proxy | live | yes |
+| ethereum | `0x29609b3fd68c647c3a619e69de386f2f02ee26e6` | FreezableTransparentUpgradeableProxy-7 | proxy | live | yes |
 | ethereum | `0x2a18f596283f9082fd88f82556d5f78e3c482411` | CheckedPriceOracle | impl | live | yes |
 | ethereum | `0x2a803ce12be775802a7c6f50797e53e9c3fd4025` | GydRecovery | impl | live | yes |
 | ethereum | `0x339b896bafd5d3811241d607d0cd33a1c2f09404` | CouncillorNFTVault | impl | inactive | no |
@@ -224,14 +223,14 @@
 | ethereum | `0x4e56f19235ff2a14c76332877a35d6af5bde07ec` | FoundingFrog | impl | live | no |
 | ethereum | `0x5241b3644b5c616dd94dcbd61d89c3aba64460bb` | FoundingMemberVault | impl | inactive | no |
 | ethereum | `0x534aca46beac55c013ddd48a1b6f7ce5e8d5f95b` | LockedVault | impl | inactive | no |
-| ethereum | `0x53b8b175045816d447916b81ac12ba78fa2a6298` | FreezableTransparentUpgradeableProxy-6 | proxy | live | no |
+| ethereum | `0x53b8b175045816d447916b81ac12ba78fa2a6298` | FreezableTransparentUpgradeableProxy-3 | proxy | live | no |
 | ethereum | `0x5413e8e572759787fbece0a8e8d65eb5188556d8` | ConstantRateProvider-3 | impl | inactive | no |
 | ethereum | `0x56773ca4a4138f21128d23adb237004697273789` | RootSafetyCheck | impl | live | yes |
 | ethereum | `0x579653927bf509b361f6e3813f5d4b95331d98c9` | Gyro2CLPPoolFactory-2 | impl | inactive | no |
 | ethereum | `0x587b602f38e18c1e2626f19ff61c70e935a684a7` | GovernanceManager | impl | inactive | yes |
 | ethereum | `0x5c73d4e5349ffd392e62fa6bed994bb449d94f86` | ReserveStewardshipIncentives | impl | live | yes |
 | ethereum | `0x6170edee4f62db7deeb55ba15cc7a5517f4dae7a` | StaticTierStrategy | impl | live | yes |
-| ethereum | `0x66a7aa37ea714e0b8dd553f375104ea7d160b0b2` | FreezableTransparentUpgradeableProxy-7 | proxy | live | yes |
+| ethereum | `0x66a7aa37ea714e0b8dd553f375104ea7d160b0b2` | FreezableTransparentUpgradeableProxy-4 | proxy | live | yes |
 | ethereum | `0x695225a1e074ffbe8ffe42364e77857df9b6bc61` | LockedVaultWithThreshold | proxy | live | no |
 | ethereum | `0x70d3ec9ff6cb962246072fa9d18153fdf6f1215d` | EmergencyRecovery | impl | inactive | no |
 | ethereum | `0x71260fce6c16fb7b3481bafb64377c2aadc4f961` | MultiownerProxyAdmin | impl | live | no |
@@ -246,26 +245,26 @@
 | ethereum | `0x88f3b40e45213131860f81b32ca12a3d54821d65` | GenericVault | proxy | live | yes |
 | ethereum | `0x89b93862bebba6c98e6f158ef9fada004fde854a` | GenericVaultPriceOracle | impl | inactive | no |
 | ethereum | `0x8d93b853849b9884e2bb413444ec23eb5366ee91` | ExtensibleWeightedPool2Tokens | impl | live | no |
-| ethereum | `0x8de76bf863e0a571be7165d9c85a1116c0fff393` | FreezableTransparentUpgradeableProxy-8 | proxy | live | yes |
-| ethereum | `0x8e17873fe6c257fcd4b32777658914b4b1a94ff2` | FreezableTransparentUpgradeableProxy-6 | proxy | live | no |
+| ethereum | `0x8de76bf863e0a571be7165d9c85a1116c0fff393` | FreezableTransparentUpgradeableProxy-5 | proxy | live | yes |
+| ethereum | `0x8e17873fe6c257fcd4b32777658914b4b1a94ff2` | FreezableTransparentUpgradeableProxy-3 | proxy | live | no |
 | ethereum | `0x8ee79eb3f37b0ea4544df2a0b9e228b6fcd8c718` | CTokenRateProvider | impl | inactive | no |
 | ethereum | `0x8f38321416d587ec4f3a4b37b1ccbb80013a3fab` | ReserveSafetyManager | impl | live | yes |
 | ethereum | `0x917156abfba776b1ec30f20d5febb39ce37d1e18` | CouncillorNFT | impl | inactive | no |
-| ethereum | `0x94c34174f484cc0c80ea2d3670a50ec9325c9126` | FreezableTransparentUpgradeableProxy-7 | impl | live | yes |
+| ethereum | `0x94c34174f484cc0c80ea2d3670a50ec9325c9126` | FreezableTransparentUpgradeableProxy-4 | impl | live | yes |
 | ethereum | `0x9543b9f3450c17f1e5e558cc135fd8964dbef92a` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0x98962bec8bf0363d00d97d9049b40079356a4953` | GenericVault | proxy | live | yes |
 | ethereum | `0x991aebbde29bfd8455c2ab6b1cd51dd9ab70a336` | LockedVault | impl | inactive | no |
 | ethereum | `0xa015a8c96f45758614c4077813dc863a74cb1487` | VotingPowerAggregator | impl | inactive | no |
 | ethereum | `0xa2321e23b3060e160195e138b62f8498546b0247` | AssociatedDAOVault | impl | inactive | no |
 | ethereum | `0xa3979e46d1791a4f947641ed0e058025534a3008` | LockedVault | proxy | live | no |
-| ethereum | `0xa87217d855edad15d63255db176b810b0325bda2` | FreezableTransparentUpgradeableProxy-2 | impl | live | no |
+| ethereum | `0xa87217d855edad15d63255db176b810b0325bda2` | GyroECLPPoolFactory | impl | live | no |
 | ethereum | `0xa8d612739354a4106072a91aa4ca1458e1b5f9e9` | GnosisSafeProxyFactory | proxy | live | no |
 | ethereum | `0xaf55785e3f020d8f335ad0b04872b46fb46274a2` | FoundingMemberVault | impl | inactive | no |
 | ethereum | `0xb05bcedb54814e0b3893cbf5b2c27d90164e206e` | GovernanceManager | impl | live | yes |
 | ethereum | `0xb2fbd0087e5e2fe1f752ab0a8ca67bebd02ae755` | GovernanceManager | impl | live | yes |
 | ethereum | `0xb6dc4f06867274539ecd06e244349f0a75410f9e` | LockedVault | proxy | live | no |
 | ethereum | `0xb94c4ff4d5d18fa5a33bf1445c3790326d8bc1f6` | LockedVaultWithThreshold | impl | inactive | no |
-| ethereum | `0xbaf6a0be2dca3350d3558783740dd8d540a6cc95` | FreezableTransparentUpgradeableProxy-8 | impl | live | yes |
+| ethereum | `0xbaf6a0be2dca3350d3558783740dd8d540a6cc95` | FreezableTransparentUpgradeableProxy-5 | impl | live | yes |
 | ethereum | `0xbb08c8532adb8661ee1400d59f4fc04284c46ce2` | ConstantRateProvider | impl | inactive | no |
 | ethereum | `0xbc7168da9ee565fa0becb5aec9400929dd3ac25d` | TellorOracle | impl | inactive | yes |
 | ethereum | `0xbdcfe6e4d1ca68b18b8d65f999746a75c1a471b2` | CheckedPriceOracle | impl | live | yes |
@@ -286,7 +285,7 @@
 | ethereum | `0xdbc810d748f808967f34da2f37f116c58ec4eda7` | RateManager | impl | inactive | no |
 | ethereum | `0xde0e16c5e234339ac3becf8c26be91be3cb9ec2e` | TransparentUpgradeableProxy | proxy | live | no |
 | ethereum | `0xe02f11277cfa84c696370c097c51848c6a6523b3` | FrogMinter | impl | inactive | no |
-| ethereum | `0xe07f9d810a48ab5c3c914ba3ca53af14e4491e8a` | FreezableTransparentUpgradeableProxy-13 | proxy | live | no |
+| ethereum | `0xe07f9d810a48ab5c3c914ba3ca53af14e4491e8a` | FreezableTransparentUpgradeableProxy-8 | proxy | live | no |
 | ethereum | `0xe1c7ad5722aa5826a2dd95a9710a8fbbe644123b` | LockedVault | impl | inactive | no |
 | ethereum | `0xe22188f5d6acc1dd951bd20f531624b690f9d9a0` | TellorOracle | impl | live | yes |
 | ethereum | `0xe4c243ecc7a0fba69006855e0a02232e02efb1e4` | TransparentUpgradeableProxy-2 | impl | inactive | no |
@@ -305,15 +304,15 @@
 | ethereum | `0xfc7d964f1676831d8105506b1f0c3b3e2b55c467` | Vyper_contract | impl | live | no |
 | ethereum | `0xfdbcc2e01d4ec8df128664325100173e67e4d582` | StaticTierStrategy | impl | live | yes |
 | ethereum | `0xfe41992176ad0fa41c4a2ed70f3c36273027c27c` | StaticTierStrategy | impl | live | yes |
-| gnosis | `0x00a2a9bbd352ab46274433faa9fec35fe3abb4a8` | FreezableTransparentUpgradeableProxy-10 | proxy | live | yes |
+| gnosis | `0x00a2a9bbd352ab46274433faa9fec35fe3abb4a8` | FreezableTransparentUpgradeableProxy-6 | proxy | live | yes |
 | gnosis | `0x15e86be6084c6a5a8c17732d398dfbc2ec574cec` | ERC4626RateProviderFactory-2 | impl | live | no |
 | gnosis | `0x32acb44fc929339b9f16f0449525cc590d2a23f3` | QueryProcessor | impl | live | no |
 | gnosis | `0x4e56f19235ff2a14c76332877a35d6af5bde07ec` | ProxyAdmin-2 | impl | live | yes |
 | gnosis | `0x5d3be8aae57bf0d1986ff7766cc9607b6cc99b89` | FreezableTransparentUpgradeableProxy | proxy | live | no |
 | gnosis | `0x84b22e0f83d848ead9fc050734e946b665232c0e` | OneSidedECLPJoiner | impl | live | no |
-| gnosis | `0x8a5eb9a5b726583a213c7e4de2403d2dfd42c8a6` | FreezableTransparentUpgradeableProxy-2 | impl | live | no |
+| gnosis | `0x8a5eb9a5b726583a213c7e4de2403d2dfd42c8a6` | GyroECLPPoolFactory | impl | live | no |
 | gnosis | `0x9b683ca24b0e013512e2566b68704dbe9677413c` | GyroECLPMath | impl | live | no |
-| gnosis | `0xe02f11277cfa84c696370c097c51848c6a6523b3` | FreezableTransparentUpgradeableProxy-10 | impl | live | yes |
+| gnosis | `0xe02f11277cfa84c696370c097c51848c6a6523b3` | FreezableTransparentUpgradeableProxy-6 | impl | live | yes |
 | gnosis | `0xefde1c764df6522a068b38106563de166ac97f58` | PoolOwner-4 | impl | inactive | no |
 | optimism | `0x02a569eea6f85736e2d63c59e60d27d075e75c33` | ERC4626RateProviderFactory-3 | impl | live | no |
 | optimism | `0x03cbccbe8d2073a1dc186ae6bcd95390fcdff36f` | UnbalancedAddViaSwapRouter | impl | live | no |
@@ -327,11 +326,11 @@
 | optimism | `0x1780e8185199dac45284039bb3e3b64060d943ab` | StablePoolFactory-2 | impl | live | no |
 | optimism | `0x1cd776897ef4f647bf8241ec69549e4a9cb1d608` | PoolSwapFeeHelper | impl | live | no |
 | optimism | `0x201efd508c8dfe9de1a13c2452863a78cb2a86cc` | ERC4626CowSwapFeeBurner | impl | inactive | no |
-| optimism | `0x22625eedd92c81a219a83e1dc48f88d54786b017` | FreezableTransparentUpgradeableProxy-9 | impl | live | no |
+| optimism | `0x22625eedd92c81a219a83e1dc48f88d54786b017` | GyroECLPPoolFactory-3 | impl | live | no |
 | optimism | `0x254f3a2974b97dc2e675f6115c845567c55f83b0` | WeightedPoolFactory | impl | live | no |
 | optimism | `0x268e2ee1413d768b6e2dc3f5a4ddc9ae03d9af42` | StablePoolFactory | impl | live | no |
 | optimism | `0x311334883921fb1b813826e585df1c2be4358615` | BufferRouter | impl | inactive | no |
-| optimism | `0x32acb44fc929339b9f16f0449525cc590d2a23f3` | FreezableTransparentUpgradeableProxy-14 | proxy | live | yes |
+| optimism | `0x32acb44fc929339b9f16f0449525cc590d2a23f3` | FreezableTransparentUpgradeableProxy-9 | proxy | live | yes |
 | optimism | `0x32f6fc935456f5fa4e37b095ba17efe95fc41041` | UpdatableRateProviderBalV2-3 | impl | live | no |
 | optimism | `0x355bd33f0033066bb3de396a6d069be57353ad95` | PoolSwapFeeHelper | impl | live | no |
 | optimism | `0x3630d26e51c03026f4f063d69d65f8e234eeaf5b` | MevCaptureHook | impl | inactive | no |
@@ -342,7 +341,7 @@
 | optimism | `0x4cb42fc3b5fb9392ce0772c3a540e4ae4da4ac4d` | ProtocolFeeSweeper | impl | inactive | no |
 | optimism | `0x4e56f19235ff2a14c76332877a35d6af5bde07ec` | GyroECLPMath | impl | live | no |
 | optimism | `0x4eff2d77d9ffbaefb4b141a3e494c085b3ff4cb5` | ConstantPriceFeed | impl | live | no |
-| optimism | `0x53eff5068a1a3b39a9157da6ef5a18d555c479ef` | FreezableTransparentUpgradeableProxy-15 | impl | live | no |
+| optimism | `0x53eff5068a1a3b39a9157da6ef5a18d555c479ef` | GyroECLPPoolFactory-4 | impl | live | no |
 | optimism | `0x56c8d8f7f926e0fb04a2cf05f18b44b2c5864aeb` | ClaimSignatureRegistry | impl | live | no |
 | optimism | `0x5cf4928a3205728bd12830e1840f7db85c62a4b9` | Authorizer | impl | inactive | no |
 | optimism | `0x5dbad78818d4c8958eff2d5b95b28385a22113cd` | BAL | impl | inactive | no |
@@ -360,7 +359,7 @@
 | optimism | `0x96484f2abf5e58b15176dbf1a799627b53f13b6d` | BatchRelayerLibrary | impl | inactive | no |
 | optimism | `0x9805dcfd25e6de36bad8fe9d3fe2c9b44b764102` | ProtocolIdRegistry | impl | inactive | no |
 | optimism | `0x99364f84d1c68d87aead0ce92eb47409a0c52c58` | BalancerPoolToken | impl | live | no |
-| optimism | `0x9b683ca24b0e013512e2566b68704dbe9677413c` | FreezableTransparentUpgradeableProxy-16 | proxy | live | no |
+| optimism | `0x9b683ca24b0e013512e2566b68704dbe9677413c` | FreezableTransparentUpgradeableProxy-10 | proxy | live | no |
 | optimism | `0x9da18982a33fd0c7051b19f0d7c76f2d5e7e017c` | VotingEscrowDelegationProxy-2 | impl | live | no |
 | optimism | `0xa0de078cd5cfa7088821b83e0bd7545ccfb7c883` | StableLPOracleFactory | impl | live | no |
 | optimism | `0xa523f47a933d5020b23629ddf689695aa94612dc` | VotingEscrowDelegationProxy | impl | live | no |
@@ -377,14 +376,14 @@
 | optimism | `0xcc267d25576b48f08a90c3605624ab62a73a7a4e` | ProtocolFeeHelper-2 | impl | live | no |
 | optimism | `0xcfc923dbe1ade0f2bf86400cd7c444ec767ecbfd` | PoolOwner-3 | impl | inactive | no |
 | optimism | `0xdb8d758bcb971e482b2c45f7f8a7740283a1bd3a` | ProtocolFeeController | impl | live | no |
-| optimism | `0xe02f11277cfa84c696370c097c51848c6a6523b3` | FreezableTransparentUpgradeableProxy-17 | impl | live | yes |
+| optimism | `0xe02f11277cfa84c696370c097c51848c6a6523b3` | GyroConfig-3 | impl | live | yes |
 | optimism | `0xe3881627b8deebccf9c23b291430a549fc0be5f7` | MockVault | impl | inactive | no |
 | optimism | `0xe42ffa682a26ef8f25891db4882932711d42e467` | CircuitBreakerLib | impl | inactive | no |
-| optimism | `0xe8b18f8a2e4a1cd23e7f5fc6d9324f47f10db528` | FreezableTransparentUpgradeableProxy-2 | impl | live | no |
+| optimism | `0xe8b18f8a2e4a1cd23e7f5fc6d9324f47f10db528` | GyroECLPPoolFactory | impl | live | no |
 | optimism | `0xea692068ccf15b9560f9a694162b3f0a0fb8a687` | ClaimSignatureRegistry | impl | live | no |
 | optimism | `0xeaedc32a51c510d35ebc11088fd5ff2b47aacf2e` | VaultExplorer | impl | inactive | no |
 | optimism | `0xeb2bb012869255f8c622563dc4c3afa8619fe804` | WeightedLPOracleFactory-3 | impl | live | no |
-| optimism | `0xefde1c764df6522a068b38106563de166ac97f58` | FreezableTransparentUpgradeableProxy-18 | impl | live | no |
+| optimism | `0xefde1c764df6522a068b38106563de166ac97f58` | GyroECLPPoolFactory-5 | impl | live | no |
 | optimism | `0xf24917fb88261a37cc57f686ebc831a5c0b9fd39` | ERC20 | impl | inactive | no |
 | optimism | `0xf39ca6ede9bf7820a952b52f3c94af526bab9015` | StableSurgeHook | impl | live | no |
 | optimism | `0xf4743d026f3d07af3747bb7d05bed06d177241d7` | CowSwapFeeBurner | impl | inactive | no |
@@ -395,31 +394,32 @@
 | polygon | `0x333fadaf093cccc04d83ac19f1b6a6f2443ed028` | GyroTwoPoolFactory | impl | live | yes |
 | polygon | `0x3841ee752ae02b3e4260d064621902de1f1eac46` | Gyro2CLPPoolFactory | impl | live | no |
 | polygon | `0x3b55b649a5f2bc4ff39bbd2e345743e3a853c7a4` | Gyro2CLPPoolFactory | impl | live | no |
-| polygon | `0x4c818c579431052e92b89434e00ae729d8addf17` | FreezableTransparentUpgradeableProxy-19 | impl | live | no |
+| polygon | `0x4c818c579431052e92b89434e00ae729d8addf17` | GyroECLPPoolFactory-6 | impl | live | no |
 | polygon | `0x5d8545a7330245150be0ce88f8afb0edc41dfc34` | Gyro2CLPPoolFactory | proxy | live | no |
 | polygon | `0x611a66667327db64f44144766c9198ec52a5ece4` | TrustedSignerPriceOracle-2 | impl | inactive | no |
 | polygon | `0x64f84aac92320bba0bfa7af76a2da1d89ec75fc3` | CheckedPriceOracle-3 | impl | live | yes |
-| polygon | `0x69485227e77fd28b740f7ce73c51cf0bd4f04cfb` | Gyro3CLPPoolFactory-2 | impl | inactive | no |
+| polygon | `0x69485227e77fd28b740f7ce73c51cf0bd4f04cfb` | Gyro3CLPPoolFactory | impl | inactive | no |
 | polygon | `0x70772f847ed577a7ed8d764ea602a96cdd20fcab` | CheckedPriceOracle-4 | impl | live | yes |
 | polygon | `0x83d34ca335d197bcfe403cb38e82cbd734c4cbbe` | ProxyAdmin-3 | impl | live | yes |
 | polygon | `0x8e9a7c0f15bb4d6d997d9e0bc29ad90263d5cf49` | CheckedPriceOracle-2 | impl | live | yes |
-| polygon | `0x90f08b3705208e41dbeeb37a42fb628dd483adda` | Gyro3CLPPoolFactory-3 | proxy | live | no |
-| polygon | `0x949af2fc2a04761f2a0a921507ecee91a1f9d02f` | FreezableTransparentUpgradeableProxy-20 | impl | live | no |
+| polygon | `0x90f08b3705208e41dbeeb37a42fb628dd483adda` | FreezableTransparentUpgradeableProxy-11 | proxy | live | no |
+| polygon | `0x949af2fc2a04761f2a0a921507ecee91a1f9d02f` | GyroECLPPoolFactory-7 | impl | live | no |
 | polygon | `0x968348c6135c25e7160ad0671c8c9ca2ed2bb982` | Gyro2CLPPoolFactory | impl | live | no |
-| polygon | `0x977e8a3917dffe582afbb2ee5a6be3e9fa043079` | Gyro3CLPPoolFactory-4 | impl | inactive | no |
+| polygon | `0x977e8a3917dffe582afbb2ee5a6be3e9fa043079` | Gyro3CLPPoolFactory-2 | impl | inactive | no |
 | polygon | `0xba116c6f9e631413847747df3cf6dc5cdd1455c7` | CheckedPriceOracle-2 | impl | live | yes |
 | polygon | `0xbe1a07f3979e15e60d739a2b153680a6df0c4350` | GyroECLPMath-2 | impl | live | no |
-| polygon | `0xd4204551bc5397455f8897745d50ac4f6bee0ef6` | FreezableTransparentUpgradeableProxy-21 | proxy | live | no |
-| polygon | `0xe0d2c78e8b5c94d4dadb2d77d04020e2fc5f28bd` | Gyro3CLPPoolFactory-5 | impl | inactive | no |
+| polygon | `0xd4204551bc5397455f8897745d50ac4f6bee0ef6` | FreezableTransparentUpgradeableProxy-12 | proxy | live | no |
+| polygon | `0xe0d2c78e8b5c94d4dadb2d77d04020e2fc5f28bd` | Gyro3CLPPoolFactory-3 | impl | inactive | no |
 | polygon | `0xe59910c7725e15c28ba48bbbb995e7396536d981` | GyroThreePoolFactory | impl | live | yes |
-| polygon | `0xf5d5441384283e1accc58c9f4d5e058d2845f18c` | GyroConfig | impl | live | yes |
+| polygon | `0xf5d5441384283e1accc58c9f4d5e058d2845f18c` | GyroConfig-4 | impl | live | yes |
 | polygon | `0xfd83a2eb966422d3e7f43fb42e8ac93cc3377dcc` | CheckedPriceOracle-5 | impl | live | yes |
 | polygon | `0xfdc2e9e03f515804744a40d0f8d25c16e93fbe67` | ProxyAdmin-3 | proxy | live | yes |
 
-## Source unavailable (4)
+## Source unavailable (5)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
 - chain-1329 `0x194941b55555afd751285b8b792c7538152deadd`
+- chain-146 `0x0e355824f66364bb721cf1c728654f2bd10a627e`
 - chain-146 `0x815ab57a5a2e4976cec0b43c2d50cf26ef6f31fd`
 - ethereum `0x99fafebb9471963d7f480c1f30257439b59eb1af`
 - optimism `0xe2fa4e1d17725e72dcdafe943ecf45df4b9e285b`

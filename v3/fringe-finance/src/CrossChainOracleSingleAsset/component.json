@@ -2,7 +2,7 @@
   "component": "CrossChainOracleSingleAsset",
   "main_contract": "CrossChainOracleSingleAsset",
   "source_file_count": 4,
-  "deployment_count": 3,
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -13,22 +13,6 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x7655a3dc27ae8df961939373e1df80875e23d502",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0xc55a7f215a18713015570ecb18bbcf8c82f83071",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
     }
   ]
 }

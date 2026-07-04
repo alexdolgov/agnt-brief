@@ -1,0 +1,18 @@
+{
+  "component": "LiquidationRow-8",
+  "main_contract": "LiquidationRow",
+  "source_file_count": 66,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "linea",
+      "chain_id": 59144,
+      "address": "0xc332386610bd4d555c762d7f88c17acf96f05b3c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

@@ -1,22 +1,17 @@
 {
   "component": "StrategyStorage-9",
   "main_contract": "StrategyStorage",
-  "source_file_count": 47,
+  "source_file_count": 48,
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
-    "https://github.com/treehouse-gaia/audit-report/blob/main/Fuzzland%20tETH%20Sep%20Audit%20Report%20vF.pdf",
-    "https://github.com/treehouse-gaia/audit-report/blob/main/Sigma%20Prime%20tETH%20Aug%20Audit%20Report%20vF.pdf",
-    "https://github.com/treehouse-gaia/audit-report/blob/main/Sigma%20Prime%20tETH%20Sep%20Audit%20Report%20vF.pdf",
-    "https://github.com/treehouse-gaia/audit-report/blob/main/Trail%20of%20Bits%20tETH%20Aug%20Audit%20Report%20vF.pdf",
-    "https://github.com/treehouse-gaia/audit-report/blob/main/Trail%20of%20Bits%20tETH%20Oct%20Audit%20Report%20vF.pdf",
-    "https://github.com/treehouse-gaia/audit-report/blob/main/WatchPug%20tHYPE%20May%20Audit%20Report.pdf"
+    "https://github.com/treehouse-gaia/audit-report/blob/main/Fuzzland%20tETH%20Sep%20Audit%20Report%20vF.pdf"
   ],
   "addresses": [
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0x5f4d2e6c118b5e3c74f0b61de40f627ca9873d6e",
+      "address": "0x765f6dc8496ca7ef1e4a391be10185229aacf04b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -5,7 +5,7 @@
 - Project: ZyFAI (`zyfai`)
 - Website: [https://zyf.ai](https://zyf.ai)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:25:33.240Z
+- Generated: 2026-07-04T11:05:47.830Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-c970
 - Chains: arbitrum, base, ethereum, plasma, sonic
 - Contract surface: 123 unique implementations (342 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-AI Agents. Structurally: 128 project-authored contract(s) across 5 chain(s); 15 ERC4626 vaults, 19 ERC20 tokens, 1 ERC721 NFT, 13 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+AI Agents. Structurally: 184 project-authored contract(s) across 5 chain(s); 35 ERC4626 vaults, 39 ERC20 tokens, 1 ERC721 NFT, 13 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 9 functional families. Its contracts share 33 common project-authored base contract(s) (basewasabipool, abstractwasabipool, cometextinterface). Dominant framework: openzeppelin.
+The protocol comprises 9 functional families. Its contracts share 34 common project-authored base contract(s) (basewasabipool, abstractwasabipool, cometextinterface). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

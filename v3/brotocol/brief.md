@@ -5,7 +5,7 @@
 - Project: Brotocol (`brotocol`)
 - Website: [https://brotocol.xyz/](https://brotocol.xyz/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:37.059Z
+- Generated: 2026-07-04T11:05:40.813Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-f007
 - Chains: arbitrum, avalanche, base, bsc, ethereum, linea, merlin, mode
 - Contract surface: 242 unique implementations (524 raw deployments)
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Bridge Aggregator. Structurally: 176 project-authored contract(s) across 7 chain(s); 17 ERC20 tokens, 4 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Bridge Aggregator. Structurally: 286 project-authored contract(s) across 7 chain(s); 68 ERC20 tokens, 4 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
@@ -23,8 +23,8 @@ The protocol comprises 6 functional families. Its contracts share 50 common proj
 
 ## Contract Surface Quality
 
-- Indexed contracts: 592; live-surface contracts included: 511 (395 live, 116 unknown).
-- Excluded by liveness: 81 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 584; live-surface contracts included: 511 (395 live, 116 unknown).
+- Excluded by liveness: 73 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.

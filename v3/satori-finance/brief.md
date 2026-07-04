@@ -5,7 +5,7 @@
 - Project: Satori Finance (`satori-finance`)
 - Website: [https://satori.finance](https://satori.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:51.908Z
+- Generated: 2026-07-04T11:05:46.522Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-b097
 - Chains: arbitrum, base, ethereum, linea, polygon-zkevm, scroll
 - Contract surface: 168 unique implementations (277 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-Derivatives. Structurally: 150 project-authored contract(s) across 3 chain(s); 2 ERC4626 vaults, 53 ERC20 tokens, 1 ERC721 NFT, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Derivatives. Structurally: 178 project-authored contract(s) across 4 chain(s); 2 ERC4626 vaults, 53 ERC20 tokens, 1 ERC721 NFT, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 4 functional families. Its contracts share 21 common project-authored base contract(s) (proxy, lockable, ynbase). Dominant framework: openzeppelin.
+The protocol comprises 4 functional families. Its contracts share 22 common project-authored base contract(s) (proxy, lockable, ynbase). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

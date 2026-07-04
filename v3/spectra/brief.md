@@ -5,7 +5,7 @@
 - Project: Spectra (`spectra`)
 - Website: [https://www.spectra.finance](https://www.spectra.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:56.354Z
+- Generated: 2026-07-04T11:05:46.612Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-16bc
 - Chains: arbitrum, avalanche, base, bsc, ethereum, hyperliquid, optimism, sonic
 - Contract surface: 960 unique implementations (1087 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-Onchain Capital Allocator. Structurally: 49 project-authored contract(s) across 6 chain(s); 4 ERC4626 vaults, 5 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Onchain Capital Allocator. Structurally: 163 project-authored contract(s) across 8 chain(s); 19 ERC4626 vaults, 28 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 8 functional families. Its contracts share 13 common project-authored base contract(s) (proxy, erc20permitupgradeable, erc20upgradeable). Dominant framework: openzeppelin.
+The protocol comprises 8 functional families. Its contracts share 20 common project-authored base contract(s) (proxy, erc20permitupgradeable, erc20upgradeable). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

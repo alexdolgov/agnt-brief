@@ -12,7 +12,7 @@
       "address": "0x967dbcae94c4dd461ada08fc920bdf87edffe9ec",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "arbitrum",
@@ -20,7 +20,7 @@
       "address": "0xc435ccc777fe74c11965353738977d710b25534f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

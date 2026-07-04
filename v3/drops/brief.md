@@ -5,7 +5,7 @@
 - Project: Drops (`drops`)
 - Website: [https://drops.co](https://drops.co)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:44.057Z
+- Generated: 2026-07-04T11:05:41.612Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-b097
 - Chains: ethereum
 - Contract surface: 55 unique implementations (81 raw deployments)

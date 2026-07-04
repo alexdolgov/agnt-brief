@@ -2,7 +2,7 @@
   "component": "stkCvxCrvZaps-2",
   "main_contract": "stkCvxCrvZaps",
   "source_file_count": 17,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0xc8d1335d18c0ef56a00dbb8b7a639183ee1c4d78",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd835cdedc20ca3075f86dea4e0d914499d0c5b25",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

@@ -4,7 +4,7 @@
 
 - Project: Depth (`depth`)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:42.760Z
+- Generated: 2026-07-04T11:05:40.880Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-ae05
 - Chains: bsc, heco
 - Contract surface: 5 unique implementations (5 raw deployments)

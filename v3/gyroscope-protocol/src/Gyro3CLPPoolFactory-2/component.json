@@ -9,7 +9,7 @@
     {
       "chain": "polygon",
       "chain_id": 137,
-      "address": "0x69485227e77fd28b740f7ce73c51cf0bd4f04cfb",
+      "address": "0x977e8a3917dffe582afbb2ee5a6be3e9fa043079",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"

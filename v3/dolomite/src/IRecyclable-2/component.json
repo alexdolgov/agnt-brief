@@ -1,0 +1,18 @@
+{
+  "component": "IRecyclable-2",
+  "main_contract": "IRecyclable",
+  "source_file_count": 20,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x2a50efa8d04d84ee1aa285e035a97d9e1f1d3431",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

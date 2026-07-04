@@ -1,0 +1,18 @@
+{
+  "component": "Synthesis",
+  "main_contract": "Synthesis",
+  "source_file_count": 13,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0x9d74807b8fa79d49bb95cf988af3c25fb1437b4f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

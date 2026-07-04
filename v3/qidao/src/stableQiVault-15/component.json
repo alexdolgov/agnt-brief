@@ -1,0 +1,26 @@
+{
+  "component": "stableQiVault-15",
+  "main_contract": "stableQiVault",
+  "source_file_count": 23,
+  "deployment_count": 2,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x950eceee9e7d7366a24fc9d2ed4c0c37d17a0fa9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xa864956ff961ce62c266a8563b46577d3573372e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

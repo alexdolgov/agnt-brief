@@ -2,49 +2,33 @@
   "component": "NonfungiblePositionManager-2",
   "main_contract": "NonfungiblePositionManager",
   "source_file_count": 55,
-  "deployment_count": 5,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x2214a42d8e2a1d20635c2cb0664422c528b6a432",
+      "chain": "gnosis",
+      "chain_id": 100,
+      "address": "0xab235da7f52d35fb4551afba11bfb56e18774a65",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0xb7402ee99f0a008e461098ac3a27f4957df89a40",
       "is_proxy": true,
-      "implementation_address": "0x2214a42d8e2a1d20635c2cb0664422c528b6a432",
+      "implementation_address": "0xb7402ee99f0a008e461098ac3a27f4957df89a40",
       "liveness": "live"
     },
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x1af415a1eba07a4986a52b6f2e7de7003d82231e",
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x18350b048ab366ed601ffdbc669110ecb36016f3",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
-    },
-    {
-      "chain": "chain-146",
-      "chain_id": 146,
-      "address": "0x0389879e0156033202c44bf784ac18fc02edee4f",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "chain-1285",
-      "chain_id": 1285,
-      "address": "0xd045d27c1f7e7f770a807b0a85d8e3f852e0f2be",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "blast",
-      "chain_id": 81457,
-      "address": "0xbda8a8423b7f02cd935412fb9f13cb88f7875991",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
     }
   ]
 }

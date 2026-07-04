@@ -78,7 +78,7 @@
 | polygon | `0xa1cc67170df03aabd5e39406e390ef5aa2137bbb` | VaultReader | impl | inactive | no |
 | polygon | `0xa6ca41bbf555074ed4d041c1f4551ef48116d59a` | RewardTracker | impl | live | no |
 | polygon | `0xab36984e4952e5a9d08536c4de5190ed37725017` | Store | impl | inactive | no |
-| polygon | `0xabd6c70c41fdf9261dff15f4eb589b44a37072eb` | StakedMvxTracker | impl | live | no |
+| polygon | `0xabd6c70c41fdf9261dff15f4eb589b44a37072eb` | RewardTracker | impl | live | no |
 | polygon | `0xac68262df02052f7a22a4251f13447c5e2f35db6` | FastPriceEvents | impl | inactive | no |
 | polygon | `0xacec858f6397dd227dd4ed5be91a5bb180b8c430` | StakedMvxTracker | impl | inactive | no |
 | polygon | `0xaefe07f369fa46026cb27fb9d09ef59e913d6119` | StakedMvxDistributor | impl | inactive | no |

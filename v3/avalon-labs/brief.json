@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "avalon-labs",
-  "generated_at": "2026-07-03T21:05:32.401Z",
+  "generated_at": "2026-07-04T11:05:40.531Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-f2f0",
   "lifecycle_status": "unknown",
   "lifecycle_signal": {
@@ -22,14 +22,14 @@
     "drop_from_peak_pct": 85.1104388038192
   },
   "summary": {
-    "total_contracts": 572,
-    "total_addresses": 917,
-    "unique_implementations": 572,
-    "total_deployments": 917,
+    "total_contracts": 571,
+    "total_addresses": 913,
+    "unique_implementations": 571,
+    "total_deployments": 913,
     "audited_contracts": 5,
-    "unaudited_contracts": 40,
+    "unaudited_contracts": 39,
     "contracts_verified_audited": 3,
-    "contracts_verified_unaudited": 40,
+    "contracts_verified_unaudited": 39,
     "contracts_verified_by_bytecode": 2,
     "contracts_unverified": 527,
     "coverage_pct": 14.7,
@@ -82,15 +82,15 @@
     }
   },
   "topography": {
-    "project_purpose": "Anchor BTC. Structurally: 51 project-authored contract(s) across 9 chain(s); 1 ERC4626 vault, 17 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on aave.",
-    "relationship_narrative": "The protocol comprises 12 functional families. Its contracts share 28 common project-authored base contract(s) (proxy, oapp, oappsender). Dominant framework: aave.",
-    "product_family_count": 12,
-    "total_contracts_indexed": 1578,
+    "project_purpose": "Anchor BTC. Structurally: 272 project-authored contract(s) across 10 chain(s); 1 ERC4626 vault, 31 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on aave.",
+    "relationship_narrative": "The protocol comprises 13 functional families. Its contracts share 49 common project-authored base contract(s) (proxy, oapp, oappsender). Dominant framework: aave.",
+    "product_family_count": 13,
+    "total_contracts_indexed": 1573,
     "live_contracts": 313,
-    "inactive_contracts": 665,
+    "inactive_contracts": 664,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
-    "unknown_contracts": 600,
+    "unknown_contracts": 596,
     "deployment_units": 0,
     "live_deployment_units": 0,
     "dependencies_extracted": 0,
@@ -98,7 +98,7 @@
     "detected_codebases": []
   },
   "surface_sufficiency": {
-    "unique_implementations": 572,
+    "unique_implementations": 571,
     "has_non_token_contracts": true,
     "is_skeletal": false
   },
@@ -2806,7 +2806,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2025-04-12 20:38:38+03",
       "deploy_coverage_basis": null
@@ -4098,14 +4098,14 @@
       "deploy_coverage_basis": null
     },
     {
-      "chain_id": 146,
-      "chain_name": "sonic",
-      "address": "0x2840f9d9f96321435ab0f977e7fdbf32ea8b304f",
+      "chain_id": 1,
+      "chain_name": "ethereum",
+      "address": "0x2b66aade1e9c062ff411bd47c44e0ad696d43bd9",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "sUSDa",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -4136,17 +4136,6 @@
           "is_audited": false
         },
         {
-          "chain_id": 146,
-          "chain_name": "sonic",
-          "address": "0x2840f9d9f96321435ab0f977e7fdbf32ea8b304f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
           "chain_id": 5000,
           "chain_name": "mantle",
           "address": "0x5a61b1d8272b250729ea3f5ed3ef843f4d66bc6e",
@@ -4166,59 +4155,10 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_audited",
-      "contamination_flag": "cleared",
+      "contamination_flag": null,
       "is_live": true,
-      "effective_deploy_date": "2024-12-30 22:09:41+03",
+      "effective_deploy_date": "2024-11-03 19:07:23+03",
       "deploy_coverage_basis": "match_unverified"
-    },
-    {
-      "chain_id": 56,
-      "chain_name": "bsc",
-      "address": "0x2e9bdddbad724b1cc3bfe521d8e2c5f52a887a9f",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "Timelock",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": null,
-      "impl_name": "Timelock",
-      "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x2e9bdddbad724b1cc3bfe521d8e2c5f52a887a9f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x5846bf78fb95712f394ba1aba45ecf262f7209b4",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
-      "is_live": false,
-      "effective_deploy_date": "2024-12-16 09:22:37+03",
-      "deploy_coverage_basis": null
     },
     {
       "chain_id": 1,
@@ -4949,7 +4889,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2025-04-12 20:39:35+03",
       "deploy_coverage_basis": null
@@ -25282,12 +25222,12 @@
     {
       "chain_id": 56,
       "chain_name": "bsc",
-      "address": "0x8598348b2cb4f62ec529ad52ab5e57b52ae3065f",
+      "address": "0xb45c42fbf8af8df5a1fa080a351e9b2f8e0a56d1",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "USDXSales",
       "role": "unknown",
-      "origin_kind": "needs_review",
+      "origin_kind": "native",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
@@ -25295,17 +25235,6 @@
       "impl_address": null,
       "impl_name": "USDXSales",
       "deployments": [
-        {
-          "chain_id": 56,
-          "chain_name": "bsc",
-          "address": "0x8598348b2cb4f62ec529ad52ab5e57b52ae3065f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 56,
           "chain_name": "bsc",
@@ -25323,9 +25252,9 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": null,
       "is_live": true,
-      "effective_deploy_date": "2024-12-16 08:58:25+03",
+      "effective_deploy_date": "2024-03-18 05:52:18+03",
       "deploy_coverage_basis": null
     },
     {
@@ -26125,14 +26054,14 @@
       "auditor": "SlowMist",
       "tier": 1,
       "contracts_covered": 4,
-      "coverage_pct": 8.9,
+      "coverage_pct": 9.1,
       "latest_audit": "2024-10"
     },
     {
       "auditor": "BlockSec",
       "tier": 2,
       "contracts_covered": 3,
-      "coverage_pct": 6.7,
+      "coverage_pct": 6.8,
       "latest_audit": "2024-10"
     }
   ],
@@ -26226,13 +26155,23 @@
       "origin_kind": "native",
       "tvl_usd": null,
       "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
+    },
+    {
+      "chain_id": 56,
+      "chain_name": "bsc",
+      "address": "0xb45c42fbf8af8df5a1fa080a351e9b2f8e0a56d1",
+      "name": "USDXSales",
+      "role": "unknown",
+      "origin_kind": "native",
+      "tvl_usd": null,
+      "risk_note": "Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage"
     }
   ],
   "origin_summary": {
-    "native": 110,
+    "native": 112,
     "upstream": 2,
     "standard_library": 11,
-    "needs_review": 449
+    "needs_review": 446
   },
   "scope_matching_notes": {
     "match_method_counts": {

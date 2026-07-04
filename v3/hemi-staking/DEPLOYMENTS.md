@@ -121,7 +121,7 @@
 | ethereum | `0x90d3b9982c2fbc9ebb583e9906ec4e3449b9a9a2` | MultiCollateralHintHelpers | impl | live | no |
 | ethereum | `0x962f3cc7e557e3d104addb934982c6cbea7ba230` | VeHemiAragonAdapter | impl | inactive | no |
 | ethereum | `0x980963c8ebb2840708be935b197b83c71256ba45` | SmartVault | impl | live | no |
-| ethereum | `0x980fe4cdc7a18932b2d958f33458b5b488ce4665` | UpgradeableBeacon | impl | live | no |
+| ethereum | `0x980fe4cdc7a18932b2d958f33458b5b488ce4665` | SmartVault | impl | live | no |
 | ethereum | `0x9813d95f886c8bb607e5eeb757822ab4fc8cbd8d` | ERC20Token | impl | inactive | no |
 | ethereum | `0x99de5239a8ad65ed86db3d36e0fd9f9cba7d63d5` | EnzoBTCOFTAdapter | impl | inactive | no |
 | ethereum | `0x9a3c724ee9603a7550499be73dc743b371811dd3` | StabilityPoolFacet | impl | live | no |
@@ -167,4 +167,4 @@
 | ethereum | `0xfe851a8614a97458bbb9dcdbfb28de9a7f1be184` | GasPool | impl | live | no |
 | ethereum | `0xfec7c4b379484a5310f7a4c9b38102b9d53d8d9c` | Initializer | impl | live | no |
 | optimism | `0x4200000000000000000000000000000000000042` | GovernanceToken | impl | live | no |
-| optimism | `0xa6b71e26c5e0845f74c812102ca7114b6a896ab2` | GnosisSafe-2 | impl | live | no |
+| optimism | `0xa6b71e26c5e0845f74c812102ca7114b6a896ab2` | GnosisSafeProxyFactory | impl | live | no |

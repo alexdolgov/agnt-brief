@@ -5,7 +5,7 @@
 - Project: Synapse (`synapse`)
 - Website: [https://synapseprotocol.com](https://synapseprotocol.com)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:58.379Z
+- Generated: 2026-07-04T11:05:46.720Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-16bc
 - Chains: arbitrum, avalanche, base, blast, boba, bsc, canto, cronos, ethereum, fantom, harmony, klaytn, linea, metis, moonbeam, moonriver, optimism, polygon, scroll
 - Contract surface: 2390 unique implementations (2690 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-Cross Chain Bridge. Structurally: 94 project-authored contract(s) across 10 chain(s); 1 ERC4626 vault, 25 ERC20 tokens, 1 ERC721 NFT, 3 ERC1155 multi-tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Cross Chain Bridge. Structurally: 241 project-authored contract(s) across 13 chain(s); 1 ERC4626 vault, 61 ERC20 tokens, 1 ERC721 NFT, 3 ERC1155 multi-tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 10 functional families. Its contracts share 9 common project-authored base contract(s) (owned, strategyrole, ownerpausableupgradeable). Dominant framework: openzeppelin.
+The protocol comprises 10 functional families. Its contracts share 32 common project-authored base contract(s) (defaultrouter, defaultadapter, swap). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

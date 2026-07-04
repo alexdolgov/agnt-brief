@@ -2,7 +2,7 @@
   "component": "PriceOracleProxyUSD",
   "main_contract": "PriceOracleProxyUSD",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +12,31 @@
       "address": "0x107b31d84bf6cec672f3af924471bb6f4fb8555a",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x99f873a8e3e21ccf3e9b691f02fc86a6a2ec2bd3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xd7ae651985a871c1bc254748c40ecc733110bc2e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xe34309613b061545d42c4160ec4d64240b114482",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

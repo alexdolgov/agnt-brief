@@ -5,7 +5,7 @@
 - Project: Elephant Money (`elephant-money`)
 - Website: [https://elephant.money](https://elephant.money)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:46.268Z
+- Generated: 2026-07-04T11:05:41.667Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-f007
 - Chains: bsc
 - Contract surface: 267 unique implementations (375 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-Yield. Structurally: 49 project-authored contract(s) across 1 chain(s); 10 ERC20 tokens, 5 ERC721 NFTs, 1 ERC1155 multi-token, 1 Chainlink feed; role-gated via AccessControl; built on openzeppelin.
+Yield. Structurally: 118 project-authored contract(s) across 1 chain(s); 10 ERC20 tokens, 5 ERC721 NFTs, 1 ERC1155 multi-token, 1 Chainlink feed; role-gated via AccessControl; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 6 functional families. Its contracts share 10 common project-authored base contract(s) (initializableownable, pancakeerc20, whitelist). Dominant framework: openzeppelin.
+The protocol comprises 7 functional families. Its contracts share 10 common project-authored base contract(s) (whitelist, elephantcore, initializableownable). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

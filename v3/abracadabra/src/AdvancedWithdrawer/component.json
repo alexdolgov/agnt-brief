@@ -2,7 +2,7 @@
   "component": "AdvancedWithdrawer",
   "main_contract": "AdvancedWithdrawer",
   "source_file_count": 4,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +12,31 @@
       "address": "0x06676dc8668a7e189eadff6bbc2ce7f62da08d92",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x18dd9f78d26a94a91ac8fbe3bb8245a5454b1aa8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x813c2b48f92006ce2ca315acef45bf96756cfc7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe88f8bcef4dd35cb54583ed4c37d0c555805b43a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

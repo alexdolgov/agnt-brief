@@ -1,18 +1,50 @@
 {
   "component": "FixedRateOracle-2",
   "main_contract": "FixedRateOracle",
-  "source_file_count": 11,
-  "deployment_count": 1,
+  "source_file_count": 7,
+  "deployment_count": 5,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x14c855046e91e91033aaff3191ea6717fb759a05",
+      "address": "0x4cfa6e2783c02ce427d720e22e574c8c89c3b7c1",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4e64e5d4fa64945813d33db70dea7daaf373cf45",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x53be6a5e436a6aa591161d62caa573511f8eb56e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd35657ae033a86ffa8fc6bc767c5eb57c7c3d4b8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xfef13a5359b5e5aa01952dcc95a442ec9d0fe357",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

@@ -2,41 +2,41 @@
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import {EnumerableSetUpgradeable} from "@openzeppelin/contracts-upgradeable/utils/structs/EnumerableSetUpgradeable.sol";
-import {OwnableUpgradeable} from "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
-import {ReentrancyGuardUpgradeable} from "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
-import {PausableUpgradeable} from "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
+import { EnumerableSetUpgradeable } from "@openzeppelin/contracts-upgradeable/utils/structs/EnumerableSetUpgradeable.sol";
+import { OwnableUpgradeable } from "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
+import { ReentrancyGuardUpgradeable } from "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
+import { PausableUpgradeable } from "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
 
-import {ILP} from "./interfaces/ILP.sol";
-import {IETHPool} from "./interfaces/IETHPool.sol";
-import {IAETHC} from "./interfaces/IAETHC.sol";
-import {IWETH} from "./interfaces/IWETH.sol";
+import { ILP } from "./interfaces/ILP.sol";
+import { IBNBPool } from "./interfaces/IBNBPool.sol";
+import { IABNBC } from "./interfaces/IABNBC.sol";
+import { IWBNB } from "./interfaces/IWBNB.sol";
 import "./interfaces/IERC3156FlashBorrower.sol";
 import "./util/TransferHelper.sol";
-import "./interfaces/IETHHandler.sol";
-import "./ETHHandler.sol";
+import "./interfaces/IBNBHandler.sol";
+import "./BNBHandler.sol";
 import "hardhat/console.sol";
 
-    enum UserType {
-        MANAGER,
-        LIQUIDITY_PROVIDER,
-        INTEGRATOR
-    }
+enum UserType {
+    MANAGER,
+    LIQUIDITY_PROVIDER,
+    INTEGRATOR
+}
 
-    enum FeeType {
-        OWNER,
-        MANAGER,
-        INTEGRATOR,
-        STAKE,
-        UNSTAKE,
-        FLASH_LOAN,
-        FLASH_LOAN_FIXED
-    }
+enum FeeType {
+    OWNER,
+    MANAGER,
+    INTEGRATOR,
+    STAKE,
+    UNSTAKE,
+    FLASH_LOAN,
+    FLASH_LOAN_FIXED
+}
 
-    struct FeeAmounts {
-        uint128 nativeFee;
-        uint128 ankrethFee;
-    }
+struct FeeAmounts {
+    uint128 nativeFee;
+    uint128 abnbcFee;
+}
 
 // solhint-disable max-states-count
 contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpgradeable {
@@ -50,26 +50,28 @@ contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpg
     event LiquidityChange(
         address indexed user,
         uint256 nativeAmount,
+        uint256 stakingAmount,
         uint256 nativeReserve,
+        uint256 stakingReserve,
         bool indexed added
     );
     event Swap(
         address indexed sender,
         address indexed receiver,
+        bool indexed nativeToCeros,
         uint256 amountIn,
         uint256 amountOut
     );
     event FlashLoan(address indexed receiver, address token, uint256 amount, uint256 fee);
     event FlashLoanMaxChanged(uint256 oldAmount, uint256 newAmount);
-    event EthPoolChanged(address oldPool, address newPool);
-    event FeesWithdrawn(address receiver, uint128 nativeAmount, uint128 ankrethAmount);
-    event FeesUpdated(FeeType ftype, uint128 nativeAmount, uint128 ankrethAmount);
+    event BNBPoolChanged(address oldPool, address newPool);
+    event FeesWithdrawn(address receiver, uint128 nativeAmount, uint128 abnbcAmount);
+    event FeesUpdated(FeeType ftype, uint128 nativeAmount, uint128 abnbcAmount);
     event ThresholdChanged(uint24 oldValue, uint24 newValue);
     event PoolStake(uint256 amount);
     event PoolUnstake(uint256 amount);
     event NativeBalanceChanged(uint256 amount);
     event NativeReceived(uint256 amount, address sender);
-    event MinUnstakeAmountUpdated(uint256 oldAmount, uint256 newAmount);
 
     uint24 public constant FEE_MAX = 10000;
 
@@ -77,18 +79,19 @@ contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpg
     EnumerableSetUpgradeable.AddressSet internal integrators_;
     EnumerableSetUpgradeable.AddressSet internal liquidityProviders_;
 
-    IWETH public weth;
-    IAETHC public ankreth;
+    IWBNB public wbnb;
+    IABNBC public abnbc;
     ILP public lpToken;
 
-    uint256 public wethAmount;
-    uint256 public ankrethAmount;
+    uint256 public wbnbAmount;
+    uint256 public abnbcAmount;
 
     uint24 public ownerFee;
     uint24 public managerFee;
     uint24 public integratorFee;
     uint24 public stakeFee;
     uint24 public unstakeFee;
+    uint24 public threshold;
     uint24 public flashLoanFee;
 
     bool public integratorLockEnabled;
@@ -103,16 +106,16 @@ contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpg
 
     uint128 public flashLoanFixedFee;
     uint128 public flashLoanMaxAmount;
-    uint256 public minUnstakeAmount;
 
     mapping(address => FeeAmounts) public managerRewardDebt;
     mapping(address => bool) public excludedFromFee;
 
-    IETHPool public ethPool;
+    IBNBPool public bnbPool;
 
     bytes32 public constant CALLBACK_SUCCESS = keccak256("ERC3156FlashBorrower.onFlashLoan");
 
-    IETHHandler public ethHandler;
+    address public abnbb;
+    IBNBHandler public bnbHandler;
 
     modifier onlyOwnerOrManager() {
         require(
@@ -144,14 +147,10 @@ contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpg
         _;
     }
 
-    modifier wrapNative() {
-        _wrapNative();
-        _;
-    }
-
     function initialize(
-        address _weth,
-        address _ankreth,
+        address _wbnb,
+        address _abnbc,
+        address _abnbb,
         address _lpToken,
         bool _integratorLockEnabled,
         bool _providerLockEnabled
@@ -159,10 +158,11 @@ contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpg
         __Ownable_init();
         __Pausable_init();
         __ReentrancyGuard_init();
-        weth = IWETH(_weth);
-        ankreth = IAETHC(_ankreth);
+        wbnb = IWBNB(_wbnb);
+        abnbc = IABNBC(_abnbc);
+        abnbb = _abnbb;
         lpToken = ILP(_lpToken);
-        ethHandler = new ETHHandler();
+        bnbHandler = new BNBHandler();
 
         integratorLockEnabled = _integratorLockEnabled;
         emit IntegratorLockEnabled(_integratorLockEnabled);
@@ -184,41 +184,30 @@ contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpg
         _addLiquidity(_amount, false);
     }
 
-    function _wrapNative() internal {
-        uint256 _amount = address(this).balance;
-        if (_amount > 0) {
-            weth.deposit{value : _amount}();
-            wethAmount += _amount;
-        }
-    }
+    function _addLiquidity(uint256 _amount, bool useEth) internal virtual {
+        if (useEth) {
+            wbnb.deposit{ value: _amount }();
 
-    function _addLiquidity(uint256 _amount, bool _useEth) internal virtual {
-        uint256 totalSupply = lpToken.totalSupply();
-        require(totalSupply != 0 || _amount > 1e18, "cannot add first time less than 1 token");
-
-        if (_useEth) {
-            require(_amount <= msg.value, "bad native value");
-            weth.deposit{value : _amount}();
             if (msg.value > _amount) {
-                _sendValue(msg.sender, msg.value - _amount);
+                uint256 diff = msg.value - _amount;
+
+                _sendValue(msg.sender, diff);
             }
         } else {
-            TransferHelper.safeTransferFrom(address(weth), msg.sender, address(this), _amount);
+            TransferHelper.safeTransferFrom(address(wbnb), msg.sender, address(this), _amount);
         }
 
-        uint256 _mintAmount;
-        if (totalSupply == 0) {
-            _mintAmount = _amount;
-            wethAmount = _amount;
+        if (wbnbAmount == 0) {
+            require(_amount > 1e18, "cannot add first time less than 1 token");
+
+            wbnbAmount = _amount;
         } else {
-            uint256 allInweth = this.getAllLiquidity();
-            _mintAmount = _amount * totalSupply / allInweth;
-            wethAmount += _amount;
+            wbnbAmount += _amount;
         }
 
-        lpToken.mint(msg.sender, _mintAmount);
-        emit LiquidityChange(msg.sender, _amount, wethAmount, true);
-        _wrapNative();
+        lpToken.mint(msg.sender, _amount);
+
+        emit LiquidityChange(msg.sender, _amount, 0, wbnbAmount, abnbcAmount, true);
     }
 
     function removeLiquidity(uint256 lpAmount) external virtual nonReentrant {
@@ -238,8 +227,7 @@ contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpg
     }
 
     function _removeLiquidityPercent(uint256 percent, bool useEth) internal virtual {
-        require(percent > 0 && percent <= 1e18, "percent should be more than 0 and less than 1e18");
-        // max percent(100%) is -> 10 ** 18
+        require(percent > 0 && percent <= 1e18, "percent should be more than 0 and less than 1e18"); // max percent(100%) is -> 10 ** 18
         uint256 balance = lpToken.balanceOf(msg.sender);
         uint256 removedLp = (balance * percent) / 1e18;
         _removeLiquidity(removedLp, useEth);
@@ -256,154 +244,169 @@ contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpg
         _removeLiquidity(removedLp, useEth);
     }
 
-    function getAvailableLiquidity() public view returns (uint256){
-        return wethAmount + address(this).balance;
-    }
-
-    function getAllLiquidity() public view returns (uint256){
-        return this.getAvailableLiquidity() + this.getPendingLiquidity();
-    }
-
-    function getPendingLiquidity() public view returns (uint256){
-        return ethPool.getPendingUnstakesOf(address(this)) + this.ankrethAmount();
-    }
-
-    function getAvailableLiquidityForProvider(address provider) public view returns (uint256){
-        uint256 _liqAmount = lpToken.balanceOf(provider) * this.getAllLiquidity() / lpToken.totalSupply();
-        uint256 _availLiqAmount = this.getAvailableLiquidity();
-        if (_liqAmount >= _availLiqAmount) {
-            return _availLiqAmount;
-        }
-
-        return _liqAmount;
-    }
-
-    function getPendingLiquidityForProvider(address provider) public view returns (uint256){
-        uint256 _liqAmount = lpToken.balanceOf(provider) * this.getAllLiquidity() / lpToken.totalSupply();
-        uint256 _availLiqAmount = this.getAvailableLiquidity();
-        if (_liqAmount > _availLiqAmount) {
-            return _availLiqAmount - _liqAmount;
-        }
-        return 0;
-    }
-
-    function _removeLiquidity(uint256 removedLp, bool useEth) wrapNative internal virtual {
-        uint256 wethBalance = wethAmount;
-        require(wethBalance > 0, "SwapPool: liquidity pool is empty");
-
-        uint256 allLiq = wethBalance + this.getPendingLiquidity();
-        uint256 lpSupply = lpToken.totalSupply();
-        uint256 amount0Removed = removedLp * allLiq / lpSupply;
-        require(amount0Removed <= wethBalance, "SwapPool: not enough liquidity");
-
+    function _removeLiquidity(uint256 removedLp, bool useEth) internal virtual {
+        uint256 totalSupply = lpToken.totalSupply();
         lpToken.burn(msg.sender, removedLp);
+        uint256 amount0Removed = removedLp;
+
+        wbnbAmount -= amount0Removed;
+
         if (useEth) {
-            weth.transfer(address(ethHandler), amount0Removed);
-            ethHandler.withdraw(address(weth), amount0Removed);
+            wbnb.withdraw(amount0Removed);
             _sendValue(msg.sender, amount0Removed);
         } else {
-            TransferHelper.safeTransfer(address(weth), msg.sender, amount0Removed);
+            TransferHelper.safeTransfer(address(wbnb), msg.sender, amount0Removed);
         }
-        wethBalance -= amount0Removed;
-        wethAmount = wethBalance;
-        emit LiquidityChange(msg.sender, amount0Removed, wethBalance, false);
+
+        emit LiquidityChange(
+            msg.sender,
+            amount0Removed,
+            0,
+            wbnbAmount,
+            abnbcAmount,
+            false
+        );
     }
 
     function swapEth(
-        uint256 amountIn,
+        bool wbnbToABNBC,
+        uint256 amount,
         address receiver
-    ) external virtual onlyIntegrator nonReentrant returns (uint256 amountOut) {
-        return _swap(amountIn, receiver, true);
+    ) external payable virtual onlyIntegrator nonReentrant returns (uint256 amountOut) {
+        uint256 amountIn;
+
+        if (wbnbToABNBC) {
+            amountIn = msg.value;
+        } else {
+            require(msg.value == 0, "no need to send value if swapping aBNBc to Native");
+            amountIn = amount;
+        }
+
+        return _swap(wbnbToABNBC, amountIn, receiver, true);
     }
 
     function swap(
+        bool wbnbToABNBC,
         uint256 amountIn,
         address receiver
     ) external virtual onlyIntegrator nonReentrant returns (uint256 amountOut) {
-        return _swap(amountIn, receiver, false);
+        return _swap(wbnbToABNBC, amountIn, receiver, false);
     }
 
     function _swap(
+        bool wbnbcToABNBC,
         uint256 amountIn,
         address receiver,
         bool useEth
-    ) internal wrapNative virtual returns (uint256 amountOut) {
-        TransferHelper.safeTransferFrom(address(ankreth), msg.sender, address(this), amountIn);
-        uint256 _ankrethBalance = ankrethAmount;
-
-        if (!excludedFromFee[msg.sender]) {
-            uint256 unstakeFeeAmt = (amountIn * unstakeFee) / FEE_MAX;
-            amountIn -= unstakeFeeAmt;
-            uint256 managerFeeAmt = (unstakeFeeAmt * managerFee) / FEE_MAX;
-            uint256 ownerFeeAmt = (unstakeFeeAmt * ownerFee) / FEE_MAX;
-            uint256 integratorFeeAmt;
-            if (integratorLockEnabled) {
-                integratorFeeAmt = (unstakeFeeAmt * integratorFee) / FEE_MAX;
-                if (integratorFeeAmt > 0) {
-                    TransferHelper.safeTransfer(address(ankreth), msg.sender, integratorFeeAmt);
-                }
+    ) internal virtual returns (uint256 amountOut) {
+        if (wbnbcToABNBC) {
+            if (useEth) {
+                wbnb.deposit{ value: amountIn }();
+            } else {
+                TransferHelper.safeTransferFrom(address(wbnb), msg.sender, address(this), amountIn);
             }
-            _ankrethBalance += amountIn + (unstakeFeeAmt - managerFeeAmt - ownerFeeAmt - integratorFeeAmt);
+            if (!excludedFromFee[msg.sender]) {
+                uint256 stakeFeeAmt = (amountIn * stakeFee) / FEE_MAX;
+                amountIn -= stakeFeeAmt;
+                uint256 managerFeeAmt = (stakeFeeAmt * managerFee) / FEE_MAX;
+                uint256 ownerFeeAmt = (stakeFeeAmt * ownerFee) / FEE_MAX;
+                uint256 integratorFeeAmt;
+                if (integratorLockEnabled) {
+                    integratorFeeAmt = (stakeFeeAmt * integratorFee) / FEE_MAX;
+                    if (integratorFeeAmt > 0) {
+                        TransferHelper.safeTransfer(address(wbnb), msg.sender, integratorFeeAmt);
+                    }
+                }
+                wbnbAmount +=
+                amountIn +
+                (stakeFeeAmt - managerFeeAmt - ownerFeeAmt - integratorFeeAmt);
 
-            ownerFeeCollected.ankrethFee += uint128(ownerFeeAmt);
-            managerFeeCollected.ankrethFee += uint128(managerFeeAmt);
+                ownerFeeCollected.nativeFee += uint128(ownerFeeAmt);
+                managerFeeCollected.nativeFee += uint128(managerFeeAmt);
+            } else {
+                wbnbAmount += amountIn;
+            }
+            (amountOut,) = getAmountOut(true, amountIn, true);
+            require(abnbcAmount >= amountOut, "Not enough liquidity");
+            abnbcAmount -= amountOut;
+            TransferHelper.safeTransfer(address(abnbc), receiver, amountOut);
+            emit Swap(msg.sender, receiver, wbnbcToABNBC, amountIn, amountOut);
         } else {
-            _ankrethBalance += amountIn;
-        }
+            TransferHelper.safeTransferFrom(address(abnbc), msg.sender, address(this), amountIn);
+            if (!excludedFromFee[msg.sender]) {
+                uint256 unstakeFeeAmt = (amountIn * unstakeFee) / FEE_MAX;
+                amountIn -= unstakeFeeAmt;
+                uint256 managerFeeAmt = (unstakeFeeAmt * managerFee) / FEE_MAX;
+                uint256 ownerFeeAmt = (unstakeFeeAmt * ownerFee) / FEE_MAX;
+                uint256 integratorFeeAmt;
+                if (integratorLockEnabled) {
+                    integratorFeeAmt = (unstakeFeeAmt * integratorFee) / FEE_MAX;
+                    if (integratorFeeAmt > 0) {
+                        TransferHelper.safeTransfer(address(abnbc), msg.sender, integratorFeeAmt);
+                    }
+                }
+                abnbcAmount +=
+                amountIn +
+                (unstakeFeeAmt - managerFeeAmt - ownerFeeAmt - integratorFeeAmt);
 
-        // calculate if there is enough liquidity weth+balance to make swap
-        bool enoughLiquidity;
-        (amountOut, enoughLiquidity) = _getAmountOut(amountIn, true, true);
-        require(enoughLiquidity, "Not enough liquidity");
+                ownerFeeCollected.abnbcFee += uint128(ownerFeeAmt);
+                managerFeeCollected.abnbcFee += uint128(managerFeeAmt);
+            } else {
+                abnbcAmount += amountIn;
+            }
+            (amountOut,) = getAmountOut(false, amountIn, true);
+            require(wbnbAmount >= amountOut, "Not enough liquidity");
+            wbnbAmount -= amountOut;
 
-        if (useEth) {
-            weth.transfer(address(ethHandler), amountOut);
-            ethHandler.withdraw(address(weth), amountOut);
-            _sendValue(receiver, amountOut);
-        } else {
-            TransferHelper.safeTransfer(address(weth), receiver, amountOut);
-        }
+            if (useEth) {
+                wbnb.transfer(address(bnbHandler), amountOut);
+                bnbHandler.withdraw(address(wbnb), amountOut);
+                _sendValue(receiver, amountOut);
+            } else {
+                TransferHelper.safeTransfer(address(wbnb), receiver, amountOut);
+            }
 
-        wethAmount -= amountOut;
-        emit Swap(msg.sender, receiver, amountIn, amountOut);
+            emit Swap(msg.sender, receiver, wbnbcToABNBC, amountIn, amountOut);
 
-        // unstake logic
-        if (_ankrethBalance >= minUnstakeAmount) {
-            ethPool.unstakeAETH(_ankrethBalance);
-            ankrethAmount = 0;
-        } else {
-            ankrethAmount = _ankrethBalance;
+            uint256 abnbcBal = abnbc.balanceOf(address(this));
+
+            // 0.5 aBNBc
+            if (abnbcBal >= 5e17) {
+                abnbc.approve(abnbb, abnbcBal);
+                bnbPool.unstakeCerts(abnbcBal);
+                abnbcAmount -= abnbcBal;
+
+                skim();
+            }
         }
     }
 
     function getAmountOut(
+        bool wrappedToABNBC,
         uint256 amountIn,
         bool isExcludedFromFee
     ) public view virtual returns (uint256 amountOut, bool enoughLiquidity) {
-        return _getAmountOut(amountIn, isExcludedFromFee, false);
-    }
-
-
-    function _getAmountOut(
-        uint256 amountIn,
-        bool isExcludedFromFee,
-        bool isSwap
-    ) internal view returns (uint256 amountOut, bool enoughLiquidity) {
-        if (!isExcludedFromFee) {
-            uint256 unstakeFeeAmt = (amountIn * unstakeFee) / FEE_MAX;
-            amountIn -= unstakeFeeAmt;
-        }
-        amountOut = ankreth.sharesToBonds(amountIn);
-        if (isSwap) {
-            enoughLiquidity = amountOut <= wethAmount;
+        uint256 ratio = abnbc.ratio();
+        if (wrappedToABNBC) {
+            if (!isExcludedFromFee) {
+                uint256 stakeFeeAmt = (amountIn * stakeFee) / FEE_MAX;
+                amountIn -= stakeFeeAmt;
+            }
+            amountOut = (amountIn * ratio) / 1e18;
+            enoughLiquidity = abnbcAmount >= amountOut;
         } else {
-            enoughLiquidity = amountOut <= this.getAvailableLiquidity();
+            if (!isExcludedFromFee) {
+                uint256 unstakeFeeAmt = (amountIn * unstakeFee) / FEE_MAX;
+                amountIn -= unstakeFeeAmt;
+            }
+            amountOut = (amountIn * 1e18) / ratio;
+            enoughLiquidity = wbnbAmount >= amountOut;
         }
     }
 
     function _sendValue(address receiver, uint256 amount) internal virtual {
         // solhint-disable-next-line avoid-low-level-calls
-        (bool success,) = payable(receiver).call{value : amount}("");
+        (bool success, ) = payable(receiver).call{ value: amount }("");
         require(success, "unable to send value, recipient may have reverted");
     }
 
@@ -437,24 +440,23 @@ contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpg
         } else {
             amount0 = uint128(amount0Raw);
         }
-
         if (amount1Raw == type(uint256).max) {
-            amount1 = ownerFeeCollected.ankrethFee;
+            amount1 = ownerFeeCollected.abnbcFee;
         } else {
             amount1 = uint128(amount1Raw);
         }
         if (amount0 > 0) {
             ownerFeeCollected.nativeFee -= amount0;
             if (useEth) {
-                weth.withdraw(amount0);
+                wbnb.withdraw(amount0);
                 _sendValue(msg.sender, amount0);
             } else {
-                TransferHelper.safeTransfer(address(weth), msg.sender, amount0);
+                TransferHelper.safeTransfer(address(wbnb), msg.sender, amount0);
             }
         }
         if (amount1 > 0) {
-            ownerFeeCollected.ankrethFee -= amount1;
-            TransferHelper.safeTransfer(address(ankreth), msg.sender, amount1);
+            ownerFeeCollected.abnbcFee -= amount1;
+            TransferHelper.safeTransfer(address(abnbc), msg.sender, amount1);
         }
 
         emit FeesWithdrawn(msg.sender, amount0, amount1);
@@ -474,12 +476,12 @@ contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpg
             _accFeePerManager.nativeFee +
             (managerFeeCollected.nativeFee - _alreadyUpdatedFees.nativeFee) /
             uint128(managersLength);
-            accFee.ankrethFee =
-            _accFeePerManager.ankrethFee +
-            (managerFeeCollected.ankrethFee - _alreadyUpdatedFees.ankrethFee) /
+            accFee.abnbcFee =
+            _accFeePerManager.abnbcFee +
+            (managerFeeCollected.abnbcFee - _alreadyUpdatedFees.abnbcFee) /
             uint128(managersLength);
             feeRewards.nativeFee = accFee.nativeFee - currentManagerRewardDebt.nativeFee;
-            feeRewards.ankrethFee = accFee.ankrethFee - currentManagerRewardDebt.ankrethFee;
+            feeRewards.abnbcFee = accFee.abnbcFee - currentManagerRewardDebt.abnbcFee;
         }
     }
 
@@ -496,24 +498,24 @@ contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpg
         FeeAmounts storage currentManagerRewardDebt = managerRewardDebt[managerAddress];
         _updateManagerFees();
         feeRewards.nativeFee = _accFeePerManager.nativeFee - currentManagerRewardDebt.nativeFee;
-        feeRewards.ankrethFee = _accFeePerManager.ankrethFee - currentManagerRewardDebt.ankrethFee;
+        feeRewards.abnbcFee = _accFeePerManager.abnbcFee - currentManagerRewardDebt.abnbcFee;
         if (feeRewards.nativeFee > 0) {
             currentManagerRewardDebt.nativeFee += feeRewards.nativeFee;
             _claimedManagerFees.nativeFee += feeRewards.nativeFee;
             if (useNative) {
-                weth.withdraw(feeRewards.nativeFee);
+                wbnb.withdraw(feeRewards.nativeFee);
                 _sendValue(managerAddress, feeRewards.nativeFee);
             } else {
-                TransferHelper.safeTransfer(address(weth), managerAddress, feeRewards.nativeFee);
+                TransferHelper.safeTransfer(address(wbnb), managerAddress, feeRewards.nativeFee);
             }
         }
-        if (feeRewards.ankrethFee > 0) {
-            currentManagerRewardDebt.ankrethFee += feeRewards.ankrethFee;
-            _claimedManagerFees.ankrethFee += feeRewards.ankrethFee;
-            TransferHelper.safeTransfer(address(ankreth), managerAddress, feeRewards.ankrethFee);
+        if (feeRewards.abnbcFee > 0) {
+            currentManagerRewardDebt.abnbcFee += feeRewards.abnbcFee;
+            _claimedManagerFees.abnbcFee += feeRewards.abnbcFee;
+            TransferHelper.safeTransfer(address(abnbc), managerAddress, feeRewards.abnbcFee);
         }
 
-        emit FeesWithdrawn(managerAddress, feeRewards.nativeFee, feeRewards.ankrethFee);
+        emit FeesWithdrawn(managerAddress, feeRewards.nativeFee, feeRewards.abnbcFee);
     }
 
     function _updateManagerFees() internal virtual {
@@ -521,13 +523,13 @@ contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpg
         _accFeePerManager.nativeFee +=
         (managerFeeCollected.nativeFee - _alreadyUpdatedFees.nativeFee) /
         uint128(managersLength);
-        _accFeePerManager.ankrethFee +=
-        (managerFeeCollected.ankrethFee - _alreadyUpdatedFees.ankrethFee) /
+        _accFeePerManager.abnbcFee +=
+        (managerFeeCollected.abnbcFee - _alreadyUpdatedFees.abnbcFee) /
         uint128(managersLength);
         _alreadyUpdatedFees.nativeFee = managerFeeCollected.nativeFee;
-        _alreadyUpdatedFees.ankrethFee = managerFeeCollected.ankrethFee;
+        _alreadyUpdatedFees.abnbcFee = managerFeeCollected.abnbcFee;
 
-        emit FeesUpdated(FeeType.MANAGER, _alreadyUpdatedFees.nativeFee, _alreadyUpdatedFees.ankrethFee);
+        emit FeesUpdated(FeeType.MANAGER, _alreadyUpdatedFees.nativeFee, _alreadyUpdatedFees.abnbcFee);
     }
 
     function add(address value, UserType utype) public virtual returns (bool) {
@@ -540,7 +542,7 @@ contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpg
                 if (managersLength != 0) {
                     _updateManagerFees();
                     managerRewardDebt[value].nativeFee = _accFeePerManager.nativeFee;
-                    managerRewardDebt[value].ankrethFee = _accFeePerManager.ankrethFee;
+                    managerRewardDebt[value].abnbcFee = _accFeePerManager.abnbcFee;
                 }
                 success = managers_.add(value);
             }
@@ -558,18 +560,18 @@ contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpg
     }
 
     function setFee(uint24 newFee, FeeType feeType) external virtual onlyOwnerOrManager {
-        require(newFee <= FEE_MAX, "Unsupported size of fee!");
+        require(newFee < FEE_MAX * 10, "Unsupported size of fee!");
         if (feeType == FeeType.OWNER) {
             require(msg.sender == owner(), "only owner can call this function");
-            require(newFee + managerFee + integratorFee <= FEE_MAX, "fee sum is more than 100%");
+            require(newFee + managerFee + integratorFee < FEE_MAX, "fee sum is more than 100%");
             emit FeeChanged(feeType, ownerFee, newFee);
             ownerFee = newFee;
         } else if (feeType == FeeType.MANAGER) {
-            require(newFee + ownerFee + integratorFee <= FEE_MAX, "fee sum is more than 100%");
+            require(newFee + ownerFee + integratorFee < FEE_MAX, "fee sum is more than 100%");
             emit FeeChanged(feeType, managerFee, newFee);
             managerFee = newFee;
         } else if (feeType == FeeType.INTEGRATOR) {
-            require(newFee + ownerFee + managerFee <= FEE_MAX, "fee sum is more than 100%");
+            require(newFee + ownerFee + managerFee < FEE_MAX, "fee sum is more than 100%");
             emit FeeChanged(feeType, integratorFee, newFee);
             integratorFee = newFee;
         } else if (feeType == FeeType.STAKE) {
@@ -587,15 +589,16 @@ contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpg
         }
     }
 
-    function setETHPool(address newETHPool) external virtual onlyOwner {
-        emit EthPoolChanged(address(ethPool), newETHPool);
-        ethPool = IETHPool(newETHPool);
+    function setThreshold(uint24 newThreshold) external virtual onlyManager {
+        require(newThreshold < FEE_MAX / 2, "threshold shuold be less than 50%");
+        emit ThresholdChanged(threshold, newThreshold);
+
+        threshold = newThreshold;
     }
 
-
-    function setMinUnstakeAmount(uint256 amount) external virtual onlyOwner {
-        emit MinUnstakeAmountUpdated(minUnstakeAmount, amount);
-        minUnstakeAmount = amount;
+    function setBNBPool(address newBNBPool) external virtual onlyOwner {
+        emit BNBPoolChanged(address(bnbPool), newBNBPool);
+        bnbPool = IBNBPool(newBNBPool);
     }
 
     function enableIntegratorLock(bool enable) external virtual onlyOwnerOrManager {
@@ -613,26 +616,62 @@ contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpg
         emit ExcludedFromFee(value, exclude);
     }
 
+    function triggerRebalanceAnkr() external virtual nonReentrant onlyManager {
+        skim();
+        uint256 ratio = abnbc.ratio();
+        uint256 amountAInNative = wbnbAmount;
+        uint256 amountBInNative = (abnbcAmount * 1e18) / ratio;
+        uint256 wholeAmount = amountAInNative + amountBInNative;
+        bool isStake = amountAInNative > amountBInNative;
+        if (!isStake) {
+            uint256 temp = amountAInNative;
+            amountAInNative = amountBInNative;
+            amountBInNative = temp;
+        }
+        require(
+            (amountBInNative * FEE_MAX) / wholeAmount < threshold,
+            "the proportions are not less than threshold"
+        );
+        uint256 amount = (amountAInNative - amountBInNative) / 2;
+        if (isStake) {
+            wbnbAmount -= amount;
+            wbnb.withdraw(amount);
+            bnbPool.stakeAndClaimCerts{ value: amount }();
+
+            emit PoolStake(amount);
+        } else {
+            uint256 _abnbcAmount = (amount * ratio) / 1e18;
+            abnbcAmount -= _abnbcAmount;
+            bnbPool.unstakeCerts(_abnbcAmount);
+
+            emit PoolUnstake(_abnbcAmount);
+        }
+    }
+
+    function approveToMaticPool() external virtual {
+        TransferHelper.safeApprove(address(abnbc), address(bnbPool), type(uint256).max);
+    }
+
     /*
         This method is used to account for assets on a contract. For example, if
         someone sends native BNB, it will be automatically added to the liquidity
-        pool. This method also keeps wethAmount and ankrethAmount values synchornized
+        pool. This method also keeps wbnbAmount and abnbcAmount values synchornized
         with their actual balances.
     */
     function skim() public virtual {
         uint256 balance = address(this).balance;
-        wethAmount = weth.balanceOf(address(this)) -
-        ownerFeeCollected.nativeFee -
-        managerFeeCollected.nativeFee +
-        _claimedManagerFees.nativeFee;
-        ankrethAmount = ankreth.balanceOf(address(this)) -
-        ownerFeeCollected.ankrethFee -
-        (managerFeeCollected.ankrethFee - _claimedManagerFees.ankrethFee);
+        wbnbAmount = wbnb.balanceOf(address(this)) -
+            ownerFeeCollected.nativeFee -
+            managerFeeCollected.nativeFee +
+            _claimedManagerFees.nativeFee;
+        abnbcAmount = abnbc.balanceOf(address(this)) -
+        ownerFeeCollected.abnbcFee -
+        (managerFeeCollected.abnbcFee - _claimedManagerFees.abnbcFee);
 
         if (balance > 0) {
-            weth.deposit{value : balance}();
-            wethAmount += balance;
-            emit NativeBalanceChanged(wethAmount);
+            wbnb.deposit{ value: balance }();
+            wbnbAmount += balance;
+            emit NativeBalanceChanged(wbnbAmount);
         }
     }
 
@@ -691,7 +730,7 @@ contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpg
 
     function flashFee(address token, uint256 amount) public view returns (uint128) {
         if (uint128(amount) != amount) return 0;
-        if (token != address(weth)) return 0;
+        if (!(token == address(abnbc) || token == address(wbnb))) return 0;
 
         uint128 fee = uint128(amount) * flashLoanFee / 10000;
 
@@ -707,17 +746,21 @@ contract SwapPool is OwnableUpgradeable, PausableUpgradeable, ReentrancyGuardUpg
         address token,
         uint256 amount,
         bytes calldata data
-    ) external wrapNative nonReentrant returns (bool) {
+    ) external nonReentrant returns (bool) {
         require(flashLoanFee > 0 && flashLoanFixedFee > 0, "SwapPool: fees_not_set");
-        require(token == address(weth), "SwapPool: token_unsupported");
+        require(token == address(abnbc) || token == address(wbnb), "SwapPool: token_unsupported");
         require(amount <= flashLoanMaxAmount, "SwapPool: ceiling_exceeded");
-        require(amount <= wethAmount);
 
         uint128 fee = flashFee(token, amount);
         require(fee > 0, "SwapPool: wrong_fee");
 
         uint256 total = amount + fee;
-        if (token == address(weth)) {
+
+        if (token == address(abnbc)) {
+            ownerFeeCollected.abnbcFee += fee;
+        }
+
+        if (token == address(wbnb)) {
             ownerFeeCollected.nativeFee += fee;
         }
 

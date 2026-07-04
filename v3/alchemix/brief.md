@@ -7,7 +7,7 @@
 - Project: Alchemix (`alchemix`)
 - Website: [https://alchemix.fi/](https://alchemix.fi/)
 - Lifecycle: declining (Tier 1, declining)
-- Generated: 2026-07-03T21:05:26.541Z
+- Generated: 2026-07-04T11:05:39.348Z
 - Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
 - Chains: arbitrum, ethereum, fantom, optimism
 - Contract surface: 662 unique implementations (877 raw deployments)
@@ -17,16 +17,16 @@
 
 ## Project Description
 
-Synthetics. Structurally: 122 project-authored contract(s) across 3 chain(s); 22 ERC20 tokens, 2 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Synthetics. Structurally: 204 project-authored contract(s) across 3 chain(s); 26 ERC20 tokens, 8 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 10 functional families. Its contracts share 22 common project-authored base contract(s) (proxy, multicall, mutexlock). Dominant framework: openzeppelin.
+The protocol comprises 10 functional families. Its contracts share 23 common project-authored base contract(s) (proxy, multicall, mutexlock). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 1013; live-surface contracts included: 860 (305 live, 555 unknown).
-- Excluded by liveness: 153 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 1010; live-surface contracts included: 860 (305 live, 555 unknown).
+- Excluded by liveness: 150 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.

@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "fringe-finance",
-  "generated_at": "2026-07-03T21:05:53.090Z",
+  "generated_at": "2026-07-04T11:05:41.871Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dfb3",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -55,8 +55,8 @@
     }
   },
   "topography": {
-    "project_purpose": "Structural profile: 838 project-authored contract(s) across 5 chain(s); 3 ERC4626 vaults, 169 ERC20 tokens, 40 ERC721 NFTs, 7 ERC1155 multi-tokens, 4 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 10 functional families. Its contracts share 162 common project-authored base contract(s) (erc20mintable, minterrole, erc20detailed). Dominant framework: openzeppelin.",
+    "project_purpose": "Structural profile: 882 project-authored contract(s) across 5 chain(s); 3 ERC4626 vaults, 179 ERC20 tokens, 40 ERC721 NFTs, 7 ERC1155 multi-tokens, 4 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 10 functional families. Its contracts share 169 common project-authored base contract(s) (erc20mintable, minterrole, erc20detailed). Dominant framework: openzeppelin.",
     "product_family_count": 10,
     "total_contracts_indexed": 8562,
     "live_contracts": 6846,

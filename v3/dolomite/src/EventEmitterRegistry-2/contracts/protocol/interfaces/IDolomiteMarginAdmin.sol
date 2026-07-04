@@ -211,14 +211,4 @@ interface IDolomiteMarginAdmin is IDolomiteStructs {
         bool special
     )
     external;
-
-    // ============ Owner Functions ============
-
-    /**
-     * Transfer ownership of DolomiteMargin to a new address
-     */
-    function transferOwnership(
-        address newOwner
-    )
-    external;
 }

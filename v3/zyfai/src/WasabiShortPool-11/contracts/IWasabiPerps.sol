@@ -16,8 +16,10 @@ interface IWasabiPerps {
     error InvalidTargetCurrency();
     error InsufficientAmountProvided();
     error PrincipalTooHigh();
+    error InsufficientPrincipalUsed();
     error InsufficientAvailablePrincipal();
     error InsufficientCollateralReceived();
+    error TooMuchCollateralSpent();
     error SenderNotTrader();
     error InvalidPosition();
     error IncorrectSwapParameter();
@@ -27,6 +29,7 @@ interface IWasabiPerps {
     error WithdrawerNotVault();
     error WithdrawalNotAllowed();
     error InterestAmountNeeded();
+    error ValueDeviatedTooMuch();
 
     event PositionOpened(
         uint256 positionId,
@@ -55,6 +58,22 @@ interface IWasabiPerps {
         uint256 principalRepaid,
         uint256 interestPaid,
         uint256 feeAmount
+    );
+
+
+    event PositionClaimed(
+        uint256 id,
+        address trader,
+        uint256 amountClaimed,
+        uint256 principalRepaid,
+        uint256 interestPaid,
+        uint256 feeAmount
+    );
+
+    event NativeYieldClaimed(
+        address vault,
+        address token,
+        uint256 amount
     );
 
     /// @dev Emitted when a new vault is created
@@ -111,6 +130,23 @@ interface IWasabiPerps {
         FunctionCallData[] functionCallDataList;
     }
 
+    /// @dev Defines the amounts to be paid when closing a position.
+    /// @param payout The amount to be paid to the trader.
+    /// @param pastFees The amount of past fees to be paid.
+    /// @param principalRepaid The amount of the principal to be repaid.
+    /// @param interestPaid The amount of the interest to be paid.
+    /// @param pastFees The amount of past fees to be paid.
+    /// @param closeFee The amount of the close fee to be paid.
+    /// @param liquidationFee The amount of the liquidation fee to be paid.
+    struct CloseAmounts {
+        uint256 payout;
+        uint256 principalRepaid;
+        uint256 interestPaid;
+        uint256 pastFees;
+        uint256 closeFee;
+        uint256 liquidationFee;
+    }
+
     /// @dev Defines a request to close a position.
     /// @param _expiration The timestamp when this position request expires.
     /// @param _interest The interest to be paid for the position.
@@ -160,17 +196,16 @@ interface IWasabiPerps {
         FunctionCallData[] calldata _swapFunctions
     ) external payable;
 
-    /// @dev Liquidates a list of positions
-    /// @param _unwrapWETH whether to unwrap WETH or not
-    /// @param _interests the interests to be paid
-    /// @param _positions the positions to liquidate
-    /// @param _swapFunctions the swap functions to use to liquidate the positions
-    function liquidatePositions(
-        bool _unwrapWETH,
-        uint256[] calldata _interests,
-        Position[] calldata _positions,
-        FunctionCallData[][] calldata _swapFunctions
+    /// @dev Claims a position
+    /// @param _position the position to claim
+    function claimPosition(
+        Position calldata _position
     ) external payable;
+
+    /// @dev Donates tokens to the vault, which is recorded as interest. This is meant to be used if there are bad liquidations or a to simply donate to the vault.
+    /// @param token the token to donate
+    /// @param amount the amount to donate
+    function donate(address token, uint256 amount) external;
 
     /// @dev Withdraws the given amount for the ERC20 token (or ETH) to the receiver
     /// @param _token the token to withdraw (zero address for ETH)

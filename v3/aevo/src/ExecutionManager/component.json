@@ -12,7 +12,7 @@
       "address": "0x052b82b3a096a592f3f28d4736c4796445bb98ef",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "optimism",
@@ -20,7 +20,7 @@
       "address": "0x10567782c459bc8bf90b89f7da189c754203bfec",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "optimism",
@@ -28,7 +28,7 @@
       "address": "0x1b74ac5daca01d82a3d2e7688ea30e50fe6ff35e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "optimism",
@@ -36,7 +36,7 @@
       "address": "0xf50ed30a7a6951d830bc4e6498b5abc7132a4f6c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "optimism",
@@ -44,7 +44,7 @@
       "address": "0xfd1256602f99a8cb2b43114e41af4ca0b4c7e47f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

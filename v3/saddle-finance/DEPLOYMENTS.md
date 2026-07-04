@@ -5,7 +5,7 @@
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
 | arbitrum | `0x0232e0b6df048c8cc4037c52bc90cf943c9c8cc6` | PermissionlessDeployer-3 | impl | live | no |
-| arbitrum | `0x0c8bae14c9f9bf2c953997c881befac7729fd314` | MetaSwap-5 | impl | live | no |
+| arbitrum | `0x0c8bae14c9f9bf2c953997c881befac7729fd314` | LPToken-2 | impl | live | no |
 | arbitrum | `0x15179598d0a44593789a85727c32e55e4488441b` | PermissionlessMetaSwap | impl | live | no |
 | arbitrum | `0x18d2469a9788fafd0df277a0044da5ea637a3760` | MetaSwapDeposit-2 | impl | live | no |
 | arbitrum | `0x1ad1efd00708aa2ec7673e19deb43e096fbf11ee` | RewardForwarder | impl | inactive | no |
@@ -18,7 +18,7 @@
 | arbitrum | `0x38262c17a06a6b3588d3e5b70dfa768c06bf4ef1` | PoolRegistry | impl | live | no |
 | arbitrum | `0x401afbc31ad2a3bc0ed8960d63efcdea749b4849` | SwapFlashLoan-3 | impl | live | yes |
 | arbitrum | `0x492ebe7816b6934cc55f3001e1ac165a6c5afab0` | SimpleRewarder-2 | impl | inactive | no |
-| arbitrum | `0x4f6a43ad7cba042606decaca730d4ce0a57ac62e` | LPToken-2 | impl | live | yes |
+| arbitrum | `0x4f6a43ad7cba042606decaca730d4ce0a57ac62e` | SwapGuarded | impl | live | yes |
 | arbitrum | `0x5dd186f8809147f96d3ffc4508f3c82694e58c9c` | MetaSwap-4 | impl | live | yes |
 | arbitrum | `0x6fe745b31f6e1deb1bf81ebd145dcc17d05eb539` | RewardScheduler | impl | inactive | no |
 | arbitrum | `0x824dcd7b044d60df2e89b1bb888e66d8bcf41491` | RewardScheduler | impl | inactive | no |
@@ -26,10 +26,10 @@
 | arbitrum | `0xa5bd85ed9fa27ba23bfb702989e7218e44fd4706` | MetaSwap-2 | impl | live | no |
 | arbitrum | `0xab94a2c0d8f044aa439a5654f06b5797928396cf` | MasterRegistry | impl | inactive | no |
 | arbitrum | `0xb2a2764d0dcab445e24f4b813be3f6ef8ae5f84d` | MetaSwap-2 | impl | live | no |
-| arbitrum | `0xbea9f78090bdb9e662d8cb301a00ad09a5b756e9` | LPToken-7 | proxy | live | yes |
-| arbitrum | `0xc0409ec303b727bc1f511d7f8c71fd5ead96de1c` | LPToken-2 | impl | live | yes |
+| arbitrum | `0xbea9f78090bdb9e662d8cb301a00ad09a5b756e9` | SwapFlashLoan-4 | proxy | live | yes |
+| arbitrum | `0xc0409ec303b727bc1f511d7f8c71fd5ead96de1c` | SwapGuarded | impl | live | yes |
 | arbitrum | `0xc8dfcfc329e19fdaf43a338ad6038dba02a5079b` | MetaSwapDeposit-2 | impl | live | no |
-| arbitrum | `0xcf70e2f3567ba396f3dd04822f78ecd70ba46894` | LPToken-2 | impl | live | yes |
+| arbitrum | `0xcf70e2f3567ba396f3dd04822f78ecd70ba46894` | SwapGuarded | impl | live | yes |
 | arbitrum | `0xdca5b16a96f984ffb2a3022cff339eb049126101` | MetaSwapDeposit-3 | impl | live | no |
 | arbitrum | `0xf428d446670d901ad6893fe2dbc77d42fcd20cb2` | RewardForwarder | impl | inactive | no |
 | arbitrum | `0xf8504e92428d65e56e495684a38f679c1b1dc30b` | MetaSwap-2 | impl | live | no |
@@ -154,7 +154,7 @@
 | optimism | `0xa500b0e1360462ef777804bcae6ce2bfb524dd2e` | SwapFlashLoan-2 | impl | live | no |
 | optimism | `0xa9a84238098dc3d1529228e6c74dbe7ebdf117a5` | MetaSwap-2 | impl | live | no |
 | optimism | `0xb10ac31a6e613c6fcb5522c19f4bdbcffa94f89d` | MetaSwapDeposit-2 | impl | live | no |
-| optimism | `0xbea9f78090bdb9e662d8cb301a00ad09a5b756e9` | MetaSwap-5 | impl | live | no |
+| optimism | `0xbea9f78090bdb9e662d8cb301a00ad09a5b756e9` | LPToken-2 | impl | live | no |
 | optimism | `0xc55e8c79e5a6c3216d4023769559d06fa9a7732e` | MetaSwap-4 | impl | live | yes |
 | optimism | `0xcf70e2f3567ba396f3dd04822f78ecd70ba46894` | GenericERC20 | impl | live | yes |
 | optimism | `0xdf815ea6b066ac9f3107d8863a6c19aa2a5d24d3` | MetaSwapDeposit-2 | impl | live | no |

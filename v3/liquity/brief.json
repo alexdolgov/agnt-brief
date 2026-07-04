@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "liquity",
-  "generated_at": "2026-07-03T21:06:21.589Z",
+  "generated_at": "2026-07-04T11:05:42.046Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-3e24",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -61,7 +61,7 @@
     }
   },
   "topography": {
-    "project_purpose": "CDP. Structurally: 70 project-authored contract(s) across 3 chain(s); 6 ERC20 tokens, 1 ERC721 NFT; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "project_purpose": "CDP. Structurally: 71 project-authored contract(s) across 7 chain(s); 11 ERC20 tokens, 1 ERC721 NFT; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
     "relationship_narrative": "The protocol comprises 8 functional families. Its contracts share 15 common project-authored base contract(s) (dsmath, dsauth, dsauthevents). Dominant framework: openzeppelin.",
     "product_family_count": 8,
     "total_contracts_indexed": 211,

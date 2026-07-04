@@ -5,7 +5,7 @@
 - Project: LUSD ChickenBonds (`lusd-chickenbonds`)
 - Website: [https://www.chickenbonds.org](https://www.chickenbonds.org)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:21.743Z
+- Generated: 2026-07-04T11:05:42.076Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-16da
 - Chains: ethereum
 - Contract surface: 5 unique implementations (9 raw deployments)

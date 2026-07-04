@@ -12,7 +12,7 @@
       "address": "0x12300ea3d3444e9106c65913de24c58462abfe24",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
@@ -20,7 +20,7 @@
       "address": "0xf930533173c0b66a8863f4e6883176f09038d3a6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

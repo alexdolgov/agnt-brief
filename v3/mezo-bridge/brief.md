@@ -5,7 +5,7 @@
 - Project: Mezo Bridge (`mezo-bridge`)
 - Website: [https://mezo.org](https://mezo.org)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:26.867Z
+- Generated: 2026-07-04T11:05:43.346Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-b097
 - Chains: ethereum
 - Contract surface: 153 unique implementations (262 raw deployments)

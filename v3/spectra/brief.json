@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "spectra",
-  "generated_at": "2026-07-03T21:06:56.354Z",
+  "generated_at": "2026-07-04T11:05:46.612Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-16bc",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -60,8 +60,8 @@
     }
   },
   "topography": {
-    "project_purpose": "Onchain Capital Allocator. Structurally: 49 project-authored contract(s) across 6 chain(s); 4 ERC4626 vaults, 5 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 8 functional families. Its contracts share 13 common project-authored base contract(s) (proxy, erc20permitupgradeable, erc20upgradeable). Dominant framework: openzeppelin.",
+    "project_purpose": "Onchain Capital Allocator. Structurally: 163 project-authored contract(s) across 8 chain(s); 19 ERC4626 vaults, 28 ERC20 tokens; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 8 functional families. Its contracts share 20 common project-authored base contract(s) (proxy, erc20permitupgradeable, erc20upgradeable). Dominant framework: openzeppelin.",
     "product_family_count": 8,
     "total_contracts_indexed": 1087,
     "live_contracts": 200,

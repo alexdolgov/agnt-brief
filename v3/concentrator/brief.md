@@ -5,7 +5,7 @@
 - Project: Concentrator (`concentrator`)
 - Website: [https://concentrator.aladdin.club/](https://concentrator.aladdin.club/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:42.048Z
+- Generated: 2026-07-04T11:05:40.848Z
 - Pipeline run: v2-pipeline-2026-07-01-2b719a-1bf2
 - Chains: ethereum
 - Contract surface: 521 unique implementations (641 raw deployments)

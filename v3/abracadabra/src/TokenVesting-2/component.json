@@ -9,10 +9,10 @@
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0x0147c0212ca4aba29d26dffd3c800893080ef296",
+      "address": "0x02d632ba7f2a046817af67ef7b279080d3cab641",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

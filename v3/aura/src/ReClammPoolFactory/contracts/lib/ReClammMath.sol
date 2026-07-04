@@ -490,7 +490,9 @@ library ReClammMath {
         uint32 currentTimestamp,
         uint32 lastTimestamp
     ) internal pure returns (uint256 newVirtualBalanceA, uint256 newVirtualBalanceB) {
-        uint256 sqrtPriceRatio = sqrtScaled18(computePriceRatio(balancesScaled18, virtualBalanceA, virtualBalanceB));
+        uint256 sqrtPriceRatio = Math.sqrt(
+            computePriceRatio(balancesScaled18, virtualBalanceA, virtualBalanceB) * FixedPoint.ONE
+        );
 
         // The overvalued token is the one with a lower token balance (therefore, rarer and more valuable).
         (uint256 balancesScaledUndervalued, uint256 balancesScaledOvervalued) = isPoolAboveCenter
@@ -510,31 +512,20 @@ library ReClammMath {
         // |    Tc = Current timestamp               |
         // |    Tl = Last timestamp                  |
         // +-----------------------------------------+
-        // |               Ru * (Vo + Ro)            |
+        // |               Ru * (Vo + Bo)            |
         // |      Vu = ----------------------        |
-        // |             (Qo - 1) * Vo - Ro          |
+        // |             (Qo - 1) * Vo - Bo          |
         // +-----------------------------------------+
         // |  Where:                                 |
         // |    Vu = Virtual balance undervalued     |
         // |    Vo = Virtual balance overvalued      |
         // |    Ru = Real balance undervalued        |
-        // |    Ro = Real balance overvalued         |
+        // |    Bo = Virtual balance overvalued      |
         // |    Qo = Square root of price ratio      |
         // +-----------------------------------------+
-
-        // Cap the duration (time between operations) at 30 days, to ensure `powDown` does not overflow.
-        uint256 duration = Math.min(currentTimestamp - lastTimestamp, 30 days);
-
         virtualBalanceOvervalued = virtualBalanceOvervalued.mulDown(
-            dailyPriceShiftBase.powDown(duration * FixedPoint.ONE)
+            dailyPriceShiftBase.powDown((currentTimestamp - lastTimestamp) * FixedPoint.ONE)
         );
-
-        // Ensure that Vo does not go below the minimum allowed value (corresponding to centeredness == 1).
-        virtualBalanceOvervalued = Math.max(
-            virtualBalanceOvervalued,
-            balancesScaledOvervalued.divDown(sqrtScaled18(sqrtPriceRatio) - FixedPoint.ONE)
-        );
-
         virtualBalanceUndervalued =
             (balancesScaledUndervalued * (virtualBalanceOvervalued + balancesScaledOvervalued)) /
             ((sqrtPriceRatio - FixedPoint.ONE).mulDown(virtualBalanceOvervalued) - balancesScaledOvervalued);

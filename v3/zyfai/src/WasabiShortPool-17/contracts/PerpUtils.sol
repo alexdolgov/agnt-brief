@@ -23,18 +23,18 @@ library PerpUtils {
     }
 
     /// @dev Computes the close fee for a position by looking at the position size
-    /// @param _position the position to compute the close fee for
-    /// @param _size the size to close
+    /// @param _position the position size
+    /// @param _netValue the net value
     /// @param _isLong whether the position is long or short
     function computeCloseFee(
         IWasabiPerps.Position calldata _position,
-        uint256 _size,
+        uint256 _netValue,
         bool _isLong
     ) internal pure returns(uint256) {
-        uint256 denominator = _position.feesToBePaid + (
-            _isLong ? _position.downPayment + _position.principal : _position.collateralAmount
-        );
-        return (_size * _position.feesToBePaid) / denominator;
+        if (_isLong) {
+            return (_position.principal + _netValue) * _position.feesToBePaid / (_position.feesToBePaid + _position.downPayment + _position.principal);
+        }
+        return (_position.collateralAmount + _netValue) * _position.feesToBePaid / (_position.feesToBePaid + _position.collateralAmount);
     }
 
     /// @dev Receives payment from a given address
@@ -63,26 +63,14 @@ library PerpUtils {
         weth.deposit{value: address(this).balance}();
     }
 
-    /// @dev Executes a given list of functions and returns the balance changes
+    /// @dev Executes a given list of functions
     /// @param _marketplaceCallData List of marketplace calldata
-    /// @param _tokenIn the token to swap from
-    /// @param _tokenOut the token to swap to
-    /// @return amountIn the amount of tokenIn swapped
-    /// @return amountOut the amount of tokenOut received
-    function executeSwapFunctions(
-        IWasabiPerps.FunctionCallData[] memory _marketplaceCallData,
-        IERC20 _tokenIn,
-        IERC20 _tokenOut
-    ) internal returns (uint256 amountIn, uint256 amountOut) {
-        amountIn = _tokenIn.balanceOf(address(this));
-        amountOut = _tokenOut.balanceOf(address(this));
+    function executeFunctions(IWasabiPerps.FunctionCallData[] memory _marketplaceCallData) internal {
         uint256 length = _marketplaceCallData.length;
         for (uint256 i; i < length; ++i) {
             IWasabiPerps.FunctionCallData memory functionCallData = _marketplaceCallData[i];
             functionCallData.to.functionCallWithValue(functionCallData.data, functionCallData.value);
         }
-        amountIn = amountIn - _tokenIn.balanceOf(address(this));
-        amountOut = _tokenOut.balanceOf(address(this)) - amountOut;
     }
 
     /// @dev Deducts the given amount from the total amount

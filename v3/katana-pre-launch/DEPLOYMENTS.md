@@ -4,9 +4,9 @@
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| base | `0x89063623f00238106c9a60032fae2ab702b8a1fb` | ERC1967Upgrade-2 | impl | live | no |
+| base | `0x89063623f00238106c9a60032fae2ab702b8a1fb` | ProxyAdmin | impl | live | no |
 | ethereum | `0x0000000000000068f116a894984e2db1123eb395` | Seaport | impl | live | no |
-| ethereum | `0x000000000022d473030f116ddee9f6b43ac78ba3` | Permit2 | impl | live | no |
+| ethereum | `0x000000000022d473030f116ddee9f6b43ac78ba3` | AllowanceTransfer | impl | live | no |
 | ethereum | `0x00000000efe302beaa2b3e6e1b18d08d69a9012a` | AgoraDollarErc1967Proxy | proxy | live | no |
 | ethereum | `0x00000000f9490004c11cef243f5400493c00ad63` | ConduitController | impl | live | no |
 | ethereum | `0x01346721418045a6c07b71052e452ef8615e9084` | CommitStore | impl | live | no |

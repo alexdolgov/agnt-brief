@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "qidao",
-  "generated_at": "2026-07-03T21:06:43.818Z",
+  "generated_at": "2026-07-04T11:05:44.045Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-0679",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -69,8 +69,8 @@
     }
   },
   "topography": {
-    "project_purpose": "CDP. Structurally: 79 project-authored contract(s) across 11 chain(s); 1 ERC4626 vault, 17 ERC20 tokens, 11 ERC721 NFTs, 10 Chainlink feeds; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 7 functional families. Its contracts share 10 common project-authored base contract(s) (erc20detailed, vaultnftv4, erc721full). Dominant framework: openzeppelin.",
+    "project_purpose": "CDP. Structurally: 209 project-authored contract(s) across 14 chain(s); 1 ERC4626 vault, 54 ERC20 tokens, 84 ERC721 NFTs, 10 Chainlink feeds; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 7 functional families. Its contracts share 17 common project-authored base contract(s) (fixedvault, vaultnftv5, erc165). Dominant framework: openzeppelin.",
     "product_family_count": 7,
     "total_contracts_indexed": 3200,
     "live_contracts": 1808,

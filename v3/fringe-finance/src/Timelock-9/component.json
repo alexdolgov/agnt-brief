@@ -1,18 +1,18 @@
 {
   "component": "Timelock-9",
   "main_contract": "Timelock",
-  "source_file_count": 17,
+  "source_file_count": 1,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x09fec993be76230296ce8c3b8edafd32b6240126",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf7aa325404f81cf34268657ddf2d046763a8c4ed",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

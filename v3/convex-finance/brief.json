@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "convex-finance",
-  "generated_at": "2026-07-03T21:05:42.116Z",
+  "generated_at": "2026-07-04T11:05:40.863Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-f007",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -57,7 +57,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Yield. Structurally: 250 project-authored contract(s) across 4 chain(s); 2 ERC4626 vaults, 27 ERC20 tokens, 9 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "project_purpose": "Yield. Structurally: 258 project-authored contract(s) across 4 chain(s); 2 ERC4626 vaults, 27 ERC20 tokens, 9 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
     "relationship_narrative": "The protocol comprises 9 functional families. Its contracts share 16 common project-authored base contract(s) (poolconstant, poolerrors, stakingproxybase). Dominant framework: openzeppelin.",
     "product_family_count": 9,
     "total_contracts_indexed": 520,

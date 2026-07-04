@@ -2,7 +2,7 @@
   "component": "CrossChainBridge",
   "main_contract": "CrossChainBridge",
   "source_file_count": 27,
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -13,6 +13,22 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xc437df90b37c1db6657339e31bfe54627f0e7181",
+      "is_proxy": true,
+      "implementation_address": "0x85ea08796eb66820379039cab034722e69e4e16c",
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe7ac5115eeeedd1dd57649a4c7077a0f9d10b795",
+      "is_proxy": true,
+      "implementation_address": "0x00a7ac37c6b9a10e0c68051390695546a5605f3d",
+      "liveness": "live"
     }
   ]
 }

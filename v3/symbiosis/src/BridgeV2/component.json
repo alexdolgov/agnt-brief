@@ -1,0 +1,42 @@
+{
+  "component": "BridgeV2",
+  "main_contract": "BridgeV2",
+  "source_file_count": 13,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x5be6e69ec8a59b1ed8201b184adb0774d551a774",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x7057ab3fb2bee9c18e0cde4240de4ff7f159e365",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "polygon",
+      "chain_id": 137,
+      "address": "0x8dc3151dccd58fcb6a0bec0df20c06fba133f027",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x7057ab3fb2bee9c18e0cde4240de4ff7f159e365",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

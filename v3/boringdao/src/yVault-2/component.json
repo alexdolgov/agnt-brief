@@ -1,18 +1,58 @@
 {
   "component": "yVault-2",
   "main_contract": "yVault",
-  "source_file_count": 1,
-  "deployment_count": 1,
+  "source_file_count": 4,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x2994529c0652d127b7842094103715ec5299bbed",
+      "address": "0x0fcda6f268d0c09cdfffe6bceac5233ac2367889",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x13137dd2a6096f5880e23a862102ebc850e970a8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x20d98bd5e85fc652b679526e2a2d6ef65a82ee0e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3495e6876c390eef76554c24a0ee2f6216bea71d",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x365c4b0e9433bc0141ccafee24be99ac662a43d3",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x43161a5e9d447a55f9ded00d7aa03fbfb4a6d2ab",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

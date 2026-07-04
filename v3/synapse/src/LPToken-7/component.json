@@ -9,7 +9,7 @@
     {
       "chain": "chain-1088",
       "chain_id": 1088,
-      "address": "0xa9e90579eb086bcda910dd94041ffe041fb4ac89",
+      "address": "0xdde5bec4815e1cecf336fb973ca578e8d83606e0",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

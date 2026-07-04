@@ -2,7 +2,7 @@
   "component": "GaugeExtraRewardDistributor",
   "main_contract": "GaugeExtraRewardDistributor",
   "source_file_count": 8,
-  "deployment_count": 1,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +12,47 @@
       "address": "0x04bb59bd617f06eeeee00caeaffc8f3b68510330",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2365fd450b7b040288b318543f683f01ca189712",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x318171b9d3d17193ec58f203e5563ac205ce0ccc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x395a8974a00e4a0e91efe0e335ac39a8486158cd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3f78e6fa2dcc1b04d3c4377f393f4f83f4730852",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4c586e8b191d67aa79eb55e89f9a5cbd9bcbdc57",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

@@ -9,25 +9,25 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x06b964d96f5dcf7eae9d7c559b09edce244d4b8e",
+      "address": "0x35ec69a77b79c255e5d47d5a3bdbefefe342630c",
       "is_proxy": true,
-      "implementation_address": "0x236ce5ed9e077ae63460148f860ed39d1b8808e9",
+      "implementation_address": "0x989c5e2509c501deb6195b9f525d9092514041b4",
       "liveness": "live"
     },
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x56b8dd5d92311ab0c657a05dd6ec3346f6ee0713",
-      "is_proxy": false,
-      "implementation_address": null,
+      "address": "0x5cc73aaa18045cebb41d7611ac1ff6298105d222",
+      "is_proxy": true,
+      "implementation_address": "0x3067af4a0ec2dfe0ccd3c009f3d96fb4b9076add",
       "liveness": "live"
     },
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xb8819cd07b042b4f514e4ab381f675614cb7b37d",
-      "is_proxy": false,
-      "implementation_address": null,
+      "address": "0xb060841150adc3707e4cd37f9a7833a2a957d189",
+      "is_proxy": true,
+      "implementation_address": "0x3d9dbc7bf9d01230d1f828bdd27a5bcf877a373e",
       "liveness": "live"
     }
   ]

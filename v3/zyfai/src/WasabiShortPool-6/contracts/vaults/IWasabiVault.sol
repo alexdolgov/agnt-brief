@@ -17,7 +17,6 @@ interface IWasabiVault is IERC4626  {
     error NoDustToClean(); // 0x37e34f38
     error AmountExceedsDebt(); // 0x64ddcf37
     error InvalidStrategy(); // 0x4e236e9a
-    error InterestFeeTooHigh(); // 0x8e395cd1
 
     event NativeYieldClaimed(
         address token,
@@ -26,16 +25,6 @@ interface IWasabiVault is IERC4626  {
 
     event DepositCapUpdated(
         uint256 newDepositCap
-    );
-
-    event InterestFeeBipsUpdated(
-        uint256 newInterestFeeBips
-    );
-
-    event InterestReceived(
-        uint256 interestReceived,
-        uint256 interestFeeShares,
-        address feeReceiver
     );
 
     event StrategyDeposit(
@@ -90,7 +79,8 @@ interface IWasabiVault is IERC4626  {
 
     /// @dev Called by the admin to record interest earned from a strategy, without paying it out yet
     /// @param _strategy The address of the strategy
-    function strategyClaim(address _strategy) external;
+    /// @param _interestAmount The amount of assets earned from the strategy
+    function strategyClaim(address _strategy, uint256 _interestAmount) external;
 
     /// @dev Called by the admin to donate assets to the vault, which is recorded as interest
     /// @param _amount The amount of assets to donate
@@ -99,11 +89,13 @@ interface IWasabiVault is IERC4626  {
     /// @dev Called by the admin to remove any leftover assets if `totalSupply` is 0 and `totalAssetValue` is > 0
     function cleanDust() external;
 
+    /// @dev Validates that the leverage is within the maximum allowed by the DebtController
+    /// @param _downPayment The down payment amount
+    /// @param _total The total value of the position in the same currency as the down payment
+    /// @notice For shorts, _total is the collateral amount, for longs it is the down payment + principal
+    function checkMaxLeverage(uint256 _downPayment, uint256 _total) external view;
+
     /// @dev Sets the cap on the amount of assets that can be deposited by all users
     /// @param _newDepositCap The new deposit cap
     function setDepositCap(uint256 _newDepositCap) external;
-
-    /// @dev Sets the fee charged on interest in basis points
-    /// @param _newInterestFeeBips The new interest fee in basis points
-    function setInterestFeeBips(uint256 _newInterestFeeBips) external;
 }

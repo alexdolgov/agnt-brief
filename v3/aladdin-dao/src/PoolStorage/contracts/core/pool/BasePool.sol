@@ -188,10 +188,10 @@ abstract contract BasePool is TickLogic, PositionLogic {
   }
 
   /// @inheritdoc IPool
-  function redeem(uint256 rawDebts) external onlyPoolManager returns (uint256 rawColls) {
+  function redeem(uint256 rawDebts) external onlyPoolManager returns (uint256 actualRawDebts, uint256 rawColls) {
     if (_isRedeemPaused()) revert ErrorRedeemPaused();
 
-    rawColls = _redeem(rawDebts, false);
+    (actualRawDebts, rawColls) = _redeem(rawDebts, false);
   }
 
   /// @inheritdoc IPool
@@ -451,8 +451,12 @@ abstract contract BasePool is TickLogic, PositionLogic {
 
   /// @dev Internal function to redeem debt tokens to get collateral tokens.
   /// @param rawDebts The amount of debt tokens to redeem.
+  /// @return actualRawDebts The actual amount of debt tokens used.
   /// @return rawColls The amount of collateral tokens to redeemed.
-  function _redeem(uint256 rawDebts, bool allowTickNotMoved) internal returns (uint256 rawColls) {
+  function _redeem(
+    uint256 rawDebts,
+    bool allowTickNotMoved
+  ) internal returns (uint256 actualRawDebts, uint256 rawColls) {
     (uint256 cachedCollIndex, uint256 cachedDebtIndex) = _updateCollAndDebtIndex();
     (uint256 cachedTotalDebts, uint256 cachedTotalColls) = _getDebtAndCollateralShares();
     uint256 price = IPriceOracle(priceOracle).getRedeemPrice();
@@ -470,33 +474,36 @@ abstract contract BasePool is TickLogic, PositionLogic {
       if (!hasDebt) {
         (tick, hasDebt) = tickBitmap.nextDebtPositionWithinOneWord(tick - 1);
       } else {
-        uint256 node = tickData[tick];
-        bytes32 value = tickTreeData[node].value;
-        uint256 tickDebtShare = value.decodeUint(DEBT_SHARE_OFFSET, 128);
-        // skip bad debt
+        uint256 tickDebtShare;
         {
-          uint256 tickCollShare = value.decodeUint(COLL_SHARE_OFFSET, 128);
-          if (
-            _convertToRawDebt(tickDebtShare, cachedDebtIndex, Math.Rounding.Down) * PRECISION >
-            _convertToRawColl(tickCollShare, cachedCollIndex, Math.Rounding.Down) * price
-          ) {
+          uint256 node = tickData[tick];
+          bytes32 value = tickTreeData[node].value;
+          tickDebtShare = value.decodeUint(DEBT_SHARE_OFFSET, 128);
+          // skip bad debt
+          {
+            uint256 tickCollShare = value.decodeUint(COLL_SHARE_OFFSET, 128);
+            if (
+              _convertToRawDebt(tickDebtShare, cachedDebtIndex, Math.Rounding.Down) * PRECISION >
+              _convertToRawColl(tickCollShare, cachedCollIndex, Math.Rounding.Down) * price
+            ) {
+              hasDebt = false;
+              tick = tick;
+              continue;
+            }
+          }
+          // skip dust
+          if (tickDebtShare < uint256(MIN_DEBT)) {
             hasDebt = false;
             tick = tick;
             continue;
           }
         }
-        // skip dust
-        if (tickDebtShare < uint256(MIN_DEBT)) {
-          hasDebt = false;
-          tick = tick;
-          continue;
-        }
 
         // redeem at most `maxRedeemRatioPerTick`
         uint256 debtShareToRedeem = (tickDebtShare * _getMaxRedeemRatioPerTick()) / FEE_PRECISION;
         if (debtShareToRedeem > debtShare) debtShareToRedeem = debtShare;
-        uint256 rawCollRedeemed = (_convertToRawDebt(debtShareToRedeem, cachedDebtIndex, Math.Rounding.Down) *
-          PRECISION) / price;
+        uint256 rawDebtsToRedeem = _convertToRawDebt(debtShareToRedeem, cachedDebtIndex, Math.Rounding.Down);
+        uint256 rawCollRedeemed = (rawDebtsToRedeem * PRECISION) / price;
         uint256 collShareRedeemed = _convertToCollShares(rawCollRedeemed, cachedCollIndex, Math.Rounding.Down);
 
         // If the tick won't move, break the loop (except for redeem credit note)
@@ -504,6 +511,7 @@ abstract contract BasePool is TickLogic, PositionLogic {
 
         _liquidateTick(tick, collShareRedeemed, debtShareToRedeem, price);
         debtShare -= debtShareToRedeem;
+        actualRawDebts += rawDebtsToRedeem;
         rawColls += rawCollRedeemed;
 
         cachedTotalColls -= collShareRedeemed;

@@ -3,7 +3,7 @@
 
 // OpenZeppelin Contracts (last updated v5.0.0) (utils/math/SignedMath.sol)
 
-pragma solidity ^0.8.18;
+pragma solidity ^0.8.20;
 
 /**
  * @dev Standard signed math utilities missing in the Solidity language.
@@ -49,7 +49,7 @@ library SignedMath {
 
 // OpenZeppelin Contracts (last updated v5.0.0) (utils/math/Math.sol)
 
-pragma solidity ^0.8.18;
+pragma solidity ^0.8.20;
 
 /**
  * @dev Standard math utilities missing in the Solidity language.
@@ -467,7 +467,7 @@ library Math {
 
 // OpenZeppelin Contracts (last updated v5.0.0) (utils/Strings.sol)
 
-pragma solidity ^0.8.18;
+pragma solidity ^0.8.20;
 
 
 
@@ -568,19 +568,33 @@ library Strings {
 */
 
 /*
-    Elephant Money Futures FINAL - NFT Unlimited 2.0 Migration
+    Elephant Money Futures
 
-    - Provides readonly view into final balances for Futures accounts
+    - A high yield cashhflow engine that earns up to 0.5% daily on cash 
     - 100% on-chain
-    - NFT migrations handled in bulk administratively
-    - Easy UI confirmation of succuessful migration
+    - Scalable and always open for business
+    - Core yield generation is provided by the unstoppable and proven ELEPHANT Treasury buyback program
+    - Deposit BNB and earn BNB rewards; no stable coin risk
+    - Paid out at up to 0.5% daily of your remaining balance
+    - Health checks establish a safe base group rate the system can handle
+    - Regular deposits provide up to a 0.2% bonus daily rate
+    - Auto compound rewards on ever deposit 
+    - Claim at any time down to the second
+    - No fees or taxes of any kind
+    - Yield is paid by a growing Elephant Treasury
+    - 50% of deposits market buy ELEPHANT
+    - 10% of deposits are held in a BNB Reserve for yield repayment
+    - 10% of deposits buy and hold BTC with variable ELEPHANT buybacks
+    - 20% of deposits buy and hold TRUNK with variable ELEPHANT buybacks
+    - 10% of deposits fund a Rainy Day Fund for 50% redemption of principal  
+    - 200 USD deposit minimum, 1M USD max balance, 2.5M USD max payouts, and 50K USD max daily claim 
 
     Only at https://elephant.money
 
 */
 
 
-pragma solidity ^0.8.18;
+pragma solidity ^0.8.20;
 
 
 abstract contract ReentrancyGuard {
@@ -1323,10 +1337,6 @@ interface IPcsPeriodicTwapOracle {
 
 }
 
-interface IAdministrativeNFTMinter {
-    function bulkMint(address _to, uint _count) external returns (uint _minted);
-}
-
 //@dev Tracks summary information for users across all farms
 struct FuturesUser {
     bool exists; //has the user joined
@@ -1476,27 +1486,6 @@ contract FuturesActionVault is Whitelist {
 
 }
 
-//@dev Immutable Vault that stores ledger for NFT minted amount
-contract FuturesNFTMigrationVault is Whitelist {
-    mapping(address => uint) private users;
-
-    constructor() Ownable() {}
-
-
-    //@dev Get User info
-    function getUser(address _user) external view returns (uint nftAmount) {
-        return users[_user];
-    }
-
-    //@dev commit User Info
-    function commitUser(address _user, uint _nftAmount)  onlyWhitelisted isRunning external {
-
-        //update user
-        users[_user] = _nftAmount; 
-    }
-
-}
-
 contract UintToStringTest {
 
     using Strings for uint256;
@@ -1513,10 +1502,9 @@ contract FuturesEngine is Ownable {
     using SafeMath for uint256;
     using Strings for uint256;
 
-    AddressRegistry internal registry;
+    AddressRegistry private registry;
 
     //Financial Model
-    uint256 public constant historicalNFTMint = 350e18;
     uint256 public constant rainyDayPercentage = 10; //share of rainyDayFund
     uint256 public constant referenceApr = 182.5e18; //0.5% daily
     uint256 public constant bonusApr = 182.5e18; //0.5% daily
@@ -1526,14 +1514,9 @@ contract FuturesEngine is Ownable {
     uint256 public constant maxAvailable = 50000e18; //50K max claim daily, 10 days missed claims 
     uint256 public constant maxPayouts = (maxBalance * 5e18) / 2e18; //2.5M
 
-    uint256 public constant nftStrikePrice = 350e18; //average price of nft mints
-
     bool public forceLiquidity = true; //topOff reserve if claim is large
     uint256 public slippage = 995; //slippage control for buys / sell
     uint public rdfCooldown = 7 days; //cool down between RDF claims
-    uint public claimCooldown = 7 days; //cool down between claims
-    uint public maxTreasuryPayoutPercentage = 5; // X/1000 , 1 = 0.1%
-    uint public maxMint = 250;
 
     
     //Immutable long term network contracts
@@ -1544,13 +1527,11 @@ contract FuturesEngine is Ownable {
     IERC20 public immutable coreToken;
     IUniswapV2Router02 public  immutable collateralRouter;
     IPcsPeriodicTwapOracle public immutable oracle;
-    IAdministrativeNFTMinter public immutable nftMinter;
     
     //Updatable components
     FuturesVault public vault;
     FuturesActionVault public actionVault;
     FuturesRDFVault public rdfVault; 
-    FuturesNFTMigrationVault public nftVault;
    
 
     //events
@@ -1561,16 +1542,10 @@ contract FuturesEngine is Ownable {
     event Transfer(address indexed user, address indexed new_user, uint256 current_balance);
     event UpdateVault(address prev_vault, address vault);
     event UpdateActionVault(address prev_vault, address vault);
-    event UpdateNftVault(address prev_vault, address vault);
     event UpdateSlippage(uint oldSlippage, uint newSlippage);
     event UpdateForceLiquidity(bool value, bool new_value);
     event UpdateRDFVault(address oldVault, address newVault);
     event UpdateRDFCooldown(uint oldCooldown, uint newCooldown);
-    event UpdateClaimCooldown(uint oldCooldown, uint newCooldown);
-    event UpdateMaxMint(uint oldValue, uint newValue);
-    event UpdateMaxTreasuryPayoutPercentage(uint oldPercentage, uint newPercentage);
-    event NFTMigrate(address indexed user, uint nfts, uint totalNFTsMinted);
-    event BatchNFTMigrate(uint users, uint nfts);
 
 
     //@dev Creates a FuturesEngine that contains upgradeable business logic for Futures Vault
@@ -1597,8 +1572,6 @@ contract FuturesEngine is Ownable {
         chainlinkProxy = IEACAggregatorProxy(registry.chainlinkBNBAddress());
 
         oracle = IPcsPeriodicTwapOracle(registry.oracleAddress());
-
-        nftMinter = IAdministrativeNFTMinter(registry.nftMinterAddress());
        
 
     }
@@ -1607,7 +1580,7 @@ contract FuturesEngine is Ownable {
 
     //@dev Update the FuturesVault
     function updateFuturesVault(address _vault) external onlyOwner {
-        require(_vault != address(0), "non-zero");
+        require(_vault != address(0), "vault must be non-zero");
 
         emit UpdateVault(address(vault), _vault);
 
@@ -1616,7 +1589,7 @@ contract FuturesEngine is Ownable {
 
     //@dev Update the FuturesVault
     function updateFuturesActionVault(address _vault) external onlyOwner {
-        require(_vault != address(0), "non-zero");
+        require(_vault != address(0), "vault must be non-zero");
 
         emit UpdateActionVault(address(actionVault), _vault);
 
@@ -1624,17 +1597,8 @@ contract FuturesEngine is Ownable {
     }
 
     //@dev Update the FuturesVault
-    function updateNftVault(address _vault) external onlyOwner {
-        require(_vault != address(0), "non-zero");
-
-        emit UpdateNftVault(address(nftVault), _vault);
-
-        nftVault = FuturesNFTMigrationVault(_vault);
-    }
-
-    //@dev Update the FuturesVault
     function updateFuturesRDFVault(address _vault) external onlyOwner {
-        require(_vault != address(0), "non-zero");
+        require(_vault != address(0), "vault must be non-zero");
 
         emit UpdateRDFVault(address(rdfVault), _vault);
 
@@ -1643,8 +1607,8 @@ contract FuturesEngine is Ownable {
     }
 
     //@dev Updates slippage used when setting thresholds for buys
-    function updateSlippage(uint _slippage) onlyOwner external {
-        require(_slippage < 1000, "USE1");
+    function updatesSlippage(uint _slippage) onlyOwner external {
+        require(_slippage < 1000, "slippage < 1000");
 
         emit UpdateSlippage(slippage, _slippage);
 
@@ -1652,43 +1616,13 @@ contract FuturesEngine is Ownable {
         
     } 
 
-    //@dev Updates maxMint 
-    function updateMaxMint(uint _max) onlyOwner external {
-
-        require(_max <= 2000 && _max >= 10, "UMM1" );
-
-        emit UpdateMaxMint(maxMint, _max);
-
-        maxMint = _max;
-    }
-
-    //@dev Updates slippage used when setting thresholds for buys
-    function updateMaxTreasuryPayoutPercentage(uint _percentage) onlyOwner external {
-        require(_percentage > 0 && _percentage <= 20, "UME1");
-
-        emit UpdateMaxTreasuryPayoutPercentage(maxTreasuryPayoutPercentage, _percentage);
-
-        maxTreasuryPayoutPercentage = _percentage;
-        
-    } 
-
     //@dev Updates the cooldown which controls RDF claim frequency
     function updateRDFCooldown(uint _cooldown) onlyOwner external {
-        require(_cooldown >= 7 days && _cooldown <= 90 days, "URN1");
+        require(_cooldown >= 7 days && _cooldown <= 90 days, "cooldown must be between 30 - 90 days (seconds)");
 
         emit UpdateRDFCooldown(rdfCooldown, _cooldown);
 
         rdfCooldown = _cooldown;
-
-    }
-
-    //@dev Updates the cooldown which controls default claim frequency
-    function updateClaimCooldown(uint _cooldown) onlyOwner external {
-        require(_cooldown >= 7 days && _cooldown <= 90 days, "UCN1");
-
-        emit UpdateClaimCooldown(claimCooldown, _cooldown);
-
-        claimCooldown = _cooldown;
 
     }
 
@@ -1752,32 +1686,6 @@ contract FuturesEngine is Ownable {
 
     }
 
-     // Estimates the amount of  core tokens getting transfered to USD collateral tokens
-    function estimateCoreToCollateral(uint coreAmount) public view returns (uint wethAmount, uint collateralAmount) {
-         //Convert from core to WETH using the core's Oracle
-        address[] memory path = new address[](2);
-        path[0] = address(coreToken);
-        path[1] = collateralRouter.WETH();
-
-        uint[] memory amounts = oracle.consultAmountsOut(coreAmount, path);
-        
-        wethAmount = amounts[1];
-        collateralAmount = estimateCollateralAmount(wethAmount);
-    }
-
-    //@dev Returns the value of the treasury based on percentage of the treasury. _percentage/1000, 1 = 0.1 %
-    function estimatePercentageTreasuryBalance(uint _percentage) public view returns (uint coreAmount, uint wethAmount, uint collateralAmount) {
-        
-        require(_percentage > 0, "EPE1");
-
-        uint256 coreTreasuryBalance = coreToken.balanceOf(address(coreTreasury));
-
-        coreAmount = coreTreasuryBalance * _percentage / 1000;
-
-        (wethAmount, collateralAmount) = estimateCoreToCollateral(coreAmount); 
-
-    }
-
     //@dev Scales an amount by how close the wethTreasury is to dailyLiability
     function scaleByPeg(uint amount) public view returns (uint scaledAmount) {
 
@@ -1809,8 +1717,6 @@ contract FuturesEngine is Ownable {
         }
 
     }
-
-
 
     //@dev Checks if account is eligible for deposits
     function isEligibleForDeposit(address _user) public view returns (bool eligible) {
@@ -1857,21 +1763,17 @@ contract FuturesEngine is Ownable {
     }
 
     //@dev Returns maximum user specific RDF Info
-    function maxUserAvailableRDF(address _user) public view returns (uint _userAvailable, uint _eligible_claim, uint _remainingCooldown, uint _last_claim) {
+    function maxUserAvailableRDF(address _user) public view returns (uint _userAvailable, uint _remainingCooldown) {
         (uint _maxAvailable,) = maxAvailableRDF();
 
         FuturesUser memory userData = vault.getUser(_user);
         FuturesRDFUser memory userRDFData = rdfVault.getUser(_user);
-
-        _last_claim = userRDFData.last_claim;
 
         uint elapsed = block.timestamp - userRDFData.last_claim;
 
         _remainingCooldown  = rdfCooldown.safeSub(elapsed);
 
         _userAvailable = userData.current_balance / 2;
-
-        _eligible_claim = _userAvailable;
 
         (bool eligible, ) = isEligibleForRDF(_user);
 
@@ -1880,29 +1782,7 @@ contract FuturesEngine is Ownable {
 
 
     //@dev Returns tax bracket and adjusted amount based on the bracket 
-    function available(address _user) public view returns (uint256 _limiterRate, uint256 _adjustedAmount, uint _remainingCooldown, uint _last_claim) {
-
-        //Calculate time until next claim
-        FuturesUserAction memory userActionData = actionVault.getUser(_user);
-
-        _last_claim = userActionData.last_claim;
-
-        uint elapsed = block.timestamp - userActionData.last_claim;
-
-        _remainingCooldown  = claimCooldown.safeSub(elapsed);
-
-        //Get adjusted amount
-        (_limiterRate, _adjustedAmount) = availableUncapped(_user);
-
-        //available should not be more than maxTreasuryPayoutPercentage
-        (,,uint _collateralAmount) = estimatePercentageTreasuryBalance(maxTreasuryPayoutPercentage);
-
-        _adjustedAmount = _adjustedAmount.min(_collateralAmount);
-
-    }
-
-    //@dev Returns tax bracket and adjusted amount based on the bracket 
-    function availableUncapped(address _user) public view returns (uint256 _limiterRate, uint256 _adjustedAmount) {
+    function available(address _user) public view returns (uint256 _limiterRate, uint256 _adjustedAmount) {
 
         //Load data
         FuturesUser memory userData = vault.getUser(_user);
@@ -1953,19 +1833,152 @@ contract FuturesEngine is Ownable {
     }
 
 
-    /// Internal Functions ////
+    ////  User Functions ////
+
+    //@dev Deposit BNB and get credit with dollar amount
+    //Is not available if the system is paused
+    function deposit() nonReentrant external payable {
+
+        //optimistically update price
+        updatePaths();
+        
+        uint _wethAmount = msg.value;
+        uint _amount =  estimateCollateralAmount(_wethAmount);
+        
+        //Only the key holder can invest their funds
+        address _user = msg.sender; 
+
+        FuturesUser memory userData = vault.getUser(_user);
+        FuturesUserAction memory userActionData = actionVault.getUser(_user);
+        FuturesGlobals memory globalsData = vault.getGlobals();
+
+        //if paused, require a balance
+        require(isEligibleForDeposit(_user), "existing accounts required when engine is paused");
+        
+        require(_amount >= minimumDeposit, "amount less than minimum deposit");
+        require(userData.current_balance + _amount <= maxBalance, "max balance exceeded" );
+        require(userData.payouts <= maxPayouts, "max payouts exceeded");
+
+        //Deposit distribution accounting
+        uint defaultDepositDistribution = _wethAmount / 10;
+        uint _bnbReserveAmount = defaultDepositDistribution;
+        uint _btcTurbineAmount = defaultDepositDistribution;
+        uint _rainydayFundAmount = defaultDepositDistribution;
+        uint _trunkTurbineAmount = 2 * defaultDepositDistribution;
+        uint _treasuryAmount = _wethAmount - (_bnbReserveAmount +  _btcTurbineAmount + _rainydayFundAmount +  _trunkTurbineAmount);   
+        
+        //Send distributions to repos
+        payable(registry.bnbReserveAddress()).transfer(_bnbReserveAmount);
+        payable(registry.rainyDayFundAddress()).transfer(_rainydayFundAmount);
+        payable(registry.BTCTurbineAddress()).transfer(_btcTurbineAmount);
+        payable(registry.TRUNKTurbineAddress()).transfer(_trunkTurbineAmount);
+
+        //Buy ELEPHANT
+        buyForTreasury(_treasuryAmount);
+        
+        //END WETH ACCOUNTING 
+
+        //update user stats
+        if (userData.exists == false) {
+            //attempt to migrate user
+            userData.exists = true;
+            globalsData.total_users += 1;  
+
+            //commit updates
+            vault.commitUser(_user, userData);
+            vault.commitGlobals(globalsData);
+
+        } 
+
+        //if user has an existing balance see if we have to claim yield before proceeding
+        //optimistically claim yield before reset
+        //if there is a balance we potentially have yield
+        if (userData.current_balance > 0){
+            compoundYield(_user);
+
+            //reload user data after a mutable function
+            userData = vault.getUser(_user); 
+            globalsData = vault.getGlobals();
+        }
+
+        //update user
+        userData.deposits += _amount;
+        userData.last_time = block.timestamp;
+        userData.current_balance += _amount;
+        userActionData.last_deposit = block.timestamp;
+
+        globalsData.total_deposited += _amount; 
+        globalsData.current_balance += _amount;
+        globalsData.total_txs += 1;
+
+        //commit updates
+        vault.commitUser(_user, userData);
+        actionVault.commitUser(_user, userActionData);
+
+        vault.commitGlobals(globalsData);
+
+        //events
+        emit Deposit(_user, _amount, msg.value);
+    }
+
+
+    //@dev Claims earned interest for the caller
+    function claim() nonReentrant external returns (bool success){
+
+        //optimistically update price
+        updatePaths();
+        
+        //Only the owner of funds can claim funds
+        address _user = msg.sender;
+
+        FuturesUser memory userData = vault.getUser(_user);
+
+        //checks
+        require(
+            userData.exists,
+            "User is not registered"
+        );
+        require(
+            userData.current_balance > 0 ,
+            "balance is required to earn yield"
+        );
+
+        success = distributeYield(_user);
+      
+    }
+
+    //@dev Claims earned interest for the caller
+    function claimRDF(uint _amount) nonReentrant external returns (bool success){
+
+        //optimistically update price
+        updatePaths();
+        
+        //Only the owner of funds can claim funds
+        address _user = msg.sender;
+
+        //Check eligibilty
+        (bool eligible, uint returnCode) = isEligibleForRDF(_user);
+
+        require(eligible, string.concat("Ineligible, returnCode: ", returnCode.toString()));
+
+        success = distributeRDF(_user, _amount);
+      
+    }
+
+    
+    //   Internal Functions  //
 
     //@dev Checks if yield is available and distributes before performing additional operations
     //distributes only when yield is positive
     //inputs are validated by external facing functions 
-    function distributeYield(address _user) internal returns (bool success) {
+    function distributeYield(address _user) private returns (bool success) {
 
         FuturesUser memory userData = vault.getUser(_user);
         FuturesUserAction memory userActionData = actionVault.getUser(_user);
         FuturesGlobals memory globalsData = vault.getGlobals();
         
         //get available
-        (, uint256 _amount,,) = available(_user);
+        (, uint256 _amount) = available(_user);
 
         // payout remaining allowable divs if exceeds
         if(userData.payouts + _amount > maxPayouts) {
@@ -2014,7 +2027,7 @@ contract FuturesEngine is Ownable {
     //@dev Checks if yield is available and distributes before performing additional operations
     //distributes only when yield is positive
     //inputs are validated by external facing functions 
-    function distributeRDF(address _user, uint _amount) internal returns (bool success) {
+    function distributeRDF(address _user, uint _amount) private returns (bool success) {
 
         FuturesUser memory userData = vault.getUser(_user);
         FuturesUserAction memory userActionData = actionVault.getUser(_user);
@@ -2080,13 +2093,13 @@ contract FuturesEngine is Ownable {
 
     //@dev Checks if yield is available and compound before performing additional operations
     //compound only when yield is positive
-    function compoundYield(address _user) internal returns (bool success) {
+    function compoundYield(address _user) private returns (bool success) {
 
         FuturesUser memory userData = vault.getUser(_user);
         FuturesGlobals memory globalsData = vault.getGlobals();
         
         //get available
-        ( , uint256 _amount) = availableUncapped(_user);
+        ( , uint256 _amount) = available(_user);
 
         // payout remaining allowable divs if exceeds
         if(userData.payouts + _amount > maxPayouts) {
@@ -2126,9 +2139,81 @@ contract FuturesEngine is Ownable {
         }
     } 
 
+    //@dev Transfer account to another wallet address
+    function transfer(address _newUser) nonReentrant external  {
+
+        address _user = msg.sender;
+
+        FuturesUser memory userData = vault.getUser(_user);
+        FuturesUser memory newData =  vault.getUser(_newUser);
+        FuturesUserAction memory userActionData = actionVault.getUser(_user);
+        FuturesUserAction memory newActionData = actionVault.getUser(_newUser);
+
+        FuturesGlobals memory globalsData = vault.getGlobals();
+
+        FuturesRDFUser memory userRDFData = rdfVault.getUser(_user);
+        FuturesRDFUser memory newUserRDFData = rdfVault.getUser(_newUser);
+        
+
+        //Only the owner can transfer
+        require(userData.exists, "user must exists");
+        require(newData.exists == false && _newUser != address(0), "new address must not exist");
+
+        //Transfer
+        newData.exists = true;
+        newData.deposits = userData.deposits;
+        newData.current_balance = userData.current_balance;
+        newData.payouts = userData.payouts;
+        newData.compound_deposits = userData.compound_deposits;
+        newData.rewards = userData.rewards;
+        newData.last_time = userData.last_time;
+
+        newActionData.last_deposit = userActionData.last_deposit;
+        newActionData.last_claim = userActionData.last_claim; 
+
+        newUserRDFData.last_claim = userRDFData.last_claim;
+        newUserRDFData.payouts = userRDFData.payouts;
+
+        //Zero out old account
+        userData.exists = true; //once an account is created source streams are only counted once
+        userData.deposits = 0;
+        userData.current_balance = 0;
+        userData.compound_deposits = 0;
+        userData.payouts = 0;
+        userData.rewards = 0;
+        userData.last_time = 0;
+
+        userActionData.last_deposit = 0;
+        userActionData.last_claim = 0;
+
+        userRDFData.last_claim = 0;
+        userRDFData.payouts = 0;
+
+        //house keeping
+        globalsData.total_txs += 1;
+
+        //commit
+        vault.commitUser(_user, userData);
+        vault.commitUser(_newUser, newData);
+
+        actionVault.commitUser(_user, userActionData);
+        actionVault.commitUser(_newUser, newActionData);
+
+        rdfVault.commitUser(_user, userRDFData);
+        rdfVault.commitUser(_newUser, newUserRDFData);
+
+        vault.commitGlobals(globalsData);
+
+        //log
+        emit Transfer(_user, _newUser, newData.current_balance);
+
+    }
+
+    /// Internal Functions ////
+
     //@dev Claim and payout using the reserve
     function yield(address _user, uint256 _amount)
-        internal
+        private
         
         returns (uint wethAmount)
     {
@@ -2152,18 +2237,27 @@ contract FuturesEngine is Ownable {
 
     //@dev Payout using the rainyDayFund
     function rainyDayPayout(address _user, uint256 _amount)
-        internal
+        private
         
-        returns (uint _wethAmount)
+        returns (uint wethAmount)
     {
-        
-        _wethAmount = estimateWethAmount(_amount); //based on all previous conversions in the block
+        if (_amount == 0) {
+            return 0;
+        }
 
-        rainyDayFund.withdraw(_user, _wethAmount, false);  //will fail if funds aren't available
-    
+        wethAmount = estimateWethAmount(_amount);
+
+        (, uint _availableWeth) = maxAvailableRDF();
+
+        //if yield is greater than 1%
+        if (wethAmount <= _availableWeth){
+            rainyDayFund.withdraw(_user, wethAmount, false);  //will fail if funds aren't available
+        } else {
+            return 0;
+        }
     }
 
-    function buyForTreasury(uint _amount)  internal {
+    function buyForTreasury(uint _amount)  private {
         address[] memory path = new address[](2);
 
         path[0] = collateralRouter.WETH();
@@ -2180,7 +2274,7 @@ contract FuturesEngine is Ownable {
     }
 
     //@dev liquidate core tokens from the treasury to the destination
-    function liquidateCore(address destination, uint256 _amount) internal returns (uint wethAmount) {
+    function liquidateCore(address destination, uint256 _amount) private returns (uint wethAmount) {
    
         //Convert from collateral to backed
         address[] memory path = new address[](2);
@@ -2212,7 +2306,7 @@ contract FuturesEngine is Ownable {
 
   }
 
-    function updatePaths() internal  {
+    function updatePaths() private {
         address[] memory path = new address[](2);
         
         // BNB -> ELEPHANT
@@ -2230,148 +2324,18 @@ contract FuturesEngine is Ownable {
 
     }
 
-    ////  User Functions ////
 
-    function claimNFTs() nonReentrant external returns (bool success) {
-
-        (success,) = migrateToNFT(msg.sender);
-
-    }
-
-    function isNFTEligible(address _user) public view returns (bool _eligible, uint _nftAmount, uint _minted) {
-
-        FuturesUser memory userData = vault.getUser(_user);
-
-        _minted = nftVault.getUser(_user);
-
-        uint _amount = userData.current_balance;
-
-        
-        _eligible = _amount >= historicalNFTMint;
-        _nftAmount = _amount / historicalNFTMint;
-
-    }
-
-    /// NFT MIGRATION
-
-    function dryrunNFTMigrate(address[] memory participants)  external view returns(uint _users, uint _nfts, uint _mints) {
-
-        bool _eligible; 
-        uint _nftAmount;
-        uint _minted;
-
-        for(uint256 i = 0; i < participants.length; i++) {
-           
-
-            (_eligible, _nftAmount, _minted) = isNFTEligible(participants[i]);
-            
-            if (_eligible) { 
-                _users++;
-                _nfts += _nftAmount;
-                _mints += _minted;
-            }
-
-        }
-
-    }
-
-    function batchNFTMigrate(address[] memory participants) onlyOwner external returns(uint _users, uint _nfts) {
-        
-        bool _eligible; 
-        uint _nftAmount;
-
-        for(uint256 i = 0; i < participants.length; i++) {
-           
-
-            (_eligible, _nftAmount) = migrateToNFT(participants[i]);
-            
-            if (_eligible) { 
-                _users++;
-                _nfts += _nftAmount;
-            }
-
-            if (_nfts > maxMint) {
-                break;
-            }
-
-        }
-
-        if (_users > 0) {
-
-            emit BatchNFTMigrate(_users, _nfts);
-
-        }
-    }
-
-     //@dev Migrate user to unlimited NFTs
-    function migrateToNFT(address _user) internal returns (bool _eligible, uint _nftAmount) {
-
-        
-
-        FuturesUser memory userData = vault.getUser(_user);
-        FuturesUserAction memory userActionData = actionVault.getUser(_user);
-        FuturesGlobals memory globalsData = vault.getGlobals();
-
-        //how many nfts have been minted so far for this account
-        uint _minted = nftVault.getUser(_user);
-
-        uint _amount = userData.current_balance;
-
-        _nftAmount = _amount / historicalNFTMint;
-
-        //a maximum amount NFTs can be minted at a time due to gas estimation constraints
-        //the amount deducted from current_balance is based on the nfts sent     
-        _nftAmount = _nftAmount.min(maxMint);
-        _amount = _nftAmount * historicalNFTMint;
-
-        _eligible = _amount >= historicalNFTMint;
-        
-
-
-        //mint nfts, zero out current balance, and commit
-        if (_eligible) {
-
-            //send nfts
-            nftMinter.bulkMint(_user, _nftAmount);
-
-            //user stats
-            userData.payouts += _amount;
-            userData.current_balance = userData.current_balance.safeSub(_amount);
-            userData.last_time = block.timestamp;
-            userActionData.last_claim = block.timestamp;
-            _minted += _nftAmount;
-
-            //total stats
-            globalsData.total_claimed += _amount;
-            globalsData.total_txs += 1;
-            globalsData.current_balance = globalsData.current_balance.safeSub(_amount);
-
-            //commit updates
-            vault.commitUser(_user, userData);
-            actionVault.commitUser(_user, userActionData);
-            vault.commitGlobals(globalsData);
-            nftVault.commitUser(_user, _minted);
-
-            emit NFTMigrate(_user, _nftAmount, _minted);
-
-        }
     
-    }
-
 }
 
 //@dev Simple onchain oracle for important Elephant Money smart contracts
 contract AddressRegistry {
-    address public constant nftMinterAddress = 
-        address(0xA9421179aBe9fAA3ab01d9086FF6dA0CD82a8Ee4);
-    address public constant TRUNKSuperChargerAddress = 
-        address(0xec8c93d29418b4D3E13EdB18cc6dBc24606D7305); //TRUNK Supercharger
     address public constant rainyDayFundAddress = 
         address(0xc6a42b74867D1F7049192FfB6d0A9D77696d18bb); //Rainy Day Fund
     address public constant BTCTurbineAddress = 
-        address(0x6bEaDd1Bc88C0caad109f46Ba72e5842E442deD1); // BTC Turbine Proxy
+        address(0x69C714f868855eC3F24dfff0fd5F1805642F2D86); // BTC Turbine
     address public constant TRUNKTurbineAddress = 
-        address(0x2E390C82116870f5f59B48Cdd05eAd3063A2cB89); //TRUNK Turbine Proxy
+        address(0x6De7dEe23b27a6ABD1b3a1a4C0C40B128620a51d); //TRUNK Turbine
     address public constant bnbReserveAddress = 
         address(0x98F6c7c953Cf4cef0fd632b2509c9e349687FC92); //WETH Treasury
     address public constant BTCBAddress = 

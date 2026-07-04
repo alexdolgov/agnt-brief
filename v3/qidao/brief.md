@@ -5,7 +5,7 @@
 - Project: QiDao (`qidao`)
 - Website: [https://app.mai.finance](https://app.mai.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:43.818Z
+- Generated: 2026-07-04T11:05:44.045Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-0679
 - Chains: arbitrum, avalanche, base, bsc, cronos, ethereum, fantom, fraxtal, gnosis, harmony, kava, linea, mantle, metis, moonbeam, moonriver, optimism, polygon, polygon-zkevm, zksync-era
 - Contract surface: 1410 unique implementations (3200 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-CDP. Structurally: 79 project-authored contract(s) across 11 chain(s); 1 ERC4626 vault, 17 ERC20 tokens, 11 ERC721 NFTs, 10 Chainlink feeds; built on openzeppelin.
+CDP. Structurally: 209 project-authored contract(s) across 14 chain(s); 1 ERC4626 vault, 54 ERC20 tokens, 84 ERC721 NFTs, 10 Chainlink feeds; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 7 functional families. Its contracts share 10 common project-authored base contract(s) (erc20detailed, vaultnftv4, erc721full). Dominant framework: openzeppelin.
+The protocol comprises 7 functional families. Its contracts share 17 common project-authored base contract(s) (fixedvault, vaultnftv5, erc165). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

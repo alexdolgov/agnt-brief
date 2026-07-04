@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 import { IERC20Metadata as IERC20 } from "openzeppelin-contracts/token/ERC20/extensions/IERC20Metadata.sol";
 
@@ -67,6 +67,9 @@ interface IDestinationVault is ISystemComponent, IBaseAssetVault, IERC20 {
 
     /// @notice The type of pool associated with this vault
     function poolType() external view returns (string memory);
+
+    /// @notice The type of pool plus any staking information
+    function destType() external view returns (string memory);
 
     /// @notice If the pool only deals in ETH when adding or removing liquidity
     function poolDealInEth() external view returns (bool);
@@ -206,13 +209,6 @@ interface IDestinationVault is ISystemComponent, IBaseAssetVault, IERC20 {
     /// @dev This price can be attacked is not validate to be in any range
     /// @return price Value of 1 unit of the underlying LP token in terms of the base asset
     function getUnderlyerCeilingPrice() external returns (uint256 price);
-
-    /// @notice Set or unset  a hash as a signed message
-    /// @dev Should be limited to DESTINATION_VAULTS_UPDATER. The set hash is used to validate a signature.
-    /// This signature can be potentially used to claim offchain rewards earned by Destination Vaults.
-    /// @param hash bytes32 hash of a payload
-    /// @param flag boolean flag to indicate a validity of hash
-    function setMessage(bytes32 hash, bool flag) external;
 
     /// @notice Allows to change the incentive calculator of destination vault
     /// @dev Only works when vault is shutdown, also validates the calculator before updating

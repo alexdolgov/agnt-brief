@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
-import { IERC20 } from "openzeppelin-contracts/token/ERC20/IERC20.sol";
+import { IERC20Metadata as IERC20 } from "openzeppelin-contracts/token/ERC20/extensions/IERC20Metadata.sol";
 import { SafeERC20 } from "openzeppelin-contracts/token/ERC20/utils/SafeERC20.sol";
 import { ReentrancyGuard } from "openzeppelin-contracts/security/ReentrancyGuard.sol";
 import { EnumerableSet } from "openzeppelin-contracts/utils/structs/EnumerableSet.sol";
@@ -338,7 +338,9 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
             amountReceived = abi.decode(data, (uint256));
 
             // Expected buy amount from Price Oracle
-            uint256 expectedBuyAmount = (params.sellAmount * sellTokenPrice) / buyTokenPrice;
+            uint256 expectedBuyAmount = _calculateExpectedBuyAmount(
+                params.sellAmount, fromToken, params.buyTokenAddress, sellTokenPrice, buyTokenPrice
+            );
 
             // Allow a margin of error for the swap
             // slither-disable-next-line divide-before-multiply
@@ -392,6 +394,37 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
             unchecked {
                 ++i;
             }
+        }
+    }
+
+    /**
+     * @notice Calculates the expected buy amount for a swap
+     * @dev Handles decimal differences between tokens by scaling amounts appropriately:
+     *      - If buy token has more decimals than sell token => multiplies by 10^(difference)
+     *      - If sell token has more decimals than buy token => divides by 10^(difference)
+     * @param sellAmount The amount of the token to sell
+     * @param fromToken The address of the token to sell
+     * @param buyTokenAddress The address of the token to buy
+     * @param sellTokenPrice The price in ETH of the token to sell
+     * @param buyTokenPrice The price in ETH of the token to buy
+     * @return expectedBuyAmount The expected buy amount adjusted for decimal differences
+     */
+    function _calculateExpectedBuyAmount(
+        uint256 sellAmount,
+        address fromToken,
+        address buyTokenAddress,
+        uint256 sellTokenPrice,
+        uint256 buyTokenPrice
+    ) internal view returns (uint256 expectedBuyAmount) {
+        uint8 sellTokenDecimals = IERC20(fromToken).decimals();
+        uint8 buyTokenDecimals = IERC20(buyTokenAddress).decimals();
+
+        if (buyTokenDecimals >= sellTokenDecimals) {
+            expectedBuyAmount =
+                (sellAmount * sellTokenPrice * 10 ** (buyTokenDecimals - sellTokenDecimals)) / buyTokenPrice;
+        } else {
+            expectedBuyAmount =
+                (sellAmount * sellTokenPrice) / (buyTokenPrice * 10 ** (sellTokenDecimals - buyTokenDecimals));
         }
     }
 

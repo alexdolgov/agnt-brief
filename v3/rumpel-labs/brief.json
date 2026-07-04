@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "rumpel-labs",
-  "generated_at": "2026-07-03T21:06:51.336Z",
+  "generated_at": "2026-07-04T11:05:46.481Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-b097",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -50,7 +50,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Synthetics. Structurally: 160 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 30 ERC20 tokens, 3 ERC721 NFTs, 3 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "project_purpose": "Synthetics. Structurally: 161 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 30 ERC20 tokens, 3 ERC721 NFTs, 3 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
     "relationship_narrative": "The protocol comprises 8 functional families. Its contracts share 68 common project-authored base contract(s) (ethvault, vaultimmutables, vaultadmin). Dominant framework: openzeppelin.",
     "product_family_count": 8,
     "total_contracts_indexed": 361,

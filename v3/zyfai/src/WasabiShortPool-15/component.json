@@ -1,7 +1,7 @@
 {
   "component": "WasabiShortPool-15",
   "main_contract": "WasabiShortPool",
-  "source_file_count": 40,
+  "source_file_count": 43,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,7 +9,7 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xbc07db13399f8b216fa628635d171f943869cbbe",
+      "address": "0xc905defd3f049e6ad2b9b105016c9026ceb7dca5",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

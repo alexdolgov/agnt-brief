@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "dinari",
-  "generated_at": "2026-07-03T21:05:43.469Z",
+  "generated_at": "2026-07-04T11:05:40.887Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-b097",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -56,8 +56,8 @@
     }
   },
   "topography": {
-    "project_purpose": "RWA. Structurally: 38 project-authored contract(s) across 4 chain(s); 5 ERC4626 vaults, 10 ERC20 tokens, 2 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 6 functional families. Its contracts share 24 common project-authored base contract(s) (accesscontroldefaultadminrulesupgradeable, accesscontrolupgradeable, contextupgradeable). Dominant framework: openzeppelin.",
+    "project_purpose": "RWA. Structurally: 98 project-authored contract(s) across 4 chain(s); 8 ERC4626 vaults, 14 ERC20 tokens, 2 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 6 functional families. Its contracts share 27 common project-authored base contract(s) (accesscontroldefaultadminrulesupgradeable, accesscontrolupgradeable, contextupgradeable). Dominant framework: openzeppelin.",
     "product_family_count": 6,
     "total_contracts_indexed": 357,
     "live_contracts": 196,

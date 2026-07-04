@@ -1,6 +1,6 @@
 # mm-finance — deployments
 
-132 verified deployment(s) across 50 component(s).
+131 verified deployment(s) across 50 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -83,7 +83,6 @@
 | polygon | `0x4725e3cf556bb4d1c20c7f7d717b7332137c844f` | TransparentUpgradeableProxy | proxy | inactive | no |
 | polygon | `0x490d0321bb9d894b1e6dc5247c65bf515778a87f` | ProxyAdmin | impl | inactive | no |
 | polygon | `0x4fd9fef216da72b1bc2ddf8924a036f3d780dcdf` | OrderBook | impl | inactive | no |
-| polygon | `0x51aba405de2b25e5506dea32a6697f450ceb1a17` | MeerkatRouter02 | impl | live | no |
 | polygon | `0x5686c0f3bf8dd487b45fead41fe53ddf8d9c5edc` | MeerkatRouter02 | impl | inactive | no |
 | polygon | `0x56cb79209462a2e3454cc84fe6b3fe5dc62389f6` | TransparentUpgradeableProxy | proxy | inactive | no |
 | polygon | `0x5cfdf337993555e1fc3e94871642c13703eab3b9` | TransparentUpgradeableProxy | proxy | inactive | no |
@@ -108,7 +107,7 @@
 | polygon | `0x952ecd17e56fa894f3f905dc966b5f6d9203ba14` | ProxyAdmin | impl | inactive | no |
 | polygon | `0x95d5d401d3c4eacf12d71b4f98995076d6a3a85d` | SwapDeployer | impl | inactive | no |
 | polygon | `0x9e3e9d59b6b1386f9f6a92318919913d3c58016e` | TransparentUpgradeableProxy | proxy | inactive | no |
-| polygon | `0x9ee5794322ed1b53131459b44247cd0fe25dab56` | TransparentUpgradeableProxy-2 | impl | live | no |
+| polygon | `0x9ee5794322ed1b53131459b44247cd0fe25dab56` | Swap | impl | live | no |
 | polygon | `0x9f799772430468bfe828a669269f8b3e856bfe30` | TransparentUpgradeableProxy | proxy | inactive | no |
 | polygon | `0xa2508cc3185f4a9bb6fb5c5b8515e4ce05bec785` | Router | impl | inactive | no |
 | polygon | `0xa2b417088d63400d211a4d5eb3c4c5363f834764` | MasterMeerkat | impl | live | no |
@@ -136,3 +135,8 @@
 | polygon | `0xfaacea541e23f0d3ec7d4e202e791923ce273787` | TransparentUpgradeableProxy | proxy | inactive | no |
 | polygon | `0xff39fad7f73fd8e1b31e5b7adedc6676774fc579` | TransparentUpgradeableProxy | proxy | inactive | no |
 | polygon | `0xff89646fe7ee62ea96050379a7a8c532dd431d10` | LPToken | impl | live | no |
+
+## Source unavailable (1)
+Verified on-chain but no source in the verification cache (skipped from the tree):
+
+- polygon `0x51aba405de2b25e5506dea32a6697f450ceb1a17`

@@ -1,7 +1,3 @@
-/**
- *Submitted for verification at Arbiscan on 2022-09-26
-*/
-
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.2;
 

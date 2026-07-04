@@ -7,7 +7,7 @@
 - Project: Aladdin DAO (`aladdin-dao`)
 - Website: [https://www.aladdin.club](https://www.aladdin.club)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-07-03T21:05:24.973Z
+- Generated: 2026-07-04T11:05:39.313Z
 - Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
 - Chains: arbitrum, blast, bsc, ethereum, linea, optimism
 - Contract surface: 514 unique implementations (703 raw deployments)
@@ -17,11 +17,11 @@
 
 ## Project Description
 
-Yield Aggregator. Structurally: 74 project-authored contract(s) across 2 chain(s); 15 ERC20 tokens, 3 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Yield Aggregator. Structurally: 78 project-authored contract(s) across 6 chain(s); 19 ERC20 tokens, 9 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 8 functional families. Its contracts share 20 common project-authored base contract(s) (basepool, poolconstant, poolerrors). Dominant framework: openzeppelin.
+The protocol comprises 8 functional families. Its contracts share 17 common project-authored base contract(s) (poolconstant, poolerrors, protocolfees). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

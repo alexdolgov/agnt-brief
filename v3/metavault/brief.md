@@ -4,7 +4,7 @@
 
 - Project: Metavault (`metavault`)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:23.466Z
+- Generated: 2026-07-04T11:05:42.081Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-d640
 - Chains: arbitrum, ethereum, linea, polygon
 - Contract surface: 30 unique implementations (31 raw deployments)

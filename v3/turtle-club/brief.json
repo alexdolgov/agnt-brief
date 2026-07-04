@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "turtle-club",
-  "generated_at": "2026-07-03T21:07:02.190Z",
+  "generated_at": "2026-07-04T11:05:47.732Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-4c3e",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -56,8 +56,8 @@
     }
   },
   "topography": {
-    "project_purpose": "Onchain Capital Allocator. Structurally: 549 project-authored contract(s) across 4 chain(s); 14 ERC4626 vaults, 59 ERC20 tokens, 7 ERC721 NFTs, 9 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 10 functional families. Its contracts share 116 common project-authored base contract(s) (feemodule, shared, evcutil). Dominant framework: openzeppelin.",
+    "project_purpose": "Onchain Capital Allocator. Structurally: 713 project-authored contract(s) across 4 chain(s); 15 ERC4626 vaults, 62 ERC20 tokens, 7 ERC721 NFTs, 9 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 10 functional families. Its contracts share 119 common project-authored base contract(s) (feemodule, shared, evcutil). Dominant framework: openzeppelin.",
     "product_family_count": 10,
     "total_contracts_indexed": 2075,
     "live_contracts": 1842,

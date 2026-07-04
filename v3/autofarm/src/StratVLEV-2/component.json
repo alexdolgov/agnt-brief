@@ -12,7 +12,7 @@
       "address": "0x1a2eb775720a1e166e6eeb583b10116cf45de82c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
@@ -20,7 +20,7 @@
       "address": "0x48620b6a00ff75d17082c81bd97896517332c6fe",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
@@ -28,7 +28,7 @@
       "address": "0x8e24b8136c3076829a4ed0412cd8f302fa651d84",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
@@ -36,7 +36,7 @@
       "address": "0xd57e8730792f3d1358506914e5d2dbb2b6a1dd3f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "bsc",
@@ -44,7 +44,7 @@
       "address": "0xe2477627fa2db8ba2a4fe467876023987c3a7e8e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

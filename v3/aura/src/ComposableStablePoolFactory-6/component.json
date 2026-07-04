@@ -1,18 +1,18 @@
 {
   "component": "ComposableStablePoolFactory-6",
   "main_contract": "ComposableStablePoolFactory",
-  "source_file_count": 65,
+  "source_file_count": 56,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x043a2dad730d585c44fb79d2614f295d2d625412",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf9ac7b9df2b3454e841110cce5550bd5ac6f875f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

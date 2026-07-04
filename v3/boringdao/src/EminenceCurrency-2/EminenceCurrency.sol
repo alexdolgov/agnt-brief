@@ -148,7 +148,7 @@ contract ContinuousToken is ERC20 {
     using SafeMath for uint;
 
     uint public scale = 10**18;
-    uint public reserveBalance = 1*10**15;
+    uint public reserveBalance = 10*scale;
     uint32 public reserveRatio;
     
     BondingCurve constant public CURVE = BondingCurve(0x16F6664c16beDE5d70818654dEfef11769D40983);
@@ -193,7 +193,7 @@ contract EminenceCurrency is ContinuousToken, ERC20Detailed {
     event CashShopBuy(address _from, uint  _amount, uint _deposit);
     event CashShopSell(address _from, uint  _amount, uint _reimbursement);
     
-    IERC20 constant public DAI = IERC20(0x6B175474E89094C44Da98b954EedeAC495271d0F);
+    EminenceCurrency constant public GIL = EminenceCurrency(0xD9194D9FFc638b4B406D899FE6fFF211E9Ab029d);
     
     constructor (string memory name, string memory symbol, uint32 _reserveRatio) public ERC20Detailed(name, symbol, 18) {
         gamemasters[msg.sender] = true;
@@ -211,7 +211,7 @@ contract EminenceCurrency is ContinuousToken, ERC20Detailed {
         emit RevokeNPC(_npc, msg.sender);
     }
     function addGM(address _gm) external {
-        require(gamemasters[msg.sender]||gamemasters[tx.origin], "!gm");
+        require(gamemasters[msg.sender], "!gm");
         gamemasters[_gm] = true;
         emit AddGM(_gm, msg.sender);
     }
@@ -231,7 +231,7 @@ contract EminenceCurrency is ContinuousToken, ERC20Detailed {
     function buy(uint _amount, uint _min) external returns (uint _bought) {
         _bought = _buy(_amount);
         require(_bought >= _min, "slippage");
-        DAI.transferFrom(msg.sender, address(this), _amount);
+        GIL.claim(msg.sender, _amount);
         _mint(msg.sender, _bought);
         emit CashShopBuy(msg.sender, _bought, _amount);
     }
@@ -239,7 +239,7 @@ contract EminenceCurrency is ContinuousToken, ERC20Detailed {
         _bought = _sell(_amount);
         require(_bought >= _min, "slippage");
         _burn(msg.sender, _amount);
-        DAI.transfer(msg.sender, _bought);
+        GIL.award(msg.sender, _bought);
         emit CashShopSell(msg.sender, _amount, _bought);
     }
 }

@@ -1,0 +1,18 @@
+{
+  "component": "WBTC",
+  "main_contract": "WBTC",
+  "source_file_count": 1,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x68f180fcce6836688e9084f035309e29bf0a2095",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

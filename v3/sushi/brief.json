@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "sushi",
-  "generated_at": "2026-07-03T21:06:57.289Z",
+  "generated_at": "2026-07-04T11:05:46.642Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-f007",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -69,8 +69,8 @@
     }
   },
   "topography": {
-    "project_purpose": "Dexs. Structurally: 131 project-authored contract(s) across 13 chain(s); 11 ERC20 tokens, 7 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 7 functional families. Its contracts share 27 common project-authored base contract(s) (misoaccesscontrols, misoadminaccess, safetransfer). Dominant framework: openzeppelin.",
+    "project_purpose": "Dexs. Structurally: 207 project-authored contract(s) across 14 chain(s); 12 ERC20 tokens, 15 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 7 functional families. Its contracts share 37 common project-authored base contract(s) (bentoadapter, immutablestate, tokenadapter). Dominant framework: openzeppelin.",
     "product_family_count": 7,
     "total_contracts_indexed": 544,
     "live_contracts": 128,

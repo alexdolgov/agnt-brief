@@ -2,10 +2,42 @@
   "component": "UChildERC20",
   "main_contract": "UChildERC20",
   "source_file_count": 1,
-  "deployment_count": 2,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5adf17a97ef5db18ad4cfc4b3f05128b922e0a58",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9d0f8222f787ec2a1ea97f84ea279008afec93ae",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcf97bc85b670494a47f99452228e2b5e501ab6bd",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd24289542c2e64f86a55742ea07dd8ac73937a22",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
     {
       "chain": "polygon",
       "chain_id": 137,

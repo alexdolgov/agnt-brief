@@ -12,7 +12,7 @@
       "address": "0x8f42adbba1b16eaae3bb5754915e0d06059add75",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "chain-252",

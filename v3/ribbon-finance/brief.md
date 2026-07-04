@@ -5,7 +5,7 @@
 - Project: Ribbon Finance (`ribbon-finance`)
 - Website: [https://www.ribbon.finance/](https://www.ribbon.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:45.375Z
+- Generated: 2026-07-04T11:05:46.469Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-f007
 - Chains: avalanche, ethereum
 - Contract surface: 117 unique implementations (274 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-Options Vault. Structurally: 126 project-authored contract(s) across 2 chain(s); 20 ERC20 tokens, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Options Vault. Structurally: 149 project-authored contract(s) across 2 chain(s); 29 ERC20 tokens, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 6 functional families. Its contracts share 16 common project-authored base contract(s) (dsmath, optionsvaultstorage, optionsvaultstoragev1). Dominant framework: openzeppelin.
+The protocol comprises 6 functional families. Its contracts share 25 common project-authored base contract(s) (dsmath, optionsvaultstorage, optionsvaultstoragev1). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

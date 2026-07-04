@@ -18,9 +18,9 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x289d600447a74b952ad16f0bd53b8eaaac2d2d71",
+      "address": "0x46ddc39e780088b1b146aba8cbbe15dc321a1a1d",
       "is_proxy": true,
-      "implementation_address": "0x3334c0d1fdcd972a6dd1cc0d79e9a602805a25f7",
+      "implementation_address": "0xea6c9a14b96777a448687272bf0e6f6d9ce0e68a",
       "liveness": "live"
     }
   ]

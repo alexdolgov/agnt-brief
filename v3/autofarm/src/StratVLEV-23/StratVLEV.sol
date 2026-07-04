@@ -1328,7 +1328,13 @@ interface IVenusDistribution {
 
 pragma solidity ^0.6.0;
 
-interface IVToken {
+interface IWBNB is IERC20 {
+    function deposit() external payable;
+
+    function withdraw(uint256 wad) external;
+}
+
+interface IVBNB {
     function mint() external payable;
 
     function redeem(uint256 redeemTokens) external returns (uint256);
@@ -1354,6 +1360,24 @@ interface IVToken {
     function borrowBalanceCurrent(address account) external returns (uint256);
 }
 
+interface IVToken is IERC20 {
+    function underlying() external returns (address);
+
+    function mint(uint256 mintAmount) external returns (uint256);
+
+    function redeem(uint256 redeemTokens) external returns (uint256);
+
+    function redeemUnderlying(uint256 redeemAmount) external returns (uint256);
+
+    function borrow(uint256 borrowAmount) external returns (uint256);
+
+    function repayBorrow(uint256 repayAmount) external returns (uint256);
+
+    function balanceOfUnderlying(address owner) external returns (uint256);
+
+    function borrowBalanceCurrent(address account) external returns (uint256);
+}
+
 pragma solidity ^0.6.12;
 
 contract StratVLEV is Ownable, Pausable {
@@ -1361,56 +1385,45 @@ contract StratVLEV is Ownable, Pausable {
     using Address for address;
     using SafeMath for uint256;
 
-    /**
-     * @dev Tokens Used:
-     * {wbnbAddress}  - Token that the strategy maximizes.
-     * {venus} - Token earned through farming.
-     * {vTokenAddress}  - Venus BNB. We interact with it to mint/redem/borrow/repay BNB.
-     */
+    bool public wantIsWBNB = false;
+    address public wantAddress;
+    address public vTokenAddress;
+    address[] public venusMarkets;
+    address public uniRouterAddress;
+
     address public constant wbnbAddress =
-        address(0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c);
-    address public constant wantAddress =
-        address(0x2170Ed0880ac9A755fd29B2688956BD959F933F8); //ETH
-
+        0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c;
     address public constant venusAddress =
-        address(0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63);
-    address public constant vTokenAddress =
-        address(0xf508fCD89b8bd15579dc79A6827cB4686A3592c8); // vETH
-    address[] public venusMarkets = [vTokenAddress];
-    address public venusDistributionAddress =
-        address(0xfD36E2c2a6789Db23113685031d7F16329158384);
+        0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63;
+    address public constant earnedAddress = venusAddress;
+    address public constant venusDistributionAddress =
+        0xfD36E2c2a6789Db23113685031d7F16329158384;
 
-    address autoFarmAddress =
-        address(0x0df9c5Fb57bc3B90e73563e9ADB672BEA2Fd41FB); // v2
-
-    address AUTOAddress = address(0xD2653285774F448fD4A2E0A3F165C453ff848cEb); // AUTOv2 token
-
-    address public pancakeSwapRouterAddress =
-        address(0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F);
-
-    address public govAddress =
-        address(0x6aA35F2458d72C6f6EaBBf08C6aC8D4Ad077B5fF); // timelock contract
+    address public constant autoFarmAddress =
+        0x25F9b77EF2d13D16FD0f5BdB3F84dF82BA00A89E; // AutofarmV2
+    address public constant AUTOAddress =
+        0x2099A8BFe7487455A26341D1ddAf2d1fCAB62A85; // AUTOv2
+    address public govAddress; // timelock contract
 
     uint256 public sharesTotal = 0;
     uint256 public lastEarnBlock = 0;
 
-    uint256 public controllerFee = 30; // 0.3%
-    uint256 public controllerFeeMax = 10000;
-    uint256 public controllerFeeUL = 300; // 3% upperlimit
+    uint256 public controllerFee = 60;
+    uint256 public constant controllerFeeMax = 10000; // 100 = 1%
+    uint256 public constant controllerFeeUL = 300; // 3% upperlimit
 
-    uint256 public buyBackRate = 150; // 0%
-    uint256 public buyBackRateMax = 10000;
-    uint256 public buyBackRateUL = 800; // 8% upperlimit
-
-    address public buyBackAddress =
-        address(0x000000000000000000000000000000000000dEaD);
+    uint256 public buyBackRate = 150;
+    uint256 public constant buyBackRateMax = 10000; // 100 = 1%
+    uint256 public constant buyBackRateUL = 800; // 8% upperlimit
+    address public constant buyBackAddress =
+        0x000000000000000000000000000000000000dEaD;
 
     uint256 public entranceFeeFactor = 9990; // < 0.1% entrance fee - goes to pool + prevents front-running
-    uint256 public entranceFeeFactorMax = 10000;
-    uint256 public entranceFeeFactorLL = 9950; // 0.5% is the max entrance fee settable. LL = lowerlimit
+    uint256 public constant entranceFeeFactorMax = 10000;
+    uint256 public constant entranceFeeFactorLL = 9950; // 0.5% is the max entrance fee settable. LL = lowerlimit
 
-    address[] public venusToWantPath = [venusAddress, wantAddress];
-    address[] public wantToAUTOPath = [wantAddress, wbnbAddress, AUTOAddress];
+    address[] public venusToWantPath;
+    address[] public earnedToAUTOPath;
 
     /**
      * @dev Variables that can be changed to config profitability and risk:
@@ -1418,34 +1431,83 @@ contract StratVLEV is Ownable, Pausable {
      * {borrowDepth}         - How many levels of leverage do we take.
      * {BORROW_RATE_MAX}     - A limit on how much we can push borrow risk.
      * {BORROW_DEPTH_MAX}    - A limit on how many steps we can leverage.
-     * {MIN_LEVERAGE_AMOUNT} - The minimum amount of collateral required to leverage.
      */
-    uint256 public borrowRate = 595;
-    uint256 public borrowDepth = 4;
-    uint256 public constant BORROW_RATE_MAX = 599;
-    uint256 public constant BORROW_DEPTH_MAX = 10;
-    uint256 public constant MIN_LEVERAGE_AMOUNT = 1e12;
-    uint256 public constant MAX_WLINHERE_TO_CALL_EARN = 1000e18; // For safety
+    uint256 public borrowRate = 585;
+    uint256 public borrowDepth = 3;
+    uint256 public constant BORROW_RATE_MAX = 595;
+    uint256 public constant BORROW_RATE_MAX_HARD = 599;
+    uint256 public constant BORROW_DEPTH_MAX = 6;
     bool onlyGov = true;
 
-    uint256 public supplyBal = 0;
-    uint256 public borrowBal = 0;
-
+    uint256 public supplyBal = 0; // Cached want supplied to venus
+    uint256 public borrowBal = 0; // Cached want borrowed from venus
+    uint256 public supplyBalTargeted = 0; // Cached targetted want supplied to venus to achieve desired leverage
+    uint256 public supplyBalMin = 0;
     /**
      * @dev Events that the contract emits
      */
     event StratRebalance(uint256 _borrowRate, uint256 _borrowDepth);
 
-    constructor() public {
+    constructor(
+        address _wantAddress,
+        address _vTokenAddress,
+        address _uniRouterAddress
+    ) public {
+        govAddress = msg.sender;
+
+        wantAddress = _wantAddress;
+        if (wantAddress == wbnbAddress) {
+            wantIsWBNB = true;
+            venusToWantPath = [venusAddress, wbnbAddress];
+            earnedToAUTOPath = [wbnbAddress, AUTOAddress];
+        } else {
+            venusToWantPath = [venusAddress, wbnbAddress, wantAddress];
+            // if (venusAddress == wantAddress) {}      // Then venusToWantPath will never be used.
+
+            earnedToAUTOPath = [venusAddress, wbnbAddress, AUTOAddress];
+            // if (wbnbAddress == venusAddress) {}      // Not possible
+        }
+
+        vTokenAddress = _vTokenAddress;
+        venusMarkets = [vTokenAddress];
+        uniRouterAddress = _uniRouterAddress;
+
         transferOwnership(autoFarmAddress);
 
-        IERC20(venusAddress).safeApprove(pancakeSwapRouterAddress, uint256(-1));
-        IERC20(wantAddress).safeApprove(pancakeSwapRouterAddress, uint256(-1));
+        IERC20(venusAddress).safeApprove(uniRouterAddress, uint256(-1));
+        IERC20(wantAddress).safeApprove(uniRouterAddress, uint256(-1));
+        if (!wantIsWBNB) {
+            IERC20(wantAddress).safeApprove(vTokenAddress, uint256(-1));
+        }
 
         IVenusDistribution(venusDistributionAddress).enterMarkets(venusMarkets);
     }
 
-    function deposit(uint256 _wantAmt)
+    function _supply(uint256 _amount) internal {
+        if (wantIsWBNB) {
+            IVBNB(vTokenAddress).mint{value: _amount}();
+        } else {
+            IVToken(vTokenAddress).mint(_amount);
+        }
+    }
+
+    function _removeSupply(uint256 _amount) internal {
+        IVToken(vTokenAddress).redeemUnderlying(_amount);
+    }
+
+    function _borrow(uint256 _amount) internal {
+        IVToken(vTokenAddress).borrow(_amount);
+    }
+
+    function _repayBorrow(uint256 _amount) internal {
+        if (wantIsWBNB) {
+            IVBNB(vTokenAddress).repayBorrow{value: _amount}();
+        } else {
+            IVToken(vTokenAddress).repayBorrow(_amount);
+        }
+    }
+
+    function deposit(address _userAddress, uint256 _wantAmt)
         public
         whenNotPaused
         onlyOwner
@@ -1470,33 +1532,79 @@ contract StratVLEV is Ownable, Pausable {
             _wantAmt
         );
 
-        farm();
+        farm(true);
 
         return sharesAdded;
     }
 
-    function farm() public returns (uint256) {
-        _leverage(wantLockedInHere());
+    function farm(bool _withLev) public {
+        if (wantIsWBNB) {
+            _unwrapBNB(); // WBNB -> BNB. Venus accepts BNB, not WBNB.
+            _leverage(address(this).balance, _withLev);
+        } else {
+            _leverage(wantLockedInHere(), _withLev);
+        }
 
         updateBalance();
+
+        deleverageUntilNotOverLevered(); // It is possible to still be over-levered after depositing.
     }
 
     /**
      * @dev Repeatedly supplies and borrows bnb following the configured {borrowRate} and {borrowDepth}
      * into the vToken contract.
      */
-    function _leverage(uint256 _amount) internal {
-        if (_amount < MIN_LEVERAGE_AMOUNT) {
-            return;
+    function _leverage(uint256 _amount, bool _withLev) internal {
+        if (_withLev) {
+            for (uint256 i = 0; i < borrowDepth; i++) {
+                _supply(_amount);
+                _amount = _amount.mul(borrowRate).div(1000);
+                _borrow(_amount);
+            }
         }
 
-        for (uint256 i = 0; i < borrowDepth; i++) {
-            IVToken(vTokenAddress).mint{value: _amount}(); // Supply
-            _amount = _amount.mul(borrowRate).div(1000);
-            IVToken(vTokenAddress).borrow(_amount); // Borrow
+        _supply(_amount); // Supply remaining want that was last borrowed.
+    }
+
+    /**
+     * @dev Redeem to the desired leverage amount, then use it to repay borrow.
+     * If already over leverage, redeem max amt redeemable, then use it to repay borrow.
+     */
+    function deleverageOnce() public {
+        if (onlyGov) {
+            require(msg.sender == govAddress, "Not authorised");
         }
 
-        IVToken(vTokenAddress).mint{value: _amount}(); // Supply remaining wwant that was last borrowed.
+        updateBalance(); // Updates borrowBal & supplyBal & supplyBalTargeted & supplyBalMin
+
+        if (supplyBal <= supplyBalTargeted) {
+            _removeSupply(supplyBal.sub(supplyBalMin));
+        } else {
+            _removeSupply(supplyBal.sub(supplyBalTargeted));
+        }
+
+        if (wantIsWBNB) {
+            _unwrapBNB(); // WBNB -> BNB
+            _repayBorrow(address(this).balance);
+        } else {
+            _repayBorrow(wantLockedInHere());
+        }
+
+        updateBalance(); // Updates borrowBal & supplyBal & supplyBalTargeted & supplyBalMin
+    }
+
+    /**
+     * @dev Redeem the max possible, use it to repay borrow
+     */
+    function deleverageUntilNotOverLevered() public {
+        // updateBalance(); // To be more accurate, call updateBalance() first to cater for changes due to interest rates
+
+        // If borrowRate slips below targetted borrowRate, withdraw the max amt first.
+        // Further actual deleveraging will take place later on.
+        // (This can happen in when net interest rate < 0, and supplied balance falls below targeted.)
+        while (supplyBal > 0 && supplyBal <= supplyBalTargeted) {
+            deleverageOnce();
+        }
     }
 
     /**
@@ -1506,15 +1614,16 @@ contract StratVLEV is Ownable, Pausable {
      */
 
     function _deleverage(bool _delevPartial, uint256 _minAmt) internal {
-        borrowBal = IVToken(vTokenAddress).borrowBalanceCurrent(address(this));
+        updateBalance(); // Updates borrowBal & supplyBal & supplyBalTargeted & supplyBalMin
 
-        // Remove from supplied once.
-        uint256 targetUnderlying = borrowBal.mul(1000).div(borrowRate);
-        uint256 balanceOfUnderlying =
-            IVToken(vTokenAddress).balanceOfUnderlying(address(this));
-        IVToken(vTokenAddress).redeemUnderlying( // Remove from supplied
-            balanceOfUnderlying.sub(targetUnderlying)
-        );
+        deleverageUntilNotOverLevered();
+
+        if (wantIsWBNB) {
+            _wrapBNB(); // WBNB -> BNB
+        }
+
+        _removeSupply(supplyBal.sub(supplyBalMin));
+
         uint256 wantBal = wantLockedInHere();
 
         // Recursively repay borrowed + remove more from supplied
@@ -1524,19 +1633,12 @@ contract StratVLEV is Ownable, Pausable {
                 return;
             }
 
-            IVToken(vTokenAddress).repayBorrow{value: wantBal}(); // Repay borrowed
+            _repayBorrow(wantBal);
 
-            borrowBal = IVToken(vTokenAddress).borrowBalanceCurrent(
-                address(this)
-            );
-            targetUnderlying = borrowBal.mul(1000).div(borrowRate);
-            balanceOfUnderlying = IVToken(vTokenAddress).balanceOfUnderlying(
-                address(this)
-            );
+            updateBalance(); // Updates borrowBal & supplyBal & supplyBalTargeted & supplyBalMin
 
-            IVToken(vTokenAddress).redeemUnderlying( // Remove from supplied
-                balanceOfUnderlying.sub(targetUnderlying)
-            );
+            _removeSupply(supplyBal.sub(supplyBalMin));
+
             wantBal = wantLockedInHere();
         }
 
@@ -1546,28 +1648,11 @@ contract StratVLEV is Ownable, Pausable {
         }
 
         // Make a final repayment of borrowed
-        IVToken(vTokenAddress).repayBorrow{value: borrowBal}();
+        _repayBorrow(borrowBal);
+
+        // remove all supplied
         uint256 vTokenBal = IERC20(vTokenAddress).balanceOf(address(this));
         IVToken(vTokenAddress).redeem(vTokenBal);
-    }
-
-    function deleverageOnce(uint256 _borrowRate) external {
-        require(_borrowRate <= BORROW_RATE_MAX, "!safe");
-
-        uint256 wantBal = wantLockedInHere();
-
-        IVToken(vTokenAddress).repayBorrow{value: wantBal}();
-
-        borrowBal = IVToken(vTokenAddress).borrowBalanceCurrent(address(this));
-        uint256 targetUnderlying = borrowBal.mul(1000).div(_borrowRate);
-        uint256 balanceOfUnderlying =
-            IVToken(vTokenAddress).balanceOfUnderlying(address(this));
-
-        IVToken(vTokenAddress).redeemUnderlying(
-            balanceOfUnderlying.sub(targetUnderlying)
-        );
-
-        updateBalance();
     }
 
     /**
@@ -1584,50 +1669,47 @@ contract StratVLEV is Ownable, Pausable {
         _deleverage(false, uint256(-1)); // deleverage all supplied want tokens
         borrowRate = _borrowRate;
         borrowDepth = _borrowDepth;
-        farm();
+        farm(true);
     }
 
     function earn() external whenNotPaused {
         if (onlyGov) {
             require(msg.sender == govAddress, "Not authorised");
         }
-        require(
-            wantLockedInHere() < MAX_WLINHERE_TO_CALL_EARN,
-            "!safe - use farm()"
-        );
 
         IVenusDistribution(venusDistributionAddress).claimVenus(address(this));
 
         uint256 earnedAmt = IERC20(venusAddress).balanceOf(address(this));
 
-        IPancakeRouter02(pancakeSwapRouterAddress).swapExactTokensForTokens(
-            earnedAmt,
-            0,
-            venusToWantPath,
-            address(this),
-            now.add(600)
-        );
+        earnedAmt = distributeFees(earnedAmt);
+        earnedAmt = buyBack(earnedAmt);
 
-        distributeFees();
-        buyBack();
-        lastEarnBlock = block.number;
-
-        farm();
-    }
-
-    function buyBack() internal {
-        if (buyBackRate <= 0) {
-            return;
+        if (venusAddress != wantAddress) {
+            IPancakeRouter02(uniRouterAddress).swapExactTokensForTokens(
+                earnedAmt,
+                0,
+                venusToWantPath,
+                address(this),
+                now.add(600)
+            );
         }
 
-        uint256 wantBal = wantLockedInHere();
+        lastEarnBlock = block.number;
 
-        uint256 buyBackAmt = wantBal.mul(buyBackRate).div(buyBackRateMax);
+        farm(true); // Supply wantToken without leverage, to cater for net -ve interest rates.
+    }
 
-        IPancakeRouter02(pancakeSwapRouterAddress).swapExactTokensForTokens(
+    function buyBack(uint256 _earnedAmt) internal returns (uint256) {
+        if (buyBackRate <= 0) {
+            return _earnedAmt;
+        }
+
+        uint256 buyBackAmt = _earnedAmt.mul(buyBackRate).div(buyBackRateMax);
+
+        IPancakeRouter02(uniRouterAddress).swapExactTokensForTokens(
             buyBackAmt,
             0,
-            wantToAUTOPath,
+            earnedToAUTOPath,
             address(this),
             now + 600
         );
@@ -1635,22 +1717,28 @@ contract StratVLEV is Ownable, Pausable {
         // Burn AUTO tokens
         uint256 burnAmt = IERC20(AUTOAddress).balanceOf(address(this));
         IERC20(AUTOAddress).safeTransfer(buyBackAddress, burnAmt);
+
+        return _earnedAmt.sub(buyBackAmt);
     }
 
-    function distributeFees() internal {
-        uint256 wantAmt = wantLockedInHere();
-
-        if (wantAmt > 0) {
+    function distributeFees(uint256 _earnedAmt) internal returns (uint256) {
+        if (_earnedAmt > 0) {
             if (controllerFee > 0) {
-                IERC20(wantAddress).safeTransfer(
-                    govAddress,
-                    wantAmt.mul(controllerFee).div(controllerFeeMax)
-                );
+                uint256 fee =
+                    _earnedAmt.mul(controllerFee).div(controllerFeeMax);
+                IERC20(venusAddress).safeTransfer(govAddress, fee);
+                return _earnedAmt.sub(fee);
             }
         }
+
+        return _earnedAmt;
     }
 
-    function withdraw(uint256 _wantAmt) external onlyOwner returns (uint256) {
+    function withdraw(address _userAddress, uint256 _wantAmt)
+        external
+        onlyOwner
+        returns (uint256)
+    {
         uint256 sharesRemoved =
             _wantAmt.mul(sharesTotal).div(wantLockedTotal());
         if (sharesRemoved > sharesTotal) {
@@ -1658,10 +1746,13 @@ contract StratVLEV is Ownable, Pausable {
         }
         sharesTotal -= sharesRemoved;
 
-        uint256 wantBal = wantLockedInHere();
+        uint256 wantBal = IERC20(wantAddress).balanceOf(address(this));
         if (wantBal < _wantAmt) {
             _deleverage(true, _wantAmt.sub(wantBal));
-            wantBal = wantLockedInHere();
+            if (wantIsWBNB) {
+                _wrapBNB(); // wrap BNB -> WBNB before sending it back to user
+            }
+            wantBal = IERC20(wantAddress).balanceOf(address(this));
         }
 
         if (wantBal < _wantAmt) {
@@ -1670,7 +1761,7 @@ contract StratVLEV is Ownable, Pausable {
 
         IERC20(wantAddress).safeTransfer(autoFarmAddress, _wantAmt);
 
-        farm();
+        farm(true);
 
         return sharesRemoved;
     }
@@ -1683,8 +1774,11 @@ contract StratVLEV is Ownable, Pausable {
 
         _pause();
 
-        IERC20(venusAddress).safeApprove(pancakeSwapRouterAddress, 0);
-        IERC20(wantAddress).safeApprove(pancakeSwapRouterAddress, 0);
+        IERC20(venusAddress).safeApprove(uniRouterAddress, 0);
+        IERC20(wantAddress).safeApprove(uniRouterAddress, 0);
+        if (!wantIsWBNB) {
+            IERC20(wantAddress).safeApprove(vTokenAddress, 0);
+        }
     }
 
     /**
@@ -1694,8 +1788,11 @@ contract StratVLEV is Ownable, Pausable {
         require(msg.sender == govAddress, "Not authorised");
         _unpause();
 
-        IERC20(venusAddress).safeApprove(pancakeSwapRouterAddress, uint256(-1));
-        IERC20(wantAddress).safeApprove(pancakeSwapRouterAddress, uint256(-1));
+        IERC20(venusAddress).safeApprove(uniRouterAddress, uint256(-1));
+        IERC20(wantAddress).safeApprove(uniRouterAddress, uint256(-1));
+        if (!wantIsWBNB) {
+            IERC20(wantAddress).safeApprove(vTokenAddress, 0);
+        }
     }
 
     /**
@@ -1705,6 +1802,8 @@ contract StratVLEV is Ownable, Pausable {
     function updateBalance() public {
         supplyBal = IVToken(vTokenAddress).balanceOfUnderlying(address(this)); // a payable function because of acrueInterest()
         borrowBal = IVToken(vTokenAddress).borrowBalanceCurrent(address(this));
+        supplyBalTargeted = borrowBal.mul(1000).div(borrowRate);
+        supplyBalMin = borrowBal.mul(1000).div(BORROW_RATE_MAX_HARD);
     }
 
     function wantLockedTotal() public view returns (uint256) {
@@ -1712,7 +1811,13 @@ contract StratVLEV is Ownable, Pausable {
     }
 
     function wantLockedInHere() public view returns (uint256) {
-        return IERC20(wantAddress).balanceOf(address(this));
+        uint256 wantBal = IERC20(wantAddress).balanceOf(address(this));
+        if (wantIsWBNB) {
+            uint256 bnbBal = address(this).balance;
+            return bnbBal.add(wantBal);
+        } else {
+            return wantBal;
+        }
     }
 
     function setEntranceFeeFactor(uint256 _entranceFeeFactor) public {
@@ -1741,6 +1846,46 @@ contract StratVLEV is Ownable, Pausable {
     function setOnlyGov(bool _onlyGov) public {
         require(msg.sender == govAddress, "Not authorised");
         onlyGov = _onlyGov;
+    }
+
+    function inCaseTokensGetStuck(
+        address _token,
+        uint256 _amount,
+        address _to
+    ) public {
+        require(msg.sender == govAddress, "!gov");
+        require(_token != earnedAddress, "!safe");
+        require(_token != wantAddress, "!safe");
+        require(_token != vTokenAddress, "!safe");
+
+        IERC20(_token).safeTransfer(_to, _amount);
+    }
+
+    function _wrapBNB() internal {
+        // BNB -> WBNB
+        uint256 bnbBal = address(this).balance;
+        if (bnbBal > 0) {
+            IWBNB(wbnbAddress).deposit{value: bnbBal}(); // BNB -> WBNB
+        }
+    }
+
+    function _unwrapBNB() internal {
+        // WBNB -> BNB
+        uint256 wbnbBal = IERC20(wbnbAddress).balanceOf(address(this));
+        if (wbnbBal > 0) {
+            IWBNB(wbnbAddress).withdraw(wbnbBal);
+        }
+    }
+
+    /**
+     * @dev We should not have significant amts of BNB in this contract if any at all.
+     * In case we do (eg. Venus returns all users' BNB to this contract or for any other reason),
+     * We can wrap all BNB, allowing users to withdraw() as per normal.
+     */
+    function wrapBNB() public {
+        require(msg.sender == govAddress, "Not authorised");
+        require(wantIsWBNB, "!wantIsWBNB");
+        _wrapBNB();
     }
 
     receive() external payable {}

@@ -71,6 +71,19 @@ interface IDestinationVault is ISystemComponent, IBaseAssetVault, IERC20 {
     /// @notice The type of pool plus any staking information
     function destType() external view returns (string memory);
 
+    /// @notice Sets a token to be tracked or not
+    /// @param token Token to start or stop tracking
+    /// @param tracked True to track. False to stop.
+    function setTrackedToken(address token, bool tracked) external;
+
+    /// @notice Returns tokens that are protected from transfer
+    function trackedTokens() external view returns (address[] memory);
+
+    /// @notice Returns whether a token is tracked or not
+    function isTrackedToken(
+        address
+    ) external view returns (bool);
+
     /// @notice If the pool only deals in ETH when adding or removing liquidity
     function poolDealInEth() external view returns (bool);
 

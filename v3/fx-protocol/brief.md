@@ -5,7 +5,7 @@
 - Project: fx Protocol (`fx-protocol`)
 - Website: [https://fx.aladdin.club](https://fx.aladdin.club)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:53.565Z
+- Generated: 2026-07-04T11:05:41.898Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
 - Chains: ethereum
 - Contract surface: 90 unique implementations (142 raw deployments)

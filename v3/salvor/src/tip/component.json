@@ -12,7 +12,7 @@
       "address": "0x039f029934356cce9e3637279e8e6e1077caaad3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "avalanche",
@@ -20,7 +20,7 @@
       "address": "0x1da7b5e5e6789a5bde12bec92ba90589cf618a53",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "avalanche",
@@ -28,7 +28,7 @@
       "address": "0x722f29e7fa60e9d49555cf31cee7404234a2d1bc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "avalanche",
@@ -36,7 +36,7 @@
       "address": "0x80df4914312982e0209e33efe3f8c636fba604b6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "avalanche",
@@ -44,7 +44,7 @@
       "address": "0x9df2f891f693298d563b160bcc588c45afe82840",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "avalanche",
@@ -52,7 +52,7 @@
       "address": "0xb0c63bb7727ffe77398a4f426e9034e42557e320",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "avalanche",
@@ -60,7 +60,7 @@
       "address": "0xb85afff031ab2931501f8b86ba0812468c655d9e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "avalanche",
@@ -68,7 +68,7 @@
       "address": "0xca2efe9b6caa49df45cd8b7f9df6f01cecd644d3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "avalanche",
@@ -76,7 +76,7 @@
       "address": "0xd15bd182481c6291fefaffb066d3ae518850522d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "avalanche",
@@ -84,7 +84,7 @@
       "address": "0xd5e8ac004bdea58285ac5eaa15fff8350723bda6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "avalanche",
@@ -92,7 +92,7 @@
       "address": "0xf563cb4b20d951a72abca3ea486d32d8b3399106",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "component": "LaunchField-2",
   "main_contract": "LaunchField",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "bsc",
       "chain_id": 56,
       "address": "0x62d6eeaf4e1895ce72bf10f8b0dbdb0e1dd4cb08",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe394b087889d6d2e8eba110bfe376079e3c2682a",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

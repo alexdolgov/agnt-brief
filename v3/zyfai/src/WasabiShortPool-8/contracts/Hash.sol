@@ -7,15 +7,13 @@ library Hash {
     bytes32 private constant _FUNCTION_CALL_DATA_HASH =
         keccak256("FunctionCallData(address to,uint256 value,bytes data)");
     bytes32 private constant _OPEN_POSITION_REQUEST_HASH =
-        keccak256("OpenPositionRequest(uint256 id,address currency,address targetCurrency,uint256 downPayment,uint256 principal,uint256 minTargetAmount,uint256 expiration,uint256 fee,FunctionCallData[] functionCallDataList,Position existingPosition,address referrer)FunctionCallData(address to,uint256 value,bytes data)Position(uint256 id,address trader,address currency,address collateralCurrency,uint256 lastFundingTimestamp,uint256 downPayment,uint256 principal,uint256 collateralAmount,uint256 feesToBePaid)");
+        keccak256("OpenPositionRequest(uint256 id,address currency,address targetCurrency,uint256 downPayment,uint256 principal,uint256 minTargetAmount,uint256 expiration,uint256 fee,FunctionCallData[] functionCallDataList)FunctionCallData(address to,uint256 value,bytes data)");
     bytes32 private constant _POSITION_HASH =
         keccak256("Position(uint256 id,address trader,address currency,address collateralCurrency,uint256 lastFundingTimestamp,uint256 downPayment,uint256 principal,uint256 collateralAmount,uint256 feesToBePaid)");
     bytes32 private constant _CLOSE_POSITION_REQUEST_HASH =
-        keccak256("ClosePositionRequest(uint256 expiration,uint256 interest,uint256 amount,Position position,FunctionCallData[] functionCallDataList,address referrer)FunctionCallData(address to,uint256 value,bytes data)Position(uint256 id,address trader,address currency,address collateralCurrency,uint256 lastFundingTimestamp,uint256 downPayment,uint256 principal,uint256 collateralAmount,uint256 feesToBePaid)");
+        keccak256("ClosePositionRequest(uint256 expiration,uint256 interest,Position position,FunctionCallData[] functionCallDataList)FunctionCallData(address to,uint256 value,bytes data)Position(uint256 id,address trader,address currency,address collateralCurrency,uint256 lastFundingTimestamp,uint256 downPayment,uint256 principal,uint256 collateralAmount,uint256 feesToBePaid)");
     bytes32 private constant _CLOSE_POSITION_ORDER_HASH =
         keccak256("ClosePositionOrder(uint8 orderType,uint256 positionId,uint256 createdAt,uint256 expiration,uint256 makerAmount,uint256 takerAmount,uint256 executionFee)");
-    bytes32 private constant _ADD_COLLATERAL_REQUEST_HASH =
-        keccak256("AddCollateralRequest(uint256 amount,uint256 interest,uint256 expiration,Position position)Position(uint256 id,address trader,address currency,address collateralCurrency,uint256 lastFundingTimestamp,uint256 downPayment,uint256 principal,uint256 collateralAmount,uint256 feesToBePaid)");
 
     /// @dev hashes the given FunctionCallData list
     /// @param functionCallDataList The list of function call data to hash
@@ -54,7 +52,7 @@ library Hash {
 
     /// @dev Hashes the given OpenPositionRequest
     /// @param _request The request to hash
-    function hash(IWasabiPerps.OpenPositionRequest memory _request) internal pure returns (bytes32) {
+    function hash(IWasabiPerps.OpenPositionRequest calldata _request) internal pure returns (bytes32) {
         return keccak256(abi.encode(
             _OPEN_POSITION_REQUEST_HASH,
             _request.id,
@@ -65,35 +63,19 @@ library Hash {
             _request.minTargetAmount,
             _request.expiration,
             _request.fee,
-            hashFunctionCallDataList(_request.functionCallDataList),
-            hash(_request.existingPosition),
-            _request.referrer
-        ));
-    }
-
-    /// @dev Hashes the given AddCollateralRequest
-    /// @param _request The request to hash
-    function hash(IWasabiPerps.AddCollateralRequest memory _request) internal pure returns (bytes32) {
-        return keccak256(abi.encode(
-            _ADD_COLLATERAL_REQUEST_HASH,
-            _request.amount,
-            _request.interest,
-            _request.expiration,
-            hash(_request.position)
+            hashFunctionCallDataList(_request.functionCallDataList)
         ));
     }
 
     /// @dev Hashes the given ClosePositionRequest
     /// @param _request The request to hash
-    function hash(IWasabiPerps.ClosePositionRequest memory _request) internal pure returns (bytes32) {
+    function hash(IWasabiPerps.ClosePositionRequest calldata _request) internal pure returns (bytes32) {
         return keccak256(abi.encode(
             _CLOSE_POSITION_REQUEST_HASH,
             _request.expiration,
             _request.interest,
-            _request.amount,
             hash(_request.position),
-            hashFunctionCallDataList(_request.functionCallDataList),
-            _request.referrer
+            hashFunctionCallDataList(_request.functionCallDataList)
         ));
     }
 

@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "arcadia-finance",
-  "generated_at": "2026-07-03T21:05:30.162Z",
+  "generated_at": "2026-07-04T11:05:39.514Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-f2f0",
   "lifecycle_status": "active",
   "lifecycle_signal": {
@@ -73,8 +73,8 @@
     }
   },
   "topography": {
-    "project_purpose": "Leveraged Farming. Structurally: 145 project-authored contract(s) across 3 chain(s); 7 ERC20 tokens, 20 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on solmate.",
-    "relationship_narrative": "The protocol comprises 9 functional families. Its contracts share 59 common project-authored base contract(s) (rebalancer, abstractbase, guardian). Dominant framework: solmate.",
+    "project_purpose": "Leveraged Farming. Structurally: 205 project-authored contract(s) across 3 chain(s); 6 ERC20 tokens, 31 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on solmate.",
+    "relationship_narrative": "The protocol comprises 9 functional families. Its contracts share 51 common project-authored base contract(s) (rebalancer, abstractbase, guardian). Dominant framework: solmate.",
     "product_family_count": 9,
     "total_contracts_indexed": 641,
     "live_contracts": 269,
@@ -1662,7 +1662,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2026-04-21 13:22:59+03",
       "deploy_coverage_basis": null
@@ -19245,7 +19245,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2025-04-23 14:40:25+03",
       "deploy_coverage_basis": null

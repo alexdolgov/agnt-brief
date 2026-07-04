@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "elephant-money",
-  "generated_at": "2026-07-03T21:05:46.268Z",
+  "generated_at": "2026-07-04T11:05:41.667Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-f007",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -50,9 +50,9 @@
     }
   },
   "topography": {
-    "project_purpose": "Yield. Structurally: 49 project-authored contract(s) across 1 chain(s); 10 ERC20 tokens, 5 ERC721 NFTs, 1 ERC1155 multi-token, 1 Chainlink feed; role-gated via AccessControl; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 6 functional families. Its contracts share 10 common project-authored base contract(s) (initializableownable, pancakeerc20, whitelist). Dominant framework: openzeppelin.",
-    "product_family_count": 6,
+    "project_purpose": "Yield. Structurally: 118 project-authored contract(s) across 1 chain(s); 10 ERC20 tokens, 5 ERC721 NFTs, 1 ERC1155 multi-token, 1 Chainlink feed; role-gated via AccessControl; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 7 functional families. Its contracts share 10 common project-authored base contract(s) (whitelist, elephantcore, initializableownable). Dominant framework: openzeppelin.",
+    "product_family_count": 7,
     "total_contracts_indexed": 623,
     "live_contracts": 182,
     "inactive_contracts": 248,

@@ -102,8 +102,7 @@ abstract contract LzOFTCoreV2 is LzNonblockingApp {
         uint _amount,
         address payable _refundAddress,
         address _zroPaymentAddress,
-        bytes memory _adapterParams,
-        uint256 value
+        bytes memory _adapterParams
     ) internal virtual returns (uint amount) {
         _checkAdapterParams(_dstChainId, PT_SEND, _adapterParams, 0);
 
@@ -111,7 +110,7 @@ abstract contract LzOFTCoreV2 is LzNonblockingApp {
         amount = _debitFrom(_from, _dstChainId, _toAddress, amount); // amount returned should not have dust
 
         bytes memory lzPayload = _encodeSendPayload(_toAddress, _ld2sd(amount));
-        _lzSend(_dstChainId, lzPayload, _refundAddress, _zroPaymentAddress, _adapterParams, value);
+        _lzSend(_dstChainId, lzPayload, _refundAddress, _zroPaymentAddress, _adapterParams, msg.value);
 
         emit SendToChain(_dstChainId, _from, _toAddress, amount);
     }
@@ -137,8 +136,7 @@ abstract contract LzOFTCoreV2 is LzNonblockingApp {
         uint64 _dstGasForCall,
         address payable _refundAddress,
         address _zroPaymentAddress,
-        bytes memory _adapterParams,
-        uint256 value
+        bytes memory _adapterParams
     ) internal virtual returns (uint amount) {
         _checkAdapterParams(_dstChainId, PT_SEND_AND_CALL, _adapterParams, _dstGasForCall);
 
@@ -147,7 +145,7 @@ abstract contract LzOFTCoreV2 is LzNonblockingApp {
 
         // encode the msg.sender into the payload instead of _from
         bytes memory lzPayload = _encodeSendAndCallPayload(msg.sender, _toAddress, _ld2sd(amount), _payload, _dstGasForCall);
-        _lzSend(_dstChainId, lzPayload, _refundAddress, _zroPaymentAddress, _adapterParams, value);
+        _lzSend(_dstChainId, lzPayload, _refundAddress, _zroPaymentAddress, _adapterParams, msg.value);
 
         emit SendToChain(_dstChainId, _from, _toAddress, amount);
     }

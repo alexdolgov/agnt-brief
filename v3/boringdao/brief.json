@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "boringdao",
-  "generated_at": "2026-07-03T21:05:36.083Z",
+  "generated_at": "2026-07-04T11:05:40.754Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-2b719a-1bf2",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -62,12 +62,12 @@
     }
   },
   "topography": {
-    "project_purpose": "Cross Chain Bridge. Structurally: 180 project-authored contract(s) across 9 chain(s); 84 ERC20 tokens, 3 ERC721 NFTs, 2 ERC1155 multi-tokens, 2 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 11 functional families. Its contracts share 23 common project-authored base contract(s) (erc20detailed, structs, erc20pausable). Dominant framework: openzeppelin.",
+    "project_purpose": "Cross Chain Bridge. Structurally: 235 project-authored contract(s) across 9 chain(s); 110 ERC20 tokens, 3 ERC721 NFTs, 2 ERC1155 multi-tokens, 2 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 11 functional families. Its contracts share 18 common project-authored base contract(s) (erc20detailed, structs, erc20pausable). Dominant framework: openzeppelin.",
     "product_family_count": 11,
-    "total_contracts_indexed": 4135,
+    "total_contracts_indexed": 4112,
     "live_contracts": 232,
-    "inactive_contracts": 128,
+    "inactive_contracts": 105,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 3775,
@@ -1917,7 +1917,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": false,
       "effective_deploy_date": "2021-03-15 16:49:47+03",
       "deploy_coverage_basis": null
@@ -3676,7 +3676,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": false,
       "effective_deploy_date": "2021-02-18 23:30:39+03",
       "deploy_coverage_basis": null
@@ -147180,7 +147180,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": false,
       "effective_deploy_date": "2021-01-23 02:59:55+03",
       "deploy_coverage_basis": null

@@ -92,7 +92,7 @@
       "address": "0x25e50469e598d3f87462d70b444ad1f8d3a1e434",
       "is_proxy": true,
       "implementation_address": "0x73c47e1c8be85604d89eb66c920e78360498dd54",
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "arbitrum",
@@ -100,7 +100,7 @@
       "address": "0x5138b4e470a759bbc1987136ed332fd3c37304af",
       "is_proxy": true,
       "implementation_address": "0x73c47e1c8be85604d89eb66c920e78360498dd54",
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "arbitrum",
@@ -108,7 +108,7 @@
       "address": "0x66ea40e7eeb447b49260bdc882cae7f7fc64696e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "arbitrum",
@@ -116,7 +116,7 @@
       "address": "0x6a5c4862c845f29f1e60dd3777fc34c87dac72ea",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "arbitrum",
@@ -124,7 +124,7 @@
       "address": "0x97f893f0cc8f69f6133082f15758f0a3eae1b210",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "arbitrum",
@@ -132,7 +132,7 @@
       "address": "0xe37b8ebac74e1f7d0c991276c34eda12fef20667",
       "is_proxy": true,
       "implementation_address": "0xa8f462446f7edd7c13ffab71710726d29a1bda20",
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "arbitrum",
@@ -140,7 +140,7 @@
       "address": "0xe5f58660888a8ac026de26095b024122876f6e3f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

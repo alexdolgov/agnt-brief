@@ -7,10 +7,10 @@
 - Project: Asymmetry (`asymmetry`)
 - Website: [https://asymmetry.fi](https://asymmetry.fi)
 - Lifecycle: declining (Tier 0, 93.3% below peak)
-- Generated: 2026-07-03T21:05:31.777Z
+- Generated: 2026-07-04T11:05:39.563Z
 - Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
 - Chains: base, ethereum
-- Contract surface: 700 unique implementations (819 raw deployments)
+- Contract surface: 700 unique implementations (818 raw deployments)
 - DeFi Llama TVL: $2,108,098.00
 - On-chain TVL (included contracts): $27,642,835.48
 - TVL by chain: Ethereum $25,252,221.65 | Base $2,390,613.83
@@ -25,7 +25,7 @@ The protocol comprises 10 functional families. Its contracts share 9 common proj
 
 ## Contract Surface Quality
 
-- Indexed contracts: 820; live-surface contracts included: 819 (216 live, 603 unknown).
+- Indexed contracts: 819; live-surface contracts included: 818 (215 live, 603 unknown).
 - Excluded by liveness: 1 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
@@ -40,7 +40,7 @@ The protocol comprises 10 functional families. Its contracts share 9 common proj
 - Verified by bytecode match: 0
 - Unverified implementations: 598
 - Unique implementations: 700
-- Raw deployments: 819
+- Raw deployments: 818
 - Audits discovered: 20 (20 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 13
 - ASD (verified + unaudited TVL): $24,695,549.53
@@ -77,7 +77,7 @@ The protocol comprises 10 functional families. Its contracts share 9 common proj
 | AfCvx | unknown | ethereum | n/a | 2 deployments: ethereum [`0x56664f...e1f799`](./contracts/ethereum-1/0x56664ffccff6bb282cca96808af03d9042e1f799/); ethereum `0x8668a1...5257cf` | ✅ Audited |
 | AfEth | unknown | ethereum | n/a | 2 deployments: ethereum [`0x000000...af7a11`](./contracts/ethereum-1/0x0000000016e6cb3038203c1129c8b4aee7af7a11/); ethereum `0xdf124a...c832c6` | ✅ Audited |
 | AfEth | unknown | ethereum | n/a | 4 deployments: ethereum [`0x5281cc...c7288f`](./contracts/ethereum-1/0x5281cca5a757b1c8487be7e3368c62db32c7288f/); ethereum `0x8896ef...91a61c`; ethereum `0x90a607...56778a`; ethereum `0xae4131...f63256` | ✅ Audited |
-| AfEthRelayer | unknown | ethereum | n/a | 2 deployments: ethereum [`0x18d492...bfdc67`](./contracts/ethereum-1/0x18d49239edc031fec1747200cd315eca4fbfdc67/); ethereum `0x7df87c...c288ad` | ✅ Audited |
+| AfEthRelayer | unknown | ethereum | n/a | [`0x7df87c...c288ad`](./contracts/ethereum-1/0x7df87c1f23192803167106b76e730227e1c288ad/) | ✅ Audited |
 | Ankr | unknown | ethereum | n/a | 2 deployments: ethereum [`0xf4a173...2ea981`](./contracts/ethereum-1/0xf4a1735505188daf0872312dd1a6182d342ea981/); ethereum `0xfa2d4c...d7082f` | ✅ Audited |
 | BorrowerOperations | core_logic | ethereum | n/a | 6 deployments: ethereum [`0x2538cd...e4554e`](./contracts/ethereum-1/0x2538cd346429ea59902e02448bb7a7c098e4554e/); ethereum `0x336d9c...69b41d`; ethereum `0x57bd20...b48469`; ethereum `0x664507...71f411`; ethereum `0x9e6010...c13830`; ethereum `0xda9af1...2556e0` | ✅ Audited |
 | BTCPriceFeed | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x4b74d0...bc3bb1`](./contracts/ethereum-1/0x4b74d043336678d2f62dae6595bc42dccabc3bb1/); ethereum `0xeaf3b3...745094` | ✅ Audited |
@@ -812,7 +812,7 @@ Source code not publicly verified. These contracts cannot be audited without dec
 | [Audit 3 (also discovered via alternate URL)](https://github.com/Zellic/publications/blob/1916cd0f6ef5e1fda0e44628d5eed902fd797883/Asymmetry%20Finanace%20safETH%20-%20Zellic%20Audit%20Report.pdf) | Zellic | Audit | 2023-07 | stale | Direct | contract_name | 45 | high |
 | [Audit 2](https://gist.github.com/romeroadrian/3bf5506e1e4a0594cc722b0310b5e362) | romeroadrian | Audit | 2024-05 | stale | Direct | contract_name | 4 | high |
 | [Audit 3](https://gist.github.com/romeroadrian/fe3fa83fe7ed0d42768c53e4209e7cdd) | romeroadrian | Audit | 2024-06 | stale | Direct | contract_name | 1 | high |
-| [Audit 2](https://gist.github.com/romeroadrian/cea29ae49185dcc9096f49314a83f151) | romeroadrian | Audit | 2024-01 | stale | Direct | contract_name | 11 | high |
+| [Audit 2](https://gist.github.com/romeroadrian/cea29ae49185dcc9096f49314a83f151) | romeroadrian | Audit | 2024-01 | stale | Direct | contract_name | 10 | high |
 | [Audit 6](https://github.com/GalloDaSballo/bold-review) | GalloDaSballo | Audit | n/a | unknown | Direct | contract_name | 40 | medium |
 | [$350k Cantina Open Audit Competition](https://cantina.xyz/competitions/d86632df-ab33-4448-8198-64955eae6712) | Spearbit | Contest | n/a | unknown | Direct | contract_name | 44 | high |
 | [Chaos Labs USDaf/Bold Economic Modeling and Simulation Report](https://cdn.sanity.io/files/zmh9mnff/production/ca6a4815e62b05f33fb3ec56c5a4c42d6b7ddbec.pdf) | Code4rena | Contest | 2024-10 | aging | Direct | n/a | 0 | n/a |
@@ -873,9 +873,9 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 68 |
+| native | 67 |
 | upstream | 6 |
-| standard_library | 16 |
+| standard_library | 17 |
 | needs_review | 610 |
 
 ## Scope Matching Notes

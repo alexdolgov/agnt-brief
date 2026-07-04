@@ -2,30 +2,22 @@
   "component": "DestinationVaultRegistry",
   "main_contract": "DestinationVaultRegistry",
   "source_file_count": 64,
-  "deployment_count": 3,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x39327cbec7e3190fc721108b4d5a0cb096264ba1",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x005b5dd2182f4adf9fca299e762029337ff79fa8",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x852664d3879278bd07cffaf0cebc34ef7aed4f44",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x8d75a2b774277370d9dc8c034f23003b29032b4b",
+      "chain": "chain-146",
+      "chain_id": 146,
+      "address": "0x0b7f22fd9e52dd6ddd3e46194e04ed8d9f520f57",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

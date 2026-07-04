@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "lisk-bridge",
-  "generated_at": "2026-07-03T21:06:21.609Z",
+  "generated_at": "2026-07-04T11:05:42.059Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-3e24",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -52,7 +52,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Canonical Bridge. Structurally: 112 project-authored contract(s) across 1 chain(s); 24 ERC20 tokens, 1 ERC1155 multi-token, 3 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "project_purpose": "Canonical Bridge. Structurally: 115 project-authored contract(s) across 1 chain(s); 24 ERC20 tokens, 1 ERC1155 multi-token, 3 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
     "relationship_narrative": "The protocol comprises 8 functional families. Its contracts share 35 common project-authored base contract(s) (mintcontroller, controller, tellorstorage). Dominant framework: openzeppelin.",
     "product_family_count": 8,
     "total_contracts_indexed": 235,

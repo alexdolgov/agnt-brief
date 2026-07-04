@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "ankr",
-  "generated_at": "2026-07-03T21:05:27.886Z",
+  "generated_at": "2026-07-04T11:05:39.457Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-f007",
   "lifecycle_status": "active",
   "lifecycle_signal": {
@@ -23,9 +23,9 @@
   },
   "summary": {
     "total_contracts": 202,
-    "total_addresses": 370,
+    "total_addresses": 360,
     "unique_implementations": 202,
-    "total_deployments": 370,
+    "total_deployments": 360,
     "audited_contracts": 1,
     "unaudited_contracts": 120,
     "contracts_verified_audited": 1,
@@ -76,12 +76,12 @@
     }
   },
   "topography": {
-    "project_purpose": "Liquid Staking. Structurally: 231 project-authored contract(s) across 5 chain(s); 1 ERC4626 vault, 82 ERC20 tokens, 1 ERC721 NFT; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "project_purpose": "Liquid Staking. Structurally: 252 project-authored contract(s) across 5 chain(s); 1 ERC4626 vault, 82 ERC20 tokens, 1 ERC721 NFT; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
     "relationship_narrative": "The protocol comprises 8 functional families. Its contracts share 17 common project-authored base contract(s) (multicall, lockable, erc20upgradesafe). Dominant framework: openzeppelin.",
     "product_family_count": 8,
-    "total_contracts_indexed": 584,
+    "total_contracts_indexed": 567,
     "live_contracts": 180,
-    "inactive_contracts": 319,
+    "inactive_contracts": 302,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 85,
@@ -2244,7 +2244,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-11-19 19:46:06+03",
       "deploy_coverage_basis": null
@@ -2546,7 +2546,7 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0x0633ea3769472bd74f30fad828ffb864d9f2e591",
+      "address": "0x8fcd9542a6ee0f05f470230da5b8cb41033da6df",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "DavosJoin",
@@ -2555,21 +2555,10 @@
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0x0633ea3769472bd74f30fad828ffb864d9f2e591",
       "impl_name": "DavosJoin",
       "deployments": [
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x0633ea3769472bd74f30fad828ffb864d9f2e591",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 137,
           "chain_name": "polygon",
@@ -2589,7 +2578,7 @@
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared",
       "is_live": true,
-      "effective_deploy_date": "2023-01-12 22:58:04+03",
+      "effective_deploy_date": "2023-01-12 22:58:10+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2742,7 +2731,7 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0x04901268ee65e989852370c0bad08e1514a0c484",
+      "address": "0x54809f204999a886839ac46b2fd796282e727158",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "DGTRewards",
@@ -2751,21 +2740,10 @@
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0x04901268ee65e989852370c0bad08e1514a0c484",
       "impl_name": "DGTRewards",
       "deployments": [
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x04901268ee65e989852370c0bad08e1514a0c484",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 137,
           "chain_name": "polygon",
@@ -2796,7 +2774,7 @@
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared",
       "is_live": true,
-      "effective_deploy_date": "2023-01-12 22:59:22+03",
+      "effective_deploy_date": "2023-01-12 23:05:30+03",
       "deploy_coverage_basis": null
     },
     {
@@ -2862,7 +2840,7 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0x0627528cc5e1779ff24e47c74b8e86492436b9fc",
+      "address": "0x122897d16b2dd5a193efce19a1b4f34d1c540118",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "Dog",
@@ -2871,21 +2849,10 @@
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0x0627528cc5e1779ff24e47c74b8e86492436b9fc",
       "impl_name": "Dog",
       "deployments": [
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x0627528cc5e1779ff24e47c74b8e86492436b9fc",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 137,
           "chain_name": "polygon",
@@ -2916,7 +2883,7 @@
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared",
       "is_live": true,
-      "effective_deploy_date": "2023-01-12 22:59:02+03",
+      "effective_deploy_date": "2023-01-12 23:05:20+03",
       "deploy_coverage_basis": null
     },
     {
@@ -3731,7 +3698,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2023-01-12 23:05:34+03",
       "deploy_coverage_basis": null
@@ -3984,7 +3951,7 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0x36417e58b08cef67e32cb80808a6858924341758",
+      "address": "0x4a20fe93dec6e5b2d66c246eb7e8ab228254c03f",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "Jar",
@@ -3993,21 +3960,10 @@
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0x36417e58b08cef67e32cb80808a6858924341758",
       "impl_name": "Jar",
       "deployments": [
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x36417e58b08cef67e32cb80808a6858924341758",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 137,
           "chain_name": "polygon",
@@ -4027,7 +3983,7 @@
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared",
       "is_live": true,
-      "effective_deploy_date": "2022-11-08 10:39:26+03",
+      "effective_deploy_date": "2022-11-08 10:39:34+03",
       "deploy_coverage_basis": null
     },
     {
@@ -4077,55 +4033,6 @@
       "contamination_flag": "cleared",
       "is_live": true,
       "effective_deploy_date": "2023-01-18 12:19:35+03",
-      "deploy_coverage_basis": null
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
-      "address": "0x5eb89d7b8e10dec5267727d7ee0f128b557f892f",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "Jug",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x5eb89d7b8e10dec5267727d7ee0f128b557f892f",
-      "impl_name": "Jug",
-      "deployments": [
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x5eb89d7b8e10dec5267727d7ee0f128b557f892f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0xc37f6af12c443ba8c749cbfa38944abffc156f22",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2022-08-31 20:32:09+03",
       "deploy_coverage_basis": null
     },
     {
@@ -4191,34 +4098,23 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0x604a34798db956cd78fec52f857c728496692ec7",
+      "address": "0xc37f6af12c443ba8c749cbfa38944abffc156f22",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
-      "name": "LinearDecrease",
+      "name": "Jug",
       "role": "unknown",
       "origin_kind": "needs_review",
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x604a34798db956cd78fec52f857c728496692ec7",
-      "impl_name": "LinearDecrease",
+      "is_proxy": true,
+      "impl_address": "0x5eb89d7b8e10dec5267727d7ee0f128b557f892f",
+      "impl_name": "Jug",
       "deployments": [
         {
           "chain_id": 137,
           "chain_name": "polygon",
-          "address": "0x604a34798db956cd78fec52f857c728496692ec7",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0xa48f322f8b3edff967629af79e027628b9dd1298",
+          "address": "0xc37f6af12c443ba8c749cbfa38944abffc156f22",
           "deployment_unit": null,
           "deployment_unit_proxy_count": null,
           "source_verified": true,
@@ -4234,7 +4130,7 @@
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared",
       "is_live": true,
-      "effective_deploy_date": "2022-08-31 20:30:45+03",
+      "effective_deploy_date": "2022-08-31 20:32:17+03",
       "deploy_coverage_basis": null
     },
     {
@@ -4295,6 +4191,44 @@
       "contamination_flag": "cleared",
       "is_live": true,
       "effective_deploy_date": "2023-01-12 17:02:59+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xa48f322f8b3edff967629af79e027628b9dd1298",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "LinearDecrease",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x604a34798db956cd78fec52f857c728496692ec7",
+      "impl_name": "LinearDecrease",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xa48f322f8b3edff967629af79e027628b9dd1298",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "effective_deploy_date": "2022-08-31 20:30:49+03",
       "deploy_coverage_basis": null
     },
     {
@@ -4714,55 +4648,6 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0x31434814587a51b581495e0506056f18a4b0919e",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "MaticOracle",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x31434814587a51b581495e0506056f18a4b0919e",
-      "impl_name": "MaticOracle",
-      "deployments": [
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x31434814587a51b581495e0506056f18a4b0919e",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0xec348813a94c2873e4d2372ae40955392a12acff",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2022-08-31 20:30:55+03",
-      "deploy_coverage_basis": null
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
       "address": "0x4f174701c68c4b92d531e37258b8c705585e9363",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -4862,6 +4747,44 @@
       "contamination_flag": "cleared",
       "is_live": true,
       "effective_deploy_date": "2023-01-12 22:57:22+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xec348813a94c2873e4d2372ae40955392a12acff",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "MaticOracle",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x31434814587a51b581495e0506056f18a4b0919e",
+      "impl_name": "MaticOracle",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xec348813a94c2873e4d2372ae40955392a12acff",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "effective_deploy_date": "2022-08-31 20:30:59+03",
       "deploy_coverage_basis": null
     },
     {
@@ -5751,55 +5674,6 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0x7e426f367c40fc6e1ec919e0a7e51fcb9a564b0f",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "Spotter",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x7e426f367c40fc6e1ec919e0a7e51fcb9a564b0f",
-      "impl_name": "Spotter",
-      "deployments": [
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x7e426f367c40fc6e1ec919e0a7e51fcb9a564b0f",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0xf97680e99be42daccea9fe6f9f9aa385ccf97a62",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2023-01-12 22:57:42+03",
-      "deploy_coverage_basis": null
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
       "address": "0xbbf35c9dcb16ea3cb64a0fce51c51f9ca34079fe",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -5844,6 +5718,44 @@
       "contamination_flag": "cleared",
       "is_live": true,
       "effective_deploy_date": "2022-08-31 20:31:15+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0xf97680e99be42daccea9fe6f9f9aa385ccf97a62",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "Spotter",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x7e426f367c40fc6e1ec919e0a7e51fcb9a564b0f",
+      "impl_name": "Spotter",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0xf97680e99be42daccea9fe6f9f9aa385ccf97a62",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "effective_deploy_date": "2023-01-12 22:57:48+03",
       "deploy_coverage_basis": null
     },
     {
@@ -9227,7 +9139,7 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0x0837253af481db0a9b5ea17f9f983e7606051995",
+      "address": "0xa983f4b5137b89f82b2eb5dac415e6490f06f639",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
       "name": "Vat",
@@ -9236,21 +9148,10 @@
       "origin_provider": null,
       "product_line": null,
       "tvl_usd": null,
-      "is_proxy": false,
+      "is_proxy": true,
       "impl_address": "0x0837253af481db0a9b5ea17f9f983e7606051995",
       "impl_name": "Vat",
       "deployments": [
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x0837253af481db0a9b5ea17f9f983e7606051995",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
         {
           "chain_id": 137,
           "chain_name": "polygon",
@@ -9270,7 +9171,7 @@
       "verification_bucket": "verified_unaudited",
       "contamination_flag": "cleared",
       "is_live": true,
-      "effective_deploy_date": "2023-01-12 22:57:32+03",
+      "effective_deploy_date": "2023-01-12 22:57:38+03",
       "deploy_coverage_basis": null
     },
     {
@@ -9434,55 +9335,6 @@
     {
       "chain_id": 137,
       "chain_name": "polygon",
-      "address": "0x02048cb6be76db99bec28553edd1184dd7b7c5db",
-      "deployment_unit": null,
-      "deployment_unit_proxy_count": null,
-      "name": "WaitingPool",
-      "role": "unknown",
-      "origin_kind": "needs_review",
-      "origin_provider": null,
-      "product_line": null,
-      "tvl_usd": null,
-      "is_proxy": false,
-      "impl_address": "0x02048cb6be76db99bec28553edd1184dd7b7c5db",
-      "impl_name": "WaitingPool",
-      "deployments": [
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x02048cb6be76db99bec28553edd1184dd7b7c5db",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        },
-        {
-          "chain_id": 137,
-          "chain_name": "polygon",
-          "address": "0x1c539e755a1bdabb168aa9ad60b31548991981f9",
-          "deployment_unit": null,
-          "deployment_unit_proxy_count": null,
-          "source_verified": true,
-          "verified_by_bytecode": false,
-          "tvl_usd": null,
-          "is_audited": false
-        }
-      ],
-      "audits_covering": [],
-      "is_audited": false,
-      "source_verified": true,
-      "verified_by_bytecode": false,
-      "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
-      "is_live": true,
-      "effective_deploy_date": "2022-11-09 03:30:43+03",
-      "deploy_coverage_basis": null
-    },
-    {
-      "chain_id": 137,
-      "chain_name": "polygon",
       "address": "0x02237aaf5b62dbcdeac287e76f9ac1d5deec7738",
       "deployment_unit": null,
       "deployment_unit_proxy_count": null,
@@ -9576,6 +9428,44 @@
       "contamination_flag": "cleared",
       "is_live": true,
       "effective_deploy_date": "2023-03-07 19:58:26+03",
+      "deploy_coverage_basis": null
+    },
+    {
+      "chain_id": 137,
+      "chain_name": "polygon",
+      "address": "0x1c539e755a1bdabb168aa9ad60b31548991981f9",
+      "deployment_unit": null,
+      "deployment_unit_proxy_count": null,
+      "name": "WaitingPool",
+      "role": "unknown",
+      "origin_kind": "needs_review",
+      "origin_provider": null,
+      "product_line": null,
+      "tvl_usd": null,
+      "is_proxy": true,
+      "impl_address": "0x02048cb6be76db99bec28553edd1184dd7b7c5db",
+      "impl_name": "WaitingPool",
+      "deployments": [
+        {
+          "chain_id": 137,
+          "chain_name": "polygon",
+          "address": "0x1c539e755a1bdabb168aa9ad60b31548991981f9",
+          "deployment_unit": null,
+          "deployment_unit_proxy_count": null,
+          "source_verified": true,
+          "verified_by_bytecode": false,
+          "tvl_usd": null,
+          "is_audited": false
+        }
+      ],
+      "audits_covering": [],
+      "is_audited": false,
+      "source_verified": true,
+      "verified_by_bytecode": false,
+      "verification_bucket": "verified_unaudited",
+      "contamination_flag": "cleared",
+      "is_live": true,
+      "effective_deploy_date": "2022-08-31 20:30:29+03",
       "deploy_coverage_basis": null
     },
     {

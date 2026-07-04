@@ -1,7 +1,7 @@
 {
   "component": "VaultLens-3",
   "main_contract": "VaultLens",
-  "source_file_count": 38,
+  "source_file_count": 40,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +9,10 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x72bbdb652f2aec9056115644efccdd1986f51f15",
+      "address": "0xa8695d44ec128136f8afcd796d6ba3db3cda8914",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

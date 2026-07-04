@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "brickken",
-  "generated_at": "2026-07-03T21:05:37.017Z",
+  "generated_at": "2026-07-04T11:05:40.791Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-43c7",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -52,12 +52,12 @@
     }
   },
   "topography": {
-    "project_purpose": "RWA. Structurally: 22 project-authored contract(s) across 3 chain(s); 4 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 3 functional families. Its contracts share 6 common project-authored base contract(s) (ownableupgradeable, contextupgradeable, eip712). Dominant framework: openzeppelin.",
+    "project_purpose": "RWA. Structurally: 41 project-authored contract(s) across 3 chain(s); 4 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 3 functional families. Its contracts share 14 common project-authored base contract(s) (stoescrowupgradeable, ownableupgradeable, contextupgradeable). Dominant framework: openzeppelin.",
     "product_family_count": 3,
-    "total_contracts_indexed": 100,
+    "total_contracts_indexed": 98,
     "live_contracts": 31,
-    "inactive_contracts": 58,
+    "inactive_contracts": 56,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 11,
@@ -268,7 +268,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2025-02-27 18:41:45+03",
       "deploy_coverage_basis": null

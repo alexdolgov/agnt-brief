@@ -1,0 +1,18 @@
+{
+  "component": "GyroECLPPoolFactory-5",
+  "main_contract": "GyroECLPPoolFactory",
+  "source_file_count": 59,
+  "deployment_count": 1,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0xefde1c764df6522a068b38106563de166ac97f58",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

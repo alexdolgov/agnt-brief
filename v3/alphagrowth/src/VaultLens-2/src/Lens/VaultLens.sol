@@ -22,7 +22,7 @@ contract VaultLens is Utils {
         oracleLens = OracleLens(_oracleLens);
         utilsLens = UtilsLens(_utilsLens);
         irmLens = IRMLens(_irmLens);
-        backupUnitOfAccounts = [address(840), _getWETHAddress(), 0xbBbBBBBbbBBBbbbBbbBbbbbBBbBbbbbBbBbbBBbB];
+        backupUnitOfAccounts = [address(840), getWETHAddress(), 0xbBbBBBBbbBBBbbbBbbBbbbbBBbBbbbbBbBbbBBbB];
     }
 
     function getVaultInfoFull(address vault) public view returns (VaultInfoFull memory) {
@@ -266,12 +266,8 @@ contract VaultLens is Utils {
             result.interestRateInfo[i].cash = cash[i];
             result.interestRateInfo[i].borrows = borrows[i];
             result.interestRateInfo[i].borrowSPY = abi.decode(data, (uint256));
-
-            result.interestRateInfo[i].supplySPY =
-                _computeSupplySPY(result.interestRateInfo[i].borrowSPY, cash[i], borrows[i], interestFee);
-
             (result.interestRateInfo[i].borrowAPY, result.interestRateInfo[i].supplyAPY) =
-                _computeAPYs(result.interestRateInfo[i].borrowSPY, result.interestRateInfo[i].supplySPY);
+                _computeAPYs(result.interestRateInfo[i].borrowSPY, cash[i], borrows[i], interestFee);
         }
 
         result.interestRateModelInfo = irmLens.getInterestRateModelInfo(result.interestRateModel);

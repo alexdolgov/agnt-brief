@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "bracket-protocol",
-  "generated_at": "2026-07-03T21:05:36.986Z",
+  "generated_at": "2026-07-04T11:05:40.784Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-b097",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -51,12 +51,12 @@
     }
   },
   "topography": {
-    "project_purpose": "Farm. Structurally: 148 project-authored contract(s) across 2 chain(s); 60 ERC20 tokens, 1 ERC721 NFT, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "project_purpose": "Farm. Structurally: 149 project-authored contract(s) across 2 chain(s); 60 ERC20 tokens, 1 ERC721 NFT, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
     "relationship_narrative": "The protocol comprises 7 functional families. Its contracts share 34 common project-authored base contract(s) (ethvault, vaultimmutables, vaultadmin). Dominant framework: openzeppelin.",
     "product_family_count": 7,
-    "total_contracts_indexed": 299,
+    "total_contracts_indexed": 296,
     "live_contracts": 113,
-    "inactive_contracts": 147,
+    "inactive_contracts": 144,
     "singleton_contracts": 0,
     "uninitialized_contracts": 0,
     "unknown_contracts": 39,
@@ -1069,7 +1069,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2020-11-19 19:46:06+03",
       "deploy_coverage_basis": null
@@ -1974,7 +1974,7 @@
       "source_verified": true,
       "verified_by_bytecode": false,
       "verification_bucket": "verified_unaudited",
-      "contamination_flag": "cleared",
+      "contamination_flag": "review",
       "is_live": true,
       "effective_deploy_date": "2024-10-24 12:23:59+03",
       "deploy_coverage_basis": null

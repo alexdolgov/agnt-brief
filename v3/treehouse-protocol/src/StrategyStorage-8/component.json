@@ -1,7 +1,7 @@
 {
   "component": "StrategyStorage-8",
   "main_contract": "StrategyStorage",
-  "source_file_count": 44,
+  "source_file_count": 47,
   "deployment_count": 1,
   "audited": true,
   "audits_covering": [
@@ -11,7 +11,7 @@
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0x4d9f1b673aa23e8c427d78df2d9390f724706755",
+      "address": "0x6276c3dc4f91fc231b9913eb6cc6c4da2e5dbb6c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

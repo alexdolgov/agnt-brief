@@ -34,7 +34,6 @@ interface IWasabiPerps {
     error InterestAmountNeeded();
     error ValueDeviatedTooMuch();
     error EthReceivedForNonEthCurrency();
-    error Deprecated();
 
     event PositionOpened(
         uint256 positionId,
@@ -93,13 +92,6 @@ interface IWasabiPerps {
 
     /// @dev Emitted when a new vault is created
     event NewVault(address indexed pool, address indexed asset, address vault);
-
-    /// @dev Flag specifying whether to send WETH to the trader, send ETH to the trader, or deposit WETH to the vault
-    enum PayoutType {
-        WRAPPED,
-        UNWRAPPED,
-        VAULT_DEPOSIT
-    }
 
     /// @dev Defines a function call
     struct FunctionCallData {
@@ -215,34 +207,24 @@ interface IWasabiPerps {
         Signature calldata _signature
     ) external payable;
 
-    /// @dev Opens a position on behalf of a user
-    /// @param _request the request to open a position
-    /// @param _signature the signature of the request
-    /// @param _trader the address of the user for whom the position is opened
-    function openPositionFor(
-        OpenPositionRequest calldata _request,
-        Signature calldata _signature,
-        address _trader
-    ) external payable;
-
     /// @dev Closes a position
-    /// @param _payoutType whether to send WETH to the trader, send ETH, or deposit WETH to the vault
+    /// @param _unwrapWETH whether to unwrap WETH or not
     /// @param _request the request to close a position
     /// @param _signature the signature of the request
     function closePosition(
-        PayoutType _payoutType,
+        bool _unwrapWETH,
         ClosePositionRequest calldata _request,
         Signature calldata _signature
     ) external payable;
 
     /// @dev Closes a position
-    /// @param _payoutType whether to send WETH to the trader, send ETH, or deposit WETH to the vault
+    /// @param _unwrapWETH whether to unwrap WETH or not
     /// @param _request the request to close a position
     /// @param _signature the signature of the request, signed by the ORDER_SIGNER_ROLE
     /// @param _order the order to close the position
     /// @param _orderSignature the signature of the order, signed by the owner of the position
     function closePosition(
-        PayoutType _payoutType,
+        bool _unwrapWETH,
         ClosePositionRequest calldata _request,
         Signature calldata _signature,
         ClosePositionOrder calldata _order,
@@ -250,12 +232,12 @@ interface IWasabiPerps {
     ) external payable;
 
     /// @dev Liquidates a position
-    /// @param _payoutType whether to send WETH to the trader, send ETH, or deposit WETH to the vault
+    /// @param _unwrapWETH whether to unwrap WETH or not
     /// @param _interest the interest to be paid
     /// @param _position the position to liquidate
     /// @param _swapFunctions the swap functions to use to liquidate the position
     function liquidatePosition(
-        PayoutType _payoutType,
+        bool _unwrapWETH,
         uint256 _interest,
         Position calldata _position,
         FunctionCallData[] calldata _swapFunctions
@@ -283,7 +265,4 @@ interface IWasabiPerps {
 
     /// @dev Adds a new vault
     function addVault(IWasabiVault _vault) external;
-
-    /// @dev Adds a new quote token
-    function addQuoteToken(address _token) external;
 }

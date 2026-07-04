@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 import { DestinationVault, IDestinationVault } from "src/vault/DestinationVault.sol";
 import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
@@ -65,10 +65,9 @@ contract AerodromeDestinationVault is DestinationVault {
         InitParams memory initParams = abi.decode(params_, (InitParams));
 
         address localGauge = initParams.aerodromeGauge;
-        Errors.verifyNotZero(localGauge, "localGauge");
-
-        // slither-disable-next-line missing-zero-check
         aerodromeGauge = localGauge;
+
+        Errors.verifyNotZero(localGauge, "localGauge");
 
         super.initialize(baseAsset_, underlyer_, rewarder_, incentiveCalculator_, additionalTrackedTokens_, params_);
 
@@ -117,11 +116,6 @@ contract AerodromeDestinationVault is DestinationVault {
     /// @inheritdoc IDestinationVault
     function poolType() external view override returns (string memory) {
         return isStable ? "sAMM" : "vAMM";
-    }
-
-    /// @inheritdoc IDestinationVault
-    function destType() external pure override returns (string memory) {
-        return "aeroStake";
     }
 
     /// @inheritdoc IDestinationVault
@@ -204,6 +198,15 @@ contract AerodromeDestinationVault is DestinationVault {
     function _validateCalculator(
         address incentiveCalculator
     ) internal view override {
-        // Nothing to validate
+        address calcGauge = address(AerodromeStakingIncentiveCalculator(incentiveCalculator).gauge());
+        address calcPool = address(AerodromeStakingIncentiveCalculator(incentiveCalculator).pool());
+        address poolAndLp = _underlying;
+
+        if (calcGauge != aerodromeGauge) {
+            revert InvalidIncentiveCalculator(calcGauge, aerodromeGauge, "gauge");
+        }
+        if (calcPool != poolAndLp) {
+            revert InvalidIncentiveCalculator(calcPool, poolAndLp, "pool");
+        }
     }
 }

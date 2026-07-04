@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "synapse",
-  "generated_at": "2026-07-03T21:06:58.379Z",
+  "generated_at": "2026-07-04T11:05:46.720Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-16bc",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -68,8 +68,8 @@
     }
   },
   "topography": {
-    "project_purpose": "Cross Chain Bridge. Structurally: 94 project-authored contract(s) across 10 chain(s); 1 ERC4626 vault, 25 ERC20 tokens, 1 ERC721 NFT, 3 ERC1155 multi-tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 10 functional families. Its contracts share 9 common project-authored base contract(s) (owned, strategyrole, ownerpausableupgradeable). Dominant framework: openzeppelin.",
+    "project_purpose": "Cross Chain Bridge. Structurally: 241 project-authored contract(s) across 13 chain(s); 1 ERC4626 vault, 61 ERC20 tokens, 1 ERC721 NFT, 3 ERC1155 multi-tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 10 functional families. Its contracts share 32 common project-authored base contract(s) (defaultrouter, defaultadapter, swap). Dominant framework: openzeppelin.",
     "product_family_count": 10,
     "total_contracts_indexed": 2690,
     "live_contracts": 340,

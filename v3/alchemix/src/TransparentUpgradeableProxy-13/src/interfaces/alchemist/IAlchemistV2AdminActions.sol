@@ -292,15 +292,6 @@ interface IAlchemistV2AdminActions {
     /// @param yieldToken The address of the yield token to snap.
     function snap(address yieldToken) external;
 
-    /// @notice Sweep all of 'rewardtoken' from the alchemist into the rewardCollector;
-    ///
-    /// @notice `msg.sender` must be the admin or this call will revert with an {Unauthorized} error.
-    /// @notice `rewardToken` must not be a yield or underlying token or this call will revert with a {UnsupportedToken} error.
-    ///
-    /// @param rewardToken The address of the reward token sweep.
-    /// @param yieldToken The address of the yield token whose rewards are being swept.
-    function sweepRewardTokens(address rewardToken, address yieldToken) external;
-
     /// @notice Set the address of the V1 transfer adapter.
     ///
     /// @notice `msg.sender` must be the admin or this call will revert with an {Unauthorized} error.
@@ -315,4 +306,12 @@ interface IAlchemistV2AdminActions {
     /// @param owner    The owner of the account whos debt to increase.
     /// @param debt     The amount of debt incoming from the V1 tranfer adapter.
     function transferDebtV1(address owner, int256 debt) external;
+
+    /// @notice Sweep all of a supported yield token out of the Alchemist to the admin.
+    ///
+    /// @notice `msg.sender` must be the admin or this call will revert with an {Unauthorized} error.
+    /// @notice `yieldToken` must be registered or this call will revert with an {UnsupportedToken} error.
+    ///
+    /// @param yieldToken The address of the yield token to sweep.
+    function sweep(address yieldToken) external;
 }

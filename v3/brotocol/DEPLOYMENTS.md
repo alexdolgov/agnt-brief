@@ -220,9 +220,9 @@
 | ethereum | `0x2ca0a2c31260cab77e84fbead81082861ef66c4c` | MezoBridge | impl | live | no |
 | ethereum | `0x2df927f8b46d74142fa3ddbd0626c1dcc93d4ee4` | BridgeEndpointWithSwap-3 | impl | live | no |
 | ethereum | `0x2dfdeb833c199ba5d166c90a3b25b0e72288076b` | Portal | impl | live | no |
-| ethereum | `0x2eea07a362baf48ac08d77e4ac4934f56584623c` | NttManager | proxy | live | no |
+| ethereum | `0x2eea07a362baf48ac08d77e4ac4934f56584623c` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0x30019d85a86abd3cda1167f4c052690c32fbdec2` | WalletProposalValidator | impl | live | no |
-| ethereum | `0x30a0e1ef6b647cdd9693fd06cc23b7c2c8feb40d` | NttManager | proxy | live | no |
+| ethereum | `0x30a0e1ef6b647cdd9693fd06cc23b7c2c8feb40d` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0x3106675ede4a64d70131247466fd8704a3d42123` | SortitionTree-2 | impl | live | no |
 | ethereum | `0x31761a152f1e96f966c041291644129144233b0b` | BridgeToken | impl | live | yes |
 | ethereum | `0x3264834ada73a8b0b132ee52fd5a367cf60e86c6` | Vyper_contract | impl | inactive | no |
@@ -258,7 +258,7 @@
 | ethereum | `0x51cda809dc64a060f35f6c96ef6927cabc992d94` | BridgeToken | impl | live | yes |
 | ethereum | `0x526c08e5532a9308b3fb33b7968ef78a5005d2ac` | VendingMachine | impl | live | no |
 | ethereum | `0x52818e501612d3c5b37b5f9b83b024342c277fd4` | TBTCVault | impl | live | no |
-| ethereum | `0x5293158bf7a81ed05418da497a80f7e6dbf4477e` | NttManager | proxy | live | no |
+| ethereum | `0x5293158bf7a81ed05418da497a80f7e6dbf4477e` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0x52b952d9e77fc89c7a0ab5b766e6560df778c35a` | NoOp | impl | inactive | no |
 | ethereum | `0x535e01f948458e0b64f9db2a01da6f32e240140f` | MaintainerProxy | impl | live | no |
 | ethereum | `0x53f26bfe896cc4267720cdaf64e9a0c8fa8f13c2` | SortitionTree-3 | impl | live | no |
@@ -420,7 +420,7 @@
 | ethereum | `0xf286ea706a2512d2b9232fe7f8b2724880230b45` | BridgeGovernance | impl | live | no |
 | ethereum | `0xf28f38176def1aee144a7120659c09d214885028` | BridgeEndpointWithSwap-7 | impl | live | no |
 | ethereum | `0xf526f0e238a3fd62fcf5f35b2cc7d6e7a9d09011` | SortitionTree | impl | live | no |
-| ethereum | `0xf5a08945d367e6d4c0b2c3a3033dc17669ad592b` | NttManager | proxy | live | no |
+| ethereum | `0xf5a08945d367e6d4c0b2c3a3033dc17669ad592b` | ERC1967Proxy | proxy | live | no |
 | ethereum | `0xf6680ea3b480ca2b72d96ea13ccaf2cfd8e6908c` | TransparentUpgradeableProxy-8 | proxy | live | no |
 | ethereum | `0xf6a1ca09e39b32f2d090c0088510f15fcce50648` | StakingPoolRewardsEscrowBeneficiary | impl | live | no |
 | ethereum | `0xf71fc6eab5835b9254e5c81500eb979aea042a7e` | TransparentUpgradeableProxy-3 | impl | inactive | no |

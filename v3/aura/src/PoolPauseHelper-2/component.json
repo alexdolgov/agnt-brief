@@ -2,7 +2,7 @@
   "component": "PoolPauseHelper-2",
   "main_contract": "PoolPauseHelper",
   "source_file_count": 23,
-  "deployment_count": 3,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -21,6 +21,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "optimism",
+      "chain_id": 10,
+      "address": "0x86e67e115f96df37239e0479441303de0de7bc2b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     },
     {
       "chain": "gnosis",

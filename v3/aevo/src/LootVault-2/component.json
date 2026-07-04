@@ -12,7 +12,7 @@
       "address": "0x85e9f93cdcc3b617b0790ac351f35b14b6bb9363",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "optimism",
@@ -20,7 +20,7 @@
       "address": "0x97fad2597a51bd04c53f107de3580dfd545139a4",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

@@ -5,7 +5,7 @@
 - Project: Sector Finance (`sector-finance`)
 - Website: [https://sector.finance](https://sector.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:52.923Z
+- Generated: 2026-07-04T11:05:46.531Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-d640
 - Chains: moonriver, optimism
 - Contract surface: 31 unique implementations (107 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-Yield. Structurally: 18 project-authored contract(s) across 2 chain(s); 6 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Yield. Structurally: 28 project-authored contract(s) across 2 chain(s); 11 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 4 functional families. Its contracts share 19 common project-authored base contract(s) (stratauth, auth, ibase). Dominant framework: openzeppelin.
+The protocol comprises 4 functional families. Its contracts share 26 common project-authored base contract(s) (stratauth, auth, ibase). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

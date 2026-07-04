@@ -9,18 +9,18 @@
     {
       "chain": "chain-146",
       "chain_id": 146,
-      "address": "0x0591c1f3e0d587f88261509c0f8295ce8474eb4d",
+      "address": "0x9075ecc69d1a75cc753df2bdcae9f16e4b187c2f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "chain-146",
       "chain_id": 146,
-      "address": "0x67da05fa6f53b6481c9f02fd8ae894035a31fe06",
+      "address": "0xfe0663433549ad250bd64bfb794e5f1f067aa92e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

@@ -5,7 +5,7 @@
 - Project: The Idols (`the-idols`)
 - Website: [https://www.theidols.io](https://www.theidols.io)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:07:00.776Z
+- Generated: 2026-07-04T11:05:47.633Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
 - Chains: ethereum
 - Contract surface: 23 unique implementations (26 raw deployments)

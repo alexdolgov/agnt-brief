@@ -2,7 +2,7 @@
   "component": "RouterConfig",
   "main_contract": "RouterConfig",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 18,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +12,143 @@
       "address": "0x0aa6262af21b85cbe396caf68d59aad8db3079fa",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x0f045b0aac51e0632b694c063e8cdbd3b0ccfc95",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x16aba2d28329620f31d44748ec82fa08daa50b86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x28bc979bdaedc315726d841814ceb8d9e3660d20",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x69d97643902bec5d58b3cd04e0801417a5a52d6a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x76c11a1de011de898802b1c81bce768d22b431b1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x7beb05cf5681f402e762f8569c2fc138a2172978",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9879abdea01a879644185341f7af7d8343556b7a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9aea86c37598cdbe6b0f8db95ac3cae62a3259bf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0x9b76b167db315da4f0ff7c608127811817bc4714",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xbccff1c6c1ca650f533d3dcc5f4722aae6718337",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd4844e892e18955d711d2b94b516e96e33dfa57e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xd69b31c3225728cc57ddaf9be532a4ee1620be51",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdccd7b567da13a11cde232522be708b2d1a14498",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xdf40c847be0e1b48990cb744f0a4ba8f58bb7b2f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xe6f658118bcc6d344c812826b1af13bd7d59956c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf1c55367b8e4742a7abf80968705795b07536804",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf27ee99622c3c9b264583dacb2cce056e194494f",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

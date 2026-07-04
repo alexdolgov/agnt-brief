@@ -5,7 +5,7 @@
 - Project: Fringe Finance (`fringe-finance`)
 - Website: [https://fringe.fi](https://fringe.fi)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:53.090Z
+- Generated: 2026-07-04T11:05:41.871Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-dfb3
 - Chains: arbitrum, base, ethereum, optimism, polygon, zksync-era
 - Contract surface: 1938 unique implementations (7702 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-Structural profile: 838 project-authored contract(s) across 5 chain(s); 3 ERC4626 vaults, 169 ERC20 tokens, 40 ERC721 NFTs, 7 ERC1155 multi-tokens, 4 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Structural profile: 882 project-authored contract(s) across 5 chain(s); 3 ERC4626 vaults, 179 ERC20 tokens, 40 ERC721 NFTs, 7 ERC1155 multi-tokens, 4 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 10 functional families. Its contracts share 162 common project-authored base contract(s) (erc20mintable, minterrole, erc20detailed). Dominant framework: openzeppelin.
+The protocol comprises 10 functional families. Its contracts share 169 common project-authored base contract(s) (erc20mintable, minterrole, erc20detailed). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

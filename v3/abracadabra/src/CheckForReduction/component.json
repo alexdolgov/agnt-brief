@@ -2,7 +2,7 @@
   "component": "CheckForReduction",
   "main_contract": "CheckForReduction",
   "source_file_count": 4,
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +12,23 @@
       "address": "0x426e43b82513f17e375681a15ded0c88720aca86",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x487b60622c59e56de566b7ca2efe18bba36e67e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xe1b0ed287da0db14537416f6ca2f1679e0536b52",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

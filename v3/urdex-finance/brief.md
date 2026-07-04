@@ -4,7 +4,7 @@
 
 - Project: UrDEX Finance (`urdex-finance`)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:07:03.011Z
+- Generated: 2026-07-04T11:05:47.766Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-d640
 - Chains: arbitrum
 - Contract surface: 81 unique implementations (110 raw deployments)

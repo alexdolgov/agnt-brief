@@ -1,11 +1,11 @@
 // SPDX-License-Identifier:UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
 
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 import { Math } from "openzeppelin-contracts/utils/math/Math.sol";
 import { IERC20Metadata } from "openzeppelin-contracts/token/ERC20/extensions/IERC20Metadata.sol";
-import { Errors } from "src/utils/Errors.sol";
+import { AutopilotErrors } from "src/utils/AutopilotErrors.sol";
 import { SecurityBase } from "src/security/SecurityBase.sol";
 import { ISystemRegistry } from "src/interfaces/ISystemRegistry.sol";
 import { IPriceOracle } from "src/interfaces/oracles/IPriceOracle.sol";
@@ -52,9 +52,9 @@ contract RootPriceOracle is SystemComponent, SecurityBase, IRootPriceOracle {
     /// @param token address of the token to register
     /// @param oracle address of the oracle to use to lookup price
     function registerMapping(address token, IPriceOracle oracle) external hasRole(Roles.ORACLE_MANAGER) {
-        Errors.verifyNotZero(token, "token");
-        Errors.verifyNotZero(address(oracle), "oracle");
-        Errors.verifySystemsMatch(address(this), address(oracle));
+        AutopilotErrors.verifyNotZero(token, "token");
+        AutopilotErrors.verifyNotZero(address(oracle), "oracle");
+        AutopilotErrors.verifySystemsMatch(address(this), address(oracle));
 
         // We want the operation of replacing a mapping to be an explicit
         // call so we don't accidentally overwrite something
@@ -77,10 +77,10 @@ contract RootPriceOracle is SystemComponent, SecurityBase, IRootPriceOracle {
         IPriceOracle oldOracle,
         IPriceOracle newOracle
     ) external hasRole(Roles.ORACLE_MANAGER) {
-        Errors.verifyNotZero(token, "token");
-        Errors.verifyNotZero(address(oldOracle), "oldOracle");
-        Errors.verifyNotZero(address(newOracle), "newOracle");
-        Errors.verifySystemsMatch(address(this), address(newOracle));
+        AutopilotErrors.verifyNotZero(token, "token");
+        AutopilotErrors.verifyNotZero(address(oldOracle), "oldOracle");
+        AutopilotErrors.verifyNotZero(address(newOracle), "newOracle");
+        AutopilotErrors.verifySystemsMatch(address(this), address(newOracle));
 
         // We want to ensure you know what you're replacing so ensure
         // you provide a matching old value
@@ -105,7 +105,7 @@ contract RootPriceOracle is SystemComponent, SecurityBase, IRootPriceOracle {
     function removeMapping(
         address token
     ) external hasRole(Roles.ORACLE_MANAGER) {
-        Errors.verifyNotZero(token, "token");
+        AutopilotErrors.verifyNotZero(token, "token");
 
         // If you're trying to remove something that doesn't exist then
         // some condition you're expecting isn't true. We revert so you can reevaluate
@@ -123,9 +123,9 @@ contract RootPriceOracle is SystemComponent, SecurityBase, IRootPriceOracle {
     /// @param pool address of the liquidity pool
     /// @param oracle address of the LP oracle
     function registerPoolMapping(address pool, ISpotPriceOracle oracle) external hasRole(Roles.ORACLE_MANAGER) {
-        Errors.verifyNotZero(pool, "pool");
-        Errors.verifyNotZero(address(oracle), "oracle");
-        Errors.verifySystemsMatch(address(this), address(oracle));
+        AutopilotErrors.verifyNotZero(pool, "pool");
+        AutopilotErrors.verifyNotZero(address(oracle), "oracle");
+        AutopilotErrors.verifySystemsMatch(address(this), address(oracle));
 
         if (address(poolMappings[pool]) != address(0)) {
             revert AlreadyRegistered(pool);
@@ -146,10 +146,10 @@ contract RootPriceOracle is SystemComponent, SecurityBase, IRootPriceOracle {
         ISpotPriceOracle oldOracle,
         ISpotPriceOracle newOracle
     ) external hasRole(Roles.ORACLE_MANAGER) {
-        Errors.verifyNotZero(pool, "pool");
-        Errors.verifyNotZero(address(oldOracle), "oldOracle");
-        Errors.verifyNotZero(address(newOracle), "newOracle");
-        Errors.verifySystemsMatch(address(this), address(newOracle));
+        AutopilotErrors.verifyNotZero(pool, "pool");
+        AutopilotErrors.verifyNotZero(address(oldOracle), "oldOracle");
+        AutopilotErrors.verifyNotZero(address(newOracle), "newOracle");
+        AutopilotErrors.verifySystemsMatch(address(this), address(newOracle));
 
         ISpotPriceOracle currentOracle = poolMappings[pool];
 
@@ -167,7 +167,7 @@ contract RootPriceOracle is SystemComponent, SecurityBase, IRootPriceOracle {
     function removePoolMapping(
         address pool
     ) external hasRole(Roles.ORACLE_MANAGER) {
-        Errors.verifyNotZero(pool, "pool");
+        AutopilotErrors.verifyNotZero(pool, "pool");
 
         if (address(poolMappings[pool]) == address(0)) revert MappingDoesNotExist(pool);
 
@@ -180,10 +180,10 @@ contract RootPriceOracle is SystemComponent, SecurityBase, IRootPriceOracle {
     /// @param token address of the token to set the threshold for
     /// @param threshold threshold to set (precision to 2 decimal places, i.e. 10000 = 100.00%)
     function setSafeSpotPriceThreshold(address token, uint256 threshold) external hasRole(Roles.ORACLE_MANAGER) {
-        Errors.verifyNotZero(token, "token");
-        Errors.verifyNotZero(threshold, "threshold");
+        AutopilotErrors.verifyNotZero(token, "token");
+        AutopilotErrors.verifyNotZero(threshold, "threshold");
 
-        if (threshold > THRESHOLD_PRECISION) revert Errors.InvalidParam("threshold");
+        if (threshold > THRESHOLD_PRECISION) revert AutopilotErrors.InvalidParam("threshold");
 
         safeSpotPriceThresholds[token] = threshold;
 
@@ -284,8 +284,8 @@ contract RootPriceOracle is SystemComponent, SecurityBase, IRootPriceOracle {
 
     /// @inheritdoc IRootPriceOracle
     function getSpotPriceInEth(address token, address pool) external returns (uint256 price) {
-        Errors.verifyNotZero(token, "token");
-        Errors.verifyNotZero(pool, "pool");
+        AutopilotErrors.verifyNotZero(token, "token");
+        AutopilotErrors.verifyNotZero(pool, "pool");
 
         ISpotPriceOracle oracle = _checkSpotOracleRegistration(pool);
 
@@ -322,7 +322,7 @@ contract RootPriceOracle is SystemComponent, SecurityBase, IRootPriceOracle {
         // if lp supply is 0 (while we hold it) means compromised pool, so return 0 for worth (and false for safety)
         uint256 nTokens = reserves.length;
         if (nTokens == 0) {
-            revert Errors.InvalidParam("reserves");
+            revert AutopilotErrors.InvalidParam("reserves");
         }
         if (totalLPSupply == 0) {
             return (0, 0, false);

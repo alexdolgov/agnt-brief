@@ -12,7 +12,7 @@
       "address": "0x8df6efec5547e31b0eb7d1291b511ff8a2bf987c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "gnosis",
@@ -20,7 +20,7 @@
       "address": "0xf23b4db826dba14c0e857029dff076b1c0264843",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

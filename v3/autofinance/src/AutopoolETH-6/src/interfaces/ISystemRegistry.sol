@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
 
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 import { IWETH9 } from "src/interfaces/utils/IWETH9.sol";
 import { IAccToke } from "src/interfaces/staking/IAccToke.sol";
@@ -58,9 +58,7 @@ interface ISystemRegistry {
 
     /// @notice Vault factory lookup by type
     /// @return vaultFactory instance of the vault factory for this vault type
-    function getAutopoolFactoryByType(
-        bytes32 vaultType
-    ) external view returns (IAutopoolFactory vaultFactory);
+    function getAutopoolFactoryByType(bytes32 vaultType) external view returns (IAutopoolFactory vaultFactory);
 
     /// @notice Get the stats calculator registry for this system
     /// @return registry instance of the registry for this system
@@ -85,9 +83,7 @@ interface ISystemRegistry {
     /// @notice Verify if given address is registered as Reward Token
     /// @param rewardToken token address to verify
     /// @return bool that indicates true if token is registered and false if not
-    function isRewardToken(
-        address rewardToken
-    ) external view returns (bool);
+    function isRewardToken(address rewardToken) external view returns (bool);
 
     /// @notice Get the system security instance for this system
     /// @return security instance of system security for this system
@@ -111,9 +107,7 @@ interface ISystemRegistry {
 
     /// @notice Returns the additional contract of the given type
     /// @dev Revert if not set
-    function getUniqueContract(
-        bytes32 contractType
-    ) external view returns (address);
+    function getUniqueContract(bytes32 contractType) external view returns (address);
 
     /// @notice Returns all unique contracts configured
     function listUniqueContracts() external view returns (bytes32[] memory contractTypes, address[] memory addresses);
@@ -123,7 +117,5 @@ interface ISystemRegistry {
 
     /// @notice Returns configured additional contracts by type
     /// @param contractType Type of contract to list
-    function listAdditionalContracts(
-        bytes32 contractType
-    ) external view returns (address[] memory);
+    function listAdditionalContracts(bytes32 contractType) external view returns (address[] memory);
 }

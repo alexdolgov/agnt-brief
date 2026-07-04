@@ -12,7 +12,7 @@
       "address": "0xc3ccace87f6d3a81724075adcb5ddd85a8a1bb68",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "polygon",
@@ -20,7 +20,7 @@
       "address": "0x1311fbc9f60359639174c1e7cc2032dbdb5cc4d1",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "polygon",
@@ -36,7 +36,7 @@
       "address": "0xad89051bed8d96f045e8912ae1672c6c0bf8a85e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "chain-252",
@@ -52,7 +52,7 @@
       "address": "0x9da18982a33fd0c7051b19f0d7c76f2d5e7e017c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

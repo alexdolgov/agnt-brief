@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "monox",
-  "generated_at": "2026-07-03T21:06:30.255Z",
+  "generated_at": "2026-07-04T11:05:43.943Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-d640",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -51,7 +51,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Dexs. Structurally: 66 project-authored contract(s) across 2 chain(s); 8 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "project_purpose": "Dexs. Structurally: 69 project-authored contract(s) across 2 chain(s); 10 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
     "relationship_narrative": "The protocol comprises 5 functional families. Its contracts share 12 common project-authored base contract(s) (chainlinkedoraclesimple, oraclesimple, auth). Dominant framework: openzeppelin.",
     "product_family_count": 5,
     "total_contracts_indexed": 127,

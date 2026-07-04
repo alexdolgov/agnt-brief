@@ -2,7 +2,7 @@
   "component": "EulerEarnVaultLens",
   "main_contract": "EulerEarnVaultLens",
   "source_file_count": 26,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +12,31 @@
       "address": "0x07d6b3981cbc1dc34102735b987b175116635091",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x20954c32bc063a125036b2563ca74fa98b5013d9",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa09144beae23d8e7836aeb0fe17dd2647241a8be",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf997706566ea9b0df3577c41a468a8337064084a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
     }
   ]
 }

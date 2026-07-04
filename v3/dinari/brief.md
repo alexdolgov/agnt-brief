@@ -5,7 +5,7 @@
 - Project: Dinari (`dinari`)
 - Website: [https://dinari.com](https://dinari.com)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:43.469Z
+- Generated: 2026-07-04T11:05:40.887Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-b097
 - Chains: arbitrum, base, blast, ethereum, hyperliquid
 - Contract surface: 94 unique implementations (256 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-RWA. Structurally: 38 project-authored contract(s) across 4 chain(s); 5 ERC4626 vaults, 10 ERC20 tokens, 2 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+RWA. Structurally: 98 project-authored contract(s) across 4 chain(s); 8 ERC4626 vaults, 14 ERC20 tokens, 2 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 6 functional families. Its contracts share 24 common project-authored base contract(s) (accesscontroldefaultadminrulesupgradeable, accesscontrolupgradeable, contextupgradeable). Dominant framework: openzeppelin.
+The protocol comprises 6 functional families. Its contracts share 27 common project-authored base contract(s) (accesscontroldefaultadminrulesupgradeable, accesscontrolupgradeable, contextupgradeable). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

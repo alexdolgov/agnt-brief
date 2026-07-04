@@ -12,7 +12,7 @@
 | ethereum | `0x0becde49394d537b240c0272a7c5fefc932691fe` | Vyper_contract-2 | impl | live | no |
 | ethereum | `0x0d4ce6ae89930713463256ab4216291271d30ef7` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x0e79ccf5e150c75baa4250456fb405ecec0c99dc` | LightKeeper | impl | live | no |
-| ethereum | `0x0f4841b8b3796f406fa44b17d89465657533732c` | BridgeAccountant | impl | inactive | yes |
+| ethereum | `0x0f4841b8b3796f406fa44b17d89465657533732c` | BridgeAccountant | impl | inactive | no |
 | ethereum | `0x0f554ff1c806b9bbacef88462e21d685e5d39c96` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x120d829aa8c0c6dccef25b193a9356e3c277d331` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x13cee5ac81a78f23be0b3846e9d5b622d62f3785` | MultiMorphoDirectAssetsProvider | impl | live | no |
@@ -27,14 +27,14 @@
 | ethereum | `0x2572e15f1c0806bb6d8efc0d867caa27bfaedc40` | PendleUSDGAssetsProviderV2 | impl | live | no |
 | ethereum | `0x3311d2a0d88597da3be946aa4d0d112b486bfde8` | PendlePTDiamond | proxy | live | yes |
 | ethereum | `0x35701bc7a94a9e37d57324a33d94d3721477262e` | TransparentUpgradeableProxy | proxy | live | yes |
-| ethereum | `0x37887c5b3c9c9d8cd2113aba6078f125cfa135a9` | SuperEarnMessageAgent | impl | inactive | yes |
+| ethereum | `0x37887c5b3c9c9d8cd2113aba6078f125cfa135a9` | SuperEarnMessageAgent | impl | inactive | no |
 | ethereum | `0x3b37db3ac2a58f2daba1a7d66d023937d61fc95b` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x3e92a93c7ae3c0d7aca27190b92f0f2db09becc7` | TransparentUpgradeableProxy | proxy | live | yes |
-| ethereum | `0x40fb0f9084828adbc3dcd71840ea545bf243cd0f` | BridgeAccountant | proxy | live | yes |
+| ethereum | `0x40fb0f9084828adbc3dcd71840ea545bf243cd0f` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x420ed2cca7d288a0e82cdad0ab9d5b93a81074ae` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x428c5503858810bfb0b4c2a6825fdf4fcd775071` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x46ee97692856dcaeeb7ce598f78b8eade7a18e2d` | AssetPriceConverter | impl | live | no |
-| ethereum | `0x4afd6ad5b924cd29513d1fb9b66728c4c5a1bd3e` | SuperEarnMessageAgent | proxy | live | yes |
+| ethereum | `0x4afd6ad5b924cd29513d1fb9b66728c4c5a1bd3e` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x4b3e992464f5a6f000cbaf5ec4ab5830b74466d2` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x4be44e4903d2b00651a03dce2fb76bba5d11ac98` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x4e3f34399bf0b92eb8b825ba9fd1ab2b211fc3f5` | TransparentUpgradeableProxy | proxy | live | yes |
@@ -71,7 +71,7 @@
 | ethereum | `0x80f4213809420e9751cbe2222fa3f50a3d714663` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x84e63d6ae32654bcdd5301e01e703959ac7a622c` | StUSDSAssetsProvider | impl | live | no |
 | ethereum | `0x8c82b2fec291a43e41aa87669eaef01f4efaa3b2` | TransparentUpgradeableProxy | proxy | live | yes |
-| ethereum | `0x8dbf7f2fe1d18c1de8853cfe7fa5c03ba7b85328` | BridgeAccountant | proxy | live | yes |
+| ethereum | `0x8dbf7f2fe1d18c1de8853cfe7fa5c03ba7b85328` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x8e53cdaa89381c203a074fb3388f65936358f200` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0x8f19e66b4ba81faae964232baa2bdc8118385822` | TransparentUpgradeableProxy | impl | live | yes |
 | ethereum | `0x908f3365fd2bb80f01efdc8eec063fb5f614e359` | TransparentUpgradeableProxy | proxy | live | yes |
@@ -117,7 +117,7 @@
 | ethereum | `0xe1ea0391730daf0bb071c8d27adff26f6a64d892` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0xe2c3082df0ea5f3606e7adf6aab1b559a03b5ab4` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0xe3582626a1d18358fb431133ee3e6f6a702e4be0` | TransparentUpgradeableProxy | proxy | live | yes |
-| ethereum | `0xe4cb0758785eb172adedd08660d7073029381e6d` | SuperEarnMessageAgent | proxy | live | yes |
+| ethereum | `0xe4cb0758785eb172adedd08660d7073029381e6d` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0xe8b1009c7bdd3502fea13b2d5a273addb0dda272` | CrosschainAdapter | proxy | live | yes |
 | ethereum | `0xea80c6176649115031f362d99a98a23229cd6215` | TransparentUpgradeableProxy | proxy | live | yes |
 | ethereum | `0xeb1f945d1d245e6fe83eb684e7b1a1cb935343c5` | TransparentUpgradeableProxy | proxy | live | yes |

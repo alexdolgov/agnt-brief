@@ -14,7 +14,7 @@
       "address": "0xb78c0d130dc07ba909ed5f6828abd5ea183b12bc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "ethereum",

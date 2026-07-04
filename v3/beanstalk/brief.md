@@ -7,7 +7,7 @@
 - Project: Beanstalk (`beanstalk`)
 - Website: [https://bean.money](https://bean.money)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-07-03T21:05:33.441Z
+- Generated: 2026-07-04T11:05:40.578Z
 - Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
 - Chains: arbitrum, ethereum
 - Contract surface: 591 unique implementations (1011 raw deployments)
@@ -17,16 +17,16 @@
 
 ## Project Description
 
-Algo-Stables. Structurally: 145 project-authored contract(s) across 2 chain(s); 20 ERC20 tokens, 2 ERC721 NFTs, 2 ERC1155 multi-tokens, 2 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Algo-Stables. Structurally: 171 project-authored contract(s) across 2 chain(s); 22 ERC20 tokens, 2 ERC721 NFTs, 2 ERC1155 multi-tokens, 2 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 8 functional families. Its contracts share 20 common project-authored base contract(s) (internalizer, fertilizer1155, podtransfer). Dominant framework: openzeppelin.
+The protocol comprises 8 functional families. Its contracts share 28 common project-authored base contract(s) (internalizer, fertilizer1155, siloentrance). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 1082; live-surface contracts included: 1009 (521 live, 488 unknown).
-- Excluded by liveness: 73 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 1037; live-surface contracts included: 1009 (521 live, 488 unknown).
+- Excluded by liveness: 28 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.

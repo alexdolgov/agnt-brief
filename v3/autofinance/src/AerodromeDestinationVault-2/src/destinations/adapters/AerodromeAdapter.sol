@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
 
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 import { IERC20 } from "openzeppelin-contracts/token/ERC20/IERC20.sol";
 
@@ -46,10 +46,10 @@ library AerodromeAdapter {
      * @param params AerodromeRemoveLiquidityParams struct with all the required params
      * @return actualAmounts Amounts of tokens received
      */
-    //slither-disable-start timestamp reentrancy-events
     function removeLiquidity(
         AerodromeRemoveLiquidityParams memory params
     ) external returns (uint256[] memory) {
+        //slither-disable-start reentrancy-events
         Errors.verifyNotZero(params.router, "router");
         Errors.verifyNotZero(params.maxLpBurnAmount, "maxLpBurnAmount");
         Errors.verifyNotZero(params.tokens[0], "tokens[0]");
@@ -70,7 +70,6 @@ library AerodromeAdapter {
         if (actualAmounts[0] < params.amounts[0]) revert LibAdapter.InvalidBalanceChange();
         if (actualAmounts[1] < params.amounts[1]) revert LibAdapter.InvalidBalanceChange();
 
-        // slither-disable-next-line reentrancy-events
         emit WithdrawLiquidity(
             [actualAmounts[0], actualAmounts[1]],
             [params.tokens[0], params.tokens[1]],
@@ -78,9 +77,9 @@ library AerodromeAdapter {
             address(params.pool)
         );
 
+        //slither-disable-end reentrancy-events
         return actualAmounts;
     }
-    //slither-disable-end timestamp reentrancy-events
 
     ///@dev This is a helper function to avoid stack-too-deep-errors
     function _runWithdrawal(

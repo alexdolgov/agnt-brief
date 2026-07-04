@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity 0.8.17;
+pragma solidity ^0.8.24;
 
 import { IAccessController } from "src/interfaces/security/IAccessController.sol";
-import { Errors } from "src/utils/Errors.sol";
+import { AutopilotErrors } from "src/utils/AutopilotErrors.sol";
 
 contract SecurityBase {
     IAccessController public immutable accessController;
@@ -26,7 +26,7 @@ contract SecurityBase {
     modifier hasRole(
         bytes32 role
     ) {
-        if (!accessController.hasRole(role, msg.sender)) revert Errors.AccessDenied();
+        if (!accessController.hasRole(role, msg.sender)) revert AutopilotErrors.AccessDenied();
         _;
     }
 

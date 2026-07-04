@@ -1,5 +1,4 @@
-// SPDX-License-Identifier: LicenseRef-Gyro-1.0
-// for information on licensing please see the README in the GitHub repository <https://github.com/gyrostable/concentrated-lps>.
+// SPDX-License-Identifier: GPL-3.0-or-later
 pragma solidity 0.7.6;
 pragma experimental ABIEncoderV2;
 
@@ -10,9 +9,6 @@ import "../interfaces/ICappedLiquidity.sol";
 
 import "@balancer-labs/v2-solidity-utils/contracts/helpers/IAuthentication.sol";
 
-/** @dev Enables caps on i) per-LP and ii) total caps on the pool size. Caps are in terms of BPT tokens! Pool functions
- * have to call _ensureCap() to enforce the cap.
- */
 abstract contract CappedLiquidity is ICappedLiquidity {
     using GyroFixedPoint for uint256;
 

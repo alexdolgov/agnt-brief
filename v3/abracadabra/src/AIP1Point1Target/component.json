@@ -2,7 +2,7 @@
   "component": "AIP1Point1Target",
   "main_contract": "AIP1Point1Target",
   "source_file_count": 5,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +12,15 @@
       "address": "0x4b075f1d7dce6f480bf87e45df2f2e1b1a430184",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x9e43f733da0445b35f038fb34a6fb8c2947b984c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

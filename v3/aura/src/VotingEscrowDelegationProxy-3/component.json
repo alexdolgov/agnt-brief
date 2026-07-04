@@ -1,18 +1,18 @@
 {
   "component": "VotingEscrowDelegationProxy-3",
   "main_contract": "VotingEscrowDelegationProxy",
-  "source_file_count": 19,
+  "source_file_count": 14,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "optimism",
-      "chain_id": 10,
-      "address": "0x9da18982a33fd0c7051b19f0d7c76f2d5e7e017c",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6f5a2ee11e7a772aeb5114a20d0d7c0ff61eb8a0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

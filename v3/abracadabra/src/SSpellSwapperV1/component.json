@@ -2,7 +2,7 @@
   "component": "SSpellSwapperV1",
   "main_contract": "SSpellSwapperV1",
   "source_file_count": 3,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +12,31 @@
       "address": "0x0c2e700c8eb3da2f70338c845354a3fe70d2c9fa",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x125238b61064ab2c00c3b22acb4b3b6e4732ae90",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4c96a8c69e583fb1fc57782f1385f00599a03a68",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xf6c91a7af5d193fda57cca21cba1b3bc662ccb89",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

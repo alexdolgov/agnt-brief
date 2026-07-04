@@ -5,7 +5,7 @@
 - Project: Tangible (`tangible`)
 - Website: [https://www.tangible.store](https://www.tangible.store)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:59.595Z
+- Generated: 2026-07-04T11:05:46.854Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-16bc
 - Chains: arbitrum, base, bsc, ethereum, optimism, polygon
 - Contract surface: 4130 unique implementations (5844 raw deployments)
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Yield. Structurally: 239 project-authored contract(s) across 5 chain(s); 1 ERC4626 vault, 14 ERC20 tokens, 6 ERC721 NFTs, 6 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Yield. Structurally: 253 project-authored contract(s) across 6 chain(s); 1 ERC4626 vault, 17 ERC20 tokens, 6 ERC721 NFTs, 6 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 

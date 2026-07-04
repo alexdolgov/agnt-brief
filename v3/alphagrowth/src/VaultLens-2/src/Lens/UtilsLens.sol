@@ -15,20 +15,12 @@ contract UtilsLens is Utils {
         oracleLens = OracleLens(_oracleLens);
     }
 
-    function computeSupplySPY(uint256 borrowSPY, uint256 cash, uint256 borrows, uint256 interestFee)
-        external
-        pure
-        returns (uint256)
-    {
-        return _computeSupplySPY(borrowSPY, cash, borrows, interestFee);
-    }
-
-    function computeAPYs(uint256 borrowSPY, uint256 supplySPY)
+    function computeAPYs(uint256 borrowSPY, uint256 cash, uint256 borrows, uint256 interestFee)
         external
         pure
         returns (uint256 borrowAPY, uint256 supplyAPY)
     {
-        return _computeAPYs(borrowSPY, supplySPY);
+        return _computeAPYs(borrowSPY, cash, borrows, interestFee);
     }
 
     function calculateTimeToLiquidation(
@@ -119,6 +111,8 @@ contract UtilsLens is Utils {
 
         for (uint256 i = 0; i < adapters.length; ++i) {
             result.oracle = adapters[i];
+            result.queryFailure = false;
+            result.queryFailureReason = "";
 
             (bool success, bytes memory data) =
                 result.oracle.staticcall(abi.encodeCall(IPriceOracle.getQuote, (amountIn, asset, unitOfAccount)));

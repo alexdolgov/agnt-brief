@@ -1,477 +1,400 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-pragma solidity >=0.7.0;
+pragma solidity =0.7.6;
 pragma abicoder v2;
 
 import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol';
-import '@uniswap/v3-core/contracts/libraries/TickMath.sol';
-import '@uniswap/v3-core/contracts/libraries/BitMath.sol';
+import '@uniswap/v3-core/contracts/libraries/FixedPoint128.sol';
 import '@uniswap/v3-core/contracts/libraries/FullMath.sol';
-import '@openzeppelin/contracts/utils/Strings.sol';
-import '@openzeppelin/contracts/math/SafeMath.sol';
-import '@openzeppelin/contracts/math/SignedSafeMath.sol';
-import 'base64-sol/base64.sol';
-import './HexStrings.sol';
-import './NFTSVG.sol';
 
-library NFTDescriptor {
-    using TickMath for int24;
-    using Strings for uint256;
-    using SafeMath for uint256;
-    using SafeMath for uint160;
-    using SafeMath for uint8;
-    using SignedSafeMath for int256;
-    using HexStrings for uint256;
+import './interfaces/INonfungiblePositionManager.sol';
+import './interfaces/INonfungibleTokenPositionDescriptor.sol';
+import './libraries/PositionKey.sol';
+import './libraries/PoolAddress.sol';
+import './base/LiquidityManagement.sol';
+import './base/PeripheryImmutableState.sol';
+import './base/Multicall.sol';
+import './base/ERC721Permit.sol';
+import './base/PeripheryValidation.sol';
+import './base/SelfPermit.sol';
+import './base/PoolInitializer.sol';
 
-    uint256 constant sqrt10X128 = 1076067327063303206878105757264492625226;
-
-    struct ConstructTokenURIParams {
-        uint256 tokenId;
-        address quoteTokenAddress;
-        address baseTokenAddress;
-        string quoteTokenSymbol;
-        string baseTokenSymbol;
-        uint8 quoteTokenDecimals;
-        uint8 baseTokenDecimals;
-        bool flipRatio;
+/// @title NFT positions
+/// @notice Wraps Uniswap V3 positions in the ERC721 non-fungible token interface
+contract NonfungiblePositionManager is
+    INonfungiblePositionManager,
+    Multicall,
+    ERC721Permit,
+    PeripheryImmutableState,
+    PoolInitializer,
+    LiquidityManagement,
+    PeripheryValidation,
+    SelfPermit
+{
+    // details about the uniswap position
+    struct Position {
+        // the nonce for permits
+        uint96 nonce;
+        // the address that is approved for spending this token
+        address operator;
+        // the ID of the pool with which this token is connected
+        uint80 poolId;
+        // the tick range of the position
         int24 tickLower;
         int24 tickUpper;
-        int24 tickCurrent;
-        int24 tickSpacing;
-        uint24 fee;
-        address poolAddress;
+        // the liquidity of the position
+        uint128 liquidity;
+        // the fee growth of the aggregate position as of the last action on the individual position
+        uint256 feeGrowthInside0LastX128;
+        uint256 feeGrowthInside1LastX128;
+        // how many uncollected tokens are owed to the position, as of the last computation
+        uint128 tokensOwed0;
+        uint128 tokensOwed1;
     }
 
-    function constructTokenURI(ConstructTokenURIParams memory params) public pure returns (string memory) {
-        string memory name = generateName(params, feeToPercentString(params.fee));
-        string memory descriptionPartOne =
-            generateDescriptionPartOne(
-                escapeQuotes(params.quoteTokenSymbol),
-                escapeQuotes(params.baseTokenSymbol),
-                addressToString(params.poolAddress)
-            );
-        string memory descriptionPartTwo =
-            generateDescriptionPartTwo(
-                params.tokenId.toString(),
-                escapeQuotes(params.baseTokenSymbol),
-                addressToString(params.quoteTokenAddress),
-                addressToString(params.baseTokenAddress),
-                feeToPercentString(params.fee)
-            );
-        string memory image = Base64.encode(bytes(generateSVGImage(params)));
+    /// @dev IDs of pools assigned by this contract
+    mapping(address => uint80) private _poolIds;
 
-        return
-            string(
-                abi.encodePacked(
-                    'data:application/json;base64,',
-                    Base64.encode(
-                        bytes(
-                            abi.encodePacked(
-                                '{"name":"',
-                                name,
-                                '", "description":"',
-                                descriptionPartOne,
-                                descriptionPartTwo,
-                                '", "image": "',
-                                'data:image/svg+xml;base64,',
-                                image,
-                                '"}'
-                            )
-                        )
-                    )
-                )
-            );
+    /// @dev Pool keys by pool ID, to save on SSTOREs for position data
+    mapping(uint80 => PoolAddress.PoolKey) private _poolIdToPoolKey;
+
+    /// @dev The token ID position data
+    mapping(uint256 => Position) private _positions;
+
+    /// @dev The ID of the next token that will be minted. Skips 0
+    uint176 private _nextId = 1;
+    /// @dev The ID of the next pool that is used for the first time. Skips 0
+    uint80 private _nextPoolId = 1;
+
+    /// @dev The address of the token descriptor contract, which handles generating token URIs for position tokens
+    address private immutable _tokenDescriptor;
+
+    constructor(
+        address _factory,
+        address _WETH9,
+        address _tokenDescriptor_
+    ) ERC721Permit('Uniswap V3 Positions NFT-V1', 'UNI-V3-POS', '1') PeripheryImmutableState(_factory, _WETH9) {
+        _tokenDescriptor = _tokenDescriptor_;
     }
 
-    function escapeQuotes(string memory symbol) internal pure returns (string memory) {
-        bytes memory symbolBytes = bytes(symbol);
-        uint8 quotesCount = 0;
-        for (uint8 i = 0; i < symbolBytes.length; i++) {
-            if (symbolBytes[i] == '"') {
-                quotesCount++;
-            }
-        }
-        if (quotesCount > 0) {
-            bytes memory escapedBytes = new bytes(symbolBytes.length + (quotesCount));
-            uint256 index;
-            for (uint8 i = 0; i < symbolBytes.length; i++) {
-                if (symbolBytes[i] == '"') {
-                    escapedBytes[index++] = '\\';
-                }
-                escapedBytes[index++] = symbolBytes[i];
-            }
-            return string(escapedBytes);
-        }
-        return symbol;
-    }
-
-    function generateDescriptionPartOne(
-        string memory quoteTokenSymbol,
-        string memory baseTokenSymbol,
-        string memory poolAddress
-    ) private pure returns (string memory) {
-        return
-            string(
-                abi.encodePacked(
-                    'This NFT represents a liquidity position in a Uniswap V3 ',
-                    quoteTokenSymbol,
-                    '-',
-                    baseTokenSymbol,
-                    ' pool. ',
-                    'The owner of this NFT can modify or redeem the position.\\n',
-                    '\\nPool Address: ',
-                    poolAddress,
-                    '\\n',
-                    quoteTokenSymbol
-                )
-            );
-    }
-
-    function generateDescriptionPartTwo(
-        string memory tokenId,
-        string memory baseTokenSymbol,
-        string memory quoteTokenAddress,
-        string memory baseTokenAddress,
-        string memory feeTier
-    ) private pure returns (string memory) {
-        return
-            string(
-                abi.encodePacked(
-                    ' Address: ',
-                    quoteTokenAddress,
-                    '\\n',
-                    baseTokenSymbol,
-                    ' Address: ',
-                    baseTokenAddress,
-                    '\\nFee Tier: ',
-                    feeTier,
-                    '\\nToken ID: ',
-                    tokenId,
-                    '\\n\\n',
-                    unicode'⚠️ DISCLAIMER: Due diligence is imperative when assessing this NFT. Make sure token addresses match the expected tokens, as token symbols may be imitated.'
-                )
-            );
-    }
-
-    function generateName(ConstructTokenURIParams memory params, string memory feeTier)
-        private
-        pure
-        returns (string memory)
+    /// @inheritdoc INonfungiblePositionManager
+    function positions(uint256 tokenId)
+        external
+        view
+        override
+        returns (
+            uint96 nonce,
+            address operator,
+            address token0,
+            address token1,
+            uint24 fee,
+            int24 tickLower,
+            int24 tickUpper,
+            uint128 liquidity,
+            uint256 feeGrowthInside0LastX128,
+            uint256 feeGrowthInside1LastX128,
+            uint128 tokensOwed0,
+            uint128 tokensOwed1
+        )
     {
-        return
-            string(
-                abi.encodePacked(
-                    'Uniswap - ',
-                    feeTier,
-                    ' - ',
-                    escapeQuotes(params.quoteTokenSymbol),
-                    '/',
-                    escapeQuotes(params.baseTokenSymbol),
-                    ' - ',
-                    tickToDecimalString(
-                        !params.flipRatio ? params.tickLower : params.tickUpper,
-                        params.tickSpacing,
-                        params.baseTokenDecimals,
-                        params.quoteTokenDecimals,
-                        params.flipRatio
-                    ),
-                    '<>',
-                    tickToDecimalString(
-                        !params.flipRatio ? params.tickUpper : params.tickLower,
-                        params.tickSpacing,
-                        params.baseTokenDecimals,
-                        params.quoteTokenDecimals,
-                        params.flipRatio
-                    )
-                )
-            );
+        Position memory position = _positions[tokenId];
+        require(position.poolId != 0, 'Invalid token ID');
+        PoolAddress.PoolKey memory poolKey = _poolIdToPoolKey[position.poolId];
+        return (
+            position.nonce,
+            position.operator,
+            poolKey.token0,
+            poolKey.token1,
+            poolKey.fee,
+            position.tickLower,
+            position.tickUpper,
+            position.liquidity,
+            position.feeGrowthInside0LastX128,
+            position.feeGrowthInside1LastX128,
+            position.tokensOwed0,
+            position.tokensOwed1
+        );
     }
 
-    struct DecimalStringParams {
-        // significant figures of decimal
-        uint256 sigfigs;
-        // length of decimal string
-        uint8 bufferLength;
-        // ending index for significant figures (funtion works backwards when copying sigfigs)
-        uint8 sigfigIndex;
-        // index of decimal place (0 if no decimal)
-        uint8 decimalIndex;
-        // start index for trailing/leading 0's for very small/large numbers
-        uint8 zerosStartIndex;
-        // end index for trailing/leading 0's for very small/large numbers
-        uint8 zerosEndIndex;
-        // true if decimal number is less than one
-        bool isLessThanOne;
-        // true if string should include "%"
-        bool isPercent;
-    }
-
-    function generateDecimalString(DecimalStringParams memory params) private pure returns (string memory) {
-        bytes memory buffer = new bytes(params.bufferLength);
-        if (params.isPercent) {
-            buffer[buffer.length - 1] = '%';
-        }
-        if (params.isLessThanOne) {
-            buffer[0] = '0';
-            buffer[1] = '.';
-        }
-
-        // add leading/trailing 0's
-        for (uint256 zerosCursor = params.zerosStartIndex; zerosCursor < params.zerosEndIndex.add(1); zerosCursor++) {
-            buffer[zerosCursor] = bytes1(uint8(48));
-        }
-        // add sigfigs
-        while (params.sigfigs > 0) {
-            if (params.decimalIndex > 0 && params.sigfigIndex == params.decimalIndex) {
-                buffer[params.sigfigIndex--] = '.';
-            }
-            buffer[params.sigfigIndex--] = bytes1(uint8(uint256(48).add(params.sigfigs % 10)));
-            params.sigfigs /= 10;
-        }
-        return string(buffer);
-    }
-
-    function tickToDecimalString(
-        int24 tick,
-        int24 tickSpacing,
-        uint8 baseTokenDecimals,
-        uint8 quoteTokenDecimals,
-        bool flipRatio
-    ) internal pure returns (string memory) {
-        if (tick == (TickMath.MIN_TICK / tickSpacing) * tickSpacing) {
-            return !flipRatio ? 'MIN' : 'MAX';
-        } else if (tick == (TickMath.MAX_TICK / tickSpacing) * tickSpacing) {
-            return !flipRatio ? 'MAX' : 'MIN';
-        } else {
-            uint160 sqrtRatioX96 = TickMath.getSqrtRatioAtTick(tick);
-            if (flipRatio) {
-                sqrtRatioX96 = uint160(uint256(1 << 192).div(sqrtRatioX96));
-            }
-            return fixedPointToDecimalString(sqrtRatioX96, baseTokenDecimals, quoteTokenDecimals);
+    /// @dev Caches a pool key
+    function cachePoolKey(address pool, PoolAddress.PoolKey memory poolKey) private returns (uint80 poolId) {
+        poolId = _poolIds[pool];
+        if (poolId == 0) {
+            _poolIds[pool] = (poolId = _nextPoolId++);
+            _poolIdToPoolKey[poolId] = poolKey;
         }
     }
 
-    function sigfigsRounded(uint256 value, uint8 digits) private pure returns (uint256, bool) {
-        bool extraDigit;
-        if (digits > 5) {
-            value = value.div((10**(digits - 5)));
-        }
-        bool roundUp = value % 10 > 4;
-        value = value.div(10);
-        if (roundUp) {
-            value = value + 1;
-        }
-        // 99999 -> 100000 gives an extra sigfig
-        if (value == 100000) {
-            value /= 10;
-            extraDigit = true;
-        }
-        return (value, extraDigit);
-    }
-
-    function adjustForDecimalPrecision(
-        uint160 sqrtRatioX96,
-        uint8 baseTokenDecimals,
-        uint8 quoteTokenDecimals
-    ) private pure returns (uint256 adjustedSqrtRatioX96) {
-        uint256 difference = abs(int256(baseTokenDecimals).sub(int256(quoteTokenDecimals)));
-        if (difference > 0 && difference <= 18) {
-            if (baseTokenDecimals > quoteTokenDecimals) {
-                adjustedSqrtRatioX96 = sqrtRatioX96.mul(10**(difference.div(2)));
-                if (difference % 2 == 1) {
-                    adjustedSqrtRatioX96 = FullMath.mulDiv(adjustedSqrtRatioX96, sqrt10X128, 1 << 128);
-                }
-            } else {
-                adjustedSqrtRatioX96 = sqrtRatioX96.div(10**(difference.div(2)));
-                if (difference % 2 == 1) {
-                    adjustedSqrtRatioX96 = FullMath.mulDiv(adjustedSqrtRatioX96, 1 << 128, sqrt10X128);
-                }
-            }
-        } else {
-            adjustedSqrtRatioX96 = uint256(sqrtRatioX96);
-        }
-    }
-
-    function abs(int256 x) private pure returns (uint256) {
-        return uint256(x >= 0 ? x : -x);
-    }
-
-    // @notice Returns string that includes first 5 significant figures of a decimal number
-    // @param sqrtRatioX96 a sqrt price
-    function fixedPointToDecimalString(
-        uint160 sqrtRatioX96,
-        uint8 baseTokenDecimals,
-        uint8 quoteTokenDecimals
-    ) internal pure returns (string memory) {
-        uint256 adjustedSqrtRatioX96 = adjustForDecimalPrecision(sqrtRatioX96, baseTokenDecimals, quoteTokenDecimals);
-        uint256 value = FullMath.mulDiv(adjustedSqrtRatioX96, adjustedSqrtRatioX96, 1 << 64);
-
-        bool priceBelow1 = adjustedSqrtRatioX96 < 2**96;
-        if (priceBelow1) {
-            // 10 ** 43 is precision needed to retreive 5 sigfigs of smallest possible price + 1 for rounding
-            value = FullMath.mulDiv(value, 10**44, 1 << 128);
-        } else {
-            // leave precision for 4 decimal places + 1 place for rounding
-            value = FullMath.mulDiv(value, 10**5, 1 << 128);
-        }
-
-        // get digit count
-        uint256 temp = value;
-        uint8 digits;
-        while (temp != 0) {
-            digits++;
-            temp /= 10;
-        }
-        // don't count extra digit kept for rounding
-        digits = digits - 1;
-
-        // address rounding
-        (uint256 sigfigs, bool extraDigit) = sigfigsRounded(value, digits);
-        if (extraDigit) {
-            digits++;
-        }
-
-        DecimalStringParams memory params;
-        if (priceBelow1) {
-            // 7 bytes ( "0." and 5 sigfigs) + leading 0's bytes
-            params.bufferLength = uint8(uint8(7).add(uint8(43).sub(digits)));
-            params.zerosStartIndex = 2;
-            params.zerosEndIndex = uint8(uint256(43).sub(digits).add(1));
-            params.sigfigIndex = uint8(params.bufferLength.sub(1));
-        } else if (digits >= 9) {
-            // no decimal in price string
-            params.bufferLength = uint8(digits.sub(4));
-            params.zerosStartIndex = 5;
-            params.zerosEndIndex = uint8(params.bufferLength.sub(1));
-            params.sigfigIndex = 4;
-        } else {
-            // 5 sigfigs surround decimal
-            params.bufferLength = 6;
-            params.sigfigIndex = 5;
-            params.decimalIndex = uint8(digits.sub(5).add(1));
-        }
-        params.sigfigs = sigfigs;
-        params.isLessThanOne = priceBelow1;
-        params.isPercent = false;
-
-        return generateDecimalString(params);
-    }
-
-    // @notice Returns string as decimal percentage of fee amount.
-    // @param fee fee amount
-    function feeToPercentString(uint24 fee) internal pure returns (string memory) {
-        if (fee == 0) {
-            return '0%';
-        }
-        uint24 temp = fee;
-        uint256 digits;
-        uint8 numSigfigs;
-        while (temp != 0) {
-            if (numSigfigs > 0) {
-                // count all digits preceding least significant figure
-                numSigfigs++;
-            } else if (temp % 10 != 0) {
-                numSigfigs++;
-            }
-            digits++;
-            temp /= 10;
-        }
-
-        DecimalStringParams memory params;
-        uint256 nZeros;
-        if (digits >= 5) {
-            // if decimal > 1 (5th digit is the ones place)
-            uint256 decimalPlace = digits.sub(numSigfigs) >= 4 ? 0 : 1;
-            nZeros = digits.sub(5) < (numSigfigs.sub(1)) ? 0 : digits.sub(5).sub(numSigfigs.sub(1));
-            params.zerosStartIndex = numSigfigs;
-            params.zerosEndIndex = uint8(params.zerosStartIndex.add(nZeros).sub(1));
-            params.sigfigIndex = uint8(params.zerosStartIndex.sub(1).add(decimalPlace));
-            params.bufferLength = uint8(nZeros.add(numSigfigs.add(1)).add(decimalPlace));
-        } else {
-            // else if decimal < 1
-            nZeros = uint256(5).sub(digits);
-            params.zerosStartIndex = 2;
-            params.zerosEndIndex = uint8(nZeros.add(params.zerosStartIndex).sub(1));
-            params.bufferLength = uint8(nZeros.add(numSigfigs.add(2)));
-            params.sigfigIndex = uint8((params.bufferLength).sub(2));
-            params.isLessThanOne = true;
-        }
-        params.sigfigs = uint256(fee).div(10**(digits.sub(numSigfigs)));
-        params.isPercent = true;
-        params.decimalIndex = digits > 4 ? uint8(digits.sub(4)) : 0;
-
-        return generateDecimalString(params);
-    }
-
-    function addressToString(address addr) internal pure returns (string memory) {
-        return (uint256(addr)).toHexString(20);
-    }
-
-    function generateSVGImage(ConstructTokenURIParams memory params) internal pure returns (string memory svg) {
-        NFTSVG.SVGParams memory svgParams =
-            NFTSVG.SVGParams({
-                quoteToken: addressToString(params.quoteTokenAddress),
-                baseToken: addressToString(params.baseTokenAddress),
-                poolAddress: params.poolAddress,
-                quoteTokenSymbol: params.quoteTokenSymbol,
-                baseTokenSymbol: params.baseTokenSymbol,
-                feeTier: feeToPercentString(params.fee),
+    /// @inheritdoc INonfungiblePositionManager
+    function mint(MintParams calldata params)
+        external
+        payable
+        override
+        checkDeadline(params.deadline)
+        returns (
+            uint256 tokenId,
+            uint128 liquidity,
+            uint256 amount0,
+            uint256 amount1
+        )
+    {
+        IUniswapV3Pool pool;
+        (liquidity, amount0, amount1, pool) = addLiquidity(
+            AddLiquidityParams({
+                token0: params.token0,
+                token1: params.token1,
+                fee: params.fee,
+                recipient: address(this),
                 tickLower: params.tickLower,
                 tickUpper: params.tickUpper,
-                tickSpacing: params.tickSpacing,
-                overRange: overRange(params.tickLower, params.tickUpper, params.tickCurrent),
-                tokenId: params.tokenId,
-                color0: tokenToColorHex(uint256(params.quoteTokenAddress), 136),
-                color1: tokenToColorHex(uint256(params.baseTokenAddress), 136),
-                color2: tokenToColorHex(uint256(params.quoteTokenAddress), 0),
-                color3: tokenToColorHex(uint256(params.baseTokenAddress), 0),
-                x1: scale(getCircleCoord(uint256(params.quoteTokenAddress), 16, params.tokenId), 0, 255, 16, 274),
-                y1: scale(getCircleCoord(uint256(params.baseTokenAddress), 16, params.tokenId), 0, 255, 100, 484),
-                x2: scale(getCircleCoord(uint256(params.quoteTokenAddress), 32, params.tokenId), 0, 255, 16, 274),
-                y2: scale(getCircleCoord(uint256(params.baseTokenAddress), 32, params.tokenId), 0, 255, 100, 484),
-                x3: scale(getCircleCoord(uint256(params.quoteTokenAddress), 48, params.tokenId), 0, 255, 16, 274),
-                y3: scale(getCircleCoord(uint256(params.baseTokenAddress), 48, params.tokenId), 0, 255, 100, 484)
-            });
+                amount0Desired: params.amount0Desired,
+                amount1Desired: params.amount1Desired,
+                amount0Min: params.amount0Min,
+                amount1Min: params.amount1Min
+            })
+        );
 
-        return NFTSVG.generateSVG(svgParams);
+        _mint(params.recipient, (tokenId = _nextId++));
+
+        bytes32 positionKey = PositionKey.compute(address(this), params.tickLower, params.tickUpper);
+        (, uint256 feeGrowthInside0LastX128, uint256 feeGrowthInside1LastX128, , ) = pool.positions(positionKey);
+
+        // idempotent set
+        uint80 poolId =
+            cachePoolKey(
+                address(pool),
+                PoolAddress.PoolKey({token0: params.token0, token1: params.token1, fee: params.fee})
+            );
+
+        _positions[tokenId] = Position({
+            nonce: 0,
+            operator: address(0),
+            poolId: poolId,
+            tickLower: params.tickLower,
+            tickUpper: params.tickUpper,
+            liquidity: liquidity,
+            feeGrowthInside0LastX128: feeGrowthInside0LastX128,
+            feeGrowthInside1LastX128: feeGrowthInside1LastX128,
+            tokensOwed0: 0,
+            tokensOwed1: 0
+        });
+
+        emit IncreaseLiquidity(tokenId, liquidity, amount0, amount1);
     }
 
-    function overRange(
-        int24 tickLower,
-        int24 tickUpper,
-        int24 tickCurrent
-    ) private pure returns (int8) {
-        if (tickCurrent < tickLower) {
-            return -1;
-        } else if (tickCurrent > tickUpper) {
-            return 1;
-        } else {
-            return 0;
+    modifier isAuthorizedForToken(uint256 tokenId) {
+        require(_isApprovedOrOwner(msg.sender, tokenId), 'Not approved');
+        _;
+    }
+
+    function tokenURI(uint256 tokenId) public view override(ERC721, IERC721Metadata) returns (string memory) {
+        require(_exists(tokenId));
+        return INonfungibleTokenPositionDescriptor(_tokenDescriptor).tokenURI(this, tokenId);
+    }
+
+    // save bytecode by removing implementation of unused method
+    function baseURI() public pure override returns (string memory) {}
+
+    /// @inheritdoc INonfungiblePositionManager
+    function increaseLiquidity(IncreaseLiquidityParams calldata params)
+        external
+        payable
+        override
+        checkDeadline(params.deadline)
+        returns (
+            uint128 liquidity,
+            uint256 amount0,
+            uint256 amount1
+        )
+    {
+        Position storage position = _positions[params.tokenId];
+
+        PoolAddress.PoolKey memory poolKey = _poolIdToPoolKey[position.poolId];
+
+        IUniswapV3Pool pool;
+        (liquidity, amount0, amount1, pool) = addLiquidity(
+            AddLiquidityParams({
+                token0: poolKey.token0,
+                token1: poolKey.token1,
+                fee: poolKey.fee,
+                tickLower: position.tickLower,
+                tickUpper: position.tickUpper,
+                amount0Desired: params.amount0Desired,
+                amount1Desired: params.amount1Desired,
+                amount0Min: params.amount0Min,
+                amount1Min: params.amount1Min,
+                recipient: address(this)
+            })
+        );
+
+        bytes32 positionKey = PositionKey.compute(address(this), position.tickLower, position.tickUpper);
+
+        // this is now updated to the current transaction
+        (, uint256 feeGrowthInside0LastX128, uint256 feeGrowthInside1LastX128, , ) = pool.positions(positionKey);
+
+        position.tokensOwed0 += uint128(
+            FullMath.mulDiv(
+                feeGrowthInside0LastX128 - position.feeGrowthInside0LastX128,
+                position.liquidity,
+                FixedPoint128.Q128
+            )
+        );
+        position.tokensOwed1 += uint128(
+            FullMath.mulDiv(
+                feeGrowthInside1LastX128 - position.feeGrowthInside1LastX128,
+                position.liquidity,
+                FixedPoint128.Q128
+            )
+        );
+
+        position.feeGrowthInside0LastX128 = feeGrowthInside0LastX128;
+        position.feeGrowthInside1LastX128 = feeGrowthInside1LastX128;
+        position.liquidity += liquidity;
+
+        emit IncreaseLiquidity(params.tokenId, liquidity, amount0, amount1);
+    }
+
+    /// @inheritdoc INonfungiblePositionManager
+    function decreaseLiquidity(DecreaseLiquidityParams calldata params)
+        external
+        payable
+        override
+        isAuthorizedForToken(params.tokenId)
+        checkDeadline(params.deadline)
+        returns (uint256 amount0, uint256 amount1)
+    {
+        require(params.liquidity > 0);
+        Position storage position = _positions[params.tokenId];
+
+        uint128 positionLiquidity = position.liquidity;
+        require(positionLiquidity >= params.liquidity);
+
+        PoolAddress.PoolKey memory poolKey = _poolIdToPoolKey[position.poolId];
+        IUniswapV3Pool pool = IUniswapV3Pool(PoolAddress.computeAddress(factory, poolKey));
+        (amount0, amount1) = pool.burn(position.tickLower, position.tickUpper, params.liquidity);
+
+        require(amount0 >= params.amount0Min && amount1 >= params.amount1Min, 'Price slippage check');
+
+        bytes32 positionKey = PositionKey.compute(address(this), position.tickLower, position.tickUpper);
+        // this is now updated to the current transaction
+        (, uint256 feeGrowthInside0LastX128, uint256 feeGrowthInside1LastX128, , ) = pool.positions(positionKey);
+
+        position.tokensOwed0 +=
+            uint128(amount0) +
+            uint128(
+                FullMath.mulDiv(
+                    feeGrowthInside0LastX128 - position.feeGrowthInside0LastX128,
+                    positionLiquidity,
+                    FixedPoint128.Q128
+                )
+            );
+        position.tokensOwed1 +=
+            uint128(amount1) +
+            uint128(
+                FullMath.mulDiv(
+                    feeGrowthInside1LastX128 - position.feeGrowthInside1LastX128,
+                    positionLiquidity,
+                    FixedPoint128.Q128
+                )
+            );
+
+        position.feeGrowthInside0LastX128 = feeGrowthInside0LastX128;
+        position.feeGrowthInside1LastX128 = feeGrowthInside1LastX128;
+        // subtraction is safe because we checked positionLiquidity is gte params.liquidity
+        position.liquidity = positionLiquidity - params.liquidity;
+
+        emit DecreaseLiquidity(params.tokenId, params.liquidity, amount0, amount1);
+    }
+
+    /// @inheritdoc INonfungiblePositionManager
+    function collect(CollectParams calldata params)
+        external
+        payable
+        override
+        isAuthorizedForToken(params.tokenId)
+        returns (uint256 amount0, uint256 amount1)
+    {
+        require(params.amount0Max > 0 || params.amount1Max > 0);
+        // allow collecting to the nft position manager address with address 0
+        address recipient = params.recipient == address(0) ? address(this) : params.recipient;
+
+        Position storage position = _positions[params.tokenId];
+
+        PoolAddress.PoolKey memory poolKey = _poolIdToPoolKey[position.poolId];
+
+        IUniswapV3Pool pool = IUniswapV3Pool(PoolAddress.computeAddress(factory, poolKey));
+
+        (uint128 tokensOwed0, uint128 tokensOwed1) = (position.tokensOwed0, position.tokensOwed1);
+
+        // trigger an update of the position fees owed and fee growth snapshots if it has any liquidity
+        if (position.liquidity > 0) {
+            pool.burn(position.tickLower, position.tickUpper, 0);
+            (, uint256 feeGrowthInside0LastX128, uint256 feeGrowthInside1LastX128, , ) =
+                pool.positions(PositionKey.compute(address(this), position.tickLower, position.tickUpper));
+
+            tokensOwed0 += uint128(
+                FullMath.mulDiv(
+                    feeGrowthInside0LastX128 - position.feeGrowthInside0LastX128,
+                    position.liquidity,
+                    FixedPoint128.Q128
+                )
+            );
+            tokensOwed1 += uint128(
+                FullMath.mulDiv(
+                    feeGrowthInside1LastX128 - position.feeGrowthInside1LastX128,
+                    position.liquidity,
+                    FixedPoint128.Q128
+                )
+            );
+
+            position.feeGrowthInside0LastX128 = feeGrowthInside0LastX128;
+            position.feeGrowthInside1LastX128 = feeGrowthInside1LastX128;
         }
+
+        // compute the arguments to give to the pool#collect method
+        (uint128 amount0Collect, uint128 amount1Collect) =
+            (
+                params.amount0Max > tokensOwed0 ? tokensOwed0 : params.amount0Max,
+                params.amount1Max > tokensOwed1 ? tokensOwed1 : params.amount1Max
+            );
+
+        // the actual amounts collected are returned
+        (amount0, amount1) = pool.collect(
+            recipient,
+            position.tickLower,
+            position.tickUpper,
+            amount0Collect,
+            amount1Collect
+        );
+
+        // sometimes there will be a few less wei than expected due to rounding down in core, but we just subtract the full amount expected
+        // instead of the actual amount so we can burn the token
+        (position.tokensOwed0, position.tokensOwed1) = (tokensOwed0 - amount0Collect, tokensOwed1 - amount1Collect);
+
+        emit Collect(params.tokenId, recipient, amount0Collect, amount1Collect);
     }
 
-    function scale(
-        uint256 n,
-        uint256 inMn,
-        uint256 inMx,
-        uint256 outMn,
-        uint256 outMx
-    ) private pure returns (string memory) {
-        return (n.sub(inMn).mul(outMx.sub(outMn)).div(inMx.sub(inMn)).add(outMn)).toString();
+    /// @inheritdoc INonfungiblePositionManager
+    function burn(uint256 tokenId) external payable override isAuthorizedForToken(tokenId) {
+        Position storage position = _positions[tokenId];
+        require(position.liquidity == 0 && position.tokensOwed0 == 0 && position.tokensOwed1 == 0, 'Not cleared');
+        delete _positions[tokenId];
+        _burn(tokenId);
     }
 
-    function tokenToColorHex(uint256 token, uint256 offset) internal pure returns (string memory str) {
-        return string((token >> offset).toHexStringNoPrefix(3));
+    function _getAndIncrementNonce(uint256 tokenId) internal override returns (uint256) {
+        return uint256(_positions[tokenId].nonce++);
     }
 
-    function getCircleCoord(
-        uint256 tokenAddress,
-        uint256 offset,
-        uint256 tokenId
-    ) internal pure returns (uint256) {
-        return (sliceTokenHex(tokenAddress, offset) * tokenId) % 255;
+    /// @inheritdoc IERC721
+    function getApproved(uint256 tokenId) public view override(ERC721, IERC721) returns (address) {
+        require(_exists(tokenId), 'ERC721: approved query for nonexistent token');
+
+        return _positions[tokenId].operator;
     }
 
-    function sliceTokenHex(uint256 token, uint256 offset) internal pure returns (uint256) {
-        return uint256(uint8(token >> offset));
+    /// @dev Overrides _approve to use the operator in the position, which is packed with the position permit nonce
+    function _approve(address to, uint256 tokenId) internal override(ERC721) {
+        _positions[tokenId].operator = to;
+        emit Approval(ownerOf(tokenId), to, tokenId);
     }
 }

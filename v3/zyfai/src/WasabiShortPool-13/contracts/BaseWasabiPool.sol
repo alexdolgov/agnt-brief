@@ -5,7 +5,6 @@ import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/cryptography/EIP712Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/utils/MulticallUpgradeable.sol";
 
 import "@openzeppelin/contracts/utils/Address.sol";
 
@@ -15,10 +14,8 @@ import "./IWasabiPerps.sol";
 import "./addressProvider/IAddressProvider.sol";
 import "./vaults/IWasabiVault.sol";
 import "./weth/IWETH.sol";
-import "./admin/PerpManager.sol";
-import "./admin/Roles.sol";
 
-abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgradeable, ReentrancyGuardUpgradeable, EIP712Upgradeable, MulticallUpgradeable {
+abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgradeable, ReentrancyGuardUpgradeable, EIP712Upgradeable {
     using Address for address;
     using Hash for OpenPositionRequest;
 
@@ -37,47 +34,44 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     /// @dev the base tokens
     mapping(address => bool) public baseTokens;
 
-    /**
-     * @dev Checks if the caller has the correct role
-     */
-    modifier onlyRole(uint64 roleId) {
-        _getManager().checkRole(roleId, msg.sender);
-        _;
-    }
-
-    /**
-     * @dev Checks if the caller is an admin
-     */
-    modifier onlyAdmin() {
-        _getManager().isAdmin(msg.sender);
-        _;
-    }
-
-    /// @custom:oz-upgrades-unsafe-allow constructor
-    constructor() {
-        _disableInitializers();
-    }
-
     /// @dev Initializes the pool as per UUPSUpgradeable
     /// @param _isLongPool a flag indicating if this is a long pool or a short pool
     /// @param _addressProvider an address provider
-    function __BaseWasabiPool_init(bool _isLongPool, IAddressProvider _addressProvider, PerpManager _manager) public onlyInitializing {
-        __Ownable_init(address(_manager));
+    function __BaseWasabiPool_init(bool _isLongPool, IAddressProvider _addressProvider) public onlyInitializing {
+        __Ownable_init(msg.sender);
         __EIP712_init(_isLongPool ? "WasabiLongPool" : "WasabiShortPool", "1");
         __ReentrancyGuard_init();
         __UUPSUpgradeable_init();
 
         isLongPool = _isLongPool;
         addressProvider = _addressProvider;
-        baseTokens[_getWethAddress()] = true;
-    }
-
-    function setAddressProvider(IAddressProvider _addressProvider) external onlyAdmin {
-        addressProvider = _addressProvider;
+        baseTokens[addressProvider.getWethAddress()] = true;
     }
 
     /// @inheritdoc UUPSUpgradeable
-    function _authorizeUpgrade(address) internal view override onlyAdmin {}
+    function _authorizeUpgrade(address) internal override onlyOwner {}
+
+    /// @inheritdoc IWasabiPerps
+    function liquidatePosition(
+        bool _unwrapWETH,
+        uint256 _interest,
+        Position calldata _position,
+        FunctionCallData[] calldata _swapFunctions
+    ) public virtual payable;
+
+    /// @inheritdoc IWasabiPerps
+    function liquidatePositions(
+        bool _unwrapWETH,
+        uint256[] calldata _interests,
+        Position[] calldata _positions,
+        FunctionCallData[][] calldata _swapFunctions
+    ) external payable onlyOwner {
+        uint256 length = _positions.length;
+        if (length != _interests.length) revert InterestAmountNeeded();
+        for (uint i = 0; i < length; ++i) {
+            liquidatePosition(_unwrapWETH, _interests[i], _positions[i], _swapFunctions[i]);
+        }
+    }
 
     /// @inheritdoc IWasabiPerps
     function withdraw(address _token, uint256 _amount, address _receiver) external {
@@ -89,34 +83,25 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     }
 
     /// @inheritdoc IWasabiPerps
-    function donate(address token, uint256 amount) external onlyAdmin {
-        if (amount > 0) {
-            SafeERC20.safeTransferFrom(IERC20(token), msg.sender, address(this), amount);
-
-            IWasabiVault vault = getVault(token);
-            vault.recordInterestEarned(amount);
-
-            emit NativeYieldClaimed(address(vault), token, amount);
-        }
-    }
-
-    /// @inheritdoc IWasabiPerps
     function getVault(address _asset) public view returns (IWasabiVault) {
         if (_asset == address(0)) {
-            _asset = _getWethAddress();
+            _asset = addressProvider.getWethAddress();
         }
         if (vaults[_asset] == address(0)) revert InvalidVault();
         return IWasabiVault(vaults[_asset]);
     }
 
-    /// @inheritdoc IWasabiPerps
-    function addVault(IWasabiVault _vault) external onlyAdmin {
-        if (_vault.getPoolAddress() != address(this)) revert InvalidVault();
-        // Only long pool can have ETH vault
-        if (_vault.asset() == _getWethAddress() && !isLongPool) revert InvalidVault();
-        if (vaults[_vault.asset()] != address(0)) revert VaultAlreadyExists();
-        vaults[_vault.asset()] = address(_vault);
-        emit NewVault(address(this), _vault.asset(), address(_vault));
+    /// @dev sets the address provider
+    /// @param _addressProvider the address provider
+    function setAddressProvider(IAddressProvider _addressProvider) public onlyOwner {
+        addressProvider = _addressProvider;
+    }
+
+    /// @dev Toggles a base token
+    /// @param _token the token
+    /// @param _enabled flag indicating if the token is a base token
+    function toggleBaseToken(address _token, bool _enabled) external onlyOwner {
+        baseTokens[_token] = _enabled;
     }
 
     /// @dev Records the repayment of a position
@@ -144,39 +129,28 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     /// @param _unwrapWETH flag indicating if the payments should be unwrapped
     /// @param token the token
     /// @param _trader the trader
-    /// @param _closeAmounts the close amounts
+    /// @param _payout the payout
+    /// @param _pastFees past fee amounts to pay
+    /// @param _closeFee the closing fee amount to pay
     function _payCloseAmounts(
         bool _unwrapWETH,
         IWETH token,
         address _trader,
-        CloseAmounts memory _closeAmounts
+        uint256 _payout,
+        uint256 _pastFees,
+        uint256 _closeFee
     ) internal {
-        uint256 positionFeesToTransfer = _closeAmounts.pastFees + _closeAmounts.closeFee;
-        uint256 total = _closeAmounts.payout + positionFeesToTransfer + _closeAmounts.liquidationFee;
-
         if (_unwrapWETH) {
+            uint256 total = _payout + _pastFees + _closeFee;
             if (total > address(this).balance) {
                 token.withdraw(total - address(this).balance);
             }
-            PerpUtils.payETH(positionFeesToTransfer, _getFeeReceiver());
-
-            if (_closeAmounts.liquidationFee > 0) { 
-                PerpUtils.payETH(_closeAmounts.liquidationFee, _getLiquidationFeeReceiver());
-            }
-
-            PerpUtils.payETH(_closeAmounts.payout, _trader);
+            PerpUtils.payETH(_pastFees + _closeFee, addressProvider.getFeeReceiver());
+            PerpUtils.payETH(_payout, _trader);
         } else {
-            uint256 balance = token.balanceOf(address(this));
-            if (total > balance) {
-                token.deposit{value: total - balance}();
-            }
-            SafeERC20.safeTransfer(token, _getFeeReceiver(), positionFeesToTransfer);
-            if (_closeAmounts.liquidationFee > 0) {
-                SafeERC20.safeTransfer(token, _getLiquidationFeeReceiver(), _closeAmounts.liquidationFee);
-            }
-
-            if (_closeAmounts.payout > 0) {
-                SafeERC20.safeTransfer(token, _trader, _closeAmounts.payout);
+            SafeERC20.safeTransfer(token, addressProvider.getFeeReceiver(), _closeFee + _pastFees);
+            if (_payout > 0) {
+                SafeERC20.safeTransfer(token, _trader, _payout);
             }
         }
     }
@@ -185,12 +159,22 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     /// @param _position the position
     /// @param _interest the interest amount
     function _computeInterest(Position calldata _position, uint256 _interest) internal view returns (uint256) {
-        uint256 maxInterest = _getDebtController()
+        uint256 maxInterest = addressProvider.getDebtController()
             .computeMaxInterest(_position.currency, _position.principal, _position.lastFundingTimestamp);
         if (_interest == 0 || _interest > maxInterest) {
             _interest = maxInterest;
         }
         return _interest;
+    }
+
+    /// @inheritdoc IWasabiPerps
+    function addVault(IWasabiVault _vault) external onlyOwner {
+        if (_vault.getPoolAddress() != address(this)) revert InvalidVault();
+        // Only long pool can have ETH vault
+        if (_vault.asset() == addressProvider.getWethAddress() && !isLongPool) revert InvalidVault();
+        if (vaults[_vault.asset()] != address(0)) revert VaultAlreadyExists();
+        vaults[_vault.asset()] = address(_vault);
+        emit NewVault(address(this), _vault.asset(), address(_vault));
     }
 
     /// @dev Validates an open position request
@@ -209,7 +193,7 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
         PerpUtils.receivePayment(
             isLongPool ? _request.currency : _request.targetCurrency,
             _request.downPayment + _request.fee,
-            _getWethAddress(),
+            addressProvider.getWethAddress(),
             msg.sender
         );
     }
@@ -220,9 +204,7 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     function _validateSignature(bytes32 _structHash, IWasabiPerps.Signature calldata _signature) internal view {
         bytes32 typedDataHash = _hashTypedDataV4(_structHash);
         address signer = ecrecover(typedDataHash, _signature.v, _signature.r, _signature.s);
-
-        (bool isValidSigner, ) = _getManager().hasRole(Roles.ORDER_SIGNER_ROLE, signer);
-        if (!isValidSigner) {
+        if (owner() != signer) {
             revert IWasabiPerps.InvalidSignature();
         }
     }
@@ -230,45 +212,6 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     /// @dev returns {true} if the given token is a base token
     function _isBaseToken(address _token) internal view returns(bool) {
         return baseTokens[_token];
-    }
-
-    /// @dev computes the liquidation fee
-    function _computeLiquidationFee(uint256 _downPayment) internal view returns (uint256) {
-        uint256 liquidationFeeBps = addressProvider.getLiquidationFeeBps();
-        return _downPayment * liquidationFeeBps / 10000;
-    }
-
-    /// @dev checks if the caller can close out the given trader's position
-    function _checkCanClosePosition(address _trader) internal view {
-        if (msg.sender == _trader) return;
-
-        (bool isLiquidator, ) = _getManager().hasRole(Roles.LIQUIDATOR_ROLE, msg.sender);
-        if (!isLiquidator) revert SenderNotTrader();
-    }
-
-    /// @dev returns the manager of the contract
-    function _getManager() internal view returns (PerpManager) {
-        return PerpManager(owner());
-    }
-
-    /// @dev returns the debt controller
-    function _getDebtController() internal view returns (IDebtController) {
-        return addressProvider.getDebtController();
-    }
-
-    /// @dev returns the WETH address
-    function _getWethAddress() internal view returns (address) {
-        return addressProvider.getWethAddress();
-    }
-
-    /// @dev returns the fee receiver
-    function _getFeeReceiver() internal view returns (address) {
-        return addressProvider.getFeeReceiver();
-    }
-
-    /// @dev returns the liquidation fee receiver
-    function _getLiquidationFeeReceiver() internal view returns (address) {
-        return addressProvider.getLiquidationFeeReceiver();
     }
 
     receive() external payable virtual {}

@@ -1,0 +1,20 @@
+{
+  "component": "TAsset",
+  "main_contract": "TAsset",
+  "source_file_count": 36,
+  "deployment_count": 1,
+  "audited": true,
+  "audits_covering": [
+    "https://github.com/treehouse-gaia/audit-report/blob/main/Fuzzland%20tETH%20Sep%20Audit%20Report%20vF.pdf"
+  ],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd1a622566f277aa76c3c47a30469432aaec95e38",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

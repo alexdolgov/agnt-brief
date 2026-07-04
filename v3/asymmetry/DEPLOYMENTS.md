@@ -61,7 +61,7 @@
 | ethereum | `0x36e9ee7a0ce154cc1e379a7c0231fa19c0b41c1f` | Trove_Manager | impl | live | no |
 | ethereum | `0x3777c51170b0c1cec4b236166680802c22d262cb` | ProxyAdmin | impl | live | no |
 | ethereum | `0x39fca0f77ba22926e8e5ec5df68271eb49a3a775` | BaseOracle-2 | impl | live | no |
-| ethereum | `0x3aee3e96c9e340cbe0fffc5224db9e97949f3899` | TransparentUpgradeableProxy-6 | proxy | live | no |
+| ethereum | `0x3aee3e96c9e340cbe0fffc5224db9e97949f3899` | Proxy | proxy | live | no |
 | ethereum | `0x410edaf016482c8d3a866f778c24bd872a8797cf` | SfrxEth | proxy | live | yes |
 | ethereum | `0x412330b91b991aa5a72e22bb5e43c1041dc25f9e` | StakingRewards | impl | live | no |
 | ethereum | `0x446f358e3a927cc68f342141d78aa2d1c54e18f0` | StabilityPool | impl | live | yes |
@@ -114,7 +114,7 @@
 | ethereum | `0x746c238e34a6dbfe1d35d50471467bd7bf898f62` | OnLossDepositLimit | impl | live | no |
 | ethereum | `0x78ebd6ae7b6a12ab35a7454039fea117000bfd99` | Vyper_contract-5 | impl | live | no |
 | ethereum | `0x7aff0173e3d7c5416d8caa3433871ef07568220d` | TroveManager | impl | live | yes |
-| ethereum | `0x7b6633c0cd81dc338688a528c0a3f346561f5ca3` | TransparentUpgradeableProxy-7 | proxy | live | yes |
+| ethereum | `0x7b6633c0cd81dc338688a528c0a3f346561f5ca3` | TransparentUpgradeableProxy-6 | proxy | live | yes |
 | ethereum | `0x7bd47eca45ee18609d3d64ba683ce488ca9320a3` | TroveManager | impl | live | yes |
 | ethereum | `0x7c8fb4b1642f15c5d33e82a9704def85b76fd23e` | SafEth | impl | live | yes |
 | ethereum | `0x7df87c1f23192803167106b76e730227e1c288ad` | AfEthRelayer | proxy | live | yes |
@@ -124,7 +124,7 @@
 | ethereum | `0x82cbd5c2b1a23f82e446dd2c8bea02a71ae631b3` | Vyper_contract-6 | impl | live | no |
 | ethereum | `0x838a1f38c361ffa1b23201640752149adb4e865a` | HintHelpers | impl | live | yes |
 | ethereum | `0x83e5bde77d7477ecd972e338541b90af57675536` | StabilityPool | impl | live | yes |
-| ethereum | `0x8668a15b7b023dc77b372a740fcb8939e15257cf` | Proxy | proxy | live | yes |
+| ethereum | `0x8668a15b7b023dc77b372a740fcb8939e15257cf` | Proxy-2 | proxy | live | yes |
 | ethereum | `0x876f12e22c3471e3ca790cfd079a7842db29e7f7` | AsfToken | proxy | live | no |
 | ethereum | `0x8794f7a0c53cf536ff50a9d7f736cd402fa1fae4` | SimpleProxy-2 | impl | live | yes |
 | ethereum | `0x8828c676fe14cbef41f44d7e16a81c1418fe0100` | Vyper_contract-7 | impl | live | no |

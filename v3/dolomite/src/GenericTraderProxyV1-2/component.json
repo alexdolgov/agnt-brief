@@ -7,9 +7,9 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xb50bcdfc914e0afb484dee621f49010862fb928d",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xe50c3118349f09abafc1bb01ad5cb946b1de83f6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -17,10 +17,10 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0xc1a4850ab6d8ba93cd662da695cf5cdd49fc5ebd",
+      "address": "0xf6d3278553b5d523eeb58f52df6e3737292ca363",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

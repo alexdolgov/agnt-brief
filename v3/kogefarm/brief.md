@@ -5,7 +5,7 @@
 - Project: Kogefarm (`kogefarm`)
 - Website: [https://kogefarm.io](https://kogefarm.io)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:20.043Z
+- Generated: 2026-07-04T11:05:42.030Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
 - Chains: polygon
 - Contract surface: 156 unique implementations (162 raw deployments)

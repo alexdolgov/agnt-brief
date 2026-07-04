@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "hemi-staking",
-  "generated_at": "2026-07-03T21:05:58.407Z",
+  "generated_at": "2026-07-04T11:05:41.925Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -53,7 +53,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Farm. Structurally: 51 project-authored contract(s) across 3 chain(s); 1 ERC4626 vault, 7 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "project_purpose": "Farm. Structurally: 52 project-authored contract(s) across 3 chain(s); 1 ERC4626 vault, 7 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
     "relationship_narrative": "The protocol comprises 10 functional families. Its contracts share 15 common project-authored base contract(s) (accesscontrolinternal, ownableinternal, proxy). Dominant framework: openzeppelin.",
     "product_family_count": 10,
     "total_contracts_indexed": 250,

@@ -1,144 +1,170 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-pragma solidity 0.8.25;
+pragma solidity 0.8.22;
 
 import {
     UUPSUpgradeable,
     Initializable
 } from "openzeppelin-contracts-upgradeable/contracts/proxy/utils/UUPSUpgradeable.sol";
-import {Ownable2StepUpgradeable} from "openzeppelin-contracts-upgradeable/contracts/access/Ownable2StepUpgradeable.sol";
-import {EIP712Upgradeable} from "openzeppelin-contracts-upgradeable/contracts/utils/cryptography/EIP712Upgradeable.sol";
+import {
+    AccessControlDefaultAdminRulesUpgradeable,
+    AccessControlUpgradeable,
+    IAccessControl
+} from "openzeppelin-contracts-upgradeable/contracts/access/extensions/AccessControlDefaultAdminRulesUpgradeable.sol";
 import {MulticallUpgradeable} from "openzeppelin-contracts-upgradeable/contracts/utils/MulticallUpgradeable.sol";
 import {SafeERC20, IERC20} from "openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol";
 import {IERC20Metadata} from "openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol";
-import {ECDSA} from "openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol";
-import {Address} from "openzeppelin-contracts/contracts/utils/Address.sol";
 import {mulDiv, mulDiv18} from "prb-math/Common.sol";
 import {SelfPermit} from "../common/SelfPermit.sol";
 import {IOrderProcessor} from "./IOrderProcessor.sol";
-import {IDShare} from "../IDShare.sol";
+import {ITransferRestrictor} from "../ITransferRestrictor.sol";
+import {DShare, IDShare} from "../DShare.sol";
+import {ITokenLockCheck} from "../ITokenLockCheck.sol";
 import {FeeLib} from "../common/FeeLib.sol";
-import {OracleLib} from "../common/OracleLib.sol";
-import {IDShareFactory} from "../IDShareFactory.sol";
+import {IForwarder} from "../forwarder/IForwarder.sol";
 
-/// @notice Core contract managing orders for dShare tokens
-/// @dev Assumes dShare asset tokens have 18 decimals and payment tokens have .decimals()
+/// @notice Base contract managing orders for bridged assets
+/// Orders are submitted by users, emitted by the contract, and filled by operators
+/// Fees are accumulated as order is filled
+/// The incoming token is escrowed until the order is filled or cancelled
+/// The incoming token is refunded if the order is cancelled
+/// Implicitly assumes that asset tokens are dShare and can be burned
+/// Order lifecycle (fulfillment):
+///   1. User requests an order (requestOrder)
+///   2. [Optional] Operator partially fills the order (fillOrder)
+///   3. Operator completely fulfills the order (fillOrder)
+/// Order lifecycle (cancellation):
+///   1. User requests an order (requestOrder)
+///   2. [Optional] Operator partially fills the order (fillOrder)
+///   3. [Optional] User requests cancellation (requestCancel)
+///   4. Operator cancels the order (cancelOrder)
 /// @author Dinari (https://github.com/dinaricrypto/sbt-contracts/blob/main/src/orders/OrderProcessor.sol)
 contract OrderProcessor is
     Initializable,
     UUPSUpgradeable,
-    Ownable2StepUpgradeable,
-    EIP712Upgradeable,
+    AccessControlDefaultAdminRulesUpgradeable,
     MulticallUpgradeable,
     SelfPermit,
     IOrderProcessor
 {
     using SafeERC20 for IERC20;
-    using Address for address;
 
     /// ------------------ Types ------------------ ///
 
     // Order state cleared after order is fulfilled or cancelled.
     struct OrderState {
+        // Hash of order data used to validate order details stored offchain
+        bytes32 orderHash;
+        // Flat fee at time of order request
+        uint256 flatFee;
+        // Percentage fee rate at time of order request
+        uint24 percentageFeeRate;
         // Account that requested the order
         address requester;
-        // Amount of order token remaining to be used
-        uint256 unfilledAmount;
-        // Buy order fees escrowed
-        uint256 feesEscrowed;
-        // Cumulative fees taken for order
-        uint256 feesTaken;
-        // Amount of token received from fills
-        uint256 receivedAmount;
+        // Whether a cancellation for this order has been initiated
+        bool cancellationInitiated;
+        // Total amount of received token due to fills
+        uint256 received;
+        // Total fees paid to treasury
+        uint256 feesPaid;
+        // Total fees paid to claim
+        uint256 splitAmountPaid;
     }
 
-    struct PaymentTokenConfig {
-        bool enabled;
-        // Assumes token decimals do not change
-        uint8 decimals;
-        // Token blacklist method selectors
-        bytes4 blacklistCallSelector;
-        // Standard fee schedule per paymentToken
+    // Order state not cleared after order is fulfilled or cancelled.
+    struct OrderInfo {
+        // Amount of order token remaining to be used
+        uint256 unfilledAmount;
+        // Status of order
+        OrderStatus status;
+    }
+
+    struct FeeRates {
         uint64 perOrderFeeBuy;
         uint24 percentageFeeRateBuy;
         uint64 perOrderFeeSell;
         uint24 percentageFeeRateSell;
     }
 
-    /// @dev Signature deadline expired
-    error ExpiredSignature();
+    struct FeeRatesStorage {
+        bool set;
+        uint64 perOrderFeeBuy;
+        uint24 percentageFeeRateBuy;
+        uint64 perOrderFeeSell;
+        uint24 percentageFeeRateSell;
+    }
+
     /// @dev Zero address
     error ZeroAddress();
     /// @dev Orders are paused
     error Paused();
     /// @dev Zero value
     error ZeroValue();
-    error OrderNotActive();
-    error ExistingOrder();
+    /// @dev msg.sender is not order requester
+    error NotRequester();
+    /// @dev Order does not exist
+    error OrderNotFound();
+    /// @dev Invalid order data
+    error InvalidOrderData();
     /// @dev Amount too large
     error AmountTooLarge();
+    /// @dev Order type mismatch
+    error OrderTypeMismatch();
     error UnsupportedToken(address token);
     /// @dev blacklist address
     error Blacklist();
+    /// @dev Custom error when an order cancellation has already been initiated
+    error OrderCancellationInitiated();
     /// @dev Thrown when assetTokenQuantity's precision doesn't match the expected precision in orderDecimals.
     error InvalidPrecision();
     error LimitPriceNotSet();
     error OrderFillBelowLimitPrice();
     error OrderFillAboveLimitPrice();
-    error NotOperator();
-    error NotRequester();
 
     /// @dev Emitted when `treasury` is set
     event TreasurySet(address indexed treasury);
-    /// @dev Emitted when `vault` is set
-    event VaultSet(address indexed vault);
     /// @dev Emitted when orders are paused/unpaused
     event OrdersPaused(bool paused);
-    event PaymentTokenSet(
-        address indexed paymentToken,
-        bytes4 blacklistCallSelector,
-        uint64 perOrderFeeBuy,
-        uint24 percentageFeeRateBuy,
-        uint64 perOrderFeeSell,
-        uint24 percentageFeeRateSell
-    );
-    event PaymentTokenRemoved(address indexed paymentToken);
-    event OrderDecimalReductionSet(address indexed assetToken, uint8 decimalReduction);
-    event OperatorSet(address indexed account, bool status);
+    /// @dev Emitted when token lock check contract is set
+    event TokenLockCheckSet(ITokenLockCheck indexed tokenLockCheck);
+    /// @dev Emitted when fees are set
+    event FeesSet(address indexed account, address indexed paymentToken, FeeRates feeRates);
+    /// @dev Emitted when OrderDecimal is set
+    event MaxOrderDecimalsSet(address indexed assetToken, int8 decimals);
 
     /// ------------------ Constants ------------------ ///
 
-    bytes32 private constant ORDER_TYPEHASH = keccak256(
-        "Order(uint64 requestTimestamp,address recipient,address assetToken,address paymentToken,bool sell,uint8 orderType,uint256 assetTokenQuantity,uint256 paymentTokenQuantity,uint256 price,uint8 tif)"
-    );
-
-    bytes32 private constant ORDER_REQUEST_TYPEHASH = keccak256("OrderRequest(uint256 id,uint64 deadline)");
-
-    bytes32 private constant FEE_QUOTE_TYPEHASH =
-        keccak256("FeeQuote(uint256 orderId,address requester,uint256 fee,uint64 timestamp,uint64 deadline)");
+    /// @notice Operator role for filling and cancelling orders
+    bytes32 public constant OPERATOR_ROLE = keccak256("OPERATOR_ROLE");
+    /// @notice Asset token role for whitelisting asset tokens
+    /// @dev Tokens with decimals > 18 are not supported by current implementation
+    bytes32 public constant ASSETTOKEN_ROLE = keccak256("ASSETTOKEN_ROLE");
+    /// @notice Forwarder role for forwarding context awareness
+    bytes32 public constant FORWARDER_ROLE = keccak256("FORWARDER_ROLE");
 
     /// ------------------ State ------------------ ///
 
     struct OrderProcessorStorage {
         // Address to receive fees
         address _treasury;
-        // Address of payment vault
-        address _vault;
-        // DShareFactory contract
-        IDShareFactory _dShareFactory;
+        // Transfer restrictor checker
+        ITokenLockCheck _tokenLockCheck;
         // Are orders paused?
         bool _ordersPaused;
-        // Operators for filling and cancelling orders
-        mapping(address => bool) _operators;
-        // Status of order
-        mapping(uint256 => OrderStatus) _status;
+        // Total number of active orders. Onchain enumeration not supported.
+        uint256 _numOpenOrders;
+        // Next order id
+        uint256 _nextOrderId;
         // Active order state
         mapping(uint256 => OrderState) _orders;
-        // Reduciton of order decimals for asset token, defaults to 0
-        mapping(address => uint8) _orderDecimalReduction;
-        // Payment token configuration data
-        mapping(address => PaymentTokenConfig) _paymentTokens;
-        // Latest pairwise price
-        mapping(bytes32 => PricePoint) _latestFillPrice;
+        // Persisted order state
+        mapping(uint256 => OrderInfo) _orderInfo;
+        // Escrowed balance of asset token per requester
+        mapping(address => mapping(address => uint256)) _escrowedBalanceOf;
+        // Max order decimals for asset token, defaults to 0 decimals
+        mapping(address => int8) _maxOrderDecimals;
+        // Fee schedule for requester, per paymentToken
+        // Uses address(0) to store default fee schedule
+        mapping(address => mapping(address => FeeRatesStorage)) _accountFees;
     }
 
     // keccak256(abi.encode(uint256(keccak256("dinaricrypto.storage.OrderProcessor")) - 1)) & ~bytes32(uint256(0xff))
@@ -156,28 +182,23 @@ contract OrderProcessor is
     /// @notice Initialize contract
     /// @param _owner Owner of contract
     /// @param _treasury Address to receive fees
-    /// @param _vault Address of vault contract
-    /// @param _dShareFactory DShareFactory contract
+    /// @param _tokenLockCheck Token lock check contract
     /// @dev Treasury cannot be zero address
-    function initialize(address _owner, address _treasury, address _vault, IDShareFactory _dShareFactory)
+    function initialize(address _owner, address _treasury, ITokenLockCheck _tokenLockCheck)
         public
         virtual
         initializer
     {
-        __Ownable_init(_owner);
-        __EIP712_init("OrderProcessor", "1");
+        __AccessControlDefaultAdminRules_init(0, _owner);
         __Multicall_init();
 
         // Don't send fees to zero address
         if (_treasury == address(0)) revert ZeroAddress();
-        if (_vault == address(0)) revert ZeroAddress();
-        if (address(_dShareFactory) == address(0)) revert ZeroAddress();
 
         // Initialize
         OrderProcessorStorage storage $ = _getOrderProcessorStorage();
         $._treasury = _treasury;
-        $._vault = _vault;
-        $._dShareFactory = _dShareFactory;
+        $._tokenLockCheck = _tokenLockCheck;
     }
 
     /// @custom:oz-upgrades-unsafe-allow constructor
@@ -185,141 +206,131 @@ contract OrderProcessor is
         _disableInitializers();
     }
 
-    function _authorizeUpgrade(address) internal override onlyOwner {}
+    function _authorizeUpgrade(address) internal override onlyRole(DEFAULT_ADMIN_ROLE) {}
 
     /// ------------------ Getters ------------------ ///
 
     /// @notice Address to receive fees
-    function treasury() external view returns (address) {
+    function treasury() public view returns (address) {
         OrderProcessorStorage storage $ = _getOrderProcessorStorage();
         return $._treasury;
     }
 
-    /// @notice Address of vault contract
-    function vault() external view returns (address) {
+    /// @notice Transfer restrictor checker
+    function tokenLockCheck() public view returns (ITokenLockCheck) {
         OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        return $._vault;
-    }
-
-    /// @notice DShareFactory contract
-    function dShareFactory() external view returns (IDShareFactory) {
-        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        return $._dShareFactory;
+        return $._tokenLockCheck;
     }
 
     /// @notice Are orders paused?
-    function ordersPaused() external view returns (bool) {
+    function ordersPaused() public view returns (bool) {
         OrderProcessorStorage storage $ = _getOrderProcessorStorage();
         return $._ordersPaused;
     }
 
-    function isOperator(address account) external view returns (bool) {
+    /// @inheritdoc IOrderProcessor
+    function numOpenOrders() public view override returns (uint256) {
         OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        return $._operators[account];
+        return $._numOpenOrders;
+    }
+
+    /// @inheritdoc IOrderProcessor
+    function nextOrderId() public view override returns (uint256) {
+        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
+        return $._nextOrderId;
+    }
+
+    /// @inheritdoc IOrderProcessor
+    function escrowedBalanceOf(address token, address requester) public view override returns (uint256) {
+        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
+        return $._escrowedBalanceOf[token][requester];
+    }
+
+    /// @inheritdoc IOrderProcessor
+    function maxOrderDecimals(address token) public view override returns (int8) {
+        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
+        return $._maxOrderDecimals[token];
     }
 
     /// @inheritdoc IOrderProcessor
     function getOrderStatus(uint256 id) external view returns (OrderStatus) {
         OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        return $._status[id];
+        return $._orderInfo[id].status;
     }
 
     /// @inheritdoc IOrderProcessor
-    function getUnfilledAmount(uint256 id) external view returns (uint256) {
+    function getUnfilledAmount(uint256 id) public view returns (uint256) {
         OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        return $._orders[id].unfilledAmount;
+        return $._orderInfo[id].unfilledAmount;
     }
 
     /// @inheritdoc IOrderProcessor
-    function getReceivedAmount(uint256 id) external view returns (uint256) {
+    function getTotalReceived(uint256 id) public view returns (uint256) {
         OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        return $._orders[id].receivedAmount;
+        return $._orders[id].received;
+    }
+
+    /// @notice Has order cancellation been requested?
+    /// @param id Order ID
+    function cancelRequested(uint256 id) external view returns (bool) {
+        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
+        return $._orders[id].cancellationInitiated;
+    }
+
+    function hasRole(bytes32 role, address account)
+        public
+        view
+        override(AccessControlUpgradeable, IAccessControl, IOrderProcessor)
+        returns (bool)
+    {
+        return super.hasRole(role, account);
+    }
+
+    function getAccountFees(address account, address paymentToken) external view returns (FeeRates memory) {
+        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
+        FeeRatesStorage memory feeRates = $._accountFees[account][paymentToken];
+        // If user,paymentToken does not have a custom fee schedule, use default
+        if (!feeRates.set) {
+            feeRates = $._accountFees[address(0)][paymentToken];
+        }
+        return FeeRates({
+            perOrderFeeBuy: feeRates.perOrderFeeBuy,
+            percentageFeeRateBuy: feeRates.percentageFeeRateBuy,
+            perOrderFeeSell: feeRates.perOrderFeeSell,
+            percentageFeeRateSell: feeRates.percentageFeeRateSell
+        });
     }
 
     /// @inheritdoc IOrderProcessor
-    function getFeesEscrowed(uint256 id) external view returns (uint256) {
+    function getFeeRatesForOrder(address requester, bool sell, address paymentToken)
+        public
+        view
+        returns (uint256, uint24)
+    {
         OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        return $._orders[id].feesEscrowed;
-    }
-
-    /// @inheritdoc IOrderProcessor
-    function getFeesTaken(uint256 id) external view returns (uint256) {
-        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        return $._orders[id].feesTaken;
-    }
-
-    /// @inheritdoc IOrderProcessor
-    function orderDecimalReduction(address token) external view override returns (uint8) {
-        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        return $._orderDecimalReduction[token];
-    }
-
-    function getPaymentTokenConfig(address paymentToken) public view returns (PaymentTokenConfig memory) {
-        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        return $._paymentTokens[paymentToken];
-    }
-
-    /// @inheritdoc IOrderProcessor
-    function getStandardFees(bool sell, address paymentToken) public view returns (uint256, uint24) {
-        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        PaymentTokenConfig memory paymentTokenConfig = $._paymentTokens[paymentToken];
-        if (!paymentTokenConfig.enabled) revert UnsupportedToken(paymentToken);
+        FeeRatesStorage memory feeRates = $._accountFees[requester][paymentToken];
+        // If user does not have a custom fee schedule, use default
+        if (!feeRates.set) {
+            feeRates = $._accountFees[address(0)][paymentToken];
+        }
         if (sell) {
-            return (
-                FeeLib.flatFeeForOrder(paymentTokenConfig.decimals, paymentTokenConfig.perOrderFeeSell),
-                paymentTokenConfig.percentageFeeRateSell
-            );
+            return (FeeLib.flatFeeForOrder(paymentToken, feeRates.perOrderFeeSell), feeRates.percentageFeeRateSell);
         } else {
-            return (
-                FeeLib.flatFeeForOrder(paymentTokenConfig.decimals, paymentTokenConfig.perOrderFeeBuy),
-                paymentTokenConfig.percentageFeeRateBuy
-            );
+            return (FeeLib.flatFeeForOrder(paymentToken, feeRates.perOrderFeeBuy), feeRates.percentageFeeRateBuy);
         }
     }
 
     /// @inheritdoc IOrderProcessor
-    function totalStandardFee(bool sell, address paymentToken, uint256 paymentTokenQuantity)
-        public
-        view
-        returns (uint256)
-    {
-        (uint256 fee, uint24 percentageFeeRate) = getStandardFees(sell, paymentToken);
-        return FeeLib.applyPercentageFee(percentageFeeRate, paymentTokenQuantity) + fee;
-    }
-
-    function isTransferLocked(address token, address account) external view returns (bool) {
-        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        bytes4 selector = $._paymentTokens[token].blacklistCallSelector;
-        // if no selector is set, default to locked == false
-        if (selector == 0) return false;
-
-        return _checkTransferLocked(token, account, selector);
-    }
-
-    function _checkTransferLocked(address token, address account, bytes4 selector) internal view returns (bool) {
-        // assumes bool result
-        return abi.decode(token.functionStaticCall(abi.encodeWithSelector(selector, account)), (bool));
-    }
-
-    function _checkBlacklisted(address assetToken, address paymentToken, bytes4 blacklistCallSelector, address account)
-        internal
-        view
-    {
-        // Black list checker, assumes asset tokens are dShares
-        if (
-            IDShare(assetToken).isBlacklisted(account)
-                || (blacklistCallSelector != 0 && _checkTransferLocked(paymentToken, account, blacklistCallSelector))
-        ) revert Blacklist();
-    }
-
-    function latestFillPrice(address assetToken, address paymentToken) external view returns (PricePoint memory) {
-        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        return $._latestFillPrice[OracleLib.pairIndex(assetToken, paymentToken)];
-    }
-
-    // slither-disable-next-line naming-convention
-    function DOMAIN_SEPARATOR() external view returns (bytes32) {
-        return _domainSeparatorV4();
+    function estimateTotalFeesForOrder(
+        address requester,
+        bool sell,
+        address paymentToken,
+        uint256 paymentTokenOrderValue
+    ) public view returns (uint256) {
+        // Get fee rates
+        (uint256 flatFee, uint24 percentageFeeRate) = getFeeRatesForOrder(requester, sell, paymentToken);
+        // Calculate total fees
+        return FeeLib.estimateTotalFees(flatFee, percentageFeeRate, paymentTokenOrderValue);
     }
 
     /// ------------------ Administration ------------------ ///
@@ -331,21 +342,11 @@ contract OrderProcessor is
         _;
     }
 
-    modifier onlyOperator() {
-        checkOperator(msg.sender);
-        _;
-    }
-
-    function checkOperator(address account) internal view {
-        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        if (!$._operators[account]) revert NotOperator();
-    }
-
     /// @notice Set treasury address
     /// @param account Address to receive fees
     /// @dev Only callable by admin
     /// Treasury cannot be zero address
-    function setTreasury(address account) external onlyOwner {
+    function setTreasury(address account) external onlyRole(DEFAULT_ADMIN_ROLE) {
         // Don't send fees to zero address
         if (account == address(0)) revert ZeroAddress();
 
@@ -354,461 +355,545 @@ contract OrderProcessor is
         emit TreasurySet(account);
     }
 
-    /// @notice Set vault address
-    /// @param account Address of vault contract
-    /// @dev Only callable by admin
-    /// Vault cannot be zero address
-    function setVault(address account) external onlyOwner {
-        // Don't send tokens to zero address
-        if (account == address(0)) revert ZeroAddress();
-
-        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        $._vault = account;
-        emit VaultSet(account);
-    }
-
     /// @notice Pause/unpause orders
     /// @param pause Pause orders if true, unpause if false
     /// @dev Only callable by admin
-    function setOrdersPaused(bool pause) external onlyOwner {
+    function setOrdersPaused(bool pause) external onlyRole(DEFAULT_ADMIN_ROLE) {
         OrderProcessorStorage storage $ = _getOrderProcessorStorage();
         $._ordersPaused = pause;
         emit OrdersPaused(pause);
     }
 
-    /// @notice Set operator
-    /// @param account Operator address
-    /// @param status Operator status
+    /// @notice Set token lock check contract
+    /// @param _tokenLockCheck Token lock check contract
     /// @dev Only callable by admin
-    function setOperator(address account, bool status) external onlyOwner {
+    function setTokenLockCheck(ITokenLockCheck _tokenLockCheck) external onlyRole(DEFAULT_ADMIN_ROLE) {
         OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        $._operators[account] = status;
-        emit OperatorSet(account, status);
+        $._tokenLockCheck = _tokenLockCheck;
+        emit TokenLockCheckSet(_tokenLockCheck);
     }
 
-    /// @notice Set payment token configuration information
-    /// @param paymentToken Payment token address
-    /// @param blacklistCallSelector Method selector for blacklist check
-    /// @param perOrderFeeBuy Flat fee for buy orders
-    /// @param percentageFeeRateBuy Percentage fee rate for buy orders
-    /// @param perOrderFeeSell Flat fee for sell orders
-    /// @param percentageFeeRateSell Percentage fee rate for sell orders
+    /// @notice Set default fee rates
+    /// @param paymentToken Payment token
+    /// @param feeRates Fee rates
     /// @dev Only callable by admin
-    function setPaymentToken(
-        address paymentToken,
-        bytes4 blacklistCallSelector,
-        uint64 perOrderFeeBuy,
-        uint24 percentageFeeRateBuy,
-        uint64 perOrderFeeSell,
-        uint24 percentageFeeRateSell
-    ) external onlyOwner {
-        FeeLib.checkPercentageFeeRate(percentageFeeRateBuy);
-        FeeLib.checkPercentageFeeRate(percentageFeeRateSell);
-        // Token contract must implement the selector, if specified
-        if (blacklistCallSelector != 0) _checkTransferLocked(paymentToken, address(this), blacklistCallSelector);
+    function setDefaultFees(address paymentToken, FeeRates memory feeRates) external onlyRole(DEFAULT_ADMIN_ROLE) {
+        _setFees(address(0), paymentToken, feeRates);
+    }
+
+    /// @notice Set unique fee rates for requester
+    /// @param requester Requester address
+    /// @param paymentToken Payment token
+    /// @param feeRates Fee rates
+    /// @dev Only callable by admin
+    function setFees(address requester, address paymentToken, FeeRates memory feeRates)
+        external
+        onlyRole(DEFAULT_ADMIN_ROLE)
+    {
+        if (requester == address(0)) revert ZeroAddress();
+        _setFees(requester, paymentToken, feeRates);
+    }
+
+    /// @notice Reset fee rates for requester to default
+    /// @param requester Requester address
+    /// @param paymentToken Payment token
+    /// @dev Only callable by admin
+    function resetFees(address requester, address paymentToken) external onlyRole(DEFAULT_ADMIN_ROLE) {
+        if (requester == address(0)) revert ZeroAddress();
 
         OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        $._paymentTokens[paymentToken] = PaymentTokenConfig({
-            enabled: true,
-            decimals: IERC20Metadata(paymentToken).decimals(),
-            blacklistCallSelector: blacklistCallSelector,
-            perOrderFeeBuy: perOrderFeeBuy,
-            percentageFeeRateBuy: percentageFeeRateBuy,
-            perOrderFeeSell: perOrderFeeSell,
-            percentageFeeRateSell: percentageFeeRateSell
-        });
-        emit PaymentTokenSet(
+        delete $._accountFees[requester][paymentToken];
+        FeeRatesStorage memory defaultFeeRates = $._accountFees[address(0)][paymentToken];
+        emit FeesSet(
+            requester,
             paymentToken,
-            blacklistCallSelector,
-            perOrderFeeBuy,
-            percentageFeeRateBuy,
-            perOrderFeeSell,
-            percentageFeeRateSell
+            FeeRates({
+                perOrderFeeBuy: defaultFeeRates.perOrderFeeBuy,
+                percentageFeeRateBuy: defaultFeeRates.percentageFeeRateBuy,
+                perOrderFeeSell: defaultFeeRates.perOrderFeeSell,
+                percentageFeeRateSell: defaultFeeRates.percentageFeeRateSell
+            })
         );
     }
 
-    /// @notice Remove payment token configuration
-    /// @param paymentToken Payment token address
-    /// @dev Only callable by admin
-    function removePaymentToken(address paymentToken) external onlyOwner {
+    function _setFees(address account, address paymentToken, FeeRates memory feeRates) private {
+        FeeLib.checkPercentageFeeRate(feeRates.percentageFeeRateBuy);
+        FeeLib.checkPercentageFeeRate(feeRates.percentageFeeRateSell);
+
         OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        delete $._paymentTokens[paymentToken];
-        emit PaymentTokenRemoved(paymentToken);
+        $._accountFees[account][paymentToken] = FeeRatesStorage({
+            set: true,
+            perOrderFeeBuy: feeRates.perOrderFeeBuy,
+            percentageFeeRateBuy: feeRates.percentageFeeRateBuy,
+            perOrderFeeSell: feeRates.perOrderFeeSell,
+            percentageFeeRateSell: feeRates.percentageFeeRateSell
+        });
+        emit FeesSet(account, paymentToken, feeRates);
     }
 
-    /// @notice Set the order decimal reduction for asset token
+    /// @notice Set max order decimals for asset token
     /// @param token Asset token
-    /// @param decimalReduction Reduces the max precision of the asset token quantity
+    /// @param decimals Max order decimals
     /// @dev Only callable by admin
-    function setOrderDecimalReduction(address token, uint8 decimalReduction) external onlyOwner {
+    function setMaxOrderDecimals(address token, int8 decimals) external onlyRole(DEFAULT_ADMIN_ROLE) {
+        uint8 tokenDecimals = IERC20Metadata(token).decimals();
+        if (decimals > int8(tokenDecimals)) revert InvalidPrecision();
         OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        $._orderDecimalReduction[token] = decimalReduction;
-        emit OrderDecimalReductionSet(token, decimalReduction);
+        $._maxOrderDecimals[token] = decimals;
+        emit MaxOrderDecimalsSet(token, decimals);
     }
 
     /// ------------------ Order Lifecycle ------------------ ///
 
     /// @inheritdoc IOrderProcessor
-    function createOrderWithSignature(
-        Order calldata order,
-        Signature calldata orderSignature,
-        FeeQuote calldata feeQuote,
-        bytes calldata feeQuoteSignature
-    ) external whenOrdersNotPaused onlyOperator returns (uint256 id) {
-        // Recover requester and validate order signature
-        if (orderSignature.deadline < block.timestamp) revert ExpiredSignature();
-        address requester =
-            ECDSA.recover(_hashTypedDataV4(hashOrderRequest(order, orderSignature.deadline)), orderSignature.signature);
-
-        _validateFeeQuote(requester, feeQuote, feeQuoteSignature);
-
-        // Create order
-        return _createOrder(order, requester, order.sell ? 0 : feeQuote.fee);
-    }
-
-    function _validateFeeQuote(address requester, FeeQuote calldata feeQuote, bytes calldata feeQuoteSignature)
-        private
-        view
-    {
-        if (feeQuote.requester != requester) revert NotRequester();
-        if (feeQuote.deadline < block.timestamp) revert ExpiredSignature();
-        address feeQuoteSigner = ECDSA.recover(_hashTypedDataV4(hashFeeQuote(feeQuote)), feeQuoteSignature);
-        checkOperator(feeQuoteSigner);
-    }
-
-    /// @dev Validate order, initialize order state, and pull tokens
-    // slither-disable-next-line cyclomatic-complexity
-    function _createOrder(Order calldata order, address requester, uint256 feesEscrowed) private returns (uint256 id) {
-        // ------------------ Checks ------------------ //
-
-        // Cheap checks first
+    function requestOrder(Order calldata order) public whenOrdersNotPaused returns (uint256 id) {
+        // cheap checks first
         if (order.recipient == address(0)) revert ZeroAddress();
         uint256 orderAmount = (order.sell) ? order.assetTokenQuantity : order.paymentTokenQuantity;
         // No zero orders
         if (orderAmount == 0) revert ZeroValue();
-        // Ensure that price is set for limit orders
-        if (order.orderType == OrderType.LIMIT && order.price == 0) revert LimitPriceNotSet();
+        if (order.splitAmount > 0 && order.splitRecipient == address(0)) revert ZeroAddress();
 
         OrderProcessorStorage storage $ = _getOrderProcessorStorage();
 
-        // Order must not have existed
-        id = hashOrder(order);
-        if ($._status[id] != OrderStatus.NONE) revert ExistingOrder();
-
-        // Check for whitelisted tokens
-        if (!$._dShareFactory.isTokenDShare(order.assetToken)) revert UnsupportedToken(order.assetToken);
-        PaymentTokenConfig memory paymentTokenConfig = $._paymentTokens[order.paymentToken];
-        if (!paymentTokenConfig.enabled) revert UnsupportedToken(order.paymentToken);
-
         // Precision checked for assetTokenQuantity, market buys excluded
         if (order.sell || order.orderType == OrderType.LIMIT) {
-            uint8 decimalReduction = $._orderDecimalReduction[order.assetToken];
-            if (decimalReduction > 0 && (order.assetTokenQuantity % 10 ** (decimalReduction - 1)) != 0) {
-                revert InvalidPrecision();
-            }
+            // Check for max order decimals (assetTokenQuantity)
+            uint8 assetTokenDecimals = IERC20Metadata(order.assetToken).decimals();
+            uint256 assetPrecision = 10 ** uint8(int8(assetTokenDecimals) - $._maxOrderDecimals[order.assetToken]);
+            if (order.assetTokenQuantity % assetPrecision != 0) revert InvalidPrecision();
         }
 
-        _checkBlacklisted(order.assetToken, order.paymentToken, paymentTokenConfig.blacklistCallSelector, requester);
-        if (order.recipient != requester) {
-            _checkBlacklisted(
-                order.assetToken, order.paymentToken, paymentTokenConfig.blacklistCallSelector, order.recipient
-            );
-        }
+        // Check for whitelisted tokens
+        if (!hasRole(ASSETTOKEN_ROLE, order.assetToken)) revert UnsupportedToken(order.assetToken);
+        if (!$._accountFees[address(0)][order.paymentToken].set) revert UnsupportedToken(order.paymentToken);
+        // Cache order id
+        id = $._nextOrderId;
+        // Check requester
+        address requester = getRequester(id);
+        if (requester == address(0)) revert ZeroAddress();
+        // black list checker
+        blackListCheck(order.assetToken, order.paymentToken, order.recipient, requester);
 
-        // ------------------ Effects ------------------ //
+        // Update next order id
+        $._nextOrderId = id + 1;
 
+        // Check values
+        _requestOrderAccounting(id, order);
+
+        // Send order to bridge
+        emit OrderRequested(id, requester, order);
+
+        // Calculate fees
+        (uint256 flatFee, uint24 percentageFeeRate) = getFeeRatesForOrder(requester, order.sell, order.paymentToken);
         // Initialize order state
         $._orders[id] = OrderState({
+            orderHash: hashOrder(order),
             requester: requester,
-            unfilledAmount: orderAmount,
-            feesEscrowed: feesEscrowed,
-            feesTaken: 0,
-            receivedAmount: 0
+            flatFee: flatFee,
+            percentageFeeRate: percentageFeeRate,
+            received: 0,
+            feesPaid: 0,
+            cancellationInitiated: false,
+            splitAmountPaid: 0
         });
-        $._status[id] = OrderStatus.ACTIVE;
+        $._orderInfo[id] = OrderInfo({unfilledAmount: orderAmount, status: OrderStatus.ACTIVE});
+        $._numOpenOrders++;
 
-        emit OrderCreated(id, requester, order, feesEscrowed);
-
-        // ------------------ Interactions ------------------ //
-
-        // Move funds to vault for buys, burn assets for sells
         if (order.sell) {
-            // Burn asset
-            IDShare(order.assetToken).burnFrom(requester, order.assetTokenQuantity);
+            // update escrowed balance
+            $._escrowedBalanceOf[order.assetToken][order.recipient] += order.assetTokenQuantity;
+
+            // Transfer asset to contract
+            IERC20(order.assetToken).safeTransferFrom(msg.sender, address(this), order.assetTokenQuantity);
         } else {
-            // Sweep payment for purchase
-            IERC20(order.paymentToken).safeTransferFrom(requester, $._vault, order.paymentTokenQuantity);
-            // Escrow fees
-            IERC20(order.paymentToken).safeTransferFrom(requester, address(this), feesEscrowed);
+            uint256 totalFees = FeeLib.estimateTotalFees(flatFee, percentageFeeRate, order.paymentTokenQuantity);
+            uint256 quantityIn = order.paymentTokenQuantity + totalFees;
+            // update escrowed balance
+            $._escrowedBalanceOf[order.paymentToken][order.recipient] += quantityIn;
+
+            // Escrow payment for purchase
+            IERC20(order.paymentToken).safeTransferFrom(msg.sender, address(this), quantityIn);
         }
     }
 
-    /// @inheritdoc IOrderProcessor
-    function createOrder(Order calldata order, FeeQuote calldata feeQuote, bytes calldata feeQuoteSignature)
-        external
-        whenOrdersNotPaused
-        returns (uint256 id)
-    {
-        _validateFeeQuote(msg.sender, feeQuote, feeQuoteSignature);
-
-        // Create order
-        return _createOrder(order, msg.sender, order.sell ? 0 : feeQuote.fee);
-    }
-
-    /// @inheritdoc IOrderProcessor
-    function createOrderStandardFees(Order calldata order) external whenOrdersNotPaused returns (uint256 id) {
-        if (order.sell) {
-            return _createOrder(order, msg.sender, 0);
-        } else {
-            (uint256 flatFee, uint24 percentageFeeRate) = getStandardFees(false, order.paymentToken);
-            return _createOrder(
-                order, msg.sender, FeeLib.applyPercentageFee(percentageFeeRate, order.paymentTokenQuantity) + flatFee
-            );
+    function getRequester(uint256 id) internal view returns (address) {
+        // Determine true requester
+        if (hasRole(FORWARDER_ROLE, msg.sender)) {
+            // If order was requested by a forwarder, use the forwarder's requester on file
+            return IForwarder(msg.sender).orderSigner(id);
         }
+        return msg.sender;
     }
 
-    function hashOrderRequest(Order calldata order, uint64 deadline) public pure returns (bytes32) {
-        return keccak256(abi.encode(ORDER_REQUEST_TYPEHASH, hashOrder(order), deadline));
-    }
-
-    /// @inheritdoc IOrderProcessor
-    function hashOrder(Order calldata order) public pure returns (uint256) {
-        return uint256(
-            keccak256(
-                abi.encode(
-                    ORDER_TYPEHASH,
-                    order.requestTimestamp,
-                    order.recipient,
-                    order.assetToken,
-                    order.paymentToken,
-                    order.sell,
-                    order.orderType,
-                    order.assetTokenQuantity,
-                    order.paymentTokenQuantity,
-                    order.price,
-                    order.tif
-                )
-            )
-        );
-    }
-
-    function hashFeeQuote(FeeQuote calldata feeQuote) public pure returns (bytes32) {
+    /// @notice Hash order data for validation
+    function hashOrder(Order memory order) public pure returns (bytes32) {
         return keccak256(
             abi.encode(
-                FEE_QUOTE_TYPEHASH,
-                feeQuote.orderId,
-                feeQuote.requester,
-                feeQuote.fee,
-                feeQuote.timestamp,
-                feeQuote.deadline
+                order.recipient,
+                order.assetToken,
+                order.paymentToken,
+                order.sell,
+                order.orderType,
+                order.assetTokenQuantity,
+                order.paymentTokenQuantity,
+                order.price,
+                order.tif,
+                order.splitRecipient,
+                order.splitAmount
+            )
+        );
+    }
+
+    /// @notice Hash order data for validation
+    function hashOrderCalldata(Order calldata order) public pure returns (bytes32) {
+        return keccak256(
+            abi.encode(
+                order.recipient,
+                order.assetToken,
+                order.paymentToken,
+                order.sell,
+                order.orderType,
+                order.assetTokenQuantity,
+                order.paymentTokenQuantity,
+                order.price,
+                order.tif,
+                order.splitRecipient,
+                order.splitAmount
             )
         );
     }
 
     /// @inheritdoc IOrderProcessor
-    function fillOrder(Order calldata order, uint256 fillAmount, uint256 receivedAmount, uint256 fees)
+    // slither-disable-next-line cyclomatic-complexity
+    function fillOrder(uint256 id, Order calldata order, uint256 fillAmount, uint256 receivedAmount)
         external
-        onlyOperator
+        onlyRole(OPERATOR_ROLE)
     {
         // No nonsense
         if (fillAmount == 0) revert ZeroValue();
-        // Order ID
-        uint256 id = hashOrder(order);
 
         OrderProcessorStorage storage $ = _getOrderProcessorStorage();
         OrderState memory orderState = $._orders[id];
 
-        // Order must be active
-        if ($._status[id] != OrderStatus.ACTIVE) revert OrderNotActive();
+        // Order must exist
+        if (orderState.requester == address(0)) revert OrderNotFound();
+        // Verify order data
+        if (orderState.orderHash != hashOrderCalldata(order)) revert InvalidOrderData();
         // Fill cannot exceed remaining order
-        if (fillAmount > orderState.unfilledAmount) revert AmountTooLarge();
+        OrderInfo memory orderInfo = $._orderInfo[id];
+        if (fillAmount > orderInfo.unfilledAmount) revert AmountTooLarge();
 
-        if (order.sell) {
-            _fillSellOrder(id, order, orderState, fillAmount, receivedAmount, fees);
-        } else {
-            _fillBuyOrder(id, order, orderState, receivedAmount, fillAmount, fees);
-        }
-
-        // If there are protocol fees from the order, transfer them to the treasury
-        if (fees > 0) {
-            IERC20(order.paymentToken).safeTransfer($._treasury, fees);
-        }
-    }
-
-    function _fillSellOrder(
-        uint256 id,
-        Order calldata order,
-        OrderState memory orderState,
-        uint256 assetAmount,
-        uint256 paymentAmount,
-        uint256 fees
-    ) private {
-        // ------------------ Checks ------------------ //
-
-        // Fees cannot exceed proceeds
-        if (fees > paymentAmount) revert AmountTooLarge();
-        // For limit sell orders, ensure that the received amount is greater or equal to limit price * fill amount, order price has ether decimals
-        if (order.orderType == OrderType.LIMIT && paymentAmount < mulDiv18(assetAmount, order.price)) {
-            revert OrderFillAboveLimitPrice();
-        }
-
-        // ------------------ Effects ------------------ //
-
-        _publishFill(id, orderState.requester, order, assetAmount, paymentAmount, fees);
-
-        _updateFillState(id, orderState, assetAmount, paymentAmount, fees);
-
-        // Transfer the received amount from the filler to this contract
-        IERC20(order.paymentToken).safeTransferFrom(msg.sender, address(this), paymentAmount);
-
-        // If there are proceeds from the order, transfer them to the recipient
-        uint256 paymentEarned = paymentAmount - fees;
-        if (paymentEarned > 0) {
-            IERC20(order.paymentToken).safeTransfer(order.recipient, paymentEarned);
-        }
-    }
-
-    function _fillBuyOrder(
-        uint256 id,
-        Order calldata order,
-        OrderState memory orderState,
-        uint256 assetAmount,
-        uint256 paymentAmount,
-        uint256 fees
-    ) private {
-        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-
-        // ------------------ Checks ------------------ //
-
-        // Fees cannot exceed remaining deposit
-        if (fees > orderState.feesEscrowed) revert AmountTooLarge();
-        // For limit buy orders, ensure that the received amount is greater or equal to fill amount / limit price, order price has ether decimals
-        if (order.orderType == OrderType.LIMIT && assetAmount < mulDiv(paymentAmount, 1 ether, order.price)) {
-            revert OrderFillBelowLimitPrice();
-        }
-
-        // ------------------ Effects ------------------ //
-
-        _publishFill(id, orderState.requester, order, assetAmount, paymentAmount, fees);
-
-        bool fulfilled = _updateFillState(id, orderState, paymentAmount, assetAmount, fees);
-
-        // Update fee escrow (and refund if eligible)
-        uint256 remainingFeesEscrowed = orderState.feesEscrowed - fees;
-        if (fulfilled) {
-            // Refund remaining fees
-            if (remainingFeesEscrowed > 0) {
-                // Interaction
-                IERC20(order.paymentToken).safeTransfer(orderState.requester, remainingFeesEscrowed);
-            }
-        } else {
-            $._orders[id].feesEscrowed = remainingFeesEscrowed;
-        }
-
-        // Mint asset
-        IDShare(order.assetToken).mint(order.recipient, assetAmount);
-    }
-
-    function _publishFill(
-        uint256 id,
-        address requester,
-        Order calldata order,
-        uint256 assetAmount,
-        uint256 paymentAmount,
-        uint256 fees
-    ) private {
-        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-
-        // Update price oracle
-        bytes32 pairIndex = OracleLib.pairIndex(order.assetToken, order.paymentToken);
-        $._latestFillPrice[pairIndex] = PricePoint({
-            blocktime: uint64(block.timestamp),
-            price: order.orderType == OrderType.LIMIT
-                ? order.price
-                : OracleLib.calculatePrice(assetAmount, paymentAmount, $._paymentTokens[order.paymentToken].decimals)
-        });
+        // Calculate earned fees and handle any unique checks
+        (uint256 paymentEarned, uint256 feesEarned) =
+            _fillOrderAccounting(id, order, orderState, orderInfo.unfilledAmount, fillAmount, receivedAmount);
 
         // Notify order filled
         emit OrderFill(
-            id, order.paymentToken, order.assetToken, requester, assetAmount, paymentAmount, fees, order.sell
+            id, orderState.requester, order.paymentToken, order.assetToken, fillAmount, receivedAmount, feesEarned
         );
-    }
 
-    function _updateFillState(
-        uint256 id,
-        OrderState memory orderState,
-        uint256 fillAmount,
-        uint256 receivedAmount,
-        uint256 fees
-    ) private returns (bool fulfilled) {
-        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
+        // Take splitAmount from amount to distribute
+        uint256 splitAmountEarned = 0;
+        if (order.splitAmount > 0) {
+            if (orderState.splitAmountPaid < order.splitAmount) {
+                uint256 amountToDistribute = order.sell ? paymentEarned : receivedAmount;
+                uint256 splitAmountRemaining = order.splitAmount - orderState.splitAmountPaid;
+                if (amountToDistribute > splitAmountRemaining) {
+                    splitAmountEarned = splitAmountRemaining;
+                } else {
+                    splitAmountEarned = amountToDistribute;
+                }
+            }
+        }
 
         // Update order state
-        uint256 newUnfilledAmount = orderState.unfilledAmount - fillAmount;
-        $._orders[id].unfilledAmount = newUnfilledAmount;
-        $._orders[id].receivedAmount = orderState.receivedAmount + receivedAmount;
-        $._orders[id].feesTaken = orderState.feesTaken + fees;
-        // If order is completely filled then clear order state
-        fulfilled = newUnfilledAmount == 0;
-        if (fulfilled) {
-            $._orders[id].feesEscrowed = 0;
-            $._status[id] = OrderStatus.FULFILLED;
-            // Notify order fulfilled
-            emit OrderFulfilled(id, orderState.requester);
+        _updateOrderStateForFill(
+            id,
+            orderInfo.unfilledAmount,
+            orderState,
+            order.sell,
+            order.paymentTokenQuantity,
+            fillAmount,
+            receivedAmount,
+            feesEarned,
+            splitAmountEarned
+        );
+
+        // Move tokens
+        if (order.sell) {
+            // update escrowed balance
+            $._escrowedBalanceOf[order.assetToken][order.recipient] -= fillAmount;
+            // Burn the filled quantity from the asset token
+            IDShare(order.assetToken).burn(fillAmount);
+
+            // Transfer the received amount from the filler to this contract
+            IERC20(order.paymentToken).safeTransferFrom(msg.sender, address(this), receivedAmount);
+
+            // Send split amount first
+            if (splitAmountEarned > 0) {
+                IERC20(order.paymentToken).safeTransfer(order.splitRecipient, splitAmountEarned);
+            }
+
+            // If there are proceeds from the order, transfer them to the recipient
+            uint256 proceeds = paymentEarned - splitAmountEarned;
+            if (proceeds > 0) {
+                IERC20(order.paymentToken).safeTransfer(order.recipient, proceeds);
+            }
+        } else {
+            // update escrowed balance
+            $._escrowedBalanceOf[order.paymentToken][order.recipient] -= paymentEarned + feesEarned;
+            // Claim payment
+            IERC20(order.paymentToken).safeTransfer(msg.sender, paymentEarned);
+
+            // Send split amount first
+            if (splitAmountEarned > 0) {
+                IDShare(order.assetToken).mint(order.recipient, splitAmountEarned);
+            }
+
+            // Mint asset
+            uint256 proceeds = receivedAmount - splitAmountEarned;
+            if (proceeds > 0) {
+                IDShare(order.assetToken).mint(order.recipient, proceeds);
+            }
+        }
+
+        // If there are protocol fees from the order, transfer them to the treasury
+        if (feesEarned > 0) {
+            IERC20(order.paymentToken).safeTransfer($._treasury, feesEarned);
         }
     }
 
-    /// @inheritdoc IOrderProcessor
+    function _updateOrderStateForFill(
+        uint256 id,
+        uint256 unfilledAmount,
+        OrderState memory orderState,
+        bool sell,
+        uint256 orderPaymentTokenQuantity,
+        uint256 fillAmount,
+        uint256 receivedAmount,
+        uint256 feesEarned,
+        uint256 splitAmountEarned
+    ) private {
+        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
+        uint256 newUnfilledAmount = unfilledAmount - fillAmount;
+        $._orderInfo[id].unfilledAmount = newUnfilledAmount;
+        // If order is completely filled then clear order state
+        if (newUnfilledAmount == 0) {
+            $._orderInfo[id].status = OrderStatus.FULFILLED;
+            // Clear order state
+            delete $._orders[id];
+            $._numOpenOrders--;
+            // Notify order fulfilled
+            emit OrderFulfilled(id, orderState.requester);
+        } else {
+            // Otherwise update order state
+            uint256 feesPaid = orderState.feesPaid + feesEarned;
+            // Check values
+            if (!sell) {
+                uint256 estimatedTotalFees = FeeLib.estimateTotalFees(
+                    orderState.flatFee, orderState.percentageFeeRate, orderPaymentTokenQuantity
+                );
+                assert(feesPaid <= estimatedTotalFees);
+            }
+            $._orders[id].received = orderState.received + receivedAmount;
+            $._orders[id].feesPaid = feesPaid;
+            if (splitAmountEarned > 0) {
+                $._orders[id].splitAmountPaid = orderState.splitAmountPaid + splitAmountEarned;
+            }
+        }
+    }
+
+    function blackListCheck(address assetToken, address paymentToken, address recipient, address sender)
+        internal
+        view
+    {
+        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
+        ITokenLockCheck _tokenLockCheck = $._tokenLockCheck;
+        if (_tokenLockCheck.isTransferLocked(assetToken, recipient)) revert Blacklist();
+        if (_tokenLockCheck.isTransferLocked(assetToken, sender)) revert Blacklist();
+        if (_tokenLockCheck.isTransferLocked(paymentToken, recipient)) revert Blacklist();
+        if (_tokenLockCheck.isTransferLocked(paymentToken, sender)) revert Blacklist();
+    }
+
+    /// @notice Request to cancel an order
+    /// @param id Order id
+    /// @dev Only callable by initial order requester
+    /// @dev Emits CancelRequested event to be sent to fulfillment service (operator)
     function requestCancel(uint256 id) external {
         OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        // Order must be active
-        if ($._status[id] != OrderStatus.ACTIVE) revert OrderNotActive();
-        // Only requester can request cancellation
+        if ($._orders[id].cancellationInitiated) revert OrderCancellationInitiated();
+        // Order must exist
         address requester = $._orders[id].requester;
-        if (requester != msg.sender) revert NotRequester();
+        if (requester == address(0)) revert OrderNotFound();
+        // Get cancel requester
+        address cancelRequester = getRequester(id);
+        // Only requester can request cancellation
+        if (requester != cancelRequester) revert NotRequester();
+
+        $._orders[id].cancellationInitiated = true;
 
         // Send cancel request to bridge
         emit CancelRequested(id, requester);
     }
 
-    /// @inheritdoc IOrderProcessor
-    function cancelOrder(Order calldata order, string calldata reason) external onlyOperator {
-        // ------------------ Checks ------------------ //
-
-        // Order ID
-        uint256 id = hashOrder(order);
-
+    /// @notice Cancel an order
+    /// @param order Order to cancel
+    /// @param id Order id
+    /// @param reason Reason for cancellation
+    /// @dev Only callable by operator
+    function cancelOrder(uint256 id, Order calldata order, string calldata reason) external onlyRole(OPERATOR_ROLE) {
         OrderProcessorStorage storage $ = _getOrderProcessorStorage();
-        // Order must be active
-        if ($._status[id] != OrderStatus.ACTIVE) revert OrderNotActive();
-
-        // ------------------ Effects ------------------ //
-
-        // If buy order, then refund fee deposit
-        OrderState storage orderState = $._orders[id];
-        uint256 feeRefund = order.sell ? 0 : orderState.feesEscrowed;
-        uint256 unfilledAmount = orderState.unfilledAmount;
-
-        orderState.feesEscrowed = 0;
+        OrderState memory orderState = $._orders[id];
+        // Order must exist
+        if (orderState.requester == address(0)) revert OrderNotFound();
+        // Verify order data
+        if (orderState.orderHash != hashOrderCalldata(order)) revert InvalidOrderData();
 
         // Order is cancelled
-        $._status[id] = OrderStatus.CANCELLED;
+        $._orderInfo[id].status = OrderStatus.CANCELLED;
+        // Clear order state
+
+        delete $._orders[id];
+        $._numOpenOrders--;
 
         // Notify order cancelled
-        address requester = orderState.requester;
-        emit OrderCancelled(id, requester, reason);
+        emit OrderCancelled(id, orderState.requester, reason);
 
-        // ------------------ Interactions ------------------ //
+        // Calculate refund
+        uint256 refund = _cancelOrderAccounting(id, order, orderState, $._orderInfo[id].unfilledAmount);
 
-        // Return escrowed fees and unfilled amount
+        address refundToken = (order.sell) ? order.assetToken : order.paymentToken;
+        // update escrowed balance
+        $._escrowedBalanceOf[refundToken][order.recipient] -= refund;
+
+        // Return escrow
+        IERC20(refundToken).safeTransfer(orderState.requester, refund);
+    }
+
+    /// ------------------ Virtuals ------------------ ///
+
+    function _getOrderHash(uint256 id) internal view returns (bytes32) {
+        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
+        return $._orders[id].orderHash;
+    }
+
+    function _getRequester(uint256 id) internal view returns (address) {
+        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
+        return $._orders[id].requester;
+    }
+
+    function _increaseEscrowedBalanceOf(address token, address user, uint256 amount) internal {
+        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
+        $._escrowedBalanceOf[token][user] += amount;
+    }
+
+    function _decreaseEscrowedBalanceOf(address token, address user, uint256 amount) internal {
+        OrderProcessorStorage storage $ = _getOrderProcessorStorage();
+        $._escrowedBalanceOf[token][user] -= amount;
+    }
+
+    /// @notice Perform any unique order request checks and accounting
+    /// @param id Order ID
+    /// @param order Order request to process
+    function _requestOrderAccounting(uint256 id, Order calldata order) internal virtual {
+        // Ensure that price is set for limit orders
+        if (order.orderType == OrderType.LIMIT && order.price == 0) revert LimitPriceNotSet();
+    }
+
+    /// @notice Handle any unique order accounting and checks
+    /// @param id Order ID
+    /// @param order Order to fill
+    /// @param orderState Order state
+    /// @param unfilledAmount Amount of order token remaining to be used
+    /// @param fillAmount Amount of order token filled
+    /// @param receivedAmount Amount of received token
+    /// @return paymentEarned Amount of payment token earned to be paid to operator or recipient
+    /// @return feesEarned Amount of fees earned to be paid to treasury
+    function _fillOrderAccounting(
+        uint256 id,
+        Order calldata order,
+        OrderState memory orderState,
+        uint256 unfilledAmount,
+        uint256 fillAmount,
+        uint256 receivedAmount
+    ) internal virtual returns (uint256 paymentEarned, uint256 feesEarned) {
         if (order.sell) {
-            // Mint unfilled
-            IDShare(order.assetToken).mint(requester, unfilledAmount);
+            // For limit sell orders, ensure that the received amount is greater or equal to limit price * fill amount, order price has ether decimals
+            if (order.orderType == OrderType.LIMIT && receivedAmount < mulDiv18(fillAmount, order.price)) {
+                revert OrderFillAboveLimitPrice();
+            }
+
+            // Fees - earn up to the flat fee, then earn percentage fee on the remainder
+            // TODO: make sure that all fees are taken at total fill to prevent dust accumulating here
+            // Determine the subtotal used to calculate the percentage fee
+            uint256 subtotal = 0;
+            // If the flat fee hasn't been fully covered yet, ...
+            if (orderState.feesPaid < orderState.flatFee) {
+                // How much of the flat fee is left to cover?
+                uint256 flatFeeRemaining = orderState.flatFee - orderState.feesPaid;
+                // If the amount subject to fees is greater than the remaining flat fee, ...
+                if (receivedAmount > flatFeeRemaining) {
+                    // Earn the remaining flat fee
+                    feesEarned = flatFeeRemaining;
+                    // Calculate the subtotal by subtracting the remaining flat fee from the amount subject to fees
+                    subtotal = receivedAmount - flatFeeRemaining;
+                } else {
+                    // Otherwise, earn the amount subject to fees
+                    feesEarned = receivedAmount;
+                }
+            } else {
+                // If the flat fee has been fully covered, the subtotal is the entire fill amount
+                subtotal = receivedAmount;
+            }
+
+            // Calculate the percentage fee on the subtotal
+            if (subtotal > 0 && orderState.percentageFeeRate > 0) {
+                feesEarned += mulDiv18(subtotal, orderState.percentageFeeRate);
+            }
+
+            paymentEarned = receivedAmount - feesEarned;
         } else {
-            // Return unfilled
-            IERC20(order.paymentToken).safeTransferFrom(msg.sender, requester, unfilledAmount);
-            if (feeRefund > 0) {
-                IERC20(order.paymentToken).safeTransfer(requester, feeRefund);
+            // For limit buy orders, ensure that the received amount is greater or equal to fill amount / limit price, order price has ether decimals
+            if (order.orderType == OrderType.LIMIT && receivedAmount < mulDiv(fillAmount, 1 ether, order.price)) {
+                revert OrderFillBelowLimitPrice();
+            }
+
+            paymentEarned = fillAmount;
+            // Fees - earn the flat fee if first fill, then earn percentage fee on the fill
+            feesEarned = 0;
+            if (orderState.feesPaid == 0) {
+                feesEarned = orderState.flatFee;
+            }
+            uint256 estimatedTotalFees =
+                FeeLib.estimateTotalFees(orderState.flatFee, orderState.percentageFeeRate, order.paymentTokenQuantity);
+            uint256 totalPercentageFees = estimatedTotalFees - orderState.flatFee;
+            feesEarned += mulDiv(totalPercentageFees, fillAmount, order.paymentTokenQuantity);
+        }
+    }
+
+    /// @notice Move tokens for order cancellation including fees and escrow
+    /// @param id Order ID
+    /// @param order Order to cancel
+    /// @param orderState Order state
+    /// @param unfilledAmount Amount of order token remaining to be used
+    /// @return refund Amount of order token to refund to user
+    function _cancelOrderAccounting(
+        uint256 id,
+        Order calldata order,
+        OrderState memory orderState,
+        uint256 unfilledAmount
+    ) internal virtual returns (uint256 refund) {
+        if (order.sell) {
+            refund = unfilledAmount;
+        } else {
+            uint256 totalFees =
+                FeeLib.estimateTotalFees(orderState.flatFee, orderState.percentageFeeRate, order.paymentTokenQuantity);
+            // If no fills, then full refund
+            refund = unfilledAmount + totalFees;
+            if (refund < order.paymentTokenQuantity + totalFees) {
+                // Refund remaining order and fees
+                refund -= orderState.feesPaid;
             }
         }
     }

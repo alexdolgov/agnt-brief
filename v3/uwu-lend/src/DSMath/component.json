@@ -2,7 +2,7 @@
   "component": "DSMath",
   "main_contract": "DSMath",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x97bf1ff371ceabbb9e821480d31dd743c4b71e0e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9aed7a25f2d928225e6fb2388055c7363ad6727b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

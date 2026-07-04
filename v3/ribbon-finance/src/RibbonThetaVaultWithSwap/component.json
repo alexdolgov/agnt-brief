@@ -2,7 +2,7 @@
   "component": "RibbonThetaVaultWithSwap",
   "main_contract": "RibbonThetaVaultWithSwap",
   "source_file_count": 30,
-  "deployment_count": 1,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,46 @@
       "chain": "ethereum",
       "chain_id": 1,
       "address": "0x2530298e2f5c026e794f8b39bda39f50c70bc6b4",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x3fb82fef405b14c6569dd07f0a673df79f0f1f44",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6fc853a8978017381e4bec0da7792f0b46453a8e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x74e52410aede9a66d0b21eb8658bf27a15fbd421",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xcd87867e13b10a4a320b48f8e317534e3f5450fc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xeaf743e9fe7449ae3ce02bc01712666530d2666e",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

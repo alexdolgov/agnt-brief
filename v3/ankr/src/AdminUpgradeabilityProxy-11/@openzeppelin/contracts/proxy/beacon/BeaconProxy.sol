@@ -24,7 +24,7 @@ contract BeaconProxy is Proxy, ERC1967Upgrade {
      *
      * Requirements:
      *
-     * - `beacon` must be a contract with the interface {IBeacon}.1-
+     * - `beacon` must be a contract with the interface {IBeacon}.
      */
     constructor(address beacon, bytes memory data) payable {
         assert(_BEACON_SLOT == bytes32(uint256(keccak256("eip1967.proxy.beacon")) - 1));

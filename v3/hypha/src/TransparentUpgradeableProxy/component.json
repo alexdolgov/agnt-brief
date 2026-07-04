@@ -2,10 +2,18 @@
   "component": "TransparentUpgradeableProxy",
   "main_contract": "TransparentUpgradeableProxy",
   "source_file_count": 8,
-  "deployment_count": 5,
+  "deployment_count": 6,
   "audited": false,
   "audits_covering": [],
   "addresses": [
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x456a6e49409f137138e2e0255368a3a37876e87b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
     {
       "chain": "avalanche",
       "chain_id": 43114,

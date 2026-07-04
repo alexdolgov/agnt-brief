@@ -316,20 +316,6 @@ struct PendleProviderOracleInfo {
     uint32 twapWindow;
 }
 
-struct PendleUniversalOracleInfo {
-    address base;
-    address quote;
-    address pendleMarket;
-    uint32 twapWindow;
-}
-
-struct CurveEMAOracleInfo {
-    address base;
-    address quote;
-    address pool;
-    uint256 priceOracleIndex;
-}
-
 struct SwaapSafeguardProviderOracleInfo {
     address base;
     address quote;

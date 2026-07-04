@@ -5,7 +5,7 @@
 - Project: Mezo Earn (`mezo-earn`)
 - Website: [https://mezo.org/earn/lock](https://mezo.org/earn/lock)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:27.478Z
+- Generated: 2026-07-04T11:05:43.913Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-b097
 - Chains: ethereum
 - Contract surface: 82 unique implementations (113 raw deployments)

@@ -2,17 +2,25 @@
   "component": "MonthlyBounty-2",
   "main_contract": "MonthlyBounty",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "bsc",
       "chain_id": 56,
-      "address": "0x27ed9675b109e725067bdcbb2c5a1fd069e18642",
+      "address": "0xf275c4d66e7a077d1b1864481a9445ae9117b6a2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "bsc",
+      "chain_id": 56,
+      "address": "0xf36d6481987edce025f7a34dff1fe35fdc6630e8",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

@@ -101,7 +101,7 @@
 | bsc | `0xdb9919b59526f3355044c140fe3f3b90980ca680` | LaunchField | impl | inactive | no |
 | bsc | `0xdccacafdfec6193cd738506503548f44683cea38` | DegenPool | impl | inactive | no |
 | bsc | `0xdd4090a69c5279f937a1c89b222f680d4b97333d` | LaunchField | impl | inactive | no |
-| bsc | `0xe394b087889d6d2e8eba110bfe376079e3c2682a` | LaunchField | impl | live | no |
+| bsc | `0xe394b087889d6d2e8eba110bfe376079e3c2682a` | LaunchField-2 | impl | live | no |
 | bsc | `0xe3d30111560798c6241b6323c813e7d7786bf250` | IDO | impl | inactive | no |
 | bsc | `0xe427f3981c1e7e35e903e070e23111972a8fe782` | DegenPool | impl | inactive | no |
 | bsc | `0xe5e2d9e9742f6622fff44001517eb6b27a794e6a` | LaunchField | impl | inactive | no |

@@ -4,7 +4,7 @@
 
 - Project: Swerve (`swerve`)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:57.394Z
+- Generated: 2026-07-04T11:05:46.649Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-66d5
 - Chains: ethereum
 - Contract surface: 6 unique implementations (9 raw deployments)
@@ -14,7 +14,7 @@
 
 ## Project Description
 
-Dexs. Structurally: 3 project-authored contract(s) across 1 chain(s); built on openzeppelin.
+Dexs. Structurally: 4 project-authored contract(s) across 1 chain(s); built on openzeppelin.
 
 ### Architecture
 

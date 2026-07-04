@@ -5,7 +5,7 @@
 - Project: K2 (`k2`)
 - Website: [https://opengdp.network/](https://opengdp.network/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:17.620Z
+- Generated: 2026-07-04T11:05:41.959Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: ethereum
 - Contract surface: 32 unique implementations (48 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-Chain. Structurally: 11 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 1 ERC20 token, 1 ERC721 NFT; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Chain. Structurally: 34 project-authored contract(s) across 1 chain(s); 1 ERC4626 vault, 1 ERC20 token, 2 ERC721 NFTs; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 5 functional families. Its contracts share 1 common project-authored base contract(s) (semver). Dominant framework: openzeppelin.
+The protocol comprises 7 functional families. Its contracts share 3 common project-authored base contract(s) (semver, erc165, erc721uristorage). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

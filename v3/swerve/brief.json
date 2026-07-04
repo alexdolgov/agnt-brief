@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "swerve",
-  "generated_at": "2026-07-03T21:06:57.394Z",
+  "generated_at": "2026-07-04T11:05:46.649Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-66d5",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -50,7 +50,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Dexs. Structurally: 3 project-authored contract(s) across 1 chain(s); built on openzeppelin.",
+    "project_purpose": "Dexs. Structurally: 4 project-authored contract(s) across 1 chain(s); built on openzeppelin.",
     "relationship_narrative": "The protocol comprises 2 functional families. Contracts operate as largely independent structural surfaces. Dominant framework: openzeppelin.",
     "product_family_count": 2,
     "total_contracts_indexed": 16,

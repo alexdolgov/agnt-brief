@@ -1,31 +1,17 @@
 {
   "component": "OrderProcessor-2",
   "main_contract": "OrderProcessor",
-  "source_file_count": 53,
+  "source_file_count": 38,
   "deployment_count": 5,
-  "audited": false,
-  "audits_covering": [],
+  "audited": true,
+  "audits_covering": [
+    "https://assets.dinari.com/audits/Audit_Sherlock_230811.pdf"
+  ],
   "addresses": [
     {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0x6bb71b2bdd892c5efb960a76edec03b1f04551f4",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "ethereum",
-      "chain_id": 1,
-      "address": "0xcc3dc0ac609e6b78bb8cd7a3b27c2c7688272f8a",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "base",
-      "chain_id": 8453,
-      "address": "0xff69106c29ceaafcda41e62def4798297d565eb3",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x0a03632a634124ee3bba0e9e58f1a48fcf806242",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
@@ -33,17 +19,33 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x14d5ba979b3faf24823c80bb3be228b543300deb",
+      "address": "0x4c3bd1ac4f62f25388c02caf8e3e0d32d09ff8b3",
+      "is_proxy": true,
+      "implementation_address": "0x0a03632a634124ee3bba0e9e58f1a48fcf806242",
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x8ec4a0675eb43887db78f0ce9cb50b654d01512f",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "blast",
-      "chain_id": 81457,
-      "address": "0xeb458f36544402224284f42c0d7c8931b7e5e5c6",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xd9ab4754f39b2b1e5008c5b15c2edbab6ba32c04",
       "is_proxy": false,
       "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xfa922457873f750244d93679df0d810881e4131d",
+      "is_proxy": true,
+      "implementation_address": "0x3f3d37a3ca88070e125b3cbfae07f77425f08c47",
       "liveness": "live"
     }
   ]

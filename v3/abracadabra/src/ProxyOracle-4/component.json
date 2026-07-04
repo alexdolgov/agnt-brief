@@ -44,7 +44,7 @@
       "address": "0x0cc93802f800ccee67914c3072e80d23e920a3e2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "avalanche",
@@ -52,7 +52,7 @@
       "address": "0x7e0f0cc086b069d1ae3edb7e7aeecc770b6d3aeb",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "avalanche",
@@ -60,7 +60,7 @@
       "address": "0xb69c154030ce89340cdceca8eed93283499a8276",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "avalanche",
@@ -68,7 +68,7 @@
       "address": "0xf8b72e847e648bc87c8269fe258cbe908fa2a71d",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

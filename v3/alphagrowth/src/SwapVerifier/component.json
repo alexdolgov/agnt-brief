@@ -2,7 +2,7 @@
   "component": "SwapVerifier",
   "main_contract": "SwapVerifier",
   "source_file_count": 21,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +12,15 @@
       "address": "0x786c900d7d348662703c38b46f24c1cda2c582ab",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xae26485acddefd486fe9ad7c2b34169d360737c7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

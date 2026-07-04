@@ -21,7 +21,6 @@ interface IWasabiPerps {
     error InsufficientPrincipalUsed(); // 0xb1084a42
     error InsufficientPrincipalRepaid(); // 0xb0f8fc9b
     error InsufficientCollateralReceived(); // 0x406220a9
-    error InsufficientInterest(); // 0x0ffe80f0
     error TooMuchCollateralSpent(); // 0x1cbf0b89
     error SenderNotTrader(); // 0x79184208
     error InvalidPosition(); // 0xce7e065e
@@ -106,21 +105,12 @@ interface IWasabiPerps {
         uint256 downPaymentReduced
     );
 
-    event CollateralAdded(
+    event CollateralAddedToPosition(
         uint256 id,
         address trader,
         uint256 downPaymentAdded,
         uint256 collateralAdded,
-        uint256 principalReduced,
-        uint256 interestPaid
-    );
-
-    event CollateralRemoved(
-        uint256 id,
-        address trader,
-        uint256 downPaymentReduced,
-        uint256 collateralReduced,
-        uint256 principalAdded
+        uint256 feesAdded
     );
 
     event NativeYieldClaimed(
@@ -200,28 +190,6 @@ interface IWasabiPerps {
         FunctionCallData[] functionCallDataList;
         Position existingPosition;
         address referrer;
-    }
-
-    /// @dev Defines a request to add collateral to a position.
-    /// @param amount The amount of collateral to add.
-    /// @param interest The interest to be paid for the position.
-    /// @param expiration The timestamp when this request expires.
-    /// @param position The position to add collateral to.
-    struct AddCollateralRequest {
-        uint256 amount;
-        uint256 interest;
-        uint256 expiration;
-        Position position;
-    }
-
-    /// @dev Defines a request to remove collateral from a position.
-    /// @param amount The amount of collateral to remove.
-    /// @param expiration The timestamp when this request expires.
-    /// @param position The position to remove collateral from.
-    struct RemoveCollateralRequest {
-        uint256 amount;
-        uint256 expiration;
-        Position position;
     }
 
     /// @dev Defines the amounts to be paid when closing a position.
@@ -321,22 +289,6 @@ interface IWasabiPerps {
         address _trader
     ) external payable returns (Position memory);
 
-    /// @dev Adds collateral to a position
-    /// @param _request the request to add collateral
-    /// @param _signature the signature of the request
-    function addCollateral(
-        AddCollateralRequest calldata _request,
-        Signature calldata _signature
-    ) external payable returns (Position memory);
-
-    /// @dev Removes collateral from a position
-    /// @param _request the request to remove collateral
-    /// @param _signature the signature of the request
-    function removeCollateral(
-        RemoveCollateralRequest calldata _request,
-        Signature calldata _signature
-    ) external payable returns (Position memory);
-
     /// @dev Closes a position
     /// @param _payoutType whether to send WETH to the trader, send ETH, or deposit WETH to the vault
     /// @param _request the request to close a position
@@ -358,7 +310,7 @@ interface IWasabiPerps {
         ClosePositionRequest calldata _request,
         Signature calldata _signature,
         ClosePositionOrder calldata _order,
-        bytes calldata _orderSignature
+        Signature calldata _orderSignature
     ) external payable;
 
     /// @dev Liquidates a position
@@ -390,4 +342,11 @@ interface IWasabiPerps {
 
     /// @dev Adds a new quote token
     function addQuoteToken(address _token) external;
+
+    /// @dev Migrates pending open fees to the fee receiver
+    /// @param _addressProvider the address of the new AddressProvider contract
+    /// @param _feeTokens the addresses of the fee tokens
+    /// @param _fees the fees to be migrated
+    /// @param _expectedBalances the expected balances of the fee tokens before the migration
+    function migrateFees(address _addressProvider, address[] calldata _feeTokens, uint256[] calldata _fees, uint256[] calldata _expectedBalances) external;
 }

@@ -68,7 +68,7 @@
       "address": "0xaf6f21f1a0c6d47b61388b982954666dd030e10c",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "chain-146",
@@ -76,7 +76,7 @@
       "address": "0xf5a10654bc75e09fb5f341d687305e9cc4b09ec0",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     },
     {
       "chain": "arbitrum",

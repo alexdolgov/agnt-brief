@@ -173,7 +173,7 @@ contract xVault {
     
     address owner;
     
-    IComptroller constant COMPTROLLER = IComptroller(0xAB1c342C7bf5Ec5F02ADEA1c2270670bCa144CbB);
+    IComptroller constant COMPTROLLER = IComptroller(0x3d5BC3c8d13dcB8bF317092d84783c2697AE9258);
     address constant FACTORY = address(0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac);
     address constant WETH = address(0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2);
     
@@ -203,7 +203,7 @@ contract xVault {
     constructor() {
         owner = msg.sender;
         enterMarkets();
-        approveMarkets();
+        //approveMarkets();
     }
     
     function withdraw(address token, uint amount) external {
@@ -219,15 +219,16 @@ contract xVault {
     
     function close(address cyrepay, address repay, uint ramt, address cywithdraw, address uwithdraw, uint wamt) external {
         require(owner == msg.sender);
-        ISushiswapV2Pair _pairFrom = ISushiswapV2Pair(pairFor(repay, WETH));
-        (uint amount0, uint amount1) = repay < WETH ? (ramt, uint(0)) : (uint(0), ramt);
+        address tokenB = repay == WETH ? uwithdraw : WETH;
+        ISushiswapV2Pair _pairFrom = ISushiswapV2Pair(pairFor(repay, tokenB));
+        (uint amount0, uint amount1) = repay < tokenB ? (ramt, uint(0)) : (uint(0), ramt);
         _pairFrom.swap(amount0, amount1, address(this), abi.encode(cyrepay, repay, ramt, address(_pairFrom), cywithdraw, uwithdraw, wamt, false));
     }
     
     function _borrow(address cylong, address long, uint lamt, address cyshort, address short, uint samt) internal {
         (uint amount0, uint amount1) = long < WETH ? (lamt, uint(0)) : (uint(0), lamt);
-        
-        ISushiswapV2Pair _pairFrom = ISushiswapV2Pair(pairFor(long, WETH));
+        address tokenB = long == WETH ? short : WETH;
+        ISushiswapV2Pair _pairFrom = ISushiswapV2Pair(pairFor(long, tokenB));
         _pairFrom.swap(amount0, amount1, address(this), abi.encode(cylong, long, lamt, address(_pairFrom), cyshort, short, samt, true));
     }
     
@@ -242,6 +243,8 @@ contract xVault {
     }
     
     function _close(address _cyrepay, uint _ramt, address _pairFrom, uint _amount0, address _withdraw, address _repay, uint _wamt, address _cywithdraw) internal {
+        IERC20(_repay).safeApprove(_cyrepay, 0);
+        IERC20(_repay).safeApprove(_cyrepay, uint(-1));
         cyToken(_cyrepay).repayBorrow(_ramt);
         
         (uint reserve0, uint reserve1,) = ISushiswapV2Pair(_pairFrom).getReserves();
@@ -259,6 +262,8 @@ contract xVault {
     }
     
     function _open(address _cylong, uint _lamt, address _pairFrom, uint _amount0, address _short, address _long, uint _samt, address _cyshort) internal {
+        IERC20(_long).safeApprove(_cylong, 0);
+        IERC20(_long).safeApprove(_cylong, uint(-1));
         cyToken(_cylong).mint(_lamt);
         
         (uint reserve0, uint reserve1,) = ISushiswapV2Pair(_pairFrom).getReserves();

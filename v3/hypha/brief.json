@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "hypha",
-  "generated_at": "2026-07-03T21:05:59.967Z",
+  "generated_at": "2026-07-04T11:05:41.936Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -52,8 +52,8 @@
     }
   },
   "topography": {
-    "project_purpose": "Liquid Staking. Structurally: 44 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on solmate.",
-    "relationship_narrative": "The protocol comprises 8 functional families. Its contracts share 3 common project-authored base contract(s) (base, baseabstract, erc20upgradeable). Dominant framework: solmate.",
+    "project_purpose": "Liquid Staking. Structurally: 45 project-authored contract(s) across 1 chain(s); 3 ERC20 tokens, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 8 functional families. Its contracts share 3 common project-authored base contract(s) (base, baseabstract, erc20upgradeable). Dominant framework: openzeppelin.",
     "product_family_count": 8,
     "total_contracts_indexed": 119,
     "live_contracts": 61,

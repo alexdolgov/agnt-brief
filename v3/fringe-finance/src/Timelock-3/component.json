@@ -1,7 +1,7 @@
 {
   "component": "Timelock-3",
   "main_contract": "Timelock",
-  "source_file_count": 1,
+  "source_file_count": 4,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +9,10 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0x1a9c8182c09f50c8318d769245bea52c32be35bc",
+      "address": "0x1994b59e02cd0d09d839b03660c205e88a929b81",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "live"
+      "liveness": "inactive"
     }
   ]
 }

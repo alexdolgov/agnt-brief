@@ -2,7 +2,7 @@
   "component": "EventEmitterRegistry",
   "main_contract": "EventEmitterRegistry",
   "source_file_count": 28,
-  "deployment_count": 6,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -17,26 +17,10 @@
     {
       "chain": "mantle",
       "chain_id": 5000,
-      "address": "0x250b152e33018623c8fb5ddf54ce1cdb99d6b5d1",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "live"
-    },
-    {
-      "chain": "mantle",
-      "chain_id": 5000,
       "address": "0x2fdb2bfb1f5926e9996fd86fe5e0782b126f8785",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "inactive"
-    },
-    {
-      "chain": "mantle",
-      "chain_id": 5000,
-      "address": "0x778cea4ce43ba1a3ed6306ca692b8d9d3dfb827c",
-      "is_proxy": true,
-      "implementation_address": "0xafb94b811fb949b01f8b04280a7607e85852ec52",
-      "liveness": "live"
     },
     {
       "chain": "mantle",
@@ -52,7 +36,7 @@
       "address": "0x1804bcc142191b90cc0a7116685cdf24f29318c3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

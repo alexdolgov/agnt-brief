@@ -2,7 +2,7 @@
   "component": "YVUSDTSwapperFlat",
   "main_contract": "YVUSDTSwapperFlat",
   "source_file_count": 5,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +12,15 @@
       "address": "0x1d7c1c99045c1c776607f8c1ec9ddd27a2d319d3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x41b98276f8c2fe212a24c1f3c37e5ef8d99e549a",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

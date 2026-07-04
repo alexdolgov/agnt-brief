@@ -5,7 +5,7 @@
 - Project: Cryptex Finance (`cryptex-finance`)
 - Website: [https://cryptex.finance/](https://cryptex.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:42.290Z
+- Generated: 2026-07-04T11:05:40.871Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-b097
 - Chains: arbitrum, ethereum
 - Contract surface: 95 unique implementations (244 raw deployments)

@@ -1,7 +1,7 @@
 {
   "component": "ComposableStablePoolFactory-4",
   "main_contract": "ComposableStablePoolFactory",
-  "source_file_count": 56,
+  "source_file_count": 61,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
@@ -9,10 +9,10 @@
     {
       "chain": "ethereum",
       "chain_id": 1,
-      "address": "0xdc6d62ae091ea77331542042a72e5e38b188837c",
+      "address": "0xdba127fbc23fb20f5929c546af220a991b5c6e01",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

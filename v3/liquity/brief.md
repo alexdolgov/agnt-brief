@@ -5,7 +5,7 @@
 - Project: Liquity (`liquity`)
 - Website: [https://www.liquity.org/](https://www.liquity.org/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:21.589Z
+- Generated: 2026-07-04T11:05:42.046Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
 - Chains: arbitrum, avalanche, base, berachain, ethereum, hyperliquid, optimism, scroll, sonic, swellchain
 - Contract surface: 112 unique implementations (171 raw deployments)
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-CDP. Structurally: 70 project-authored contract(s) across 3 chain(s); 6 ERC20 tokens, 1 ERC721 NFT; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+CDP. Structurally: 71 project-authored contract(s) across 7 chain(s); 11 ERC20 tokens, 1 ERC721 NFT; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 

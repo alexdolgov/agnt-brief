@@ -25,38 +25,6 @@ contract Context {
     }
 }
 
-contract Ownable is Context {
-    address private _owner;
-
-    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
-    constructor () internal {
-        _owner = _msgSender();
-        emit OwnershipTransferred(address(0), _owner);
-    }
-    function owner() public view returns (address) {
-        return _owner;
-    }
-    modifier onlyOwner() {
-        require(isOwner(), "Ownable: caller is not the owner");
-        _;
-    }
-    function isOwner() public view returns (bool) {
-        return _msgSender() == _owner;
-    }
-    function renounceOwnership() public onlyOwner {
-        emit OwnershipTransferred(_owner, address(0));
-        _owner = address(0);
-    }
-    function transferOwnership(address newOwner) public onlyOwner {
-        _transferOwnership(newOwner);
-    }
-    function _transferOwnership(address newOwner) internal {
-        require(newOwner != address(0), "Ownable: new owner is the zero address");
-        emit OwnershipTransferred(_owner, newOwner);
-        _owner = newOwner;
-    }
-}
-
 contract ERC20 is Context, IERC20 {
     using SafeMath for uint256;
 
@@ -148,21 +116,6 @@ contract ERC20Detailed is IERC20 {
     }
     function decimals() public view returns (uint8) {
         return _decimals;
-    }
-}
-
-contract ReentrancyGuard {
-    uint256 private _guardCounter;
-
-    constructor () internal {
-        _guardCounter = 1;
-    }
-
-    modifier nonReentrant() {
-        _guardCounter += 1;
-        uint256 localCounter = _guardCounter;
-        _;
-        require(localCounter == _guardCounter, "ReentrancyGuard: reentrant call");
     }
 }
 
@@ -274,95 +227,118 @@ library SafeERC20 {
 }
 
 interface Controller {
-    function withdraw(address token, uint amount) external;
+    function withdraw(address, uint) external;
+    function balanceOf(address) external view returns (uint);
+    function earn(address, uint) external;
 }
 
 contract yVault is ERC20, ERC20Detailed {
-  using SafeERC20 for IERC20;
-  using Address for address;
-  using SafeMath for uint256;
-
-  uint256 public balance;
-  address public token;
-  address public governance;
-  address public controller;
-
-  constructor (address _token, address _controller) public ERC20Detailed(
-      string(abi.encodePacked("yearn ", ERC20Detailed(_token).name())),
-      string(abi.encodePacked("y", ERC20Detailed(_token).symbol())),
-      ERC20Detailed(_token).decimals()
-  ) {
-    token = _token;
-    governance = msg.sender;
-    controller = _controller;
-  }
-  
-  function setGovernance(address _governance) public {
-      require(msg.sender == governance, "!governance");
-      governance = _governance;
-  }
-  
-  function setController(address _controller) public {
-      require(msg.sender == governance, "!governance");
-      controller = _controller;
-  }
-  
-  function borrow(uint amount) public {
-      require(msg.sender == controller, "!controller");
-      IERC20(token).safeTransfer(controller, amount);
-  }
-  
-  function addFees(uint amount) public {
-      require(msg.sender == controller, "!controller");
-      balance = balance.sub(amount);
-  }
-  
-  function addYield(uint amount) public {
-      require(msg.sender == controller, "!controller");
-      balance = balance.add(amount);
-  }
-
-  function deposit(uint256 _amount)
-      external
-  {
-      require(_amount > 0, "<0");
-
-      IERC20(token).safeTransferFrom(msg.sender, address(this), _amount);
-
-      // Calculate pool shares
-      uint256 shares = 0;
-      if (balance == 0) {
-        shares = _amount;
-      } else {
-        shares = (_amount.mul(totalSupply())).div(balance);
-      }
-      balance = balance.add(_amount);
-      _mint(msg.sender, shares);
-  }
-
-  // No rebalance implementation for lower fees and faster swaps
-  function withdraw(uint256 _shares)
-      external
-  {
-      require(_shares > 0, "<0");
-
-      uint256 yBalance = balanceOf(msg.sender);
-      require(_shares <= yBalance, "!balance");
-
-      uint256 r = (balance.mul(_shares)).div(totalSupply());
-      _burn(msg.sender, _shares);
-
-      // Check balance
-      uint256 b = IERC20(token).balanceOf(address(this));
-      if (b < r) {
-        Controller(controller).withdraw(token, r.sub(b));
-      }
-
-      IERC20(token).safeTransfer(msg.sender, r);
-      balance = balance.sub(r);
-  }
-
-  function getPricePerFullShare() public view returns (uint) {
-    return balance.mul(uint(1)**decimals()).div(totalSupply());
-  }
+    using SafeERC20 for IERC20;
+    using Address for address;
+    using SafeMath for uint256;
+    
+    IERC20 public token;
+    
+    uint public min = 9500;
+    uint public constant max = 10000;
+    
+    address public governance;
+    address public controller;
+    
+    constructor (address _token, address _controller) public ERC20Detailed(
+        string(abi.encodePacked("yearn ", ERC20Detailed(_token).name())),
+        string(abi.encodePacked("y", ERC20Detailed(_token).symbol())),
+        ERC20Detailed(_token).decimals()
+    ) {
+        token = IERC20(_token);
+        governance = msg.sender;
+        controller = _controller;
+    }
+    
+    function balance() public view returns (uint) {
+        return token.balanceOf(address(this))
+                .add(Controller(controller).balanceOf(address(token)));
+    }
+    
+    function setMin(uint _min) external {
+        require(msg.sender == governance, "!governance");
+        min = _min;
+    }
+    
+    function setGovernance(address _governance) public {
+        require(msg.sender == governance, "!governance");
+        governance = _governance;
+    }
+    
+    function setController(address _controller) public {
+        require(msg.sender == governance, "!governance");
+        controller = _controller;
+    }
+    
+    // Custom logic in here for how much the vault allows to be borrowed
+    // Sets minimum required on-hand to keep small withdrawals cheap
+    function available() public view returns (uint) {
+        return token.balanceOf(address(this)).mul(min).div(max);
+    }
+    
+    function earn() public {
+        uint _bal = available();
+        token.safeTransfer(controller, _bal);
+        Controller(controller).earn(address(token), _bal);
+    }
+    
+    function depositAll() external {
+        deposit(token.balanceOf(msg.sender));
+    }
+    
+    function deposit(uint _amount) public {
+        uint _pool = balance();
+        uint _before = token.balanceOf(address(this));
+        token.safeTransferFrom(msg.sender, address(this), _amount);
+        uint _after = token.balanceOf(address(this));
+        _amount = _after.sub(_before); // Additional check for deflationary tokens
+        uint shares = 0;
+        if (totalSupply() == 0) {
+            shares = _amount;
+        } else {
+            shares = (_amount.mul(totalSupply())).div(_pool);
+        }
+        _mint(msg.sender, shares);
+    }
+    
+    function withdrawAll() external {
+        withdraw(balanceOf(msg.sender));
+    }
+    
+    
+    // Used to swap any borrowed reserve over the debt limit to liquidate to 'token'
+    function harvest(address reserve, uint amount) external {
+        require(msg.sender == controller, "!controller");
+        require(reserve != address(token), "token");
+        IERC20(reserve).safeTransfer(controller, amount);
+    }
+    
+    // No rebalance implementation for lower fees and faster swaps
+    function withdraw(uint _shares) public {
+        uint r = (balance().mul(_shares)).div(totalSupply());
+        _burn(msg.sender, _shares);
+        
+        // Check balance
+        uint b = token.balanceOf(address(this));
+        if (b < r) {
+            uint _withdraw = r.sub(b);
+            Controller(controller).withdraw(address(token), _withdraw);
+            uint _after = token.balanceOf(address(this));
+            uint _diff = _after.sub(b);
+            if (_diff < _withdraw) {
+                r = b.add(_diff);
+            }
+        }
+        
+        token.safeTransfer(msg.sender, r);
+    }
+    
+    function getPricePerFullShare() public view returns (uint) {
+        return balance().mul(1e18).div(totalSupply());
+    }
 }

@@ -7,26 +7,26 @@
 - Project: Angle (`angle`)
 - Website: [https://app.angle.money](https://app.angle.money)
 - Lifecycle: dead (Tier 1, dead)
-- Generated: 2026-07-03T21:05:27.205Z
+- Generated: 2026-07-04T11:05:39.431Z
 - Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
 - Chains: arbitrum, avalanche, base, bsc, celo, ethereum, gnosis, optimism, polygon
-- Contract surface: 1620 unique implementations (1905 raw deployments)
+- Contract surface: 1620 unique implementations (1898 raw deployments)
 - DeFi Llama TVL: $2,277,329.70
 - On-chain TVL (included contracts): $1,109,451,659.11
 - TVL by chain: Optimism $884,151,888.79 | Ethereum $224,916,954.82 | Celo $228,470.03 | Polygon $89,160.02 | Arbitrum $65,185.45
 
 ## Project Description
 
-CDP. Structurally: 274 project-authored contract(s) across 8 chain(s); 5 ERC4626 vaults, 45 ERC20 tokens, 14 ERC721 NFTs, 3 ERC1155 multi-tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+CDP. Structurally: 311 project-authored contract(s) across 9 chain(s); 5 ERC4626 vaults, 46 ERC20 tokens, 14 ERC721 NFTs, 3 ERC1155 multi-tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 11 functional families. Its contracts share 88 common project-authored base contract(s) (proxy, baserouter, oracleabstract). Dominant framework: openzeppelin.
+The protocol comprises 11 functional families. Its contracts share 89 common project-authored base contract(s) (proxy, erc1967upgrade, baserouter). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 2327; live-surface contracts included: 1837 (414 live, 1423 unknown).
-- Excluded by liveness: 490 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 2276; live-surface contracts included: 1837 (414 live, 1423 unknown).
+- Excluded by liveness: 439 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
@@ -40,7 +40,7 @@ The protocol comprises 11 functional families. Its contracts share 88 common pro
 - Verified by bytecode match: 2
 - Unverified implementations: 1408
 - Unique implementations: 1620
-- Raw deployments: 1905
+- Raw deployments: 1898
 - Audits discovered: 3 (3 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 3
 - ASD (verified + unaudited TVL): $1,109,451,659.11
@@ -108,12 +108,12 @@ The protocol comprises 11 functional families. Its contracts share 88 common pro
 | AngleHelpers | periphery | ethereum | n/a | 2 deployments: ethereum [`0x1b17ac...4e068e`](./contracts/ethereum-1/0x1b17ac6b8371d63e030c5981891d5fbb3e4e068e/); ethereum `0x4924e9...046ed5` | ⚠️ Unaudited |
 | AngleNFT | token | polygon | n/a | [`0x588c06...ba226b`](./contracts/polygon-137/0x588c06d6b15cb6d6f3428fa589a8fff1b6ba226b/) | ⚠️ Unaudited |
 | AngleRouter | adapter | ethereum | n/a | 2 deployments: ethereum [`0xbb7552...71561d`](./contracts/ethereum-1/0xbb755240596530be0c1de5dfd77ec6398471561d/); ethereum `0xd8ef81...591a5e` | ⚠️ Unaudited |
-| AngleRouterArbitrum | adapter | arbitrum | n/a | 2 deployments: arbitrum [`0x3ee021...83f78d`](./contracts/arbitrum-42161/0x3ee021f6f91911b8a2af6047889c54cc4983f78d/); arbitrum `0x9a33e6...8be835` | ⚠️ Unaudited |
 | AngleRouterArbitrum | adapter | arbitrum | n/a | 2 deployments: arbitrum [`0x4b1e2c...d35984`](./contracts/arbitrum-42161/0x4b1e2c2762667331bc91648052f646d1b0d35984/); arbitrum `0xc16b81...1e3049` | ⚠️ Unaudited |
+| AngleRouterArbitrum | adapter | arbitrum | n/a | [`0x9a33e6...8be835`](./contracts/arbitrum-42161/0x9a33e690aa78a4c346e72f7a5e16e5d7278be835/) | ⚠️ Unaudited |
 | AngleRouterGnosis | adapter | gnosis | n/a | 2 deployments: gnosis [`0xb8c135...b732a7`](./contracts/gnosis-100/0xb8c1350c2fdbe2f652c6869c5cd48268d0b732a7/); gnosis `0xbdd9a4...538c99` | ⚠️ Unaudited |
-| AngleRouterMainnet | adapter | ethereum | n/a | 2 deployments: ethereum [`0x042d98...1aad3a`](./contracts/ethereum-1/0x042d98c63f642797c132b3e99c20ff6f751aad3a/); ethereum `0x457970...890930` | ⚠️ Unaudited |
+| AngleRouterMainnet | adapter | ethereum | n/a | [`0x457970...890930`](./contracts/ethereum-1/0x4579709627ca36bce92f51ac975746f431890930/) | ⚠️ Unaudited |
 | AttestationsProxy | unknown | celo | n/a | 18 deployments: celo [`0x2496fd...8e9a3d`](./contracts/celo-42220/0x2496fda4b928e8cf799ac04ea79861ac828e9a3d/); celo `0x252b03...5f1649`; celo `0x30b3c1...0595ac`; celo `0x3a4936...edb3f4`; celo `0x488deb...6c8fa6`; celo `0x4a241b...877da9`; celo `0x65e25c...799411`; celo `0x673f19...74eecb`; celo `0x68da81...504785`; celo `0x93d52a...a0ecf7`; celo `0xb53ce2...d8d96a`; celo `0xc834e7...359afd`; celo `0xcc6517...9e8fbe`; celo `0xdadd05...6f9303`; celo `0xdd944d...99f451`; celo `0xeaaf55...bc9149`; celo `0xf114c7...f5406a`; celo `0xff2ba5...c9fd2d` | ⚠️ Unaudited |
-| BPAMOJob | unknown | ethereum | n/a | 2 deployments: ethereum [`0xa4337d...a9b02f`](./contracts/ethereum-1/0xa4337db04ce4826b234dba22d35b38a124a9b02f/); ethereum `0xaa8787...79e348` | ⚠️ Unaudited |
+| BPAMOJob | unknown | ethereum | n/a | [`0xaa8787...79e348`](./contracts/ethereum-1/0xaa8787423ea62f55d90a3d98e8b05f684a79e348/) | ⚠️ Unaudited |
 | CakeToken | token | bsc | n/a | [`0x0e09fa...81ce82`](./contracts/bsc-56/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82/) | ⚠️ Unaudited |
 | Comp | unknown | ethereum | n/a | [`0xc00e94...f26888`](./contracts/ethereum-1/0xc00e94cb662c3520282e6f5717214004a7f26888/) | ⚠️ Unaudited |
 | Convex3CRVStaker | core_logic | ethereum | n/a | [`0xbff202...af196c`](./contracts/ethereum-1/0xbff202e3cb58ab0a09b2eb1d9a50352b9aaf196c/) | ⚠️ Unaudited |
@@ -134,8 +134,8 @@ The protocol comprises 11 functional families. Its contracts share 88 common pro
 | EpochRewards | unknown | celo | n/a | 3 deployments: celo [`0x33285c...63464b`](./contracts/celo-42220/0x33285cab4df24f37899dc14f324530661c63464b/); celo `0x4cadba...562aba`; celo `0x9dc549...f050d9` | ⚠️ Unaudited |
 | FalconXAAAdapter | adapter | ethereum | n/a | 3 deployments: ethereum [`0x48fc1a...f57724`](./contracts/ethereum-1/0x48fc1a04e5e18c994c3165c9ad0d3553d7f57724/); ethereum `0x8fed61...83667e`; ethereum `0xefffa4...2c8fa2` | ⚠️ Unaudited |
 | FiatTokenV2_2 | token | ethereum | n/a | [`0x1abaea...1bc33c`](./contracts/ethereum-1/0x1abaea1f7c830bd89acc67ec4af516284b1bc33c/) | ⚠️ Unaudited |
-| FlashAngle | unknown | ethereum | n/a | 2 deployments: ethereum [`0x4a2ff9...506f7f`](./contracts/ethereum-1/0x4a2ff9bc686a0a23da13b6194c69939189506f7f/); ethereum `0x4e551d...7e52e1` | ⚠️ Unaudited |
-| FlashAngle | unknown | arbitrum | n/a | 2 deployments: arbitrum [`0x3e399a...62c03b`](./contracts/arbitrum-42161/0x3e399ae5b4d8bc0021e53b51c8bcdd66dd62c03b/); arbitrum `0x59153e...55373b` | ⚠️ Unaudited |
+| FlashAngle | unknown | ethereum | n/a | [`0x4a2ff9...506f7f`](./contracts/ethereum-1/0x4a2ff9bc686a0a23da13b6194c69939189506f7f/) | ⚠️ Unaudited |
+| FlashAngle | unknown | arbitrum | n/a | [`0x59153e...55373b`](./contracts/arbitrum-42161/0x59153e939c5b4721543251ff3049ea04c755373b/) | ⚠️ Unaudited |
 | GaugeMultiRewards | operational_periphery | ethereum | n/a | [`0x3c310f...4352d1`](./contracts/ethereum-1/0x3c310fc54c0534dc3c45312934508722284352d1/) | ⚠️ Unaudited |
 | GenericAaveFraxConvexStaker | core_logic | ethereum | n/a | [`0x9354f4...ff854a`](./contracts/ethereum-1/0x9354f45b62c4217652053df752ae7ad2f9ff854a/) | ⚠️ Unaudited |
 | GenericAaveFraxStaker | core_logic | ethereum | n/a | [`0xf0f2c4...20794f`](./contracts/ethereum-1/0xf0f2c46396e1f5ad07c0cf93f4190974e220794f/) | ⚠️ Unaudited |
@@ -170,7 +170,6 @@ The protocol comprises 11 functional families. Its contracts share 88 common pro
 | IdleCreditVaultImpliedPrice | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x55bdb8...ae383e`](./contracts/ethereum-1/0x55bdb81026f9a6e9308f7ee727a9124a92ae383e/); ethereum `0xb05cff...f4c477` | ⚠️ Unaudited |
 | IdleCreditVaultWriteOffEscrow | operational_periphery | ethereum | n/a | [`0xe6584f...071507`](./contracts/ethereum-1/0xe6584f3484494d7014e420080f50b69e5e071507/) | ⚠️ Unaudited |
 | IdleUsdcOtcSwap | unknown | ethereum | n/a | [`0x863a08...33e765`](./contracts/ethereum-1/0x863a08bfc7ae938c4f96c2c3ef82fa309b33e765/) | ⚠️ Unaudited |
-| IFOByProxy | unknown | bsc | n/a | 2 deployments: bsc [`0x0366f1...1d5700`](./contracts/bsc-56/0x0366f1a242c37ca73c73834b7fcd4a66af1d5700/); bsc `0x9c2112...7e0a9e` | ⚠️ Unaudited |
 | IFOByProxy | unknown | bsc | n/a | 2 deployments: bsc [`0x04178a...01896a`](./contracts/bsc-56/0x04178a4a68ac0fb53e11f53170f1be2b3701896a/); bsc `0x828c47...310efa` | ⚠️ Unaudited |
 | IFOByProxy | unknown | bsc | n/a | 2 deployments: bsc [`0x0adb5c...237402`](./contracts/bsc-56/0x0adb5c6a882e212b6202d51ba76a992f33237402/); bsc `0x4bd057...a2861d` | ⚠️ Unaudited |
 | IFOByProxy | unknown | bsc | n/a | 2 deployments: bsc [`0x183e6c...3e3df8`](./contracts/bsc-56/0x183e6c44150627b78d6041c10b884eab543e3df8/); bsc `0xa32509...a4efeb` | ⚠️ Unaudited |
@@ -187,11 +186,12 @@ The protocol comprises 11 functional families. Its contracts share 88 common pro
 | IFOByProxy | unknown | bsc | n/a | 2 deployments: bsc [`0x804583...4d9875`](./contracts/bsc-56/0x80458344d7b5beb363d36de620871725c24d9875/); bsc `0xb922aa...c51f06` | ⚠️ Unaudited |
 | IFOByProxy | unknown | bsc | n/a | 2 deployments: bsc [`0x8ef99b...bb1837`](./contracts/bsc-56/0x8ef99b1bea6866f583e51b52474a6e9a80bb1837/); bsc `0xb1efa4...fa8c82` | ⚠️ Unaudited |
 | IFOByProxy | unknown | bsc | n/a | 2 deployments: bsc [`0x94a24c...a78f02`](./contracts/bsc-56/0x94a24ca3fae6d485639efa72853cf4327ca78f02/); bsc `0xebb16e...f3945a` | ⚠️ Unaudited |
+| IFOByProxy | unknown | bsc | n/a | [`0x9c2112...7e0a9e`](./contracts/bsc-56/0x9c21123d94b93361a29b2c2efb3d5cd8b17e0a9e/) | ⚠️ Unaudited |
 | IFOByProxy | unknown | bsc | n/a | 2 deployments: bsc [`0xba79c4...101663`](./contracts/bsc-56/0xba79c4846a82b3fde3bbf1a90dafe25286101663/); bsc `0xff861a...7200e3` | ⚠️ Unaudited |
 | IFOUpgradeProxy | unknown | bsc | n/a | [`0xf0ae9b...2624b0`](./contracts/bsc-56/0xf0ae9b39ef4a2680d67c9fb252816725f22624b0/) | ⚠️ Unaudited |
 | IntegerSortedLinkedList | unknown | celo | n/a | [`0xa86051...0d047c`](./contracts/celo-42220/0xa86051f29c45218b5f6cd121ebafb690660d047c/) | ⚠️ Unaudited |
 | KeeperMulticall | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x3c2c2e...7b40a8`](./contracts/ethereum-1/0x3c2c2e6ce8b9b086a46369a9be32f88f9f7b40a8/); ethereum `0xa0062b...bfaafe` | ⚠️ Unaudited |
-| KeeperRegistry | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x2201fa...b5af6e`](./contracts/ethereum-1/0x2201fa47bb4080fea7b41a4673eb1ded3eb5af6e/); ethereum `0xc48b15...88e942` | ⚠️ Unaudited |
+| KeeperRegistry | operational_periphery | ethereum | n/a | [`0xc48b15...88e942`](./contracts/ethereum-1/0xc48b15492a4c4f48808576f6fcbc6dea9388e942/) | ⚠️ Unaudited |
 | KeyringIdleWhitelist | unknown | ethereum | n/a | 6 deployments: ethereum [`0x1a4d23...2bcc68`](./contracts/ethereum-1/0x1a4d23403c31ba26a4b84af09364d503ad2bcc68/); ethereum `0x42e645...3d7cbd`; ethereum `0x637595...bf2688`; ethereum `0x6a6a91...0450e3`; ethereum `0xb84957...0d77a0`; ethereum `0xda7514...dbf80c` | ⚠️ Unaudited |
 | LayerZeroBridge | operational_periphery | ethereum | n/a | 2 deployments: ethereum [`0x4fa745...cdf982`](./contracts/ethereum-1/0x4fa745fccc04555f2afa8874cd23961636cdf982/); ethereum `0xec0b13...002961` | ⚠️ Unaudited |
 | LayerZeroBridgeERC20 | operational_periphery | ethereum | n/a | [`0x105617...e28670`](./contracts/ethereum-1/0x1056178977457a5f4be33929520455a7d2e28670/) | ⚠️ Unaudited |
@@ -1733,10 +1733,7 @@ Verified + unaudited native implementations ranked by TVL:
 | ethereum | [`0x31429d...e214c2`](./contracts/ethereum-1/0x31429d1856ad1377a8a0079410b297e1a9e214c2/) | ANGLE | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xc9cb57...2a6947`](./contracts/arbitrum-42161/0xc9cb5703c109d4fe46d2f29b0454c434e42a6947/) | AngleBorrowHelpers | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | polygon | [`0x588c06...ba226b`](./contracts/polygon-137/0x588c06d6b15cb6d6f3428fa589a8fff1b6ba226b/) | AngleNFT | token | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x3ee021...83f78d`](./contracts/arbitrum-42161/0x3ee021f6f91911b8a2af6047889c54cc4983f78d/) | AngleRouterArbitrum | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x4b1e2c...d35984`](./contracts/arbitrum-42161/0x4b1e2c2762667331bc91648052f646d1b0d35984/) | AngleRouterArbitrum | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x042d98...1aad3a`](./contracts/ethereum-1/0x042d98c63f642797c132b3e99c20ff6f751aad3a/) | AngleRouterMainnet | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0xa4337d...a9b02f`](./contracts/ethereum-1/0xa4337db04ce4826b234dba22d35b38a124a9b02f/) | BPAMOJob | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x20d1b5...e642c3`](./contracts/ethereum-1/0x20d1b558ef44a6e23d9bf4bf8db1653626e642c3/) | DarkParadiseV2 | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x0b3bf9...9266f8`](./contracts/arbitrum-42161/0x0b3bf915eb02ceee25d2416b9721688dba9266f8/) | DistributionCreator | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x002535...4cefab`](./contracts/ethereum-1/0x00253582b2a3fe112feec532221d9708c64cefab/) | DummyDiamondImplementation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -1744,7 +1741,6 @@ Verified + unaudited native implementations ranked by TVL:
 | base | [`0x222222...38fd4f`](./contracts/base-8453/0x222222880e079445df703c0604706e71a538fd4f/) | DummyDiamondImplementation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0xd253b6...418053`](./contracts/arbitrum-42161/0xd253b62108d1831aed298fc2434a5a8e4e418053/) | DummyDiamondImplementation | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x48fc1a...f57724`](./contracts/ethereum-1/0x48fc1a04e5e18c994c3165c9ad0d3553d7f57724/) | FalconXAAAdapter | adapter | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| arbitrum | [`0x3e399a...62c03b`](./contracts/arbitrum-42161/0x3e399ae5b4d8bc0021e53b51c8bcdd66dd62c03b/) | FlashAngle | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3c310f...4352d1`](./contracts/ethereum-1/0x3c310fc54c0534dc3c45312934508722284352d1/) | GaugeMultiRewards | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x1f25fa...b3e86a`](./contracts/ethereum-1/0x1f25fabc5bf3f3a185ca051de22511a4e9b3e86a/) | GenericEuler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x713513...3b6d05`](./contracts/ethereum-1/0x713513fd5abe7401143eae8446491731533b6d05/) | GenericEuler | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -1763,10 +1759,10 @@ Verified + unaudited native implementations ranked by TVL:
 | bsc | [`0x5f402a...3c5be1`](./contracts/bsc-56/0x5f402a3f336d4833a76a72de0104268f6e3c5be1/) | IFOByProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x6acc48...bc2585`](./contracts/bsc-56/0x6acc482246d8920ba5530dba24b0e5abdabc2585/) | IFOByProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x94a24c...a78f02`](./contracts/bsc-56/0x94a24ca3fae6d485639efa72853cf4327ca78f02/) | IFOByProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0x9c2112...7e0a9e`](./contracts/bsc-56/0x9c21123d94b93361a29b2c2efb3d5cd8b17e0a9e/) | IFOByProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xba79c4...101663`](./contracts/bsc-56/0xba79c4846a82b3fde3bbf1a90dafe25286101663/) | IFOByProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xf0ae9b...2624b0`](./contracts/bsc-56/0xf0ae9b39ef4a2680d67c9fb252816725f22624b0/) | IFOUpgradeProxy | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0x3c2c2e...7b40a8`](./contracts/ethereum-1/0x3c2c2e6ce8b9b086a46369a9be32f88f9f7b40a8/) | KeeperMulticall | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
-| ethereum | [`0x2201fa...b5af6e`](./contracts/ethereum-1/0x2201fa47bb4080fea7b41a4673eb1ded3eb5af6e/) | KeeperRegistry | operational_periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | ethereum | [`0xd2a211...e24396`](./contracts/ethereum-1/0xd2a211acea98c799a67ac47c274ebdf7dee24396/) | LenderMigrator | periphery | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x463913...8d3b0e`](./contracts/arbitrum-42161/0x463913d3a3d3d291667d53b8325c598eb88d3b0e/) | Lizard | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | arbitrum | [`0x425c29...15ad17`](./contracts/arbitrum-42161/0x425c296bacf5db485a67252a0bacc3816115ad17/) | LizardETHStg | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
@@ -1801,10 +1797,10 @@ Verified + unaudited native implementations ranked by TVL:
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 100 |
+| native | 96 |
 | upstream | 28 |
-| standard_library | 73 |
-| needs_review | 1419 |
+| standard_library | 78 |
+| needs_review | 1418 |
 
 ## Scope Matching Notes
 

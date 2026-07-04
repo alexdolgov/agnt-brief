@@ -1,6 +1,6 @@
 # hypha — deployments
 
-84 verified deployment(s) across 45 component(s).
+85 verified deployment(s) across 45 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -17,6 +17,7 @@
 | avalanche | `0x41a76343eb93b4790e53c8e2789e09ef41195d0b` | ProtocolDAO | impl | live | yes |
 | avalanche | `0x42edf547600d7e86be4b44cb7c6d8f8a2c948215` | MOANI | impl | unknown | no |
 | avalanche | `0x439776d3786719e1243b628ef05e905679374a5f` | Staking | impl | live | yes |
+| avalanche | `0x456a6e49409f137138e2e0255368a3a37876e87b` | TransparentUpgradeableProxy | impl | unknown | no |
 | avalanche | `0x472e8266f564d52cba41e50817e3d2b63df56238` | WithdrawQueue | impl | unknown | no |
 | avalanche | `0x50db30deb68b0f40df4d07c002142100a5b77102` | NodeSale | impl | live | no |
 | avalanche | `0x5313c309cd469b751ad3947568d65d4a70b247cf` | ProxyAdmin | impl | live | no |
@@ -89,13 +90,12 @@
 | avalanche | `0xfc3ea32c03b4be326bced178431789f7e2d8051a` | ProtocolDAO-2 | impl | live | yes |
 | avalanche | `0xffdc3b731c57a7179b90fe7f5c2b5b87a5ad5542` | ProtocolDAO-3 | impl | live | yes |
 
-## Source unavailable (9)
+## Source unavailable (8)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
 - avalanche `0x22bafb9c882a8ba7ee5559186540bcd8dba1d073`
 - avalanche `0x27ce13ed07c367258e0e65eb932dffcb84f62b7e`
 - avalanche `0x3ccef51d2e4042b1d01b41e2115a6eae8c7e805a`
-- avalanche `0x456a6e49409f137138e2e0255368a3a37876e87b`
 - avalanche `0x52950ffee4ae5c6206d598a639647df27f8f7bd2`
 - avalanche `0x697d7c12853a59429b62ab4d310975335dba2c68`
 - avalanche `0xae1e7b06544a13315e6f7301cc161761813ce4b1`

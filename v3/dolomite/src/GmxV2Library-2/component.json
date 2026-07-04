@@ -1,42 +1,18 @@
 {
   "component": "GmxV2Library-2",
   "main_contract": "GmxV2Library",
-  "source_file_count": 108,
-  "deployment_count": 4,
+  "source_file_count": 73,
+  "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x5e7b26e22456585fbc0349c5ff98a69ac9b2ab71",
+      "address": "0xbafd5327d84b9838347f1a5528b281772e874fb2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xa39f1a9900c57fef088fd14e9ae43e77661ea0fd",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xa3b49d5649040c766b82d63fab1e44556e7f8898",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xb7919fef2f5beb533910680427c33fe211629094",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

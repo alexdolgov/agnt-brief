@@ -7,17 +7,17 @@
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "mantle",
-      "chain_id": 5000,
-      "address": "0x8a13c00facd1971fbb7ced5ebf88f9e900419d5c",
+      "chain": "base",
+      "chain_id": 8453,
+      "address": "0xb50bcdfc914e0afb484dee621f49010862fb928d",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
     },
     {
-      "chain": "mantle",
-      "chain_id": 5000,
-      "address": "0xd432c30de38b5d6f30257a353ed853503ed2edab",
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0xc1a4850ab6d8ba93cd662da695cf5cdd49fc5ebd",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"

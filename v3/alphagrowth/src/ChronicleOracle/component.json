@@ -2,7 +2,7 @@
   "component": "ChronicleOracle",
   "main_contract": "ChronicleOracle",
   "source_file_count": 8,
-  "deployment_count": 2,
+  "deployment_count": 8,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -20,7 +20,55 @@
       "address": "0x420a9855fa5fe985b9a6458780214a2700e0d9c6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5a47412c769a6a57ba757253fb199edc3ccfcde6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5c5b67d71559744d5d1dbb2c9c282761919a25cf",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x6245cd4e6fef97ccc0508242135fdf2577006cfc",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x956c9b887cb8779140eed942fa91f51b13bd1b86",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x9ee335e15692317a4fadb221fea0affe48953130",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdc8af46adf7143e58047beeca27210d6dc760721",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

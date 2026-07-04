@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "satori-finance",
-  "generated_at": "2026-07-03T21:06:51.908Z",
+  "generated_at": "2026-07-04T11:05:46.522Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-b097",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -55,8 +55,8 @@
     }
   },
   "topography": {
-    "project_purpose": "Derivatives. Structurally: 150 project-authored contract(s) across 3 chain(s); 2 ERC4626 vaults, 53 ERC20 tokens, 1 ERC721 NFT, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 21 common project-authored base contract(s) (proxy, lockable, ynbase). Dominant framework: openzeppelin.",
+    "project_purpose": "Derivatives. Structurally: 178 project-authored contract(s) across 4 chain(s); 2 ERC4626 vaults, 53 ERC20 tokens, 1 ERC721 NFT, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 4 functional families. Its contracts share 22 common project-authored base contract(s) (proxy, lockable, ynbase). Dominant framework: openzeppelin.",
     "product_family_count": 4,
     "total_contracts_indexed": 423,
     "live_contracts": 164,

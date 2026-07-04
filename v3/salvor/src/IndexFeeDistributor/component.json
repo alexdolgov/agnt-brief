@@ -2,17 +2,33 @@
   "component": "IndexFeeDistributor",
   "main_contract": "IndexFeeDistributor",
   "source_file_count": 1,
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "avalanche",
       "chain_id": 43114,
-      "address": "0x883594f6cd822dc01228f4581b4d1edf1b8bb723",
+      "address": "0x3ec03d688eebf5d3aa7eae1ea23379bd4cb7d6b6",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x650a85049d2284a90c28a2c0e48506aebd1fcd41",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x883594f6cd822dc01228f4581b4d1edf1b8bb723",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

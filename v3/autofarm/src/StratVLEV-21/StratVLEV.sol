@@ -1428,7 +1428,7 @@ contract StratVLEV is Ownable, Pausable {
     uint256 public constant BORROW_RATE_MAX = 599;
     uint256 public constant BORROW_DEPTH_MAX = 10;
     uint256 public constant MIN_LEVERAGE_AMOUNT = 1e12;
-    uint256 public constant MAX_WLINHERE_TO_CALL_EARN = 100e18; // For safety
+    uint256 public constant MAX_WLT_TO_CALL_EARN = 100; // For safety
     bool onlyDev = true;
 
     uint256 public supplyBal = 0;
@@ -1597,10 +1597,7 @@ contract StratVLEV is Ownable, Pausable {
         if (onlyDev) {
             require(msg.sender == devAddress, "Not authorised");
         }
-        require(
-            wantLockedInHere() < MAX_WLINHERE_TO_CALL_EARN,
-            "!safe - use farm()"
-        );
+        require(wantLockedTotal() < MAX_WLT_TO_CALL_EARN, "!safe - use farm()");
 
         IVenusDistribution(venusDistributionAddress).claimVenus(address(this));
 
@@ -1716,13 +1713,10 @@ contract StratVLEV is Ownable, Pausable {
     }
 
     function wantLockedTotal() public view returns (uint256) {
-        return wantLockedInHere().add(supplyBal).sub(borrowBal);
-    }
-
-    function wantLockedInHere() public view returns (uint256) {
         uint256 wantBal = IERC20(wantAddress).balanceOf(address(this));
+        // return wantBal; // Not for
         uint256 bnbBal = address(this).balance;
-        return bnbBal.add(wantBal);
+        return bnbBal.add(wantBal).add(supplyBal).sub(borrowBal);
     }
 
     function setEntranceFeeFactor(uint256 _entranceFeeFactor) public {

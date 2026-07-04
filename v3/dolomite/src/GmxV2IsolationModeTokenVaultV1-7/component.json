@@ -12,7 +12,7 @@
       "address": "0x94d1817ff561aeb637a42393f38c3efabf769e8f",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

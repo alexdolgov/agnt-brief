@@ -14,6 +14,8 @@ import "./IWasabiPerps.sol";
 import "./addressProvider/IAddressProvider.sol";
 import "./vaults/IWasabiVault.sol";
 import "./weth/IWETH.sol";
+import "./admin/PerpManager.sol";
+import "./admin/Roles.sol";
 
 abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgradeable, ReentrancyGuardUpgradeable, EIP712Upgradeable {
     using Address for address;
@@ -34,11 +36,32 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     /// @dev the base tokens
     mapping(address => bool) public baseTokens;
 
+    /**
+     * @dev Checks if the caller has the correct role
+     */
+    modifier onlyRole(uint64 roleId) {
+        _getManager().checkRole(roleId, msg.sender);
+        _;
+    }
+
+    /**
+     * @dev Checks if the caller is an admin
+     */
+    modifier onlyAdmin() {
+        _getManager().isAdmin(msg.sender);
+        _;
+    }
+
+    /// @custom:oz-upgrades-unsafe-allow constructor
+    constructor() {
+        _disableInitializers();
+    }
+
     /// @dev Initializes the pool as per UUPSUpgradeable
     /// @param _isLongPool a flag indicating if this is a long pool or a short pool
     /// @param _addressProvider an address provider
-    function __BaseWasabiPool_init(bool _isLongPool, IAddressProvider _addressProvider) public onlyInitializing {
-        __Ownable_init(msg.sender);
+    function __BaseWasabiPool_init(bool _isLongPool, IAddressProvider _addressProvider, PerpManager _manager) public onlyInitializing {
+        __Ownable_init(address(_manager));
         __EIP712_init(_isLongPool ? "WasabiLongPool" : "WasabiShortPool", "1");
         __ReentrancyGuard_init();
         __UUPSUpgradeable_init();
@@ -48,8 +71,17 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
         baseTokens[addressProvider.getWethAddress()] = true;
     }
 
+    // @dev
+    function migrateToRoleManager(PerpManager _adminManager) external onlyOwner {
+        _transferOwnership(address(_adminManager));
+    }
+
+    function setAddressProvider(IAddressProvider _addressProvider) external onlyAdmin {
+        addressProvider = _addressProvider;
+    }
+
     /// @inheritdoc UUPSUpgradeable
-    function _authorizeUpgrade(address) internal override onlyOwner {}
+    function _authorizeUpgrade(address) internal view override onlyAdmin {}
 
     /// @inheritdoc IWasabiPerps
     function liquidatePosition(
@@ -65,9 +97,10 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
         uint256[] calldata _interests,
         Position[] calldata _positions,
         FunctionCallData[][] calldata _swapFunctions
-    ) external payable onlyOwner {
+    ) external payable onlyRole(Roles.LIQUIDATOR_ROLE) {
         uint256 length = _positions.length;
         if (length != _interests.length) revert InterestAmountNeeded();
+        if (length != _swapFunctions.length) revert SwapFunctionNeeded();
         for (uint i = 0; i < length; ++i) {
             liquidatePosition(_unwrapWETH, _interests[i], _positions[i], _swapFunctions[i]);
         }
@@ -91,17 +124,14 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
         return IWasabiVault(vaults[_asset]);
     }
 
-    /// @dev sets the address provider
-    /// @param _addressProvider the address provider
-    function setAddressProvider(IAddressProvider _addressProvider) public onlyOwner {
-        addressProvider = _addressProvider;
-    }
-
-    /// @dev Toggles a base token
-    /// @param _token the token
-    /// @param _enabled flag indicating if the token is a base token
-    function toggleBaseToken(address _token, bool _enabled) external onlyOwner {
-        baseTokens[_token] = _enabled;
+    /// @inheritdoc IWasabiPerps
+    function addVault(IWasabiVault _vault) external onlyAdmin {
+        if (_vault.getPoolAddress() != address(this)) revert InvalidVault();
+        // Only long pool can have ETH vault
+        if (_vault.asset() == addressProvider.getWethAddress() && !isLongPool) revert InvalidVault();
+        if (vaults[_vault.asset()] != address(0)) revert VaultAlreadyExists();
+        vaults[_vault.asset()] = address(_vault);
+        emit NewVault(address(this), _vault.asset(), address(_vault));
     }
 
     /// @dev Records the repayment of a position
@@ -167,16 +197,6 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
         return _interest;
     }
 
-    /// @inheritdoc IWasabiPerps
-    function addVault(IWasabiVault _vault) external onlyOwner {
-        if (_vault.getPoolAddress() != address(this)) revert InvalidVault();
-        // Only long pool can have ETH vault
-        if (_vault.asset() == addressProvider.getWethAddress() && !isLongPool) revert InvalidVault();
-        if (vaults[_vault.asset()] != address(0)) revert VaultAlreadyExists();
-        vaults[_vault.asset()] = address(_vault);
-        emit NewVault(address(this), _vault.asset(), address(_vault));
-    }
-
     /// @dev Validates an open position request
     /// @param _request the request
     /// @param _signature the signature
@@ -204,7 +224,9 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     function _validateSignature(bytes32 _structHash, IWasabiPerps.Signature calldata _signature) internal view {
         bytes32 typedDataHash = _hashTypedDataV4(_structHash);
         address signer = ecrecover(typedDataHash, _signature.v, _signature.r, _signature.s);
-        if (owner() != signer) {
+
+        (bool isValidSigner, ) = _getManager().hasRole(Roles.ORDER_SIGNER_ROLE, signer);
+        if (!isValidSigner) {
             revert IWasabiPerps.InvalidSignature();
         }
     }
@@ -212,6 +234,11 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     /// @dev returns {true} if the given token is a base token
     function _isBaseToken(address _token) internal view returns(bool) {
         return baseTokens[_token];
+    }
+
+    // @dev returns the manager of the contract
+    function _getManager() internal view returns (PerpManager) {
+        return PerpManager(owner());
     }
 
     receive() external payable virtual {}

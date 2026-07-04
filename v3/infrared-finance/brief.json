@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "infrared-finance",
-  "generated_at": "2026-07-03T21:06:01.300Z",
+  "generated_at": "2026-07-04T11:05:41.941Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-dc67",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -53,7 +53,7 @@
     }
   },
   "topography": {
-    "project_purpose": "Liquid Staking. Structurally: 44 project-authored contract(s) across 2 chain(s); 2 ERC4626 vaults, 8 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin-upgradeable.",
+    "project_purpose": "Liquid Staking. Structurally: 45 project-authored contract(s) across 2 chain(s); 2 ERC4626 vaults, 8 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin-upgradeable.",
     "relationship_narrative": "The protocol comprises 5 functional families. Its contracts share 17 common project-authored base contract(s) (oftcore, oapp, oappsender). Dominant framework: openzeppelin-upgradeable.",
     "product_family_count": 5,
     "total_contracts_indexed": 172,

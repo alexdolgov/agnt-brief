@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "gyroscope-protocol",
-  "generated_at": "2026-07-03T21:05:58.156Z",
+  "generated_at": "2026-07-04T11:05:41.918Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-f007",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -61,8 +61,8 @@
     }
   },
   "topography": {
-    "project_purpose": "Dexs. Structurally: 171 project-authored contract(s) across 8 chain(s); 17 ERC20 tokens, 5 ERC721 NFTs, 2 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 8 functional families. Its contracts share 63 common project-authored base contract(s) (governableupgradeable, governablebase, nftvault). Dominant framework: openzeppelin.",
+    "project_purpose": "Dexs. Structurally: 245 project-authored contract(s) across 8 chain(s); 17 ERC20 tokens, 5 ERC721 NFTs, 2 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 8 functional families. Its contracts share 68 common project-authored base contract(s) (governableupgradeable, governablebase, nftvault). Dominant framework: openzeppelin.",
     "product_family_count": 8,
     "total_contracts_indexed": 467,
     "live_contracts": 245,

@@ -5,7 +5,7 @@
 - Project: Katana Pre-Launch (`katana-pre-launch`)
 - Website: [https://app.katana.network/](https://app.katana.network/)
 - Lifecycle: unknown
-- Generated: 2026-07-04T06:10:43.044Z
+- Generated: 2026-07-04T11:05:41.975Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: base, ethereum
 - Contract surface: 529 unique implementations (654 raw deployments)
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Farm. Structurally: 47 project-authored contract(s) across 1 chain(s); 1 ERC20 token; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Farm. Structurally: 48 project-authored contract(s) across 2 chain(s); 1 ERC20 token; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 

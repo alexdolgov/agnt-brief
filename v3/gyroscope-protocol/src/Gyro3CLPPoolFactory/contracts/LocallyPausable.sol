@@ -1,13 +1,11 @@
-// SPDX-License-Identifier: LicenseRef-Gyro-1.0
-// for information on licensing please see the README in the GitHub repository <https://github.com/gyrostable/concentrated-lps>.
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.7.6;
 
 import "../interfaces/ILocallyPausable.sol";
 import "../libraries/GyroErrors.sol";
 
 /**
- * @notice This contract is used to allow a pool to be paused directly, rather than going through Balancer's
- * authentication system.
+ * @notice This contract is used to allow a pool to be paused directly
  */
 abstract contract LocallyPausable is ILocallyPausable {
     address public pauseManager;

@@ -5,17 +5,17 @@
 - Project: Ankr (`ankr`)
 - Website: [https://www.ankr.com/](https://www.ankr.com/)
 - Lifecycle: active (Tier 0, 93.1% below peak)
-- Generated: 2026-07-03T21:05:27.886Z
+- Generated: 2026-07-04T11:05:39.457Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-f007
 - Chains: avalanche, bsc, ethereum, fantom, gnosis, polygon
-- Contract surface: 202 unique implementations (370 raw deployments)
+- Contract surface: 202 unique implementations (360 raw deployments)
 - DeFi Llama TVL: $18,101,801.55
 - On-chain TVL (included contracts): $33,625,994.90
 - TVL by chain: Ethereum $33,625,839.17 | Polygon $122.19 | Avalanche $32.98 | Bsc $0.56
 
 ## Project Description
 
-Liquid Staking. Structurally: 231 project-authored contract(s) across 5 chain(s); 1 ERC4626 vault, 82 ERC20 tokens, 1 ERC721 NFT; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Liquid Staking. Structurally: 252 project-authored contract(s) across 5 chain(s); 1 ERC4626 vault, 82 ERC20 tokens, 1 ERC721 NFT; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
@@ -23,8 +23,8 @@ The protocol comprises 8 functional families. Its contracts share 17 common proj
 
 ## Contract Surface Quality
 
-- Indexed contracts: 584; live-surface contracts included: 265 (180 live, 85 unknown).
-- Excluded by liveness: 319 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 567; live-surface contracts included: 265 (180 live, 85 unknown).
+- Excluded by liveness: 302 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
@@ -38,7 +38,7 @@ The protocol comprises 8 functional families. Its contracts share 17 common proj
 - Verified by bytecode match: 0
 - Unverified implementations: 81
 - Unique implementations: 202
-- Raw deployments: 370
+- Raw deployments: 360
 - Audits discovered: 14 (14 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): $33,625,872.78
@@ -110,13 +110,13 @@ The protocol comprises 8 functional families. Its contracts share 17 common proj
 | CrossChainBridge_R2 | operational_periphery | avalanche | n/a | 2 deployments: avalanche [`0x31be0f...0887f5`](./contracts/avalanche-43114/0x31be0fa706e391a88c3a09cc13112bd55e0887f5/); avalanche `0xb902b8...5c10f2` | ⚠️ Unaudited |
 | Davos | unknown | polygon | n/a | 2 deployments: polygon [`0x0fb82d...15066d`](./contracts/polygon-137/0x0fb82db5676330644acd26a21fd00c749715066d/); polygon `0xec3862...ba5320` | ⚠️ Unaudited |
 | DavosBridge | unknown | polygon | n/a | 2 deployments: polygon [`0x78be04...52256b`](./contracts/polygon-137/0x78be0423567a85ba677d3aa5b73b45970e52256b/); polygon `0xa7508b...274dd3` | ⚠️ Unaudited |
-| DavosJoin | unknown | polygon | n/a | 2 deployments: polygon [`0x0633ea...f2e591`](./contracts/polygon-137/0x0633ea3769472bd74f30fad828ffb864d9f2e591/); polygon `0x8fcd95...3da6df` | ⚠️ Unaudited |
+| DavosJoin | unknown | polygon | n/a | [`0x8fcd95...3da6df`](./contracts/polygon-137/0x8fcd9542a6ee0f05f470230da5b8cb41033da6df/) | ⚠️ Unaudited |
 | DavosProvider | unknown | polygon | n/a | 2 deployments: polygon [`0x046b71...6123cf`](./contracts/polygon-137/0x046b71694b3b659f491247167eda42e0556123cf/); polygon `0x924094...3e068a` | ⚠️ Unaudited |
 | DavosProvider | unknown | polygon | n/a | 2 deployments: polygon [`0x9b81eb...3f2374`](./contracts/polygon-137/0x9b81ebcda2d8a3d592cf0e620b0223d92e3f2374/); polygon `0xe2023c...91fd6a` | ⚠️ Unaudited |
 | dCOL | unknown | polygon | n/a | 2 deployments: polygon [`0x4f1b83...bce9ac`](./contracts/polygon-137/0x4f1b83ef5009bb4727e4b5efcfaaf5cbf3bce9ac/); polygon `0xd67189...4de9a7` | ⚠️ Unaudited |
-| DGTRewards | unknown | polygon | n/a | 3 deployments: polygon [`0x049012...a0c484`](./contracts/polygon-137/0x04901268ee65e989852370c0bad08e1514a0c484/); polygon `0x54809f...727158`; polygon `0x624d6a...3c0b49` | ⚠️ Unaudited |
+| DGTRewards | unknown | polygon | n/a | 2 deployments: polygon [`0x54809f...727158`](./contracts/polygon-137/0x54809f204999a886839ac46b2fd796282e727158/); polygon `0x624d6a...3c0b49` | ⚠️ Unaudited |
 | dMATIC | unknown | polygon | n/a | 3 deployments: polygon [`0x08abfd...0b71c8`](./contracts/polygon-137/0x08abfd7ded42cc33900d3457118eab7fc40b71c8/); polygon `0x0ace0e...5b7f7e`; polygon `0x87ad5a...702563` | ⚠️ Unaudited |
-| Dog | unknown | polygon | n/a | 3 deployments: polygon [`0x062752...36b9fc`](./contracts/polygon-137/0x0627528cc5e1779ff24e47c74b8e86492436b9fc/); polygon `0x122897...540118`; polygon `0x94b4fe...2920b2` | ⚠️ Unaudited |
+| Dog | unknown | polygon | n/a | 2 deployments: polygon [`0x122897...540118`](./contracts/polygon-137/0x122897d16b2dd5a193efce19a1b4f34d1c540118/); polygon `0x94b4fe...2920b2` | ⚠️ Unaudited |
 | Dog | unknown | polygon | n/a | 2 deployments: polygon [`0x9b26a5...a9accd`](./contracts/polygon-137/0x9b26a5e0234aa7eada50020ba0375d3dd7a9accd/); polygon `0xbfd158...d6efb4` | ⚠️ Unaudited |
 | EarnConfig | governance | bsc | n/a | 5 deployments: bsc [`0x171643...743252`](./contracts/bsc-56/0x171643555a2173fab81bad1837f043f66d743252/); bsc `0x487424...15960b`; bsc `0x674d1f...ed546f`; bsc `0xc416da...9061d1`; bsc `0xd812ab...2cb4e4` | ⚠️ Unaudited |
 | EarnConfig | governance | bsc | n/a | 5 deployments: bsc [`0x219a4e...68b26b`](./contracts/bsc-56/0x219a4e8f8c73d977f8d69596d434b5961068b26b/); bsc `0x258361...20dd56`; bsc `0x39af7e...1f4305`; bsc `0x67428d...719348`; bsc `0xe8396c...c20036` | ⚠️ Unaudited |
@@ -137,12 +137,12 @@ The protocol comprises 8 functional families. Its contracts share 17 common proj
 | InternetBondRatioFeed_R2 | unknown | polygon | n/a | 2 deployments: polygon [`0x4f3872...8bbd07`](./contracts/polygon-137/0x4f3872c6cfab8b39232351b8aab1cbcb958bbd07/); polygon `0xef3c16...54050f` | ⚠️ Unaudited |
 | InternetBondRatioFeed_R3 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x8ff4fb...523f81`](./contracts/ethereum-1/0x8ff4fb91c9fff1f57310de52d52d033c00523f81/); ethereum `0xcb0006...ed7eba` | ⚠️ Unaudited |
 | InternetBondRatioFeed_R3 | unknown | avalanche | n/a | 2 deployments: avalanche [`0xd00b96...3a4d0a`](./contracts/avalanche-43114/0xd00b967296b6d8ec266e4ba64594f892d03a4d0a/); avalanche `0xef3c16...54050f` | ⚠️ Unaudited |
-| Jar | unknown | polygon | n/a | 2 deployments: polygon [`0x36417e...341758`](./contracts/polygon-137/0x36417e58b08cef67e32cb80808a6858924341758/); polygon `0x4a20fe...54c03f` | ⚠️ Unaudited |
+| Jar | unknown | polygon | n/a | [`0x4a20fe...54c03f`](./contracts/polygon-137/0x4a20fe93dec6e5b2d66c246eb7e8ab228254c03f/) | ⚠️ Unaudited |
 | Jar | unknown | polygon | n/a | 2 deployments: polygon [`0x97f0bd...5056cf`](./contracts/polygon-137/0x97f0bdadbfaa05a1944ffba862b3336a175056cf/); polygon `0xe69a18...d2165c` | ⚠️ Unaudited |
-| Jug | unknown | polygon | n/a | 2 deployments: polygon [`0x5eb89d...7f892f`](./contracts/polygon-137/0x5eb89d7b8e10dec5267727d7ee0f128b557f892f/); polygon `0xc37f6a...156f22` | ⚠️ Unaudited |
 | Jug | unknown | polygon | n/a | 3 deployments: polygon [`0x85d05c...e2aba4`](./contracts/polygon-137/0x85d05c7bc4aec86cd77d44dc97751d8ee5e2aba4/); polygon `0xc5a734...a02ebd`; polygon `0xfa9d18...bd0f8a` | ⚠️ Unaudited |
-| LinearDecrease | unknown | polygon | n/a | 2 deployments: polygon [`0x604a34...692ec7`](./contracts/polygon-137/0x604a34798db956cd78fec52f857c728496692ec7/); polygon `0xa48f32...dd1298` | ⚠️ Unaudited |
+| Jug | unknown | polygon | n/a | [`0xc37f6a...156f22`](./contracts/polygon-137/0xc37f6af12c443ba8c749cbfa38944abffc156f22/) | ⚠️ Unaudited |
 | LinearDecrease | unknown | polygon | n/a | 3 deployments: polygon [`0x78d152...bc10e9`](./contracts/polygon-137/0x78d1528a8010639870874285a28eea4e30bc10e9/); polygon `0xd12b8b...685bd5`; polygon `0xe309c0...077418` | ⚠️ Unaudited |
+| LinearDecrease | unknown | polygon | n/a | [`0xa48f32...dd1298`](./contracts/polygon-137/0xa48f322f8b3edff967629af79e027628b9dd1298/) | ⚠️ Unaudited |
 | LP | unknown | ethereum | n/a | 2 deployments: ethereum [`0x5d04c6...d67f43`](./contracts/ethereum-1/0x5d04c6c5cce7e68f2dd13ec11742c35792d67f43/); ethereum `0xc465a8...bde5c6` | ⚠️ Unaudited |
 | LP | unknown | bsc | n/a | 2 deployments: bsc [`0x757834...3da807`](./contracts/bsc-56/0x757834c812d2fd95a6f8bd5ad15f59dc5f3da807/); bsc `0xf047f2...4267af` | ⚠️ Unaudited |
 | LP | unknown | polygon | n/a | 4 deployments: polygon [`0x77bf59...b2d556`](./contracts/polygon-137/0x77bf5996b93c8d747c541e47105c5f7d05b2d556/); polygon `0x817166...bbd6ad`; polygon `0x86e956...e390b1`; polygon `0xc38581...36d2c0` | ⚠️ Unaudited |
@@ -151,8 +151,8 @@ The protocol comprises 8 functional families. Its contracts share 17 common proj
 | MasterVault | unknown | polygon | n/a | 2 deployments: polygon [`0x20642a...e56525`](./contracts/polygon-137/0x20642aca160e38eeb8dcf34b2cf15f0581e56525/); polygon `0x764ae6...c46554` | ⚠️ Unaudited |
 | MasterVault | unknown | polygon | n/a | 2 deployments: polygon [`0x77f4c8...648a8e`](./contracts/polygon-137/0x77f4c841cb87fdfa43ab909cf56f7710af648a8e/); polygon `0xfa3fa8...1aea3f` | ⚠️ Unaudited |
 | MasterVault_V2 | unknown | polygon | n/a | 2 deployments: polygon [`0x9a1275...53f30a`](./contracts/polygon-137/0x9a1275304960dbc6a8d4a5795832823a7d53f30a/); polygon `0xd9dbd6...51f783` | ⚠️ Unaudited |
-| MaticOracle | unknown | polygon | n/a | 2 deployments: polygon [`0x314348...b0919e`](./contracts/polygon-137/0x31434814587a51b581495e0506056f18a4b0919e/); polygon `0xec3488...12acff` | ⚠️ Unaudited |
 | MaticOracle | unknown | polygon | n/a | 7 deployments: polygon [`0x4f1747...5e9363`](./contracts/polygon-137/0x4f174701c68c4b92d531e37258b8c705585e9363/); polygon `0x67423e...c0fe09`; polygon `0x72112d...6dc8a1`; polygon `0x8464bc...388576`; polygon `0xb87d1c...b987f8`; polygon `0xc5da8f...cd826a`; polygon `0xf7f638...502c3e` | ⚠️ Unaudited |
+| MaticOracle | unknown | polygon | n/a | [`0xec3488...12acff`](./contracts/polygon-137/0xec348813a94c2873e4d2372ae40955392a12acff/) | ⚠️ Unaudited |
 | MrpcDeposit | unknown | ethereum | n/a | 2 deployments: ethereum [`0x5e1e6d...008c8f`](./contracts/ethereum-1/0x5e1e6dcf05fb49568aa66f40b9e3834c86008c8f/); ethereum `0x764737...6b97a9` | ⚠️ Unaudited |
 | MrpcDeposit | unknown | polygon | n/a | 2 deployments: polygon [`0x8ff4fb...523f81`](./contracts/polygon-137/0x8ff4fb91c9fff1f57310de52d52d033c00523f81/); polygon `0xf8be84...e25ae3` | ⚠️ Unaudited |
 | PolkadotPool_R1 | core_logic | ethereum | n/a | 2 deployments: ethereum [`0x59f767...0f208e`](./contracts/ethereum-1/0x59f767ec659e9fe01ebcf930465e2ad4cc0f208e/); ethereum `0x88b44e...65d2b9` | ⚠️ Unaudited |
@@ -164,8 +164,8 @@ The protocol comprises 8 functional families. Its contracts share 17 common proj
 | SikkaJoin | unknown | polygon | n/a | 2 deployments: polygon [`0x84cd2e...77c3c1`](./contracts/polygon-137/0x84cd2e9e46fb44e9f775a5fd08edcdaf2377c3c1/); polygon `0xb2565e...0352bb` | ⚠️ Unaudited |
 | SikkaProvider | unknown | polygon | n/a | 2 deployments: polygon [`0x2f2e74...bc944d`](./contracts/polygon-137/0x2f2e746b2e9ef33c2ac6348985f100af8dbc944d/); polygon `0x9edc0e...e59d2b` | ⚠️ Unaudited |
 | sMATIC | unknown | polygon | n/a | 2 deployments: polygon [`0x30faab...279536`](./contracts/polygon-137/0x30faab28c1af8f90574db759243888c8bd279536/); polygon `0xb396b3...86ee1d` | ⚠️ Unaudited |
-| Spotter | unknown | polygon | n/a | 2 deployments: polygon [`0x7e426f...564b0f`](./contracts/polygon-137/0x7e426f367c40fc6e1ec919e0a7e51fcb9a564b0f/); polygon `0xf97680...f97a62` | ⚠️ Unaudited |
 | Spotter | unknown | polygon | n/a | 2 deployments: polygon [`0xbbf35c...4079fe`](./contracts/polygon-137/0xbbf35c9dcb16ea3cb64a0fce51c51f9ca34079fe/); polygon `0xd659ae...740509` | ⚠️ Unaudited |
+| Spotter | unknown | polygon | n/a | [`0xf97680...f97a62`](./contracts/polygon-137/0xf97680e99be42daccea9fe6f9f9aa385ccf97a62/) | ⚠️ Unaudited |
 | StakingConfig | governance | ethereum | n/a | 2 deployments: ethereum [`0x2d3f89...ce6aae`](./contracts/ethereum-1/0x2d3f893c7c45c2be3ec63cf5385deafd7ece6aae/); ethereum `0xd4f5ff...7c06d1` | ⚠️ Unaudited |
 | StakingConfig | unknown | gnosis | n/a | [`0x11e6ec...df6618`](./contracts/gnosis-100/0x11e6ecc43f0da52ebd5ad7a6ba3fc925d7df6618/) | ⚠️ Unaudited |
 | StakingConfig_R2 | unknown | gnosis | n/a | [`0x3bfce3...d18c4f`](./contracts/gnosis-100/0x3bfce37b5401bef13c78830d3a9fb14294d18c4f/) | ⚠️ Unaudited |
@@ -177,13 +177,13 @@ The protocol comprises 8 functional families. Its contracts share 17 common proj
 | TransparentUpgradeableProxy | unknown | polygon | n/a | 2 deployments: polygon [`0x24027b...740393`](./contracts/polygon-137/0x24027bf7268b7617837213d0badba4553d740393/); polygon `0x442dc9...fe9c56` | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | unknown | avalanche | n/a | 2 deployments: avalanche [`0x6a3b5b...8abe2d`](./contracts/avalanche-43114/0x6a3b5bad3f3937ef15ee3ec385397f4a9a8abe2d/); avalanche `0x7e28bf...ad6ecd` | ⚠️ Unaudited |
 | ValidatorManager_R3 | governance | gnosis | n/a | [`0xe95a20...c2c3cb`](./contracts/gnosis-100/0xe95a203b1a91a908f9b9ce46459d101078c2c3cb/) | ⚠️ Unaudited |
-| Vat | unknown | polygon | n/a | 2 deployments: polygon [`0x083725...051995`](./contracts/polygon-137/0x0837253af481db0a9b5ea17f9f983e7606051995/); polygon `0xa983f4...06f639` | ⚠️ Unaudited |
+| Vat | unknown | polygon | n/a | [`0xa983f4...06f639`](./contracts/polygon-137/0xa983f4b5137b89f82b2eb5dac415e6490f06f639/) | ⚠️ Unaudited |
 | Vat | unknown | polygon | n/a | 2 deployments: polygon [`0xbdf1dc...4a67a3`](./contracts/polygon-137/0xbdf1dcec3cd02a5230672fa4bd779bdb2e4a67a3/); polygon `0xfc9755...e5b38b` | ⚠️ Unaudited |
 | Vow | unknown | polygon | n/a | 3 deployments: polygon [`0x58cf68...271429`](./contracts/polygon-137/0x58cf68493bc178a17b43b270ddbb8d4c1a271429/); polygon `0xb29c98...3f2ed2`; polygon `0xf22099...9116ee` | ⚠️ Unaudited |
 | Vow | unknown | polygon | n/a | 2 deployments: polygon [`0x6cfca0...2c240f`](./contracts/polygon-137/0x6cfca08a8535a1029f906b1d7aceb421372c240f/); polygon `0xe437e4...b7091d` | ⚠️ Unaudited |
-| WaitingPool | unknown | polygon | n/a | 2 deployments: polygon [`0x02048c...b7c5db`](./contracts/polygon-137/0x02048cb6be76db99bec28553edd1184dd7b7c5db/); polygon `0x1c539e...1981f9` | ⚠️ Unaudited |
 | WaitingPool | unknown | polygon | n/a | 2 deployments: polygon [`0x02237a...ec7738`](./contracts/polygon-137/0x02237aaf5b62dbcdeac287e76f9ac1d5deec7738/); polygon `0xd25b3d...69bc4f` | ⚠️ Unaudited |
 | WaitingPool | unknown | polygon | n/a | 2 deployments: polygon [`0x02c742...87363b`](./contracts/polygon-137/0x02c7420407a6439d49e9816399a5d5b03187363b/); polygon `0xfedf35...b7672c` | ⚠️ Unaudited |
+| WaitingPool | unknown | polygon | n/a | [`0x1c539e...1981f9`](./contracts/polygon-137/0x1c539e755a1bdabb168aa9ad60b31548991981f9/) | ⚠️ Unaudited |
 | WithdrawalPool | unknown | ethereum | n/a | 2 deployments: ethereum [`0x258361...20dd56`](./contracts/ethereum-1/0x2583619adde454dd1e3afdf4221d25303420dd56/); ethereum `0x67428d...719348` | ⚠️ Unaudited |
 
 ### ✅ Verified by Bytecode + Audited (0)

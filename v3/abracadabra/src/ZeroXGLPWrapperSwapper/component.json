@@ -2,7 +2,7 @@
   "component": "ZeroXGLPWrapperSwapper",
   "main_contract": "ZeroXGLPWrapperSwapper",
   "source_file_count": 13,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +12,15 @@
       "address": "0x0b7bc6fced57e979d5cf48980c6b64f9857e26b3",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x7f54026fc12d9c24c43cd951cf2b7c88694cfe11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

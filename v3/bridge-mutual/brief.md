@@ -5,7 +5,7 @@
 - Project: Bridge Mutual (`bridge-mutual`)
 - Website: [https://www.bridgemutual.io](https://www.bridgemutual.io)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:37.025Z
+- Generated: 2026-07-04T11:05:40.799Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-1cbb
 - Chains: bsc, ethereum, polygon
 - Contract surface: 36 unique implementations (45 raw deployments)
@@ -19,12 +19,12 @@ Insurance. Structurally: 15 project-authored contract(s) across 2 chain(s); 2 ER
 
 ### Architecture
 
-The protocol comprises 4 functional families. Its contracts share 4 common project-authored base contract(s) (ownableupgradeable, contextupgradeable, upgradeabilityproxy). Dominant framework: openzeppelin.
+The protocol comprises 5 functional families. Its contracts share 4 common project-authored base contract(s) (ownableupgradeable, contextupgradeable, upgradeabilityproxy). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 60; live-surface contracts included: 45 (18 live, 27 unknown).
-- Excluded by liveness: 15 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 57; live-surface contracts included: 45 (18 live, 27 unknown).
+- Excluded by liveness: 12 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.

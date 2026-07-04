@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "project_key": "zyfai",
-  "generated_at": "2026-07-03T21:25:33.240Z",
+  "generated_at": "2026-07-04T11:05:47.830Z",
   "pipeline_run_id": "v2-pipeline-2026-07-01-3e33f2-c970",
   "lifecycle_status": null,
   "lifecycle_signal": null,
@@ -56,8 +56,8 @@
     }
   },
   "topography": {
-    "project_purpose": "AI Agents. Structurally: 128 project-authored contract(s) across 5 chain(s); 15 ERC4626 vaults, 19 ERC20 tokens, 1 ERC721 NFT, 13 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
-    "relationship_narrative": "The protocol comprises 9 functional families. Its contracts share 33 common project-authored base contract(s) (basewasabipool, abstractwasabipool, cometextinterface). Dominant framework: openzeppelin.",
+    "project_purpose": "AI Agents. Structurally: 184 project-authored contract(s) across 5 chain(s); 35 ERC4626 vaults, 39 ERC20 tokens, 1 ERC721 NFT, 13 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.",
+    "relationship_narrative": "The protocol comprises 9 functional families. Its contracts share 34 common project-authored base contract(s) (basewasabipool, abstractwasabipool, cometextinterface). Dominant framework: openzeppelin.",
     "product_family_count": 9,
     "total_contracts_indexed": 447,
     "live_contracts": 316,

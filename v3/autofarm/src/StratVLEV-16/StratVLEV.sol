@@ -1015,43 +1015,10 @@ abstract contract Ownable is Context {
     }
 }
 
-interface IPancakeswapFarm {
-    function poolLength() external view returns (uint256);
-
-    function userInfo() external view returns (uint256);
-
-    // Return reward multiplier over the given _from to _to block.
-    function getMultiplier(uint256 _from, uint256 _to)
-        external
-        view
-        returns (uint256);
-
-    // View function to see pending CAKEs on frontend.
-    function pendingCake(uint256 _pid, address _user)
-        external
-        view
-        returns (uint256);
-
-    // Deposit LP tokens to MasterChef for CAKE allocation.
-    function deposit(uint256 _pid, uint256 _amount) external;
-
-    // Withdraw LP tokens from MasterChef.
-    function withdraw(uint256 _pid, uint256 _amount) external;
-
-    // Stake CAKE tokens to MasterChef
-    function enterStaking(uint256 _amount) external;
-
-    // Withdraw CAKE tokens from STAKING.
-    function leaveStaking(uint256 _amount) external;
-
-    // Withdraw without caring about rewards. EMERGENCY ONLY.
-    function emergencyWithdraw(uint256 _pid) external;
-}
-
 interface IPancakeRouter01 {
-    function factory() external pure returns (address);
+    // function factory() external pure returns (address);
 
-    function WETH() external pure returns (address);
+    // function WETH() external pure returns (address);
 
     function addLiquidity(
         address tokenA,
@@ -1070,21 +1037,21 @@ interface IPancakeRouter01 {
             uint256 liquidity
         );
 
-    function addLiquidityETH(
-        address token,
-        uint256 amountTokenDesired,
-        uint256 amountTokenMin,
-        uint256 amountETHMin,
-        address to,
-        uint256 deadline
-    )
-        external
-        payable
-        returns (
-            uint256 amountToken,
-            uint256 amountETH,
-            uint256 liquidity
-        );
+    // function addLiquidityETH(
+    //     address token,
+    //     uint256 amountTokenDesired,
+    //     uint256 amountTokenMin,
+    //     uint256 amountETHMin,
+    //     address to,
+    //     uint256 deadline
+    // )
+    //     external
+    //     payable
+    //     returns (
+    //         uint256 amountToken,
+    //         uint256 amountETH,
+    //         uint256 liquidity
+    //     );
 
     function removeLiquidity(
         address tokenA,
@@ -1096,41 +1063,41 @@ interface IPancakeRouter01 {
         uint256 deadline
     ) external returns (uint256 amountA, uint256 amountB);
 
-    function removeLiquidityETH(
-        address token,
-        uint256 liquidity,
-        uint256 amountTokenMin,
-        uint256 amountETHMin,
-        address to,
-        uint256 deadline
-    ) external returns (uint256 amountToken, uint256 amountETH);
+    // function removeLiquidityETH(
+    //     address token,
+    //     uint256 liquidity,
+    //     uint256 amountTokenMin,
+    //     uint256 amountETHMin,
+    //     address to,
+    //     uint256 deadline
+    // ) external returns (uint256 amountToken, uint256 amountETH);
 
-    function removeLiquidityWithPermit(
-        address tokenA,
-        address tokenB,
-        uint256 liquidity,
-        uint256 amountAMin,
-        uint256 amountBMin,
-        address to,
-        uint256 deadline,
-        bool approveMax,
-        uint8 v,
-        bytes32 r,
-        bytes32 s
-    ) external returns (uint256 amountA, uint256 amountB);
+    // function removeLiquidityWithPermit(
+    //     address tokenA,
+    //     address tokenB,
+    //     uint256 liquidity,
+    //     uint256 amountAMin,
+    //     uint256 amountBMin,
+    //     address to,
+    //     uint256 deadline,
+    //     bool approveMax,
+    //     uint8 v,
+    //     bytes32 r,
+    //     bytes32 s
+    // ) external returns (uint256 amountA, uint256 amountB);
 
-    function removeLiquidityETHWithPermit(
-        address token,
-        uint256 liquidity,
-        uint256 amountTokenMin,
-        uint256 amountETHMin,
-        address to,
-        uint256 deadline,
-        bool approveMax,
-        uint8 v,
-        bytes32 r,
-        bytes32 s
-    ) external returns (uint256 amountToken, uint256 amountETH);
+    // function removeLiquidityETHWithPermit(
+    //     address token,
+    //     uint256 liquidity,
+    //     uint256 amountTokenMin,
+    //     uint256 amountETHMin,
+    //     address to,
+    //     uint256 deadline,
+    //     bool approveMax,
+    //     uint8 v,
+    //     bytes32 r,
+    //     bytes32 s
+    // ) external returns (uint256 amountToken, uint256 amountETH);
 
     function swapExactTokensForTokens(
         uint256 amountIn,
@@ -1140,132 +1107,114 @@ interface IPancakeRouter01 {
         uint256 deadline
     ) external returns (uint256[] memory amounts);
 
-    function swapTokensForExactTokens(
-        uint256 amountOut,
-        uint256 amountInMax,
-        address[] calldata path,
-        address to,
-        uint256 deadline
-    ) external returns (uint256[] memory amounts);
+    // function swapTokensForExactTokens(
+    //     uint256 amountOut,
+    //     uint256 amountInMax,
+    //     address[] calldata path,
+    //     address to,
+    //     uint256 deadline
+    // ) external returns (uint256[] memory amounts);
 
-    function swapExactETHForTokens(
-        uint256 amountOutMin,
-        address[] calldata path,
-        address to,
-        uint256 deadline
-    ) external payable returns (uint256[] memory amounts);
+    // function swapExactETHForTokens(
+    //     uint256 amountOutMin,
+    //     address[] calldata path,
+    //     address to,
+    //     uint256 deadline
+    // ) external payable returns (uint256[] memory amounts);
 
-    function swapTokensForExactETH(
-        uint256 amountOut,
-        uint256 amountInMax,
-        address[] calldata path,
-        address to,
-        uint256 deadline
-    ) external returns (uint256[] memory amounts);
+    // function swapTokensForExactETH(
+    //     uint256 amountOut,
+    //     uint256 amountInMax,
+    //     address[] calldata path,
+    //     address to,
+    //     uint256 deadline
+    // ) external returns (uint256[] memory amounts);
 
-    function swapExactTokensForETH(
-        uint256 amountIn,
-        uint256 amountOutMin,
-        address[] calldata path,
-        address to,
-        uint256 deadline
-    ) external returns (uint256[] memory amounts);
+    // function swapExactTokensForETH(
+    //     uint256 amountIn,
+    //     uint256 amountOutMin,
+    //     address[] calldata path,
+    //     address to,
+    //     uint256 deadline
+    // ) external returns (uint256[] memory amounts);
 
-    function swapETHForExactTokens(
-        uint256 amountOut,
-        address[] calldata path,
-        address to,
-        uint256 deadline
-    ) external payable returns (uint256[] memory amounts);
+    // function swapETHForExactTokens(
+    //     uint256 amountOut,
+    //     address[] calldata path,
+    //     address to,
+    //     uint256 deadline
+    // ) external payable returns (uint256[] memory amounts);
 
-    function quote(
-        uint256 amountA,
-        uint256 reserveA,
-        uint256 reserveB
-    ) external pure returns (uint256 amountB);
+    // function quote(
+    //     uint256 amountA,
+    //     uint256 reserveA,
+    //     uint256 reserveB
+    // ) external pure returns (uint256 amountB);
 
-    function getAmountOut(
-        uint256 amountIn,
-        uint256 reserveIn,
-        uint256 reserveOut
-    ) external pure returns (uint256 amountOut);
+    // function getAmountOut(
+    //     uint256 amountIn,
+    //     uint256 reserveIn,
+    //     uint256 reserveOut
+    // ) external pure returns (uint256 amountOut);
 
-    function getAmountIn(
-        uint256 amountOut,
-        uint256 reserveIn,
-        uint256 reserveOut
-    ) external pure returns (uint256 amountIn);
+    // function getAmountIn(
+    //     uint256 amountOut,
+    //     uint256 reserveIn,
+    //     uint256 reserveOut
+    // ) external pure returns (uint256 amountIn);
 
-    function getAmountsOut(uint256 amountIn, address[] calldata path)
-        external
-        view
-        returns (uint256[] memory amounts);
+    // function getAmountsOut(uint256 amountIn, address[] calldata path)
+    //     external
+    //     view
+    //     returns (uint256[] memory amounts);
 
-    function getAmountsIn(uint256 amountOut, address[] calldata path)
-        external
-        view
-        returns (uint256[] memory amounts);
+    // function getAmountsIn(uint256 amountOut, address[] calldata path)
+    //     external
+    //     view
+    //     returns (uint256[] memory amounts);
 }
 
 interface IPancakeRouter02 is IPancakeRouter01 {
-    function removeLiquidityETHSupportingFeeOnTransferTokens(
-        address token,
-        uint256 liquidity,
-        uint256 amountTokenMin,
-        uint256 amountETHMin,
-        address to,
-        uint256 deadline
-    ) external returns (uint256 amountETH);
-
-    function removeLiquidityETHWithPermitSupportingFeeOnTransferTokens(
-        address token,
-        uint256 liquidity,
-        uint256 amountTokenMin,
-        uint256 amountETHMin,
-        address to,
-        uint256 deadline,
-        bool approveMax,
-        uint8 v,
-        bytes32 r,
-        bytes32 s
-    ) external returns (uint256 amountETH);
-
-    function swapExactTokensForTokensSupportingFeeOnTransferTokens(
-        uint256 amountIn,
-        uint256 amountOutMin,
-        address[] calldata path,
-        address to,
-        uint256 deadline
-    ) external;
-
-    function swapExactETHForTokensSupportingFeeOnTransferTokens(
-        uint256 amountOutMin,
-        address[] calldata path,
-        address to,
-        uint256 deadline
-    ) external payable;
-
-    function swapExactTokensForETHSupportingFeeOnTransferTokens(
-        uint256 amountIn,
-        uint256 amountOutMin,
-        address[] calldata path,
-        address to,
-        uint256 deadline
-    ) external;
-}
-
-interface IAutoFarm {
-    function buyBackBurnRate() external view returns (uint256);
-
-    function buyBackBurnRateMax() external view returns (uint256);
-
-    function devAddress() external view returns (address);
-
-    function controllerAddress() external view returns (address);
-
-    function controllerFee() external view returns (uint256);
-
-    function controllerFeeMax() external view returns (uint256);
+    // function removeLiquidityETHSupportingFeeOnTransferTokens(
+    //     address token,
+    //     uint256 liquidity,
+    //     uint256 amountTokenMin,
+    //     uint256 amountETHMin,
+    //     address to,
+    //     uint256 deadline
+    // ) external returns (uint256 amountETH);
+    // function removeLiquidityETHWithPermitSupportingFeeOnTransferTokens(
+    //     address token,
+    //     uint256 liquidity,
+    //     uint256 amountTokenMin,
+    //     uint256 amountETHMin,
+    //     address to,
+    //     uint256 deadline,
+    //     bool approveMax,
+    //     uint8 v,
+    //     bytes32 r,
+    //     bytes32 s
+    // ) external returns (uint256 amountETH);
+    // function swapExactTokensForTokensSupportingFeeOnTransferTokens(
+    //     uint256 amountIn,
+    //     uint256 amountOutMin,
+    //     address[] calldata path,
+    //     address to,
+    //     uint256 deadline
+    // ) external;
+    // function swapExactETHForTokensSupportingFeeOnTransferTokens(
+    //     uint256 amountOutMin,
+    //     address[] calldata path,
+    //     address to,
+    //     uint256 deadline
+    // ) external payable;
+    // function swapExactTokensForETHSupportingFeeOnTransferTokens(
+    //     uint256 amountIn,
+    //     uint256 amountOutMin,
+    //     address[] calldata path,
+    //     address to,
+    //     uint256 deadline
+    // ) external;
 }
 
 /**
@@ -1380,7 +1329,7 @@ interface IVenusDistribution {
 pragma solidity ^0.6.0;
 
 interface IVToken {
-    function mint() external payable;
+    function mint(uint256 mintAmount) external returns (uint256);
 
     function redeem(uint256 redeemTokens) external returns (uint256);
 
@@ -1388,29 +1337,21 @@ interface IVToken {
 
     function borrow(uint256 borrowAmount) external returns (uint256);
 
-    function repayBorrow() external payable;
+    function repayBorrow(uint256 repayAmount) external returns (uint256);
 
-    function getAccountSnapshot(address account)
-        external
-        view
-        returns (
-            uint256,
-            uint256,
-            uint256,
-            uint256
-        );
+    // function getAccountSnapshot(address account)
+    //     external
+    //     view
+    //     returns (
+    //         uint256,
+    //         uint256,
+    //         uint256,
+    //         uint256
+    //     );
 
     function balanceOfUnderlying(address owner) external returns (uint256);
 
     function borrowBalanceCurrent(address account) external returns (uint256);
-}
-
-pragma solidity ^0.6.0;
-
-interface IWBNB is IERC20 {
-    function deposit() external payable;
-
-    function withdraw(uint256 wad) external;
 }
 
 pragma solidity ^0.6.12;
@@ -1428,38 +1369,48 @@ contract StratVLEV is Ownable, Pausable {
      */
     address public constant wbnbAddress =
         address(0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c);
-    address public constant wantAddress = wbnbAddress;
+    address public constant wantAddress =
+        address(0x2170Ed0880ac9A755fd29B2688956BD959F933F8); //ETH
 
     address public constant venusAddress =
         address(0xcF6BB5389c92Bdda8a3747Ddb454cB7a64626C63);
     address public constant vTokenAddress =
-        address(0xA07c5b74C9B40447a954e1466938b865b6BBea36);
+        address(0xf508fCD89b8bd15579dc79A6827cB4686A3592c8); // vETH
     address[] public venusMarkets = [vTokenAddress];
     address public venusDistributionAddress =
         address(0xfD36E2c2a6789Db23113685031d7F16329158384);
 
     address autoFarmAddress =
-        address(0x17f619f4eec6742cEa2d287dbbcf61Ba3360172F);        //TEST
-    address AUTOAddress = address(0x4508ABB72232271e452258530D4Ed799C685eccb); // AUTO token
+        address(0x0df9c5Fb57bc3B90e73563e9ADB672BEA2Fd41FB); // v2
+
+    address AUTOAddress = address(0xD2653285774F448fD4A2E0A3F165C453ff848cEb); // AUTOv2 token
 
     address public pancakeSwapRouterAddress =
         address(0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F);
 
-    address public devAddress =
-        address(0xF482404f0Ee4bbC780199b2995A43882a8595adA);
+    address public govAddress =
+        address(0x6aA35F2458d72C6f6EaBBf08C6aC8D4Ad077B5fF); // timelock contract
 
     uint256 public sharesTotal = 0;
     uint256 public lastEarnBlock = 0;
 
     uint256 public controllerFee = 30; // 0.3%
     uint256 public controllerFeeMax = 10000;
+    uint256 public controllerFeeUL = 300; // 3% upperlimit
+
+    uint256 public buyBackRate = 150; // 0%
+    uint256 public buyBackRateMax = 10000;
+    uint256 public buyBackRateUL = 800; // 8% upperlimit
+
+    address public buyBackAddress =
+        address(0x000000000000000000000000000000000000dEaD);
 
     uint256 public entranceFeeFactor = 9990; // < 0.1% entrance fee - goes to pool + prevents front-running
     uint256 public entranceFeeFactorMax = 10000;
     uint256 public entranceFeeFactorLL = 9950; // 0.5% is the max entrance fee settable. LL = lowerlimit
 
-    address[] public venusToWantPath = [venusAddress, wbnbAddress];
-    address[] public buyBackBurnPath = [venusAddress, wbnbAddress, AUTOAddress];
+    address[] public venusToWantPath = [venusAddress, wantAddress];
+    address[] public wantToAUTOPath = [wantAddress, wbnbAddress, AUTOAddress];
 
     /**
      * @dev Variables that can be changed to config profitability and risk:
@@ -1470,10 +1421,12 @@ contract StratVLEV is Ownable, Pausable {
      * {MIN_LEVERAGE_AMOUNT} - The minimum amount of collateral required to leverage.
      */
     uint256 public borrowRate = 595;
-    uint256 public borrowDepth = 3;
+    uint256 public borrowDepth = 4;
     uint256 public constant BORROW_RATE_MAX = 599;
     uint256 public constant BORROW_DEPTH_MAX = 10;
     uint256 public constant MIN_LEVERAGE_AMOUNT = 1e12;
+    uint256 public constant MAX_WLINHERE_TO_CALL_EARN = 1000e18; // For safety
+    bool onlyGov = true;
 
     uint256 public supplyBal = 0;
     uint256 public borrowBal = 0;
@@ -1487,7 +1440,7 @@ contract StratVLEV is Ownable, Pausable {
         transferOwnership(autoFarmAddress);
 
         IERC20(venusAddress).safeApprove(pancakeSwapRouterAddress, uint256(-1));
-        IERC20(wbnbAddress).safeApprove(pancakeSwapRouterAddress, uint256(-1));
+        IERC20(wantAddress).safeApprove(pancakeSwapRouterAddress, uint256(-1));
 
         IVenusDistribution(venusDistributionAddress).enterMarkets(venusMarkets);
     }
@@ -1498,13 +1451,7 @@ contract StratVLEV is Ownable, Pausable {
         onlyOwner
         returns (uint256)
     {
-        updateSupplyBorrowBal();
-
-        IERC20(wantAddress).safeTransferFrom(
-            address(msg.sender),
-            address(this),
-            _wantAmt
-        );
+        updateBalance();
 
         uint256 sharesAdded = _wantAmt;
         if (wantLockedTotal() > 0 && sharesTotal > 0) {
@@ -1517,49 +1464,39 @@ contract StratVLEV is Ownable, Pausable {
 
         sharesTotal += sharesAdded;
 
+        IERC20(wantAddress).safeTransferFrom(
+            address(msg.sender),
+            address(this),
+            _wantAmt
+        );
+
         farm();
 
         return sharesAdded;
     }
 
     function farm() public returns (uint256) {
-        _leverage();
+        _leverage(wantLockedInHere());
+
+        updateBalance();
     }
 
     /**
      * @dev Repeatedly supplies and borrows bnb following the configured {borrowRate} and {borrowDepth}
      * into the vToken contract.
      */
-    function _leverage() internal {
-        // Unwrap all WBNB -> BNB
-        uint256 wantBal = IERC20(wantAddress).balanceOf(address(this));
-        if (wantBal > 0) {
-            IWBNB(wantAddress).withdraw(wantBal); // Unwrap. WBNB -> BNB
-        }
-
-        // Get all BNB
-        uint256 bnbBal = address(this).balance;
-        if (bnbBal < MIN_LEVERAGE_AMOUNT) {
+    function _leverage(uint256 _amount) internal {
+        if (_amount < MIN_LEVERAGE_AMOUNT) {
             return;
         }
 
-        // Get portion of supply that is un-levered.
-        uint256 supplyBalTarget = borrowBal.mul(1000).div(borrowRate);
-        uint256 supplyBalUnlevered = supplyBal.sub(supplyBalTarget);
-
-        // Leveraging by (borrowDepth) times
         for (uint256 i = 0; i < borrowDepth; i++) {
-            IVToken(vTokenAddress).mint{value: bnbBal}(); // Supply into venus
-            if (i == 0) {
-                bnbBal = bnbBal + supplyBalUnlevered;
-            }
-            bnbBal = bnbBal.mul(borrowRate).div(1000);
-            IVToken(vTokenAddress).borrow(bnbBal); // Borrow from venus
+            IVToken(vTokenAddress).mint(_amount); // Supply
+            _amount = _amount.mul(borrowRate).div(1000);
+            IVToken(vTokenAddress).borrow(_amount); // Borrow
         }
 
-        // Supply remaining BNB. If borrowDepth == 0, supply all without borrowing/leveraging.
-        IVToken(vTokenAddress).mint{value: bnbBal}(); // Supply into venus
-        updateSupplyBorrowBal();
+        IVToken(vTokenAddress).mint(_amount); // Supply remaining wwant that was last borrowed.
     }
 
     /**
@@ -1569,69 +1506,68 @@ contract StratVLEV is Ownable, Pausable {
      */
 
     function _deleverage(bool _delevPartial, uint256 _minAmt) internal {
-        // Withdraw BNB from supplied
-        uint256 supplyBalTarget = borrowBal.mul(1000).div(borrowRate);
-        IVToken(vTokenAddress).redeemUnderlying(supplyBal.sub(supplyBalTarget));
-        uint256 bnbBal = address(this).balance;
-        if (_delevPartial && bnbBal >= _minAmt) {
-            return;
-        } // For partial delev only
+        borrowBal = IVToken(vTokenAddress).borrowBalanceCurrent(address(this));
 
-        while (bnbBal < borrowBal) {
-            // Repay BNB to borrowed
-            IVToken(vTokenAddress).repayBorrow{value: bnbBal}();
-            bnbBal = address(this).balance;
+        // Remove from supplied once.
+        uint256 targetUnderlying = borrowBal.mul(1000).div(borrowRate);
+        uint256 balanceOfUnderlying =
+            IVToken(vTokenAddress).balanceOfUnderlying(address(this));
+        IVToken(vTokenAddress).redeemUnderlying( // Remove from supplied
+            balanceOfUnderlying.sub(targetUnderlying)
+        );
+        uint256 wantBal = wantLockedInHere();
+
+        // Recursively repay borrowed + remove more from supplied
+        while (wantBal < borrowBal) {
+            // If only partially deleveraging, when sufficiently deleveraged, do not repay anymore
+            if (_delevPartial && wantBal >= _minAmt) {
+                return;
+            }
+
+            IVToken(vTokenAddress).repayBorrow(wantBal); // Repay borrowed
+
             borrowBal = IVToken(vTokenAddress).borrowBalanceCurrent(
                 address(this)
             );
-
-            // Withdraw BNB from supplied
-            supplyBalTarget = borrowBal.mul(1000).div(borrowRate);
-            IVToken(vTokenAddress).redeemUnderlying(
-                supplyBal.sub(supplyBalTarget)
+            targetUnderlying = borrowBal.mul(1000).div(borrowRate);
+            balanceOfUnderlying = IVToken(vTokenAddress).balanceOfUnderlying(
+                address(this)
             );
-            bnbBal = address(this).balance;
-            if (_delevPartial && bnbBal >= _minAmt) {
-                return;
-            } // For partial delev only
+
+            IVToken(vTokenAddress).redeemUnderlying( // Remove from supplied
+                balanceOfUnderlying.sub(targetUnderlying)
+            );
+            wantBal = wantLockedInHere();
         }
 
-        IVToken(vTokenAddress).repayBorrow{value: borrowBal}();
+        // If only partially deleveraging, when sufficiently deleveraged, do not repay
+        if (_delevPartial && wantBal >= _minAmt) {
+            return;
+        }
 
-        // Withdraw all BNB from supplied
-        uint256 vbnbBal = IERC20(vTokenAddress).balanceOf(address(this));
-        IVToken(vTokenAddress).redeem(vbnbBal);
-        // bnbBal = address(this).balance;
+        // Make a final repayment of borrowed
+        IVToken(vTokenAddress).repayBorrow(borrowBal);
+        uint256 vTokenBal = IERC20(vTokenAddress).balanceOf(address(this));
+        IVToken(vTokenAddress).redeem(vTokenBal);
     }
 
     function deleverageOnce(uint256 _borrowRate) external {
-        // Withdraw BNB from supplied
-        uint256 supplyBalTarget = borrowBal.mul(1000).div(borrowRate);
-        IVToken(vTokenAddress).redeemUnderlying(supplyBal.sub(supplyBalTarget));
-        uint256 bnbBal = address(this).balance;
+        require(_borrowRate <= BORROW_RATE_MAX, "!safe");
 
-        while (bnbBal < borrowBal) {
-            // Repay BNB to borrowed
-            IVToken(vTokenAddress).repayBorrow{value: bnbBal}();
-            bnbBal = address(this).balance;
-            borrowBal = IVToken(vTokenAddress).borrowBalanceCurrent(
-                address(this)
-            );
+        uint256 wantBal = wantLockedInHere();
 
-            // Withdraw BNB from supplied
-            supplyBalTarget = borrowBal.mul(1000).div(borrowRate);
-            IVToken(vTokenAddress).redeemUnderlying(
-                supplyBal.sub(supplyBalTarget)
-            );
-            bnbBal = address(this).balance;
-        }
+        IVToken(vTokenAddress).repayBorrow(wantBal);
 
-        IVToken(vTokenAddress).repayBorrow{value: borrowBal}();
+        borrowBal = IVToken(vTokenAddress).borrowBalanceCurrent(address(this));
+        uint256 targetUnderlying = borrowBal.mul(1000).div(_borrowRate);
+        uint256 balanceOfUnderlying =
+            IVToken(vTokenAddress).balanceOfUnderlying(address(this));
 
-        // Withdraw all BNB from supplied
-        uint256 vbnbBal = IERC20(vTokenAddress).balanceOf(address(this));
-        IVToken(vTokenAddress).redeem(vbnbBal);
-        // bnbBal = address(this).balance;
+        IVToken(vTokenAddress).redeemUnderlying(
+            balanceOfUnderlying.sub(targetUnderlying)
+        );
+
+        updateBalance();
     }
 
     /**
@@ -1640,22 +1576,25 @@ contract StratVLEV is Ownable, Pausable {
      * @param _borrowDepth how many levels to leverage the funds.
      */
     function rebalance(uint256 _borrowRate, uint256 _borrowDepth) external {
-        require(msg.sender == devAddress, "Not authorised");
+        require(msg.sender == govAddress, "Not authorised");
 
         require(_borrowRate <= BORROW_RATE_MAX, "!rate");
         require(_borrowDepth <= BORROW_DEPTH_MAX, "!depth");
 
-        _deleverage(false, uint256(-1));
+        _deleverage(false, uint256(-1)); // deleverage all supplied want tokens
         borrowRate = _borrowRate;
         borrowDepth = _borrowDepth;
-        updateSupplyBorrowBal();
-        _leverage();
-
-        StratRebalance(_borrowRate, _borrowDepth);
+        farm();
     }
 
     function earn() external whenNotPaused {
-        require(!Address.isContract(msg.sender), "!contract");
+        if (onlyGov) {
+            require(msg.sender == govAddress, "Not authorised");
+        }
+        require(
+            wantLockedInHere() < MAX_WLINHERE_TO_CALL_EARN,
+            "!safe - use farm()"
+        );
 
         IVenusDistribution(venusDistributionAddress).claimVenus(address(this));
 
@@ -1670,50 +1609,41 @@ contract StratVLEV is Ownable, Pausable {
         );
 
         distributeFees();
-        buyBackBurn();
+        buyBack();
         lastEarnBlock = block.number;
 
         farm();
     }
 
-    function buyBackBurn() internal {
-        uint256 buyBackBurnRate = IAutoFarm(autoFarmAddress).buyBackBurnRate();
-
-        if (buyBackBurnRate <= 0) {
+    function buyBack() internal {
+        if (buyBackRate <= 0) {
             return;
         }
 
-        uint256 wantBal = IERC20(wantAddress).balanceOf(address(this));
+        uint256 wantBal = wantLockedInHere();
 
-        uint256 buyBackBurnRateMax =
-            IAutoFarm(autoFarmAddress).buyBackBurnRateMax();
-
-        uint256 buyBackBurnAmt =
-            wantBal.mul(buyBackBurnRate).div(buyBackBurnRateMax);
+        uint256 buyBackAmt = wantBal.mul(buyBackRate).div(buyBackRateMax);
 
         IPancakeRouter02(pancakeSwapRouterAddress).swapExactTokensForTokens(
-            buyBackBurnAmt,
+            buyBackAmt,
             0,
-            buyBackBurnPath,
+            wantToAUTOPath,
             address(this),
             now + 600
         );
 
         // Burn AUTO tokens
         uint256 burnAmt = IERC20(AUTOAddress).balanceOf(address(this));
-        IERC20(AUTOAddress).safeTransfer(
-            0x0000000000000000000000000000000000000000,
-            burnAmt
-        );
+        IERC20(AUTOAddress).safeTransfer(buyBackAddress, burnAmt);
     }
 
     function distributeFees() internal {
-        uint256 wantAmt = IERC20(wantAddress).balanceOf(address(this));
+        uint256 wantAmt = wantLockedInHere();
 
         if (wantAmt > 0) {
             if (controllerFee > 0) {
                 IERC20(wantAddress).safeTransfer(
-                    devAddress,
+                    govAddress,
                     wantAmt.mul(controllerFee).div(controllerFeeMax)
                 );
             }
@@ -1721,8 +1651,6 @@ contract StratVLEV is Ownable, Pausable {
     }
 
     function withdraw(uint256 _wantAmt) external onlyOwner returns (uint256) {
-        updateSupplyBorrowBal();
-
         uint256 sharesRemoved =
             _wantAmt.mul(sharesTotal).div(wantLockedTotal());
         if (sharesRemoved > sharesTotal) {
@@ -1730,11 +1658,10 @@ contract StratVLEV is Ownable, Pausable {
         }
         sharesTotal -= sharesRemoved;
 
-        uint256 wantBal = IERC20(wantAddress).balanceOf(address(this));
+        uint256 wantBal = wantLockedInHere();
         if (wantBal < _wantAmt) {
             _deleverage(true, _wantAmt.sub(wantBal));
-            IWBNB(wantAddress).deposit{value: _wantAmt.sub(wantBal)}(); // Wrap. BNB -> WBNB
-            wantBal = IERC20(wantAddress).balanceOf(address(this));
+            wantBal = wantLockedInHere();
         }
 
         if (wantBal < _wantAmt) {
@@ -1752,7 +1679,7 @@ contract StratVLEV is Ownable, Pausable {
      * @dev Pauses the strat.
      */
     function pause() public {
-        require(msg.sender == devAddress, "Not authorised");
+        require(msg.sender == govAddress, "Not authorised");
 
         _pause();
 
@@ -1764,7 +1691,7 @@ contract StratVLEV is Ownable, Pausable {
      * @dev Unpauses the strat.
      */
     function unpause() external {
-        require(msg.sender == devAddress, "Not authorised");
+        require(msg.sender == govAddress, "Not authorised");
         _unpause();
 
         IERC20(venusAddress).safeApprove(pancakeSwapRouterAddress, uint256(-1));
@@ -1775,23 +1702,9 @@ contract StratVLEV is Ownable, Pausable {
      * @dev Updates want locked in Venus after interest is accrued to this very block.
      * To be called before sensitive operations.
      */
-    function updateSupplyBorrowBal() public {
-        _updateSupplyBalPay();
-        _updateBorrowBalNoPay();
-    }
-
-    function _updateSupplyBalPay() internal {
+    function updateBalance() public {
         supplyBal = IVToken(vTokenAddress).balanceOfUnderlying(address(this)); // a payable function because of acrueInterest()
-    }
-
-    function _updateBorrowBalNoPay() internal {
-        (
-            uint256 error,
-            uint256 vTokenBal,
-            uint256 borrowBalNew,
-            uint256 exchangeRateMantissa
-        ) = IVToken(vTokenAddress).getAccountSnapshot(address(this)); // non-payable function
-        borrowBal = borrowBalNew;
+        borrowBal = IVToken(vTokenAddress).borrowBalanceCurrent(address(this));
     }
 
     function wantLockedTotal() public view returns (uint256) {
@@ -1799,26 +1712,35 @@ contract StratVLEV is Ownable, Pausable {
     }
 
     function wantLockedInHere() public view returns (uint256) {
-        uint256 wantBal = IERC20(wantAddress).balanceOf(address(this));
-        // return wantBal; // Not for
-        uint256 bnbBal = address(this).balance;
-        return bnbBal.add(wantBal);
+        return IERC20(wantAddress).balanceOf(address(this));
     }
 
     function setEntranceFeeFactor(uint256 _entranceFeeFactor) public {
-        require(msg.sender == devAddress, "Not authorised");
-        require(_entranceFeeFactor > entranceFeeFactorLL, "too low");
+        require(msg.sender == govAddress, "Not authorised");
+        require(_entranceFeeFactor > entranceFeeFactorLL, "!safe - too low");
         entranceFeeFactor = _entranceFeeFactor;
     }
 
-    function setDev(address _devAddress) public {
-        require(msg.sender == devAddress, "Not authorised");
-        devAddress = _devAddress;
+    function setControllerFee(uint256 _controllerFee) public {
+        require(msg.sender == govAddress, "Not authorised");
+        require(_controllerFee <= controllerFeeUL, "too high");
+        controllerFee = _controllerFee;
     }
 
-    function setControllerFee(uint256 _controllerFee) public {
-        require(msg.sender == devAddress, "Not authorised");
-        controllerFee = _controllerFee;
+    function setbuyBackRate(uint256 _buyBackRate) public {
+        require(msg.sender == govAddress, "Not authorised");
+        require(buyBackRate <= buyBackRateUL, "too high");
+        buyBackRate = _buyBackRate;
+    }
+
+    function setGov(address _govAddress) public {
+        require(msg.sender == govAddress, "Not authorised");
+        govAddress = _govAddress;
+    }
+
+    function setOnlyGov(bool _onlyGov) public {
+        require(msg.sender == govAddress, "Not authorised");
+        onlyGov = _onlyGov;
     }
 
     receive() external payable {}

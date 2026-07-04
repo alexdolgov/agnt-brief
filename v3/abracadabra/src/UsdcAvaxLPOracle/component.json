@@ -2,7 +2,7 @@
   "component": "UsdcAvaxLPOracle",
   "main_contract": "UsdcAvaxLPOracle",
   "source_file_count": 4,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,14 @@
       "chain": "avalanche",
       "chain_id": 43114,
       "address": "0x648af26592c7425447b8eee647f4106b97a27793",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xef9c97e356bc5ff2460e25f40f608101ce15d70b",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

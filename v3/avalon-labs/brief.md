@@ -7,26 +7,26 @@
 - Project: Avalon Labs (`avalon-labs`)
 - Website: [https://www.avalonfinance.xyz](https://www.avalonfinance.xyz)
 - Lifecycle: unknown (Tier 0, 85.1% below peak)
-- Generated: 2026-07-03T21:05:32.401Z
+- Generated: 2026-07-04T11:05:40.531Z
 - Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
 - Chains: arbitrum, base, berachain, bsc, ethereum, klaytn, mantle, merlin, mode, scroll, sei, sonic
-- Contract surface: 572 unique implementations (917 raw deployments)
+- Contract surface: 571 unique implementations (913 raw deployments)
 - DeFi Llama TVL: $398,187,502.00
 - On-chain TVL (included contracts): $1,990,093.28
 - TVL by chain: Bsc $1,990,093.28 | Ethereum $0.00
 
 ## Project Description
 
-Anchor BTC. Structurally: 51 project-authored contract(s) across 9 chain(s); 1 ERC4626 vault, 17 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on aave.
+Anchor BTC. Structurally: 272 project-authored contract(s) across 10 chain(s); 1 ERC4626 vault, 31 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on aave.
 
 ### Architecture
 
-The protocol comprises 12 functional families. Its contracts share 28 common project-authored base contract(s) (proxy, oapp, oappsender). Dominant framework: aave.
+The protocol comprises 13 functional families. Its contracts share 49 common project-authored base contract(s) (proxy, oapp, oappsender). Dominant framework: aave.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 1578; live-surface contracts included: 913 (313 live, 600 unknown).
-- Excluded by liveness: 665 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 1573; live-surface contracts included: 909 (313 live, 596 unknown).
+- Excluded by liveness: 664 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
@@ -34,13 +34,13 @@ The protocol comprises 12 functional families. Its contracts share 28 common pro
 ## Audit Coverage Summary
 
 - Coverage of deployed-live implementations: 5/34 (14.7%)
-- Deployed-live implementations: 34 of 572 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 5/45
-- Verified + Unaudited implementations: 40
+- Deployed-live implementations: 34 of 571 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 5/44
+- Verified + Unaudited implementations: 39
 - Verified by bytecode match: 2
 - Unverified implementations: 527
-- Unique implementations: 572
-- Raw deployments: 917
+- Unique implementations: 571
+- Raw deployments: 913
 - Audits discovered: 19 (19 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 6
 - ASD (verified + unaudited TVL): $1,990,093.28
@@ -54,8 +54,8 @@ The protocol comprises 12 functional families. Its contracts share 28 common pro
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| SlowMist | Tier 1 | 4 | 8.9% | 2024-10 |
-| BlockSec | Tier 2 | 3 | 6.7% | 2024-10 |
+| SlowMist | Tier 1 | 4 | 9.1% | 2024-10 |
+| BlockSec | Tier 2 | 3 | 6.8% | 2024-10 |
 
 ## Contract Surface
 
@@ -65,9 +65,9 @@ The protocol comprises 12 functional families. Its contracts share 28 common pro
 |---|---|---|---|---|---|
 | PoolManager | core_logic | bsc | n/a | 2 deployments: bsc [`0x02fedc...d248f0`](./contracts/bsc-56/0x02fedcff97942fe28e8936cdc3d7a480fdd248f0/); bsc `0xeb13f6...d3c5ed` | ✅ Audited |
 | SavingAccount | core_logic | ethereum | n/a | [`0x01e3cc...5ddfa6`](./contracts/ethereum-1/0x01e3cc8e17755989ad2cafe78a822354eb5ddfa6/) | ✅ Audited |
-| sUSDa | unknown | sonic | n/a | 4 deployments: ethereum `0x2b66aa...d43bd9`; bsc `0x73a325...f82b03`; sonic [`0x2840f9...8b304f`](./contracts/sonic-146/0x2840f9d9f96321435ab0f977e7fdbf32ea8b304f/); mantle `0x5a61b1...66bc6e` | ✅ Audited |
+| sUSDa | unknown | ethereum | n/a | 3 deployments: ethereum [`0x2b66aa...d43bd9`](./contracts/ethereum-1/0x2b66aade1e9c062ff411bd47c44e0ad696d43bd9/); bsc `0x73a325...f82b03`; mantle `0x5a61b1...66bc6e` | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (40)
+### ⚠️ Verified + Unaudited (39)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
@@ -95,7 +95,6 @@ The protocol comprises 12 functional families. Its contracts share 28 common pro
 | Safe | unknown | ethereum | n/a | [`0x5a7931...c6757e`](./contracts/ethereum-1/0x5a79311083dc82abc2de1e5639673c876cc6757e/) | ⚠️ Unaudited |
 | sAVL | unknown | bsc | n/a | 2 deployments: ethereum `0xdb8d77...b33b50`; bsc [`0x5e2a06...c0d300`](./contracts/bsc-56/0x5e2a06121b2cc7e5ac30bb2d5a128bfbb0c0d300/) | ⚠️ Unaudited |
 | StableDebtToken | token | mode | n/a | 2 deployments: mode [`0xa3ed9f...4ce4a2`](./contracts/mode-34443/0xa3ed9fab560bcf127adabc793de68b241d4ce4a2/); mode `0xe35e20...e80605` | ⚠️ Unaudited |
-| Timelock | unknown | bsc | n/a | 2 deployments: bsc [`0x2e9bdd...887a9f`](./contracts/bsc-56/0x2e9bdddbad724b1cc3bfe521d8e2c5f52a887a9f/); bsc `0x5846bf...7209b4` | ⚠️ Unaudited |
 | TimelockController | governance | ethereum | n/a | 3 deployments: ethereum [`0x37c21d...feeda8`](./contracts/ethereum-1/0x37c21df558f7ba9401a56d9017fa047cbafeeda8/); bsc [`0x37c21d...feeda8`](./contracts/bsc-56/0x37c21df558f7ba9401a56d9017fa047cbafeeda8/); mantle [`0x37c21d...feeda8`](./contracts/mantle-5000/0x37c21df558f7ba9401a56d9017fa047cbafeeda8/) | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7840fc...f333a1`](./contracts/ethereum-1/0x7840fca3acd12b96d7137d9b1f9434634bf333a1/); ethereum `0x88cd59...edc497` | ⚠️ Unaudited |
 | TransparentUpgradeableProxy | proxy | ethereum | n/a | 2 deployments: ethereum [`0xf29723...20d659`](./contracts/ethereum-1/0xf297230fa5614545b427616148a74c888620d659/); ethereum `0xf613a5...2b5a3c` | ⚠️ Unaudited |
@@ -104,7 +103,7 @@ The protocol comprises 12 functional families. Its contracts share 28 common pro
 | UiPoolDataProviderV3 | core_logic | sonic | n/a | 42 deployments: ethereum `0x0c57b0...91aa1f`; ethereum `0x154273...528ffa`; ethereum `0x358c2b...726336`; ethereum `0x8e2fe9...71dedd`; ethereum `0xd5d37f...e02f2b`; bsc `0x0c57b0...91aa1f`; bsc `0x12aaa8...d2bb65`; bsc `0x35b6c8...f22f8e`; bsc `0x385009...9c9c3c`; bsc `0x409392...86f28f`; bsc `0x5879b7...762ab3`; bsc `0x745956...a4052e`; bsc `0x89f047...ae98ce`; bsc `0x9bed9c...03cc37`; bsc `0x9d6341...066aa8`; bsc `0xa49824...74c636`; bsc `0xc88987...8be431`; bsc `0xea6460...44b937`; sonic [`0x00ad0e...f4100f`](./contracts/sonic-146/0x00ad0e3d7daba4092be35741ff1f92d571f4100f/); sonic `0x139b81...fa1684`; sonic `0x2bd254...c29242`; sonic `0x355b53...7060fa`; sonic `0x51b70b...4a81a8`; sonic `0x8812c8...ae55aa`; sonic `0x8c403d...fc3d46`; sonic `0x8e91bd...efe962`; sonic `0xaf0f03...05f72d`; sonic `0xb3aac7...6b2028`; sonic `0xb8ecf1...dfe6d3`; sonic `0xc4603b...fdb055`; sonic `0xcb0f74...5058c0`; sonic `0xf111b7...21398c`; sonic `0xf93957...68aa8b`; sei `0xe6ad9e...8010ea`; sei `0xf48582...867f8e`; base `0xd14da3...5ec61b`; base `0xe91d67...826e27`; mode `0xcf1177...7c8653`; mode `0xd14da3...5ec61b`; arbitrum `0x7d51cb...cfe73c`; arbitrum `0xe565d8...0767e1`; arbitrum `0xfe48b5...d7b631` | ⚠️ Unaudited |
 | USDX | unknown | bsc | n/a | [`0xf3527e...a66cef`](./contracts/bsc-56/0xf3527ef8de265eaa3716fb312c12847bfba66cef/) | ⚠️ Unaudited |
 | USDXRedeem | unknown | bsc | n/a | [`0x0eaf6f...d82f7b`](./contracts/bsc-56/0x0eaf6fe1aed8631114d1de78317982ce73d82f7b/) | ⚠️ Unaudited |
-| USDXSales | unknown | bsc | n/a | 2 deployments: bsc [`0x859834...e3065f`](./contracts/bsc-56/0x8598348b2cb4f62ec529ad52ab5e57b52ae3065f/); bsc `0xb45c42...0a56d1` | ⚠️ Unaudited |
+| USDXSales | unknown | bsc | n/a | [`0xb45c42...0a56d1`](./contracts/bsc-56/0xb45c42fbf8af8df5a1fa080a351e9b2f8e0a56d1/) | ⚠️ Unaudited |
 | VariableDebtToken | token | mode | n/a | 2 deployments: mode [`0xb60a7e...7fc584`](./contracts/mode-34443/0xb60a7e2ef708da20787a2c659d473647607fc584/); mode `0xc01173...e46c25` | ⚠️ Unaudited |
 | WalletBalanceProvider | unknown | mode | n/a | 2 deployments: mode [`0x9bed9c...03cc37`](./contracts/mode-34443/0x9bed9cf1cfb69f468f6f9121dd620c228203cc37/); mode `0xaddd62...160303` | ⚠️ Unaudited |
 | WFBTC | unknown | bsc | n/a | 2 deployments: bsc [`0x8100f7...1981b4`](./contracts/bsc-56/0x8100f723e6bd50a6e3272169caff506da61981b4/); bsc `0xafb46b...bc7ea7` | ⚠️ Unaudited |
@@ -700,15 +699,16 @@ Verified + unaudited native implementations ranked by TVL:
 | sonic | [`0x00ad0e...f4100f`](./contracts/sonic-146/0x00ad0e3d7daba4092be35741ff1f92d571f4100f/) | UiPoolDataProviderV3 | core_logic | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0xf3527e...a66cef`](./contracts/bsc-56/0xf3527ef8de265eaa3716fb312c12847bfba66cef/) | USDX | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 | bsc | [`0x0eaf6f...d82f7b`](./contracts/bsc-56/0x0eaf6fe1aed8631114d1de78317982ce73d82f7b/) | USDXRedeem | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
+| bsc | [`0xb45c42...0a56d1`](./contracts/bsc-56/0xb45c42fbf8af8df5a1fa080a351e9b2f8e0a56d1/) | USDXSales | unknown | n/a | Verified native implementation with no TVL datapoint and no extraction_exact/inherited_name_remap audit coverage |
 
 ## Origin Classification
 
 | Origin Kind | Contracts |
 |---|---:|
-| native | 110 |
+| native | 112 |
 | upstream | 2 |
 | standard_library | 11 |
-| needs_review | 449 |
+| needs_review | 446 |
 
 ## Scope Matching Notes
 

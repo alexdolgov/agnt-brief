@@ -12,7 +12,7 @@
       "address": "0x1d27713179d379416a22cd28331ccbd19f0e1192",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "avalanche",
@@ -20,7 +20,7 @@
       "address": "0x301946ca3aee999441070816b1d10e9ee437cd6e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "avalanche",
@@ -28,7 +28,7 @@
       "address": "0x666a53d7025136be4aa651af20fc5245ff2d1909",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "avalanche",
@@ -36,7 +36,7 @@
       "address": "0x6aba46fed16d4415ae741f858da7e4975dd788eb",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "avalanche",
@@ -44,7 +44,7 @@
       "address": "0x80108981f046846b97ab14a3e1b89adf0d8b89e9",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "avalanche",
@@ -52,7 +52,7 @@
       "address": "0x958704931f5a1dbb6df3c548ed68b9161f486a92",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "avalanche",
@@ -60,7 +60,7 @@
       "address": "0xa0de70c1240f12a15ada66d408738b21c1ce0a82",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "avalanche",
@@ -68,7 +68,7 @@
       "address": "0xa558944a38baf2514bd432e62f151375f48d06d1",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "avalanche",
@@ -76,7 +76,7 @@
       "address": "0xbc47f3bd40635489dbe77600d21c19fe4a09890b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "avalanche",
@@ -84,7 +84,7 @@
       "address": "0xc6f99208c411ca9cee00d6448711e09a1d05d89b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "avalanche",
@@ -92,7 +92,7 @@
       "address": "0xcbcc3995773c8b54f3302f0a399722014b79d338",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "avalanche",
@@ -100,7 +100,7 @@
       "address": "0xd74fd3133bdcac78c437764654343131a7eab9e7",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "avalanche",
@@ -108,7 +108,7 @@
       "address": "0xe0ee1acf6a85b0c63c20077c6b05d43920ef035e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "avalanche",
@@ -116,7 +116,7 @@
       "address": "0xfe47b6f358825fda93ffeee245d096c60ed529ee",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     }
   ]
 }

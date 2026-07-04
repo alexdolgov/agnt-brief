@@ -4,7 +4,7 @@
 
 - Project: Gro (`gro`)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:58.074Z
+- Generated: 2026-07-04T11:05:41.906Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: avalanche, ethereum
 - Contract surface: 111 unique implementations (122 raw deployments)

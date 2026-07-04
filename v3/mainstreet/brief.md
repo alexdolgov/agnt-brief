@@ -5,7 +5,7 @@
 - Project: Mainstreet (`mainstreet`)
 - Website: [https://mainstreet.finance/](https://mainstreet.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:21.873Z
+- Generated: 2026-07-04T11:05:42.078Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-66d5
 - Chains: ethereum
 - Contract surface: 12 unique implementations (16 raw deployments)

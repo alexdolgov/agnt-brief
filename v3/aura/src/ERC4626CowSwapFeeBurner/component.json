@@ -12,7 +12,7 @@
       "address": "0x201efd508c8dfe9de1a13c2452863a78cb2a86cc",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "optimism",

@@ -5,7 +5,7 @@
 - Project: SuperEarn (`superearn`)
 - Website: [https://superearn.io/](https://superearn.io/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:57.107Z
+- Generated: 2026-07-04T11:05:46.629Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-3e24
 - Chains: ethereum, klaytn
 - Contract surface: 127 unique implementations (191 raw deployments)

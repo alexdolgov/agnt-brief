@@ -5,7 +5,7 @@
 - Project: Arcadia Finance (`arcadia-finance`)
 - Website: [https://arcadia.finance](https://arcadia.finance)
 - Lifecycle: active (Tier 0, 73.6% below peak)
-- Generated: 2026-07-03T21:05:30.162Z
+- Generated: 2026-07-04T11:05:39.514Z
 - Pipeline run: v2-pipeline-2026-07-01-2b719a-f2f0
 - Chains: base, optimism, unichain
 - Contract surface: 463 unique implementations (619 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-Leveraged Farming. Structurally: 145 project-authored contract(s) across 3 chain(s); 7 ERC20 tokens, 20 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on solmate.
+Leveraged Farming. Structurally: 205 project-authored contract(s) across 3 chain(s); 6 ERC20 tokens, 31 ERC721 NFTs; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on solmate.
 
 ### Architecture
 
-The protocol comprises 9 functional families. Its contracts share 59 common project-authored base contract(s) (rebalancer, abstractbase, guardian). Dominant framework: solmate.
+The protocol comprises 9 functional families. Its contracts share 51 common project-authored base contract(s) (rebalancer, abstractbase, guardian). Dominant framework: solmate.
 
 ## Contract Surface Quality
 

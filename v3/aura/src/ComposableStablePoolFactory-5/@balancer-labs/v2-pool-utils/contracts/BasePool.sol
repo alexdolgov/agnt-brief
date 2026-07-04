@@ -218,17 +218,7 @@ abstract contract BasePool is IBasePool, BasePoolAuthorization, BalancerPoolToke
         _miscData = _miscData.insertBool(enabled, _RECOVERY_MODE_BIT_OFFSET);
 
         emit RecoveryModeStateChanged(enabled);
-
-        // Some pools need to update their state when leaving recovery mode to ensure proper functioning of the Pool.
-        // We do not allow an `_onEnableRecoveryMode()` hook as this may jeopardize the ability to enable Recovery mode.
-        if (!enabled) _onDisableRecoveryMode();
     }
-
-    /**
-     * @dev Performs any necessary actions on the disabling of Recovery Mode.
-     * This is usually to reset any fee collection mechanisms to ensure that they operate correctly going forward.
-     */
-    function _onDisableRecoveryMode() internal virtual {}
 
     /**
      * @notice Set the asset manager parameters for the given token.
@@ -274,8 +264,7 @@ abstract contract BasePool is IBasePool, BasePoolAuthorization, BalancerPoolToke
     function _isOwnerOnlyAction(bytes32 actionId) internal view virtual override returns (bool) {
         return
             (actionId == getActionId(this.setSwapFeePercentage.selector)) ||
-            (actionId == getActionId(this.setAssetManagerPoolConfig.selector)) ||
-            super._isOwnerOnlyAction(actionId);
+            (actionId == getActionId(this.setAssetManagerPoolConfig.selector));
     }
 
     function _getMiscData() internal view returns (bytes32) {

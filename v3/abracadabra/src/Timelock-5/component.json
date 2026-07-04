@@ -1,18 +1,18 @@
 {
   "component": "Timelock-5",
   "main_contract": "Timelock",
-  "source_file_count": 1,
+  "source_file_count": 15,
   "deployment_count": 1,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
-      "chain": "bsc",
-      "chain_id": 56,
-      "address": "0x4b57a6122651ed5dc0297a42c5a0b4400b20b410",
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xdf4364671bd0d93b56db54c2fc30e18596d5ed30",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
     }
   ]
 }

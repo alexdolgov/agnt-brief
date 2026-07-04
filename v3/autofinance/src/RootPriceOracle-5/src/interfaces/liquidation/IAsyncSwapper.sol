@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 struct SwapParams {
     /// @dev The address of the token to be sold.

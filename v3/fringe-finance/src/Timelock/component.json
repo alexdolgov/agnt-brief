@@ -1,18 +1,18 @@
 {
   "component": "Timelock",
   "main_contract": "Timelock",
-  "source_file_count": 2,
-  "deployment_count": 30,
+  "source_file_count": 17,
+  "deployment_count": 26,
   "audited": false,
   "audits_covering": [],
   "addresses": [
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x09214c0a3594fbcad59a58099b0a63e2b29b15b8",
+      "address": "0x09fec993be76230296ce8c3b8edafd32b6240126",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": "inactive"
+      "liveness": "live"
     },
     {
       "chain": "arbitrum",
@@ -49,26 +49,10 @@
     {
       "chain": "arbitrum",
       "chain_id": 42161,
-      "address": "0x2068fcc879f849e2d021b888ce62edb6e72a6bbf",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
       "address": "0x2d7d5448885790af3dfb25e9584d93dd285cda1c",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x3879517125928eba120c9f16dc6fdd39ead97715",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
     },
     {
       "chain": "arbitrum",
@@ -109,14 +93,6 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0x4a3930b629f899fe19c1f280c73a376382d61a78",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
     },
     {
       "chain": "arbitrum",
@@ -213,14 +189,6 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
-    },
-    {
-      "chain": "arbitrum",
-      "chain_id": 42161,
-      "address": "0xbb8614a9ad437739c9910a9cb2254c608aa7fdb4",
-      "is_proxy": false,
-      "implementation_address": null,
-      "liveness": "inactive"
     },
     {
       "chain": "arbitrum",

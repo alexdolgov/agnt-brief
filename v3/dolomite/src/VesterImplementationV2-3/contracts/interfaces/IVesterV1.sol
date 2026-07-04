@@ -20,8 +20,7 @@
 
 pragma solidity ^0.8.9;
 
-import { IERC721EnumerableUpgradeable } from "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/IERC721EnumerableUpgradeable.sol"; // solhint-disable-line max-line-length
-import { IERC20Mintable } from "./IERC20Mintable.sol";
+import { IOARB } from "./IOARB.sol";
 
 
 /**
@@ -31,7 +30,7 @@ import { IERC20Mintable } from "./IERC20Mintable.sol";
  * Interface for a vesting contract that offers users a discount on ARB tokens
  * if they vest ARB and oARB for a length of time
  */
-interface IVesterV1 is IERC721EnumerableUpgradeable {
+interface IVesterV1 {
 
     // =================================================
     // ==================== Structs ====================
@@ -55,14 +54,14 @@ interface IVesterV1 is IERC721EnumerableUpgradeable {
 
     event VestingStarted(address indexed owner, uint256 duration, uint256 amount, uint256 vestingId);
     event PositionClosed(address indexed owner, uint256 vestingId, uint256 ethCostPaid);
-    event PositionForceClosed(address indexed owner, uint256 vestingId, uint256 pairTax);
-    event EmergencyWithdraw(address indexed owner, uint256 vestingId, uint256 pairTax);
+    event PositionForceClosed(address indexed owner, uint256 vestingId, uint256 arbTax);
+    event EmergencyWithdraw(address indexed owner, uint256 vestingId, uint256 arbTax);
     event VestingActiveSet(bool vestingActive);
-    event OTokenSet(address oToken);
+    event OARBSet(address oARB);
     event ClosePositionWindowSet(uint256 closePositionWindow);
     event EmergencyWithdrawTaxSet(uint256 emergencyWithdrawTax);
     event ForceClosePositionTaxSet(uint256 forceClosePositionTax);
-    event PromisedTokensSet(uint256 promisedTokensSet);
+    event PromisedArbTokensSet(uint256 promisedArbTokensSet);
     event VestingPositionCreated(VestingPosition vestingPosition);
     event VestingPositionCleared(uint256 id);
     event BaseURISet(string baseURI);
@@ -80,7 +79,7 @@ interface IVesterV1 is IERC721EnumerableUpgradeable {
      *                                          Bypassing should only be used under emergency scenarios in which the
      *                                          owner needs to pull all of the funds
      */
-    function ownerWithdrawToken(
+    function ownerWithdrawArb(
         address _to,
         uint256 _amount,
         bool _shouldBypassAvailableAmounts
@@ -92,14 +91,6 @@ interface IVesterV1 is IERC721EnumerableUpgradeable {
      * @param  _isVestingActive   True if creating new vests is allowed, or false to disable it
      */
     function ownerSetIsVestingActive(bool _isVestingActive) external;
-
-    /**
-     * @notice  Sets the oToken address. Reverts if there are any outstanding promised tokens. Callable by Dolomite
-     *          Margin owner
-     *
-     * @param  _oToken   The oToken to be used for vesting into PAIR_TOKEN
-     */
-    function ownerSetOToken(address _oToken) external;
 
     /**
      * @notice  Sets the close position window. Callable by Dolomite Margin owner
@@ -186,19 +177,19 @@ interface IVesterV1 is IERC721EnumerableUpgradeable {
     // =================================================
 
     /**
-     * @return The amount of tokens available for vesting. Vesting tokens is reserved by pairing with oToken.
+     * @return The amount of ARB tokens available for vesting. Vesting ARB tokens is reserved by pairing with oARB.
      */
-    function availableTokens() external view returns (uint256);
+    function availableArbTokens() external view returns (uint256);
 
     /**
      * @return The amount of ARB tokens committed to active oARB vesting positions
      */
-    function promisedTokens() external view returns (uint256);
+    function promisedArbTokens() external view returns (uint256);
 
     /**
-     *  @return The oToken token contract address
+     *  @return The oARB token contract address
      */
-    function oToken() external view returns (IERC20Mintable);
+    function oARB() external view returns (IOARB);
 
     /**
      * @return The duration in seconds that users may execute the matured positions before it becomes force-closed

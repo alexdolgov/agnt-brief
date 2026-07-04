@@ -5,7 +5,7 @@
 - Project: Brickken (`brickken`)
 - Website: [https://www.brickken.com](https://www.brickken.com)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:37.017Z
+- Generated: 2026-07-04T11:05:40.791Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-43c7
 - Chains: base, ethereum, polygon
 - Contract surface: 21 unique implementations (45 raw deployments)
@@ -15,16 +15,16 @@
 
 ## Project Description
 
-RWA. Structurally: 22 project-authored contract(s) across 3 chain(s); 4 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+RWA. Structurally: 41 project-authored contract(s) across 3 chain(s); 4 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 3 functional families. Its contracts share 6 common project-authored base contract(s) (ownableupgradeable, contextupgradeable, eip712). Dominant framework: openzeppelin.
+The protocol comprises 3 functional families. Its contracts share 14 common project-authored base contract(s) (stoescrowupgradeable, ownableupgradeable, contextupgradeable). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 100; live-surface contracts included: 42 (31 live, 11 unknown).
-- Excluded by liveness: 58 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 98; live-surface contracts included: 42 (31 live, 11 unknown).
+- Excluded by liveness: 56 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.

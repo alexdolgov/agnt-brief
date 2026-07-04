@@ -2,7 +2,7 @@
   "component": "wOHMTWAPOracleV1",
   "main_contract": "wOHMTWAPOracleV1",
   "source_file_count": 3,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -13,6 +13,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x5ec2443b23f18a49910e94c71e098a19c8c58c11",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

@@ -60,7 +60,7 @@
       "address": "0x394d4824548b66d75513aef3994a2800e6d1ef25",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "chain-146",
@@ -68,7 +68,7 @@
       "address": "0x4d81455b4f1d152874aa421141a7a81829dc503e",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "chain-146",
@@ -76,7 +76,7 @@
       "address": "0x618e0055441c2f35ce751b39e6e2a60940ec164b",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "chain-146",
@@ -84,7 +84,7 @@
       "address": "0x6d13db293b4b6b9aa1760f7e093fb26c24f345b2",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "chain-146",
@@ -92,7 +92,7 @@
       "address": "0x971e935e436f3621fe8976cdf2e2a511757456da",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "chain-146",
@@ -100,7 +100,7 @@
       "address": "0x98b55e07156895814d2503036dc635316f9c9502",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "base",
@@ -108,7 +108,7 @@
       "address": "0x115f7d16977ead26ded71b5305788ac1dd15d6d6",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "base",
@@ -116,7 +116,7 @@
       "address": "0x3f8113ef0616d95db3688288737449c6302761c5",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "chain-9745",

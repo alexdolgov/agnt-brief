@@ -148,7 +148,7 @@
       "address": "0x8ab6a068cd1e5fb8be5b7225275a94900dc4aa02",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "avalanche",
@@ -196,7 +196,7 @@
       "address": "0xb643d98c36b583ee05d9ea75e68f28dbb75b5720",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "live"
     },
     {
       "chain": "avalanche",

@@ -5,6 +5,8 @@ import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/cryptography/EIP712Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/utils/MulticallUpgradeable.sol";
+
 import "@openzeppelin/contracts/utils/Address.sol";
 
 import "./Hash.sol";
@@ -14,13 +16,11 @@ import "./addressProvider/IAddressProvider.sol";
 import "./weth/IWETH.sol";
 import "./admin/PerpManager.sol";
 import "./admin/Roles.sol";
-import "./util/IPartnerFeeManager.sol";
 
-abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgradeable, ReentrancyGuardUpgradeable, EIP712Upgradeable {
+abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgradeable, ReentrancyGuardUpgradeable, EIP712Upgradeable, MulticallUpgradeable {
     using Address for address;
     using SafeERC20 for IERC20;
     using Hash for OpenPositionRequest;
-    using Hash for Position;
 
     /// @dev indicates if this pool is an long pool
     bool public isLongPool;
@@ -65,7 +65,6 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     /// @dev Initializes the pool as per UUPSUpgradeable
     /// @param _isLongPool a flag indicating if this is a long pool or a short pool
     /// @param _addressProvider an address provider
-    /// @param _manager The PerpManager contract that will own this vault
     function __BaseWasabiPool_init(bool _isLongPool, IAddressProvider _addressProvider, PerpManager _manager) public onlyInitializing {
         __Ownable_init(address(_manager));
         __EIP712_init(_isLongPool ? "WasabiLongPool" : "WasabiShortPool", "1");
@@ -85,13 +84,28 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     function _authorizeUpgrade(address) internal view override onlyAdmin {}
 
     /// @inheritdoc IWasabiPerps
+    /// @notice Deprecated
+    function withdraw(address, uint256, address) external pure override {
+        revert Deprecated();
+    }
+
+    /// @inheritdoc IWasabiPerps
+    /// @notice Deprecated
+    function donate(address, uint256) external pure override {
+        revert Deprecated();
+    }
+
+    /// @inheritdoc IWasabiPerps
     function getVault(address _asset) public view returns (IWasabiVault) {
+        if (_asset == address(0)) {
+            _asset = _getWethAddress();
+        }
         if (vaults[_asset] == address(0)) revert InvalidVault();
         return IWasabiVault(vaults[_asset]);
     }
 
     /// @inheritdoc IWasabiPerps
-    function addVault(IWasabiVault _vault) external onlyRole(Roles.VAULT_ADMIN_ROLE) {
+    function addVault(IWasabiVault _vault) external onlyAdmin {
         if (_vault.getPoolAddress(isLongPool) != address(this)) revert InvalidVault();
         address asset = _vault.asset();
         if (vaults[asset] != address(0)) revert VaultAlreadyExists();
@@ -102,28 +116,6 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     /// @inheritdoc IWasabiPerps
     function addQuoteToken(address _token) external onlyAdmin {
         quoteTokens[_token] = true;
-    }
-
-    /// @inheritdoc IWasabiPerps
-    function migrateFees(address _addressProvider, address[] calldata _feeTokens, uint256[] calldata _fees, uint256[] calldata _expectedBalances) external onlyAdmin {
-        if (_feeTokens.length != _fees.length || _feeTokens.length != _expectedBalances.length) revert InvalidInput();
-        addressProvider = IAddressProvider(_addressProvider);
-        uint256 length = _feeTokens.length;
-        for (uint256 i = 0; i < length; ) {
-            IERC20 feeToken = IERC20(_feeTokens[i]);
-            uint256 fee = _fees[i];
-            uint256 expectedBalance = _expectedBalances[i];
-            uint256 balance = feeToken.balanceOf(address(this));
-
-            if (balance != expectedBalance || fee > balance) revert InvalidInput();
-            if (fee > 0) {
-                feeToken.safeTransfer(_getFeeReceiver(), fee);
-            }
-
-            unchecked {
-                i++;
-            }
-        }
     }
 
     /// @dev Repays a position
@@ -150,30 +142,25 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     /// @param _payoutType whether to send WETH to the trader, send ETH, or deposit tokens to the vault (if `_token != WETH` then `WRAPPED` and `UNWRAPPED` have no effect)
     /// @param _token the payout token (`currency` for longs, `collateralCurrency` for shorts)
     /// @param _trader the trader
-    /// @param _referrer the partner that referred the trader, if applicable
     /// @param _closeAmounts the close amounts
     function _payCloseAmounts(
         PayoutType _payoutType,
         address _token,
         address _trader,
-        address _referrer,
         CloseAmounts memory _closeAmounts
     ) internal {
-        uint256 closeFees = _closeAmounts.closeFee;
-        // Deduct partner fees from close fees if referrer is a partner
-        if (_referrer != address(0)) {
-            closeFees -= _handlePartnerFees(closeFees, _token, _referrer);
-        }
+        uint256 positionFeesToTransfer = _closeAmounts.pastFees + _closeAmounts.closeFee;
 
         // Check if the payout token is ETH/WETH or another ERC20 token
-        if (_token == _getWethAddress()) {
-            uint256 total = _closeAmounts.payout + closeFees + _closeAmounts.liquidationFee;
-            IWETH wethToken = IWETH(_getWethAddress());
+        address wethAddress = _getWethAddress();
+        if (_token == wethAddress) {
+            uint256 total = _closeAmounts.payout + positionFeesToTransfer + _closeAmounts.liquidationFee;
+            IWETH wethToken = IWETH(wethAddress);
             if (_payoutType == PayoutType.UNWRAPPED) {
                 if (total > address(this).balance) {
                     wethToken.withdraw(total - address(this).balance);
                 }
-                PerpUtils.payETH(closeFees, _getFeeReceiver());
+                PerpUtils.payETH(positionFeesToTransfer, _getFeeReceiver());
 
                 if (_closeAmounts.liquidationFee > 0) { 
                     PerpUtils.payETH(_closeAmounts.liquidationFee, _getLiquidationFeeReceiver());
@@ -190,24 +177,22 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
                 // Fall through to ERC20 transfer
             }
         }
+        IERC20 token = IERC20(_token);
+        token.safeTransfer(_getFeeReceiver(), positionFeesToTransfer);
 
-        if (closeFees != 0) {
-            IERC20(_token).safeTransfer(_getFeeReceiver(), closeFees);
-        }
-
-        if (_closeAmounts.liquidationFee != 0) {
-            IERC20(_token).safeTransfer(_getLiquidationFeeReceiver(), _closeAmounts.liquidationFee);
+        if (_closeAmounts.liquidationFee > 0) {
+            token.safeTransfer(_getLiquidationFeeReceiver(), _closeAmounts.liquidationFee);
         }
 
         if (_closeAmounts.payout != 0) {
             if (_payoutType == PayoutType.VAULT_DEPOSIT) {
-                IWasabiVault vault = getVault(_token);
-                if (IERC20(_token).allowance(address(this), address(vault)) < _closeAmounts.payout) {
-                    IERC20(_token).approve(address(vault), type(uint256).max);
+                IWasabiVault vault = getVault(address(token));
+                if (token.allowance(address(this), address(vault)) < _closeAmounts.payout) {
+                    token.approve(address(vault), type(uint256).max);
                 }
                 vault.deposit(_closeAmounts.payout, _trader);
             } else {
-                IERC20(_token).safeTransfer(_trader, _closeAmounts.payout);
+                token.safeTransfer(_trader, _closeAmounts.payout);
             }
         }
     }
@@ -231,49 +216,21 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
         OpenPositionRequest calldata _request,
         Signature calldata _signature
     ) internal {
-        // Validations
         _validateSignature(_request.hash(), _signature);
-        Position memory existingPosition = _request.existingPosition;
-        address currency = _request.currency;
-        address collateralCurrency = _request.targetCurrency;
-        if (existingPosition.id != 0) {
-            if (positions[_request.id] != existingPosition.hash()) revert InvalidPosition();
-            if (currency != existingPosition.currency) revert InvalidCurrency();
-            if (collateralCurrency != existingPosition.collateralCurrency) revert InvalidTargetCurrency();
-        } else {
-            if (positions[_request.id] != bytes32(0)) revert PositionAlreadyTaken();
-            if (!_isQuoteToken(isLongPool ? currency : collateralCurrency)) revert InvalidCurrency();
-            if (currency == collateralCurrency) revert InvalidTargetCurrency();
-            if (
-                existingPosition.downPayment +
-                existingPosition.principal +
-                existingPosition.collateralAmount +
-                existingPosition.feesToBePaid != 0
-            ) revert InvalidPosition();
-        }
-        // The only time functionCallDataList should be empty is when we are adding collateral to a short position
-        if (_request.functionCallDataList.length == 0) {
-            if (isLongPool || _request.principal > 0) revert SwapFunctionNeeded();
-        }
+        if (positions[_request.id] != bytes32(0)) revert PositionAlreadyTaken();
+        if (_request.functionCallDataList.length == 0) revert SwapFunctionNeeded();
         if (_request.expiration < block.timestamp) revert OrderExpired();
-
-        // Receive payment
+        if (!_isQuoteToken(isLongPool ? _request.currency : _request.targetCurrency)) revert InvalidCurrency();
+        if (_request.currency == _request.targetCurrency) revert InvalidTargetCurrency();
         PerpUtils.receivePayment(
-            isLongPool ? currency : collateralCurrency,
+            isLongPool ? _request.currency : _request.targetCurrency,
             _request.downPayment + _request.fee,
             _getWethAddress(),
             msg.sender
         );
-
-        // Pay open fees
-        _handleOpenFees(
-            _request.fee,
-            isLongPool ? _request.currency : _request.targetCurrency,
-            _request.referrer
-        );
     }
 
-    /// @dev Checks if the signature is valid for the given struct hash for the order signer role
+    /// @dev Checks if the signer for the given structHash and signature is the expected signer
     /// @param _structHash the struct hash
     /// @param _signature the signature
     function _validateSignature(bytes32 _structHash, IWasabiPerps.Signature calldata _signature) internal view {
@@ -287,41 +244,27 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     }
 
     /// @dev Checks if the signer for the given structHash and signature is the expected signer
-    /// @param _signer the expected signer, i.e., the trader
+    /// @param _signer the expected signer
     /// @param _structHash the struct hash
     /// @param _signature the signature
     function _validateSigner(address _signer, bytes32 _structHash, IWasabiPerps.Signature calldata _signature) internal view {
         bytes32 typedDataHash = _hashTypedDataV4(_structHash);
         address signer = ecrecover(typedDataHash, _signature.v, _signature.r, _signature.s);
 
-        if (_signer != signer && !_getManager().isAuthorizedSigner(_signer, signer)) {
+        if (_signer != signer) {
             revert IWasabiPerps.InvalidSignature();
         }
-    }
-
-    function _handleOpenFees(uint256 _fee, address _currency, address _referrer) internal {
-        // Handle partner fees if the referrer is a partner
-        if (_fee != 0 && _referrer != address(0)) {
-            _fee -= _handlePartnerFees(_fee, _currency, _referrer);
-        }
-        // Send the remaining fees to the fee receiver
-        IERC20(_currency).safeTransfer(_getFeeReceiver(), _fee);
-    }
-
-    function _handlePartnerFees(uint256 _fee, address _currency, address _referrer) internal returns (uint256) {
-        IPartnerFeeManager partnerFeeManager = _getPartnerFeeManager();
-        uint256 partnerFees = partnerFeeManager.computePartnerFees(_referrer, _fee);
-        if (partnerFees != 0) {
-            IERC20(_currency).approve(address(partnerFeeManager), partnerFees);
-            partnerFeeManager.accrueFees(_referrer, _currency, partnerFees);
-            return partnerFees;
-        }
-        return 0;
     }
 
     /// @dev returns {true} if the given token is a quote token
     function _isQuoteToken(address _token) internal view returns(bool) {
         return quoteTokens[_token];
+    }
+
+    /// @dev computes the liquidation fee
+    function _computeLiquidationFee(uint256 _downPayment) internal view returns (uint256) {
+        uint256 liquidationFeeBps = addressProvider.getLiquidationFeeBps();
+        return _downPayment * liquidationFeeBps / 10000;
     }
 
     /// @dev checks if the caller can close out the given trader's position
@@ -355,11 +298,6 @@ abstract contract BaseWasabiPool is IWasabiPerps, UUPSUpgradeable, OwnableUpgrad
     /// @dev returns the liquidation fee receiver
     function _getLiquidationFeeReceiver() internal view returns (address) {
         return addressProvider.getLiquidationFeeReceiver();
-    }
-
-    /// @dev returns the partner fee manager
-    function _getPartnerFeeManager() internal view returns (IPartnerFeeManager) {
-        return addressProvider.getPartnerFeeManager();
     }
 
     receive() external payable virtual {}

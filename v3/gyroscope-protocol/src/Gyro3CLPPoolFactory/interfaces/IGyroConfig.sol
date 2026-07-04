@@ -1,5 +1,4 @@
-// SPDX-License-Identifier: LicenseRef-Gyro-1.0
-// for information on licensing please see the README in the GitHub repository <https://github.com/gyrostable/concentrated-lps>.
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.7.6;
 
 /// @notice IGyroConfig stores the global configuration of the Gyroscope protocol
@@ -20,9 +19,6 @@ interface IGyroConfig {
     /// @notice Set a uint256 config
     /// NOTE: We avoid overloading to avoid complications with some clients
     function setUint(bytes32 key, uint256 newValue) external;
-
-    /// @notice Check whether a key exists
-    function hasKey(bytes32 key) external view returns (bool);
 
     /// @notice Set an address config
     function setAddress(bytes32 key, address newValue) external;

@@ -2,7 +2,7 @@
   "component": "wOHMLevSwapperV1",
   "main_contract": "wOHMLevSwapperV1",
   "source_file_count": 3,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +12,31 @@
       "address": "0x229104587b6ef8762f0a5ce394bf02f78ee25366",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x985486e621c28452f444bbcc8c84868bda920922",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa10cbefb8fa376805d6589f0c3358d672fc5f6c0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xd1ea64e28ba942b450fd8633148870db4948234c",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

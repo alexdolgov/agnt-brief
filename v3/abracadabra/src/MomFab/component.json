@@ -2,7 +2,7 @@
   "component": "MomFab",
   "main_contract": "MomFab",
   "source_file_count": 3,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -12,7 +12,15 @@
       "address": "0x141a206ece672e3198086c5d21f7858ad03669ea",
       "is_proxy": false,
       "implementation_address": null,
-      "liveness": null
+      "liveness": "inactive"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x4a67d9b00c077b093ddfb67de2a1c66a70bac0fe",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

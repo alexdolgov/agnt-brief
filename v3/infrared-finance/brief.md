@@ -5,7 +5,7 @@
 - Project: Infrared Finance (`infrared-finance`)
 - Website: [https://infrared.finance](https://infrared.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:01.300Z
+- Generated: 2026-07-04T11:05:41.941Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: berachain, bsc
 - Contract surface: 53 unique implementations (167 raw deployments)
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Liquid Staking. Structurally: 44 project-authored contract(s) across 2 chain(s); 2 ERC4626 vaults, 8 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin-upgradeable.
+Liquid Staking. Structurally: 45 project-authored contract(s) across 2 chain(s); 2 ERC4626 vaults, 8 ERC20 tokens; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin-upgradeable.
 
 ### Architecture
 

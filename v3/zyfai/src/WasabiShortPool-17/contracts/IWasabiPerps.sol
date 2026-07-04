@@ -7,29 +7,34 @@ import "./vaults/IWasabiVault.sol";
 
 interface IWasabiPerps {
 
-    error LiquidationThresholdNotReached(); // 0xc4d82e43
-    error InvalidSignature(); // 0x8baa579f
-    error PositionAlreadyTaken(); // 0xe168e4db
-    error SwapFunctionNeeded(); // 0xac8da8e3
-    error OrderExpired(); // 0xc56873ba
-    error InvalidOrder(); // 0xaf610693
-    error PriceTargetNotReached(); // 0x5d5ce003
-    error InvalidCurrency(); // 0xf5993428
-    error InvalidTargetCurrency(); // 0x0415b9ce
-    error InsufficientAmountProvided(); // 0xf948951e
-    error PrincipalTooHigh(); // 0xd7cdb444
-    error InsufficientPrincipalUsed(); // 0xb1084a42
-    error InsufficientPrincipalRepaid(); // 0xb0f8fc9b
-    error InsufficientCollateralReceived(); // 0x406220a9
-    error TooMuchCollateralSpent(); // 0x1cbf0b89
-    error SenderNotTrader(); // 0x79184208
-    error InvalidPosition(); // 0xce7e065e
-    error EthTransferFailed(uint256 amount, address _target); // 0xf733a609
-    error InvalidVault(); // 0xd03a6320
-    error VaultAlreadyExists(); // 0x04aabf33
-    error ValueDeviatedTooMuch(); // 0x604e9173
-    error EthReceivedForNonEthCurrency(); // 0x94427663
-    error InvalidInput(); // 0xb4fa3fb3
+    error LiquidationThresholdNotReached();
+    error InvalidSignature();
+    error PositionAlreadyTaken();
+    error SwapFunctionNeeded();
+    error OrderExpired();
+    error InvalidOrder();
+    error PriceTargetNotReached();
+    error InvalidCurrency();
+    error InvalidTargetCurrency();
+    error InsufficientAmountProvided();
+    error PrincipalTooHigh();
+    error InsufficientPrincipalUsed();
+    error InsufficientPrincipalRepaid();
+    error InsufficientAvailablePrincipal();
+    error InsufficientCollateralReceived();
+    error TooMuchCollateralSpent();
+    error SenderNotTrader();
+    error InvalidPosition();
+    error IncorrectSwapParameter();
+    error EthTransferFailed(uint256 amount, address _target);
+    error InvalidVault();
+    error VaultAlreadyExists();
+    error WithdrawerNotVault();
+    error WithdrawalNotAllowed();
+    error InterestAmountNeeded();
+    error ValueDeviatedTooMuch();
+    error EthReceivedForNonEthCurrency();
+    error Deprecated();
 
     event PositionOpened(
         uint256 positionId,
@@ -70,47 +75,6 @@ interface IWasabiPerps {
         uint256 feeAmount
     );
 
-    event PositionIncreased(
-        uint256 id,
-        address trader,
-        uint256 downPaymentAdded,
-        uint256 principalAdded,
-        uint256 collateralAdded,
-        uint256 feesAdded
-    );
-
-    event PositionDecreased(
-        uint256 id,
-        address trader,
-        uint256 payout,
-        uint256 principalRepaid,
-        uint256 interestPaid,
-        uint256 closeFee,
-        uint256 pastFees,
-        uint256 collateralReduced,
-        uint256 downPaymentReduced
-    );
-
-    event PositionDecreasedWithOrder(
-        uint256 id,
-        address trader,
-        uint8 orderType,
-        uint256 payout,
-        uint256 principalRepaid,
-        uint256 interestPaid,
-        uint256 closeFee,
-        uint256 pastFees,
-        uint256 collateralReduced,
-        uint256 downPaymentReduced
-    );
-
-    event CollateralAddedToPosition(
-        uint256 id,
-        address trader,
-        uint256 downPaymentAdded,
-        uint256 collateralAdded,
-        uint256 feesAdded
-    );
 
     event PositionClaimed(
         uint256 id,
@@ -176,8 +140,6 @@ interface IWasabiPerps {
     /// @param expiration The timestamp when this position request expires.
     /// @param fee The fee to be paid for the position
     /// @param functionCallDataList A list of FunctionCallData structures representing functions to call to open the position.
-    /// @param existingPosition The existing position to be increased, or an empty position if a new position is to be opened.
-    /// @param referrer The address of the partner that referred the trader
     struct OpenPositionRequest {
         uint256 id;
         address currency;
@@ -188,30 +150,24 @@ interface IWasabiPerps {
         uint256 expiration;
         uint256 fee;
         FunctionCallData[] functionCallDataList;
-        Position existingPosition;
-        address referrer;
     }
 
     /// @dev Defines the amounts to be paid when closing a position.
     /// @param payout The amount to be paid to the trader.
-    /// @param collateralSold The amount of the collateral used to swap for principal.
+    /// @param collateralSpent The amount of the collateral to used.
     /// @param principalRepaid The amount of the principal to be repaid.
     /// @param interestPaid The amount of the interest to be paid.
     /// @param pastFees The amount of past fees to be paid.
     /// @param closeFee The amount of the close fee to be paid.
     /// @param liquidationFee The amount of the liquidation fee to be paid.
-    /// @param downPaymentReduced The amount by which the down payment was reduced.
-    /// @param collateralReduced The total amount by which the collateral was reduced. Not the same as `collateralSold` for shorts.
     struct CloseAmounts {
         uint256 payout;
-        uint256 collateralSold;
+        uint256 collateralSpent;
         uint256 principalRepaid;
         uint256 interestPaid;
         uint256 pastFees;
         uint256 closeFee;
         uint256 liquidationFee;
-        uint256 downPaymentReduced;
-        uint256 collateralReduced;
     }
 
     /// @dev Defines an order to close a position.
@@ -233,35 +189,15 @@ interface IWasabiPerps {
     }
 
     /// @dev Defines a request to close a position.
-    /// @param expiration The timestamp when this position request expires.
-    /// @param interest The interest to be paid for the position.
-    /// @param amount The amount of collateral to sell (for longs) or amount of principal to buy back (for shorts), or 0 to fully close the position.
-    /// @param position The position to be closed.
-    /// @param functionCallDataList A list of FunctionCallData structures representing functions to call to close the position.
-    /// @param referrer The address of the partner that referred the trader
+    /// @param _expiration The timestamp when this position request expires.
+    /// @param _interest The interest to be paid for the position.
+    /// @param _position The position to be closed.
+    /// @param _functionCallDataList A list of FunctionCallData structures representing functions to call to close the position.
     struct ClosePositionRequest {
         uint256 expiration;
         uint256 interest;
-        uint256 amount;
         Position position;
         FunctionCallData[] functionCallDataList;
-        address referrer;
-    }
-
-    /// @dev Defines the arguments needed for the internal close position function.
-    /// @param _interest the interest amount to be paid
-    /// @param _amount the amount of collateral to sell (for longs) or amount of principal to buy back (for shorts), or 0 to fully close the position.
-    /// @param _executionFee the execution fee
-    /// @param _payoutType whether to send WETH to the trader, send ETH, or deposit WETH to the vault
-    /// @param _isLiquidation flag indicating if the close is a liquidation
-    /// @param _referrer the address of the partner that referred the trader
-    struct ClosePositionInternalArgs {
-        uint256 _interest;
-        uint256 _amount;
-        uint256 _executionFee;
-        PayoutType _payoutType;
-        bool _isLiquidation;
-        address _referrer;
     }
 
     /// @dev Defines a signature
@@ -277,7 +213,7 @@ interface IWasabiPerps {
     function openPosition(
         OpenPositionRequest calldata _request,
         Signature calldata _signature
-    ) external payable returns (Position memory);
+    ) external payable;
 
     /// @dev Opens a position on behalf of a user
     /// @param _request the request to open a position
@@ -287,7 +223,7 @@ interface IWasabiPerps {
         OpenPositionRequest calldata _request,
         Signature calldata _signature,
         address _trader
-    ) external payable returns (Position memory);
+    ) external payable;
 
     /// @dev Closes a position
     /// @param _payoutType whether to send WETH to the trader, send ETH, or deposit WETH to the vault
@@ -318,14 +254,29 @@ interface IWasabiPerps {
     /// @param _interest the interest to be paid
     /// @param _position the position to liquidate
     /// @param _swapFunctions the swap functions to use to liquidate the position
-    /// @param _referrer the address of the partner that referred the trader
     function liquidatePosition(
         PayoutType _payoutType,
         uint256 _interest,
         Position calldata _position,
-        FunctionCallData[] calldata _swapFunctions,
-        address _referrer
+        FunctionCallData[] calldata _swapFunctions
     ) external payable;
+
+    /// @dev Claims a position
+    /// @param _position the position to claim
+    function claimPosition(
+        Position calldata _position
+    ) external payable;
+
+    /// @dev Donates tokens to the vault, which is recorded as interest. This is meant to be used if there are bad liquidations or a to simply donate to the vault.
+    /// @param token the token to donate
+    /// @param amount the amount to donate
+    function donate(address token, uint256 amount) external;
+
+    /// @dev Withdraws the given amount for the ERC20 token (or ETH) to the receiver
+    /// @param _token the token to withdraw (zero address for ETH)
+    /// @param _amount the amount to withdraw
+    /// @param _receiver the receiver of the token
+    function withdraw(address _token, uint256 _amount, address _receiver) external;
 
     /// @dev Returns the vault used for the given asset
     function getVault(address _asset) external view returns (IWasabiVault);
@@ -335,11 +286,4 @@ interface IWasabiPerps {
 
     /// @dev Adds a new quote token
     function addQuoteToken(address _token) external;
-
-    /// @dev Migrates pending open fees to the fee receiver
-    /// @param _addressProvider the address of the new AddressProvider contract
-    /// @param _feeTokens the addresses of the fee tokens
-    /// @param _fees the fees to be migrated
-    /// @param _expectedBalances the expected balances of the fee tokens before the migration
-    function migrateFees(address _addressProvider, address[] calldata _feeTokens, uint256[] calldata _fees, uint256[] calldata _expectedBalances) external;
 }

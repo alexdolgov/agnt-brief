@@ -227,7 +227,7 @@
 | ethereum | `0xd201a7df1d0f7e066efdd448cbc8433f0b88c3e9` | GlobalPool_R39 | impl | inactive | no |
 | ethereum | `0xd2468daaeb6f2d4b354dbd74593f4ac8c58f2cba` | EthVaultFactory | impl | live | no |
 | ethereum | `0xd4502103dd36c5595dccedf33e7308c61428ce3b` | aMATICb_R6 | impl | inactive | no |
-| ethereum | `0xd4f5ff3052c9bfdb35e3265780c4be1d6f7c06d1` | StakingConfigProxy-2 | impl | live | no |
+| ethereum | `0xd4f5ff3052c9bfdb35e3265780c4be1d6f7c06d1` | StakingConfig | impl | live | no |
 | ethereum | `0xd6d4fe092bf124438eff841084ecedc575c44ebd` | CrossChainBridge | impl | inactive | no |
 | ethereum | `0xdada5a8e3703b1e3ea2bae5ab704627eb2659fcc` | EthVaultFactory | impl | live | no |
 | ethereum | `0xdecb606ee9140f229df78f9e40041ead61610f8f` | EthVault | impl | inactive | no |

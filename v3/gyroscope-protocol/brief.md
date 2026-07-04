@@ -5,7 +5,7 @@
 - Project: Gyroscope Protocol (`gyroscope-protocol`)
 - Website: [https://app.gyro.finance/](https://app.gyro.finance/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:58.156Z
+- Generated: 2026-07-04T11:05:41.918Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-f007
 - Chains: arbitrum, avalanche, base, ethereum, gnosis, optimism, polygon, polygon-zkevm, sei, sonic
 - Contract surface: 195 unique implementations (339 raw deployments)
@@ -15,11 +15,11 @@
 
 ## Project Description
 
-Dexs. Structurally: 171 project-authored contract(s) across 8 chain(s); 17 ERC20 tokens, 5 ERC721 NFTs, 2 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Dexs. Structurally: 245 project-authored contract(s) across 8 chain(s); 17 ERC20 tokens, 5 ERC721 NFTs, 2 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 8 functional families. Its contracts share 63 common project-authored base contract(s) (governableupgradeable, governablebase, nftvault). Dominant framework: openzeppelin.
+The protocol comprises 8 functional families. Its contracts share 68 common project-authored base contract(s) (governableupgradeable, governablebase, nftvault). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

@@ -2,7 +2,7 @@
   "component": "LzSender",
   "main_contract": "LzSender",
   "source_file_count": 10,
-  "deployment_count": 1,
+  "deployment_count": 3,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -10,6 +10,22 @@
       "chain": "avalanche",
       "chain_id": 43114,
       "address": "0x0fb878e8c5b66321632d4a0f348f982c872e9be0",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x290ba9e612d42ef084ef1f2e34b7a0d363aadc1b",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0xafae6100130b5c49a4915616e110071fd2d16373",
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null

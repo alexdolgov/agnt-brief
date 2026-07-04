@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
 import { IStrategy } from "src/interfaces/strategy/IStrategy.sol";
 
@@ -20,22 +20,18 @@ interface IAutopoolStrategy {
     /// @notice called by the Autopool when NAV is updated
     /// @dev can only be called by the strategy's registered Autopool
     /// @param navPerShare The navPerShare to record
-    function navUpdate(
-        uint256 navPerShare
-    ) external;
+    function navUpdate(uint256 navPerShare) external;
 
     /// @notice called by the Autopool when a rebalance is completed
     /// @dev can only be called by the strategy's registered Autopool
     /// @param rebalanceParams The parameters for the rebalance that was executed
-    function rebalanceSuccessfullyExecuted(
-        IStrategy.RebalanceParams memory rebalanceParams
-    ) external;
+    function rebalanceSuccessfullyExecuted(IStrategy.RebalanceParams memory rebalanceParams) external;
 
     /// @notice called by the Autopool during rebalance process
     /// @param rebalanceParams The parameters for the rebalance that was executed
-    function getRebalanceOutSummaryStats(
-        IStrategy.RebalanceParams memory rebalanceParams
-    ) external returns (IStrategy.SummaryStats memory outSummary);
+    function getRebalanceOutSummaryStats(IStrategy.RebalanceParams memory rebalanceParams)
+        external
+        returns (IStrategy.SummaryStats memory outSummary);
 
     /// @notice Returns stats for a given destination
     /// @dev Used to evaluate the current state of the destinations and decide best action

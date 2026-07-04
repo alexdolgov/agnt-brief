@@ -1,10 +1,10 @@
 # sushi — deployments
 
-361 verified deployment(s) across 208 component(s).
+360 verified deployment(s) across 208 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
-| arbitrum | `0x0367a647a68f304f2a6e453c25033a4249d7f2c6` | NonfungiblePositionManager-5 | impl | live | no |
+| arbitrum | `0x0367a647a68f304f2a6e453c25033a4249d7f2c6` | NonfungiblePositionManager-4 | impl | live | no |
 | arbitrum | `0x0769fd68dfb93167989c6f7254cd0d766fb2841f` | Multicall2 | impl | inactive | no |
 | arbitrum | `0x09bd2a33c47746ff03b86bce4e885d03c74a8e8c` | RouteProcessor3_2-3 | impl | live | no |
 | arbitrum | `0x120140d0c1ebc938befc84840575ecdc5fe55afe` | Crowdsale-2 | impl | inactive | no |
@@ -29,7 +29,7 @@
 | arbitrum | `0x827179dd56d07a7eea32e3873493835da2866976` | ConstantProductPoolFactoryHelper-3 | impl | live | no |
 | arbitrum | `0x82f0b8b456c1a451378467398982d4834b6829c1` | Skimmer | impl | inactive | no |
 | arbitrum | `0x843d0aad40295f2198ef528ad747cdf6ab9000e4` | SushiXSwap-16 | impl | live | no |
-| arbitrum | `0x8516944e89f296eb6473d79aed1ba12088016c9e` | NonfungiblePositionManager-5 | impl | inactive | no |
+| arbitrum | `0x8516944e89f296eb6473d79aed1ba12088016c9e` | NonfungiblePositionManager-4 | impl | inactive | no |
 | arbitrum | `0x8fcad570a448d350bbb04ff204ca1f0ca85075cf` | SushiXSwap-2 | impl | live | no |
 | arbitrum | `0x90d5f3aa862f87598011e6ef511e4e8ed2f5f095` | ERC1967Upgrade | proxy | inactive | no |
 | arbitrum | `0x96e04591579f298681361c6122dc4ef405c19385` | NonfungibleTokenPositionDescriptor-3 | impl | live | no |
@@ -56,7 +56,7 @@
 | avalanche | `0x12e994e89c92b03df6c15fb8340f624aec1d8f3e` | AnyCallApp-3 | impl | inactive | no |
 | avalanche | `0x130966628846bfd36ff31a822705796e8cb8c18d` | AnyswapV5ERC20-2 | impl | live | no |
 | avalanche | `0x17e2e3d4a27e8e0790c85ff2ec13d001e749e49e` | AnyCallApp-5 | impl | inactive | no |
-| avalanche | `0x18350b048ab366ed601ffdbc669110ecb36016f3` | NonfungiblePositionManager-3 | impl | live | no |
+| avalanche | `0x18350b048ab366ed601ffdbc669110ecb36016f3` | NonfungiblePositionManager-2 | impl | live | no |
 | avalanche | `0x1b02da8cb0d097eb8d57a175b88c7d8b47997506` | UniswapV2Router02-2 | impl | live | no |
 | avalanche | `0x1fbbc7dba1ef75ff43f955a5b9ceec3cc1692cd8` | NFTRouter | impl | inactive | no |
 | avalanche | `0x2ac03bf434db503f6f5f85c3954773731fc3f056` | FactoryPortal-2 | impl | inactive | no |
@@ -70,7 +70,7 @@
 | avalanche | `0x5629ce74ddcad7cc72b3ea30444da7172ad851d9` | SushiXSwap-3 | impl | live | no |
 | avalanche | `0x70d6b3cfaabd6c0eb6b99b80c6540fa754a72c40` | MPCAdminsControl | impl | inactive | no |
 | avalanche | `0x717b7948aa264decf4d780aa6914482e5f46da3e` | RouteProcessor3 | impl | inactive | no |
-| avalanche | `0x7d222c52983690678e847cd063535f328875f463` | NonfungiblePositionManager | impl | live | no |
+| avalanche | `0x7d222c52983690678e847cd063535f328875f463` | NFTDescriptor | impl | live | no |
 | avalanche | `0x869ec639a622a1bbdaf44d3b1fe0cc2b210d4964` | AnyCallApp | impl | inactive | no |
 | avalanche | `0x8f2cc3376078568a04ebc600ae5f0a036dbfd812` | ChainlinkOracleV1 | impl | unknown | no |
 | avalanche | `0x8f54301f315c56c112d492d9443047d4745dbe9e` | RouteProcessor3_2 | impl | inactive | no |
@@ -86,33 +86,33 @@
 | avalanche | `0xe0560dfce5e73ccea36f0df586e5a07e07835705` | AnyCallApp-6 | impl | inactive | no |
 | avalanche | `0xfb288d60d3b66f9c3e231a9a39ed3f158a4269aa` | XrpSwapAsset | impl | inactive | no |
 | base | `0x0be808376ecb75a5cf9bb6d237d16cd37893d904` | RouteProcessor3-4 | impl | live | no |
-| base | `0x71524b4f93c58fcbf659783284e38825f0622859` | UniswapV2Pair-4 | impl | live | no |
-| base | `0x80c7dd17b01855a6d2347444a0fcc36136a314de` | NonfungiblePositionManager-11 | proxy | live | no |
+| base | `0x71524b4f93c58fcbf659783284e38825f0622859` | UniswapV2Factory-3 | impl | live | no |
+| base | `0x80c7dd17b01855a6d2347444a0fcc36136a314de` | NonfungiblePositionManager-9 | proxy | live | no |
 | base | `0x83ec81ae54dd8dca17c3dd4703141599090751d1` | RouteProcessor3_2 | impl | live | no |
 | base | `0x91934e488809be1d03646c035f45c8d8947d9885` | FeeOnTransferDetector | impl | inactive | no |
 | base | `0x9b77032075806975b3bd3bcfc69e5de36ee6d176` | RouteProcessor3_1 | impl | inactive | no |
 | base | `0xb405397ed593f90c82188b32645118ca56f2ccd6` | RouteProcessor3_2-2 | impl | inactive | no |
-| base | `0xf4d73326c13a4fc5fd7a064217e12780e9bd62c3` | NonfungiblePositionManager-4 | impl | inactive | no |
+| base | `0xf4d73326c13a4fc5fd7a064217e12780e9bd62c3` | NonfungiblePositionManager-3 | impl | inactive | no |
 | blast | `0x039e87ab90205f9d87c5b40d4b28e2be45da4a20` | TickLens | impl | inactive | no |
 | blast | `0x09feacbfe261e30a2aa9e75eeaf879a086c3413f` | V3Migrator | impl | inactive | no |
 | blast | `0x1b7b944fac5cce2a1ee8b63baa47d31bcbe34709` | SwapRouter | impl | inactive | no |
-| blast | `0x1f2fcf1d036b375b384012e61d3aa33f8c256bbe` | NonfungiblePositionManager | impl | live | no |
+| blast | `0x1f2fcf1d036b375b384012e61d3aa33f8c256bbe` | NFTDescriptor | impl | live | no |
 | blast | `0x2538263e13467b7759c6419270f29d890881a119` | WethMaker | impl | live | no |
 | blast | `0x2e10e8491ce999b3fa62ca097bed3941879a1e74` | QuoterV2 | impl | inactive | no |
-| blast | `0x51edb3e5bce8618b77b60215f84ad3db14709051` | NonfungiblePositionManager-6 | impl | live | no |
+| blast | `0x51edb3e5bce8618b77b60215f84ad3db14709051` | NonfungiblePositionManager-5 | impl | live | no |
 | blast | `0x544ba588efd839d2692fc31ea991cd39993c135f` | SwapRouter | impl | inactive | no |
 | blast | `0x5d0aa5dd03199d80089278b261167fff24c304ca` | SwapRouter | impl | inactive | no |
 | blast | `0x734583f62bb6ace3c9ba9bd5a53143ca2ce8c55a` | NonfungibleTokenPositionDescriptor-4 | impl | live | no |
 | blast | `0x93c31c9c729a249b2877f7699e178f4720407733` | V3Migrator | impl | inactive | no |
 | blast | `0xaa33ad497e66778ebbd4606de93c7a8c466b079e` | V3Migrator | impl | inactive | no |
 | blast | `0xb46e319390de313b8cc95ea5aa30c7bbfd79da94` | NonfungibleTokenPositionDescriptor | impl | live | no |
-| blast | `0xbda8a8423b7f02cd935412fb9f13cb88f7875991` | NonfungiblePositionManager-2 | impl | inactive | no |
+| blast | `0xbda8a8423b7f02cd935412fb9f13cb88f7875991` | NonfungiblePositionManager | impl | inactive | no |
 | blast | `0xc53125f1465c93967e8a0f2131dd1c3134c1cf25` | QuoterV2 | impl | inactive | no |
 | blast | `0xca6fe749878841b96f620ec79638b13daad3d320` | QuoterV2 | impl | inactive | no |
 | blast | `0xcdbcd51a5e8728e0af4895ce5771b7d17ff71959` | UniswapV2Router02 | impl | inactive | no |
 | blast | `0xd93a91442afd80243cf12f7110f48ab276fff33f` | QuoterV2 | impl | inactive | no |
-| blast | `0xe0646d8b50085a3c85a6da674eaa27eae42f6ace` | NonfungiblePositionManager-6 | impl | inactive | no |
-| blast | `0xeabce3e74ef41fb40024a21cc2ee2f5ddc615791` | NonfungiblePositionManager-12 | impl | inactive | no |
+| blast | `0xe0646d8b50085a3c85a6da674eaa27eae42f6ace` | NonfungiblePositionManager-5 | impl | inactive | no |
+| blast | `0xeabce3e74ef41fb40024a21cc2ee2f5ddc615791` | NonfungiblePositionManager-10 | impl | inactive | no |
 | bsc | `0x0d51b575591f8f74a2763ade75d3cdcf6789266f` | SimpleSLPTWAP1OracleV1-2 | impl | inactive | no |
 | bsc | `0x10c19390e1ac2fd6d0c3643a2320b0aba38e5baa` | TickLens-3 | impl | inactive | no |
 | bsc | `0x11ca5375adafd6205e41131a4409f182677996e6` | BoringHelperV1-2 | impl | inactive | no |
@@ -122,7 +122,7 @@
 | bsc | `0x66f03b0d30838a3fee971928627ea6f59b236065` | SimpleSLPTWAP0OracleV1-2 | impl | inactive | no |
 | bsc | `0x6cbfbb38498df0e1e7a4506593cdb02db9001564` | PeggedOracleV1-2 | impl | inactive | no |
 | bsc | `0x74a81cb5b6996d9347b864b9a1492a6509e51e65` | KashiPairMediumRiskV1-3 | impl | inactive | no |
-| bsc | `0x7770978eed668a3ba661d51a773d3a992fc9ddcb` | NonfungiblePositionManager | impl | live | no |
+| bsc | `0x7770978eed668a3ba661d51a773d3a992fc9ddcb` | NFTDescriptor | impl | live | no |
 | bsc | `0x7a4af156379f512de147ed3b96393047226d923f` | SushiXSwap | impl | live | no |
 | bsc | `0x7af71799c40f952237eaa4d81a77c1af49125113` | NonfungibleTokenPositionDescriptor | impl | live | no |
 | bsc | `0x7cf167390e2526bc03f3cf6852a7af1cec3e243d` | RouteProcessor | impl | inactive | no |
@@ -131,20 +131,19 @@
 | bsc | `0xd36990d74b947ec4ad9f52fe3d49d14addb51e44` | RouteProcessor3_2 | impl | inactive | no |
 | bsc | `0xd75f5369724b513b497101fb15211160c1d96550` | RouteProcessor2 | impl | inactive | no |
 | bsc | `0xf5bce5077908a1b7370b9ae04adc565ebd643966` | BentoBoxV1-2 | impl | live | no |
-| bsc | `0xf70c086618dcf2b1a461311275e00d6b722ef914` | NonfungiblePositionManager-7 | proxy | live | no |
+| bsc | `0xf70c086618dcf2b1a461311275e00d6b722ef914` | NonfungiblePositionManager-6 | proxy | live | no |
 | chain-1088 | `0x0769fd68dfb93167989c6f7254cd0d766fb2841f` | ConstantProductPoolFactory-3 | impl | live | no |
-| chain-1088 | `0x078047150f8efa223b3d407f00e462e38f4b1b9c` | NonfungiblePositionManager-4 | impl | unknown | no |
+| chain-1088 | `0x078047150f8efa223b3d407f00e462e38f4b1b9c` | NonfungiblePositionManager-3 | impl | unknown | no |
 | chain-1088 | `0x0be808376ecb75a5cf9bb6d237d16cd37893d904` | TridentRouter-2 | impl | unknown | no |
 | chain-1088 | `0x145d82bca93cca2ae057d1c6f26245d1b9522e6f` | UniswapV3Factory-4 | impl | unknown | no |
-| chain-1088 | `0x1b02da8cb0d097eb8d57a175b88c7d8b47997506` | TridentRouter-2 | impl | unknown | no |
 | chain-1088 | `0x1be211d8da40bc0ae8719c6663307bfc987b1d6c` | SelfPermit | impl | unknown | no |
 | chain-1088 | `0x1e9b24073183d5c6b7ae5fb4b8f0b1dd83fdc77a` | RouteProcessor | impl | unknown | no |
 | chain-1088 | `0x258f7e97149afd7d7f84fa63b10e4a3f0c38b788` | RouteProcessor3-3 | impl | unknown | no |
 | chain-1088 | `0x2abf469074dc0b54d793850807e6eb5faf2625b1` | SwapRouter-2 | impl | unknown | no |
 | chain-1088 | `0x2f686751b19a9d91cc3d57d90150bc767f050066` | StablePoolFactory | impl | unknown | no |
 | chain-1088 | `0x454714482ca38fbbce7fc76d96ba1ce2028a4ff6` | V3Migrator-3 | impl | unknown | no |
-| chain-1088 | `0x580ed43f3bba06555785c81c2957efcca71f7483` | UniswapV2Pair-3 | impl | unknown | no |
-| chain-1088 | `0x630be2985674d31920babb4f96657960f131e7b1` | NonfungiblePositionManager-8 | impl | unknown | no |
+| chain-1088 | `0x580ed43f3bba06555785c81c2957efcca71f7483` | UniswapV2Pair | impl | unknown | no |
+| chain-1088 | `0x630be2985674d31920babb4f96657960f131e7b1` | NonfungiblePositionManager-7 | impl | unknown | no |
 | chain-1088 | `0x804b526e5bf4349819fe2db65349d0825870f8ee` | SushiXSwapV2-4 | impl | unknown | no |
 | chain-1088 | `0x90dab18856331a85dc64203ce39aab01447dc134` | NonfungibleTokenPositionDescriptor | impl | unknown | no |
 | chain-1088 | `0x93395129bd3fcf49d95730d3c2737c17990ff328` | StablePoolFactory | impl | unknown | no |
@@ -154,7 +153,7 @@
 | chain-1088 | `0xb46e319390de313b8cc95ea5aa30c7bbfd79da94` | WethMaker-2 | impl | unknown | no |
 | chain-1088 | `0xc35dadb65012ec5796536bd9864ed8773abc74c4` | BentoBoxV1 | impl | unknown | no |
 | chain-1088 | `0xd408a20f1213286fb3158a2bfbf5bffaca8bf269` | RouteProcessor4-3 | impl | unknown | no |
-| chain-1088 | `0xd5607d184b1d6ecba94a07c217497fe9346010d9` | NonfungiblePositionManager-9 | impl | live | no |
+| chain-1088 | `0xd5607d184b1d6ecba94a07c217497fe9346010d9` | NFTDescriptor-2 | impl | live | no |
 | chain-1088 | `0xdf1cfec0dcf05bf647fbfbe12ea550baa102e195` | StargateAdapter | impl | live | no |
 | chain-1088 | `0xf4d73326c13a4fc5fd7a064217e12780e9bd62c3` | ConstantProductPoolFactoryHelper-2 | impl | unknown | no |
 | chain-1088 | `0xfbc12984689e5f15626bad03ad60160fe98b303c` | QuoterV2-3 | impl | unknown | no |
@@ -163,18 +162,18 @@
 | chain-1285 | `0x7a4af156379f512de147ed3b96393047226d923f` | NonfungibleTokenPositionDescriptor | impl | live | no |
 | chain-1285 | `0x7af71799c40f952237eaa4d81a77c1af49125113` | RouteProcessor3 | impl | inactive | no |
 | chain-1285 | `0x9e4791ad13f14783c7b2a6a7bd8d6ddd1dc95847` | RouteProcessor-3 | impl | inactive | no |
-| chain-1285 | `0xbbde1d67297329148fe1ed5e6b00114842728e65` | NonfungiblePositionManager-10 | impl | live | no |
+| chain-1285 | `0xbbde1d67297329148fe1ed5e6b00114842728e65` | NonfungiblePositionManager-8 | impl | live | no |
 | chain-1285 | `0xbd87bef520f8cec45d73b0413b6cbb8b061736d9` | RouteProcessor | impl | inactive | no |
-| chain-1285 | `0xd045d27c1f7e7f770a807b0a85d8e3f852e0f2be` | NonfungiblePositionManager-2 | impl | live | no |
+| chain-1285 | `0xd045d27c1f7e7f770a807b0a85d8e3f852e0f2be` | NonfungiblePositionManager | impl | live | no |
 | chain-1285 | `0xf70c086618dcf2b1a461311275e00d6b722ef914` | RouteProcessor3_2 | impl | inactive | no |
-| chain-146 | `0x0389879e0156033202c44bf784ac18fc02edee4f` | NonfungiblePositionManager-2 | impl | live | no |
+| chain-146 | `0x0389879e0156033202c44bf784ac18fc02edee4f` | NonfungiblePositionManager | impl | live | no |
 | chain-146 | `0x1b7b944fac5cce2a1ee8b63baa47d31bcbe34709` | WethMaker | impl | inactive | no |
 | chain-146 | `0x1f2fcf1d036b375b384012e61d3aa33f8c256bbe` | V3Migrator-2 | impl | inactive | no |
 | chain-146 | `0x33d91116e0370970444b0281ab117e161febfcdd` | TickLens | impl | inactive | no |
 | chain-146 | `0x46b3fdf7b5cde91ac049936bf0bdb12c5d22202e` | UniswapV3Factory-2 | impl | live | no |
 | chain-146 | `0x57bffa72db682f7eb6c132dae03ff36bbeb0c459` | NonfungibleTokenPositionDescriptor | impl | live | no |
 | chain-146 | `0x9b3336186a38e1b6c21955d112dbb0343ee061ee` | UniswapV2Router02 | impl | live | no |
-| chain-146 | `0xcdbcd51a5e8728e0af4895ce5771b7d17ff71959` | NonfungiblePositionManager | impl | live | no |
+| chain-146 | `0xcdbcd51a5e8728e0af4895ce5771b7d17ff71959` | NFTDescriptor | impl | live | no |
 | chain-146 | `0xe43ca1dee3f0fc1e2df73a0745674545f11a59f5` | QuoterV2-2 | impl | inactive | no |
 | ethereum | `0x011e52e4e40cf9498c79273329e8827b21e2e581` | SushiXSwap-10 | impl | live | no |
 | ethereum | `0x044b75f554b886a065b9567891e45c79542d7357` | RouteProcessor2-2 | impl | inactive | no |
@@ -187,7 +186,7 @@
 | ethereum | `0x1be211d8da40bc0ae8719c6663307bfc987b1d6c` | MISOTokenFactory | impl | inactive | no |
 | ethereum | `0x1c4369df5732ccf317fef479b26a56e176b18abb` | NonfungibleTokenPositionDescriptor-2 | impl | live | no |
 | ethereum | `0x1c5771e96c9d5524fb6e606f5b356d08c40eb194` | DutchAuction | impl | inactive | no |
-| ethereum | `0x2214a42d8e2a1d20635c2cb0664422c528b6a432` | NonfungiblePositionManager-2 | proxy | live | no |
+| ethereum | `0x2214a42d8e2a1d20635c2cb0664422c528b6a432` | NonfungiblePositionManager | proxy | live | no |
 | ethereum | `0x258f7e97149afd7d7f84fa63b10e4a3f0c38b788` | BatchAuction | impl | inactive | no |
 | ethereum | `0x26fa3fffb6efe8c1e69103acb4044c26b9a106a9` | sSpellV1 | impl | live | no |
 | ethereum | `0x281bd3a3f96ae7c96049493a7ba9449df2c5b0fe` | MISOMarket | impl | inactive | no |
@@ -200,7 +199,7 @@
 | ethereum | `0x5550d13389bb70f45fcef58f19f6b6e87f6e747d` | RouteProcessor3_2 | impl | live | no |
 | ethereum | `0x6684977bbed67e101bb80fc07fccfba655c0a64f` | SushiMaker | impl | inactive | no |
 | ethereum | `0x66f03b0d30838a3fee971928627ea6f59b236065` | SimpleSLPTWAP0OracleV1 | impl | inactive | no |
-| ethereum | `0x67468e6c4418d58b1b41bc0a795bacb824f70792` | NonfungiblePositionManager | impl | live | no |
+| ethereum | `0x67468e6c4418d58b1b41bc0a795bacb824f70792` | NFTDescriptor | impl | live | no |
 | ethereum | `0x6b3595068778dd592e39a122f4f5a5cf09c90fe2` | SushiToken-2 | impl | inactive | no |
 | ethereum | `0x6cbfbb38498df0e1e7a4506593cdb02db9001564` | PeggedOracleV1 | impl | inactive | no |
 | ethereum | `0x74a81cb5b6996d9347b864b9a1492a6509e51e65` | KashiPairMediumRiskV1-2 | impl | inactive | no |
@@ -235,17 +234,17 @@
 | gnosis | `0x0769fd68dfb93167989c6f7254cd0d766fb2841f` | RouteProcessor-2 | impl | inactive | no |
 | gnosis | `0x145d82bca93cca2ae057d1c6f26245d1b9522e6f` | RouteProcessor2 | impl | inactive | no |
 | gnosis | `0x1e9b24073183d5c6b7ae5fb4b8f0b1dd83fdc77a` | RouteProcessor-2 | impl | inactive | no |
-| gnosis | `0x2f686751b19a9d91cc3d57d90150bc767f050066` | NonfungiblePositionManager | impl | live | no |
+| gnosis | `0x2f686751b19a9d91cc3d57d90150bc767f050066` | NFTDescriptor | impl | live | no |
 | gnosis | `0x4864984234195a1a97fba52038e3ad61a1dd16e4` | ComplexRewarderTime | impl | inactive | no |
 | gnosis | `0x67da5f2ffaddff067ab9d5f025f8810634d84287` | RouteProcessor-2 | impl | inactive | no |
 | gnosis | `0x7a4af156379f512de147ed3b96393047226d923f` | RouteProcessor3_2 | impl | inactive | no |
 | gnosis | `0x7a6da9903d0a481f40b8336c1463487bc8c0407e` | KashiPairMediumRiskV1 | impl | inactive | no |
 | gnosis | `0x84562ce1a5f3a4a957a5a94ed0be05ba73fd2665` | ComplexRewarderTime | impl | inactive | no |
 | gnosis | `0xaa26771d497814e81d305c511efbb3ced90bf5bd` | TickLens | impl | inactive | no |
-| gnosis | `0xab235da7f52d35fb4551afba11bfb56e18774a65` | NonfungiblePositionManager-3 | impl | live | no |
+| gnosis | `0xab235da7f52d35fb4551afba11bfb56e18774a65` | NonfungiblePositionManager-2 | impl | live | no |
 | gnosis | `0xbbde1d67297329148fe1ed5e6b00114842728e65` | RouteProcessor3 | impl | inactive | no |
 | gnosis | `0xbe811a0d44e2553d25d11cb8dc0d3f0d0e6430e6` | NonfungibleTokenPositionDescriptor | impl | live | no |
-| gnosis | `0xc35dadb65012ec5796536bd9864ed8773abc74c4` | UniswapV2Pair-2 | impl | live | no |
+| gnosis | `0xc35dadb65012ec5796536bd9864ed8773abc74c4` | UniswapV2Factory-2 | impl | live | no |
 | gnosis | `0xddcbf776df3de60163066a5dddf2277cb445e0f3` | RouteProcessor-2 | impl | live | no |
 | gnosis | `0xe2d7f5dd869fc7c126d21b13a9080e75a4bdb324` | BentoBoxV1-3 | impl | live | no |
 | gnosis | `0xed1a5b476ff3618e68dc0827fe33116317e30859` | BentoBoxV1-3 | impl | inactive | no |
@@ -253,13 +252,13 @@
 | linea | `0x02a480a258361c9bc3eaacbd6473364c67adcd3a` | SushiXSwapV2 | impl | inactive | no |
 | linea | `0x804b526e5bf4349819fe2db65349d0825870f8ee` | SushiXSwapV2 | impl | inactive | no |
 | linea | `0xbf3b71decbcefabb3210b9d8f18ec22e0556f5f0` | SquidAdapter-2 | impl | inactive | no |
-| linea | `0xfbc12984689e5f15626bad03ad60160fe98b303c` | UniswapV2Pair | impl | live | no |
+| linea | `0xfbc12984689e5f15626bad03ad60160fe98b303c` | UniswapV2Factory | impl | live | no |
 | optimism | `0x0367a647a68f304f2a6e453c25033a4249d7f2c6` | TickLens-2 | impl | inactive | no |
 | optimism | `0x044b75f554b886a065b9567891e45c79542d7357` | SushiXSwap-5 | impl | live | no |
 | optimism | `0x0769fd68dfb93167989c6f7254cd0d766fb2841f` | ConstantProductPoolFactory-2 | impl | live | no |
 | optimism | `0x0be808376ecb75a5cf9bb6d237d16cd37893d904` | TridentRouter | impl | inactive | no |
 | optimism | `0x1838b053e0223f05fb768fa79aa07df3f0f27480` | SushiXSwap-2 | impl | live | no |
-| optimism | `0x1af415a1eba07a4986a52b6f2e7de7003d82231e` | NonfungiblePositionManager-2 | impl | live | no |
+| optimism | `0x1af415a1eba07a4986a52b6f2e7de7003d82231e` | NonfungiblePositionManager | impl | live | no |
 | optimism | `0x1b02da8cb0d097eb8d57a175b88c7d8b47997506` | MasterDeployer-2 | impl | live | no |
 | optimism | `0x1be211d8da40bc0ae8719c6663307bfc987b1d6c` | TridentSushiRollCP-2 | impl | inactive | no |
 | optimism | `0x2214a42d8e2a1d20635c2cb0664422c528b6a432` | SushiXSwap-11 | impl | live | no |
@@ -293,7 +292,7 @@
 | optimism | `0xeb94eca012ec0bbb254722fdda2ce7475875a52b` | RouteProcessor3_2 | impl | inactive | no |
 | optimism | `0xf0cbce1942a68beb3d1b73f0dd86c8dcc363ef49` | SushiXSwap-5 | impl | inactive | no |
 | optimism | `0xf4d73326c13a4fc5fd7a064217e12780e9bd62c3` | ConstantProductPoolFactoryHelper-2 | impl | live | no |
-| optimism | `0xfbc12984689e5f15626bad03ad60160fe98b303c` | UniswapV2Pair | impl | live | no |
+| optimism | `0xfbc12984689e5f15626bad03ad60160fe98b303c` | UniswapV2Factory | impl | live | no |
 | polygon | `0x0053957e18a0994d3526cf879a4ca7be88e8936a` | SushiRoll | impl | inactive | no |
 | polygon | `0x0319000133d3ada02600f0875d2cf03d442c3367` | BentoBoxV1-5 | impl | live | no |
 | polygon | `0x05689fcfee31fce4a67fbc7cab13e74f80a4e288` | ConstantProductPoolFactory | impl | live | no |
@@ -319,7 +318,7 @@
 | polygon | `0x46b3fdf7b5cde91ac049936bf0bdb12c5d22202e` | RouteProcessor4 | impl | live | no |
 | polygon | `0x53b08dbd70327b7ba3b7886fc9987bc985d27262` | StablePoolFactory-3 | impl | inactive | no |
 | polygon | `0x5629ce74ddcad7cc72b3ea30444da7172ad851d9` | TridentSushiRollCP | impl | inactive | no |
-| polygon | `0x5a2b5d1bb4c2c460a6d748c202e7fede016812c7` | NonfungiblePositionManager | impl | live | no |
+| polygon | `0x5a2b5d1bb4c2c460a6d748c202e7fede016812c7` | NFTDescriptor | impl | live | no |
 | polygon | `0x67896a1023deae917fe6b99caf749d7db0bfe08a` | MasterDeployer | impl | inactive | no |
 | polygon | `0x6b2a3ff504798886862ca5ce501e080947a506a2` | MISOAccessControls-2 | impl | inactive | no |
 | polygon | `0x73be093b84c773fe8ee0f76ddc0829e45c215415` | SushiSwapMultiSwapper | impl | inactive | no |
@@ -341,11 +340,11 @@
 | polygon | `0xb23804ccc524d408d0b0d35b0aa1ce7de172f821` | BoringHelperV1-4 | impl | inactive | no |
 | polygon | `0xb45e53277a7e0f1d35f2a77160e91e25507f1763` | RouteProcessor4 | impl | inactive | no |
 | polygon | `0xb527c5295c4bc348cbb3a2e96b2494fd292075a7` | KashiPairMediumRiskV1-4 | impl | inactive | no |
-| polygon | `0xb7402ee99f0a008e461098ac3a27f4957df89a40` | NonfungiblePositionManager-3 | proxy | live | no |
+| polygon | `0xb7402ee99f0a008e461098ac3a27f4957df89a40` | NonfungiblePositionManager-2 | proxy | live | no |
 | polygon | `0xb84a043bc4fca97b7a74ed7daab1bf12a8df929f` | MISOLauncher | impl | inactive | no |
 | polygon | `0xbbde1d67297329148fe1ed5e6b00114842728e65` | MintableToken | impl | inactive | no |
 | polygon | `0xc040f84cf7046409f92d578ef9040fe45e6ef4be` | AuctionCreation-2 | impl | live | no |
-| polygon | `0xc35dadb65012ec5796536bd9864ed8773abc74c4` | UniswapV2Pair-2 | impl | live | no |
+| polygon | `0xc35dadb65012ec5796536bd9864ed8773abc74c4` | UniswapV2Factory-2 | impl | live | no |
 | polygon | `0xc5017be80b4446988e8686168396289a9a62668e` | MasterDeployer | proxy | live | no |
 | polygon | `0xcaabdd9cf4b61813d4a52f980d6bc1b713fe66f5` | MasterDeployer | impl | inactive | no |
 | polygon | `0xd045d27c1f7e7f770a807b0a85d8e3f852e0f2be` | MISOTokenFactory-2 | impl | inactive | no |
@@ -366,7 +365,7 @@
 | polygon | `0xf96149e31c3af9650d209c5fe26a9b06c5bc91d4` | StablePoolFactory-5 | impl | inactive | no |
 | scroll | `0x46b3fdf7b5cde91ac049936bf0bdb12c5d22202e` | UniswapV3Factory-5 | impl | unknown | no |
 
-## Source unavailable (11)
+## Source unavailable (12)
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
 - arbitrum `0xf0cbce1942a68beb3d1b73f0dd86c8dcc363ef49`
@@ -379,4 +378,5 @@ Verified on-chain but no source in the verification cache (skipped from the tree
 - avalanche `0xb84a043bc4fca97b7a74ed7daab1bf12a8df929f`
 - avalanche `0xd18ca07a599bf5ebb9b7327871ad682f0b660748`
 - avalanche `0xf70c086618dcf2b1a461311275e00d6b722ef914`
+- chain-1088 `0x1b02da8cb0d097eb8d57a175b88c7d8b47997506`
 - polygon `0x5097cbb61d3c75907656dc4e3bba892ff136649a`

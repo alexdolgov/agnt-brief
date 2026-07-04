@@ -2,7 +2,7 @@
   "component": "OrderBook",
   "main_contract": "OrderBook",
   "source_file_count": 12,
-  "deployment_count": 1,
+  "deployment_count": 4,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -13,6 +13,30 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": "live"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x5e2fa02df0f11f9ef6bfb82451973d163aaf75a7",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x72b44c2019a0f3e9c23ee73c3ffb76e36bed32e6",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
+    },
+    {
+      "chain": "arbitrum",
+      "chain_id": 42161,
+      "address": "0x898a68e62b715fecaa68b362313644f2452b0779",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

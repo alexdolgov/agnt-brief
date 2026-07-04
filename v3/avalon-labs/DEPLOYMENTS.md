@@ -1,6 +1,6 @@
 # avalon-labs — deployments
 
-998 verified deployment(s) across 114 component(s).
+998 verified deployment(s) across 113 component(s).
 
 | chain | address | component | kind | liveness | audited |
 |---|---|---|---|---|---|
@@ -199,7 +199,7 @@
 | bsc | `0x2d5c797b49eaf9dd1914045a74fdcf179c8485c9` | ReservesSetupHelper | impl | inactive | no |
 | bsc | `0x2e6b7991065e10ca2caa06fa8a2c7f8d01dff496` | DefaultReserveInterestRateStrategy-2 | impl | live | no |
 | bsc | `0x2e7b1dd4f0ba4db176439a16c2368b03c0dfcd85` | DefaultReserveInterestRateStrategy-2 | impl | live | no |
-| bsc | `0x2e9bdddbad724b1cc3bfe521d8e2c5f52a887a9f` | Timelock | impl | unknown | no |
+| bsc | `0x2e9bdddbad724b1cc3bfe521d8e2c5f52a887a9f` | Timelock | impl | inactive | no |
 | bsc | `0x2ec8cb4deacc108293eb9f395b548983adad6800` | AToken-2 | impl | inactive | no |
 | bsc | `0x2f03d30858691400c205cfa72f9cca88e8369d64` | AToken-2 | impl | inactive | no |
 | bsc | `0x2f88c459c485de94060df48d134709b48160cfcc` | DefaultReserveInterestRateStrategy-2 | impl | live | no |
@@ -258,7 +258,7 @@
 | bsc | `0x559ea0c0a551c696ea9d6406f4496c0eeeac3763` | StableDebtToken | impl | inactive | no |
 | bsc | `0x55b90dea54d5b051fb50629188dc8bedb748836f` | PoolAddressesProvider | impl | inactive | no |
 | bsc | `0x56f817ef5d1945e0772496020ff0f72c3984b351` | AaveProtocolDataProvider | impl | live | no |
-| bsc | `0x5846bf78fb95712f394ba1aba45ecf262f7209b4` | Timelock-2 | impl | unknown | no |
+| bsc | `0x5846bf78fb95712f394ba1aba45ecf262f7209b4` | Timelock-2 | impl | inactive | no |
 | bsc | `0x5879b7ee85621d65db4325bd1de1315eba762ab3` | UiPoolDataProviderV3 | impl | live | no |
 | bsc | `0x58c937fa2d147117db43d187f9411151edfff03c` | AaveProtocolDataProvider | impl | live | no |
 | bsc | `0x5a4247763709c251c8da359674d5c362fdac626d` | WrappedTokenGatewayV3-2 | impl | inactive | no |
@@ -319,7 +319,7 @@
 | bsc | `0x84ab9d3527f52b71c5948e83ee6e79754894c44f` | UiIncentiveDataProviderV3-2 | impl | inactive | no |
 | bsc | `0x85097dcde9f45e0b375aa685bd33dd9c06650909` | StableDebtToken | impl | inactive | no |
 | bsc | `0x85491ea8bb6d5ca925ce4871a8138360f7d8f937` | DefaultReserveInterestRateStrategy-2 | impl | live | no |
-| bsc | `0x8598348b2cb4f62ec529ad52ab5e57b52ae3065f` | USDXSales | impl | unknown | no |
+| bsc | `0x8598348b2cb4f62ec529ad52ab5e57b52ae3065f` | USDXSales | impl | inactive | no |
 | bsc | `0x87656c0f7de2f267c682d5b9ec070d589571dd22` | DefaultReserveInterestRateStrategy-2 | impl | live | no |
 | bsc | `0x882fca0dc96576140ce1cb576b0393f4ce68fb7b` | UiIncentiveDataProviderV3-2 | impl | inactive | no |
 | bsc | `0x897bf29f7cbc77357fb6321890b87844529e1441` | DefaultReserveInterestRateStrategy-2 | impl | live | no |
@@ -448,9 +448,8 @@
 | bsc | `0xea14877c0697fc9827039db2a2c674a0ba9d2a4a` | EmissionManager | impl | inactive | no |
 | bsc | `0xea64607d07844ca9860019d29e46ea6d1344b937` | UiPoolDataProviderV3 | impl | live | no |
 | bsc | `0xea8e3d2d0b0dea0e2f529b702dbfd9e22a6d8896` | DefaultReserveInterestRateStrategy-2 | impl | live | no |
-| bsc | `0xeb13f6d8cd2f9a295fdaa5f1e7638d8ce6d3c5ed` | TransparentUpgradeableProxy-5 | impl | live | yes |
+| bsc | `0xeb13f6d8cd2f9a295fdaa5f1e7638d8ce6d3c5ed` | PoolManager | impl | live | yes |
 | bsc | `0xebefa4ba69096315ba3a9cf30733e076b3bd92c9` | InitializableAdminUpgradeabilityProxy | impl | inactive | no |
-| bsc | `0xebfd8d269c9e5e6d576d79fbebe91da85b5fe687` | WrappedTokenGatewayV3-2 | impl | live | no |
 | bsc | `0xec579d2ce07401258710199ff12a5bb56e086a6f` | InitializableAdminUpgradeabilityProxy | impl | inactive | no |
 | bsc | `0xecf17b73e6735598ecdef42462e72b0a4e0cdefb` | AToken-2 | impl | inactive | no |
 | bsc | `0xecf226205ac7b299ed11f4372a5d7f7781c4e40f` | DefaultReserveInterestRateStrategy-2 | impl | live | no |
@@ -503,7 +502,6 @@
 | chain-1329 | `0x5c8d0c48810fd37a0a824d074ee290e64f7a8fa2` | LiquidationLogic | impl | inactive | no |
 | chain-1329 | `0x5ecdc2432ed77cd8e2ce6183712c5cc712c40ec0` | AaveProtocolDataProvider-3 | impl | live | no |
 | chain-1329 | `0x5f513046c4094f3835af73a00c46c98c38b840af` | VariableDebtToken | impl | inactive | no |
-| chain-1329 | `0x5fabd1d440a90ee57dd698ea096b91f994b6df56` | WFBTC | proxy | live | no |
 | chain-1329 | `0x68f7cb5bfcdae101144ebb9c2a31de7687ef34ab` | DelegationAwareAToken | impl | inactive | no |
 | chain-1329 | `0x713efc245745b370d4246759ed8a856c885ddafb` | ConfiguratorLogic | impl | inactive | no |
 | chain-1329 | `0x78576791eb886feb04c29f79b94af0a86382ba0b` | IncentivizedERC20-3 | impl | inactive | no |
@@ -517,7 +515,6 @@
 | chain-1329 | `0x91e3b434e9f927d2bb2c77201dd17ef4de89a757` | AToken | impl | inactive | no |
 | chain-1329 | `0x9273b6c890f11cd8b44eb3d807cb5f270c7a2e84` | VariableDebtToken | impl | inactive | no |
 | chain-1329 | `0x93638a1bb9e3353086ec576e1d67b55950412b20` | ACLManager-2 | impl | inactive | no |
-| chain-1329 | `0x9d6341a6fed3e886d8be47aaba932ae4b6066aa8` | WFBTC | proxy | live | no |
 | chain-1329 | `0x9d74e314a95fc5e86b72ebbe4f5d7ce519042fdf` | WalletBalanceProvider | impl | inactive | no |
 | chain-1329 | `0xa25bc43453f7e2acd92839dfaae0dd273419dab1` | WFBTC | impl | inactive | no |
 | chain-1329 | `0xac8d9350504880a1f50cba10a708343df1fc76c7` | Pool | impl | inactive | no |
@@ -577,7 +574,7 @@
 | chain-146 | `0x27e9efafbe286230002e0fa73e11adc0bc1d40fe` | ACLManager | impl | inactive | no |
 | chain-146 | `0x28292e1ca36e400fb7d0b66aaa99eb808e3cb8cb` | PoolAddressesProvider | impl | inactive | no |
 | chain-146 | `0x28350e38f241d7f24106ce5eab1684d6ebeb4700` | AaveProtocolDataProvider | impl | live | no |
-| chain-146 | `0x2840f9d9f96321435ab0f977e7fdbf32ea8b304f` | sUSDa | impl | unknown | no |
+| chain-146 | `0x2840f9d9f96321435ab0f977e7fdbf32ea8b304f` | sUSDa | impl | inactive | no |
 | chain-146 | `0x2884f533e9f8102fd05d903968213502294cc273` | PoolAddressesProviderRegistry | impl | inactive | no |
 | chain-146 | `0x2a5bfd6466a9899963fc9b2b07d900228ca01386` | RewardsController | impl | inactive | no |
 | chain-146 | `0x2bd254646b502ea629fc0a2fcaae6ac5adc29242` | UiPoolDataProviderV3 | impl | live | no |
@@ -997,7 +994,10 @@
 | mode | `0xd14da3828e206dd421172f3bacc9ae78745ec61b` | UiPoolDataProviderV3-2 | impl | unknown | no |
 | mode | `0xd33431fdf84b1de5474cdfa74c81d0ce9079d9d0` | IncentivizedERC20-16 | impl | inactive | no |
 | mode | `0xd43ab352c114e470fb67fdcb118769675db07dd3` | DefaultReserveInterestRateStrategy-3 | impl | live | no |
-| mode | `0xe35e20f9e56385915a614ac4d3a67da3c5e80605` | StableDebtToken-4 | impl | unknown | no |
+| mode | `0xdc041aface653446759824b9588ed71201b5049e` | ReservesSetupHelper-3 | impl | unknown | no |
+| mode | `0xe35e20f9e56385915a614ac4d3a67da3c5e80605` | StableDebtToken-3 | impl | unknown | no |
+| mode | `0xef83ddeb85d365daed0743ca4ba06371dbe49af1` | PoolAddressesProvider-2 | impl | unknown | no |
+| mode | `0xf6aa54a5b60c324602c9359e8221423793e5205d` | WrappedTokenGatewayV3-3 | impl | unknown | no |
 | mode | `0xfc8f7a1775322647f3e3d957f125abff70c9e877` | DelegationAwareAToken-2 | impl | unknown | no |
 | scroll | `0x18cbe70602ee17f79d56971f685e9eaf49da53f2` | AaveProtocolDataProvider-2 | impl | live | no |
 | scroll | `0x4ea93e846b8c6e7b3d5a5bedf4fe6b8aed58fcee` | DefaultReserveInterestRateStrategy-3 | impl | live | no |
@@ -1007,15 +1007,15 @@
 Verified on-chain but no source in the verification cache (skipped from the tree):
 
 - bsc `0x0ed855a54c3df094e685309c9580025e6bcc7993`
+- bsc `0xebfd8d269c9e5e6d576d79fbebe91da85b5fe687`
+- chain-1329 `0x5fabd1d440a90ee57dd698ea096b91f994b6df56`
+- chain-1329 `0x9d6341a6fed3e886d8be47aaba932ae4b6066aa8`
 - chain-146 `0x53ad20e2ea9e302102299ca42e6e0a1f1f8389df`
 - chain-146 `0xe32dd6a28f31eb96765b8f09142c120e97818c3b`
 - ethereum `0x7d51cb25dae8fe4b558dd51282ce67f0cacfe73c`
 - ethereum `0x88cd59d81020c3727e274fa0bd1f711550edc497`
 - ethereum `0xf297230fa5614545b427616148a74c888620d659`
-- mode `0xdc041aface653446759824b9588ed71201b5049e`
 - mode `0xe329c3d847a88fbefc8c9a4e1df5d1c88fd94082`
 - mode `0xe3b01b24ab4f082ff496589d17e31c13d1ef5dcc`
-- mode `0xef83ddeb85d365daed0743ca4ba06371dbe49af1`
-- mode `0xf6aa54a5b60c324602c9359e8221423793e5205d`
 - mode `0xf8a95661a0286b31fd42445557ef36e1a17b8313`
 - mode `0xfbb77a68ee35e7902f1abe0bd34b263023e90c70`

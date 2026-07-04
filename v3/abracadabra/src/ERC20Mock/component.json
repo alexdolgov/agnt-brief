@@ -2,7 +2,7 @@
   "component": "ERC20Mock",
   "main_contract": "ERC20Mock",
   "source_file_count": 4,
-  "deployment_count": 1,
+  "deployment_count": 2,
   "audited": false,
   "audits_covering": [],
   "addresses": [
@@ -13,6 +13,14 @@
       "is_proxy": false,
       "implementation_address": null,
       "liveness": null
+    },
+    {
+      "chain": "avalanche",
+      "chain_id": 43114,
+      "address": "0x9e6cab0d18291c56e7e1d6e92c268bdc75c05b09",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "inactive"
     }
   ]
 }

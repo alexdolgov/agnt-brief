@@ -5,40 +5,40 @@
 - Project: iTrust Finance (`itrust-finance`)
 - Website: [https://itrust.finance](https://itrust.finance)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:14.207Z
+- Generated: 2026-07-04T11:05:41.954Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: ethereum, optimism
-- Contract surface: 341 unique implementations (677 raw deployments)
+- Contract surface: 285 unique implementations (516 raw deployments)
 - DeFi Llama TVL: $351,583.98
 - On-chain TVL (included contracts): n/a
 - TVL by chain: n/a
 
 ## Project Description
 
-Insurance. Structurally: 19 project-authored contract(s) across 1 chain(s); 6 ERC20 tokens, 1 ERC721 NFT, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Insurance. Structurally: 145 project-authored contract(s) across 2 chain(s); 3 ERC4626 vaults, 23 ERC20 tokens, 2 ERC721 NFTs, 2 Chainlink feeds; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 6 functional families. Its contracts share 3 common project-authored base contract(s) (erc20permit, guardedlaunchupgradable, idlecdostorage). Dominant framework: openzeppelin.
+The protocol comprises 8 functional families. Its contracts share 19 common project-authored base contract(s) (emergencyutils, governed, baseadminupgradeabilityproxy). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 
-- Indexed contracts: 677; live-surface contracts included: 677 (40 live, 637 unknown).
-- Excluded by liveness: 0 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 677; live-surface contracts included: 479 (342 live, 137 unknown).
+- Excluded by liveness: 198 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.
 
 ## Audit Coverage Summary
 
-- Coverage of deployed-live implementations: 1/21 (4.8%)
-- Deployed-live implementations: 21 of 341 unique (rest dead/inactive/uninitialized)
-- All verified implementations audited (incl. non-live): 1/211
-- Verified + Unaudited implementations: 210
+- Coverage of deployed-live implementations: 1/155 (0.6%)
+- Deployed-live implementations: 155 of 285 unique (rest dead/inactive/uninitialized)
+- All verified implementations audited (incl. non-live): 1/155
+- Verified + Unaudited implementations: 154
 - Verified by bytecode match: 0
 - Unverified implementations: 130
-- Unique implementations: 341
-- Raw deployments: 677
+- Unique implementations: 285
+- Raw deployments: 516
 - Audits discovered: 1 (1 direct, 0 inherited from forked code)
 - Scoreable audits (matched contracts): 1
 - ASD (verified + unaudited TVL): n/a
@@ -51,7 +51,7 @@ The protocol comprises 6 functional families. Its contracts share 3 common proje
 
 | Auditor | Tier | Contracts Covered | Coverage % | Latest Audit |
 |---|---|---:|---:|---|
-| unknown | Tier 2 | 1 | 0.5% | 2021-06 |
+| unknown | Tier 2 | 1 | 0.6% | 2021-06 |
 
 ## Contract Surface
 
@@ -61,43 +61,32 @@ The protocol comprises 6 functional families. Its contracts share 3 common proje
 |---|---|---|---|---|---|
 | StakingData | unknown | optimism | n/a | [`0xab599b...e0995a`](./contracts/optimism-10/0xab599b2697d836e665706dc59566363e2fe0995a/) | ✅ Audited |
 
-### ⚠️ Verified + Unaudited (210)
+### ⚠️ Verified + Unaudited (154)
 
 | Contract Name | Role | Chain | Deployment Unit | Deployments | Audit Status |
 |---|---|---|---|---|---|
 | AdminUpgradeabilityProxy | unknown | ethereum | n/a | 4 deployments: ethereum [`0x681825...e33ccb`](./contracts/ethereum-1/0x6818254e0a141ca3d85a5f44989f18e820e33ccb/); ethereum `0x907609...e03b5f`; ethereum `0xc7dff3...028586`; ethereum `0xe969bd...eff6fd` | ⚠️ Unaudited |
 | AmphorStrategy | unknown | ethereum | n/a | 3 deployments: ethereum [`0x35df8a...5ac1c8`](./contracts/ethereum-1/0x35df8a95b348dd87167ed00b3421ba15d95ac1c8/); ethereum `0x697655...16305b`; ethereum `0x73a99d...e57b16` | ⚠️ Unaudited |
-| Artifaqt | unknown | ethereum | n/a | [`0x34d565...5e1d34`](./contracts/ethereum-1/0x34d565bddcff2dd74bc98e056ebd32dd5f5e1d34/) | ⚠️ Unaudited |
 | BarnBridgeToken | operational_periphery | ethereum | n/a | [`0x0391d2...37750f`](./contracts/ethereum-1/0x0391d2021f89dc339f60fff84546ea23e337750f/) | ⚠️ Unaudited |
 | Claims | unknown | ethereum | n/a | [`0x586763...e50714`](./contracts/ethereum-1/0x58676340f458b36997608672be6548c92ce50714/) | ⚠️ Unaudited |
 | ClaimsData | unknown | ethereum | n/a | [`0xdc2d35...ef43af`](./contracts/ethereum-1/0xdc2d359f59f6a26162972c3bd0cfbfd8c9ef43af/) | ⚠️ Unaudited |
 | ClaimsReward | unknown | ethereum | n/a | [`0xebdd97...687d48`](./contracts/ethereum-1/0xebdd9752be578c03491ff1083c0f738aa8687d48/) | ⚠️ Unaudited |
 | ConvexStrategyETH | unknown | ethereum | n/a | 2 deployments: ethereum [`0x3bcba0...d122cb`](./contracts/ethereum-1/0x3bcba0afd36c9b350f46c570f89ab70817d122cb/); ethereum `0x6d8793...897daf` | ⚠️ Unaudited |
 | ConvexStrategyMeta3Pool | unknown | ethereum | n/a | 4 deployments: ethereum [`0x351683...f77865`](./contracts/ethereum-1/0x35168324dc1981addc3bc915788e200bedf77865/); ethereum `0x6042d5...e77fd7`; ethereum `0xbc1707...b6b79f`; ethereum `0xdb7306...29e20d` | ⚠️ Unaudited |
-| ConvexStrategyMeta3Pool | unknown | ethereum | n/a | 3 deployments: ethereum [`0x4adeb0...129956`](./contracts/ethereum-1/0x4adeb02dd22af00a8b6189bee89769ed76129956/); ethereum `0x81dbe9...041a70`; ethereum `0xee671e...021a78` | ⚠️ Unaudited |
 | ConvexStrategyMetaBTC | unknown | ethereum | n/a | 2 deployments: ethereum [`0x019879...7a4cdc`](./contracts/ethereum-1/0x0198792f2849397908c092b6b57654e1a57a4cdc/); ethereum `0xb73d51...6a26ee` | ⚠️ Unaudited |
 | ConvexStrategyMUSD | unknown | ethereum | n/a | 2 deployments: ethereum [`0x271ce5...9920f0`](./contracts/ethereum-1/0x271ce5ded4ccbd28833bddf8a8093517299920f0/); ethereum `0xa4b662...fe41ce` | ⚠️ Unaudited |
-| ConvexStrategyPlainPool3Token | unknown | ethereum | n/a | [`0x03563d...d854d9`](./contracts/ethereum-1/0x03563deef50b957f69232de055ea1a8aa6d854d9/) | ⚠️ Unaudited |
 | ConvexStrategyPlainPool3Token | unknown | ethereum | n/a | 2 deployments: ethereum [`0x4ae60b...2b9094`](./contracts/ethereum-1/0x4ae60bc9a3efc160ae2eba70947a9b47ad2b9094/); ethereum `0x8f889d...9b1baa` | ⚠️ Unaudited |
-| DelegateStakingRewardsIDLE | unknown | ethereum | n/a | [`0x747e81...7ff388`](./contracts/ethereum-1/0x747e819b878956fb6e5eb936a6415a5d037ff388/) | ⚠️ Unaudited |
 | EarlyRewards | unknown | ethereum | n/a | [`0xa1f71e...5d88fc`](./contracts/ethereum-1/0xa1f71ed24aba6c8da8ca8c046bbc9804625d88fc/) | ⚠️ Unaudited |
 | ERC20 | unknown | ethereum | n/a | 2 deployments: ethereum [`0xb9200c...f2070d`](./contracts/ethereum-1/0xb9200c2aa4053102b984806c63d67e21b8f2070d/); ethereum `0xf93842...72e91e` | ⚠️ Unaudited |
 | EthenaCooldownRequest | unknown | ethereum | n/a | [`0xe0c4a2...e098d1`](./contracts/ethereum-1/0xe0c4a2b14f0acd936226a598be6bfed190e098d1/) | ⚠️ Unaudited |
-| EulerStakingPYTStrategy | unknown | ethereum | n/a | [`0xcf9347...098ffb`](./contracts/ethereum-1/0xcf93471a82241c2be469d83d960932721b098ffb/) | ⚠️ Unaudited |
 | FalconXAAAdapter | adapter | ethereum | n/a | 3 deployments: ethereum [`0x48fc1a...f57724`](./contracts/ethereum-1/0x48fc1a04e5e18c994c3165c9ad0d3553d7f57724/); ethereum `0x8fed61...83667e`; ethereum `0xefffa4...2c8fa2` | ⚠️ Unaudited |
 | GearboxStrategy | unknown | ethereum | n/a | 3 deployments: ethereum [`0x29c794...387510`](./contracts/ethereum-1/0x29c794b9a70752c41d65ebccef1c1ee697387510/); ethereum `0x9fb97f...ac099b`; ethereum `0xee4043...701dfa` | ⚠️ Unaudited |
-| GearboxStrategy | unknown | ethereum | n/a | [`0x67f2c6...2a84e6`](./contracts/ethereum-1/0x67f2c664891e4fcdecba6b596567eb0a872a84e6/) | ⚠️ Unaudited |
-| GovernableFund | unknown | ethereum | n/a | 3 deployments: ethereum [`0x107a36...31b925`](./contracts/ethereum-1/0x107a369bc066c77ff061c7d2420618a6ce31b925/); ethereum `0x69a62c...1bcb94`; ethereum `0xb0aa1f...5571c7` | ⚠️ Unaudited |
 | Governance | unknown | ethereum | n/a | [`0xc72a7b...391c4e`](./contracts/ethereum-1/0xc72a7b022f95570399bc1fd3956ecd863b391c4e/) | ⚠️ Unaudited |
-| GovernorAccessControl | unknown | ethereum | n/a | [`0xf02faf...1ed5e5`](./contracts/ethereum-1/0xf02faf7cfee786111eae6747a0c344b48c1ed5e5/) | ⚠️ Unaudited |
 | GovernorAlpha | unknown | ethereum | n/a | [`0x2256b2...2fe31b`](./contracts/ethereum-1/0x2256b25cfc8e35c3135664fd03e77595042fe31b/) | ⚠️ Unaudited |
 | HypervisorFactory | unknown | ethereum | n/a | [`0x8ae6c8...97ceae`](./contracts/ethereum-1/0x8ae6c8c7005c7317963487bee834047eb497ceae/) | ⚠️ Unaudited |
 | Idle | unknown | ethereum | n/a | [`0x875773...c5d39e`](./contracts/ethereum-1/0x875773784af8135ea0ef43b5a374aad105c5d39e/) | ⚠️ Unaudited |
-| IdleAave | unknown | ethereum | n/a | 22 deployments: ethereum [`0x0bc3bb...ef54f3`](./contracts/ethereum-1/0x0bc3bba4ef3d1355a76e69900f98a59d30ef54f3/); ethereum `0x0f4b41...5bc7c9`; ethereum `0x11833c...4b9718`; ethereum `0x138981...481788`; ethereum `0x20aeea...198b51`; ethereum `0x23dce3...9f4249`; ethereum `0x292714...a85e67`; ethereum `0x2f326f...c9da6e`; ethereum `0x31acf7...03f2f7`; ethereum `0x695085...83b783`; ethereum `0x80af31...c7f070`; ethereum `0x9509af...fb60c3`; ethereum `0xa3a374...0e0c4c`; ethereum `0xa91cf5...e9992e`; ethereum `0xb4226b...12efff`; ethereum `0xb92498...6124e4`; ethereum `0xc0490b...adae37`; ethereum `0xc4ef78...123a77`; ethereum `0xcc6ba0...58e8a6`; ethereum `0xe85f72...de534d`; ethereum `0xf5d90e...5c2f55`; ethereum `0xff9338...05ae52` | ⚠️ Unaudited |
-| IdleAaveV2 | unknown | ethereum | n/a | 2 deployments: ethereum [`0x3c5a5d...50a70c`](./contracts/ethereum-1/0x3c5a5d7832e9084fd88885823afa8cd99250a70c/); ethereum `0xfc86f8...208c0f` | ⚠️ Unaudited |
 | IdleBatchConverter | unknown | ethereum | n/a | 10 deployments: ethereum [`0x08db22...ca23d8`](./contracts/ethereum-1/0x08db226d63ce724a6091ba82d28dfc76ceca23d8/); ethereum `0x174a27...863a86`; ethereum `0x86c8b5...e5cca8`; ethereum `0xa30679...511db2`; ethereum `0xa6c89a...8fb472`; ethereum `0xbfdc7d...0d401d`; ethereum `0xd47b96...66f619`; ethereum `0xe0bfd0...963497`; ethereum `0xe2ee51...69b9b1`; ethereum `0xee5c50...f00cf2` | ⚠️ Unaudited |
 | IdleBatchedMint | unknown | ethereum | n/a | 3 deployments: ethereum [`0x4dbf03...805c69`](./contracts/ethereum-1/0x4dbf03a2d7037eb59ae03d3a2927f1d7ec805c69/); ethereum `0x562c4f...eaee9b`; ethereum `0x633fb4...996a79` | ⚠️ Unaudited |
-| IdleBatchedMint | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7a9efd...21de8d`](./contracts/ethereum-1/0x7a9efd7f689c9173db9037f44f3933376821de8d/); ethereum `0x89bf67...3ab56a` | ⚠️ Unaudited |
 | IdleCDO | unknown | ethereum | n/a | 12 deployments: ethereum [`0x1ea9ae...9bb716`](./contracts/ethereum-1/0x1ea9ae797972ad9fc52c55105d184d8b059bb716/); ethereum `0x2d90df...458964`; ethereum `0x31bee1...ea2140`; ethereum `0x3cd51e...9ab844`; ethereum `0x46de3a...11544e`; ethereum `0x4ebe36...6bd3bb`; ethereum `0x6f3220...80b62f`; ethereum `0xb93450...cbb883`; ethereum `0xc17776...1acbea`; ethereum `0xc9f019...20af8c`; ethereum `0xd6ab3b...ccd0dd`; ethereum `0xe8cc6c...93aecc` | ⚠️ Unaudited |
 | IdleCDO | unknown | ethereum | n/a | 2 deployments: ethereum [`0xad6cc7...eacb58`](./contracts/ethereum-1/0xad6cc71ef6ba82ffad9adf40220d035669eacb58/); ethereum `0xdce26b...653b0e` | ⚠️ Unaudited |
 | IdleCDO | unknown | ethereum | n/a | 2 deployments: ethereum [`0xbed6e1...85299d`](./contracts/ethereum-1/0xbed6e1ff4363730a56dfdcd6689e5d958085299d/); ethereum `0xd0dbcd...a247bc` | ⚠️ Unaudited |
@@ -126,9 +115,7 @@ The protocol comprises 6 functional families. Its contracts share 3 common proje
 | IdleCDOLeveregedEulerVariant | unknown | ethereum | n/a | 2 deployments: ethereum [`0x5a62ca...0164cd`](./contracts/ethereum-1/0x5a62ca401667b18557ef23d84bf27aff5a0164cd/); ethereum `0xcb2bd4...31c5af` | ⚠️ Unaudited |
 | IdleCDOPoLidoVariant | unknown | ethereum | n/a | 2 deployments: ethereum [`0x56050f...5759a1`](./contracts/ethereum-1/0x56050f117d675041da6a4b501f0cb75d455759a1/); ethereum `0x6df196...5099aa` | ⚠️ Unaudited |
 | IdleCDOPoLidoVariant | unknown | ethereum | n/a | 2 deployments: ethereum [`0xe7bdf3...a59a26`](./contracts/ethereum-1/0xe7bdf364862ef8a31426e6e2b7d5defde3a59a26/); ethereum `0xf87ec7...cba5b8` | ⚠️ Unaudited |
-| IdleCDORegistry | unknown | ethereum | n/a | [`0x84fdee...d94d8e`](./contracts/ethereum-1/0x84fdee80f18957a041354e99c7eb407467d94d8e/) | ⚠️ Unaudited |
 | IdleCDOTrancheRewards | unknown | ethereum | n/a | 4 deployments: ethereum [`0x4473bc...dc382d`](./contracts/ethereum-1/0x4473bc90118b18be890af42d793b5252c4dc382d/); ethereum `0x8fcd21...3cf0ba`; ethereum `0x9c3bc8...d8375b`; ethereum `0x9ce83d...71533c` | ⚠️ Unaudited |
-| IdleCDOTrancheRewards | unknown | ethereum | n/a | [`0x642391...aa7219`](./contracts/ethereum-1/0x64239152e4fa7913c790b1bdce332fccdaaa7219/) | ⚠️ Unaudited |
 | IdleCDOTruefiVariant | unknown | ethereum | n/a | 2 deployments: ethereum [`0x1f5a97...313c8e`](./contracts/ethereum-1/0x1f5a97fb665e295303d2f7215ba2160cc5313c8e/); ethereum `0x8b39bb...aad670` | ⚠️ Unaudited |
 | IdleCDOTruefiVariant | unknown | ethereum | n/a | [`0x40072f...477407`](./contracts/ethereum-1/0x40072fc98b3a128950b1857bd7ce57b144477407/) | ⚠️ Unaudited |
 | IdleCDOUsualVariant | unknown | ethereum | n/a | 2 deployments: ethereum [`0x41b55b...9a7e8b`](./contracts/ethereum-1/0x41b55b28de948d9e5bbe62f30d47f8f0f29a7e8b/); ethereum `0x9c85f2...bb16e4` | ⚠️ Unaudited |
@@ -136,14 +123,10 @@ The protocol comprises 6 functional families. Its contracts share 3 common proje
 | IdleClearpoolPSMStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x3687c0...ded5a0`](./contracts/ethereum-1/0x3687c0f8760371fc1bd1c7bc28695c388cded5a0/); ethereum `0xfe91b8...e17e79` | ⚠️ Unaudited |
 | IdleClearpoolPSMStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x89a13b...fcf347`](./contracts/ethereum-1/0x89a13b0be966e53429372bc47721e336befcf347/); ethereum `0xfca6b0...df6cec` | ⚠️ Unaudited |
 | IdleClearpoolStrategy | unknown | ethereum | n/a | 3 deployments: ethereum [`0x16f6be...08083b`](./contracts/ethereum-1/0x16f6be72882b24527f94c7bccabf77b62608083b/); ethereum `0x685039...cecad1`; ethereum `0xb9c8d0...fdc1bb` | ⚠️ Unaudited |
-| IdleClearpoolStrategy | unknown | ethereum | n/a | [`0x371ec1...8c60cb`](./contracts/ethereum-1/0x371ec16a15c00a3deac8e6ab929d8da4d68c60cb/) | ⚠️ Unaudited |
 | IdleClearpoolStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x478601...9a148e`](./contracts/ethereum-1/0x478601cabe3c3c0bad9bd5ed024c36648b9a148e/); ethereum `0xb9b541...831001` | ⚠️ Unaudited |
 | IdleClearpoolStrategy | unknown | ethereum | n/a | 4 deployments: ethereum [`0x526d62...14020c`](./contracts/ethereum-1/0x526d62d71c4c61ad4365ef5de3d3e2983b14020c/); ethereum `0x54ae90...b1f471`; ethereum `0x84b2de...06b5ac`; ethereum `0x931c08...c92181` | ⚠️ Unaudited |
 | IdleClearpoolStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x696346...7a0d25`](./contracts/ethereum-1/0x6963460d921407e4db82a72837a1e709ac7a0d25/); ethereum `0xc8e2fa...de1991` | ⚠️ Unaudited |
 | IdleClearpoolStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0xe250b6...3321f5`](./contracts/ethereum-1/0xe250b65b6fa2a61fb99f7c41c1c615b0ed3321f5/); ethereum `0xff35f8...f0e821` | ⚠️ Unaudited |
-| IdleCompound | unknown | ethereum | n/a | 9 deployments: ethereum [`0x55583f...2c1edd`](./contracts/ethereum-1/0x55583f7ca92f4cf051e6f55d77a967ba9b2c1edd/); ethereum `0x628b4d...d9eb6e`; ethereum `0x7e5d8e...8507f8`; ethereum `0x969ce0...27e8ba`; ethereum `0x9f0f97...70dbd8`; ethereum `0x9fc29b...0b4ad4`; ethereum `0xa7988b...c126df`; ethereum `0xbe3e78...b6ac00`; ethereum `0xe8981a...ee3fbd` | ⚠️ Unaudited |
-| IdleCompoundETH | unknown | ethereum | n/a | 2 deployments: ethereum [`0x9a7aca...5605ca`](./contracts/ethereum-1/0x9a7aca7618801ca90f91beaa5a1a2e90a55605ca/); ethereum `0xed4fa9...698617` | ⚠️ Unaudited |
-| IdleCompoundV2 | unknown | ethereum | n/a | 9 deployments: ethereum [`0x0c39da...8ccc66`](./contracts/ethereum-1/0x0c39daf173646c4ce9e6a678425ed965c98ccc66/); ethereum `0x0e90cf...7af8b3`; ethereum `0x2d1d26...f629eb`; ethereum `0x3751b4...47a46b`; ethereum `0x5ccba3...ff83d6`; ethereum `0x728014...2855b2`; ethereum `0x7466c9...f3fce3`; ethereum `0x9fd4bf...b39bfe`; ethereum `0xd4d7e6...131a9b` | ⚠️ Unaudited |
 | IdleController | unknown | ethereum | n/a | 2 deployments: ethereum [`0x275da8...cdb0be`](./contracts/ethereum-1/0x275da8e61ea8e02d51edd8d0dc5c0e62b4cdb0be/); ethereum `0xf66b8c...e5a31e` | ⚠️ Unaudited |
 | IdleController | unknown | ethereum | n/a | [`0x2c08ba...3fca24`](./contracts/ethereum-1/0x2c08bacc1fc6095f21eb59e57318a6c06d3fca24/) | ⚠️ Unaudited |
 | IdleCreditVault | unknown | ethereum | n/a | 2 deployments: ethereum [`0x01b8a7...1e175c`](./contracts/ethereum-1/0x01b8a788d2742d8d1706fce7204fb523c51e175c/); ethereum `0x381406...3fa2f0` | ⚠️ Unaudited |
@@ -161,42 +144,19 @@ The protocol comprises 6 functional families. Its contracts share 3 common proje
 | IdleCreditVaultWriteOffEscrow | unknown | ethereum | n/a | 6 deployments: ethereum [`0x2b914f...c2d887`](./contracts/ethereum-1/0x2b914f5e396b0017a866c7e36af9fbba46c2d887/); ethereum `0x956734...0e9739`; ethereum `0xb08afc...109944`; ethereum `0xc3c9b1...f50086`; ethereum `0xcbed5b...438810`; ethereum `0xcfaa78...77cc48` | ⚠️ Unaudited |
 | IdleCreditVaultWriteOffEscrow | unknown | ethereum | n/a | 4 deployments: ethereum [`0x5dec32...257cfb`](./contracts/ethereum-1/0x5dec32675edac1bd6e5dca0ad9affcc7d4257cfb/); ethereum `0x6120e4...e99931`; ethereum `0xe05f14...da43e0`; ethereum `0xf3d867...611bdc` | ⚠️ Unaudited |
 | IdleCreditVaultWriteOffEscrow | operational_periphery | ethereum | n/a | [`0xe6584f...071507`](./contracts/ethereum-1/0xe6584f3484494d7014e420080f50b69e5e071507/) | ⚠️ Unaudited |
-| IdleDSR | unknown | ethereum | n/a | [`0x587fe6...0c608a`](./contracts/ethereum-1/0x587fe6430a1148df4868e9e71357a179110c608a/) | ⚠️ Unaudited |
 | IdleEulerStakingStrategy | unknown | ethereum | n/a | 5 deployments: ethereum [`0x0fe4fc...e71b04`](./contracts/ethereum-1/0x0fe4fc1301afe4afe8c3ac288c3e13cdace71b04/); ethereum `0x2a719c...4601e6`; ethereum `0x2d29c2...85f4c2`; ethereum `0x62aa57...fc7722`; ethereum `0xaf1419...340652` | ⚠️ Unaudited |
-| IdleEulerStakingStrategy | unknown | ethereum | n/a | [`0x55cf2c...5a6a06`](./contracts/ethereum-1/0x55cf2cf79759574a4e868ab83701794afc5a6a06/) | ⚠️ Unaudited |
-| IdleEulerStakingStrategyPSM | unknown | ethereum | n/a | 5 deployments: ethereum [`0x956f65...cf5784`](./contracts/ethereum-1/0x956f650177f95ef142aa2a26da407ad014cf5784/); ethereum `0x9d6f65...9117b5`; ethereum `0xb51be9...c294e5`; ethereum `0xee7629...cf5e7b`; ethereum `0xfcbd5b...7aa358` | ⚠️ Unaudited |
-| IdleEulerStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x388655...ea45e0`](./contracts/ethereum-1/0x3886557ed1698dbd496a4a0f2e00df8918ea45e0/); ethereum `0xacdf8f...9a8cd5` | ⚠️ Unaudited |
 | IdleEulerStrategy | unknown | ethereum | n/a | 5 deployments: ethereum [`0x3d1775...babd69`](./contracts/ethereum-1/0x3d1775da27dd9c6d936795ac21b94cded8babd69/); ethereum `0x5dad2e...8c4346`; ethereum `0x8468b8...95e166`; ethereum `0xba6f9a...c66b3b`; ethereum `0xc7f1b9...1a3f44` | ⚠️ Unaudited |
 | IdleFactory | unknown | ethereum | n/a | [`0x5d4e70...b3ffd0`](./contracts/ethereum-1/0x5d4e705315aca451db40bf7c067077c768b3ffd0/) | ⚠️ Unaudited |
-| IdleFulcrum | unknown | ethereum | n/a | 2 deployments: ethereum [`0x727d9c...be825e`](./contracts/ethereum-1/0x727d9c331e9481167dc61a9289c948da25be825e/); ethereum `0x9ff8b7...088bd4` | ⚠️ Unaudited |
-| IdleFulcrumV2 | unknown | ethereum | n/a | 17 deployments: ethereum [`0x02072a...cbe2e1`](./contracts/ethereum-1/0x02072abc26f1d69849b6dca0b1ea805dc4cbe2e1/); ethereum `0x2fd325...f5cc29`; ethereum `0x39c71f...61c5e5`; ethereum `0x44b6cd...13c470`; ethereum `0x463465...4ec3dc`; ethereum `0x4f80e4...1ae688`; ethereum `0x673580...15f580`; ethereum `0x7e6063...b17af7`; ethereum `0x8c85dc...155f02`; ethereum `0x957e8c...99b9bc`; ethereum `0xa0aed4...f2bb6a`; ethereum `0xb31b1a...0b6866`; ethereum `0xcdd7db...76a8c9`; ethereum `0xd17761...ae04c6`; ethereum `0xe160b8...ca71fe`; ethereum `0xf2bbed...43cf72`; ethereum `0xf6e5e4...681936` | ⚠️ Unaudited |
 | IdleLeveragedEulerStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x37de1d...870dc5`](./contracts/ethereum-1/0x37de1d299c93743472343699c58ec95000870dc5/); ethereum `0x736949...1bb8c9` | ⚠️ Unaudited |
 | IdleLeveragedEulerStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x54449c...908d74`](./contracts/ethereum-1/0x54449cd454ba2be50dc9d1ac9bb83a503c908d74/); ethereum `0xee5ec9...3f0073` | ⚠️ Unaudited |
 | IdleLeveragedEulerStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7a7723...d44a51`](./contracts/ethereum-1/0x7a77231abe02359e0386dfea3b47124e36d44a51/); ethereum `0x96078f...20eae8` | ⚠️ Unaudited |
 | IdleLidoStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x0cac67...da089a`](./contracts/ethereum-1/0x0cac674ebd77bbd899f6079932768f6d59da089a/); ethereum `0x3b4387...01fcb2` | ⚠️ Unaudited |
-| IdleLidoStrategy | unknown | ethereum | n/a | [`0xf07c97...20c719`](./contracts/ethereum-1/0xf07c97c7437c863932bfa362731d9b0f7420c719/) | ⚠️ Unaudited |
-| IdleMcdBridge | unknown | ethereum | n/a | [`0x7ab2a7...137211`](./contracts/ethereum-1/0x7ab2a7ed1a0c58dea84de880b4f1710229137211/) | ⚠️ Unaudited |
 | IdleMStableStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7b8c3e...083619`](./contracts/ethereum-1/0x7b8c3ee1bafb4af5826d41137cd5caf878083619/); ethereum `0x854b5b...4252a2` | ⚠️ Unaudited |
-| IdleMStableStrategy | unknown | ethereum | n/a | [`0x944d36...b5045a`](./contracts/ethereum-1/0x944d369522eb919064b52b9665f4151e52b5045a/) | ⚠️ Unaudited |
-| IdlePoLidoStrategy | unknown | ethereum | n/a | [`0x4916ee...a12569`](./contracts/ethereum-1/0x4916ee4a761e5cff5b4a3183f109f3e141a12569/) | ⚠️ Unaudited |
 | IdlePoLidoStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6110de...f4aa81`](./contracts/ethereum-1/0x6110dec9fac2a721c0eee64b769a7e4cccf4aa81/); ethereum `0xd408ee...e9fb50` | ⚠️ Unaudited |
-| IdlePriceCalculator | unknown | ethereum | n/a | 2 deployments: ethereum [`0xaefb13...225358`](./contracts/ethereum-1/0xaefb1325a2c1756bc3fcc516d6c2cf947d225358/); ethereum `0xb98864...477057` | ⚠️ Unaudited |
-| IdlePYT | unknown | ethereum | n/a | [`0xd3af13...45553d`](./contracts/ethereum-1/0xd3af1317450d291c328525a8eb183d5cca45553d/) | ⚠️ Unaudited |
-| IdlePYTClear | unknown | ethereum | n/a | 2 deployments: ethereum [`0xa575b3...533559`](./contracts/ethereum-1/0xa575b3a6d88e9c1b5196cb7e2a14962a5c533559/); ethereum `0xdb1b14...89300a` | ⚠️ Unaudited |
-| IdlePYTClearJunior | unknown | ethereum | n/a | [`0xff31c6...d19d18`](./contracts/ethereum-1/0xff31c69a983bac080f23f21be965650758d19d18/) | ⚠️ Unaudited |
-| IdlePYTClearPSM | unknown | ethereum | n/a | [`0x6fa860...0264d8`](./contracts/ethereum-1/0x6fa86028323ba310fe4488f74085de99ed0264d8/) | ⚠️ Unaudited |
-| IdleRebalancer | unknown | ethereum | n/a | 2 deployments: ethereum [`0x781616...b753f4`](./contracts/ethereum-1/0x781616fb046a4e39c239e39bfeff1a07d4b753f4/); ethereum `0xff9b25...938a15` | ⚠️ Unaudited |
-| IdleRebalancerV2 | unknown | ethereum | n/a | [`0xec4707...75fc87`](./contracts/ethereum-1/0xec470753b56ced3784ce29db7c297f0c1b75fc87/) | ⚠️ Unaudited |
-| IdleRebalancerV3 | unknown | ethereum | n/a | 7 deployments: ethereum [`0x21fcd8...bc9582`](./contracts/ethereum-1/0x21fcd8adac59adc2eb94355eb2f43f869bbc9582/); ethereum `0x3f03d8...c4ee24`; ethereum `0x99d053...031d08`; ethereum `0xabcb30...b3abd4`; ethereum `0xd8885c...3f2819`; ethereum `0xdb5cf4...d57a89`; ethereum `0xe84fa0...64c1fa` | ⚠️ Unaudited |
-| IdleRebalancerV3_1 | unknown | ethereum | n/a | 9 deployments: ethereum [`0x2be5a5...86a84a`](./contracts/ethereum-1/0x2be5a50d4125882083aaefdd370848771286a84a/); ethereum `0x47f6ac...7e20f5`; ethereum `0x486f7a...62d295`; ethereum `0x58c405...c30762`; ethereum `0x66624b...8c21ba`; ethereum `0x6e706e...0a3ddd`; ethereum `0x75c8b3...d19763`; ethereum `0xb0d97b...86d83d`; ethereum `0xe0aad3...66c604` | ⚠️ Unaudited |
-| IdleRebalancerV3SUSD | unknown | ethereum | n/a | 4 deployments: ethereum [`0x6b98a5...e0a506`](./contracts/ethereum-1/0x6b98a5e0e67e68f502e8950992e0b1c0aee0a506/); ethereum `0xccbcf6...741802`; ethereum `0xd2179a...8f01e6`; ethereum `0xe92502...32d130` | ⚠️ Unaudited |
-| IdleRebalancerV3USDT | unknown | ethereum | n/a | 2 deployments: ethereum [`0x240345...80deb1`](./contracts/ethereum-1/0x2403457ce59e56dd69d2fc4f22e77d7ab180deb1/); ethereum `0xbdb57b...0f0275` | ⚠️ Unaudited |
 | IdleRibbonPSMStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x051ba9...9b0933`](./contracts/ethereum-1/0x051ba97b84a921f4134376af2c7e3a38229b0933/); ethereum `0x94bcff...651dcd` | ⚠️ Unaudited |
 | IdleRibbonStrategy | unknown | ethereum | n/a | 3 deployments: ethereum [`0x25e733...518893`](./contracts/ethereum-1/0x25e7337037817dd9bddd0334ca1591f370518893/); ethereum `0x263283...3fc16c`; ethereum `0x73f3fb...42fd6a` | ⚠️ Unaudited |
-| IdleStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x10cecc...0ac2b9`](./contracts/ethereum-1/0x10cecc30087f4b3e894dad8398307faa2f0ac2b9/); ethereum `0x2f58a6...cbb225` | ⚠️ Unaudited |
 | IdleStrategy | unknown | ethereum | n/a | 3 deployments: ethereum [`0x48a48c...69a652`](./contracts/ethereum-1/0x48a48c6694168093a3dee02e9e8ac5a14169a652/); ethereum `0x73a440...76a916`; ethereum `0xd04843...030527` | ⚠️ Unaudited |
 | IdleTokenFungible | unknown | ethereum | n/a | 2 deployments: ethereum [`0x0d41f8...e906ca`](./contracts/ethereum-1/0x0d41f858d803af86e5192a77a798ad7d97e906ca/); ethereum `0x144046...158647` | ⚠️ Unaudited |
-| IdleTokenFungible | unknown | ethereum | n/a | 5 deployments: ethereum [`0x1247b1...f955c1`](./contracts/ethereum-1/0x1247b148062179cd6156f68d9a1019f671f955c1/); ethereum `0x15bb11...bd218b`; ethereum `0x169e44...ff692f`; ethereum `0x1fc957...c01c0e`; ethereum `0xbdbc6d...eeb907` | ⚠️ Unaudited |
 | IdleTokenFungible | unknown | ethereum | n/a | 2 deployments: ethereum [`0x2f5c26...4e26a1`](./contracts/ethereum-1/0x2f5c260550ed0efede4881bc004107c3f04e26a1/); ethereum `0xec9482...3068e1` | ⚠️ Unaudited |
 | IdleTokenFungible | unknown | ethereum | n/a | 4 deployments: ethereum [`0x62a036...89514b`](./contracts/ethereum-1/0x62a0369c6bb00054e589d12aad7ad81ed789514b/); ethereum `0xaeff59...a77f16`; ethereum `0xdc7777...8f320e`; ethereum `0xfa3afc...3eaaad` | ⚠️ Unaudited |
 | IdleTokenFungible | unknown | ethereum | n/a | 2 deployments: ethereum [`0x742cf0...0bcb68`](./contracts/ethereum-1/0x742cf09d89dd80494cc106ea737163436b0bcb68/); ethereum `0xf6954b...1ee5d2` | ⚠️ Unaudited |
@@ -207,41 +167,29 @@ The protocol comprises 6 functional families. Its contracts share 3 common proje
 | IdleTokenV3_1 | unknown | ethereum | n/a | 3 deployments: ethereum [`0x2fec85...40931a`](./contracts/ethereum-1/0x2fec85c0eaaace2b24926eabbf8373b26240931a/); ethereum `0x6ca265...c840e1`; ethereum `0xf6abb2...eb2a9e` | ⚠️ Unaudited |
 | IdleTokenV3SUSD | unknown | ethereum | n/a | 4 deployments: ethereum [`0x51c776...83eef1`](./contracts/ethereum-1/0x51c77689a9c2e8ccbecd4ec9770a1fa5fa83eef1/); ethereum `0x7db7a4...f8e5b6`; ethereum `0xb39ca0...963de5`; ethereum `0xe79e17...30fc9b` | ⚠️ Unaudited |
 | IdleTokenV3USDT | unknown | ethereum | n/a | 2 deployments: ethereum [`0x427406...1d862b`](./contracts/ethereum-1/0x42740698959761baf1b06baa51efbd88cb1d862b/); ethereum `0x63d27b...2d2f2d` | ⚠️ Unaudited |
-| IdleTokenWrapper | unknown | ethereum | n/a | [`0x544897...ae18e1`](./contracts/ethereum-1/0x544897a3b944fdeb1f94a0ed973ea31a80ae18e1/) | ⚠️ Unaudited |
-| IdleTrancheAdapter | unknown | ethereum | n/a | [`0x70728f...d41e6d`](./contracts/ethereum-1/0x70728f08e97303d757be4cd97a7d27b65dd41e6d/) | ⚠️ Unaudited |
 | IdleTruefiStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x62b17c...8b58fb`](./contracts/ethereum-1/0x62b17c9083db5941197e83bd385985b8878b58fb/); ethereum `0x7ccaf1...c08eb5` | ⚠️ Unaudited |
 | IdleUsdcOtcSwap | unknown | ethereum | n/a | [`0x863a08...33e765`](./contracts/ethereum-1/0x863a08bfc7ae938c4f96c2c3ef82fa309b33e765/) | ⚠️ Unaudited |
 | IdleUsualStrategy | unknown | ethereum | n/a | 3 deployments: ethereum [`0x1d659f...62dcc8`](./contracts/ethereum-1/0x1d659f4357e30de73ed2dc02ed4e34bca262dcc8/); ethereum `0x775d6f...475408`; ethereum `0xa48d5e...859e71` | ⚠️ Unaudited |
 | IdleUsualStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x438020...6d29f6`](./contracts/ethereum-1/0x4380208ed0fc5136e93ed1ff67d2cbe1906d29f6/); ethereum `0xd48237...078e81` | ⚠️ Unaudited |
 | IdleViewHelper | unknown | ethereum | n/a | 2 deployments: ethereum [`0x2adf7c...5dadec`](./contracts/ethereum-1/0x2adf7ccf0241b60747d194b3ea163e28105dadec/); ethereum `0xae2eba...36b8f5` | ⚠️ Unaudited |
 | InstadappLiteETHV2Strategy | unknown | ethereum | n/a | 3 deployments: ethereum [`0x00d390...482c8b`](./contracts/ethereum-1/0x00d39058943b4a6f01cb3386a7f44b84ab482c8b/); ethereum `0xa3bbad...e88468`; ethereum `0xbe0dac...0a1ff6` | ⚠️ Unaudited |
-| InstadappLiteETHV2Strategy | unknown | ethereum | n/a | [`0x74de99...c6c4cd`](./contracts/ethereum-1/0x74de99f325d70143c9b9b5dcba39bfe602c6c4cd/) | ⚠️ Unaudited |
 | KeyringIdleWhitelist | unknown | ethereum | n/a | 6 deployments: ethereum [`0x1a4d23...2bcc68`](./contracts/ethereum-1/0x1a4d23403c31ba26a4b84af09364d503ad2bcc68/); ethereum `0x42e645...3d7cbd`; ethereum `0x637595...bf2688`; ethereum `0x6a6a91...0450e3`; ethereum `0xb84957...0d77a0`; ethereum `0xda7514...dbf80c` | ⚠️ Unaudited |
 | LockedIDLE | unknown | ethereum | n/a | 5 deployments: ethereum [`0x02682c...4a4f48`](./contracts/ethereum-1/0x02682c933428e7a9b7527dd9385f1e0c5d4a4f48/); ethereum `0x30184e...2e28d4`; ethereum `0x826c61...ecd207`; ethereum `0xb6297d...56b1f8`; ethereum `0xf241a0...c31d99` | ⚠️ Unaudited |
 | MCR | unknown | ethereum | n/a | 3 deployments: ethereum [`0x2ec5d5...57c495`](./contracts/ethereum-1/0x2ec5d566bd104e01790b13de33fd51876d57c495/); ethereum `0x9b4825...8bda0a`; ethereum `0xccb40a...0bade7` | ⚠️ Unaudited |
 | MemberRoles | unknown | ethereum | n/a | 2 deployments: ethereum [`0x504a7d...89fe20`](./contracts/ethereum-1/0x504a7dff5eb2854be0b436da0ac2d3e0b789fe20/); ethereum `0x548bf2...82f492` | ⚠️ Unaudited |
-| MerkleClaim | unknown | ethereum | n/a | [`0x693695...d26485`](./contracts/ethereum-1/0x69369507aa7a44156cc297448ab57e3c15d26485/) | ⚠️ Unaudited |
-| MetamorphoPYTStrategy | unknown | ethereum | n/a | [`0x96dd27...448152`](./contracts/ethereum-1/0x96dd27112bdd615c3a2d649fe22d8ee27e448152/) | ⚠️ Unaudited |
-| MetaMorphoSnippets | unknown | ethereum | n/a | 3 deployments: ethereum [`0x603cb5...cfddca`](./contracts/ethereum-1/0x603cb545b98aca3691be869871b34ae72ccfddca/); ethereum `0x7a928e...ff42ff`; ethereum `0xdfd98f...6402c6` | ⚠️ Unaudited |
 | MetaMorphoStrategy | unknown | ethereum | n/a | 5 deployments: ethereum [`0x0186e3...78a73b`](./contracts/ethereum-1/0x0186e34de71987303b4ed4a027ed939a1178a73b/); ethereum `0x0f0500...61da57`; ethereum `0x4bfd21...208ac2`; ethereum `0x937c51...6d515d`; ethereum `0xa12814...aaf1da` | ⚠️ Unaudited |
-| MetaMorphoStrategy | unknown | ethereum | n/a | 5 deployments: ethereum [`0x0e07ef...aee361`](./contracts/ethereum-1/0x0e07ef9f9368a4092ca1ba9f01de1ae7bcaee361/); ethereum `0x1f69f4...93ae13`; ethereum `0x462fc4...61dde2`; ethereum `0x835c84...1a6dd8`; ethereum `0xb5031e...dea017` | ⚠️ Unaudited |
-| MorphoAavePYTStrategy | unknown | ethereum | n/a | [`0x9db5a6...03049e`](./contracts/ethereum-1/0x9db5a6bd77572748e541a0cf42f787f5fe03049e/) | ⚠️ Unaudited |
 | MorphoAaveV2SupplyVaultStrategy | unknown | ethereum | n/a | 4 deployments: ethereum [`0x0cb45d...a9dfac`](./contracts/ethereum-1/0x0cb45d9790e7f335b491c9532f7ad15aa1a9dfac/); ethereum `0x57e142...862f32`; ethereum `0x9182a7...fc56bb`; ethereum `0x9708b5...c2c860` | ⚠️ Unaudited |
 | MorphoAaveV2SupplyVaultStrategy | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6c14a1...401cfd`](./contracts/ethereum-1/0x6c14a1a28dd6dae5734fd960bac0b89a6b401cfd/); ethereum `0xeda9f2...fc354f` | ⚠️ Unaudited |
 | NXMaster | unknown | ethereum | n/a | [`0x08c3a8...39829a`](./contracts/ethereum-1/0x08c3a887865684f30351a0ba6d683aa9b539829a/) | ⚠️ Unaudited |
-| NXMDSValue | unknown | ethereum | n/a | 2 deployments: ethereum [`0x4b8246...470e41`](./contracts/ethereum-1/0x4b8246a462f66efab5cd7bd301cd0b9e7b470e41/); ethereum `0xc62805...c2fd3b` | ⚠️ Unaudited |
 | NXMToken | token | ethereum | n/a | [`0xd7c49c...d4cf3b`](./contracts/ethereum-1/0xd7c49cee7e9188cca6ad8ff264c1da2e69d4cf3b/) | ⚠️ Unaudited |
 | ParetoDollar | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7b70fc...68c337`](./contracts/ethereum-1/0x7b70fca01ab3745e24303b56f72296614768c337/); ethereum `0x97ccc1...e54c88` | ⚠️ Unaudited |
 | ParetoDollarQueue | unknown | ethereum | n/a | 2 deployments: ethereum [`0x07ace8...a4c3fd`](./contracts/ethereum-1/0x07ace8d682987c2219fe8cd314b858c326a4c3fd/); ethereum `0xa77800...a50d89` | ⚠️ Unaudited |
-| ParetoDollarQueue | unknown | ethereum | n/a | [`0xf81b88...669997`](./contracts/ethereum-1/0xf81b88fdd604a0ad12292c0acca11d02c2669997/) | ⚠️ Unaudited |
 | ParetoDollarStaking | unknown | ethereum | n/a | 2 deployments: ethereum [`0x271c61...0edf16`](./contracts/ethereum-1/0x271c616157e69a43b4977412a64183cf110edf16/); ethereum `0xc238a4...e029c8` | ⚠️ Unaudited |
-| ParetoDollarStaking | unknown | ethereum | n/a | [`0x7baf5f...b617f8`](./contracts/ethereum-1/0x7baf5fe88f271966fa58314b75f1887f2ab617f8/) | ⚠️ Unaudited |
 | Pool1 | unknown | ethereum | n/a | [`0xfd6135...ce1884`](./contracts/ethereum-1/0xfd61352232157815cf7b71045557192bf0ce1884/) | ⚠️ Unaudited |
 | Pool2 | unknown | ethereum | n/a | [`0x7cbe56...f753d6`](./contracts/ethereum-1/0x7cbe5682be6b648cc1100c76d4f6c96997f753d6/) | ⚠️ Unaudited |
 | PoolData | unknown | ethereum | n/a | [`0x25916c...02f5a2`](./contracts/ethereum-1/0x25916c331797ba10601e1f05a1da0b425302f5a2/) | ⚠️ Unaudited |
 | PriceOracle | unknown | ethereum | n/a | [`0x972a64...5ef181`](./contracts/ethereum-1/0x972a64d108e250df98dbeac8170678501f5ef181/) | ⚠️ Unaudited |
 | PriceOracleV2 | unknown | ethereum | n/a | [`0xb5a8f0...95e8c5`](./contracts/ethereum-1/0xb5a8f07dd4c3d315869405d702ee8f6ea695e8c5/) | ⚠️ Unaudited |
-| PriceOracleV3 | unknown | ethereum | n/a | [`0x886b10...c201f1`](./contracts/ethereum-1/0x886b102953ab3eaf719df7b80b03cd5203c201f1/) | ⚠️ Unaudited |
 | ProgrammableBorrower | core_logic | ethereum | n/a | 3 deployments: ethereum [`0x01d079...6d069b`](./contracts/ethereum-1/0x01d0799a2f740120dacbfec33c5374b9086d069b/); ethereum `0x3d6418...e75588`; ethereum `0xb13d29...fbcee6` | ⚠️ Unaudited |
 | ProgrammableBorrower | unknown | ethereum | n/a | 2 deployments: ethereum [`0x36569d...5f1bf6`](./contracts/ethereum-1/0x36569d9afafc8bfd6bb844ee371f401c695f1bf6/); ethereum `0xb5cebe...b5d459` | ⚠️ Unaudited |
 | ProgrammableBorrower | unknown | ethereum | n/a | 2 deployments: ethereum [`0x7bfe8d...6f9eb7`](./contracts/ethereum-1/0x7bfe8d96491f7b1039f14a8e44439e4dc46f9eb7/); ethereum `0x8a5d39...5b346c` | ⚠️ Unaudited |
@@ -250,14 +198,11 @@ The protocol comprises 6 functional families. Its contracts share 3 common proje
 | Quotation | unknown | ethereum | n/a | [`0x9dae06...6f25ee`](./contracts/ethereum-1/0x9dae0663f252d05314b7352403fa9c16f16f25ee/) | ⚠️ Unaudited |
 | QuotationData | unknown | ethereum | n/a | [`0x177665...903f7a`](./contracts/ethereum-1/0x1776651f58a17a50098d31ba3c3cd259c1903f7a/) | ⚠️ Unaudited |
 | Reservoir | unknown | ethereum | n/a | [`0x031f71...1e42c6`](./contracts/ethereum-1/0x031f71b5369c251a6544c41ce059e6b3d61e42c6/) | ⚠️ Unaudited |
-| SmartWalletChecker | unknown | ethereum | n/a | [`0x2d8b5b...4169d3`](./contracts/ethereum-1/0x2d8b5b65c6464651403955ac6d71f9c0204169d3/) | ⚠️ Unaudited |
 | StakingData | unknown | optimism | n/a | [`0xcc1342...0c087c`](./contracts/optimism-10/0xcc134245424fe9e10a011961451d5ad6cd0c087c/) | ⚠️ Unaudited |
-| StakingRewards | unknown | ethereum | n/a | 2 deployments: ethereum [`0x4a0772...6cdb49`](./contracts/ethereum-1/0x4a07723bb06bf9307e4e1998834832728e6cdb49/); ethereum `0xd7c1b4...34f935` | ⚠️ Unaudited |
-| Timelock | unknown | ethereum | n/a | 2 deployments: ethereum [`0xd6dabb...dc2556`](./contracts/ethereum-1/0xd6dabbc2b275114a2366555d6c481ef08fdc2556/); ethereum `0xda86e1...575a44` | ⚠️ Unaudited |
+| Timelock | governance | ethereum | n/a | [`0xda86e1...575a44`](./contracts/ethereum-1/0xda86e15d0cda3a05db930b248d7a2f775e575a44/) | ⚠️ Unaudited |
 | TokenController | unknown | ethereum | n/a | [`0x80b72c...0077e7`](./contracts/ethereum-1/0x80b72ce39b3d73c46b2b8b9ef3acbf300a0077e7/) | ⚠️ Unaudited |
 | TokenData | unknown | ethereum | n/a | [`0xe20b3a...697a40`](./contracts/ethereum-1/0xe20b3ae826cdb43676e418f7c3b84b75b5697a40/) | ⚠️ Unaudited |
 | TokenFunctions | unknown | ethereum | n/a | [`0xdf50a1...c7224e`](./contracts/ethereum-1/0xdf50a17bf58dea5039b73683a51c4026f3c7224e/) | ⚠️ Unaudited |
-| TokenManager | unknown | ethereum | n/a | 2 deployments: ethereum [`0x6d520c...bd8326`](./contracts/ethereum-1/0x6d520c82cfa8146afe500e6ddd8b39c1d7bd8326/); ethereum `0xffec41...ed5020` | ⚠️ Unaudited |
 | TranchesChainlinkOracle | unknown | ethereum | n/a | 4 deployments: ethereum [`0x0da050...42fb94`](./contracts/ethereum-1/0x0da050cf37747fd665adacdc0ce482f62442fb94/); ethereum `0x50449b...7f7dff`; ethereum `0x5bae51...aca4a0`; ethereum `0x8f4cb6...1574eb` | ⚠️ Unaudited |
 | TrancheWrapper | unknown | ethereum | n/a | [`0xcf96f4...1fe66d`](./contracts/ethereum-1/0xcf96f4b91c6d424fb34aa9a33855b5c8ed1fe66d/) | ⚠️ Unaudited |
 | TrancheWrapperWSTETHBalancer | unknown | ethereum | n/a | [`0x6bf9ea...bf723a`](./contracts/ethereum-1/0x6bf9ea02daab6b4b3b71cce20a84088a71bf723a/) | ⚠️ Unaudited |
@@ -272,7 +217,6 @@ The protocol comprises 6 functional families. Its contracts share 3 common proje
 | VesterFactory | unknown | ethereum | n/a | [`0xbf875f...089972`](./contracts/ethereum-1/0xbf875f2c6e4cc1688dfe4ecf79583193b6089972/) | ⚠️ Unaudited |
 | Visor | unknown | ethereum | n/a | 7 deployments: ethereum [`0x00ae28...e17b0d`](./contracts/ethereum-1/0x00ae28c731e1fb152907a2e79d033bd638e17b0d/); ethereum `0x08fb62...de76e9`; ethereum `0x17cc4e...cd2f79`; ethereum `0x8398a3...0e38f2`; ethereum `0x8daed2...c7752c`; ethereum `0xe2696f...94502d`; ethereum `0xf62dff...e16d04` | ⚠️ Unaudited |
 | VisorFactory | registry | ethereum | n/a | [`0xae0323...e6f20a`](./contracts/ethereum-1/0xae03233307865623aaef76da9ade669b86e6f20a/) | ⚠️ Unaudited |
-| Vyper_contract | unknown | ethereum | n/a | 4 deployments: ethereum [`0x0c3310...9c4320`](./contracts/ethereum-1/0x0c3310b0b57b86d376040b755f94a925f39c4320/); ethereum `0x1cd24f...769995`; ethereum `0x57d59d...9754f3`; ethereum `0x8f1959...30c1b2` | ⚠️ Unaudited |
 | wNXM | unknown | ethereum | n/a | [`0x0d438f...432bde`](./contracts/ethereum-1/0x0d438f3b5175bebc262bf23753c1e53d03432bde/) | ⚠️ Unaudited |
 | yxToken | unknown | ethereum | n/a | 4 deployments: ethereum [`0x0d81b0...2685ce`](./contracts/ethereum-1/0x0d81b042bb9939b4d32cdf7861774c442a2685ce/); ethereum `0xb299bc...00dc4a`; ethereum `0xd2f458...0da0c3`; ethereum `0xf424b1...013d49` | ⚠️ Unaudited |
 
@@ -444,7 +388,7 @@ Verified + unaudited native implementations ranked by TVL:
 | native | 0 |
 | upstream | 0 |
 | standard_library | 0 |
-| needs_review | 341 |
+| needs_review | 285 |
 
 ## Scope Matching Notes
 

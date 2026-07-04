@@ -1,0 +1,42 @@
+{
+  "component": "ShortPoolManager-2",
+  "main_contract": "ShortPoolManager",
+  "source_file_count": 53,
+  "deployment_count": 4,
+  "audited": false,
+  "audits_covering": [],
+  "addresses": [
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x2319289e56830b50a282c25af4f0045c724b3f79",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0x7e6a12dce12bc1c57bdf5829f7b40b113acde303",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xa5145ff1e321b717d5f137961fe2dc8ec5af31e1",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    },
+    {
+      "chain": "ethereum",
+      "chain_id": 1,
+      "address": "0xac94b8ea0e3a080f0fa6ae89cc873d956f72aa3e",
+      "is_proxy": false,
+      "implementation_address": null,
+      "liveness": "live"
+    }
+  ]
+}

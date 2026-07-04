@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 // Copyright (c) 2023 Tokemak Foundation. All rights reserved.
-pragma solidity ^0.8.24;
+pragma solidity 0.8.17;
 
-import { IERC20Metadata as IERC20 } from "openzeppelin-contracts/token/ERC20/extensions/IERC20Metadata.sol";
+import { IERC20 } from "openzeppelin-contracts/token/ERC20/IERC20.sol";
 import { SafeERC20 } from "openzeppelin-contracts/token/ERC20/utils/SafeERC20.sol";
 import { ReentrancyGuard } from "openzeppelin-contracts/security/ReentrancyGuard.sol";
 import { EnumerableSet } from "openzeppelin-contracts/utils/structs/EnumerableSet.sol";
@@ -55,9 +55,10 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
 
     uint256 public constant MAX_PCT = 10_000;
 
-    constructor(
-        ISystemRegistry _systemRegistry
-    ) SystemComponent(_systemRegistry) SecurityBase(address(_systemRegistry.accessController())) {
+    constructor(ISystemRegistry _systemRegistry)
+        SystemComponent(_systemRegistry)
+        SecurityBase(address(_systemRegistry.accessController()))
+    {
         destinationVaultRegistry = _systemRegistry.destinationVaultRegistry();
 
         // System registry must be properly initialized first
@@ -67,9 +68,7 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
     }
 
     /// @notice Restricts access to whitelisted swappers
-    modifier onlyWhitelistedSwapper(
-        address swapper
-    ) {
+    modifier onlyWhitelistedSwapper(address swapper) {
         if (!whitelistedSwappers.contains(swapper)) {
             revert Errors.AccessDenied();
         }
@@ -77,26 +76,20 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
     }
 
     /// @inheritdoc ILiquidationRow
-    function addToWhitelist(
-        address swapper
-    ) external hasRole(Roles.REWARD_LIQUIDATION_MANAGER) {
+    function addToWhitelist(address swapper) external hasRole(Roles.REWARD_LIQUIDATION_MANAGER) {
         Errors.verifyNotZero(swapper, "swapper");
         if (!whitelistedSwappers.add(swapper)) revert Errors.ItemExists();
         emit SwapperAdded(swapper);
     }
 
     /// @inheritdoc ILiquidationRow
-    function removeFromWhitelist(
-        address swapper
-    ) external hasRole(Roles.REWARD_LIQUIDATION_MANAGER) {
+    function removeFromWhitelist(address swapper) external hasRole(Roles.REWARD_LIQUIDATION_MANAGER) {
         if (!whitelistedSwappers.remove(swapper)) revert Errors.ItemNotFound();
         emit SwapperRemoved(swapper);
     }
 
     /// @inheritdoc ILiquidationRow
-    function isWhitelisted(
-        address swapper
-    ) external view returns (bool) {
+    function isWhitelisted(address swapper) external view returns (bool) {
         return whitelistedSwappers.contains(swapper);
     }
 
@@ -116,22 +109,20 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
     }
 
     /// @inheritdoc ILiquidationRow
-    function setPriceMarginBps(
-        uint256 _priceMarginBps
-    ) external hasRole(Roles.REWARD_LIQUIDATION_MANAGER) {
+    function setPriceMarginBps(uint256 _priceMarginBps) external hasRole(Roles.REWARD_LIQUIDATION_MANAGER) {
         _setPriceMarginBps(_priceMarginBps);
     }
 
-    function calculateFee(
-        uint256 amount
-    ) public view returns (uint256) {
+    function calculateFee(uint256 amount) public view returns (uint256) {
         return (amount * feeBps) / MAX_PCT;
     }
 
     /// @inheritdoc ILiquidationRow
-    function claimsVaultRewards(
-        IDestinationVault[] memory vaults
-    ) external nonReentrant hasRole(Roles.REWARD_LIQUIDATION_EXECUTOR) {
+    function claimsVaultRewards(IDestinationVault[] memory vaults)
+        external
+        nonReentrant
+        hasRole(Roles.REWARD_LIQUIDATION_EXECUTOR)
+    {
         if (vaults.length == 0) revert Errors.InvalidParam("vaults");
 
         for (uint256 i = 0; i < vaults.length; ++i) {
@@ -162,9 +153,7 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
     }
 
     /// @inheritdoc ILiquidationRow
-    function totalBalanceOf(
-        address tokenAddress
-    ) external view returns (uint256) {
+    function totalBalanceOf(address tokenAddress) external view returns (uint256) {
         return totalTokenBalances[tokenAddress];
     }
 
@@ -174,16 +163,16 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
     }
 
     /// @inheritdoc ILiquidationRow
-    function getVaultsForToken(
-        address tokenAddress
-    ) external view returns (address[] memory) {
+    function getVaultsForToken(address tokenAddress) external view returns (address[] memory) {
         return tokenVaults[tokenAddress].values();
     }
 
     /// @inheritdoc ILiquidationRow
-    function liquidateVaultsForTokens(
-        LiquidationParams[] memory liquidationParams
-    ) external nonReentrant hasRole(Roles.REWARD_LIQUIDATION_EXECUTOR) {
+    function liquidateVaultsForTokens(LiquidationParams[] memory liquidationParams)
+        external
+        nonReentrant
+        hasRole(Roles.REWARD_LIQUIDATION_EXECUTOR)
+    {
         uint256 len = liquidationParams.length;
         Errors.verifyNotZero(len, "len");
         for (uint256 i = 0; i < len;) {
@@ -201,9 +190,11 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
     }
 
     /// @inheritdoc ILiquidationRow
-    function liquidateVaultsForToken(
-        LiquidationParams memory liquidationParams
-    ) external nonReentrant hasRole(Roles.REWARD_LIQUIDATION_EXECUTOR) {
+    function liquidateVaultsForToken(LiquidationParams memory liquidationParams)
+        external
+        nonReentrant
+        hasRole(Roles.REWARD_LIQUIDATION_EXECUTOR)
+    {
         _liquidateVaultsForToken(
             liquidationParams.fromToken,
             liquidationParams.asyncSwapper,
@@ -338,9 +329,7 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
             amountReceived = abi.decode(data, (uint256));
 
             // Expected buy amount from Price Oracle
-            uint256 expectedBuyAmount = _calculateExpectedBuyAmount(
-                params.sellAmount, fromToken, params.buyTokenAddress, sellTokenPrice, buyTokenPrice
-            );
+            uint256 expectedBuyAmount = (params.sellAmount * sellTokenPrice) / buyTokenPrice;
 
             // Allow a margin of error for the swap
             // slither-disable-next-line divide-before-multiply
@@ -398,37 +387,6 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
     }
 
     /**
-     * @notice Calculates the expected buy amount for a swap
-     * @dev Handles decimal differences between tokens by scaling amounts appropriately:
-     *      - If buy token has more decimals than sell token => multiplies by 10^(difference)
-     *      - If sell token has more decimals than buy token => divides by 10^(difference)
-     * @param sellAmount The amount of the token to sell
-     * @param fromToken The address of the token to sell
-     * @param buyTokenAddress The address of the token to buy
-     * @param sellTokenPrice The price in ETH of the token to sell
-     * @param buyTokenPrice The price in ETH of the token to buy
-     * @return expectedBuyAmount The expected buy amount adjusted for decimal differences
-     */
-    function _calculateExpectedBuyAmount(
-        uint256 sellAmount,
-        address fromToken,
-        address buyTokenAddress,
-        uint256 sellTokenPrice,
-        uint256 buyTokenPrice
-    ) internal view returns (uint256 expectedBuyAmount) {
-        uint8 sellTokenDecimals = IERC20(fromToken).decimals();
-        uint8 buyTokenDecimals = IERC20(buyTokenAddress).decimals();
-
-        if (buyTokenDecimals >= sellTokenDecimals) {
-            expectedBuyAmount =
-                (sellAmount * sellTokenPrice * 10 ** (buyTokenDecimals - sellTokenDecimals)) / buyTokenPrice;
-        } else {
-            expectedBuyAmount =
-                (sellAmount * sellTokenPrice) / (buyTokenPrice * 10 ** (sellTokenDecimals - buyTokenDecimals));
-        }
-    }
-
-    /**
      * @notice Update the balance of a specific token and vault
      * @param tokenAddress The address of the token
      * @param vaultAddress The address of the vault
@@ -470,9 +428,7 @@ contract LiquidationRow is ILiquidationRow, ReentrancyGuard, SystemComponent, Se
         emit BalanceUpdated(tokenAddress, vaultAddress, currentBalance + balance);
     }
 
-    function _setPriceMarginBps(
-        uint256 _priceMarginBps
-    ) private {
+    function _setPriceMarginBps(uint256 _priceMarginBps) private {
         // Want to limit the price margin to 10%.
         if (_priceMarginBps > MAX_PCT / 10) revert Errors.InvalidParam("priceMarginBps");
         priceMarginBps = _priceMarginBps;

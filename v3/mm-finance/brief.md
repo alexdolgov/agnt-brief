@@ -4,7 +4,7 @@
 
 - Project: MM Finance (`mm-finance`)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:27.660Z
+- Generated: 2026-07-04T11:05:43.929Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-b097
 - Chains: arbitrum, cronos, polygon
 - Contract surface: 170 unique implementations (202 raw deployments)
@@ -14,11 +14,11 @@
 
 ## Project Description
 
-Derivatives. Structurally: 41 project-authored contract(s) across 2 chain(s); 9 ERC20 tokens, 2 ERC721 NFTs; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Derivatives. Structurally: 49 project-authored contract(s) across 2 chain(s); 16 ERC20 tokens, 2 ERC721 NFTs; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
-The protocol comprises 5 functional families. Its contracts share 14 common project-authored base contract(s) (governable, proxy, erc1967upgrade). Dominant framework: openzeppelin.
+The protocol comprises 5 functional families. Its contracts share 16 common project-authored base contract(s) (governable, proxy, erc1967upgrade). Dominant framework: openzeppelin.
 
 ## Contract Surface Quality
 

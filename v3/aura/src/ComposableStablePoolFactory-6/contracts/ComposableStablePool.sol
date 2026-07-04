@@ -19,7 +19,6 @@ import "@balancer-labs/v2-interfaces/contracts/pool-stable/StablePoolUserData.so
 import "@balancer-labs/v2-interfaces/contracts/solidity-utils/helpers/BalancerErrors.sol";
 import "@balancer-labs/v2-interfaces/contracts/standalone-utils/IProtocolFeePercentagesProvider.sol";
 import "@balancer-labs/v2-interfaces/contracts/pool-utils/IRateProvider.sol";
-import "@balancer-labs/v2-interfaces/contracts/pool-utils/IVersion.sol";
 
 import "@balancer-labs/v2-solidity-utils/contracts/math/FixedPoint.sol";
 import "@balancer-labs/v2-solidity-utils/contracts/math/Math.sol";
@@ -51,7 +50,6 @@ import "./StableMath.sol";
  */
 contract ComposableStablePool is
     IRateProvider,
-    IVersion,
     BaseGeneralPool,
     StablePoolAmplification,
     ComposableStablePoolRates,
@@ -66,8 +64,6 @@ contract ComposableStablePool is
     // We are preminting half of that value (rounded up).
     uint256 private constant _PREMINTED_TOKEN_BALANCE = 2**(111);
 
-    string private _version;
-
     // The constructor arguments are received in a struct to work around stack-too-deep issues
     struct NewPoolParams {
         IVault vault;
@@ -77,13 +73,12 @@ contract ComposableStablePool is
         IERC20[] tokens;
         IRateProvider[] rateProviders;
         uint256[] tokenRateCacheDurations;
-        bool exemptFromYieldProtocolFeeFlag;
+        bool[] exemptFromYieldProtocolFeeFlags;
         uint256 amplificationParameter;
         uint256 swapFeePercentage;
         uint256 pauseWindowDuration;
         uint256 bufferPeriodDuration;
         address owner;
-        string version;
     }
 
     constructor(NewPoolParams memory params)
@@ -104,7 +99,7 @@ contract ComposableStablePool is
         ComposableStablePoolRates(_extractRatesParams(params))
         ProtocolFeeCache(params.protocolFeeProvider, ProtocolFeeCache.DELEGATE_PROTOCOL_SWAP_FEES_SENTINEL)
     {
-        _version = params.version;
+        // solhint-disable-previous-line no-empty-blocks
     }
 
     // Translate parameters to avoid stack-too-deep issues in the constructor
@@ -131,12 +126,8 @@ contract ComposableStablePool is
             ComposableStablePoolStorage.StorageParams({
                 registeredTokens: _insertSorted(params.tokens, IERC20(this)),
                 tokenRateProviders: params.rateProviders,
-                exemptFromYieldProtocolFeeFlag: params.exemptFromYieldProtocolFeeFlag
+                exemptFromYieldProtocolFeeFlags: params.exemptFromYieldProtocolFeeFlags
             });
-    }
-
-    function version() external view override returns (string memory) {
-        return _version;
     }
 
     /**
@@ -721,7 +712,7 @@ contract ComposableStablePool is
     }
 
     /**
-     * @dev Support single- and multi-token joins, plus explicit proportional joins.
+     * @dev Support single- and multi-token joins, but not explicit proportional joins.
      */
     function _doJoin(
         uint256[] memory balances,
@@ -742,27 +733,11 @@ contract ComposableStablePool is
                     scalingFactors,
                     userData
                 );
-        } else if (kind == StablePoolUserData.JoinKind.ALL_TOKENS_IN_FOR_EXACT_BPT_OUT) {
-            return _joinAllTokensInForExactBptOut(preJoinExitSupply, balances, userData);
         } else if (kind == StablePoolUserData.JoinKind.TOKEN_IN_FOR_EXACT_BPT_OUT) {
             return _joinTokenInForExactBPTOut(preJoinExitSupply, preJoinExitInvariant, currentAmp, balances, userData);
         } else {
             _revert(Errors.UNHANDLED_JOIN_KIND);
         }
-    }
-
-    /**
-     * @dev Proportional join. Pays no swap fees.
-     */
-    function _joinAllTokensInForExactBptOut(
-        uint256 actualSupply,
-        uint256[] memory balances,
-        bytes memory userData
-    ) private pure returns (uint256, uint256[] memory) {
-        uint256 bptAmountOut = userData.allTokensInForExactBptOut();
-        uint256[] memory amountsIn = StableMath._computeProportionalAmountsIn(balances, bptAmountOut, actualSupply);
-
-        return (bptAmountOut, amountsIn);
     }
 
     /**
@@ -833,8 +808,8 @@ contract ComposableStablePool is
     // Exit Hooks
 
     /**
-     * @dev Support single- and multi-token exits, plus explicit proportional exits (in addition to the
-     * recovery mode exit).
+     * @dev Support single- and multi-token exits, but not explicit proportional exits, which are
+     * supported through Recovery Mode.
      */
     function _doExit(
         uint256[] memory balances,
@@ -855,29 +830,11 @@ contract ComposableStablePool is
                     scalingFactors,
                     userData
                 );
-        } else if (kind == StablePoolUserData.ExitKind.EXACT_BPT_IN_FOR_ALL_TOKENS_OUT) {
-            return _exitExactBPTInForTokensOut(preJoinExitSupply, balances, userData);
         } else if (kind == StablePoolUserData.ExitKind.EXACT_BPT_IN_FOR_ONE_TOKEN_OUT) {
             return _exitExactBPTInForTokenOut(preJoinExitSupply, preJoinExitInvariant, currentAmp, balances, userData);
         } else {
             _revert(Errors.UNHANDLED_EXIT_KIND);
         }
-    }
-
-    /**
-     * @dev Proportional exit. Pays no swap fees. This is functionally equivalent to the recovery mode exit,
-     * except this doesn't skip protocol fee collection, calling rate providers, etc., and doesn't require
-     * recovery mode to be enabled.
-     */
-    function _exitExactBPTInForTokensOut(
-        uint256 actualSupply,
-        uint256[] memory balances,
-        bytes memory userData
-    ) private pure returns (uint256, uint256[] memory) {
-        uint256 bptAmountIn = userData.exactBptInForTokensOut();
-        uint256[] memory amountsOut = _computeProportionalAmountsOut(balances, actualSupply, bptAmountIn);
-
-        return (bptAmountIn, amountsOut);
     }
 
     /**
@@ -1015,10 +972,7 @@ contract ComposableStablePool is
             currentInvariantWithLastJoinExitAmp
         ) = _getProtocolPoolOwnershipPercentage(balances, lastJoinExitAmp, lastPostJoinExitInvariant);
 
-        protocolFeeAmount = ProtocolFees.bptForPoolOwnershipPercentage(
-            virtualSupply,
-            expectedProtocolOwnershipPercentage
-        );
+        protocolFeeAmount = _calculateAdjustedProtocolFeeAmount(virtualSupply, expectedProtocolOwnershipPercentage);
     }
 
     /**
@@ -1031,19 +985,9 @@ contract ComposableStablePool is
      * the token rates increase). Therefore, the rate is a monotonically increasing function.
      *
      * WARNING: since this function reads balances directly from the Vault, it is potentially subject to manipulation
-     * via reentrancy if called within a Vault context (i.e. in the middle of a join or an exit). It is up to the
-     * caller to ensure that the function is safe to call.
-     *
-     * This may happen e.g. if one of the tokens in the Pool contains some form of callback behavior in the
-     * `transferFrom` function (like ERC777 tokens do). These tokens are strictly incompatible with the
+     * via reentrancy. However, this can only happen if one of the tokens in the Pool contains some form of callback
+     * behavior in the `transferFrom` function (like ERC777 tokens do). These tokens are strictly incompatible with the
      * Vault and Pool design, and are not safe to be used.
-     *
-     * There are also other situations where calling this function is unsafe. See
-     * https://forum.balancer.fi/t/reentrancy-vulnerability-scope-expanded/4345 for reference.
-     *
-     * To call this function safely, attempt to trigger the reentrancy guard in the Vault by calling a non-reentrant
-     * function before calling `getRate`. That will make the transaction revert in an unsafe context.
-     * (See `whenNotInVaultContext` in `ComposableStablePoolRates`).
      */
     function getRate() external view virtual override returns (uint256) {
         // We need to compute the current invariant and actual total supply. The latter includes protocol fees that have
@@ -1090,35 +1034,13 @@ contract ComposableStablePool is
      *    effectively be included in any Pool operation that involves BPT.
      *
      * In the vast majority of cases, this function should be used instead of `totalSupply()`.
-     *
-     * **IMPORTANT NOTE**: calling this function within a Vault context (i.e. in the middle of a join or an exit) is
-     * potentially unsafe, since the returned value is manipulable. It is up to the caller to ensure safety.
-     *
-     * This is because this function calculates the invariant, which requires the state of the pool to be in sync
-     * with the state of the Vault. That condition may not be true in the middle of a join or an exit.
-     *
-     * To call this function safely, attempt to trigger the reentrancy guard in the Vault by calling a non-reentrant
-     * function before calling `getActualSupply`. That will make the transaction revert in an unsafe context.
-     * (See `whenNotInVaultContext` in `ComposableStablePoolRates`).
-     *
-     * See https://forum.balancer.fi/t/reentrancy-vulnerability-scope-expanded/4345 for reference.
      */
     function getActualSupply() external view returns (uint256) {
         (, uint256 virtualSupply, uint256 protocolFeeAmount, , ) = _getSupplyAndFeesData();
         return virtualSupply.add(protocolFeeAmount);
     }
 
-    /**
-     * @dev This function will revert when called within a Vault context (i.e. in the middle of a join or an exit).
-     *
-     * This function depends on the invariant value, which may be calculated incorrectly in the middle of a join or
-     * an exit, because the state of the pool could be out of sync with the state of the Vault. The modifier
-     * `whenNotInVaultContext` prevents calling this function (and in turn, the external
-     * `updateProtocolFeePercentageCache`) in such a context.
-     *
-     * See https://forum.balancer.fi/t/reentrancy-vulnerability-scope-expanded/4345 for reference.
-     */
-    function _beforeProtocolFeeCacheUpdate() internal override whenNotInVaultContext {
+    function _beforeProtocolFeeCacheUpdate() internal override {
         // The `getRate()` function depends on the actual supply, which in turn depends on the cached protocol fee
         // percentages. Changing these would therefore result in the rate changing, which is not acceptable as this is a
         // sensitive value.
@@ -1160,18 +1082,7 @@ contract ComposableStablePool is
         _updatePostJoinExit(currentAmp, currentInvariant);
     }
 
-    /**
-     * @dev This function will revert when called within a Vault context (i.e. in the middle of a join or an exit).
-     *
-     * This function depends on the invariant value, which may be calculated incorrectly in the middle of a join or
-     * an exit, because the state of the pool could be out of sync with the state of the Vault.
-     *
-     * The modifier `whenNotInVaultContext` prevents calling this function (and in turn, the external
-     * `disableRecoveryMode`) in such a context.
-     *
-     * See https://forum.balancer.fi/t/reentrancy-vulnerability-scope-expanded/4345 for reference.
-     */
-    function _onDisableRecoveryMode() internal override whenNotInVaultContext {
+    function _onDisableRecoveryMode() internal override {
         // Enabling recovery mode short-circuits protocol fee computations, forcefully returning a zero percentage,
         // increasing the return value of `getRate()` and effectively forfeiting due protocol fees.
 

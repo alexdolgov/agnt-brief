@@ -3,29 +3,25 @@ pragma solidity =0.7.6;
 pragma abicoder v2;
 
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
 import {ERC721Holder} from "@openzeppelin/contracts/token/ERC721/ERC721Holder.sol";
-import {ReentrancyGuard} from "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
-import {SafeCast} from "@openzeppelin/contracts/utils/SafeCast.sol";
 import {ICLGauge} from "contracts/gauge/interfaces/ICLGauge.sol";
 import {ICLGaugeFactory} from "contracts/gauge/interfaces/ICLGaugeFactory.sol";
 import {IVoter} from "contracts/core/interfaces/IVoter.sol";
-import {ICLPool} from "contracts/gauge/interfaces/ICLPool.sol";
-import {INonfungiblePositionManager} from "contracts/gauge/interfaces/INonfungiblePositionManager.sol";
+import {ICLPool} from "contracts/core/interfaces/ICLPool.sol";
+import {TransferHelper} from "contracts/periphery/libraries/TransferHelper.sol";
+import {INonfungiblePositionManager} from "contracts/periphery/interfaces/INonfungiblePositionManager.sol";
+import {ReentrancyGuard} from "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 import {EnumerableSet} from "contracts/libraries/EnumerableSet.sol";
+import {SafeCast} from "contracts/gauge/libraries/SafeCast.sol";
 import {FullMath} from "contracts/core/libraries/FullMath.sol";
-import {VelodromeTimeLibrary} from "contracts/libraries/VelodromeTimeLibrary.sol";
+import {FixedPoint128} from "contracts/core/libraries/FixedPoint128.sol";
+import {ProtocolTimeLibrary} from "contracts/libraries/ProtocolTimeLibrary.sol";
 import {IReward} from "contracts/gauge/interfaces/IReward.sol";
+import {IRedistributor} from "contracts/gauge/interfaces/IRedistributor.sol";
 
 contract CLGauge is ICLGauge, ERC721Holder, ReentrancyGuard {
     using EnumerableSet for EnumerableSet.UintSet;
-    using SafeERC20 for IERC20;
     using SafeCast for uint128;
-    using SafeCast for uint256;
-    using SafeCast for int256;
-
-    uint256 internal constant Q128 = 0x100000000000000000000000000000000;
-    uint256 private constant MAX_BPS = 10_000;
 
     /// @inheritdoc ICLGauge
     INonfungiblePositionManager public override nft;
@@ -35,8 +31,6 @@ contract CLGauge is ICLGauge, ERC721Holder, ReentrancyGuard {
     ICLPool public override pool;
     /// @inheritdoc ICLGauge
     ICLGaugeFactory public override gaugeFactory;
-    /// @inheritdoc ICLGauge
-    address public override minter;
 
     /// @inheritdoc ICLGauge
     address public override feesVotingReward;
@@ -48,7 +42,11 @@ contract CLGauge is ICLGauge, ERC721Holder, ReentrancyGuard {
     /// @inheritdoc ICLGauge
     uint256 public override rewardRate;
 
-    mapping(uint256 => uint256) public override rewardRateByEpoch; // epochStart => rewardRate
+    /// @inheritdoc ICLGauge
+    mapping(uint256 => uint256) public override rewardsByEpoch;
+
+    /// @inheritdoc ICLGauge
+    mapping(uint256 => uint256) public override rewardRateByEpoch;
     /// @dev The set of all staked nfts for a given address
     mapping(address => EnumerableSet.UintSet) internal _stakes;
     /// @inheritdoc ICLGauge
@@ -58,13 +56,13 @@ contract CLGauge is ICLGauge, ERC721Holder, ReentrancyGuard {
     mapping(uint256 => uint256) public override rewards;
     /// @inheritdoc ICLGauge
     mapping(uint256 => uint256) public override lastUpdateTime;
-    /// @inheritdoc ICLGauge
-    mapping(uint256 => uint256) public override depositTimestamp;
 
     /// @inheritdoc ICLGauge
     uint256 public override fees0;
     /// @inheritdoc ICLGauge
     uint256 public override fees1;
+    /// @inheritdoc ICLGauge
+    address public override WETH9;
     /// @inheritdoc ICLGauge
     address public override token0;
     /// @inheritdoc ICLGauge
@@ -74,6 +72,8 @@ contract CLGauge is ICLGauge, ERC721Holder, ReentrancyGuard {
 
     /// @inheritdoc ICLGauge
     bool public override isPool;
+    /// @inheritdoc ICLGauge
+    bool public override supportsPayable;
 
     /// @inheritdoc ICLGauge
     function initialize(
@@ -89,16 +89,22 @@ contract CLGauge is ICLGauge, ERC721Holder, ReentrancyGuard {
     ) external override {
         require(address(pool) == address(0), "AI");
         gaugeFactory = ICLGaugeFactory(msg.sender);
-        minter = gaugeFactory.minter();
         pool = ICLPool(_pool);
         feesVotingReward = _feesVotingReward;
         rewardToken = _rewardToken;
         voter = IVoter(_voter);
         nft = INonfungiblePositionManager(_nft);
+        address _weth = nft.WETH9();
+        WETH9 = _weth;
         token0 = _token0;
         token1 = _token1;
         tickSpacing = _tickSpacing;
         isPool = _isPool;
+        supportsPayable = _token0 == _weth || _token1 == _weth;
+    }
+
+    receive() external payable {
+        require(msg.sender == address(nft), "NNFT");
     }
 
     // updates the claimable rewards and lastUpdateTime for tokenId
@@ -114,11 +120,7 @@ contract CLGauge is ICLGauge, ERC721Holder, ReentrancyGuard {
     function earned(address account, uint256 tokenId) external view override returns (uint256) {
         require(_stakes[account].contains(tokenId), "NA");
 
-        uint256 claimable = rewards[tokenId] + _earned(tokenId);
-        if (claimable > 0) {
-            claimable -= _applyPenalty(claimable, tokenId);
-        }
-        return claimable;
+        return _earned(tokenId);
     }
 
     function _earned(uint256 tokenId) internal view returns (uint256) {
@@ -133,7 +135,7 @@ contract CLGauge is ICLGauge, ERC721Holder, ReentrancyGuard {
             uint256 reward = rewardRate * timeDelta;
             if (reward > rewardReserve) reward = rewardReserve;
 
-            rewardGrowthGlobalX128 += FullMath.mulDiv(reward, Q128, pool.stakedLiquidity());
+            rewardGrowthGlobalX128 += FullMath.mulDiv(reward, FixedPoint128.Q128, pool.stakedLiquidity());
         }
 
         (,,,,, int24 tickLower, int24 tickUpper, uint128 liquidity,,,,) = nft.positions(tokenId);
@@ -141,7 +143,8 @@ contract CLGauge is ICLGauge, ERC721Holder, ReentrancyGuard {
         uint256 rewardPerTokenInsideInitialX128 = rewardGrowthInside[tokenId];
         uint256 rewardPerTokenInsideX128 = pool.getRewardGrowthInside(tickLower, tickUpper, rewardGrowthGlobalX128);
 
-        uint256 claimable = FullMath.mulDiv(rewardPerTokenInsideX128 - rewardPerTokenInsideInitialX128, liquidity, Q128);
+        uint256 claimable =
+            FullMath.mulDiv(rewardPerTokenInsideX128 - rewardPerTokenInsideInitialX128, liquidity, FixedPoint128.Q128);
         return claimable;
     }
 
@@ -176,24 +179,8 @@ contract CLGauge is ICLGauge, ERC721Holder, ReentrancyGuard {
 
         if (reward > 0) {
             delete rewards[tokenId];
-            uint256 penalty = _applyPenalty(reward, tokenId);
-            if (penalty > 0) {
-                reward -= penalty;
-                IERC20(rewardToken).safeTransfer(minter, penalty);
-                emit EarlyWithdrawPenalty(owner, tokenId, penalty);
-            }
-            if (reward > 0) {
-                IERC20(rewardToken).safeTransfer(owner, reward);
-                emit ClaimRewards(owner, reward);
-            }
-        }
-    }
-
-    function _applyPenalty(uint256 reward, uint256 tokenId) internal view returns (uint256 penalty) {
-        uint256 _penaltyRate = gaugeFactory.penaltyRate();
-        if (_penaltyRate > 0 && block.timestamp < depositTimestamp[tokenId] + gaugeFactory.minStakeTimes(address(pool)))
-        {
-            penalty = reward * _penaltyRate / MAX_BPS;
+            TransferHelper.safeTransfer(rewardToken, owner, reward);
+            emit ClaimRewards(owner, reward);
         }
     }
 
@@ -219,12 +206,11 @@ contract CLGauge is ICLGauge, ERC721Holder, ReentrancyGuard {
         _stakes[msg.sender].add(tokenId);
 
         (,,,,,,, uint128 liquidityToStake,,,,) = nft.positions(tokenId);
-        pool.stake((uint256(liquidityToStake).toInt256()).toInt128(), tickLower, tickUpper);
+        pool.stake(liquidityToStake.toInt128(), tickLower, tickUpper, true);
 
         uint256 rewardGrowth = pool.getRewardGrowthInside(tickLower, tickUpper, 0);
         rewardGrowthInside[tokenId] = rewardGrowth;
         lastUpdateTime[tokenId] = block.timestamp;
-        depositTimestamp[tokenId] = block.timestamp;
 
         emit Deposit(msg.sender, tokenId, liquidityToStake);
     }
@@ -246,10 +232,13 @@ contract CLGauge is ICLGauge, ERC721Holder, ReentrancyGuard {
         (,,,,, int24 tickLower, int24 tickUpper, uint128 liquidityToStake,,,,) = nft.positions(tokenId);
         _getReward(tickLower, tickUpper, tokenId, msg.sender);
 
-        pool.stake(-(uint256(liquidityToStake).toInt256()).toInt128(), tickLower, tickUpper);
+        // update virtual liquidity in pool only if token has existing liquidity
+        // i.e. not all removed already via decreaseStakedLiquidity
+        if (liquidityToStake != 0) {
+            pool.stake(-liquidityToStake.toInt128(), tickLower, tickUpper, true);
+        }
 
         _stakes[msg.sender].remove(tokenId);
-        delete depositTimestamp[tokenId];
         nft.safeTransferFrom(address(this), msg.sender, tokenId);
 
         emit Withdraw(msg.sender, tokenId, liquidityToStake);
@@ -290,25 +279,37 @@ contract CLGauge is ICLGauge, ERC721Holder, ReentrancyGuard {
         address sender = msg.sender;
         require(sender == address(voter), "NV");
         require(_amount != 0, "ZR");
+
         _claimFees();
+
+        uint256 maxAmount = gaugeFactory.calculateMaxEmissions({_gauge: address(this)});
+        /// @dev If emission cap is exceeded, transfer excess emissions back to Redistributor
+        if (_amount > maxAmount) {
+            uint256 excess = _amount - maxAmount;
+            address redistributor = gaugeFactory.redistributor();
+            TransferHelper.safeTransferFrom(rewardToken, sender, address(this), excess);
+            TransferHelper.safeApprove(rewardToken, redistributor, excess);
+            IRedistributor(redistributor).deposit({_amount: excess});
+            _amount = maxAmount;
+        }
         _notifyRewardAmount(sender, _amount);
     }
 
     /// @inheritdoc ICLGauge
     function notifyRewardWithoutClaim(uint256 _amount) external override nonReentrant {
         address sender = msg.sender;
-        require(sender == gaugeFactory.notifyAdmin(), "NA");
+        require(sender == gaugeFactory.notifyAdmin() || sender == gaugeFactory.redistributor(), "NA");
         require(_amount != 0, "ZR");
         _notifyRewardAmount(sender, _amount);
     }
 
     function _notifyRewardAmount(address _sender, uint256 _amount) internal {
         uint256 timestamp = block.timestamp;
-        uint256 timeUntilNext = VelodromeTimeLibrary.epochNext(timestamp) - timestamp;
+        uint256 timeUntilNext = ProtocolTimeLibrary.epochNext(timestamp) - timestamp;
         pool.updateRewardsGrowthGlobal();
         uint256 nextPeriodFinish = timestamp + timeUntilNext;
 
-        IERC20(rewardToken).safeTransferFrom(_sender, address(this), _amount);
+        TransferHelper.safeTransferFrom(rewardToken, _sender, address(this), _amount);
         // rolling over stuck rewards from previous epoch (if any)
         _amount += pool.rollover();
 
@@ -320,8 +321,11 @@ contract CLGauge is ICLGauge, ERC721Holder, ReentrancyGuard {
             rewardRate = (_amount + _leftover) / timeUntilNext;
             pool.syncReward({rewardRate: rewardRate, rewardReserve: _amount + _leftover, periodFinish: nextPeriodFinish});
         }
-        rewardRateByEpoch[VelodromeTimeLibrary.epochStart(timestamp)] = rewardRate;
+        uint256 epochStart = ProtocolTimeLibrary.epochStart(timestamp);
+        rewardRateByEpoch[epochStart] = rewardRate;
         require(rewardRate != 0, "ZRR");
+
+        rewardsByEpoch[epochStart] += _amount;
 
         // Ensure the provided reward amount is not more than the balance in the contract.
         // This keeps the reward rate in the right range
@@ -341,16 +345,16 @@ contract CLGauge is ICLGauge, ERC721Holder, ReentrancyGuard {
             uint256 _fees1 = fees1 + claimed1;
             address _token0 = token0;
             address _token1 = token1;
-            if (_fees0 > VelodromeTimeLibrary.WEEK) {
+            if (_fees0 > ProtocolTimeLibrary.WEEK) {
                 fees0 = 0;
-                IERC20(_token0).safeIncreaseAllowance(feesVotingReward, _fees0);
+                TransferHelper.safeApprove(_token0, feesVotingReward, _fees0);
                 IReward(feesVotingReward).notifyRewardAmount(_token0, _fees0);
             } else {
                 fees0 = _fees0;
             }
-            if (_fees1 > VelodromeTimeLibrary.WEEK) {
+            if (_fees1 > ProtocolTimeLibrary.WEEK) {
                 fees1 = 0;
-                IERC20(_token1).safeIncreaseAllowance(feesVotingReward, _fees1);
+                TransferHelper.safeApprove(_token1, feesVotingReward, _fees1);
                 IReward(feesVotingReward).notifyRewardAmount(_token1, _fees1);
             } else {
                 fees1 = _fees1;

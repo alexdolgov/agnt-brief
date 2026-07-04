@@ -22,12 +22,12 @@ interface IERC20 {
 /**
  * PAY MONEY TO BECOME A PREMIUM ID CARD HOLDER.
  */
-contract PremiumHolder is IDIDAdaptorOwned {
+contract PremiumHolder is IDIDAdaptor {
     bytes32 public constant AccountType_PAID = keccak256("Premium");
     address public idcard;
     address public controller;
     address public money;
-    uint256 public price;
+    uint256 public immutable price;
     address public operator;
     uint256 public totalBinding;
 
@@ -47,13 +47,12 @@ contract PremiumHolder is IDIDAdaptorOwned {
     event Withdraw(address to, uint256 amount);
     event TransferOperator(address to);
 
-    function initAdaptor(
+    constructor(
         address idcard_,
         address controller_,
         address money_,
         uint256 price_
-    ) public {
-        require(msg.sender == owner);
+    ) {
         idcard = idcard_;
         controller = controller_;
         money = money_;
@@ -71,15 +70,11 @@ contract PremiumHolder is IDIDAdaptorOwned {
     ) public override returns (bool) {
         require(msg.sender == controller);
         if (accountType == AccountType_PAID) {
-            uint256 dTotalBinding = 1;
             if (
                 idcardOf[claimer] != 0 &&
                 IDCard(idcard).exists(idcardOf[claimer])
             ) {
-                if (verifyAccount(idcardOf[claimer])) {
-                    return false;
-                }
-                dTotalBinding -= 1;
+                return false;
             }
             address payer;
             if (sign_info.length == 0) {
@@ -108,7 +103,7 @@ contract PremiumHolder is IDIDAdaptorOwned {
             _pay(payer);
             premiumHolderOf[tokenId] = claimer;
             idcardOf[claimer] = tokenId;
-            totalBinding += dTotalBinding;
+            totalBinding += 1;
             emit ConnectPayer(tokenId, claimer);
             return true;
         }
@@ -122,7 +117,7 @@ contract PremiumHolder is IDIDAdaptorOwned {
         return nonceOf[payer];
     }
 
-    function updateNonce(address payer) internal {
+    function updateNonce(address payer) public {
         nonceOf[payer] = keccak256(
             abi.encodePacked("payer's nonce", nonceOf[payer])
         );
@@ -131,10 +126,6 @@ contract PremiumHolder is IDIDAdaptorOwned {
     /// @notice Disconnect ID card from a premium holder address.
     function disconnect(uint256 tokenId) external override returns (bool) {
         require(msg.sender == controller);
-        return _disconnect(tokenId);
-    }
-
-    function _disconnect(uint256 tokenId) internal returns (bool) {
         address premiumHolder = premiumHolderOf[tokenId];
         idcardOf[premiumHolder] = 0;
         premiumHolderOf[tokenId] = address(0);

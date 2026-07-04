@@ -5,7 +5,7 @@
 - Project: Bracket Protocol (`bracket-protocol`)
 - Website: [https://www.bracket.fi/](https://www.bracket.fi/)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:05:36.986Z
+- Generated: 2026-07-04T11:05:40.784Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-b097
 - Chains: arbitrum, ethereum
 - Contract surface: 97 unique implementations (158 raw deployments)
@@ -15,7 +15,7 @@
 
 ## Project Description
 
-Farm. Structurally: 148 project-authored contract(s) across 2 chain(s); 60 ERC20 tokens, 1 ERC721 NFT, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
+Farm. Structurally: 149 project-authored contract(s) across 2 chain(s); 60 ERC20 tokens, 1 ERC721 NFT, 1 Chainlink feed; role-gated via AccessControl; upgradeable via ERC1967/UUPS proxies; built on openzeppelin.
 
 ### Architecture
 
@@ -23,8 +23,8 @@ The protocol comprises 7 functional families. Its contracts share 34 common proj
 
 ## Contract Surface Quality
 
-- Indexed contracts: 299; live-surface contracts included: 152 (113 live, 39 unknown).
-- Excluded by liveness: 147 inactive, 0 singleton, 0 uninitialized.
+- Indexed contracts: 296; live-surface contracts included: 152 (113 live, 39 unknown).
+- Excluded by liveness: 144 inactive, 0 singleton, 0 uninitialized.
 - Deployment units: 0/0 live.
 - Detected codebases: none
 - Dependencies extracted: 0; unverified dependencies: 0.

@@ -5,7 +5,7 @@
 - Project: Keyring (`keyring`)
 - Website: [https://app.euler.finance/governor/keyring?network=avalanche](https://app.euler.finance/governor/keyring?network=avalanche)
 - Lifecycle: unknown
-- Generated: 2026-07-03T21:06:19.438Z
+- Generated: 2026-07-04T11:44:08.642Z
 - Pipeline run: v2-pipeline-2026-07-01-3e33f2-dc67
 - Chains: avalanche, ethereum
 - Contract surface: 793 unique implementations (845 raw deployments)
@@ -20,6 +20,13 @@ Risk Curators. Structurally: 37 project-authored contract(s) across 2 chain(s); 
 ### Architecture
 
 The protocol comprises 8 functional families. Its contracts share 13 common project-authored base contract(s) (basefactory, utils, baseadapter). Dominant framework: openzeppelin.
+
+## Fork Lineage
+
+This project reuses audited code from **Euler** (`euler`).
+15 audits inherited from `euler`.
+
+Total inherited audits: 15. Inherited coverage reflects forked/shared code audited by the origin project — it is not a direct audit of this project.
 
 ## Contract Surface Quality
 
@@ -39,7 +46,7 @@ The protocol comprises 8 functional families. Its contracts share 13 common proj
 - Unverified implementations: 754
 - Unique implementations: 793
 - Raw deployments: 845
-- Audits discovered: 16 (16 direct, 0 inherited from forked code)
+- Audits discovered: 16 (1 direct, 15 inherited from forked code)
 - Scoreable audits (matched contracts): 15
 - ASD (verified + unaudited TVL): n/a
 - Latest audit: 2025-11 (fresh)
@@ -887,22 +894,22 @@ Source code not publicly verified. These contracts cannot be audited without dec
 
 | Audit | Auditor | Audit Type | Date | Freshness | Inheritance | Scope Format | Matched Contracts | Extraction Confidence |
 |---|---|---|---|---|---|---|---|---|
-| [Pashov_Audit_Group_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Pashov%5FAudit%5FGroup%5Freport.pdf) | Pashov Audit Group | Audit | 2025-07 | aging | Direct | contract_name | 2 | n/a |
-| [Certora_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Certora%5FEulerEarn%5Freport.pdf) | Pashov Audit Group | Audit | 2025-07 | aging | Direct | contract_name | 2 | n/a |
-| [Sigma_Prime_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Sigma%5FPrime%5FEulerEarn%5Freport.pdf) | Sigma Prime | Audit | 2025-07 | aging | Direct | contract_name | 2 | n/a |
-| [Certora_EulerEarn_report.pdf](https://raw.githubusercontent.com/euler-xyz/euler-earn/b2fd6e699ee20bcfe7459f375b3cee5d2fa53345/audits/Certora_EulerEarn_report.pdf) | Spearbit | Audit | 2025-07 | aging | Direct | contract_name | 2 | n/a |
-| [Sigma_Prime_EulerEarn_report.pdf](https://raw.githubusercontent.com/euler-xyz/euler-earn/b2fd6e699ee20bcfe7459f375b3cee5d2fa53345/audits/Sigma_Prime_EulerEarn_report.pdf) | Spearbit | Audit | 2025-07 | aging | Direct | contract_name | 2 | n/a |
+| [Pashov_Audit_Group_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Pashov%5FAudit%5FGroup%5Freport.pdf) | Pashov Audit Group | Audit | 2025-07 | aging | Inherited from Euler | contract_name | 2 | n/a |
+| [Certora_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Certora%5FEulerEarn%5Freport.pdf) | Pashov Audit Group | Audit | 2025-07 | aging | Inherited from Euler | contract_name | 2 | n/a |
+| [Sigma_Prime_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Sigma%5FPrime%5FEulerEarn%5Freport.pdf) | Sigma Prime | Audit | 2025-07 | aging | Inherited from Euler | contract_name | 2 | n/a |
+| [Certora_EulerEarn_report.pdf](https://raw.githubusercontent.com/euler-xyz/euler-earn/b2fd6e699ee20bcfe7459f375b3cee5d2fa53345/audits/Certora_EulerEarn_report.pdf) | Spearbit | Audit | 2025-07 | aging | Inherited from Euler | contract_name | 2 | n/a |
+| [Sigma_Prime_EulerEarn_report.pdf](https://raw.githubusercontent.com/euler-xyz/euler-earn/b2fd6e699ee20bcfe7459f375b3cee5d2fa53345/audits/Sigma_Prime_EulerEarn_report.pdf) | Spearbit | Audit | 2025-07 | aging | Inherited from Euler | contract_name | 2 | n/a |
 | [omniscia.io/reports/euler-finance-earn-yield-aggregator-66faae519dcc3c0018b9097e](https://omniscia.io/reports/euler-finance-earn-yield-aggregator-66faae519dcc3c0018b9097e) | Enigma Ventures | Audit | 2024-10 | aging | Direct | n/a | 0 | n/a |
-| [Certora_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Certora_EulerEarn_report.pdf) | Certora | Audit | 2025-07 | aging | Direct | contract_name | 2 | n/a |
-| [Sigma_Prime_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Sigma_Prime_EulerEarn_report.pdf) | Sigma Prime | Audit | 2025-07 | aging | Direct | contract_name | 2 | n/a |
-| [yAudit ERC4626 and Vault Securitize.pdf](https://github.com/euler-xyz/evk-periphery/blob/master/audits/yAudit%20ERC4626%20and%20Vault%20Securitize.pdf) | yAudit | Audit | 2025-11 | fresh | Direct | contract_name | 2 | n/a |
-| [Pashov Group ERC4626 and Vault Securitize.pdf](https://github.com/euler-xyz/evk-periphery/blob/master/audits/Pashov%20Group%20ERC4626%20and%20Vault%20Securitize.pdf) | Pashov Audit Group | Audit | 2025-11 | fresh | Direct | contract_name | 2 | n/a |
-| [2025-05-26-cyfrin-eulerswap-v2.0.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/2025-05-26-cyfrin-eulerswap-v2.0.pdf) | Cyfrin | Audit | 2025-05 | aging | Direct | contract_name | 3 | n/a |
-| [report-cantinacode-uniswap-euler-0422.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/report-cantinacode-uniswap-euler-0422.pdf) | Spearbit | Audit | 2025-05 | aging | Direct | contract_name | 3 | n/a |
-| [ChainSecurity_EulerSwap_audit.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/ChainSecurity_EulerSwap_audit.pdf) | ChainSecurity | Audit | 2025-03 | aging | Direct | contract_name | 2 | n/a |
-| [report-euler-swap-050325.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/report-euler-swap-050325.pdf) | Spearbit | Audit | 2025-03 | aging | Direct | contract_name | 3 | n/a |
-| [eulerswap-audit-report.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/eulerswap-audit-report.pdf) | Spearbit | Audit | 2025-02 | aging | Direct | contract_name | 1 | n/a |
-| [report-cantinacode-euler-0901.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/report-cantinacode-euler-0901.pdf) | Spearbit | Audit | 2025-09 | fresh | Direct | contract_name | 2 | n/a |
+| [Certora_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Certora_EulerEarn_report.pdf) | Certora | Audit | 2025-07 | aging | Inherited from Euler | contract_name | 2 | n/a |
+| [Sigma_Prime_EulerEarn_report.pdf](https://github.com/euler-xyz/euler-earn/blob/master/audits/Sigma_Prime_EulerEarn_report.pdf) | Sigma Prime | Audit | 2025-07 | aging | Inherited from Euler | contract_name | 2 | n/a |
+| [yAudit ERC4626 and Vault Securitize.pdf](https://github.com/euler-xyz/evk-periphery/blob/master/audits/yAudit%20ERC4626%20and%20Vault%20Securitize.pdf) | yAudit | Audit | 2025-11 | fresh | Inherited from Euler | contract_name | 2 | n/a |
+| [Pashov Group ERC4626 and Vault Securitize.pdf](https://github.com/euler-xyz/evk-periphery/blob/master/audits/Pashov%20Group%20ERC4626%20and%20Vault%20Securitize.pdf) | Pashov Audit Group | Audit | 2025-11 | fresh | Inherited from Euler | contract_name | 2 | n/a |
+| [2025-05-26-cyfrin-eulerswap-v2.0.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/2025-05-26-cyfrin-eulerswap-v2.0.pdf) | Cyfrin | Audit | 2025-05 | aging | Inherited from Euler | contract_name | 3 | n/a |
+| [report-cantinacode-uniswap-euler-0422.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/report-cantinacode-uniswap-euler-0422.pdf) | Spearbit | Audit | 2025-05 | aging | Inherited from Euler | contract_name | 3 | n/a |
+| [ChainSecurity_EulerSwap_audit.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/ChainSecurity_EulerSwap_audit.pdf) | ChainSecurity | Audit | 2025-03 | aging | Inherited from Euler | contract_name | 2 | n/a |
+| [report-euler-swap-050325.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/report-euler-swap-050325.pdf) | Spearbit | Audit | 2025-03 | aging | Inherited from Euler | contract_name | 3 | n/a |
+| [eulerswap-audit-report.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/eulerswap-audit-report.pdf) | Spearbit | Audit | 2025-02 | aging | Inherited from Euler | contract_name | 1 | n/a |
+| [report-cantinacode-euler-0901.pdf](https://github.com/euler-xyz/euler-swap/blob/master/audits/report-cantinacode-euler-0901.pdf) | Spearbit | Audit | 2025-09 | fresh | Inherited from Euler | contract_name | 2 | n/a |
 
 ## Coverage Gaps
 
